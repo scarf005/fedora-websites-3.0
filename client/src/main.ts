@@ -6,6 +6,10 @@ import router from "./router";
 import pinia from "./plugins/pinia";
 import head from "./plugins/vueuse-head";
 import i18n from "./plugins/i18n";
+
+// styles
+import "./assets/css/tailwind.css";
+
 // use plugins and mount application
 const app = createApp(App);
 
