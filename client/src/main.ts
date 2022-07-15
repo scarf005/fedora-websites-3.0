@@ -5,12 +5,11 @@ import App from "./App.vue";
 import router from "./router";
 import pinia from "./plugins/pinia";
 import head from "./plugins/vueuse-head";
-
+import i18n from "./plugins/i18n";
 // use plugins and mount application
 const app = createApp(App);
 
 app.use(head)
 .use(pinia)
-.use(router);
-
-app.mount("#app");
+.use(router)
+i18n(app.mount("#app"));
