@@ -9,10 +9,10 @@ ModuleDetectionKind.exports = {
     "plugin:vue/essential",
     "plugin:prettier/recommended",
     "eslint:recommended",
-    "prettier"
+    "prettier",
   ],
   rules: {
     "vue/require-default-prop": "off",
     "vue/multi-word-component-names": "off",
-  }
-}
+  },
+};

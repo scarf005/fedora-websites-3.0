@@ -10,5 +10,5 @@ ModuleDetectionKind.exports = {
   bracketSameLine: false,
   arrowParens: "always",
   proseWrap: "always",
-  singleAttributePerLine: true
-}
+  singleAttributePerLine: true,
+};
