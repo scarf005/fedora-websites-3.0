@@ -1,12 +1,15 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+
+// plugins
 import router from "./router";
+import { createPinia } from "pinia";
 
-const app  = createApp(App)
-
-// Add plugins to the application
+// use plugins and mount application
+const pinia = createPinia();
+const app = createApp(App);
 
 app.use(router);
+app.use(pinia);
 
-// mount application
-app.mount("#app")
+app.mount("#app");
