@@ -1,6 +1,6 @@
-import i18next from 'i18next'
-import I18NextVue from 'i18next-vue'
-import LanguageDetector from 'i18next-browser-languagedetector'
+import i18next from "i18next";
+import I18NextVue from "i18next-vue";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18next
   // detect user language
@@ -10,18 +10,17 @@ i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: "en",
     resources: {
       en: {
         translation: {
           // here we will place our translations...
-        }
-      }
-    }
+        },
+      },
+    },
   });
 
-  export default function (app: any) {
-    app.use(I18NextVue, { i18next })
-    return app
-  }
-  
+export default function (app: any) {
+  app.use(I18NextVue, { i18next });
+  return app;
+}

@@ -9,7 +9,5 @@ import i18n from "./plugins/i18n";
 // use plugins and mount application
 const app = createApp(App);
 
-app.use(head)
-.use(pinia)
-.use(router)
+app.use(head).use(pinia).use(router);
 i18n(app.mount("#app"));
