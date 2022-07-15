@@ -3,13 +3,14 @@ import App from "./App.vue";
 
 // plugins
 import router from "./router";
-import { createPinia } from "pinia";
+import pinia from "./plugins/pinia";
+import head from "./plugins/vueuse-head";
 
 // use plugins and mount application
-const pinia = createPinia();
 const app = createApp(App);
 
-app.use(router);
-app.use(pinia);
+app.use(head)
+.use(pinia)
+.use(router);
 
 app.mount("#app");
