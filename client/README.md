@@ -16,6 +16,7 @@ Here are some conventions that are currently being established. This is of cours
   - Looking at component libraries such as Vuetify and Fast, they avoid creating actual true layout components in the way that BootstrapVue and Inkline do. While this could be useful, I have found that it really gets in the way and agree with the decision of Fast and Vuetify to not include these types of components.
     - For that stuff, we should be able to rely on our css framework, whether it be tailwind, bootstrap, or vanilla, to manage this stuff.
       - This will make it so that structuring a page does not require specialized knowledge of our system. The components are only for maintaining adherence to our element focused styles. For layout, we should be able to remain flexible and leverage the power of css to handle that.
+- 
 ---
 
 ## Recommended IDE Setup
