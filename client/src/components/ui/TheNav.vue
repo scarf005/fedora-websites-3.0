@@ -1,4 +1,8 @@
 <script setup></script>
 <template>
-  <nav></nav>
+  <nav>
+    <ul>
+      <slot></slot>
+    </ul>
+  </nav>
 </template>
