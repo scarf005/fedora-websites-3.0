@@ -10,4 +10,4 @@ import { faFedora } from "@fortawesome/free-brands-svg-icons";
 // add icons to the library here
 library.add(faFedora, faBars);
 
-export default FontAwesomeIcon
+export default FontAwesomeIcon;

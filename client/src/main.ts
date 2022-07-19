@@ -8,14 +8,14 @@ import head from "@/plugins/vueuse-head";
 import i18n from "@/plugins/i18n";
 import FontAwesomeIcon from "./plugins/fontawesome-icons";
 
-import "@/assets/css/tailwind.css"
+import "@/assets/css/tailwind.css";
 const app = createApp(App);
 
 // font awesome icons
-app.component('font-awesome-icon', FontAwesomeIcon)
+app.component("font-awesome-icon", FontAwesomeIcon);
 
 // internationalization
-i18n(app)
+i18n(app);
 
 // core plugins
 app.use(head).use(pinia).use(router);
