@@ -5,8 +5,8 @@ const pageData = {
 };
 </script>
 <template>
-  <main>
-    <header class="text-center my-4">
+  <main class="mx-6 md:mx-12">
+    <header class="text-center my-4 flex flex-col items-center">
       <h1>Default Font Sizes</h1>
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
@@ -15,7 +15,6 @@ const pageData = {
         <h2>Heading Text</h2>
       </header>
       <h1>An H1 Title</h1>
-      <h2>An H2 Title</h2>
       <h2>An H2 Title</h2>
       <h3>An H3 Title</h3>
       <h4>An H4 Title</h4>
@@ -34,6 +33,13 @@ const pageData = {
         </p>
       </div>
       <div class="my-4 flex flex-wrap gap-4 lg:gap-8 justify-center">
+        <nav>
+          <h4>Ul in Nav</h4>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+          </ul>
+        </nav>
         <div>
           <h4>Unordered List</h4>
           <ul>
@@ -91,7 +97,7 @@ const pageData = {
 <style lang="postcss">
 /* We can still use our own classes in the template and apply tailwind styles down here. This keeps the inline code a bit cleaner and looks great when you use vscodes sfc split editors  */
 .large-section {
-  @apply my-8;
+  @apply my-8 flex flex-col;
 }
 
 .section-header {
