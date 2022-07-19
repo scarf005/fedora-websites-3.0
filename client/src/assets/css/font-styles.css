@@ -1,0 +1,49 @@
+/* --------------------- */
+/* Global Font Settings */
+/* --------------------- */
+@layer base {
+  /* Heading Text Family */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    @apply font-display;
+  }
+  /* Body Text Family */
+  a,
+  p,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  figcaption,
+  blockquote {
+    @apply font-sans;
+  }
+  /* Code Text Family */
+  code,
+  pre {
+    @apply font-mono;
+  }
+
+  /* --------- */
+  /* Font Sizes */
+  /* --------- */
+  h1 {
+    @apply text-4xl md:text-4xl xl:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-3xl lg:text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl lg:text-3xl font-semibold;
+  }
+  p a li {
+    @apply sm:text-base lg:text-xl;
+  }
+}

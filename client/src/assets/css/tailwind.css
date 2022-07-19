@@ -1,5 +1,9 @@
+@import "font-imports/montserrat.css";
+@import "font-imports/open-sans.css";
+@import "font-imports/source-code-pro.css";
+@import "font-styles.css";
+
+/* Tailwind Essentials */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* TODO: Add base styles  with @layer base {} */
