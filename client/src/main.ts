@@ -6,9 +6,18 @@ import router from "@/router";
 import pinia from "@/plugins/pinia";
 import head from "@/plugins/vueuse-head";
 import i18n from "@/plugins/i18n";
-// use plugins and mount application
+import FontAwesomeIcon from "./plugins/fontawesome-icons";
+
 const app = createApp(App);
 
+// font awesome icons
+app.component('font-awesome-icon', FontAwesomeIcon)
+
+// internationalization
+i18n(app)
+
+// core plugins
 app.use(head).use(pinia).use(router);
 
-i18n(app.mount("#app"));
+// mount app
+app.mount("#app");
