@@ -10,10 +10,4 @@ import { faFedora } from "@fortawesome/free-brands-svg-icons";
 // add icons to the library here
 library.add(faFedora, faBars);
 
-/*export default function (app: any) {
-  app.component("font-awesome-icon", FontAwesomeIcon)
-  return app;
-}
-
-*/
 export default FontAwesomeIcon
