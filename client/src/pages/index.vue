@@ -42,7 +42,7 @@ const pageData = {
         </nav>
         <div>
           <h4>Unordered List</h4>
-          <ul class="marker:text-blue">
+          <ul class="marker:text-blue marker:text-5xl">
             <li>An item</li>
             <li>An item</li>
             <li>An item</li>
