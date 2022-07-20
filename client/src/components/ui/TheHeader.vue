@@ -1,6 +1,6 @@
 <script setup>
-import TheNavLogo from './TheNavLogo.vue';
-import TheNav from './TheNav.vue';
+import TheNavLogo from "./TheNavLogo.vue";
+import TheNav from "./TheNav.vue";
 
 // TODO: Programmatically set the nav logo's text to change depending on the specific page and router **Design Not finished yet**
 </script>
