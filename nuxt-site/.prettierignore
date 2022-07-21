@@ -1,0 +1,5 @@
+# Ignore Auto generated files
+node_modules/
+dist/
+.output/
+.nuxt/
