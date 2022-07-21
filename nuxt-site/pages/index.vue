@@ -6,11 +6,11 @@
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
     <section class="large-section">
-      <header class="section-header flex">
+      <header class="section-header flex mx-auto">
         <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
-      <div>
+      <div class="mx-auto">
         <h1>An H1 Title</h1>
         <h2>An H2 Title</h2>
         <h3>An H3 Title</h3>
@@ -81,12 +81,14 @@
           </code>
           </pre>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 w-full md:w-1/2 my-4">
-        <h4 class="col-span-full text-center mb-4">Buttons</h4>
-        <button class="w-fit my-2">Button 1</button>
-        <button class="w-fit my-2">Button 2</button>
-        <button class="w-fit my-2">Button 3</button>
-        <button class="w-fit my-2">Button 4</button>
+      <div class="grid grid-cols-2 md:grid-cols-4 w-full md:w-1/2 my-4 items-center">
+        <h4 class="col-span-full text-center mb-2">Buttons</h4>
+        <p class="col-span-full text-center mb-4">In <code>pages/index.vue</code> you can see how the default color and
+          it's hover background color are overriden.</p>
+        <button class="w-fit my-2">Default</button>
+        <button class="w-fit my-2 bg-magenta hover:bg-magenta/[0.6]">bg-magenta</button>
+        <button class="w-fit my-2 bg-green hover:bg-green/[0.6]">bg-green</button>
+        <button class="w-fit my-2 bg-purple hover:bg-purple/[0.6]">bg-purple</button>
       </div>
     </section>
     <section class="flex flex-col items-center">
