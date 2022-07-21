@@ -6,7 +6,8 @@
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
     <section class="large-section">
-      <header class="section-header">
+      <header class="section-header flex">
+        <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
       <h1>An H1 Title</h1>
@@ -37,7 +38,7 @@
         </nav>
         <div>
           <h4>Unordered List</h4>
-          <ul class="marker:text-blue marker:text-5xl">
+          <ul class="marker:text-blue marker:text-2xl">
             <li>An item</li>
             <li>An item</li>
             <li>An item</li>
@@ -63,11 +64,11 @@
         </div>
       </div>
     </section>
-    <section class="large-section">
+    <section class="large-section flex flex-col items-center">
       <header class="section-header">
         <h2>Code Blocks and Buttons</h2>
       </header>
-      <div>
+      <div class="my-4">
         <h4>Code Blocks</h4>
         <pre>
           <code>
@@ -78,12 +79,28 @@
           </code>
           </pre>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 w-full md:w-1/2 my-4">
         <h4 class="col-span-full text-center">Buttons</h4>
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-        <button>Button 4</button>
+        <button class="w-fit">Button 1</button>
+        <button class="w-fit">Button 2</button>
+        <button class="w-fit">Button 3</button>
+        <button class="w-fit">Button 4</button>
+      </div>
+    </section>
+    <section class="flex flex-col items-center">
+      <header class="section-header">
+        <h2>Icons</h2>
+        <p>
+          Font Awesome 6 icons are hosted in the
+          <code>assets/icons/</code> directory. They are read from the nuxt
+          module <code>nuxt-icons</code> and can be implemented using PascalCase
+          as seen in the following code block.
+        </p>
+      </header>
+      <div>
+        <div class="flex justify-around">
+          <font-awesome-icon icon="fa-solid fa-user-secret" />
+        </div>
       </div>
     </section>
   </main>
