@@ -10,17 +10,19 @@
         <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
-      <h1>An H1 Title</h1>
-      <h2>An H2 Title</h2>
-      <h3>An H3 Title</h3>
-      <h4>An H4 Title</h4>
-      <h5>An H5 Title</h5>
+      <div>
+        <h1>An H1 Title</h1>
+        <h2>An H2 Title</h2>
+        <h3>An H3 Title</h3>
+        <h4>An H4 Title</h4>
+        <h5>An H5 Title</h5>
+      </div>
     </section>
     <section class="large-section">
       <header class="section-header">
         <h2>Non Heading Text</h2>
       </header>
-      <div class="mb-2">
+      <div class="mb-8 mx-auto">
         <h4>Paragaph Text</h4>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
@@ -69,7 +71,7 @@
         <h2>Code Blocks and Buttons</h2>
       </header>
       <div class="my-4">
-        <h4>Code Blocks</h4>
+        <h4 class="text-center mb-4">Code Blocks</h4>
         <pre>
           <code>
             .example-class {
@@ -80,26 +82,37 @@
           </pre>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 w-full md:w-1/2 my-4">
-        <h4 class="col-span-full text-center">Buttons</h4>
-        <button class="w-fit">Button 1</button>
-        <button class="w-fit">Button 2</button>
-        <button class="w-fit">Button 3</button>
-        <button class="w-fit">Button 4</button>
+        <h4 class="col-span-full text-center mb-4">Buttons</h4>
+        <button class="w-fit my-2">Button 1</button>
+        <button class="w-fit my-2">Button 2</button>
+        <button class="w-fit my-2">Button 3</button>
+        <button class="w-fit my-2">Button 4</button>
       </div>
     </section>
     <section class="flex flex-col items-center">
       <header class="section-header">
         <h2>Icons</h2>
         <p>
-          Font Awesome 6 icons are hosted in the
-          <code>assets/icons/</code> directory. They are read from the nuxt
-          module <code>nuxt-icons</code> and can be implemented using PascalCase
-          as seen in the following code block.
+          Font Awesome Icons are hosted through the <a
+            href="https://fontawesome.com/docs/web/use-with/vue/use-with">Font Awesome Nuxt Plugin</a>. It is configured
+          in the <code>~/plugins/fontawesome.js</code> file.
         </p>
       </header>
-      <div>
-        <div class="flex justify-around">
+      <div class="flex my-4">
+        <div class="flex flex-wrap gap-4 max-w-lg mr-8">
+          <p><em>Apply a fontawesome icon using this syntax (just remember to use proper brackets, they are not being
+              used
+              here otherwise vue would render the icon)</em></p>
+          <pre>
+            <code>
+              font-awesome-icon icon="fa-solid fa-bars"
+            </code>
+          </pre>
+        </div>
+        <div class="flex flex-col gap-4 md:gap-8 text-5xl mb-8">
           <font-awesome-icon icon="fa-solid fa-user-secret" />
+          <font-awesome-icon icon="fa-brands fa-fedora" />
+          <font-awesome-icon icon="fa-regular fa-chess-rook" />
         </div>
       </div>
     </section>
