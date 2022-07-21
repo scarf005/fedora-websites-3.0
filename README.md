@@ -1,11 +1,54 @@
-# fedora-websites-3.0 Client README
+# fedora-websites-3.0
 
-This readme is specific to the frontend for Fedora Websites 3.0.
+- Upcoming Major Tasks:
+  - Set up issue tracking and progress board
+  - Outline contributor guidelines
+  - Set up team roles
+  - Assign Tasks
 
-## Basic Setup and Usage
-- clone [fedora-websites-3.0](https://gitlab.com/lilyx13/fedora-websites-3.0)
+## General Vue Setup Stuff
+- vscode extensions:
+  - [volar](https://github.com/johnsoncodehk/volar) (recommended to install from extensions menu)
+  - [Steps to set up take over mode for better typescript support](https://github.com/johnsoncodehk/volar/discussions/471)
+- [codium rpm alternative to vscode](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo) 
+  - For those who want to not use a microsoft code editor but still want the plugins **and** a functioning integrated terminal
+- Or use vscode. Flatpak versions are generally fine as well, however the limited integrated terminal can cause issues
+- [Check out the Vue Documentation for Vue syntax](https://vuejs.org/)
+- For Nuxt particular details, [View the Nuxt 3 Documentation](https://v3.nuxtjs.org/guide/concepts/introduction)
+### Linting and Formating
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
+- [eslint-prettier](https://github.com/prettier/eslint-config-prettier)
+
+### Style and CSS
+- [Tailwindcss editor setup](https://tailwindcss.com/docs/editor-setup)
+- a postcss plugin is required if you use `<style lang="postcss"></style>` in your vue components 
+- [Check out Tailwind's Documentation for help](https://tailwindcss.com/)
+---
+
+## Nuxt Site Setup and Usage
+This was set up on July 20th as the team voted on home for fedora's static frontend pages
+
+- Install and Run Instructions:
+  - `cd nuxt-site`: all commands specific to nuxt need to be ran from inside the nuxt folder
+  - `npm install`: to install the project dependencies
+  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server
+  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendereds for routes for static hosting 
+  - [`npm run build](https://v3.nuxtjs.org/api/commands/build): to create output directory for production
+- [Nuxt Configuration](https://v3.nuxtjs.org/api/configuration/nuxt.config)
+  - Nuxt manages much of it's functionality inside the `nuxt.config.ts` file. 
+
+---
+
+## Vanilla Vue Setup and Usage
+
+This is the original project folder
+
 - cd into `client/`
 - run `npm install` to install packages
 - run `npm run dev` for a live development server
 - to clean up formatting, run `npm run format` to clean up all files (except node_modules)
 - the linter is giving a parsing error for unexpected token. This doesn't seem to be effecting anything and is likely a configuration issue.
+- This was set up prior to creating nuxt-site/. Some of the filename conventions are a bit different and more generic. 
+  - It still uses file based routing, however components need to be imported
+  - use `@vueuse/head` plugin for handling page metadata
