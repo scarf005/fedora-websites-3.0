@@ -17,4 +17,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
+  buildAssetsDir: '/fedora-websites-3.0/_nuxt/',
+  app: {
+    baseURL: '/fedora-websites-3.0/',
+    buildAssetsDir: '/fedora-websites-3.0/_nuxt/',
+  },
 });
