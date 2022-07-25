@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  repo: fedora/fedora-websites-3.0
+  name: gitlab
+  repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
   branch: cms-dev
 local_backend: true
 # publish_mode: editorial_workflow
@@ -26,40 +26,87 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 # File Collection for individual Pages
-  - name: "pages"
-    label: "Pages"
+  - label: "Pages"
+    name: "pages"
     files:
-     - label: "Workstation Index"
-       name: "workstation"
-       file: "content/editions/workstation/index.json"
-       fields:
-         - label: "Hero Section "
-           name: "hero"
-           fields:
-            - { label: "Hero Title", name: "title", widget: "string" }
-            - { label: "Hero Description", name: "description", widget: "text" } 
-            - { label: "Latest Release", name: "release", widget: "number" }
-            - { label: "Hero Image", name: "image", widget: "image"}
-            -  label: "Calls to Action"
-               name: "cta"
-               widget: "object"
-               fields:
-                - { label: "Text", name: "text", widget: "string" }
-                - { label: "URL", name: "url", widget: "string" }
-         - label: "Workstation Info"
-           name: "info"
-           fields:
-            - { label: "Section Title", name: "title", widget: "String" }
-            - label: "Reasons to use Fedora"
-              name: "reasons"
-              widget: "list"
-              fields: 
+
+      - label: "Workstation Index Page"
+        name: "index"
+        file: "site/content/editions/workstation/index.yml"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+             - { label: "Hero Title", name: "title", widget: "string" }
+             - { label: "Hero Description", name: "description", widget: "text" } 
+             - { label: "Latest Release", name: "release", widget: "number" }
+             - { label: "Hero Image", name: "image", widget: "image"}
+             -  label: "Calls to Action"
+                name: "cta"
+                widget: "list"
+                fields:
+                 - { label: "Text", name: "text", widget: "string" }
+                 - { label: "URL", name: "url", widget: "string" }
+          - label: "Workstation Info"
+            name: "info"
+            widget: "object"
+            fields:
+             - { label: "Section Title", name: "title", widget: "string" }
+             - label: "Reasons to use Fedora"
+               name: "reasons"
+               widget: "list"
+               fields: 
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Text", name: "text", widget: "text" }
-     - label: "Workstation Features"
-       name: "features"
-       widget: "list"
-       fields:
-         - { label: "Title", name: "title", widget: "string" }
-         - { label: "Text", name: "text", widget: "text" }
-         - { label: "Image", name: "image", widget: "image" }
+          - label: "Workstation Features Section"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" } 
+          - label: "Developer Benefits Section"
+            name: "benefits"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Get Started Cards"
+                name: "started-cards"
+                widget: "list"
+                fields:
+                 - { label: "Title", name: "title", widget: "string" }
+                 - { label: "Text", name: "text", widget: "text" }
+                 - { label: "Image", name: "image", widget: "image" }
+                 - label: "CTA"
+                   name: "cta"
+                   widget: "object"
+                   fields:
+                    - { label: "Text", name: "text", widget: "text" } 
+                    - { label: "Text", name: "text", widget: "text" }
+          - label: "Built by You Section"
+            name: "community"
+            fields:
+              - { label: "Title", name: "text", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Working Group", name: "working-group", widget: "text"}
+              - label: "Built by You"
+                name: "built-by-you"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string"}
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "Get Started CTA"
+            name: "get-started-cta"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "CTA description", name: "description", widget: "string"}
+              - label: "CTA Action"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string"}
+                  - { label: "URL", name: "url", widget: "string"}
