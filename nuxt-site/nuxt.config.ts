@@ -1,5 +1,7 @@
 import { defineNuxtConfig } from "nuxt";
 
+const base = process.env.CI_PAGES_URL ? new URL(process.env.CI_PAGES_URL).pathname : ''
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: [
@@ -18,9 +20,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
-  buildAssetsDir: '/fedora-websites-3.0/_nuxt/',
+  buildAssetsDir: base + '/_nuxt/',
   app: {
-    baseURL: '/fedora-websites-3.0/',
-    buildAssetsDir: '/fedora-websites-3.0/_nuxt/',
+    baseURL: base,
+    buildAssetsDir: base + '/_nuxt/',
   },
 });
