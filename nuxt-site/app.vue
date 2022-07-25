@@ -6,16 +6,16 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Fedora Linux is an open source project. "
+      content: "Fedora Linux is an open source project. ",
     },
   ],
   link: [
     {
       rel: "icon",
-      href: "/favicon.ico"
-    }
-  ]
-})
+      href: "/favicon.ico",
+    },
+  ],
+});
 </script>
 <template>
   <div id="app">
