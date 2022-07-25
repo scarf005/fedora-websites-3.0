@@ -1,8 +1,65 @@
 backend:
   name: git-gateway
+  repo: fedora/fedora-websites-3.0
   branch: cms-dev
-publish_mode: editorial_workflow
+local_backend: true
+# publish_mode: editorial_workflow
 
 # Asset Organization
 media_folder: "assets/images/uploads"
 public_folder: "/images/uploads"
+
+# Collections starter code
+collections:
+# Example of a folder collection for generating blog like content
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    format: "frontmatter"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+# File Collection for individual Pages
+  - name: "pages"
+    label: "Pages"
+    files:
+     - label: "Workstation Index"
+       name: "workstation"
+       file: "content/editions/workstation/index.json"
+       fields:
+         - label: "Hero Section "
+           name: "hero"
+           fields:
+            - { label: "Hero Title", name: "title", widget: "string" }
+            - { label: "Hero Description", name: "description", widget: "text" } 
+            - { label: "Latest Release", name: "release", widget: "number" }
+            - { label: "Hero Image", name: "image", widget: "image"}
+            -  label: "Calls to Action"
+               name: "cta"
+               widget: "object"
+               fields:
+                - { label: "Text", name: "text", widget: "string" }
+                - { label: "URL", name: "url", widget: "string" }
+         - label: "Workstation Info"
+           name: "info"
+           fields:
+            - { label: "Section Title", name: "title", widget: "String" }
+            - label: "Reasons to use Fedora"
+              name: "reasons"
+              widget: "list"
+              fields: 
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Text", name: "text", widget: "text" }
+     - label: "Workstation Features"
+       name: "features"
+       widget: "list"
+       fields:
+         - { label: "Title", name: "title", widget: "string" }
+         - { label: "Text", name: "text", widget: "text" }
+         - { label: "Image", name: "image", widget: "image" }
