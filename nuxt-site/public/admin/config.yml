@@ -29,10 +29,9 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-
       - label: "Workstation Index Page"
         name: "index"
-        file: "site/content/editions/workstation/index.yml"
+        file: "content/editions/workstation/index.yml"
         fields:
           - label: "Hero Section"
             name: "hero"
@@ -41,7 +40,7 @@ collections:
              - { label: "Hero Title", name: "title", widget: "string" }
              - { label: "Hero Description", name: "description", widget: "text" } 
              - { label: "Latest Release", name: "release", widget: "number" }
-             - { label: "Hero Image", name: "image", widget: "image"}
+             - { label: "Hero Image", name: "image", widget: "image", optional: true}
              -  label: "Calls to Action"
                 name: "cta"
                 widget: "list"
@@ -65,39 +64,40 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" } 
+              - { label: "Image", name: "image", widget: "image", optional: true } 
           - label: "Developer Benefits Section"
             name: "benefits"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image", name: "image", widget: "image", optional: true }
               - label: "Get Started Cards"
                 name: "started-cards"
                 widget: "list"
                 fields:
                  - { label: "Title", name: "title", widget: "string" }
                  - { label: "Text", name: "text", widget: "text" }
-                 - { label: "Image", name: "image", widget: "image" }
+                 - { label: "Image", name: "image", widget: "image", optional: true }
                  - label: "CTA"
                    name: "cta"
                    widget: "object"
                    fields:
                     - { label: "Text", name: "text", widget: "text" } 
-                    - { label: "Text", name: "text", widget: "text" }
-          - label: "Built by You Section"
+                    - { label: "URL", name: "url", widget: "text" }
+          - label: "Working Group Info"
             name: "community"
+            widget: "object"
             fields:
               - { label: "Title", name: "text", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Working Group", name: "working-group", widget: "text"}
-              - label: "Built by You"
-                name: "built-by-you"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string"}
-                  - { label: "Text", name: "text", widget: "text" }
+          - label: "Built by You"
+            name: "built-by-you"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Text", name: "text", widget: "text" }
           - label: "Get Started CTA"
             name: "get-started-cta"
             widget: "object"
