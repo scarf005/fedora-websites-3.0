@@ -11,8 +11,7 @@ export default defineNuxtConfig({
   buildModules: [
     "@pinia/nuxt"
   ],
-  // TODO: Finish configuring Strapi to set up with this repo
-  modules: ["@nuxtjs/tailwindcss", /* "@nuxtjs/strapi" */],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
   // Plugin Configurations
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
