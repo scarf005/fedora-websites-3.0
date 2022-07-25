@@ -8,9 +8,7 @@ export default defineNuxtConfig({
     "~/components/ui",
     "~/components/utilities",
   ],
-  buildModules: [
-    "@pinia/nuxt"
-  ],
+  buildModules: ["@pinia/nuxt"],
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
   // Plugin Configurations
   tailwindcss: {
