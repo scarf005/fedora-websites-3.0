@@ -1,6 +1,7 @@
 hero:
   title: The leading linux desktop
-  description: A beautiful, high-quality desktop, built on the latest open source
+  description:
+    A beautiful, high-quality desktop, built on the latest open source
     technology. Trusted, powerful, easy.
   release: 36
   cta:
@@ -11,7 +12,8 @@ info:
   title: Why Fedora Workstation?
   reasons:
     - title: Reliable
-      text: Each version is updated for 18 months, and upgrades between versions are
+      text:
+        Each version is updated for 18 months, and upgrades between versions are
         quick and easy.
 features:
   - title: Fantastic Apps
@@ -21,7 +23,8 @@ features:
     image: /images/uploads/logo-sponsored-by-red-hat.png
 benefits:
   - title: Virtualization made easy
-    text: Boxes takes the guesswork out of using virtual machines - just choose the
+    text:
+      Boxes takes the guesswork out of using virtual machines - just choose the
       OS you want to install and it will take care of the details
     started-cards:
       - title: Fedora Developer
@@ -43,7 +46,8 @@ community:
     on the Workstation Working Group Website
 built-by-you:
   - title: Report & discuss issues
-    text: You can view, file, and discuss Fedora Workstation issues on the Fedora
+    text:
+      You can view, file, and discuss Fedora Workstation issues on the Fedora
       Workstation issue tracker.
 get-started-cta:
   description: Try it now.
