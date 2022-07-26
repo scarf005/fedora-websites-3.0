@@ -11,7 +11,7 @@ public_folder: "/images/uploads"
 
 # Collections starter code
 collections:
-# Example of a folder collection for generating blog like content
+  # Example of a folder collection for generating blog like content
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
@@ -25,7 +25,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-# File Collection for individual Pages
+  # File Collection for individual Pages
   - label: "Pages"
     name: "pages"
     files:
@@ -37,76 +37,108 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-             - { label: "Hero Title", name: "title", widget: "string" }
-             - { label: "Hero Description", name: "description", widget: "text" } 
-             - { label: "Latest Release", name: "release", widget: "number" }
-             - { label: "Hero Image", name: "image", widget: "image", optional: true}
-             -  label: "Calls to Action"
+              - { label: "Hero Title", name: "title", widget: "string" }
+              - {
+                  label: "Hero Description",
+                  name: "description",
+                  widget: "text",
+                }
+              - { label: "Latest Release", name: "release", widget: "number" }
+              - {
+                  label: "Hero Image",
+                  name: "image",
+                  widget: "image",
+                  optional: true,
+                }
+              - label: "Calls to Action"
                 name: "cta"
                 widget: "list"
                 fields:
-                 - { label: "Text", name: "text", widget: "string" }
-                 - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
           - label: "Workstation Info"
             name: "info"
             widget: "object"
             fields:
-             - { label: "Section Title", name: "title", widget: "string" }
-             - label: "Reasons to use Fedora"
-               name: "reasons"
-               widget: "list"
-               fields: 
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Text", name: "text", widget: "text" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Reasons to use Fedora"
+                name: "reasons"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
           - label: "Workstation Features Section"
             name: "features"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", optional: true } 
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  optional: true,
+                }
           - label: "Developer Benefits Section"
             name: "benefits"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", optional: true }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  optional: true,
+                }
               - label: "Get Started Cards"
                 name: "started-cards"
                 widget: "list"
                 fields:
-                 - { label: "Title", name: "title", widget: "string" }
-                 - { label: "Text", name: "text", widget: "text" }
-                 - { label: "Image", name: "image", widget: "image", optional: true }
-                 - label: "CTA"
-                   name: "cta"
-                   widget: "object"
-                   fields:
-                    - { label: "Text", name: "text", widget: "text" } 
-                    - { label: "URL", name: "url", widget: "text" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      optional: true,
+                    }
+                  - label: "CTA"
+                    name: "cta"
+                    widget: "object"
+                    fields:
+                      - { label: "Text", name: "text", widget: "text" }
+                      - { label: "URL", name: "url", widget: "text" }
           - label: "Working Group Info"
             name: "community"
             widget: "object"
             fields:
               - { label: "Title", name: "text", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Working Group", name: "working-group", widget: "text"}
+              - {
+                  label: "Working Group",
+                  name: "working-group",
+                  widget: "text",
+                }
           - label: "Built by You"
             name: "built-by-you"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
           - label: "Get Started CTA"
             name: "get-started-cta"
             widget: "object"
             fields:
               - { label: "Logo", name: "logo", widget: "image" }
-              - { label: "CTA description", name: "description", widget: "string"}
+              - {
+                  label: "CTA description",
+                  name: "description",
+                  widget: "string",
+                }
               - label: "CTA Action"
                 name: "cta"
                 widget: "object"
                 fields:
-                  - { label: "Text", name: "text", widget: "string"}
-                  - { label: "URL", name: "url", widget: "string"}
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
