@@ -1,3 +1,3 @@
 ---
-title: Hopefully this doesn't ruin things
+title: Less Ruinous
 ---
