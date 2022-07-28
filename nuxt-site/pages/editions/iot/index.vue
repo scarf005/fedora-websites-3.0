@@ -8,6 +8,6 @@
   <!-- add content to the page like this -->
   <main>
     <p>{{ data[0].title }}</p>
-    <img :src="`${$config.app.baseURL +'/'+ data[0].hero.replace('public/', '')}`" :alt="data[0].name" class="mt-8" />
+    <img :src="`${$config.app.baseURL +'/'+ data[0].hero.replace('nuxt-site/public/', '')}`" :alt="data[0].name" class="mt-8" />
   </main>
 </template>
