@@ -4,141 +4,65 @@ backend:
   branch: cms-dev
 local_backend: true
 # publish_mode: editorial_workflow
+# Add Fedora Logo to the UI
+
+display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
 
 # Asset Organization
-media_folder: "assets/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/images"
+public_folder: "/images/"
 
 # Collections starter code
 collections:
-  # Example of a folder collection for generating blog like content
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    format: "frontmatter"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
   # File Collection for individual Pages
-  - label: "Pages"
-    name: "pages"
+  - label: "Workstation Edition"
+    name: "workstation"
     files:
-      - label: "Workstation Index Page"
+      - label: "Index Page"
         name: "index"
         file: "content/editions/workstation/index.yml"
         fields:
-          - label: "Hero Section"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Hero Title", name: "title", widget: "string" }
-              - {
-                  label: "Hero Description",
-                  name: "description",
-                  widget: "text",
-                }
-              - { label: "Latest Release", name: "release", widget: "number" }
-              - {
-                  label: "Hero Image",
-                  name: "image",
-                  widget: "image",
-                  optional: true,
-                }
-              - label: "Calls to Action"
-                name: "cta"
-                widget: "list"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
-          - label: "Workstation Info"
-            name: "info"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - label: "Reasons to use Fedora"
-                name: "reasons"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Text", name: "text", widget: "text" }
-          - label: "Workstation Features Section"
-            name: "features"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-              - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
-                  optional: true,
-                }
-          - label: "Developer Benefits Section"
-            name: "benefits"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-              - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
-                  optional: true,
-                }
-              - label: "Get Started Cards"
-                name: "started-cards"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Text", name: "text", widget: "text" }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      optional: true,
-                    }
-                  - label: "CTA"
-                    name: "cta"
-                    widget: "object"
-                    fields:
-                      - { label: "Text", name: "text", widget: "text" }
-                      - { label: "URL", name: "url", widget: "text" }
-          - label: "Working Group Info"
-            name: "community"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "text", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - {
-                  label: "Working Group",
-                  name: "working-group",
-                  widget: "text",
-                }
-          - label: "Built by You"
-            name: "built-by-you"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-          - label: "Get Started CTA"
-            name: "get-started-cta"
-            widget: "object"
-            fields:
-              - { label: "Logo", name: "logo", widget: "image" }
-              - {
-                  label: "CTA description",
-                  name: "description",
-                  widget: "string",
-                }
-              - label: "CTA Action"
-                name: "cta"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
+          - label: "Title"
+            name: "title"
+            widget: "string" 
+      - label: "Download Page"
+        name: "download"
+        file: "content/editions/workstation/download.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+  - label: "IoT Edition"
+    name: "iot"
+    files: 
+      - label: "Index Page"
+        name: "index"
+        file: "content/editions/iot/index.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+      - label: "Download Page"
+        name: "download"
+        file: "content/editions/iot/download.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+  - label: "Server Edition"
+    name: "server"
+    files: 
+      - label: "Index Page"
+        name: "index"
+        file: "content/editions/server/index.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+      - label: "Download Page"
+        name: "download"
+        file: "content/editions/server/download.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"  
