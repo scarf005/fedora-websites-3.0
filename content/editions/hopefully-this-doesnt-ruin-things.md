@@ -1,3 +1,0 @@
----
-title: Less Ruinous
----
