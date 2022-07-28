@@ -1,7 +1,7 @@
 <script setup>
   // pull data from the content directory like this
   const { data } = await useAsyncData('page-data', () => {
-    return queryContent("blog/bar").find()
+    return queryContent("editions/foo").find()
   })
 </script>
 <template>
