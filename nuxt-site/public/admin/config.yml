@@ -10,8 +10,8 @@ local_backend: true
 
 display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
 # Asset Organization
-media_folder: "public/assets/images/"
-public_folder: "public/assets/images/"
+media_folder: "nuxt-site/public/assets/images/"
+public_folder: "nuxt-site/public/assets/images/"
 
 # Collections starter code
 collections:
