@@ -7,10 +7,9 @@ local_backend: true
 # Add Fedora Logo to the UI
 
 display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
-
 # Asset Organization
 media_folder: "assets/images"
-public_folder: "/images/"
+public_folder: "assets/images/"
 
 # Collections starter code
 collections:
@@ -32,6 +31,7 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"
+  # IOT Edition Pages
   - label: "IoT Edition"
     name: "iot"
     files: 
@@ -39,9 +39,8 @@ collections:
         name: "index"
         file: "content/editions/iot/index.yml"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image"}
       - label: "Download Page"
         name: "download"
         file: "content/editions/iot/download.yml"
@@ -66,12 +65,4 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"  
-  - label: "Editions"
-    name: "edition"
-    folder: "content/editions"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Headline", name: "headline", widget: "string"}
+  
