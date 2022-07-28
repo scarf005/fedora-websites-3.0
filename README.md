@@ -1,5 +1,9 @@
 # fedora-websites-3.0
 
+Test deploy at: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
+Admin panel to add content: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin
+
+
 - Upcoming Major Tasks:
   - Set up issue tracking and progress board
   - Outline contributor guidelines
