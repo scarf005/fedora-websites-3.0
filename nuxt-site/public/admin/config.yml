@@ -66,3 +66,12 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"  
+  - label: "Editions"
+    name: "edition"
+    folder: "content/editions"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Headline", name: "headline", widget: "string"}
