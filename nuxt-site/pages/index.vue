@@ -6,20 +6,23 @@
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
     <section class="large-section">
-      <header class="section-header">
+      <header class="section-header flex mx-auto">
+        <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
-      <h1>An H1 Title</h1>
-      <h2>An H2 Title</h2>
-      <h3>An H3 Title</h3>
-      <h4>An H4 Title</h4>
-      <h5>An H5 Title</h5>
+      <div class="mx-auto">
+        <h1>An H1 Title</h1>
+        <h2>An H2 Title</h2>
+        <h3>An H3 Title</h3>
+        <h4>An H4 Title</h4>
+        <h5>An H5 Title</h5>
+      </div>
     </section>
     <section class="large-section">
       <header class="section-header">
         <h2>Non Heading Text</h2>
       </header>
-      <div class="mb-2">
+      <div class="mb-8 mx-auto">
         <h4>Paragaph Text</h4>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
@@ -37,7 +40,7 @@
         </nav>
         <div>
           <h4>Unordered List</h4>
-          <ul class="marker:text-blue marker:text-5xl">
+          <ul class="marker:text-blue marker:text-2xl">
             <li>An item</li>
             <li>An item</li>
             <li>An item</li>
@@ -63,12 +66,12 @@
         </div>
       </div>
     </section>
-    <section class="large-section">
+    <section class="large-section flex flex-col items-center">
       <header class="section-header">
         <h2>Code Blocks and Buttons</h2>
       </header>
-      <div>
-        <h4>Code Blocks</h4>
+      <div class="my-4">
+        <h4 class="text-center mb-4">Code Blocks</h4>
         <pre>
           <code>
             .example-class {
@@ -78,12 +81,41 @@
           </code>
           </pre>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <h4 class="col-span-full text-center">Buttons</h4>
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-        <button>Button 4</button>
+      <div class="grid grid-cols-2 md:grid-cols-4 w-full md:w-1/2 my-4 items-center">
+        <h4 class="col-span-full text-center mb-2">Buttons</h4>
+        <p class="col-span-full text-center mb-4">In <code>pages/index.vue</code> you can see how the default color and
+          it's hover background color are overriden.</p>
+        <button class="w-fit my-2">Default</button>
+        <button class="w-fit my-2 bg-magenta hover:bg-magenta/[0.6]">bg-magenta</button>
+        <button class="w-fit my-2 bg-green hover:bg-green/[0.6]">bg-green</button>
+        <button class="w-fit my-2 bg-purple hover:bg-purple/[0.6]">bg-purple</button>
+      </div>
+    </section>
+    <section class="flex flex-col items-center">
+      <header class="section-header">
+        <h2>Icons</h2>
+        <p>
+          Font Awesome Icons are hosted through the <a
+            href="https://fontawesome.com/docs/web/use-with/vue/use-with">Font Awesome Nuxt Plugin</a>. It is configured
+          in the <code>~/plugins/fontawesome.js</code> file.
+        </p>
+      </header>
+      <div class="flex my-4">
+        <div class="flex flex-wrap gap-4 max-w-lg mr-8">
+          <p><em>Apply a fontawesome icon using this syntax (just remember to use proper brackets, they are not being
+              used
+              here otherwise vue would render the icon)</em></p>
+          <pre>
+            <code>
+              font-awesome-icon icon="fa-solid fa-bars"
+            </code>
+          </pre>
+        </div>
+        <div class="flex flex-col gap-4 md:gap-8 text-5xl mb-8">
+          <font-awesome-icon icon="fa-solid fa-user-secret" />
+          <font-awesome-icon icon="fa-brands fa-fedora" />
+          <font-awesome-icon icon="fa-regular fa-chess-rook" />
+        </div>
       </div>
     </section>
   </main>
