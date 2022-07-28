@@ -20,14 +20,14 @@ collections:
     folder: 'nuxt-site/content/blog'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Hero', name: 'hero', widget: 'image' }
+
   # File Collection for individual Pages
   - label: "Workstation Edition"
     name: "workstation"
