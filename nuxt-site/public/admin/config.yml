@@ -15,6 +15,14 @@ public_folder: "public/assets/images/"
 
 # Collections starter code
 collections:
+  - name: posts
+    preview_path: "blog/{{year}}/{{month}}/{{slug}}"
+    folder: "content/editions"
+    fields:
+        - label: "Title"
+          name: "title"
+          widget: "string"
+    label: "Posts"
   # File Collection for individual Pages
   - label: "Workstation Edition"
     name: "workstation"
@@ -67,4 +75,3 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"  
-  
