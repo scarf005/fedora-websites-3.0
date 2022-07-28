@@ -15,9 +15,9 @@ public_folder: "public/assets/images/"
 
 # Collections starter code
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'nuxt-site/content/blog'
+  - name: 'editions'
+    label: 'Editions'
+    folder: 'nuxt-site/content/editions'
     format: 'frontmatter'
     create: true
     editor:
