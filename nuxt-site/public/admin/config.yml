@@ -1,6 +1,8 @@
 backend:
   name: gitlab
   repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
+  auth_type: pkce # Required for pkce
+  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings  
   branch: cms-dev
 local_backend: true
 # publish_mode: editorial_workflow
