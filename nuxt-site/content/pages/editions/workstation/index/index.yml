@@ -1,0 +1,18 @@
+title: Fedora Workstation
+description: The flagship desktop distribution of the Fedora Project
+header:
+  title: The leading Linux desktop.
+  details:
+    - detail: Latest Release
+    - detail: "36"
+    - detail: Release Notes<https://getfedora.org>
+  cta:
+    - text: Download
+      url: https://getfedora.org
+section:
+  - header:
+      sectionTitle: Why Fedora Workstation?
+    content:
+      list:
+        - title: Reliable
+        - title: Free & Private
