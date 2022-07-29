@@ -2,8 +2,9 @@ backend:
   name: gitlab
   repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
   auth_type: pkce # Required for pkce
-  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings  
+  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
   branch: cms-dev
+  squash_merges: true
 local_backend: true
 # publish_mode: editorial_workflow
 # Add Fedora Logo to the UI
@@ -15,68 +16,135 @@ public_folder: "nuxt-site/public/assets/images/"
 
 # Collections starter code
 collections:
-  - name: 'editions'
-    label: 'Editions'
-    folder: 'nuxt-site/content/editions'
-    format: 'frontmatter'
+  - label: "Pages"
+    label_singular: "Page"
+    name: "page"
+    folder: "/content/pages"
+    format: "yml"
+    slug: "{{slug}}"
+    identifier_field: name
     create: true
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Hero', name: 'hero', widget: 'image' }
-
-  # File Collection for individual Pages
-  - label: "Workstation Edition"
-    name: "workstation"
-    files:
-      - label: "Index Page"
-        name: "index"
-        file: "content/editions/workstation/index.yml"
+      - { label: "Page Title", name: "title", widget: "string", required: false }
+      - { label: "Page Description", name: "description", widget: "text", required: false }
+      - label: "Header"
+        name: "header"
+        widget: "object"
+        collapsed: true
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string" 
-      - label: "Download Page"
-        name: "download"
-        file: "content/editions/workstation/download.yml"
+          - { label: "Header Title", name: "title", widget: "string", required: false }
+          - { label: "Header Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Extra Details"
+            name: "details"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+          - label: "Images"
+            name: "images"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: false}
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string", required: false}
+              - { label: "Background Image", name: "backgroundImage", widget: "image", required: false}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Url", name: "url", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image", required: false }
+      # Page Content Section
+      - label: "Page Sections"  
+        label_singular: "Page Section"
+        name: "section"
+        widget: "list"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-  # IOT Edition Pages
-  - label: "IoT Edition"
-    name: "iot"
-    files: 
-      - label: "Index Page"
-        name: "index"
-        file: "content/editions/iot/index.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Hero Image", name: "heroImage", widget: "image"}
-      - label: "Download Page"
-        name: "download"
-        file: "content/editions/iot/download.yml"
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-  - label: "Server Edition"
-    name: "server"
-    files: 
-      - label: "Index Page"
-        name: "index"
-        file: "content/editions/server/index.yml"
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-      - label: "Download Page"
-        name: "download"
-        file: "content/editions/server/download.yml"
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"  
+          # Section Header
+          - label: "Section Header"
+            name: "header"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Section Heading", name: "sectionTitle", widget: "string", required: false }
+              - { label: "Section Subtitle", name: "sectionSubtitle", widget: "text", required: false }
+              - label: "Header Image"
+                name: "headerImage"
+                widget: "object"
+                required: false
+                collapsed: true
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "altText", widget: "string", required: false }
+          # Section Content
+          - label: "Section Content"
+            name: "content"
+            widget: "object"
+            collapsed: true
+            fields:
+              # Nested Content Types
+              - label: "List of Info"
+                label_singular: "List Item"
+                name: "list"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "List Item Title", name: "title", widget: "string", required: false }
+                  - { label: "List Item Description", name: "description", widget: "markdown", minimal: true, required: false }
+                  - label: "List Item Image"
+                    name: "image"
+                    widget: "object"
+                    required: false
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "image", widget: "image", required: false }
+                      - { label: "Alt Text", name: "altText", widget: "string", required: false }
+              - label: "Cards"
+                name: "card"
+                label_singular: "Card"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Card Title", name: "title", widget: "string", required: false }
+                  - { label: "Card Subtitle", name: "subtitle", widget: "markdown", minimal: true, required: false }
+                  - label: "Card Image"
+                    name: "image"
+                    widget: "object"
+                    required: false
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "image", widget: "image", required: false }
+                      - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                  - label: "Card CTA"
+                    name: "cta"
+                    widget: "object"
+                    required: false
+                    collapsed: true
+                    fields:
+                      - { label: "Text", name: "text", widget: "string", required: false }
+                      - { label: "Url", name: "url", widget: "string", required: false }
+              # Basic Content Types
+              - { label: "Section Text", name: "text", widget: "markdown", minimal: true, required: false }
+              - label: "Section Image"
+                name: "image"
+                widget: "object"
+                required: false
+                collapsed: true
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "altText", widget: "string", required: false }
+              - label: "Call to Action"
+                name: "cta"
+                widget: "list"
+                required: false
+                fields:
+                 - { label: "Text", name: "text", widget: "string" }
+                 - { label: "Url", name: "url", widget: "string" }
+                 - { label: "Icon", name: "icon", widget: "image", required: false }
+          # Section background Image
+          - { label: "Background Image", name: "backgroundImage", widget: "image", required: false}
