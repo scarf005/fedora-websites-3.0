@@ -27,9 +27,15 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Page Title", name: "title", widget: "string", required: false }
-      - { label: "Page Description", name: "description", widget: "text", required: false }
-      - label: "Header"
+      - label: "Metadata"
+        name: "metadata"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - { label: "Page Title", name: "title", widget: "string", required: false }
+          - { label: "Page Description", name: "description", widget: "text", required: false }
+      - label: "Page Header"
         name: "header"
         widget: "object"
         collapsed: true
@@ -45,8 +51,8 @@ collections:
           - label: "Images"
             name: "images"
             widget: "object"
-            required: false
             collapsed: true
+            required: false
             fields:
               - { label: "Image", name: "image", widget: "image", required: false}
               - { label: "Image Alt Text", name: "imageAlt", widget: "string", required: false}
@@ -54,16 +60,18 @@ collections:
           - label: "Call to Action"
             name: "cta"
             widget: "list"
+            collapsed: true
             required: false
             fields:
-              - { label: "Text", name: "text", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
+              - { label: "Text", name: "text", widget: "string", required: false }
+              - { label: "Url", name: "url", widget: "string", required: false }
               - { label: "Icon", name: "icon", widget: "image", required: false }
       # Page Content Section
       - label: "Page Sections"  
         label_singular: "Page Section"
         name: "section"
         widget: "list"
+        collapsed: true
         fields:
           # Section Header
           - label: "Section Header"
@@ -76,8 +84,8 @@ collections:
               - label: "Header Image"
                 name: "headerImage"
                 widget: "object"
-                required: false
                 collapsed: true
+                required: false
                 fields:
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Alt Text", name: "altText", widget: "string", required: false }
@@ -92,6 +100,7 @@ collections:
                 label_singular: "List Item"
                 name: "list"
                 widget: "list"
+                collapsed: true
                 required: false
                 fields:
                   - { label: "List Item Title", name: "title", widget: "string", required: false }
@@ -99,8 +108,8 @@ collections:
                   - label: "List Item Image"
                     name: "image"
                     widget: "object"
-                    required: false
                     collapsed: true
+                    required: false
                     fields:
                       - { label: "Image", name: "image", widget: "image", required: false }
                       - { label: "Alt Text", name: "altText", widget: "string", required: false }
@@ -133,8 +142,8 @@ collections:
               - label: "Section Image"
                 name: "image"
                 widget: "object"
-                required: false
                 collapsed: true
+                required: false
                 fields:
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Alt Text", name: "altText", widget: "string", required: false }
