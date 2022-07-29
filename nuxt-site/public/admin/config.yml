@@ -26,15 +26,12 @@ collections:
     create: true
     editor:
       preview: false
+    nested: 
+      depth: 5
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     fields:
-      - label: "Metadata"
-        name: "metadata"
-        widget: "object"
-        collapsed: true
-        required: false
-        fields:
-          - { label: "Page Title", name: "title", widget: "string", required: false }
-          - { label: "Page Description", name: "description", widget: "text", required: false }
+      - { label: "Page Title", name: "title", widget: "string", required: false }
+      - { label: "Page Description", name: "description", widget: "text", required: false }
       - label: "Page Header"
         name: "header"
         widget: "object"
@@ -43,11 +40,11 @@ collections:
           - { label: "Header Title", name: "title", widget: "string", required: false }
           - { label: "Header Subtitle", name: "subtitle", widget: "text", required: false }
           - label: "Extra Details"
+            label_singular: "Extra Detail"
             name: "details"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false }
-              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
           - label: "Images"
             name: "images"
             widget: "object"
