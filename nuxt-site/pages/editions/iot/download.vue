@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+const { data } = await useAsyncData('page-data', () => {
+  return queryContent("/pages/iot/download").find()
+})
+
+</script>
 <template>
-  <p>{{ $route.fullPath }}</p>
+  <p>{{ data }}</p>
 </template>

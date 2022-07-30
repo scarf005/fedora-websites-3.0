@@ -1,6 +1,6 @@
 <script setup>
 const { data } = await useAsyncData('page-data', () => {
-  return queryContent("/pages/editions/workstation/download").find()
+  return queryContent("/pages/editions/server/home").find()
 })
 
 
