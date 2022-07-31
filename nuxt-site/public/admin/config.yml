@@ -19,7 +19,7 @@ collections:
   - label: "Pages"
     label_singular: "Page"
     name: "page"
-    folder: "/content/pages"
+    folder: "nuxt-site/content/pages"
     format: "yml"
     slug: "{{slug}}"
     identifier_field: name
