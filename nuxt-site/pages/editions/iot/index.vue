@@ -1,13 +1,16 @@
 <script setup>
   // pull data from the content directory like this
   const { data } = await useAsyncData('page-data', () => {
-    return queryContent("editions/iot-edition").find()
+    return queryContent("pages/editions/iot/home").find()
   })
 </script>
 <template>
-  <!-- add content to the page like this -->
   <main>
-    <p>{{ data[0].title }}</p>
-    <img :src="`${$config.app.baseURL +'/'+ data[0].hero.replace('nuxt-site/public/', '')}`" :alt="data[0].name" class="mt-8" />
+    <FpHero
+      :title="data[0].header.title"
+      :subtitle="data[0].header.subtitle"
+      :image="data[0].header.images.image"
+      :background="data[0].header.images.backgroundImage"
+    />
   </main>
 </template>
