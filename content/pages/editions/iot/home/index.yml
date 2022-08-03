@@ -4,4 +4,4 @@ header:
   subtitle: A lightweight yet powerful and scalable OS
   images:
     image: nuxt-site/public/assets/images/iot.png
-    backgroundImage: nuxt-site/public/assets/images/hero-image-texture.png.jpg
+    backgroundImage: nuxt-site/public/assets/images/hero-1.jpg
