@@ -1,7 +1,7 @@
 title: Fedora IoT Index
 header:
-  title: Fedora IoT is groovy
-  subtitle: test one two three
+  title: The solid foundation for IoT ecosystems
+  subtitle: A lightweight yet powerful and scalable OS
   images:
     image: nuxt-site/public/assets/images/iot.png
-    backgroundImage: nuxt-site/public/assets/images/fedora-29-background-download-high-quality-desktop-wallpapers.jpg
+    backgroundImage: nuxt-site/public/assets/images/hero-image-texture.png.jpg
