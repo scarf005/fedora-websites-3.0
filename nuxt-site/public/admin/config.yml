@@ -14,6 +14,11 @@ display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websi
 media_folder: "nuxt-site/public/assets/images/"
 public_folder: "nuxt-site/public/assets/images/"
 
+i18n:
+  structure: multiple_files
+  locales: [en, fr]
+  default_locale: en
+
 # Collections starter code
 collections:
   - label: "Pages"
@@ -29,6 +34,7 @@ collections:
     nested: 
       depth: 5
     meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    i18n: true
     fields:
       - { label: "Page Title", name: "title", widget: "string", required: false }
       - { label: "Page Description", name: "description", widget: "text", required: false }
