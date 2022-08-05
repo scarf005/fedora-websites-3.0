@@ -15,7 +15,7 @@ defineProps({
   >
     <slot />
     <div
-      class="bg-white -rotate-6 h-72 absolute z-0 -bottom-40 sm:bottom-0"
+      class="hidden sm:block bg-white -rotate-6 h-72 absolute z-0 -bottom-40 sm:-bottom-10"
       style="width: 110%"
     ></div>
   </div>
