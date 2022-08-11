@@ -1,0 +1,15 @@
+title: Fedora IoT is great
+description: test
+header:
+  title: Test
+  subtitle: test
+  cta:
+    - text: do it
+      url: https://google.com
+  images:
+    image: nuxt-site/public/assets/images/iot.png
+    backgroundImage: nuxt-site/public/assets/images/fedora-29-background-download-high-quality-desktop-wallpapers.jpg
+section:
+  - header:
+      sectionTitle: test
+      sectionSubtitle: test
