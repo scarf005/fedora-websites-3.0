@@ -38,9 +38,12 @@ This was set up on July 20th as the team voted on home for fedora's static front
   - `npm install`: to install the project dependencies
   - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendereds for routes for static hosting 
-  - [`npm run build](https://v3.nuxtjs.org/api/commands/build): to create output directory for production
+
 - [Nuxt Configuration](https://v3.nuxtjs.org/api/configuration/nuxt.config)
   - Nuxt manages much of it's functionality inside the `nuxt.config.ts` file. 
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
 
 ---
 

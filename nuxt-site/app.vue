@@ -1,18 +1,22 @@
 <script setup>
+const base = process.env.CI_PAGES_URL
+  ? new URL(process.env.CI_PAGES_URL).pathname
+  : "";
+
 useHead({
-  title: "The Fedora Project",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   charset: "utf-8",
   meta: [
     {
       name: "description",
-      content: "Fedora Linux is an open source project. ",
+      content: "Fedora Linux is an open source project.",
     },
   ],
   link: [
     {
       rel: "icon",
-      href: "/favicon.ico",
+      type: 'image/x-icon',
+      href: base + "/favicon.ico",
     },
   ],
 });
