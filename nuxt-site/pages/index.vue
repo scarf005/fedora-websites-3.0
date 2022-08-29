@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+  useHead({
+  title: "Fedora Homepage | The Fedora Project",
+});
+</script>
 <template>
   <main class="mx-6 md:mx-12">
     <header class="text-center my-4 flex flex-col items-center">

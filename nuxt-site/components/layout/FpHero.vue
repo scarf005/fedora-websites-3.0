@@ -11,12 +11,9 @@ defineProps({
         $config.app.baseURL + '/' + background.replace('nuxt-site/public/', '')
       })`,
     }"
-    class="pt-6 pb-30 bg-cover"
+    style="min-height: 60vh"
+    class="pt-6 pb-30 bg-cover bg-bottom"
   >
     <slot />
-    <div
-      class="hidden sm:block bg-white -rotate-6 h-72 absolute z-0 -bottom-40 sm:-bottom-10"
-      style="width: 110%"
-    ></div>
   </div>
 </template>
