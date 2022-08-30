@@ -20,12 +20,13 @@ Today I (lilyx) took a macro approach to our components. Starting by drafting ou
       - `TextDisplay.vue`
 
 ## July 19
+
 - After looking further at other UI kits and considering our generic components. I think that we would benefit from using the prefix `f` instead of `app`
   - benefits:
     - less typing
     - leaner naming convention
     - looks cool
-    - f is for fedora ==> good branding if we ever deploy this as our own component library 
+    - f is for fedora ==> good branding if we ever deploy this as our own component library
     - clearly defines our components from general html components (`f-nav` vs `nav` vs `app-nav`)
   - downsides:
     - less common convention

@@ -18,10 +18,7 @@ defineProps({
       </p>
 
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-        <FpListItem
-          v-for="item in data.content.list"
-          v-bind="item"
-        />
+        <FpListItem v-for="item in data.content.list" v-bind="item" />
       </FpList>
     </section>
   </FpHero>

@@ -1,8 +1,10 @@
 # Netlify CMS Usage
+
 - Red Hat's yaml extension is helpful for working in the config.yml file
 - [Article on splitting up config.yml so it's more maintainable](https://www.iliascreates.com/blog/post/splitting-netlifycms-config-to-multiple-js-files/)
   - this is for us to start thinking about the long term usage of netlify cms
 - [Netlify CMS and Gitlab Authentication](https://www.netlifycms.org/docs/gitlab-backend/)
+
 ## Localhost
 
 - To run netlify cms locally for testing and setting up content fields, [follow the steps in this article](https://www.programmingbasic.com/how-to-run-netlify-cms-admin-locally)

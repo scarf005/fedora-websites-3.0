@@ -2,7 +2,7 @@ backend:
   name: gitlab
   repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
   auth_type: pkce # Required for pkce
-  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings  
+  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
   branch: develop
   squash_merges: true
 local_backend: true
@@ -31,46 +31,97 @@ collections:
     create: true
     editor:
       preview: false
-    nested: 
+    nested:
       depth: 5
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    meta: { path: { widget: string, label: "Path", index_file: "index" } }
     i18n: true
     fields:
-      - { label: "Page Title", name: "title", widget: "string", required: false }
-      - { label: "Page Description", name: "description", widget: "text", required: false }
+      - {
+          label: "Page Title",
+          name: "title",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Page Description",
+          name: "description",
+          widget: "text",
+          required: false,
+        }
       - label: "Page Header"
         name: "header"
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Header Title", name: "title", widget: "string", required: false }
-          - { label: "Header Subtitle", name: "subtitle", widget: "text", required: false }
+          - {
+              label: "Header Title",
+              name: "title",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Header Subtitle",
+              name: "subtitle",
+              widget: "text",
+              required: false,
+            }
           - label: "Extra Details"
             label_singular: "Extra Detail"
             name: "details"
             widget: "list"
             fields:
-              - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
+              - {
+                  label: "Detail",
+                  name: "detail",
+                  widget: "markdown",
+                  minimal: true,
+                  required: false,
+                }
           - label: "Images"
             name: "images"
             widget: "object"
             collapsed: true
             required: false
             fields:
-              - { label: "Image", name: "image", widget: "image", required: false}
-              - { label: "Image Alt Text", name: "imageAlt", widget: "string", required: false}
-              - { label: "Background Image", name: "backgroundImage", widget: "image", required: false}
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "Image Alt Text",
+                  name: "imageAlt",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Background Image",
+                  name: "backgroundImage",
+                  widget: "image",
+                  required: false,
+                }
           - label: "Call to Action"
             name: "cta"
             widget: "list"
             collapsed: true
             required: false
             fields:
-              - { label: "Text", name: "text", widget: "string", required: false }
+              - {
+                  label: "Text",
+                  name: "text",
+                  widget: "string",
+                  required: false,
+                }
               - { label: "Url", name: "url", widget: "string", required: false }
-              - { label: "Icon", name: "icon", widget: "image", required: false }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "image",
+                  required: false,
+                }
       # Page Content Section
-      - label: "Page Sections"  
+      - label: "Page Sections"
         label_singular: "Page Section"
         name: "section"
         widget: "list"
@@ -82,16 +133,36 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - { label: "Section Heading", name: "sectionTitle", widget: "string", required: false }
-              - { label: "Section Subtitle", name: "sectionSubtitle", widget: "text", required: false }
+              - {
+                  label: "Section Heading",
+                  name: "sectionTitle",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Section Subtitle",
+                  name: "sectionSubtitle",
+                  widget: "text",
+                  required: false,
+                }
               - label: "Header Image"
                 name: "headerImage"
                 widget: "object"
                 collapsed: true
                 required: false
                 fields:
-                  - { label: "Image", name: "image", widget: "image", required: false }
-                  - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+                  - {
+                      label: "Alt Text",
+                      name: "altText",
+                      widget: "string",
+                      required: false,
+                    }
           # Section Content
           - label: "Section Content"
             name: "content"
@@ -106,57 +177,135 @@ collections:
                 collapsed: true
                 required: false
                 fields:
-                  - { label: "List Item Title", name: "title", widget: "string", required: false }
-                  - { label: "List Item Description", name: "description", widget: "markdown", minimal: true, required: false }
+                  - {
+                      label: "List Item Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "List Item Description",
+                      name: "description",
+                      widget: "markdown",
+                      minimal: true,
+                      required: false,
+                    }
                   - label: "List Item Image"
                     name: "image"
                     widget: "object"
                     collapsed: true
                     required: false
                     fields:
-                      - { label: "Image", name: "image", widget: "image", required: false }
-                      - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                      - {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          required: false,
+                        }
+                      - {
+                          label: "Alt Text",
+                          name: "altText",
+                          widget: "string",
+                          required: false,
+                        }
               - label: "Cards"
                 name: "card"
                 label_singular: "Card"
                 widget: "list"
                 required: false
                 fields:
-                  - { label: "Card Title", name: "title", widget: "string", required: false }
-                  - { label: "Card Subtitle", name: "subtitle", widget: "markdown", minimal: true, required: false }
+                  - {
+                      label: "Card Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Card Subtitle",
+                      name: "subtitle",
+                      widget: "markdown",
+                      minimal: true,
+                      required: false,
+                    }
                   - label: "Card Image"
                     name: "image"
                     widget: "object"
                     required: false
                     collapsed: true
                     fields:
-                      - { label: "Image", name: "image", widget: "image", required: false }
-                      - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                      - {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          required: false,
+                        }
+                      - {
+                          label: "Alt Text",
+                          name: "altText",
+                          widget: "string",
+                          required: false,
+                        }
                   - label: "Card CTA"
                     name: "cta"
                     widget: "object"
                     required: false
                     collapsed: true
                     fields:
-                      - { label: "Text", name: "text", widget: "string", required: false }
-                      - { label: "Url", name: "url", widget: "string", required: false }
+                      - {
+                          label: "Text",
+                          name: "text",
+                          widget: "string",
+                          required: false,
+                        }
+                      - {
+                          label: "Url",
+                          name: "url",
+                          widget: "string",
+                          required: false,
+                        }
               # Basic Content Types
-              - { label: "Section Text", name: "text", widget: "markdown", minimal: true, required: false }
+              - {
+                  label: "Section Text",
+                  name: "text",
+                  widget: "markdown",
+                  minimal: true,
+                  required: false,
+                }
               - label: "Section Image"
                 name: "image"
                 widget: "object"
                 collapsed: true
                 required: false
                 fields:
-                  - { label: "Image", name: "image", widget: "image", required: false }
-                  - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+                  - {
+                      label: "Alt Text",
+                      name: "altText",
+                      widget: "string",
+                      required: false,
+                    }
               - label: "Call to Action"
                 name: "cta"
                 widget: "list"
                 required: false
                 fields:
-                 - { label: "Text", name: "text", widget: "string" }
-                 - { label: "Url", name: "url", widget: "string" }
-                 - { label: "Icon", name: "icon", widget: "image", required: false }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Url", name: "url", widget: "string" }
+                  - {
+                      label: "Icon",
+                      name: "icon",
+                      widget: "image",
+                      required: false,
+                    }
           # Section background Image
-          - { label: "Background Image", name: "backgroundImage", widget: "image", required: false}
+          - {
+              label: "Background Image",
+              name: "backgroundImage",
+              widget: "image",
+              required: false,
+            }

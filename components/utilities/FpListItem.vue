@@ -1,8 +1,8 @@
 <script setup>
 const props = defineProps({
   title: String,
-  description: String
-})
+  description: String,
+});
 </script>
 <template>
   <li class="w-10/12">

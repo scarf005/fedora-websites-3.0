@@ -54,6 +54,5 @@ const { data } = await useAsyncData("page-data", () => {
       />
     </section>
     <FpCommunity :data="data[0].section[2]" />
-
   </main>
 </template>

@@ -1,8 +1,8 @@
 section:
-- content:
-    list:
-    - title: På Windows eller Mac?
-    - title: På Linux eller du bara vill ha en ISO-fil?
+  - content:
+      list:
+        - title: På Windows eller Mac?
+        - title: På Linux eller du bara vill ha en ISO-fil?
 header:
   title: Ladda ner Fedora Workstation 36
 title: Fedora Workstation Nedladdningar

@@ -1,17 +1,17 @@
 header:
   details:
-  - detail: Senaste släpp
-  - detail: '36'
-  - detail: Leveransmeddelanden<https://getfedora.org>
+    - detail: Senaste släpp
+    - detail: "36"
+    - detail: Leveransmeddelanden<https://getfedora.org>
   cta:
-  - text: Ladda ned
+    - text: Ladda ned
   title: Det ledande Linux-skrivbordet.
 section:
-- content:
-    list:
-    - title: Pålitlig
-    - title: Fri & Privat
-  header:
-    sectionTitle: Varför Fedora Workstation?
+  - content:
+      list:
+        - title: Pålitlig
+        - title: Fri & Privat
+    header:
+      sectionTitle: Varför Fedora Workstation?
 description: Flaggskepps skrivbordsdistributionen från Fedora-projektet
 title: Fedora Workstation
