@@ -21,7 +21,7 @@ const { data } = await useAsyncData("page-data", () => {
       :link2="data[0].header.cta[1].url"
     />
   </FpHero>
-  <main class="flex flex-col items-center my-8">
+  <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
       <header
