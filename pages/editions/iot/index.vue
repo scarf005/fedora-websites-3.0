@@ -9,7 +9,7 @@ useHead({
 </script>
 <template>
   <main>
-    <FpHero :background="data[0].header.images.backgroundImage">
+    <FpHero :background="data[0].header.images.backgroundImage" alignment="bg-bottom">
       <FpBanner
         :title="data[0].header.title"
         :subtitle="data[0].header.subtitle"
@@ -23,7 +23,7 @@ useHead({
         :link2="data[0].header.cta[1].url"
       />
     </FpHero>
-    <FpHero :background="data[0].section[0].header.headerImage.image">
+    <FpHero :background="data[0].section[0].header.headerImage.image" alignment="bg-bottom">
       <section class="w-10/12 pt-12 mx-auto">
         <h3
           class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"

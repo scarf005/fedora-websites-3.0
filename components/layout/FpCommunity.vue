@@ -5,8 +5,8 @@ defineProps({
 </script>
 
 <template>
-  <FpHero :background="data.header.headerImage.image">
-    <section class="w-10/12 mx-auto pt-12">
+  <FpHero :background="data.header.headerImage.image" alignment="bg-top">
+    <section class="w-10/12 mx-auto py-24">
       <h2 class="text-5xl font-semibold text-fp-blue text-center mb-5">
         {{ data.header.sectionTitle }}
       </h2>

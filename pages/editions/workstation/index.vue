@@ -7,7 +7,7 @@ const { data } = await useAsyncData("page-data", () => {
 });
 </script>
 <template>
-  <FpHero :background="data[0].header.images.backgroundImage">
+  <FpHero :background="data[0].header.images.backgroundImage" alignment="bg-bottom">
     <FpBanner
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
