@@ -105,16 +105,16 @@ const open = useState("counter", () => false);
                 <ul
                   class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
                 >
-                <li v-for="item in editions" :key="item.name" class="mb-2 flex py-1 px-3">
-                    <font-awesome-icon :icon="item.icon" class="pr-4" />
+                  <li v-for="item in editions" :key="item.name" class="mb-2">
                     <a
                       :href="`${$config.app.baseURL + '/' + item.href}`"
                       :class="[
                         'text-gray-500  hover:text-fp-purple',
-                        'rounded-md text-base font-medium',
+                        'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
+                      <!-- <font-awesome-icon :icon="item.icon" /> -->
                       {{ item.name }}
                     </a>
                   </li>
@@ -139,16 +139,16 @@ const open = useState("counter", () => false);
                 <ul
                   class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
                 >
-                <li v-for="item in variants" :key="item.name" class="mb-2 flex py-1 px-3">
-                    <!-- <font-awesome-icon :icon="item.icon" class="pr-4" /> -->
+                  <li v-for="item in variants" :key="item.name" class="mb-2">
                     <a
                       :href="item.href"
                       :class="[
                         'text-gray-500  hover:text-fp-purple',
-                        'rounded-md text-base font-medium',
+                        'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
+                      <!-- <font-awesome-icon :icon="item.icon" /> -->
                       {{ item.name }}
                     </a>
                   </li>
@@ -173,16 +173,16 @@ const open = useState("counter", () => false);
                 <ul
                   class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
                 >
-                <li v-for="item in variants" :key="item.name" class="mb-2 flex py-1 px-3">
-                    <!-- <font-awesome-icon :icon="item.icon" class="pr-4" /> -->
+                  <li v-for="item in events" :key="item.name" class="mb-2">
                     <a
                       :href="`${$config.app.baseURL + '/' + item.href}`"
                       :class="[
                         'text-gray-500 hover:text-fp-purple',
-                        'rounded-md text-base font-medium',
+                        'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
+                      <!-- <font-awesome-icon :icon="item.icon" /> -->
                       {{ item.name }}
                     </a>
                   </li>
