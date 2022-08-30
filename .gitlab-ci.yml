@@ -1,7 +1,6 @@
 image: node
 
 before_script:
-  - cd nuxt-site
   - npm install
 
 cache:
@@ -11,11 +10,12 @@ cache:
 pages:
   script:
     - npm run generate
-    - mv .output/public ../public
+    - rm -rf ./public
+    - mv .output/public ./public
 
   artifacts:
+    expire_in: 1 day # unless marked as keep from job page
     paths:
       - public
   only:
-    - main
-    - develop
+    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.

@@ -12,9 +12,9 @@ const { data } = await useAsyncData("page-data", () => {
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
       :image="data[0].header.images.image"
-      color="text-green"
-      border="border-green"
-      background="bg-green"
+      color="text-fp-green"
+      border="border border-fp-green"
+      background="text-white bg-fp-green"
       :cta1="data[0].header.cta[0].text"
       :link1="data[0].header.cta[0].url"
       :cta2="data[0].header.cta[1].text"
@@ -28,7 +28,7 @@ const { data } = await useAsyncData("page-data", () => {
         class="grid md:grid-cols-2 gap-4 md:w-11/12 mx-auto text-center md:text-left"
       >
         <h3
-          class="text-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
+          class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
         >
           {{ data[0].section[0].header.sectionTitle }}
         </h3>
@@ -41,6 +41,13 @@ const { data } = await useAsyncData("page-data", () => {
       </FpList>
     </section>
     <section class="mt-32">
+      <div class="text-5xl font-extrabold text-center mb-12">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        >
+          Features for everyone.
+        </span>
+      </div>
       <FpBenefit
         v-for="item in data[0].section[1].content.list"
         v-bind="item"

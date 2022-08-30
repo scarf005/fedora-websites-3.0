@@ -3,12 +3,29 @@
 * Test deploy at: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
 * Admin panel to add content: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin
 
+---
+
+## Nuxt Site Setup and Usage
+This was set up on July 20th as the team voted on home for fedora's static frontend pages
+
+- Install and Run Instructions:
+  - `npm install`: to install the project dependencies
+  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server
+  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting 
+
+- [Nuxt Configuration](https://v3.nuxtjs.org/api/configuration/nuxt.config)
+  - Nuxt manages much of it's functionality inside the `nuxt.config.ts` file. 
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+---
 
 - Upcoming Major Tasks:
-  - Set up issue tracking and progress board
   - Outline contributor guidelines
   - Set up team roles
   - Assign Tasks
+
+---
 
 ## General Vue Setup Stuff
 - vscode extensions:
@@ -28,21 +45,6 @@
 - [Tailwindcss editor setup](https://tailwindcss.com/docs/editor-setup)
 - a postcss plugin is required if you use `<style lang="postcss"></style>` in your vue components 
 - [Check out Tailwind's Documentation for help](https://tailwindcss.com/)
----
-
-## Nuxt Site Setup and Usage
-This was set up on July 20th as the team voted on home for fedora's static frontend pages
-
-- Install and Run Instructions:
-  - `cd nuxt-site`: all commands specific to nuxt need to be ran from inside the nuxt folder
-  - `npm install`: to install the project dependencies
-  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server
-  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendereds for routes for static hosting 
-
-- [Nuxt Configuration](https://v3.nuxtjs.org/api/configuration/nuxt.config)
-  - Nuxt manages much of it's functionality inside the `nuxt.config.ts` file. 
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
 
 ---
@@ -56,6 +58,6 @@ This is the original project folder
 - run `npm run dev` for a live development server
 - to clean up formatting, run `npm run format` to clean up all files (except node_modules)
 - the linter is giving a parsing error for unexpected token. This doesn't seem to be effecting anything and is likely a configuration issue.
-- This was set up prior to creating nuxt-site/. Some of the filename conventions are a bit different and more generic. 
+- This was set up prior to creating the Nuxt version. Some of the filename conventions are a bit different and more generic. 
   - It still uses file based routing, however components need to be imported
   - use `@vueuse/head` plugin for handling page metadata

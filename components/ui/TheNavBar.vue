@@ -1,25 +1,33 @@
 <script setup>
 const editions = [
-  { name: "Workstation", href: "editions/workstation", icon: "fa fa-desktop" },
-  { name: "IoT", href: "editions/iot", icon: "fa fa-microchip" },
-  { name: "Server", href: "editions/server", icon: "fa fa-server" },
+  {
+    name: "Fedora Workstation",
+    href: "editions/workstation",
+    icon: "fa fa-desktop",
+  },
+  { name: "Fedora IoT", href: "editions/iot", icon: "fa fa-microchip" },
+  { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
 ];
 const events = [
   { name: "Flock To Fedora", href: "flocktofedora", icon: "fa fa-egg" },
 ];
 
-const flavors = [
-  { name: "Spins", href: "https://spins.fedoraproject.org/" },
-  { name: "Labs", href: "https://labs.fedoraproject.org/" },
-  { name: "Arm", href: "https://arm.fedoraproject.org/" },
-  { name: "Silverblue", href: "https://silverblue.fedoraproject.org/" },
-  { name: "Kinoite", href: "https://kinoite.fedoraproject.org/" },
+const variants = [
+  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
+  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
+  { name: "Fedora Spins", href: "https://spins.fedoraproject.org/" },
+  { name: "Fedora Labs", href: "https://labs.fedoraproject.org/" },
+  { name: "Fedora Arm", href: "https://arm.fedoraproject.org/" },
+  {
+    name: "Fedora CoreOS",
+    href: "https://getfedora.org/en/coreos",
+  },
 ];
 const open = useState("counter", () => false);
 </script>
 
 <template>
-  <nav class="bg-blue fixed w-full z-50">
+  <nav class="bg-fp-blue fixed w-full z-50">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -27,7 +35,7 @@ const open = useState("counter", () => false);
           <button
             @click="open = !open"
             type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -83,7 +91,7 @@ const open = useState("counter", () => false);
                 <a
                   class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
                 >
-                  <span class="mr-1">Official</span>
+                  <span class="mr-1">Editions</span>
                   <svg
                     class="fill-white h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,22 +103,20 @@ const open = useState("counter", () => false);
                   </svg>
                 </a>
                 <ul
-                  class="absolute hidden text-gray-700 py-2 border border-blue w-48 bg-white group-hover:block rounded"
+                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
                 >
-                  <li v-for="item in editions" :key="item.name">
+                  <li v-for="item in editions" :key="item.name" class="mb-2">
                     <a
-                    :href="`${$config.app.baseURL + '/' + item.href}`"
+                      :href="`${$config.app.baseURL + '/' + item.href}`"
                       :class="[
-                        item.current
-                          ? 'bg-gray-900 text-gray-500'
-                          : 'text-gray-500 hover:bg-gray-700 hover:text-purple',
+                        'text-gray-500  hover:text-fp-purple',
                         'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
                       <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}</a
-                    >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -119,7 +125,7 @@ const open = useState("counter", () => false);
                 <a
                   class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
                 >
-                  <span class="mr-1">Community</span>
+                  <span class="mr-1">Variants</span>
                   <svg
                     class="fill-white h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -131,23 +137,20 @@ const open = useState("counter", () => false);
                   </svg>
                 </a>
                 <ul
-                  class="absolute hidden text-gray-700 py-2 border border-blue w-48 bg-white group-hover:block rounded"
+                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
                 >
-                  <li v-for="item in flavors" :key="item.name">
+                  <li v-for="item in variants" :key="item.name" class="mb-2">
                     <a
                       :href="item.href"
-
                       :class="[
-                        item.current
-                          ? 'bg-gray-900 text-gray-500'
-                          : 'text-gray-500 hover:bg-gray-700 hover:text-purple',
+                        'text-gray-500  hover:text-fp-purple',
                         'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
                       <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}</a
-                    >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -168,22 +171,20 @@ const open = useState("counter", () => false);
                   </svg>
                 </a>
                 <ul
-                  class="absolute hidden text-gray-700 py-2 border border-blue bg-white w-48 group-hover:block rounded"
+                  class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
                 >
-                  <li v-for="item in events" :key="item.name">
+                  <li v-for="item in events" :key="item.name" class="mb-2">
                     <a
                       :href="`${$config.app.baseURL + '/' + item.href}`"
                       :class="[
-                        item.current
-                          ? 'bg-gray-900 text-gray-500'
-                          : 'text-gray-500 hover:bg-gray-700 hover:text-purple',
+                        'text-gray-500 hover:text-fp-purple',
                         'px-3 py-4 rounded-md text-base font-medium',
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
                       <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}</a
-                    >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -203,7 +204,7 @@ const open = useState("counter", () => false);
           :class="[
             item.current
               ? 'bg-gray-900 text-white'
-              : 'text-white hover:bg-gray-700 hover:text-purple',
+              : 'text-white hover:text-fp-purple',
             'px-3 py-2 rounded-md text-sm font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"
@@ -216,7 +217,7 @@ const open = useState("counter", () => false);
           :class="[
             item.current
               ? 'bg-gray-900 text-white'
-              : 'text-white hover:bg-gray-700 hover:text-purple',
+              : 'text-white  hover:text-fp-purple',
             'px-3 py-2 rounded-md text-sm font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"

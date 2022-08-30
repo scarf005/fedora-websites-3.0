@@ -1,4 +1,5 @@
 <script setup>
+import FpBtn from "../utilities/FpBtn.vue";
 defineProps({
   title: String,
   subtitle: String,
@@ -14,31 +15,25 @@ defineProps({
 </script>
 <template>
   <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 text-center">
-    <h1 class="text-6xl tracking-tight text-white">
+    <h1 class="text-white font-semibold">
       <span class="block">{{ title }}</span>
     </h1>
-    <p class="mt-3 mx-auto text-3xl text-white">
+    <h2 class="text-white mt-3">
       {{ subtitle }}
-    </p>
+    </h2>
   </div>
   <div class="flex justify-center my-5">
     <FpImage :image="image" />
   </div>
-  <div class="mt-5 flex px-4 justify-center">
-    <a :href="link1" class="flex flex-1 justify-end">
-      <button class="mx-2 shadow sm:px-12 sm:py-4 z-10" :class="background">
-        {{ cta1 }}
-      </button>
-    </a>
-    <a :href="link2" class="flex-1">
-      <button
-        class="mx-2 shadow bg-white border sm:px-12 sm:py-4 z-10"
-        :class="[color, border]"
-      >
-        <!-- <font-awesome-icon icon="fa-brands fa-youtube" /> -->
-        {{ cta2 }}
-      </button>
-    </a>
+  <div class="mt-5 flex justify-center spacing-1">
+    <FpBtn :url="link1" :color="[background, 'text-center']">
+      {{ cta1 }}
+    </FpBtn>
+    <div class="w-2"/>
+    <FpBtn :url="link2" :color="[color, border, 'text-center bg-white']">
+      <!-- <font-awesome-icon icon="fa-brands fa-youtube" /> -->
+      {{ cta2 }}
+    </FpBtn>
   </div>
   <div class="mt-5 flex justify-center px-4">
     <a class="mx-2 px-12 py-4 z-10 cursor-pointer font-semibold" :class="color">
