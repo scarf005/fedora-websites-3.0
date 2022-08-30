@@ -53,27 +53,6 @@ useHead({
         </FpList>
       </section>
     </div>
-    <FpHero :background="data[0].section[2].header.headerImage.image">
-      <section class="w-10/12 mx-auto pt-12">
-        <div class="w-1/2 mx-auto">
-          <h2 class="text-center text-fp-blue mx-auto mb-5">
-            {{ data[0].section[2].header.sectionTitle }}
-          </h2>
-          <h4 class="text-center text-fp-blue mx-auto mb-5">
-            {{ data[0].section[2].header.subtitle1 }}
-          </h4>
-          <h6 class="text-center text-fp-blue mx-auto mb-8">
-            {{ data[0].section[2].header.subtitle2 }}
-          </h6>
-        </div>
-
-        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-          <FpListItem
-            v-for="item in data[0].section[2].content.list"
-            v-bind="item"
-          />
-        </FpList>
-      </section>
-    </FpHero>
+    <FpCommunity :data="data[0].section[2]" />
   </main>
 </template>

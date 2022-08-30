@@ -70,9 +70,15 @@ section:
             image: public/assets/images/workstation_outofthebox.png
   - header:
       sectionTitle: Built By You
-      sectionSubtitle: The Fedora Project envisions a world where everyone can benefit
+      headerImage:
+        image: public/assets/images/iot_flock_background.jpg
+      subtitle1: The Fedora Project envisions a world where everyone can benefit
         from free and open source software built by inclusive, welcoming, and
         open-minded communities.
+      subtitle2: Fedora IoT is created by a team in the Fedora community called the
+        IoT Working Group. It is comprised of official members who have decision
+        making powers, as well as other contributors. Learn more on the IoT
+        Working Group website.
     content:
       text: Fedora Workstation is created by a teamm in the Fedora community called
         the **Workstation Working Group**. It is comprised of official members

@@ -53,5 +53,7 @@ const { data } = await useAsyncData("page-data", () => {
         v-bind="item"
       />
     </section>
+    <FpCommunity :data="data[0].section[2]" />
+
   </main>
 </template>
