@@ -1,6 +1,5 @@
 <template>
-  <footer class="text-center lg:text-left bg-gray-200 text-gray-600 min-w-full"
-    style="background-color: rgba(0, 0, 0, 0);">
+  <footer class="text-center lg:text-left bg-gray-200 text-gray-600 min-w-full">
     
     <div class="mx-6 py-10 text-center md:text-left">
       <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

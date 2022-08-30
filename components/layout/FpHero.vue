@@ -8,7 +8,7 @@ defineProps({
   <div
     :style="{
       backgroundImage: `url(${
-        $config.app.baseURL + '/' + background.replace('nuxt-site/public/', '')
+        $config.app.baseURL + '/' + background.replace('public/', '')
       })`,
     }"
     style="min-height: 60vh"

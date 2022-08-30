@@ -1,7 +1,7 @@
 title: Fedora Workstation
 description: The flagship desktop distribution of the Fedora Project
 header:
-  title: The leading Linux desktop
+  title: The leading Linux desktop.
   details:
     - detail: Latest Release
     - detail: "36"
@@ -14,8 +14,8 @@ header:
   subtitle: A beautiful, high-quality desktop, built on the latest open source
     technology. Trusted, powerful, easy.
   images:
-    image: nuxt-site/public/assets/images/workstation_framework.png
-    backgroundImage: nuxt-site/public/assets/images/workstation_background.jpg
+    image: public/assets/images/workstation_framework.png
+    backgroundImage: public/assets/images/workstation_background.jpg
 section:
   - header:
       sectionTitle: Why Fedora Workstation?
@@ -48,26 +48,26 @@ section:
             need. Includes exciting new open source apps as well as familiar
             apps from other platforms.
           image:
-            image: nuxt-site/public/assets/images/workstation_software_center.png
+            image: public/assets/images/workstation_software_center.png
         - title: Workstation speaks your language
           description: Thanks to a global community of translators, Workstation is
             available in many languages.
           image:
-            image: nuxt-site/public/assets/images/workstation_languages.png
+            image: public/assets/images/workstation_languages.png
         - title: Turn the lights down low
           description: Flip a switch to turn on dark mode and give your eyes a break from
             the day. Use night light to reduce screen glare and help with sleep.
           image:
-            image: nuxt-site/public/assets/images/workstation_nightlight.png
+            image: public/assets/images/workstation_nightlight.png
         - title: Calendar Integration
           description: Bring your online calendar to the desktop with online accounts
           image:
-            image: nuxt-site/public/assets/images/workstation_calendar.png
+            image: public/assets/images/workstation_calendar.png
         - title: Helpful out of the box
           description: Fedora Workstation includes a great set of utilities, like Clocks,
             Weather and Maps.
           image:
-            image: nuxt-site/public/assets/images/workstation_outofthebox.png
+            image: public/assets/images/workstation_outofthebox.png
   - header:
       sectionTitle: Built By You
       sectionSubtitle: The Fedora Project envisions a world where everyone can benefit

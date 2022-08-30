@@ -15,7 +15,7 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: 'image/x-icon',
+      type: "image/x-icon",
       href: base + "/favicon.ico",
     },
   ],
@@ -25,7 +25,9 @@ useHead({
 <template>
   <div id="app">
     <the-nav-bar />
-    <nuxt-page />
+    <div class="pt-12">
+      <nuxt-page />
+    </div>
     <the-footer />
   </div>
 </template>

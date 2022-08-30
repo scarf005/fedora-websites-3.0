@@ -10,7 +10,7 @@
   h5,
   h6,
   button {
-    @apply font-display text-gray-dark;
+    @apply font-display;
   }
   /* Body Text Family */
   a,
@@ -23,7 +23,7 @@
   li,
   figcaption,
   blockquote {
-    @apply font-sans text-gray-dark;
+    @apply font-sans;
   }
   /* Code Text Family */
   code,
@@ -81,13 +81,6 @@
   /* Indirect Text */
 
   pre {
-    @apply sm:text-lg bg-gray-dark text-white max-w-fit whitespace-pre-line rounded px-8;
-  }
-
-  /* TODO: Consult Design team about how we want to handle buttons  */
-  /* TODO: Consult Dev team about handling link buttons and actual buttons */
-  button {
-    /* This shows how we can effect opacity of a color directly */
-    @apply font-medium bg-blue-light hover:bg-blue-light/[0.6] text-white ease-in-out duration-300 hover:ease-in-out max-w-fit rounded py-2 px-4 lg:py-3 lg:px-6;
+    @apply sm:text-lg bg-gray-800 text-white max-w-fit whitespace-pre-line rounded px-8;
   }
 }
