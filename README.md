@@ -1,15 +1,17 @@
 # fedora-websites-3.0
 
-- Test deploy at: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
-- Admin panel to add content: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin
+- Test deployed at: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
+- Netlify CMS to edit content: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin
 
 ---
 
-## Nuxt Site Setup and Usage
+## Development: Getting Started
 
-This was set up on July 20th as the team voted on home for fedora's static frontend pages
+Note: To edit the content of this site you do not need this guide. Simply go to the CMS above. To develop new features or add new pages, read on.
 
-- Install and run:
+This repository was set up on July 20th as the team voted on Fedora's static frontend pages. It runs on the principles of basic `create-nuxt-app` CLI commands.
+
+- Clone this repository and run in the folder:
 
   - `npm install`: to install the project dependencies
   - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
