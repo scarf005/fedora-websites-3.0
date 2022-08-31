@@ -7,7 +7,7 @@
 
 ## Development: Getting Started
 
-Note: To edit the content of this site you do not need this guide. Simply go to the CMS above. To develop new features or add new pages, read on.
+Note: To edit the content of this site you do not need this guide - simply go to the CMS above. To develop new features or add new pages, read on.
 
 This repository was set up on July 20th as the team voted on Fedora's static frontend pages. It runs on the principles of basic `create-nuxt-app` CLI commands.
 
