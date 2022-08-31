@@ -9,8 +9,16 @@ const editions = [
   { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
 ];
 const community = [
-  { name: "Flock To Fedora", href: "flocktofedora", icon: "fa fa-egg" },
-  { name: "Discuss Fedora", href: "https://discuss.fedoraproject.org/" },
+  {
+    name: "Flock To Fedora",
+    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
+    icon: "fa fa-egg",
+  },
+  {
+    name: "Discuss Fedora",
+    href: "https://discuss.fedoraproject.org/",
+    icon: "fa fa-egg",
+  },
 ];
 
 const support = [
@@ -137,7 +145,7 @@ const open = useState("navbaropen", () => false);
                 >
                   <li v-for="item in community" :key="item.name" class="mb-2">
                     <a
-                      :href="`${$config.app.baseURL + '/' + item.href}`"
+                      :href="item.href"
                       :class="[
                         'text-gray-500 hover:text-fp-purple',
                         'px-3 py-4 rounded-md text-base font-medium',
@@ -171,7 +179,7 @@ const open = useState("navbaropen", () => false);
                 >
                   <li v-for="item in support" :key="item.name" class="mb-2">
                     <a
-                      :href="`${$config.app.baseURL + '/' + item.href}`"
+                      :href="item.href"
                       :class="[
                         'text-gray-500 hover:text-fp-purple',
                         'px-3 py-4 rounded-md text-base font-medium',
