@@ -16,7 +16,7 @@ const community = [
   },
   {
     name: "Discuss Fedora",
-    href: "https://discuss.fedoraproject.org/",
+    href: "https://discussion.fedoraproject.org/",
     icon: "fa fa-egg",
   },
 ];
@@ -259,6 +259,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
+        <br/>
         <div v-for="item in variants" :key="item.name">
           <a
             :href="item.href"
@@ -272,6 +273,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
+        <br/>
         <div v-for="item in events" :key="item.name">
           <a
             :href="item.href"
@@ -285,6 +287,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
+        <br/>
         <div v-for="item in community" :key="item.name">
           <a
             :href="item.href"
