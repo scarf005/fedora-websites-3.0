@@ -31,7 +31,7 @@ defineProps({
     </FpBtn>
     <div class="w-2" />
     <FpBtn :url="link2" :color="[color, border, 'text-center bg-white']">
-      <!-- <font-awesome-icon icon="fa-brands fa-youtube" /> -->
+      <font-awesome-icon icon="fa-brands fa-youtube" />
       {{ cta2 }}
     </FpBtn>
   </div>
