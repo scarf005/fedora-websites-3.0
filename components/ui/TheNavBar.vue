@@ -261,7 +261,7 @@ const open = useState("navbaropen", () => false);
         </div>
         <div v-for="item in variants" :key="item.name">
           <a
-            :href="`${$config.app.baseURL + '/' + item.href}`"
+            :href="item.href"
             :class="[
               item.current
                 ? 'bg-gray-900 text-white'
@@ -274,7 +274,20 @@ const open = useState("navbaropen", () => false);
         </div>
         <div v-for="item in events" :key="item.name">
           <a
-            :href="`${$config.app.baseURL + '/' + item.href}`"
+            :href="item.href"
+            :class="[
+              item.current
+                ? 'bg-gray-900 text-white'
+                : 'text-white  hover:text-fp-purple',
+              'px-3 py-2 rounded-md text-sm font-medium',
+            ]"
+            :aria-current="item.current ? 'page' : undefined"
+            >{{ item.name }}</a
+          >
+        </div>
+        <div v-for="item in community" :key="item.name">
+          <a
+            :href="item.href"
             :class="[
               item.current
                 ? 'bg-gray-900 text-white'
