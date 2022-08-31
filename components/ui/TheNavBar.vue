@@ -23,7 +23,7 @@ const variants = [
     href: "https://getfedora.org/en/coreos",
   },
 ];
-const open = useState("counter", () => false);
+const open = useState("navbaropen", () => false);
 </script>
 
 <template>
