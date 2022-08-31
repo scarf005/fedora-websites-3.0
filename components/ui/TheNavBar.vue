@@ -255,12 +255,13 @@ const open = useState("navbaropen", () => false);
       <div class="px-2 pt-2 pb-3 space-y-1">
         <div>
           <a
-            class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
+            class="text-white text-sm px-3 py-2 rounded inline-flex items-center cursor-pointer"
             href="https://docs.fedoraproject.org/en-US/project/"
           >
             <span class="mr-1">About</span>
           </a>
         </div>
+        <br/>
         <div v-for="item in editions" :key="item.name">
           <a
             :href="`${$config.app.baseURL + '/' + item.href}`"
