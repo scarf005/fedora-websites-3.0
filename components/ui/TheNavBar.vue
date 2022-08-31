@@ -7,6 +7,10 @@ const editions = [
   },
   { name: "Fedora IoT", href: "editions/iot", icon: "fa fa-microchip" },
   { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
+  {
+    name: "Fedora CoreOS",
+    href: "https://getfedora.org/en/coreos",
+  },
 ];
 const community = [
   {
@@ -32,10 +36,6 @@ const variants = [
   { name: "Fedora Spins", href: "https://spins.fedoraproject.org/" },
   { name: "Fedora Labs", href: "https://labs.fedoraproject.org/" },
   { name: "Fedora Arm", href: "https://arm.fedoraproject.org/" },
-  {
-    name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
-  },
 ];
 const open = useState("navbaropen", () => false);
 </script>
@@ -55,8 +55,15 @@ const open = useState("navbaropen", () => false);
               />
             </a>
           </div>
+
           <div class="hidden sm:block sm:ml-auto">
             <div class="flex space-x-4">
+              <a
+                class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
+                href="https://docs.fedoraproject.org/en-US/project/"
+              >
+                <span class="mr-1">About</span>
+              </a>
               <div class="group inline-block relative">
                 <a
                   class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
@@ -259,7 +266,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
-        <br/>
+        <br />
         <div v-for="item in variants" :key="item.name">
           <a
             :href="item.href"
@@ -273,7 +280,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
-        <br/>
+        <br />
         <div v-for="item in events" :key="item.name">
           <a
             :href="item.href"
@@ -287,7 +294,7 @@ const open = useState("navbaropen", () => false);
             >{{ item.name }}</a
           >
         </div>
-        <br/>
+        <br />
         <div v-for="item in community" :key="item.name">
           <a
             :href="item.href"
