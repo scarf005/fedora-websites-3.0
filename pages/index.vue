@@ -140,14 +140,3 @@ useHead({
     </section>
   </main>
 </template>
-
-<style lang="postcss">
-/* We can still use our own classes in the template and apply tailwind styles down here. This keeps the inline code a bit cleaner and looks great when you use vscodes sfc split editors  */
-.large-section {
-  @apply my-8 flex flex-col;
-}
-
-.section-header {
-  @apply mb-4 text-center;
-}
-</style>
