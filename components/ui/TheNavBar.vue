@@ -7,11 +7,8 @@ const editions = [
   },
   { name: "Fedora IoT", href: "editions/iot", icon: "fa fa-microchip" },
   { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
-  {
-    name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
-  },
 ];
+
 const community = [
   {
     name: "Flock To Fedora",
@@ -22,6 +19,10 @@ const community = [
     name: "Discuss Fedora",
     href: "https://discussion.fedoraproject.org/",
     icon: "fa fa-egg",
+  },
+  {
+    name: "Fedora CoreOS",
+    href: "https://getfedora.org/en/coreos",
   },
 ];
 
@@ -91,7 +92,7 @@ const open = useState("navbaropen", () => false);
                       ]"
                       :aria-current="item.current ? 'page' : undefined"
                     >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
+                      <font-awesome-icon :icon="item.icon" />
                       {{ item.name }}
                     </a>
                   </li>
@@ -261,7 +262,7 @@ const open = useState("navbaropen", () => false);
             <span class="mr-1">About</span>
           </a>
         </div>
-        <br/>
+        <br />
         <div v-for="item in editions" :key="item.name">
           <a
             :href="`${$config.app.baseURL + '/' + item.href}`"
