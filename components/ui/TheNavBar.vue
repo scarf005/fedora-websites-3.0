@@ -291,7 +291,7 @@ const open = useState("navbaropen", () => false);
           >
         </div>
         <br />
-        <div v-for="item in events" :key="item.name">
+        <div v-for="item in community" :key="item.name">
           <a
             :href="item.href"
             :class="[
@@ -305,7 +305,7 @@ const open = useState("navbaropen", () => false);
           >
         </div>
         <br />
-        <div v-for="item in community" :key="item.name">
+        <div v-for="item in support" :key="item.name">
           <a
             :href="item.href"
             :class="[
