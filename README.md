@@ -9,16 +9,13 @@
 
 This was set up on July 20th as the team voted on home for fedora's static frontend pages
 
-- Install and Run Instructions:
+- Install and run:
 
   - `npm install`: to install the project dependencies
-  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server
-  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting
+  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
+  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
-- [Nuxt Configuration](https://v3.nuxtjs.org/api/configuration/nuxt.config)
-  - Nuxt manages much of it's functionality inside the `nuxt.config.ts` file.
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
 ---
 
