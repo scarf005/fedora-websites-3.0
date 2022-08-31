@@ -11,7 +11,7 @@ useHead({
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
     <section class="large-section">
-      <header class="section-header flex mx-auto">
+      <header class="text-center my-8 flex mx-auto">
         <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
@@ -24,7 +24,7 @@ useHead({
       </div>
     </section>
     <section class="large-section">
-      <header class="section-header">
+      <header class="text-center my-8">
         <h2
           class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fp-blue to-fp-purple"
         >
