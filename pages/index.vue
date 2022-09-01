@@ -13,12 +13,11 @@ useHead({
         src="assets/images/workstation_framework.png"
       />
       <video
-        style="width: 460px; margin-top: -500px; margin-left: 70px"
+        style="width: 460px; margin-top: -485px; margin-left: 70px"
         autoplay=""
         loop=""
         muted=""
         playsinline=""
-        poster="/assets/hero.jpg"
         preload="auto"
       >
         <source src="assets/hero.webm" type="video/webm" />
@@ -26,7 +25,6 @@ useHead({
           src="https://static.gnome.org/release/40/hero.mp4"
           type="video/mp4"
         />
-        <!-- safari is really picky on how videos are served. See issue #4-->
       </video>
     </div>
   </div>
