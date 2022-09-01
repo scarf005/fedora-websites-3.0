@@ -5,6 +5,31 @@ useHead({
 });
 </script>
 <template>
+  <div class="hero-laptop-container">
+    <div class="mt-32 mb-32">
+      <img
+        style="width: 600px; margin-top: 100px"
+        alt="GNOME 40 Laptop"
+        src="assets/images/workstation_framework.png"
+      />
+      <video
+        style="width: 460px; margin-top: -500px; margin-left: 70px"
+        autoplay=""
+        loop=""
+        muted=""
+        playsinline=""
+        poster="/assets/hero.jpg"
+        preload="auto"
+      >
+        <source src="assets/hero.webm" type="video/webm" />
+        <source
+          src="https://static.gnome.org/release/40/hero.mp4"
+          type="video/mp4"
+        />
+        <!-- safari is really picky on how videos are served. See issue #4-->
+      </video>
+    </div>
+  </div>
   <main class="mx-6 md:mx-12 text-center">
     <header class="text-center pt-24 flex flex-col items-center">
       <h1>Default Font Sizes</h1>
