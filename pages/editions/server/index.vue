@@ -12,9 +12,9 @@ useHead({
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
       :image="data[0].header.images.image"
-      color="text-fp-green"
-      border="border border-fp-green"
-      background="text-white bg-fp-green"
+      color="text-fp-blue"
+      border="border border-fp-blue"
+      background="text-white bg-fp-blue"
       :cta1="data[0].header.cta[0].text"
       :link1="data[0].header.cta[0].url"
     />
