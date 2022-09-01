@@ -19,7 +19,6 @@ useHead({
         playsinline=""
         preload="auto"
       >
-        <source src="assets/hero.webm" type="video/webm" />
         <source
           src="https://static.gnome.org/release/40/hero.mp4"
           type="video/mp4"
