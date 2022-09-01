@@ -7,10 +7,9 @@ useHead({
 <template>
   <div class="hero-laptop-container">
     <div class="mt-32 mb-32">
-      <img
+      <FpImage
         style="width: 600px; margin-top: 100px"
-        alt="GNOME 40 Laptop"
-        src="assets/images/workstation_framework.png"
+        image="assets/images/workstation_framework.png"
       />
       <video
         style="width: 460px; margin-top: -485px; margin-left: 70px"
