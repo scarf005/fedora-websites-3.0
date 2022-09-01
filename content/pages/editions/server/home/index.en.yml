@@ -6,3 +6,6 @@ header:
   images:
     image: public/assets/images/server_main.png
     backgroundImage: public/assets/images/iot_background.jpg
+  cta:
+    - text: Download Now
+      url: https://getfedora.org/en/server/download/
