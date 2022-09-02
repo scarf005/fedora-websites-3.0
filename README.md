@@ -1,15 +1,10 @@
-# fedora-websites-3.0
-
-- Test deployed at: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
-- Netlify CMS to edit content: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin
-
----
-
 ## Development: Getting Started
 
-Note: To edit the content of this site you do not need this guide - simply go to the CMS above. To develop new features or add new pages, read on.
+This repository was set up on July 20th as the team voted on Fedora's static frontend pages. 
 
-This repository was set up on July 20th as the team voted on Fedora's static frontend pages. It runs on the principles of basic `create-nuxt-app` CLI commands.
+It is an off-the-shelf `create-nuxt-app` project.
+
+Note: To edit the content of this site you do not need this guide - simply go to the CMS above. To develop new features or add new pages, read on.
 
 - Clone this repository and run in the folder:
 
