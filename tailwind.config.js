@@ -23,22 +23,22 @@ module.exports = {
         green: {
           lighest: "#e9f9dd",
           light: "#bbed97",
-          DEFAULT: "#79db32"
+          DEFAULT: "#79db32",
         },
         magenta: {
           lightest: "#f9dde9",
           light: "#dc97bb",
-          DEFAULT: "#db3279"
+          DEFAULT: "#db3279",
         },
         orange: {
           lightest: "#fbeedb",
           light: "#f2ca92",
-          DEFAULT: "#e59728"
+          DEFAULT: "#e59728",
         },
         purple: {
           lightest: "#ece5f1",
-          light: "#cfbddd",  
-          DEFAULT: "#a07cbc"
+          light: "#cfbddd",
+          DEFAULT: "#a07cbc",
         },
       },
     }),
@@ -47,6 +47,6 @@ module.exports = {
       sans: ['"Open Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
       serif: ["ui-serif", "serif"],
       mono: ['"Source Code Pro"', "ui-monospace", "monospace"],
-    }
-  }
+    },
+  },
 };

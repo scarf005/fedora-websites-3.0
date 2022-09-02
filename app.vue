@@ -1,7 +1,5 @@
 <script setup>
-const base = process.env.CI_PAGES_URL
-  ? new URL(process.env.CI_PAGES_URL).pathname
-  : "";
+const base = "";
 
 useHead({
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",

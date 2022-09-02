@@ -53,7 +53,7 @@
   p,
   a,
   li {
-    @apply sm:text-base lg:text-lg max-w-prose;
+    @apply sm:text-base lg:text-lg;
   }
   code {
     @apply font-mono;
