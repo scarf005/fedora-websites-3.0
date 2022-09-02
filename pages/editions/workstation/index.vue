@@ -46,7 +46,6 @@ const { data } = await useAsyncData("page-data", () => {
     </FpBanner>
   </FpHero>
   <main class="flex flex-col items-center mt-8">
-
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
       <header
@@ -111,13 +110,12 @@ const { data } = await useAsyncData("page-data", () => {
     <section>
       <FpCommunity :data="data[0].section[2]" />
     </section>
-    
+
     <!-- Call To Action -->
     <section>
       <div class="flex justify-center items-center h-96">
         <FpImage image="assets/images/workstation_logo.jpg" class="max-w-sm" />
       </div>
     </section>
-
   </main>
 </template>
