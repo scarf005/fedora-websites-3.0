@@ -9,11 +9,13 @@ useHead({
 </script>
 <template>
   <main>
-    <FpHero :background="data[0].header.images.backgroundImage" alignment="bg-bottom">
+    <FpHero
+      :background="data[0].header.images.backgroundImage"
+      alignment="bg-bottom"
+    >
       <FpBanner
         :title="data[0].header.title"
         :subtitle="data[0].header.subtitle"
-        :image="data[0].header.images.image"
         color="text-fp-purple"
         border="border border-fp-purple"
         background="text-white bg-fp-purple"
@@ -21,9 +23,14 @@ useHead({
         :link1="data[0].header.cta[0].url"
         :cta2="data[0].header.cta[1].text"
         :link2="data[0].header.cta[1].url"
-      />
+      >
+        <FpImage :image="data[0].header.images.image" />
+      </FpBanner>
     </FpHero>
-    <FpHero :background="data[0].section[0].header.headerImage.image" alignment="bg-bottom">
+    <FpHero
+      :background="data[0].section[0].header.headerImage.image"
+      alignment="bg-bottom"
+    >
       <section class="w-10/12 pt-12 mx-auto">
         <h3
           class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"

@@ -7,11 +7,13 @@ const { data } = await useAsyncData("page-data", () => {
 });
 </script>
 <template>
-  <FpHero :background="data[0].header.images.backgroundImage" alignment="bg-bottom">
+  <FpHero
+    :background="data[0].header.images.backgroundImage"
+    alignment="bg-bottom"
+  >
     <FpBanner
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
-      :image="data[0].header.images.image"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
@@ -19,7 +21,29 @@ const { data } = await useAsyncData("page-data", () => {
       :link1="data[0].header.cta[0].url"
       :cta2="data[0].header.cta[1].text"
       :link2="data[0].header.cta[1].url"
-    />
+    >
+      <div class="hero-laptop-container">
+        <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
+          <FpImage
+          class="w-full"
+            image="assets/images/workstation_framework.png"
+          />
+          <video
+          class="w-full px-11 sm:px-[70px] -mt-[305px] sm:-mt-[465px]"
+            autoplay=""
+            loop=""
+            muted=""
+            playsinline=""
+            preload="auto"
+          >
+            <source
+              src="https://static.gnome.org/release/40/hero.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </FpBanner>
   </FpHero>
   <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->

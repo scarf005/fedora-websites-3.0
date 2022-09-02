@@ -3,7 +3,6 @@ import FpBtn from "../utilities/FpBtn.vue";
 defineProps({
   title: String,
   subtitle: String,
-  image: String,
   color: String,
   border: String,
   background: String,
@@ -23,14 +22,14 @@ defineProps({
     </h2>
   </div>
   <div class="flex justify-center my-5">
-    <FpImage :image="image" />
+    <slot/>
   </div>
   <div class="mt-5 flex justify-center spacing-1">
     <FpBtn :url="link1" :color="[background, 'text-center']">
       {{ cta1 }}
     </FpBtn>
     <div class="w-2" />
-    <FpBtn :url="link2" :color="[color, border, 'text-center bg-white']">
+    <FpBtn v-if="link2" :url="link2" :color="[color, border, 'text-center bg-white']">
       <font-awesome-icon icon="fa-brands fa-youtube" />
       {{ cta2 }}
     </FpBtn>

@@ -5,27 +5,7 @@ useHead({
 });
 </script>
 <template>
-  <div class="hero-laptop-container">
-    <div class="mt-32 mb-32">
-      <FpImage
-        style="width: 600px; margin-top: 100px"
-        image="assets/images/workstation_framework.png"
-      />
-      <video
-        style="width: 460px; margin-top: -485px; margin-left: 70px"
-        autoplay=""
-        loop=""
-        muted=""
-        playsinline=""
-        preload="auto"
-      >
-        <source
-          src="https://static.gnome.org/release/40/hero.mp4"
-          type="video/mp4"
-        />
-      </video>
-    </div>
-  </div>
+  
   <main class="mx-6 md:mx-12 text-center">
     <header class="text-center pt-24 flex flex-col items-center">
       <h1>Default Font Sizes</h1>
