@@ -46,6 +46,7 @@ const { data } = await useAsyncData("page-data", () => {
     </FpBanner>
   </FpHero>
   <main class="flex flex-col items-center mt-8">
+
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
       <header
@@ -64,6 +65,7 @@ const { data } = await useAsyncData("page-data", () => {
         />
       </FpList>
     </section>
+
     <!-- Benefits Section -->
     <section class="mt-32">
       <h2
@@ -76,6 +78,7 @@ const { data } = await useAsyncData("page-data", () => {
         v-bind="item"
       />
     </section>
+
     <!-- Developers Section -->
     <section>
       <h2
@@ -92,6 +95,7 @@ const { data } = await useAsyncData("page-data", () => {
         </FpList>
       </div>
     </section>
+
     <!-- Get Started Section -->
     <section class="w-full">
       <div
@@ -102,15 +106,18 @@ const { data } = await useAsyncData("page-data", () => {
         </h3>
       </div>
     </section>
+
     <!-- Community Section -->
     <section>
       <FpCommunity :data="data[0].section[2]" />
     </section>
+    
     <!-- Call To Action -->
     <section>
       <div class="flex justify-center items-center h-96">
         <FpImage image="assets/images/workstation_logo.jpg" class="max-w-sm" />
       </div>
     </section>
+
   </main>
 </template>
