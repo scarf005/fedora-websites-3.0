@@ -83,12 +83,11 @@ const { data } = await useAsyncData("page-data", () => {
       >
         Great for Developers
       </h2>
-      <div class="mb-12">
-
+      <div class="mb-12 max-w-7xl mx-auto">
         <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
           <FpListItem
-          v-for="item in data[0].section[0].content.list"
-          v-bind="item"
+            v-for="item in data[0].section[0].content.list"
+            v-bind="item"
           />
         </FpList>
       </div>
