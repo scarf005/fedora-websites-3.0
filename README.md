@@ -19,12 +19,6 @@ This repository was set up on July 20th as the team voted on Fedora's static fro
 
 See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
----
-
-- Upcoming Major Tasks:
-  - Outline contributor guidelines
-  - Set up team roles
-  - Assign Tasks
 
 ---
 
@@ -50,18 +44,3 @@ See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configurat
 - [Tailwindcss editor setup](https://tailwindcss.com/docs/editor-setup)
 - a postcss plugin is required if you use `<style lang="postcss"></style>` in your vue components
 - [Check out Tailwind's Documentation for help](https://tailwindcss.com/)
-
----
-
-## Vanilla Vue Setup and Usage
-
-This is the original project folder
-
-- cd into `client/`
-- run `npm install` to install packages
-- run `npm run dev` for a live development server
-- to clean up formatting, run `npm run format` to clean up all files (except node_modules)
-- the linter is giving a parsing error for unexpected token. This doesn't seem to be effecting anything and is likely a configuration issue.
-- This was set up prior to creating the Nuxt version. Some of the filename conventions are a bit different and more generic.
-  - It still uses file based routing, however components need to be imported
-  - use `@vueuse/head` plugin for handling page metadata
