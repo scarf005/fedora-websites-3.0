@@ -25,11 +25,11 @@ const { data } = await useAsyncData("page-data", () => {
       <div class="hero-laptop-container">
         <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
           <FpImage
-          class="w-full"
+            class="w-full"
             image="assets/images/workstation_framework.png"
           />
           <video
-          class="w-full px-11 sm:px-[70px] -mt-[305px] sm:-mt-[465px]"
+            class="w-full px-11 sm:px-[70px] -mt-[305px] sm:-mt-[465px]"
             autoplay=""
             loop=""
             muted=""
@@ -64,19 +64,54 @@ const { data } = await useAsyncData("page-data", () => {
         />
       </FpList>
     </section>
+    <!-- Benefits Section -->
     <section class="mt-32">
-      <div class="text-5xl font-extrabold text-center mb-12">
-        <span
-          class="bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
-        >
-          Features for everyone.
-        </span>
-      </div>
+      <h2
+        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+      >
+        Features for everyone.
+      </h2>
       <FpBenefit
         v-for="item in data[0].section[1].content.list"
         v-bind="item"
       />
     </section>
-    <FpCommunity :data="data[0].section[2]" />
+    <!-- Developers Section -->
+    <section>
+      <h2
+        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+      >
+        Great for Developers
+      </h2>
+      <div class="mb-12">
+
+        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+          <FpListItem
+          v-for="item in data[0].section[0].content.list"
+          v-bind="item"
+          />
+        </FpList>
+      </div>
+    </section>
+    <!-- Get Started Section -->
+    <section class="w-full">
+      <div
+        class="h-96 bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
+      >
+        <h3 class="text-fp-blue font-bold text-center">
+          Get started developing with Fedora
+        </h3>
+      </div>
+    </section>
+    <!-- Community Section -->
+    <section>
+      <FpCommunity :data="data[0].section[2]" />
+    </section>
+    <!-- Call To Action -->
+    <section>
+      <div class="flex justify-center items-center h-96">
+        <FpImage image="assets/images/workstation_logo.jpg" class="max-w-sm" />
+      </div>
+    </section>
   </main>
 </template>
