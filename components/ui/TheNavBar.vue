@@ -20,10 +20,6 @@ const community = [
     href: "https://discussion.fedoraproject.org/",
     icon: "fa fa-egg",
   },
-  {
-    name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
-  },
 ];
 
 const support = [
@@ -37,6 +33,10 @@ const variants = [
   { name: "Fedora Spins", href: "https://spins.fedoraproject.org/" },
   { name: "Fedora Labs", href: "https://labs.fedoraproject.org/" },
   { name: "Fedora Arm", href: "https://arm.fedoraproject.org/" },
+  {
+    name: "Fedora CoreOS",
+    href: "https://getfedora.org/en/coreos",
+  },
 ];
 const open = useState("navbaropen", () => false);
 </script>
