@@ -12,7 +12,7 @@ useHead({
       <p>This is to establish a baseline of responsive fonts</p>
     </header>
     <section class="large-section">
-      <header class="text-center my-8 flex mx-auto">
+      <header class="text-center my-8 flex justify-center">
         <font-awesome-icon icon="fab fa-fedora" class="text-5xl mr-4" />
         <h2>Heading Text</h2>
       </header>
