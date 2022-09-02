@@ -3,8 +3,14 @@ import FpBtn from "~~/components/utilities/FpBtn.vue";
 useHead({
   title: "Fedora Homepage | The Fedora Project",
 });
+const { data } = await useAsyncData("page-data", () => {
+  return queryContent("/pages/toplevel").find();
+});
 </script>
 <template>
+
+  <h1 class="text-center mt-8">{{data[0].header.title}}</h1>
+  <h2 class="text-center">{{data[0].header.subtitle}}</h2>
   
   <main class="mx-6 md:mx-12 text-center">
     <header class="text-center pt-24 flex flex-col items-center">
