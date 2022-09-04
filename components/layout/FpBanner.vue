@@ -31,7 +31,7 @@ defineProps({
     <h1 class="text-white font-semibold">
       <span class="block">{{ title }}</span>
     </h1>
-    <h2 class="mt-3" :class="[ 'text-'+subtitle.color, { 'font-semibold': subtitle.isBold }]">
+    <h2 class="mt-3" :class="[ 'text-'+(subtitle.color||'white'), { 'font-semibold': subtitle.isBold }]">
       {{ subtitle.text }}
     </h2>
   </div>
