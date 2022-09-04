@@ -37,8 +37,8 @@ const community = [
   { name: "Fedora Account System", href: "#" },
   {
     name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
-  },
+    href: "flocktofedora",
+},
 ];
 
 const open = useState("navbaropen", () => false);
