@@ -11,6 +11,8 @@ header:
       url: https://getfedora.org/en/workstation/download/
     - text: Reviewed By TechHut
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
+      icon: fa-youtube
+  reviewUrl: https://www.youtube.com/results?search_query=fedora+workstation+review
   subtitle: A beautiful, high-quality desktop, built on the latest open source
     technology. Trusted, powerful, easy.
   images:

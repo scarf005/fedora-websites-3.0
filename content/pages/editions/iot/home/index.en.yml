@@ -10,6 +10,7 @@ header:
       url: https://getfedora.org/en/iot/download/
     - text: Reviewed By TechHut
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
+      icon: fa-youtube
 section:
   - header:
       sectionTitle: WHY FEDORA IOT?
