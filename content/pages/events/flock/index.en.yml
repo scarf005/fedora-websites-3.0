@@ -49,3 +49,26 @@ section:
             New to Fedora? Check our community forum for support and help with
             frequently asked questions.
 
+  - header:
+      sectionTitle: Benefits of Sponsoring Flock
+    content:
+      list:
+        - title: Brand Exposure
+          description:
+            Sponsors are advertised in several places at Flock. We also post about
+            sponsors on social media. Your brand will be distributed globally in
+            our swag bag.
+        - title: Spotlight
+          description:
+            Our tierd sponsorship levels will all give you great visibility at Flock.
+            Your booth will be showcased on the Expo page to maximize engagement.
+        - title: Networking
+          description:
+            Flock attracts hundreds of amazing open source community members who work
+            on and use software daily. Engage with our vibrant community in sessions
+            and social hours.
+        - title: Booths
+          description:
+            All sponsor booths include a video, customizable experience, chat, and 
+            social media engagement. Click below to learn more.
+
