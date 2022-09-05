@@ -26,7 +26,7 @@ defineProps({
     >
       <li v-for="item in items" :key="item.name" class="mb-2">
         <a
-          :href="item.href"
+          :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
           :class="[
             'text-gray-500  hover:text-fp-purple',
             'px-3 py-4 rounded-md text-base font-medium',
