@@ -9,24 +9,6 @@ const editions = [
   { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
 ];
 
-const community = [
-  {
-    name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
-    icon: "fa fa-egg",
-  },
-  {
-    name: "Discuss Fedora",
-    href: "https://discussion.fedoraproject.org/",
-    icon: "fa fa-egg",
-  },
-];
-
-const support = [
-  { name: "Ask Fedora", href: "https://ask.fedoraproject.org/" },
-  { name: "Documentation", href: "https://docs.fedoraproject.org/" },
-];
-
 const variants = [
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
@@ -38,6 +20,27 @@ const variants = [
     href: "https://getfedora.org/en/coreos",
   },
 ];
+
+const support = [
+  { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
+  { name: "Common Bugs", href: "#" },
+  { name: "Fedora Magazine", href: "#" },
+  { name: "Fedora Developer Portal", href: "#" },
+  { name: "Documentation", href: "https://docs.fedoraproject.org/" },
+];
+
+const community = [
+  { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
+  { name: "Join Fedora", href: "#" },
+  { name: "Community Blog", href: "#" },
+  { name: "Matrix Chat Server", href: "#" },
+  { name: "Fedora Account System", href: "#" },
+  {
+    name: "Flock To Fedora",
+    href: "flocktofedora",
+  },
+];
+
 const open = useState("navbaropen", () => false);
 </script>
 
@@ -65,141 +68,14 @@ const open = useState("navbaropen", () => false);
               >
                 <span class="mr-1">About</span>
               </a>
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Editions</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
-                >
-                  <li v-for="item in editions" :key="item.name" class="mb-2">
-                    <a
-                      :href="`${$config.app.baseURL + '/' + item.href}`"
-                      :class="[
-                        'text-gray-500  hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <font-awesome-icon :icon="item.icon" />
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Variants</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
-                >
-                  <li v-for="item in variants" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500  hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="Editions" :items="editions" icons="true" />
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Community</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
-                >
-                  <li v-for="item in community" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500 hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="Variants" :items="variants" />
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Support</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
-                >
-                  <li v-for="item in support" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500 hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="Community" :items="community" />
+
+              <TheNavItem title="Support" :items="support" />
             </div>
           </div>
         </div>
