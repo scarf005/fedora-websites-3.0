@@ -1,20 +1,20 @@
 <script setup>
 const desktops = [
-  { name: "Fedora Workstation", href: "editions/workstation" },
+  { name: "Fedora Workstation", href: "/editions/workstation" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   { name: "Fedora KDE Plasma", href: "https://spins.fedoraproject.org/en/kde/" },
   { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
   { name: "More", href: "https://spins.fedoraproject.org" },
 ];
 const cloud = [
-  { name: "Fedora Server", href: "editions/server" },
+  { name: "Fedora Server", href: "/editions/server" },
   { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
   { name: "Fedora Cloud Base Images", href: "#" },
   { name: "Fedora Container Images", href: "#" },
 ];
 
 const iot = [
-  { name: "Fedora IoT", href: "editions/iot" },
+  { name: "Fedora IoT", href: "/editions/iot" },
   { name: "Fedora ARM Downloads", href: "#" },
 ];
 

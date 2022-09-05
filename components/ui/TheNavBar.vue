@@ -2,11 +2,11 @@
 const editions = [
   {
     name: "Fedora Workstation",
-    href: "editions/workstation",
+    href: "/editions/workstation",
     icon: "fa fa-desktop",
   },
-  { name: "Fedora IoT", href: "editions/iot", icon: "fa fa-microchip" },
-  { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
+  { name: "Fedora IoT", href: "/editions/iot", icon: "fa fa-microchip" },
+  { name: "Fedora Server", href: "/editions/server", icon: "fa fa-server" },
 ];
 
 const variants = [
@@ -37,7 +37,7 @@ const community = [
   { name: "Fedora Account System", href: "#" },
   {
     name: "Flock To Fedora",
-    href: "flocktofedora",
+    href: "/flocktofedora",
   },
 ];
 
