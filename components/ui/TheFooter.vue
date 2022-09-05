@@ -12,13 +12,13 @@ const desktops = [
 const cloud = [
   { name: "Fedora Server", href: "/editions/server" },
   { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
-  { name: "Fedora Cloud Base Images", href: "#" },
+  { name: "Fedora Cloud Images", href: "#" },
   { name: "Fedora Container Images", href: "#" },
 ];
 
 const iot = [
   { name: "Fedora IoT", href: "/editions/iot" },
-  { name: "Fedora ARM Downloads", href: "#" },
+  { name: "Fedora ARM Downloads", href: "https://arm.fedoraproject.org/" },
 ];
 
 const support = [

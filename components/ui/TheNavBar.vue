@@ -1,24 +1,24 @@
 <script setup>
-const editions = [
+const desktops = [
+  { name: "Fedora Workstation", href: "/editions/workstation" },
+  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   {
-    name: "Fedora Workstation",
-    href: "/editions/workstation",
-    icon: "fa fa-desktop",
+    name: "Fedora KDE Plasma",
+    href: "https://spins.fedoraproject.org/en/kde/",
   },
-  { name: "Fedora IoT", href: "/editions/iot", icon: "fa fa-microchip" },
-  { name: "Fedora Server", href: "/editions/server", icon: "fa fa-server" },
+  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
+  { name: "More", href: "https://spins.fedoraproject.org" },
+];
+const cloud = [
+  { name: "Fedora Server", href: "/editions/server" },
+  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
+  { name: "Fedora Cloud Images", href: "#" },
+  { name: "Fedora Container Images", href: "#" },
 ];
 
-const variants = [
-  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
-  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
-  { name: "Fedora Spins", href: "https://spins.fedoraproject.org/" },
-  { name: "Fedora Labs", href: "https://labs.fedoraproject.org/" },
-  { name: "Fedora Arm", href: "https://arm.fedoraproject.org/" },
-  {
-    name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
-  },
+const iot = [
+  { name: "Fedora IoT", href: "/editions/iot" },
+  { name: "Fedora ARM Downloads", href: "https://arm.fedoraproject.org/" },
 ];
 
 const support = [
@@ -37,7 +37,7 @@ const community = [
   { name: "Fedora Account System", href: "#" },
   {
     name: "Flock To Fedora",
-    href: "/flocktofedora",
+    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
   },
 ];
 
@@ -69,9 +69,11 @@ const open = useState("navbaropen", () => false);
                 <span class="mr-1">About</span>
               </a>
 
-              <TheNavItem title="Editions" :items="editions" icons="true" />
+              <TheNavItem title="Desktops" :items="desktops" icons="true" />
 
-              <TheNavItem title="Variants" :items="variants" />
+              <TheNavItem title="Server & Cloud" :items="cloud" />
+
+              <TheNavItem title="IoT & Edge" :items="iot" />
 
               <TheNavItem title="Community" :items="community" />
 
