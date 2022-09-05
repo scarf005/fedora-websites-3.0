@@ -2,7 +2,10 @@
 const desktops = [
   { name: "Fedora Workstation", href: "/editions/workstation" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
-  { name: "Fedora KDE Plasma", href: "https://spins.fedoraproject.org/en/kde/" },
+  {
+    name: "Fedora KDE Plasma",
+    href: "https://spins.fedoraproject.org/en/kde/",
+  },
   { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
   { name: "More", href: "https://spins.fedoraproject.org" },
 ];
@@ -56,7 +59,11 @@ const community = [
             class="mb-4"
           >
             <a
-            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+              :href="`${
+                item.href.includes('https')
+                  ? item.href
+                  : $config.app.baseURL + item.href
+              }`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -77,7 +84,11 @@ const community = [
             class="mb-4"
           >
             <a
-            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+              :href="`${
+                item.href.includes('https')
+                  ? item.href
+                  : $config.app.baseURL + item.href
+              }`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -96,7 +107,11 @@ const community = [
             class="mb-4"
           >
             <a
-            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+              :href="`${
+                item.href.includes('https')
+                  ? item.href
+                  : $config.app.baseURL + item.href
+              }`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -117,7 +132,11 @@ const community = [
             class="mb-4"
           >
             <a
-            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+              :href="`${
+                item.href.includes('https')
+                  ? item.href
+                  : $config.app.baseURL + item.href
+              }`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -138,7 +157,11 @@ const community = [
             class="mb-4"
           >
             <a
-            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+              :href="`${
+                item.href.includes('https')
+                  ? item.href
+                  : $config.app.baseURL + item.href
+              }`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
