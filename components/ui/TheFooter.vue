@@ -56,7 +56,7 @@ const community = [
             class="mb-4"
           >
             <a
-              :href="`${item.href}`"
+            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -77,7 +77,7 @@ const community = [
             class="mb-4"
           >
             <a
-              :href="`${item.href}`"
+            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -96,7 +96,7 @@ const community = [
             class="mb-4"
           >
             <a
-              :href="`${item.href}`"
+            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -117,7 +117,7 @@ const community = [
             class="mb-4"
           >
             <a
-              :href="`${item.href}`"
+            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
@@ -138,7 +138,7 @@ const community = [
             class="mb-4"
           >
             <a
-              :href="`${item.href}`"
+            :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
               :class="['text-gray-600', 'text-base font-medium']"
             >
               {{ item.name }}
