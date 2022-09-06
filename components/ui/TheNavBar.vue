@@ -44,6 +44,11 @@ const community = [
 const open = useState("navbaropen", () => false);
 const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+
+const languages = [
+  { name: "English", href: switchLocalePath("en") },
+  { name: "Français", href: switchLocalePath("fr") },
+];
 </script>
 
 <template>
@@ -86,12 +91,9 @@ const switchLocalePath = useSwitchLocalePath();
                   <option value="fr">fr</option>
                 </select>
               </form>
-              <a :href="`${$config.app.baseURL + switchLocalePath('en')}`"
-                >English</a
-              >
-              <a :href="`${$config.app.baseURL + switchLocalePath('fr')}`"
-                >Français</a
-              >
+
+              <TheNavItem title="Languages" :items="languages" />
+
             </div>
           </div>
         </div>
