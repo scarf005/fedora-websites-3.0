@@ -46,7 +46,7 @@ const { data } = await useAsyncData("page-data", () => {
     </FpBanner>
   </FpHero>
 
-  <p>{{ $t("workstation.welcome") }}</p>
+  <p>{{ $t("workstation.title") }}</p>
   <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
