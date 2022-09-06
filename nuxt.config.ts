@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   },
   buildModules: ["@pinia/nuxt"],
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
-  // Plugin Configurations
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
