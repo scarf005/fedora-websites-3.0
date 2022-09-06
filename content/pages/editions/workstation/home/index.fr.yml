@@ -8,7 +8,7 @@ header:
     - detail: "36"
     - detail: Release Notes<https://getfedora.org>
   cta:
-    - text: Download Now
+    - text: Télécharger
       url: https://getfedora.org/en/workstation/download/
     - text: Reviewed By TechHut
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
