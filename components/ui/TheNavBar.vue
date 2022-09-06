@@ -85,12 +85,6 @@ const languages = [
               <TheNavItem title="Community" :items="community" />
 
               <TheNavItem title="Support" :items="support" />
-              <form>
-                <select v-model="locale">
-                  <option value="en">en</option>
-                  <option value="fr">fr</option>
-                </select>
-              </form>
 
               <TheNavItem title="Languages" :items="languages" />
 
