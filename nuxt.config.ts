@@ -15,17 +15,27 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: [
-      '@fortawesome/fontawesome-svg-core',
-      '@fortawesome/free-solid-svg-icons',
-      '@fortawesome/free-regular-svg-icons',
-      '@fortawesome/free-brands-svg-icons',
-      '@fortawesome/vue-fontawesome'
-    ]
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-solid-svg-icons",
+      "@fortawesome/free-regular-svg-icons",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/vue-fontawesome",
+    ],
   },
   buildModules: ["@pinia/nuxt"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/i18n"],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
+  },
+  i18n: {
+    vueI18n: {
+      legacy: false,
+      locale: "en",
+      messages: {
+        en: { workstation: { welcome: "The leading Linux Desktop" } },
+        fr: { workstation: { welcome: "Bienvenue" } },
+      },
+    },
   },
   buildAssetsDir: base + "/_nuxt/",
   app: {
