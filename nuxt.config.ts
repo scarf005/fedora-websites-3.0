@@ -1,4 +1,6 @@
 import { defineNuxtConfig } from "nuxt";
+import en from "./content/pages/index.en.json";
+import fr from "./content/pages/index.fr.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
@@ -31,10 +33,7 @@ export default defineNuxtConfig({
     vueI18n: {
       legacy: false,
       locale: "en",
-      messages: {
-        en: { workstation: { welcome: "The leading Linux Desktop" } },
-        fr: { workstation: { welcome: "Bienvenue" } },
-      },
+      messages: { en, fr },
     },
   },
   buildAssetsDir: base + "/_nuxt/",
