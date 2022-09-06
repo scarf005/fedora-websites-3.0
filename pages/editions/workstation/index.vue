@@ -2,8 +2,11 @@
 useHead({
   title: "Fedora Workstation | The Fedora Project",
 });
+const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/workstation/home").find();
+  return queryContent("/pages/editions/workstation/home")
+    .where({ lang: locale._value })
+    .find();
 });
 </script>
 <template>

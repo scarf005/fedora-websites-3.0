@@ -43,7 +43,7 @@ const community = [
 
 const open = useState("navbaropen", () => false);
 const { locale } = useI18n();
-
+const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>
@@ -86,6 +86,8 @@ const { locale } = useI18n();
                   <option value="fr">fr</option>
                 </select>
               </form>
+              <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
+              <NuxtLink :to="switchLocalePath('fr')">Français</NuxtLink>
             </div>
           </div>
         </div>
