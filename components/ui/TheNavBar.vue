@@ -86,8 +86,12 @@ const switchLocalePath = useSwitchLocalePath();
                   <option value="fr">fr</option>
                 </select>
               </form>
-              <a :href="switchLocalePath('en')">English</a>
-              <a :href="switchLocalePath('fr')">Français</a>
+              <a :href="`${$config.app.baseURL + switchLocalePath('en')}`"
+                >English</a
+              >
+              <a :href="`${$config.app.baseURL + switchLocalePath('fr')}`"
+                >Français</a
+              >
             </div>
           </div>
         </div>
