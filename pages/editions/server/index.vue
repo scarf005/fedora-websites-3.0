@@ -14,8 +14,7 @@ useHead({
       color="text-fp-blue"
       border="border border-fp-blue"
       background="text-white bg-fp-blue"
-      :cta1="data[0].header.cta[0].text"
-      :link1="data[0].header.cta[0].url"
+      :ctas="data[0].header.cta"
     >
     <FpImage :image="data[0].header.images.image" />
   </FpBanner>

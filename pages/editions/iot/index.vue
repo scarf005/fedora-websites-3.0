@@ -19,10 +19,7 @@ useHead({
         color="text-fp-purple"
         border="border border-fp-purple"
         background="text-white bg-fp-purple"
-        :cta1="data[0].header.cta[0].text"
-        :link1="data[0].header.cta[0].url"
-        :cta2="data[0].header.cta[1].text"
-        :link2="data[0].header.cta[1].url"
+        :ctas="data[0].header.cta"
       >
         <FpImage :image="data[0].header.images.image" />
       </FpBanner>
