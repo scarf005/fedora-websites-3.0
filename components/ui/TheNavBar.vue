@@ -31,14 +31,14 @@ const support = [
 
 const community = [
   { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
+  {
+    name: "Flock To Fedora",
+    href: "/flocktofedora",
+  },
   { name: "Join Fedora", href: "#" },
   { name: "Community Blog", href: "#" },
   { name: "Matrix Chat Server", href: "#" },
   { name: "Fedora Account System", href: "#" },
-  {
-    name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
-  },
 ];
 
 const open = useState("navbaropen", () => false);

@@ -1,7 +1,8 @@
 title: Fedora IoT Index
 header:
   title: The solid foundation for IoT ecosystems
-  subtitle: A lightweight yet powerful and scalable OS
+  subtitle:
+    text: A lightweight yet powerful and scalable OS
   images:
     image: public/assets/images/iot.png
     backgroundImage: public/assets/images/iot_background.jpg
@@ -10,6 +11,7 @@ header:
       url: https://getfedora.org/en/iot/download/
     - text: Reviewed By TechHut
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
+      icon: fa-youtube
 section:
   - header:
       sectionTitle: WHY FEDORA IOT?
