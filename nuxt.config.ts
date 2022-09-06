@@ -30,7 +30,9 @@ export default defineNuxtConfig({
     cssPath: "~/assets/css/main.css",
   },
   i18n: {
-    locales: ['en', 'fr'], // used in URL path prefix
+    locales: ["en", "fr"], // used in URL path prefix
+    strategy: "prefix_except_default",
+    defaultLocale: "en",
     vueI18n: {
       legacy: false,
       locale: "en",

@@ -86,8 +86,8 @@ const switchLocalePath = useSwitchLocalePath();
                   <option value="fr">fr</option>
                 </select>
               </form>
-              <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
-              <NuxtLink :to="switchLocalePath('fr')">Français</NuxtLink>
+              <a :href="switchLocalePath('en')">English</a>
+              <a :href="switchLocalePath('fr')">Français</a>
             </div>
           </div>
         </div>
