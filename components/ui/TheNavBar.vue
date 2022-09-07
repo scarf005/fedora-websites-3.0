@@ -1,43 +1,46 @@
 <script setup>
-const editions = [
+const desktops = [
+  { name: "Fedora Workstation", href: "/editions/workstation" },
+  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   {
-    name: "Fedora Workstation",
-    href: "editions/workstation",
-    icon: "fa fa-desktop",
+    name: "Fedora KDE Plasma",
+    href: "https://spins.fedoraproject.org/en/kde/",
   },
-  { name: "Fedora IoT", href: "editions/iot", icon: "fa fa-microchip" },
-  { name: "Fedora Server", href: "editions/server", icon: "fa fa-server" },
+  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
+  { name: "More", href: "https://spins.fedoraproject.org" },
+];
+const cloud = [
+  { name: "Fedora Server", href: "/editions/server" },
+  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
+  { name: "Fedora Cloud Images", href: "#" },
+  { name: "Fedora Container Images", href: "#" },
 ];
 
-const community = [
-  {
-    name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
-    icon: "fa fa-egg",
-  },
-  {
-    name: "Discuss Fedora",
-    href: "https://discussion.fedoraproject.org/",
-    icon: "fa fa-egg",
-  },
+const iot = [
+  { name: "Fedora IoT", href: "/editions/iot" },
+  { name: "Fedora ARM Downloads", href: "https://arm.fedoraproject.org/" },
 ];
 
 const support = [
-  { name: "Ask Fedora", href: "https://ask.fedoraproject.org/" },
+  { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
+  { name: "Common Bugs", href: "#" },
+  { name: "Fedora Magazine", href: "#" },
+  { name: "Fedora Developer Portal", href: "#" },
   { name: "Documentation", href: "https://docs.fedoraproject.org/" },
 ];
 
-const variants = [
-  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
-  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
-  { name: "Fedora Spins", href: "https://spins.fedoraproject.org/" },
-  { name: "Fedora Labs", href: "https://labs.fedoraproject.org/" },
-  { name: "Fedora Arm", href: "https://arm.fedoraproject.org/" },
+const community = [
+  { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
   {
-    name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
+    name: "Flock To Fedora",
+    href: "/flocktofedora",
   },
+  { name: "Join Fedora", href: "#" },
+  { name: "Community Blog", href: "#" },
+  { name: "Matrix Chat Server", href: "#" },
+  { name: "Fedora Account System", href: "#" },
 ];
+
 const open = useState("navbaropen", () => false);
 </script>
 
@@ -65,141 +68,16 @@ const open = useState("navbaropen", () => false);
               >
                 <span class="mr-1">About</span>
               </a>
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Editions</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
-                >
-                  <li v-for="item in editions" :key="item.name" class="mb-2">
-                    <a
-                      :href="`${$config.app.baseURL + '/' + item.href}`"
-                      :class="[
-                        'text-gray-500  hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <font-awesome-icon :icon="item.icon" />
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Variants</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
-                >
-                  <li v-for="item in variants" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500  hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="Desktops" :items="desktops" icons="true" />
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Community</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
-                >
-                  <li v-for="item in community" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500 hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="Server & Cloud" :items="cloud" />
 
-              <div class="group inline-block relative">
-                <a
-                  class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
-                >
-                  <span class="mr-1">Support</span>
-                  <svg
-                    class="fill-white h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </a>
-                <ul
-                  class="absolute hidden text-gray-700 py-2 border border-fp-blue bg-white w-56 group-hover:block rounded"
-                >
-                  <li v-for="item in support" :key="item.name" class="mb-2">
-                    <a
-                      :href="item.href"
-                      :class="[
-                        'text-gray-500 hover:text-fp-purple',
-                        'px-3 py-4 rounded-md text-base font-medium',
-                      ]"
-                      :aria-current="item.current ? 'page' : undefined"
-                    >
-                      <!-- <font-awesome-icon :icon="item.icon" /> -->
-                      {{ item.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <TheNavItem title="IoT & Edge" :items="iot" />
+
+              <TheNavItem title="Community" :items="community" />
+
+              <TheNavItem title="Support" :items="support" />
             </div>
           </div>
         </div>

@@ -1,46 +1,62 @@
 section:
 - content:
     list:
-    - description: Każda wersja jest aktualna przez 18 miesięcy, a aktualizacje pomiędzy
-        wersjami są szybkie i proste.
-      title: Pewny
-    - description: Z Fedorą, twój komputer należy do ciebie. Jest darmowy, bez reklamy,
-        a twoje dane należą do ciebie.
-    - description: Wersja Workstation jest uważne dopracowana by dostarczyć wysokie
-        jakości doświadczenia. System jest czysty i nie zagracony.
-      title: Piękny
-    - description: Rozwijany w partnerstwie projektów nadrzędnych. Restrykcyjnie testowany.
-        Poparty przez Red Hat.
-      title: Godny zaufania
-    - description: Zbudowany na najnowszych technologiach i poprawkach oferowanych
-        przez wolne oprogramowanie.
-      title: Technologia wiodąca
-    - description: Fedora pracuje z producentami sprzętu komputerowego by zapewnić
-        wspaniałe wsparcie dla wielu urządzeń.
-      title: Pokazuje pełną moc twojego urządzenia
+    - description: Każda wersja jest aktualizowana przez 18 miesięcy, a aktualizacje
+        między wersjami są szybkie i proste.
+      title: Niezawodna
+    - description: Z Fedorą Twój komputer należy do Ciebie. Jest bezpłatna, bez reklam,
+        a Twoje dane należą do Ciebie.
+      title: Wolna i prywatna
+    - description: Wydanie Workstation jest starannie opracowywane, aby zapewniać
+        wysoką jakość. Pulpit jest czysty i niezaśmiecony.
+      title: Piękna
+    - description: Rozwijana w porozumieniu z projektami nadrzędnymi. Rygorystycznie
+        testowana. Wspierana przez firmę Red Hat.
+      title: Zaufana
+    - description: Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje
+        oprogramowanie open source.
+      title: Wiodąca technologia
+    - description: Fedora współpracuje z producentami sprzętu, aby obsługiwać jak
+        najwięcej urządzeń każdego rodzaju.
+      title: W pełni wykorzystuje Twoje urządzenie
   header:
-    sectionTitle: Dlaczego warto wybrać Fedora Workstation?
+    sectionTitle: Dlaczego warto wybrać Fedorę Workstation?
 - content:
     list:
-    - description: Przeglądaj obszerną kolekcje aplikacji, obsługującą wszystko czego
-        możesz potrzebować. Zawiera nowe ekscytujące aplikacje otwarto źródłowe jak
-        również znajome aplikacje z innych platform.
-      title: Fantastyczne Aplikacje
-    - description: Dzięki globalnemu społeczeństwu tłumaczy, Workstation jest dostępny
-        w wielu językach.
-      title: Workstation mówi w twoim języku
+    - description: Przeglądaj obszerną kolekcję aplikacji, zapewniającą wszystko,
+        czego możesz potrzebować. Zawiera ekscytujące nowe aplikacje open source,
+        jak również aplikacje znane z innych systemów.
+      title: Fantastyczne aplikacje
+    - description: Dzięki globalnej społeczności tłumaczy wydanie Workstation jest
+        dostępne w wielu językach.
+      title: Workstation mówi w Twoim języku
+    - title: Przygaś światła
+    - description: Korzystaj z kalendarza internetowego na komputerze za pomocą kont
+        online
+      title: Integracja z kalendarzem
+    - description: Fedora Workstation zawiera wspaniały zestaw narzędzi, takich jak
+        zegar światowy, prognoza pogody i mapy.
+      title: Od razu przydatna
   header:
     sectionTitle: Korzyści
+- content:
+    list:
+    - title: Zgłoś i dyskutuj błędy
+    - title: Porozmawiaj z zespołem
+    - title: Dołącz do listy dyskusyjnej
+    - title: Weź udział w spotkaniu
+  header:
+    sectionTitle: Tworzona przez Ciebie
 header:
-  subtitle: Piękny, wysokiej jakości system operacyjny, zbudowany z najnowszych technologi
-    wolnego oprogramowania. Zaufany, potężny, łatwy w obsłudze.
+  subtitle: Piękny, wysokiej jakości system operacyjny zbudowany za pomocą najnowszej
+    technologii open source. Zaufany, o wielu możliwościach, łatwy w obsłudze.
   cta:
-  - text: Pobierz Teraz
+  - text: Pobierz teraz
   - text: Sprawdzone przez TechHut
   details:
   - detail: Najnowsze wydanie
   - detail: '36'
-  - detail: Informacje o wydaniu<https://getfedora.org>
-  title: Wiodąca dystrybucja Linuxa dla komputerów osobistych.
+  - detail: Informacje o wydaniu<https://getfedora.org>
+  title: Wiodąca dystrybucja Linuksa dla komputerów osobistych
 description: Flagowa dystrybucja Projektu Fedora dla komputerów osobistych
 title: Fedora Workstation

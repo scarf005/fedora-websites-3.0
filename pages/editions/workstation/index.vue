@@ -14,13 +14,11 @@ const { data } = await useAsyncData("page-data", () => {
     <FpBanner
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
+      :reviewUrl="data[0].header.reviewUrl"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
-      :cta1="data[0].header.cta[0].text"
-      :link1="data[0].header.cta[0].url"
-      :cta2="data[0].header.cta[1].text"
-      :link2="data[0].header.cta[1].url"
+      :ctas="data[0].header.cta"
     >
       <div class="hero-laptop-container">
         <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
@@ -29,7 +27,7 @@ const { data } = await useAsyncData("page-data", () => {
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="w-full px-11 sm:px-[70px] -mt-[305px] sm:-mt-[465px]"
+            class="w-full px-11 sm:px-[70px] -mt-[310px] sm:-mt-[473px]"
             autoplay=""
             loop=""
             muted=""
@@ -37,7 +35,7 @@ const { data } = await useAsyncData("page-data", () => {
             preload="auto"
           >
             <source
-              src="https://static.gnome.org/release/40/hero.mp4"
+              src="/assets/images/hero.mp4"
               type="video/mp4"
             />
           </video>
