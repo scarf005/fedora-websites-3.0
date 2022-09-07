@@ -2,3 +2,74 @@ title: Flock To Fedora
 description:
   Flock to Fedora est la conférence annuelle des contributeurs du Projet
   Fedora. Sa version virtuelle s'appelle Nest.
+header:
+  logo: public/assets/images/flock-barcelona.png
+  subtitle:
+    text: The Fedora Project Conference
+    color: fp-blue
+    isBold: true
+  eventDate: August 5 - 7, 2023
+  images:
+    backgroundImage: public/assets/images/fedora-33-night.jpg
+  cta:
+    - text: Register
+      url: "#"
+    - text: Calendar
+      url: "#"
+  cards:
+    - image: public/assets/images/nest-white-logo.png
+      subtitle: Virtual
+      description: A 3 day conference hosted on Hopin.io
+    - image: public/assets/images/hatch-white-logo.png
+      subtitle: Community
+      description: Community events hosted around the world
+section:
+  - header:
+      sectionTitle: We are Fedora
+      headerImage:
+        image: public/assets/images/iot_flock_background.jpg
+      subtitle1: The Fedora Project envisions a world where everyone can benefit
+        from free and open source software built by inclusive, welcoming, and
+        open-minded communities.
+    content:
+      list:
+        - title: Discussions
+          description:
+            Use our messaging board Fedora Discussions to stay up to date on Flock
+            Notifications. Check is out here.
+        - title: Twitter
+          description:
+            'Use the #NestWithFedora hashtags on your preferred social media platforms.
+            Follow @fedora on Twitter for updates.'
+        - title: Matrix & IRC
+          description:
+            'Our main IRC channel for the event is #fedora-flock on libera.chat.
+            Join #fedora-flock to chat on Matrix or IRX.'
+        - title: Ask Fedora
+          description:
+            New to Fedora? Check our community forum for support and help with
+            frequently asked questions.
+
+  - header:
+      sectionTitle: Benefits of Sponsoring Flock
+    content:
+      list:
+        - title: Brand Exposure
+          description:
+            Sponsors are advertised in several places at Flock. We also post about
+            sponsors on social media. Your brand will be distributed globally in
+            our swag bag.
+        - title: Spotlight
+          description:
+            Our tierd sponsorship levels will all give you great visibility at Flock.
+            Your booth will be showcased on the Expo page to maximize engagement.
+        - title: Networking
+          description:
+            Flock attracts hundreds of amazing open source community members who work
+            on and use software daily. Engage with our vibrant community in sessions
+            and social hours.
+        - title: Booths
+          description:
+            All sponsor booths include a video, customizable experience, chat, and 
+            social media engagement. Click below to learn more.
+
