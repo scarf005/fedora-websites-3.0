@@ -43,9 +43,11 @@ const { data } = await useAsyncData("page-data", () => {
             />
           </video>
         </div>
+        <p>{{ $t("workstation.title") }}</p>
       </div>
     </FpBanner>
   </FpHero>
+
 
   <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->
