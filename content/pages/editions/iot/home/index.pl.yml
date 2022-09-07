@@ -1,1 +1,35 @@
-{}
+section:
+- content:
+    list:
+    - description: Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje
+        oprogramowanie open source.
+      title: Wiodąca technologia
+    - {}
+    - title: Ekosystem open source
+    - {}
+    - {}
+    - description: Fedora współpracuje z producentami sprzętu, aby obsługiwać jak
+        najwięcej urządzeń każdego rodzaju.
+      title: W pełni wykorzystuje Twoje urządzenie
+- content:
+    list:
+    - description: Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje
+        oprogramowanie open source.
+      title: arm SystemReady
+    - title: Pine64
+    - title: SolidRun
+    - title: nVidia
+- content:
+    list:
+    - description: Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje
+        oprogramowanie open source.
+      title: Zgłoś i dyskutuj błędy
+    - title: Porozmawiaj z zespołem
+    - title: Dołącz do listy dyskusyjnej
+    - title: Weź udział w spotkaniu
+  header:
+    sectionTitle: Tworzona przez Ciebie
+header:
+  cta:
+  - text: Pobierz teraz
+  - text: Sprawdzone przez TechHut
