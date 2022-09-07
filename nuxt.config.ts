@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     vueI18n: {
       legacy: false,
       locale: "en",
-      messages: { en, fr },
+      // messages: { en, fr },
     },
   },
   buildAssetsDir: base + "/_nuxt/",

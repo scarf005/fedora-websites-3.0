@@ -1,13 +1,19 @@
 <script setup>
+const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/server/home").find();
+  return queryContent()
+    .where({ _path: "/pages/editions/server/home/." + locale._value })
+    .find();
 });
 useHead({
-  title: "Fedora Server | The Fedora Project",
+  title: data._value[0].title + " | The Fedora Project",
 });
 </script>
 <template>
-  <FpHero :background="data[0].header.images.backgroundImage" alignment="bg-bottom">
+  <FpHero
+    :background="data[0].header.images.backgroundImage"
+    alignment="bg-bottom"
+  >
     <FpBanner
       :title="data[0].header.title"
       :subtitle="data[0].header.subtitle"
@@ -16,7 +22,7 @@ useHead({
       background="text-white bg-fp-blue"
       :ctas="data[0].header.cta"
     >
-    <FpImage :image="data[0].header.images.image" />
-  </FpBanner>
+      <FpImage :image="data[0].header.images.image" />
+    </FpBanner>
   </FpHero>
 </template>

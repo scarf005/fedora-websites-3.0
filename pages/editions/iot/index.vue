@@ -1,10 +1,12 @@
 <script setup>
+const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("pages/editions/iot/home").find();
+  return queryContent()
+    .where({ _path: "/pages/editions/iot/home/." + locale._value })
+    .find();
 });
-
 useHead({
-  title: "Fedora IoT | The Fedora Project",
+  title: data._value[0].title + " | The Fedora Project",
 });
 </script>
 <template>

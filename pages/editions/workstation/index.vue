@@ -1,12 +1,12 @@
 <script setup>
-useHead({
-  title: "Fedora Workstation | The Fedora Project",
-});
 const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/workstation/home")
-    .where({ lang: locale._value })
+  return queryContent()
+    .where({ _path: "/pages/editions/workstation/home/." + locale._value })
     .find();
+});
+useHead({
+  title: data._value[0].title + " | The Fedora Project",
 });
 </script>
 <template>
@@ -37,17 +37,12 @@ const { data } = await useAsyncData("page-data", () => {
             playsinline=""
             preload="auto"
           >
-            <source
-              src="/assets/images/hero.mp4"
-              type="video/mp4"
-            />
+            <source src="/assets/images/hero.mp4" type="video/mp4" />
           </video>
         </div>
-        <p>{{ $t("workstation.title") }}</p>
       </div>
     </FpBanner>
   </FpHero>
-
 
   <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->
