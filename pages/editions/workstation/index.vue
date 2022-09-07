@@ -27,7 +27,7 @@ const { data } = await useAsyncData("page-data", () => {
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="w-full px-11 sm:px-[70px] -mt-[305px] sm:-mt-[465px]"
+            class="w-full px-11 sm:px-[70px] -mt-[310px] sm:-mt-[473px]"
             autoplay=""
             loop=""
             muted=""
@@ -35,7 +35,7 @@ const { data } = await useAsyncData("page-data", () => {
             preload="auto"
           >
             <source
-              src="https://static.gnome.org/release/40/hero.mp4"
+              src="/assets/images/hero.mp4"
               type="video/mp4"
             />
           </video>
