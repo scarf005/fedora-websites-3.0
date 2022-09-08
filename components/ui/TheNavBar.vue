@@ -42,12 +42,12 @@ const community = [
 ];
 
 const open = useState("navbaropen", () => false);
-const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 const languages = [
   { name: "English", href: switchLocalePath("en") },
   { name: "Français", href: switchLocalePath("fr") },
+  { name: "Polskie", href: switchLocalePath("pl") },
 ];
 </script>
 
@@ -87,7 +87,6 @@ const languages = [
               <TheNavItem title="Support" :items="support" />
 
               <TheNavItem title="Languages" :items="languages" />
-
             </div>
           </div>
         </div>

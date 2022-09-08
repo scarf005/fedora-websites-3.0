@@ -1,6 +1,4 @@
 import { defineNuxtConfig } from "nuxt";
-import en from "./content/pages/index.en.json";
-import fr from "./content/pages/index.fr.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
@@ -30,13 +28,13 @@ export default defineNuxtConfig({
     cssPath: "~/assets/css/main.css",
   },
   i18n: {
-    locales: ["en", "fr"], // used in URL path prefix
+    locales: ["en", "fr", "pl"], // used in URL path prefix
     strategy: "prefix_except_default",
     defaultLocale: "en",
     vueI18n: {
       legacy: false,
       locale: "en",
-      // messages: { en, fr },
+      // messages: { en, fr }, // unused as switching yaml content in header file with locale
     },
   },
   buildAssetsDir: base + "/_nuxt/",
