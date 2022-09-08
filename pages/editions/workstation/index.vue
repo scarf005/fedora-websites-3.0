@@ -7,6 +7,12 @@ const { data } = await useAsyncData("page-data", () => {
 });
 useHead({
   title: data._value[0].title + " | The Fedora Project",
+  meta: [
+    {
+      name: "description",
+      content: data._value[0].description,
+    },
+  ],
 });
 </script>
 <template>
