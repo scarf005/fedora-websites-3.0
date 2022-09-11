@@ -1,33 +1,40 @@
 <script setup>
 const { locale } = useI18n();
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent()
-    .where({ _path: "/pages/editions/workstation/home/." + locale._value })
-    .find();
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent("/pages/editions/workstation/home/." + locale._value)
+    .findOne();
 });
+
+if (data._value === null){
+  ({ data } = await useAsyncData("page-data-fallback", () => {
+    return queryContent("/pages/editions/workstation/home/.en")
+      .findOne();
+  }));
+}
+
 useHead({
-  title: data._value[0].title + " | The Fedora Project",
+  title: data._value.title + " | The Fedora Project",
   meta: [
     {
       name: "description",
-      content: data._value[0].description,
+      content: data._value.description,
     },
   ],
 });
 </script>
 <template>
   <FpHero
-    :background="data[0].header.images.backgroundImage"
+    :background="data.header.images.backgroundImage"
     alignment="bg-bottom"
   >
     <FpBanner
-      :title="data[0].header.title"
-      :subtitle="data[0].header.subtitle"
-      :reviewUrl="data[0].header.reviewUrl"
+      :title="data.header.title"
+      :subtitle="data.header.subtitle"
+      :reviewUrl="data.header.reviewUrl"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
-      :ctas="data[0].header.cta"
+      :ctas="data.header.cta"
     >
       <div class="hero-laptop-container">
         <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
@@ -59,12 +66,12 @@ useHead({
         <h3
           class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
         >
-          {{ data[0].section[0].header.sectionTitle }}
+          {{ data.section[0].header.sectionTitle }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data[0].section[0].content.list"
+          v-for="item in data.section[0].content.list"
           v-bind="item"
         />
       </FpList>
@@ -78,7 +85,7 @@ useHead({
         Features for everyone.
       </h2>
       <FpBenefit
-        v-for="item in data[0].section[1].content.list"
+        v-for="item in data.section[1].content.list"
         v-bind="item"
       />
     </section>
@@ -93,7 +100,7 @@ useHead({
       <div class="mb-12 max-w-7xl mx-auto">
         <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
           <FpListItem
-            v-for="item in data[0].section[0].content.list"
+            v-for="item in data.section[0].content.list"
             v-bind="item"
           />
         </FpList>
@@ -113,7 +120,7 @@ useHead({
 
     <!-- Community Section -->
     <section>
-      <FpCommunity :data="data[0].section[2]" />
+      <FpCommunity :data="data.section[2]" />
     </section>
 
     <!-- Call To Action -->
