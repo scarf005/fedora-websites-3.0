@@ -1,10 +1,10 @@
-#. extracted from content/pages/events/flock/index.en.yml, content/pages/events/flock/index.fr.yml
+#. extracted from content/pages/events/flock/index.en.yml
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 14:51+0200\n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,7 @@ msgid "August 5 - 7, 2023"
 msgstr "August 5 - 7, 2023"
 
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 msgid "public/assets/images/fedora-33-night.jpg"
 msgstr "public/assets/images/fedora-33-night.jpg"
 
@@ -54,6 +55,7 @@ msgid "Register"
 msgstr "Register"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
 msgctxt "header->cta->[0]->url"
 msgid "#"
 msgstr "#"
@@ -63,11 +65,13 @@ msgid "Calendar"
 msgstr "Calendar"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
 msgctxt "header->cta->[1]->url"
 msgid "#"
 msgstr "#"
 
 #: header-%3Ecards-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/nest-white-logo.png"
 msgstr "public/assets/images/nest-white-logo.png"
 
@@ -80,6 +84,7 @@ msgid "A 3 day conference hosted on Hopin.io"
 msgstr "A 3 day conference hosted on Hopin.io"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/hatch-white-logo.png"
 msgstr "public/assets/images/hatch-white-logo.png"
 
@@ -96,6 +101,7 @@ msgid "We are Fedora"
 msgstr "We are Fedora"
 
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr "public/assets/images/iot_flock_background.jpg"
 

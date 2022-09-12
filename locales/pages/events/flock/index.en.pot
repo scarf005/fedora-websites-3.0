@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 14:51+0200\n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,7 @@ msgstr ""
 msgid "August 5 - 7, 2023"
 msgstr ""
 
+#, read-only
 #: header-%3Eimages-%3EbackgroundImage
 msgid "public/assets/images/fedora-33-night.jpg"
 msgstr ""
@@ -51,6 +52,7 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
+#, read-only
 #: header-%3Ecta-%3E[0]-%3Eurl
 msgctxt "header->cta->[0]->url"
 msgid "#"
@@ -60,11 +62,13 @@ msgstr ""
 msgid "Calendar"
 msgstr ""
 
+#, read-only
 #: header-%3Ecta-%3E[1]-%3Eurl
 msgctxt "header->cta->[1]->url"
 msgid "#"
 msgstr ""
 
+#, read-only
 #: header-%3Ecards-%3E[0]-%3Eimage
 msgid "public/assets/images/nest-white-logo.png"
 msgstr ""
@@ -77,6 +81,7 @@ msgstr ""
 msgid "A 3 day conference hosted on Hopin.io"
 msgstr ""
 
+#, read-only
 #: header-%3Ecards-%3E[1]-%3Eimage
 msgid "public/assets/images/hatch-white-logo.png"
 msgstr ""
@@ -93,6 +98,7 @@ msgstr ""
 msgid "We are Fedora"
 msgstr ""
 
+#, read-only
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""

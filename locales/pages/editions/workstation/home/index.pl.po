@@ -1,10 +1,10 @@
-#. extracted from content/pages/editions/workstation/home/index.en.yml, content/pages/editions/workstation/home/index.pl.yml
+#. extracted from content/pages/editions/workstation/home/index.en.yml
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 14:51+0200\n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,7 @@ msgid "Download Now"
 msgstr "Pobierz teraz"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr "https://getfedora.org/en/workstation/download/"
 
@@ -50,6 +51,7 @@ msgid "Reviewed By TechHut"
 msgstr "Sprawdzone przez TechHut"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr "https://www.youtube.com/watch?v=54aoIGKEMnk"
 
@@ -58,6 +60,7 @@ msgid "fa-youtube"
 msgstr "fa-youtube"
 
 #: header-%3EreviewUrl
+#, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr "https://www.youtube.com/results?search_query=fedora+workstation+review"
 
@@ -70,10 +73,12 @@ msgstr ""
 "technologii open source. Zaufany, o wielu możliwościach, łatwy w obsłudze."
 
 #: header-%3Eimages-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr "public/assets/images/workstation_framework.png"
 
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr "public/assets/images/workstation_background.jpg"
 
@@ -172,6 +177,7 @@ msgstr ""
 "aplikacje znane z innych systemów."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr "public/assets/images/workstation_outofthebox.png"
 
@@ -188,6 +194,7 @@ msgstr ""
 "wielu językach."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr "public/assets/images/workstation_outofthebox.png"
 
@@ -203,6 +210,7 @@ msgstr ""
 "Korzystaj z kalendarza internetowego na komputerze za pomocą kont online"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr "public/assets/images/workstation_languages.png"
 
@@ -217,6 +225,7 @@ msgstr ""
 "światowy, prognoza pogody i mapy."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr "public/assets/images/workstation_outofthebox.png"
 
@@ -233,6 +242,7 @@ msgstr ""
 "światowy, prognoza pogody i mapy."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr "public/assets/images/workstation_outofthebox.png"
 
@@ -241,6 +251,7 @@ msgid "Built By You"
 msgstr "Built By You"
 
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr "public/assets/images/iot_flock_background.jpg"
 

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 14:51+0200\n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,7 @@ msgstr ""
 msgid "Download Now"
 msgstr ""
 
+#, read-only
 #: header-%3Ecta-%3E[0]-%3Eurl
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
@@ -49,6 +50,7 @@ msgstr ""
 msgid "Reviewed By TechHut"
 msgstr ""
 
+#, read-only
 #: header-%3Ecta-%3E[1]-%3Eurl
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
@@ -57,6 +59,7 @@ msgstr ""
 msgid "fa-youtube"
 msgstr ""
 
+#, read-only
 #: header-%3EreviewUrl
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr ""
@@ -67,10 +70,12 @@ msgid ""
 "technology. Trusted, powerful, easy."
 msgstr ""
 
+#, read-only
 #: header-%3Eimages-%3Eimage
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
+#, read-only
 #: header-%3Eimages-%3EbackgroundImage
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
@@ -154,6 +159,7 @@ msgid ""
 "platforms."
 msgstr ""
 
+#, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
@@ -168,6 +174,7 @@ msgid ""
 "many languages."
 msgstr ""
 
+#, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
@@ -182,6 +189,7 @@ msgid ""
 "Use night light to reduce screen glare and help with sleep."
 msgstr ""
 
+#, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
@@ -194,6 +202,7 @@ msgstr ""
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr ""
 
+#, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
@@ -208,6 +217,7 @@ msgid ""
 "and Maps."
 msgstr ""
 
+#, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
@@ -216,6 +226,7 @@ msgstr ""
 msgid "Built By You"
 msgstr ""
 
+#, read-only
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""

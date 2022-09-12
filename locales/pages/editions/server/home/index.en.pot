@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 14:51+0200\n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,12 @@ msgid ""
 "with the latest open source technology"
 msgstr ""
 
+#, read-only
 #: header-%3Eimages-%3Eimage
 msgid "public/assets/images/server_main.png"
 msgstr ""
 
+#, read-only
 #: header-%3Eimages-%3EbackgroundImage
 msgid "public/assets/images/iot_background.jpg"
 msgstr ""
@@ -39,6 +41,7 @@ msgstr ""
 msgid "Download Now"
 msgstr ""
 
+#, read-only
 #: header-%3Ecta-%3E[0]-%3Eurl
 msgid "https://getfedora.org/en/server/download/"
 msgstr ""
