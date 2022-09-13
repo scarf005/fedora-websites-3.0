@@ -25,3 +25,13 @@ section:
           cta:
             text: Visit Now
             url: https://discussion.fedoraproject.org/
+        - title: Chat
+          image:
+            image: public/assets/images/iot.png
+            altText: A picture!
+          subtitle: "You can chat with the Fedora IoT Working Group via either Matrix or
+            IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on
+            irc.libera.chat."
+          cta:
+            text: Chat now or forever hold your peace
+            url: https://chat.fedoraproject.org
