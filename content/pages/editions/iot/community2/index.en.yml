@@ -35,3 +35,13 @@ section:
           cta:
             text: Chat now or forever hold your peace
             url: https://chat.fedoraproject.org
+        - title: Mailing list
+          subtitle: The Fedora IoT Working Group sends meeting agendas and minutes and has
+            discussions on their mailing list at
+            **[iot@lists.fedoraproject.org](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)**.
+          image:
+            image: public/assets/images/flock-barcelona.png
+            altText: Flock to Fedora IoT or something
+          cta:
+            text: Visit now
+            url: https://iot.fedoraproject.org/
