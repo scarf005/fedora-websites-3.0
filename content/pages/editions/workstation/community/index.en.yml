@@ -10,3 +10,9 @@ header:
 section:
   - header:
       sectionTitle: Communication channels
+    content:
+      list:
+        - title: Forum
+          description: The **Fedora Workstation** tag on Fedora's Discourse-based
+            discussion forum is a great place to connect with other Fedora
+            Workstation users and contributors.
