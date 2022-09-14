@@ -25,7 +25,9 @@ pages:
 
 # update_pos_if_yaml_changed:
 #   script:
-#     - ./i18n_gen_pot.sh # run whenever changes to /content. commit pot files to repo.
+#     - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
+#     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
+#     - git add . # commit to repo
 #   artifacts:
 #     expire_in: 1 day # unless marked as keep from job page
 #   only:
