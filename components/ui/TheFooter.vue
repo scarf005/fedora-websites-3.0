@@ -1,45 +1,4 @@
 <script setup>
-const desktops = [
-  { name: "Fedora Workstation", href: "/editions/workstation" },
-  { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
-  {
-    name: "Fedora KDE Plasma",
-    href: "https://spins.fedoraproject.org/en/kde/",
-  },
-  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
-  { name: "More", href: "https://spins.fedoraproject.org" },
-];
-const cloud = [
-  { name: "Fedora Server", href: "/editions/server" },
-  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
-  { name: "Fedora Cloud Images", href: "#" },
-  { name: "Fedora Container Images", href: "#" },
-];
-
-const iot = [
-  { name: "Fedora IoT", href: "/editions/iot" },
-  { name: "Fedora ARM Downloads", href: "https://arm.fedoraproject.org/" },
-];
-
-const support = [
-  { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
-  { name: "Common Bugs", href: "#" },
-  { name: "Fedora Magazine", href: "#" },
-  { name: "Fedora Developer Portal", href: "#" },
-  { name: "Documentation", href: "https://docs.fedoraproject.org/" },
-];
-
-const community = [
-  { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
-  { name: "Join Fedora", href: "#" },
-  { name: "Community Blog", href: "#" },
-  { name: "Matrix Chat Server", href: "#" },
-  { name: "Fedora Account System", href: "#" },
-  {
-    name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
-  },
-];
 </script>
 
 <template>
@@ -47,123 +6,73 @@ const community = [
     <div class="mx-6 py-10 text-center md:text-left">
       <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="">
-          <h6
-            class="uppercase font-semibold mb-4 flex justify-center md:justify-start"
-          >
+          <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
             Desktops
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in desktops"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
+          <li style="list-style-type: none" v-for="item in desktops" :key="item.name" class="mb-4">
+            <a :href="`${
+              item.href.includes('https')
+                ? item.href
+                : $config.app.baseURL + item.href
+            }`" :class="['text-gray-600', 'text-base font-medium']">
               {{ item.name }}
             </a>
           </li>
         </div>
 
         <div class="">
-          <h6
-            class="uppercase font-semibold mb-4 flex justify-center md:justify-start"
-          >
+          <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
             Server / Cloud Deployment
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in cloud"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
+          <li style="list-style-type: none" v-for="item in cloud" :key="item.name" class="mb-4">
+            <a :href="`${
+              item.href.includes('https')
+                ? item.href
+                : $config.app.baseURL + item.href
+            }`" :class="['text-gray-600', 'text-base font-medium']">
               {{ item.name }}
             </a>
           </li>
 
-          <h6
-            class="uppercase font-semibold mb-4 flex justify-center md:justify-start"
-          >
+          <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
             IoT / Edge Deployment
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in iot"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
+          <li style="list-style-type: none" v-for="item in iot" :key="item.name" class="mb-4">
+            <a :href="`${
+              item.href.includes('https')
+                ? item.href
+                : $config.app.baseURL + item.href
+            }`" :class="['text-gray-600', 'text-base font-medium']">
               {{ item.name }}
             </a>
           </li>
         </div>
 
         <div class="">
-          <h6
-            class="uppercase font-semibold mb-4 flex justify-center md:justify-start"
-          >
+          <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
             User Support
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in support"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
+          <li style="list-style-type: none" v-for="item in support" :key="item.name" class="mb-4">
+            <a :href="`${
+              item.href.includes('https')
+                ? item.href
+                : $config.app.baseURL + item.href
+            }`" :class="['text-gray-600', 'text-base font-medium']">
               {{ item.name }}
             </a>
           </li>
         </div>
 
         <div class="">
-          <h6
-            class="uppercase font-semibold mb-4 flex justify-center md:justify-start"
-          >
+          <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
             Community
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in community"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
+          <li style="list-style-type: none" v-for="item in community" :key="item.name" class="mb-4">
+            <a :href="`${
+              item.href.includes('https')
+                ? item.href
+                : $config.app.baseURL + item.href
+            }`" :class="['text-gray-600', 'text-base font-medium']">
               {{ item.name }}
             </a>
           </li>
@@ -174,11 +83,7 @@ const community = [
     <div class="py-10 text-center md:text-left">
       <div class="mx-6 grid md:grid-cols-2 lg:grid-cols-8">
         <div class="">
-          <img
-            src="~/assets/logos/fedora-blue.png"
-            alt="Fedora Logo"
-            class="w-1/2 ml-14 lg:ml-1 mb-4"
-          />
+          <img src="~/assets/logos/fedora-blue.png" alt="Fedora Logo" class="w-1/2 ml-14 lg:ml-1 mb-4" />
         </div>
 
         <div class="mb-4">
