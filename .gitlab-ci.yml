@@ -25,6 +25,7 @@ pages:
 
 update_pos_if_yaml_changed:
   script:
+    - dnf install git
     - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
     - git add .
