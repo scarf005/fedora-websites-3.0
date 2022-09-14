@@ -23,12 +23,18 @@ pages:
 
 
 
-# update_pos_if_yaml_changed:
-#   script:
-#     - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
-#     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
-#     - git add . # commit to repo
-#   artifacts:
-#     expire_in: 1 day # unless marked as keep from job page
-#   only:
-#     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
+update_pos_if_yaml_changed:
+  script:
+    - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
+    - ./i18n_update_po.sh # update the po files from the up-to-date pot files
+    - git add .
+    - git commit -m 'AUTOMATA - update .pot and .po files'
+    - git remote show origin
+    - git remote set-url --push origin git@gitlab:$CI_PROJECT_PATH
+    - git remote show origin
+    - git push --follow-tags origin HEAD:$CI_COMMIT_REF_NAME
+  artifacts:
+    expire_in: 1 day # unless marked as keep from job page
+  only:
+    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
+    - fix-gitlab-ci-po
