@@ -1,7 +1,7 @@
 image: fedora:latest
 
 before_script:
-  - dnf install npm translate-toolkit -y 
+  - dnf install npm translate-toolkit git -y 
 
 cache:
   paths:
@@ -25,11 +25,9 @@ pages:
 
 
 update_pos_if_yaml_changed:
-  before_script:
+  script:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - dnf install git -y
-  script:
     - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
     - git add .
