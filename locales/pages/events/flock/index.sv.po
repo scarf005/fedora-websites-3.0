@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 23:50+0000\n"
+"POT-Creation-Date: 2022-09-14 23:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,8 +296,9 @@ msgid "Red Hat"
 msgstr ""
 
 #: sponsors-%3E[0]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[0]-%3Elevel
 msgid "platinium"
@@ -313,8 +314,9 @@ msgid "Lenovo"
 msgstr ""
 
 #: sponsors-%3E[1]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[1]-%3Elevel
 msgctxt "sponsors->[1]->level"
@@ -331,8 +333,9 @@ msgid "AlmaLinux"
 msgstr ""
 
 #: sponsors-%3E[2]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[2]-%3Elevel
 msgctxt "sponsors->[2]->level"
@@ -344,8 +347,9 @@ msgid "openSuse"
 msgstr ""
 
 #: sponsors-%3E[3]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/opensuse_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[3]-%3Elevel
 msgctxt "sponsors->[3]->level"
@@ -387,8 +391,9 @@ msgid "GitLab"
 msgstr ""
 
 #: sponsors-%3E[6]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[6]-%3Elevel
 msgctxt "sponsors->[6]->level"
@@ -414,8 +419,9 @@ msgid "daskeyboard"
 msgstr ""
 
 #: sponsors-%3E[8]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[8]-%3Elevel
 msgctxt "sponsors->[8]->level"
@@ -427,8 +433,9 @@ msgid "Gnome"
 msgstr ""
 
 #: sponsors-%3E[9]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/Gnome_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[9]-%3Elevel
 msgctxt "sponsors->[9]->level"
@@ -442,8 +449,9 @@ msgid "TuxDigital"
 msgstr ""
 
 #: sponsors-%3E[10]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[10]-%3Elevel
 msgctxt "sponsors->[10]->level"
@@ -455,8 +463,9 @@ msgid "KDE"
 msgstr ""
 
 #: sponsors-%3E[11]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/KDE_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[11]-%3Elevel
 msgctxt "sponsors->[11]->level"
@@ -468,8 +477,9 @@ msgid "opensource.com"
 msgstr ""
 
 #: sponsors-%3E[12]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[12]-%3Elevel
 msgctxt "sponsors->[12]->level"
