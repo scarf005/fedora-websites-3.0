@@ -33,9 +33,7 @@ update_pos_if_yaml_changed:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git commit -m 'AUTOMATA - update .pot and .po files'
     - git remote show origin
-    - git remote set-url --push origin git@gitlab:$CI_PROJECT_PATH
-    - git remote show origin
-    - git push --follow-tags origin HEAD:$CI_COMMIT_REF_NAME
+    - git push
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
   only:
