@@ -3,7 +3,7 @@ const open = useState("navbaropen", () => false);
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
 const availableLocales = computed(() => {  return (locales.value).map(i => ({ name: i.name, href: switchLocalePath(i.code)}))});
-
+import { desktops, cloud, iot, support, community } from '../../config/navigation'
 </script>
 
 <template>

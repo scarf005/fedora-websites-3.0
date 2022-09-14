@@ -1,4 +1,5 @@
 <script setup>
+  import { desktops, cloud, iot, support, community } from '../../config/navigation'
 </script>
 
 <template>
