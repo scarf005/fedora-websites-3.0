@@ -15,21 +15,25 @@ msgstr ""
 
 #: title
 msgid "IoT Community "
-msgstr ""
+msgstr "IoT Gemenskap "
 
 #: description
 msgctxt "description"
 msgid "Join a community of users and contributors focused on Fedora IoT."
 msgstr ""
+"Gå med i en gemenskap av användare och bidragsgivare fokuserade på Fedora "
+"IoT."
 
 #: header-%3Etitle
 msgid "Community"
-msgstr ""
+msgstr "Gemenskap"
 
 #: header-%3Esubtitle
 msgctxt "header->subtitle"
 msgid "Join a community of users and contributors focused on Fedora IoT."
 msgstr ""
+"Gå med i en gemenskap av användare och bidragsgivare fokuserade på Fedora "
+"IoT."
 
 #: section-%3E[0]-%3Econtent-%3Etext
 msgid ""
@@ -38,6 +42,10 @@ msgid ""
 "making powers, as well as other contributors. Learn more about this group "
 "and how you can get involved on the IoT Working Group website."
 msgstr ""
+"Fedora IoT skapas av ett team i Fedora-projekt gemenskapen som kallas IoT "
+"Working Group. Den består av officiella medlemmar som har beslutanderätt "
+"samt andra bidragsgivare. Läs mer om den här gruppen och hur du kan engagera "
+"dig på IoT Working Groups webbplats."
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
 msgctxt "section->[0]->header->sectionTitle"
@@ -46,33 +54,39 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[0]-%3Etitle
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[0]-%3Esubtitle
 msgid ""
 "The Fedora IoT tag on Fedora's Discourse-based discussion forum is a great "
 "place to connect with other Fedora Workstation users and contributors."
 msgstr ""
+"Fedora IoT-taggen på Fedoras Discourse baserade diskussionsforum är ett bra "
+"ställe att få kontakt med andra Fedora IoT-användare och bidragsgivare."
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[1]-%3Etitle
 msgid "Chat"
-msgstr ""
+msgstr "Chatt"
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[1]-%3Esubtitle
 msgid ""
 "You can chat with the Fedora IoT Working Group via either Matrix or IRC: "
 "#iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat."
 msgstr ""
+"Du kan chatta med Fedora IoT Working Group via antingen Matrix eller IRC: "
+"#iot:fedoraproject.org på Matrix och #fedora-iot på irc.libera.chat."
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[2]-%3Etitle
 msgid "Mailing List"
-msgstr ""
+msgstr "E-postlista"
 
 #: section-%3E[1]-%3Econtent-%3Ecard-%3E[2]-%3Esubtitle
 msgid ""
 "The Fedora IoT Working Group sends meeting agendas and minutes and has "
 "discussions on their mailing list at iot@lists.fedoraproject.org."
 msgstr ""
+"Fedora IoT-arbetsgruppen skickar mötesagendor och protokoll och har "
+"diskussioner på sin e-postlista på iot@lists.fedoraproject.org."
 
 #: section-%3E[1]-%3Econtent-%3Etext
 msgid ""
@@ -81,18 +95,22 @@ msgid ""
 "Your friendly and helpful contributions to these communication channels "
 "would be greatly appreciated! Learn more."
 msgstr ""
+"Bli en Fedora-bidragsgivare\n"
+"\n"
+"Dina vänliga och hjälpsamma bidrag till dessa kommunikationskanaler skulle "
+"vara mycket uppskattade! Läs mer."
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Communication channels"
-msgstr ""
+msgstr "Kommunikationskanaler"
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
 msgid "Ways to get involved"
-msgstr ""
+msgstr "Sätt att engagera sig"
 
 #: section-%3E[2]-%3Econtent-%3Ecard-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr ""
+msgstr "Rapportera & diskutera problem"
 
 #: section-%3E[2]-%3Econtent-%3Ecard-%3E[0]-%3Esubtitle
 msgid ""
@@ -102,7 +120,7 @@ msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Ecard-%3E[1]-%3Etitle
 msgid "Attend a meeting"
-msgstr ""
+msgstr "Närvara vid ett möte"
 
 #: section-%3E[2]-%3Econtent-%3Ecard-%3E[1]-%3Esubtitle
 msgid ""
@@ -110,3 +128,6 @@ msgid ""
 "contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera."
 "chat."
 msgstr ""
+"IoT-arbetsgruppens möten är öppna för alla nuvarande och potentiella "
+"bidragsgivare på onsdagar kl. 11.00 Östra USA tid på #fedora-meeting@irc."
+"libera.chat."

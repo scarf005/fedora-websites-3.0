@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-12 12:53+0200\n"
+"POT-Creation-Date: 2022-09-14 18:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr "Pobierz teraz"
 #: header-%3Ecta-%3E[0]-%3Eurl
 #, read-only
 msgid "https://getfedora.org/en/workstation/download/"
-msgstr "https://getfedora.org/en/workstation/download/"
+msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
@@ -53,7 +53,7 @@ msgstr "Sprawdzone przez TechHut"
 #: header-%3Ecta-%3E[1]-%3Eurl
 #, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
-msgstr "https://www.youtube.com/watch?v=54aoIGKEMnk"
+msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Eicon
 msgid "fa-youtube"
@@ -62,25 +62,24 @@ msgstr "fa-youtube"
 #: header-%3EreviewUrl
 #, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
-msgstr "https://www.youtube.com/results?search_query=fedora+workstation+review"
+msgstr ""
+"https://www.youtube.com/results?search_query=fedora+workstation+recenzja"
 
 #: header-%3Esubtitle-%3Etext
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful, easy."
 msgstr ""
-"Piękny, wysokiej jakości system operacyjny zbudowany za pomocą najnowszej "
-"technologii open source. Zaufany, o wielu możliwościach, łatwy w obsłudze."
 
 #: header-%3Eimages-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_framework.png"
-msgstr "public/assets/images/workstation_framework.png"
+msgstr ""
 
 #: header-%3Eimages-%3EbackgroundImage
 #, read-only
 msgid "public/assets/images/workstation_background.jpg"
-msgstr "public/assets/images/workstation_background.jpg"
+msgstr ""
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
 msgid "Why Fedora Workstation?"
@@ -160,7 +159,7 @@ msgstr ""
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Benefits"
-msgstr "Tworzona przez Ciebie"
+msgstr "Korzyści"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Fantastic Apps"
@@ -179,7 +178,7 @@ msgstr ""
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_software_center.png"
-msgstr "public/assets/images/workstation_outofthebox.png"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
@@ -196,7 +195,7 @@ msgstr ""
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_languages.png"
-msgstr "public/assets/images/workstation_outofthebox.png"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Turn the lights down low"
@@ -207,12 +206,11 @@ msgid ""
 "Flip a switch to turn on dark mode and give your eyes a break from the day. "
 "Use night light to reduce screen glare and help with sleep."
 msgstr ""
-"Korzystaj z kalendarza internetowego na komputerze za pomocą kont online"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_nightlight.png"
-msgstr "public/assets/images/workstation_languages.png"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Calendar Integration"
@@ -221,13 +219,12 @@ msgstr "Integracja z kalendarzem"
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr ""
-"Fedora Workstation zawiera wspaniały zestaw narzędzi, takich jak zegar "
-"światowy, prognoza pogody i mapy."
+"Korzystaj z kalendarza internetowego na komputerze za pomocą kont online"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_calendar.png"
-msgstr "public/assets/images/workstation_outofthebox.png"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Etitle
 msgid "Helpful out of the box"
@@ -244,16 +241,16 @@ msgstr ""
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
 #, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
-msgstr "public/assets/images/workstation_outofthebox.png"
+msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
 msgid "Built By You"
-msgstr "Built By You"
+msgstr "Tworzona przez Ciebie"
 
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
 #, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
-msgstr "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3Esubtitle1
 msgid ""
@@ -261,9 +258,6 @@ msgid ""
 "and open source software built by inclusive, welcoming, and open-minded "
 "communities."
 msgstr ""
-"The Fedora Project envisions a world where everyone can benefit from free "
-"and open source software built by inclusive, welcoming, and open-minded "
-"communities."
 
 #: section-%3E[2]-%3Eheader-%3Esubtitle2
 msgid ""
@@ -272,10 +266,6 @@ msgid ""
 "powers, as well as other contributors. Learn more on the IoT Working Group "
 "website."
 msgstr ""
-"Fedora IoT is created by a team in the Fedora community called the IoT "
-"Working Group. It is comprised of official members who have decision making "
-"powers, as well as other contributors. Learn more on the IoT Working Group "
-"website."
 
 #: section-%3E[2]-%3Econtent-%3Etext
 msgid ""
@@ -285,56 +275,43 @@ msgid ""
 "Workstation Working Group Website.](https://docs.fedoraproject.org/en-US/"
 "workstation-working-group/)"
 msgstr ""
-"Fedora Workstation is created by a teamm in the Fedora community called the "
-"**Workstation Working Group**. It is comprised of official members who have "
-"decision making powers, as well as other contributors. [Learn more onthe "
-"Workstation Working Group Website.](https://docs.fedoraproject.org/en-US/"
-"workstation-working-group/)"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr "Report & discuss issues"
+msgstr "Zgłoś i dyskutuj błędy"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
 "You can view, file, and discuss Fedora Workstation issues on [the Fedora "
 "Workstation issue tracker]()."
 msgstr ""
-"You can view, file, and discuss Fedora Workstation issues on [the Fedora "
-"Workstation issue tracker]()."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr "Chat with the team"
+msgstr "Porozmawiaj z zespołem"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Visit **#fedora-workstation** on [irc.libera.chat]() and on **#workstation** "
 "[on the Fedora Matrix Chat server]()."
 msgstr ""
-"Visit **#fedora-workstation** on [irc.libera.chat]() and on **#workstation** "
-"[on the Fedora Matrix Chat server]()."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr "Join the mailing list"
+msgstr "Dołącz do listy dyskusyjnej"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas "
 "and minute ([view archives]().)"
 msgstr ""
-"Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas "
-"and minute ([view archives]().)"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr "Attend a meeting"
+msgstr "Weź udział w spotkaniu"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
-"Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
-"Eastern** on [Bluejeans]()."

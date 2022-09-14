@@ -25,13 +25,13 @@ msgstr ""
 msgid "A lightweight yet powerful and scalable OS"
 msgstr ""
 
-#, read-only
 #: header-%3Eimages-%3Eimage
+#, read-only
 msgid "public/assets/images/iot.png"
 msgstr ""
 
-#, read-only
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 msgid "public/assets/images/iot_background.jpg"
 msgstr ""
 
@@ -39,8 +39,8 @@ msgstr ""
 msgid "Download Now"
 msgstr ""
 
-#, read-only
 #: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/iot/download/"
 msgstr ""
 
@@ -48,8 +48,8 @@ msgstr ""
 msgid "Reviewed By TechHut"
 msgstr ""
 
-#, read-only
 #: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -61,8 +61,8 @@ msgstr ""
 msgid "WHY FEDORA IOT?"
 msgstr ""
 
-#, read-only
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgctxt "section->[0]->header->headerImage->image"
 msgid "public/assets/images/iot_background_why.jpg"
 msgstr ""
@@ -136,8 +136,8 @@ msgstr ""
 msgid "Platforms Tested against IoT"
 msgstr ""
 
-#, read-only
 #: section-%3E[1]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgctxt "section->[1]->header->headerImage->image"
 msgid "public/assets/images/iot_background_why.jpg"
 msgstr ""
@@ -187,8 +187,8 @@ msgstr ""
 msgid "Built By You"
 msgstr ""
 
-#, read-only
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 

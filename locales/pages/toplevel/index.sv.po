@@ -1,4 +1,4 @@
-#. extracted from content/pages/editions/iot/downloads/index.en.yml
+#. extracted from content/pages/toplevel/index.en.yml
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,5 +14,17 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.6.2\n"
 
 #: title
-msgid "Fedora IoT Downloads"
-msgstr "Téléchargements de Fedora IoT"
+msgid "Top Level Fedora Page"
+msgstr "Toppnivå Fedora sida"
+
+#: header-%3Etitle
+msgid "It's your OS"
+msgstr "Det är ditt OS"
+
+#: header-%3Esubtitle
+msgid ""
+"An innovative platform for hardware, clouds, and containers, built with love "
+"by you."
+msgstr ""
+"En innovativ plattform för hårdvara, moln och behållare, byggd med kärlek av "
+"dig."

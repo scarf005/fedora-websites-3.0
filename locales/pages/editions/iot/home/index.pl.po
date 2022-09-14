@@ -25,51 +25,51 @@ msgstr ""
 msgid "A lightweight yet powerful and scalable OS"
 msgstr ""
 
-#, read-only
 #: header-%3Eimages-%3Eimage
+#, read-only
 msgid "public/assets/images/iot.png"
 msgstr ""
 
-#, read-only
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 msgid "public/assets/images/iot_background.jpg"
 msgstr ""
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Download Now"
-msgstr ""
+msgstr "Pobierz teraz"
 
-#, read-only
 #: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/iot/download/"
 msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr ""
+msgstr "Sprawdzone przez TechHut"
 
-#, read-only
 #: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Eicon
 msgid "fa-youtube"
-msgstr ""
+msgstr "fa-youtube"
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
 msgid "WHY FEDORA IOT?"
 msgstr ""
 
-#, read-only
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgctxt "section->[0]->header->headerImage->image"
 msgid "public/assets/images/iot_background_why.jpg"
 msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Leading Technology"
-msgstr ""
+msgstr "Wiodąca technologia"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgctxt "section->[0]->content->list->[0]->description"
@@ -78,6 +78,8 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
+"oprogramowanie open source."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Container Based"
@@ -93,7 +95,7 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
-msgstr ""
+msgstr "Ekosystem open source"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgctxt "section->[0]->content->list->[2]->description"
@@ -124,27 +126,29 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr ""
+msgstr "W pełni wykorzystuje Twoje urządzenie"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
+"Fedora współpracuje z producentami sprzętu, aby obsługiwać jak najwięcej "
+"urządzeń każdego rodzaju."
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Platforms Tested against IoT"
 msgstr ""
 
-#, read-only
 #: section-%3E[1]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgctxt "section->[1]->header->headerImage->image"
 msgid "public/assets/images/iot_background_why.jpg"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "arm Systemready"
-msgstr ""
+msgstr "arm SystemReady"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgctxt "section->[1]->content->list->[0]->description"
@@ -152,10 +156,12 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
+"oprogramowanie open source."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Pine64"
-msgstr ""
+msgstr "Pine64"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgctxt "section->[1]->content->list->[1]->description"
@@ -166,7 +172,7 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "SolidRun"
-msgstr ""
+msgstr "SolidRun"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgctxt "section->[1]->content->list->[2]->description"
@@ -176,7 +182,7 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "nVidia"
-msgstr ""
+msgstr "nVidia"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgctxt "section->[1]->content->list->[3]->description"
@@ -185,10 +191,10 @@ msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
 msgid "Built By You"
-msgstr ""
+msgstr "Tworzona przez Ciebie"
 
-#, read-only
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
@@ -209,7 +215,7 @@ msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr ""
+msgstr "Zgłoś i dyskutuj błędy"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgctxt "section->[2]->content->list->[0]->description"
@@ -217,10 +223,12 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
+"oprogramowanie open source."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr ""
+msgstr "Porozmawiaj z zespołem"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgctxt "section->[2]->content->list->[1]->description"
@@ -231,7 +239,7 @@ msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr ""
+msgstr "Dołącz do listy dyskusyjnej"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgctxt "section->[2]->content->list->[2]->description"
@@ -241,7 +249,7 @@ msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr ""
+msgstr "Weź udział w spotkaniu"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgctxt "section->[2]->content->list->[3]->description"

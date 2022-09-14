@@ -19,27 +19,27 @@ msgstr "Fedora Workstation"
 
 #: description
 msgid "The flagship desktop distribution of the Fedora Project"
-msgstr ""
+msgstr "Flaggskepps skrivbordsdistributionen från Fedora-projektet"
 
 #: header-%3Etitle
 msgid "The leading Linux desktop"
-msgstr ""
+msgstr "Det ledande Linux-skrivbordet"
 
 #: header-%3Edetails-%3E[0]-%3Edetail
 msgid "Latest Release"
-msgstr ""
+msgstr "Senaste släpp"
 
 #: header-%3Edetails-%3E[1]-%3Edetail
 msgid "36"
-msgstr ""
+msgstr "36"
 
 #: header-%3Edetails-%3E[2]-%3Edetail
 msgid "Release Notes<https://getfedora.org>"
-msgstr ""
+msgstr "Leveransmeddelanden<https://getfedora.org>"
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Download Now"
-msgstr "Télécharger"
+msgstr "Ladda ned nu"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
 #, read-only
@@ -48,7 +48,7 @@ msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr ""
+msgstr "Recenserad av TechHut"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
 #, read-only
@@ -57,12 +57,12 @@ msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Eicon
 msgid "fa-youtube"
-msgstr ""
+msgstr "fa-youtube"
 
 #: header-%3EreviewUrl
 #, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
-msgstr ""
+msgstr "https://www.youtube.com/results?search_query=fedora+workstation+review"
 
 #: header-%3Esubtitle-%3Etext
 msgid ""
@@ -81,43 +81,48 @@ msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
-#, fuzzy
 msgid "Why Fedora Workstation?"
-msgstr "Fedora Workstation"
+msgstr "Varför Fedora Workstation?"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Reliable"
-msgstr ""
+msgstr "Pålitlig"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
 "Each version is updated for 18 months, and upgrades between versions are "
 "quick and easy."
 msgstr ""
+"Varje version uppdateras i 18 månader och uppgraderingar mellan versioner är "
+"snabba och enkla."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Free & Private"
-msgstr ""
+msgstr "Fri & Privat"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "With Fedora, your desktop is your own. It's free, there are no ads, and your "
 "data belongs to you."
 msgstr ""
+"Med Fedora är ditt skrivbord ditt eget. Det är gratis, det finns inga "
+"annonser och din data tillhör dig."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Beautiful"
-msgstr ""
+msgstr "Vacker"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Workstation is carefully curated to deliver a high-quality experience. The "
 "desktop is clean and uncluttered."
 msgstr ""
+"Workstation är noggrant utvald för att leverera en upplevelse av hög "
+"kvalitet. Skrivbordet är rent och stilrent."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Trusted"
-msgstr ""
+msgstr "Tillförlitlig"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
@@ -127,31 +132,35 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Etitle
 msgid "Leading technology"
-msgstr ""
+msgstr "Ledande teknologi"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Edescription
 msgid ""
 "Built on the latest technologies and enhancements that open source has to "
 "offer."
 msgstr ""
+"Byggd på den senaste tekniken och förbättringarna som öppen källkod har att "
+"erbjuda."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr ""
+msgstr "Få ut det mesta av din enhet"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
+"Fedora samarbetar med hårdvaruleverantörer för att tillhandahålla utmärkt "
+"hårdvarustöd på en rad enheter."
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Benefits"
-msgstr ""
+msgstr "Fördelar"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Fantastic Apps"
-msgstr ""
+msgstr "Fantastiska program"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
@@ -159,6 +168,9 @@ msgid ""
 "Includes exciting new open source apps as well as familiar apps from other "
 "platforms."
 msgstr ""
+"Bläddra i en fantastisk samling program som täcker allt du kan behöva. "
+"Innehåller spännande nya program med öppen källkod samt välbekanta program "
+"från andra plattformar."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
@@ -167,13 +179,15 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
-msgstr ""
+msgstr "Workstation pratar ditt språk"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Thanks to a global community of translators, Workstation is available in "
 "many languages."
 msgstr ""
+"Tack vare en global gemenskap av översättare är Workstation tillgänglig på "
+"många språk."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 #, read-only
@@ -182,13 +196,16 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Turn the lights down low"
-msgstr ""
+msgstr "Slå av ljuset"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Flip a switch to turn on dark mode and give your eyes a break from the day. "
 "Use night light to reduce screen glare and help with sleep."
 msgstr ""
+"Dra i spaken för att aktivera mörkt läge och ge dina ögon en paus från "
+"dagen. Använd nattljus för att minska skärmbländning och hjälpa till med "
+"sömnen."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
@@ -197,11 +214,11 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Calendar Integration"
-msgstr ""
+msgstr "Kalenderintegration"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid "Bring your online calendar to the desktop with online accounts"
-msgstr ""
+msgstr "Ta med din onlinekalender till skrivbordet med onlinekonton"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
 #, read-only
@@ -210,13 +227,15 @@ msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Etitle
 msgid "Helpful out of the box"
-msgstr ""
+msgstr "Hjälpsam direkt från start"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Edescription
 msgid ""
 "Fedora Workstation includes a great set of utilities, like Clocks, Weather "
 "and Maps."
 msgstr ""
+"Fedora Workstation innehåller en bra uppsättning verktyg, som klockor, väder "
+"och kartor."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
 #, read-only
@@ -225,7 +244,7 @@ msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
 msgid "Built By You"
-msgstr ""
+msgstr "Byggt för dig"
 
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
 #, read-only
@@ -238,6 +257,9 @@ msgid ""
 "and open source software built by inclusive, welcoming, and open-minded "
 "communities."
 msgstr ""
+"Fedora-projektet föreställer sig en värld där alla kan dra nytta av gratis "
+"programvara med öppen källkod byggd av inkluderande, välkomnande och "
+"fördomsfria gemenskaper."
 
 #: section-%3E[2]-%3Eheader-%3Esubtitle2
 msgid ""
@@ -246,6 +268,10 @@ msgid ""
 "powers, as well as other contributors. Learn more on the IoT Working Group "
 "website."
 msgstr ""
+"Fedora IoT skapas av ett team i Fedora-communityt som kallas IoT Working "
+"Group. Den består av officiella medlemmar som har beslutsfattande "
+"befogenheter, såväl som andra bidragsgivare. Läs mer på IoT Working Groups "
+"webbplats."
 
 #: section-%3E[2]-%3Econtent-%3Etext
 msgid ""
@@ -255,10 +281,15 @@ msgid ""
 "Workstation Working Group Website.](https://docs.fedoraproject.org/en-US/"
 "workstation-working-group/)"
 msgstr ""
+"Fedora Workstation skapas av ett team i Fedora-gemenskapen som kallas **"
+"Workstation Working Group**. Den består av officiella medlemmar som har "
+"beslutsfattande befogenheter, såväl som andra bidragsgivare. [Läs mer på "
+"Workstation Working Groups webbplats.](https://docs.fedoraproject.org/en-US/"
+"workstation-working-group/)"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr ""
+msgstr "Rapportera & diskutera problem"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
@@ -268,30 +299,36 @@ msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr ""
+msgstr "Chatta med teamet"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Visit **#fedora-workstation** on [irc.libera.chat]() and on **#workstation** "
 "[on the Fedora Matrix Chat server]()."
 msgstr ""
+"Besök **#fedora-workstation** på [irc.libera.chat]() och på **#workstation** "
+"[på Fedoras Matrix Chatt server]()."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr ""
+msgstr "Gå med i e-postlistan"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas "
 "and minute ([view archives]().)"
 msgstr ""
+"Registrera dig på [desktop@lists.fedoraproject.org]() för att få "
+"mötesagendor och protokoll ([visa arkiv]().)"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr ""
+msgstr "Närvara vid ett möte"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
+"Öppet för alla nuvarande och potentiella bidragsgivare **tisdagar, 9:30 "
+"Östra USA tid** på [Bluejeans]()."
