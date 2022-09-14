@@ -29,6 +29,8 @@ update_pos_if_yaml_changed:
     - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
     - git add .
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git config --global user.name "${GITLAB_USER_NAME}"
     - git commit -m 'AUTOMATA - update .pot and .po files'
     - git remote show origin
     - git remote set-url --push origin git@gitlab:$CI_PROJECT_PATH
