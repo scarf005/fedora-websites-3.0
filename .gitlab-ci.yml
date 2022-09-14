@@ -1,7 +1,7 @@
-image: node
+image: fedora:latest
 
 before_script:
-  - npm install
+  - dnf install npm translate-toolkit -y 
 
 cache:
   paths:
@@ -9,14 +9,24 @@ cache:
 
 pages:
   script:
+    - npm install
+    - ./i18n_gen_yml.sh # run at build time to create temporary yml files from weblate po files.
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public
-
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
     paths:
       - public
   only:
     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
-    - i18n
+
+
+
+# update_pos_if_yaml_changed:
+#   script:
+#     - ./i18n_gen_pot.sh # run whenever changes to /content. commit pot files to repo.
+#   artifacts:
+#     expire_in: 1 day # unless marked as keep from job page
+#   only:
+#     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
