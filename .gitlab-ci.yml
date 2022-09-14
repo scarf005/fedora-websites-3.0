@@ -36,8 +36,8 @@ update_pos_if_yaml_changed:
     # - git remote show origin
     # - git remote set-url --push origin git@gitlab:$CI_PROJECT_PATH
     - git remote show origin
-    # - git push origin HEAD:$CI_COMMIT_REF_NAME
-    - git push origin fix-gitlab-ci-po
+    - git push origin HEAD:$CI_COMMIT_REF_NAME
+    # - git push origin fix-gitlab-ci-po
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
   only:
