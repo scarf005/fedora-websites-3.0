@@ -1,4 +1,5 @@
 <script setup>
+
 const desktops = [
   { name: "Fedora Workstation", href: "/editions/workstation" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
@@ -42,6 +43,11 @@ const community = [
 ];
 
 const open = useState("navbaropen", () => false);
+const switchLocalePath = useSwitchLocalePath();
+
+const { locales } = useI18n();
+const availableLocales = computed(() => {  return (locales.value).map(i => ({ name: i.name, href: switchLocalePath(i.code)}))});
+
 </script>
 
 <template>
@@ -66,18 +72,20 @@ const open = useState("navbaropen", () => false);
                 class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
                 href="https://docs.fedoraproject.org/en-US/project/"
               >
-                <span class="mr-1">About</span>
+                <span class="mr-1">{{ $t('About') }}</span>
               </a>
 
-              <TheNavItem title="Desktops" :items="desktops" icons="true" />
+              <TheNavItem :title="$t('Desktops')" :items="desktops" icons="true" />
 
-              <TheNavItem title="Server & Cloud" :items="cloud" />
+              <TheNavItem :title="$t('Server & Cloud')" :items="cloud" />
 
-              <TheNavItem title="IoT & Edge" :items="iot" />
+              <TheNavItem :title="$t('IoT & Edge')" :items="iot" />
 
-              <TheNavItem title="Community" :items="community" />
+              <TheNavItem :title="$t('Community')" :items="community" />
 
-              <TheNavItem title="Support" :items="support" />
+              <TheNavItem :title="$t('Support')" :items="support" />
+
+              <TheNavItem :title="$t('Languages')" :items="availableLocales" />
             </div>
           </div>
         </div>

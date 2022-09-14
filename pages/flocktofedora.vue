@@ -1,9 +1,12 @@
 <script setup>
-useHead({
-  title: "Flock to Fedora | Fedora Contributor Conference",
-});
+const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/events/flock").find();
+  return queryContent()
+    .where({ _path: "/pages/events/flock/." + locale._value })
+    .find();
+});
+useHead({
+  title: data._value[0].title + " | The Fedora Project",
 });
 </script>
 <template>
@@ -27,19 +30,20 @@ const { data } = await useAsyncData("page-data", () => {
     <div class="flex p-12">
       <div v-for="card in data[0].header.cards" class="mr-8 w-60">
         <div class="text-fp-blue font-semibold leading-none text-lg">
-          <img 
-	    class="inline align-baseline h-10 max-w-none mr-1" 
-	    :src="`${$config.app.baseURL + '/' + card.image.replace('public/', '')}`"
-	  />
-	  {{ card.subtitle }}
-	</div>
+          <img
+            class="inline align-baseline h-10 max-w-none mr-1"
+            :src="`${
+              $config.app.baseURL + '/' + card.image.replace('public/', '')
+            }`"
+          />
+          {{ card.subtitle }}
+        </div>
         <p class="mt-2 text-slate-500 text-sm">{{ card.description }}</p>
       </div>
     </div>
   </FpHero>
 
   <main class="flex flex-col items-center mt-8">
-
     <!-- TODO: Explore -->
     <section class="w-10/12 mx-auto my-10">
       <h2
@@ -108,6 +112,5 @@ const { data } = await useAsyncData("page-data", () => {
         />
       </FpList>
     </section>
-
   </main>
 </template>

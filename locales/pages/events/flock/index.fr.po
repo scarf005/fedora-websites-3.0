@@ -1,0 +1,220 @@
+#. extracted from content/pages/events/flock/index.en.yml
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-12 12:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
+
+#: title
+msgid "Flock To Fedora"
+msgstr "Flock To Fedora"
+
+#: description
+msgid ""
+"Flock to Fedora is the annual contributor conference for the Fedora Project. "
+"It has a virtual version called Nest."
+msgstr ""
+"Flock to Fedora est la conférence annuelle des contributeurs du Projet "
+"Fedora. Sa version virtuelle s'appelle Nest."
+
+#: header-%3Elogo
+msgid "public/assets/images/flock-barcelona.png"
+msgstr "public/assets/images/flock-barcelona.png"
+
+#: header-%3Esubtitle-%3Etext
+msgid "The Fedora Project Conference"
+msgstr "The Fedora Project Conference"
+
+#: header-%3Esubtitle-%3Ecolor
+msgid "fp-blue"
+msgstr "fp-blue"
+
+#: header-%3Esubtitle-%3EisBold
+msgid "True"
+msgstr "True"
+
+#: header-%3EeventDate
+msgid "August 5 - 7, 2023"
+msgstr "August 5 - 7, 2023"
+
+#: header-%3Eimages-%3EbackgroundImage
+#, read-only
+msgid "public/assets/images/fedora-33-night.jpg"
+msgstr "public/assets/images/fedora-33-night.jpg"
+
+#: header-%3Ecta-%3E[0]-%3Etext
+msgid "Register"
+msgstr "Register"
+
+#: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
+msgctxt "header->cta->[0]->url"
+msgid "#"
+msgstr "#"
+
+#: header-%3Ecta-%3E[1]-%3Etext
+msgid "Calendar"
+msgstr "Calendar"
+
+#: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
+msgctxt "header->cta->[1]->url"
+msgid "#"
+msgstr "#"
+
+#: header-%3Ecards-%3E[0]-%3Eimage
+#, read-only
+msgid "public/assets/images/nest-white-logo.png"
+msgstr "public/assets/images/nest-white-logo.png"
+
+#: header-%3Ecards-%3E[0]-%3Esubtitle
+msgid "Virtual"
+msgstr "Virtual"
+
+#: header-%3Ecards-%3E[0]-%3Edescription
+msgid "A 3 day conference hosted on Hopin.io"
+msgstr "A 3 day conference hosted on Hopin.io"
+
+#: header-%3Ecards-%3E[1]-%3Eimage
+#, read-only
+msgid "public/assets/images/hatch-white-logo.png"
+msgstr "public/assets/images/hatch-white-logo.png"
+
+#: header-%3Ecards-%3E[1]-%3Esubtitle
+msgid "Community"
+msgstr "Community"
+
+#: header-%3Ecards-%3E[1]-%3Edescription
+msgid "Community events hosted around the world"
+msgstr "Community events hosted around the world"
+
+#: section-%3E[0]-%3Eheader-%3EsectionTitle
+msgid "We are Fedora"
+msgstr "We are Fedora"
+
+#: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
+msgid "public/assets/images/iot_flock_background.jpg"
+msgstr "public/assets/images/iot_flock_background.jpg"
+
+#: section-%3E[0]-%3Eheader-%3Esubtitle1
+msgid ""
+"The Fedora Project envisions a world where everyone can benefit from free "
+"and open source software built by inclusive, welcoming, and open-minded "
+"communities."
+msgstr ""
+"The Fedora Project envisions a world where everyone can benefit from free "
+"and open source software built by inclusive, welcoming, and open-minded "
+"communities."
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Etitle
+msgid "Discussions"
+msgstr "Discussions"
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+msgid ""
+"Use our messaging board Fedora Discussions to stay up to date on Flock "
+"Notifications. Check is out here."
+msgstr ""
+"Use our messaging board Fedora Discussions to stay up to date on Flock "
+"Notifications. Check is out here."
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
+msgid "Twitter"
+msgstr "Twitter"
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+msgid ""
+"Use the #NestWithFedora hashtags on your preferred social media platforms. "
+"Follow @fedora on Twitter for updates."
+msgstr ""
+"Use the #NestWithFedora hashtags on your preferred social media platforms. "
+"Follow @fedora on Twitter for updates."
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
+msgid "Matrix & IRC"
+msgstr "Matrix & IRC"
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
+msgid ""
+"Our main IRC channel for the event is #fedora-flock on libera.chat. Join "
+"#fedora-flock to chat on Matrix or IRX."
+msgstr ""
+"Our main IRC channel for the event is #fedora-flock on libera.chat. Join "
+"#fedora-flock to chat on Matrix or IRX."
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Etitle
+msgid "Ask Fedora"
+msgstr "Ask Fedora"
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Edescription
+msgid ""
+"New to Fedora? Check our community forum for support and help with "
+"frequently asked questions."
+msgstr ""
+"New to Fedora? Check our community forum for support and help with "
+"frequently asked questions."
+
+#: section-%3E[1]-%3Eheader-%3EsectionTitle
+msgid "Benefits of Sponsoring Flock"
+msgstr "Benefits of Sponsoring Flock"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
+msgid "Brand Exposure"
+msgstr "Brand Exposure"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+msgid ""
+"Sponsors are advertised in several places at Flock. We also post about "
+"sponsors on social media. Your brand will be distributed globally in our "
+"swag bag."
+msgstr ""
+"Sponsors are advertised in several places at Flock. We also post about "
+"sponsors on social media. Your brand will be distributed globally in our "
+"swag bag."
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+msgid ""
+"Our tierd sponsorship levels will all give you great visibility at Flock. "
+"Your booth will be showcased on the Expo page to maximize engagement."
+msgstr ""
+"Our tierd sponsorship levels will all give you great visibility at Flock. "
+"Your booth will be showcased on the Expo page to maximize engagement."
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
+msgid "Networking"
+msgstr "Networking"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Edescription
+msgid ""
+"Flock attracts hundreds of amazing open source community members who work on "
+"and use software daily. Engage with our vibrant community in sessions and "
+"social hours."
+msgstr ""
+"Flock attracts hundreds of amazing open source community members who work on "
+"and use software daily. Engage with our vibrant community in sessions and "
+"social hours."
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
+msgid "Booths"
+msgstr "Booths"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
+msgid ""
+"All sponsor booths include a video, customizable experience, chat, and "
+"social media engagement. Click below to learn more."
+msgstr ""
+"All sponsor booths include a video, customizable experience, chat, and "
+"social media engagement. Click below to learn more."

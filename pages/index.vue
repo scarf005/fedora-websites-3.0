@@ -1,10 +1,13 @@
 <script setup>
 import FpBtn from "~~/components/utilities/FpBtn.vue";
-useHead({
-  title: "Fedora Homepage | The Fedora Project",
-});
+const { locale } = useI18n();
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/toplevel").find();
+  return queryContent()
+    .where({ _path: "/pages/toplevel/." + locale._value })
+    .find();
+});
+useHead({
+  title: data._value[0].title + " | The Fedora Project",
 });
 </script>
 <template>
