@@ -1,56 +1,80 @@
 <script setup>
 const { locale } = useI18n();
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent()
-    .where({ _path: "/pages/events/flock/." + locale._value })
-    .find();
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent("/pages/events/flock/." + locale._value)
+    .findOne();
 });
+
+if (data._value === null){
+  ({ data } = await useAsyncData("page-data-fallback", () => {
+    return queryContent("/pages/events/flock/.en")
+      .findOne();
+  }));
+}
+
 useHead({
-  title: data._value[0].title + " | The Fedora Project",
+  title: data._value.title + " | The Fedora Project",
+  meta: [
+    {
+      name: "description",
+      content: data._value.description,
+    },
+  ],
 });
 </script>
 <template>
   <FpHero
-    :background="data[0].header.images.backgroundImage"
+    :background="data.header.images.backgroundImage"
     alignment="bg-top"
   >
     <FpBanner
-      :title="data[0].header.title"
-      :subtitle="data[0].header.subtitle"
-      :logo="data[0].header.logo"
+      :title="data.header.title"
+      :subtitle="data.header.subtitle"
+      :logo="data.header.logo"
       color="text-fp-purple"
       border="border border-fp-purple"
       background="text-white bg-fp-purple"
-      :ctas="data[0].header.cta"
+      :ctas="data.header.cta"
     >
-      <h2 class="text-white my-8 font-semibold">
-        {{ data[0].header.eventDate }}
+      <h2 class="text-white my-8 font-semibold" style="text-shadow: 4px 4px 4px black;">
+        {{ data.header.eventDate }}
       </h2>
     </FpBanner>
     <div class="flex p-12">
-      <div v-for="card in data[0].header.cards" class="mr-8 w-60">
-        <div class="text-fp-blue font-semibold leading-none text-lg">
-          <img
-            class="inline align-baseline h-10 max-w-none mr-1"
-            :src="`${
-              $config.app.baseURL + '/' + card.image.replace('public/', '')
-            }`"
-          />
-          {{ card.subtitle }}
-        </div>
-        <p class="mt-2 text-slate-500 text-sm">{{ card.description }}</p>
+      <div v-for="card in data.header.cards" class="mr-8 w-60">
+        <div class="text-fp-blue font-semibold leading-none text-lg" style="text-shadow: 1px 2px 4px black;">
+          <img 
+	    class="inline align-baseline h-10 max-w-none mr-1" 
+	    :src="`${$config.app.baseURL + '/' + card.image.replace('public/', '')}`"
+	  />
+	  {{ card.subtitle }}
+	</div>
+        <p class="mt-2 text-slate-400 text-sm">{{ card.description }}</p>
       </div>
     </div>
   </FpHero>
 
-  <main class="flex flex-col items-center mt-8">
+  <main class="flex flex-col items-center">
+
     <!-- TODO: Explore -->
-    <section class="w-10/12 mx-auto my-10">
-      <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
-      >
-        Explore the latest in Open Source
-      </h2>
+    <section class="w-full pb-10 bg-gradient-to-b from-slate-200">
+      <div class="w-10/12 my-10 mx-auto">
+        <h2
+          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        >
+          Explore the latest in Open Source
+        </h2>
+        <div class="flex flex-wrap justify-around items-stretch text-center gap-4 text-fp-blue-dark">
+	  <FpCard v-for="card in data.exploreSection.cards">
+
+	    <FpCardImage :src='card.imageURI'/>
+	    <FpCardTitle>{{ card.title }}</FpCardTitle>
+	    <FpCardText>{{ card.description }}</FpCardText>
+	    <FpCardAction>{{ card.link.text }}</FpCardAction>
+
+	  </FpCard>
+        </div>
+      </div>
     </section>
 
     <!-- TODO: Hybrid Experience -->
@@ -82,7 +106,7 @@ useHead({
 
     <!-- Community Section -->
     <section class="my-10">
-      <FpCommunity :data="data[0].section[0]" />
+      <FpCommunity :data="data.section[0]" />
     </section>
 
     <!-- TODO: Our Sponsors -->
@@ -92,6 +116,11 @@ useHead({
       >
         Our Sponsors
       </h2>
+      <p class="font-normal text-gray-600 mx-auto max-w-lg text-center">
+        Thank you to our sponsors, supporting this event is one of the ways that they contribute to open source.
+      </p>
+
+      <FpSponsors :sponsors="data.sponsors" />
     </section>
 
     <!-- Benefits of Sponsoring -->
@@ -102,12 +131,12 @@ useHead({
         <h3
           class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
         >
-          {{ data[0].section[1].header.sectionTitle }}
+          {{ data.section[1].header.sectionTitle }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data[0].section[1].content.list"
+          v-for="item in data.section[1].content.list"
           v-bind="item"
         />
       </FpList>
