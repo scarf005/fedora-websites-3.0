@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 15:21-0700\n"
+"POT-Creation-Date: 2022-09-14 23:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
 
 #: title
 msgid "Flock To Fedora"
@@ -47,6 +47,7 @@ msgid "August 5 - 7, 2023"
 msgstr "5-7 Augusti, 2023"
 
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_background.jpg"
 msgstr "public/assets/images/iot_flock_background.jpg"
@@ -72,6 +73,7 @@ msgid "#"
 msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Eimage
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_nest_logo.png"
 msgstr "public/assets/images/flock-barcelona.png"
@@ -85,6 +87,7 @@ msgid "A 3 day conference hosted on Hopin.io"
 msgstr "En 3 dagars konferens som äger rum på Hopin.io"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
 msgstr "public/assets/images/flock-barcelona.png"
@@ -221,8 +224,9 @@ msgid "Workshops"
 msgstr ""
 
 #: exploreSection-%3Ecards-%3E[0]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/flock_workshops_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[0]-%3Edescription
 msgid ""
@@ -244,8 +248,9 @@ msgid "Sessions"
 msgstr ""
 
 #: exploreSection-%3Ecards-%3E[1]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/flock_sessions_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[1]-%3Edescription
 msgid ""
@@ -267,8 +272,9 @@ msgid "Social Events"
 msgstr ""
 
 #: exploreSection-%3Ecards-%3E[2]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/flock_socialevents_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[2]-%3Edescription
 msgid ""
@@ -394,8 +400,9 @@ msgid "datto"
 msgstr ""
 
 #: sponsors-%3E[7]-%3EimageURI
+#, fuzzy
 msgid "public/assets/images/sponsors/datto_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock-barcelona.png"
 
 #: sponsors-%3E[7]-%3Elevel
 msgctxt "sponsors->[7]->level"
