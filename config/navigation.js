@@ -21,22 +21,22 @@ const iot = [
 
 const support = [
   { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
-  { name: "Common Bugs", href: "#" },
-  { name: "Fedora Magazine", href: "#" },
-  { name: "Fedora Developer Portal", href: "#" },
   { name: "Documentation", href: "https://docs.fedoraproject.org/" },
+  { name: "Fedora Magazine", href: "https://fedoramagazine.org/" },
+  { name: "Common Bugs", href: "#" },
+  { name: "Fedora Developer Portal", href: "#" },
 ];
 
 const community = [
-  { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
-  { name: "Join Fedora", href: "#" },
-  { name: "Community Blog", href: "#" },
-  { name: "Matrix Chat Server", href: "#" },
-  { name: "Fedora Account System", href: "#" },
   {
     name: "Flock To Fedora",
     href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
   },
+  { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
+  { name: "Community Blog", href: "https://communityblog.fedoraproject.org/" },
+  { name: "Join Fedora", href: "#" },
+  { name: "Matrix Chat Server", href: "#" },
+  { name: "Fedora Account System", href: "#" },
 ];
 
 export { desktops, cloud, iot, support, community };
