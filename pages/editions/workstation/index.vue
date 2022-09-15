@@ -82,7 +82,7 @@ useHead({
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-        Features for everyone.
+        {{data.section[1].header.sectionTitle}}
       </h2>
       <FpBenefit
         v-for="item in data.section[1].content.list"
