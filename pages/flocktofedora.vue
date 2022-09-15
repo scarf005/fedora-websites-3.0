@@ -1,17 +1,14 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/events/flock/." + locale._value)
-    .findOne();
+  return queryContent("/pages/events/flock/home/." + locale._value).findOne();
 });
 
-if (data._value === null){
+if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/events/flock/.en")
-      .findOne();
+    return queryContent("/pages/events/flock/home/.en").findOne();
   }));
 }
-
 useHead({
   title: data._value.title + " | The Fedora Project",
   meta: [
@@ -23,10 +20,7 @@ useHead({
 });
 </script>
 <template>
-  <FpHero
-    :background="data.header.images.backgroundImage"
-    alignment="bg-top"
-  >
+  <FpHero :background="data.header.images.backgroundImage" alignment="bg-top">
     <FpBanner
       :title="data.header.title"
       :subtitle="data.header.subtitle"
@@ -36,26 +30,33 @@ useHead({
       background="text-white bg-fp-purple"
       :ctas="data.header.cta"
     >
-      <h2 class="text-white my-8 font-semibold" style="text-shadow: 4px 4px 4px black;">
+      <h2
+        class="text-white my-8 font-semibold"
+        style="text-shadow: 4px 4px 4px black"
+      >
         {{ data.header.eventDate }}
       </h2>
     </FpBanner>
     <div class="flex p-12">
       <div v-for="card in data.header.cards" class="mr-8 w-60">
-        <div class="text-fp-blue font-semibold leading-none text-lg" style="text-shadow: 1px 2px 4px black;">
-          <img 
-	    class="inline align-baseline h-10 max-w-none mr-1" 
-	    :src="`${$config.app.baseURL + '/' + card.image.replace('public/', '')}`"
-	  />
-	  {{ card.subtitle }}
-	</div>
+        <div
+          class="text-fp-blue font-semibold leading-none text-lg"
+          style="text-shadow: 1px 2px 4px black"
+        >
+          <img
+            class="inline align-baseline h-10 max-w-none mr-1"
+            :src="`${
+              $config.app.baseURL + '/' + card.image.replace('public/', '')
+            }`"
+          />
+          {{ card.subtitle }}
+        </div>
         <p class="mt-2 text-slate-400 text-sm">{{ card.description }}</p>
       </div>
     </div>
   </FpHero>
 
   <main class="flex flex-col items-center">
-
     <!-- TODO: Explore -->
     <section class="w-full pb-10 bg-gradient-to-b from-slate-200">
       <div class="w-10/12 my-10 mx-auto">
@@ -64,15 +65,15 @@ useHead({
         >
           Explore the latest in Open Source
         </h2>
-        <div class="flex flex-wrap justify-around items-stretch text-center gap-4 text-fp-blue-dark">
-	  <FpCard v-for="card in data.exploreSection.cards">
-
-	    <FpCardImage :src='card.imageURI'/>
-	    <FpCardTitle>{{ card.title }}</FpCardTitle>
-	    <FpCardText>{{ card.description }}</FpCardText>
-	    <FpCardAction>{{ card.link.text }}</FpCardAction>
-
-	  </FpCard>
+        <div
+          class="flex flex-wrap justify-around items-stretch text-center gap-4 text-fp-blue-dark"
+        >
+          <FpCard v-for="card in data.exploreSection.cards">
+            <FpCardImage :src="card.imageURI" />
+            <FpCardTitle>{{ card.title }}</FpCardTitle>
+            <FpCardText>{{ card.description }}</FpCardText>
+            <FpCardAction>{{ card.link.text }}</FpCardAction>
+          </FpCard>
         </div>
       </div>
     </section>
@@ -117,7 +118,8 @@ useHead({
         Our Sponsors
       </h2>
       <p class="font-normal text-gray-600 mx-auto max-w-lg text-center">
-        Thank you to our sponsors, supporting this event is one of the ways that they contribute to open source.
+        Thank you to our sponsors, supporting this event is one of the ways that
+        they contribute to open source.
       </p>
 
       <FpSponsors :sponsors="data.sponsors" />
