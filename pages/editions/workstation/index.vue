@@ -11,7 +11,6 @@ if (data._value === null){
       .findOne();
   }));
 }
-
 useHead({
   title: data._value.title + " | The Fedora Project",
   meta: [
@@ -31,10 +30,10 @@ useHead({
       :title="data.header.title"
       :subtitle="data.header.subtitle"
       :reviewUrl="data.header.reviewUrl"
+      :ctas="data.header.cta"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
-      :ctas="data.header.cta"
     >
       <div class="hero-laptop-container">
         <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
@@ -125,9 +124,7 @@ useHead({
 
     <!-- Call To Action -->
     <section>
-      <div class="flex justify-center items-center h-96">
-        <FpImage image="assets/images/workstation_logo.jpg" class="max-w-sm" />
-      </div>
+     <FpCallToAction :cta="data.header.cta" />
     </section>
   </main>
 </template>
