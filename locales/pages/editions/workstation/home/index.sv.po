@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-15 00:05+0000\n"
+"POT-Creation-Date: 2022-09-15 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,8 +155,8 @@ msgstr ""
 "hårdvarustöd på en rad enheter."
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
-msgid "Benefits"
-msgstr "Fördelar"
+msgid "Features for everyone"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Fantastic Apps"
@@ -332,3 +332,6 @@ msgid ""
 msgstr ""
 "Öppet för alla nuvarande och potentiella bidragsgivare **tisdagar, 9:30 "
 "Östra USA tid** på [Bluejeans]()."
+
+#~ msgid "Benefits"
+#~ msgstr "Fördelar"
