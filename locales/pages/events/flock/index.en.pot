@@ -102,6 +102,7 @@ msgstr ""
 msgid "Workshops"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[0]-%3EimageURI
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
@@ -116,6 +117,7 @@ msgstr ""
 msgid "View Projects"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[0]-%3Elink-%3EtargetURL
 msgctxt "exploreSection->cards->[0]->link->targetURL"
 msgid ""
@@ -125,6 +127,7 @@ msgstr ""
 msgid "Sessions"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[1]-%3EimageURI
 msgid "public/assets/images/flock_sessions_logo.png"
 msgstr ""
@@ -139,6 +142,7 @@ msgstr ""
 msgid "View Topics"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[1]-%3Elink-%3EtargetURL
 msgctxt "exploreSection->cards->[1]->link->targetURL"
 msgid ""
@@ -148,6 +152,7 @@ msgstr ""
 msgid "Social Events"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[2]-%3EimageURI
 msgid "public/assets/images/flock_socialevents_logo.png"
 msgstr ""
@@ -162,6 +167,7 @@ msgstr ""
 msgid "View Socials"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3Ecards-%3E[2]-%3Elink-%3EtargetURL
 msgctxt "exploreSection->cards->[2]->link->targetURL"
 msgid ""
@@ -182,6 +188,7 @@ msgid ""
 "Check out the recordings from previous years of Flock and Nest."
 msgstr ""
 
+#, read-only
 #: exploreSection-%3EpastEvents-%3Ecard-%3EvideoURL
 msgid "https://www.youtube-nocookie.com/embed/LqBVHz76Wxc"
 msgstr ""
@@ -190,6 +197,7 @@ msgstr ""
 msgid "Visit Fedora Youtube"
 msgstr ""
 
+#, read-only
 #: exploreSection-%3EpastEvents-%3Ecard-%3Elink-%3EtargetURL
 msgid ""
 "https://www.youtube.com/fedoraproject/playlists?view=50&sort=dd&shelf_id=2"
@@ -199,19 +207,25 @@ msgstr ""
 msgid "We are Fedora"
 msgstr ""
 
+#, read-only
 #: communitySection-%3Eheader-%3EbackgroundImageURI
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
 #: communitySection-%3Eheader-%3Esubtitle1
 msgid ""
-"The Fedora Project envisions a world where everyone can benefit from free "
-"and open source software built by inclusive, welcoming, and open-minded "
-"communities."
+"The Fedora Project envisions a world where everyone benefits from free and "
+"open source software built by inclusive, welcoming, and open-minded "
+"communities. Stay connected during Flock through the following channels."
 msgstr ""
 
 #: communitySection-%3Elist-%3E[0]-%3Etitle
 msgid "Discussions"
+msgstr ""
+
+#, read-only
+#: communitySection-%3Elist-%3E[0]-%3EiconURI
+msgid "public/assets/images/discussions_icon.png"
 msgstr ""
 
 #: communitySection-%3Elist-%3E[0]-%3Edescription
@@ -225,6 +239,11 @@ msgstr ""
 msgid "Twitter"
 msgstr ""
 
+#, read-only
+#: communitySection-%3Elist-%3E[1]-%3EiconURI
+msgid "public/assets/images/twitter_icon.png"
+msgstr ""
+
 #: communitySection-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Use the <b>#NestWithFedora</b> hashtags on your preferred social media "
@@ -236,6 +255,11 @@ msgstr ""
 msgid "Matrix & IRC"
 msgstr ""
 
+#, read-only
+#: communitySection-%3Elist-%3E[2]-%3EiconURI
+msgid "public/assets/images/matrix_icon.png"
+msgstr ""
+
 #: communitySection-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Our main IRC channel for the event is <b>#fedora-flock</b> on <b>libera."
@@ -245,6 +269,11 @@ msgstr ""
 
 #: communitySection-%3Elist-%3E[3]-%3Etitle
 msgid "Ask Fedora"
+msgstr ""
+
+#, read-only
+#: communitySection-%3Elist-%3E[3]-%3EiconURI
+msgid "public/assets/images/ask_fedora_icon.png"
 msgstr ""
 
 #: communitySection-%3Elist-%3E[3]-%3Edescription
@@ -268,6 +297,7 @@ msgstr ""
 msgid "Red Hat"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[0]-%3EimageURI
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
 msgstr ""
@@ -285,6 +315,7 @@ msgstr ""
 msgid "Lenovo"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[1]-%3EimageURI
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
 msgstr ""
@@ -303,6 +334,7 @@ msgstr ""
 msgid "AlmaLinux"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[2]-%3EimageURI
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
 msgstr ""
@@ -316,6 +348,7 @@ msgstr ""
 msgid "openSuse"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[3]-%3EimageURI
 msgid "public/assets/images/sponsors/opensuse_logo.png"
 msgstr ""
@@ -329,6 +362,7 @@ msgstr ""
 msgid "some Other Sponsor"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[4]-%3EimageURI
 msgctxt "sponsorSection->sponsors->[4]->imageURI"
 msgid ""
@@ -343,6 +377,7 @@ msgstr ""
 msgid "another Cool Sponsor"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[5]-%3EimageURI
 msgctxt "sponsorSection->sponsors->[5]->imageURI"
 msgid ""
@@ -359,6 +394,7 @@ msgstr ""
 msgid "GitLab"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[6]-%3EimageURI
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
 msgstr ""
@@ -372,6 +408,7 @@ msgstr ""
 msgid "datto"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[7]-%3EimageURI
 msgid "public/assets/images/sponsors/datto_logo.png"
 msgstr ""
@@ -385,6 +422,7 @@ msgstr ""
 msgid "daskeyboard"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[8]-%3EimageURI
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
 msgstr ""
@@ -398,6 +436,7 @@ msgstr ""
 msgid "Gnome"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[9]-%3EimageURI
 msgid "public/assets/images/sponsors/Gnome_logo.png"
 msgstr ""
@@ -413,6 +452,7 @@ msgstr ""
 msgid "TuxDigital"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[10]-%3EimageURI
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
 msgstr ""
@@ -426,6 +466,7 @@ msgstr ""
 msgid "KDE"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[11]-%3EimageURI
 msgid "public/assets/images/sponsors/KDE_logo.png"
 msgstr ""
@@ -439,6 +480,7 @@ msgstr ""
 msgid "opensource.com"
 msgstr ""
 
+#, read-only
 #: sponsorSection-%3Esponsors-%3E[12]-%3EimageURI
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
 msgstr ""
