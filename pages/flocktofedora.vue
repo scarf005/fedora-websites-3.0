@@ -147,11 +147,11 @@ useHead({
 	  >
             {{ data.communitySection.header.title }}
           </h2>
-          <h4 class="text-fp-blue-dark mb-5 mx-14">
+          <h4 class="text-lg text-fp-blue-dark mb-20 mx-20 text-center">
             {{ data.communitySection.header.subtitle1 }}
           </h4>
 
-          <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+          <FpList columns="sm:grid-cols-2">
             <FpListItem v-for="item in data.communitySection.list" v-bind="item" />
           </FpList>
         </section>
@@ -184,7 +184,7 @@ useHead({
           {{ data.sponsorSection.benefits.header.title }}
         </h3>
       </header>
-      <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+      <FpList columns="sm:grid-cols-2">
         <FpListItem
           v-for="item in data.sponsorSection.benefits.list"
           v-bind="item"
