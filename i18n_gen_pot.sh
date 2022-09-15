@@ -7,5 +7,5 @@ for file in $(find content -type f -name \*.en.yml); do
   yaml2po -P -i $file -o $output;
 
   # Flag url & image keys as read-only
-  sed -i "/^#.*\([uU]rl\|[iI]mage\)$/i #, read-only" $output
+  sed -i "/^#.*\([uU]r[li]\|[iI]mage\)$/i #, read-only" $output
 done
