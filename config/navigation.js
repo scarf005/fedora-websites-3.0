@@ -19,14 +19,6 @@ const iot = [
   { name: "Fedora IoT", href: "/editions/iot" }
 ];
 
-const support = [
-  { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
-  { name: "Documentation", href: "https://docs.fedoraproject.org/" },
-  { name: "Fedora Magazine", href: "https://fedoramagazine.org/" },
-  { name: "Common Bugs", href: "#" },
-  { name: "Fedora Developer Portal", href: "#" },
-];
-
 const community = [
   {
     name: "Flock To Fedora",
@@ -34,9 +26,17 @@ const community = [
   },
   { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
   { name: "Community Blog", href: "https://communityblog.fedoraproject.org/" },
+  { name: "Fedora Magazine", href: "https://fedoramagazine.org/" },
   { name: "Join Fedora", href: "#" },
   { name: "Matrix Chat Server", href: "#" },
   { name: "Fedora Account System", href: "#" },
+  { name: "Fedora Developer Portal", href: "#" },
 ];
 
-export { desktops, cloud, iot, support, community };
+const support = [
+  { name: "Fedora Help Forum", href: "https://ask.fedoraproject.org" },
+  { name: "Documentation", href: "https://docs.fedoraproject.org/" },
+  { name: "Common Bugs", href: "#" },
+];
+
+export { desktops, cloud, iot, community, support };
