@@ -1,14 +1,14 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/workstation/home/." + locale._value)
-    .findOne();
+  return queryContent(
+    "/pages/editions/workstation/home/." + locale._value
+  ).findOne();
 });
 
-if (data._value === null){
+if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/workstation/home/.en")
-      .findOne();
+    return queryContent("/pages/editions/workstation/home/.en").findOne();
   }));
 }
 useHead({
@@ -81,12 +81,9 @@ useHead({
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-        {{data.section[1].header.sectionTitle}}
+        {{ data.section[1].header.sectionTitle }}
       </h2>
-      <FpBenefit
-        v-for="item in data.section[1].content.list"
-        v-bind="item"
-      />
+      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" />
     </section>
 
     <!-- Developers Section -->
@@ -124,7 +121,7 @@ useHead({
 
     <!-- Call To Action -->
     <section>
-     <FpCallToAction :cta="data.header.cta" />
+      <FpCallToAction :cta="data.header.cta" />
     </section>
   </main>
 </template>
