@@ -59,7 +59,7 @@ useHead({
   <main class="flex flex-col items-center">
     <!-- TODO: Explore -->
     <section class="w-full pb-10 bg-slate-100">
-      <div class="w-10/12 my-10 mx-auto">
+      <div class="w-10/12 max-w-screen-xl my-10 mx-auto">
         <h2
           class="2xl:px-72 text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
         >
@@ -78,7 +78,16 @@ useHead({
 	<h3 class="mt-20 text-4xl text-center font-semibold text-fp-blue-dark">Watch Footage from Past Events</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto mt-8 bg-white rounded-lg">
           <div class="col-span-1 p-1 sm:p-5">
-	    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqBVHz76Wxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    <iframe 
+	      width="560" 
+	      height="315" 
+	      src="https://www.youtube-nocookie.com/embed/LqBVHz76Wxc" 
+	      title="YouTube video player" 
+	      frameborder="0" 
+	      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	      allowfullscreen
+	      class="w-full">
+	    </iframe>
           </div>
           <div class="col-span-1 text-left flex flex-col justify-center p-1 sm:p-5 text-center sm:text-start mx-12">
             <h4 class="mb-5 font-semibold text-fp-blue-dark">What to expect</h4>
@@ -141,10 +150,10 @@ useHead({
     <!-- Benefits of Sponsoring -->
     <section class="w-10/12 my-10">
       <header
-        class="grid md:grid-cols-2 gap-4 md:w-11/12 mx-auto text-center md:text-left"
+        class="grid md:grid-cols-2 gap-4 md:w-11/12 max-w-screen-xl mx-auto text-center md:text-left"
       >
         <h3
-          class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
+          class="text-fp-blue font-medium mb-4"
         >
           {{ data.section[1].header.sectionTitle }}
         </h3>

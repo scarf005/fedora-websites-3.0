@@ -23,7 +23,7 @@ function sponsorClass(sponsor) {
 </script>
 
 <template>
-  <div class="flex-wrap md:flex-nowrap grid-none md:grid grid-cols-1 md:grid-cols-4 md:grid-flow-dense gap-4 mt-10 justify-items-stretch text-gray-500 mx-0 lg:mx-10">
+  <div class="flex-wrap md:flex-nowrap grid-none md:grid grid-cols-1 md:grid-cols-4 md:grid-flow-dense gap-4 mt-10 justify-items-stretch text-gray-500 mx-auto max-w-screen-lg">
 
     <div v-for="sponsor in sponsors" class="grid text-xs text-center h-48 p-8 content-center relative" :class="sponsorClass(sponsor)">
       <template v-if="sponsor.level != 'placeholder'">

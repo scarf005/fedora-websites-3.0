@@ -13,7 +13,7 @@ defineProps({
       })`,
     }"
     style="min-height: 60vh"
-    :class="[alignment, 'pt-6 pb-30 bg-cover']"
+    :class="[alignment, 'pt-6 pb-30 bg-cover w-screen']"
   >
     <slot />
   </div>
