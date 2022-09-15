@@ -58,10 +58,10 @@ useHead({
 
   <main class="flex flex-col items-center">
     <!-- TODO: Explore -->
-    <section class="w-full pb-10 bg-gradient-to-b from-slate-200">
+    <section class="w-full pb-10 bg-slate-100">
       <div class="w-10/12 my-10 mx-auto">
         <h2
-          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+          class="2xl:px-72 text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
         >
           Explore the latest in Open Source
         </h2>
@@ -75,6 +75,19 @@ useHead({
             <FpCardAction>{{ card.link.text }}</FpCardAction>
           </FpCard>
         </div>
+	<h3 class="mt-20 text-4xl text-center font-semibold text-fp-blue-dark">Watch Footage from Past Events</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto mt-8 bg-white rounded-lg">
+          <div class="col-span-1 p-1 sm:p-5">
+	    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqBVHz76Wxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-span-1 text-left flex flex-col justify-center p-1 sm:p-5 text-center sm:text-start mx-12">
+            <h4 class="mb-5 font-semibold text-fp-blue-dark">What to expect</h4>
+            <p class="font-normal text-gray-600 ">
+              Flock is an annual conference for contributors of Fedora Linux. It is where the community plans and showcases the strategy and work on the project. Check out the recordings from previous years of Flock and Nest.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
