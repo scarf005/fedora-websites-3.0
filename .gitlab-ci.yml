@@ -8,7 +8,24 @@ cache:
     - node_modules/
     - /var/cache/dnf
 
+update_pos_if_yaml_changed:
+  stage: build
+  script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
+    - ./i18n_update_po.sh # update the po files from the up-to-date pot files
+    - git add .
+      # "[ci skip]" and "-o ci-skip" prevent a CI trigger loop
+    - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE"
+    - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop     
+  artifacts:
+    expire_in: 1 day # unless marked as keep from job page
+  only:
+    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
+
 pages:
+  stage: deploy
   script:
     - npm install
     - ./i18n_gen_yml.sh # run at build time to create temporary yml files from weblate po files.
@@ -23,18 +40,3 @@ pages:
     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
 
 
-
-update_pos_if_yaml_changed:
-  script:
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
-    - ./i18n_update_po.sh # update the po files from the up-to-date pot files
-    - git add .
-      # "[ci skip]" and "-o ci-skip" prevent a CI trigger loop
-    - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE"
-    - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop     
-  artifacts:
-    expire_in: 1 day # unless marked as keep from job page
-  only:
-    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
