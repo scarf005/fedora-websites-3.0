@@ -37,10 +37,10 @@ useHead({
         {{ data.header.eventDate }}
       </h2>
     </FpBanner>
-    <div class="flex p-12">
-      <div v-for="card in data.header.cards" class="mr-8 w-60">
+    <div class="flex p-12 max-w-screen-xl mx-auto">
+      <div v-for="card in data.header.cards" class="mr-8 max-w-[17rem] bg-black/50 rounded-lg">
         <div
-          class="text-fp-blue font-semibold leading-none text-lg"
+          class="text-fp-blue font-semibold leading-none text-lg p-4" 
           style="text-shadow: 1px 2px 4px black"
         >
           <img
@@ -51,7 +51,7 @@ useHead({
           />
           {{ card.subtitle }}
         </div>
-        <p class="mt-2 text-slate-400 text-sm">{{ card.description }}</p>
+        <p class="px-4 text-slate-400 text-sm">{{ card.description }}</p>
       </div>
     </div>
   </FpHero>
@@ -61,9 +61,9 @@ useHead({
     <section class="w-full pb-10 bg-slate-100">
       <div class="w-10/12 max-w-screen-xl my-10 mx-auto">
         <h2
-          class="2xl:px-72 text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+          class="mx-auto max-w-screen-md text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
         >
-          Explore the latest in Open Source
+          {{ data.exploreSection.header.title }}
         </h2>
         <div
           class="flex flex-wrap justify-around items-stretch text-center gap-4 text-fp-blue-dark"
@@ -75,13 +75,13 @@ useHead({
             <FpCardAction>{{ card.link.text }}</FpCardAction>
           </FpCard>
         </div>
-	<h3 class="mt-20 text-4xl text-center font-semibold text-fp-blue-dark">Watch Footage from Past Events</h3>
+	<h3 class="mt-20 text-4xl text-center font-semibold text-fp-blue-dark">{{ data.exploreSection.pastEvents.header.title }}</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto mt-8 bg-white rounded-lg">
           <div class="col-span-1 p-1 sm:p-5">
 	    <iframe 
 	      width="560" 
 	      height="315" 
-	      src="https://www.youtube-nocookie.com/embed/LqBVHz76Wxc" 
+	      :src="data.exploreSection.pastEvents.card.videoURL" 
 	      title="YouTube video player" 
 	      frameborder="0" 
 	      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -89,10 +89,15 @@ useHead({
 	      class="w-full">
 	    </iframe>
           </div>
-          <div class="col-span-1 text-left flex flex-col justify-center p-1 sm:p-5 text-center sm:text-start mx-12">
-            <h4 class="mb-5 font-semibold text-fp-blue-dark">What to expect</h4>
+          <div class="col-span-1 text-left flex flex-col justify-center p-1 sm:p-5 text-center text-fp-blue-dark sm:text-start mx-12">
+            <h4 class="mb-5 font-semibold">{{ data.exploreSection.pastEvents.card.title }}</h4>
             <p class="font-normal text-gray-600 ">
-              Flock is an annual conference for contributors of Fedora Linux. It is where the community plans and showcases the strategy and work on the project. Check out the recordings from previous years of Flock and Nest.
+	      {{ data.exploreSection.pastEvents.card.description }}
+            </p>
+            <p class="mt-4 text-right">
+              <a class="text-fp-blue" :href="data.exploreSection.pastEvents.card.link.targetURL">{{ data.exploreSection.pastEvents.card.link.text }}
+                <font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right-long" />
+	      </a>
             </p>
           </div>
         </div>
@@ -101,15 +106,18 @@ useHead({
     </section>
 
     <!-- TODO: Hybrid Experience -->
-    <section class="w-10/12 mx-auto my-10">
-      <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
-      >
-        A Hybrid Experience
-      </h2>
+    <section class="w-full mx-auto my-10">
+      <div class="w-10/12 max-w-screen-xl my-10 mx-auto">
+        <h2
+          class="max-w-max mx-auto text-5xl md:text-7xl md:leading-normal text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+        >
+          A Hybrid Experience
+        </h2>
+      </div>
     </section>
 
     <!-- TODO: Important Dates -->
+    <!--
     <section class="w-10/12 mx-auto my-10">
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
@@ -117,8 +125,10 @@ useHead({
         Important Dates
       </h2>
     </section>
+    -->
 
     <!-- TODO: Event Calendar -->
+    <!--
     <section class="w-10/12 mx-auto my-10">
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
@@ -126,41 +136,57 @@ useHead({
         Event Calendar
       </h2>
     </section>
+    -->
 
     <!-- Community Section -->
     <section class="my-10">
-      <FpCommunity :data="data.section[0]" />
+      <FpHero :background="data.communitySection.header.backgroundImageURI" alignment="bg-top">
+        <section class="w-10/12 max-w-screen-xl mx-auto py-24">
+          <h2
+            class="max-w-max mx-auto text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+	  >
+            {{ data.communitySection.header.title }}
+          </h2>
+          <h4 class="text-fp-blue-dark mb-5 mx-14">
+            {{ data.communitySection.header.subtitle1 }}
+          </h4>
+
+          <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+            <FpListItem v-for="item in data.communitySection.list" v-bind="item" />
+          </FpList>
+        </section>
+      </FpHero>
+
     </section>
 
     <!-- TODO: Our Sponsors -->
     <section class="w-10/12 mx-auto my-10">
       <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        class="max-w-max mx-auto text-5xl md:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
       >
-        Our Sponsors
+        {{ data.sponsorSection.header.title }}
       </h2>
       <p class="font-normal text-gray-600 mx-auto max-w-lg text-center">
-        Thank you to our sponsors, supporting this event is one of the ways that
-        they contribute to open source.
+	{{ data.sponsorSection.header.subtitle }}
       </p>
 
-      <FpSponsors :sponsors="data.sponsors" />
+      <FpSponsors :sponsors="data.sponsorSection.sponsors" />
     </section>
 
     <!-- Benefits of Sponsoring -->
     <section class="w-10/12 my-10">
       <header
-        class="grid md:grid-cols-2 gap-4 md:w-11/12 max-w-screen-xl mx-auto text-center md:text-left"
+        class="md:w-11/12 max-w-screen-xl mx-auto text-center md:text-left"
       >
         <h3
-          class="text-fp-blue font-medium mb-4"
+          class="text-center text-fp-blue font-medium mb-4"
         >
-          {{ data.section[1].header.sectionTitle }}
+          {{ data.sponsorSection.benefits.header.title }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data.section[1].content.list"
+          v-for="item in data.sponsorSection.benefits.list"
           v-bind="item"
         />
       </FpList>
