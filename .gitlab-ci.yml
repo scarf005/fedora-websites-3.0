@@ -1,12 +1,13 @@
 image: fedora:latest
 
 before_script:
+  - mkdir .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
   - dnf install npm translate-toolkit git -y 
 
 cache:
   paths:
     - node_modules/
-    - /var/cache/dnf
+    - .cache_dnf
 
 update_pos_if_yaml_changed:
   script:
@@ -45,6 +46,8 @@ build_preview:
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public
+  variables:
+    CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
   artifacts:
     paths:
     - public/
