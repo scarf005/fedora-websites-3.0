@@ -31,7 +31,7 @@ msgstr ""
 
 #: header-%3Esubtitle-%3Etext
 msgid "The Fedora Project Conference"
-msgstr ""
+msgstr "La conférence du Projet Fedora"
 
 #: header-%3Esubtitle-%3Ecolor
 msgid "fp-blue"
@@ -43,54 +43,49 @@ msgstr ""
 
 #: header-%3EeventDate
 msgid "August 5 - 7, 2023"
-msgstr ""
+msgstr "5 - 7 Août 2023"
 
 #: header-%3Eimages-%3EbackgroundImage
-#, read-only
 msgid "public/assets/images/flock_background.jpg"
 msgstr ""
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Register"
-msgstr ""
+msgstr "S'enregistrer"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
-#, read-only
 msgctxt "header->cta->[0]->url"
 msgid "#"
 msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Etext
 msgid "Calendar"
-msgstr ""
+msgstr "Calendrier"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
-#, read-only
 msgctxt "header->cta->[1]->url"
 msgid "#"
 msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Eimage
-#, read-only
 msgid "public/assets/images/flock_nest_logo.png"
 msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Esubtitle
 msgid "Virtual"
-msgstr ""
+msgstr "Virtuel"
 
 #: header-%3Ecards-%3E[0]-%3Edescription
 msgid "A 3 day conference hosted on Hopin.io"
-msgstr ""
+msgstr "Une conférence de 3 jours hébergée sur Hopin.io"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
-#, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
 msgstr ""
 
 #: header-%3Ecards-%3E[1]-%3Esubtitle
 msgid "Community"
-msgstr ""
+msgstr "Communauté"
 
 #: header-%3Ecards-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
@@ -101,7 +96,6 @@ msgid "We are Fedora"
 msgstr ""
 
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
-#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
@@ -141,8 +135,8 @@ msgstr ""
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Our main IRC channel for the event is <b>#fedora-flock</b> on <b>libera."
-"chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock\""
-">#fedora-flock</a></b> to chat on Matrix or IRC."
+"chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock"
+"\">#fedora-flock</a></b> to chat on Matrix or IRC."
 msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Etitle
@@ -151,8 +145,8 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
-"New to Fedora? Check our <b><a href=\"https://ask.fedoraproject.org/\""
-">community forum</a></b> for support and help with frequently asked "
+"New to Fedora? Check our <b><a href=\"https://ask.fedoraproject.org/"
+"\">community forum</a></b> for support and help with frequently asked "
 "questions."
 msgstr ""
 
@@ -356,9 +350,7 @@ msgid ""
 msgstr ""
 
 #: sponsors-%3E[5]-%3Elevel
-msgctxt "sponsors->[5]->level"
-"sponsors->[5]->level"
-"sponsors->[5]->level"
+msgctxt "sponsors->[5]->levelsponsors->[5]->levelsponsors->[5]->level"
 msgid "bronze"
 msgstr ""
 
@@ -410,9 +402,7 @@ msgid "public/assets/images/sponsors/Gnome_logo.png"
 msgstr ""
 
 #: sponsors-%3E[9]-%3Elevel
-msgctxt "sponsors->[9]->level"
-"sponsors->[9]->level"
-"sponsors->[9]->level"
+msgctxt "sponsors->[9]->levelsponsors->[9]->levelsponsors->[9]->level"
 msgid "media"
 msgstr ""
 

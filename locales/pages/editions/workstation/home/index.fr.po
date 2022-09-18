@@ -19,39 +19,37 @@ msgstr "Fedora Workstation"
 
 #: description
 msgid "The flagship desktop distribution of the Fedora Project"
-msgstr ""
+msgstr "La distribution de bureau phare du Projet Fedora"
 
 #: header-%3Etitle
 msgid "The leading Linux desktop"
-msgstr ""
+msgstr "Le meilleur du bureau Linux"
 
 #: header-%3Edetails-%3E[0]-%3Edetail
 msgid "Latest Release"
-msgstr ""
+msgstr "Dernière version"
 
 #: header-%3Edetails-%3E[1]-%3Edetail
 msgid "36"
-msgstr ""
+msgstr "36"
 
 #: header-%3Edetails-%3E[2]-%3Edetail
 msgid "Release Notes<https://getfedora.org>"
-msgstr ""
+msgstr "Notes de version<https://getfedora.org>"
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Download Now"
 msgstr "Télécharger"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
-#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr ""
+msgstr "Testé par TechHut"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
-#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -60,7 +58,6 @@ msgid "fa-youtube"
 msgstr ""
 
 #: header-%3EreviewUrl
-#, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr ""
 
@@ -69,89 +66,100 @@ msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful, easy."
 msgstr ""
+"Un beau bureau, de haute qualité, construit autour des dernières "
+"technologies open source. Fiable, puissant, simple."
 
 #: header-%3Eimages-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
 #: header-%3Eimages-%3EbackgroundImage
-#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
-#, fuzzy
 msgid "Why Fedora Workstation?"
-msgstr "Fedora Workstation"
+msgstr "Pourquoi Fedora Workstation ?"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Reliable"
-msgstr ""
+msgstr "Fiable"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
 "Each version is updated for 18 months, and upgrades between versions are "
 "quick and easy."
 msgstr ""
+"Chaque version est maintenue pendant 18 mois, et les mise à jour entre "
+"versions sont simple et rapide."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Free & Private"
-msgstr ""
+msgstr "Gratuit & Privé"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "With Fedora, your desktop is your own. It's free, there are no ads, and your "
 "data belongs to you."
 msgstr ""
+"Avec Fedora, votre bureau est à vous. C'est gratuit, pas de publicité, et "
+"vos données vous appartiennent."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Beautiful"
-msgstr ""
+msgstr "De toute beauté"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Workstation is carefully curated to deliver a high-quality experience. The "
 "desktop is clean and uncluttered."
 msgstr ""
+"Workstation est soigneusement choisi pour fournir une expérience de haute "
+"qualité. Le bureau est propre et épuré."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Trusted"
-msgstr ""
+msgstr "De confiance"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
 "Developed in partnership with upstream projects. Rigorously tested. Backed "
 "by Red Hat."
 msgstr ""
+"Développé en partenariat avec les projets upstream. Rigoureusement testé. "
+"Soutenu par Red Hat."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Etitle
 msgid "Leading technology"
-msgstr ""
+msgstr "Technologie d'avant garde"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Edescription
 msgid ""
 "Built on the latest technologies and enhancements that open source has to "
 "offer."
 msgstr ""
+"Construit sur les dernières technologies et améliorations que l'open source "
+"peut fournir."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr ""
+msgstr "Obtenez le maximum de votre appareil"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
+"Fedora travaille avec les fournisseurs matériel pour produire un support "
+"excellent sur une variété d'appareils."
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Features for everyone"
-msgstr ""
+msgstr "Fonctionnalités pour tous"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Fantastic Apps"
-msgstr ""
+msgstr "Applications fantastique"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
@@ -159,52 +167,57 @@ msgid ""
 "Includes exciting new open source apps as well as familiar apps from other "
 "platforms."
 msgstr ""
+"Parcourez une grande collection d'applications, couvrant tout ce dont vous "
+"pourriez avoir besoin. Inclut de nouvelles applications open source "
+"passionnantes ainsi que des applications familières provenant d'autres "
+"plates-formes."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
-msgstr ""
+msgstr "Workstation parle votre langue"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Thanks to a global community of translators, Workstation is available in "
 "many languages."
 msgstr ""
+"Grace à une grande communauté de traducteurs, Workstation est disponible "
+"dans de nombreuse langues."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Turn the lights down low"
-msgstr ""
+msgstr "Baissez la lumière"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Flip a switch to turn on dark mode and give your eyes a break from the day. "
 "Use night light to reduce screen glare and help with sleep."
 msgstr ""
+"Actionnez un interrupteur pour activer le mode sombre et soulager vos yeux "
+"de la journée. Utilisez le mode veilleuse pour réduire les reflets à l’écran "
+"et vous faciliter le sommeil."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Calendar Integration"
-msgstr ""
+msgstr "Intégration du calendrier"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
 
@@ -219,7 +232,6 @@ msgid ""
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
@@ -228,7 +240,6 @@ msgid "Built By You"
 msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
-#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
