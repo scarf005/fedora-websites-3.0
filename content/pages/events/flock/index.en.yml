@@ -60,6 +60,46 @@ exploreSection:
       link:
         text: Visit Fedora Youtube
         targetURL: https://www.youtube.com/fedoraproject/playlists?view=50&sort=dd&shelf_id=2
+hybridSection:
+  header:
+    title: A Hybrid Experience
+    subtitle1:
+      The location of Flock changes each year between Europe and North America. In 2020
+      Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make
+      it more accessible to our community.
+  cards:
+  - title: July 1 - 31 2023
+    imageURI: public/assets/images/flock_logo_mini.png
+    description: 
+      The location of Flock changes each year between Europe and North America. In 2020
+      Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make
+      it more accessible to our community.
+    link:
+      text: Learn More
+      targetURL: ""
+  - title: July 1 - 31 2023
+    imageURI: public/assets/images/flock_nest_logo_mini.png
+    description: 
+      During the Covid-19 pandemic, we created Nest as a virtual alternative to Flock.
+      Now it exists as a virtual option for those who cannot attend in person.
+      Making Flock accessible for everyone!
+    link:
+      text: Learn More
+      targetURL: ""
+  hatchSubsection:
+    header:
+      title: Interested in hosting your own event?
+    card:
+      title: July 1 - 31 2023
+      description: 
+        In the month leading up to Flock, Fedorans are encouraged to organize local
+        community events. Set the format and topic of your choice. The Fedora Council
+        will help support your initiative with financial and organizating aid.
+        Click below to set up a Hatch! Deadline for submissions is May 29.
+      imageURI: ""
+      link:
+        text: Learn More
+        targetURL: ""
 communitySection:
   header:
     title: We are Fedora

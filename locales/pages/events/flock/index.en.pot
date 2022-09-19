@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 07:03+0000\n"
+"POT-Creation-Date: 2022-09-19 20:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,6 +201,111 @@ msgstr ""
 #: exploreSection-%3EpastEvents-%3Ecard-%3Elink-%3EtargetURL
 msgid ""
 "https://www.youtube.com/fedoraproject/playlists?view=50&sort=dd&shelf_id=2"
+msgstr ""
+
+#: hybridSection-%3Eheader-%3Etitle
+msgid "A Hybrid Experience"
+msgstr ""
+
+#: hybridSection-%3Eheader-%3Esubtitle1
+msgctxt "hybridSection->header->subtitle1"
+msgid ""
+"The location of Flock changes each year between Europe and North America. In "
+"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+"to make it more accessible to our community."
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[0]-%3Etitle
+msgctxt "hybridSection->cards->[0]->title"
+"hybridSection->cards->[0]->title"
+msgid "July 1 - 31 2023"
+msgstr ""
+
+#, read-only
+#: hybridSection-%3Ecards-%3E[0]-%3EimageURI
+msgid "public/assets/images/flock_logo_mini.png"
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[0]-%3Edescription
+msgctxt "hybridSection->cards->[0]->description"
+msgid ""
+"The location of Flock changes each year between Europe and North America. In "
+"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+"to make it more accessible to our community."
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[0]-%3Elink-%3Etext
+msgctxt "hybridSection->cards->[0]->link->text"
+"hybridSection->cards->[0]->link->text"
+msgid "Learn More"
+msgstr ""
+
+#, read-only
+#: hybridSection-%3Ecards-%3E[0]-%3Elink-%3EtargetURL
+msgctxt "hybridSection->cards->[0]->link->targetURL"
+msgid ""
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[1]-%3Etitle
+msgctxt "hybridSection->cards->[1]->title"
+msgid "July 1 - 31 2023"
+msgstr ""
+
+#, read-only
+#: hybridSection-%3Ecards-%3E[1]-%3EimageURI
+msgid "public/assets/images/flock_nest_logo_mini.png"
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[1]-%3Edescription
+msgid ""
+"During the Covid-19 pandemic, we created Nest as a virtual alternative to "
+"Flock. Now it exists as a virtual option for those who cannot attend in "
+"person. Making Flock accessible for everyone!"
+msgstr ""
+
+#: hybridSection-%3Ecards-%3E[1]-%3Elink-%3Etext
+msgctxt "hybridSection->cards->[1]->link->text"
+msgid "Learn More"
+msgstr ""
+
+#, read-only
+#: hybridSection-%3Ecards-%3E[1]-%3Elink-%3EtargetURL
+msgctxt "hybridSection->cards->[1]->link->targetURL"
+msgid ""
+msgstr ""
+
+#: hybridSection-%3EhatchSubsection-%3Eheader-%3Etitle
+msgid "Interested in hosting your own event?"
+msgstr ""
+
+#: hybridSection-%3EhatchSubsection-%3Ecard-%3Etitle
+msgctxt "hybridSection->hatchSubsection->card->title"
+msgid "July 1 - 31 2023"
+msgstr ""
+
+#: hybridSection-%3EhatchSubsection-%3Ecard-%3Edescription
+msgid ""
+"In the month leading up to Flock, Fedorans are encouraged to organize local "
+"community events. Set the format and topic of your choice. The Fedora "
+"Council will help support your initiative with financial and organizating "
+"aid. Click below to set up a Hatch! Deadline for submissions is May 29."
+msgstr ""
+
+#, read-only
+#: hybridSection-%3EhatchSubsection-%3Ecard-%3EimageURI
+msgctxt "hybridSection->hatchSubsection->card->imageURI"
+msgid ""
+msgstr ""
+
+#: hybridSection-%3EhatchSubsection-%3Ecard-%3Elink-%3Etext
+msgctxt "hybridSection->hatchSubsection->card->link->text"
+msgid "Learn More"
+msgstr ""
+
+#, read-only
+#: hybridSection-%3EhatchSubsection-%3Ecard-%3Elink-%3EtargetURL
+msgctxt "hybridSection->hatchSubsection->card->link->targetURL"
+msgid ""
 msgstr ""
 
 #: communitySection-%3Eheader-%3Etitle
