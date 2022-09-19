@@ -22,7 +22,7 @@ const iot = [
 const community = [
   {
     name: "Flock To Fedora",
-    href: "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/flocktofedora",
+    href: "/flocktofedora",
   },
   { name: "Discussion Board", href: "https://discussion.fedoraproject.org/" },
   { name: "Community Blog", href: "https://communityblog.fedoraproject.org/" },
