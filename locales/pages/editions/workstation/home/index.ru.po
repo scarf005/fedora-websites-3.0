@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 15:27+0000\n"
+"POT-Creation-Date: 2022-09-20 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,8 @@ msgid "The flagship desktop distribution of the Fedora Project"
 msgstr "Флагманский настольный дистрибутив проекта Fedora"
 
 #: header-%3Etitle
-msgid "The leading Linux desktop"
+#, fuzzy
+msgid "The leading Linux desktop."
 msgstr "Ведущая настольная система Linux"
 
 #: header-%3Edetails-%3E[0]-%3Edetail
