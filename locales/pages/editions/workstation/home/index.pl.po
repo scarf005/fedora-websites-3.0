@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 22:48+0000\n"
+"POT-Creation-Date: 2022-09-20 22:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 #: header-%3Esubtitle
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
-"technology. Trusted, powerful, easy."
+"technology. Trusted, powerful and easy."
 msgstr ""
 
 #: header-%3Eimages-%3Eimage
