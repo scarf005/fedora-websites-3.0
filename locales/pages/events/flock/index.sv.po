@@ -1,10 +1,10 @@
-#. extracted from content/pages/events/flock/index.en.yml
+#. extracted from content/pages/events/flock/index.yml
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 18:05+0000\n"
+"POT-Creation-Date: 2022-09-20 20:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,17 +30,9 @@ msgstr ""
 msgid "public/assets/images/flock_logo_barcelona.png"
 msgstr "public/assets/images/flock-barcelona.png"
 
-#: header-%3Esubtitle-%3Etext
+#: header-%3Esubtitle
 msgid "The Fedora Project Conference"
 msgstr "Fedora-projektets konferens"
-
-#: header-%3Esubtitle-%3Ecolor
-msgid "fp-blue"
-msgstr "fp-blue"
-
-#: header-%3Esubtitle-%3EisBold
-msgid "True"
-msgstr "True"
 
 #: header-%3EeventDate
 msgid "August 5 - 7, 2023"
@@ -680,6 +672,12 @@ msgid ""
 msgstr ""
 "Alla sponsorstånd inkluderar en video, anpassningsbar upplevelse, chatt och "
 "engagemang i sociala medier. Klicka nedan för att lära dig mer."
+
+#~ msgid "fp-blue"
+#~ msgstr "fp-blue"
+
+#~ msgid "True"
+#~ msgstr "True"
 
 #~ msgid ""
 #~ "The Fedora Project envisions a world where everyone can benefit from free "

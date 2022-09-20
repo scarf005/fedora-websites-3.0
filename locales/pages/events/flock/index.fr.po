@@ -1,10 +1,10 @@
-#. extracted from content/pages/events/flock/index.en.yml
+#. extracted from content/pages/events/flock/index.yml
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 18:05+0000\n"
+"POT-Creation-Date: 2022-09-20 20:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,17 +29,9 @@ msgstr ""
 msgid "public/assets/images/flock_logo_barcelona.png"
 msgstr ""
 
-#: header-%3Esubtitle-%3Etext
+#: header-%3Esubtitle
 msgid "The Fedora Project Conference"
 msgstr "La conférence du Projet Fedora"
-
-#: header-%3Esubtitle-%3Ecolor
-msgid "fp-blue"
-msgstr ""
-
-#: header-%3Esubtitle-%3EisBold
-msgid "True"
-msgstr ""
 
 #: header-%3EeventDate
 msgid "August 5 - 7, 2023"

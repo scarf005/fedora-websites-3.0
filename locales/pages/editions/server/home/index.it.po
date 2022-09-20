@@ -1,9 +1,9 @@
-#. extracted from content/pages/editions/server/home/index.en.yml
+#. extracted from content/pages/editions/server/home/index.yml
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 18:05+0000\n"
+"POT-Creation-Date: 2022-09-20 20:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "The leading edge server"
 msgstr ""
 
-#: header-%3Esubtitle-%3Etext
+#: header-%3Esubtitle
 msgid ""
 "Run applications on bare metal or the cloud with a Linux server OS packed "
 "with the latest open source technology"

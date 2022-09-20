@@ -1,10 +1,10 @@
-#. extracted from content/pages/editions/workstation/home/index.en.yml
+#. extracted from content/pages/editions/workstation/home/index.yml
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 18:05+0000\n"
+"POT-Creation-Date: 2022-09-20 20:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,8 @@ msgid "Release Notes<https://getfedora.org>"
 msgstr "Informacje o wydaniu<https://getfedora.org>"
 
 #: header-%3Ecta-%3E[0]-%3Etext
-msgid "Download Now"
+#, fuzzy
+msgid "Download now"
 msgstr "Pobierz teraz"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
@@ -99,7 +100,8 @@ msgstr ""
 "wersjami są szybkie i proste."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-msgid "Free & Private"
+#, fuzzy
+msgid "Free & private"
 msgstr "Wolna i prywatna"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
@@ -163,7 +165,8 @@ msgid "Features for everyone"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
-msgid "Fantastic Apps"
+#, fuzzy
+msgid "Fantastic apps"
 msgstr "Fantastyczne aplikacje"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
@@ -221,7 +224,8 @@ msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
-msgid "Calendar Integration"
+#, fuzzy
+msgid "Calendar integration"
 msgstr "Integracja z kalendarzem"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
@@ -252,7 +256,7 @@ msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
-msgid "Great for Developers"
+msgid "Great for developers"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
@@ -318,7 +322,7 @@ msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: section-%3E[3]-%3Eheader-%3EsectionTitle
-msgid "Get started developing with Fedora"
+msgid "Get started developing with Fedora Workstation"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Edescription
@@ -377,7 +381,8 @@ msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle
-msgid "Built By You"
+#, fuzzy
+msgid "Built by you"
 msgstr "Tworzona przez Ciebie"
 
 #: section-%3E[4]-%3Eheader-%3EheaderImage-%3Eimage
