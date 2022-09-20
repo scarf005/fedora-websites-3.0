@@ -3,6 +3,6 @@
 
 for file in $(find locales/ -type f -name \*.po); do
   echo updating ${file}..
-  pot2po -i $(dirname ${file})/index.en.pot -t $file -o $file;
+  pot2po -i $(dirname ${file})/index.pot -t $file -o $file;
 done
 
