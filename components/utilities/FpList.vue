@@ -7,9 +7,11 @@ defineProps({
 
 <template>
   <ul
-    class="mx-10 sm:mx-8 grid place-items-center"
+    class="max-w-screen-xl mx-auto grid place-items-center"
     :class="`${columns} ${
-      disableDots ? 'list-none' : 'list-outside marker:text-fp-blue-light marker:text-4xl'
+      disableDots
+        ? 'list-none'
+        : 'list-outside marker:text-fp-blue-light marker:text-4xl'
     }`"
   >
     <slot></slot>
