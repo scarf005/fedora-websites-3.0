@@ -53,9 +53,6 @@ build_preview:
     - public/
     expire_in: 1 day
     expose_as: 'build preview'
-  except:
-    - develop
-    - main
   rules:
   - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   environment:
