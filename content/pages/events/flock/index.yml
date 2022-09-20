@@ -3,8 +3,7 @@ description: Flock to Fedora is the annual contributor conference for the Fedora
   Project. It has a virtual version called Nest.
 header:
   logo: public/assets/images/flock_logo_barcelona.png
-  subtitle:
-    text: The Fedora Project Conference
+  subtitle: The Fedora Project Conference
   eventDate: August 5 - 7, 2023
   images:
     backgroundImage: public/assets/images/flock_background.jpg

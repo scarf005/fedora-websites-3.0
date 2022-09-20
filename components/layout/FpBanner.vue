@@ -3,7 +3,7 @@ import FpBtn from "../utilities/FpBtn.vue";
 defineProps({
   logo: String,
   title: String,
-  subtitle: { text: String },
+  subtitle: String,
   subtitleStyle: {
     color: String,
     isBold: Boolean,
@@ -35,7 +35,7 @@ defineProps({
         { 'font-semibold': subtitleStyle?.isBold },
       ]"
     >
-      {{ subtitle.text }}
+      {{ subtitle }}
     </h2>
   </div>
   <div class="flex justify-center my-5">
