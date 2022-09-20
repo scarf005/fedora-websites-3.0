@@ -9,8 +9,9 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/toplevel/").findOne();
+    return queryContent("/pages/toplevel/").sort().find();
   }));
+  data._value = data._value[data._value.length - 1];
 }
 
 useHead({

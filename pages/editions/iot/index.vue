@@ -6,8 +6,9 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/iot/home/").findOne();
+    return queryContent("/pages/editions/iot/home/").sort().find();
   }));
+  data._value = data._value[data._value.length - 1];
 }
 useHead({
   title: data._value.title + " | The Fedora Project",
