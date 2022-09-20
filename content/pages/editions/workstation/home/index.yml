@@ -1,13 +1,13 @@
 title: Fedora Workstation
 description: The flagship desktop distribution of the Fedora Project
 header:
-  title: The leading Linux desktop.
+  title: The leading Linux desktop
   details:
     - detail: Latest Release
     - detail: "36"
     - detail: Release Notes<https://getfedora.org>
   cta:
-    - text: Download Now
+    - text: Download now
       url: https://getfedora.org/en/workstation/download/
     - text: Reviewed By TechHut
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
@@ -26,7 +26,7 @@ section:
         - title: Reliable
           description: Each version is updated for 18 months, and upgrades between
             versions are quick and easy.
-        - title: Free & Private
+        - title: Free & private
           description: With Fedora, your desktop is your own. It's free, there are no ads,
             and your data belongs to you.
         - title: Beautiful
@@ -45,7 +45,7 @@ section:
       sectionTitle: Features for everyone
     content:
       list:
-        - title: Fantastic Apps
+        - title: Fantastic apps
           description: Browse a great collection of apps, covering everything you might
             need. Includes exciting new open source apps as well as familiar
             apps from other platforms.
@@ -61,7 +61,7 @@ section:
             the day. Use night light to reduce screen glare and help with sleep.
           image:
             image: public/assets/images/workstation_nightlight.png
-        - title: Calendar Integration
+        - title: Calendar integration
           description: Bring your online calendar to the desktop with online accounts
           image:
             image: public/assets/images/workstation_calendar.png
@@ -71,7 +71,7 @@ section:
           image:
             image: public/assets/images/workstation_outofthebox.png
   - header:
-      sectionTitle: Great for Developers
+      sectionTitle: Great for developers
     content:
       list:
         - title: Virtualization made easy
@@ -91,7 +91,7 @@ section:
           image:
             image: public/assets/images/workstation_software_center.png
   - header:
-      sectionTitle: Get started developing with Fedora
+      sectionTitle: Get started developing with Fedora Workstation
     content:
       list:
         - description: The Fedora Developer portal has guides on developing and deploying
@@ -110,7 +110,7 @@ section:
           image:
             image: public/assets/images/workstation_software_center.png
   - header:
-      sectionTitle: Built By You
+      sectionTitle: Built by you
       headerImage:
         image: public/assets/images/iot_flock_background.jpg
       subtitle1: The Fedora Project envisions a world where everyone can benefit from
