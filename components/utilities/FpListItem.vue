@@ -1,12 +1,18 @@
 <script setup>
+import FpBtn1 from './FpBtn.vue';
 const props = defineProps({
   title: String,
   description: String,
+  image: String,
+  url: String
 });
 </script>
 <template>
   <li class="w-10/12">
+    <FpImage v-if="props.image" :image="props.image.image"/>
     <h4 class="inline font-bold text-fp-blue-dark">{{ props.title }}</h4>
     <p class="text-fp-blue-dark" v-html="props.description"></p>
+    <br/>
+    <FpBtn v-if="props.url" :url="props.url">{{props.url}}</FpBtn>
   </li>
 </template>

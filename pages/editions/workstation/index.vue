@@ -94,20 +94,26 @@ useHead({
       {{ data.section[2].header.sectionTitle }}
       </h2>
       <div class="mb-12 max-w-7xl mx-auto">
-        <FpBenefit v-for="item in data.section[2].content.list" v-bind="item" columns="2" />
-
+        <FpBenefit v-for="item in data.section[2].content.list" v-bind="item" columns="4" />
       </div>
     </section>
 
     <!-- Get Started Developing Section -->
     <section class="w-full">
       <div
-        class="h-96 bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
+        class="bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
       >
         <h3 class="text-fp-blue font-bold text-center">
           {{ data.section[3].header.sectionTitle }}
         </h3>
-        <FpBenefit v-for="item in data.section[3].content.list" v-bind="item" columns="2" />
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
+          <FpListItem
+            v-for="item in data.section[3].content.list"
+            v-bind="item"
+            images="true"
+            buttons="true"
+          />
+        </FpList>
       </div>
     </section>
 

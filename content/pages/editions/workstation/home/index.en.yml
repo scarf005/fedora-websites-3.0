@@ -110,7 +110,15 @@ section:
       sectionTitle: Get started developing with Fedora
     content:
       list:
-        - title: The Fedora Developer portal has guides on developing and deploying applications using Fedora workstation.
+        - description: The Fedora Developer portal has guides on developing and deploying applications using Fedora workstation.
+          url: https://fedoradeveloper.com
+          image:
+            image: public/assets/images/workstation_software_center.png
+        - description: DNF is the Fedora package manager that enables you to install, update and manage OS components.
+          url: https://fedoradeveloper.com
+          image:
+            image: public/assets/images/workstation_software_center.png
+        - description: Podman is a daemonless container engine for creating and managing containers and container images.
           url: https://fedoradeveloper.com
           image:
             image: public/assets/images/workstation_software_center.png
