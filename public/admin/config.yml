@@ -22,7 +22,7 @@ collections:
     name: "page"
     folder: "/content/pages"
     format: "yml"
-    slug: "{{slug}}.en"
+    slug: "{{slug}}"
     identifier_field: name
     # create: true
     editor:
