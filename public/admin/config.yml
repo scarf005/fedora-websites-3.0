@@ -7,17 +7,13 @@ backend:
   squash_merges: true
 local_backend: true
 # publish_mode: editorial_workflow
-# Add Fedora Logo to the UI
 
+# Add Fedora Logo to the UI
 display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
+
 # Asset Organization
 media_folder: "public/assets/images/"
 public_folder: "public/assets/images/"
-
-i18n:
-  structure: multiple_files
-  locales: [en, fr]
-  default_locale: en
 
 # Collections starter code
 collections:
