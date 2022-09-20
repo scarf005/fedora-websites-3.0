@@ -35,7 +35,7 @@ collections:
     nested:
       depth: 5
     meta: { path: { widget: string, label: "Path", index_file: "index" } }
-    i18n: true
+    # i18n: true
     fields:
       - {
           label: "Page Title",
