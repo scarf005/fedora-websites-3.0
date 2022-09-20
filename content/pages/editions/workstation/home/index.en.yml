@@ -83,6 +83,38 @@ section:
           image:
             image: public/assets/images/workstation_outofthebox.png
   - header:
+      sectionTitle: Great for Developers
+    content:
+      list:
+        - title: Virtualization made easy
+          description:
+            Boxes takes the guesswork out of using virtual machines.
+          image:
+            image: public/assets/images/workstation_software_center.png
+        - title: Productivity-boosting desktop features
+          description:
+            Boxes takes the guesswork out of using virtual machines.
+          image:
+            image: public/assets/images/workstation_software_center.png
+        - title: Containers ready to go
+          description:
+            Boxes takes the guesswork out of using virtual machines.
+          image:
+            image: public/assets/images/workstation_software_center.png
+        - title: All the tools
+          description:
+            Boxes takes the guesswork out of using virtual machines.
+          image:
+            image: public/assets/images/workstation_software_center.png
+  - header:
+      sectionTitle: Get started developing with Fedora
+    content:
+      list:
+        - title: The Fedora Developer portal has guides on developing and deploying applications using Fedora workstation.
+          url: https://fedoradeveloper.com
+          image:
+            image: public/assets/images/workstation_software_center.png
+  - header:
       sectionTitle: Built By You
       headerImage:
         image: public/assets/images/iot_flock_background.jpg
