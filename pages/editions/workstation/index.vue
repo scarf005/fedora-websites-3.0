@@ -8,7 +8,7 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/workstation/home").findOne();
+    return queryContent("/pages/editions/workstation/home/").findOne();
   }));
 }
 useHead({

@@ -5,8 +5,6 @@ header:
   logo: public/assets/images/flock_logo_barcelona.png
   subtitle:
     text: The Fedora Project Conference
-    color: fp-blue
-    isBold: true
   eventDate: August 5 - 7, 2023
   images:
     backgroundImage: public/assets/images/flock_background.jpg

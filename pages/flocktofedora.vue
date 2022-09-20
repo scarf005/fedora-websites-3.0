@@ -29,6 +29,7 @@ useHead({
       border="border border-fp-purple"
       background="text-white bg-fp-purple"
       :ctas="data.header.cta"
+      :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
     >
       <h2
         class="text-white my-8 font-semibold"
@@ -38,9 +39,12 @@ useHead({
       </h2>
     </FpBanner>
     <div class="flex p-12 max-w-screen-xl mx-auto">
-      <div v-for="card in data.header.cards" class="mr-8 max-w-[17rem] bg-black/70 rounded-lg p-4">
+      <div
+        v-for="card in data.header.cards"
+        class="mr-8 max-w-[17rem] bg-black/70 rounded-lg p-4"
+      >
         <div
-          class="text-fp-blue font-semibold leading-none text-lg" 
+          class="text-fp-blue font-semibold leading-none text-lg"
           style="text-shadow: 1px 2px 4px black"
         >
           <img
@@ -76,33 +80,49 @@ useHead({
           </FpCard>
         </div>
 
-	<h3 class="mt-20 text-2xl sm:text-4xl text-center font-semibold text-fp-blue-dark">{{ data.exploreSection.pastEvents.header.title }}</h3>
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto mt-8 bg-white rounded-lg">
+        <h3
+          class="mt-20 text-2xl sm:text-4xl text-center font-semibold text-fp-blue-dark"
+        >
+          {{ data.exploreSection.pastEvents.header.title }}
+        </h3>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto mt-8 bg-white rounded-lg"
+        >
           <div class="col-span-1 p-1 sm:p-5">
-	    <iframe 
-	      width="560" 
-	      height="315" 
-	      :src="data.exploreSection.pastEvents.card.videoURL" 
-	      title="YouTube video player" 
-	      frameborder="0" 
-	      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-	      allowfullscreen
-	      class="w-full">
-	    </iframe>
+            <iframe
+              width="560"
+              height="315"
+              :src="data.exploreSection.pastEvents.card.videoURL"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="w-full"
+            >
+            </iframe>
           </div>
-          <div class="col-span-1 text-left flex flex-col justify-center p-3 pt-5 sm:p-5 text-fp-blue-dark mx-0 xl:mx-12">
-            <h4 class="mb-5 font-semibold">{{ data.exploreSection.pastEvents.card.title }}</h4>
-            <p class="font-normal text-gray-600 ">
-	      {{ data.exploreSection.pastEvents.card.description }}
+          <div
+            class="col-span-1 text-left flex flex-col justify-center p-3 pt-5 sm:p-5 text-fp-blue-dark mx-0 xl:mx-12"
+          >
+            <h4 class="mb-5 font-semibold">
+              {{ data.exploreSection.pastEvents.card.title }}
+            </h4>
+            <p class="font-normal text-gray-600">
+              {{ data.exploreSection.pastEvents.card.description }}
             </p>
             <p class="mt-4 text-right">
-              <a class="text-fp-blue" :href="data.exploreSection.pastEvents.card.link.targetURL">{{ data.exploreSection.pastEvents.card.link.text }}
-                <font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right-long" />
-	      </a>
+              <a
+                class="text-fp-blue"
+                :href="data.exploreSection.pastEvents.card.link.targetURL"
+                >{{ data.exploreSection.pastEvents.card.link.text }}
+                <font-awesome-icon
+                  class="ml-2"
+                  icon="fa-solid fa-arrow-right-long"
+                />
+              </a>
             </p>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -141,11 +161,14 @@ useHead({
 
     <!-- Community Section -->
     <section class="my-10">
-      <FpHero :background="data.communitySection.header.backgroundImageURI" alignment="bg-top">
+      <FpHero
+        :background="data.communitySection.header.backgroundImageURI"
+        alignment="bg-top"
+      >
         <section class="w-10/12 max-w-screen-xl mx-auto py-24">
           <h2
             class="max-w-max mx-auto text-3xl sm:text-5xl lg:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
-	  >
+          >
             {{ data.communitySection.header.title }}
           </h2>
           <h4 class="text-lg text-fp-blue-dark mb-20 mx-0 sm:mx-20 text-center">
@@ -153,11 +176,13 @@ useHead({
           </h4>
 
           <FpList columns="sm:grid-cols-2">
-            <FpListItem v-for="item in data.communitySection.list" v-bind="item" />
+            <FpListItem
+              v-for="item in data.communitySection.list"
+              v-bind="item"
+            />
           </FpList>
         </section>
       </FpHero>
-
     </section>
 
     <!-- TODO: Our Sponsors -->
@@ -168,7 +193,7 @@ useHead({
         {{ data.sponsorSection.header.title }}
       </h2>
       <p class="font-normal text-gray-600 mx-auto max-w-lg text-center">
-	{{ data.sponsorSection.header.subtitle }}
+        {{ data.sponsorSection.header.subtitle }}
       </p>
 
       <FpSponsors :sponsors="data.sponsorSection.sponsors" />
@@ -179,9 +204,7 @@ useHead({
       <header
         class="md:w-11/12 max-w-screen-xl mx-auto text-center md:text-left"
       >
-        <h3
-          class="text-center text-fp-blue font-medium mb-4"
-        >
+        <h3 class="text-center text-fp-blue font-medium mb-4">
           {{ data.sponsorSection.benefits.header.title }}
         </h3>
       </header>
