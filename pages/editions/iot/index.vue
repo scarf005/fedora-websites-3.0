@@ -6,7 +6,7 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/iot/home/.en").findOne();
+    return queryContent("/pages/editions/iot/home/").findOne();
   }));
 }
 useHead({
