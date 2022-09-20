@@ -13,9 +13,8 @@ header:
       url: https://www.youtube.com/watch?v=54aoIGKEMnk
       icon: fa-youtube
   reviewUrl: https://www.youtube.com/results?search_query=fedora+workstation+review
-  subtitle:
-    text: A beautiful, high-quality desktop, built on the latest open source
-      technology. Trusted, powerful, easy.
+  subtitle: A beautiful, high-quality desktop, built on the latest open source
+    technology. Trusted, powerful, easy.
   images:
     image: public/assets/images/workstation_framework.png
     backgroundImage: public/assets/images/workstation_background.jpg
