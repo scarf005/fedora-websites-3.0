@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 16:26+0000\n"
+"POT-Creation-Date: 2022-09-20 18:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "La distribution de bureau phare du Projet Fedora"
 
 #: header-%3Etitle
 #, fuzzy
-msgid "The leading Linux desktop."
+msgid "The leading Linux desktop"
 msgstr "Le meilleur du bureau Linux"
 
 #: header-%3Edetails-%3E[0]-%3Edetail
@@ -65,7 +65,7 @@ msgstr ""
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr ""
 
-#: header-%3Esubtitle-%3Etext
+#: header-%3Esubtitle
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful, easy."
