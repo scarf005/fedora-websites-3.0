@@ -108,7 +108,7 @@ section:
             containers and container images.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: https://podman.io/images/podman.svg
   - header:
       sectionTitle: Built by you
       headerImage:
