@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 20:35+0000\n"
+"POT-Creation-Date: 2022-09-20 20:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "The flagship desktop distribution of the Fedora Project"
 msgstr ""
 
 #: header-%3Etitle
-msgid "The leading Linux desktop."
+msgid "The leading Linux desktop"
 msgstr ""
 
 #: header-%3Edetails-%3E[0]-%3Edetail
@@ -38,7 +38,7 @@ msgid "Release Notes<https://getfedora.org>"
 msgstr ""
 
 #: header-%3Ecta-%3E[0]-%3Etext
-msgid "Download Now"
+msgid "Download now"
 msgstr ""
 
 #, read-only
@@ -95,7 +95,7 @@ msgid ""
 msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-msgid "Free & Private"
+msgid "Free & private"
 msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
@@ -149,7 +149,7 @@ msgid "Features for everyone"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
-msgid "Fantastic Apps"
+msgid "Fantastic apps"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
@@ -202,7 +202,7 @@ msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
-msgid "Calendar Integration"
+msgid "Calendar integration"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
@@ -230,7 +230,7 @@ msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
-msgid "Great for Developers"
+msgid "Great for developers"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
@@ -296,7 +296,7 @@ msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: section-%3E[3]-%3Eheader-%3EsectionTitle
-msgid "Get started developing with Fedora"
+msgid "Get started developing with Fedora Workstation"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Edescription
@@ -355,7 +355,7 @@ msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle
-msgid "Built By You"
+msgid "Built by you"
 msgstr ""
 
 #, read-only
