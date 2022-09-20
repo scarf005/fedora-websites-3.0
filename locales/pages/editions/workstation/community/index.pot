@@ -1,0 +1,78 @@
+#. extracted from content/pages/editions/workstation/community/index.yml
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-20 20:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
+
+#: title
+msgid "Community"
+msgstr ""
+
+#: description
+msgid ""
+"Join a community of users and contributors focused on Fedora Workstation.\n"
+"\n"
+"Fedora Workstation is created by a team in the Fedora Project community "
+"called the Workstation Working Group. It is comprised of official members "
+"who have decision-making powers, as well as other contributors. Learn more "
+"about this group and how you can get involved on the Workstation Working "
+"Group website.\n"
+msgstr ""
+
+#: header-%3Etitle
+msgctxt "header->title"
+msgid ""
+msgstr ""
+
+#: section-%3E[0]-%3Eheader-%3EsectionTitle
+msgid "Communication channels"
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Etitle
+msgid "Forum"
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+msgid ""
+"The **Fedora Workstation** tag on Fedora's Discourse-based discussion forum "
+"is a great place to connect with other Fedora Workstation users and "
+"contributors."
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
+msgid "Chat"
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+msgid ""
+"You can chat with the Fedora Workstation Working Group via either Matrix or "
+"IRC: **\\#workstation:fedoraproject.org** on Matrix and **\\#fedora-"
+"workstation** on irc.libera.chat."
+msgstr ""
+
+#: section-%3E[1]-%3Eheader-%3EsectionTitle
+msgid "Ways to get involved"
+msgstr ""
+
+#: section-%3E[1]-%3Econtent-%3Ecard-%3E[0]-%3Etitle
+msgid "Report & discuss issues"
+msgstr ""
+
+#: section-%3E[1]-%3Econtent-%3Ecard-%3E[0]-%3Esubtitle
+msgid ""
+"You can view, file, and discuss Fedora Workstation issues on the Fedora "
+"Workstation issue tracker."
+msgstr ""
+
+#: section-%3E[1]-%3Econtent-%3Ecard-%3E[0]-%3Ecta-%3Etext
+msgid "What is a CTA?"
+msgstr ""
