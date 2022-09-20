@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 21:21+0000\n"
+"POT-Creation-Date: 2022-09-20 21:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,7 +184,6 @@ msgstr ""
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
 msgctxt "section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
@@ -376,8 +375,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
-msgctxt "section->[3]->content->list->[2]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "https://podman.io/images/podman.svg"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle
