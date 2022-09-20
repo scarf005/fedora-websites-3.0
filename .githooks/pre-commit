@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# This hook will prevent commiting files where only POT-Creation-Date was changed
+# can be bypassed with the --no-verify
+
+echo "Pre-commit hook"
+
+output=$(mktemp -t translations-XXXX)
+
+function clean_tmp() {
+  [ -f "$output" ] && rm -Rf "$output"
+}
+
+trap clean_tmp exit
+
+for staged in $(git diff --name-only --cached --diff-filter=d); do
+    if [[ "${staged##*.}" =~ ^po[t]?$ ]] ; then
+        git diff --no-ext-diff --cached --patch-with-raw --output="$output" "$staged"
+
+        # we want to prevent the lines starting with --- +++ in the diff
+        countChanges=$(grep -E --count "^([+]|[-])[^-+]{2}" "$output")
+        countDateAdd=$(grep -E --count '^[+]"POT-Creation-Date:' "$output")
+        countDateRem=$(grep -E --count '^[-]"POT-Creation-Date:' "$output")
+
+        if [ "$countChanges" -eq $(("$countDateAdd" + "$countDateRem")) ] ; then
+            echo "removing $staged from commit"
+            git reset -q HEAD "$staged"
+        fi
+    fi
+done
+
+if [ $(git diff --name-only --cached | wc -l) -eq 0 ]; then
+	echo "nothing to commit, aborting..."
+	exit 1
+fi
