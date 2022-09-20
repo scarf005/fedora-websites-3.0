@@ -15,6 +15,11 @@ display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websi
 media_folder: "public/assets/images/"
 public_folder: "public/assets/images/"
 
+i18n:
+  structure: multiple_files
+  locales: [en]
+  default_locale: en
+
 # Collections starter code
 collections:
   - label: "Pages"
@@ -26,10 +31,11 @@ collections:
     identifier_field: name
     create: true
     editor:
-      preview: true
+      preview: false
     nested:
       depth: 5
     meta: { path: { widget: string, label: "Path", index_file: "index" } }
+    i18n: true
     fields:
       - {
           label: "Page Title",
