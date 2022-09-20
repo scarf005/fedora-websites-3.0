@@ -6,7 +6,7 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/events/flock/.en").findOne();
+    return queryContent("/pages/events/flock/").findOne();
   }));
 }
 useHead({
