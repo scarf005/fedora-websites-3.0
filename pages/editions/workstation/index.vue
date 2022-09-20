@@ -9,8 +9,8 @@ let { data } = await useAsyncData("page-data", () => {
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
     return queryContent("/pages/editions/workstation/home/").sort().find();
-  }))
-  data._value = data._value[0]
+  }));
+  data._value = data._value[data._value.length - 1];
 }
 useHead({
   title: data._value.title + " | The Fedora Project",
@@ -84,7 +84,11 @@ useHead({
       >
         {{ data.section[1].header.sectionTitle }}
       </h2>
-      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" columns="2" />
+      <FpBenefit
+        v-for="item in data.section[1].content.list"
+        v-bind="item"
+        columns="2"
+      />
     </section>
 
     <!-- Developers Section -->
@@ -92,10 +96,14 @@ useHead({
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-      {{ data.section[2].header.sectionTitle }}
+        {{ data.section[2].header.sectionTitle }}
       </h2>
       <div class="mb-12 max-w-7xl mx-auto">
-        <FpBenefit v-for="item in data.section[2].content.list" v-bind="item" columns="4" />
+        <FpBenefit
+          v-for="item in data.section[2].content.list"
+          v-bind="item"
+          columns="4"
+        />
       </div>
     </section>
 
