@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 21:04+0000\n"
+"POT-Creation-Date: 2022-09-20 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,6 +161,13 @@ msgstr ""
 
 #, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgctxt "section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
+"section->[1]->content->list->[0]->image->image"
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -223,22 +230,147 @@ msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
+msgid "Great for Developers"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
+msgid "Virtualization made easy"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+msgctxt "section->[2]->content->list->[0]->description"
+"section->[2]->content->list->[0]->description"
+"section->[2]->content->list->[0]->description"
+msgid "Boxes takes the guesswork out of using virtual machines."
+msgstr ""
+
+#, read-only
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[0]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
+msgid "Productivity-boosting desktop features"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+msgctxt "section->[2]->content->list->[1]->description"
+msgid "Boxes takes the guesswork out of using virtual machines."
+msgstr ""
+
+#, read-only
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[1]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
+msgid "Containers ready to go"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
+msgctxt "section->[2]->content->list->[2]->description"
+msgid "Boxes takes the guesswork out of using virtual machines."
+msgstr ""
+
+#, read-only
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[2]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
+msgid "All the tools"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
+msgctxt "section->[2]->content->list->[3]->description"
+msgid "Boxes takes the guesswork out of using virtual machines."
+msgstr ""
+
+#, read-only
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[3]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[3]-%3Eheader-%3EsectionTitle
+msgid "Get started developing with Fedora"
+msgstr ""
+
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+msgid ""
+"The Fedora Developer portal has guides on developing and deploying "
+"applications using Fedora workstation."
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eurl
+msgctxt "section->[3]->content->list->[0]->url"
+"section->[3]->content->list->[0]->url"
+msgid "https://fedoradeveloper.com"
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgctxt "section->[3]->content->list->[0]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+msgid ""
+"DNF is the Fedora package manager that enables you to install, update and "
+"manage OS components."
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eurl
+msgctxt "section->[3]->content->list->[1]->url"
+msgid "https://fedoradeveloper.com"
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+msgctxt "section->[3]->content->list->[1]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Edescription
+msgid ""
+"Podman is a daemonless container engine for creating and managing containers "
+"and container images."
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eurl
+msgctxt "section->[3]->content->list->[2]->url"
+msgid "https://fedoradeveloper.com"
+msgstr ""
+
+#, read-only
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+msgctxt "section->[3]->content->list->[2]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[4]-%3Eheader-%3EsectionTitle
 msgid "Built By You"
 msgstr ""
 
 #, read-only
-#: section-%3E[2]-%3Eheader-%3EheaderImage-%3Eimage
+#: section-%3E[4]-%3Eheader-%3EheaderImage-%3Eimage
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
-#: section-%3E[2]-%3Eheader-%3Esubtitle1
+#: section-%3E[4]-%3Eheader-%3Esubtitle1
 msgid ""
 "The Fedora Project envisions a world where everyone can benefit from free "
 "and open source software built by inclusive, welcoming, and open-minded "
 "communities."
 msgstr ""
 
-#: section-%3E[2]-%3Eheader-%3Esubtitle2
+#: section-%3E[4]-%3Eheader-%3Esubtitle2
 msgid ""
 "Fedora IoT is created by a team in the Fedora community called the IoT "
 "Working Group. It is comprised of official members who have decision making "
@@ -246,7 +378,7 @@ msgid ""
 "website."
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Etext
+#: section-%3E[4]-%3Econtent-%3Etext
 msgid ""
 "Fedora Workstation is created by a teamm in the Fedora community called the "
 "**Workstation Working Group**. It is comprised of official members who have "
@@ -255,41 +387,41 @@ msgid ""
 "workstation-working-group/)"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid ""
 "You can view, file, and discuss Fedora Workstation issues on [the Fedora "
 "Workstation issue tracker]()."
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Chat with the team"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
 "Visit **#fedora-workstation** on [irc.libera.chat]() and on **#workstation** "
 "[on the Fedora Matrix Chat server]()."
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgid ""
 "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas "
 "and minute ([view archives]().)"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "Attend a meeting"
 msgstr ""
 
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
+#: section-%3E[4]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
