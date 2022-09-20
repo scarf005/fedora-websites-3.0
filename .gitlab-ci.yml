@@ -18,7 +18,7 @@ update_pos_if_yaml_changed:
     - ./i18n_update_po.sh # update the po files from the up-to-date pot files
     - git add .
       # "[ci skip]" and "-o ci-skip" prevent a CI trigger loop
-    - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE"
+    - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE" || echo "nothing to commit"
     - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop     
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
