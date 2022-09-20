@@ -77,7 +77,7 @@ section:
         - title: Virtualization made easy
           description: Boxes takes the guesswork out of using virtual machines.
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/workstation_boxes.png
         - title: Productivity-boosting desktop features
           description: Boxes takes the guesswork out of using virtual machines.
           image:
