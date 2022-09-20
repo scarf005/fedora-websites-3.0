@@ -83,7 +83,7 @@ useHead({
       >
         {{ data.section[1].header.sectionTitle }}
       </h2>
-      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" />
+      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" columns="2" />
     </section>
 
     <!-- Developers Section -->
@@ -94,12 +94,8 @@ useHead({
       {{ data.section[2].header.sectionTitle }}
       </h2>
       <div class="mb-12 max-w-7xl mx-auto">
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4">
-          <FpListItem
-            v-for="item in data.section[2].content.list"
-            v-bind="item"
-          />
-        </FpList>
+        <FpBenefit v-for="item in data.section[2].content.list" v-bind="item" columns="2" />
+
       </div>
     </section>
 
@@ -111,12 +107,7 @@ useHead({
         <h3 class="text-fp-blue font-bold text-center">
           {{ data.section[3].header.sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4">
-          <FpListItem
-            v-for="item in data.section[3].content.list"
-            v-bind="item"
-          />
-        </FpList>
+        <FpBenefit v-for="item in data.section[3].content.list" v-bind="item" columns="2" />
       </div>
     </section>
 
