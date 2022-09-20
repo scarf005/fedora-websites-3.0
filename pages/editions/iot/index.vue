@@ -61,10 +61,11 @@ useHead({
         >
           {{ data.section[1].header.sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-4 gap-12 lg:gap-4">
+        <FpList columns="sm:grid-cols-4 gap-12 lg:gap-4" disableDots="true">
           <FpListItem
             v-for="item in data.section[1].content.list"
             v-bind="item"
+            images="true"
           />
         </FpList>
       </section>

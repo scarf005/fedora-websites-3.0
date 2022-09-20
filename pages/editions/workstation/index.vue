@@ -83,7 +83,7 @@ useHead({
       >
         {{ data.section[1].header.sectionTitle }}
       </h2>
-      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" />
+      <FpBenefit v-for="item in data.section[1].content.list" v-bind="item" columns="2" />
     </section>
 
     <!-- Developers Section -->
@@ -91,32 +91,35 @@ useHead({
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-        Great for Developers
+      {{ data.section[2].header.sectionTitle }}
       </h2>
       <div class="mb-12 max-w-7xl mx-auto">
-        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+        <FpBenefit v-for="item in data.section[2].content.list" v-bind="item" columns="4" />
+      </div>
+    </section>
+
+    <!-- Get Started Developing Section -->
+    <section class="w-full">
+      <div
+        class="bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
+      >
+        <h3 class="text-fp-blue font-bold text-center">
+          {{ data.section[3].header.sectionTitle }}
+        </h3>
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
           <FpListItem
-            v-for="item in data.section[0].content.list"
+            v-for="item in data.section[3].content.list"
             v-bind="item"
+            images="true"
+            buttons="true"
           />
         </FpList>
       </div>
     </section>
 
-    <!-- Get Started Section -->
-    <section class="w-full">
-      <div
-        class="h-96 bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
-      >
-        <h3 class="text-fp-blue font-bold text-center">
-          Get started developing with Fedora
-        </h3>
-      </div>
-    </section>
-
     <!-- Community Section -->
     <section>
-      <FpCommunity :data="data.section[2]" />
+      <FpCommunity :data="data.section[4]" />
     </section>
 
     <!-- Call To Action -->
