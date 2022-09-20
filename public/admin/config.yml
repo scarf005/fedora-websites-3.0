@@ -52,7 +52,7 @@ collections:
       - label: "Page Header"
         name: "header"
         widget: "object"
-        collapsed: true
+        # collapsed: true
         fields:
           - {
               label: "Header Title",
@@ -81,7 +81,7 @@ collections:
           - label: "Images"
             name: "images"
             widget: "object"
-            collapsed: true
+            # collapsed: true
             required: false
             fields:
               - {
@@ -105,7 +105,7 @@ collections:
           - label: "Call to Action"
             name: "cta"
             widget: "list"
-            collapsed: true
+            # collapsed: true
             required: false
             fields:
               - {
@@ -126,13 +126,13 @@ collections:
         label_singular: "Page Section"
         name: "section"
         widget: "list"
-        collapsed: true
+        # collapsed: true
         fields:
           # Section Header
           - label: "Section Header"
             name: "header"
             widget: "object"
-            collapsed: true
+            # collapsed: true
             fields:
               - {
                   label: "Section Heading",
@@ -149,7 +149,7 @@ collections:
               - label: "Header Image"
                 name: "headerImage"
                 widget: "object"
-                collapsed: true
+                # collapsed: true
                 required: false
                 fields:
                   - {
@@ -168,14 +168,14 @@ collections:
           - label: "Section Content"
             name: "content"
             widget: "object"
-            collapsed: true
+            # collapsed: true
             fields:
               # Nested Content Types
               - label: "List of Info"
                 label_singular: "List Item"
                 name: "list"
                 widget: "list"
-                collapsed: true
+                # collapsed: true
                 required: false
                 fields:
                   - {
@@ -194,7 +194,7 @@ collections:
                   - label: "List Item Image"
                     name: "image"
                     widget: "object"
-                    collapsed: true
+                    # collapsed: true
                     required: false
                     fields:
                       - {
@@ -232,7 +232,7 @@ collections:
                     name: "image"
                     widget: "object"
                     required: false
-                    collapsed: true
+                    # collapsed: true
                     fields:
                       - {
                           label: "Image",
@@ -250,7 +250,7 @@ collections:
                     name: "cta"
                     widget: "object"
                     required: false
-                    collapsed: true
+                    # collapsed: true
                     fields:
                       - {
                           label: "Text",
@@ -275,7 +275,7 @@ collections:
               - label: "Section Image"
                 name: "image"
                 widget: "object"
-                collapsed: true
+                # collapsed: true
                 required: false
                 fields:
                   - {
