@@ -29,7 +29,7 @@ collections:
     format: "yml"
     slug: "{{slug}}"
     identifier_field: name
-    create: true
+    # create: true
     editor:
       preview: true
     nested:
