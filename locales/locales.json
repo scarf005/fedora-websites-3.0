@@ -1,0 +1,6 @@
+[
+      { "code": "en", "iso": "en", "file": "en.json", "name": "English" },
+      { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
+      { "code": "pl", "iso": "pl", "file": "pl.json", "name": "Polski" },
+      { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" }
+]

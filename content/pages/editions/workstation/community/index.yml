@@ -1,0 +1,32 @@
+title: Community
+description: >
+  Join a community of users and contributors focused on Fedora Workstation.
+
+
+  Fedora Workstation is created by a team in the Fedora Project community called the Workstation Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the Workstation Working Group website.
+header:
+  details: []
+  title: ""
+section:
+  - header:
+      sectionTitle: Communication channels
+    content:
+      list:
+        - title: Forum
+          description: The **Fedora Workstation** tag on Fedora's Discourse-based
+            discussion forum is a great place to connect with other Fedora
+            Workstation users and contributors.
+        - title: Chat
+          description: "You can chat with the Fedora Workstation Working Group via either
+            Matrix or IRC: **\\#workstation:fedoraproject.org** on Matrix and
+            **\\#fedora-workstation** on irc.libera.chat."
+        - {}
+  - header:
+      sectionTitle: Ways to get involved
+    content:
+      card:
+        - title: Report & discuss issues
+          subtitle: You can view, file, and discuss Fedora Workstation issues on the
+            Fedora Workstation issue tracker.
+          cta:
+            text: What is a CTA?

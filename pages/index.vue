@@ -1,16 +1,27 @@
 <script setup>
 import FpBtn from "~~/components/utilities/FpBtn.vue";
-useHead({
-  title: "Fedora Homepage | The Fedora Project",
+const { locale } = useI18n();
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent()
+    .where({ _path: "/pages/toplevel/." + locale._value })
+    .findOne();
 });
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/toplevel").find();
+
+if (data._value === null) {
+  ({ data } = await useAsyncData("page-data-fallback", () => {
+    return queryContent("/pages/toplevel/").sort().find();
+  }));
+  data._value = data._value[data._value.length - 1];
+}
+
+useHead({
+  title: data._value.title + " | The Fedora Project",
 });
 </script>
 <template>
 
-  <h1 class="text-center mt-8">{{data[0].header.title}}</h1>
-  <h2 class="text-center">{{data[0].header.subtitle}}</h2>
+  <h1 class="text-center mt-8">{{data.header.title}}</h1>
+  <h2 class="text-center">{{data.header.subtitle}}</h2>
   
   <main class="mx-6 md:mx-12 text-center">
     <header class="text-center pt-24 flex flex-col items-center">

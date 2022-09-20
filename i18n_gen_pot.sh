@@ -1,0 +1,11 @@
+#!/bin/bash
+# Generate POT files from yaml
+
+for file in $(find content -type f -name index.yml); do 
+  mkdir -p $(dirname ${file/content/locales})
+  output=$(sed 's/content/locales/;s/.yml/.pot/' <<<$file)
+  yaml2po -P -i $file -o $output;
+
+  # Flag url & image keys as read-only
+  sed -i "/^#.*\([uU][rR][lLiI]\|[iI]mage\)$/i #, read-only" $output
+done

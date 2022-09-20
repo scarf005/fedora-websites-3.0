@@ -1,24 +1,40 @@
 <script setup>
-useHead({
-  title: "Fedora Workstation | The Fedora Project",
+const { locale } = useI18n();
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent(
+    "/pages/editions/workstation/home/." + locale._value
+  ).findOne();
 });
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/workstation/home").find();
+
+if (data._value === null) {
+  ({ data } = await useAsyncData("page-data-fallback", () => {
+    return queryContent("/pages/editions/workstation/home/").sort().find();
+  }));
+  data._value = data._value[data._value.length - 1];
+}
+useHead({
+  title: data._value.title + " | The Fedora Project",
+  meta: [
+    {
+      name: "description",
+      content: data._value.description,
+    },
+  ],
 });
 </script>
 <template>
   <FpHero
-    :background="data[0].header.images.backgroundImage"
+    :background="data.header.images.backgroundImage"
     alignment="bg-bottom"
   >
     <FpBanner
-      :title="data[0].header.title"
-      :subtitle="data[0].header.subtitle"
-      :reviewUrl="data[0].header.reviewUrl"
+      :title="data.header.title"
+      :subtitle="data.header.subtitle"
+      :reviewUrl="data.header.reviewUrl"
+      :ctas="data.header.cta"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
-      :ctas="data[0].header.cta"
     >
       <div class="hero-laptop-container">
         <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
@@ -34,15 +50,13 @@ const { data } = await useAsyncData("page-data", () => {
             playsinline=""
             preload="auto"
           >
-            <source
-              src="/assets/images/hero.mp4"
-              type="video/mp4"
-            />
+            <source src="/assets/images/hero.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
     </FpBanner>
   </FpHero>
+
   <main class="flex flex-col items-center mt-8">
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
@@ -52,12 +66,12 @@ const { data } = await useAsyncData("page-data", () => {
         <h3
           class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
         >
-          {{ data[0].section[0].header.sectionTitle }}
+          {{ data.section[0].header.sectionTitle }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data[0].section[0].content.list"
+          v-for="item in data.section[0].content.list"
           v-bind="item"
         />
       </FpList>
@@ -68,11 +82,12 @@ const { data } = await useAsyncData("page-data", () => {
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-        Features for everyone.
+        {{ data.section[1].header.sectionTitle }}
       </h2>
       <FpBenefit
-        v-for="item in data[0].section[1].content.list"
+        v-for="item in data.section[1].content.list"
         v-bind="item"
+        columns="2"
       />
     </section>
 
@@ -81,39 +96,44 @@ const { data } = await useAsyncData("page-data", () => {
       <h2
         class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
       >
-        Great for Developers
+        {{ data.section[2].header.sectionTitle }}
       </h2>
       <div class="mb-12 max-w-7xl mx-auto">
-        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+        <FpBenefit
+          v-for="item in data.section[2].content.list"
+          v-bind="item"
+          columns="4"
+        />
+      </div>
+    </section>
+
+    <!-- Get Started Developing Section -->
+    <section class="w-full">
+      <div
+        class="bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
+      >
+        <h3 class="text-fp-blue font-bold text-center">
+          {{ data.section[3].header.sectionTitle }}
+        </h3>
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
           <FpListItem
-            v-for="item in data[0].section[0].content.list"
+            v-for="item in data.section[3].content.list"
             v-bind="item"
+            images="true"
+            buttons="true"
           />
         </FpList>
       </div>
     </section>
 
-    <!-- Get Started Section -->
-    <section class="w-full">
-      <div
-        class="h-96 bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
-      >
-        <h3 class="text-fp-blue font-bold text-center">
-          Get started developing with Fedora
-        </h3>
-      </div>
-    </section>
-
     <!-- Community Section -->
     <section>
-      <FpCommunity :data="data[0].section[2]" />
+      <FpCommunity :data="data.section[4]" />
     </section>
 
     <!-- Call To Action -->
     <section>
-      <div class="flex justify-center items-center h-96">
-        <FpImage image="assets/images/workstation_logo.jpg" class="max-w-sm" />
-      </div>
+      <FpCallToAction :cta="data.header.cta" />
     </section>
   </main>
 </template>

@@ -4,12 +4,7 @@ const base = "";
 useHead({
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   charset: "utf-8",
-  meta: [
-    {
-      name: "description",
-      content: "Fedora Linux is an open source project.",
-    },
-  ],
+  meta: [],
   link: [
     {
       rel: "icon",

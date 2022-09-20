@@ -1,0 +1,42 @@
+#. extracted from content/pages/editions/workstation/index.en.yml
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-14 18:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
+
+#: title
+msgid "Workstation Community"
+msgstr ""
+
+#: description
+msgid ""
+"Join a community of users and contributors focused on Fedora Workstation."
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Etext
+msgid ""
+"Fedora Workstation is created by a team in the Fedora Project community "
+"called the Workstation Working Group. It is comprised of official members "
+"who have decision-making powers, as well as other contributors. Learn more "
+"about this group and how you can get involved on the Workstation Working "
+"Group website."
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Ecard-%3E[0]-%3Etitle
+msgid "Forum"
+msgstr ""
+
+#: section-%3E[0]-%3Econtent-%3Ecard-%3E[0]-%3Ecta-%3Etext
+msgid ""
+"The Fedora Workstation tag on Fedora's Discourse-based discussion forum is a "
+"great place to connect with other Fedora Workstation users and contributors."
+msgstr ""
