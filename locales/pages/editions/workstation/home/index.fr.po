@@ -1,17 +1,19 @@
 #. extracted from content/pages/editions/workstation/home/index.yml
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 22:53+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-09-21 08:56+0000\n"
+"Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationhome/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: title
 msgid "Fedora Workstation"
@@ -22,7 +24,6 @@ msgid "The flagship desktop distribution of the Fedora Project"
 msgstr "La distribution de bureau phare du Projet Fedora"
 
 #: header-%3Etitle
-#, fuzzy
 msgid "The leading Linux desktop"
 msgstr "Le meilleur du bureau Linux"
 
@@ -39,7 +40,6 @@ msgid "Release Notes<https://getfedora.org>"
 msgstr "Notes de version<https://getfedora.org>"
 
 #: header-%3Ecta-%3E[0]-%3Etext
-#, fuzzy
 msgid "Download now"
 msgstr "Télécharger"
 
@@ -67,13 +67,12 @@ msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr ""
 
 #: header-%3Esubtitle
-#, fuzzy
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy."
 msgstr ""
 "Un beau bureau, de haute qualité, construit autour des dernières "
-"technologies open source. Fiable, puissant, simple."
+"technologies open source. Fiable, puissant et simple."
 
 #: header-%3Eimages-%3Eimage
 #, read-only
@@ -102,7 +101,6 @@ msgstr ""
 "versions sont simple et rapide."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-#, fuzzy
 msgid "Free & private"
 msgstr "Gratuit & Privé"
 
@@ -167,7 +165,6 @@ msgid "Features for everyone"
 msgstr "Fonctionnalités pour tous"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
-#, fuzzy
 msgid "Fantastic apps"
 msgstr "Applications fantastique"
 
@@ -228,7 +225,6 @@ msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
-#, fuzzy
 msgid "Calendar integration"
 msgstr "Intégration du calendrier"
 
