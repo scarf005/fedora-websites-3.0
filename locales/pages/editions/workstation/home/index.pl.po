@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 13:17+0000\n"
+"POT-Creation-Date: 2022-09-21 13:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,6 @@ msgctxt "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -355,8 +354,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 #, read-only
-msgctxt "section->[3]->content->list->[1]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Edescription
