@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 20:55+0000\n"
-"PO-Revision-Date: 2022-09-21 19:55+0000\n"
+"PO-Revision-Date: 2022-09-21 21:03+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editions-iot/hu/>\n"
@@ -13,10 +13,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: title
-#, fuzzy
 msgid "Fedora IoT Index"
 msgstr "Fedora IoT Index"
 
@@ -57,7 +56,6 @@ msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
 #: header-%3Ecta-%3E[1]-%3Eicon
-#, fuzzy
 msgid "fa-youtube"
 msgstr "fa-youtube"
 
@@ -100,9 +98,8 @@ msgstr ""
 "eszközök telepítésére összpontosít."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
-#, fuzzy
 msgid "Open-source Ecosystem"
-msgstr "Open-source Ecosystem"
+msgstr "Nyílt forrású Ökoszisztéma"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgctxt "section->[0]->content->list->[2]->description"
@@ -124,9 +121,8 @@ msgid "There are a wide variety of supported installation methods."
 msgstr "A támogatott telepítési módszerek széles skálája létezik."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Etitle
-#, fuzzy
 msgid "Edge Support"
-msgstr "Csúcstámogatás"
+msgstr "Fejlett támogatás"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[4]-%3Edescription
 msgid ""
@@ -138,7 +134,7 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr "A legtöbbet hozza ki készülékéből"
+msgstr "A legtöbbet hozza ki eszközéből"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[5]-%3Edescription
 msgid ""
@@ -172,19 +168,17 @@ msgstr ""
 "épül."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-#, fuzzy
 msgid "Pine64"
 msgstr "Pine64"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
-#, fuzzy
 msgctxt "section->[1]->content->list->[1]->description"
 msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
-"A Fedora IoT egy konténer alapú gazdagép, amely a hardverén fut, és az "
-"eszközök telepítésére összpontosít."
+"A Fedora IoT egy konténer alapú gazdagép, amely a hardverén fut, és a "
+"fejlett eszközök telepítésére összpontosít."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "SolidRun"
@@ -256,14 +250,13 @@ msgid "Chat with the team"
 msgstr "Csevegjen a csapattal"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
-#, fuzzy
 msgctxt "section->[2]->content->list->[1]->description"
 msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
 "A Fedora IoT egy konténer alapú gazdagép, amely az Ön hardverén fut, és a "
-"szélső eszközök telepítésére összpontosít."
+"fejlett eszközök telepítésére összpontosít."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
