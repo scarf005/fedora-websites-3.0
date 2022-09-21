@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 17:03+0000\n"
+"POT-Creation-Date: 2022-09-21 19:50+0000\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -383,8 +383,9 @@ msgstr "Twitter"
 
 #: communitySection-%3Elist-%3E[1]-%3EiconURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/twitter_icon.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: communitySection-%3Elist-%3E[1]-%3Edescription
 msgid ""
