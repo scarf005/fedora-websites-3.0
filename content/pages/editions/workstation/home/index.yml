@@ -103,7 +103,7 @@ section:
             update and manage OS components.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/logo-dnf.png
         - description: Podman is a daemonless container engine for creating and managing
             containers and container images.
           url: https://fedoradeveloper.com
