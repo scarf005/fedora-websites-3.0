@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 22:53+0000\n"
+"POT-Creation-Date: 2022-09-21 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -373,7 +373,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
-msgid "https://podman.io/images/podman.svg"
+msgid "public/assets/images/podman.svg"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle
