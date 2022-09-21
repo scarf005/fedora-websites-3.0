@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 15:00+0000\n"
+"POT-Creation-Date: 2022-09-21 17:03+0000\n"
 "PO-Revision-Date: 2022-09-21 08:56+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -184,7 +184,6 @@ msgstr ""
 msgctxt "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -336,8 +335,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
-msgctxt "section->[3]->content->list->[0]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/fedora-developer.png"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Edescription
