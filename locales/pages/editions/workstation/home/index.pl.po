@@ -189,7 +189,6 @@ msgctxt "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
 "section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -266,9 +265,6 @@ msgid "Virtualization made easy"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
-msgctxt "section->[2]->content->list->[0]->description"
-"section->[2]->content->list->[0]->description"
-"section->[2]->content->list->[0]->description"
 msgid "Boxes takes the guesswork out of using virtual machines."
 msgstr ""
 
@@ -282,8 +278,10 @@ msgid "Productivity-boosting desktop features"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
-msgctxt "section->[2]->content->list->[1]->description"
-msgid "Boxes takes the guesswork out of using virtual machines."
+msgid ""
+"Use performance mode to boost hardware speed when you need it. Turn off "
+"notifications with Do Not Disturb. Press the Super key and just type to "
+"search for what you need."
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
@@ -297,8 +295,9 @@ msgid "Containers ready to go"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Edescription
-msgctxt "section->[2]->content->list->[2]->description"
-msgid "Boxes takes the guesswork out of using virtual machines."
+msgid ""
+"Use the latest container tools from the Red Hat ecosystem. Not setup "
+"required. Access the Red Hat container registry."
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
@@ -312,8 +311,9 @@ msgid "All the tools"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Edescription
-msgctxt "section->[2]->content->list->[3]->description"
-msgid "Boxes takes the guesswork out of using virtual machines."
+msgid ""
+"All the tools you might need, easy to install with a single command. Tools "
+"supplied with high quality, by the people who make them."
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
@@ -359,8 +359,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 #, read-only
-msgctxt "section->[3]->content->list->[1]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Edescription
@@ -377,7 +376,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
-msgid "https://podman.io/images/podman.svg"
+msgid "public/assets/images/podman.svg"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle

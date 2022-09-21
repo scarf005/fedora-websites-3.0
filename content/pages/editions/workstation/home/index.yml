@@ -79,15 +79,20 @@ section:
           image:
             image: public/assets/images/workstation_boxes.png
         - title: Productivity-boosting desktop features
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: Use performance mode to boost hardware speed when you need it. Turn
+            off notifications with Do Not Disturb. Press the Super key and just
+            type to search for what you need.
           image:
             image: public/assets/images/workstation_software_center.png
         - title: Containers ready to go
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: Use the latest container tools from the Red Hat ecosystem. Not
+            setup required. Access the Red Hat container registry.
           image:
             image: public/assets/images/workstation_software_center.png
         - title: All the tools
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: All the tools you might need, easy to install with a single
+            command. Tools supplied with high quality, by the people who make
+            them.
           image:
             image: public/assets/images/workstation_software_center.png
   - header:
@@ -103,12 +108,12 @@ section:
             update and manage OS components.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/logo-dnf.png
         - description: Podman is a daemonless container engine for creating and managing
             containers and container images.
           url: https://fedoradeveloper.com
           image:
-            image: https://podman.io/images/podman.svg
+            image: public/assets/images/podman.svg
   - header:
       sectionTitle: Built by you
       headerImage:
