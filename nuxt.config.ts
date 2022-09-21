@@ -1,5 +1,4 @@
-import locales from './locales/locales.json';
-
+import locales from "./locales/locales.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
