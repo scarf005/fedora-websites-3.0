@@ -41,9 +41,9 @@ useHead({
       :background="data.section[0].header.headerImage.image"
       alignment="bg-bottom"
     >
-      <section class="w-10/12 pt-12 mx-auto">
+      <section class="mx-auto w-10/12 pt-12">
         <h3
-          class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
+          class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
           {{ data.section[0].header.sectionTitle }}
         </h3>
@@ -56,9 +56,9 @@ useHead({
       </section>
     </FpHero>
     <div class="bg-magenta-100" style="min-height: 60vh">
-      <section class="w-10/12 mx-auto pt-12">
+      <section class="mx-auto w-10/12 pt-12">
         <h3
-          class="text-center text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
+          class="mb-4 text-center font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
           {{ data.section[1].header.sectionTitle }}
         </h3>

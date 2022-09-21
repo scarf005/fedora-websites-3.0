@@ -1,6 +1,6 @@
 ## Development: Getting Started
 
-This repository was set up on July 20th as the team voted on Fedora's static frontend pages. 
+This repository was set up on July 20th as the team voted on Fedora's static frontend pages.
 
 It is an off-the-shelf `create-nuxt-app` project.
 
@@ -13,7 +13,6 @@ Note: To edit the content of this site you do not need this guide - simply go to
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
 See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
-
 
 ---
 

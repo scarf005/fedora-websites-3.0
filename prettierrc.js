@@ -9,4 +9,5 @@ ModuleDetectionKind.exports = {
   arrowParens: "always",
   proseWrap: "always",
   singleAttributePerLine: true,
+  plugins: ["prettier-plugin-tailwindcss"],
 };

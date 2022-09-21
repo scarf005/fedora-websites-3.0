@@ -16,7 +16,7 @@ defineProps({
 });
 </script>
 <template>
-  <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 text-center">
+  <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:mt-24 sm:px-6">
     <div class="mx-auto max-w-sm sm:max-w-xl">
       <img
         v-if="logo"
@@ -25,7 +25,7 @@ defineProps({
         alt="logo"
       />
     </div>
-    <h1 class="text-white font-semibold">
+    <h1 class="font-semibold text-white">
       <span class="block">{{ title }}</span>
     </h1>
     <h2
@@ -38,10 +38,10 @@ defineProps({
       {{ subtitle }}
     </h2>
   </div>
-  <div class="flex justify-center my-5">
+  <div class="my-5 flex justify-center">
     <slot />
   </div>
-  <div class="mt-5 flex justify-center spacing-1">
+  <div class="spacing-1 mt-5 flex justify-center">
     <template v-for="(cta, idx) in ctas">
       <FpBtn
         :url="cta.link"
@@ -64,7 +64,7 @@ defineProps({
   <div class="mt-5 flex justify-center px-4">
     <a
       v-if="reviewUrl"
-      class="mx-2 px-12 py-4 z-10 cursor-pointer font-semibold"
+      class="z-10 mx-2 cursor-pointer px-12 py-4 font-semibold"
       :class="color"
     >
       Watch the latest reviews ➔

@@ -23,36 +23,33 @@ exploreSection:
   header:
     title: Explore the latest in Open Source
   cards:
-  - title: Workshops
-    imageURI: public/assets/images/flock_workshops_logo.png
-    description: 
-      Workshops and hackfests offer opportunities for active learning and collaboration.
-    link:
-      text: View Projects
-      targetURL: ""
-  - title: Sessions
-    imageURI: public/assets/images/flock_sessions_logo.png
-    description: 
-      Presentations that showcase the work done in Fedora and planning for the future.
-    link:
-      text: View Topics
-      targetURL: ""
-  - title: Social Events
-    imageURI: public/assets/images/flock_socialevents_logo.png
-    description: 
-      Casual, facilitated, and interactive events for meeting and socializing with Fedorans.
-    link:
-      text: View Socials
-      targetURL: ""
+    - title: Workshops
+      imageURI: public/assets/images/flock_workshops_logo.png
+      description: Workshops and hackfests offer opportunities for active learning and collaboration.
+      link:
+        text: View Projects
+        targetURL: ""
+    - title: Sessions
+      imageURI: public/assets/images/flock_sessions_logo.png
+      description: Presentations that showcase the work done in Fedora and planning for the future.
+      link:
+        text: View Topics
+        targetURL: ""
+    - title: Social Events
+      imageURI: public/assets/images/flock_socialevents_logo.png
+      description: Casual, facilitated, and interactive events for meeting and socializing with Fedorans.
+      link:
+        text: View Socials
+        targetURL: ""
   pastEvents:
     header:
       title: Watch Footage from Past Events
     card:
       title: What to expect
-      description: 
+      description:
         Flock is an annual conference for contributors of Fedora Linux.
         It is where the community plans and showcases the strategy and work on the project.
-        Check out the recordings from previous years of Flock and Nest. 
+        Check out the recordings from previous years of Flock and Nest.
       videoURL: https://www.youtube-nocookie.com/embed/LqBVHz76Wxc
       link:
         text: Visit Fedora Youtube
@@ -65,30 +62,30 @@ hybridSection:
       Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make
       it more accessible to our community.
   cards:
-  - title: July 1 - 31 2023
-    imageURI: public/assets/images/flock_logo_mini.png
-    description: 
-      The location of Flock changes each year between Europe and North America. In 2020
-      Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make
-      it more accessible to our community.
-    link:
-      text: Learn More
-      targetURL: ""
-  - title: July 1 - 31 2023
-    imageURI: public/assets/images/flock_nest_logo_mini.png
-    description: 
-      During the Covid-19 pandemic, we created Nest as a virtual alternative to Flock.
-      Now it exists as a virtual option for those who cannot attend in person.
-      Making Flock accessible for everyone!
-    link:
-      text: Learn More
-      targetURL: ""
+    - title: July 1 - 31 2023
+      imageURI: public/assets/images/flock_logo_mini.png
+      description:
+        The location of Flock changes each year between Europe and North America. In 2020
+        Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make
+        it more accessible to our community.
+      link:
+        text: Learn More
+        targetURL: ""
+    - title: July 1 - 31 2023
+      imageURI: public/assets/images/flock_nest_logo_mini.png
+      description:
+        During the Covid-19 pandemic, we created Nest as a virtual alternative to Flock.
+        Now it exists as a virtual option for those who cannot attend in person.
+        Making Flock accessible for everyone!
+      link:
+        text: Learn More
+        targetURL: ""
   hatchSubsection:
     header:
       title: Interested in hosting your own event?
     card:
       title: July 1 - 31 2023
-      description: 
+      description:
         In the month leading up to Flock, Fedorans are encouraged to organize local
         community events. Set the format and topic of your choice. The Fedora Council
         will help support your initiative with financial and organizating aid.
@@ -101,7 +98,7 @@ communitySection:
   header:
     title: We are Fedora
     backgroundImageURI: public/assets/images/iot_flock_background.jpg
-    subtitle1: 
+    subtitle1:
       The Fedora Project envisions a world where everyone benefits from free and open source
       software built by inclusive, welcoming, and open-minded communities. Stay connected
       during Flock through the following channels.
@@ -132,48 +129,48 @@ sponsorSection:
     subtitle: Thank you to our sponsors, supporting this event is one of
       the ways that they contribute to open source.
   sponsors:
-  - name: Red Hat
-    imageURI: public/assets/images/sponsors/Red_Hat_logo.png
-    level: platinium
-    description: ""
-  - name: Lenovo
-    imageURI: public/assets/images/sponsors/Lenovo_logo.png
-    level: gold
-    description: ""
-  - name: AlmaLinux
-    imageURI: public/assets/images/sponsors/AlmaLinux_logo.png
-    level: gold
-  - name: openSuse
-    imageURI: public/assets/images/sponsors/opensuse_logo.png
-    level: silver
-  - name: some Other Sponsor
-    imageURI: ""
-    level: silver
-  - name: another Cool Sponsor
-    imageURI: ""
-    level: bronze
-  - name: GitLab
-    imageURI: public/assets/images/sponsors/Gitlab_logo.png
-    level: bronze
-  - name: datto
-    imageURI: public/assets/images/sponsors/datto_logo.png
-    level: bronze
-  - name: daskeyboard
-    imageURI: public/assets/images/sponsors/daskeyboard_logo.png
-    level: bronze
-  - name: Gnome
-    imageURI: public/assets/images/sponsors/Gnome_logo.png
-    level: media
-  - name: TuxDigital
-    imageURI: public/assets/images/sponsors/TuxDigital_logo.png
-    level: media
-  - name: KDE
-    imageURI: public/assets/images/sponsors/KDE_logo.png
-    level: media
-  - name: opensource.com
-    imageURI: public/assets/images/sponsors/opensource.com_logo.png
-    level: media
-  - level: placeholder
+    - name: Red Hat
+      imageURI: public/assets/images/sponsors/Red_Hat_logo.png
+      level: platinium
+      description: ""
+    - name: Lenovo
+      imageURI: public/assets/images/sponsors/Lenovo_logo.png
+      level: gold
+      description: ""
+    - name: AlmaLinux
+      imageURI: public/assets/images/sponsors/AlmaLinux_logo.png
+      level: gold
+    - name: openSuse
+      imageURI: public/assets/images/sponsors/opensuse_logo.png
+      level: silver
+    - name: some Other Sponsor
+      imageURI: ""
+      level: silver
+    - name: another Cool Sponsor
+      imageURI: ""
+      level: bronze
+    - name: GitLab
+      imageURI: public/assets/images/sponsors/Gitlab_logo.png
+      level: bronze
+    - name: datto
+      imageURI: public/assets/images/sponsors/datto_logo.png
+      level: bronze
+    - name: daskeyboard
+      imageURI: public/assets/images/sponsors/daskeyboard_logo.png
+      level: bronze
+    - name: Gnome
+      imageURI: public/assets/images/sponsors/Gnome_logo.png
+      level: media
+    - name: TuxDigital
+      imageURI: public/assets/images/sponsors/TuxDigital_logo.png
+      level: media
+    - name: KDE
+      imageURI: public/assets/images/sponsors/KDE_logo.png
+      level: media
+    - name: opensource.com
+      imageURI: public/assets/images/sponsors/opensource.com_logo.png
+      level: media
+    - level: placeholder
 
   benefits:
     header:
@@ -195,5 +192,5 @@ sponsorSection:
           and social hours.
       - title: Booths
         description:
-          All sponsor booths include a video, customizable experience, chat, and 
+          All sponsor booths include a video, customizable experience, chat, and
           social media engagement. Click below to learn more.

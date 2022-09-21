@@ -6,14 +6,14 @@ defineProps({
 
 <template>
   <FpHero :background="data.header.headerImage.image" alignment="bg-top">
-    <section class="w-10/12 max-w-screen-xl mx-auto py-24">
-      <h2 class="text-5xl font-semibold text-fp-blue text-center mb-5">
+    <section class="mx-auto w-10/12 max-w-screen-xl py-24">
+      <h2 class="mb-5 text-center text-5xl font-semibold text-fp-blue">
         {{ data.header.sectionTitle }}
       </h2>
-      <h4 class="text-fp-blue-dark mb-5 mx-14">
+      <h4 class="mx-14 mb-5 text-fp-blue-dark">
         {{ data.header.subtitle1 }}
       </h4>
-      <p class="text-fp-blue-dark mb-8 mx-14">
+      <p class="mx-14 mb-8 text-fp-blue-dark">
         {{ data.header.subtitle2 }}
       </p>
 

@@ -33,45 +33,45 @@ useHead({
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
     >
       <h2
-        class="text-white my-8 font-semibold"
+        class="my-8 font-semibold text-white"
         style="text-shadow: 4px 4px 4px black"
       >
         {{ data.header.eventDate }}
       </h2>
     </FpBanner>
-    <div class="flex p-12 max-w-screen-xl mx-auto">
+    <div class="mx-auto flex max-w-screen-xl p-12">
       <div
         v-for="card in data.header.cards"
-        class="mr-8 max-w-[17rem] bg-black/70 rounded-lg p-4"
+        class="mr-8 max-w-[17rem] rounded-lg bg-black/70 p-4"
       >
         <div
-          class="text-fp-blue font-semibold leading-none text-lg"
+          class="text-lg font-semibold leading-none text-fp-blue"
           style="text-shadow: 1px 2px 4px black"
         >
           <img
-            class="inline align-baseline h-10 max-w-none mr-1"
+            class="mr-1 inline h-10 max-w-none align-baseline"
             :src="`${
               $config.app.baseURL + '/' + card.image.replace('public/', '')
             }`"
           />
           {{ card.subtitle }}
         </div>
-        <p class="text-slate-300 text-sm">{{ card.description }}</p>
+        <p class="text-sm text-slate-300">{{ card.description }}</p>
       </div>
     </div>
   </FpHero>
 
   <main class="flex flex-col items-center">
     <!-- TODO: Explore -->
-    <section class="w-full pb-10 bg-slate-100">
-      <div class="w-10/12 max-w-screen-xl my-10 mx-auto">
+    <section class="w-full bg-slate-100 pb-10">
+      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto max-w-screen-md text-3xl sm:text-5xl lg:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+          class="mx-auto mb-12 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
         >
           {{ data.exploreSection.header.title }}
         </h2>
         <div
-          class="flex flex-wrap justify-around items-stretch text-center gap-4 text-fp-blue-dark"
+          class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
         >
           <FpCard v-for="card in data.exploreSection.cards">
             <FpCardImage :src="card.imageURI" />
@@ -82,12 +82,12 @@ useHead({
         </div>
 
         <h3
-          class="mt-20 text-2xl sm:text-4xl text-center font-semibold text-fp-blue-dark"
+          class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark sm:text-4xl"
         >
           {{ data.exploreSection.pastEvents.header.title }}
         </h3>
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto mt-8 bg-white rounded-lg"
+          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white lg:grid-cols-2"
         >
           <div class="col-span-1 p-1 sm:p-5">
             <iframe
@@ -103,7 +103,7 @@ useHead({
             </iframe>
           </div>
           <div
-            class="col-span-1 text-left flex flex-col justify-center p-3 pt-5 sm:p-5 text-fp-blue-dark mx-0 xl:mx-12"
+            class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark sm:p-5 xl:mx-12"
           >
             <h4 class="mb-5 font-semibold">
               {{ data.exploreSection.pastEvents.card.title }}
@@ -128,10 +128,10 @@ useHead({
     </section>
 
     <!-- TODO: Hybrid Experience -->
-    <section class="w-full mx-auto my-10">
-      <div class="w-10/12 max-w-screen-xl my-10 mx-auto">
+    <section class="mx-auto my-10 w-full">
+      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="max-w-max mx-auto text-3xl sm:text-5xl lg:text-7xl md:leading-normal text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+          class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
           A Hybrid Experience
         </h2>
@@ -166,13 +166,13 @@ useHead({
         :background="data.communitySection.header.backgroundImageURI"
         alignment="bg-top"
       >
-        <section class="w-10/12 max-w-screen-xl mx-auto py-24">
+        <section class="mx-auto w-10/12 max-w-screen-xl py-24">
           <h2
-            class="max-w-max mx-auto text-3xl sm:text-5xl lg:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+            class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
           >
             {{ data.communitySection.header.title }}
           </h2>
-          <h4 class="text-lg text-fp-blue-dark mb-20 mx-0 sm:mx-20 text-center">
+          <h4 class="mx-0 mb-20 text-center text-lg text-fp-blue-dark sm:mx-20">
             {{ data.communitySection.header.subtitle1 }}
           </h4>
 
@@ -187,13 +187,13 @@ useHead({
     </section>
 
     <!-- TODO: Our Sponsors -->
-    <section class="w-10/12 mx-auto my-10">
+    <section class="mx-auto my-10 w-10/12">
       <h2
-        class="max-w-max mx-auto text-3xl sm:text-5xl lg:text-7xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple"
+        class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
         {{ data.sponsorSection.header.title }}
       </h2>
-      <p class="font-normal text-gray-600 mx-auto max-w-lg text-center">
+      <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
         {{ data.sponsorSection.header.subtitle }}
       </p>
 
@@ -201,11 +201,11 @@ useHead({
     </section>
 
     <!-- Benefits of Sponsoring -->
-    <section class="w-10/12 my-10">
+    <section class="my-10 w-10/12">
       <header
-        class="md:w-11/12 max-w-screen-xl mx-auto text-center md:text-left"
+        class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
-        <h3 class="text-center text-fp-blue font-medium mb-4">
+        <h3 class="mb-4 text-center font-medium text-fp-blue">
           {{ data.sponsorSection.benefits.header.title }}
         </h3>
       </header>
