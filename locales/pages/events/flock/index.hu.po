@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 15:00+0000\n"
+"POT-Creation-Date: 2022-09-21 16:26+0000\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -41,8 +41,9 @@ msgstr "2023. Augusztus 5-7"
 
 #: header-%3Eimages-%3EbackgroundImage
 #, read-only
+#, fuzzy
 msgid "public/assets/images/flock_background.jpg"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Register"
@@ -65,6 +66,7 @@ msgid "#"
 msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Eimage
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_nest_logo.png"
 msgstr "public/assets/images/flock_logo_barcelona.png"
@@ -78,6 +80,7 @@ msgid "A 3 day conference hosted on Hopin.io"
 msgstr "3 napos konferencia a Hopin.io rendszeren működtetve"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
 msgstr "public/assets/images/flock_logo_barcelona.png"
@@ -99,6 +102,7 @@ msgid "Workshops"
 msgstr "Workshop-ok, előadások"
 
 #: exploreSection-%3Ecards-%3E[0]-%3EimageURI
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr "public/assets/images/flock_logo_barcelona.png"
@@ -127,8 +131,9 @@ msgstr "Gyűlések"
 
 #: exploreSection-%3Ecards-%3E[1]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/flock_sessions_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[1]-%3Edescription
 msgid ""
@@ -154,8 +159,9 @@ msgstr "Közösségi Események"
 
 #: exploreSection-%3Ecards-%3E[2]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/flock_socialevents_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[2]-%3Edescription
 msgid ""
@@ -230,6 +236,7 @@ msgid "July 1 - 31 2023"
 msgstr "2023. Július 1-31"
 
 #: hybridSection-%3Ecards-%3E[0]-%3EimageURI
+#, read-only
 #, fuzzy, read-only
 msgid "public/assets/images/flock_logo_mini.png"
 msgstr "public/assets/images/flock_logo_barcelona.png"
@@ -264,8 +271,9 @@ msgstr "2023. Július 1-31"
 
 #: hybridSection-%3Ecards-%3E[1]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/flock_nest_logo_mini.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: hybridSection-%3Ecards-%3E[1]-%3Edescription
 msgid ""
@@ -554,8 +562,9 @@ msgstr "datto"
 
 #: sponsorSection-%3Esponsors-%3E[7]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/datto_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[7]-%3Elevel
 msgctxt "sponsorSection->sponsors->[7]->level"
@@ -612,8 +621,9 @@ msgstr "KDE"
 
 #: sponsorSection-%3Esponsors-%3E[11]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/KDE_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[11]-%3Elevel
 msgctxt "sponsorSection->sponsors->[11]->level"
