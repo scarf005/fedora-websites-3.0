@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 20:55+0000\n"
+"POT-Creation-Date: 2022-09-21 15:00+0000\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
 
 #: title
 msgid "Flock To Fedora"
@@ -65,9 +65,9 @@ msgid "#"
 msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Eimage
-#, read-only
+#, fuzzy, read-only
 msgid "public/assets/images/flock_nest_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: header-%3Ecards-%3E[0]-%3Esubtitle
 msgid "Virtual"
@@ -78,9 +78,9 @@ msgid "A 3 day conference hosted on Hopin.io"
 msgstr "3 napos konferencia a Hopin.io rendszeren működtetve"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
-#, read-only
+#, fuzzy, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: header-%3Ecards-%3E[1]-%3Esubtitle
 msgid "Community"
@@ -99,9 +99,9 @@ msgid "Workshops"
 msgstr "Workshop-ok, előadások"
 
 #: exploreSection-%3Ecards-%3E[0]-%3EimageURI
-#, read-only
+#, fuzzy, read-only
 msgid "public/assets/images/flock_workshops_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: exploreSection-%3Ecards-%3E[0]-%3Edescription
 msgid ""
@@ -230,9 +230,9 @@ msgid "July 1 - 31 2023"
 msgstr "2023. Július 1-31"
 
 #: hybridSection-%3Ecards-%3E[0]-%3EimageURI
-#, read-only
+#, fuzzy, read-only
 msgid "public/assets/images/flock_logo_mini.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: hybridSection-%3Ecards-%3E[0]-%3Edescription
 msgctxt "hybridSection->cards->[0]->description"
