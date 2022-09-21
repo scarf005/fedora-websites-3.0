@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 <template>
   <li
-    class="w-10/12 mb-8"
+    class="mb-8 w-10/12"
     :style="
       iconURI
         ? {

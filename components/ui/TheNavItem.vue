@@ -2,17 +2,17 @@
 defineProps({
   title: String,
   items: Array,
-  icons: Boolean
+  icons: Boolean,
 });
 </script>
 <template>
-  <div class="group inline-block relative">
+  <div class="group relative inline-block">
     <a
-      class="text-white text-sm px-4 rounded inline-flex items-center cursor-pointer"
+      class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
     >
-      <span class="mr-1">{{title}}</span>
+      <span class="mr-1">{{ title }}</span>
       <svg
-        class="fill-white h-4"
+        class="h-4 fill-white"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >
@@ -22,14 +22,18 @@ defineProps({
       </svg>
     </a>
     <ul
-      class="absolute hidden text-gray-700 py-2 border border-fp-blue w-56 bg-white group-hover:block rounded"
+      class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block"
     >
       <li v-for="item in items" :key="item.name" class="mb-2">
         <a
-          :href="`${item.href.includes('https') ? item.href : $config.app.baseURL + item.href}`"
+          :href="`${
+            item.href.includes('https')
+              ? item.href
+              : $config.app.baseURL + item.href
+          }`"
           :class="[
             'text-gray-500  hover:text-fp-purple',
-            'px-3 py-4 rounded-md text-base font-medium',
+            'rounded-md px-3 py-4 text-base font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"
         >

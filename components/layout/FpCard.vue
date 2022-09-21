@@ -1,10 +1,8 @@
 <script setup>
-defineProps({
-});
-
+defineProps({});
 </script>
 <template>
-  <div class="w-72 py-4 px-2 items-center bg-white rounded-lg">
+  <div class="w-72 items-center rounded-lg bg-white py-4 px-2">
     <slot></slot>
   </div>
 </template>
