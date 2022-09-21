@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 19:50+0000\n"
+"POT-Creation-Date: 2022-09-20 20:55+0000\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: title
 msgid "Flock To Fedora"
@@ -41,9 +41,8 @@ msgstr "2023. Augusztus 5-7"
 
 #: header-%3Eimages-%3EbackgroundImage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: header-%3Ecta-%3E[0]-%3Etext
 msgid "Register"
@@ -67,9 +66,8 @@ msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_nest_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: header-%3Ecards-%3E[0]-%3Esubtitle
 msgid "Virtual"
@@ -81,9 +79,8 @@ msgstr "3 napos konferencia a Hopin.io rendszeren működtetve"
 
 #: header-%3Ecards-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: header-%3Ecards-%3E[1]-%3Esubtitle
 msgid "Community"
@@ -103,9 +100,8 @@ msgstr "Workshop-ok, előadások"
 
 #: exploreSection-%3Ecards-%3E[0]-%3EimageURI
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_workshops_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: exploreSection-%3Ecards-%3E[0]-%3Edescription
 msgid ""
@@ -131,9 +127,8 @@ msgstr "Gyűlések"
 
 #: exploreSection-%3Ecards-%3E[1]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_sessions_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: exploreSection-%3Ecards-%3E[1]-%3Edescription
 msgid ""
@@ -159,9 +154,8 @@ msgstr "Közösségi Események"
 
 #: exploreSection-%3Ecards-%3E[2]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_socialevents_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: exploreSection-%3Ecards-%3E[2]-%3Edescription
 msgid ""
@@ -237,9 +231,8 @@ msgstr "2023. Július 1-31"
 
 #: hybridSection-%3Ecards-%3E[0]-%3EimageURI
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_logo_mini.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: hybridSection-%3Ecards-%3E[0]-%3Edescription
 msgctxt "hybridSection->cards->[0]->description"
@@ -271,9 +264,8 @@ msgstr "2023. Július 1-31"
 
 #: hybridSection-%3Ecards-%3E[1]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_nest_logo_mini.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: hybridSection-%3Ecards-%3E[1]-%3Edescription
 msgid ""
@@ -342,9 +334,8 @@ msgstr "Mi vagyunk a Fedora"
 
 #: communitySection-%3Eheader-%3EbackgroundImageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/iot_flock_background.jpg"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: communitySection-%3Eheader-%3Esubtitle1
 msgid ""
@@ -363,9 +354,8 @@ msgstr "Megbeszélések"
 
 #: communitySection-%3Elist-%3E[0]-%3EiconURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/discussions_icon.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: communitySection-%3Elist-%3E[0]-%3Edescription
 msgid ""
@@ -383,9 +373,8 @@ msgstr "Twitter"
 
 #: communitySection-%3Elist-%3E[1]-%3EiconURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/twitter_icon.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: communitySection-%3Elist-%3E[1]-%3Edescription
 msgid ""
@@ -403,9 +392,8 @@ msgstr "Mátrix & IRC"
 
 #: communitySection-%3Elist-%3E[2]-%3EiconURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/matrix_icon.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: communitySection-%3Elist-%3E[2]-%3Edescription
 msgid ""
@@ -424,9 +412,8 @@ msgstr "Ask Fedora – Kérdezz a Fedorától"
 
 #: communitySection-%3Elist-%3E[3]-%3EiconURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/ask_fedora_icon.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: communitySection-%3Elist-%3E[3]-%3Edescription
 msgid ""
@@ -456,9 +443,8 @@ msgstr "Red Hat"
 
 #: sponsorSection-%3Esponsors-%3E[0]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[0]-%3Elevel
 msgid "platinium"
@@ -475,9 +461,8 @@ msgstr "Lenovo"
 
 #: sponsorSection-%3Esponsors-%3E[1]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[1]-%3Elevel
 msgctxt "sponsorSection->sponsors->[1]->level"
@@ -495,9 +480,8 @@ msgstr "AlmaLinux"
 
 #: sponsorSection-%3Esponsors-%3E[2]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[2]-%3Elevel
 msgctxt "sponsorSection->sponsors->[2]->level"
@@ -510,9 +494,8 @@ msgstr "OpenSuse"
 
 #: sponsorSection-%3Esponsors-%3E[3]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/opensuse_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[3]-%3Elevel
 msgctxt "sponsorSection->sponsors->[3]->level"
@@ -557,9 +540,8 @@ msgstr "GitLab"
 
 #: sponsorSection-%3Esponsors-%3E[6]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[6]-%3Elevel
 msgctxt "sponsorSection->sponsors->[6]->level"
@@ -572,9 +554,8 @@ msgstr "datto"
 
 #: sponsorSection-%3Esponsors-%3E[7]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/datto_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[7]-%3Elevel
 msgctxt "sponsorSection->sponsors->[7]->level"
@@ -587,9 +568,8 @@ msgstr "daskeyboard"
 
 #: sponsorSection-%3Esponsors-%3E[8]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[8]-%3Elevel
 msgctxt "sponsorSection->sponsors->[8]->level"
@@ -602,9 +582,8 @@ msgstr "Gnome"
 
 #: sponsorSection-%3Esponsors-%3E[9]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Gnome_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[9]-%3Elevel
 msgctxt "sponsorSection->sponsors->[9]->level"
@@ -619,9 +598,8 @@ msgstr "TuxDigital"
 
 #: sponsorSection-%3Esponsors-%3E[10]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[10]-%3Elevel
 msgctxt "sponsorSection->sponsors->[10]->level"
@@ -634,9 +612,8 @@ msgstr "KDE"
 
 #: sponsorSection-%3Esponsors-%3E[11]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/KDE_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[11]-%3Elevel
 msgctxt "sponsorSection->sponsors->[11]->level"
@@ -649,9 +626,8 @@ msgstr "Opensource.com"
 
 #: sponsorSection-%3Esponsors-%3E[12]-%3EimageURI
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
-msgstr "public/assets/images/flock_logo_barcelona.png"
+msgstr ""
 
 #: sponsorSection-%3Esponsors-%3E[12]-%3Elevel
 msgctxt "sponsorSection->sponsors->[12]->level"
