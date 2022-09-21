@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 16:26+0000\n"
+"POT-Creation-Date: 2022-09-21 16:47+0000\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -342,8 +342,9 @@ msgstr "Mi vagyunk a Fedora"
 
 #: communitySection-%3Eheader-%3EbackgroundImageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/iot_flock_background.jpg"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: communitySection-%3Eheader-%3Esubtitle1
 msgid ""
@@ -362,8 +363,9 @@ msgstr "Megbeszélések"
 
 #: communitySection-%3Elist-%3E[0]-%3EiconURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/discussions_icon.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: communitySection-%3Elist-%3E[0]-%3Edescription
 msgid ""
@@ -451,8 +453,9 @@ msgstr "Red Hat"
 
 #: sponsorSection-%3Esponsors-%3E[0]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[0]-%3Elevel
 msgid "platinium"
@@ -469,8 +472,9 @@ msgstr "Lenovo"
 
 #: sponsorSection-%3Esponsors-%3E[1]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[1]-%3Elevel
 msgctxt "sponsorSection->sponsors->[1]->level"
@@ -488,8 +492,9 @@ msgstr "AlmaLinux"
 
 #: sponsorSection-%3Esponsors-%3E[2]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[2]-%3Elevel
 msgctxt "sponsorSection->sponsors->[2]->level"
@@ -502,8 +507,9 @@ msgstr "OpenSuse"
 
 #: sponsorSection-%3Esponsors-%3E[3]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/opensuse_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[3]-%3Elevel
 msgctxt "sponsorSection->sponsors->[3]->level"
@@ -548,8 +554,9 @@ msgstr "GitLab"
 
 #: sponsorSection-%3Esponsors-%3E[6]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[6]-%3Elevel
 msgctxt "sponsorSection->sponsors->[6]->level"
@@ -577,8 +584,9 @@ msgstr "daskeyboard"
 
 #: sponsorSection-%3Esponsors-%3E[8]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[8]-%3Elevel
 msgctxt "sponsorSection->sponsors->[8]->level"
@@ -591,8 +599,9 @@ msgstr "Gnome"
 
 #: sponsorSection-%3Esponsors-%3E[9]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/Gnome_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[9]-%3Elevel
 msgctxt "sponsorSection->sponsors->[9]->level"
@@ -607,8 +616,9 @@ msgstr "TuxDigital"
 
 #: sponsorSection-%3Esponsors-%3E[10]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[10]-%3Elevel
 msgctxt "sponsorSection->sponsors->[10]->level"
@@ -636,8 +646,9 @@ msgstr "Opensource.com"
 
 #: sponsorSection-%3Esponsors-%3E[12]-%3EimageURI
 #, read-only
+#, fuzzy
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
-msgstr ""
+msgstr "public/assets/images/flock_logo_barcelona.png"
 
 #: sponsorSection-%3Esponsors-%3E[12]-%3Elevel
 msgctxt "sponsorSection->sponsors->[12]->level"
