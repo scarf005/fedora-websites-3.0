@@ -1,13 +1,12 @@
-image: fedora:latest
+image: node
 
 before_script:
-  - mkdir .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
-  - dnf install npm translate-toolkit git -y
+  - apt-get update
+  - apt-get install -y git translate-toolkit
 
 cache:
   paths:
     - node_modules/
-    - .cache_dnf
 
 update_pos_if_yaml_changed:
   script:
