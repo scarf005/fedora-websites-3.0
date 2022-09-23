@@ -1,8 +1,8 @@
 image: node
 
 before_script:
-  - apt-get update
-  - apt-get install -y git translate-toolkit
+  - apt update
+  - apt install -y git translate-toolkit
 
 cache:
   paths:
