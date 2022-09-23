@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-21 17:03+0000\n"
-"PO-Revision-Date: 2022-09-21 12:17+0000\n"
+"PO-Revision-Date: 2022-09-23 18:19+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/hu/>\n"
@@ -13,10 +13,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: title
-#, fuzzy
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
@@ -228,7 +227,6 @@ msgid "Calendar integration"
 msgstr "Naptár integráció"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
-#, fuzzy
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr "Hozza az online naptárát a rendszerbe az aktív regisztrációival"
 
@@ -263,11 +261,8 @@ msgid "Virtualization made easy"
 msgstr "Virtualizáció könnyedén"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
-#, fuzzy
 msgid "Boxes takes the guesswork out of using virtual machines."
-msgstr ""
-"A Boxes alkalmazás megszabadít a virtuális gépek használatának "
-"találgatásától."
+msgstr "A Boxes megszabadít a virtuális gépek használatának találgatásától."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
@@ -284,6 +279,10 @@ msgid ""
 "notifications with Do Not Disturb. Press the Super key and just type to "
 "search for what you need."
 msgstr ""
+"Használja a teljesítmény módot a hardver sebességének növeléséhez, amikor "
+"szüksége van rá. Kapcsolja ki az értesítéseket a Ne zavarjanak funkcióval. "
+"Nyomja meg a Szuper billentyűt, és írja be, hogy keresse meg, amire szüksége "
+"van."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
 #, read-only
@@ -300,6 +299,8 @@ msgid ""
 "Use the latest container tools from the Red Hat ecosystem. Not setup "
 "required. Access the Red Hat container registry."
 msgstr ""
+"Használja a Red Hat ökoszisztéma legújabb konténereszközeit. Nem szükséges "
+"beállítani. Férjen hozzá a Red Hat konténer regisztereihez."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
 #, read-only
@@ -316,6 +317,8 @@ msgid ""
 "All the tools you might need, easy to install with a single command. Tools "
 "supplied with high quality, by the people who make them."
 msgstr ""
+"Minden eszköz, amire szüksége lehet, egyszerűen telepíthető egyetlen "
+"paranccsal. Kiváló minőségű eszközök, az azokat gyártó emberektől."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
 #, read-only
