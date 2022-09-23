@@ -1,12 +1,13 @@
-image: node
+image: fedora:latest
 
 before_script:
-  - apt update
-  - apt install -y git translate-toolkit
+  - mkdir .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
+  - dnf install npm translate-toolkit git -y 
 
 cache:
   paths:
     - node_modules/
+    - .cache_dnf
 
 update_pos_if_yaml_changed:
   script:
@@ -18,7 +19,7 @@ update_pos_if_yaml_changed:
     - git add .
       # "[ci skip]" and "-o ci-skip" prevent a CI trigger loop
     - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE" || echo "nothing to commit"
-    - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop
+    - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop     
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
   only:
@@ -50,11 +51,11 @@ build_preview:
     CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
   artifacts:
     paths:
-      - public/
+    - public/
     expire_in: 1 day
-    expose_as: "build preview"
+    expose_as: 'build preview'
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   environment:
     name: preview MR_${CI_MERGE_REQUEST_IID}
     url: https://${CI_SERVER_HOST}/${CI_PROJECT_PATH}/-/jobs/${CI_JOB_ID}/artifacts/file/public/index.html
