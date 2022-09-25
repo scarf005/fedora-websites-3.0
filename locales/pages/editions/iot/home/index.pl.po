@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-21 15:00+0000\n"
 "PO-Revision-Date: 2022-09-25 13:10+0000\n"
-"Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editions-iot/pl/>\n"
 "Language: pl\n"
@@ -18,15 +18,15 @@ msgstr ""
 
 #: title
 msgid "Fedora IoT Index"
-msgstr "Fedora IoT Index"
+msgstr "Indeks Fedory IoT"
 
 #: header-%3Etitle
 msgid "The solid foundation for IoT ecosystems"
-msgstr "Solidna podstawa dla ekosystemu IoT"
+msgstr "Solidna podstawa dla ekosystemów IoT"
 
 #: header-%3Esubtitle
 msgid "A lightweight yet powerful and scalable OS"
-msgstr "Lekki, ale wydajny i skalowalny system operacyjny"
+msgstr "Lekki, ale wydajny i skalowalny system operacyjny"
 
 #: header-%3Eimages-%3Eimage
 #, read-only
@@ -62,7 +62,7 @@ msgstr "fa-youtube"
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
 msgid "WHY FEDORA IOT?"
-msgstr "DLACZEGO FEDORA IOT?"
+msgstr "Dlaczego Fedora IoT?"
 
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
 #, read-only
