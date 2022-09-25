@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-21 17:03+0000\n"
-"PO-Revision-Date: 2022-09-25 13:10+0000\n"
+"PO-Revision-Date: 2022-09-25 13:14+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pl/>\n"
@@ -103,7 +103,6 @@ msgstr ""
 "wersjami są szybkie i proste."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-#, fuzzy
 msgid "Free & private"
 msgstr "Wolna i prywatna"
 
@@ -168,7 +167,6 @@ msgid "Features for everyone"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
-#, fuzzy
 msgid "Fantastic apps"
 msgstr "Fantastyczne aplikacje"
 
@@ -223,7 +221,6 @@ msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
-#, fuzzy
 msgid "Calendar integration"
 msgstr "Integracja z kalendarzem"
 
@@ -377,7 +374,6 @@ msgid "public/assets/images/podman.svg"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EsectionTitle
-#, fuzzy
 msgid "Built by you"
 msgstr "Tworzona przez Ciebie"
 
