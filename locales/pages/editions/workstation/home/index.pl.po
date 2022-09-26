@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-26 04:23+0000\n"
+"POT-Creation-Date: 2022-09-26 22:23+0000\n"
 "PO-Revision-Date: 2022-09-25 13:14+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -336,7 +336,7 @@ msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
 #, read-only
-msgid "public/assets/images/fedora-developer.png"
+msgid "public/assets/images/fedora_blue.png"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Edescription
