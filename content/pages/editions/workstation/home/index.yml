@@ -103,7 +103,7 @@ section:
             applications using Fedora workstation.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/fedora-developer.png
+            image: public/assets/images/fedora_blue.png
         - description: DNF is the Fedora package manager that enables you to install,
             update and manage OS components.
           url: https://fedoradeveloper.com
