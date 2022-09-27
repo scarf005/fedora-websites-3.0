@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   background: String,
-  alignment: String
+  alignment: String,
 });
 </script>
 
@@ -13,7 +13,7 @@ defineProps({
       })`,
     }"
     style="min-height: 60vh"
-    :class="[alignment, 'pt-6 pb-30 bg-cover w-screen']"
+    :class="[alignment, 'pb-30 w-screen bg-cover pt-6']"
   >
     <slot />
   </div>

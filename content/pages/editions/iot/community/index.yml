@@ -5,7 +5,8 @@ header:
   title: Community
   subtitle: Join a community of users and contributors focused on Fedora IoT.
   details:
-    - detail: Fedora IoT is created by a team in the Fedora Project community called
+    - detail:
+        Fedora IoT is created by a team in the Fedora Project community called
         the IoT Working Group. It is comprised of official members who have
         decision-making powers, as well as other contributors. Learn more about
         this group and how you can get involved on [the IoT Working Group
@@ -16,7 +17,8 @@ section:
     content:
       card:
         - title: Forum
-          subtitle: The Fedora IoT tag on Fedora's Discourse-based discussion forum is a
+          subtitle:
+            The Fedora IoT tag on Fedora's Discourse-based discussion forum is a
             great place to connect with other Fedora Workstation users and
             contributors.
           image:
@@ -29,14 +31,16 @@ section:
           image:
             image: public/assets/images/iot.png
             altText: A picture!
-          subtitle: "You can chat with the Fedora IoT Working Group via either Matrix or
+          subtitle:
+            "You can chat with the Fedora IoT Working Group via either Matrix or
             IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on
             irc.libera.chat."
           cta:
             text: Chat now or forever hold your peace
             url: https://chat.fedoraproject.org
         - title: Mailing list
-          subtitle: The Fedora IoT Working Group sends meeting agendas and minutes and has
+          subtitle:
+            The Fedora IoT Working Group sends meeting agendas and minutes and has
             discussions on their mailing list at
             **[iot@lists.fedoraproject.org](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)**.
           image:

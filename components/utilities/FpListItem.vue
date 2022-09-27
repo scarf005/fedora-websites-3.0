@@ -1,5 +1,4 @@
 <script setup>
-import FpBtn1 from "./FpBtn.vue";
 const props = defineProps({
   title: String,
   description: String,
@@ -10,7 +9,7 @@ const props = defineProps({
 </script>
 <template>
   <li
-    class="w-10/12 mb-8"
+    class="mb-8 w-10/12"
     :style="
       iconURI
         ? {
@@ -23,10 +22,14 @@ const props = defineProps({
         : 'null'
     "
   >
-    <FpImage v-if="props.image" :image="props.image.image" />
+    <div v-if="props.image" class="flex h-64 items-center justify-center">
+      <FpImage :image="props.image.image" />
+    </div>
     <h4 class="inline font-bold text-fp-blue-dark">{{ props.title }}</h4>
     <p class="text-fp-blue-dark" v-html="props.description"></p>
     <br />
-    <FpBtn v-if="props.url" :url="props.url">{{ props.url }}</FpBtn>
+    <div v-if="props.url" class="flex items-center justify-center">
+      <FpBtn :url="props.url">Learn More</FpBtn>
+    </div>
   </li>
 </template>

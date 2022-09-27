@@ -1,10 +1,8 @@
-import { defineNuxtConfig } from "nuxt";
-import locales from './locales/locales.json';
+import locales from "./locales/locales.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
   : "";
-
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -25,7 +23,12 @@ export default defineNuxtConfig({
     ],
   },
   buildModules: ["@pinia/nuxt"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/content",
+    "@nuxtjs/i18n",
+    "nuxt-icons",
+  ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },

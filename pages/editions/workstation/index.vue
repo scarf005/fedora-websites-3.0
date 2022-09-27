@@ -37,13 +37,13 @@ useHead({
       background="text-white bg-fp-green"
     >
       <div class="hero-laptop-container">
-        <div class="mb-48 px-auto max-w-sm sm:max-w-xl">
+        <div class="px-auto mb-48 max-w-sm sm:max-w-xl">
           <FpImage
             class="w-full"
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="w-full px-11 sm:px-[70px] -mt-[310px] sm:-mt-[473px]"
+            class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
             autoplay=""
             loop=""
             muted=""
@@ -57,14 +57,14 @@ useHead({
     </FpBanner>
   </FpHero>
 
-  <main class="flex flex-col items-center mt-8">
+  <main class="mt-8 flex flex-col items-center">
     <!-- Why Fedora Workstation -->
     <section class="w-10/12">
       <header
-        class="grid md:grid-cols-2 gap-4 md:w-11/12 mx-auto text-center md:text-left"
+        class="mx-auto grid gap-4 text-center md:w-11/12 md:grid-cols-2 md:text-left"
       >
         <h3
-          class="text-fp-blue font-medium mb-4 xl:mb-6 md:col-span-2 xl:col-span-1"
+          class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
           {{ data.section[0].header.sectionTitle }}
         </h3>
@@ -80,7 +80,7 @@ useHead({
     <!-- Benefits Section -->
     <section class="mt-32">
       <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
         {{ data.section[1].header.sectionTitle }}
       </h2>
@@ -94,11 +94,11 @@ useHead({
     <!-- Developers Section -->
     <section>
       <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
         {{ data.section[2].header.sectionTitle }}
       </h2>
-      <div class="mb-12 max-w-7xl mx-auto">
+      <div class="mx-auto mb-12 max-w-7xl">
         <FpBenefit
           v-for="item in data.section[2].content.list"
           v-bind="item"
@@ -110,9 +110,9 @@ useHead({
     <!-- Get Started Developing Section -->
     <section class="w-full">
       <div
-        class="bg-gradient-to-r from-green-200 to-blue-100 max-w-7xl mx-auto p-2 sm:p-10"
+        class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
       >
-        <h3 class="text-fp-blue font-bold text-center">
+        <h3 class="text-center font-bold text-fp-blue mb-8">
           {{ data.section[3].header.sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">

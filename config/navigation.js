@@ -15,9 +15,7 @@ const cloud = [
   { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
 ];
 
-const iot = [
-  { name: "Fedora IoT", href: "/editions/iot" }
-];
+const iot = [{ name: "Fedora IoT", href: "/editions/iot" }];
 
 const community = [
   {

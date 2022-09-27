@@ -62,10 +62,10 @@
 
   /* TODO: change disc size and color to correspond to the design system */
   ul {
-    @apply list-disc list-inside;
+    @apply list-inside list-disc;
   }
   ol {
-    @apply list-decimal list-inside;
+    @apply list-inside list-decimal;
   }
   dt {
     @apply font-semibold;
@@ -81,6 +81,6 @@
   /* Indirect Text */
 
   pre {
-    @apply sm:text-lg bg-gray-800 text-white max-w-fit whitespace-pre-line rounded px-8;
+    @apply max-w-fit whitespace-pre-line rounded bg-gray-800 px-8 text-white sm:text-lg;
   }
 }

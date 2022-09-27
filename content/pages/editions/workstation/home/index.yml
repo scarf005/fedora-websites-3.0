@@ -14,7 +14,7 @@ header:
       icon: fa-youtube
   reviewUrl: https://www.youtube.com/results?search_query=fedora+workstation+review
   subtitle: A beautiful, high-quality desktop, built on the latest open source
-    technology. Trusted, powerful, easy.
+    technology. Trusted, powerful and easy.
   images:
     image: public/assets/images/workstation_framework.png
     backgroundImage: public/assets/images/workstation_background.jpg
@@ -79,15 +79,20 @@ section:
           image:
             image: public/assets/images/workstation_boxes.png
         - title: Productivity-boosting desktop features
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: Use performance mode to boost hardware speed when you need it. Turn
+            off notifications with Do Not Disturb. Press the Super key and just
+            type to search for what you need.
           image:
             image: public/assets/images/workstation_software_center.png
         - title: Containers ready to go
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: Use the latest container tools from the Red Hat ecosystem. Not
+            setup required. Access the Red Hat container registry.
           image:
             image: public/assets/images/workstation_software_center.png
         - title: All the tools
-          description: Boxes takes the guesswork out of using virtual machines.
+          description: All the tools you might need, easy to install with a single
+            command. Tools supplied with high quality, by the people who make
+            them.
           image:
             image: public/assets/images/workstation_software_center.png
   - header:
@@ -98,17 +103,17 @@ section:
             applications using Fedora workstation.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/fedora_blue.png
         - description: DNF is the Fedora package manager that enables you to install,
             update and manage OS components.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/logo-dnf.png
         - description: Podman is a daemonless container engine for creating and managing
             containers and container images.
           url: https://fedoradeveloper.com
           image:
-            image: https://podman.io/images/podman.svg
+            image: public/assets/images/podman.svg
   - header:
       sectionTitle: Built by you
       headerImage:
@@ -125,7 +130,7 @@ section:
         the **Workstation Working Group**. It is comprised of official members
         who have decision making powers, as well as other contributors. [Learn
         more onthe Workstation Working Group
-        Website.](https://docs.fedoraproject.org/en-US/workstation-working-group/)
+        Website](https://docs.fedoraproject.org/en-US/workstation-working-group/)
       list:
         - title: Report & discuss issues
           description: You can view, file, and discuss Fedora Workstation issues on [the

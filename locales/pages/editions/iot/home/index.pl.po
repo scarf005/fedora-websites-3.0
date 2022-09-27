@@ -1,29 +1,32 @@
 #. extracted from content/pages/editions/iot/home/index.yml
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 20:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-09-27 15:51+0000\n"
+"PO-Revision-Date: 2022-09-27 15:46+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editions-iot/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Translate Toolkit 3.6.2\n"
 
 #: title
 msgid "Fedora IoT Index"
-msgstr ""
+msgstr "Indeks Fedory IoT"
 
 #: header-%3Etitle
 msgid "The solid foundation for IoT ecosystems"
-msgstr ""
+msgstr "Solidna podstawa dla ekosystemów IoT"
 
 #: header-%3Esubtitle
 msgid "A lightweight yet powerful and scalable OS"
-msgstr ""
+msgstr "Lekki, ale wydajny i skalowalny system operacyjny"
 
 #: header-%3Eimages-%3Eimage
 #, read-only
@@ -59,7 +62,7 @@ msgstr "fa-youtube"
 
 #: section-%3E[0]-%3Eheader-%3EsectionTitle
 msgid "WHY FEDORA IOT?"
-msgstr ""
+msgstr "Dlaczego Fedora IoT?"
 
 #: section-%3E[0]-%3Eheader-%3EheaderImage-%3Eimage
 #, read-only
@@ -83,7 +86,7 @@ msgstr ""
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Container Based"
-msgstr ""
+msgstr "Oparty na kontenerach"
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgctxt "section->[0]->content->list->[1]->description"
@@ -92,6 +95,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT to oparty na kontenerach gospodarz, który działa na Twoim "
+"sprzęcie, z naciskiem na wdrażanie urządzeń brzegowych."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
@@ -169,6 +174,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT to oparty na kontenerach gospodarz, który działa na Twoim "
+"sprzęcie, z naciskiem na wdrażanie urządzeń brzegowych."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "SolidRun"
@@ -236,6 +243,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT to oparty na kontenerach gospodarz, który działa na Twoim "
+"sprzęcie, z naciskiem na wdrażanie urządzeń brzegowych."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
 msgid "Join the mailing list"
