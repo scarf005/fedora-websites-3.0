@@ -47,18 +47,26 @@ section:
     content:
       list:
         - title: arm Systemready
+          image:
+            image: public/assets/images/iot_background_why.jpg
           description:
             Built on the latest technologies and enhancements that open-source
             has to offer.
         - title: Pine64
+          image:
+            image: public/assets/images/iot_background_why.jpg
           description:
             Fedora IoT is a container-based host that runs on your hardware,
             with a focus on edge device deployment.
         - title: SolidRun
+          image:
+            image: public/assets/images/iot_background_why.jpg
           description:
             Everything is supported by a totally free and open-source Fedora
             ecosystem.
         - title: nVidia
+          image:
+            image: public/assets/images/iot_background_why.jpg
           description: There are a wide variety of supported installation methods.
   - header:
       sectionTitle: Built By You
