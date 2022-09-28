@@ -77,24 +77,24 @@ section:
         - title: Virtualization made easy
           description: Boxes takes the guesswork out of using virtual machines.
           image:
-            image: public/assets/images/workstation_boxes.png
+            image: public/assets/images/dev1.png
         - title: Productivity-boosting desktop features
           description: Use performance mode to boost hardware speed when you need it. Turn
             off notifications with Do Not Disturb. Press the Super key and just
             type to search for what you need.
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/dev2.png
         - title: Containers ready to go
           description: Use the latest container tools from the Red Hat ecosystem. Not
             setup required. Access the Red Hat container registry.
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/dev3.png
         - title: All the tools
           description: All the tools you might need, easy to install with a single
             command. Tools supplied with high quality, by the people who make
             them.
           image:
-            image: public/assets/images/workstation_software_center.png
+            image: public/assets/images/dev4.png
   - header:
       sectionTitle: Get started developing with Fedora Workstation
     content:
@@ -103,7 +103,7 @@ section:
             applications using Fedora workstation.
           url: https://fedoradeveloper.com
           image:
-            image: public/assets/images/fedora_blue.png
+            image: public/assets/images/fedora-devs.png
         - description: DNF is the Fedora package manager that enables you to install,
             update and manage OS components.
           url: https://fedoradeveloper.com
