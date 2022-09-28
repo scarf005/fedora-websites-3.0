@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 20:55+0000\n"
+"POT-Creation-Date: 2022-09-28 17:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,6 +152,11 @@ msgstr ""
 msgid "arm Systemready"
 msgstr "arm Systemready"
 
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+#, read-only
+msgid "public/assets/images/iot-platform1.png"
+msgstr ""
+
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgctxt "section->[1]->content->list->[0]->description"
 msgid ""
@@ -165,6 +170,11 @@ msgstr ""
 msgid "Pine64"
 msgstr "Pine64"
 
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+#, read-only
+msgid "public/assets/images/iot-platform2.png"
+msgstr ""
+
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgctxt "section->[1]->content->list->[1]->description"
 msgid ""
@@ -176,6 +186,11 @@ msgstr ""
 msgid "SolidRun"
 msgstr "SolidRun"
 
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+#, read-only
+msgid "public/assets/images/iot-platform3.png"
+msgstr ""
+
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Edescription
 msgctxt "section->[1]->content->list->[2]->description"
 msgid ""
@@ -185,6 +200,11 @@ msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
 msgid "nVidia"
 msgstr "nVidia"
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+#, read-only
+msgid "public/assets/images/iot-platform4.png"
+msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Edescription
 msgctxt "section->[1]->content->list->[3]->description"
