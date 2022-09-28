@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-26 22:23+0000\n"
+"POT-Creation-Date: 2022-09-28 15:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,9 +161,6 @@ msgstr ""
 
 #, read-only
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgctxt "section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
-"section->[1]->content->list->[0]->image->image"
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -239,7 +236,7 @@ msgstr ""
 
 #, read-only
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgid "public/assets/images/workstation_boxes.png"
+msgid "public/assets/images/dev1.png"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
@@ -255,8 +252,7 @@ msgstr ""
 
 #, read-only
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[1]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/dev2.png"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Etitle
@@ -271,8 +267,7 @@ msgstr ""
 
 #, read-only
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[2]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/dev3.png"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Etitle
@@ -287,8 +282,7 @@ msgstr ""
 
 #, read-only
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[3]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
+msgid "public/assets/images/dev4.png"
 msgstr ""
 
 #: section-%3E[3]-%3Eheader-%3EsectionTitle
@@ -310,7 +304,7 @@ msgstr ""
 
 #, read-only
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgid "public/assets/images/fedora_blue.png"
+msgid "public/assets/images/fedora-devs.png"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Edescription
