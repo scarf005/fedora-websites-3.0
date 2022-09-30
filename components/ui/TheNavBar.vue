@@ -111,16 +111,13 @@ const availableLocales = computed(() => {
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu" v-if="open">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <div>
-          <a
-            class="inline-flex cursor-pointer items-center rounded px-3 py-2 text-sm text-white"
-            href="https://docs.fedoraproject.org/en-US/project/"
-          >
-            <span class="mr-1">About</span>
-          </a>
-        </div>
-        <br />
-        <div v-for="item in editions" :key="item.name">
+        <a
+          class="inline-flex cursor-pointer items-center rounded px-3 py-2 text-sm text-white"
+          href="https://docs.fedoraproject.org/en-US/project/"
+        >
+          <span class="mr-1">About</span>
+        </a>
+        <div v-for="item in desktops" :key="item.name">
           <a
             :href="`${$config.app.baseURL + '/' + item.href}`"
             :class="[
@@ -133,8 +130,7 @@ const availableLocales = computed(() => {
             >{{ item.name }}</a
           >
         </div>
-        <br />
-        <div v-for="item in variants" :key="item.name">
+        <div v-for="item in cloud" :key="item.name">
           <a
             :href="item.href"
             :class="[
@@ -147,8 +143,7 @@ const availableLocales = computed(() => {
             >{{ item.name }}</a
           >
         </div>
-        <br />
-        <div v-for="item in community" :key="item.name">
+        <div v-for="item in iot" :key="item.name">
           <a
             :href="item.href"
             :class="[
@@ -161,8 +156,20 @@ const availableLocales = computed(() => {
             >{{ item.name }}</a
           >
         </div>
-        <br />
         <div v-for="item in support" :key="item.name">
+          <a
+            :href="item.href"
+            :class="[
+              item.current
+                ? 'bg-gray-900 text-white'
+                : 'text-white  hover:text-fp-purple',
+              'rounded-md px-3 py-2 text-sm font-medium',
+            ]"
+            :aria-current="item.current ? 'page' : undefined"
+            >{{ item.name }}</a
+          >
+        </div>
+        <div v-for="item in community" :key="item.name">
           <a
             :href="item.href"
             :class="[
