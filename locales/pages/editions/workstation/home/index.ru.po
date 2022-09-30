@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 15:44+0000\n"
+"POT-Creation-Date: 2022-09-30 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,7 @@ msgid "Download now"
 msgstr "Скачать сейчас"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
@@ -50,6 +51,7 @@ msgid "Reviewed By TechHut"
 msgstr "Обзор от TechHut"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -58,6 +60,7 @@ msgid "fa-youtube"
 msgstr "fa-youtube"
 
 #: header-%3EreviewUrl
+#, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr "https://www.youtube.com/results?search_query=fedora+workstation+review"
 
@@ -70,10 +73,12 @@ msgstr ""
 "новейших технологий с открытым исходным кодом. Проверенная, мощная, удобная."
 
 #: header-%3Eimages-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
 #: header-%3Eimages-%3EbackgroundImage
+#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
@@ -172,6 +177,7 @@ msgstr ""
 "знакомые приложения с других платформ."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -188,6 +194,7 @@ msgstr ""
 "языках."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
 
@@ -205,6 +212,7 @@ msgstr ""
 "на экране и облегчить отход ко сну."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
@@ -218,6 +226,7 @@ msgstr ""
 "Перенесите свой онлайн-календарь на рабочий стол из сетевых учётных записей"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
 
@@ -234,6 +243,7 @@ msgstr ""
 "Погода и Карты."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
@@ -252,6 +262,7 @@ msgstr ""
 "машин."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/dev1.png"
 msgstr ""
 
@@ -270,6 +281,7 @@ msgstr ""
 "Super и просто введите то, что хотите найти."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/dev2.png"
 msgstr ""
 
@@ -284,6 +296,7 @@ msgid ""
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/dev3.png"
 msgstr ""
 
@@ -298,6 +311,7 @@ msgid ""
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/dev4.png"
 msgstr ""
 
@@ -312,12 +326,14 @@ msgid ""
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eurl
-msgctxt ""
-"section->[3]->content->list->[0]->urlsection->[3]->content->list->[0]->url"
+#, read-only
+msgctxt "section->[3]->content->list->[0]->url"
+"section->[3]->content->list->[0]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-devs.png"
 msgstr ""
 
@@ -330,11 +346,13 @@ msgstr ""
 "обновлять и управлять компонентами ОС."
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eurl
+#, read-only
 msgctxt "section->[3]->content->list->[1]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
@@ -345,11 +363,13 @@ msgid ""
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eurl
+#, read-only
 msgctxt "section->[3]->content->list->[2]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+#, read-only
 msgid "public/assets/images/podman.svg"
 msgstr ""
 
@@ -358,6 +378,7 @@ msgid "Built by you"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EheaderImage-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
@@ -423,36 +444,6 @@ msgstr ""
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
-msgstr ""
-
-#: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgctxt ""
-"section->[1]->content->list->[0]->image->imagesection->[1]->content->list-"
-">[0]->image->imagesection->[1]->content->list->[0]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
-msgstr ""
-
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgid "public/assets/images/workstation_boxes.png"
-msgstr ""
-
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[1]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
-msgstr ""
-
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[2]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
-msgstr ""
-
-#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
-msgctxt "section->[2]->content->list->[3]->image->image"
-msgid "public/assets/images/workstation_software_center.png"
-msgstr ""
-
-#: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-msgid "public/assets/images/fedora_blue.png"
 msgstr ""
 
 #~ msgid "Benefits"
