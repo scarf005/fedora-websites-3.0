@@ -22,7 +22,6 @@ msgid "The flagship desktop distribution of the Fedora Project"
 msgstr "Флагманский настольный дистрибутив проекта Fedora"
 
 #: header-%3Etitle
-#, fuzzy
 msgid "The leading Linux desktop"
 msgstr "Ведущая настольная система Linux"
 
@@ -39,12 +38,10 @@ msgid "Release Notes<https://getfedora.org>"
 msgstr "Примечания к выпуску <https://getfedora.org>"
 
 #: header-%3Ecta-%3E[0]-%3Etext
-#, fuzzy
 msgid "Download now"
 msgstr "Скачать сейчас"
 
 #: header-%3Ecta-%3E[0]-%3Eurl
-#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
@@ -53,7 +50,6 @@ msgid "Reviewed By TechHut"
 msgstr "Обзор от TechHut"
 
 #: header-%3Ecta-%3E[1]-%3Eurl
-#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -62,12 +58,10 @@ msgid "fa-youtube"
 msgstr "fa-youtube"
 
 #: header-%3EreviewUrl
-#, read-only
 msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
 msgstr "https://www.youtube.com/results?search_query=fedora+workstation+review"
 
 #: header-%3Esubtitle
-#, fuzzy
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy."
@@ -76,12 +70,10 @@ msgstr ""
 "новейших технологий с открытым исходным кодом. Проверенная, мощная, удобная."
 
 #: header-%3Eimages-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
 #: header-%3Eimages-%3EbackgroundImage
-#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
@@ -102,7 +94,6 @@ msgstr ""
 "выполняются быстро и легко."
 
 #: section-%3E[0]-%3Econtent-%3Elist-%3E[1]-%3Etitle
-#, fuzzy
 msgid "Free & private"
 msgstr "Свободная и приватная"
 
@@ -164,10 +155,9 @@ msgstr ""
 
 #: section-%3E[1]-%3Eheader-%3EsectionTitle
 msgid "Features for everyone"
-msgstr ""
+msgstr "Возможности для каждого"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Etitle
-#, fuzzy
 msgid "Fantastic apps"
 msgstr "Фантастические приложения"
 
@@ -182,7 +172,6 @@ msgstr ""
 "знакомые приложения с других платформ."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -199,7 +188,6 @@ msgstr ""
 "языках."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
 
@@ -217,12 +205,10 @@ msgstr ""
 "на экране и облегчить отход ко сну."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Etitle
-#, fuzzy
 msgid "Calendar integration"
 msgstr "Интеграция с календарём"
 
@@ -232,45 +218,46 @@ msgstr ""
 "Перенесите свой онлайн-календарь на рабочий стол из сетевых учётных записей"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Etitle
 msgid "Helpful out of the box"
-msgstr ""
+msgstr "Весь функционал из коробки"
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Edescription
 msgid ""
 "Fedora Workstation includes a great set of utilities, like Clocks, Weather "
 "and Maps."
 msgstr ""
+"Fedora Workstation включает в себя отличный набор утилит, таких как Часы, "
+"Погода и Карты."
 
 #: section-%3E[1]-%3Econtent-%3Elist-%3E[4]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
 #: section-%3E[2]-%3Eheader-%3EsectionTitle
 msgid "Great for developers"
-msgstr ""
+msgstr "Отлично подходит для разработчиков"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Etitle
 msgid "Virtualization made easy"
-msgstr ""
+msgstr "Виртуализация стала проще"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Edescription
 msgid "Boxes takes the guesswork out of using virtual machines."
 msgstr ""
+"Boxes избавляет вас от построения догадок при использовании виртуальных "
+"машин."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/dev1.png"
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Etitle
 msgid "Productivity-boosting desktop features"
-msgstr ""
+msgstr "Функции рабочего стола, повышающие продуктивность"
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Edescription
 msgid ""
@@ -278,9 +265,11 @@ msgid ""
 "notifications with Do Not Disturb. Press the Super key and just type to "
 "search for what you need."
 msgstr ""
+"Используйте режим производительности, чтобы ускорить оборудование, когда вам "
+"это нужно. Отключите уведомления с помощью «Не беспокоить». Нажмите клавишу "
+"Super и просто введите то, что хотите найти."
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/dev2.png"
 msgstr ""
 
@@ -295,7 +284,6 @@ msgid ""
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/dev3.png"
 msgstr ""
 
@@ -310,7 +298,6 @@ msgid ""
 msgstr ""
 
 #: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/dev4.png"
 msgstr ""
 
@@ -325,14 +312,12 @@ msgid ""
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eurl
-#, read-only
-msgctxt "section->[3]->content->list->[0]->url"
-"section->[3]->content->list->[0]->url"
+msgctxt ""
+"section->[3]->content->list->[0]->urlsection->[3]->content->list->[0]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/fedora-devs.png"
 msgstr ""
 
@@ -341,15 +326,15 @@ msgid ""
 "DNF is the Fedora package manager that enables you to install, update and "
 "manage OS components."
 msgstr ""
+"DNF — это менеджер пакетов Fedora, который позволяет вам устанавливать, "
+"обновлять и управлять компонентами ОС."
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eurl
-#, read-only
 msgctxt "section->[3]->content->list->[1]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
@@ -360,13 +345,11 @@ msgid ""
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eurl
-#, read-only
 msgctxt "section->[3]->content->list->[2]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: section-%3E[3]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
-#, read-only
 msgid "public/assets/images/podman.svg"
 msgstr ""
 
@@ -375,7 +358,6 @@ msgid "Built by you"
 msgstr ""
 
 #: section-%3E[4]-%3Eheader-%3EheaderImage-%3Eimage
-#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
@@ -441,6 +423,36 @@ msgstr ""
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
+msgstr ""
+
+#: section-%3E[1]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgctxt ""
+"section->[1]->content->list->[0]->image->imagesection->[1]->content->list-"
+">[0]->image->imagesection->[1]->content->list->[0]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgid "public/assets/images/workstation_boxes.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[1]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[1]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[2]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[2]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[2]-%3Econtent-%3Elist-%3E[3]-%3Eimage-%3Eimage
+msgctxt "section->[2]->content->list->[3]->image->image"
+msgid "public/assets/images/workstation_software_center.png"
+msgstr ""
+
+#: section-%3E[3]-%3Econtent-%3Elist-%3E[0]-%3Eimage-%3Eimage
+msgid "public/assets/images/fedora_blue.png"
 msgstr ""
 
 #~ msgid "Benefits"
