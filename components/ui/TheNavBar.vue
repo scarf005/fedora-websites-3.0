@@ -68,7 +68,6 @@ const availableLocales = computed(() => {
             type="button"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
-
             <svg
               class="block h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
