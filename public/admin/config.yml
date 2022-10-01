@@ -1,13 +1,14 @@
 backend:
   name: gitlab
   repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
+  accept_roles:
+    - admin
+    - editor
   # Do more research on https://www.netlifycms.org/docs/gitlab-backend/
   #  auth_type: pkce # Required for pkce
   #  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
   branch: cms-rewrite
   # squash_merges: true
-  local_backend:
-    url: http://localhost:8081/api/v1
 # Docs for Editorial Workflow: https://www.netlifycms.org/docs/configuration-options/
 # publish_mode: editorial_workflow
 # Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
