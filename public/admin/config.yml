@@ -14,8 +14,8 @@ local_backend: true
 show_preview_links: true
 
 # Assets
-media_folder: "assets/images"
-
+media_folder: "public/assets/images"
+public_folder: "public/assets/images"
 ### Table of Contents ###
 # Workstation Pages - 25
 # IoT Pages         - 110
@@ -31,11 +31,12 @@ collections:
   - name: "workstation" # Used in routes, e.g., /admin/collections/blog
     label: "Workstation Pages" # Used in the UI
     label_singular: "Workstation Page"
-    folder: "editions/workstation" # The path to the folder where the documents are stored
+    folder: "/content/editions/workstation" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: name
     fields: # The fields for each document, usually in front matter
       - {
           label: "Title",
@@ -52,7 +53,7 @@ collections:
       - {
           label: "Subheadline",
           name: "subheadline",
-          widget: "textarea",
+          widget: "text",
           hint: "Page header secondary text",
         }
       - {
@@ -116,7 +117,7 @@ collections:
   - name: "iot" # Used in routes
     label: "Iot Pages" # Used in the UI
     label_singular: "Iot Page"
-    folder: "editions/iot" # The path to the folder where the documents are stored
+    folder: "/content/editions/iot" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -137,7 +138,7 @@ collections:
       - {
           label: "Subheadline",
           name: "subheadline",
-          widget: "textarea",
+          widget: "text",
           hint: "Page header secondary text",
         }
       - {
@@ -201,7 +202,7 @@ collections:
   - name: "Server" # Used in routes
     label: "Server Pages" # Used in the UI
     label_singular: "Server Page"
-    folder: "editions/iot" # The path to the folder where the documents are stored
+    folder: "/content/editions/iot" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -222,7 +223,7 @@ collections:
       - {
           label: "Subheadline",
           name: "subheadline",
-          widget: "textarea",
+          widget: "text",
           hint: "Page header secondary text",
         }
       - {
@@ -286,7 +287,7 @@ collections:
   - name: "flock" # Used in routes, e.g., /admin/collections/blog
     label: "Flock Pages" # Used in the UI
     label_singular: "Flock Page"
-    folder: "editions/flock" # The path to the folder where the documents are stored
+    folder: "content/editions/flock" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -307,7 +308,7 @@ collections:
       - {
           label: "Subheadline",
           name: "subheadline",
-          widget: "textarea",
+          widget: "text",
           hint: "Page header secondary text",
         }
       - {
@@ -370,7 +371,7 @@ collections:
   ##############
   - name: "start" # Used in routes, e.g., /admin/collections/blog
     label: "Fedora Start" # Used in the UI
-    folder: "editions/start" # The path to the folder where the documents are stored
+    folder: "/content/editions/start" # The path to the folder where the documents are stored
     editor:
       preview: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -390,7 +391,7 @@ collections:
       - {
           label: "Subheadline",
           name: "subheadline",
-          widget: "textarea",
+          widget: "text",
           hint: "Page header secondary text",
         }
       - {
