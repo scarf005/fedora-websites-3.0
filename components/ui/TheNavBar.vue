@@ -66,11 +66,8 @@ const availableLocales = computed(() => {
           <button
             @click="open = !open"
             type="button"
-            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
+            class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
-            <span class="sr-only">Open main menu</span>
 
             <svg
               class="block h-6 w-6"
