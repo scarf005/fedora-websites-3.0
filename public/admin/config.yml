@@ -5,17 +5,18 @@ backend:
   #  auth_type: pkce # Required for pkce
   #  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
   branch: cms-rewrite
-  squash_merges: true
-local_backend: true
-
+  # squash_merges: true
+  local_backend:
+    url: http://localhost:8081/api/v1
 # Docs for Editorial Workflow: https://www.netlifycms.org/docs/configuration-options/
-#publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 # Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
 show_preview_links: true
 
 # Assets
 media_folder: "public/assets/images"
 public_folder: "public/assets/images"
+
 ### Table of Contents ###
 # Workstation Pages - 25
 # IoT Pages         - 110
@@ -32,6 +33,7 @@ collections:
     label: "Workstation Pages" # Used in the UI
     label_singular: "Workstation Page"
     folder: "/content/editions/workstation" # The path to the folder where the documents are stored
+    format: "yml"
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -118,6 +120,7 @@ collections:
     label: "Iot Pages" # Used in the UI
     label_singular: "Iot Page"
     folder: "/content/editions/iot" # The path to the folder where the documents are stored
+    format: "yml"
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -288,6 +291,7 @@ collections:
     label: "Flock Pages" # Used in the UI
     label_singular: "Flock Page"
     folder: "content/editions/flock" # The path to the folder where the documents are stored
+    format: "yml"
     create: true # Allow users to create new documents in this collection
     editor:
       preview: true
@@ -372,6 +376,7 @@ collections:
   - name: "start" # Used in routes, e.g., /admin/collections/blog
     label: "Fedora Start" # Used in the UI
     folder: "/content/editions/start" # The path to the folder where the documents are stored
+    format: "yml"
     editor:
       preview: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
