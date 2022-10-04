@@ -44,7 +44,7 @@ defineProps({
   <div class="spacing-1 mt-5 flex justify-center">
     <template v-for="(cta, idx) in ctas">
       <FpBtn
-        :url="cta.link"
+        :url="cta.url"
         :color="[
           'text-center',
           {

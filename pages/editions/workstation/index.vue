@@ -112,7 +112,7 @@ useHead({
       <div
         class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
       >
-        <h3 class="text-center font-bold text-fp-blue mb-8">
+        <h3 class="mb-8 text-center font-bold text-fp-blue">
           {{ data.section[3].header.sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
@@ -133,7 +133,10 @@ useHead({
 
     <!-- Call To Action -->
     <section>
-      <FpCallToAction :cta="data.header.cta" />
+      <FpCallToAction
+        :cta="data.header.cta"
+        image="assets/images/workstation_logo.jpg"
+      />
     </section>
   </main>
 </template>
