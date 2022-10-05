@@ -1,0 +1,13 @@
+title: foo
+headline: bar
+subheadline: baz
+header_images: public/assets/images/dall_e_efficiency.png
+body:
+  - headline: foo
+    subheadline: bar
+    images: public/assets/images/wheatstacks.jpg
+    content: gar
+  - headline: boo
+    subheadline: baz
+    images: public/assets/images/wheatstacks.jpg
+    content: gam
