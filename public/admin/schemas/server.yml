@@ -1,0 +1,31 @@
+  #######################
+  # Fedora Server Pages #
+  #######################
+  - label: "Server Pages"
+    label_singular: "Server Page"
+    name: "server-page"
+    folder: "/content/pages/editions/server"
+    format: "yml"
+    slug: "{{slug}}"
+    identifier_field: name
+    editor:
+      preview: true
+    nested:
+      depth: 5
+    fields:
+      - { label: "Page Title", name: "title", widget: "string", required: false }
+      - { label: "Page Description", name: "description", widget: "text", required: false }
+      - label: "Page Sections"
+        name: "sections"
+        widget: "list"
+        collapsed: true
+        fields:
+          - { label: "Header Title", name: "sectionTitle", widget: "string", required: false, }
+          - label: "Lists"
+            name: "list"
+            widget: "list"
+            collapsed: false
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
