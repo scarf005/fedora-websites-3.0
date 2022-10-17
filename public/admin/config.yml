@@ -8,7 +8,7 @@ backend:
   name: git-gateway # run `npx netlify-cms-proxy-server` when using git gateway
   branch: cms-rewrite
   squash_merges: true
-publish_mode: editorial_workflow
+publish_mode: editorial_workflow # Allows saving
 
 # Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
 local_backend: true
@@ -184,7 +184,7 @@ collections:
                       required: false,
                     }
   #####################
-  # Workstation Pages #
+  # IoT Pages #
   #####################
   - name: "iot" # Used in routes, e.g., /admin/collections/blog
     label: "IoT Pages" # Used in the UI
@@ -206,13 +206,13 @@ collections:
           hint: "url page name ie: index or community",
         }
       - {
-          label: "Page Title",
+          label: "Header Title",
           name: "title",
           widget: "string",
           hint: "Main headline and h1 tag on the web page",
         }
       - {
-          label: "Page Description",
+          label: "Header Description",
           name: "description",
           widget: "text",
           hint: "Page header description text",
@@ -226,11 +226,23 @@ collections:
           hint: "Add background and foreground images to the header",
           required: false,
         }
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        max: 3
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - { label: "Link Text", name: "text", widget: "string" }
+          - { label: "Link URL", name: "url", widget: "string", required: false }
       - label: "Page Sections"
         label_singular: "Page Section"
         name: "sections"
         hint: "Main sections of page content, generally grouped by h2 headings"
-        summary: "Page Section"
+        summary: "{{fields.sectionTitle}}"
         widget: "list"
         collapsed: true
         fields:
@@ -316,16 +328,16 @@ collections:
           label: "Path",
           name: "path",
           widget: "string",
-          hint: "URL Name of the page, Not Visible on the Page",
+          hint: "url page name ie: index or community",
         }
       - {
-          label: "Page Title",
+          label: "Header Title",
           name: "title",
           widget: "string",
           hint: "Main headline and h1 tag on the web page",
         }
       - {
-          label: "Page Description",
+          label: "Header Description",
           name: "description",
           widget: "text",
           hint: "Page header description text",
@@ -339,11 +351,23 @@ collections:
           hint: "Add background and foreground images to the header",
           required: false,
         }
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        max: 3
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - { label: "Link Text", name: "text", widget: "string" }
+          - { label: "Link URL", name: "url", widget: "string", required: false }
       - label: "Page Sections"
         label_singular: "Page Section"
         name: "sections"
         hint: "Main sections of page content, generally grouped by h2 headings"
-        summary: "Page Section"
+        summary: "{{fields.sectionTitle}}"
         widget: "list"
         collapsed: true
         fields:
@@ -429,16 +453,16 @@ collections:
           label: "Path",
           name: "path",
           widget: "string",
-          hint: "URL Name of the page, Not Visible on the Page",
+          hint: "url page name ie: index or community",
         }
       - {
-          label: "Page Title",
+          label: "Header Title",
           name: "title",
           widget: "string",
           hint: "Main headline and h1 tag on the web page",
         }
       - {
-          label: "Page Description",
+          label: "Header Description",
           name: "description",
           widget: "text",
           hint: "Page header description text",
@@ -452,11 +476,23 @@ collections:
           hint: "Add background and foreground images to the header",
           required: false,
         }
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        max: 3
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - { label: "Link Text", name: "text", widget: "string" }
+          - { label: "Link URL", name: "url", widget: "string", required: false }
       - label: "Page Sections"
         label_singular: "Page Section"
         name: "sections"
         hint: "Main sections of page content, generally grouped by h2 headings"
-        summary: "Page Section"
+        summary: "{{fields.sectionTitle}}"
         widget: "list"
         collapsed: true
         fields:
