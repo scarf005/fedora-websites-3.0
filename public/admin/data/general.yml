@@ -1,0 +1,57 @@
+#################
+# General Pages #
+#################
+- label: "General Pages"
+  name: "pages"
+  files:
+    - label: "Fedora Start Page"
+      name: "start"
+      file: "/content/start.yml"
+      format: yml
+      fields:
+        - {
+            label: "Page Title",
+            name: "title",
+            widget: "string",
+            required: false,
+          }
+        - {
+            label: "Page Description",
+            name: "description",
+            widget: "text",
+            required: false,
+          }
+        - label: "Page Sections"
+          name: "sections"
+          widget: "list"
+          collapsed: true
+          fields:
+            - {
+                label: "Header Title",
+                name: "sectionTitle",
+                widget: "string",
+                required: false,
+              }
+            - label: "Lists"
+              name: "list"
+              widget: "list"
+              collapsed: false
+              fields:
+                - {
+                    label: "Title",
+                    name: "title",
+                    widget: "string",
+                    required: false,
+                  }
+                - {
+                    label: "Description",
+                    name: "description",
+                    widget: "markdown",
+                    required: false,
+                  }
+                - {
+                    label: "Image",
+                    name: "image",
+                    widget: "image",
+                    required: false,
+                  }

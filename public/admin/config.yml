@@ -1,54 +1,188 @@
 backend:
-  name: gitlab
-  repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
-  accept_roles:
-    - admin
-    - editor
-  # Do more research on https://www.netlifycms.org/docs/gitlab-backend/
-  auth_type: pkce # Required for pkce
-  app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
+  # name: gitlab
+  # repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
+  # auth_type: pkce # Required for pkce
+  # app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
+
+  # For Testing
+  name: git-gateway # run `npx netlify-cms-proxy-server` when using git gateway
   branch: cms-rewrite
   squash_merges: true
 publish_mode: editorial_workflow
+
 # Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
-#show_preview_links: true
+local_backend: true
 
 # Assets
 media_folder: "public/assets/images"
 public_folder: "public/assets/images"
 
 collections:
-  #################
-  # Flock Pages #
-  ################
-  - label: "Flock Pages"
-    label_singular: "Flock Page"
-    name: "flockPage"
-    folder: "/content/pages"
-    format: "yml"
-    slug: "{{slug}}"
-    identifier_field: name
-    editor:
-      preview: true
-    nested:
-      depth: 5
-    fields:
-      - { label: "Page Title", name: "title", widget: "string", required: false }
-      - { label: "Page Description", name: "description", widget: "text", required: false }
-      - label: "Page Sections"
-        name: "sections"
-        widget: "list"
-        collapsed: true
+  ###############
+  # Event Pages #
+  ###############
+  - label: "Event Pages"
+    name: "eventPages"
+    files:
+      - label: "Flock to Fedora"
+        name: "flock"
+        file: "/content/events/flock.yml"
+        format: yml
         fields:
-          - { label: "Header Title", name: "sectionTitle", widget: "string", required: false, }
-          - label: "Lists"
-            name: "list"
+          - {
+              label: "Page Title",
+              name: "title",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Page Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Page Sections"
+            name: "sections"
             widget: "list"
-            collapsed: false
+            collapsed: true
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false }
-              - { label: "Description", name: "description", widget: "string", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - {
+                  label: "Header Title",
+                  name: "sectionTitle",
+                  widget: "string",
+                  required: false,
+                }
+              - label: "Lists"
+                name: "list"
+                widget: "list"
+                collapsed: false
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+      - label: "Fedora Week of Diversity"
+        name: "fwd"
+        file: "/content/events/fwd.yml"
+        format: yml
+        fields:
+          - {
+              label: "Page Title",
+              name: "title",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Page Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Page Sections"
+            name: "sections"
+            widget: "list"
+            collapsed: true
+            fields:
+              - {
+                  label: "Header Title",
+                  name: "sectionTitle",
+                  widget: "string",
+                  required: false,
+                }
+              - label: "Lists"
+                name: "list"
+                widget: "list"
+                collapsed: false
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+  #################
+  # General Pages #
+  #################
+  - label: "General Pages"
+    name: "pages"
+    files:
+      - label: "Fedora Start Page"
+        name: "start"
+        file: "/content/start.yml"
+        format: yml
+        fields:
+          - {
+              label: "Page Title",
+              name: "title",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Page Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Page Sections"
+            name: "sections"
+            widget: "list"
+            collapsed: true
+            fields:
+              - {
+                  label: "Header Title",
+                  name: "sectionTitle",
+                  widget: "string",
+                  required: false,
+                }
+              - label: "Lists"
+                name: "list"
+                widget: "list"
+                collapsed: false
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
   #####################
   # Workstation Pages #
   #####################
@@ -58,7 +192,7 @@ collections:
     folder: "/content/editions/iot" # The path to the folder where the documents are stored
     format: "yml"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    identifier_field: name
+    identifier_field: path
     create: true
     editor:
       preview: true
@@ -69,7 +203,7 @@ collections:
           label: "Path",
           name: "path",
           widget: "string",
-          hint: "URL Name of the page, Not Visible on the Page",
+          hint: "url page name ie: index or community",
         }
       - {
           label: "Page Title",
@@ -82,7 +216,7 @@ collections:
           name: "description",
           widget: "text",
           hint: "Page header description text",
-          required: false
+          required: false,
         }
       - {
           label: "Header Images",
@@ -90,7 +224,7 @@ collections:
           widget: "image",
           allow_multiple: true,
           hint: "Add background and foreground images to the header",
-          required: false
+          required: false,
         }
       - label: "Page Sections"
         label_singular: "Page Section"
@@ -111,13 +245,14 @@ collections:
               name: "sectionDescription",
               widget: "markdown",
               hint: "Longer text that accompanies the title",
-              required: false
+              required: false,
             }
-          - { label: "Section Images",
+          - {
+              label: "Section Images",
               singular_label: "image",
               name: "images",
               widget: "image",
-              required: false
+              required: false,
             }
           - label: "Section Content"
             name: "content"
@@ -125,26 +260,52 @@ collections:
             hint: "Add sub sections, cards, and lists of content here."
             collapsed: false
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false }            
-              - { label: "description", name: "description", widget: "markdown", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "description",
+                  name: "description",
+                  widget: "markdown",
+                  required: false,
+                }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
               - label: "Link"
                 name: "link"
                 widget: "object"
                 fields:
-                  - { label: "Link Text", name: "text", widget: "string", hint: "Visible text for a link or button", required: false }
-                  - { label: "Link URL", name: "url", widget: "string", hint: "URL path for the link or button", required: false }
-
-  #####################
-  # Workstation Pages #
-  #####################
+                  - {
+                      label: "Link Text",
+                      name: "text",
+                      widget: "string",
+                      hint: "Visible text for a link or button",
+                      required: false,
+                    }
+                  - {
+                      label: "Link URL",
+                      name: "url",
+                      widget: "string",
+                      hint: "URL path for the link or button",
+                      required: false,
+                    }
+  #################
+  # Server Pages #
+  #################
   - name: "server" # Used in routes, e.g., /admin/collections/blog
     label: "Server Pages" # Used in the UI
     label_singular: "Server Page"
     folder: "/content/editions/server" # The path to the folder where the documents are stored
     format: "yml"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    identifier_field: name
+    identifier_field: path
     create: true
     editor:
       preview: true
@@ -168,7 +329,7 @@ collections:
           name: "description",
           widget: "text",
           hint: "Page header description text",
-          required: false
+          required: false,
         }
       - {
           label: "Header Images",
@@ -176,7 +337,7 @@ collections:
           widget: "image",
           allow_multiple: true,
           hint: "Add background and foreground images to the header",
-          required: false
+          required: false,
         }
       - label: "Page Sections"
         label_singular: "Page Section"
@@ -197,13 +358,14 @@ collections:
               name: "sectionDescription",
               widget: "markdown",
               hint: "Longer text that accompanies the title",
-              required: false
+              required: false,
             }
-          - { label: "Section Images",
+          - {
+              label: "Section Images",
               singular_label: "image",
               name: "images",
               widget: "image",
-              required: false
+              required: false,
             }
           - label: "Section Content"
             name: "content"
@@ -211,72 +373,42 @@ collections:
             hint: "Add sub sections, cards, and lists of content here."
             collapsed: false
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false }            
-              - { label: "description", name: "description", widget: "markdown", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "description",
+                  name: "description",
+                  widget: "markdown",
+                  required: false,
+                }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
               - label: "Link"
                 name: "link"
                 widget: "object"
                 fields:
-                  - { label: "Link Text", name: "text", widget: "string", hint: "Visible text for a link or button", required: false }
-                  - { label: "Link URL", name: "url", widget: "string", hint: "URL path for the link or button", required: false }
-
-###############
-# Start Page #
-##############
-- label: "Start Pages"
-  label_singular: "Start Page"
-  name: "startPage"
-  folder: "/content"
-  format: "yml"
-  slug: "{{slug}}"
-  identifier_field: name
-  editor:
-    preview: true
-  nested:
-    depth: 5
-  fields:
-    - { label: "Page Title", name: "title", widget: "string", required: false }
-    - {
-        label: "Page Description",
-        name: "description",
-        widget: "text",
-        required: false,
-      }
-    - label: "Page Sections"
-      name: "sections"
-      widget: "list"
-      collapsed: true
-      fields:
-        - {
-            label: "Header Title",
-            name: "sectionTitle",
-            widget: "string",
-            required: false,
-          }
-        - label: "Lists"
-          name: "list"
-          widget: "list"
-          collapsed: false
-          fields:
-            - {
-                label: "Title",
-                name: "title",
-                widget: "string",
-                required: false,
-              }
-            - {
-                label: "Description",
-                name: "description",
-                widget: "string",
-                required: false,
-              }
-            - {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                required: false,
-              }
+                  - {
+                      label: "Link Text",
+                      name: "text",
+                      widget: "string",
+                      hint: "Visible text for a link or button",
+                      required: false,
+                    }
+                  - {
+                      label: "Link URL",
+                      name: "url",
+                      widget: "string",
+                      hint: "URL path for the link or button",
+                      required: false,
+                    }
   #####################
   # Workstation Pages #
   #####################
@@ -286,7 +418,7 @@ collections:
     folder: "/content/editions/workstation" # The path to the folder where the documents are stored
     format: "yml"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    identifier_field: name
+    identifier_field: path
     create: true
     editor:
       preview: true
@@ -310,7 +442,7 @@ collections:
           name: "description",
           widget: "text",
           hint: "Page header description text",
-          required: false
+          required: false,
         }
       - {
           label: "Header Images",
@@ -318,7 +450,7 @@ collections:
           widget: "image",
           allow_multiple: true,
           hint: "Add background and foreground images to the header",
-          required: false
+          required: false,
         }
       - label: "Page Sections"
         label_singular: "Page Section"
@@ -339,13 +471,14 @@ collections:
               name: "sectionDescription",
               widget: "markdown",
               hint: "Longer text that accompanies the title",
-              required: false
+              required: false,
             }
-          - { label: "Section Images",
+          - {
+              label: "Section Images",
               singular_label: "image",
               name: "images",
               widget: "image",
-              required: false
+              required: false,
             }
           - label: "Section Content"
             name: "content"
@@ -353,13 +486,39 @@ collections:
             hint: "Add sub sections, cards, and lists of content here."
             collapsed: false
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false }            
-              - { label: "description", name: "description", widget: "markdown", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "description",
+                  name: "description",
+                  widget: "markdown",
+                  required: false,
+                }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
               - label: "Link"
                 name: "link"
                 widget: "object"
                 fields:
-                  - { label: "Link Text", name: "text", widget: "string", hint: "Visible text for a link or button", required: false }
-                  - { label: "Link URL", name: "url", widget: "string", hint: "URL path for the link or button", required: false }
-
+                  - {
+                      label: "Link Text",
+                      name: "text",
+                      widget: "string",
+                      hint: "Visible text for a link or button",
+                      required: false,
+                    }
+                  - {
+                      label: "Link URL",
+                      name: "url",
+                      widget: "string",
+                      hint: "URL path for the link or button",
+                      required: false,
+                    }
