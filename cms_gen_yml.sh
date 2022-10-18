@@ -14,3 +14,5 @@ for schema in $DATA/*; do
     cat $schema | sed -e 's/^/  /' >> $ADMIN/config.yml
   fi
 done
+
+echo "script ran!"
