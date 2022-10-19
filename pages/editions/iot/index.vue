@@ -1,12 +1,12 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/iot/home/." + locale._value).findOne();
+  return queryContent("/editions/iot/home/." + locale._value).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/iot/home/").sort().find();
+    return queryContent("/editions/iot/home/").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -23,21 +23,22 @@ useHead({
 <template>
   <main>
     <FpHero
-      :background="data.header.images.backgroundImage"
+      :background="data.header_images[0].image"
       alignment="bg-bottom"
     >
       <FpBanner
-        :title="data.header.title"
-        :subtitle="data.header.subtitle"
+        :title="data.title"
+        :subtitle="data.description"
         color="text-fp-purple"
         border="border border-fp-purple"
         background="text-white bg-fp-purple"
-        :ctas="data.header.cta"
+        :ctas="data.links"
       >
-        <FpImage :image="data.header.images.image" />
+        <FpImage :image="data.header_images[0].image" />
       </FpBanner>
     </FpHero>
-    <FpHero
+
+    <!-- <FpHero
       :background="data.section[0].header.headerImage.image"
       alignment="bg-bottom"
     >
@@ -70,19 +71,20 @@ useHead({
           />
         </FpList>
       </section>
-    </div>
+    </div> -->
 
     <!-- Community Section -->
-    <section>
+    <!-- <section>
       <FpCommunity :data="data.section[2]" />
-    </section>
+    </section> -->
 
     <!-- Call To Action -->
-    <section>
+    <!-- <section>
       <FpCallToAction
         :cta="data.header.cta"
         image="assets/images/fiot-logo.png"
       />
-    </section>
+    </section> -->
+    
   </main>
 </template>
