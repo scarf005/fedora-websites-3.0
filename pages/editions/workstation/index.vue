@@ -65,12 +65,12 @@ useHead({
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
-          {{ data.section[0].header.sectionTitle }}
+          {{ data.sections[0].title }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data.section[0].content.list"
+          v-for="item in data.sections[0].content"
           v-bind="item"
         />
       </FpList>
