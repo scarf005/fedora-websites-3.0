@@ -30,3 +30,31 @@ sections:
       - title: Makes the most of your device
         description: Fedora works with hardware vendors to make excellent hardware
           support across a range of devices.
+  - sectionTitle: Platforms Tested against IoT
+    images: public/assets/images/iot_background_why.jpg
+    content:
+      - title: arm Systemready
+        image: public/assets/images/iot-platform1.png
+        description: ""
+      - title: Pine64
+        image: public/assets/images/iot-platform2.png
+      - title: SolidRun
+        image: public/assets/images/iot-platform3.png
+      - title: nVidia
+        image: public/assets/images/iot-platform4.png
+  - sectionTitle: Built By You
+    images: public/assets/images/flock_background.jpg
+    sectionDescription: >-
+      The Fedora Project envisions a world where everyone benefits from free and
+      open source software built by inclusive, welcoming, and open-minded
+      communities.
+
+
+
+
+      Fedora IoT is created by a team in the Fedora community called the IoT Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the IoT Working Group website.
+    content:
+      - title: Report & discuss issues
+      - title: Chat with the team
+      - title: Join the mailing list
+      - title: Attend a meeting
