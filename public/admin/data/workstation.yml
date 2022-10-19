@@ -14,33 +14,28 @@
   nested:
     depth: 5
   fields: # The fields for each document, usually in front matter
-    - {
-        label: "Path",
-        name: "path",
-        widget: "string",
-        hint: "url page name ie: index or community",
-      }
-    - {
-        label: "Header Title",
-        name: "title",
-        widget: "string",
-        hint: "Main headline and h1 tag on the web page",
-      }
-    - {
-        label: "Header Description",
-        name: "description",
-        widget: "text",
-        hint: "Page header description text",
-        required: false,
-      }
-    - {
-        label: "Header Images",
-        name: "header_images",
-        widget: "image",
-        allow_multiple: true,
-        hint: "Add background and foreground images to the header",
-        required: false,
-      }
+    - label: "Path"
+      name: "path"
+      widget: "string"
+      hint: "url page name ie: index or community"
+    - label: "Header Title"
+      name: "title"
+      widget: "string"
+      hint: "Main headline and h1 tag on the web page"
+    - label: "Header Description"
+      name: "description"
+      widget: "text"
+      hint: "Page header description text"
+      required: false
+    - label: "Header Images"
+      name: "header_images"
+      widget: "list"
+      hint: "Add background and foreground images to the header"
+      required: false
+      fields:
+        - label: "Image"
+          name: "Image"
+          widget: "image"
     - label: "Header Links & Buttons"
       label_singular: "Link"
       name: "links"
@@ -51,8 +46,13 @@
       collapsed: true
       minimized_collapsed: true
       fields:
-        - { label: "Link Text", name: "text", widget: "string" }
-        - { label: "Link URL", name: "url", widget: "string", required: false }
+        - label: "Link Text"
+          name: "text"
+          widget: "string"
+        - label: "Link URL"
+          name: "url"
+          widget: "string"
+          required: false
     - label: "Page Sections"
       label_singular: "Page Section"
       name: "sections"
@@ -61,65 +61,49 @@
       widget: "list"
       collapsed: true
       fields:
-        - {
-            label: "Section Title",
-            name: "sectionTitle",
-            widget: "string",
-            hint: "A headline title for a section of content (probably an h2)",
-          }
-        - {
-            label: "Section Description",
-            name: "sectionDescription",
-            widget: "markdown",
-            hint: "Longer text that accompanies the title",
-            required: false,
-          }
-        - {
-            label: "Section Images",
-            singular_label: "image",
-            name: "images",
-            widget: "image",
-            required: false,
-          }
+        - label: "Section Title"
+          name: "sectionTitle"
+          widget: "string"
+          hint: "A headline title for a section of content (probably an h2)"
+        - label: "Section Description"
+          name: "sectionDescription"
+          widget: "markdown"
+          hint: "Longer text that accompanies the title"
+          required: false
+        - label: "Section Images"
+          singular_label: "image"
+          name: "images"
+          widget: "image"
+          required: false
         - label: "Section Content"
           name: "content"
           widget: "list"
           hint: "Add sub sections, cards, and lists of content here."
           collapsed: false
           fields:
-            - {
-                label: "Title",
-                name: "title",
-                widget: "string",
-                required: false,
-              }
-            - {
-                label: "description",
-                name: "description",
-                widget: "markdown",
-                required: false,
-              }
-            - {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                required: false,
-              }
+            - label: "Title"
+              name: "title"
+              widget: "string"
+              required: false
+            - label: "description"
+              name: "description"
+              widget: "markdown"
+              required: false
+            - label: "Image"
+              name: "image"
+              widget: "image"
+              required: false
             - label: "Link"
               name: "link"
               widget: "object"
               fields:
-                - {
-                    label: "Link Text",
-                    name: "text",
-                    widget: "string",
-                    hint: "Visible text for a link or button",
-                    required: false,
-                  }
-                - {
-                    label: "Link URL",
-                    name: "url",
-                    widget: "string",
-                    hint: "URL path for the link or button",
-                    required: false,
-                  }
+                - label: "Link Text"
+                  name: "text"
+                  widget: "string"
+                  hint: "Visible text for a link or button"
+                  required: false
+                - label: "Link URL"
+                  name: "url"
+                  widget: "string"
+                  hint: "URL path for the link or button"
+                  required: false

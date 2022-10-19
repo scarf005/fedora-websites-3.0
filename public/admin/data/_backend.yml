@@ -8,6 +8,9 @@ backend:
   squash_merges: true
 publish_mode: editorial_workflow
 
+# backend:
+#   name: git-gateway
+  
 # Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
 local_backend: true
 
