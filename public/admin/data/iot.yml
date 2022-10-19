@@ -36,10 +36,11 @@
     - {
         label: "Header Images",
         name: "header_images",
-        widget: "image",
-        allow_multiple: true,
+        widget: "list",
         hint: "Add background and foreground images to the header",
         required: false,
+        fields:
+        - { label: "Image", name: "Image", widget: "image" }
       }
     - label: "Header Links & Buttons"
       label_singular: "Link"
