@@ -1,2 +1,24 @@
 path: index
-title: Fedora IoT
+title: The solid foundation for IoT ecosystems
+description: A lightweight yet powerful and scalable OS
+header_images: public/assets/images/iot.png
+links:
+  - text: Download Now
+    url: https://getfedora.org/en/iot/download/
+  - text: Reviewed By TechHut
+    url: https://www.youtube.com/watch?v=54aoIGKEMnk
+sections:
+  - sectionTitle: Why Fedora Iot?
+    images: public/assets/images/iot_background_why.jpg
+    content:
+      - title: Leading Technology
+        description: Built on the latest technologies and enhancements that open-source
+          has to offer.
+        link:
+          text: ""
+      - title: Container Based
+        description: Fedora IoT is a container-based host that runs on your hardware,
+          with a focus on edge device deployment.
+      - title: Open-source Ecosystem
+        description: Everything is supported by a totally free and open-source Fedora
+          ecosystem.
