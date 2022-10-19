@@ -34,7 +34,7 @@
       required: false
       fields:
         - label: "Image"
-          name: "Image"
+          name: "image"
           widget: "image"
     - label: "Header Links & Buttons"
       label_singular: "Link"

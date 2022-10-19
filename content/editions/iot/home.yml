@@ -1,9 +1,9 @@
 path: index
 title: The solid foundation for IoT ecosystems
 description: A lightweight yet powerful and scalable OS
-header_images: 
+header_images:
   - image: public/assets/images/iot.png
-  - image: 
+  - image: public/assets/images/iot_background.jpg
 links:
   - text: Download Now
     url: https://getfedora.org/en/iot/download/
