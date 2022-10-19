@@ -71,6 +71,18 @@ useHead({
         </FpList>
       </section>
     </div>
-    <FpCommunity :data="data.section[2]" />
+
+    <!-- Community Section -->
+    <section>
+      <FpCommunity :data="data.section[2]" />
+    </section>
+
+    <!-- Call To Action -->
+    <section>
+      <FpCallToAction
+        :cta="data.header.cta"
+        image="assets/images/fiot-logo.png"
+      />
+    </section>
   </main>
 </template>
