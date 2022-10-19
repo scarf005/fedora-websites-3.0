@@ -24,37 +24,88 @@ collections:
   - label: "Event Pages"
     name: "eventPages"
     files:
+      # Flock to Fedora #
       - label: "Flock to Fedora"
         name: "flock"
         file: "/content/events/flock.yml"
         format: yml
         fields:
           - {
-              label: "Page Title",
+              label: "Path",
+              name: "path",
+              widget: "string",
+              hint: "url page name ie: index or community",
+            }
+          - {
+              label: "Header Title",
               name: "title",
               widget: "string",
+              hint: "Main headline and h1 tag on the web page",
+            }
+          - {
+              label: "Header Description",
+              name: "description",
+              widget: "text",
+              hint: "Page header description text",
               required: false,
             }
           - {
-              label: "Page Description",
-              name: "description",
-              widget: "text",
+              label: "Header Images",
+              name: "header_images",
+              widget: "image",
+              allow_multiple: true,
+              hint: "Add background and foreground images to the header",
               required: false,
             }
+          - label: "Header Links & Buttons"
+            label_singular: "Link"
+            name: "links"
+            widget: "list"
+            max: 3
+            summary: "{{fields.text}}"
+            hint: "Add buttons or links to the page header"
+            collapsed: true
+            minimized_collapsed: true
+            fields:
+              - { label: "Link Text", name: "text", widget: "string" }
+              - {
+                  label: "Link URL",
+                  name: "url",
+                  widget: "string",
+                  required: false,
+                }
           - label: "Page Sections"
+            label_singular: "Page Section"
             name: "sections"
+            hint: "Main sections of page content, generally grouped by h2 headings"
+            summary: "{{fields.sectionTitle}}"
             widget: "list"
             collapsed: true
             fields:
               - {
-                  label: "Header Title",
+                  label: "Section Title",
                   name: "sectionTitle",
                   widget: "string",
+                  hint: "A headline title for a section of content (probably an h2)",
+                }
+              - {
+                  label: "Section Description",
+                  name: "sectionDescription",
+                  widget: "markdown",
+                  hint: "Longer text that accompanies the title",
                   required: false,
                 }
-              - label: "Lists"
-                name: "list"
+              - {
+                  label: "Section Images",
+                  singular_label: "image",
+                  name: "images",
+                  widget: "image",
+                  required: false,
+                }
+              - label: "Section Content"
+                name: "content"
                 widget: "list"
+                hint: "Add sub sections, cards, and lists of content here."
                 collapsed: false
                 fields:
                   - {
@@ -64,115 +115,7 @@ collections:
                       required: false,
                     }
                   - {
-                      label: "Description",
-                      name: "description",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-      - label: "Fedora Week of Diversity"
-        name: "fwd"
-        file: "/content/events/fwd.yml"
-        format: yml
-        fields:
-          - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Page Description",
-              name: "description",
-              widget: "text",
-              required: false,
-            }
-          - label: "Page Sections"
-            name: "sections"
-            widget: "list"
-            collapsed: true
-            fields:
-              - {
-                  label: "Header Title",
-                  name: "sectionTitle",
-                  widget: "string",
-                  required: false,
-                }
-              - label: "Lists"
-                name: "list"
-                widget: "list"
-                collapsed: false
-                fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Description",
-                      name: "description",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-  #################
-  # General Pages #
-  #################
-  - label: "General Pages"
-    name: "pages"
-    files:
-      - label: "Fedora Start Page"
-        name: "start"
-        file: "/content/start.yml"
-        format: yml
-        fields:
-          - {
-              label: "Page Title",
-              name: "title",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Page Description",
-              name: "description",
-              widget: "text",
-              required: false,
-            }
-          - label: "Page Sections"
-            name: "sections"
-            widget: "list"
-            collapsed: true
-            fields:
-              - {
-                  label: "Header Title",
-                  name: "sectionTitle",
-                  widget: "string",
-                  required: false,
-                }
-              - label: "Lists"
-                name: "list"
-                widget: "list"
-                collapsed: false
-                fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Description",
+                      label: "description",
                       name: "description",
                       widget: "markdown",
                       required: false,
@@ -183,6 +126,152 @@ collections:
                       widget: "image",
                       required: false,
                     }
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - {
+                          label: "Link Text",
+                          name: "text",
+                          widget: "string",
+                          hint: "Visible text for a link or button",
+                          required: false,
+                        }
+                      - {
+                          label: "Link URL",
+                          name: "url",
+                          widget: "string",
+                          hint: "URL path for the link or button",
+                          required: false,
+                        }
+      # -------- #
+  #################
+  # General Pages #
+  #################
+  - label: "General Pages"
+    name: "pages"
+    files:
+      # Fedora Start Page #
+      - label: "Fedora Start Page"
+        name: "start"
+        file: "/content/start.yml"
+        format: yml
+        fields:
+          - {
+              label: "Path",
+              name: "path",
+              widget: "string",
+              hint: "url page name ie: index or community",
+            }
+          - {
+              label: "Header Title",
+              name: "title",
+              widget: "string",
+              hint: "Main headline and h1 tag on the web page",
+            }
+          - {
+              label: "Header Description",
+              name: "description",
+              widget: "text",
+              hint: "Page header description text",
+              required: false,
+            }
+          - {
+              label: "Header Images",
+              name: "header_images",
+              widget: "image",
+              allow_multiple: true,
+              hint: "Add background and foreground images to the header",
+              required: false,
+            }
+          - label: "Header Links & Buttons"
+            label_singular: "Link"
+            name: "links"
+            widget: "list"
+            max: 3
+            summary: "{{fields.text}}"
+            hint: "Add buttons or links to the page header"
+            collapsed: true
+            minimized_collapsed: true
+            fields:
+              - { label: "Link Text", name: "text", widget: "string" }
+              - {
+                  label: "Link URL",
+                  name: "url",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "Page Sections"
+            label_singular: "Page Section"
+            name: "sections"
+            hint: "Main sections of page content, generally grouped by h2 headings"
+            summary: "{{fields.sectionTitle}}"
+            widget: "list"
+            collapsed: true
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "sectionTitle",
+                  widget: "string",
+                  hint: "A headline title for a section of content (probably an h2)",
+                }
+              - {
+                  label: "Section Description",
+                  name: "sectionDescription",
+                  widget: "markdown",
+                  hint: "Longer text that accompanies the title",
+                  required: false,
+                }
+              - {
+                  label: "Section Images",
+                  singular_label: "image",
+                  name: "images",
+                  widget: "image",
+                  required: false,
+                }
+              - label: "Section Content"
+                name: "content"
+                widget: "list"
+                hint: "Add sub sections, cards, and lists of content here."
+                collapsed: false
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "description",
+                      name: "description",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - {
+                          label: "Link Text",
+                          name: "text",
+                          widget: "string",
+                          hint: "Visible text for a link or button",
+                          required: false,
+                        }
+                      - {
+                          label: "Link URL",
+                          name: "url",
+                          widget: "string",
+                          hint: "URL path for the link or button",
+                          required: false,
+                        }
+      # ----------- #
   #####################
   # IoT Pages #
   #####################

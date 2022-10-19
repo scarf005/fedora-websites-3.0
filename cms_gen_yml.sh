@@ -15,4 +15,4 @@ for schema in $DATA/*; do
   fi
 done
 
-echo "script ran!"
+echo "CMS Schema Generated!"
