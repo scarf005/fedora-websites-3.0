@@ -1,7 +1,7 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/events/flock/." + locale._value).findOne();
+  return queryContent("/events/flock/." + locale._value).findOne();
 });
 
 if (data._value === null) {

@@ -1,6 +1,6 @@
 <script setup>
 const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/iot/download").find();
+  return queryContent("/editions/iot/download").find();
 });
 </script>
 <template>

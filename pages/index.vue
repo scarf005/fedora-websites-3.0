@@ -3,7 +3,7 @@ import FpBtn from "~~/components/utilities/FpBtn.vue";
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent()
-    .where({ _path: "/pages/toplevel/." + locale._value })
+    .where({ _path: "/toplevel/." + locale._value })
     .findOne();
 });
 

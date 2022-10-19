@@ -2,13 +2,13 @@
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(
-    "/pages/editions/workstation/home/." + locale._value
+    "/editions/workstation/home/." + locale._value
   ).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/workstation/home/").sort().find();
+    return queryContent("/editions/workstation/home/").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -24,14 +24,13 @@ useHead({
 </script>
 <template>
   <FpHero
-    :background="data.header.images.backgroundImage"
+    :background="data.header_images[1].image"
     alignment="bg-bottom"
   >
     <FpBanner
-      :title="data.header.title"
-      :subtitle="data.header.subtitle"
-      :reviewUrl="data.header.reviewUrl"
-      :ctas="data.header.cta"
+      :title="data.title"
+      :subtitle="data.description"
+      :ctas="data.links"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
@@ -59,7 +58,7 @@ useHead({
 
   <main class="mt-8 flex flex-col items-center">
     <!-- Why Fedora Workstation -->
-    <section class="w-10/12">
+    <!-- <section class="w-10/12">
       <header
         class="mx-auto grid gap-4 text-center md:w-11/12 md:grid-cols-2 md:text-left"
       >
@@ -75,10 +74,10 @@ useHead({
           v-bind="item"
         />
       </FpList>
-    </section>
+    </section> -->
 
     <!-- Benefits Section -->
-    <section class="mt-32">
+    <!-- <section class="mt-32">
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
@@ -89,10 +88,10 @@ useHead({
         v-bind="item"
         columns="2"
       />
-    </section>
+    </section> -->
 
     <!-- Developers Section -->
-    <section>
+    <!-- <section>
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
@@ -105,10 +104,10 @@ useHead({
           columns="4"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- Get Started Developing Section -->
-    <section class="w-full">
+    <!-- <section class="w-full">
       <div
         class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
       >
@@ -124,19 +123,19 @@ useHead({
           />
         </FpList>
       </div>
-    </section>
+    </section> -->
 
     <!-- Community Section -->
-    <section>
+    <!-- <section>
       <FpCommunity :data="data.section[4]" />
-    </section>
+    </section> -->
 
     <!-- Call To Action -->
-    <section>
+    <!-- <section>
       <FpCallToAction
         :cta="data.header.cta"
         image="assets/images/workstation_logo.jpg"
       />
-    </section>
+    </section> -->
   </main>
 </template>
