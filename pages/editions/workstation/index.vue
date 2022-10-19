@@ -58,7 +58,7 @@ useHead({
 
   <main class="mt-8 flex flex-col items-center">
     <!-- Why Fedora Workstation -->
-    <!-- <section class="w-10/12">
+    <section class="w-10/12">
       <header
         class="mx-auto grid gap-4 text-center md:w-11/12 md:grid-cols-2 md:text-left"
       >
@@ -74,7 +74,7 @@ useHead({
           v-bind="item"
         />
       </FpList>
-    </section> -->
+    </section>
 
     <!-- Benefits Section -->
     <!-- <section class="mt-32">
