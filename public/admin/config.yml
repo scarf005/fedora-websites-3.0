@@ -46,10 +46,13 @@ collections:
             required: false
           - label: "Header Images"
             name: "header_images"
-            widget: "image"
-            allow_multiple: true
+            widget: "list"
             hint: "Add background and foreground images to the header"
             required: false
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
           - label: "Header Links & Buttons"
             label_singular: "Link"
             name: "links"
@@ -147,10 +150,13 @@ collections:
             required: false
           - label: "Header Images"
             name: "header_images"
-            widget: "image"
-            allow_multiple: true
+            widget: "list"
             hint: "Add background and foreground images to the header"
             required: false
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
           - label: "Header Links & Buttons"
             label_singular: "Link"
             name: "links"
