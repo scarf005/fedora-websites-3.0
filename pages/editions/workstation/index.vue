@@ -77,65 +77,65 @@ useHead({
     </section>
 
     <!-- Benefits Section -->
-    <!-- <section class="mt-32">
+    <section class="mt-32">
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.section[1].header.sectionTitle }}
+        {{ data.sections[1].sectionTitle }}
       </h2>
       <FpBenefit
-        v-for="item in data.section[1].content.list"
+        v-for="item in data.sections[1].content"
         v-bind="item"
         columns="2"
       />
-    </section> -->
+    </section>
 
     <!-- Developers Section -->
-    <!-- <section>
+    <section>
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.section[2].header.sectionTitle }}
+        {{ data.sections[2].sectionTitle }}
       </h2>
       <div class="mx-auto mb-12 max-w-7xl">
         <FpBenefit
-          v-for="item in data.section[2].content.list"
+          v-for="item in data.sections[2].content"
           v-bind="item"
           columns="4"
         />
       </div>
-    </section> -->
+    </section>
 
     <!-- Get Started Developing Section -->
-    <!-- <section class="w-full">
+    <section class="w-full">
       <div
         class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
       >
         <h3 class="mb-8 text-center font-bold text-fp-blue">
-          {{ data.section[3].header.sectionTitle }}
+          {{ data.sections[3].sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
           <FpListItem
-            v-for="item in data.section[3].content.list"
+            v-for="item in data.sections[3].content"
             v-bind="item"
             images="true"
             buttons="true"
           />
         </FpList>
       </div>
-    </section> -->
+    </section>
 
     <!-- Community Section -->
-    <!-- <section>
-      <FpCommunity :data="data.section[4]" />
-    </section> -->
+    <section>
+      <FpCommunity :data="data.sections[4]" />
+    </section>
 
     <!-- Call To Action -->
-    <!-- <section>
+    <section>
       <FpCallToAction
-        :cta="data.header.cta"
+        :cta="data.links"
         image="assets/images/workstation_logo.jpg"
       />
-    </section> -->
+    </section>
   </main>
 </template>
