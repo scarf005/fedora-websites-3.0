@@ -16,8 +16,6 @@ sections:
       - title: Leading Technology
         description: Built on the latest technologies and enhancements that open-source
           has to offer.
-        link:
-          text: ""
       - title: Container Based
         description: Fedora IoT is a container-based host that runs on your hardware,
           with a focus on edge device deployment.
@@ -37,7 +35,6 @@ sections:
     content:
       - title: arm Systemready
         image: public/assets/images/iot-platform1.png
-        description: ""
       - title: Pine64
         image: public/assets/images/iot-platform2.png
       - title: SolidRun
@@ -56,7 +53,15 @@ sections:
 
       Fedora IoT is created by a team in the Fedora community called the IoT Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the IoT Working Group website.
     content:
-      - title: Report & discuss issues
-      - title: Chat with the team
-      - title: Join the mailing list
-      - title: Attend a meeting
+        - title: Report & discuss issues
+          description: Built on the latest technologies and enhancements that open-source
+            has to offer.
+        - title: Chat with the team
+          description: Fedora IoT is a container-based host that runs on your hardware,
+            with a focus on edge device deployment.
+        - title: Join the mailing list
+          description: Everything is supported by a totally free and open-source Fedora
+            ecosystem.
+        - title: Attend a meeting
+          description: There are a wide variety of supported installation methods.
+
