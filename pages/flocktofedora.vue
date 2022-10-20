@@ -6,7 +6,7 @@ let { data } = await useAsyncData("page-data", () => {
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/events/flock/").sort().find();
+    return queryContent("/events/flock/").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -21,27 +21,27 @@ useHead({
 });
 </script>
 <template>
-  <FpHero :background="data.header.images.backgroundImage" alignment="bg-top">
+  <FpHero :background="data.header_images[1].image" alignment="bg-top">
     <FpBanner
-      :title="data.header.title"
-      :subtitle="data.header.subtitle"
-      :logo="data.header.logo"
+      :title="data.title"
+      :subtitle="data.subtitle"
+      :logo="data.header_images[0].image"
       color="text-fp-purple"
       border="border border-fp-purple"
       background="text-white bg-fp-purple"
-      :ctas="data.header.cta"
+      :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
     >
       <h2
         class="my-8 font-semibold text-white"
         style="text-shadow: 4px 4px 4px black"
       >
-        {{ data.header.eventDate }}
+        {{ data.description }}
       </h2>
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12">
       <div
-        v-for="card in data.header.cards"
+        v-for="card in data.sections[0].content"
         class="mr-8 max-w-[17rem] rounded-lg bg-black/70 p-4"
       >
         <div
@@ -54,37 +54,38 @@ useHead({
               $config.app.baseURL + '/' + card.image.replace('public/', '')
             }`"
           />
-          {{ card.subtitle }}
+          {{ card.description }}
         </div>
         <p class="text-sm text-slate-300">{{ card.description }}</p>
       </div>
     </div>
-  </FpHero>
+  </FpHero> 
 
   <main class="flex flex-col items-center">
+
     <!-- TODO: Explore -->
     <section class="w-full bg-slate-100 pb-10">
       <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
         >
-          {{ data.exploreSection.header.title }}
+          {{ data.sections[1].sectionTitle }}
         </h2>
         <div
           class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
         >
-          <FpCard v-for="card in data.exploreSection.cards">
-            <FpCardImage :src="card.imageURI" />
+          <FpCard v-for="card in data.sections[1].content">
+            <FpCardImage :src="card.image" />
             <FpCardTitle>{{ card.title }}</FpCardTitle>
             <FpCardText>{{ card.description }}</FpCardText>
-            <FpCardAction>{{ card.link.text }}</FpCardAction>
+            <!-- <FpCardAction>{{ card.link.text }}</FpCardAction> -->
           </FpCard>
         </div>
 
         <h3
           class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark sm:text-4xl"
         >
-          {{ data.exploreSection.pastEvents.header.title }}
+          {{ data.sections[2].sectionTitle }}
         </h3>
         <div
           class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white lg:grid-cols-2"
@@ -93,7 +94,7 @@ useHead({
             <iframe
               width="560"
               height="315"
-              :src="data.exploreSection.pastEvents.card.videoURL"
+              :src="data.sections[2].content[0].image"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -106,13 +107,13 @@ useHead({
             class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark sm:p-5 xl:mx-12"
           >
             <h4 class="mb-5 font-semibold">
-              {{ data.exploreSection.pastEvents.card.title }}
+              {{ data.sections[2].content[0].title }}
             </h4>
             <p class="font-normal text-gray-600">
-              {{ data.exploreSection.pastEvents.card.description }}
+              {{ data.sections[2].content[0].description }}
             </p>
             <p class="mt-4 text-right">
-              <a
+              <!-- <a
                 class="text-fp-blue"
                 :href="data.exploreSection.pastEvents.card.link.targetURL"
                 >{{ data.exploreSection.pastEvents.card.link.text }}
@@ -120,7 +121,7 @@ useHead({
                   class="ml-2"
                   icon="fa-solid fa-arrow-right-long"
                 />
-              </a>
+              </a> -->
             </p>
           </div>
         </div>
@@ -128,7 +129,7 @@ useHead({
     </section>
 
     <!-- TODO: Hybrid Experience -->
-    <section class="mx-auto my-10 w-full">
+    <!-- <section class="mx-auto my-10 w-full">
       <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
@@ -136,7 +137,7 @@ useHead({
           A Hybrid Experience
         </h2>
       </div>
-    </section>
+    </section> -->
 
     <!-- TODO: Important Dates -->
     <!--
@@ -161,7 +162,7 @@ useHead({
     -->
 
     <!-- Community Section -->
-    <section class="my-10">
+    <!-- <section class="my-10">
       <FpHero
         :background="data.communitySection.header.backgroundImageURI"
         alignment="bg-top"
@@ -184,10 +185,10 @@ useHead({
           </FpList>
         </section>
       </FpHero>
-    </section>
+    </section> -->
 
     <!-- TODO: Our Sponsors -->
-    <section class="mx-auto my-10 w-10/12">
+    <!-- <section class="mx-auto my-10 w-10/12">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
@@ -198,10 +199,10 @@ useHead({
       </p>
 
       <FpSponsors :sponsors="data.sponsorSection.sponsors" />
-    </section>
+    </section> -->
 
     <!-- Benefits of Sponsoring -->
-    <section class="my-10 w-10/12">
+    <!-- <section class="my-10 w-10/12">
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
@@ -215,6 +216,6 @@ useHead({
           v-bind="item"
         />
       </FpList>
-    </section>
+    </section> -->
   </main>
 </template>

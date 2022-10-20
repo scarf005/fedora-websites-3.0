@@ -11,32 +11,16 @@ links:
   - text: Calendar
     url: "#"
 sections:
-  - sectionTitle: Why Fedora Iot?
-    images: public/assets/images/iot_background_why.jpg
+  - sectionTitle: Events
     content:
-      - title: Leading Technology
-        description:
-          Built on the latest technologies and enhancements that open-source
-          has to offer.
-      - title: Container Based
-        description:
-          Fedora IoT is a container-based host that runs on your hardware,
-          with a focus on edge device deployment.
-      - title: Open-source Ecosystem
-        description:
-          Everything is supported by a totally free and open-source Fedora
-          ecosystem.
-      - title: Flexible
-        description: There are a wide variety of supported installation methods.
-      - title: Edge Support
-        description:
-          Use Fedora IoT to support your workloads that are computed outside
-          of the traditional datacenter.
-      - title: Makes the most of your device
-        description: Fedora works with hardware
-
+    - image: public/assets/images/flock_nest_logo.png
+      title: Virtual
+      description: A 3 day conference hosted on Hopin.io
+    - image: public/assets/images/flock_hatch_logo.png
+      title: Community
+      description: Community events hosted around the world
   - sectionTitle: Explore the latest in Open Source
-    content:
+    content:  
       - title: Workshops
         description: Workshops and hackfests offer opportunities for active learning and collaboration.
         image: public/assets/images/flock_workshops_logo.png
@@ -48,13 +32,12 @@ sections:
         description: Casual, facilitated, and interactive events for meeting and socializing with Fedorans.
   - sectionTitle: Watch Footage from Past Events
     content:
-      title: What to expect
-      image: https://www.youtube-nocookie.com/embed/LqBVHz76Wxc
+    - title: What to expect
+      image: https://www.youtube.com/embed/LqBVHz76Wxc
       description:
         Flock is an annual conference for contributors of Fedora Linux.
         It is where the community plans and showcases the strategy and work on the project.
         Check out the recordings from previous years of Flock and Nest.
-
   - sectionTitle: A Hybrid Experience
     sectionDescription:
       The location of Flock changes each year between Europe and North America. In 2020
