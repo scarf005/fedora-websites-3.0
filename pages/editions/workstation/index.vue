@@ -27,6 +27,7 @@ useHead({
     :background="data.header_images[1].image"
     alignment="bg-bottom"
   >
+    <TheLocalBar/>
     <FpBanner
       :title="data.title"
       :subtitle="data.description"
