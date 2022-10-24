@@ -471,7 +471,7 @@ collections:
         hint: "Main headline and h1 tag on the web page"
       - label: "Header Description"
         name: "description"
-        widget: "text"
+        widget: "markdown"
         hint: "Page header description text"
         required: false
       - label: "Header Images"
@@ -487,7 +487,6 @@ collections:
         label_singular: "Link"
         name: "links"
         widget: "list"
-        max: 3
         summary: "{{fields.text}}"
         hint: "Add buttons or links to the page header"
         collapsed: true
