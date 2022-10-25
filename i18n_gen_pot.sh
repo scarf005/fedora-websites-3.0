@@ -1,9 +1,11 @@
 #!/bin/bash
 # Generate POT files from yaml
 
-for file in $(find content -type f -name index.yml); do 
-  mkdir -p $(dirname ${file/content/locales})
-  output=$(sed 's/content/locales/;s/.yml/.pot/' <<<$file)
+for file in $(find content -type f -name \*.yml); do 
+  pagename=$(basename $file .yml)
+  output_dir=$(dirname ${file/content/locales})/${pagename}
+  output=${output_dir}/${pagename}.pot
+  mkdir -p ${output_dir}
   yaml2po -P -i $file -o $output;
 
   # Flag url & image keys as read-only
