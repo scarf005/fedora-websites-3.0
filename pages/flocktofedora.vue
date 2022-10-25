@@ -1,12 +1,12 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/events/flock/." + locale._value).findOne();
+  return queryContent("/events/flock." + locale._value).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/events/flock/").sort().find();
+    return queryContent("/events/flock").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }

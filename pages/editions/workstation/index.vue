@@ -2,13 +2,13 @@
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(
-    "/editions/workstation/home/." + locale._value
+    "/editions/workstation/home." + locale._value
   ).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/workstation/home/").sort().find();
+    return queryContent("/editions/workstation/home").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
