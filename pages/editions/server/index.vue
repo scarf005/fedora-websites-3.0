@@ -1,14 +1,12 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent(
-    "/pages/editions/server/home/." + locale._value
-  ).findOne();
+  return queryContent("/editions/server/home." + locale._value).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/server/home/").sort().find();
+    return queryContent("/editions/server/home").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -23,19 +21,16 @@ useHead({
 });
 </script>
 <template>
-  <FpHero
-    :background="data.header.images.backgroundImage"
-    alignment="bg-bottom"
-  >
+  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <FpBanner
-      :title="data.header.title"
-      :subtitle="data.header.subtitle"
+      :title="data.title"
+      :subtitle="data.description"
       color="text-fp-blue"
       border="border border-fp-blue"
       background="text-white bg-fp-blue"
-      :ctas="data.header.cta"
+      :ctas="data.links"
     >
-      <FpImage :image="data.header.images.image" />
+      <FpImage :image="data.header_images[0].image" />
     </FpBanner>
   </FpHero>
 </template>

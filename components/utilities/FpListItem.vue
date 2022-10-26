@@ -23,7 +23,7 @@ const props = defineProps({
     "
   >
     <div v-if="props.image" class="flex h-64 items-center justify-center">
-      <FpImage :image="props.image.image" />
+      <FpImage :image="props.image" />
     </div>
     <h4 class="inline font-bold text-fp-blue-dark">{{ props.title }}</h4>
     <p class="text-fp-blue-dark" v-html="props.description"></p>

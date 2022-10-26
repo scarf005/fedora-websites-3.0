@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "bash cms_gen_yml.sh && nuxt build",
+    "dev": "bash cms_gen_yml.sh && nuxt dev",
+    "generate": "bash cms_gen_yml.sh && nuxt generate",
     "preview": "nuxt preview",
     "format": "npx prettier . --write"
   },
@@ -26,7 +26,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.1",
-    "@nuxtjs/i18n": "^8.0.0-alpha.1",
+    "@nuxtjs/i18n": "^8.0.0-beta.1",
     "@pinia/nuxt": "^0.3.0",
     "nuxt-icons": "^2.0.2"
   }

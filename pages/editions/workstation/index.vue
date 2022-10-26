@@ -2,13 +2,13 @@
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(
-    "/pages/editions/workstation/home/." + locale._value
+    "/editions/workstation/home." + locale._value
   ).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/pages/editions/workstation/home/").sort().find();
+    return queryContent("/editions/workstation/home").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -24,14 +24,14 @@ useHead({
 </script>
 <template>
   <FpHero
-    :background="data.header.images.backgroundImage"
+    :background="data.header_images[1].image"
     alignment="bg-bottom"
   >
+    <TheLocalBar/>
     <FpBanner
-      :title="data.header.title"
-      :subtitle="data.header.subtitle"
-      :reviewUrl="data.header.reviewUrl"
-      :ctas="data.header.cta"
+      :title="data.title"
+      :subtitle="data.description"
+      :ctas="data.links"
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
@@ -66,12 +66,12 @@ useHead({
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
-          {{ data.section[0].header.sectionTitle }}
+          {{ data.sections[0].title }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem
-          v-for="item in data.section[0].content.list"
+          v-for="item in data.sections[0].content"
           v-bind="item"
         />
       </FpList>
@@ -82,10 +82,10 @@ useHead({
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.section[1].header.sectionTitle }}
+        {{ data.sections[1].sectionTitle }}
       </h2>
       <FpBenefit
-        v-for="item in data.section[1].content.list"
+        v-for="item in data.sections[1].content"
         v-bind="item"
         columns="2"
       />
@@ -96,11 +96,11 @@ useHead({
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.section[2].header.sectionTitle }}
+        {{ data.sections[2].sectionTitle }}
       </h2>
       <div class="mx-auto mb-12 max-w-7xl">
         <FpBenefit
-          v-for="item in data.section[2].content.list"
+          v-for="item in data.sections[2].content"
           v-bind="item"
           columns="4"
         />
@@ -113,11 +113,11 @@ useHead({
         class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
       >
         <h3 class="mb-8 text-center font-bold text-fp-blue">
-          {{ data.section[3].header.sectionTitle }}
+          {{ data.sections[3].sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
           <FpListItem
-            v-for="item in data.section[3].content.list"
+            v-for="item in data.sections[3].content"
             v-bind="item"
             images="true"
             buttons="true"
@@ -128,13 +128,13 @@ useHead({
 
     <!-- Community Section -->
     <section>
-      <FpCommunity :data="data.section[4]" />
+      <FpCommunity :data="data.sections[4]" />
     </section>
 
     <!-- Call To Action -->
     <section>
       <FpCallToAction
-        :cta="data.header.cta"
+        :cta="data.links"
         image="assets/images/workstation_logo.jpg"
       />
     </section>

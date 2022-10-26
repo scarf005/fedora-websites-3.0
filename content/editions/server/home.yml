@@ -1,0 +1,11 @@
+path: index
+title: The leading edge server
+description: >
+  Run applications on bare metal or the cloud with a Linux server OS packed with
+  the latest open source technology
+header_images:
+  - image: public/assets/images/server_main.png
+  - image: public/assets/images/iot_background.jpg
+links:
+  - text: Download Now
+    url: https://getfedora.org/en/server/download/

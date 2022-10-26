@@ -1,306 +1,553 @@
 backend:
   name: gitlab
   repo: fedora/websites-apps/fedora-websites/fedora-websites-3.0
-  auth_type: pkce # Required for pkce
+  auth_type: pkce
   app_id: 758719d1c68529b4acc2f2f3556cad1a8bba916f63094fc377afcb31d25bf349 # Application ID from your GitLab settings
+
   branch: develop
   squash_merges: true
+publish_mode: editorial_workflow
+
+# backend:
+#   name: git-gateway
+  
+# Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
 local_backend: true
-# publish_mode: editorial_workflow
 
-# Add Fedora Logo to the UI
-display_url: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/
+# Assets
+media_folder: "public/assets/images"
+public_folder: "public/assets/images"
 
-# Asset Organization
-media_folder: "public/assets/images/"
-public_folder: "public/assets/images/"
-
-# Collections starter code
 collections:
-  - label: "Pages"
-    label_singular: "Page"
-    name: "page"
-    folder: "/content/pages"
+  ###############
+  # Event Pages #
+  ###############
+  - label: "Event Pages"
+    name: "eventPages"
+    files:
+      # Flock to Fedora #
+      - label: "Flock to Fedora"
+        name: "flock"
+        file: "/content/events/flock.yml"
+        format: yml
+        fields:
+          - label: "Path"
+            name: "path"
+            widget: "string"
+            hint: "url page name ie: index or community"
+          - label: "Header Title"
+            name: "title"
+            widget: "string"
+            hint: "Main headline and h1 tag on the web page"
+          - label: "Header Description"
+            name: "description"
+            widget: "text"
+            hint: "Page header description text"
+            required: false
+          - label: "Header Images"
+            name: "header_images"
+            widget: "list"
+            hint: "Add background and foreground images to the header"
+            required: false
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          - label: "Header Links & Buttons"
+            label_singular: "Link"
+            name: "links"
+            widget: "list"
+            max: 3
+            summary: "{{fields.text}}"
+            hint: "Add buttons or links to the page header"
+            collapsed: true
+            minimized_collapsed: true
+            fields:
+              - label: "Link Text"
+                name: "text"
+                widget: "string"
+              - label: "Link URL"
+                name: "url"
+                widget: "string"
+                required: false
+          - label: "Page Sections"
+            label_singular: "Page Section"
+            name: "sections"
+            hint: "Main sections of page content, generally grouped by h2 headings"
+            summary: "{{fields.sectionTitle}}"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Section Title"
+                name: "sectionTitle"
+                widget: "string"
+                hint: "A headline title for a section of content (probably an h2)"
+              - label: "Section Description"
+                name: "sectionDescription"
+                widget: "markdown"
+                hint: "Longer text that accompanies the title"
+                required: false
+              - label: "Section Images"
+                singular_label: "image"
+                name: "images"
+                widget: "image"
+                required: false
+              - label: "Section Content"
+                name: "content"
+                widget: "list"
+                hint: "Add sub sections, cards, and lists of content here."
+                collapsed: false
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "description"
+                    name: "description"
+                    widget: "markdown"
+                    required: false
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - label: "Link Text"
+                        name: "text"
+                        widget: "string"
+                        hint: "Visible text for a link or button"
+                        required: false
+                      - label: "Link URL"
+                        name: "url"
+                        widget: "string"
+                        hint: "URL path for the link or button"
+                        required: false  #################
+  # General Pages #
+  #################
+  - label: "General Pages"
+    name: "pages"
+    files:
+      # Fedora Start Page #
+      - label: "Fedora Start Page"
+        name: "start"
+        file: "/content/start.yml"
+        format: yml
+        fields:
+          - label: "Path"
+            name: "path"
+            widget: "string"
+            hint: "url page name ie: index or community"
+          - label: "Header Title"
+            name: "title"
+            widget: "string"
+            hint: "Main headline and h1 tag on the web page"
+          - label: "Header Description"
+            name: "description"
+            widget: "text"
+            hint: "Page header description text"
+            required: false
+          - label: "Header Images"
+            name: "header_images"
+            widget: "list"
+            hint: "Add background and foreground images to the header"
+            required: false
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          - label: "Header Links & Buttons"
+            label_singular: "Link"
+            name: "links"
+            widget: "list"
+            max: 3
+            summary: "{{fields.text}}"
+            hint: "Add buttons or links to the page header"
+            collapsed: true
+            minimized_collapsed: true
+            fields:
+              - label: "Link Text"
+                name: "text"
+                widget: "string"
+              - label: "Link URL"
+                name: "url"
+                widget: "string"
+                required: false
+          - label: "Page Sections"
+            label_singular: "Page Section"
+            name: "sections"
+            hint: "Main sections of page content, generally grouped by h2 headings"
+            summary: "{{fields.sectionTitle}}"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Section Title"
+                name: "sectionTitle"
+                widget: "string"
+                hint: "A headline title for a section of content (probably an h2)"
+              - label: "Section Description"
+                name: "sectionDescription"
+                widget: "markdown"
+                hint: "Longer text that accompanies the title"
+                required: false
+              - label: "Section Images"
+                singular_label: "image"
+                name: "images"
+                widget: "image"
+                required: false
+              - label: "Section Content"
+                name: "content"
+                widget: "list"
+                hint: "Add sub sections, cards, and lists of content here."
+                collapsed: false
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "description"
+                    name: "description"
+                    widget: "markdown"
+                    required: false
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - label: "Link Text"
+                        name: "text"
+                        widget: "string"
+                        hint: "Visible text for a link or button"
+                        required: false
+                      - label: "Link URL"
+                        name: "url"
+                        widget: "string"
+                        hint: "URL path for the link or button"
+                        required: false  #####################
+  # IoT Pages #
+  #####################
+  - name: "iot" # Used in routes, e.g., /admin/collections/blog
+    label: "IoT Pages" # Used in the UI
+    label_singular: "IoT Page"
+    folder: "/content/editions/iot" # The path to the folder where the documents are stored
     format: "yml"
-    slug: "{{slug}}"
-    identifier_field: name
-    # create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: path
+    create: true
     editor:
       preview: true
     nested:
       depth: 5
-    meta: { path: { widget: string, label: "Path", index_file: "index" } }
-    fields:
-      - {
-          label: "Page Title",
-          name: "title",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Page Description",
-          name: "description",
-          widget: "text",
-          required: false,
-        }
-      - label: "Page Header"
-        name: "header"
-        widget: "object"
-        # collapsed: true
+    fields: # The fields for each document, usually in front matter
+      - label: "Path"
+        name: "path"
+        widget: "string"
+        hint: "url page name ie: index or community"
+      - label: "Header Title"
+        name: "title"
+        widget: "string"
+        hint: "Main headline and h1 tag on the web page"
+      - label: "Header Description"
+        name: "description"
+        widget: "markdown"
+        hint: "Page header description text"
+        required: false
+      - label: "Header Images"
+        name: "header_images"
+        widget: "list"
+        hint: "Add background and foreground images to the header"
+        required: false
         fields:
-          - {
-              label: "Header Title",
-              name: "title",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Header Subtitle",
-              name: "subtitle",
-              widget: "text",
-              required: false,
-            }
-          - label: "Extra Details"
-            label_singular: "Extra Detail"
-            name: "details"
-            widget: "list"
-            fields:
-              - {
-                  label: "Detail",
-                  name: "detail",
-                  widget: "markdown",
-                  minimal: true,
-                  required: false,
-                }
-          - label: "Images"
-            name: "images"
-            widget: "object"
-            # collapsed: true
+          - label: "Image"
+            name: "image"
+            widget: "image"
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - label: "Link Text"
+            name: "text"
+            widget: "string"
+          - label: "Link URL"
+            name: "url"
+            widget: "string"
             required: false
-            fields:
-              - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
-                  required: false,
-                }
-              - {
-                  label: "Image Alt Text",
-                  name: "imageAlt",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Background Image",
-                  name: "backgroundImage",
-                  widget: "image",
-                  required: false,
-                }
-          - label: "Call to Action"
-            name: "cta"
-            widget: "list"
-            # collapsed: true
-            required: false
-            fields:
-              - {
-                  label: "Text",
-                  name: "text",
-                  widget: "string",
-                  required: false,
-                }
-              - { label: "Url", name: "url", widget: "string", required: false }
-              - {
-                  label: "Icon",
-                  name: "icon",
-                  widget: "image",
-                  required: false,
-                }
-      # Page Content Section
       - label: "Page Sections"
         label_singular: "Page Section"
-        name: "section"
+        name: "sections"
+        hint: "Main sections of page content, generally grouped by h2 headings"
+        summary: "{{fields.sectionTitle}}"
         widget: "list"
-        # collapsed: true
+        collapsed: true
         fields:
-          # Section Header
-          - label: "Section Header"
-            name: "header"
-            widget: "object"
-            # collapsed: true
-            fields:
-              - {
-                  label: "Section Heading",
-                  name: "sectionTitle",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Section Subtitle",
-                  name: "sectionSubtitle",
-                  widget: "text",
-                  required: false,
-                }
-              - label: "Header Image"
-                name: "headerImage"
-                widget: "object"
-                # collapsed: true
-                required: false
-                fields:
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-                  - {
-                      label: "Alt Text",
-                      name: "altText",
-                      widget: "string",
-                      required: false,
-                    }
-          # Section Content
+          - label: "Section Title"
+            name: "sectionTitle"
+            widget: "string"
+            hint: "A headline title for a section of content (probably an h2)"
+          - label: "Section Description"
+            name: "sectionDescription"
+            widget: "markdown"
+            hint: "Longer text that accompanies the title"
+            required: false
+          - label: "Section Images"
+            singular_label: "image"
+            name: "images"
+            widget: "image"
+            required: false
           - label: "Section Content"
             name: "content"
-            widget: "object"
-            # collapsed: true
+            widget: "list"
+            hint: "Add sub sections, cards, and lists of content here."
+            collapsed: false
             fields:
-              # Nested Content Types
-              - label: "List of Info"
-                label_singular: "List Item"
-                name: "list"
-                widget: "list"
-                # collapsed: true
+              - label: "Title"
+                name: "title"
+                widget: "string"
                 required: false
-                fields:
-                  - {
-                      label: "List Item Title",
-                      name: "title",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "List Item Description",
-                      name: "description",
-                      widget: "markdown",
-                      minimal: true,
-                      required: false,
-                    }
-                  - label: "List Item Image"
-                    name: "image"
-                    widget: "object"
-                    # collapsed: true
-                    required: false
-                    fields:
-                      - {
-                          label: "Image",
-                          name: "image",
-                          widget: "image",
-                          required: false,
-                        }
-                      - {
-                          label: "Alt Text",
-                          name: "altText",
-                          widget: "string",
-                          required: false,
-                        }
-              - label: "Cards"
-                name: "card"
-                label_singular: "Card"
-                widget: "list"
+              - label: "description"
+                name: "description"
+                widget: "markdown"
                 required: false
-                fields:
-                  - {
-                      label: "Card Title",
-                      name: "title",
-                      widget: "string",
-                      required: false,
-                    }
-                  - {
-                      label: "Card Subtitle",
-                      name: "subtitle",
-                      widget: "markdown",
-                      minimal: true,
-                      required: false,
-                    }
-                  - label: "Card Image"
-                    name: "image"
-                    widget: "object"
-                    required: false
-                    # collapsed: true
-                    fields:
-                      - {
-                          label: "Image",
-                          name: "image",
-                          widget: "image",
-                          required: false,
-                        }
-                      - {
-                          label: "Alt Text",
-                          name: "altText",
-                          widget: "string",
-                          required: false,
-                        }
-                  - label: "Card CTA"
-                    name: "cta"
-                    widget: "object"
-                    required: false
-                    # collapsed: true
-                    fields:
-                      - {
-                          label: "Text",
-                          name: "text",
-                          widget: "string",
-                          required: false,
-                        }
-                      - {
-                          label: "Url",
-                          name: "url",
-                          widget: "string",
-                          required: false,
-                        }
-              # Basic Content Types
-              - {
-                  label: "Section Text",
-                  name: "text",
-                  widget: "markdown",
-                  minimal: true,
-                  required: false,
-                }
-              - label: "Section Image"
+              - label: "Image"
                 name: "image"
+                widget: "image"
+                required: false
+              - label: "Link"
+                name: "link"
                 widget: "object"
-                # collapsed: true
-                required: false
                 fields:
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-                  - {
-                      label: "Alt Text",
-                      name: "altText",
-                      widget: "string",
-                      required: false,
-                    }
-              - label: "Call to Action"
-                name: "cta"
-                widget: "list"
+                  - label: "Link Text"
+                    name: "text"
+                    widget: "string"
+                    hint: "Visible text for a link or button"
+                    required: false
+                  - label: "Link URL"
+                    name: "url"
+                    widget: "string"
+                    hint: "URL path for the link or button"
+                    required: false
+  #################
+  # Server Pages #
+  #################
+  - name: "server" # Used in routes, e.g., /admin/collections/blog
+    label: "Server Pages" # Used in the UI
+    label_singular: "Server Page"
+    folder: "/content/editions/server" # The path to the folder where the documents are stored
+    format: "yml"
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: path
+    create: true
+    editor:
+      preview: true
+    nested:
+      depth: 5
+    fields: # The fields for each document, usually in front matter
+      - label: "Path"
+        name: "path"
+        widget: "string"
+        hint: "url page name ie: index or community"
+      - label: "Header Title"
+        name: "title"
+        widget: "string"
+        hint: "Main headline and h1 tag on the web page"
+      - label: "Header Description"
+        name: "description"
+        widget: "markdown"
+        hint: "Page header description text"
+        required: false
+      - label: "Header Images"
+        name: "header_images"
+        widget: "list"
+        hint: "Add background and foreground images to the header"
+        required: false
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "image"
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - label: "Link Text"
+            name: "text"
+            widget: "string"
+          - label: "Link URL"
+            name: "url"
+            widget: "string"
+            required: false
+      - label: "Page Sections"
+        label_singular: "Page Section"
+        name: "sections"
+        hint: "Main sections of page content, generally grouped by h2 headings"
+        summary: "{{fields.sectionTitle}}"
+        widget: "list"
+        collapsed: true
+        fields:
+          - label: "Section Title"
+            name: "sectionTitle"
+            widget: "string"
+            hint: "A headline title for a section of content (probably an h2)"
+          - label: "Section Description"
+            name: "sectionDescription"
+            widget: "markdown"
+            hint: "Longer text that accompanies the title"
+            required: false
+          - label: "Section Images"
+            singular_label: "image"
+            name: "images"
+            widget: "image"
+            required: false
+          - label: "Section Content"
+            name: "content"
+            widget: "list"
+            hint: "Add sub sections, cards, and lists of content here."
+            collapsed: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
                 required: false
+              - label: "description"
+                name: "description"
+                widget: "markdown"
+                required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+              - label: "Link"
+                name: "link"
+                widget: "object"
                 fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "Url", name: "url", widget: "string" }
-                  - {
-                      label: "Icon",
-                      name: "icon",
-                      widget: "image",
-                      required: false,
-                    }
-          # Section background Image
-          - {
-              label: "Background Image",
-              name: "backgroundImage",
-              widget: "image",
-              required: false,
-            }
+                  - label: "Link Text"
+                    name: "text"
+                    widget: "string"
+                    hint: "Visible text for a link or button"
+                    required: false
+                  - label: "Link URL"
+                    name: "url"
+                    widget: "string"
+                    hint: "URL path for the link or button"
+                    required: false
+  #####################
+  # Workstation Pages #
+  #####################
+  - name: "workstation" # Used in routes, e.g., /admin/collections/blog
+    label: "Workstation Pages" # Used in the UI
+    label_singular: "Workstation Page"
+    folder: "/content/editions/workstation" # The path to the folder where the documents are stored
+    format: "yml"
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: path
+    create: true
+    editor:
+      preview: true
+    nested:
+      depth: 5
+    fields: # The fields for each document, usually in front matter
+      - label: "Path"
+        name: "path"
+        widget: "string"
+        hint: "url page name ie: index or community"
+      - label: "Header Title"
+        name: "title"
+        widget: "string"
+        hint: "Main headline and h1 tag on the web page"
+      - label: "Header Description"
+        name: "description"
+        widget: "markdown"
+        hint: "Page header description text"
+        required: false
+      - label: "Header Images"
+        name: "header_images"
+        widget: "list"
+        hint: "Add background and foreground images to the header"
+        required: false
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "image"
+      - label: "Header Links & Buttons"
+        label_singular: "Link"
+        name: "links"
+        widget: "list"
+        summary: "{{fields.text}}"
+        hint: "Add buttons or links to the page header"
+        collapsed: true
+        minimized_collapsed: true
+        fields:
+          - label: "Link Text"
+            name: "text"
+            widget: "string"
+          - label: "Link URL"
+            name: "url"
+            widget: "string"
+            required: false
+      - label: "Page Sections"
+        label_singular: "Page Section"
+        name: "sections"
+        hint: "Main sections of page content, generally grouped by h2 headings"
+        summary: "{{fields.sectionTitle}}"
+        widget: "list"
+        collapsed: true
+        fields:
+          - label: "Section Title"
+            name: "sectionTitle"
+            widget: "string"
+            hint: "A headline title for a section of content (probably an h2)"
+          - label: "Section Description"
+            name: "sectionDescription"
+            widget: "markdown"
+            hint: "Longer text that accompanies the title"
+            required: false
+          - label: "Section Images"
+            singular_label: "image"
+            name: "images"
+            widget: "image"
+            required: false
+          - label: "Section Content"
+            name: "content"
+            widget: "list"
+            hint: "Add sub sections, cards, and lists of content here."
+            collapsed: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "description"
+                name: "description"
+                widget: "markdown"
+                required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+              - label: "Link"
+                name: "link"
+                widget: "object"
+                fields:
+                  - label: "Link Text"
+                    name: "text"
+                    widget: "string"
+                    hint: "Visible text for a link or button"
+                    required: false
+                  - label: "Link URL"
+                    name: "url"
+                    widget: "string"
+                    hint: "URL path for the link or button"
+                    required: false
