@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 16:14+0000\n"
+"POT-Creation-Date: 2022-10-26 16:26+0000\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -140,8 +140,8 @@ msgid "Features for everyone"
 msgstr "Fonctionnalités pour tous"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fantastic apps"
-msgstr "Applications fantastique"
+msgid "Fantastic app"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -400,6 +400,9 @@ msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
+
+#~ msgid "Fantastic apps"
+#~ msgstr "Applications fantastique"
 
 #~ msgid "Fedora Workstation"
 #~ msgstr "Fedora Workstation"

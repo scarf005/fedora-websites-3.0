@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-10-26 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,9 +137,8 @@ msgid "Features for everyone"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-#, fuzzy
-msgid "Fantastic apps"
-msgstr "Fantastiska program"
+msgid "Fantastic app"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -407,6 +406,10 @@ msgid ""
 msgstr ""
 "Öppet för alla nuvarande och potentiella bidragsgivare **tisdagar, 9:30 "
 "Östra USA tid** på [Bluejeans]()."
+
+#, fuzzy
+#~ msgid "Fantastic apps"
+#~ msgstr "Fantastiska program"
 
 #~ msgid "Fedora Workstation"
 #~ msgstr "Fedora Workstation"
