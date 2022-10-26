@@ -20,7 +20,7 @@ See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configurat
 
 ---
 
-## General Vue Setup Stuff
+## General Vue Setup
 
 - vscode extensions:
   - [volar](https://github.com/johnsoncodehk/volar) (recommended to install from extensions menu)
