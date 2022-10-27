@@ -1,16 +1,21 @@
-<script setup></script>
+<script setup>
+defineProps({
+  image: String,
+  items: Array,
+});
+</script>
 <template>
   <!-- This serves as the root component for each page -->
-  <div class="flex justify-between mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mt-12">
+  <div
+    class="mx-auto mt-12 flex max-w-7xl justify-between px-2 sm:px-6 lg:px-8"
+  >
     <div>
-      <FpImage      class="h-8 w-auto"
-                image="assets/images/fedora-workstation-logo.png" />
+      <FpImage class="h-8 w-auto" :image="image" />
     </div>
     <div class="flex justify-end text-white">
-      <a class="px-5" href="#">Download</a>
-      <a class="px-5" href="#">Community</a>
-      <a class="px-5" href="#">Get Help</a>
-      <a class="px-5" href="#">Get Started</a>
+      <a class="px-5" v-for="item in items" :href="item.link">{{
+        item.name
+      }}</a>
     </div>
   </div>
 </template>
