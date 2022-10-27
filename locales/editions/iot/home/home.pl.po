@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-25 16:18+0200\n"
-"PO-Revision-Date: 2022-09-27 15:46+0000\n"
+"PO-Revision-Date: 2022-10-27 10:57+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editions-iot/pl/>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "indeks"
 
 #: title
 msgid "The solid foundation for IoT ecosystems"
@@ -58,12 +58,12 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Iot?"
-msgstr ""
+msgstr "Dlaczego Fedora IoT?"
 
 #: sections-%3E[0]-%3Eimages
 msgctxt "sections->[0]->images"
 msgid "public/assets/images/iot_background_why.jpg"
-msgstr ""
+msgstr "public/assets/images/iot_background_why.jpg"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Leading Technology"
@@ -75,6 +75,8 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
+"oprogramowanie open source."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Container Based"
@@ -86,6 +88,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT to oparty na kontenerach gospodarz, który działa na Twoim "
+"sprzęcie, z naciskiem na wdrażanie urządzeń brzegowych."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
@@ -135,7 +139,7 @@ msgstr ""
 #: sections-%3E[1]-%3Eimages
 msgctxt "sections->[1]->images"
 msgid "public/assets/images/iot_background_why.jpg"
-msgstr ""
+msgstr "public/assets/images/iot_background_why.jpg"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "arm Systemready"
@@ -179,7 +183,7 @@ msgstr "Tworzona przez Ciebie"
 
 #: sections-%3E[2]-%3Eimages
 msgid "public/assets/images/flock_background.jpg"
-msgstr ""
+msgstr "public/assets/images/flock_background.jpg"
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -205,6 +209,8 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
+"oprogramowanie open source."
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
@@ -216,6 +222,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT to oparty na kontenerach gospodarz, który działa na Twoim "
+"sprzęcie, z naciskiem na wdrażanie urządzeń brzegowych."
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
 msgid "Join the mailing list"
