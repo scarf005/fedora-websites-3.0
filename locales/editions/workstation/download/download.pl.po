@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-27 16:27+0000\n"
+"POT-Creation-Date: 2022-10-27 19:14+0000\n"
 "PO-Revision-Date: 2022-10-27 11:05+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -21,8 +21,8 @@ msgid "download"
 msgstr "pobierz"
 
 #: title
-msgid "Download Fedora Workstation 35."
-msgstr "Pobierz Fedorę Workstation 35."
+msgid "Download Fedora Workstation 37."
+msgstr ""
 
 #: description
 msgid ""
@@ -351,6 +351,9 @@ msgstr ""
 "subject to these restrictions. You are also responsible for compliance with "
 "foreign law requirements applicable to the import, export and use of Fedora "
 "software and technical information."
+
+#~ msgid "Download Fedora Workstation 35."
+#~ msgstr "Pobierz Fedorę Workstation 35."
 
 #~ msgid "Fedora Workstation Downloads"
 #~ msgstr "Pobieranie Fedory Workstation"
