@@ -1,9 +1,7 @@
 <script setup>
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent(
-    "/editions/workstation/home." + locale._value
-  ).findOne();
+  return queryContent("/editions/workstation/home." + locale._value).findOne();
 });
 
 if (data._value === null) {
@@ -23,11 +21,15 @@ useHead({
 });
 </script>
 <template>
-  <FpHero
-    :background="data.header_images[1].image"
-    alignment="bg-bottom"
-  >
-    <TheLocalBar/>
+  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+    <TheLocalBar
+      image="assets/images/fedora-workstation-logo.png"
+      :items="[
+        { name: 'Download', link: '/download' },
+        { name: 'Community', link: '#' },
+        { name: 'Help', link: '#' },
+      ]"
+    />
     <FpBanner
       :title="data.title"
       :subtitle="data.description"
@@ -70,10 +72,7 @@ useHead({
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-        <FpListItem
-          v-for="item in data.sections[0].content"
-          v-bind="item"
-        />
+        <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
       </FpList>
     </section>
 
