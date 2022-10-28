@@ -37,6 +37,7 @@ useHead({
       color="text-fp-green"
       border="border border-fp-green"
       background="text-white bg-fp-green"
+      icon="youtube"
     >
       <div class="hero-laptop-container">
         <div class="px-auto mb-48 max-w-sm sm:max-w-xl">

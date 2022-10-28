@@ -13,6 +13,7 @@ defineProps({
   border: String,
   background: String,
   ctas: Array,
+  icon: String
 });
 </script>
 <template>
@@ -55,7 +56,7 @@ defineProps({
           },
         ]"
       >
-        <font-awesome-icon v-if="cta.icon" :icon="['fa-brands', cta.icon]" />
+        <font-awesome-icon v-if="idx === 1" :icon="['fa-brands', icon]" />
         {{ cta.text }}
       </FpBtn>
       <div v-if="idx < ctas.length - 1" class="w-2" />

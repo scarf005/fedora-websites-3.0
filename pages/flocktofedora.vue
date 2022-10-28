@@ -31,6 +31,7 @@ useHead({
       background="text-white bg-fp-purple"
       :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
+      icon="calendar"
     >
       <h2
         class="my-8 font-semibold text-white"
