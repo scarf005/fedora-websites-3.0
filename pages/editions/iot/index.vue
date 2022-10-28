@@ -33,6 +33,7 @@ useHead({
         border="border border-fp-purple"
         background="text-white bg-fp-purple"
         :ctas="data.links"
+        icon="youtube"
       >
         <FpImage :image="data.header_images[0].image" />
       </FpBanner>
