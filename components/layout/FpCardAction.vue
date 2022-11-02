@@ -1,5 +1,9 @@
+<script setup>
+defineProps({
+  url: String,
+  text: String
+})
+</script>
 <template>
-  <p class="mt-8">
-    <a href="#"><slot></slot></a>
-  </p>
+    <NuxtLink :to="url" class="block">{{ text }}</NuxtLink>
 </template>

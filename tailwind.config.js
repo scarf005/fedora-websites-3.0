@@ -12,12 +12,12 @@ module.exports = {
       colors: {
         fp: {
           gray: {
-            darkest: "#eff0f1",
-            darker: "#dfe0e3",
-            dark: "#c5c7cc",
+            lightest: "#eff0f1",
+            lighter: "#dfe0e3",
+            light: "#c5c7cc",
             DEFAULT: "#9a9fa6",
-            light: "#79818b",
-            lightest: "#535961",
+            dark: "#79818b",
+            darkest: "#535961",
           },
           blue: {
             light: "#51a2da",
