@@ -10,15 +10,7 @@ if (data._value === null) {
   }));
   data._value = data._value[data._value.length - 1];
 }
-useHead({
-  title: data._value.title + " | The Fedora Project",
-  meta: [
-    {
-      name: "description",
-      content: data._value.description,
-    },
-  ],
-});
+useContentHead(data);
 </script>
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-top">
