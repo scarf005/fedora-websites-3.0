@@ -1,5 +1,6 @@
 <script setup>
 const { locale } = useI18n();
+
 let { data } = await useAsyncData("page-data", () => {
   return queryContent("/events/flock." + locale._value).findOne();
 });
@@ -60,10 +61,9 @@ useHead({
         <p class="text-sm text-slate-300">{{ card.description }}</p>
       </div>
     </div>
-  </FpHero> 
+  </FpHero>
 
   <main class="flex flex-col items-center">
-
     <!-- TODO: Explore -->
     <section class="w-full bg-slate-100 pb-10">
       <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
