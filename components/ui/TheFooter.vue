@@ -1,11 +1,5 @@
 <script setup>
-import {
-  desktops,
-  cloud,
-  iot,
-  support,
-  community,
-} from "../../config/navigation";
+import { editions, others, support, community } from "../../config/navigation";
 </script>
 
 <template>
@@ -16,11 +10,11 @@ import {
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
-            Desktops
+            Editions
           </h6>
           <li
             style="list-style-type: none"
-            v-for="item in desktops"
+            v-for="item in editions"
             :key="item.name"
             class="mb-4"
           >
@@ -41,34 +35,11 @@ import {
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
-            Server / Cloud Deployment
+            Others
           </h6>
           <li
             style="list-style-type: none"
-            v-for="item in cloud"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
-            >
-              {{ item.name }}
-            </a>
-          </li>
-
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            IoT / Edge Deployment
-          </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in iot"
+            v-for="item in others"
             :key="item.name"
             class="mb-4"
           >

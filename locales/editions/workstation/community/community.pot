@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-11-02 16:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,25 +146,6 @@ msgid ""
 "Workstation Working Group meetings are open to all current and potential "
 "contributors on **Tuesdays, 9:30 AM US Eastern** on "
 "[Bluejeans](https://bluejeans.com/395383051)."
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[2]->content->[2]->title"
-"sections->[2]->content->[2]->title"
-msgid "Become a Fedora contributor"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgid ""
-"Attending a meeting or reporting and discussing issues you've found can be "
-"great first steps at contribution. [Learn more](https://docs.fedoraproject."
-"org/en-US/fedora-join/contribute/successful-contributor/)."
-msgstr ""
-
-#, read-only
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Eimage
-msgctxt "sections->[2]->content->[2]->image"
-msgid "public/assets/images/door-open-solid.png"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
@@ -318,7 +299,6 @@ msgstr ""
 
 #, read-only
 #: sections-%3E[3]-%3Econtent-%3E[7]-%3Eimage
-msgctxt "sections->[3]->content->[7]->image"
 msgid "public/assets/images/door-open-solid.png"
 msgstr ""
 

@@ -1,13 +1,13 @@
 #. extracted from content/editions/workstation/download.yml
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-27 19:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: cy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,8 +31,8 @@ msgstr ""
 msgid "Release Notes"
 msgstr ""
 
-#, read-only
 #: links-%3E[0]-%3Eurl
+#, read-only
 msgid "https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html"
 msgstr ""
 
@@ -40,8 +40,8 @@ msgstr ""
 msgid "Installation Guide"
 msgstr ""
 
-#, read-only
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgid "https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/"
 msgstr ""
 
@@ -49,8 +49,8 @@ msgstr ""
 msgid "Community Support"
 msgstr ""
 
-#, read-only
 #: links-%3E[2]-%3Eurl
+#, read-only
 msgctxt "links->[2]->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
@@ -79,8 +79,8 @@ msgid ""
 "Fedora a try."
 msgstr ""
 
-#, read-only
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/media-writer-icon.png"
 msgstr ""
 
@@ -112,8 +112,8 @@ msgstr ""
 msgid "Verify your download"
 msgstr ""
 
-#, read-only
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://getfedora.org/security/"
 msgstr ""
 
@@ -138,8 +138,8 @@ msgid ""
 "with Fedora that include fully-supported hardware components. "
 msgstr ""
 
-#, read-only
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/lenovo-laptop.png"
 msgstr ""
 
@@ -147,8 +147,8 @@ msgstr ""
 msgid "Explore Fedora laptops"
 msgstr ""
 
-#, read-only
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgid "https://fedoramagazine.org/lenovo-fedora-now-available/"
 msgstr ""
 
@@ -196,13 +196,13 @@ msgstr ""
 msgid "Fedora Discussion"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-discussion-plus-icon.png"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
@@ -210,13 +210,13 @@ msgstr ""
 msgid "Fedora Chat"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
 msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
@@ -224,13 +224,13 @@ msgstr ""
 msgid "Ask Fedora"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
-#, read-only
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[2]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
@@ -247,13 +247,13 @@ msgstr ""
 msgid "/r/fedora"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://www.reddit.com/r/Fedora/"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/reddit-brands-3.png"
 msgstr ""
 
@@ -265,13 +265,13 @@ msgstr ""
 msgid "Fedora Discord"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
 msgid "https://discord.com/invite/fedora"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/discord-brands-2.png"
 msgstr ""
 
@@ -280,8 +280,8 @@ msgctxt "sections->[4]->content->[2]->title"
 msgid "Telegram"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/telegram-brands.png"
 msgstr ""
 
@@ -290,8 +290,8 @@ msgctxt "sections->[4]->content->[2]->link->text"
 msgid "Telegram"
 msgstr ""
 
-#, read-only
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgid "https://fedoraproject.org/wiki/Telegram"
 msgstr ""
 

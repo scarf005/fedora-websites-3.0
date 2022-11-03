@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-10-26 16:26+0000\n"
 "PO-Revision-Date: 2022-09-23 18:19+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -138,8 +138,8 @@ msgid "Features for everyone"
 msgstr "Funkciók mindenki számára"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fantastic apps"
-msgstr "Fantasztikus alkalmazások"
+msgid "Fantastic app"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -422,6 +422,9 @@ msgid ""
 msgstr ""
 "Nyitva minden jelenlegi és potenciális közreműködő számára **keddenként, "
 "9:30-kor az USA keleti részén** a [Bluejeans]()-on."
+
+#~ msgid "Fantastic apps"
+#~ msgstr "Fantasztikus alkalmazások"
 
 #~ msgid "Fedora Workstation"
 #~ msgstr "Fedora Workstation"

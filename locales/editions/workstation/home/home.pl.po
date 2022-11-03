@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
-"PO-Revision-Date: 2022-09-25 13:14+0000\n"
+"POT-Creation-Date: 2022-10-31 13:15+0000\n"
+"PO-Revision-Date: 2022-10-31 11:23+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "indeks"
 
 #: title
 msgid "The leading Linux desktop"
@@ -29,6 +29,8 @@ msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy.\n"
 msgstr ""
+"Piękny, wysokiej jakości system operacyjny zbudowany za pomocą najnowszej "
+"technologii open source. Zaufany, o wielu możliwościach i łatwy w obsłudze.\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -139,8 +141,8 @@ msgid "Features for everyone"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fantastic apps"
-msgstr "Fantastyczne aplikacje"
+msgid "Fantastic app"
+msgstr "Fantastyczna aplikacja"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -398,6 +400,9 @@ msgid ""
 "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
+
+#~ msgid "Fantastic apps"
+#~ msgstr "Fantastyczne aplikacje"
 
 #~ msgid "Fedora Workstation"
 #~ msgstr "Fedora Workstation"
