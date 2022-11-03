@@ -1,24 +1,25 @@
 #. extracted from content/editions/workstation/home.yml
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-26 16:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-11-02 16:19+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationhome/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: title
-#, fuzzy
 msgid "The leading Linux desktop"
 msgstr "Det ledande Linux-skrivbordet"
 
@@ -39,7 +40,6 @@ msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
 #: links-%3E[0]-%3Etext
-#, fuzzy
 msgid "Download now"
 msgstr "Ladda ned nu"
 
@@ -74,7 +74,6 @@ msgstr ""
 "snabba och enkla."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
-#, fuzzy
 msgid "Free & private"
 msgstr "Fri & Privat"
 
@@ -134,11 +133,11 @@ msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Features for everyone"
-msgstr ""
+msgstr "Funktioner för alla"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fantastic app"
-msgstr ""
+msgstr "Fantastisk app"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -191,7 +190,6 @@ msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Etitle
-#, fuzzy
 msgid "Calendar integration"
 msgstr "Kalenderintegration"
 
@@ -223,11 +221,11 @@ msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Great for developers"
-msgstr ""
+msgstr "Perfekt för utvecklare"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "Virtualization made easy"
-msgstr ""
+msgstr "Virtualisering på ett enkelt sätt"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid "Boxes takes the guesswork out of using virtual machines."
@@ -286,13 +284,15 @@ msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Get started developing with Fedora Workstation"
-msgstr ""
+msgstr "Kom igång med att utveckla med Fedora Workstation"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "The Fedora Developer portal has guides on developing and deploying "
 "applications using Fedora workstation."
 msgstr ""
+"Fedoras utvecklarportal har guider för att utveckla och distribuera program "
+"med Fedora workstation."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eurl
 #, read-only
@@ -311,6 +311,8 @@ msgid ""
 "DNF is the Fedora package manager that enables you to install, update and "
 "manage OS components."
 msgstr ""
+"DNF är Fedoras pakethanterare som gör att du kan installera, uppdatera och "
+"hantera OS-komponenter."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eurl
 #, read-only
@@ -341,7 +343,6 @@ msgid "public/assets/images/podman.svg"
 msgstr ""
 
 #: sections-%3E[4]-%3EsectionTitle
-#, fuzzy
 msgid "Built by you"
 msgstr "Byggt för dig"
 
