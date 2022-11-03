@@ -46,5 +46,8 @@ export default defineNuxtConfig({
   app: {
     baseURL: base,
     buildAssetsDir: base + "/_nuxt/",
+    head: {
+      titleTemplate: '%s | The Fedora Project',
+    },
   },
 });

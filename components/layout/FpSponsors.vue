@@ -10,7 +10,7 @@ defineProps({
 
 function sponsorClass(sponsor) {
   let classList = "";
-  switch (sponsor.level) {
+  switch (sponsor.description) {
     case "platinium":
       classList = "bg-gray-100 col-span-4";
       break;
@@ -42,25 +42,27 @@ function sponsorClass(sponsor) {
       class="relative grid h-48 content-center p-8 text-center text-xs"
       :class="sponsorClass(sponsor)"
     >
-      <template v-if="sponsor.level != 'placeholder'">
+      <template v-if="sponsor.description != 'placeholder'">
         <img
-          v-if="sponsor.imageURI"
+          v-if="sponsor.image"
           class="mx-auto max-h-32 w-full object-contain"
           :src="`${
-            $config.app.baseURL + '/' + sponsor.imageURI.replace('public/', '')
+            $config.app.baseURL + '/' + sponsor.image.replace('public/', '')
           }`"
         />
         <p v-else>{{ sponsor.name }}</p>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">
-          {{ sponsor.level }} sponsor
+          {{ sponsor.description }} sponsor
         </p>
       </template>
     </div>
 
+    <a href="#">
     <div
       class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs"
     >
       <p class="text-3xl text-black">Become a Sponsor</p>
     </div>
+    </a>
   </div>
 </template>
