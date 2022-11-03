@@ -1,11 +1,5 @@
 <script setup>
-import {
-  desktops,
-  cloud,
-  iot,
-  support,
-  community,
-} from "../../config/navigation";
+import { editions, others, support, community } from "../../config/navigation";
 const open = useState("navbaropen", () => false);
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
@@ -43,14 +37,12 @@ const availableLocales = computed(() => {
               </a>
 
               <TheNavItem
-                :title="$t('Desktops')"
-                :items="desktops"
+                :title="$t('Editions')"
+                :items="editions"
                 icons="true"
               />
 
-              <TheNavItem :title="$t('Server & Cloud')" :items="cloud" />
-
-              <TheNavItem :title="$t('IoT & Edge')" :items="iot" />
+              <TheNavItem :title="$t('Others')" :items="others" />
 
               <TheNavItem :title="$t('Community')" :items="community" />
 

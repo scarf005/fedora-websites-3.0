@@ -1,5 +1,15 @@
-const desktops = [
-  { name: "Fedora Workstation", href: "/editions/workstation" },
+const editions = [
+  { name: "Fedora Workstation", href: "/editions/workstation", icon: "desktop" },
+  { name: "Fedora Server", href: "/editions/server", icon: "server" },
+  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos", icon: "circle" },
+  { name: "Fedora IoT", href: "/editions/iot", icon: 'microchip' }
+
+
+
+];
+const others = [
+  { name: "Fedora Cloud Images", href: "https://alt.fedoraproject.org/cloud/" },
+  { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   {
     name: "Fedora KDE Plasma",
@@ -8,14 +18,7 @@ const desktops = [
   { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
   { name: "More", href: "https://spins.fedoraproject.org" },
 ];
-const cloud = [
-  { name: "Fedora Server", href: "/editions/server" },
-  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos" },
-  { name: "Fedora Cloud Images", href: "https://alt.fedoraproject.org/cloud/" },
-  { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
-];
 
-const iot = [{ name: "Fedora IoT", href: "/editions/iot" }];
 
 const community = [
   {
@@ -37,4 +40,4 @@ const support = [
   { name: "Common Bugs", href: "#" },
 ];
 
-export { desktops, cloud, iot, community, support };
+export { editions, others, community, support };

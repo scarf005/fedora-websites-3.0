@@ -1,31 +1,35 @@
 #. extracted from content/editions/workstation/download.yml
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-27 19:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-11-03 22:00+0000\n"
+"PO-Revision-Date: 2022-11-02 16:19+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationdownload/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Translate Toolkit 3.6.2\n"
 
 #: path
 msgid "download"
-msgstr ""
+msgstr "ladda ner"
 
 #: title
 msgid "Download Fedora Workstation 37."
-msgstr ""
+msgstr "Ladda ner Fedora Workstation 37."
 
 #: description
 msgid ""
 "We're so glad you've decided to give Fedora Workstation a try. We know "
 "you'll love it."
 msgstr ""
+"Vi är så glada att du har bestämt dig för att ge Fedora Workstation ett "
+"försök. Vi vet att du kommer att älska det."
 
 #: links-%3E[0]-%3Etext
 msgid "Release Notes"
@@ -38,7 +42,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Installation Guide"
-msgstr ""
+msgstr "Installationsguide"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -47,7 +51,7 @@ msgstr ""
 
 #: links-%3E[2]-%3Etext
 msgid "Community Support"
-msgstr ""
+msgstr "Gemenskaps Support"
 
 #: links-%3E[2]-%3Eurl
 #, read-only
@@ -57,7 +61,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Download Options"
-msgstr ""
+msgstr "Nerladdningsalternativ"
 
 #: sections-%3E[0]-%3EsectionDescription
 msgctxt "sections->[0]->sectionDescription"
@@ -71,13 +75,15 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "On Windows or macOS?"
-msgstr ""
+msgstr "På Windows eller macOS?"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Get started by using Fedora Media Writer, which makes it super easy to give "
 "Fedora a try."
 msgstr ""
+"Kom igång genom att använda Fedora MediaSkrivare, vilket gör det superenkelt "
+"att ge Fedora ett försök."
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -86,31 +92,36 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "On Linux? Or just want an ISO file?"
-msgstr ""
+msgstr "På Linux? Eller bara vill ha en ISO fil?"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Not sure how to use these files? [Learn More](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
+"Är du osäker på hur man använder dessa filer? [Läs mer](https://docs."
+"fedoraproject.org/en-US/quick-docs/"
+"creating-and-using-a-live-installation-image/)"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
-msgstr ""
+msgstr "Säkerhet, installationer, bärbara datorer förinstallerade"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
-msgstr ""
+msgstr "Vi tar säkerhet seriöst"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Once you have downloaded an image, be sure to verify it for both security "
 "and integrity. "
 msgstr ""
+"När du har laddat ner en avbild, se till att verifiera den för både säkerhet "
+"och integritet. "
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Verify your download"
-msgstr ""
+msgstr "Verifiera din nedladdning"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -119,7 +130,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "But wait! There's more."
-msgstr ""
+msgstr "Men vänta! Det finns mer."
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -127,16 +138,21 @@ msgid ""
 "downloads here](https://alt.fedoraproject.org/), featuring secondary "
 "architectures and network-based installation images."
 msgstr ""
+"Behöver du något lite annorlunda? [Kolla in våra andra Fedora Workstation-"
+"nedladdningar här](https://alt.fedoraproject.org/), för sekundära "
+"arkitekturer och nätverksbaserade installationsavbilder."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Laptops pre-loaded with Fedora"
-msgstr ""
+msgstr "Bärbara datorer förinstallerade med Fedora"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "We've partnered with companies like Lenovo to bring you laptops pre-loaded "
 "with Fedora that include fully-supported hardware components. "
 msgstr ""
+"Vi har samarbetat med företag som Lenovo för att ge dig bärbara datorer "
+"förinstallerade med Fedora som inkluderar fullt stödda hårdvarukomponenter. "
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -145,7 +161,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "Explore Fedora laptops"
-msgstr ""
+msgstr "Utforska Fedora bärbara datorer"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -154,7 +170,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Learn more about Fedora Media Writer"
-msgstr ""
+msgstr "Lär dig mer om Fedora MediaSkrivare"
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -173,14 +189,16 @@ msgid ""
 " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run "
 "successfully. Double those amounts is recommended. "
 msgstr ""
+" * Fedora kräver minst 20 GB disk, 2 GB RAM, för att installera och köra "
+"framgångsrikt. Dubbla dessa mängder rekommenderas. "
 
 #: sections-%3E[2]-%3Eimages
 msgid "public/assets/images/monitor-2.png"
-msgstr ""
+msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Officially-Supported Fedora Community Spaces"
-msgstr ""
+msgstr "Officiellt stödda Fedora Gemenskapsområden"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -194,7 +212,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
-msgstr ""
+msgstr "Fedora diskussion"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -208,7 +226,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
-msgstr ""
+msgstr "Fedora Chatt"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -222,7 +240,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Etitle
 msgid "Ask Fedora"
-msgstr ""
+msgstr "Fråga Fedora"
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -241,11 +259,11 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reddit"
-msgstr ""
+msgstr "Reddit"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "/r/fedora"
-msgstr ""
+msgstr "/r/fedora"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -259,11 +277,11 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "Fedora Discord"
-msgstr ""
+msgstr "Fedora Discord"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -278,7 +296,7 @@ msgstr ""
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Etitle
 msgctxt "sections->[4]->content->[2]->title"
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -288,7 +306,7 @@ msgstr ""
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgctxt "sections->[4]->content->[2]->link->text"
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -300,6 +318,8 @@ msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
+"Genom att klicka på nedladdningslänken och hämta hem Fedora till din dator, "
+"går du med på att uppfylla följande krav och villkor."
 
 #: sections-%3E[5]-%3EsectionDescription
 msgid ""
@@ -322,6 +342,25 @@ msgid ""
 "foreign law requirements applicable to the import, export and use of Fedora "
 "software and technical information."
 msgstr ""
+"Genom att hämta Fedoras programvara bekräftar du att du förstår följande: "
+"Fedoras programvara och tekniska information kan vara föremål för U.S. "
+"Export Administration Regulations (”EAR”) och andra av USA:s och andra "
+"länders lagar och får inte exporteras, återexporteras eller överföras (a) "
+"till något land uppräknat i Country Group E:1 i Supplement No. 1 till del "
+"740 av EAR (för närvarande, Kuba, Iran, Nordkorea, Sudan & Syrien); (b) till "
+"någon förbjuden destination eller till någon slutanvändare som har "
+"förbjudits från att delta i USA:s exporttransaktioner av någon federal "
+"myndighet hos USA:s regering; eller (c) för användning i samband med "
+"designen, utvecklingen eller produktionen av nukleära, kemiska eller "
+"biologiska vapen, eller raketsystem, rymdfarkoster eller sondraketer, eller "
+"obemannade luftfarkost system. Du får inte hämta Fedoras programvara eller "
+"tekniska information om du befinner dig i ett av dessa länder eller på annat "
+"sätt är föremål för dessa begränsningar. Du får inte tillhandahålla Fedoras "
+"programvara eller tekniska information till individer eller organisationer "
+"som befinner sig i ett av dessa länder eller på annat sätt är föremål för "
+"dessa restriktioner. Du är även ansvarig för att följa andra länders lagkrav "
+"som är tillämpliga på importen, exporten och användningen av Fedoras "
+"programvara och tekniska information."
 
 #~ msgid "Fedora Workstation Downloads"
 #~ msgstr "Fedora Workstation Nedladdningar"

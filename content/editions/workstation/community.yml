@@ -46,11 +46,6 @@ sections:
         description: Workstation Working Group meetings are open to all current and
           potential contributors on **Tuesdays, 9:30 AM US Eastern** on
           [Bluejeans](https://bluejeans.com/395383051).
-      - title: Become a Fedora contributor
-        description: Attending a meeting or reporting and discussing issues you've found
-          can be great first steps at contribution. [Learn
-          more](https://docs.fedoraproject.org/en-US/fedora-join/contribute/successful-contributor/).
-        image: public/assets/images/door-open-solid.png
   - sectionTitle: Events
     sectionDescription: Fedora has events throughout the year that you can attend,
       typically in-person or virtually, to learn more about Fedora Workstation
