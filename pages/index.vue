@@ -7,7 +7,7 @@
     </header>
     <section class="large-section">
       <header class="my-8 flex justify-center text-center">
-        <font-awesome-icon icon="fab fa-fedora" class="mr-4 text-5xl" />
+        <Icon name="fa6-brands:fedora" class="mr-4 text-5xl" />
         <h2>Heading Text</h2>
       </header>
       <div class="mx-auto">
@@ -97,40 +97,38 @@
         <FpBtn color="bg-fp-magenta hover:bg-fp-magenta/[0.6]"
           >bg-magenta</FpBtn
         >
-        <FpBtn color="bg-fp-green hover:bg-fp-green/[0.6]">bg-green</FpBtn>
-        <FpBtn color="bg-fp-purple hover:bg-fp-purple/[0.6]">bg-purple</FpBtn>
+        <FpBtn class="bg-fp-green hover:bg-fp-green/[0.6]">bg-green</FpBtn>
+        <FpBtn class="bg-fp-purple hover:bg-fp-purple/[0.6]">bg-purple</FpBtn>
       </div>
     </section>
     <section class="flex flex-col items-center">
       <header class="section-header">
         <h2>Icons</h2>
         <p>
-          Font Awesome Icons are hosted through the
-          <a href="https://fontawesome.com/docs/web/use-with/vue/use-with"
-            >Font Awesome Nuxt Plugin</a
-          >. It is configured in the <code>~/plugins/fontawesome.js</code> file.
+          Icons are generated using the
+          <a href="https://github.com/nuxt-modules/icon">Nuxt Icon module</a>.
+          This allows us to be able to access all of the
+          <a href="https://icones.js.org/collection/">iconify</a>
         </p>
       </header>
       <div class="my-4 flex">
         <div class="mr-8 flex max-w-lg flex-wrap gap-4">
           <p>
+            Apply a fontawesome icon using the following syntax
             <em
-              >Apply a fontawesome icon using this syntax (just remember to use
-              proper brackets, they are not being used here otherwise vue would
-              render the icon)</em
+              >just remember to use proper brackets, they are not being used
+              here otherwise vue would render the icon)</em
             >
           </p>
           <pre>
               <code>
-                font-awesome-icon icon="fa-solid fa-bars"
+                <Icon name="fa6-brands:fedora" />
               </code>
             </pre>
         </div>
-        <div class="mb-8 flex flex-col gap-4 text-5xl md:gap-8">
-          <font-awesome-icon icon="fa-solid fa-user-secret" />
-          <font-awesome-icon icon="fa-brands fa-fedora" />
-          <font-awesome-icon icon="fa-regular fa-chess-rook" />
-        </div>
+        <div class="mb-8 flex flex-col gap-4 text-5xl md:gap-8"></div>
+        <Icon name="fa6-brands:fedora" />
+        <Icon name="fa6-solid:chess-rook" />
       </div>
     </section>
   </main>

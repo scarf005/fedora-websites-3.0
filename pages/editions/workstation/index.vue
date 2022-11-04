@@ -107,7 +107,7 @@ useContentHead(data);
         <h3 class="mb-8 text-center font-bold text-fp-blue">
           {{ data.sections[3].sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
           <FpListItem
             v-for="item in data.sections[3].content"
             v-bind="item"

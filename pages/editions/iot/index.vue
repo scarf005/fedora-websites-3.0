@@ -14,10 +14,7 @@ useContentHead(data);
 </script>
 <template>
   <main>
-    <FpHero
-      :background="data.header_images[1].image"
-      alignment="bg-bottom"
-    >
+    <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <FpBanner
         :title="data.title"
         :subtitle="data.description"
@@ -31,10 +28,7 @@ useContentHead(data);
       </FpBanner>
     </FpHero>
 
-    <FpHero
-      :background="data.sections[0].images"
-      alignment="bg-bottom"
-    >
+    <FpHero :background="data.sections[0].images" alignment="bg-bottom">
       <section class="mx-auto w-10/12 pt-12">
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
@@ -42,21 +36,18 @@ useContentHead(data);
           {{ data.sections[0].sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-          <FpListItem
-            v-for="item in data.sections[0].content"
-            v-bind="item"
-          />
+          <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
         </FpList>
       </section>
     </FpHero>
-  <div class="bg-magenta-100" style="min-height: 60vh">
+    <div class="bg-magenta-100" style="min-height: 60vh">
       <section class="mx-auto w-10/12 pt-12">
         <h3
           class="mb-4 text-center font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
           {{ data.sections[1].sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-4 gap-12 lg:gap-4" disableDots="true">
+        <FpList columns="sm:grid-cols-4 gap-12 lg:gap-4" :disableDots="true">
           <FpListItem
             v-for="item in data.sections[1].content"
             v-bind="item"
@@ -73,11 +64,7 @@ useContentHead(data);
 
     <!-- Call To Action -->
     <section>
-      <FpCallToAction
-        :cta="data.links"
-        image="assets/images/fiot-logo.png"
-      />
-    </section> 
-    
+      <FpCallToAction :cta="data.links" image="assets/images/fiot-logo.png" />
+    </section>
   </main>
 </template>
