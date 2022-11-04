@@ -1,8 +1,8 @@
-import locales from "./locales/locales.json"
+import locales from "./locales/locales.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
-  : ""
+  : "";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxtjs/i18n",
-    "nuxt-icons",
+    "nuxt-icon",
+    "@nuxt/image-edge",
   ],
   tailwindcss: {
     viewer: false,
@@ -32,7 +33,6 @@ export default defineNuxtConfig({
       fallbackLocale: "en",
     },
   },
-  buildAssetsDir: base + "/_nuxt/",
   app: {
     baseURL: base,
     buildAssetsDir: base + "/_nuxt/",
@@ -40,4 +40,4 @@ export default defineNuxtConfig({
       titleTemplate: "%s | The Fedora Project",
     },
   },
-})
+});
