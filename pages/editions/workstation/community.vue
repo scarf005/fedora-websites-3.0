@@ -1,36 +1,33 @@
 <script setup>
 const { locale } = useI18n();
 
-let { data } = await useAsyncData(() => {
-  return queryContent("/editions/workstation/community/").findOne();
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent(
+    "/editions/workstation/community/" + locale._value
+  ).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
     return queryContent("/editions/workstation/community").sort().find();
   }));
-  data._value = data._value[(data._value.length = 1)];
+  data._value = data._value[data._value.length - 1];
 }
 
-useHead({
-  meta: [
-    {
-      name: "title",
-      content: "Workstation Community | The Fedora Project",
-    },
-    {
-      name: "description",
-      content: "The community page for Fedora Workstation",
-    },
-  ],
-});
+useContentHead(data);
 </script>
 
 <template>
   <main class="mt-4 border-t-8 border-fp-green">
     <header>
-      <TheLocalBar />
-
+      <TheLocalBar
+        image="assets/images/fedora-workstation-logo.png"
+        :items="[
+          { name: 'Download', link: '/download' },
+          { name: 'Community', link: '#' },
+          { name: 'Help', link: '#' },
+        ]"
+      />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
           <h1 class="mb-4 text-fp-green xl:mb-8">{{ data.title }}</h1>
