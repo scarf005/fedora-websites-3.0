@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  image: Object,
+  image: [Object, String],
   title: String,
   description: String,
   columns: String,
