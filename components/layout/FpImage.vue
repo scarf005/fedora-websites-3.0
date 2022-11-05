@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <img
+  <nuxt-img
     class="z-10"
     :src="`${$config.app.baseURL + '/' + image.replace('public/', '')}`"
     alt="Screenshot"
