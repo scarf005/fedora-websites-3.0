@@ -37,7 +37,7 @@ defineProps({
           ]"
           :aria-current="item.current ? 'page' : undefined"
         >
-          <font-awesome-icon v-if="icons" :icon="item.icon" />
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
         </a>
       </li>
