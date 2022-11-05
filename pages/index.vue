@@ -105,10 +105,9 @@
       <header class="section-header">
         <h2>Icons</h2>
         <p>
-          Font Awesome Icons are hosted through the
-          <a href="https://fontawesome.com/docs/web/use-with/vue/use-with"
-            >Font Awesome Nuxt Plugin</a
-          >. It is configured in the <code>~/plugins/fontawesome.js</code> file.
+          We are now using the
+          <a href="https://github.com/nuxt-modules/icon">Nuxt Icon</a> module
+          for our icons.
         </p>
       </header>
       <div class="my-4 flex">
