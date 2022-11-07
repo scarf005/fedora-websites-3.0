@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/i18n",
     "nuxt-icon",
-    "@nuxt/image-edge",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
