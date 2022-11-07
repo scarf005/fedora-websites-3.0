@@ -20,7 +20,6 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
   ],
   tailwindcss: {
-    viewer: false,
     cssPath: "~/assets/css/main.css",
   },
   i18n: {
