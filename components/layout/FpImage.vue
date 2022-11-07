@@ -1,6 +1,7 @@
 <script setup>
 defineProps({
   image: String,
+  altText: String,
 });
 </script>
 
@@ -8,6 +9,6 @@ defineProps({
   <img
     class="z-10"
     :src="`${$config.app.baseURL + '/' + image.replace('public/', '')}`"
-    alt="Screenshot"
+    :alt="`${$config.app.baseURL + '/' + image}`"
   />
 </template>
