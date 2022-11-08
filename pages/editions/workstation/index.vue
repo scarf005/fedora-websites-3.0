@@ -38,7 +38,7 @@ useContentHead(data);
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
+            class="-mt-[355px] w-full px-11 sm:-mt-[533px] sm:px-[75px]"
             autoplay=""
             loop=""
             muted=""
@@ -107,11 +107,11 @@ useContentHead(data);
         <h3 class="mb-8 text-center font-bold text-fp-blue">
           {{ data.sections[3].sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
           <FpListItem
             v-for="item in data.sections[3].content"
             v-bind="item"
-            images="true"
+            :images="true"
             buttons="true"
           />
         </FpList>

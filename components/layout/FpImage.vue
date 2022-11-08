@@ -8,6 +8,6 @@ defineProps({
   <img
     class="z-10"
     :src="`${$config.app.baseURL + '/' + image.replace('public/', '')}`"
-    alt="Screenshot"
+    :alt="`${$config.app.baseURL + '/' + image.replace('public', '')}`"
   />
 </template>

@@ -17,10 +17,10 @@ useHead({
 
 <template>
   <div id="app">
-    <the-nav-bar />
+    <TheNavBar />
     <div class="pt-12">
-      <nuxt-page />
+      <NuxtPage />
     </div>
-    <the-footer />
+    <TheFooter />
   </div>
 </template>

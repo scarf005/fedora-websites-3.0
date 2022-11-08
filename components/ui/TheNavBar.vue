@@ -39,7 +39,7 @@ const availableLocales = computed(() => {
               <TheNavItem
                 :title="$t('Editions')"
                 :items="editions"
-                icons="true"
+                :icons="true"
               />
 
               <TheNavItem :title="$t('Others')" :items="others" />
@@ -60,7 +60,7 @@ const availableLocales = computed(() => {
             type="button"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
-            <font-awesome-icon icon="hamburger" />
+            <Icon name="fa6-solid:bars" />
           </button>
         </div>
       </div>

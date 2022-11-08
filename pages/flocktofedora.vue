@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const contentPath = 'events/flock';
+const contentPath = "events/flock";
 
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(contentPath + "." + locale._value).findOne();
@@ -9,7 +9,9 @@ let { data } = await useAsyncData("page-data", () => {
 if (data._value === null) {
   // Fallback to english content
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent().where({_file: contentPath + ".yml"}).findOne();
+    return queryContent()
+      .where({ _file: contentPath + ".yml" })
+      .findOne();
   }));
 }
 useContentHead(data);
@@ -112,14 +114,9 @@ const sponsorsBenefits = data._value.sections[7];
               {{ watch.content[0].description }}
             </p>
             <p class="mt-4 text-right">
-              <a
-                class="text-fp-blue"
-                :href="watch.content[0].link.url"
+              <a class="text-fp-blue" :href="watch.content[0].link.url"
                 >{{ watch.content[0].link.text }}
-                <font-awesome-icon
-                  class="ml-2"
-                  icon="fa-solid fa-arrow-right-long"
-                />
+                <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
               </a>
             </p>
           </div>
@@ -162,10 +159,7 @@ const sponsorsBenefits = data._value.sections[7];
 
     <!-- Community Section -->
     <section class="my-10">
-      <FpHero
-        :background="community.image"
-        alignment="bg-top"
-      >
+      <FpHero :background="community.image" alignment="bg-top">
         <section class="mx-auto w-10/12 max-w-screen-xl py-24">
           <h2
             class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
@@ -180,8 +174,8 @@ const sponsorsBenefits = data._value.sections[7];
             <FpListItem
               v-for="item in community.content"
               v-bind="item"
-	      :iconURI="item.image"
-	      :image="null"
+              :iconURI="item.image"
+              :image="null"
             />
           </FpList>
         </section>
@@ -212,10 +206,7 @@ const sponsorsBenefits = data._value.sections[7];
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2">
-        <FpListItem
-          v-for="item in sponsorsBenefits.content"
-          v-bind="item"
-        />
+        <FpListItem v-for="item in sponsorsBenefits.content" v-bind="item" />
       </FpList>
     </section>
   </main>
