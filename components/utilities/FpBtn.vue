@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   url: String,
-  color: String,
+  color: [String, Array],
 });
 </script>
 
