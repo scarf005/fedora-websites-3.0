@@ -17,8 +17,8 @@ useContentHead(data);
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
       :items="[
-        { name: 'Download', link: '/download' },
-        { name: 'Community', link: '#' },
+        { name: 'Download', link: 'workstation/download' },
+        { name: 'Community', link: 'workstation/community' },
         { name: 'Help', link: '#' },
       ]"
     />
@@ -38,7 +38,7 @@ useContentHead(data);
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="-mt-[355px] w-full px-11 sm:-mt-[533px] sm:px-[75px]"
+            class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
             autoplay=""
             loop=""
             muted=""
