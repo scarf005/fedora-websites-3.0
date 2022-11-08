@@ -31,14 +31,12 @@ useContentHead(data);
         </div>
       </section>
     </header>
-    <pre>
-      {{ data }}
-    </pre>
+
     <!-- communication channels -->
-    <!-- <section class="mx-auto bg-fp-green-light/10">
+    <section class="mx-auto bg-fp-purple-light/10">
       <div class="container mx-auto flex flex-col justify-center pb-8">
         <header class="py-8 text-center xl:text-start">
-          <h2 class="text-fp-green xl:text-4xl">
+          <h2 class="text-fp-purple xl:text-4xl">
             {{ data.sections[1].sectionTitle }}
           </h2>
         </header>
@@ -63,25 +61,24 @@ useContentHead(data);
               :alt="card.image"
               class="my-2 mx-auto w-56"
             />
-            
+
             <NuxtLink
               :to="card.link.url"
               class="my-2 mx-auto flex w-full justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white"
               >{{ card.link.text }}</NuxtLink
             >
-           
           </article>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- ways to get involved -->
-    <!-- <section class="bg-fp-blue-light/10">
+    <section class="bg-fp-blue-light/10">
       <div
         class="container mx-auto grid justify-center gap-8 py-12 lg:grid-cols-2 lg:justify-start xl:py-8"
       >
         <header class="col-span-full my-8 mx-auto text-center lg:text-start">
-          <h2 class="text-fp-green xl:text-4xl">
+          <h2 class="text-fp-purple xl:text-4xl">
             {{ data.sections[2].sectionTitle }}
           </h2>
         </header>
@@ -94,6 +91,6 @@ useContentHead(data);
           <p class="max-w-sm text-fp-gray-darkest">{{ content.description }}</p>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 </template>
