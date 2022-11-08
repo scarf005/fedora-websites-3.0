@@ -38,7 +38,7 @@ useContentHead(data);
             image="assets/images/workstation_framework.png"
           />
           <video
-            class="mt-[310px] w-full px-11 sm:mt-[473px] sm:px-[70px]"
+            class="-mt-[354px] w-full px-11 sm:-mt-[535px] sm:px-[78px]"
             autoplay=""
             loop=""
             muted=""
