@@ -14,6 +14,7 @@ sections:
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
           text: Visit Now
+          url: https://discussion.fedoraproject.org/tag/iot
       - title: Chat
         description: "You can chat with the Fedora IoT Working Group via either Matrix
           or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on
@@ -21,11 +22,13 @@ sections:
         image: public/assets/images/fedora-chat-plus-element.png
         link:
           text: Chat Now
+          url: https://chat.fedoraproject.org/#/welcome
       - title: Mailing List
         description: The Fedora IoT Working Group sends meeting agendas and minutes and
           has discussions on their mailing list at iot@lists.fedoraproject.org.
         link:
           text: Visit Now
+          url: https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/
         image: public/assets/images/hyperkitty-plus-logo.png
   - sectionTitle: Ways to get involved
     content:
