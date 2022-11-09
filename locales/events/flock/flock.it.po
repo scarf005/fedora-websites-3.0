@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 22:00+0000\n"
-"PO-Revision-Date: 2022-11-02 16:19+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/flock-to-fedora/sv/>\n"
-"Language: sv\n"
+"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"PO-Revision-Date: 2022-11-09 21:38+0000\n"
+"Last-Translator: Nathan <nathan95@live.it>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/flock-to-fedora/it/>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "flock"
@@ -21,27 +21,25 @@ msgstr "flock"
 
 #: title
 msgid "Flock To Fedora"
-msgstr "Flock till Fedora"
+msgstr "Flock di Fedora"
 
 #: description
 msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
-msgstr "Fedora projektets konferans, Augusti 5-7, 2023\n"
+msgstr "La Conferenza del Progetto Fedora, 5-7 agosto 2023\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_logo_barcelona.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: header_images-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Register"
-msgstr "Registrera"
+msgstr "Registra"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -51,7 +49,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Calendar"
-msgstr "Kalender"
+msgstr "Calendario"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -61,39 +59,37 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Events"
-msgstr "Evenemang"
+msgstr "Eventi"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_nest_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Virtual"
-msgstr "Virtuell"
+msgstr "Virtuale"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid "A 3 day conference hosted on Hopin.io"
-msgstr "En 3 dagars konferens som äger rum på Hopin.io"
+msgstr "Una conferenza di 3 giorni ospitata su Hopin.io"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Community"
-msgstr "Gemenskap"
+msgstr "Comunità"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
-msgstr "Gemenskapsevenemang som arrangeras runt om i världen"
+msgstr "Eventi comunitari ospitati in tutto il mondo"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Explore the latest in Open Source"
-msgstr "Utforska det senaste inom öppen källkod"
+msgstr "Esplora le ultime novità dell'Open Source"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Workshops"
@@ -104,56 +100,54 @@ msgid ""
 "Workshops and hackfests offer opportunities for active learning and "
 "collaboration."
 msgstr ""
-"Workshops och hackfester erbjuder möjligheter till aktivt lärande och "
-"samarbete."
+"Workshop e hackfest offrono opportunità di apprendimento e collaborazione."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_workshops_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
-msgstr "Sessioner"
+msgstr "Sessioni"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_sessions_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Presentations that showcase the work done in Fedora and planning for the "
 "future."
 msgstr ""
-"Presentationer som visar upp arbetet som gjorts i Fedora och planering för "
-"framtiden."
+"Presentazioni che illustrano il lavoro svolto in Fedora e la pianificazione "
+"per il futuro."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
-msgstr "Sociala evenemang"
+msgstr "Eventi Social"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_socialevents_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
 msgstr ""
+"Manifestazioni informali, facilitate e interattive per incontrare e "
+"socializzare con i Fedorans."
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
-msgstr ""
+msgstr "Guarda i video degli eventi passati"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "What to expect"
-msgstr "Vad du kan förvänta dig"
+msgstr "Cosa aspettarsi"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -166,13 +160,13 @@ msgid ""
 "the community plans and showcases the strategy and work on the project. "
 "Check out the recordings from previous years of Flock and Nest."
 msgstr ""
-"Flock är en årlig konferens för bidragsgivare till Fedora Linux. Det är där "
-"gemenskapen planerar och visar upp strategi och arbetet med projektet. Kolla "
-"in inspelningarna från tidigare år av Flock och Nest."
+"Flock è una conferenza annuale per i collaboratori di Fedora Linux. È il "
+"luogo in cui la comunità pianifica e presenta la strategia e il lavoro sul "
+"progetto. Guardate le registrazioni degli anni precedenti di Flock e Nest."
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
-msgstr "En hybridupplevelse"
+msgstr "Un esperienza ibrida"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -181,20 +175,19 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
-"blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
-"för att göra den mer tillgänglig för vår gemenskap."
+"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
+"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
+"di Flock per renderlo più accessibile alla nostra comunità."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
 msgid "July 1 - 31 2023"
-msgstr "Juli 1-31 2023"
+msgstr "1-31 Luglio 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_logo_mini.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
 msgctxt "sections->[3]->content->[0]->description"
@@ -203,20 +196,19 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
-"blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
-"för att göra den mer tillgänglig för vår gemenskap."
+"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
+"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
+"di Flock per renderlo più accessibile alla nostra comunità."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
 msgid "July 1 - 31 2023"
-msgstr "Juli 1-31 2023"
+msgstr "1-31 Luglio 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/flock_nest_logo_mini.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -224,13 +216,13 @@ msgid ""
 "Flock. Now it exists as a virtual option for those who cannot attend in "
 "person. Making Flock accessible for everyone!"
 msgstr ""
-"Under Covid-19-pandemin skapade vi Nest som ett virtuellt alternativ till "
-"Flock. Nu finns det som ett virtuellt alternativ för dem som inte kan delta "
-"personligen. Gör Flock tillgängligt för alla!"
+"Durante la pandemia di Covid-19, abbiamo creato Nest come alternativa "
+"virtuale a Flock. Ora esiste come opzione virtuale per coloro che non "
+"possono partecipare di persona. Rendendo Flock accessibile a tutti!"
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Interested in hosting your own event?"
-msgstr "Intresserad av att arrangera ditt eget evenemang?"
+msgstr "Siete interessati ad ospitare un vostro evento?"
 
 #: sections-%3E[4]-%3EsectionDescription
 msgid ""
@@ -240,15 +232,21 @@ msgid ""
 "Council will help support your initiative with financial and organizating "
 "aid. Click below to set up a Hatch! Deadline for submissions is May 29."
 msgstr ""
+"1 - 31 luglio 2023\n"
+"Nel mese che precede il Flock, i Fedorans sono incoraggiati a organizzare "
+"eventi comunitari locali. Stabilite il formato e l'argomento di vostra "
+"scelta. Il Consiglio Fedora sosterrà la vostra iniziativa con aiuti "
+"finanziari e organizzativi. Clicca qui sotto per organizzare un evento! Il "
+"termine ultimo per la presentazione è il 29 maggio."
 
 #: sections-%3E[5]-%3EsectionTitle
 msgid "We are Fedora"
-msgstr "Vi är Fedora"
+msgstr "Noi siamo Fedora"
 
 #: sections-%3E[5]-%3Eimage
 #, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
-msgstr "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[5]-%3EsectionDescription
 msgid ""
@@ -256,16 +254,19 @@ msgid ""
 "open source software built by inclusive, welcoming, and open-minded "
 "communities. Stay connected during Flock through the following channels."
 msgstr ""
+"Il Fedora Project immagina un mondo in cui tutti possano beneficiare di "
+"software libero e open source costruito da comunità inclusive, accoglienti e "
+"di mentalità aperta. Rimanete in contatto durante il Flock attraverso i "
+"seguenti canali."
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Etitle
 msgid "Discussions"
-msgstr "Diskussioner"
+msgstr "Discussioni"
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/discussions_icon.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -273,9 +274,9 @@ msgid ""
 "Notifications. <b><a href=\"https://discussion.fedoraproject.org/\">Check is "
 "out here</a></b>."
 msgstr ""
-"Använd vårat forum Fedora-diskussioner för att hålla dig uppdaterad om "
-"flockmeddelanden. <b><a href=\"https://discussion.fedoraproject.org/\">Kolla "
-"in det här</a></b>."
+"Utilizzate la nostra bacheca Fedora Discussions per rimanere aggiornati "
+"sulle notifiche di Flock. <b><a href=\"https://discussion.fedoraproject.org/"
+"\"> Controlla qui</a></b>."
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Etitle
 msgid "Twitter"
@@ -283,9 +284,8 @@ msgstr "Twitter"
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/twitter_icon.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -293,19 +293,18 @@ msgid ""
 "platforms. Follow <b><a href=\"https://twitter.com/fedora\">@fedora</a></b> "
 "on Twitter for updates."
 msgstr ""
-"Använd hashtaggarna <b>#NestWithFedora</b> på dina föredragna sociala "
-"medieplattformar. Följ <b><a href=\"https://twitter.com/fedora\""
-">@fedora</a></b> på Twitter för uppdateringar."
+"Usa il <b>#NestWithFedora</b> hashtag sulle vostre piattaforme di social "
+"media preferite. Segui<b><a href=\"https://twitter.com/fedora\">@fedora</a></"
+"b> su Twitter su updates."
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Etitle
 msgid "Matrix & IRC"
-msgstr "Matrix & IRC"
+msgstr "Matrix e IRC"
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/matrix_icon.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
@@ -313,19 +312,18 @@ msgid ""
 "chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock\""
 ">#fedora-flock</a></b> to chat on Matrix or IRC."
 msgstr ""
-"Vår huvudsakliga IRC-kanal för evenemanget är <b>#fedora-flock</b> på "
-"<b>libera.chat</b>. Gå med i <b><a href=\"https://web.libera.chat/?channels"
-"=#fedora-flock\">#fedora-flock</a></b> för att chatta på Matrix eller IRC."
+"Il nostro canale IRC principale per gli eventi è <b>#fedora-flock</b> su "
+"<b>libera.chat</b>. Entra <b><a href=\"https://web.libera.chat/?channels"
+"=#fedora-flock\">#fedora-flock</a></b> per chattare nel Matrix o IRC."
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Etitle
 msgid "Ask Fedora"
-msgstr "Fråga Fedora"
+msgstr "Ak Fedora"
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/ask_fedora_icon.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
@@ -333,20 +331,19 @@ msgid ""
 ">community forum</a></b> for support and help with frequently asked "
 "questions."
 msgstr ""
-"Ny till Fedora? Kolla in vårt <b><a href=\"https://ask.fedoraproject.org/\""
-">gemenskapsforum</a></b> för support och hjälp med vanliga frågor."
+"Nuovo in Fedora? Guarda qui<b> <a href=\"https://ask.fedoraproject.org/\""
+">Forum della comunità </a></b>Per supporto e domande frequent"
 
 #: sections-%3E[6]-%3EsectionTitle
 msgid "Our Sponsors"
-msgstr "Våra sponsorer"
+msgstr "I nostri sponsor"
 
 #: sections-%3E[6]-%3EsectionDescription
 msgid ""
 "Thank you to our sponsors, supporting this event is one of the ways that "
 "they contribute to open source."
 msgstr ""
-"Tack till våra sponsorer, att stödja detta evenemang är ett av sätten att de "
-"bidrar till öppen källkod."
+"Grazie ai nostri sponsor, che contribuiscono al supporto dell'open source."
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Ename
 msgid "Red Hat"
@@ -354,13 +351,12 @@ msgstr "Red Hat"
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Edescription
 msgid "platinium"
-msgstr "platinium"
+msgstr "Platino"
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Ename
 msgid "Lenovo"
@@ -368,14 +364,13 @@ msgstr "Lenovo"
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[6]->content->[1]->description"
 msgid "gold"
-msgstr "guld"
+msgstr "oro"
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Ename
 msgid "AlmaLinux"
@@ -383,14 +378,13 @@ msgstr "AlmaLinux"
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[6]->content->[2]->description"
 msgid "gold"
-msgstr "guld"
+msgstr "oro"
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Ename
 msgid "openSuse"
@@ -398,18 +392,17 @@ msgstr "openSuse"
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/opensuse_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[6]->content->[3]->description"
 msgid "silver"
-msgstr "silver"
+msgstr "Argento"
 
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Ename
 msgid "some Other Sponsor"
-msgstr "någon annan sponsor"
+msgstr "Altri Sponsor"
 
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Eimage
 #, read-only
@@ -420,11 +413,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Edescription
 msgctxt "sections->[6]->content->[4]->description"
 msgid "silver"
-msgstr "silver"
+msgstr "argento"
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Ename
 msgid "another Cool Sponsor"
-msgstr "ännu en cool sponsor"
+msgstr "un altro Sponsor Cool"
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Eimage
 #, read-only
@@ -437,7 +430,7 @@ msgctxt "sections->[6]->content->[5]->description"
 "sections->[6]->content->[5]->description"
 "sections->[6]->content->[5]->description"
 msgid "bronze"
-msgstr "brons"
+msgstr "Bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Ename
 msgid "GitLab"
@@ -445,14 +438,13 @@ msgstr "GitLab"
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Edescription
 msgctxt "sections->[6]->content->[6]->description"
 msgid "bronze"
-msgstr "brons"
+msgstr "Bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Ename
 msgid "datto"
@@ -460,29 +452,27 @@ msgstr "datto"
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/datto_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Edescription
 msgctxt "sections->[6]->content->[7]->description"
 msgid "bronze"
-msgstr "brons"
+msgstr "bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Ename
 msgid "daskeyboard"
-msgstr "das keyboard"
+msgstr "daskeyboard"
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Edescription
 msgctxt "sections->[6]->content->[8]->description"
 msgid "bronze"
-msgstr "brons"
+msgstr "bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Ename
 msgid "Gnome"
@@ -490,9 +480,8 @@ msgstr "Gnome"
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/Gnome_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Edescription
 msgctxt "sections->[6]->content->[9]->description"
@@ -507,9 +496,8 @@ msgstr "TuxDigital"
 
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Edescription
 msgctxt "sections->[6]->content->[10]->description"
@@ -522,9 +510,8 @@ msgstr "KDE"
 
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/KDE_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Edescription
 msgctxt "sections->[6]->content->[11]->description"
@@ -537,9 +524,8 @@ msgstr "opensource.com"
 
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Eimage
 #, read-only
-#, fuzzy
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Edescription
 msgctxt "sections->[6]->content->[12]->description"
@@ -548,11 +534,11 @@ msgstr "media"
 
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
-msgstr "Fördelar med att sponsra Flock"
+msgstr "Vantaggi della sponsorizzazione del Flock"
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "Brand Exposure"
-msgstr "Varumärkesexponering"
+msgstr "Brand Exposure"
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -560,25 +546,26 @@ msgid ""
 "sponsors on social media. Your brand will be distributed globally in our "
 "swag bag."
 msgstr ""
-"Sponsorer annonseras ut på flera ställen under Flock. Vi poster även om "
-"sponsorer på sociala medier. Ditt varumärke kommer att distribueras globalt "
-"i vårt swag paket."
+"Gli sponsor sono pubblicizzati in diversi punti del Flock. Pubblichiamo "
+"inoltre informazioni sugli sponsor sui social media. Il vostro marchio sarà "
+"distribuito a livello globale nella nostra borsa swag."
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
 msgid "Spotlight"
-msgstr "Uppmärksamhet"
+msgstr "Spotlight"
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Our tierd sponsorship levels will all give you great visibility at Flock. "
 "Your booth will be showcased on the Expo page to maximize engagement."
 msgstr ""
-"Våra sponsringsnivåer kommer alla att ge dig stor synlighet under Flock. Din "
-"monter kommer att visas på Expo-sidan för att maximera engagemanget."
+"I nostri livelli di sponsorizzazione vi garantiranno una grande visibilità "
+"al Flock. Il vostro stand sarà esposto nella pagina dell'Expo per "
+"massimizzare il coinvolgimento."
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "Networking"
-msgstr "Nätverkande"
+msgstr "Collegamento di rete"
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
@@ -586,86 +573,19 @@ msgid ""
 "and use software daily. Engage with our vibrant community in sessions and "
 "social hours."
 msgstr ""
-"Flock lockar hundratals fantastiska medlemmar av öppen källkod som arbetar "
-"med och använder programvara dagligen. Engagera oss i vår livfulla gemenskap "
-"i sessioner och sociala timmar."
+"Flock attira centinaia di incredibili membri della comunità open source che "
+"lavorano e usano il software ogni giorno. Partecipate alla nostra vivace "
+"comunità durante le sessioni e le ore di socializzazione."
 
 #: sections-%3E[7]-%3Econtent-%3E[3]-%3Etitle
 msgid "Booths"
-msgstr "Stånd"
+msgstr "Stand"
 
 #: sections-%3E[7]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "All sponsor booths include a video, customizable experience, chat, and "
 "social media engagement. Click below to learn more."
 msgstr ""
-"Alla sponsorstånd inkluderar en video, anpassningsbar upplevelse, chatt och "
-"engagemang i sociala medier. Klicka nedan för att lära dig mer."
-
-#~ msgid ""
-#~ "Flock to Fedora is the annual contributor conference for the Fedora Project. "
-#~ "It has a virtual version called Nest."
-#~ msgstr ""
-#~ "Flock till Fedora är den årliga konferensen för folk som bidrar till Fedora-"
-#~ "projektet. Den har även en virtuell version som heter Nest."
-
-#~ msgid "The Fedora Project Conference"
-#~ msgstr "Fedora-projektets konferens"
-
-#~ msgid "August 5 - 7, 2023"
-#~ msgstr "5-7 Augusti, 2023"
-
-#~ msgid "fp-blue"
-#~ msgstr "fp-blue"
-
-#~ msgid "True"
-#~ msgstr "True"
-
-#~ msgid ""
-#~ "The Fedora Project envisions a world where everyone can benefit from free "
-#~ "and open source software built by inclusive, welcoming, and open-minded "
-#~ "communities."
-#~ msgstr ""
-#~ "Fedora projektet föreställer sig en värld där alla kan dra nytta av fri "
-#~ "programvara med öppen källkod byggd av inkluderande, välkomnande och "
-#~ "fördomsfria gemenskaper."
-
-#, read-only
-#~ msgid "public/assets/images/fedora-33-night.jpg"
-#~ msgstr "public/assets/images/fedora-33-night.jpg"
-
-#, read-only
-#~ msgid "public/assets/images/nest-white-logo.png"
-#~ msgstr "public/assets/images/nest-white-logo.png"
-
-#, read-only
-#~ msgid "public/assets/images/hatch-white-logo.png"
-#~ msgstr "public/assets/images/hatch-white-logo.png"
-
-#~ msgid ""
-#~ "Use our messaging board Fedora Discussions to stay up to date on Flock "
-#~ "Notifications. Check is out here."
-#~ msgstr ""
-#~ "Använd vårat forum Fedora diskussioner för att hålla dig uppdaterad om "
-#~ "flockmeddelanden. Kolla in det här."
-
-#~ msgid ""
-#~ "Use the #NestWithFedora hashtags on your preferred social media platforms. "
-#~ "Follow @fedora on Twitter for updates."
-#~ msgstr ""
-#~ "Använd #NestWithFedora hashtags på dina föredragna sociala medieplattformar. "
-#~ "Följ @fedora på Twitter för uppdateringar."
-
-#~ msgid ""
-#~ "Our main IRC channel for the event is #fedora-flock on libera.chat. Join "
-#~ "#fedora-flock to chat on Matrix or IRX."
-#~ msgstr ""
-#~ "Vår huvudsakliga IRC-kanal för evenemanget är #fedora-flock på libera.chat. "
-#~ "Gå med i #fedora-flock för att chatta på Matrix eller IRC."
-
-#~ msgid ""
-#~ "New to Fedora? Check our community forum for support and help with "
-#~ "frequently asked questions."
-#~ msgstr ""
-#~ "Ny till Fedora? Kolla vårt gemenskapsforum för support och hjälp med vanliga "
-#~ "frågor."
+"Tutti gli stand degli sponsor includono un video, un'esperienza "
+"personalizzabile, una chat e un coinvolgimento nei social media. Cliccate "
+"qui sotto per saperne di più."

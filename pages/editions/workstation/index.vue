@@ -10,23 +10,15 @@ if (data._value === null) {
   }));
   data._value = data._value[data._value.length - 1];
 }
-useHead({
-  title: data._value.title + " | The Fedora Project",
-  meta: [
-    {
-      name: "description",
-      content: data._value.description,
-    },
-  ],
-});
+useContentHead(data);
 </script>
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
       :items="[
-        { name: 'Download', link: '/download' },
-        { name: 'Community', link: '#' },
+        { name: 'Download', link: 'download' },
+        { name: 'Community', link: 'community' },
         { name: 'Help', link: '#' },
       ]"
     />
@@ -115,11 +107,11 @@ useHead({
         <h3 class="mb-8 text-center font-bold text-fp-blue">
           {{ data.sections[3].sectionTitle }}
         </h3>
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" disableDots="true">
+        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
           <FpListItem
             v-for="item in data.sections[3].content"
             v-bind="item"
-            images="true"
+            :images="true"
             buttons="true"
           />
         </FpList>

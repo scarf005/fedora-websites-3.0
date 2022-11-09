@@ -7,7 +7,7 @@
     </header>
     <section class="large-section">
       <header class="my-8 flex justify-center text-center">
-        <font-awesome-icon icon="fab fa-fedora" class="mr-4 text-5xl" />
+        <Icon name="fa6-brands:fedora" class="mr-4 text-5xl" />
         <h2>Heading Text</h2>
       </header>
       <div class="mx-auto">
@@ -105,31 +105,30 @@
       <header class="section-header">
         <h2>Icons</h2>
         <p>
-          Font Awesome Icons are hosted through the
-          <a href="https://fontawesome.com/docs/web/use-with/vue/use-with"
-            >Font Awesome Nuxt Plugin</a
-          >. It is configured in the <code>~/plugins/fontawesome.js</code> file.
+          We are now using the
+          <a href="https://github.com/nuxt-modules/icon">Nuxt Icon</a> module
+          for our icons.
         </p>
       </header>
       <div class="my-4 flex">
         <div class="mr-8 flex max-w-lg flex-wrap gap-4">
           <p>
+            Apply a fontawesome icon using the following syntax
             <em
-              >Apply a fontawesome icon using this syntax (just remember to use
-              proper brackets, they are not being used here otherwise vue would
-              render the icon)</em
+              >just remember to surround the code in angle brackets, they are
+              not being used here otherwise vue would render the icon</em
             >
           </p>
           <pre>
               <code>
-                font-awesome-icon icon="fa-solid fa-bars"
+                Icon name="fa6-brands:fedora"
               </code>
             </pre>
         </div>
         <div class="mb-8 flex flex-col gap-4 text-5xl md:gap-8">
-          <font-awesome-icon icon="fa-solid fa-user-secret" />
-          <font-awesome-icon icon="fa-brands fa-fedora" />
-          <font-awesome-icon icon="fa-regular fa-chess-rook" />
+          <Icon name="fa6-solid:user-secret" />
+          <Icon name="fa6-brands:fedora" />
+          <Icon name="fa6-regular:chess-rook" />
         </div>
       </div>
     </section>

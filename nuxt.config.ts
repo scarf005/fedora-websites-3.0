@@ -6,28 +6,17 @@ const base = process?.env?.CI_PAGES_URL
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   components: [
     "~/components/",
     "~/components/layout",
     "~/components/ui",
     "~/components/utilities",
   ],
-  build: {
-    transpile: [
-      "@fortawesome/fontawesome-svg-core",
-      "@fortawesome/free-solid-svg-icons",
-      "@fortawesome/free-regular-svg-icons",
-      "@fortawesome/free-brands-svg-icons",
-      "@fortawesome/vue-fontawesome",
-    ],
-  },
-  buildModules: ["@pinia/nuxt"],
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxtjs/i18n",
-    "nuxt-icons",
+    "nuxt-icon",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
@@ -42,9 +31,11 @@ export default defineNuxtConfig({
       fallbackLocale: "en",
     },
   },
-  buildAssetsDir: base + "/_nuxt/",
   app: {
     baseURL: base,
     buildAssetsDir: base + "/_nuxt/",
+    head: {
+      titleTemplate: "%s | The Fedora Project",
+    },
   },
 });

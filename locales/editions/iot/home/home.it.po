@@ -3,29 +3,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 22:00+0000\n"
-"PO-Revision-Date: 2022-11-02 16:19+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/editions-iot/sv/>\n"
-"Language: sv\n"
+"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"PO-Revision-Date: 2022-11-09 21:38+0000\n"
+"Last-Translator: Fernandez Alonso Alberto Mario <albialonso7@icloud.com>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editions-iot/it/>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "index"
-msgstr "index"
+msgstr "indice"
 
 #: title
 msgid "The solid foundation for IoT ecosystems"
-msgstr "Den solida grunden för IoT-ekosystem"
+msgstr ""
 
 #: description
 msgid "A lightweight yet powerful and scalable OS"
-msgstr "Ett lättviktigt men ändå kraftfullt och skalbart operativsystem"
+msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -39,7 +39,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download Now"
-msgstr "Ladda ned nu"
+msgstr ""
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -48,7 +48,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr "Recenserad av TechHut"
+msgstr ""
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -57,16 +57,16 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Iot?"
-msgstr "Varför Fedora Iot?"
+msgstr ""
 
 #: sections-%3E[0]-%3Eimages
 msgctxt "sections->[0]->images"
 msgid "public/assets/images/iot_background_why.jpg"
-msgstr "public/assets/images/iot_background_why.jpg"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Leading Technology"
-msgstr "Ledande teknologi"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgctxt "sections->[0]->content->[0]->description"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Container Based"
-msgstr "Behållarbaserad"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[0]->content->[1]->description"
@@ -88,22 +88,22 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
-msgstr "Ekosystem med öppen källkod"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[0]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
-msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Flexible"
-msgstr "Flexibel"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[0]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr "Det finns en mängd olika installationsmetoder som stöds."
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Edge Support"
@@ -114,33 +114,29 @@ msgid ""
 "Use Fedora IoT to support your workloads that are computed outside of the "
 "traditional datacenter."
 msgstr ""
-"Använd Fedora IoT för att stödja dina arbetsbelastningar som beräknas "
-"utanför det traditionella datacentret."
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr "Få ut det mesta av din enhet"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
-"Fedora samarbetar med hårdvaruleverantörer för att tillhandahålla utmärkt "
-"hårdvarustöd på en rad enheter."
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Platforms Tested against IoT"
-msgstr "Plattformar testade för IoT"
+msgstr ""
 
 #: sections-%3E[1]-%3Eimages
 msgctxt "sections->[1]->images"
 msgid "public/assets/images/iot_background_why.jpg"
-msgstr "public/assets/images/iot_background_why.jpg"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "arm Systemready"
-msgstr "arm Systemready"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -149,7 +145,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Pine64"
-msgstr "Pine64"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -158,7 +154,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "SolidRun"
-msgstr "SolidRun"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -167,7 +163,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Etitle
 msgid "nVidia"
-msgstr "nVidia"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -176,11 +172,11 @@ msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Built By You"
-msgstr "Byggt för dig"
+msgstr ""
 
 #: sections-%3E[2]-%3Eimages
 msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -198,7 +194,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr "Rapportera & diskutera problem"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgctxt "sections->[2]->content->[0]->description"
@@ -206,12 +202,10 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
-"Byggd på den senaste tekniken och förbättringarna som öppen källkod har att "
-"erbjuda."
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr "Chatta med teamet"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[2]->content->[1]->description"
@@ -222,101 +216,19 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr "Gå med i e-postlistan"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[2]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
-msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr "Närvara vid ett möte"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr "Det finns en mängd olika installationsmetoder som stöds."
-
-#~ msgid "Fedora IoT Index"
-#~ msgstr "Fedora IoT Index"
-
-#~ msgid "fa-youtube"
-#~ msgstr "fa-youtube"
-
-#~ msgid "WHY FEDORA IOT?"
-#~ msgstr "Varför Fedora IoT?"
-
-#~ msgctxt "section->[0]->content->list->[0]->description"
-#~ "section->[0]->content->list->[0]->description"
-#~ msgid ""
-#~ "Built on the latest technologies and enhancements that open-source has to "
-#~ "offer."
-#~ msgstr ""
-#~ "Byggd med den senaste tekniken och förbättringarna som öppen källkod har att "
-#~ "erbjuda."
-
-#~ msgctxt "section->[0]->content->list->[2]->description"
-#~ "section->[0]->content->list->[2]->description"
-#~ msgid ""
-#~ "Everything is supported by a totally free and open-source Fedora ecosystem."
-#~ msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
-
-#~ msgctxt "section->[0]->content->list->[3]->description"
-#~ "section->[0]->content->list->[3]->description"
-#~ msgid "There are a wide variety of supported installation methods."
-#~ msgstr "Det finns en mängd olika installationsmetoder som stöds."
-
-#~ msgctxt "section->[1]->content->list->[0]->description"
-#~ msgid ""
-#~ "Built on the latest technologies and enhancements that open-source has to "
-#~ "offer."
-#~ msgstr ""
-#~ "Byggd på den senaste tekniken och förbättringarna som öppen källkod har att "
-#~ "erbjuda."
-
-#~ msgctxt "section->[1]->content->list->[2]->description"
-#~ msgid ""
-#~ "Everything is supported by a totally free and open-source Fedora ecosystem."
-#~ msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
-
-#~ msgctxt "section->[1]->content->list->[3]->description"
-#~ msgid "There are a wide variety of supported installation methods."
-#~ msgstr "Det finns en mängd olika installationsmetoder som stöds."
-
-#~ msgid ""
-#~ "The Fedora Project envisions a world where everyone benefits from free and "
-#~ "open source software built by inclusive, welcoming, and open-minded "
-#~ "communities."
-#~ msgstr ""
-#~ "Fedoraprojektet föreställer sig en värld där alla drar nytta av fri och "
-#~ "öppen källkod byggd av inkluderande, välkomnande och fördomsfria gemenskaper."
-
-#~ msgid ""
-#~ "Fedora IoT is created by a team in the Fedora community called the IoT "
-#~ "Working Group. It is comprised of official members who have decision making "
-#~ "powers, as well as other contributors. Learn more on the IoT Working Group "
-#~ "website."
-#~ msgstr ""
-#~ "Fedora IoT skapas av ett team i Fedora-communityt som kallas IoT Working "
-#~ "Group. Den består av officiella medlemmar som har beslutsfattande "
-#~ "befogenheter, såväl som andra bidragsgivare. Läs mer på IoT Working Groups "
-#~ "webbplats."
-
-#~ msgctxt "section->[2]->content->list->[0]->description"
-#~ msgid ""
-#~ "Built on the latest technologies and enhancements that open-source has to "
-#~ "offer."
-#~ msgstr ""
-#~ "Byggd på den senaste tekniken och förbättringarna som öppen källkod har att "
-#~ "erbjuda."
-
-#~ msgctxt "section->[2]->content->list->[2]->description"
-#~ msgid ""
-#~ "Everything is supported by a totally free and open-source Fedora ecosystem."
-#~ msgstr "Allt stöds av ett helt gratis Fedora-ekosystem med öppen källkod."
-
-#~ msgctxt "section->[2]->content->list->[3]->description"
-#~ msgid "There are a wide variety of supported installation methods."
-#~ msgstr "Det finns en mängd olika installationsmetoder som stöds."
+msgstr ""

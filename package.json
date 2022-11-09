@@ -5,7 +5,8 @@
     "dev": "bash cms_gen_yml.sh && nuxt dev",
     "generate": "bash cms_gen_yml.sh && nuxt generate",
     "preview": "nuxt preview",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
@@ -16,18 +17,17 @@
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "nuxt": "3.0.0-rc.11",
+    "nuxt-icon": "^0.1.7",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/vue-fontawesome": "^3.0.1",
-    "@nuxtjs/i18n": "^8.0.0-beta.1",
-    "@pinia/nuxt": "^0.3.0",
-    "nuxt-icons": "^2.0.2"
+    "@nuxtjs/i18n": "^8.0.0-beta.1"
+  },
+  "lint-staged": {
+    "*.{vue,yml,js}": "prettier --write"
   }
 }

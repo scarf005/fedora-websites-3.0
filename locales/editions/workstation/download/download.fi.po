@@ -3,37 +3,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 22:00+0000\n"
-"PO-Revision-Date: 2022-11-02 16:19+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/editionsworkstationdownload/sv/>\n"
-"Language: sv\n"
+"POT-Creation-Date: 2022-10-27 19:14+0000\n"
+"PO-Revision-Date: 2022-11-06 17:17+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationdownload/fi/>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "download"
-msgstr "ladda ner"
+msgstr "lataa"
 
 #: title
 msgid "Download Fedora Workstation 37."
-msgstr "Ladda ner Fedora Workstation 37."
+msgstr "Lataa Fedora Workstation 37."
 
 #: description
 msgid ""
 "We're so glad you've decided to give Fedora Workstation a try. We know "
 "you'll love it."
 msgstr ""
-"Vi är så glada att du har bestämt dig för att ge Fedora Workstation ett "
-"försök. Vi vet att du kommer att älska det."
+"Olemme iloisia, että päätit antaa Fedora Workstationille mahdollisuuden. "
+"Tiedämme, että tulet pitämään siitä."
 
 #: links-%3E[0]-%3Etext
 msgid "Release Notes"
-msgstr ""
+msgstr "Julkaisutiedot"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -42,7 +42,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Installation Guide"
-msgstr "Installationsguide"
+msgstr "Asennusopas"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -51,7 +51,7 @@ msgstr ""
 
 #: links-%3E[2]-%3Etext
 msgid "Community Support"
-msgstr "Gemenskaps Support"
+msgstr "Yhteisön tuki"
 
 #: links-%3E[2]-%3Eurl
 #, read-only
@@ -61,7 +61,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Download Options"
-msgstr "Nerladdningsalternativ"
+msgstr "Latausvaihtoehdot"
 
 #: sections-%3E[0]-%3EsectionDescription
 msgctxt "sections->[0]->sectionDescription"
@@ -75,15 +75,15 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "On Windows or macOS?"
-msgstr "På Windows eller macOS?"
+msgstr "Käytätkö Windowsia tai MacOS:ia?"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Get started by using Fedora Media Writer, which makes it super easy to give "
 "Fedora a try."
 msgstr ""
-"Kom igång genom att använda Fedora MediaSkrivare, vilket gör det superenkelt "
-"att ge Fedora ett försök."
+"Käytä Fedora Media Writer -sovellusta, jonka avulla pääset kokeilemaan "
+"Fedoraa vaivatta."
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -92,36 +92,36 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "On Linux? Or just want an ISO file?"
-msgstr "På Linux? Eller bara vill ha en ISO fil?"
+msgstr "Käytätkö Linuxia tai haluatko vain ISO-tiedoston?"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Not sure how to use these files? [Learn More](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
-"Är du osäker på hur man använder dessa filer? [Läs mer](https://docs."
+"Etkö ole varma kuinka näitä tiedostoja käytetään? [Lisätietoja](https://docs."
 "fedoraproject.org/en-US/quick-docs/"
 "creating-and-using-a-live-installation-image/)"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
-msgstr "Säkerhet, installationer, bärbara datorer förinstallerade"
+msgstr "Turvallisuus, asennukset, esiladatut kannettavat tietokoneet"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
-msgstr "Vi tar säkerhet seriöst"
+msgstr "Suhtaudumme vakavasti tietoturvaan"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Once you have downloaded an image, be sure to verify it for both security "
 "and integrity. "
 msgstr ""
-"När du har laddat ner en avbild, se till att verifiera den för både säkerhet "
-"och integritet. "
+"Kun olet ladannut levykuvan, vahvista sen sisältö varmistuaksesi "
+"turvallisuudesta ja eheydestä. "
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Verify your download"
-msgstr "Verifiera din nedladdning"
+msgstr "Vahvista latauksesi"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -130,7 +130,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "But wait! There's more."
-msgstr "Men vänta! Det finns mer."
+msgstr "Odota, on vielä muutakin."
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -138,21 +138,22 @@ msgid ""
 "downloads here](https://alt.fedoraproject.org/), featuring secondary "
 "architectures and network-based installation images."
 msgstr ""
-"Behöver du något lite annorlunda? [Kolla in våra andra Fedora Workstation-"
-"nedladdningar här](https://alt.fedoraproject.org/), för sekundära "
-"arkitekturer och nätverksbaserade installationsavbilder."
+"Tarvitsetko jotain hieman erilaista? [Katso muut Fedora Workstation -"
+"lataukset täältä](https://alt.fedoraproject.org/), jotka sisältävät "
+"toissijaisia arkkitehtuureja ja verkkopohjaisia asennuslevykuvia."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Laptops pre-loaded with Fedora"
-msgstr "Bärbara datorer förinstallerade med Fedora"
+msgstr "Kannettavat tietokoneet, joissa on esiasennettu Fedora"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "We've partnered with companies like Lenovo to bring you laptops pre-loaded "
 "with Fedora that include fully-supported hardware components. "
 msgstr ""
-"Vi har samarbetat med företag som Lenovo för att ge dig bärbara datorer "
-"förinstallerade med Fedora som inkluderar fullt stödda hårdvarukomponenter. "
+"Olemme tehneet yhteistyötä Lenovon kaltaisten yritysten kanssa tarjotaksemme "
+"sinulle kannettavia tietokoneita, joissa on esiasennettu Fedora ja jotka "
+"sisältävät täysin tuetut laitteistokomponentit. "
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -161,7 +162,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "Explore Fedora laptops"
-msgstr "Utforska Fedora bärbara datorer"
+msgstr "Tutustu Fedoran kannettaviin tietokoneisiin"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -170,7 +171,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Learn more about Fedora Media Writer"
-msgstr "Lär dig mer om Fedora MediaSkrivare"
+msgstr "Lisätietoja Fedora Media Writer -sovelluksesta"
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -183,14 +184,22 @@ msgid ""
 "changes to your computer. Once you are hooked, installing it to your hard "
 "drive is a matter of clicking a few buttons*. "
 msgstr ""
+"Fedoran käyttäminen on helpompaa kuin koskaan. Tarvitset vain 2 Gt:n USB-"
+"muistitikun ja Fedora Media Writerin.\n"
+"\n"
+"Kun Fedora Media Writer on asennettu, se määrittää flash-asemasi käyttämään "
+"Fedora Workstationin \"live\"-versiota, mikä tarkoittaa, että voit "
+"käynnistää sen flash-asemaltasi ja kokeilla sitä heti tekemättä pysyviä "
+"muutoksia tietokoneellesi. Kun olet valmis, sen asentaminen kiintolevyllesi "
+"vaatii vain muutaman painikkeen napsauttamisen*. "
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run "
 "successfully. Double those amounts is recommended. "
 msgstr ""
-" * Fedora kräver minst 20 GB disk, 2 GB RAM, för att installera och köra "
-"framgångsrikt. Dubbla dessa mängder rekommenderas. "
+" * Fedoran asennus ja käyttö vaatii vähintään 20 gigatavua levytilaa sekä "
+"kaksi gigatavua keskusmuistia. Suositellaan tuplamäärää. "
 
 #: sections-%3E[2]-%3Eimages
 msgid "public/assets/images/monitor-2.png"
@@ -198,7 +207,7 @@ msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Officially-Supported Fedora Community Spaces"
-msgstr "Officiellt stödda Fedora Gemenskapsområden"
+msgstr "Virallisesti tuetut Fedora-yhteisötilat"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -212,7 +221,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
-msgstr "Fedora diskussion"
+msgstr "Fedora-keskustelu"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -226,7 +235,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
-msgstr "Fedora Chatt"
+msgstr "Fedora Chat"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -240,7 +249,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Etitle
 msgid "Ask Fedora"
-msgstr "Fråga Fedora"
+msgstr "Kysy Fedorasta"
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -255,7 +264,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Community-Maintained Spaces"
-msgstr ""
+msgstr "Yhteisön ylläpitämät tilat"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reddit"
@@ -317,9 +326,7 @@ msgstr ""
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
-msgstr ""
-"Genom att klicka på nedladdningslänken och hämta hem Fedora till din dator, "
-"går du med på att uppfylla följande krav och villkor."
+msgstr "Klikkaamalla ja lataamalla Fedoran, hyväksyt seuraavat käyttöehdot."
 
 #: sections-%3E[5]-%3EsectionDescription
 msgid ""
@@ -342,34 +349,21 @@ msgid ""
 "foreign law requirements applicable to the import, export and use of Fedora "
 "software and technical information."
 msgstr ""
-"Genom att hämta Fedoras programvara bekräftar du att du förstår följande: "
-"Fedoras programvara och tekniska information kan vara föremål för U.S. "
-"Export Administration Regulations (”EAR”) och andra av USA:s och andra "
-"länders lagar och får inte exporteras, återexporteras eller överföras (a) "
-"till något land uppräknat i Country Group E:1 i Supplement No. 1 till del "
-"740 av EAR (för närvarande, Kuba, Iran, Nordkorea, Sudan & Syrien); (b) till "
-"någon förbjuden destination eller till någon slutanvändare som har "
-"förbjudits från att delta i USA:s exporttransaktioner av någon federal "
-"myndighet hos USA:s regering; eller (c) för användning i samband med "
-"designen, utvecklingen eller produktionen av nukleära, kemiska eller "
-"biologiska vapen, eller raketsystem, rymdfarkoster eller sondraketer, eller "
-"obemannade luftfarkost system. Du får inte hämta Fedoras programvara eller "
-"tekniska information om du befinner dig i ett av dessa länder eller på annat "
-"sätt är föremål för dessa begränsningar. Du får inte tillhandahålla Fedoras "
-"programvara eller tekniska information till individer eller organisationer "
-"som befinner sig i ett av dessa länder eller på annat sätt är föremål för "
-"dessa restriktioner. Du är även ansvarig för att följa andra länders lagkrav "
-"som är tillämpliga på importen, exporten och användningen av Fedoras "
-"programvara och tekniska information."
-
-#~ msgid "Fedora Workstation Downloads"
-#~ msgstr "Fedora Workstation Nedladdningar"
-
-#~ msgid "Download Fedora Workstation 36"
-#~ msgstr "Ladda ner Fedora Workstation 36"
-
-#~ msgid "On Windows or Mac?"
-#~ msgstr "På Windows eller Mac?"
-
-#~ msgid "On Linux or just want an ISO File?"
-#~ msgstr "På Linux eller du bara vill ha en ISO-fil?"
+"Lataamalla Fedora-ohjelmiston vahvistat, että ymmärrät kaikki seuraavat "
+"asiat: Fedora-ohjelmisto ja tekniset tiedot saattavat olla Yhdysvaltain "
+"vientihallinnon määräysten (”EAR”) ja muiden Yhdysvaltojen ja ulkomaiden "
+"lakien alaisia, eikä niitä saa viedä, välittää tai siirtää (a) mihinkään EAR:"
+"n osan 740 täydennysosassa 1 lueteltuun maaryhmään E:1 kuuluvaan maahan ("
+"tällä hetkellä Kuuba, Iran, Pohjois-Korea, Sudan ja Syyria); (b) mihin "
+"tahansa kiellettyyn määränpäähän tai loppukäyttäjälle, joille Yhdysvaltain "
+"hallituksen liittovaltion virasto on kieltänyt osallistumasta Yhdysvaltojen "
+"vientitapahtumiin; tai c) käytettäväksi ydinaseiden, kemiallisten tai "
+"biologisten aseiden tai rakettijärjestelmien, avaruusalusten kantorakettien, "
+"luotainrakettien tai miehittämättömien ilma-alusjärjestelmien "
+"suunnittelussa, kehittämisessä tai tuotannossa. Et saa ladata Fedora-"
+"ohjelmistoa tai teknisiä tietoja, jos olet jossakin näistä maista tai muuten "
+"näiden rajoitusten alainen. Et saa toimittaa Fedora-ohjelmistoa tai teknisiä "
+"tietoja henkilöille tai yhteisöille, jotka sijaitsevat jossakin näistä "
+"maista tai joihin muutoin sovelletaan näitä rajoituksia. Olet myös vastuussa "
+"ulkomaisten lakivaatimusten noudattamisesta, joita sovelletaan Fedora-"
+"ohjelmistojen ja teknisten tietojen tuontiin, vientiin ja käyttöön."
