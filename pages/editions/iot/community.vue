@@ -11,13 +11,9 @@ if (data._value === null) {
   data._value = data._value[data._value.length - 1];
 }
 useContentHead(data);
-
-definePageMeta({
-  layout: "community",
-});
 </script>
 <template>
-  <div class="mt-4 border-t-8 border-fp-purple">
+  <main class="mt-4 border-t-8 border-fp-purple">
     <header>
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
@@ -51,24 +47,20 @@ definePageMeta({
             class="m-4 flex flex-col justify-between md:max-w-xs"
           >
             <h3
-              class="mb-2 text-center text-2xl font-semibold text-fp-blue lg:text-start"
+              class="text-center text-2xl font-semibold text-fp-blue lg:text-start"
             >
               {{ card.title }}
             </h3>
             <p
-              class="my-2 mx-auto hidden w-52 break-words text-center text-sm text-fp-gray-darkest sm:block lg:w-80 lg:text-start lg:text-base"
+              class="mx-auto mt-2 hidden w-52 break-words text-center text-sm text-fp-gray-darkest sm:block lg:w-80 lg:text-start lg:text-base"
             >
               {{ card.description }}
             </p>
-            <img
-              :src="card.image"
-              :alt="card.image"
-              class="my-2 mx-auto w-56"
-            />
+            <FpImage :image="card.image" :alt="card.image" class="mx-auto" />
 
             <NuxtLink
               :to="card.link.url"
-              class="my-2 mx-auto flex w-full justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white"
+              class="mx-auto flex w-full justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white"
               >{{ card.link.text }}</NuxtLink
             >
           </article>
@@ -96,5 +88,9 @@ definePageMeta({
         </div>
       </div>
     </section>
-  </div>
+    <!-- Fedora Events -->
+    <EventSection color="text-fp-purple" />
+    <!-- Publication Section -->
+    <PublicationSection />
+  </main>
 </template>

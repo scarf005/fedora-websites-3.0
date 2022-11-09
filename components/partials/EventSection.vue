@@ -22,87 +22,89 @@ let { data } = await useAsyncData(() => {
 });
 </script>
 <template>
-  <section
-    class="container my-12 mx-auto grid grid-cols-2 gap-4 lg:grid-cols-3 xl:gap-8"
-  >
-    <header class="container col-span-2 mx-auto flex flex-col justify-evenly">
-      <!-- Events Header -->
-      <section class="xl-mx-0 mx-8 mb-8 text-center md:text-start">
-        <h2 class="mb-4 xl:text-4xl" :class="color">
-          {{ data.body[0].sectionTitle }}
-        </h2>
-        <p class="text-fp-gray-darkest">
-          {{ data.body[0].sectionDescription }}
-        </p>
-      </section>
-      <!-- Flock Info -->
-      <article class="xl-mx-0 mx-8 mb-8 flex flex-col self-center">
-        <h3 class="text-center text-lg text-fp-blue-dark xl:text-xl">
-          {{ data.body[0].content[0].title }}
-        </h3>
-        <FpImage
-          :image="data.body[0].content[0].image"
-          class="order-first mx-auto w-60 lg:max-w-lg"
-        />
-        <p class="my-0 text-fp-gray-darkest md:my-2">
-          {{ data.body[0].content[0].description }}
-        </p>
-        <div
-          class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest lg:py-3 lg:pl-4"
-        >
-          <p>{{ data.body[0].content[0].link.text }}</p>
-        </div>
-      </article>
-    </header>
-
-    <!-- Colur -->
-    <figure
-      class="col-start-3 row-start-1 hidden gap-4 justify-self-start lg:grid"
-    >
-      <!-- flock sign text -->
-      <p class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium">
-        {{ colurSlogan }}
-      </p>
-      <FpImage
-        :image="data.body[0].content[1].image"
-        class="z-10 col-start-1 row-start-1 w-48 lg:w-60"
-      />
-      <figcaption class="text-center text-xs text-fp-gray-dark">
-        {{ data.body[0].content[1].description }}
-      </figcaption>
-    </figure>
-
-    <!-- Nest and Hatch -->
+  <section>
     <div
-      class="items-between xl-mx-0 col-span-2 mt-6 flex flex-wrap justify-center lg:justify-start"
+      class="container my-12 mx-auto grid grid-cols-2 gap-4 lg:grid-cols-3 xl:gap-8"
     >
-      <article
-        v-for="card in data.body[0].content.slice(3, 5)"
-        :key="card.id"
-        class="container my-4 mx-auto flex w-fit flex-col gap-y-4 md:w-1/2"
-      >
-        <h4 class="text-base text-fp-blue xl:text-lg">
-          {{ card.title }}
-        </h4>
-        <p class="max-w-sm">{{ card.description }}</p>
-        <div class="xl-mx-0 order-first">
-          <FpImage :image="card.image" class="h-16" />
-        </div>
-      </article>
-    </div>
+      <header class="container col-span-2 mx-auto flex flex-col justify-evenly">
+        <!-- Events Header -->
+        <section class="xl-mx-0 mx-8 mb-8 text-center md:text-start">
+          <h2 class="mb-4 xl:text-4xl" :class="color">
+            {{ data.body[0].sectionTitle }}
+          </h2>
+          <p class="text-fp-gray-darkest">
+            {{ data.body[0].sectionDescription }}
+          </p>
+        </section>
+        <!-- Flock Info -->
+        <article class="xl-mx-0 mx-8 mb-8 flex flex-col self-center">
+          <h3 class="text-center text-lg text-fp-blue-dark xl:text-xl">
+            {{ data.body[0].content[0].title }}
+          </h3>
+          <FpImage
+            :image="data.body[0].content[0].image"
+            class="order-first mx-auto w-60 lg:max-w-lg"
+          />
+          <p class="my-0 text-fp-gray-darkest md:my-2">
+            {{ data.body[0].content[0].description }}
+          </p>
+          <div
+            class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest lg:py-3 lg:pl-4"
+          >
+            <p>{{ data.body[0].content[0].link.text }}</p>
+          </div>
+        </article>
+      </header>
 
-    <!-- Recap Message -->
-    <figure class="container col-start-3 mt-6 hidden lg:block">
-      <NuxtLink
-        :to="eventsLink"
-        target="_blank"
-        class="transition duration-100 ease-in-out hover:opacity-70"
+      <!-- Colur -->
+      <figure
+        class="col-start-3 row-start-1 hidden gap-4 justify-self-start lg:grid"
       >
-        <FpImage :image="data.body[0].content[2].image" class="w-80" />
-      </NuxtLink>
-      <figcaption class="mt-4 max-w-xs text-sm text-fp-gray-dark">
-        {{ data.body[0].content[2].description }}
-      </figcaption>
-    </figure>
+        <!-- flock sign text -->
+        <p class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium">
+          {{ colurSlogan }}
+        </p>
+        <FpImage
+          :image="data.body[0].content[1].image"
+          class="z-10 col-start-1 row-start-1 w-48 lg:w-60"
+        />
+        <figcaption class="text-center text-xs text-fp-gray-dark">
+          {{ data.body[0].content[1].description }}
+        </figcaption>
+      </figure>
+
+      <!-- Nest and Hatch -->
+      <div
+        class="items-between xl-mx-0 col-span-2 mt-6 flex flex-wrap justify-center lg:justify-start"
+      >
+        <article
+          v-for="card in data.body[0].content.slice(3, 5)"
+          :key="card.id"
+          class="container my-4 mx-auto flex w-fit flex-col gap-y-4 md:w-1/2"
+        >
+          <h4 class="text-base text-fp-blue xl:text-lg">
+            {{ card.title }}
+          </h4>
+          <p class="max-w-sm">{{ card.description }}</p>
+          <div class="xl-mx-0 order-first">
+            <FpImage :image="card.image" class="h-16" />
+          </div>
+        </article>
+      </div>
+
+      <!-- Recap Message -->
+      <figure class="container col-start-3 mt-6 hidden lg:block">
+        <NuxtLink
+          :to="eventsLink"
+          target="_blank"
+          class="transition duration-100 ease-in-out hover:opacity-70"
+        >
+          <FpImage :image="data.body[0].content[2].image" class="w-80" />
+        </NuxtLink>
+        <figcaption class="mt-4 max-w-xs text-sm text-fp-gray-dark">
+          {{ data.body[0].content[2].description }}
+        </figcaption>
+      </figure>
+    </div>
   </section>
 </template>
