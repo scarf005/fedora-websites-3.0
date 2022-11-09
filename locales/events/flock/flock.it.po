@@ -4,26 +4,28 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-25 16:18+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-11-09 21:36+0000\n"
+"Last-Translator: Nathan <nathan95@live.it>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/flock-to-fedora/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "flock"
-msgstr ""
+msgstr "flock"
 
 #: title
 msgid "Flock To Fedora"
-msgstr ""
+msgstr "Flock di Fedora"
 
 #: description
 msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
-msgstr ""
+msgstr "La Conferenza del Progetto Fedora, 5-7 agosto 2023\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -37,7 +39,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Register"
-msgstr ""
+msgstr "Registra"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -47,7 +49,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Calendar"
-msgstr ""
+msgstr "Calendario"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -57,7 +59,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Events"
-msgstr ""
+msgstr "Eventi"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -66,11 +68,11 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Virtual"
-msgstr ""
+msgstr "Virtuale"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid "A 3 day conference hosted on Hopin.io"
-msgstr ""
+msgstr "Una conferenza di 3 giorni ospitata su Hopin.io"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -79,25 +81,26 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Community"
-msgstr ""
+msgstr "Comunità"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
-msgstr ""
+msgstr "Eventi comunitari ospitati in tutto il mondo"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Explore the latest in Open Source"
-msgstr ""
+msgstr "Esplora le ultime novità dell'Open Source"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Workshops"
-msgstr ""
+msgstr "Workshops"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Workshops and hackfests offer opportunities for active learning and "
 "collaboration."
 msgstr ""
+"Workshop e hackfest offrono opportunità di apprendimento e collaborazione."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -106,7 +109,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
-msgstr ""
+msgstr "Sessioni"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -118,10 +121,12 @@ msgid ""
 "Presentations that showcase the work done in Fedora and planning for the "
 "future."
 msgstr ""
+"Presentazioni che illustrano il lavoro svolto in Fedora e la pianificazione "
+"per il futuro."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
-msgstr ""
+msgstr "Eventi Social"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -133,14 +138,16 @@ msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
 msgstr ""
+"Manifestazioni informali, facilitate e interattive per incontrare e "
+"socializzare con i Fedorans."
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
-msgstr ""
+msgstr "Guarda i video degli eventi passati"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "What to expect"
-msgstr ""
+msgstr "Cosa aspettarsi"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -153,10 +160,13 @@ msgid ""
 "the community plans and showcases the strategy and work on the project. "
 "Check out the recordings from previous years of Flock and Nest."
 msgstr ""
+"Flock è una conferenza annuale per i collaboratori di Fedora Linux. È il "
+"luogo in cui la comunità pianifica e presenta la strategia e il lavoro sul "
+"progetto. Guardate le registrazioni degli anni precedenti di Flock e Nest."
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
-msgstr ""
+msgstr "Un esperienza ibrida"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -165,11 +175,14 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
+"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
+"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
+"di Flock per renderlo più accessibile alla nostra comunità."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
 msgid "July 1 - 31 2023"
-msgstr ""
+msgstr "1-31 Luglio 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -183,11 +196,14 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
+"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
+"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
+"di Flock per renderlo più accessibile alla nostra comunità."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
 msgid "July 1 - 31 2023"
-msgstr ""
+msgstr "1-31 Luglio 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -200,10 +216,13 @@ msgid ""
 "Flock. Now it exists as a virtual option for those who cannot attend in "
 "person. Making Flock accessible for everyone!"
 msgstr ""
+"Durante la pandemia di Covid-19, abbiamo creato Nest come alternativa "
+"virtuale a Flock. Ora esiste come opzione virtuale per coloro che non "
+"possono partecipare di persona. Rendendo Flock accessibile a tutti!"
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Interested in hosting your own event?"
-msgstr ""
+msgstr "Siete interessati ad ospitare un vostro evento?"
 
 #: sections-%3E[4]-%3EsectionDescription
 msgid ""
@@ -213,10 +232,16 @@ msgid ""
 "Council will help support your initiative with financial and organizating "
 "aid. Click below to set up a Hatch! Deadline for submissions is May 29."
 msgstr ""
+"1 - 31 luglio 2023\n"
+"Nel mese che precede il Flock, i Fedorans sono incoraggiati a organizzare "
+"eventi comunitari locali. Stabilite il formato e l'argomento di vostra "
+"scelta. Il Consiglio Fedora sosterrà la vostra iniziativa con aiuti "
+"finanziari e organizzativi. Clicca qui sotto per organizzare un evento! Il "
+"termine ultimo per la presentazione è il 29 maggio."
 
 #: sections-%3E[5]-%3EsectionTitle
 msgid "We are Fedora"
-msgstr ""
+msgstr "Noi siamo Fedora"
 
 #: sections-%3E[5]-%3Eimage
 #, read-only
@@ -229,10 +254,14 @@ msgid ""
 "open source software built by inclusive, welcoming, and open-minded "
 "communities. Stay connected during Flock through the following channels."
 msgstr ""
+"Il Fedora Project immagina un mondo in cui tutti possano beneficiare di "
+"software libero e open source costruito da comunità inclusive, accoglienti e "
+"di mentalità aperta. Rimanete in contatto durante il Flock attraverso i "
+"seguenti canali."
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Etitle
 msgid "Discussions"
-msgstr ""
+msgstr "Discussioni"
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -248,7 +277,7 @@ msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Etitle
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -264,7 +293,7 @@ msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Etitle
 msgid "Matrix & IRC"
-msgstr ""
+msgstr "Matrix e IRC"
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -280,7 +309,7 @@ msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Etitle
 msgid "Ask Fedora"
-msgstr ""
+msgstr "Ak Fedora"
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -293,20 +322,23 @@ msgid ""
 ">community forum</a></b> for support and help with frequently asked "
 "questions."
 msgstr ""
+"Nuovo in Fedora? Guarda qui<b> <a href=\"https://ask.fedoraproject.org/\""
+">Forum della comunità </a></b>Per supporto e domande frequent"
 
 #: sections-%3E[6]-%3EsectionTitle
 msgid "Our Sponsors"
-msgstr ""
+msgstr "I nostri sponsor"
 
 #: sections-%3E[6]-%3EsectionDescription
 msgid ""
 "Thank you to our sponsors, supporting this event is one of the ways that "
 "they contribute to open source."
 msgstr ""
+"Grazie ai nostri sponsor, che contribuiscono al supporto dell'open source."
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Ename
 msgid "Red Hat"
-msgstr ""
+msgstr "Red Hat"
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -315,11 +347,11 @@ msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Edescription
 msgid "platinium"
-msgstr ""
+msgstr "Platino"
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Ename
 msgid "Lenovo"
-msgstr ""
+msgstr "Lenovo"
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -329,11 +361,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[6]->content->[1]->description"
 msgid "gold"
-msgstr ""
+msgstr "oro"
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Ename
 msgid "AlmaLinux"
-msgstr ""
+msgstr "AlmaLinux"
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -343,11 +375,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[6]->content->[2]->description"
 msgid "gold"
-msgstr ""
+msgstr "oro"
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Ename
 msgid "openSuse"
-msgstr ""
+msgstr "openSuse"
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -357,11 +389,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[6]->content->[3]->description"
 msgid "silver"
-msgstr ""
+msgstr "Argento"
 
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Ename
 msgid "some Other Sponsor"
-msgstr ""
+msgstr "Altri Sponsor"
 
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Eimage
 #, read-only
@@ -372,11 +404,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Edescription
 msgctxt "sections->[6]->content->[4]->description"
 msgid "silver"
-msgstr ""
+msgstr "argento"
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Ename
 msgid "another Cool Sponsor"
-msgstr ""
+msgstr "un altro Sponsor Cool"
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Eimage
 #, read-only
@@ -389,11 +421,11 @@ msgctxt "sections->[6]->content->[5]->description"
 "sections->[6]->content->[5]->description"
 "sections->[6]->content->[5]->description"
 msgid "bronze"
-msgstr ""
+msgstr "Bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Ename
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Eimage
 #, read-only
@@ -403,11 +435,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Edescription
 msgctxt "sections->[6]->content->[6]->description"
 msgid "bronze"
-msgstr ""
+msgstr "Bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Ename
 msgid "datto"
-msgstr ""
+msgstr "datto"
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Eimage
 #, read-only
@@ -417,11 +449,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Edescription
 msgctxt "sections->[6]->content->[7]->description"
 msgid "bronze"
-msgstr ""
+msgstr "bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Ename
 msgid "daskeyboard"
-msgstr ""
+msgstr "daskeyboard"
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Eimage
 #, read-only
@@ -431,11 +463,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Edescription
 msgctxt "sections->[6]->content->[8]->description"
 msgid "bronze"
-msgstr ""
+msgstr "bronzo"
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Ename
 msgid "Gnome"
-msgstr ""
+msgstr "Gnome"
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Eimage
 #, read-only
@@ -447,11 +479,11 @@ msgctxt "sections->[6]->content->[9]->description"
 "sections->[6]->content->[9]->description"
 "sections->[6]->content->[9]->description"
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Ename
 msgid "TuxDigital"
-msgstr ""
+msgstr "TuxDigital"
 
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Eimage
 #, read-only
@@ -461,11 +493,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Edescription
 msgctxt "sections->[6]->content->[10]->description"
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Ename
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Eimage
 #, read-only
@@ -475,11 +507,11 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Edescription
 msgctxt "sections->[6]->content->[11]->description"
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Ename
 msgid "opensource.com"
-msgstr ""
+msgstr "opensource.com"
 
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Eimage
 #, read-only
@@ -489,15 +521,15 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Edescription
 msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
-msgstr ""
+msgstr "Vantaggi della sponsorizzazione del Flock"
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "Brand Exposure"
-msgstr ""
+msgstr "Brand Exposure"
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -505,20 +537,26 @@ msgid ""
 "sponsors on social media. Your brand will be distributed globally in our "
 "swag bag."
 msgstr ""
+"Gli sponsor sono pubblicizzati in diversi punti del Flock. Pubblichiamo "
+"inoltre informazioni sugli sponsor sui social media. Il vostro marchio sarà "
+"distribuito a livello globale nella nostra borsa swag."
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
 msgid "Spotlight"
-msgstr ""
+msgstr "Spotlight"
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Our tierd sponsorship levels will all give you great visibility at Flock. "
 "Your booth will be showcased on the Expo page to maximize engagement."
 msgstr ""
+"I nostri livelli di sponsorizzazione vi garantiranno una grande visibilità "
+"al Flock. Il vostro stand sarà esposto nella pagina dell'Expo per "
+"massimizzare il coinvolgimento."
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "Networking"
-msgstr ""
+msgstr "Collegamento di rete"
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
