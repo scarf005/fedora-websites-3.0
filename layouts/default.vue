@@ -19,7 +19,7 @@ useHead({
   <div id="app">
     <TheNavBar />
     <div class="pt-12">
-      <NuxtPage />
+      <slot />
     </div>
     <TheFooter />
   </div>

@@ -11,9 +11,13 @@ if (data._value === null) {
   data._value = data._value[data._value.length - 1];
 }
 useContentHead(data);
+
+definePageMeta({
+  layout: "community",
+});
 </script>
 <template>
-  <main class="mt-4 border-t-8 border-fp-purple">
+  <div class="mt-4 border-t-8 border-fp-purple">
     <header>
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
@@ -92,5 +96,5 @@ useContentHead(data);
         </div>
       </div>
     </section>
-  </main>
+  </div>
 </template>

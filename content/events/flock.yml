@@ -13,43 +13,43 @@ links:
 sections:
   - sectionTitle: Events
     content:
-    - image: public/assets/images/flock_nest_logo.png
-      title: Virtual
-      description: A 3 day conference hosted on Hopin.io
-    - image: public/assets/images/flock_hatch_logo.png
-      title: Community
-      description: Community events hosted around the world
+      - image: public/assets/images/flock_nest_logo.png
+        title: Virtual
+        description: A 3 day conference hosted on Hopin.io
+      - image: public/assets/images/flock_hatch_logo.png
+        title: Community
+        description: Community events hosted around the world
   - sectionTitle: Explore the latest in Open Source
-    content:  
+    content:
       - title: Workshops
         description: Workshops and hackfests offer opportunities for active learning and collaboration.
         image: public/assets/images/flock_workshops_logo.png
         link:
           text: View Projects
-          url: '#'
+          url: "#"
       - title: Sessions
         image: public/assets/images/flock_sessions_logo.png
         description: Presentations that showcase the work done in Fedora and planning for the future.
         link:
           text: View Topics
-          url: '#'
+          url: "#"
       - title: Social Events
         image: public/assets/images/flock_socialevents_logo.png
         description: Casual, facilitated, and interactive events for meeting and socializing with Fedorans.
         link:
           text: View Socials
-          url: '#'
+          url: "#"
   - sectionTitle: Watch Footage from Past Events
     content:
-    - title: What to expect
-      image: https://www.youtube.com/embed/LqBVHz76Wxc
-      description:
-        Flock is an annual conference for contributors of Fedora Linux.
-        It is where the community plans and showcases the strategy and work on the project.
-        Check out the recordings from previous years of Flock and Nest.
-      link:
-        text: Visit Fedora Youtube
-        url: 'https://www.youtube.com/fedoraproject'
+      - title: What to expect
+        image: https://www.youtube.com/embed/LqBVHz76Wxc
+        description:
+          Flock is an annual conference for contributors of Fedora Linux.
+          It is where the community plans and showcases the strategy and work on the project.
+          Check out the recordings from previous years of Flock and Nest.
+        link:
+          text: Visit Fedora Youtube
+          url: "https://www.youtube.com/fedoraproject"
   - sectionTitle: A Hybrid Experience
     sectionDescription:
       The location of Flock changes each year between Europe and North America. In 2020
