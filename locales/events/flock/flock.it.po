@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-25 16:18+0200\n"
 "PO-Revision-Date: 2022-11-09 21:38+0000\n"
-"Last-Translator: Fernandez Alonso Alberto Mario <albialonso7@icloud.com>\n"
+"Last-Translator: Nathan <nathan95@live.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/flock-to-fedora/it/>\n"
 "Language: it\n"
@@ -573,10 +573,13 @@ msgid ""
 "and use software daily. Engage with our vibrant community in sessions and "
 "social hours."
 msgstr ""
+"Flock attira centinaia di incredibili membri della comunità open source che "
+"lavorano e usano il software ogni giorno. Partecipate alla nostra vivace "
+"comunità durante le sessioni e le ore di socializzazione."
 
 #: sections-%3E[7]-%3Econtent-%3E[3]-%3Etitle
 msgid "Booths"
-msgstr ""
+msgstr "Stand"
 
 #: sections-%3E[7]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
