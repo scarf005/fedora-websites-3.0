@@ -15,7 +15,8 @@ sections:
     images: ""
     content:
       - title: On Windows or macOS?
-        description: Get started by using Fedora Media Writer, which makes it super easy
+        description:
+          Get started by using Fedora Media Writer, which makes it super easy
           to give Fedora a try.
         image: public/assets/images/media-writer-icon.png
       - title: On Linux? Or just want an ISO file?
@@ -24,7 +25,8 @@ sections:
   - sectionTitle: Security, Installs, Laptops Preloaded
     content:
       - title: We take security seriously
-        description: "Once you have downloaded an image, be sure to verify it for both
+        description:
+          "Once you have downloaded an image, be sure to verify it for both
           security and integrity. "
         link:
           text: Verify your download
@@ -34,7 +36,8 @@ sections:
           Workstation downloads here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
       - title: Laptops pre-loaded with Fedora
-        description: "We've partnered with companies like Lenovo to bring you laptops
+        description:
+          "We've partnered with companies like Lenovo to bring you laptops
           pre-loaded with Fedora that include fully-supported hardware
           components. "
         image: public/assets/images/lenovo-laptop.png
@@ -47,9 +50,10 @@ sections:
       flash drive, and Fedora Media Writer.
 
 
-      Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*. 
+      Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.
     content:
-      - description: " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
+      - description:
+          " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
           run successfully. Double those amounts is recommended. "
     images: public/assets/images/monitor-2.png
   - sectionTitle: Officially-Supported Fedora Community Spaces
@@ -85,9 +89,11 @@ sections:
         link:
           text: Telegram
           url: https://fedoraproject.org/wiki/Telegram
-  - sectionTitle: By clicking on and downloading Fedora, you agree to comply with
+  - sectionTitle:
+      By clicking on and downloading Fedora, you agree to comply with
       the following terms and conditions.
-    sectionDescription: "By downloading Fedora software, you acknowledge that you
+    sectionDescription:
+      "By downloading Fedora software, you acknowledge that you
       understand all of the following: Fedora software and technical information
       may be subject to the U.S. Export Administration Regulations (the “EAR”)
       and other U.S. and foreign laws and may not be exported, re-exported or

@@ -58,11 +58,11 @@ function sponsorClass(sponsor) {
     </div>
 
     <a href="#">
-    <div
-      class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs"
-    >
-      <p class="text-3xl text-black">Become a Sponsor</p>
-    </div>
+      <div
+        class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs"
+      >
+        <p class="text-3xl text-black">Become a Sponsor</p>
+      </div>
     </a>
   </div>
 </template>

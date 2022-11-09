@@ -1,9 +1,9 @@
 <script setup>
 defineProps({
   url: String,
-  text: String
-})
+  text: String,
+});
 </script>
 <template>
-    <NuxtLink :to="url" class="block">{{ text }}</NuxtLink>
+  <NuxtLink :to="url" class="block">{{ text }}</NuxtLink>
 </template>
