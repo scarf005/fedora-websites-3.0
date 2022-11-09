@@ -28,7 +28,7 @@ let { data } = await useAsyncData(() => {
     >
       <header class="container col-span-2 mx-auto flex flex-col justify-evenly">
         <!-- Events Header -->
-        <section class="xl-mx-0 mx-8 mb-8 text-center md:text-start">
+        <section class="mx-8 mb-8 text-center md:text-start xl:mx-0">
           <h2 class="mb-4 xl:text-4xl" :class="color">
             {{ data.body[0].sectionTitle }}
           </h2>
@@ -37,7 +37,7 @@ let { data } = await useAsyncData(() => {
           </p>
         </section>
         <!-- Flock Info -->
-        <article class="xl-mx-0 mx-8 mb-8 flex flex-col self-center">
+        <article class="mx-8 mb-8 flex flex-col self-center xl:mx-0">
           <h3 class="text-center text-lg text-fp-blue-dark xl:text-xl">
             {{ data.body[0].content[0].title }}
           </h3>
