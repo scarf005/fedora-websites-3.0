@@ -1,0 +1,20 @@
+title: Fedora Publication Cards
+cards:
+  - title: Community Blog
+    description: The Community Blog provides a single source for members of the
+      community to share important news, updates, and information about Fedora
+      with others in the Project community.
+    button:
+      text: Visit Now
+      url: https://communityblog.fedoraproject.org/
+    image: public/assets/images/community-blog.png
+  - title: Fedora Magazine
+    description:
+      Fedora Magazine is a website that hosts promotional articles and
+      short guides contributed from the community about free/libre and
+      open-source software that runs on or works with the Fedora Linux operating
+      system.
+    image: public/assets/images/fedora-magazine.png
+    button:
+      text: Visit Now
+      url: https://fedoramagazine.org/
