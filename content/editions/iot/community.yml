@@ -11,7 +11,8 @@ sections:
   - sectionTitle: Communication Channels
     content:
       - title: Forum
-        description: The **Fedora IoT** tag on Fedora's Discourse-based discussion forum
+        description:
+          The **Fedora IoT** tag on Fedora's Discourse-based discussion forum
           is a great place to connect with other Fedora Workstation users and
           contributors.
         image: public/assets/images/fedora-discussion-plus-icon.png
@@ -19,7 +20,8 @@ sections:
           text: Visit Now
           url: https://discussion.fedoraproject.org/tag/iot
       - title: Chat
-        description: "You can chat with the Fedora IoT Working Group via either Matrix
+        description:
+          "You can chat with the Fedora IoT Working Group via either Matrix
           or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on
           irc.libera.chat."
         image: public/assets/images/fedora-chat-plus-element.png
@@ -27,7 +29,8 @@ sections:
           text: Chat Now
           url: https://chat.fedoraproject.org/#/welcome
       - title: Mailing List
-        description: The Fedora IoT Working Group sends meeting agendas and minutes and
+        description:
+          The Fedora IoT Working Group sends meeting agendas and minutes and
           has discussions on their mailing list at iot@lists.fedoraproject.org.
         link:
           text: Visit Now
@@ -36,9 +39,11 @@ sections:
   - sectionTitle: Ways to get involved
     content:
       - title: Report & discuss issues
-        description: You can view, file, and discuss Fedora IoT issues on the [Fedora
+        description:
+          You can view, file, and discuss Fedora IoT issues on the [Fedora
           IoT issue tracker](https://pagure.io/fedora-iot/issues).
       - title: Attend a meeting
-        description: IoT Working Group meetings are open to all current and potential
+        description:
+          IoT Working Group meetings are open to all current and potential
           contributors on Wednesdays, 11 AM US Eastern at
           fedora-meeting@irc.libera.chat.

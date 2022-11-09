@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   cta: Array,
-  image: String
+  image: String,
 });
 </script>
 <template>
