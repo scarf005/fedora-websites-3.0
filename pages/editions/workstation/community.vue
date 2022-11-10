@@ -54,32 +54,15 @@ useContentHead(data);
           </h2>
         </header>
         <div class="flex flex-wrap justify-center gap-10 2xl:justify-between">
-          <article
+          <FpCard
             v-for="card in data.sections[1].content"
             :key="card.id"
+            :title="card.title"
+            :description="card.description"
+            :image="card.image"
+            :link="card.link"
             class="m-4 flex flex-col justify-between md:max-w-xs"
-          >
-            <h3
-              class="mb-2 text-center text-2xl font-semibold text-fp-blue lg:text-start"
-            >
-              {{ card.title }}
-            </h3>
-            <p
-              class="my-2 mx-auto hidden w-52 break-words text-center text-sm text-fp-gray-darkest sm:block lg:w-80 lg:text-start lg:text-base"
-            >
-              {{ card.description }}
-            </p>
-            <FpImage
-              :image="card.image"
-              :alt="card.image"
-              class="my-2 mx-auto w-56"
-            />
-            <NuxtLink
-              :to="card.link.url"
-              class="my-2 mx-auto flex w-full justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white"
-              >{{ card.link.text }}</NuxtLink
-            >
-          </article>
+          />
         </div>
       </div>
     </section>
