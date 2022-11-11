@@ -14,23 +14,13 @@ useContentHead(data);
 </script>
 <template>
   <main class="mt-4 border-t-8 border-fp-purple">
-    <header>
-      <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
-        <div class="container mx-auto">
-          <h1 class="mb-4 text-fp-purple xl:mb-8">{{ data.title }}</h1>
-          <p class="text-fp-gray">{{ data.description }}</p>
-        </div>
-      </section>
-      <section class="mx-auto bg-fp-blue-light/5">
-        <div
-          class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
-        >
-          <p class="text-fp-gray-darkest">
-            {{ data.sections[0].sectionDescription }}
-          </p>
-        </div>
-      </section>
-    </header>
+    <FpHeader
+      :title="data.title"
+      :description="data.description"
+      :details="data.sections[0].sectionDescription"
+      color="text-fp-purple"
+      bgColor="bg-fp-blue-light/10"
+    />
     <!-- communication channels -->
     <section class="mx-auto bg-fp-purple-light/10">
       <div class="container mx-auto flex flex-col justify-center pb-8">
