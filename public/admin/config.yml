@@ -118,7 +118,8 @@ collections:
                         name: "url"
                         widget: "string"
                         hint: "URL path for the link or button"
-                        required: false #################
+                        required: false
+  #################
   # General Pages #
   #################
   - label: "General Pages"
@@ -222,7 +223,8 @@ collections:
                         name: "url"
                         widget: "string"
                         hint: "URL path for the link or button"
-                        required: false #####################
+                        required: false
+  #####################
   # IoT Pages #
   #####################
   - name: "iot" # Used in routes, e.g., /admin/collections/blog
