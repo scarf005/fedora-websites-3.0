@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-25 16:18+0200\n"
-"PO-Revision-Date: 2022-11-09 21:38+0000\n"
+"PO-Revision-Date: 2022-11-10 22:19+0000\n"
 "Last-Translator: Fernandez Alonso Alberto Mario <albialonso7@icloud.com>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsserverhome/it/>\n"
@@ -21,13 +21,15 @@ msgstr "indice"
 
 #: title
 msgid "The leading edge server"
-msgstr ""
+msgstr "Il server all'avanguardia"
 
 #: description
 msgid ""
 "Run applications on bare metal or the cloud with a Linux server OS packed "
 "with the latest open source technology\n"
 msgstr ""
+"Eseguite le applicazioni su bare metal o su cloud con un sistema operativo "
+"server Linux dotato della più recente tecnologia open source\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -41,7 +43,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download Now"
-msgstr ""
+msgstr "Scarica ora"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
