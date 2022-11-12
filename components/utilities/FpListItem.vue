@@ -1,4 +1,6 @@
 <script setup>
+import { mdparser } from "../../config/utilities";
+
 const props = defineProps({
   title: String,
   description: String,
@@ -6,6 +8,8 @@ const props = defineProps({
   url: String,
   iconURI: String,
 });
+
+const descriptionMd = await mdparser(props.description);
 </script>
 <template>
   <li
@@ -26,7 +30,7 @@ const props = defineProps({
       <FpImage :image="props.image" />
     </div>
     <h4 class="inline font-bold text-fp-blue-dark">{{ props.title }}</h4>
-    <p class="text-fp-blue-dark" v-html="props.description"></p>
+    <ContentRenderer class="text-fp-blue-dark" tag="p" :value="descriptionMd" />
     <br />
     <div v-if="props.url" class="flex items-center justify-center">
       <FpBtn :url="props.url">Learn More</FpBtn>
