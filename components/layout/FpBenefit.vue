@@ -17,8 +17,10 @@ defineProps({
         columns - 1
       } flex flex-col justify-center p-1 text-left text-center sm:p-5 sm:text-start`"
     >
-      <h2 class="mb-5 font-bold text-gray-700">{{ title }}</h2>
-      <p class="font-normal text-gray-600">
+      <h2 class="mb-5 font-bold text-gray-700 dark:text-gray-100">
+        {{ title }}
+      </h2>
+      <p class="font-normal text-gray-600 dark:text-gray-300">
         {{ description }}
       </p>
     </div>

@@ -63,9 +63,9 @@ const sponsorsBenefits = data._value.sections[7];
     </div>
   </FpHero>
 
-  <main class="flex flex-col items-center">
+  <main class="flex flex-col items-center dark:bg-black">
     <!-- TODO: Explore -->
-    <section class="w-full bg-slate-100 pb-10">
+    <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
@@ -75,21 +75,25 @@ const sponsorsBenefits = data._value.sections[7];
         <div
           class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
         >
-          <FpCard v-for="card in explore.content">
+          <FpCard v-for="card in explore.content" class="dark:bg-slate-800">
             <FpCardImage :src="card.image" />
-            <FpCardTitle>{{ card.title }}</FpCardTitle>
-            <FpCardText>{{ card.description }}</FpCardText>
+            <FpCardTitle class="dark:text-fp-blue-light">{{
+              card.title
+            }}</FpCardTitle>
+            <FpCardText class="dark:text-slate-200">{{
+              card.description
+            }}</FpCardText>
             <FpCardAction>{{ card.link.text }}</FpCardAction>
           </FpCard>
         </div>
 
         <h3
-          class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark sm:text-4xl"
+          class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark dark:text-fp-blue-light sm:text-4xl"
         >
           {{ watch.sectionTitle }}
         </h3>
         <div
-          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white lg:grid-cols-2"
+          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white dark:bg-slate-800 lg:grid-cols-2"
         >
           <div class="col-span-1 p-1 sm:p-5">
             <iframe
@@ -105,16 +109,18 @@ const sponsorsBenefits = data._value.sections[7];
             </iframe>
           </div>
           <div
-            class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark sm:p-5 xl:mx-12"
+            class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark dark:text-fp-blue-light sm:p-5 xl:mx-12"
           >
             <h4 class="mb-5 font-semibold">
               {{ watch.content[0].title }}
             </h4>
-            <p class="font-normal text-gray-600">
+            <p class="font-normal text-gray-600 dark:text-slate-200">
               {{ watch.content[0].description }}
             </p>
             <p class="mt-4 text-right">
-              <a class="text-fp-blue" :href="watch.content[0].link.url"
+              <a
+                class="text-fp-blue dark:text-fp-blue-light"
+                :href="watch.content[0].link.url"
                 >{{ watch.content[0].link.text }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
               </a>
@@ -159,7 +165,11 @@ const sponsorsBenefits = data._value.sections[7];
 
     <!-- Community Section -->
     <section class="my-10">
-      <FpHero :background="community.image" alignment="bg-top">
+      <FpHero
+        :background="community.image"
+        alignment="bg-top"
+        class="dark:bg-blend-difference"
+      >
         <section class="mx-auto w-10/12 max-w-screen-xl py-24">
           <h2
             class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
@@ -183,7 +193,7 @@ const sponsorsBenefits = data._value.sections[7];
     </section>
 
     <!-- TODO: Our Sponsors -->
-    <section class="mx-auto my-10 w-10/12">
+    <section class="mx-auto w-full py-10 dark:bg-slate-900">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >

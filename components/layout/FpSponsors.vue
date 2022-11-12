@@ -12,22 +12,22 @@ function sponsorClass(sponsor) {
   let classList = "";
   switch (sponsor.description) {
     case "platinium":
-      classList = "bg-gray-100 col-span-4";
+      classList = "bg-gray-100 dark:bg-neutral-300 col-span-4";
       break;
     case "gold":
-      classList = "bg-gray-100 col-span-3";
+      classList = "bg-gray-100 dark:bg-neutral-300 col-span-3";
       break;
     case "silver":
-      classList = "bg-gray-100 col-span-2";
+      classList = "bg-gray-100 dark:bg-neutral-300 col-span-2";
       break;
     case "bronze":
-      classList = "bg-gray-100";
+      classList = "bg-gray-100 dark:bg-neutral-300";
       break;
     case "media":
-      classList = "bg-slate-100";
+      classList = "bg-slate-100 dark:bg-slate-800";
       break;
     default:
-      classList = "bg-gray-50";
+      classList = "bg-gray-50 dark:bg-slate-900";
   }
   return classList;
 }
@@ -59,9 +59,9 @@ function sponsorClass(sponsor) {
 
     <a href="#">
       <div
-        class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs"
+        class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs dark:bg-fp-blue"
       >
-        <p class="text-3xl text-black">Become a Sponsor</p>
+        <p class="text-3xl text-black dark:text-white">Become a Sponsor</p>
       </div>
     </a>
   </div>

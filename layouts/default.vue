@@ -16,7 +16,7 @@ useHead({
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="dark:bg-neutral-700 dark:text-white">
     <TheNavBar />
     <div class="pt-12">
       <NuxtPage />

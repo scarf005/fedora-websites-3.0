@@ -3,7 +3,9 @@ import { editions, others, support, community } from "../../config/navigation";
 </script>
 
 <template>
-  <footer class="min-w-full bg-gray-200 text-center text-gray-600 lg:text-left">
+  <footer
+    class="min-w-full bg-gray-200 text-center text-gray-600 dark:bg-neutral-800 dark:text-gray-100 lg:text-left"
+  >
     <div class="mx-6 py-10 text-center md:text-left">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div class="">
@@ -24,7 +26,11 @@ import { editions, others, support, community } from "../../config/navigation";
                   ? item.href
                   : $config.app.baseURL + item.href
               }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+              :class="[
+                'text-gray-600',
+                'dark:text-gray-300',
+                'text-base font-medium',
+              ]"
             >
               {{ item.name }}
             </a>
@@ -49,7 +55,11 @@ import { editions, others, support, community } from "../../config/navigation";
                   ? item.href
                   : $config.app.baseURL + item.href
               }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+              :class="[
+                'text-gray-600',
+                'dark:text-gray-300',
+                'text-base font-medium',
+              ]"
             >
               {{ item.name }}
             </a>
@@ -74,7 +84,11 @@ import { editions, others, support, community } from "../../config/navigation";
                   ? item.href
                   : $config.app.baseURL + item.href
               }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+              :class="[
+                'text-gray-600',
+                'dark:text-gray-300',
+                'text-base font-medium',
+              ]"
             >
               {{ item.name }}
             </a>
@@ -99,7 +113,11 @@ import { editions, others, support, community } from "../../config/navigation";
                   ? item.href
                   : $config.app.baseURL + item.href
               }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+              :class="[
+                'text-gray-600',
+                'dark:text-gray-300',
+                'text-base font-medium',
+              ]"
             >
               {{ item.name }}
             </a>
@@ -119,16 +137,20 @@ import { editions, others, support, community } from "../../config/navigation";
         </div>
 
         <div class="mb-4">
-          <a href="#!" class="text-gray-600">Privacy Statement</a>
+          <a href="#!" class="text-gray-600 dark:text-gray-300"
+            >Privacy Statement</a
+          >
         </div>
         <div class="mb-4">
-          <a href="#!" class="text-gray-600">Legal</a>
+          <a href="#!" class="text-gray-600 dark:text-gray-300">Legal</a>
         </div>
         <div class="mb-4">
-          <a href="#!" class="text-gray-600">Code of Conduct</a>
+          <a href="#!" class="text-gray-600 dark:text-gray-300"
+            >Code of Conduct</a
+          >
         </div>
         <div class="mb-4">
-          <a href="#!" class="text-gray-600">Sponsors</a>
+          <a href="#!" class="text-gray-600 dark:text-gray-300">Sponsors</a>
         </div>
       </div>
     </div>

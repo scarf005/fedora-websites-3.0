@@ -12,7 +12,7 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <nav class="fixed z-50 w-full bg-fp-blue">
+  <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -49,6 +49,7 @@ const availableLocales = computed(() => {
               <TheNavItem :title="$t('Support')" :items="support" />
 
               <TheNavItem :title="$t('Languages')" :items="availableLocales" />
+              <TheNavThemeSelector />
             </div>
           </div>
         </div>

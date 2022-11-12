@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "~/components/utilities",
   ],
   modules: [
+    "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxtjs/i18n",
@@ -20,6 +21,9 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
+  },
+  colorMode: {
+    classSuffix: "",
   },
   i18n: {
     locales: locales,
