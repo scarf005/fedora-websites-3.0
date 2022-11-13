@@ -24,7 +24,8 @@ import { editions, others, support, community } from "../../config/navigation";
               :href="`${
                 item.href.includes('https')
                   ? item.href
-                  : $config.app.baseURL + item.href
+                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
+                    item.href
               }`"
               :class="[
                 'text-gray-600',
@@ -53,7 +54,8 @@ import { editions, others, support, community } from "../../config/navigation";
               :href="`${
                 item.href.includes('https')
                   ? item.href
-                  : $config.app.baseURL + item.href
+                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
+                    item.href
               }`"
               :class="[
                 'text-gray-600',
@@ -82,7 +84,8 @@ import { editions, others, support, community } from "../../config/navigation";
               :href="`${
                 item.href.includes('https')
                   ? item.href
-                  : $config.app.baseURL + item.href
+                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
+                    item.href
               }`"
               :class="[
                 'text-gray-600',
@@ -111,7 +114,8 @@ import { editions, others, support, community } from "../../config/navigation";
               :href="`${
                 item.href.includes('https')
                   ? item.href
-                  : $config.app.baseURL + item.href
+                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
+                    item.href
               }`"
               :class="[
                 'text-gray-600',

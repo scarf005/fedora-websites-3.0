@@ -29,7 +29,7 @@ defineProps({
           :href="`${
             item.href.includes('https')
               ? item.href
-              : $config.app.baseURL + item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
           }`"
           :class="[
             'text-gray-500 hover:text-fp-purple dark:text-gray-300 ',

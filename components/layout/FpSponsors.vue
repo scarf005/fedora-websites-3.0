@@ -47,7 +47,9 @@ function sponsorClass(sponsor) {
           v-if="sponsor.image"
           class="mx-auto max-h-32 w-full object-contain"
           :src="`${
-            $config.app.baseURL + '/' + sponsor.image.replace('public/', '')
+            $config.app.baseURL.replace(new RegExp('/$'), '') +
+            '/' +
+            sponsor.image.replace('public/', '')
           }`"
         />
         <p v-else>{{ sponsor.name }}</p>

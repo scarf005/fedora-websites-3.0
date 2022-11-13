@@ -53,7 +53,9 @@ const sponsorsBenefits = data._value.sections[7];
           <img
             class="mr-1 inline h-10 max-w-none align-baseline"
             :src="`${
-              $config.app.baseURL + '/' + card.image.replace('public/', '')
+              $config.app.baseURL.replace(new RegExp('/$'), '') +
+              '/' +
+              card.image.replace('public/', '')
             }`"
           />
           {{ card.title }}

@@ -9,7 +9,9 @@ defineProps({
   <div
     :style="{
       backgroundImage: `url(${
-        $config.app.baseURL + '/' + background.replace('public/', '')
+        $config.app.baseURL.replace(new RegExp('/$'), '') +
+        '/' +
+        background.replace('public/', '')
       })`,
     }"
     style="min-height: 60vh"
