@@ -5,7 +5,7 @@
       v-model="$colorMode.preference"
       class="rounded bg-transparent text-sm text-white"
     >
-      <option value="system">☀️/🌙</option>
+      <option value="system">💻</option>
       <option value="light">☀️</option>
       <option value="dark">🌙</option>
     </select>
