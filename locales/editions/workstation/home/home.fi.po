@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 16:26+0000\n"
+"POT-Creation-Date: 2022-11-14 12:02-0700\n"
 "PO-Revision-Date: 2022-11-14 02:12+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -32,10 +32,12 @@ msgstr ""
 "teknologiaan. Luotettava, tehokas ja helppo.\n"
 
 #: header_images-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
 #: header_images-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
@@ -44,6 +46,7 @@ msgid "Download now"
 msgstr "Lataa nyt"
 
 #: links-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
@@ -52,6 +55,7 @@ msgid "Reviewed By TechHut"
 msgstr "Arvostellut: TechHut"
 
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -150,6 +154,7 @@ msgstr ""
 "sovelluksia muilta alustoilta."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -166,6 +171,7 @@ msgstr ""
 "kielillä."
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
 
@@ -183,6 +189,7 @@ msgstr ""
 "nukkumista."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
@@ -195,6 +202,7 @@ msgid "Bring your online calendar to the desktop with online accounts"
 msgstr "Tuo online-kalenterisi työpöydälle online-tilien avulla"
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
 
@@ -211,6 +219,7 @@ msgstr ""
 "ja karttoja."
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
@@ -227,6 +236,7 @@ msgid "Boxes takes the guesswork out of using virtual machines."
 msgstr "Boxes poistaa arvailun virtuaalikoneiden käytöstä."
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev1.png"
 msgstr ""
 
@@ -245,6 +255,7 @@ msgstr ""
 "ja kirjoita etsiäksesi tarvitsemasi."
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev2.png"
 msgstr ""
 
@@ -261,6 +272,7 @@ msgstr ""
 "Käytä Red Hat -konttirekisteriä."
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev3.png"
 msgstr ""
 
@@ -277,6 +289,7 @@ msgstr ""
 "työkalut niiden valmistajilta."
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev4.png"
 msgstr ""
 
@@ -293,11 +306,14 @@ msgstr ""
 "käyttöönottoon Fedora-työasemalla."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eurl
-msgctxt "sections->[3]->content->[0]->urlsections->[3]->content->[0]->url"
+#, read-only
+msgctxt "sections->[3]->content->[0]->url"
+"sections->[3]->content->[0]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-devs.png"
 msgstr ""
 
@@ -310,11 +326,13 @@ msgstr ""
 "hallita käyttöjärjestelmän osia."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[1]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
@@ -327,11 +345,13 @@ msgstr ""
 "luomiseen ja hallintaan."
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[2]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/podman.svg"
 msgstr ""
 
@@ -348,8 +368,8 @@ msgid ""
 "The Fedora Project envisions a world where everyone can benefit from free "
 "and open source software built by inclusive, welcoming, and open-minded "
 "communities.\n"
-"Fedora Workstation is created by a team in the Fedora community called the "
-"**Workstation Working Group**. It is comprised of official members who have "
+"Fedora Workstation is created by a team in the Fedora community called the **"
+"Workstation Working Group**. It is comprised of official members who have "
 "decision making powers, as well as other contributors. [Learn more onthe "
 "Workstation Working Group Website](https://docs.fedoraproject.org/en-US/"
 "workstation-working-group/)"
@@ -360,8 +380,8 @@ msgstr ""
 "Fedora työaseman on luonut Fedora-yhteisön tiimi nimeltä **Workstation "
 "Working Group**. Se koostuu virallisista jäsenistä, joilla on "
 "päätöksentekovalta, sekä muista avustajista. [Lue lisää Workstation Working "
-"Groupin verkkosivustolta](https://docs.fedoraproject.org/en-US/workstation-"
-"working-group/)"
+"Groupin verkkosivustolta](https://docs.fedoraproject.org/en-US/"
+"workstation-working-group/)"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
@@ -372,8 +392,8 @@ msgid ""
 "You can view, file, and discuss Fedora Workstation issues on [the Fedora "
 "Workstation issue tracker]()."
 msgstr ""
-"Voit tarkastella, ilmoittaa ja keskustella Fedora työasema -ongelmista "
-"[Fedora työaseman ongelmanseurantaohjelmassa]()."
+"Voit tarkastella, ilmoittaa ja keskustella Fedora työasema -ongelmista ["
+"Fedora työaseman ongelmanseurantaohjelmassa]()."
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
@@ -405,8 +425,13 @@ msgstr "Osallistu kokoukseen"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+"Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
-"Avoin kaikille nykyisille ja mahdollisille tuleville auttajille "
-"**tiistaisin, 9.30 US Eastern** kohteessa [Bluejeans]()."
+
+#~ msgid ""
+#~ "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+#~ "Eastern** on [Bluejeans]()."
+#~ msgstr ""
+#~ "Avoin kaikille nykyisille ja mahdollisille tuleville auttajille "
+#~ "**tiistaisin, 9.30 US Eastern** kohteessa [Bluejeans]()."

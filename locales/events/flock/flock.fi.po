@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-11-14 12:02-0700\n"
 "PO-Revision-Date: 2022-11-14 02:12+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -13,19 +13,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
 msgstr "flock"
 
 #: title
-msgid "Flock To Fedora"
-msgstr "Flock Fedoraan"
+msgid "The Fedora Project Conference"
+msgstr ""
 
 #: description
-msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
-msgstr "Fedora-projektikonferenssi, 5.-7.8.2023\n"
+msgid "August 5 - 7, 2023\n"
+msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -44,6 +44,9 @@ msgstr "Rekisteröidy"
 #: links-%3E[0]-%3Eurl
 #, read-only
 msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -108,6 +111,16 @@ msgstr ""
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
 
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "View Projects"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[0]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
 msgstr "Istunnot"
@@ -125,6 +138,16 @@ msgstr ""
 "Esityksiä, jotka esittelevät Fedorassa tehtyä työtä ja tulevaisuuden "
 "suunnittelua."
 
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "View Topics"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[1]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
 msgstr "Sosiaaliset tapahtumat"
@@ -141,6 +164,16 @@ msgid ""
 msgstr ""
 "Rento, avustettu ja interaktiivinen tapahtuma fedoralaisten tapaamiseen ja "
 "seurustelua varten."
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "View Socials"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[2]->link->url"
+msgid "#"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
@@ -164,6 +197,15 @@ msgstr ""
 "Flock on vuotuinen konferenssi Fedora Linuxin edistäjille. Siellä yhteisö "
 "suunnittelee ja esittelee strategiaa ja työtä projektin parissa. Katso "
 "tallenteet Flockin ja Nestin aiemmilta vuosilta."
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Visit Fedora Youtube"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://www.youtube.com/fedoraproject"
+msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
@@ -508,6 +550,14 @@ msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
 msgstr ""
 
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
+msgid "none"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
+msgid "placeholder"
+msgstr ""
+
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
 msgstr ""
@@ -553,3 +603,9 @@ msgid ""
 "All sponsor booths include a video, customizable experience, chat, and "
 "social media engagement. Click below to learn more."
 msgstr ""
+
+#~ msgid "Flock To Fedora"
+#~ msgstr "Flock Fedoraan"
+
+#~ msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+#~ msgstr "Fedora-projektikonferenssi, 5.-7.8.2023\n"
