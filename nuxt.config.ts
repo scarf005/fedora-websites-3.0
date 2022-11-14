@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "~/components/layout",
     "~/components/ui",
     "~/components/utilities",
+    "~/components/partials",
   ],
   modules: [
     "@nuxtjs/tailwindcss",

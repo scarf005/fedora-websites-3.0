@@ -34,6 +34,7 @@ let { data } = await useAsyncData(() => {
           <FpImage :image="card.image" class="mx-auto w-5/6" />
         </div>
       </article>
+      <FpJoinTip :description="data.body[0].content[2].description" />
     </div>
   </section>
 </template>

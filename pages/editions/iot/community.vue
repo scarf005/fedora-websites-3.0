@@ -40,6 +40,7 @@ useContentHead(data);
             class="m-4 flex flex-col justify-between md:max-w-xs"
           />
         </div>
+        <FpJoinTip />
       </div>
     </section>
 
@@ -64,7 +65,9 @@ useContentHead(data);
           <p class="max-w-sm text-fp-gray-darkest">{{ content.description }}</p>
         </div>
 
-        <FpJoinTip />
+        <FpJoinTip
+          description="Your friendly and helpful contributions to these communication channels would be greatly appreciated"
+        />
       </div>
     </section>
     <!-- Fedora Events -->
