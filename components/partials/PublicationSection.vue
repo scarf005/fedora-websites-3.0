@@ -21,7 +21,7 @@ let { data } = await useAsyncData(() => {
         :key="card.id"
         class="my-10 flex flex-col items-center justify-between lg:my-8"
       >
-        <header class="xl-mx-0 mx-4 flex flex-col justify-end">
+        <header class="mx-4 flex flex-col justify-end xl:mx-0">
           <h3 class="hidden">{{ card.title }}</h3>
           <p class="mt-7 mb-1 max-w-prose text-fp-gray-darkest">
             {{ card.description }}

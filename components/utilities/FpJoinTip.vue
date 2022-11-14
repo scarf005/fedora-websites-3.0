@@ -14,10 +14,10 @@ defineProps({
 });
 </script>
 <template>
-  <aside class="flex gap-2">
+  <aside class="container my-2 flex gap-2">
     <div>
       <h4 class="mb-2 text-lg font-semibold text-fp-blue-light">{{ title }}</h4>
-      <p class="text-sm text-fp-gray-dark">
+      <p class="max-w-3xl text-sm text-fp-gray-dark">
         {{ description }}
         <NuxtLink
           v-if="link"

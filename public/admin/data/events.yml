@@ -104,9 +104,9 @@
                       hint: "URL path for the link or button"
                       required: false
     # Events Partial Data
-    - label: Events Partial
+    - label: "Events Partial"
       name: "events-partial"
-      file: "/content/events/events-partial.yml"
+      file: "/content/partials/events.yml"
       format: yml
       fields:
         - label: "Parital title"

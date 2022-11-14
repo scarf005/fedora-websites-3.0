@@ -10,6 +10,9 @@ if (data._value === null) {
   }));
   data._value = data._value[data._value.length - 1];
 }
+let events = await useAsyncData(() => {
+  return queryContent("/partials/events").findOne();
+});
 useContentHead(data);
 </script>
 <template>
