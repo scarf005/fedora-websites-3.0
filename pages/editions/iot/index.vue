@@ -15,6 +15,14 @@ useContentHead(data);
 <template>
   <main>
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+      <TheLocalBar
+        image="assets/images/fiot-logo.png"
+        :items="[
+          { name: 'Download', link: 'download' },
+          { name: 'Community', link: 'community' },
+          { name: 'Help', link: '#' },
+        ]"
+      />
       <FpBanner
         :title="data.title"
         :subtitle="data.description"

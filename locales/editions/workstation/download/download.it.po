@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-31 13:15+0000\n"
-"PO-Revision-Date: 2022-10-30 11:12+0000\n"
+"PO-Revision-Date: 2022-11-09 21:36+0000\n"
 "Last-Translator: Nathan <nathan95@live.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/it/>\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "download"
-msgstr "Dowload"
+msgstr "Scarica"
 
 #: title
 msgid "Download Fedora Workstation 37."
-msgstr ""
+msgstr "Scarica Fedora Workstation 37."
 
 #: description
 msgid ""
@@ -105,7 +105,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
-msgstr ""
+msgstr "Sicurezza, installazione, Laptop preinstallati"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
@@ -183,7 +183,7 @@ msgid ""
 "changes to your computer. Once you are hooked, installing it to your hard "
 "drive is a matter of clicking a few buttons*. "
 msgstr ""
-"Iniziare a usare  Fedora è più facile che mai. Tutto ciò che serve è una "
+"Iniziare a usare Fedora è più facile che mai. Tutto ciò che serve è una "
 "chiavetta USB da 2 GB e Fedora Media Writer.\n"
 "\n"
 "Una volta installato Fedora Media Writer, la chiavetta verrà configurata per "
@@ -203,11 +203,11 @@ msgstr ""
 
 #: sections-%3E[2]-%3Eimages
 msgid "public/assets/images/monitor-2.png"
-msgstr ""
+msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Officially-Supported Fedora Community Spaces"
-msgstr ""
+msgstr "Spazi della comunità Fedora supportati ufficialmente"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -235,7 +235,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
-msgstr ""
+msgstr "Chat di Fedora"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -249,7 +249,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Etitle
 msgid "Ask Fedora"
-msgstr ""
+msgstr "Ak Fedora"
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -272,7 +272,7 @@ msgstr "Reddit"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "/r/fedora"
-msgstr ""
+msgstr "/r/fedora"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only

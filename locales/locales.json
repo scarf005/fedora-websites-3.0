@@ -1,7 +1,9 @@
 [
   { "code": "en", "iso": "en", "file": "en.json", "name": "English" },
   { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" },
+  { "code": "it", "iso": "it", "file": "it.json", "name": "Italiano" },
   { "code": "pl", "iso": "pl", "file": "pl.json", "name": "Polski" },
+  { "code": "fi", "iso": "fi", "file": "fi.json", "name": "Suomi" },
   { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Magyar" },
   { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" }

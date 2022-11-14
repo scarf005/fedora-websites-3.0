@@ -1,14 +1,24 @@
 const editions = [
-  { name: "Fedora Workstation", href: "/editions/workstation", icon: "desktop" },
+  {
+    name: "Fedora Workstation",
+    href: "/editions/workstation",
+    icon: "desktop",
+  },
   { name: "Fedora Server", href: "/editions/server", icon: "server" },
-  { name: "Fedora CoreOS", href: "https://getfedora.org/en/coreos", icon: "circle" },
-  { name: "Fedora IoT", href: "/editions/iot", icon: 'microchip' }
-
-
-
+  { name: "Fedora IoT", href: "/editions/iot", icon: "microchip" },
+  {
+    name: "Fedora Cloud",
+    href: "https://alt.fedoraproject.org/cloud/",
+    icon: "cloud",
+  },
+  {
+    name: "Fedora CoreOS",
+    href: "https://getfedora.org/en/coreos",
+    icon: "circle",
+  },
 ];
+
 const others = [
-  { name: "Fedora Cloud Images", href: "https://alt.fedoraproject.org/cloud/" },
   { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
   {
@@ -18,7 +28,6 @@ const others = [
   { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
   { name: "More", href: "https://spins.fedoraproject.org" },
 ];
-
 
 const community = [
   {
