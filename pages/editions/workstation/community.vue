@@ -64,6 +64,9 @@ useContentHead(data);
             class="m-4 flex flex-col justify-between md:max-w-xs"
           />
         </div>
+        <FpJoinTip
+          description="Your friendly and helpful contributions to these communication channels would be greatly appreciated"
+        />
       </div>
     </section>
 
@@ -85,10 +88,14 @@ useContentHead(data);
           <h3 class="font-medium text-fp-blue">{{ content.title }}</h3>
           <p class="max-w-sm text-fp-gray-darkest">{{ content.description }}</p>
         </div>
+        <FpJoinTip
+          description="Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution"
+        />
       </div>
     </section>
     <!-- Fedora Events -->
     <EventSection color="text-fp-green" />
+
     <!-- Fedora Release Parties -->
     <section
       class="container col-span-full mx-auto my-8 flex flex-col items-center md:items-start"
@@ -100,6 +107,7 @@ useContentHead(data);
         {{ data.sections[3].content[5].description }}
       </p>
     </section>
+
     <!-- Nest Banner -->
     <article
       class="container mx-auto flex w-full justify-center gap-8 self-center bg-gradient-to-r from-fp-green-light/40 to-fp-blue-light/40 p-12 lg:gap-16 xl:my-6 xl:py-20"
@@ -124,6 +132,7 @@ useContentHead(data);
         class="order-first hidden h-fit w-48 md:block"
       />
     </article>
+
     <PublicationSection />
   </main>
 </template>
