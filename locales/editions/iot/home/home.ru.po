@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 11:18-0700\n"
+"POT-Creation-Date: 2022-11-14 12:02-0700\n"
 "PO-Revision-Date: 2022-10-13 20:19+0000\n"
 "Last-Translator: Vi <xasertop@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
@@ -176,7 +176,7 @@ msgid "Built By You"
 msgstr ""
 
 #: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
+msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
