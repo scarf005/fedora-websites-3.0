@@ -1,114 +1,78 @@
 <script setup>
-import { editions, others, support, community } from "../../config/navigation";
+import { editions, others, support, community } from "~/composables/navigation";
 </script>
 
 <template>
   <footer class="min-w-full bg-gray-200 text-center text-gray-600 lg:text-left">
-    <div class="mx-6 py-10 text-center md:text-left">
+    <section class="mx-6 bg-red-500 py-10 text-center md:text-left">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <div class="">
+        <section class="bg-blue-500">
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
             Editions
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in editions"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+          <li v-for="item in editions" :key="item.id" class="mb-4 list-none">
+            <NuxtLink
+              :to="item.href"
+              class="text-base font-medium text-gray-600"
             >
               {{ item.name }}
-            </a>
+            </NuxtLink>
           </li>
-        </div>
-
-        <div class="">
+        </section>
+        <!-- Others -->
+        <section class="">
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
             Others
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in others"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+          <li v-for="item in others" :key="item.id" class="mb-4 list-none">
+            <NuxtLink
+              :to="item.href"
+              class="text-base font-medium text-gray-600"
             >
               {{ item.name }}
-            </a>
+            </NuxtLink>
           </li>
-        </div>
-
-        <div class="">
+        </section>
+        <!-- User Support -->
+        <section class="">
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
             User Support
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in support"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+          <li v-for="item in support" :key="item.id" class="mb-4 list-none">
+            <NuxtLink
+              to="item.href"
+              class="text-base font-medium text-gray-600"
             >
               {{ item.name }}
-            </a>
+            </NuxtLink>
           </li>
-        </div>
-
-        <div class="">
+        </section>
+        <!-- Community -->
+        <section class="">
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
             Community
           </h6>
-          <li
-            style="list-style-type: none"
-            v-for="item in community"
-            :key="item.name"
-            class="mb-4"
-          >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL + item.href
-              }`"
-              :class="['text-gray-600', 'text-base font-medium']"
+          <li v-for="item in community" :key="item.id" class="mb-4 list-none">
+            <NuxtLink
+              :to="item.href"
+              class="text-base font-medium text-gray-600"
             >
               {{ item.name }}
-            </a>
+            </NuxtLink>
           </li>
-        </div>
+        </section>
       </div>
-    </div>
+    </section>
 
-    <div class="py-10 text-center md:text-left">
+    <section class="py-10 text-center md:text-left">
       <div class="mx-6 grid md:grid-cols-2 lg:grid-cols-8">
         <div class="">
           <img
@@ -131,7 +95,7 @@ import { editions, others, support, community } from "../../config/navigation";
           <a href="#!" class="text-gray-600">Sponsors</a>
         </div>
       </div>
-    </div>
+    </section>
 
     <TheRedHatSponsoredBanner />
   </footer>
