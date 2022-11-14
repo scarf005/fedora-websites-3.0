@@ -1,6 +1,7 @@
 <script setup>
 import { editions, others, support, community } from "../../config/navigation";
-const open = useState("navbaropen", () => false);
+// const open = useState("navbaropen", () => false);
+let openNav = ref(false);
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
 const availableLocales = computed(() => {
@@ -56,8 +57,7 @@ const availableLocales = computed(() => {
         <!-- Mobile menu button-->
         <div class="flex items-center sm:hidden">
           <button
-            @click="open = !open"
-            type="button"
+            @click="openNav = !openNav"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
             <Icon name="fa6-solid:bars" />
@@ -67,7 +67,7 @@ const availableLocales = computed(() => {
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu" v-if="open">
+    <div class="sm:hidden" id="mobile-menu" v-if="openNav">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <a
           class="inline-flex cursor-pointer items-center rounded px-3 py-2 text-sm text-white"
