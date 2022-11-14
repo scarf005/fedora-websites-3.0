@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 22:00+0000\n"
+"POT-Creation-Date: 2022-11-14 11:18-0700\n"
 "PO-Revision-Date: 2022-11-02 16:19+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
@@ -13,19 +13,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
 msgstr "flock"
 
 #: title
-msgid "Flock To Fedora"
-msgstr "Flock till Fedora"
+msgid "The Fedora Project Conference"
+msgstr "Fedora-projektets konferens"
 
 #: description
-msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
-msgstr "Fedora projektets konferans, Augusti 5-7, 2023\n"
+msgid "August 5 - 7, 2023\n"
+msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -46,6 +46,9 @@ msgstr "Registrera"
 #: links-%3E[0]-%3Eurl
 #, read-only
 msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -113,6 +116,16 @@ msgstr ""
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr "public/assets/images/flock-barcelona.png"
 
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "View Projects"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[0]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
 msgstr "Sessioner"
@@ -131,6 +144,16 @@ msgstr ""
 "Presentationer som visar upp arbetet som gjorts i Fedora och planering för "
 "framtiden."
 
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "View Topics"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[1]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
 msgstr "Sociala evenemang"
@@ -145,6 +168,16 @@ msgstr "public/assets/images/flock-barcelona.png"
 msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "View Socials"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[2]->link->url"
+msgid "#"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
@@ -169,6 +202,15 @@ msgstr ""
 "Flock är en årlig konferens för bidragsgivare till Fedora Linux. Det är där "
 "gemenskapen planerar och visar upp strategi och arbetet med projektet. Kolla "
 "in inspelningarna från tidigare år av Flock och Nest."
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Visit Fedora Youtube"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://www.youtube.com/fedoraproject"
+msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
@@ -546,6 +588,14 @@ msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
 msgstr "media"
 
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
+msgid "none"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
+msgid "placeholder"
+msgstr ""
+
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
 msgstr "Fördelar med att sponsra Flock"
@@ -602,15 +652,18 @@ msgstr ""
 "Alla sponsorstånd inkluderar en video, anpassningsbar upplevelse, chatt och "
 "engagemang i sociala medier. Klicka nedan för att lära dig mer."
 
+#~ msgid "Flock To Fedora"
+#~ msgstr "Flock till Fedora"
+
+#~ msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+#~ msgstr "Fedora projektets konferans, Augusti 5-7, 2023\n"
+
 #~ msgid ""
 #~ "Flock to Fedora is the annual contributor conference for the Fedora Project. "
 #~ "It has a virtual version called Nest."
 #~ msgstr ""
 #~ "Flock till Fedora är den årliga konferensen för folk som bidrar till Fedora-"
 #~ "projektet. Den har även en virtuell version som heter Nest."
-
-#~ msgid "The Fedora Project Conference"
-#~ msgstr "Fedora-projektets konferens"
 
 #~ msgid "August 5 - 7, 2023"
 #~ msgstr "5-7 Augusti, 2023"
