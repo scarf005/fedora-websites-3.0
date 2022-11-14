@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 11:18-0700\n"
+"POT-Creation-Date: 2022-11-14 12:02-0700\n"
 "PO-Revision-Date: 2022-11-13 19:41+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
@@ -178,8 +178,8 @@ msgid "Built By You"
 msgstr "당신에 의해 제작됨"
 
 #: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_background.jpg"
+msgid "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -244,3 +244,6 @@ msgstr "회의 참석"
 msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr "지원되는 설치 방법은 아주 다양합니다."
+
+#~ msgid "public/assets/images/flock_background.jpg"
+#~ msgstr "public/assets/images/flock_background.jpg"

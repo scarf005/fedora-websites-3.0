@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 11:18-0700\n"
+"POT-Creation-Date: 2022-11-14 12:02-0700\n"
 "PO-Revision-Date: 2022-11-08 19:08+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -184,8 +184,8 @@ msgid "Built By You"
 msgstr "Sinun rakentamasi"
 
 #: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_background.jpg"
+msgid "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -255,3 +255,6 @@ msgstr "Osallistu kokoukseen"
 msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr "Tuettuja asennustapoja on laaja valikoima."
+
+#~ msgid "public/assets/images/flock_background.jpg"
+#~ msgstr "public/assets/images/flock_background.jpg"
