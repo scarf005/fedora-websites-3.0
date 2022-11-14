@@ -40,7 +40,8 @@ defineProps({
           {{ details }}
         </p>
       </div>
-      <!-- TODO: ADD SLOT FOR LIST OF DETAILS -->
+      <!-- slot for extra list of details in header -->
+      <slot></slot>
       <svg
         viewBox="-82 388 1280 62"
         style="-webkit-print-color-adjust: exact"
