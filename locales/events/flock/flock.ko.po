@@ -4,28 +4,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-25 16:18+0200\n"
-"PO-Revision-Date: 2022-11-14 02:12+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/flock-to-fedora/fi/>\n"
-"Language: fi\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
 
 #: path
 msgid "flock"
-msgstr "flock"
+msgstr ""
 
 #: title
 msgid "Flock To Fedora"
-msgstr "Flock Fedoraan"
+msgstr ""
 
 #: description
 msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
-msgstr "Fedora-projektikonferenssi, 5.-7.8.2023\n"
+msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -39,7 +37,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Register"
-msgstr "Rekisteröidy"
+msgstr ""
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -49,7 +47,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Calendar"
-msgstr "Kalenteri"
+msgstr ""
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -59,7 +57,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Events"
-msgstr "Tapahtumat"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -68,11 +66,11 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Virtual"
-msgstr "Virtuaalinen"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid "A 3 day conference hosted on Hopin.io"
-msgstr "Hopin.io-sivustolla isännöity 3 päivän konferenssi"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -81,27 +79,25 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Community"
-msgstr "Yhteisö"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
-msgstr "Yhteisötapahtumia järjestetään ympäri maailmaa"
+msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Explore the latest in Open Source"
-msgstr "Tutustu avoimen lähdekoodin uusimpiin tapahtumiin"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Workshops"
-msgstr "Työpajat"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Workshops and hackfests offer opportunities for active learning and "
 "collaboration."
 msgstr ""
-"Työpajat ja hackfestit tarjoavat mahdollisuuksia aktiiviseen oppimiseen ja "
-"yhteistyöhön."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -110,7 +106,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
-msgstr "Istunnot"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -122,12 +118,10 @@ msgid ""
 "Presentations that showcase the work done in Fedora and planning for the "
 "future."
 msgstr ""
-"Esityksiä, jotka esittelevät Fedorassa tehtyä työtä ja tulevaisuuden "
-"suunnittelua."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
-msgstr "Sosiaaliset tapahtumat"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -139,16 +133,14 @@ msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
 msgstr ""
-"Rento, avustettu ja interaktiivinen tapahtuma fedoralaisten tapaamiseen ja "
-"seurustelua varten."
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
-msgstr "Katso videomateriaalia menneistä tapahtumista"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "What to expect"
-msgstr "Mitä odottaa"
+msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -161,13 +153,10 @@ msgid ""
 "the community plans and showcases the strategy and work on the project. "
 "Check out the recordings from previous years of Flock and Nest."
 msgstr ""
-"Flock on vuotuinen konferenssi Fedora Linuxin edistäjille. Siellä yhteisö "
-"suunnittelee ja esittelee strategiaa ja työtä projektin parissa. Katso "
-"tallenteet Flockin ja Nestin aiemmilta vuosilta."
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
-msgstr "Hybridikokemus"
+msgstr ""
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -176,14 +165,11 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
-"Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
-"Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
 msgid "July 1 - 31 2023"
-msgstr "1.–31.7.2023"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -197,14 +183,11 @@ msgid ""
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
-"Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
-"Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
 msgid "July 1 - 31 2023"
-msgstr "1.–31.7.2023"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -297,7 +280,7 @@ msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Etitle
 msgid "Ask Fedora"
-msgstr "Kysy Fedorasta"
+msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
