@@ -4,7 +4,7 @@
 
 ## Development: Getting Started
 
-This repository was set up on July 20th as the team voted on Fedora's static frontend pages.
+This repository was set up on July 20 2022 as the team voted on Fedora's static frontend pages.
 
 It is an off-the-shelf `create-nuxt-app` project.
 
