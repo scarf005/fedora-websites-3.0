@@ -1,102 +1,68 @@
 <script setup>
-import { editions, others, support, community } from "~/composables/navigation";
+import { editions, others, support, community } from "../../config/navigation";
+
+let isOpen = ref(false);
 </script>
 
 <template>
-  <footer class="min-w-full bg-gray-200 text-center text-gray-600 lg:text-left">
-    <section class="mx-6 bg-red-500 py-10 text-center md:text-left">
-      <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <section class="bg-blue-500">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            Editions
-          </h6>
-          <li v-for="item in editions" :key="item.id" class="mb-4 list-none">
-            <NuxtLink
-              :to="item.href"
-              class="text-base font-medium text-gray-600"
-            >
-              {{ item.name }}
-            </NuxtLink>
-          </li>
-        </section>
+  <footer class="flex flex-col bg-gray-200">
+    <nav class="container mx-auto py-10">
+      <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <!-- Editions -->
+        <TheFooterSection title="Editions" :navItems="editions" />
         <!-- Others -->
-        <section class="">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            Others
-          </h6>
-          <li v-for="item in others" :key="item.id" class="mb-4 list-none">
-            <NuxtLink
-              :to="item.href"
-              class="text-base font-medium text-gray-600"
-            >
-              {{ item.name }}
-            </NuxtLink>
-          </li>
-        </section>
+        <TheFooterSection title="Others" :navItems="others" />
         <!-- User Support -->
-        <section class="">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            User Support
-          </h6>
-          <li v-for="item in support" :key="item.id" class="mb-4 list-none">
-            <NuxtLink
-              to="item.href"
-              class="text-base font-medium text-gray-600"
-            >
-              {{ item.name }}
-            </NuxtLink>
-          </li>
-        </section>
+        <TheFooterSection title="User Support" :navItems="support" />
         <!-- Community -->
-        <section class="">
-          <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-          >
-            Community
-          </h6>
-          <li v-for="item in community" :key="item.id" class="mb-4 list-none">
-            <NuxtLink
-              :to="item.href"
-              class="text-base font-medium text-gray-600"
-            >
-              {{ item.name }}
-            </NuxtLink>
-          </li>
-        </section>
+        <TheFooterSection title="Community" :navItems="community" />
       </div>
-    </section>
-
-    <section class="py-10 text-center md:text-left">
-      <div class="mx-6 grid md:grid-cols-2 lg:grid-cols-8">
+    </nav>
+    <!-- Privacy Links -->
+    <section class="container mx-auto py-10">
+      <div class="flex flex-wrap items-center gap-4">
         <div class="">
           <img
             src="~/assets/logos/fedora-blue.png"
             alt="Fedora Logo"
-            class="ml-14 mb-4 w-1/2 lg:ml-1"
+            class="ml-6 w-1/3 xl:ml-0"
           />
         </div>
-
-        <div class="mb-4">
-          <a href="#!" class="text-gray-600">Privacy Statement</a>
-        </div>
-        <div class="mb-4">
-          <a href="#!" class="text-gray-600">Legal</a>
-        </div>
-        <div class="mb-4">
-          <a href="#!" class="text-gray-600">Code of Conduct</a>
-        </div>
-        <div class="mb-4">
-          <a href="#!" class="text-gray-600">Sponsors</a>
-        </div>
+        <ul
+          class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
+        >
+          <li class="list-none underline underline-offset-1">
+            <NuxtLink
+              to="#"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              >Privacy Statement</NuxtLink
+            >
+          </li>
+          <li class="list-none underline underline-offset-1">
+            <NuxtLink
+              to="#"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              >Legal</NuxtLink
+            >
+          </li>
+          <li class="list-none underline underline-offset-1">
+            <NuxtLink
+              to="#"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              >Code of Conduct</NuxtLink
+            >
+          </li>
+          <li class="list-none underline underline-offset-1">
+            <NuxtLink
+              to="#"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              >Sponsors</NuxtLink
+            >
+          </li>
+        </ul>
       </div>
     </section>
-
+    <!-- Red Hat Sponsorship Section -->
     <TheRedHatSponsoredBanner />
   </footer>
 </template>
