@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 13:15+0000\n"
+"POT-Creation-Date: 2022-11-14 11:18-0700\n"
 "PO-Revision-Date: 2022-10-31 11:23+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -397,7 +397,7 @@ msgstr "Weź udział w spotkaniu"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+"Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
 

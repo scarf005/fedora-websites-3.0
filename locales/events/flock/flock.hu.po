@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-11-14 11:18-0700\n"
 "PO-Revision-Date: 2022-09-21 11:46+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -13,18 +13,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
 msgstr ""
 
 #: title
-msgid "Flock To Fedora"
-msgstr "Flock to Fedora"
+msgid "The Fedora Project Conference"
+msgstr "A Fedora Projekt Konferencia"
 
 #: description
-msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+msgid "August 5 - 7, 2023\n"
 msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
@@ -45,6 +45,9 @@ msgstr "Regisztráljon"
 #: links-%3E[0]-%3Eurl
 #, read-only
 msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -112,6 +115,16 @@ msgstr ""
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr "public/assets/images/flock_logo_barcelona.png"
 
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "View Projects"
+msgstr "Projektek megtekintése"
+
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[0]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
 msgstr "Gyűlések"
@@ -130,6 +143,16 @@ msgstr ""
 "Előadások, amelyek bemutatják a Fedorában végzett munkát és a jövő "
 "tervezését."
 
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "View Topics"
+msgstr "Témák megtekintése"
+
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[1]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
 msgstr "Közösségi Események"
@@ -147,6 +170,16 @@ msgid ""
 msgstr ""
 "Alkalmi, könnyített és interaktív események a más közösségbeli tagokkal való "
 "találkozáshoz és ismerkedéshez."
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "View Socials"
+msgstr "Közösségi oldalak megtekintése"
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[2]->link->url"
+msgid "#"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
@@ -170,6 +203,15 @@ msgstr ""
 "A Flock egy éves konferencia a Fedora Linux közreműködői számára. Ez az a "
 "hely, ahol a közösség megtervezi és bemutatja a stratégiáit és a projekten "
 "végzett munkát. Nézd meg a Flock and Nest korábbi évek felvételeit."
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Visit Fedora Youtube"
+msgstr "Látogassa meg a Fedora Youtube csatornáját"
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://www.youtube.com/fedoraproject"
+msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
@@ -535,6 +577,14 @@ msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
 msgstr ""
 
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
+msgid "none"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
+msgid "placeholder"
+msgstr "placeholder"
+
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
 msgstr "A Flock szponzorálásának előnyei"
@@ -592,6 +642,9 @@ msgstr ""
 "és közösségi média elkötelezettséget. További információért kattintson az "
 "alábbiakra."
 
+#~ msgid "Flock To Fedora"
+#~ msgstr "Flock to Fedora"
+
 #~ msgid ""
 #~ "Flock to Fedora is the annual contributor conference for the Fedora Project. "
 #~ "It has a virtual version called Nest."
@@ -599,23 +652,8 @@ msgstr ""
 #~ "A Flock to Fedora a Fedora Project éves közreműködői konferenciája. Van egy "
 #~ "virtuális verziója, amit Nest-nek hívunk."
 
-#~ msgid "The Fedora Project Conference"
-#~ msgstr "A Fedora Projekt Konferencia"
-
 #~ msgid "August 5 - 7, 2023"
 #~ msgstr "2023. Augusztus 5-7"
-
-#~ msgid "View Projects"
-#~ msgstr "Projektek megtekintése"
-
-#~ msgid "View Topics"
-#~ msgstr "Témák megtekintése"
-
-#~ msgid "View Socials"
-#~ msgstr "Közösségi oldalak megtekintése"
-
-#~ msgid "Visit Fedora Youtube"
-#~ msgstr "Látogassa meg a Fedora Youtube csatornáját"
 
 #~ msgctxt "hybridSection->header->subtitle1"
 #~ msgid ""
@@ -726,6 +764,3 @@ msgstr ""
 #~ msgctxt "sponsorSection->sponsors->[12]->level"
 #~ msgid "media"
 #~ msgstr "Média"
-
-#~ msgid "placeholder"
-#~ msgstr "placeholder"
