@@ -2,6 +2,11 @@
 <img src="https://translate.fedoraproject.org/widgets/fedora-websites-3-0/-/svg-badge.svg" alt="Translation status" />
 </a>
 
+## Bugs:
+- Design questions and discussion: https://gitlab.com/fedora/design/team/wwwfpo-2022/-/issues
+- Bugs (ie. logo squished on mobile) https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues
+- Who's working on what: https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/boards/4623394
+
 ## Development: Getting Started
 
 This repository was set up on July 20 2022 as the team voted on Fedora's static frontend pages.
