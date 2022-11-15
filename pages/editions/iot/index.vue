@@ -18,8 +18,8 @@ useContentHead(data);
       <TheLocalBar
         image="assets/images/fiot-logo.png"
         :items="[
-          { name: 'Download', link: 'iot/download' },
-          { name: 'Community', link: 'iot/community' },
+          { name: 'Download', link: 'download' },
+          { name: 'Community', link: 'community' },
           { name: 'Help', link: '#' },
         ]"
       />
