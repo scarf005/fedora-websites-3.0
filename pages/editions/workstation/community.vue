@@ -22,9 +22,10 @@ useContentHead(data);
     <header>
       <TheLocalBar
         image="assets/images/fedora-workstation-logo.png"
+        home="#"
         :items="[
-          { name: 'Download', link: '/download' },
-          { name: 'Community', link: '#' },
+          { name: 'Download', link: 'download' },
+          { name: 'Community', link: 'community' },
           { name: 'Help', link: '#' },
         ]"
       />

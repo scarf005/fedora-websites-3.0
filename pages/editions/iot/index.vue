@@ -17,6 +17,7 @@ useContentHead(data);
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <TheLocalBar
         image="assets/images/fiot-logo.png"
+        home="#"
         :items="[
           { name: 'Download', link: 'download' },
           { name: 'Community', link: 'community' },
