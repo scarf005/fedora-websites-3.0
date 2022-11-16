@@ -15,7 +15,7 @@ useContentHead(data);
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
-      image="assets/images/fedora-workstation-logo.png"
+      image="assets/images/workstation_logo.png"
       home="#"
       :items="[
         { name: 'Download', link: 'download' },
@@ -128,7 +128,7 @@ useContentHead(data);
     <section>
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/workstation_logo.jpg"
+        image="assets/images/workstation_logo.png"
       />
     </section>
   </main>
