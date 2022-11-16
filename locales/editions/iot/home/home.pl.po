@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-27 16:27+0000\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-27 10:57+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -100,15 +100,17 @@ msgctxt "sections->[0]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
 msgstr ""
+"Wszystko jest wspierane poprzez absolutnie darmowy i otwartoźródłowy "
+"ekosystem Fedora."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Flexible"
-msgstr ""
+msgstr "Elastyczny"
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[0]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr ""
+msgstr "Istnieje wiele wspieranych metod instalacji."
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Edge Support"
@@ -119,6 +121,8 @@ msgid ""
 "Use Fedora IoT to support your workloads that are computed outside of the "
 "traditional datacenter."
 msgstr ""
+"Użyj Fedory IoT do obsługi zadań, które są wykonywane poza tradycyjnym "
+"centrum danych."
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
@@ -134,7 +138,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Platforms Tested against IoT"
-msgstr ""
+msgstr "Platformy Sprawdzone pod kątem IoT"
 
 #: sections-%3E[1]-%3Eimages
 msgctxt "sections->[1]->images"
@@ -182,8 +186,8 @@ msgid "Built By You"
 msgstr "Tworzona przez Ciebie"
 
 #: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_background.jpg"
+msgid "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -244,6 +248,9 @@ msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr ""
 
+#~ msgid "public/assets/images/flock_background.jpg"
+#~ msgstr "public/assets/images/flock_background.jpg"
+
 #~ msgid "Fedora IoT Index"
 #~ msgstr "Indeks Fedory IoT"
 
@@ -253,8 +260,9 @@ msgstr ""
 #~ msgid "WHY FEDORA IOT?"
 #~ msgstr "Dlaczego Fedora IoT?"
 
-#~ msgctxt "section->[0]->content->list->[0]->description"
-#~ "section->[0]->content->list->[0]->description"
+#~ msgctxt ""
+#~ "section->[0]->content->list->[0]->descriptionsection->[0]->content->list-"
+#~ ">[0]->description"
 #~ msgid ""
 #~ "Built on the latest technologies and enhancements that open-source has to "
 #~ "offer."
@@ -262,8 +270,9 @@ msgstr ""
 #~ "Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
 #~ "oprogramowanie open source."
 
-#~ msgctxt "section->[0]->content->list->[1]->description"
-#~ "section->[0]->content->list->[1]->description"
+#~ msgctxt ""
+#~ "section->[0]->content->list->[1]->descriptionsection->[0]->content->list-"
+#~ ">[1]->description"
 #~ msgid ""
 #~ "Fedora IoT is a container-based host that runs on your hardware, with a "
 #~ "focus on edge device deployment."

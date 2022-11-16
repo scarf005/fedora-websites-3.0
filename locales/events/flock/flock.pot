@@ -4,25 +4,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 16:18+0200\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
 msgstr ""
 
 #: title
-msgid "Flock To Fedora"
+msgid "The Fedora Project Conference"
 msgstr ""
 
 #: description
-msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+msgid "August 5 - 7, 2023\n"
 msgstr ""
 
 #, read-only
@@ -42,6 +42,9 @@ msgstr ""
 #, read-only
 #: links-%3E[0]-%3Eurl
 msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -104,6 +107,16 @@ msgstr ""
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
 
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "View Projects"
+msgstr ""
+
+#, read-only
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+msgctxt "sections->[1]->content->[0]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
 msgstr ""
@@ -119,6 +132,16 @@ msgid ""
 "future."
 msgstr ""
 
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "View Topics"
+msgstr ""
+
+#, read-only
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+msgctxt "sections->[1]->content->[1]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
 msgstr ""
@@ -132,6 +155,16 @@ msgstr ""
 msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "View Socials"
+msgstr ""
+
+#, read-only
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+msgctxt "sections->[1]->content->[2]->link->url"
+msgid "#"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
@@ -152,6 +185,15 @@ msgid ""
 "Flock is an annual conference for contributors of Fedora Linux. It is where "
 "the community plans and showcases the strategy and work on the project. "
 "Check out the recordings from previous years of Flock and Nest."
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Visit Fedora Youtube"
+msgstr ""
+
+#, read-only
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+msgid "https://www.youtube.com/fedoraproject"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
@@ -489,6 +531,14 @@ msgstr ""
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Edescription
 msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
+msgid "none"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
+msgid "placeholder"
 msgstr ""
 
 #: sections-%3E[7]-%3EsectionTitle

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 16:26+0000\n"
-"PO-Revision-Date: 2022-11-09 21:38+0000\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
+"PO-Revision-Date: 2022-11-10 22:19+0000\n"
 "Last-Translator: Fernandez Alonso Alberto Mario <albialonso7@icloud.com>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/it/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr "Recensione di TechHut"
+msgstr "Recensito da TechHut"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -125,15 +125,15 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr "Sfrutta al meglio il tuo dispositivo"
+msgstr "Sfrutta al meglio il dispositivo"
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
-"Fedora collabora con i fornitori di prodotti hardware per garantire un "
-"eccellente supporto a tutti i vari dispositivi."
+"Fedora collabora con i fornitori di hardware per garantire un eccellente "
+"supporto su una vasta gamma di dispositivi."
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Features for everyone"
@@ -385,7 +385,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr "Segnalare e discutere i problemi"
+msgstr "Segnalazione e discussione di problemi"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -397,7 +397,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr "Chat con il team"
+msgstr "Chatta con il team"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -409,7 +409,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr "Iscriviti alla mailing list"
+msgstr "Unisciti alla mailing list"
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
@@ -425,8 +425,13 @@ msgstr "Partecipare a una riunione"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+"Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
-"Aperto a tutti i collaboratori attuali e potenziali il **martedì, alle 9:30 "
-"AM US Eastern** su [Bluejeans]()."
+
+#~ msgid ""
+#~ "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+#~ "Eastern** on [Bluejeans]()."
+#~ msgstr ""
+#~ "Aperto a tutti i collaboratori attuali e potenziali il **martedì, alle 9:30 "
+#~ "AM US Eastern** su [Bluejeans]()."

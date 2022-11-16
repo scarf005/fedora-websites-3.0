@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 16:14+0000\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -13,18 +13,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
 msgstr "flock"
 
 #: title
-msgid "Flock To Fedora"
-msgstr "Flock To Fedora"
+msgid "The Fedora Project Conference"
+msgstr "La conférence du Projet Fedora"
 
 #: description
-msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+msgid "August 5 - 7, 2023\n"
 msgstr ""
 
 #: header_images-%3E[0]-%3Eimage
@@ -44,6 +44,9 @@ msgstr "S'enregistrer"
 #: links-%3E[0]-%3Eurl
 #, read-only
 msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -85,25 +88,37 @@ msgstr "Communauté"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
-msgstr ""
+msgstr "Événements communautaires organisés dans le monde entier"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Explore the latest in Open Source"
-msgstr ""
+msgstr "Explorez les dernières nouveautés Open Source"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Workshops"
-msgstr ""
+msgstr "Ateliers"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Workshops and hackfests offer opportunities for active learning and "
 "collaboration."
 msgstr ""
+"Les ateliers et hackfests offrent des opportunités pour l'apprentissage "
+"actif et la collaboration."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/flock_workshops_logo.png"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "View Projects"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[0]->link->url"
+msgid "#"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
@@ -121,6 +136,16 @@ msgid ""
 "future."
 msgstr ""
 
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "View Topics"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[1]->link->url"
+msgid "#"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
 msgstr ""
@@ -134,6 +159,16 @@ msgstr ""
 msgid ""
 "Casual, facilitated, and interactive events for meeting and socializing with "
 "Fedorans."
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "View Socials"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
+msgctxt "sections->[1]->content->[2]->link->url"
+msgid "#"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
@@ -154,6 +189,15 @@ msgid ""
 "Flock is an annual conference for contributors of Fedora Linux. It is where "
 "the community plans and showcases the strategy and work on the project. "
 "Check out the recordings from previous years of Flock and Nest."
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Visit Fedora Youtube"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://www.youtube.com/fedoraproject"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
@@ -493,6 +537,14 @@ msgctxt "sections->[6]->content->[12]->description"
 msgid "media"
 msgstr ""
 
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
+msgid "none"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
+msgid "placeholder"
+msgstr ""
+
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
 msgstr ""
@@ -539,15 +591,18 @@ msgid ""
 "social media engagement. Click below to learn more."
 msgstr ""
 
+#~ msgid "Flock To Fedora"
+#~ msgstr "Flock To Fedora"
+
+#~ msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+#~ msgstr "La Conférence du Projet Fedora, du 5 au 7 août 2023\n"
+
 #~ msgid ""
-#~ "Flock to Fedora is the annual contributor conference for the Fedora Project. "
-#~ "It has a virtual version called Nest."
+#~ "Flock to Fedora is the annual contributor conference for the Fedora "
+#~ "Project. It has a virtual version called Nest."
 #~ msgstr ""
 #~ "Flock to Fedora est la conférence annuelle des contributeurs du Projet "
 #~ "Fedora. Sa version virtuelle s'appelle Nest."
-
-#~ msgid "The Fedora Project Conference"
-#~ msgstr "La conférence du Projet Fedora"
 
 #~ msgid "August 5 - 7, 2023"
 #~ msgstr "5 - 7 Août 2023"

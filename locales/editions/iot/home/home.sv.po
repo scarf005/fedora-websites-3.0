@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 22:00+0000\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-11-02 16:19+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.6.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -179,8 +179,8 @@ msgid "Built By You"
 msgstr "Byggt för dig"
 
 #: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
-msgstr "public/assets/images/flock_background.jpg"
+msgid "public/assets/images/iot_flock_background.jpg"
+msgstr ""
 
 #: sections-%3E[2]-%3EsectionDescription
 msgid ""
@@ -238,6 +238,9 @@ msgstr "Närvara vid ett möte"
 msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr "Det finns en mängd olika installationsmetoder som stöds."
+
+#~ msgid "public/assets/images/flock_background.jpg"
+#~ msgstr "public/assets/images/flock_background.jpg"
 
 #~ msgid "Fedora IoT Index"
 #~ msgstr "Fedora IoT Index"
