@@ -22,17 +22,17 @@ defineProps({
       </svg>
     </a>
     <ul
-      class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block"
+      class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block dark:border-fp-blue-dark dark:bg-black"
     >
       <li v-for="item in items" :key="item.name" class="mb-2">
         <a
           :href="`${
             item.href.includes('https')
               ? item.href
-              : $config.app.baseURL + item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
           }`"
           :class="[
-            'text-gray-500  hover:text-fp-purple',
+            'text-gray-500 hover:text-fp-purple dark:text-gray-300 ',
             'rounded-md px-3 py-4 text-base font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"

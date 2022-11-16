@@ -12,14 +12,18 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <nav class="fixed z-50 w-full bg-fp-blue">
+  <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <a :href="`${$config.app.baseURL + '/'}`">
+            <a
+              :href="`${
+                $config.app.baseURL.replace(new RegExp('/$'), '') + '/'
+              }`"
+            >
               <FpImage
                 class="h-8 w-auto"
                 image="assets/images/fedora_white.png"
@@ -49,6 +53,7 @@ const availableLocales = computed(() => {
               <TheNavItem :title="$t('Support')" :items="support" />
 
               <TheNavItem :title="$t('Languages')" :items="availableLocales" />
+              <TheNavThemeSelector />
             </div>
           </div>
         </div>
