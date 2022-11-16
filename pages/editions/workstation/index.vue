@@ -16,10 +16,10 @@ useContentHead(data);
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
-      home="/editions/workstation"
+      home="#"
       :items="[
-        { name: 'Download', link: '/editions/workstation/download' },
-        { name: 'Community', link: '/editions/workstation/community' },
+        { name: 'Download', link: 'download' },
+        { name: 'Community', link: 'community' },
         { name: 'Help', link: '#' },
       ]"
     />

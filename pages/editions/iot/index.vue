@@ -17,10 +17,10 @@ useContentHead(data);
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <TheLocalBar
         image="assets/images/fiot-logo.png"
-        home="/editions/iot"
+        home="#"
         :items="[
-          { name: 'Download', link: '/editions/io/download' },
-          { name: 'Community', link: '/editions/io/community' },
+          { name: 'Download', link: 'download' },
+          { name: 'Community', link: 'community' },
           { name: 'Help', link: '#' },
         ]"
       />
