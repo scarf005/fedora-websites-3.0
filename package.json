@@ -18,15 +18,14 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
     "husky": "^8.0.1",
+    "nuxt": "^3.0.0",
     "lint-staged": "^13.0.3",
-    "nuxt": "3.0.0-rc.11",
     "nuxt-icon": "^0.1.7",
     "prettier": "2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13"
-  },
-  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "@nuxtjs/i18n": "^8.0.0-beta.1"
   },
+  "dependencies": {},
   "lint-staged": {
     "*.{vue,yml,js}": "prettier --write"
   }

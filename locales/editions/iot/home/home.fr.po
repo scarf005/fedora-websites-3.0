@@ -3,11 +3,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
-"websites-3-0/editions-iot/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editions-iot/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,10 +28,12 @@ msgid "A lightweight yet powerful and scalable OS"
 msgstr "Un OS léger mais puissant et évolutif"
 
 #: header_images-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot.png"
 msgstr ""
 
 #: header_images-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_background.jpg"
 msgstr ""
 
@@ -40,6 +42,7 @@ msgid "Download Now"
 msgstr "Téléchargez maintenant"
 
 #: links-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/iot/download/"
 msgstr ""
 
@@ -48,6 +51,7 @@ msgid "Reviewed By TechHut"
 msgstr "Testé par TechHut"
 
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -142,6 +146,7 @@ msgid "arm Systemready"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot-platform1.png"
 msgstr ""
 
@@ -150,6 +155,7 @@ msgid "Pine64"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot-platform2.png"
 msgstr ""
 
@@ -158,6 +164,7 @@ msgid "SolidRun"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot-platform3.png"
 msgstr ""
 
@@ -166,6 +173,7 @@ msgid "nVidia"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot-platform4.png"
 msgstr ""
 
@@ -232,10 +240,6 @@ msgstr ""
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr ""
-
-#: sections-%3E[2]-%3Eimages
-msgid "public/assets/images/flock_background.jpg"
 msgstr ""
 
 #~ msgid "Fedora IoT Index"
