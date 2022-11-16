@@ -3,11 +3,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
-"websites-3-0/editionsworkstationhome/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationhome/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,10 +32,12 @@ msgstr ""
 "technologies open source. Fiable, puissant et simple.\n"
 
 #: header_images-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_framework.png"
 msgstr ""
 
 #: header_images-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
@@ -44,6 +46,7 @@ msgid "Download now"
 msgstr "Télécharger"
 
 #: links-%3E[0]-%3Eurl
+#, read-only
 msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
@@ -52,6 +55,7 @@ msgid "Reviewed By TechHut"
 msgstr "Testé par TechHut"
 
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
@@ -151,6 +155,7 @@ msgstr ""
 "plates-formes."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
@@ -167,6 +172,7 @@ msgstr ""
 "dans de nombreuse langues."
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_languages.png"
 msgstr ""
 
@@ -184,6 +190,7 @@ msgstr ""
 "et vous faciliter le sommeil."
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_nightlight.png"
 msgstr ""
 
@@ -197,6 +204,7 @@ msgstr ""
 "Importer sur votre bureau votre agenda en ligne avec les comptes en ligne"
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_calendar.png"
 msgstr ""
 
@@ -213,6 +221,7 @@ msgstr ""
 "Météo et Cartes."
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Eimage
+#, read-only
 msgid "public/assets/images/workstation_outofthebox.png"
 msgstr ""
 
@@ -229,6 +238,7 @@ msgid "Boxes takes the guesswork out of using virtual machines."
 msgstr "Boxes simplifie l'utilisation des machines virtuelles."
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev1.png"
 msgstr ""
 
@@ -248,6 +258,7 @@ msgstr ""
 "ce que vous cherchez."
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev2.png"
 msgstr ""
 
@@ -264,6 +275,7 @@ msgstr ""
 "d'installation requise. Accédez au registre de conteneurs Red Hat."
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev3.png"
 msgstr ""
 
@@ -281,6 +293,7 @@ msgstr ""
 "qui les conçoivent."
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/dev4.png"
 msgstr ""
 
@@ -297,11 +310,14 @@ msgstr ""
 "déploiement d'applications à l'aide de Fedora Workstation."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eurl
-msgctxt "sections->[3]->content->[0]->urlsections->[3]->content->[0]->url"
+#, read-only
+msgctxt "sections->[3]->content->[0]->url"
+"sections->[3]->content->[0]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-devs.png"
 msgstr ""
 
@@ -314,11 +330,13 @@ msgstr ""
 "mettre à jour et de gérer les composants de votre SE."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[1]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/logo-dnf.png"
 msgstr ""
 
@@ -331,11 +349,13 @@ msgstr ""
 "conteneurs et des images de conteneur."
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[2]->url"
 msgid "https://fedoradeveloper.com"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/podman.svg"
 msgstr ""
 
@@ -352,8 +372,8 @@ msgid ""
 "The Fedora Project envisions a world where everyone can benefit from free "
 "and open source software built by inclusive, welcoming, and open-minded "
 "communities.\n"
-"Fedora Workstation is created by a team in the Fedora community called the "
-"**Workstation Working Group**. It is comprised of official members who have "
+"Fedora Workstation is created by a team in the Fedora community called the **"
+"Workstation Working Group**. It is comprised of official members who have "
 "decision making powers, as well as other contributors. [Learn more onthe "
 "Workstation Working Group Website](https://docs.fedoraproject.org/en-US/"
 "workstation-working-group/)"
@@ -361,8 +381,8 @@ msgstr ""
 "Le Projet Fedora envisage un monde où chacun peut bénéficier de logiciels "
 "libres et open source conçus par des communautés inclusives, accueillantes "
 "et ouvertes d'esprit. \n"
-"Fedora Workstation est conçu par une équipe de la communauté Fedora nommée "
-"**Workstation Working Group**. Il comprend des membres officiels qui ont des "
+"Fedora Workstation est conçu par une équipe de la communauté Fedora nommée **"
+"Workstation Working Group**. Il comprend des membres officiels qui ont des "
 "pouvoirs de prise de décision, ainsi que d'autres contributeurs. [En "
 "apprendre plus sur le site du Workstation Working Group](https://docs."
 "fedoraproject.org/fr/workstation-working-group/)"
@@ -413,13 +433,12 @@ msgid ""
 "Eastern** on [Bluejeans]()."
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
-msgid ""
-"Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
-"Eastern** on [Bluejeans]()."
-msgstr ""
-"Ouvert à tous les contributeurs actuels et potentiels les **mardi, à 9h30 "
-"heure normale de l'Est (EST)** via [Bluejeans]()."
+#~ msgid ""
+#~ "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+#~ "Eastern** on [Bluejeans]()."
+#~ msgstr ""
+#~ "Ouvert à tous les contributeurs actuels et potentiels les **mardi, à 9h30 "
+#~ "heure normale de l'Est (EST)** via [Bluejeans]()."
 
 #~ msgid "Fantastic apps"
 #~ msgstr "Applications fantastique"
