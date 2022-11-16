@@ -3,6 +3,7 @@
 </a>
 
 ## Bugs:
+
 - Design questions and discussion: https://gitlab.com/fedora/design/team/wwwfpo-2022/-/issues
 - Bugs (ie. logo squished on mobile) https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues
 - Who's working on what: https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/boards/4623394
