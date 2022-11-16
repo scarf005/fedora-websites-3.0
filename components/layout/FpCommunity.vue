@@ -20,18 +20,11 @@ const descriptionMd = await mdparser(props.data.sectionDescription);
       >
         {{ data.sectionTitle }}
       </h2>
-      <<<<<<< HEAD
       <ContentRendererMarkdown
         tag="h4"
-        class="mx-14 mb-5 text-fp-blue-dark"
+        class="mx-14 mb-5 text-fp-blue-dark dark:text-slate-300"
         :value="descriptionMd"
       />
-      =======
-      <h4 class="mx-14 mb-5 text-fp-blue-dark dark:text-slate-300">
-        {{ data.sectionDescription }}
-      </h4>
-      >>>>>>> fedora-websites-3.0-darkmode
-
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem v-for="item in data.content" v-bind="item" />
       </FpList>
