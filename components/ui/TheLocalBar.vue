@@ -1,17 +1,17 @@
 <script setup>
 defineProps({
+  home: String,
   image: String,
   items: Array,
 });
 </script>
 <template>
-  <!-- This serves as the root component for each page -->
   <div
     class="mx-auto mt-12 flex max-w-7xl justify-between px-2 sm:px-6 lg:px-8"
   >
-    <div>
+    <a :href="home">
       <FpImage class="h-8 w-auto" :image="image" />
-    </div>
+    </a>
     <div class="flex justify-end text-white">
       <a class="px-5" v-for="item in items" :href="item.link">{{
         item.name
