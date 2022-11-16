@@ -1,0 +1,11 @@
+path: index
+title: Fedora CoreOS
+description: CoreOS tagline.
+header_images:
+  - image: public/assets/images/coreos.png
+  - image: public/assets/images/coreos_background.jpg
+links:
+  - text: Download Now
+    url: https://getfedora.org/en/coreos/download/
+  - text: Reviewed By TechHut
+    url: https://www.youtube.com/watch?v=54aoIGKEMnk
