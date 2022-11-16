@@ -21,7 +21,7 @@ useContentHead(data);
   <main class="mt-4 border-t-8 border-fp-green">
     <header>
       <TheLocalBar
-        image="assets/images/fedora-workstation-logo.png"
+        image="assets/images/workstation_logo.png"
         home="#"
         :items="[
           { name: 'Download', link: 'download' },
