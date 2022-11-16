@@ -21,7 +21,7 @@ defineProps({
       'w-screen',
       'bg-cover',
       'pt-6',
-      'dark:bg-gray-700',
+      'dark:bg-gray-700 dark:bg-blend-multiply',
     ]"
   >
     <slot />
