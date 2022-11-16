@@ -16,7 +16,7 @@ useContentHead(data);
   <FpHero
     :background="data.header_images[1].image"
     alignment="bg-bottom"
-    class="dark:bg-blend-difference"
+    class="dark:bg-blend-multiply"
   >
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
