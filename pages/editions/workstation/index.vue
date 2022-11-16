@@ -13,11 +13,7 @@ if (data._value === null) {
 useContentHead(data);
 </script>
 <template>
-  <FpHero
-    :background="data.header_images[1].image"
-    alignment="bg-bottom"
-    class="dark:bg-blend-difference"
-  >
+  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
       :items="[
