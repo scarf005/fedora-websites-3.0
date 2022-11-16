@@ -3,11 +3,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
-"websites-3-0/editionsworkstationdownload/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationdownload/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,6 +36,7 @@ msgid "Release Notes"
 msgstr "Notes de version"
 
 #: links-%3E[0]-%3Eurl
+#, read-only
 msgid "https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html"
 msgstr ""
 
@@ -44,6 +45,7 @@ msgid "Installation Guide"
 msgstr "Guide d’installation"
 
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgid "https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/"
 msgstr ""
 
@@ -52,6 +54,7 @@ msgid "Community Support"
 msgstr "Support de la communauté"
 
 #: links-%3E[2]-%3Eurl
+#, read-only
 msgctxt "links->[2]->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
@@ -83,6 +86,7 @@ msgstr ""
 "Fedora."
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/media-writer-icon.png"
 msgstr ""
 
@@ -96,8 +100,8 @@ msgid ""
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
 "Vous ne savez pas utiliser ces fichiers ? [Apprenez ici](https://docs."
-"fedoraproject.org/fr/quick-docs/creating-and-using-a-live-installation-"
-"image/)"
+"fedoraproject.org/fr/quick-docs/creating-and-using-a-live-installation-image/"
+")"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
@@ -119,6 +123,7 @@ msgid "Verify your download"
 msgstr "Vérifiez votre téléchargement"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://getfedora.org/security/"
 msgstr ""
 
@@ -147,6 +152,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/lenovo-laptop.png"
 msgstr ""
 
@@ -155,6 +161,7 @@ msgid "Explore Fedora laptops"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgid "https://fedoramagazine.org/lenovo-fedora-now-available/"
 msgstr ""
 
@@ -179,8 +186,8 @@ msgid ""
 " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run "
 "successfully. Double those amounts is recommended. "
 msgstr ""
-" * Fedora nécessite un minimum de 20GB de disque et 2GB de RAM pour "
-"s’installer et s’exécuter correctement. Le double de ces valeurs est "
+" * Fedora nécessite un minimum de 20GB de disque et 2GB de RAM pour s’"
+"installer et s’exécuter correctement. Le double de ces valeurs est "
 "recommandé. "
 
 #: sections-%3E[2]-%3Eimages
@@ -206,10 +213,12 @@ msgid "Fedora Discussion"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-discussion-plus-icon.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
@@ -218,10 +227,12 @@ msgid "Fedora Chat"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
 msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
@@ -230,10 +241,12 @@ msgid "Ask Fedora"
 msgstr "Ask Fedora"
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgctxt "sections->[3]->content->[2]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
@@ -251,10 +264,12 @@ msgid "/r/fedora"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://www.reddit.com/r/Fedora/"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/reddit-brands-3.png"
 msgstr ""
 
@@ -267,10 +282,12 @@ msgid "Fedora Discord"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
 msgid "https://discord.com/invite/fedora"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/discord-brands-2.png"
 msgstr ""
 
@@ -280,6 +297,7 @@ msgid "Telegram"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/telegram-brands.png"
 msgstr ""
 
@@ -289,6 +307,7 @@ msgid "Telegram"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgid "https://fedoraproject.org/wiki/Telegram"
 msgstr ""
 
@@ -328,10 +347,10 @@ msgstr ""
 "transférés (a) dans les pays listés dans le groupe de pays E:1 dans le "
 "supplément n° 1 à 740 de l’EAR (actuellement, Cuba, l’Iran, la Corée du "
 "Nord, le Soudan et la Syrie) ; (b) dans les destinations interdites ou à un "
-"utilisateur final qui s’est vu interdit de participer aux transactions "
-"d’export américaines par une agence fédérale du gouvernement des États-"
-"Unis ; ou (c) pour un usage en rapport avec la conception, la fabrication ou "
-"la production d’armes nucléaires, chimiques ou biologiques, de systèmes de "
+"utilisateur final qui s’est vu interdit de participer aux transactions d’"
+"export américaines par une agence fédérale du gouvernement des États-Unis ; "
+"ou (c) pour un usage en rapport avec la conception, la fabrication ou la "
+"production d’armes nucléaires, chimiques ou biologiques, de systèmes de "
 "missiles, d’engins de lancement spatial, de missiles soniques, ou de "
 "systèmes de véhicules aériens sans pilotes. Vous ne pourrez pas télécharger "
 "le logiciel Fedora ou ses informations techniques si vous vous situez dans "
@@ -341,18 +360,6 @@ msgstr ""
 "Vous êtes aussi responsable du respect des lois étrangères qui s’appliquent "
 "à l’import, l’export et l’utilisation du logiciel Fedora et ses informations "
 "techniques."
-
-#: sections-%3E[2]-%3EsectionDescription
-msgid ""
-"Getting going with Fedora is easier than ever. All you need is a 2GB USB "
-"flash drive, and Fedora Media Writer.\n"
-"\n"
-"Once Fedora Media Writer is installed, it will set up your flash drive to "
-"run a \"Live\" version of Fedora Workstation, meaning that you can boot it "
-"from your flash drive and try it out right away without making any permanent "
-"changes to your computer. Once you are hooked, installing it to your hard "
-"drive is a matter of clicking a few buttons*. "
-msgstr ""
 
 #~ msgid "Download Fedora Workstation 35."
 #~ msgstr "Télécharger Fedora Workstation 35."

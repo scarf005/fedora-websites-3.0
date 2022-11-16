@@ -9,14 +9,14 @@ useHead({
     {
       rel: "icon",
       type: "image/x-icon",
-      href: base + "/favicon.ico",
+      href: "https://getfedora.org/static/images/favicon.ico",
     },
   ],
 });
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="dark:bg-neutral-700 dark:text-white">
     <TheNavBar />
     <div class="pt-12">
       <slot />
