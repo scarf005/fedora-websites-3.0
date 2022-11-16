@@ -1,5 +1,6 @@
 <script setup>
 import { editions, others, support, community } from "../../config/navigation";
+const about = "https://docs.fedoraproject.org/en-US/project/";
 const open = useState("navbaropen", () => false);
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
@@ -35,7 +36,7 @@ const availableLocales = computed(() => {
             <div class="flex space-x-4">
               <a
                 class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
-                href="https://docs.fedoraproject.org/en-US/project/"
+                :href="about"
               >
                 <span class="mr-1">{{ $t("About") }}</span>
               </a>
@@ -73,12 +74,63 @@ const availableLocales = computed(() => {
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu" v-if="open">
-      <div class="space-y-1 px-2 pt-2 pb-3">
+      <div class="flex flex-col overflow-scroll pb-4">
+        <a class="px-3 py-2 text-sm text-white" :href="about"> About </a>
+        <div class="my-2 px-2">
+          <div class="w-full border-t border-gray-300" />
+        </div>
+
         <a
-          class="inline-flex cursor-pointer items-center rounded px-3 py-2 text-sm text-white"
-          href="https://docs.fedoraproject.org/en-US/project/"
+          v-for="item in editions"
+          :key="item.name"
+          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
+          :href="`${
+            item.href.includes('https')
+              ? item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
+          }`"
+          :aria-current="item.current ? 'page' : undefined"
         >
-          <span class="mr-1">About</span>
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
+          {{ item.name }}
+        </a>
+
+        <div class="my-2 px-2">
+          <div class="w-full border-t border-gray-300" />
+        </div>
+
+        <a
+          v-for="item in community"
+          :key="item.name"
+          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
+          :href="`${
+            item.href.includes('https')
+              ? item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
+          }`"
+          :aria-current="item.current ? 'page' : undefined"
+        >
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
+          {{ item.name }}
+        </a>
+
+        <div class="my-2 px-2">
+          <div class="w-full border-t border-gray-300" />
+        </div>
+
+        <a
+          v-for="item in support"
+          :key="item.name"
+          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
+          :href="`${
+            item.href.includes('https')
+              ? item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
+          }`"
+          :aria-current="item.current ? 'page' : undefined"
+        >
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
+          {{ item.name }}
         </a>
       </div>
     </div>
