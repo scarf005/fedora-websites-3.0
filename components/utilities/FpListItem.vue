@@ -31,10 +31,12 @@ if (props.description) {
     <div v-if="props.image" class="flex h-64 items-center justify-center">
       <FpImage :image="props.image" />
     </div>
-    <h4 class="inline font-bold text-fp-blue-dark">{{ props.title }}</h4>
+    <h4 class="inline font-bold text-fp-blue-dark dark:text-slate-100">
+      {{ props.title }}
+    </h4>
     <ContentRenderer
       v-if="descriptionMd"
-      class="text-fp-blue-dark"
+      class="text-fp-blue-dark dark:text-slate-200"
       tag="p"
       :value="descriptionMd"
     />

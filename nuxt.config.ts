@@ -2,7 +2,7 @@ import locales from "./locales/locales.json";
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
-  : "";
+  : "/";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "~/components/partials",
   ],
   modules: [
+    "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxtjs/i18n",
@@ -21,6 +22,9 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
+  },
+  colorMode: {
+    classSuffix: "",
   },
   i18n: {
     locales: locales,
@@ -34,7 +38,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: base,
-    buildAssetsDir: base + "/_nuxt/",
+    buildAssetsDir: "/_nuxt/",
     head: {
       titleTemplate: "%s | The Fedora Project",
     },
