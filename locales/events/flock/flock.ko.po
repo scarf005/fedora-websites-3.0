@@ -4,14 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-11-17 09:33+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/flock-to-fedora/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "flock"
@@ -19,11 +21,11 @@ msgstr "flock"
 
 #: title
 msgid "The Fedora Project Conference"
-msgstr ""
+msgstr "페도라 프로젝트 회의"
 
 #: description
 msgid "August 5 - 7, 2023\n"
-msgstr ""
+msgstr "2023년 8월 5일 - 7일\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -46,7 +48,7 @@ msgctxt "links->[0]->url"
 "links->[0]->url"
 "links->[0]->url"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: links-%3E[1]-%3Etext
 msgid "Calendar"
@@ -109,13 +111,13 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "View Projects"
-msgstr ""
+msgstr "프로젝트 보기"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgctxt "sections->[1]->content->[0]->link->url"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Sessions"
@@ -134,13 +136,13 @@ msgstr "페도라에서 수행한 작업과 미래를 위한 계획을 보여주
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "View Topics"
-msgstr ""
+msgstr "주제 보기"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
 msgctxt "sections->[1]->content->[1]->link->url"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Social Events"
@@ -160,13 +162,13 @@ msgstr "페도라인과 함께하는 모임과 사교를 위해 일상적이고,
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "View Socials"
-msgstr ""
+msgstr "사회적 보기"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
 msgctxt "sections->[1]->content->[2]->link->url"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Watch Footage from Past Events"
@@ -193,12 +195,12 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Visit Fedora Youtube"
-msgstr ""
+msgstr "페도라 유튜브 방문"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://www.youtube.com/fedoraproject"
-msgstr ""
+msgstr "https://www.youtube.com/fedoraproject"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "A Hybrid Experience"
@@ -569,11 +571,11 @@ msgstr "미디어"
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
 msgid "none"
-msgstr ""
+msgstr "없음"
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
 msgid "placeholder"
-msgstr ""
+msgstr "placeholder"
 
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
