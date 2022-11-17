@@ -1,11 +1,11 @@
 const editions = [
   {
     name: "Fedora Workstation",
-    href: "/editions/workstation",
+    href: "/editions/workstation/",
     icon: "desktop",
   },
-  { name: "Fedora Server", href: "/editions/server", icon: "server" },
-  { name: "Fedora IoT", href: "/editions/iot", icon: "microchip" },
+  { name: "Fedora Server", href: "/editions/server/", icon: "server" },
+  { name: "Fedora IoT", href: "/editions/iot/", icon: "microchip" },
   {
     name: "Fedora Cloud",
     href: "https://alt.fedoraproject.org/cloud/",
@@ -13,7 +13,7 @@ const editions = [
   },
   {
     name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
+    href: "https://getfedora.org/en/coreos/",
     icon: "circle",
   },
 ];
