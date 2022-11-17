@@ -7,7 +7,7 @@ defineProps({
 </script>
 <template>
   <div class="group relative inline-block">
-    <span
+    <a
       class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
     >
       <span class="mr-1">{{ title }}</span>
@@ -20,19 +20,26 @@ defineProps({
           d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
         />
       </svg>
-    </span>
+    </a>
     <ul
       class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block dark:border-fp-blue-dark dark:bg-black"
     >
       <li v-for="item in items" :key="item.name" class="mb-2">
-        <NuxtLink
-          :to="item.href"
-          class="rounded-md px-3 py-4 text-base font-medium text-gray-500 hover:cursor-pointer hover:text-fp-purple dark:text-gray-300"
+        <a
+          :href="`${
+            item.href.includes('https')
+              ? item.href
+              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
+          }`"
+          :class="[
+            'text-gray-500 hover:text-fp-purple dark:text-gray-300 ',
+            'rounded-md px-3 py-4 text-base font-medium',
+          ]"
           :aria-current="item.current ? 'page' : undefined"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </NuxtLink>
+        </a>
       </li>
     </ul>
   </div>
