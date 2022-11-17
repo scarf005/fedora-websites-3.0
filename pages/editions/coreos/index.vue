@@ -36,4 +36,17 @@ useContentHead(data);
       <FpImage :image="data.header_images[0].image" />
     </FpBanner>
   </FpHero>
+
+  <FpHero :background="data.sections[0].images" alignment="bg-bottom">
+    <section class="mx-auto w-10/12 pt-12">
+      <h3
+        class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
+      >
+        {{ data.sections[0].sectionTitle }}
+      </h3>
+      <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+        <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
+      </FpList>
+    </section>
+  </FpHero>
 </template>
