@@ -70,4 +70,8 @@ useContentHead(data);
   <section>
     <FpCommunity :data="data.sections[2]" />
   </section>
+
+  <section>
+    <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.jpg" />
+  </section>
 </template>
