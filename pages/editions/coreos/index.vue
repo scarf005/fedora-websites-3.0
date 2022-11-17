@@ -14,6 +14,7 @@ useContentHead(data);
 </script>
 
 <template>
+  <!-- Hero Section -->
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
@@ -37,6 +38,7 @@ useContentHead(data);
     </FpBanner>
   </FpHero>
 
+  <!-- Why Section -->
   <FpHero :background="data.sections[0].images" alignment="bg-bottom">
     <section class="mx-auto w-10/12 pt-12">
       <h3
@@ -50,6 +52,7 @@ useContentHead(data);
     </section>
   </FpHero>
 
+  <!-- Platforms Section -->
   <div class="bg-magenta-100" style="min-height: 60vh">
     <section class="mx-auto w-10/12 pt-12">
       <h3
@@ -67,10 +70,12 @@ useContentHead(data);
     </section>
   </div>
 
+  <!-- Community Section -->
   <section>
     <FpCommunity :data="data.sections[2]" />
   </section>
 
+  <!-- Call To Action -->
   <section>
     <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.jpg" />
   </section>
