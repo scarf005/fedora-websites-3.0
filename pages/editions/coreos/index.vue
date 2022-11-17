@@ -66,4 +66,8 @@ useContentHead(data);
       </FpList>
     </section>
   </div>
+
+  <section>
+    <FpCommunity :data="data.sections[2]" />
+  </section>
 </template>

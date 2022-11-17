@@ -46,3 +46,23 @@ sections:
         image: public/assets/images/iot-platform3.png
       - title: nVidia
         image: public/assets/images/iot-platform4.png
+  - sectionTitle: Built By You
+    images: public/assets/images/iot_flock_background.jpg
+    sectionDescription: >-
+      The Fedora Project envisions a world where everyone benefits from free and
+      open source software built by inclusive, welcoming, and open-minded
+      communities.
+
+
+      Fedora CoreOS is created by a team in the Fedora community called the CoreOS Working Group.
+      It is comprised of official members who have decision making powers, as well as other contributors.
+      Learn more on the CoreOS Working Group website.
+    content:
+      - title: Report & discuss issues
+        description: You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS issue tracker.
+      - title: Chat with the team
+        description: Visit \#fedora-coreos on irc.libera.chat.
+      - title: Join the mailing list
+        description: Sign up at coreos-status@lists.fedoraproject.org to receive meeting agendas and minutes.
+      - title: Attend a meeting
+        description: Open to all current and potential contributors on Wednesday 11 AM Eastern on fedora-meeting@irc.libera.chat.
