@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: 2022-10-31 11:23+0000\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2022-11-17 12:46+0000\n"
+"Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pl/>\n"
 "Language: pl\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "index"
@@ -363,7 +363,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr "Zgłoś i dyskutuj błędy"
+msgstr "Zgłoś i przedyskutuj problemy"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -393,7 +393,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr "Weź udział w spotkaniu"
+msgstr "Weź udział w spotkaniu"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
