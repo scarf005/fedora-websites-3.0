@@ -4,7 +4,7 @@ let { data } = await useAsyncData("page-data", () => {
   return queryContent("/editions/server/home." + locale._value).findOne();
 });
 
-if (data._value === null) {
+if (!data._value._dir) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
     return queryContent("/editions/server/home").sort().find();
   }));
