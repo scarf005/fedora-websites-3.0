@@ -4,6 +4,14 @@ defineProps({
   items: Array,
   icons: Boolean,
 });
+function makeUrl(i) {
+  return i.includes("https")
+    ? i
+    : JSON.parse(process.env.NUXT_VITE_NODE_OPTIONS).baseURL.replace(
+        "/__nuxt_vite_node__",
+        ""
+      ) + i;
+}
 </script>
 <template>
   <div class="group relative inline-block">
@@ -26,11 +34,7 @@ defineProps({
     >
       <li v-for="item in items" :key="item.name" class="mb-2">
         <a
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
+          :href="makeUrl(item.href)"
           :class="[
             'text-gray-500 hover:text-fp-purple dark:text-gray-300 ',
             'rounded-md px-3 py-4 text-base font-medium',
