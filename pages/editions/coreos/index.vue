@@ -28,9 +28,9 @@ useContentHead(data);
     <FpBanner
       :title="data.title"
       :subtitle="data.description"
-      color="text-fp-purple"
-      border="border border-fp-purple"
-      background="text-white bg-fp-purple"
+      color="text-fp-magenta"
+      border="border border-fp-magenta"
+      background="text-white bg-fp-magenta"
       :ctas="data.links"
       icon="youtube"
     >
@@ -42,7 +42,7 @@ useContentHead(data);
   <FpHero :background="data.sections[0].images" alignment="bg-bottom">
     <section class="mx-auto w-10/12 pt-12">
       <h3
-        class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
+        class="mb-4 font-medium text-fp-magenta md:col-span-2 xl:col-span-1 xl:mb-6"
       >
         {{ data.sections[0].sectionTitle }}
       </h3>
