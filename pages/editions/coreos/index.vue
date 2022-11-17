@@ -77,6 +77,6 @@ useContentHead(data);
 
   <!-- Call To Action -->
   <section>
-    <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.jpg" />
+    <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.png" />
   </section>
 </template>
