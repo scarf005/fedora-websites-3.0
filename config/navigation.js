@@ -13,7 +13,7 @@ const editions = [
   },
   {
     name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
+    href: "/editions/coreos",
     icon: "circle",
   },
 ];
