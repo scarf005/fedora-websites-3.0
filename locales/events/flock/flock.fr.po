@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -88,21 +88,23 @@ msgstr "Communauté"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "Community events hosted around the world"
-msgstr ""
+msgstr "Événements communautaires organisés dans le monde entier"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Explore the latest in Open Source"
-msgstr ""
+msgstr "Explorez les dernières nouveautés Open Source"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Workshops"
-msgstr ""
+msgstr "Ateliers"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Workshops and hackfests offer opportunities for active learning and "
 "collaboration."
 msgstr ""
+"Les ateliers et hackfests offrent des opportunités pour l'apprentissage "
+"actif et la collaboration."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -592,9 +594,12 @@ msgstr ""
 #~ msgid "Flock To Fedora"
 #~ msgstr "Flock To Fedora"
 
+#~ msgid "The Fedora Project Conference, August 5 - 7, 2023\n"
+#~ msgstr "La Conférence du Projet Fedora, du 5 au 7 août 2023\n"
+
 #~ msgid ""
-#~ "Flock to Fedora is the annual contributor conference for the Fedora Project. "
-#~ "It has a virtual version called Nest."
+#~ "Flock to Fedora is the annual contributor conference for the Fedora "
+#~ "Project. It has a virtual version called Nest."
 #~ msgstr ""
 #~ "Flock to Fedora est la conférence annuelle des contributeurs du Projet "
 #~ "Fedora. Sa version virtuelle s'appelle Nest."

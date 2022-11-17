@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -21,7 +21,7 @@ msgstr "Téléchargement"
 
 #: title
 msgid "IOT Download"
-msgstr ""
+msgstr "Téléchargement IOT"
 
 #~ msgid "Fedora IoT Downloads"
 #~ msgstr "Téléchargements de Fedora IoT"

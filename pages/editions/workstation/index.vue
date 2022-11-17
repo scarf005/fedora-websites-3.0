@@ -15,7 +15,8 @@ useContentHead(data);
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
-      image="assets/images/fedora-workstation-logo.png"
+      image="assets/images/workstation_logo.png"
+      home="#"
       :items="[
         { name: 'Download', link: 'download' },
         { name: 'Community', link: 'community' },
@@ -100,11 +101,11 @@ useContentHead(data);
     </section>
 
     <!-- Get Started Developing Section -->
-    <section class="w-full">
-      <div
-        class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
-      >
-        <h3 class="mb-8 text-center font-bold text-fp-blue">
+    <section
+      class="w-full bg-gradient-to-r from-green-200 to-blue-100 dark:from-black dark:to-slate-800"
+    >
+      <div class="mx-auto max-w-7xl p-2 sm:p-10">
+        <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
           {{ data.sections[3].sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
@@ -127,7 +128,7 @@ useContentHead(data);
     <section>
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/workstation_logo.jpg"
+        image="assets/images/workstation_logo.png"
       />
     </section>
   </main>

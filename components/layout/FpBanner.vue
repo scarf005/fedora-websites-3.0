@@ -22,7 +22,11 @@ defineProps({
       <img
         v-if="logo"
         class="z-10"
-        :src="`${$config.app.baseURL + '/' + logo.replace('public/', '')}`"
+        :src="`${
+          $config.app.baseURL.replace(new RegExp('/$'), '') +
+          '/' +
+          logo.replace('public/', '')
+        }`"
         alt="logo"
       />
     </div>

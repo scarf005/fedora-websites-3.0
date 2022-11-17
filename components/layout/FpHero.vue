@@ -9,11 +9,20 @@ defineProps({
   <div
     :style="{
       backgroundImage: `url(${
-        $config.app.baseURL + '/' + background.replace('public/', '')
+        $config.app.baseURL.replace(new RegExp('/$'), '') +
+        '/' +
+        background.replace('public/', '')
       })`,
     }"
     style="min-height: 60vh"
-    :class="[alignment, 'pb-30 w-screen bg-cover pt-6']"
+    :class="[
+      alignment,
+      'pb-30',
+      'w-screen',
+      'bg-cover',
+      'pt-6',
+      'dark:bg-neutral-700 dark:bg-blend-multiply',
+    ]"
   >
     <slot />
   </div>

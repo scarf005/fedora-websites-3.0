@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: title
 msgid "The solid foundation for IoT ecosystems"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Iot?"
-msgstr ""
+msgstr "Pourquoi Fedora Iot ?"
 
 #: sections-%3E[0]-%3Eimages
 msgctxt "sections->[0]->images"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Container Based"
-msgstr ""
+msgstr "Basé sur les conteneurs"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[0]->content->[1]->description"
@@ -87,25 +87,28 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora ioT est un hôte basé sur des conteneurs qui fonctionne sur votre "
+"matériel, avec un focus sur le déploiement d'équipements de périphérie."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
-msgstr ""
+msgstr "Écosystème open-source"
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[0]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
 msgstr ""
+"Tout est supporté par un écosystème Fedora entièrement libre et open-source."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Flexible"
-msgstr ""
+msgstr "Flexible"
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[0]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr ""
+msgstr "Il y a une large variété de méthodes d'installation supportées."
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Edge Support"
@@ -243,10 +246,10 @@ msgstr ""
 #~ msgstr "Fedora IoT Index"
 
 #~ msgid ""
-#~ "The Fedora Project envisions a world where everyone benefits from free and "
-#~ "open source software built by inclusive, welcoming, and open-minded "
+#~ "The Fedora Project envisions a world where everyone benefits from free "
+#~ "and open source software built by inclusive, welcoming, and open-minded "
 #~ "communities."
 #~ msgstr ""
-#~ "Le projet Fedora envisage un monde où chacun bénéficie des logiciels libres "
-#~ "et open sources construits par des communautés inclusives, accueillantes et "
-#~ "ouvertes d’esprit."
+#~ "Le projet Fedora envisage un monde où chacun bénéficie des logiciels "
+#~ "libres et open sources construits par des communautés inclusives, "
+#~ "accueillantes et ouvertes d’esprit."

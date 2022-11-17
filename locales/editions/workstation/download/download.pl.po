@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
-"PO-Revision-Date: 2022-10-30 11:12+0000\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
+"PO-Revision-Date: 2022-11-17 09:33+0000\n"
+"Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/pl/>\n"
 "Language: pl\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "download"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: links-%3E[2]-%3Etext
 msgid "Community Support"
-msgstr ""
+msgstr "Wsparcie społeczności"
 
 #: links-%3E[2]-%3Eurl
 #, read-only
@@ -98,10 +98,13 @@ msgid ""
 "Not sure how to use these files? [Learn More](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
+"Nie wiesz, jak używać tych plików? [Dowiedz się więcej](https://docs."
+"fedoraproject.org/en-US/quick-docs/"
+"creating-and-using-a-live-installation-image/)"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
-msgstr ""
+msgstr "Bezpieczeństwo, Instalacje, Laptopy z preinstalowanym oprogramowaniem"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
@@ -138,13 +141,16 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Laptops pre-loaded with Fedora"
-msgstr ""
+msgstr "Laptopy z fabrycznie zainstalowaną Fedorą"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "We've partnered with companies like Lenovo to bring you laptops pre-loaded "
 "with Fedora that include fully-supported hardware components. "
 msgstr ""
+"Współpracujemy z firmami takimi jak Lenovo, aby dostarczyć laptopy z "
+"preinstalowanym systemem Fedora, które zawierają w pełni obsługiwane "
+"komponenty sprzętowe. "
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -153,7 +159,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "Explore Fedora laptops"
-msgstr ""
+msgstr "Poznaj laptopy Fedory"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -175,6 +181,16 @@ msgid ""
 "changes to your computer. Once you are hooked, installing it to your hard "
 "drive is a matter of clicking a few buttons*."
 msgstr ""
+"Rozpoczęcie pracy z Fedorą jest łatwiejsze niż kiedykolwiek. Wszystko, czego "
+"potrzebujesz, to dysk flash USB o pojemności 2 GB i program Fedora Media "
+"Writer.\n"
+"\n"
+"Po zainstalowaniu Fedora Media Writer, aplikacja skonfiguruje dysk flash do "
+"uruchomienia wersji \"Live\" Fedory Workstation, co oznacza, że można ją "
+"uruchomić z dysku wymiennego i wypróbować od razu, bez wprowadzania "
+"jakichkolwiek trwałych zmian w komputerze. Gdy polubisz Fedorę, "
+"zainstalowanie systemu na dysku twardym to kwestia kliknięcia kilku "
+"przycisków*."
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -191,7 +207,7 @@ msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Officially-Supported Fedora Community Spaces"
-msgstr ""
+msgstr "Oficjalnie wspierane obszary społeczności Fedory"
 
 #: sections-%3E[3]-%3EsectionDescription
 msgctxt "sections->[3]->sectionDescription"
@@ -205,7 +221,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
-msgstr ""
+msgstr "Dyskusja o Fedorze"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -219,7 +235,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
-msgstr ""
+msgstr "Czat Fedora"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -248,7 +264,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Community-Maintained Spaces"
-msgstr ""
+msgstr "Miejsca utrzymywane przez Wspólnotę"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reddit"
@@ -274,7 +290,7 @@ msgstr "Discord"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "Fedora Discord"
-msgstr ""
+msgstr "Discord Fedory"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only

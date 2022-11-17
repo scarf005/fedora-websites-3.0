@@ -7,7 +7,15 @@ defineProps({
 <template>
   <img
     class="z-10"
-    :src="`${$config.app.baseURL + '/' + image.replace('public/', '')}`"
-    :alt="`${$config.app.baseURL + '/' + image.replace('public', '')}`"
+    :src="`${
+      $config.app.baseURL.replace(new RegExp('/$'), '') +
+      '/' +
+      image.replace('public/', '')
+    }`"
+    :alt="`${
+      $config.app.baseURL.replace(new RegExp('/$'), '') +
+      '/' +
+      image.replace('public', '')
+    }`"
   />
 </template>

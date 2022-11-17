@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -21,7 +21,7 @@ msgstr "Téléchargement"
 
 #: title
 msgid "Download Fedora Workstation 37."
-msgstr ""
+msgstr "Téléchargez Fedora Workstation 37."
 
 #: description
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: links-%3E[2]-%3Etext
 msgid "Community Support"
-msgstr ""
+msgstr "Support de la communauté"
 
 #: links-%3E[2]-%3Eurl
 #, read-only
@@ -99,10 +99,13 @@ msgid ""
 "Not sure how to use these files? [Learn More](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
+"Vous ne savez pas utiliser ces fichiers ? [Apprenez ici](https://docs."
+"fedoraproject.org/fr/quick-docs/creating-and-using-a-live-installation-image/"
+")"
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Security, Installs, Laptops Preloaded"
-msgstr ""
+msgstr "Sécurité, Installations, PC Portables Préchargés"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"

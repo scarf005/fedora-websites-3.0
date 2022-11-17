@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 12:02-0700\n"
+"POT-Creation-Date: 2022-11-16 07:42-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: title
 msgid "The leading Linux desktop"
@@ -141,7 +141,7 @@ msgstr "Fonctionnalités pour tous"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fantastic app"
-msgstr ""
+msgstr "Application fantastique"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -201,6 +201,7 @@ msgstr "Intégration du calendrier"
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Edescription
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr ""
+"Importer sur votre bureau votre agenda en ligne avec les comptes en ligne"
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -209,13 +210,15 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Etitle
 msgid "Helpful out of the box"
-msgstr ""
+msgstr "Serviable dès la mise en route"
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Edescription
 msgid ""
 "Fedora Workstation includes a great set of utilities, like Clocks, Weather "
 "and Maps."
 msgstr ""
+"Fedora Workstation inclut un superbe ensemble d'utilitaires, comme Horloges, "
+"Météo et Cartes."
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Eimage
 #, read-only
@@ -224,15 +227,15 @@ msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "Great for developers"
-msgstr ""
+msgstr "Idéal pour les développeurs"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgid "Virtualization made easy"
-msgstr ""
+msgstr "La virtualisation simplifiée"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid "Boxes takes the guesswork out of using virtual machines."
-msgstr ""
+msgstr "Boxes simplifie l'utilisation des machines virtuelles."
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -241,7 +244,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
 msgid "Productivity-boosting desktop features"
-msgstr ""
+msgstr "Fonctionnalités de bureau améliorant la productivité"
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -249,6 +252,10 @@ msgid ""
 "notifications with Do Not Disturb. Press the Super key and just type to "
 "search for what you need."
 msgstr ""
+"Utilisez le mode performance pour augmenter la vitesse de votre matériel "
+"quand vous en avez besoin. Éteignez les notifications avec le mode Ne pas "
+"déranger. Appuyez sur la touche Super de votre clavier et commencez à taper "
+"ce que vous cherchez."
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -257,13 +264,15 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
 msgid "Containers ready to go"
-msgstr ""
+msgstr "Les conteneurs prêts à partir"
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Use the latest container tools from the Red Hat ecosystem. Not setup "
 "required. Access the Red Hat container registry."
 msgstr ""
+"Utilisez les dernières outils pour conteneurs de l'écosystème Red Hat. Pas "
+"d'installation requise. Accédez au registre de conteneurs Red Hat."
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
@@ -272,13 +281,16 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Etitle
 msgid "All the tools"
-msgstr ""
+msgstr "Tous les outils"
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "All the tools you might need, easy to install with a single command. Tools "
 "supplied with high quality, by the people who make them."
 msgstr ""
+"Tous les outils dont vous pouvez avoir besoin, facilement installables avec "
+"une seule commande. Des outils fournis de haute qualité, par les personnes "
+"qui les conçoivent."
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -287,13 +299,15 @@ msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Get started developing with Fedora Workstation"
-msgstr ""
+msgstr "Commencez à développer avec Fedora Workstation"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "The Fedora Developer portal has guides on developing and deploying "
 "applications using Fedora workstation."
 msgstr ""
+"Le Fedora Developer Portal possède des guides sur le développement et le "
+"déploiement d'applications à l'aide de Fedora Workstation."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eurl
 #, read-only
@@ -312,6 +326,8 @@ msgid ""
 "DNF is the Fedora package manager that enables you to install, update and "
 "manage OS components."
 msgstr ""
+"DNF est le gestionnaire de paquets de Fedora qui vous permet d'installer, de "
+"mettre à jour et de gérer les composants de votre SE."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eurl
 #, read-only
@@ -329,6 +345,8 @@ msgid ""
 "Podman is a daemonless container engine for creating and managing containers "
 "and container images."
 msgstr ""
+"Podman est un moteur de conteneur sans daemon pour créer et gérer des "
+"conteneurs et des images de conteneur."
 
 #: sections-%3E[3]-%3Econtent-%3E[2]-%3Eurl
 #, read-only
@@ -343,7 +361,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Built by you"
-msgstr ""
+msgstr "Conçu par vous"
 
 #: sections-%3E[4]-%3Eimages
 msgid "public/assets/images/iot_flock_background.jpg"
@@ -360,46 +378,67 @@ msgid ""
 "Workstation Working Group Website](https://docs.fedoraproject.org/en-US/"
 "workstation-working-group/)"
 msgstr ""
+"Le Projet Fedora envisage un monde où chacun peut bénéficier de logiciels "
+"libres et open source conçus par des communautés inclusives, accueillantes "
+"et ouvertes d'esprit. \n"
+"Fedora Workstation est conçu par une équipe de la communauté Fedora nommée **"
+"Workstation Working Group**. Il comprend des membres officiels qui ont des "
+"pouvoirs de prise de décision, ainsi que d'autres contributeurs. [En "
+"apprendre plus sur le site du Workstation Working Group](https://docs."
+"fedoraproject.org/fr/workstation-working-group/)"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr ""
+msgstr "Signaler & discuter des problèmes"
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "You can view, file, and discuss Fedora Workstation issues on [the Fedora "
 "Workstation issue tracker]()."
 msgstr ""
+"Vous pouvez signaler les problèmes concernant Fedora Workstation, les voir "
+"et en discuter sur [le site de suivi des problèmes de Fedora Workstation]()."
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr ""
+msgstr "Discuter avec l'équipe"
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Visit **#fedora-workstation** on [irc.libera.chat]() and on **#workstation** "
 "[on the Fedora Matrix Chat server]()."
 msgstr ""
+"Visitez **#fedora-workstation** sur [irc.libera.chat]() et sur "
+"**#workstation** [via le serveur de discussion Matrix de Fedora]()."
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr ""
+msgstr "Rejoignez la liste de diffusion"
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas "
 "and minute ([view archives]().)"
 msgstr ""
+"Inscrivez-vous sur [desktop@lists.fedoraproject.org]() pour recevoir les "
+"ordres du jour des réunions et leurs comptes rendus ([view archives]().)"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr ""
+msgstr "Assistez à une réunion"
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
+
+#~ msgid ""
+#~ "Open to all current and potential contributors on **Tuesdays, 9:30 AM US "
+#~ "Eastern** on [Bluejeans]()."
+#~ msgstr ""
+#~ "Ouvert à tous les contributeurs actuels et potentiels les **mardi, à 9h30 "
+#~ "heure normale de l'Est (EST)** via [Bluejeans]()."
 
 #~ msgid "Fantastic apps"
 #~ msgstr "Applications fantastique"
