@@ -20,22 +20,26 @@ const availableLocales = computed(() => {
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <NuxtLink to="/">
+            <a
+              :href="`${
+                $config.app.baseURL.replace(new RegExp('/$'), '') + '/'
+              }`"
+            >
               <FpImage
                 class="h-8 w-auto"
                 image="assets/images/fedora_white.png"
               />
-            </NuxtLink>
+            </a>
           </div>
 
           <div class="hidden sm:ml-auto sm:block">
             <div class="flex space-x-4">
-              <NuxtLink
+              <a
                 class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
-                :to="about"
+                :href="about"
               >
                 <span class="mr-1">{{ $t("About") }}</span>
-              </NuxtLink>
+              </a>
 
               <TheNavItem
                 :title="$t('Editions')"
