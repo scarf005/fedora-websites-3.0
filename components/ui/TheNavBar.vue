@@ -62,7 +62,8 @@ const availableLocales = computed(() => {
         <!-- Mobile menu button-->
         <div class="flex items-center sm:hidden">
           <button
-            @click="openNav = !openNav"
+            @click="open = !open"
+            type="button"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
             <Icon name="fa6-solid:bars" />
