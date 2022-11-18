@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: 2022-11-14 02:12+0000\n"
+"PO-Revision-Date: 2022-11-18 13:47+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/flock-to-fedora/fi/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "flock"
@@ -21,11 +21,11 @@ msgstr "flock"
 
 #: title
 msgid "The Fedora Project Conference"
-msgstr ""
+msgstr "Fedora-projektin konferenssi"
 
 #: description
 msgid "August 5 - 7, 2023\n"
-msgstr ""
+msgstr "5.–7. elokuuta 2023\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -113,7 +113,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "View Projects"
-msgstr ""
+msgstr "Näytä projektit"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -140,7 +140,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "View Topics"
-msgstr ""
+msgstr "Näytä aiheet"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -167,7 +167,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "View Socials"
-msgstr ""
+msgstr "Näytä yhteistilaisuudet"
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -200,7 +200,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Visit Fedora Youtube"
-msgstr ""
+msgstr "Vieraile Fedora Youtubessa"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -577,11 +577,11 @@ msgstr "media"
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
 msgid "none"
-msgstr ""
+msgstr "ei mitään"
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
 msgid "placeholder"
-msgstr ""
+msgstr "paikanpitäjä"
 
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Benefits of Sponsoring Flock"
