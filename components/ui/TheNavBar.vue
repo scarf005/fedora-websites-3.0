@@ -23,7 +23,7 @@ const availableLocales = computed(() => {
             <FpLink href="/">
               <FpImage
                 class="h-8 w-auto"
-                image="assets/images/fedora_white.png"
+                src="assets/images/fedora_white.png"
               />
             </FpLink>
           </div>
@@ -76,39 +76,31 @@ const availableLocales = computed(() => {
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
           v-for="item in editions"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
+          :href="item.href"
           :aria-current="item.current ? 'page' : undefined"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
 
         <div class="my-2 px-2">
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
           v-for="item in community"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
+          :href="item.href"
           :aria-current="item.current ? 'page' : undefined"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
 
         <div class="my-2 px-2">
           <div class="w-full border-t border-gray-300" />

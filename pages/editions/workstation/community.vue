@@ -129,7 +129,7 @@ useContentHead(data);
         >
       </div>
       <FpImage
-        :image="data.sections[3].content[6].image"
+        :src="data.sections[3].content[6].image"
         class="order-first hidden h-fit w-48 md:block"
       />
     </article>

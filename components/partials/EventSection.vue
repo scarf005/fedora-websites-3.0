@@ -42,7 +42,7 @@ let { data } = await useAsyncData(() => {
             {{ data.body[0].content[0].title }}
           </h3>
           <FpImage
-            :image="data.body[0].content[0].image"
+            :src="data.body[0].content[0].image"
             class="order-first mx-auto w-60 lg:max-w-lg"
           />
           <p class="my-0 text-fp-gray-darkest md:my-2">
@@ -65,7 +65,7 @@ let { data } = await useAsyncData(() => {
           {{ colurSlogan }}
         </p>
         <FpImage
-          :image="data.body[0].content[1].image"
+          :src="data.body[0].content[1].image"
           class="z-10 col-start-1 row-start-1 w-48 lg:w-60"
         />
         <figcaption class="text-center text-xs text-fp-gray-dark">
@@ -87,7 +87,7 @@ let { data } = await useAsyncData(() => {
           </h4>
           <p class="max-w-sm">{{ card.description }}</p>
           <div class="xl-mx-0 order-first">
-            <FpImage :image="card.image" class="h-16" />
+            <FpImage :src="card.image" class="h-16" />
           </div>
         </article>
       </div>
@@ -99,7 +99,7 @@ let { data } = await useAsyncData(() => {
           target="_blank"
           class="transition duration-100 ease-in-out hover:opacity-70"
         >
-          <FpImage :image="data.body[0].content[2].image" class="w-80" />
+          <FpImage :src="data.body[0].content[2].image" class="w-80" />
         </NuxtLink>
         <figcaption class="mt-4 max-w-xs text-sm text-fp-gray-dark">
           {{ data.body[0].content[2].description }}

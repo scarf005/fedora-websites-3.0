@@ -29,7 +29,7 @@ if (props.description) {
     "
   >
     <div v-if="props.image" class="flex h-64 items-center justify-center">
-      <FpImage :image="props.image" />
+      <FpImage :src="props.image" />
     </div>
     <h4 class="inline font-bold text-fp-blue-dark dark:text-slate-100">
       {{ props.title }}

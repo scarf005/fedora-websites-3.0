@@ -46,7 +46,7 @@ function sponsorClass(sponsor) {
         <FpImage
           v-if="sponsor.image"
           class="mx-auto max-h-32 w-full object-contain"
-          :image="sponsor.image"
+          :src="sponsor.image"
         />
         <p v-else>{{ sponsor.name }}</p>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">

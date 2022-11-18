@@ -34,7 +34,7 @@ useContentHead(data);
       :ctas="data.links"
       icon="youtube"
     >
-      <FpImage :image="data.header_images[0].image" />
+      <FpImage :src="data.header_images[0].image" />
     </FpBanner>
   </FpHero>
 
