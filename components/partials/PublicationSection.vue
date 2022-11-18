@@ -31,7 +31,7 @@ let { data } = await useAsyncData(() => {
           }}</FpBtn>
         </header>
         <div class="order-first mx-4 lg:mx-auto">
-          <FpImage :image="card.image" class="mx-auto w-5/6" />
+          <FpImage :src="card.image" class="mx-auto w-5/6" />
         </div>
       </article>
       <FpJoinTip :description="data.body[0].content[2].description" />

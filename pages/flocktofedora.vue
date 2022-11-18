@@ -50,13 +50,9 @@ const sponsorsBenefits = data._value.sections[7];
           class="text-lg font-semibold leading-none text-fp-blue"
           style="text-shadow: 1px 2px 4px black"
         >
-          <img
+          <FpImage
             class="mr-1 inline h-10 max-w-none align-baseline"
-            :src="`${
-              $config.app.baseURL.replace(new RegExp('/$'), '') +
-              '/' +
-              card.image.replace('public/', '')
-            }`"
+            :src="card.image"
           />
           {{ card.title }}
         </div>

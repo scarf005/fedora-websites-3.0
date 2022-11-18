@@ -6,7 +6,7 @@
     <div class="mx-6 flex flex-col lg:flex-row">
       <div class="basis-3/12">
         <FpImage
-          image="assets/images/logo-sponsored-by-red-hat.png"
+          src="assets/images/logo-sponsored-by-red-hat.png"
           alt="Sponsored by Red Hat Logo"
           style="color: rgb(250 250 250)"
           class="ml-14 mb-4 w-1/2 lg:ml-1"

@@ -34,7 +34,7 @@ defineProps({
     >
       {{ description }}
     </p>
-    <FpImage :image="image" class="mx-auto my-4 w-48 md:w-64 lg:w-full" />
+    <FpImage :src="image" class="mx-auto my-4 w-48 md:w-64 lg:w-full" />
 
     <NuxtLink
       :to="link.url"

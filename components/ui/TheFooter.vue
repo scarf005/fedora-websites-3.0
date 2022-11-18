@@ -20,21 +20,12 @@ import { editions, others, support, community } from "../../config/navigation";
             :key="item.name"
             class="mb-4"
           >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
-                    item.href
-              }`"
-              :class="[
-                'text-gray-600',
-                'dark:text-gray-300',
-                'text-base font-medium',
-              ]"
+            <FpLink
+              :href="item.href"
+              class="text-base font-medium text-gray-600 dark:text-gray-300"
             >
               {{ item.name }}
-            </a>
+            </FpLink>
           </li>
         </div>
 
@@ -50,21 +41,12 @@ import { editions, others, support, community } from "../../config/navigation";
             :key="item.name"
             class="mb-4"
           >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
-                    item.href
-              }`"
-              :class="[
-                'text-gray-600',
-                'dark:text-gray-300',
-                'text-base font-medium',
-              ]"
+            <FpLink
+              :href="item.href"
+              class="text-base font-medium text-gray-600 dark:text-gray-300"
             >
               {{ item.name }}
-            </a>
+            </FpLink>
           </li>
         </div>
 
@@ -80,21 +62,12 @@ import { editions, others, support, community } from "../../config/navigation";
             :key="item.name"
             class="mb-4"
           >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
-                    item.href
-              }`"
-              :class="[
-                'text-gray-600',
-                'dark:text-gray-300',
-                'text-base font-medium',
-              ]"
+            <FpLink
+              :href="item.href"
+              class="text-base font-medium text-gray-600 dark:text-gray-300"
             >
               {{ item.name }}
-            </a>
+            </FpLink>
           </li>
         </div>
 
@@ -110,21 +83,12 @@ import { editions, others, support, community } from "../../config/navigation";
             :key="item.name"
             class="mb-4"
           >
-            <a
-              :href="`${
-                item.href.includes('https')
-                  ? item.href
-                  : $config.app.baseURL.replace(new RegExp('/$'), '') +
-                    item.href
-              }`"
-              :class="[
-                'text-gray-600',
-                'dark:text-gray-300',
-                'text-base font-medium',
-              ]"
+            <FpLink
+              :href="item.href"
+              class="text-base font-medium text-gray-600 dark:text-gray-300"
             >
               {{ item.name }}
-            </a>
+            </FpLink>
           </li>
         </div>
       </div>

@@ -22,7 +22,7 @@ useContentHead(data);
       background="text-white bg-fp-blue"
       :ctas="data.links"
     >
-      <FpImage :image="data.header_images[0].image" />
+      <FpImage :src="data.header_images[0].image" />
     </FpBanner>
   </FpHero>
 </template>
