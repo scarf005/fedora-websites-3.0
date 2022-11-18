@@ -20,26 +20,22 @@ const availableLocales = computed(() => {
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <a
-              :href="`${
-                $config.app.baseURL.replace(new RegExp('/$'), '') + '/'
-              }`"
-            >
+            <FpLink href="/">
               <FpImage
                 class="h-8 w-auto"
                 image="assets/images/fedora_white.png"
               />
-            </a>
+            </FpLink>
           </div>
 
           <div class="hidden sm:ml-auto sm:block">
             <div class="flex space-x-4">
-              <a
-                class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
+              <FpLink
                 :href="about"
+                class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
               >
                 <span class="mr-1">{{ $t("About") }}</span>
-              </a>
+              </FpLink>
 
               <TheNavItem
                 :title="$t('Editions')"
@@ -118,20 +114,16 @@ const availableLocales = computed(() => {
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
           v-for="item in support"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
-          :aria-current="item.current ? 'page' : undefined"
+          :href="item.href"
+          :current="item.current"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
       </div>
     </div>
   </nav>
