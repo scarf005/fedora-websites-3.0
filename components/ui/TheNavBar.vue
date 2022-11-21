@@ -14,32 +14,29 @@ const availableLocales = computed(() => {
 
 <template>
   <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
+    <!-- Menu Bar -->
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <a
-              :href="`${
-                $config.app.baseURL.replace(new RegExp('/$'), '') + '/'
-              }`"
-            >
+            <FpLink href="/">
               <FpImage
                 class="h-8 w-auto"
-                image="assets/images/fedora_white.png"
+                src="assets/images/fedora_white.png"
               />
-            </a>
+            </FpLink>
           </div>
 
           <div class="hidden sm:ml-auto sm:block">
             <div class="flex space-x-4">
-              <a
-                class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
+              <FpLink
                 :href="about"
+                class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
               >
                 <span class="mr-1">{{ $t("About") }}</span>
-              </a>
+              </FpLink>
 
               <TheNavItem
                 :title="$t('Editions')"
@@ -72,66 +69,73 @@ const availableLocales = computed(() => {
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu" v-if="open">
-      <div class="flex flex-col overflow-scroll pb-4">
+    <!-- Mobile menu, show/hide based on mobile menu state. -->
+    <div
+      class="mb-2 h-96 overflow-scroll sm:hidden"
+      id="mobile-menu"
+      v-if="open"
+    >
+      <div class="flex flex-col pb-4">
         <a class="px-3 py-2 text-sm text-white" :href="about"> About </a>
         <div class="my-2 px-2">
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
           v-for="item in editions"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
+          :href="item.href"
           :aria-current="item.current ? 'page' : undefined"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
 
         <div class="my-2 px-2">
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
+          v-for="item in others"
+          :key="item.name"
+          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
+          :href="item.href"
+          :aria-current="item.current ? 'page' : undefined"
+        >
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
+          {{ item.name }}
+        </FpLink>
+
+        <div class="my-2 px-2">
+          <div class="w-full border-t border-gray-300" />
+        </div>
+
+        <FpLink
           v-for="item in community"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
+          :href="item.href"
           :aria-current="item.current ? 'page' : undefined"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
 
         <div class="my-2 px-2">
           <div class="w-full border-t border-gray-300" />
         </div>
 
-        <a
+        <FpLink
           v-for="item in support"
           :key="item.name"
           class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="`${
-            item.href.includes('https')
-              ? item.href
-              : $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
-          }`"
-          :aria-current="item.current ? 'page' : undefined"
+          :href="item.href"
+          :current="item.current"
         >
           <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
           {{ item.name }}
-        </a>
+        </FpLink>
       </div>
     </div>
   </nav>

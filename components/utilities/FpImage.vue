@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  image: String,
+  src: String,
 });
 </script>
 
@@ -10,12 +10,12 @@ defineProps({
     :src="`${
       $config.app.baseURL.replace(new RegExp('/$'), '') +
       '/' +
-      image.replace('public/', '')
+      src.replace('public/', '')
     }`"
     :alt="`${
       $config.app.baseURL.replace(new RegExp('/$'), '') +
       '/' +
-      image.replace('public', '')
+      src.replace('public', '')
     }`"
   />
 </template>

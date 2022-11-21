@@ -24,6 +24,12 @@ Note: To edit the content of this site you do not need this guide - simply go to
 
 See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
+### Vue Training Videos for Fedora Websites developers
+
+We have a two-part training video series that takes you from start to finish implementing front end components using Vue.js starting with one of our design mockups and finishing with code. Part 1 is complete and part 2 is in editing:
+
+- [How to create vue components for the new Fedora Website - Part 1](https://peertube.linuxrocks.online/w/9c6NkDP8vLnH2eWgrWasaw)
+
 ---
 
 ## General Vue Setup

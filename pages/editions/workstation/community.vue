@@ -22,11 +22,11 @@ useContentHead(data);
     <header>
       <TheLocalBar
         image="assets/images/workstation_logo.png"
-        home="#"
+        home="/editions/workstation"
         :items="[
-          { name: 'Download', link: 'download' },
-          { name: 'Community', link: 'community' },
-          { name: 'Help', link: '#' },
+          { name: 'Download', link: '/editions/workstation/download' },
+          { name: 'Community', link: '/editions/workstation/community' },
+          { name: 'Help', link: '/editions/workstation/help' },
         ]"
       />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
@@ -129,7 +129,7 @@ useContentHead(data);
         >
       </div>
       <FpImage
-        :image="data.sections[3].content[6].image"
+        :src="data.sections[3].content[6].image"
         class="order-first hidden h-fit w-48 md:block"
       />
     </article>

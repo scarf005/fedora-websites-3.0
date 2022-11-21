@@ -18,10 +18,11 @@ useContentHead(data);
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
+      home="/editions/coreos"
       :items="[
-        { name: 'Download', link: 'download' },
-        { name: 'Community', link: 'community' },
-        { name: 'Help', link: '#' },
+        { name: 'Download', link: '/editions/coreos/download' },
+        { name: 'Community', link: '/editions/coreos/community' },
+        { name: 'Help', link: '/editions/coreos/help' },
       ]"
     />
 
@@ -34,7 +35,7 @@ useContentHead(data);
       :ctas="data.links"
       icon="youtube"
     >
-      <FpImage :image="data.header_images[0].image" />
+      <FpImage :src="data.header_images[0].image" />
     </FpBanner>
   </FpHero>
 

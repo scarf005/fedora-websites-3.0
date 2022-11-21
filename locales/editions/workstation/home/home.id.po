@@ -4,16 +4,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: 2022-11-18 13:47+0000\n"
-"Last-Translator: Jefferson Oliveira <jefferson.dev.insights@gmail.com>\n"
-"Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/editionsworkstationhome/pt/>\n"
-"Language: pt\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
@@ -41,7 +39,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download now"
-msgstr "Fazer o download"
+msgstr ""
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -50,7 +48,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr "Revisado por TechHut"
+msgstr ""
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -59,23 +57,21 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Workstation?"
-msgstr "Por que o Fedora Workstation?"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reliable"
-msgstr "Confiável"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Each version is updated for 18 months, and upgrades between versions are "
 "quick and easy."
 msgstr ""
-"Cada versão é atualizada por 18 meses, e a atualização entre versões e "
-"rápida e fácil."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Free & private"
-msgstr "Livre & privado"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -85,7 +81,7 @@ msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Beautiful"
-msgstr "Bonito"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgid ""

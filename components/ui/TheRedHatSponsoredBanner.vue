@@ -3,7 +3,7 @@
     <div class="container mx-auto flex flex-col lg:flex-row">
       <div class="mx-auto lg:mx-0 lg:basis-3/12">
         <FpImage
-          image="assets/images/logo-sponsored-by-red-hat.png"
+          src="assets/images/logo-sponsored-by-red-hat.png"
           alt="Sponsored by Red Hat Logo"
           class="mb-4 xl:mb-0"
         />

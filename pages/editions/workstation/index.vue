@@ -16,11 +16,11 @@ useContentHead(data);
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/workstation_logo.png"
-      home="#"
+      home="/editions/workstation"
       :items="[
-        { name: 'Download', link: 'download' },
-        { name: 'Community', link: 'community' },
-        { name: 'Help', link: '#' },
+        { name: 'Download', link: '/editions/workstation/download' },
+        { name: 'Community', link: '/editions/workstation/community' },
+        { name: 'Help', link: '/editions/workstation/help' },
       ]"
     />
     <FpBanner
@@ -36,7 +36,7 @@ useContentHead(data);
         <div class="px-auto mb-48 max-w-sm sm:max-w-xl">
           <FpImage
             class="w-full"
-            image="assets/images/workstation_framework.png"
+            src="assets/images/workstation_framework.png"
           />
           <video
             class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
