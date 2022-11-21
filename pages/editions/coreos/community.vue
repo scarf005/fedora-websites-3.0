@@ -33,7 +33,7 @@ useContentHead(data);
           <p class="text-fp-gray">{{ data.description }}</p>
         </div>
       </section>
-      <section class="mx-auto bg-fp-blue-light/5">
+      <section class="mx-auto bg-fp-magenta-light/5">
         <div
           class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
         >
