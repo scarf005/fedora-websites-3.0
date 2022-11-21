@@ -16,11 +16,11 @@ useContentHead(data);
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/workstation_logo.png"
-      home="#"
+      home="/editions/workstation"
       :items="[
-        { name: 'Download', link: 'download' },
-        { name: 'Community', link: 'community' },
-        { name: 'Help', link: '#' },
+        { name: 'Download', link: '/editions/workstation/download' },
+        { name: 'Community', link: '/editions/workstation/community' },
+        { name: 'Help', link: '/editions/workstation/help' },
       ]"
     />
     <FpBanner
