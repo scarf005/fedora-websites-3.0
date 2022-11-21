@@ -37,3 +37,14 @@ sections:
           text: Visit Now
           url: https://lists.fedoraproject.org/archives/list/coreos@lists.fedoraproject.org/
         image: public/assets/images/hyperkitty-plus-logo.png
+  - sectionTitle: Ways to get involved
+    content:
+      - title: Report & discuss issues
+        description:
+          You can view, file, and discuss Fedora CoreOS issues on the [Fedora
+          CoreOS issue tracker](https://pagure.io/fedora-coreos/issues).
+      - title: Attend a meeting
+        description:
+          CoreOS Working Group meetings are open to all current and potential
+          contributors on Wednesdays, 11 AM US Eastern at
+          fedora-meeting@irc.libera.chat.
