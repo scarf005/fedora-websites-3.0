@@ -92,5 +92,8 @@ useContentHead(data);
         />
       </div>
     </section>
+
+    <!-- Fedora Events -->
+    <EventSection color="text-fp-magenta" />
   </main>
 </template>
