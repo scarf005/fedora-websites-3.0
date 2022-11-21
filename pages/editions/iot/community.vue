@@ -17,6 +17,15 @@ useContentHead(data);
 </script>
 <template>
   <main class="mt-4 border-t-8 border-fp-purple">
+    <TheLocalBar
+      image="assets/images/fiot-logo.png"
+      home="/editions/iot"
+      :items="[
+        { name: 'Download', link: '/editions/iot/download' },
+        { name: 'Community', link: '/editions/iot/community' },
+        { name: 'Help', link: '/editions/iot/help' },
+      ]"
+    />
     <FpHeader
       :title="data.title"
       :description="data.description"
