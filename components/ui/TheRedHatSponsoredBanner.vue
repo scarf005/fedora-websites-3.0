@@ -1,24 +1,22 @@
 <template>
-  <div
-    class="py-10 text-center md:text-left"
-    style="background-color: rgba(29, 37, 46, 1)"
-  >
-    <div class="mx-6 flex flex-col lg:flex-row">
-      <div class="basis-3/12">
+  <section class="bg-black py-10 text-center md:text-left">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="mx-auto lg:mx-0 lg:basis-3/12">
         <FpImage
           src="assets/images/logo-sponsored-by-red-hat.png"
           alt="Sponsored by Red Hat Logo"
-          style="color: rgb(250 250 250)"
-          class="ml-14 mb-4 w-1/2 lg:ml-1"
+          class="mb-4 xl:mb-0"
         />
       </div>
 
-      <div class="flex flex-col space-x-4 text-center md:text-left lg:flex-row">
-        <p style="color: rgb(250 250 250)">Fedora is sponsored by Red Hat.</p>
-        <p style="color: rgb(163 163 163)">
-          Learn more about the relationship between Red Hat and Fedora.
+      <div class="container text-center lg:text-left">
+        <p class="text-white">
+          Fedora is sponsored by Red Hat.
+          <span class="block text-fp-gray xl:ml-2 xl:inline">
+            Learn more about the relationship between Red Hat and Fedora.
+          </span>
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
