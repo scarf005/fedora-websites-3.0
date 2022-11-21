@@ -9,3 +9,31 @@ sections:
       Learn more about this group and how you can get involved on the CoreOS
       Working Group website.
     content: []
+  - sectionTitle: Communication Channels
+    content:
+      - title: Forum
+        description:
+          The **Fedora CoreOS** tag on Fedora's Discourse-based discussion forum
+          is a great place to connect with other Fedora CoreOS users and
+          contributors.
+        image: public/assets/images/fedora-discussion-plus-icon.png
+        link:
+          text: Visit Now
+          url: https://discussion.fedoraproject.org/tag/coreos
+      - title: Chat
+        description:
+          "You can chat with the Fedora CoreOS Working Group via either Matrix
+          or IRC: #coreos:fedoraproject.org on Matrix and #fedora-coreos on
+          irc.libera.chat."
+        image: public/assets/images/fedora-chat-plus-element.png
+        link:
+          text: Chat Now
+          url: https://chat.fedoraproject.org/#/welcome
+      - title: Mailing List
+        description:
+          The Fedora CoreOS Working Group sends meeting agendas and minutes and
+          has discussions on their mailing list at coreos@lists.fedoraproject.org.
+        link:
+          text: Visit Now
+          url: https://lists.fedoraproject.org/archives/list/coreos@lists.fedoraproject.org/
+        image: public/assets/images/hyperkitty-plus-logo.png
