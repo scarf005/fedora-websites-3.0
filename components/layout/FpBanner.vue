@@ -19,12 +19,7 @@ defineProps({
 <template>
   <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:mt-24 sm:px-6">
     <div class="mx-auto max-w-sm sm:max-w-xl">
-      <img
-        v-if="logo"
-        class="z-10"
-        :src="`${$config.app.baseURL + '/' + logo.replace('public/', '')}`"
-        alt="logo"
-      />
+      <FpImage v-if="logo" class="z-10" :src="logo" alt="logo" />
     </div>
     <h1 class="font-semibold text-white">
       <span class="block">{{ title }}</span>

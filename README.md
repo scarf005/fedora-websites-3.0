@@ -3,6 +3,7 @@
 </a>
 
 ## Bugs:
+
 - Design questions and discussion: https://gitlab.com/fedora/design/team/wwwfpo-2022/-/issues
 - Bugs (ie. logo squished on mobile) https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues
 - Who's working on what: https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/boards/4623394
@@ -22,6 +23,12 @@ Note: To edit the content of this site you do not need this guide - simply go to
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
 See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+### Vue Training Videos for Fedora Websites developers
+
+We have a two-part training video series that takes you from start to finish implementing front end components using Vue.js starting with one of our design mockups and finishing with code. Part 1 is complete and part 2 is in editing:
+
+- [How to create vue components for the new Fedora Website - Part 1](https://peertube.linuxrocks.online/w/9c6NkDP8vLnH2eWgrWasaw)
 
 ---
 

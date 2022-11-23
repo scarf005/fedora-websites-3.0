@@ -17,10 +17,11 @@ useContentHead(data);
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <TheLocalBar
         image="assets/images/fiot-logo.png"
+        home="/editions/iot"
         :items="[
-          { name: 'Download', link: 'download' },
-          { name: 'Community', link: 'community' },
-          { name: 'Help', link: '#' },
+          { name: 'Download', link: '/editions/iot/download' },
+          { name: 'Community', link: '/editions/iot/community' },
+          { name: 'Help', link: '/editions/iot/help' },
         ]"
       />
       <FpBanner
@@ -32,7 +33,7 @@ useContentHead(data);
         :ctas="data.links"
         icon="youtube"
       >
-        <FpImage :image="data.header_images[0].image" />
+        <FpImage :src="data.header_images[0].image" />
       </FpBanner>
     </FpHero>
 

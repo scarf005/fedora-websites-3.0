@@ -13,20 +13,24 @@ const editions = [
   },
   {
     name: "Fedora CoreOS",
-    href: "https://getfedora.org/en/coreos",
+    href: "/editions/coreos",
     icon: "circle",
   },
 ];
 
 const others = [
-  { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
   { name: "Fedora Silverblue", href: "https://silverblue.fedoraproject.org/" },
+  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
+  { name: "Fedora Container Images", href: "https://hub.docker.com/_/fedora" },
   {
-    name: "Fedora KDE Plasma",
+    name: "Fedora KDE",
     href: "https://spins.fedoraproject.org/en/kde/",
   },
-  { name: "Fedora Kinoite", href: "https://kinoite.fedoraproject.org/" },
-  { name: "More", href: "https://spins.fedoraproject.org" },
+  {
+    name: "Fedora XFCE",
+    href: "https://spins.fedoraproject.org/en/xfce/",
+  },
+  { name: "More...", href: "https://spins.fedoraproject.org" },
 ];
 
 const community = [

@@ -2,14 +2,12 @@
 const { locale } = useI18n();
 
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent(
-    "/editions/workstation/community/" + locale._value
-  ).findOne();
+  return queryContent("/editions/coreos/community/" + locale._value).findOne();
 });
 
 if (data._value === null) {
   ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/workstation/community").sort().find();
+    return queryContent("/editions/coreos/community").sort().find();
   }));
   data._value = data._value[data._value.length - 1];
 }
@@ -18,24 +16,24 @@ useContentHead(data);
 </script>
 
 <template>
-  <main class="mt-4 border-t-8 border-fp-green">
+  <main class="mt-4 border-t-8 border-fp-magenta">
     <header>
       <TheLocalBar
-        image="assets/images/workstation_logo.png"
-        home="/editions/workstation"
+        image="assets/images/fedora-coreos-logo.png"
+        home="/editions/coreos"
         :items="[
-          { name: 'Download', link: '/editions/workstation/download' },
-          { name: 'Community', link: '/editions/workstation/community' },
-          { name: 'Help', link: '/editions/workstation/help' },
+          { name: 'Download', link: '/editions/coreos/download' },
+          { name: 'Community', link: '/editions/coreos/community' },
+          { name: 'Help', link: '/editions/coreos/help' },
         ]"
       />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
-          <h1 class="mb-4 text-fp-green xl:mb-8">{{ data.title }}</h1>
+          <h1 class="mb-4 text-fp-magenta xl:mb-8">{{ data.title }}</h1>
           <p class="text-fp-gray">{{ data.description }}</p>
         </div>
       </section>
-      <section class="mx-auto bg-fp-blue-light/5">
+      <section class="mx-auto bg-fp-magenta-light/5">
         <div
           class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
         >
@@ -47,10 +45,10 @@ useContentHead(data);
     </header>
 
     <!-- communication channels -->
-    <section class="mx-auto bg-fp-green-light/10">
+    <section class="mx-auto bg-fp-magenta-light/10">
       <div class="container mx-auto flex flex-col justify-center pb-8">
         <header class="py-8 text-center xl:text-start">
-          <h2 class="text-fp-green xl:text-4xl">
+          <h2 class="text-fp-magenta xl:text-4xl">
             {{ data.sections[1].sectionTitle }}
           </h2>
         </header>
@@ -72,12 +70,12 @@ useContentHead(data);
     </section>
 
     <!-- ways to get involved -->
-    <section class="bg-fp-blue-light/10">
+    <section class="bg-fp-magenta-light/5">
       <div
         class="container mx-auto grid justify-center gap-8 py-12 lg:grid-cols-2 lg:justify-start xl:py-8"
       >
         <header class="col-span-full my-8 mx-auto text-center lg:text-start">
-          <h2 class="text-fp-green xl:text-4xl">
+          <h2 class="text-fp-magenta xl:text-4xl">
             {{ data.sections[2].sectionTitle }}
           </h2>
         </header>
@@ -86,7 +84,7 @@ useContentHead(data);
           :key="content.id"
           class="mx-auto max-w-lg text-center lg:text-start"
         >
-          <h3 class="font-medium text-fp-blue">{{ content.title }}</h3>
+          <h3 class="font-medium text-fp-magenta">{{ content.title }}</h3>
           <p class="max-w-sm text-fp-gray-darkest">{{ content.description }}</p>
         </div>
         <FpJoinTip
@@ -94,46 +92,11 @@ useContentHead(data);
         />
       </div>
     </section>
+
     <!-- Fedora Events -->
-    <EventSection color="text-fp-green" />
+    <EventSection color="text-fp-magenta" />
 
-    <!-- Fedora Release Parties -->
-    <section
-      class="container col-span-full mx-auto my-8 flex flex-col items-center md:items-start"
-    >
-      <h3 class="font-bold text-fp-blue-dark">
-        {{ data.sections[3].content[5].title }}
-      </h3>
-      <p class="mt-6 text-fp-gray-darkest">
-        {{ data.sections[3].content[5].description }}
-      </p>
-    </section>
-
-    <!-- Nest Banner -->
-    <article
-      class="container mx-auto flex w-full justify-center gap-8 self-center bg-gradient-to-r from-fp-green-light/40 to-fp-blue-light/40 p-12 lg:gap-16 xl:my-6 xl:py-20"
-    >
-      <div class="mx-auto justify-end">
-        <h3 class="mb-12 text-center font-bold text-fp-blue-dark">
-          {{ data.sections[3].content[6].title }}
-        </h3>
-        <p
-          class="mb-12 max-w-4xl text-center text-fp-gray-darkest md:text-start"
-        >
-          {{ data.sections[3].content[6].description }}
-        </p>
-        <FpBtn
-          :url="data.sections[3].content[6].link.url"
-          class="mx-auto block"
-          >{{ data.sections[3].content[6].link.text }}</FpBtn
-        >
-      </div>
-      <FpImage
-        :src="data.sections[3].content[6].image"
-        class="order-first hidden h-fit w-48 md:block"
-      />
-    </article>
-
+    <!-- Publication Section -->
     <PublicationSection />
   </main>
 </template>

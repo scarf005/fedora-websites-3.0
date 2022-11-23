@@ -15,11 +15,12 @@ useContentHead(data);
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
-      image="assets/images/fedora-workstation-logo.png"
+      image="assets/images/workstation_logo.png"
+      home="/editions/workstation"
       :items="[
-        { name: 'Download', link: 'download' },
-        { name: 'Community', link: 'community' },
-        { name: 'Help', link: '#' },
+        { name: 'Download', link: '/editions/workstation/download' },
+        { name: 'Community', link: '/editions/workstation/community' },
+        { name: 'Help', link: '/editions/workstation/help' },
       ]"
     />
     <FpBanner
@@ -35,7 +36,7 @@ useContentHead(data);
         <div class="px-auto mb-48 max-w-sm sm:max-w-xl">
           <FpImage
             class="w-full"
-            image="assets/images/workstation_framework.png"
+            src="assets/images/workstation_framework.png"
           />
           <video
             class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
@@ -100,11 +101,11 @@ useContentHead(data);
     </section>
 
     <!-- Get Started Developing Section -->
-    <section class="w-full">
-      <div
-        class="mx-auto max-w-7xl bg-gradient-to-r from-green-200 to-blue-100 p-2 sm:p-10"
-      >
-        <h3 class="mb-8 text-center font-bold text-fp-blue">
+    <section
+      class="w-full bg-gradient-to-r from-green-200 to-blue-100 dark:from-black dark:to-slate-800"
+    >
+      <div class="mx-auto max-w-7xl p-2 sm:p-10">
+        <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
           {{ data.sections[3].sectionTitle }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
@@ -127,7 +128,7 @@ useContentHead(data);
     <section>
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/workstation_logo.jpg"
+        image="assets/images/workstation_logo.png"
       />
     </section>
   </main>

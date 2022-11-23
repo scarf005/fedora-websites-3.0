@@ -4,33 +4,28 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: 2022-11-17 12:46+0000\n"
-"Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/"
-"fedora-websites-3-0/editionsworkstationhome/pl/>\n"
-"Language: pl\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "index"
-msgstr "indeks"
+msgstr ""
 
 #: title
 msgid "The leading Linux desktop"
-msgstr "Wiodąca dystrybucja Linuksa dla komputerów osobistych"
+msgstr ""
 
 #: description
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy.\n"
 msgstr ""
-"Piękny, wysokiej jakości system operacyjny zbudowany za pomocą najnowszej "
-"technologii open source. Zaufany, o wielu możliwościach i łatwy w obsłudze.\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -44,7 +39,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download now"
-msgstr "Pobierz teraz"
+msgstr ""
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -53,7 +48,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr "Sprawdzone przez TechHut"
+msgstr ""
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -62,79 +57,67 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Workstation?"
-msgstr "Dlaczego warto wybrać Fedorę Workstation?"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reliable"
-msgstr "Niezawodna"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Each version is updated for 18 months, and upgrades between versions are "
 "quick and easy."
 msgstr ""
-"Każda wersja jest aktualizowana przez 18 miesięcy, a aktualizacje między "
-"wersjami są szybkie i proste."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Free & private"
-msgstr "Wolna i prywatna"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "With Fedora, your desktop is your own. It's free, there are no ads, and your "
 "data belongs to you."
 msgstr ""
-"Z Fedorą Twój komputer należy do Ciebie. Jest bezpłatna, bez reklam, a Twoje "
-"dane należą do Ciebie."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Beautiful"
-msgstr "Piękna"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Workstation is carefully curated to deliver a high-quality experience. The "
 "desktop is clean and uncluttered."
 msgstr ""
-"Wydanie Workstation jest starannie opracowywane, aby zapewniać wysoką "
-"jakość. Pulpit jest czysty i niezaśmiecony."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Trusted"
-msgstr "Zaufana"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "Developed in partnership with upstream projects. Rigorously tested. Backed "
 "by Red Hat."
 msgstr ""
-"Rozwijana w porozumieniu z projektami nadrzędnymi. Rygorystycznie testowana. "
-"Wspierana przez firmę Red Hat."
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Leading technology"
-msgstr "Wiodąca technologia"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Edescription
 msgid ""
 "Built on the latest technologies and enhancements that open source has to "
 "offer."
 msgstr ""
-"Zbudowana za pomocą najnowszych technologii i ulepszeń, jakie oferuje "
-"oprogramowanie open source."
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr "W pełni wykorzystuje Twoje urządzenie"
+msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
-"Fedora współpracuje z producentami sprzętu, aby obsługiwać jak najwięcej "
-"urządzeń każdego rodzaju."
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Features for everyone"
@@ -142,7 +125,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fantastic app"
-msgstr "Fantastyczna aplikacja"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -150,9 +133,6 @@ msgid ""
 "Includes exciting new open source apps as well as familiar apps from other "
 "platforms."
 msgstr ""
-"Przeglądaj obszerną kolekcję aplikacji, zapewniającą wszystko, czego możesz "
-"potrzebować. Zawiera ekscytujące nowe aplikacje open source, jak również "
-"aplikacje znane z innych systemów."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -161,15 +141,13 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
-msgstr "Workstation mówi w Twoim języku"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "Thanks to a global community of translators, Workstation is available in "
 "many languages."
 msgstr ""
-"Dzięki globalnej społeczności tłumaczy wydanie Workstation jest dostępne w "
-"wielu językach."
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
@@ -178,7 +156,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
 msgid "Turn the lights down low"
-msgstr "Przygaś światła"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
@@ -193,12 +171,11 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Etitle
 msgid "Calendar integration"
-msgstr "Integracja z kalendarzem"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Edescription
 msgid "Bring your online calendar to the desktop with online accounts"
 msgstr ""
-"Korzystaj z kalendarza internetowego na komputerze za pomocą kont online"
 
 #: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
 #, read-only
@@ -207,15 +184,13 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Etitle
 msgid "Helpful out of the box"
-msgstr "Od razu przydatna"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Edescription
 msgid ""
 "Fedora Workstation includes a great set of utilities, like Clocks, Weather "
 "and Maps."
 msgstr ""
-"Fedora Workstation zawiera wspaniały zestaw narzędzi, takich jak zegar "
-"światowy, prognoza pogody i mapy."
 
 #: sections-%3E[1]-%3Econtent-%3E[4]-%3Eimage
 #, read-only
@@ -343,7 +318,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Built by you"
-msgstr "Tworzona przez Ciebie"
+msgstr ""
 
 #: sections-%3E[4]-%3Eimages
 msgid "public/assets/images/iot_flock_background.jpg"
@@ -363,7 +338,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
 msgid "Report & discuss issues"
-msgstr "Zgłoś i przedyskutuj problemy"
+msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -373,7 +348,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
 msgid "Chat with the team"
-msgstr "Porozmawiaj z zespołem"
+msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -383,7 +358,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Etitle
 msgid "Join the mailing list"
-msgstr "Dołącz do listy dyskusyjnej"
+msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
@@ -393,46 +368,10 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Etitle
 msgid "Attend a meeting"
-msgstr "Weź udział w spotkaniu"
+msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
 "Eastern** on [Bluejeans]()."
 msgstr ""
-
-#~ msgid "Fantastic apps"
-#~ msgstr "Fantastyczne aplikacje"
-
-#~ msgid "Fedora Workstation"
-#~ msgstr "Fedora Workstation"
-
-#~ msgid "The flagship desktop distribution of the Fedora Project"
-#~ msgstr "Flagowa dystrybucja Projektu Fedora dla komputerów osobistych"
-
-#~ msgid "Latest Release"
-#~ msgstr "Najnowsze wydanie"
-
-#~ msgid "36"
-#~ msgstr "36"
-
-#~ msgid "Release Notes<https://getfedora.org>"
-#~ msgstr "Informacje o wydaniu<https://getfedora.org>"
-
-#~ msgid "fa-youtube"
-#~ msgstr "fa-youtube"
-
-#, read-only
-#~ msgid "https://www.youtube.com/results?search_query=fedora+workstation+review"
-#~ msgstr ""
-#~ "https://www.youtube.com/results?search_query=fedora+workstation+recenzja"
-
-#~ msgid ""
-#~ "A beautiful, high-quality desktop, built on the latest open source "
-#~ "technology. Trusted, powerful and easy."
-#~ msgstr ""
-#~ "Piękny, wysokiej jakości system operacyjny zbudowany za pomocą najnowszej "
-#~ "technologii open source. Zaufany, o wielu możliwościach i łatwy w obsłudze."
-
-#~ msgid "Benefits"
-#~ msgstr "Korzyści"

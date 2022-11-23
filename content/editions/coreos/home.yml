@@ -1,17 +1,17 @@
 path: index
-title: The solid foundation for IoT ecosystems
-description: A lightweight yet powerful and scalable OS
+title: Fedora CoreOS
+description: CoreOS tagline.
 header_images:
-  - image: public/assets/images/iot.png
-  - image: public/assets/images/iot_background.jpg
+  - image: public/assets/images/coreos.png
+  - image: public/assets/images/coreos_background.jpg
 links:
   - text: Download Now
-    url: https://getfedora.org/en/iot/download/
+    url: https://getfedora.org/en/coreos/download/
   - text: Reviewed By TechHut
     url: https://www.youtube.com/watch?v=54aoIGKEMnk
 sections:
-  - sectionTitle: Why Fedora Iot?
-    images: public/assets/images/iot_background_why.jpg
+  - sectionTitle: Why Fedora CoreOS?
+    images: public/assets/images/coreos_background_why.jpg
     content:
       - title: Leading Technology
         description:
@@ -35,8 +35,8 @@ sections:
         description:
           Fedora works with hardware vendors to make excellent hardware
           support across a range of devices.
-  - sectionTitle: Platforms Tested against IoT
-    images: public/assets/images/iot_background_why.jpg
+  - sectionTitle: Platforms Tested against CoreOS
+    images: public/assets/images/coreos_background_why.jpg
     content:
       - title: arm Systemready
         image: public/assets/images/iot-platform1.png
@@ -54,21 +54,15 @@ sections:
       communities.
 
 
-
-
-      Fedora IoT is created by a team in the Fedora community called the IoT Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the IoT Working Group website.
+      Fedora CoreOS is created by a team in the Fedora community called the CoreOS Working Group.
+      It is comprised of official members who have decision making powers, as well as other contributors.
+      Learn more on the CoreOS Working Group website.
     content:
       - title: Report & discuss issues
-        description:
-          Built on the latest technologies and enhancements that open-source
-          has to offer.
+        description: You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS issue tracker.
       - title: Chat with the team
-        description:
-          Fedora IoT is a container-based host that runs on your hardware,
-          with a focus on edge device deployment.
+        description: Visit \#fedora-coreos on irc.libera.chat.
       - title: Join the mailing list
-        description:
-          Everything is supported by a totally free and open-source Fedora
-          ecosystem.
+        description: Sign up at coreos-status@lists.fedoraproject.org to receive meeting agendas and minutes.
       - title: Attend a meeting
-        description: There are a wide variety of supported installation methods.
+        description: Open to all current and potential contributors on Wednesday 11 AM Eastern on fedora-meeting@irc.libera.chat.
