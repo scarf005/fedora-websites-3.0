@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-16 07:42-0700\n"
-"PO-Revision-Date: 2022-11-18 13:47+0000\n"
+"PO-Revision-Date: 2022-11-23 23:20+0000\n"
 "Last-Translator: Jefferson Oliveira <jefferson.dev.insights@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pt/>\n"
@@ -17,17 +17,19 @@ msgstr ""
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "índice"
 
 #: title
 msgid "The leading Linux desktop"
-msgstr ""
+msgstr "O principal desktop Linux"
 
 #: description
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy.\n"
 msgstr ""
+"Um desktop bonito, de alta-qualidade, construído com as mais recentes "
+"tecnologias de código aberto. Confiável, poderoso e fácil.\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
