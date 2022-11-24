@@ -34,27 +34,11 @@ useContentHead(data);
       bgColor="bg-fp-blue-light/10"
     />
     <!-- communication channels -->
-    <section class="mx-auto bg-fp-purple-light/10">
-      <div class="container mx-auto flex flex-col justify-center pb-8">
-        <header class="py-8 text-center xl:text-start">
-          <h2 class="text-fp-purple xl:text-4xl">
-            {{ data.sections[1].sectionTitle }}
-          </h2>
-        </header>
-        <div class="flex flex-wrap justify-center gap-10 2xl:justify-between">
-          <FpCard
-            v-for="card in data.sections[1].content"
-            :key="card.id"
-            :title="card.title"
-            :description="card.description"
-            :image="card.image"
-            :link="card.link"
-            class="m-4 flex flex-col justify-between md:max-w-xs"
-          />
-        </div>
-        <FpJoinTip />
-      </div>
-    </section>
+    <CommunicationSection
+      color="purple"
+      :sectionTitle="data.sections[1].sectionTitle"
+      :content="data.sections[1].content"
+    />
 
     <!-- ways to get involved -->
     <section class="bg-fp-blue-light/10">
