@@ -34,7 +34,7 @@ useContentHead(data);
       bgColor="bg-fp-blue-light/10"
     />
     <!-- communication channels -->
-    <CommunicationSection
+    <FpCommunicationSection
       color="purple"
       :sectionTitle="data.sections[1].sectionTitle"
       :content="data.sections[1].content"

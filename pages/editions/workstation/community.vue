@@ -47,7 +47,7 @@ useContentHead(data);
     </header>
 
     <!-- communication channels -->
-    <CommunicationSection
+    <FpCommunicationSection
       color="green"
       :sectionTitle="data.sections[1].sectionTitle"
       :content="data.sections[1].content"
