@@ -54,28 +54,12 @@ useContentHead(data);
     />
 
     <!-- ways to get involved -->
-    <section class="bg-fp-blue-light/10">
-      <div
-        class="container mx-auto grid justify-center gap-8 py-12 lg:grid-cols-2 lg:justify-start xl:py-8"
-      >
-        <header class="col-span-full my-8 mx-auto text-center lg:text-start">
-          <h2 class="text-fp-green xl:text-4xl">
-            {{ data.sections[2].sectionTitle }}
-          </h2>
-        </header>
-        <div
-          v-for="content in data.sections[2].content.slice(0, 2)"
-          :key="content.id"
-          class="mx-auto max-w-lg text-center lg:text-start"
-        >
-          <h3 class="font-medium text-fp-blue">{{ content.title }}</h3>
-          <p class="max-w-sm text-fp-gray-darkest">{{ content.description }}</p>
-        </div>
-        <FpJoinTip
-          description="Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution"
-        />
-      </div>
-    </section>
+    <FpGetInvolvedSection
+      color="green"
+      :sectionTitle="data.sections[2].sectionTitle"
+      :content="data.sections[2].content"
+    />
+
     <!-- Fedora Events -->
     <EventSection color="text-fp-green" />
 
