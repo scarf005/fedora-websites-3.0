@@ -1,5 +1,6 @@
 <script setup>
-defineProps({
+import { mdparser } from "../../config/utilities";
+const props = defineProps({
   color: {
     default: "green",
     type: String,
@@ -13,6 +14,10 @@ defineProps({
     type: Object,
   },
 });
+
+for (let item of props.content) {
+  item.descriptionMd = await mdparser(item.description);
+}
 </script>
 
 <template>
@@ -31,7 +36,11 @@ defineProps({
         class="mx-auto max-w-lg text-center lg:text-start"
       >
         <h3 class="font-medium text-fp-blue">{{ item.title }}</h3>
-        <p class="max-w-sm text-fp-gray-darkest">{{ item.description }}</p>
+        <ContentRenderer
+          tag="p"
+          class="max-w-sm text-fp-gray-darkest"
+          :value="item.descriptionMd"
+        />
       </div>
       <FpJoinTip
         description="Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution"
