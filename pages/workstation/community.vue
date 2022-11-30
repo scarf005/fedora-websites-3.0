@@ -22,11 +22,11 @@ useContentHead(data);
     <header>
       <TheLocalBar
         image="assets/images/workstation_logo.png"
-        home="/editions/workstation"
+        home="/workstation"
         :items="[
-          { name: 'Download', link: '/editions/workstation/download' },
-          { name: 'Community', link: '/editions/workstation/community' },
-          { name: 'Help', link: '/editions/workstation/help' },
+          { name: 'Download', link: '/workstation/download' },
+          { name: 'Community', link: '/workstation/community' },
+          { name: 'Help', link: '/workstation/help' },
         ]"
       />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">

@@ -25,7 +25,7 @@ function onResize() {
       class="ml-6 mb-2 mr-6 flex items-start justify-between md:ml-0 md:mr-0 lg:mb-4"
     >
       <h6
-        class="justify-start font-semibold text-fp-gray-darkest md:justify-start lg:font-bold"
+        class="justify-start font-semibold text-fp-gray-darkest dark:text-fp-gray-light md:justify-start lg:font-bold"
       >
         {{ title }}
       </h6>
@@ -42,7 +42,7 @@ function onResize() {
       <li v-for="item in navItems" :key="item.id" class="mb-4 list-none">
         <NuxtLink
           :to="item.href"
-          class="text-base font-medium text-fp-gray-darkest"
+          class="text-base font-medium text-fp-gray-darkest dark:text-fp-gray"
         >
           {{ item.name }}
         </NuxtLink>

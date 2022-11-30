@@ -18,11 +18,11 @@ useContentHead(data);
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
-      home="/editions/coreos"
+      home="/coreos"
       :items="[
-        { name: 'Download', link: '/editions/coreos/download' },
-        { name: 'Community', link: '/editions/coreos/community' },
-        { name: 'Help', link: '/editions/coreos/help' },
+        { name: 'Download', link: '/coreos/download' },
+        { name: 'Community', link: '/coreos/community' },
+        { name: 'Help', link: '/coreos/help' },
       ]"
     />
 
