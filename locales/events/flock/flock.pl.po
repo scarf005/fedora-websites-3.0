@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-16 07:42-0700\n"
+"POT-Creation-Date: 2022-11-30 14:59-0700\n"
 "PO-Revision-Date: 2022-11-22 11:19+0000\n"
 "Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "flock"
@@ -29,10 +29,12 @@ msgid "August 5 - 7, 2023\n"
 msgstr "5-7 Sierpnia 2023\n"
 
 #: header_images-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_logo_barcelona.png"
 msgstr ""
 
 #: header_images-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_background.jpg"
 msgstr ""
 
@@ -41,7 +43,11 @@ msgid "Register"
 msgstr "Rejestracja"
 
 #: links-%3E[0]-%3Eurl
-msgctxt "links->[0]->urllinks->[0]->urllinks->[0]->urllinks->[0]->url"
+#, read-only
+msgctxt "links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
+"links->[0]->url"
 msgid "#"
 msgstr ""
 
@@ -50,6 +56,7 @@ msgid "Calendar"
 msgstr "Kalendarz"
 
 #: links-%3E[1]-%3Eurl
+#, read-only
 msgctxt "links->[1]->url"
 msgid "#"
 msgstr ""
@@ -59,6 +66,7 @@ msgid "Events"
 msgstr "Wydarzenia"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_nest_logo.png"
 msgstr ""
 
@@ -71,6 +79,7 @@ msgid "A 3 day conference hosted on Hopin.io"
 msgstr "Trzydniowa konferencja organizowana na Hopin.io"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_hatch_logo.png"
 msgstr ""
 
@@ -97,6 +106,7 @@ msgid ""
 msgstr "Warsztaty i hackfesty oferują możliwości aktywnej nauki i współpracy."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
 
@@ -105,6 +115,7 @@ msgid "View Projects"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgctxt "sections->[1]->content->[0]->link->url"
 msgid "#"
 msgstr ""
@@ -114,6 +125,7 @@ msgid "Sessions"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_sessions_logo.png"
 msgstr ""
 
@@ -128,6 +140,7 @@ msgid "View Topics"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
 msgctxt "sections->[1]->content->[1]->link->url"
 msgid "#"
 msgstr ""
@@ -137,6 +150,7 @@ msgid "Social Events"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_socialevents_logo.png"
 msgstr ""
 
@@ -151,6 +165,7 @@ msgid "View Socials"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgctxt "sections->[1]->content->[2]->link->url"
 msgid "#"
 msgstr ""
@@ -164,6 +179,7 @@ msgid "What to expect"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "https://www.youtube.com/embed/LqBVHz76Wxc"
 msgstr ""
 
@@ -179,6 +195,7 @@ msgid "Visit Fedora Youtube"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
 msgid "https://www.youtube.com/fedoraproject"
 msgstr ""
 
@@ -204,6 +221,7 @@ msgid "July 1 - 31 2023"
 msgstr "1-31 Czerwca 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
@@ -225,6 +243,7 @@ msgid "July 1 - 31 2023"
 msgstr "1-31 Lipca 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/flock_nest_logo_mini.png"
 msgstr ""
 
@@ -262,6 +281,7 @@ msgid "We are Fedora"
 msgstr "My jesteśmy Fedorą"
 
 #: sections-%3E[5]-%3Eimage
+#, read-only
 msgid "public/assets/images/iot_flock_background.jpg"
 msgstr ""
 
@@ -277,6 +297,7 @@ msgid "Discussions"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/discussions_icon.png"
 msgstr ""
 
@@ -292,6 +313,7 @@ msgid "Twitter"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/twitter_icon.png"
 msgstr ""
 
@@ -307,14 +329,15 @@ msgid "Matrix & IRC"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/matrix_icon.png"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Our main IRC channel for the event is <b>#fedora-flock</b> on <b>libera."
-"chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock"
-"\">#fedora-flock</a></b> to chat on Matrix or IRC."
+"chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock\""
+">#fedora-flock</a></b> to chat on Matrix or IRC."
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Etitle
@@ -322,13 +345,14 @@ msgid "Ask Fedora"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/ask_fedora_icon.png"
 msgstr ""
 
 #: sections-%3E[5]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"New to Fedora? Check our <b><a href=\"https://ask.fedoraproject.org/"
-"\">community forum</a></b> for support and help with frequently asked "
+"New to Fedora? Check our <b><a href=\"https://ask.fedoraproject.org/\""
+">community forum</a></b> for support and help with frequently asked "
 "questions."
 msgstr ""
 
@@ -347,6 +371,7 @@ msgid "Red Hat"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/Red_Hat_logo.png"
 msgstr ""
 
@@ -359,6 +384,7 @@ msgid "Lenovo"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/Lenovo_logo.png"
 msgstr ""
 
@@ -372,6 +398,7 @@ msgid "AlmaLinux"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/AlmaLinux_logo.png"
 msgstr ""
 
@@ -385,6 +412,7 @@ msgid "openSuse"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[3]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/opensuse_logo.png"
 msgstr ""
 
@@ -398,6 +426,7 @@ msgid "some Other Sponsor"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[4]-%3Eimage
+#, read-only
 msgctxt "sections->[6]->content->[4]->image"
 msgid ""
 msgstr ""
@@ -412,14 +441,15 @@ msgid "another Cool Sponsor"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Eimage
+#, read-only
 msgctxt "sections->[6]->content->[5]->image"
 msgid ""
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[5]-%3Edescription
-msgctxt ""
-"sections->[6]->content->[5]->descriptionsections->[6]->content->[5]-"
-">descriptionsections->[6]->content->[5]->description"
+msgctxt "sections->[6]->content->[5]->description"
+"sections->[6]->content->[5]->description"
+"sections->[6]->content->[5]->description"
 msgid "bronze"
 msgstr ""
 
@@ -428,6 +458,7 @@ msgid "GitLab"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[6]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/Gitlab_logo.png"
 msgstr ""
 
@@ -441,6 +472,7 @@ msgid "datto"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[7]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/datto_logo.png"
 msgstr ""
 
@@ -454,6 +486,7 @@ msgid "daskeyboard"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[8]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/daskeyboard_logo.png"
 msgstr ""
 
@@ -467,13 +500,14 @@ msgid "Gnome"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/Gnome_logo.png"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[9]-%3Edescription
-msgctxt ""
-"sections->[6]->content->[9]->descriptionsections->[6]->content->[9]-"
-">descriptionsections->[6]->content->[9]->description"
+msgctxt "sections->[6]->content->[9]->description"
+"sections->[6]->content->[9]->description"
+"sections->[6]->content->[9]->description"
 msgid "media"
 msgstr ""
 
@@ -482,6 +516,7 @@ msgid "TuxDigital"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[10]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/TuxDigital_logo.png"
 msgstr ""
 
@@ -495,6 +530,7 @@ msgid "KDE"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[11]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/KDE_logo.png"
 msgstr ""
 
@@ -508,6 +544,7 @@ msgid "opensource.com"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[12]-%3Eimage
+#, read-only
 msgid "public/assets/images/sponsors/opensource.com_logo.png"
 msgstr ""
 
