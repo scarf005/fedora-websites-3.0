@@ -43,4 +43,7 @@ export default defineNuxtConfig({
       titleTemplate: "%s | The Fedora Project",
     },
   },
+  experimental: {
+    noScripts: true
+  }
 });
