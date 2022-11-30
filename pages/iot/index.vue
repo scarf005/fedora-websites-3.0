@@ -17,11 +17,11 @@ useContentHead(data);
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <TheLocalBar
         image="assets/images/fiot-logo.png"
-        home="/editions/iot"
+        home="/iot"
         :items="[
-          { name: 'Download', link: '/editions/iot/download' },
-          { name: 'Community', link: '/editions/iot/community' },
-          { name: 'Help', link: '/editions/iot/help' },
+          { name: 'Download', link: '/iot/download' },
+          { name: 'Community', link: '/iot/community' },
+          { name: 'Help', link: '/iot/help' },
         ]"
       />
       <FpBanner

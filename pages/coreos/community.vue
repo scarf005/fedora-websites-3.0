@@ -20,11 +20,11 @@ useContentHead(data);
     <header>
       <TheLocalBar
         image="assets/images/fedora-coreos-logo.png"
-        home="/editions/coreos"
+        home="/coreos"
         :items="[
-          { name: 'Download', link: '/editions/coreos/download' },
-          { name: 'Community', link: '/editions/coreos/community' },
-          { name: 'Help', link: '/editions/coreos/help' },
+          { name: 'Download', link: '/coreos/download' },
+          { name: 'Community', link: '/coreos/community' },
+          { name: 'Help', link: '/coreos/help' },
         ]"
       />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
