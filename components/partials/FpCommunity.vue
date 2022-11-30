@@ -12,7 +12,7 @@ const descriptionMd = await mdparser(props.data.sectionDescription);
   <FpHero
     :background="data.images"
     alignment="bg-top"
-    class="dark:bg-blend-difference"
+    class="dark:bg-neutral-700 dark:bg-blend-multiply"
   >
     <section class="mx-auto w-10/12 max-w-screen-xl py-24">
       <h2

@@ -102,9 +102,9 @@ useContentHead(data);
 
     <!-- Get Started Developing Section -->
     <section
-      class="w-full bg-gradient-to-r from-green-200 to-blue-100 dark:from-black dark:to-slate-800"
+      class="mx-auto mb-10 max-w-7xl rounded-xl bg-gradient-to-r from-green-200 to-blue-100 dark:from-black dark:to-slate-800"
     >
-      <div class="mx-auto max-w-7xl p-2 sm:p-10">
+      <div class="p-2 sm:p-10">
         <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
           {{ data.sections[3].sectionTitle }}
         </h3>
