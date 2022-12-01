@@ -78,7 +78,7 @@ const availableLocales = computed(() => {
       <div class="flex flex-col pb-4">
         <div class="ml-6 mb-4 md:ml-0 md:mr-0 lg:mb-4">
           <a
-            class="font-semibold text-fp-gray-darkest dark:text-fp-gray-light lg:font-bold"
+            class="font-semibold text-fp-gray-lightest dark:text-fp-gray-light lg:font-bold"
             :href="about"
           >
             About
@@ -88,21 +88,21 @@ const availableLocales = computed(() => {
         <div
           class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8"
         >
-          <CollapsibleSection
+          <FpCollapsibleSection
             title="Editions"
             :navItems="editions"
-            use="header"
+            use="nav"
           />
-          <CollapsibleSection title="Others" :navItems="others" use="header" />
-          <CollapsibleSection
+          <FpCollapsibleSection title="Others" :navItems="others" use="nav" />
+          <FpCollapsibleSection
             title="User Support"
             :navItems="support"
-            use="header"
+            use="nav"
           />
-          <CollapsibleSection
+          <FpCollapsibleSection
             title="Community"
             :navItems="community"
-            use="header"
+            use="nav"
           />
         </div>
       </div>

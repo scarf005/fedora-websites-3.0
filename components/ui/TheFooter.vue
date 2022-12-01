@@ -6,18 +6,18 @@ import { editions, others, support, community } from "../../config/navigation";
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        <CollapsibleSection
+        <FpCollapsibleSection
           title="Editions"
           :navItems="editions"
           use="footer"
         />
-        <CollapsibleSection title="Others" :navItems="others" use="footer" />
-        <CollapsibleSection
+        <FpCollapsibleSection title="Others" :navItems="others" use="footer" />
+        <FpCollapsibleSection
           title="User Support"
           :navItems="support"
           use="footer"
         />
-        <CollapsibleSection
+        <FpCollapsibleSection
           title="Community"
           :navItems="community"
           use="footer"
