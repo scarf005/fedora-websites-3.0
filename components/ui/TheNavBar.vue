@@ -1,7 +1,11 @@
 <script setup>
-import { editions, others, support, community } from "../../config/navigation";
-const about = "https://docs.fedoraproject.org/en-US/project/";
-const open = useState("navbaropen", () => false);
+import {
+  editions,
+  others,
+  support,
+  community,
+  about,
+} from "../../config/navigation";
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
 const availableLocales = computed(() => {
@@ -14,7 +18,7 @@ const availableLocales = computed(() => {
 
 <template>
   <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
-    <!-- Menu Bar -->
+    <!-- Menu bar -->
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -59,7 +63,7 @@ const availableLocales = computed(() => {
         <!-- Mobile menu button-->
         <div class="flex items-center sm:hidden">
           <button
-            @click="open = !open"
+            onclick="togglenav('mobile-menu')"
             type="button"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
@@ -70,72 +74,37 @@ const availableLocales = computed(() => {
     </div>
 
     <!-- Mobile menu, show/hide based on mobile menu state. -->
-    <div
-      class="mb-2 h-96 overflow-scroll sm:hidden"
-      id="mobile-menu"
-      v-if="open"
-    >
+    <div class="mb-2 hidden h-screen overflow-scroll" id="mobile-menu">
       <div class="flex flex-col pb-4">
-        <a class="px-3 py-2 text-sm text-white" :href="about"> About </a>
-        <div class="my-2 px-2">
-          <div class="w-full border-t border-gray-300" />
+        <div class="ml-6 mb-4 md:ml-0 md:mr-0 lg:mb-4">
+          <a
+            class="font-semibold text-fp-gray-darkest dark:text-fp-gray-light lg:font-bold"
+            :href="about"
+          >
+            About
+          </a>
         </div>
 
-        <FpLink
-          v-for="item in editions"
-          :key="item.name"
-          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="item.href"
-          :aria-current="item.current ? 'page' : undefined"
+        <div
+          class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8"
         >
-          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
-          {{ item.name }}
-        </FpLink>
-
-        <div class="my-2 px-2">
-          <div class="w-full border-t border-gray-300" />
+          <CollapsibleSection
+            title="Editions"
+            :navItems="editions"
+            use="header"
+          />
+          <CollapsibleSection title="Others" :navItems="others" use="header" />
+          <CollapsibleSection
+            title="User Support"
+            :navItems="support"
+            use="header"
+          />
+          <CollapsibleSection
+            title="Community"
+            :navItems="community"
+            use="header"
+          />
         </div>
-
-        <FpLink
-          v-for="item in others"
-          :key="item.name"
-          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="item.href"
-          :aria-current="item.current ? 'page' : undefined"
-        >
-          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
-          {{ item.name }}
-        </FpLink>
-
-        <div class="my-2 px-2">
-          <div class="w-full border-t border-gray-300" />
-        </div>
-
-        <FpLink
-          v-for="item in community"
-          :key="item.name"
-          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="item.href"
-          :aria-current="item.current ? 'page' : undefined"
-        >
-          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
-          {{ item.name }}
-        </FpLink>
-
-        <div class="my-2 px-2">
-          <div class="w-full border-t border-gray-300" />
-        </div>
-
-        <FpLink
-          v-for="item in support"
-          :key="item.name"
-          class="rounded-md px-3 py-2 text-sm font-medium text-white dark:text-gray-300"
-          :href="item.href"
-          :current="item.current"
-        >
-          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
-          {{ item.name }}
-        </FpLink>
       </div>
     </div>
   </nav>

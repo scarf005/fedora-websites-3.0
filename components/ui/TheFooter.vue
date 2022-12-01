@@ -1,17 +1,27 @@
 <script setup>
 import { editions, others, support, community } from "../../config/navigation";
-
-let isOpen = ref(false);
 </script>
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        <TheFooterSection title="Editions" :navItems="editions" />
-        <TheFooterSection title="Others" :navItems="others" />
-        <TheFooterSection title="User Support" :navItems="support" />
-        <TheFooterSection title="Community" :navItems="community" />
+        <CollapsibleSection
+          title="Editions"
+          :navItems="editions"
+          use="footer"
+        />
+        <CollapsibleSection title="Others" :navItems="others" use="footer" />
+        <CollapsibleSection
+          title="User Support"
+          :navItems="support"
+          use="footer"
+        />
+        <CollapsibleSection
+          title="Community"
+          :navItems="community"
+          use="footer"
+        />
       </div>
     </nav>
     <!-- Privacy Links -->
