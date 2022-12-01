@@ -1,12 +1,8 @@
 <script setup>
 defineProps({
-  title: {
-    type: String,
-    default: "Nav Section Title",
-  },
-  navItems: {
-    type: Array,
-  },
+  title: String,
+  navItems: Array,
+  use: String,
 });
 
 const isOpen = ref(false);
@@ -22,7 +18,8 @@ function onResize() {
 <template>
   <section>
     <div
-      class="ml-6 mb-2 mr-6 flex items-start justify-between md:ml-0 md:mr-0 lg:mb-4"
+      class="ml-6 mb-2 mr-6 flex cursor-pointer items-start justify-between md:ml-0 md:mr-0 lg:mb-4"
+      :onclick="`togglenav('${title + use}')`"
     >
       <h6
         class="justify-start font-semibold text-fp-gray-darkest dark:text-fp-gray-light md:justify-start lg:font-bold"
@@ -33,12 +30,10 @@ function onResize() {
       <Icon
         name="fa6-solid:chevron-right"
         size="24"
-        class="cursor-pointer text-fp-gray-darkest md:invisible"
-        @click="isOpen = !isOpen"
-        :class="isOpen ? 'rotate-90' : 'rotate-0'"
+        class="text-fp-gray-darkest md:invisible"
       />
     </div>
-    <ul class="ml-6 md:ml-0" v-show="!isOpen">
+    <ul class="ml-6 hidden md:ml-0" v-bind:id="title + use">
       <li v-for="item in navItems" :key="item.id" class="mb-4 list-none">
         <NuxtLink
           :to="item.href"

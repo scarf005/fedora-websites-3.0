@@ -41,9 +41,10 @@ export default defineNuxtConfig({
     buildAssetsDir: "/_nuxt/",
     head: {
       titleTemplate: "%s | The Fedora Project",
+      script: [{ children: 'function togglenav(id){document.getElementById(id).classList.toggle("hidden")}' }],
     },
   },
   experimental: {
-    noScripts: true
-  }
+    noScripts: true,
+  },
 });

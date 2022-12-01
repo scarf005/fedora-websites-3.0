@@ -53,4 +53,6 @@ const support = [
   { name: "Common Bugs", href: "#" },
 ];
 
-export { editions, others, community, support };
+const about = "https://docs.fedoraproject.org/en-US/project/";
+
+export { editions, others, community, support, about };
