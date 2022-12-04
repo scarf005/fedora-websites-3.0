@@ -162,7 +162,7 @@ const sponsorsBenefits = data._value.sections[7];
     -->
 
     <!-- Community Section -->
-    <section class="my-10">
+    <section class="my-10 max-w-full">
       <FpHero
         :background="community.image"
         alignment="bg-top"

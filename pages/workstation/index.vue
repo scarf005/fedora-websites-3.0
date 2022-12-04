@@ -120,7 +120,7 @@ useContentHead(data);
     </section>
 
     <!-- Community Section -->
-    <section>
+    <section class="max-w-full">
       <FpCommunity :data="data.sections[4]" />
     </section>
 
