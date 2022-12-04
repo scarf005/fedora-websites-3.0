@@ -55,7 +55,7 @@ const availableLocales = computed(() => {
               <TheNavItem :title="$t('Support')" :items="support" />
 
               <TheNavItem :title="$t('Languages')" :items="availableLocales" />
-              <!-- <TheNavThemeSelector /> -->
+              <TheNavThemeSelector />
             </div>
           </div>
         </div>
