@@ -1,4 +1,5 @@
 <script setup>
+import { mdparser } from "../../config/utilities";
 const { locale } = useI18n();
 
 let { data } = await useAsyncData("page-data", () => {
@@ -15,6 +16,12 @@ if (data._value === null) {
 }
 
 useContentHead(data);
+
+if (data._value.sections[3].content[6].description) {
+  data._value.sections[3].content[6].descriptionMd = await mdparser(
+    data._value.sections[3].content[6].description
+  );
+}
 </script>
 
 <template>
@@ -35,15 +42,9 @@ useContentHead(data);
           <p class="text-fp-gray">{{ data.description }}</p>
         </div>
       </section>
-      <section class="mx-auto bg-fp-blue-light/5">
-        <div
-          class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
-        >
-          <p class="text-fp-gray-darkest">
-            {{ data.sections[0].sectionDescription }}
-          </p>
-        </div>
-      </section>
+      <FpDescriptionSection
+        :sectionDescription="data.sections[0].sectionDescription"
+      />
     </header>
 
     <!-- communication channels -->
@@ -83,11 +84,13 @@ useContentHead(data);
         <h3 class="mb-12 text-center font-bold text-fp-blue-dark">
           {{ data.sections[3].content[6].title }}
         </h3>
-        <p
-          class="mb-12 max-w-4xl text-center text-fp-gray-darkest md:text-start"
-        >
-          {{ data.sections[3].content[6].description }}
-        </p>
+        <div>
+          <ContentRenderer
+            tag="p"
+            class="mb-12 max-w-4xl text-center text-fp-gray-darkest md:text-start"
+            :value="data.sections[3].content[6].descriptionMd"
+          />
+        </div>
         <FpBtn
           :url="data.sections[3].content[6].link.url"
           class="mx-auto block"
