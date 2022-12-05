@@ -23,6 +23,7 @@ useContentHead(data);
       <TheLocalBar
         image="assets/images/workstation_logo.png"
         home="/workstation"
+        textColor="text-green-400"
         :items="[
           { name: 'Download', link: '/workstation/download' },
           { name: 'Community', link: '/workstation/community' },

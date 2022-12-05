@@ -26,6 +26,7 @@ useContentHead(data);
           { name: 'Community', link: '/coreos/community' },
           { name: 'Help', link: '/coreos/help' },
         ]"
+        textColor="text-fp-magenta"
       />
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
