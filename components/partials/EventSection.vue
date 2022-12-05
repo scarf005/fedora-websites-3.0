@@ -1,6 +1,7 @@
 <script setup>
+import { mdparser } from "../../config/utilities";
 // Dynamic Props
-defineProps({
+const props = defineProps({
   color: {
     default: "text-fp-blue-dark",
     type: String,
@@ -20,6 +21,10 @@ defineProps({
 let { data } = await useAsyncData(() => {
   return queryContent("/partials/events").findOne();
 });
+
+for (let item of data._value.body[0].content) {
+  item.descriptionMd = await mdparser(item.description);
+}
 </script>
 <template>
   <section>
@@ -45,9 +50,11 @@ let { data } = await useAsyncData(() => {
             :src="data.body[0].content[0].image"
             class="order-first mx-auto w-60 lg:max-w-lg"
           />
-          <p class="my-0 text-fp-gray-darkest md:my-2">
-            {{ data.body[0].content[0].description }}
-          </p>
+          <ContentRenderer
+            tag="p"
+            class="my-0 text-fp-gray-darkest md:my-2"
+            :value="data.body[0].content[0].descriptionMd"
+          />
           <div
             class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest lg:py-3 lg:pl-4"
           >
@@ -85,7 +92,11 @@ let { data } = await useAsyncData(() => {
           <h4 class="text-base text-fp-blue xl:text-lg">
             {{ card.title }}
           </h4>
-          <p class="max-w-sm">{{ card.description }}</p>
+          <ContentRenderer
+            tag="p"
+            class="max-w-sm"
+            :value="card.descriptionMd"
+          />
           <div class="xl-mx-0 order-first">
             <FpImage :src="card.image" class="h-16" />
           </div>

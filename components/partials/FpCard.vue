@@ -1,5 +1,7 @@
 <script setup>
-defineProps({
+import { mdparser } from "../../config/utilities";
+
+const props = defineProps({
   title: {
     type: String,
     default: "Card Title",
@@ -21,6 +23,11 @@ defineProps({
     },
   },
 });
+
+let descriptionMd;
+if (props.description) {
+  descriptionMd = await mdparser(props.description);
+}
 </script>
 <template>
   <article class="container m-4 flex flex-col justify-between md:max-w-xs">
@@ -29,11 +36,14 @@ defineProps({
     >
       {{ title }}
     </h3>
-    <p
-      class="mx-auto mt-2 hidden w-11/12 break-words text-center text-sm text-fp-gray-darkest sm:block md:text-start lg:w-80 lg:text-base"
-    >
-      {{ description }}
-    </p>
+    <div>
+      <ContentRenderer
+        v-if="descriptionMd"
+        class="mx-auto mt-2 hidden w-11/12 break-words text-center text-sm text-fp-gray-darkest sm:block md:text-start lg:w-80 lg:text-base"
+        tag="p"
+        :value="descriptionMd"
+      />
+    </div>
     <FpImage :src="image" class="mx-auto my-4 w-48 md:w-64 lg:w-full" />
 
     <NuxtLink

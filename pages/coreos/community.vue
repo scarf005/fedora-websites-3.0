@@ -33,15 +33,9 @@ useContentHead(data);
           <p class="text-fp-gray">{{ data.description }}</p>
         </div>
       </section>
-      <section class="mx-auto bg-fp-magenta-light/5">
-        <div
-          class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
-        >
-          <p class="text-fp-gray-darkest">
-            {{ data.sections[0].sectionDescription }}
-          </p>
-        </div>
-      </section>
+      <FpDescriptionSection
+        :sectionDescription="data.sections[0].sectionDescription"
+      />
     </header>
 
     <!-- communication channels -->
