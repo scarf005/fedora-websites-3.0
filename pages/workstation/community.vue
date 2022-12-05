@@ -30,6 +30,7 @@ if (data._value.sections[3].content[6].description) {
       <TheLocalBar
         image="assets/images/workstation_logo.png"
         home="/workstation"
+        textColor="text-green-400"
         :items="[
           { name: 'Download', link: '/workstation/download' },
           { name: 'Community', link: '/workstation/community' },

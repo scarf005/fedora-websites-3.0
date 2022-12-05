@@ -4,5 +4,14 @@ const { data } = await useAsyncData("page-data", () => {
 });
 </script>
 <template>
-  <p>{{ data }}</p>
+  <TheLocalBar
+    image="assets/images/workstation_logo.png"
+    home="/workstation"
+    textColor="text-fp-blue"
+    :items="[
+      { name: 'Download', link: '/workstation/download' },
+      { name: 'Community', link: '/workstation/community' },
+      { name: 'Help', link: '/workstation/help' },
+    ]"
+  />
 </template>
