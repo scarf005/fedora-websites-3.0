@@ -62,7 +62,7 @@ const sponsorsBenefits = data._value.sections[7];
   </FpHero>
 
   <main class="flex flex-col items-center dark:bg-black">
-    <!-- TODO: Explore -->
+    <!-- Explore -->
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
