@@ -1,11 +1,11 @@
 const editions = [
   {
     name: "Fedora Workstation",
-    href: "/editions/workstation",
+    href: "/workstation",
     icon: "desktop",
   },
-  { name: "Fedora Server", href: "/editions/server", icon: "server" },
-  { name: "Fedora IoT", href: "/editions/iot", icon: "microchip" },
+  { name: "Fedora Server", href: "/server", icon: "server" },
+  { name: "Fedora IoT", href: "/iot", icon: "microchip" },
   {
     name: "Fedora Cloud",
     href: "https://alt.fedoraproject.org/cloud/",
@@ -13,7 +13,7 @@ const editions = [
   },
   {
     name: "Fedora CoreOS",
-    href: "/editions/coreos",
+    href: "/coreos",
     icon: "circle",
   },
 ];
@@ -53,4 +53,6 @@ const support = [
   { name: "Common Bugs", href: "#" },
 ];
 
-export { editions, others, community, support };
+const about = "https://docs.fedoraproject.org/en-US/project/";
+
+export { editions, others, community, support, about };

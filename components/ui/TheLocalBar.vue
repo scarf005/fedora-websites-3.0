@@ -3,6 +3,7 @@ defineProps({
   home: String,
   image: String,
   items: Array,
+  textColor: String,
 });
 </script>
 <template>
@@ -15,7 +16,7 @@ defineProps({
         :src="image"
       />
     </FpLink>
-    <div class="flex justify-end text-white drop-shadow">
+    <div :class="`flex justify-end ${textColor || 'text-white'}`">
       <FpLink class="px-5" v-for="item in items" :href="item.link">
         {{ item.name }}
       </FpLink>
