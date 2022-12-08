@@ -190,7 +190,7 @@ const sponsorsBenefits = data._value.sections[7];
       </FpHero>
     </section>
 
-    <!-- TODO: Our Sponsors -->
+    <!-- Our Sponsors -->
     <section class="mx-auto w-full py-10 dark:bg-slate-900">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
