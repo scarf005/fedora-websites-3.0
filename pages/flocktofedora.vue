@@ -18,6 +18,7 @@ useContentHead(data);
 
 const explore = data._value.sections[1];
 const watch = data._value.sections[2];
+const hybrid = data._value.sections[3];
 const community = data._value.sections[5];
 const sponsors = data._value.sections[6];
 const sponsorsBenefits = data._value.sections[7];
@@ -80,8 +81,8 @@ const sponsorsBenefits = data._value.sections[7];
             :image="card.image"
             :link="card.link"
             :description="card.description"
-            imgOrderFirst="true"
-            centerAlign="true"
+            :imgOrderFirst="true"
+            :centerAlign="true"
           />
         </div>
 
@@ -128,16 +129,64 @@ const sponsorsBenefits = data._value.sections[7];
       </div>
     </section>
 
-    <!-- TODO: Hybrid Experience -->
-    <!-- <section class="mx-auto my-10 w-full">
-      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
+    <section class="mx-auto my-10 w-full">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
-          A Hybrid Experience
+          {{ hybrid.sectionTitle }}
         </h2>
+        <p class="mx-auto max-w-prose text-center">
+          {{ hybrid.sectionDescription }}
+        </p>
+      </header>
+      <div class="grid gap-4">
+        <article
+          v-for="card in hybrid.content"
+          class="flex max-w-sm flex-col p-6"
+        >
+          <h3 class="font-sans text-base font-bold text-fp-blue lg:text-xl">
+            {{ card.title }}
+          </h3>
+          <FpImage :src="card.image" class="order-first w-48" />
+          <p class="my-2 w-72 text-sm lg:text-base">{{ card.description }}</p>
+          <!-- Content will need to be dynamic-->
+          <div class="flex gap-4">
+            <NuxtLink
+              to="#"
+              class="rounded-md bg-fp-blue-light px-3 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+              >Destination</NuxtLink
+            >
+            <NuxtLink
+              to="#"
+              class="font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+              >Learn More</NuxtLink
+            >
+          </div>
+        </article>
+        <div>
+          <FpImage src="public/assets/images/bridge.jpg.png" />
+        </div>
+        <div>
+          <FpImage
+            src="public/assets/images/people-posing-destination-bg.jpg.png"
+          />
+        </div>
+        <div>
+          <FpImage src="public/assets/images/people-presenting.jpg.png" />
+        </div>
+        <div>
+          <FpImage src="public/assets/images/two-people-at-conf.jpg.png" />
+        </div>
       </div>
-    </section> -->
+      <div class="my-8">
+        <NuxtLink
+          to="#"
+          class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
+          >Registration</NuxtLink
+        >
+      </div>
+    </section>
 
     <!-- TODO: Important Dates -->
     <!--
