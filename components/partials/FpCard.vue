@@ -58,13 +58,15 @@ if (props.description) {
       :src="image"
       class="mx-auto my-4"
       :class="
-        imgOrderFirst ? 'order-first w-36' : 'order-4 w-48 md:w-64 lg:w-full'
+        imgOrderFirst
+          ? 'order-first w-24 md:w-36'
+          : 'order-4 w-48 md:w-64 lg:w-full'
       "
     />
 
     <NuxtLink
       :to="link.url"
-      class="mx-auto flex w-2/4 justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white sm:w-11/12"
+      class="mx-auto my-3 flex w-2/4 justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white sm:w-11/12"
       :class="centerAlign ? 'lg:w-prose' : 'lg-full'"
       >{{ link.text }}</NuxtLink
     >
