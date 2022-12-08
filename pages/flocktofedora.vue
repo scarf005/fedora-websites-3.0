@@ -32,7 +32,7 @@ const sponsorsBenefits = data._value.sections[7];
       background="text-white bg-fp-purple"
       :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
-      icon="calendar"
+      icon="calendar-days"
     >
       <h2
         class="my-8 font-semibold text-white"
@@ -64,25 +64,25 @@ const sponsorsBenefits = data._value.sections[7];
   <main class="flex flex-col items-center dark:bg-black">
     <!-- Explore -->
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
-      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
+      <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto mb-12 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+          class="mx-auto max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
           {{ explore.sectionTitle }}
         </h2>
         <div
           class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
         >
-          <FpCard v-for="card in explore.content" class="dark:bg-slate-800">
-            <FpCardImage :src="card.image" />
-            <FpCardTitle class="dark:text-fp-blue-light">{{
-              card.title
-            }}</FpCardTitle>
-            <FpCardText class="dark:text-slate-200">{{
-              card.description
-            }}</FpCardText>
-            <FpCardAction>{{ card.link.text }}</FpCardAction>
-          </FpCard>
+          <FpCard
+            v-for="card in explore.content"
+            class="dark:bg-slate-800"
+            :title="card.title"
+            :image="card.image"
+            :link="card.link"
+            :description="card.description"
+            imgOrderFirst="true"
+            centerAlign="true"
+          />
         </div>
 
         <h3
@@ -91,12 +91,12 @@ const sponsorsBenefits = data._value.sections[7];
           {{ watch.sectionTitle }}
         </h3>
         <div
-          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white dark:bg-slate-800 lg:grid-cols-2"
+          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white py-8 dark:bg-slate-800 lg:grid-cols-2"
         >
           <div class="col-span-1 p-1 sm:p-5">
             <iframe
               width="560"
-              height="315"
+              height="340"
               :src="watch.content[0].image"
               title="YouTube video player"
               frameborder="0"
