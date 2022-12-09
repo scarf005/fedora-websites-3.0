@@ -92,7 +92,7 @@ const sponsorsBenefits = data._value.sections[7];
           {{ watch.sectionTitle }}
         </h3>
         <div
-          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white py-8 dark:bg-slate-800 lg:grid-cols-2"
+          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white p-8 dark:bg-slate-800 lg:grid-cols-2"
         >
           <div class="col-span-1 p-1 sm:p-5">
             <iframe
@@ -113,16 +113,16 @@ const sponsorsBenefits = data._value.sections[7];
             <h4 class="mb-5 font-semibold">
               {{ watch.content[0].title }}
             </h4>
-            <p class="font-normal text-gray-600 dark:text-slate-200">
+            <p class="text-fp-gray-darkest dark:text-slate-200">
               {{ watch.content[0].description }}
             </p>
-            <p class="mt-4 text-right">
-              <a
-                class="text-fp-blue dark:text-fp-blue-light"
-                :href="watch.content[0].link.url"
+            <p class="mt-8 text-right">
+              <NuxtLink
+                class="text-fp-blue dark:text-fp-blue-light lg:text-xl"
+                :to="watch.content[0].link.url"
                 >{{ watch.content[0].link.text }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
-              </a>
+              </NuxtLink>
             </p>
           </div>
         </div>
@@ -140,43 +140,94 @@ const sponsorsBenefits = data._value.sections[7];
           {{ hybrid.sectionDescription }}
         </p>
       </header>
-      <div class="grid gap-4">
-        <article
-          v-for="card in hybrid.content"
-          class="flex max-w-sm flex-col p-6"
-        >
-          <h3 class="font-sans text-base font-bold text-fp-blue lg:text-xl">
-            {{ card.title }}
-          </h3>
-          <FpImage :src="card.image" class="order-first w-48" />
-          <p class="my-2 w-72 text-sm lg:text-base">{{ card.description }}</p>
-          <!-- Content will need to be dynamic-->
-          <div class="flex gap-4">
-            <NuxtLink
-              to="#"
-              class="rounded-md bg-fp-blue-light px-3 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-              >Destination</NuxtLink
-            >
-            <NuxtLink
-              to="#"
-              class="font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
-              >Learn More</NuxtLink
-            >
-          </div>
-        </article>
-        <div>
-          <FpImage src="public/assets/images/bridge.jpg.png" />
+      <div
+        class="container mx-auto my-8 grid gap-8 md:grid-cols-2 xl:my-16 xl:grid-cols-3 xl:gap-8"
+      >
+        <div class="place-self-center">
+          <article class="flex max-w-sm flex-col p-6">
+            <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
+              {{ hybrid.content[0].title }}
+            </h3>
+            <FpImage
+              :src="hybrid.content[0].image"
+              class="order-first w-full"
+            />
+            <p class="my-2 w-72">
+              {{ hybrid.content[0].description }}
+            </p>
+            <!-- Content will need to be dynamic-->
+            <div class="mt-2 flex gap-4 text-xl">
+              <NuxtLink
+                to="#"
+                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                >Destination</NuxtLink
+              >
+              <NuxtLink
+                to="#"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                >Learn More</NuxtLink
+              >
+            </div>
+          </article>
         </div>
-        <div>
+        <div class="place-self-center">
+          <article class="flex max-w-sm flex-col p-6">
+            <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
+              {{ hybrid.content[1].title }}
+            </h3>
+            <FpImage
+              :src="hybrid.content[1].image"
+              class="order-first -ml-3 w-5/6"
+            />
+            <p class="my-2 w-72">
+              {{ hybrid.content[1].description }}
+            </p>
+            <!-- Content will need to be dynamic-->
+            <div class="mt-2 flex gap-4 text-xl">
+              <NuxtLink
+                to="#"
+                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                >Destination</NuxtLink
+              >
+              <NuxtLink
+                to="#"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                >Learn More</NuxtLink
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="hidden md:block">
           <FpImage
-            src="public/assets/images/people-posing-destination-bg.jpg.png"
+            src="public/assets/images/bridge.jpg.png"
+            class="w-full rounded-md object-cover"
           />
         </div>
-        <div>
-          <FpImage src="public/assets/images/people-presenting.jpg.png" />
+        <div class="hidden lg:block">
+          <FpImage
+            src="public/assets/images/people-posing-destination-bg.jpg.png"
+            class="h-64 w-fit rounded-md object-cover lg:h-full"
+          />
         </div>
-        <div>
-          <FpImage src="public/assets/images/two-people-at-conf.jpg.png" />
+        <div class="row-start-2 m-4">
+          <FpImage
+            src="public/assets/images/people-presenting.jpg.png"
+            class="h-72 w-full rounded-md object-cover"
+          />
+        </div>
+        <div class="hidden md:block">
+          <FpImage
+            src="public/assets/images/two-people-at-conf.jpg.png"
+            class="w-48 rounded-md object-cover"
+          />
+        </div>
+        <div class="m-4">
+          <div
+            class="mx-auto grid h-72 w-full place-items-center rounded-md bg-black text-white"
+          >
+            <p>placeholder</p>
+          </div>
         </div>
       </div>
       <div class="my-8">
