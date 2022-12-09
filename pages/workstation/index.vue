@@ -20,7 +20,6 @@ useContentHead(data);
       :items="[
         { name: 'Download', link: '/workstation/download' },
         { name: 'Community', link: '/workstation/community' },
-        { name: 'Help', link: '/workstation/help' },
       ]"
     />
     <FpBanner
