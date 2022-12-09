@@ -141,9 +141,11 @@ const sponsorsBenefits = data._value.sections[7];
         </p>
       </header>
       <div
-        class="container mx-auto my-8 grid gap-8 md:grid-cols-2 xl:my-16 xl:grid-cols-3 xl:gap-8"
+        class="container mx-auto my-8 grid grid-flow-row-dense gap-8 md:grid-cols-2 xl:my-16 xl:grid-cols-3 xl:gap-8"
       >
-        <div class="place-self-center">
+        <div
+          class="col-start-1 place-self-center lg:row-start-2 xl:row-start-3"
+        >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
               {{ hybrid.content[0].title }}
@@ -170,7 +172,23 @@ const sponsorsBenefits = data._value.sections[7];
             </div>
           </article>
         </div>
-        <div class="place-self-center">
+        <div class="col-start-2 row-span-2 row-start-2 hidden xl:block">
+          <FpImage
+            src="public/assets/images/people-presenting.jpg.png"
+            class="rounded-md object-cover"
+          />
+        </div>
+        <div
+          class="xl:col-span-2 xl:col-start-1 xl:row-start-3 xl:place-self-center"
+        >
+          <FpImage
+            src="public/assets/images/two-people-at-conf.jpg.png"
+            class="rounded-md object-cover xl:w-48"
+          />
+        </div>
+        <div
+          class="place-self-center md:col-start-2 lg:row-start-2 xl:col-start-3 xl:row-span-2 xl:justify-self-start"
+        >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
               {{ hybrid.content[1].title }}
@@ -197,37 +215,30 @@ const sponsorsBenefits = data._value.sections[7];
             </div>
           </article>
         </div>
-
-        <div class="hidden md:block">
-          <FpImage
-            src="public/assets/images/bridge.jpg.png"
-            class="w-full rounded-md object-cover"
-          />
-        </div>
-        <div class="hidden lg:block">
-          <FpImage
-            src="public/assets/images/people-posing-destination-bg.jpg.png"
-            class="h-64 w-fit rounded-md object-cover lg:h-full"
-          />
-        </div>
-        <div class="row-start-2 m-4">
-          <FpImage
-            src="public/assets/images/people-presenting.jpg.png"
-            class="h-72 w-full rounded-md object-cover"
-          />
-        </div>
-        <div class="hidden md:block">
-          <FpImage
-            src="public/assets/images/two-people-at-conf.jpg.png"
-            class="w-48 rounded-md object-cover"
-          />
-        </div>
-        <div class="m-4">
+        <div
+          class="m-4 place-self-center md:m-0 xl:row-start-2 xl:justify-self-start"
+        >
           <div
-            class="mx-auto grid h-72 w-full place-items-center rounded-md bg-black text-white"
+            class="mx-auto grid h-96 w-96 place-items-center rounded-md bg-black text-white xl:h-60 xl:w-80"
           >
             <p>placeholder</p>
           </div>
+        </div>
+
+        <div
+          class="col-start-1 row-span-2 row-start-1 hidden place-self-end xl:block"
+        >
+          <FpImage
+            src="public/assets/images/people-posing-destination-bg.jpg.png"
+            class="h-1/2 w-fit rounded-md object-cover"
+          />
+        </div>
+
+        <div class="col-span-2 hidden md:block xl:order-first xl:col-start-2">
+          <FpImage
+            src="public/assets/images/bridge.jpg.png"
+            class="w-10/12 rounded-md object-cover"
+          />
         </div>
       </div>
       <div class="my-8">
