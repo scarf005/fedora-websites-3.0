@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-30 14:59-0700\n"
-"PO-Revision-Date: 2022-10-13 20:19+0000\n"
-"Last-Translator: Vi <xasertop@gmail.com>\n"
+"PO-Revision-Date: 2022-12-10 08:20+0000\n"
+"Last-Translator: Mi Lachew <milachew@mail.lv>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editions-iot/ru/>\n"
 "Language: ru\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "индекс"
 
 #: title
 msgid "The solid foundation for IoT ecosystems"
@@ -58,12 +58,12 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Iot?"
-msgstr ""
+msgstr "Почему Fedora Iot?"
 
 #: sections-%3E[0]-%3Eimages
 msgctxt "sections->[0]->images"
 msgid "public/assets/images/iot_background_why.jpg"
-msgstr ""
+msgstr "public/assets/images/iot_background_why.jpg"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Leading Technology"
@@ -75,6 +75,8 @@ msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
 msgstr ""
+"Создана на основе новейших технологий и улучшений, которые может предложить "
+"открытый исходный код."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Container Based"
@@ -86,6 +88,8 @@ msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
 msgstr ""
+"Fedora IoT - это система на основе контейнеров, работающая на вашем "
+"оборудовании с акцентом на развертывание периферийных устройств."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Open-source Ecosystem"
@@ -96,6 +100,8 @@ msgctxt "sections->[0]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
 msgstr ""
+"Все поддерживается абсолютно бесплатной экосистемой Fedora с открытым "
+"исходным кодом."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Flexible"
@@ -104,7 +110,7 @@ msgstr "Гибкая"
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgctxt "sections->[0]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
-msgstr ""
+msgstr "Существует множество поддерживаемых методов установки."
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Edge Support"
