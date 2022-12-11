@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-30 14:59-0700\n"
-"PO-Revision-Date: 2022-11-23 23:20+0000\n"
+"PO-Revision-Date: 2022-12-11 23:20+0000\n"
 "Last-Translator: Jefferson Oliveira <jefferson.dev.insights@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pt/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "index"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download now"
-msgstr "Fazer o download"
+msgstr "Baixar agora"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -84,6 +84,8 @@ msgid ""
 "With Fedora, your desktop is your own. It's free, there are no ads, and your "
 "data belongs to you."
 msgstr ""
+"Com o Fedora, a sua área de trabalho e apenas sua. Aberto, sem propagandas, "
+"e os seus dados pertencem a você."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Beautiful"
@@ -94,44 +96,52 @@ msgid ""
 "Workstation is carefully curated to deliver a high-quality experience. The "
 "desktop is clean and uncluttered."
 msgstr ""
+"O Workstation e organizado cuidadosamente para entregar uma experiência de "
+"alta qualidade. Uma área de trabalho e limpa e organizada."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Trusted"
-msgstr ""
+msgstr "Confiável"
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
 "Developed in partnership with upstream projects. Rigorously tested. Backed "
 "by Red Hat."
 msgstr ""
+"Desenvolvido em parceria com projetos upstream. Rigorosamente testado. "
+"Apoiado pela Red Hat."
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "Leading technology"
-msgstr ""
+msgstr "Tecnologia de ponta"
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Edescription
 msgid ""
 "Built on the latest technologies and enhancements that open source has to "
 "offer."
 msgstr ""
+"Construído com as últimas tecnologias e melhoras que o código aberto tem a "
+"oferecer."
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
 msgid "Makes the most of your device"
-msgstr ""
+msgstr "Tire o máximo do seu aparelho"
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Edescription
 msgid ""
 "Fedora works with hardware vendors to make excellent hardware support across "
 "a range of devices."
 msgstr ""
+"O Fedora trabalha com os fabricantes de acessórios para oferecer um "
+"excelente suporte para uma vasta gama de acessórios."
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Features for everyone"
-msgstr ""
+msgstr "Recursos para todos"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fantastic app"
-msgstr ""
+msgstr "Um aplicativo fantástico"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -139,6 +149,9 @@ msgid ""
 "Includes exciting new open source apps as well as familiar apps from other "
 "platforms."
 msgstr ""
+"Navegue por uma grande coleção de aplicativos, abrangendo tudo o que você "
+"pode precisar. Inclui aplicativos de código aberto emociantes, assim como "
+"aplicativos familiares de outras plataformas."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -147,7 +160,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
-msgstr ""
+msgstr "O Workstation fala a sua língua"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
