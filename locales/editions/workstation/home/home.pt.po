@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-30 14:59-0700\n"
-"PO-Revision-Date: 2022-12-10 08:20+0000\n"
+"PO-Revision-Date: 2022-12-11 23:20+0000\n"
 "Last-Translator: Jefferson Oliveira <jefferson.dev.insights@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationhome/pt/>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download now"
-msgstr "Fazer o download"
+msgstr "Baixar agora"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -137,11 +137,11 @@ msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
 msgid "Features for everyone"
-msgstr ""
+msgstr "Recursos para todos"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fantastic app"
-msgstr ""
+msgstr "Um aplicativo fantástico"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
@@ -149,6 +149,9 @@ msgid ""
 "Includes exciting new open source apps as well as familiar apps from other "
 "platforms."
 msgstr ""
+"Navegue por uma grande coleção de aplicativos, abrangendo tudo o que você "
+"pode precisar. Inclui aplicativos de código aberto emociantes, assim como "
+"aplicativos familiares de outras plataformas."
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
@@ -157,7 +160,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Workstation speaks your language"
-msgstr ""
+msgstr "O Workstation fala a sua língua"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
