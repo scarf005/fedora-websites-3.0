@@ -1,0 +1,39 @@
+{
+  "downloads": {
+    "label": "Downloads",
+    "editions": {
+      "label": "Editions",
+      "description": "Fedora Editions are the official OS editions of Fedora Linux.",
+      "links": [
+        {
+          "label": "Workstation",
+          "path": "editions/workstation/",
+          "icon": "",
+          "description": "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for."
+        },
+        {
+          "label": "Server",
+          "path": "editions/server/",
+          "icon": "",
+          "description": "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology."
+        }
+      ]
+    },
+    "emerging-editions": [],
+    "spins-desktops": [],
+    "spins-bundles": []
+  },
+  "community": {
+    "label": "Community",
+    "commmunication": {
+      "label": "Communications",
+      "description": "",
+      "links": []
+    },
+    "publications": {
+      "label": "Publications",
+      "description": "",
+      "links": []
+    }
+  }
+}
