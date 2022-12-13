@@ -140,16 +140,54 @@ useContentHead(data);
           }}</FpLink>
         </div>
       </div>
-      <div class="flex-1">
+      <div class="my-10">
         <h2 class="text-fp-blue">
-          {{ data.sections[3].content[2].title }}
+          {{ data.sections[4].sectionTitle }}
         </h2>
         <p class="text-fp-gray">
-          {{ data.sections[3].content[2].description }}
+          {{ data.sections[4].sectionDescription }}
         </p>
-        <FpLink :href="data.sections[3].content[2].link.url">{{
-          data.sections[3].content[2].link.text
+        <FpLink :href="data.sections[4].content[0].link.url">{{
+          data.sections[4].content[0].link.text
         }}</FpLink>
+      </div>
+      <div class="my-10">
+        <h2 class="text-fp-blue">
+          {{ data.sections[5].sectionTitle }}
+        </h2>
+        <p class="text-base text-fp-gray">
+          {{ data.sections[5].content[0].description }}
+        </p>
+        <p class="text-xs text-gray-300">
+          {{ data.sections[5].content[1].description }}
+        </p>
+      </div>
+      <div class="my-10">
+        <h2 class="text-fp-blue">
+          {{ data.sections[6].sectionTitle }}
+        </h2>
+        <p class="text-base text-fp-gray">
+          {{ data.sections[6].sectionDescription }}
+        </p>
+        <div v-for="item in data.sections[6].content">
+          <FpLink href="item.link.url">{{ item.title }}</FpLink>
+        </div>
+
+        <p class="text-base text-fp-gray">
+          {{ data.sections[7].sectionTitle }}
+        </p>
+        <div v-for="item in data.sections[7].content">
+          <FpLink href="item.link.url">{{ item.title }}</FpLink>
+        </div>
+      </div>
+
+      <div class="my-10">
+        <h2 class="text-fp-blue">
+          {{ data.sections[8].sectionTitle }}
+        </h2>
+        <p class="text-base text-fp-gray">
+          {{ data.sections[8].sectionDescription }}
+        </p>
       </div>
     </div>
   </main>
