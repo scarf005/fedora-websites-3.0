@@ -12,11 +12,14 @@ sections:
       - title: SUPPORTED THROUGH
         description: May 17, 2023
       - title: Release Notes
-        url: https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html
+        link:
+          url: https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html
       - title: Installation Guide
-        url: https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/
+        link:
+          url: https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/
       - title: Community Support
-        url: https://ask.fedoraproject.org/
+        link:
+          url: https://ask.fedoraproject.org/
   - sectionTitle: On Windows or macOS?
     content:
       - title:
