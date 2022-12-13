@@ -105,10 +105,11 @@ useContentHead(data);
                 }}</span
                 ><span class="text-gray-500"> {{ item.link.text }}</span>
               </p>
-              <FpLink :href="item.link.url">
-                <FpBtn color="text-blue-400 border border-blue-400">
-                  <Icon name="fa-download" />
-                </FpBtn>
+              <FpLink
+                :href="item.link.url"
+                class="rounded-xl border border-blue-400 p-3 px-5 text-blue-400"
+              >
+                <Icon name="fa-download" />
               </FpLink>
             </div>
           </div>
