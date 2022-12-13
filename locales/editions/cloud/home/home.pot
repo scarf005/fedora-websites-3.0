@@ -1,4 +1,4 @@
-#. extracted from content/editions/iot/home.yml
+#. extracted from content/editions/cloud/home.yml
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,21 +18,21 @@ msgid "index"
 msgstr ""
 
 #: title
-msgid "The solid foundation for IoT ecosystems"
+msgid "The lightweight VM environment"
 msgstr ""
 
 #: description
-msgid "A lightweight yet powerful and scalable OS"
+msgid "A customizable cloud native experience."
 msgstr ""
 
 #, read-only
 #: header_images-%3E[0]-%3Eimage
-msgid "public/assets/images/iot.png"
+msgid "public/assets/images/balloons.png"
 msgstr ""
 
 #, read-only
 #: header_images-%3E[1]-%3Eimage
-msgid "public/assets/images/iot_background.jpg"
+msgid "public/assets/images/cloud_background.jpg"
 msgstr ""
 
 #: links-%3E[0]-%3Etext
@@ -41,7 +41,7 @@ msgstr ""
 
 #, read-only
 #: links-%3E[0]-%3Eurl
-msgid "https://getfedora.org/en/iot/download/"
+msgid "https://getfedora.org/en/cloud/download/"
 msgstr ""
 
 #: links-%3E[1]-%3Etext
@@ -54,12 +54,12 @@ msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
-msgid "Why Fedora Iot?"
+msgid "Why Fedora Cloud?"
 msgstr ""
 
 #: sections-%3E[0]-%3Eimages
 msgctxt "sections->[0]->images"
-msgid "public/assets/images/iot_background_why.jpg"
+msgid "public/assets/images/coreos_background_why.jpg"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
@@ -67,7 +67,6 @@ msgid "Leading Technology"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[0]->content->[0]->description"
 msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
@@ -78,7 +77,6 @@ msgid "Container Based"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[0]->content->[1]->description"
 msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
@@ -89,7 +87,6 @@ msgid "Open-source Ecosystem"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[0]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
 msgstr ""
@@ -99,7 +96,6 @@ msgid "Flexible"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
-msgctxt "sections->[0]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr ""
 
@@ -124,48 +120,39 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
-msgid "Platforms Tested against IoT"
+msgid "Platforms Tested against Cloud"
 msgstr ""
 
 #: sections-%3E[1]-%3Eimages
 msgctxt "sections->[1]->images"
-msgid "public/assets/images/iot_background_why.jpg"
+msgid "public/assets/images/coreos_background_why.jpg"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "arm Systemready"
+msgid "Vagrant"
 msgstr ""
 
 #, read-only
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Eimage
-msgid "public/assets/images/iot-platform1.png"
+msgid "public/assets/images/vagrant.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
-msgid "Pine64"
+msgid "AWS"
 msgstr ""
 
 #, read-only
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Eimage
-msgid "public/assets/images/iot-platform2.png"
+msgid "public/assets/images/aws.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
-msgid "SolidRun"
+msgid "Google Cloud"
 msgstr ""
 
 #, read-only
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
-msgid "public/assets/images/iot-platform3.png"
-msgstr ""
-
-#: sections-%3E[1]-%3Econtent-%3E[3]-%3Etitle
-msgid "nVidia"
-msgstr ""
-
-#, read-only
-#: sections-%3E[1]-%3Econtent-%3E[3]-%3Eimage
-msgid "public/assets/images/iot-platform4.png"
+msgid "public/assets/images/gcp.png"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
@@ -182,11 +169,9 @@ msgid ""
 "open source software built by inclusive, welcoming, and open-minded "
 "communities.\n"
 "\n"
-"\n"
-"\n"
-"Fedora IoT is created by a team in the Fedora community called the IoT "
+"Fedora Cloud is created by a team in the Fedora community called the Cloud "
 "Working Group. It is comprised of official members who have decision making "
-"powers, as well as other contributors. Learn more on the IoT Working Group "
+"powers, as well as other contributors. Learn more on the Cloud Working Group "
 "website."
 msgstr ""
 
@@ -195,10 +180,9 @@ msgid "Report & discuss issues"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[2]->content->[0]->description"
 msgid ""
-"Built on the latest technologies and enhancements that open-source has to "
-"offer."
+"You can view, file, and discuss Fedore Cloud issues on the Fedora Cloud "
+"issue tracker."
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
@@ -206,10 +190,7 @@ msgid "Chat with the team"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
-msgid ""
-"Fedora IoT is a container-based host that runs on your hardware, with a "
-"focus on edge device deployment."
+msgid "Visit \\#fedora-Cloud on irc.libera.chat."
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
@@ -217,9 +198,9 @@ msgid "Join the mailing list"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
 msgid ""
-"Everything is supported by a totally free and open-source Fedora ecosystem."
+"Sign up at Cloud-status@lists.fedoraproject.org to receive meeting agendas "
+"and minutes."
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Etitle
@@ -227,6 +208,7 @@ msgid "Attend a meeting"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Edescription
-msgctxt "sections->[2]->content->[3]->description"
-msgid "There are a wide variety of supported installation methods."
+msgid ""
+"Open to all current and potential contributors on **Wednesday 11 AM Eastern**"
+" on fedora-meeting@irc.libera.chat."
 msgstr ""

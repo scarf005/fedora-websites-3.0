@@ -38,10 +38,16 @@ useContentHead(data);
           <p class="text-fp-gray">{{ data.description }}</p>
           <div class="flex">
             <p class="mr-5 text-fp-gray">
-              <span class="text-sm">RELEASE DATE</span> April 19, 2022
+              <span class="text-sm">{{
+                data.sections[0].content[0].title
+              }}</span>
+              {{ data.sections[0].content[0].description }}
             </p>
             <p class="text-fp-gray">
-              <span class="text-sm">SUPPORTED THROUGH</span> May 17 2023
+              <span class="text-sm">{{
+                data.sections[0].content[1].title
+              }}</span>
+              {{ data.sections[0].content[1].description }}
             </p>
           </div>
         </div>
@@ -53,37 +59,57 @@ useContentHead(data);
         </FpLink>
       </template>
 
+      <!-- FEDORA MEDIA WRITER -->
       <div class="my-10 grid grid-cols-2">
         <div class="col-span-2 flex p-5 md:col-span-1">
           <div>
-            <FpImage :src="data.sections[0].content[0].image" />
+            <FpImage :src="data.sections[1].images" />
           </div>
           <div>
             <h2 class="text-fp-blue">
-              {{ data.sections[0].content[0].title }}
+              {{ data.sections[1].sectionTitle }}
             </h2>
             <p class="mb-10 text-fp-gray">
-              {{ data.sections[0].content[0].description }}
+              {{ data.sections[1].sectionDescription }}
             </p>
+
+            <div class="flex">
+              <FpLink
+                :href="item.link.url"
+                v-for="item in data.sections[1].content"
+                class="rounded-xl border border-blue-400 px-6 py-3 text-blue-400"
+              >
+                <Icon name="fa-download" /> {{ item.link.text }}
+              </FpLink>
+            </div>
           </div>
         </div>
+
+        <!-- DOWNLOADS -->
         <div class="col-span-2 p-5 md:col-span-1">
           <h2 class="text-fp-blue">
-            {{ data.sections[0].content[1].title }}
+            {{ data.sections[2].sectionTitle }}
           </h2>
           <p class="mb-10 text-fp-gray">
-            {{ data.sections[0].content[1].description }}
+            {{ data.sections[2].sectionDescription }}
           </p>
-          <!-- downloads -->
-          <div v-for="item in [1, 2, 3]">
-            <p class="mt-10 font-bold">For Intel and AMD systems:</p>
+          <div v-for="item in data.sections[2].content">
+            <p class="mt-10 font-bold">{{ item.description }}</p>
+
             <div
               class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
             >
-              <p>Fedora Workstation 35 x86_64 DVD ISO</p>
-              <FpBtn color="text-blue-400 border border-blue-400"
-                ><Icon name="fa-download"
-              /></FpBtn>
+              <p>
+                <span class="mr-5 font-semibold text-gray-800">{{
+                  item.title
+                }}</span
+                ><span class="text-gray-500"> {{ item.link.text }}</span>
+              </p>
+              <FpLink :href="item.link.url">
+                <FpBtn color="text-blue-400 border border-blue-400">
+                  <Icon name="fa-download" />
+                </FpBtn>
+              </FpLink>
             </div>
           </div>
         </div>
@@ -93,19 +119,19 @@ useContentHead(data);
         <div class="flex flex-1">
           <div>
             <h2 class="text-fp-blue">
-              {{ data.sections[1].content[0].title }}
+              {{ data.sections[3].sectionTitle }}
             </h2>
             <p class="text-fp-gray">
-              {{ data.sections[1].content[0].description }}
+              {{ data.sections[3].sectionDescription }}
             </p>
           </div>
         </div>
         <div class="flex-1">
           <h2 class="text-fp-blue">
-            {{ data.sections[1].content[1].title }}
+            {{ data.sections[4].sectionTitle }}
           </h2>
           <p class="text-fp-gray">
-            {{ data.sections[1].content[1].description }}
+            {{ data.sections[4].sectionDescription }}
           </p>
         </div>
       </div>

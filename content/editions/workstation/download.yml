@@ -37,9 +37,9 @@ sections:
     content:
       - title: Fedora Workstation 37
         link:
-          text: Download Now
+          text: x86_64 DVD ISO
           url: cdn.fedoraproject.org/downloads/x86_64.iso
-        description: x86_64 DVD ISO
+        description: For Intel and AMD systems
       - title: Fedora Workstation 37
         link:
           text: Download Now
@@ -50,7 +50,8 @@ sections:
   - sectionTitle: Security, Installs, Laptops Preloaded
     content:
       - title: We take security seriously
-        description: Once you have downloaded an image, be sure to verify it for both
+        description:
+          Once you have downloaded an image, be sure to verify it for both
           security and integrity.
         link:
           url: https://getfedora.org/security/
@@ -60,7 +61,8 @@ sections:
           Workstation downloads here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
       - title: Laptops pre-loaded with Fedora
-        description: "We've partnered with companies like Lenovo to bring you laptops
+        description:
+          "We've partnered with companies like Lenovo to bring you laptops
           pre-loaded with Fedora that include fully-supported hardware
           components. "
         image: public/assets/images/lenovo-laptop.png
@@ -73,7 +75,8 @@ sections:
           USB flash drive, and Fedora Media Writer.
 
           Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.
-      - description: " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
+      - description:
+          " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
           run successfully. Double those amounts is recommended. "
         image: public/assets/images/monitor-2.png
   - sectionTitle: Officially-Supported Fedora Community Spaces
@@ -104,7 +107,8 @@ sections:
         image: public/assets/images/telegram-brands.png
         link:
           url: https://fedoraproject.org/wiki/Telegram
-  - sectionTitle: By clicking on and downloading Fedora, you agree to comply with
+  - sectionTitle:
+      By clicking on and downloading Fedora, you agree to comply with
       the following terms and conditions.
     content:
       - description: "By downloading Fedora software, you acknowledge that you
