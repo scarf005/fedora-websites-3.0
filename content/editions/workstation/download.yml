@@ -27,11 +27,11 @@ sections:
     content:
       - title: Windows
         link:
-          text: Download Now
+          text: fa-windows
           url: https://getfedora.org/fmw/FedoraMediaWriter-win32-latest.exe
       - title: Mac
         link:
-          text: Download Now
+          text: fa-apple
           url: https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg
   - sectionTitle: On Linux? Or just want an ISO file?
     sectionDescription: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
