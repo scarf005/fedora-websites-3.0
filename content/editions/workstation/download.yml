@@ -21,32 +21,36 @@ sections:
         link:
           url: https://ask.fedoraproject.org/
   - sectionTitle: On Windows or macOS?
+    sectionDescription: Get started by using Fedora Media Writer, which makes it
+      super easy to give Fedora a try.
+    images: public/assets/images/media-writer-icon.png
     content:
       - title: Windows
         link:
           text: Download Now
-          url: cdn.fedoraproject.org/writer/windows
+          url: https://getfedora.org/fmw/FedoraMediaWriter-win32-latest.exe
       - title: Mac
         link:
           text: Download Now
-          url: cdn.fedoraproject.org/writer/mac
-    sectionDescription: Get started by using Fedora Media Writer, which makes it
-      super easy to give Fedora a try.
-    images: public/assets/images/media-writer-icon.png
+          url: https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg
   - sectionTitle: On Linux? Or just want an ISO file?
+    sectionDescription: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
     content:
       - title: Fedora Workstation 37
         link:
           text: x86_64 DVD ISO
-          url: cdn.fedoraproject.org/downloads/x86_64.iso
+          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso
         description: For Intel and AMD systems
       - title: Fedora Workstation 37
         link:
           text: Download Now
-          url: cdn.fedoraproject.org/downloads/arm.iso
-        description: aarch64 DVD ISO
-    sectionDescription: Not sure how to use these files? [Learn
-      here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
+          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso
+        description: aarch64 Live ISO
+      - title: Fedora Workstation 37
+        link:
+          text: Download Now
+          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz
+        description: aarch64 raw image
   - sectionTitle: Security, Installs, Laptops Preloaded
     content:
       - title: We take security seriously
