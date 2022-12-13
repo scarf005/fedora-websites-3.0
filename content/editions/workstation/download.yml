@@ -19,40 +19,50 @@ sections:
         url: https://ask.fedoraproject.org/
   - sectionTitle: On Windows or macOS?
     content:
-      - title: Get started by using Fedora Media Writer, which makes it super easy to
+      - title:
+          Get started by using Fedora Media Writer, which makes it super easy to
           give Fedora a try.
         image: public/assets/images/media-writer-icon.png
       - title: Windows
-        url: cdn.fedoraproject.org/writer/windows
         link:
           text: Download Now
-          url: https://cdn.com/ff
+          url: cdn.fedoraproject.org/writer/windows
       - title: Mac
-        url: cdn.fedoraproject.org/writer/mac
+        link:
+          text: Download Now
+          url: cdn.fedoraproject.org/writer/mac
   - sectionTitle: On Linux? Or just want an ISO file?
     content:
       - description: Not sure how to use these files? [Learn
           here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
       - title: Fedora Workstation 37 x86_64 DVD ISO
-        url: cdn.fedoraproject.org/downloads/x86_64.iso
+        link:
+          text: Download Now
+          url: cdn.fedoraproject.org/downloads/x86_64.iso
       - title: Fedora Workstation 37 aarch64 DVD ISO
-        url: cdn.fedoraproject.org/downloads/arm.iso
+        link:
+          text: Download Now
+          url: cdn.fedoraproject.org/downloads/arm.iso
   - sectionTitle: Security, Installs, Laptops Preloaded
     content:
       - title: We take security seriously
-        description: Once you have downloaded an image, be sure to verify it for both
+        description:
+          Once you have downloaded an image, be sure to verify it for both
           security and integrity.
-        url: https://getfedora.org/security/
+        link:
+          url: https://getfedora.org/security/
       - title: But wait! There's more.
         description: Need something a bit different? [Check out our other Fedora
           Workstation downloads here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
       - title: Laptops pre-loaded with Fedora
-        description: "We've partnered with companies like Lenovo to bring you laptops
+        description:
+          "We've partnered with companies like Lenovo to bring you laptops
           pre-loaded with Fedora that include fully-supported hardware
           components. "
         image: public/assets/images/lenovo-laptop.png
-        url: https://fedoramagazine.org/lenovo-fedora-now-available/
+        link:
+          url: https://fedoramagazine.org/lenovo-fedora-now-available/
   - sectionTitle: Learn more about Fedora Media Writer
     content:
       - description: >-
@@ -60,32 +70,40 @@ sections:
           USB flash drive, and Fedora Media Writer.
 
           Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.
-      - description: " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
+      - description:
+          " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
           run successfully. Double those amounts is recommended. "
         image: public/assets/images/monitor-2.png
   - sectionTitle: Officially-Supported Fedora Community Spaces
     content:
       - title: Fedora Discussion
         image: public/assets/images/fedora-discussion-plus-icon.png
-        url: https://discussion.fedoraproject.org/
+        link:
+          url: https://discussion.fedoraproject.org/
       - title: Fedora Chat
-        url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
+        link:
+          url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
         image: public/assets/images/fedora-chat-plus-element.png
       - title: Ask Fedora
         image: public/assets/images/ask-fedora.png
-        url: https://ask.fedoraproject.org/
+        link:
+          url: https://ask.fedoraproject.org/
   - sectionTitle: Community-Maintained Spaces
     content:
       - title: Reddit
-        url: https://www.reddit.com/r/Fedora/
+        link:
+          url: https://www.reddit.com/r/Fedora/
         image: public/assets/images/reddit-brands-3.png
       - title: Discord
-        url: https://discord.com/invite/fedora
+        link:
+          url: https://discord.com/invite/fedora
         image: public/assets/images/discord-brands-2.png
       - title: Telegram
         image: public/assets/images/telegram-brands.png
-        url: https://fedoraproject.org/wiki/Telegram
-  - sectionTitle: By clicking on and downloading Fedora, you agree to comply with
+        link:
+          url: https://fedoraproject.org/wiki/Telegram
+  - sectionTitle:
+      By clicking on and downloading Fedora, you agree to comply with
       the following terms and conditions.
     content:
       - description: "By downloading Fedora software, you acknowledge that you
