@@ -2,35 +2,41 @@ path: download
 title: Download Fedora Workstation 37.
 description: We're so glad you've decided to give Fedora Workstation a try. We
   know you'll love it.
-links:
-  - text: Release Notes
-    url: https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html
-  - text: Installation Guide
-    url: https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/
-  - text: Community Support
-    url: https://ask.fedoraproject.org/
+header_images:
+  - image: public/assets/images/workstation_background.jpg
 sections:
-  - sectionTitle: Download Options
-    sectionDescription: ""
-    images: ""
+  - sectionTitle: ""
     content:
-      - title: On Windows or macOS?
-        description:
-          Get started by using Fedora Media Writer, which makes it super easy
-          to give Fedora a try.
+      - title: RELEASE DATE April 19, 2022
+      - title: SUPPORTED THROUGH May 17, 2023
+      - title: Release Notes
+        url: https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html
+      - title: Installation Guide
+        url: https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/
+      - title: Community Support
+        url: https://ask.fedoraproject.org/
+  - sectionTitle: On Windows or macOS?
+    content:
+      - title: Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try.
         image: public/assets/images/media-writer-icon.png
-      - title: On Linux? Or just want an ISO file?
-        description: Not sure how to use these files? [Learn
-          More](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
+      - title: Windows
+        url: cdn.fedoraproject.org/writer/windows
+      - title: Mac
+        url: cdn.fedoraproject.org/writer/mac
+  - sectionTitle: On Linux? Or just want an ISO file?
+    content:
+      - description: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
+      - title: Fedora Workstation 37 x86_64 DVD ISO
+        url: cdn.fedoraproject.org/downloads/x86_64.iso
+      - title: Fedora Workstation 37 aarch64 DVD ISO
+        url: cdn.fedoraproject.org/downloads/arm.iso
   - sectionTitle: Security, Installs, Laptops Preloaded
     content:
       - title: We take security seriously
         description:
           "Once you have downloaded an image, be sure to verify it for both
-          security and integrity. "
-        link:
-          text: Verify your download
-          url: https://getfedora.org/security/
+          security and integrity."
+        url: https://getfedora.org/security/
       - title: But wait! There's more.
         description: Need something a bit different? [Check out our other Fedora
           Workstation downloads here](https://alt.fedoraproject.org/), featuring
@@ -41,74 +47,40 @@ sections:
           pre-loaded with Fedora that include fully-supported hardware
           components. "
         image: public/assets/images/lenovo-laptop.png
-        link:
-          text: Explore Fedora laptops
-          url: https://fedoramagazine.org/lenovo-fedora-now-available/
+        url: https://fedoramagazine.org/lenovo-fedora-now-available/
   - sectionTitle: Learn more about Fedora Media Writer
-    sectionDescription: >-
-      Getting going with Fedora is easier than ever. All you need is a 2GB USB
-      flash drive, and Fedora Media Writer.
-
-
-      Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.
     content:
+      - description: >-
+          Getting going with Fedora is easier than ever. All you need is a 2GB USB
+          flash drive, and Fedora Media Writer.
+
+          Once Fedora Media Writer is installed, it will set up your flash drive to run a "Live" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.
       - description:
           " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and
           run successfully. Double those amounts is recommended. "
-    images: public/assets/images/monitor-2.png
+        image: public/assets/images/monitor-2.png
   - sectionTitle: Officially-Supported Fedora Community Spaces
-    sectionDescription: ""
-    images: ""
     content:
       - title: Fedora Discussion
         image: public/assets/images/fedora-discussion-plus-icon.png
-        link:
-          url: https://discussion.fedoraproject.org/
+        url: https://discussion.fedoraproject.org/
       - title: Fedora Chat
-        link:
-          url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
+        url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
         image: public/assets/images/fedora-chat-plus-element.png
       - title: Ask Fedora
         image: public/assets/images/ask-fedora.png
-        link:
-          url: https://ask.fedoraproject.org/
+        url: https://ask.fedoraproject.org/
   - sectionTitle: Community-Maintained Spaces
     content:
       - title: Reddit
-        link:
-          text: /r/fedora
-          url: https://www.reddit.com/r/Fedora/
+        url: https://www.reddit.com/r/Fedora/
         image: public/assets/images/reddit-brands-3.png
       - title: Discord
-        link:
-          text: Fedora Discord
-          url: https://discord.com/invite/fedora
+        url: https://discord.com/invite/fedora
         image: public/assets/images/discord-brands-2.png
       - title: Telegram
         image: public/assets/images/telegram-brands.png
-        link:
-          text: Telegram
-          url: https://fedoraproject.org/wiki/Telegram
-  - sectionTitle:
-      By clicking on and downloading Fedora, you agree to comply with
-      the following terms and conditions.
-    sectionDescription:
-      "By downloading Fedora software, you acknowledge that you
-      understand all of the following: Fedora software and technical information
-      may be subject to the U.S. Export Administration Regulations (the “EAR”)
-      and other U.S. and foreign laws and may not be exported, re-exported or
-      transferred (a) to any country listed in Country Group E:1 in Supplement
-      No. 1 to part 740 of the EAR (currently, Cuba, Iran, North Korea, Sudan &
-      Syria); (b) to any prohibited destination or to any end user who has been
-      prohibited from participating in U.S. export transactions by any federal
-      agency of the U.S. government; or (c) for use in connection with the
-      design, development or production of nuclear, chemical or biological
-      weapons, or rocket systems, space launch vehicles, or sounding rockets, or
-      unmanned air vehicle systems. You may not download Fedora software or
-      technical information if you are located in one of these countries or
-      otherwise subject to these restrictions. You may not provide Fedora
-      software or technical information to individuals or entities located in
-      one of these countries or otherwise subject to these restrictions. You are
-      also responsible for compliance with foreign law requirements applicable
-      to the import, export and use of Fedora software and technical
-      information."
+        url: https://fedoraproject.org/wiki/Telegram
+  - sectionTitle: By clicking on and downloading Fedora, you agree to comply with the following terms and conditions.
+    content:
+      - description: "By downloading Fedora software, you acknowledge that you understand all of the following: Fedora software and technical information may be subject to the U.S. Export Administration Regulations (the “EAR”) and other U.S. and foreign laws and may not be exported, re-exported or transferred (a) to any country listed in Country Group E:1 in Supplement No. 1 to part 740 of the EAR (currently, Cuba, Iran, North Korea, Sudan & Syria); (b) to any prohibited destination or to any end user who has been prohibited from participating in U.S. export transactions by any federal agency of the U.S. government; or (c) for use in connection with the design, development or production of nuclear, chemical or biological weapons, or rocket systems, space launch vehicles, or sounding rockets, or unmanned air vehicle systems. You may not download Fedora software or technical information if you are located in one of these countries or otherwise subject to these restrictions. You may not provide Fedora software or technical information to individuals or entities located in one of these countries or otherwise subject to these restrictions. You are also responsible for compliance with foreign law requirements applicable to the import, export and use of Fedora software and technical information."
