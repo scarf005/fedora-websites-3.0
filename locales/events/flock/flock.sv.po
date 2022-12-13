@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 14:59-0700\n"
+"POT-Creation-Date: 2022-12-12 21:43-0700\n"
 "PO-Revision-Date: 2022-11-02 16:19+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
@@ -217,15 +217,11 @@ msgid "A Hybrid Experience"
 msgstr "En hybridupplevelse"
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
 "The location of Flock changes each year between Europe and North America. In "
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
-"blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
-"för att göra den mer tillgänglig för vår gemenskap."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
@@ -239,15 +235,10 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr "public/assets/images/flock-barcelona.png"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"The location of Flock changes each year between Europe and North America. In "
-"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
-"to make it more accessible to our community."
+"Flock offers an immersive in person experience. Attend sessions, collaborate "
+"with others, explore and meet new people. Plus, Flock is free to attend!"
 msgstr ""
-"Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
-"blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
-"för att göra den mer tillgänglig för vår gemenskap."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
@@ -256,9 +247,8 @@ msgstr "Juli 1-31 2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-#, fuzzy
-msgid "public/assets/images/flock_nest_logo_mini.png"
-msgstr "public/assets/images/flock-barcelona.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -651,6 +641,31 @@ msgid ""
 msgstr ""
 "Alla sponsorstånd inkluderar en video, anpassningsbar upplevelse, chatt och "
 "engagemang i sociala medier. Klicka nedan för att lära dig mer."
+
+#~ msgctxt "sections->[3]->sectionDescription"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
+#~ "blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
+#~ "för att göra den mer tillgänglig för vår gemenskap."
+
+#~ msgctxt "sections->[3]->content->[0]->description"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Platsen där Flock hålls ändras varje år mellan Europa och Nordamerika. 2020 "
+#~ "blev Fedorans virtuella med Nest, nu erbjuder vi en hybridversion av Flock "
+#~ "för att göra den mer tillgänglig för vår gemenskap."
+
+#, read-only
+#, fuzzy
+#~ msgid "public/assets/images/flock_nest_logo_mini.png"
+#~ msgstr "public/assets/images/flock-barcelona.png"
 
 #~ msgid "Flock To Fedora"
 #~ msgstr "Flock till Fedora"
