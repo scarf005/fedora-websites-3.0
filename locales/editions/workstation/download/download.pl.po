@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-12 21:43-0700\n"
+"POT-Creation-Date: 2022-12-13 10:57-0700\n"
 "PO-Revision-Date: 2022-11-17 09:33+0000\n"
 "Last-Translator: Bartlomiej Konecki <bartekkonecki97@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
@@ -87,19 +87,30 @@ msgstr ""
 msgid "On Windows or macOS?"
 msgstr "Używasz Windows lub macOS?"
 
+#: sections-%3E[1]-%3EsectionDescription
+msgid ""
+"Get started by using Fedora Media Writer, which makes it super easy to give "
+"Fedora a try."
+msgstr ""
+"Zacznij za pomocą programu Fedora Media Writer, znacznie ułatwiającego "
+"wypróbowanie Fedory."
+
+#: sections-%3E[1]-%3Eimages
+msgid "public/assets/images/media-writer-icon.png"
+msgstr ""
+
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Windows"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgctxt "sections->[1]->content->[0]->link->text"
-"sections->[1]->content->[0]->link->text"
 msgid "Download Now"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
-msgid "cdn.fedoraproject.org/writer/windows"
+msgid "https://getfedora.org/fmw/FedoraMediaWriter-win32-latest.exe"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
@@ -113,27 +124,22 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
-msgid "cdn.fedoraproject.org/writer/mac"
-msgstr ""
-
-#: sections-%3E[1]-%3EsectionDescription
-msgid ""
-"Get started by using Fedora Media Writer, which makes it super easy to give "
-"Fedora a try."
-msgstr ""
-"Zacznij za pomocą programu Fedora Media Writer, znacznie ułatwiającego "
-"wypróbowanie Fedory."
-
-#: sections-%3E[1]-%3Eimages
-msgid "public/assets/images/media-writer-icon.png"
+msgid "https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
 msgid "On Linux? Or just want an ISO file?"
 msgstr "Czy Linuksa lub potrzebujesz pliku ISO?"
 
+#: sections-%3E[2]-%3EsectionDescription
+msgid ""
+"Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/"
+"en-US/quick-docs/creating-and-using-a-live-installation-image/)"
+msgstr ""
+
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[2]->content->[0]->title"
+"sections->[2]->content->[0]->title"
 msgid "Fedora Workstation 37"
 msgstr ""
 
@@ -143,7 +149,9 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
-msgid "cdn.fedoraproject.org/downloads/x86_64.iso"
+msgid ""
+"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
+"x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
@@ -156,28 +164,45 @@ msgid "Fedora Workstation 37"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgctxt "sections->[2]->content->[1]->link->text"
-msgid "Download Now"
+msgid "aarch64 Live ISO"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
-msgid "cdn.fedoraproject.org/downloads/arm.iso"
+msgid ""
+"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
+"aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgid "aarch64 DVD ISO"
+msgctxt "sections->[2]->content->[1]->description"
+msgid "For ARM® aarch64"
 msgstr ""
 
-#: sections-%3E[2]-%3EsectionDescription
+#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
+msgctxt "sections->[2]->content->[2]->title"
+msgid "Fedora Workstation 37"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
+msgid "aarch64 raw image"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
 msgid ""
-"Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/"
-"en-US/quick-docs/creating-and-using-a-live-installation-image/)"
+"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
+"aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz"
+msgstr ""
+
+#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
+msgctxt "sections->[2]->content->[2]->description"
+msgid "For ARM® aarch64"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle
-msgid "Security, Installs, Laptops Preloaded"
-msgstr "Bezpieczeństwo, Instalacje, Laptopy z preinstalowanym oprogramowaniem"
+msgid "Security, Installs"
+msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
@@ -195,7 +220,7 @@ msgid "https://getfedora.org/security/"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "Learn More"
+msgid "Verify Your Download"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
@@ -212,11 +237,20 @@ msgstr ""
 "dostępne są inne warianty Fedory Workstation, w tym dla architektur "
 "drugorzędnych i do instalacji sieciowej."
 
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgid "https://download.fedoraproject.org"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "Fedora 37 64-bit network install"
+msgstr ""
+
+#: sections-%3E[4]-%3EsectionTitle
 msgid "Laptops pre-loaded with Fedora"
 msgstr "Laptopy z fabrycznie zainstalowaną Fedorą"
 
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Edescription
+#: sections-%3E[4]-%3EsectionDescription
 msgid ""
 "We've partnered with companies like Lenovo to bring you laptops pre-loaded "
 "with Fedora that include fully-supported hardware components. "
@@ -225,21 +259,25 @@ msgstr ""
 "preinstalowanym systemem Fedora, które zawierają w pełni obsługiwane "
 "komponenty sprzętowe. "
 
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/lenovo-laptop.png"
 msgstr ""
 
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://fedoramagazine.org/lenovo-fedora-now-available/"
 msgstr ""
 
-#: sections-%3E[4]-%3EsectionTitle
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "Explore Fedora Laptops"
+msgstr ""
+
+#: sections-%3E[5]-%3EsectionTitle
 msgid "Learn more about Fedora Media Writer"
 msgstr "Więcej informacji o Fedora Media Writer"
 
-#: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
+#: sections-%3E[5]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Getting going with Fedora is easier than ever. All you need is a 2GB USB "
 "flash drive, and Fedora Media Writer.\n"
@@ -250,7 +288,7 @@ msgid ""
 "drive is a matter of clicking a few buttons*."
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Edescription
+#: sections-%3E[5]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run "
 "successfully. Double those amounts is recommended. "
@@ -259,111 +297,117 @@ msgstr ""
 "miejsca na dysku i 2 GB pamięci RAM. Zalecane jest dwa razy więcej miejsca i "
 "pamięci. "
 
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
 msgid "public/assets/images/monitor-2.png"
 msgstr "public/assets/images/monitor-2.png"
 
-#: sections-%3E[5]-%3EsectionTitle
-msgid "Officially-Supported Fedora Community Spaces"
-msgstr "Oficjalnie wspierane obszary społeczności Fedory"
+#: sections-%3E[6]-%3EsectionTitle
+msgid "Become a Fedora contributor"
+msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[6]-%3EsectionDescription
+msgid ""
+"Once you've got Fedora installed and running, why not join and contribute to "
+"one of our online communities?"
+msgstr ""
+
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
 msgstr "Dyskusja o Fedorze"
 
-#: sections-%3E[5]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/fedora-discussion-plus-icon.png"
 msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
 msgstr "Czat Fedora"
 
-#: sections-%3E[5]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
 msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
 msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Etitle
 msgid "Ask Fedora"
 msgstr "Ask Fedora"
 
-#: sections-%3E[5]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
 msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
-#: sections-%3E[5]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
-msgctxt "sections->[5]->content->[2]->link->url"
+msgctxt "sections->[6]->content->[2]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[6]-%3EsectionTitle
+#: sections-%3E[7]-%3EsectionTitle
 msgid "Community-Maintained Spaces"
 msgstr "Miejsca utrzymywane przez Wspólnotę"
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reddit"
 msgstr "Reddit"
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://www.reddit.com/r/Fedora/"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/reddit-brands-3.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
 msgid "Discord"
 msgstr "Discord"
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
 msgid "https://discord.com/invite/fedora"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
 msgid "public/assets/images/discord-brands-2.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "Telegram"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
 msgid "public/assets/images/telegram-brands.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
 msgid "https://fedoraproject.org/wiki/Telegram"
 msgstr ""
 
-#: sections-%3E[7]-%3EsectionTitle
+#: sections-%3E[8]-%3EsectionTitle
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr "Klikając i pobierając Fedorę, wyrażasz zgodę na poniższe warunki."
 
-#: sections-%3E[7]-%3Econtent-%3E[0]-%3Edescription
+#: sections-%3E[8]-%3EsectionDescription
 msgid ""
 "By downloading Fedora software, you acknowledge that you understand all of "
 "the following: Fedora software and technical information may be subject to "
@@ -402,6 +446,12 @@ msgstr ""
 "subject to these restrictions. You are also responsible for compliance with "
 "foreign law requirements applicable to the import, export and use of Fedora "
 "software and technical information."
+
+#~ msgid "Security, Installs, Laptops Preloaded"
+#~ msgstr "Bezpieczeństwo, Instalacje, Laptopy z preinstalowanym oprogramowaniem"
+
+#~ msgid "Officially-Supported Fedora Community Spaces"
+#~ msgstr "Oficjalnie wspierane obszary społeczności Fedory"
 
 #~ msgid "Download Fedora Workstation 37."
 #~ msgstr "Pobierz Fedorę Workstation 37."
