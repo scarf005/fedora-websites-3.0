@@ -115,25 +115,41 @@ useContentHead(data);
         </div>
       </div>
 
+      <!-- OTHER SECTIONS -->
       <div class="my-10 flex">
-        <div class="flex flex-1">
-          <div>
-            <h2 class="text-fp-blue">
-              {{ data.sections[3].sectionTitle }}
-            </h2>
-            <p class="text-fp-gray">
-              {{ data.sections[3].sectionDescription }}
-            </p>
-          </div>
+        <div class="flex-1">
+          <h2 class="text-fp-blue">
+            {{ data.sections[3].content[0].title }}
+          </h2>
+          <p class="text-fp-gray">
+            {{ data.sections[3].content[0].description }}
+          </p>
+          <FpLink :href="data.sections[3].content[0].link.url">{{
+            data.sections[3].content[0].link.text
+          }}</FpLink>
         </div>
         <div class="flex-1">
           <h2 class="text-fp-blue">
-            {{ data.sections[4].sectionTitle }}
+            {{ data.sections[3].content[1].title }}
           </h2>
           <p class="text-fp-gray">
-            {{ data.sections[4].sectionDescription }}
+            {{ data.sections[3].content[1].description }}
           </p>
+          <FpLink :href="data.sections[3].content[1].link.url">{{
+            data.sections[3].content[1].link.text
+          }}</FpLink>
         </div>
+      </div>
+      <div class="flex-1">
+        <h2 class="text-fp-blue">
+          {{ data.sections[3].content[2].title }}
+        </h2>
+        <p class="text-fp-gray">
+          {{ data.sections[3].content[2].description }}
+        </p>
+        <FpLink :href="data.sections[3].content[2].link.url">{{
+          data.sections[3].content[2].link.text
+        }}</FpLink>
       </div>
     </div>
   </main>

@@ -51,7 +51,7 @@ sections:
           text: aarch64 raw image
           url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz
         description: For ARM® aarch64
-  - sectionTitle: Security, Installs, Laptops Preloaded
+  - sectionTitle: Security, Installs
     content:
       - title: We take security seriously
         description:
@@ -59,19 +59,24 @@ sections:
           security and integrity.
         link:
           url: https://getfedora.org/security/
-          text: Learn More
+          text: Verify Your Download
       - title: But wait! There's more.
         description: Need something a bit different? [Check out our other Fedora
           Workstation downloads here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
-      - title: Laptops pre-loaded with Fedora
-        description:
-          "We've partnered with companies like Lenovo to bring you laptops
-          pre-loaded with Fedora that include fully-supported hardware
-          components. "
-        image: public/assets/images/lenovo-laptop.png
+        link:
+          url: https://download.fedoraproject.org
+          text: Fedora 37 64-bit network install
+  - sectionTitle: Laptops pre-loaded with Fedora
+    sectionDescription:
+      "We've partnered with companies like Lenovo to bring you laptops
+      pre-loaded with Fedora that include fully-supported hardware
+      components. "
+    content:
+      - image: public/assets/images/lenovo-laptop.png
         link:
           url: https://fedoramagazine.org/lenovo-fedora-now-available/
+          text: Explore Fedora Laptops
   - sectionTitle: Learn more about Fedora Media Writer
     content:
       - description: >-
