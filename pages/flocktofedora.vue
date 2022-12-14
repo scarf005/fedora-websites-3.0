@@ -174,7 +174,7 @@ const sponsorsBenefits = data._value.sections[7];
         </div>
         <div class="col-start-2 row-span-2 row-start-2 hidden xl:block">
           <FpImage
-            src="public/assets/images/people-presenting.jpg.png"
+            src="public/assets/images/people-presenting.png"
             class="rounded-md object-cover"
           />
         </div>
@@ -182,7 +182,7 @@ const sponsorsBenefits = data._value.sections[7];
           class="xl:col-span-2 xl:col-start-1 xl:row-start-3 xl:place-self-center"
         >
           <FpImage
-            src="public/assets/images/two-people-at-conf.jpg.png"
+            src="public/assets/images/two-people-at-conf.png"
             class="mx-auto rounded-md object-cover xl:w-48"
           />
         </div>
@@ -229,7 +229,7 @@ const sponsorsBenefits = data._value.sections[7];
           class="col-start-1 row-span-2 row-start-1 hidden place-self-end xl:block"
         >
           <FpImage
-            src="public/assets/images/people-posing-destination-bg.jpg.png"
+            src="public/assets/images/people-posing-destination-bg.png"
             class="h-1/2 w-fit rounded-md object-cover"
           />
         </div>
