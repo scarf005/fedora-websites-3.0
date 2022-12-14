@@ -236,7 +236,7 @@ const sponsorsBenefits = data._value.sections[7];
 
         <div class="col-span-2 hidden md:block xl:order-first xl:col-start-2">
           <FpImage
-            src="public/assets/images/bridge.jpg.png"
+            src="public/assets/images/bridge.png"
             class="w-full rounded-md object-cover xl:w-10/12"
           />
         </div>
