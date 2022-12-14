@@ -1,0 +1,141 @@
+{
+  "downloads": {
+    "label": "Downloads",
+    "editions": {
+      "label": "Editions",
+      "description": "Fedora Editions are the official OS editions of Fedora Linux.",
+      "links": [
+        {
+          "label": "Workstation",
+          "path": "editions/workstation/",
+          "href": "",
+          "icon": "",
+          "description": "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for."
+        },
+        {
+          "label": "Server",
+          "path": "editions/server/",
+          "href": "",
+          "icon": "",
+          "description": "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology."
+        },
+        {
+          "label": "IoT",
+          "path": "editions/iot/",
+          "href": "",
+          "icon": "",
+          "description": "A foundation for Internet of Things and Device Edge ecosystem."
+        },
+        {
+          "label": "Core Os",
+          "path": "editions/coreos/",
+          "href": "",
+          "icon": "",
+          "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
+        },
+        {
+          "label": "Cloud",
+          "path": "editions/cloud/",
+          "href": "",
+          "icon": "",
+          "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
+        }
+      ]
+    },
+    "emerging-editions": {
+      "label": "Emerging Editions",
+      "description": "These editions are supported but not yet a part of the official Fedora editions.",
+      "links": [
+        {
+          "label": "Silverblue",
+          "path": "emerging-editions/silverblue/",
+          "href": "",
+          "icon": "",
+          "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
+        }
+      ]
+    },
+    "spins-desktops": {
+      "label": "Desktop Spins",
+      "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
+      "link": []
+    },
+    "spins-labs": {
+      "label": "Fedora Labs",
+      "description": "The Labs are Fedora Linux set up with software bundles based on particular topics.",
+      "link": []
+    }
+  },
+  "community": {
+    "label": "Community",
+    "commmunication": {
+      "label": "Communications",
+      "description": "Our community is big and there are many ways that we connect with one another.",
+      "links": []
+    },
+    "publications": {
+      "label": "Publications",
+      "description": "The Fedora Project publishes content regularly in the Community Blog and Fedora Magazine. Stay up to date with the latest in the Fedora Community.",
+      "links": []
+    },
+    "events": {
+      "label": "Events",
+      "description": "From our release parties to our annual conference and more, Fedorans regularly come together to celebrate our community and the hard work that we put into it.",
+      "links": []
+    },
+    "extended": {
+      "label": "Extended Community",
+      "description": "Beyond the official channels for Fedorans to communicate, community members are involved on other popular platforms as well!"
+    }
+  },
+  "contributors": {
+    "label": "Contributors",
+    "description": "",
+    "icon": "",
+    "coordination": {
+      "label": "Coordination",
+      "description": "General sites for getting involved and contributing to the Fedora Project.",
+      "link": []
+    },
+    "source": {
+      "Label": "Source Code",
+      "description": "Our code can be found on the following Git Forges",
+      "links": []
+    },
+    "packaging": {
+      "label": "Packaging",
+      "description": "Our package maintainers build their code using koji and buildah. Check out these sources and file bugs with Bugzilla.",
+      "links": []
+    },
+    "new": {
+      "label": "New Contributors",
+      "description": "We are always excited to work with new contributors. If you're new to the project, check out these sites.",
+      "links": []
+    }
+  },
+  "support": {
+    "label": "Support",
+    "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
+    "icon": "",
+    "user": {
+      "label": "User Docs",
+      "description": "These are support docs for end users.",
+      "links": []
+    },
+    "project": {
+      "label": "Project Docs",
+      "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
+      "links": []
+    },
+    "ask": {
+      "label": "Ask Fedora",
+      "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!",
+      "links": []
+    },
+    "other": {
+      "label": "Other Support Sources",
+      "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
+      "links": []
+    }
+  }
+}
