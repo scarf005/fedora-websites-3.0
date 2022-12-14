@@ -18,6 +18,7 @@ useContentHead(data);
 
 const explore = data._value.sections[1];
 const watch = data._value.sections[2];
+const hybrid = data._value.sections[3];
 const community = data._value.sections[5];
 const sponsors = data._value.sections[6];
 const sponsorsBenefits = data._value.sections[7];
@@ -32,7 +33,7 @@ const sponsorsBenefits = data._value.sections[7];
       background="text-white bg-fp-purple"
       :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
-      icon="calendar"
+      icon="calendar-days"
     >
       <h2
         class="my-8 font-semibold text-white"
@@ -64,25 +65,25 @@ const sponsorsBenefits = data._value.sections[7];
   <main class="flex flex-col items-center dark:bg-black">
     <!-- Explore -->
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
-      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
+      <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto mb-12 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+          class="mx-auto max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
           {{ explore.sectionTitle }}
         </h2>
         <div
           class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
         >
-          <FpCard v-for="card in explore.content" class="dark:bg-slate-800">
-            <FpCardImage :src="card.image" />
-            <FpCardTitle class="dark:text-fp-blue-light">{{
-              card.title
-            }}</FpCardTitle>
-            <FpCardText class="dark:text-slate-200">{{
-              card.description
-            }}</FpCardText>
-            <FpCardAction>{{ card.link.text }}</FpCardAction>
-          </FpCard>
+          <FpCard
+            v-for="card in explore.content"
+            class="dark:bg-slate-800"
+            :title="card.title"
+            :image="card.image"
+            :link="card.link"
+            :description="card.description"
+            :imgOrderFirst="true"
+            :centerAlign="true"
+          />
         </div>
 
         <h3
@@ -91,12 +92,12 @@ const sponsorsBenefits = data._value.sections[7];
           {{ watch.sectionTitle }}
         </h3>
         <div
-          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white dark:bg-slate-800 lg:grid-cols-2"
+          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white p-8 dark:bg-slate-800 lg:grid-cols-2"
         >
           <div class="col-span-1 p-1 sm:p-5">
             <iframe
               width="560"
-              height="315"
+              height="340"
               :src="watch.content[0].image"
               title="YouTube video player"
               frameborder="0"
@@ -112,32 +113,142 @@ const sponsorsBenefits = data._value.sections[7];
             <h4 class="mb-5 font-semibold">
               {{ watch.content[0].title }}
             </h4>
-            <p class="font-normal text-gray-600 dark:text-slate-200">
+            <p class="text-fp-gray-darkest dark:text-slate-200">
               {{ watch.content[0].description }}
             </p>
-            <p class="mt-4 text-right">
-              <a
-                class="text-fp-blue dark:text-fp-blue-light"
-                :href="watch.content[0].link.url"
+            <p class="mt-8 text-right">
+              <NuxtLink
+                class="text-fp-blue dark:text-fp-blue-light lg:text-xl"
+                :to="watch.content[0].link.url"
                 >{{ watch.content[0].link.text }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
-              </a>
+              </NuxtLink>
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TODO: Hybrid Experience -->
-    <!-- <section class="mx-auto my-10 w-full">
-      <div class="my-10 mx-auto w-10/12 max-w-screen-xl">
+    <section class="mx-auto my-10 w-full">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
-          A Hybrid Experience
+          {{ hybrid.sectionTitle }}
         </h2>
+        <p class="mx-auto max-w-prose text-center">
+          {{ hybrid.sectionDescription }}
+        </p>
+      </header>
+      <div
+        class="container mx-auto my-8 grid grid-flow-row-dense gap-8 md:grid-cols-2 xl:my-16 xl:grid-cols-3 xl:gap-8"
+      >
+        <div
+          class="col-start-1 place-self-center lg:row-start-2 xl:row-start-3"
+        >
+          <article class="flex max-w-sm flex-col p-6">
+            <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
+              {{ hybrid.content[0].title }}
+            </h3>
+            <FpImage
+              :src="hybrid.content[0].image"
+              class="order-first w-full"
+            />
+            <p class="my-2 w-72">
+              {{ hybrid.content[0].description }}
+            </p>
+            <!-- Content will need to be dynamic-->
+            <div class="mt-2 flex gap-4 text-xl">
+              <NuxtLink
+                to="#"
+                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                >Destination</NuxtLink
+              >
+              <NuxtLink
+                to="#"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                >Learn More</NuxtLink
+              >
+            </div>
+          </article>
+        </div>
+        <div class="col-start-2 row-span-2 row-start-2 hidden xl:block">
+          <FpImage
+            src="public/assets/images/people-presenting.png"
+            class="rounded-md object-cover"
+          />
+        </div>
+        <div
+          class="xl:col-span-2 xl:col-start-1 xl:row-start-3 xl:place-self-center"
+        >
+          <FpImage
+            src="public/assets/images/two-people-at-conf.png"
+            class="mx-auto rounded-md object-cover xl:w-48"
+          />
+        </div>
+        <div
+          class="place-self-center md:col-start-2 lg:row-start-2 xl:col-start-3 xl:row-span-2 xl:justify-self-start"
+        >
+          <article class="flex max-w-sm flex-col p-6">
+            <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
+              {{ hybrid.content[1].title }}
+            </h3>
+            <FpImage
+              :src="hybrid.content[1].image"
+              class="order-first -ml-3 w-5/6"
+            />
+            <p class="my-2 w-72">
+              {{ hybrid.content[1].description }}
+            </p>
+            <!-- Content will need to be dynamic-->
+            <div class="mt-2 flex gap-4 text-xl">
+              <NuxtLink
+                to="#"
+                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                >Destination</NuxtLink
+              >
+              <NuxtLink
+                to="#"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                >Learn More</NuxtLink
+              >
+            </div>
+          </article>
+        </div>
+        <div
+          class="m-4 place-self-center md:m-0 xl:row-start-2 xl:justify-self-start"
+        >
+          <div
+            class="mx-auto grid h-96 w-96 place-items-center rounded-md bg-black text-white xl:h-60 xl:w-80"
+          >
+            <p>placeholder</p>
+          </div>
+        </div>
+
+        <div
+          class="col-start-1 row-span-2 row-start-1 hidden place-self-end xl:block"
+        >
+          <FpImage
+            src="public/assets/images/people-posing-destination-bg.png"
+            class="h-1/2 w-fit rounded-md object-cover"
+          />
+        </div>
+
+        <div class="col-span-2 hidden md:block xl:order-first xl:col-start-2">
+          <FpImage
+            src="public/assets/images/bridge.png"
+            class="w-full rounded-md object-cover xl:w-10/12"
+          />
+        </div>
       </div>
-    </section> -->
+      <div class="my-8">
+        <NuxtLink
+          to="#"
+          class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
+          >Registration</NuxtLink
+        >
+      </div>
+    </section>
 
     <!-- TODO: Important Dates -->
     <!--

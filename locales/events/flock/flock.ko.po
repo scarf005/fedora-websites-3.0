@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 14:59-0700\n"
+"POT-Creation-Date: 2022-12-13 10:57-0700\n"
 "PO-Revision-Date: 2022-11-17 09:33+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
@@ -207,15 +207,11 @@ msgid "A Hybrid Experience"
 msgstr "복합 경험"
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
 "The location of Flock changes each year between Europe and North America. In "
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
-"페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
-"할 수 있도록 Flock의 복합 버전을 제공합니다."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
@@ -228,15 +224,10 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"The location of Flock changes each year between Europe and North America. In "
-"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
-"to make it more accessible to our community."
+"Flock offers an immersive in person experience. Attend sessions, collaborate "
+"with others, explore and meet new people. Plus, Flock is free to attend!"
 msgstr ""
-"Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
-"페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
-"할 수 있도록 Flock의 복합 버전을 제공합니다."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
@@ -245,7 +236,7 @@ msgstr "2023년 7월 1일~31일"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-msgid "public/assets/images/flock_nest_logo_mini.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
@@ -631,6 +622,26 @@ msgid ""
 "social media engagement. Click below to learn more."
 msgstr "비디오, 맞춤 경험, 대화, 그리고 소셜미디어 참여를 포함한 모든 후원사 전시관. "
 "아래를 눌러서 더 알아보세요."
+
+#~ msgctxt "sections->[3]->sectionDescription"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
+#~ "페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
+#~ "할 수 있도록 Flock의 복합 버전을 제공합니다."
+
+#~ msgctxt "sections->[3]->content->[0]->description"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
+#~ "페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
+#~ "할 수 있도록 Flock의 복합 버전을 제공합니다."
 
 #~ msgid "Flock To Fedora"
 #~ msgstr "페도라에 Flock"
