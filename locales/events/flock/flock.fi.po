@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 14:59-0700\n"
+"POT-Creation-Date: 2022-12-13 10:57-0700\n"
 "PO-Revision-Date: 2022-11-18 13:47+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -212,15 +212,11 @@ msgid "A Hybrid Experience"
 msgstr "Hybridikokemus"
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
 "The location of Flock changes each year between Europe and North America. In "
 "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
 "to make it more accessible to our community."
 msgstr ""
-"Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
-"Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
-"Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[3]->content->[0]->title"
@@ -233,15 +229,10 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"The location of Flock changes each year between Europe and North America. In "
-"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
-"to make it more accessible to our community."
+"Flock offers an immersive in person experience. Attend sessions, collaborate "
+"with others, explore and meet new people. Plus, Flock is free to attend!"
 msgstr ""
-"Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
-"Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
-"Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[3]->content->[1]->title"
@@ -250,7 +241,7 @@ msgstr "1.–31.7.2023"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-msgid "public/assets/images/flock_nest_logo_mini.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
@@ -638,6 +629,26 @@ msgid ""
 msgstr ""
 "Kaikki sponsorikopit sisältävät videon, mukautettavan kokemuksen, chatin ja "
 "sosiaalisen median käyttämisen. Napsauta alapuolelta saadaksesi lisätietoja."
+
+#~ msgctxt "sections->[3]->sectionDescription"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
+#~ "Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
+#~ "Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
+
+#~ msgctxt "sections->[3]->content->[0]->description"
+#~ msgid ""
+#~ "The location of Flock changes each year between Europe and North America. In "
+#~ "2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+#~ "to make it more accessible to our community."
+#~ msgstr ""
+#~ "Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
+#~ "Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
+#~ "Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
 
 #~ msgid "Flock To Fedora"
 #~ msgstr "Flock Fedoraan"

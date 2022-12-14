@@ -8,7 +8,7 @@ const editions = [
   { name: "Fedora IoT", href: "/iot", icon: "microchip" },
   {
     name: "Fedora Cloud",
-    href: "https://alt.fedoraproject.org/cloud/",
+    href: "/cloud",
     icon: "cloud",
   },
   {
