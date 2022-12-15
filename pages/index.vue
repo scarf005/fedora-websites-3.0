@@ -13,7 +13,7 @@ const announcement = true;
     >
       <section class="mx-auto flex max-w-7xl flex-col items-center text-center">
         <!-- Main Info -->
-        <div class="container">
+        <div class="container mt-12 md:mt-0">
           <!-- TODO: Add dynamic changing of text in the span -->
           <h1 class="mx-auto mb-8 text-4xl font-semibold lg:text-9xl">
             It's your <span>operating</span> system.
@@ -25,9 +25,11 @@ const announcement = true;
           <p class="uppercase">100% Free & Open Source</p>
         </div>
         <!-- Circle -->
-        <div class="mt-4 h-56 w-56 rounded-full bg-blue-400 p-8">
+        <div
+          class="mt-4 flex h-48 w-48 flex-col justify-center rounded-full bg-blue-400 p-4 lg:h-56 lg:w-56 lg:p-8"
+        >
           <p>Latest release</p>
-          <p class="text-8xl font-bold">37</p>
+          <p class="text-5xl font-bold lg:text-8xl">37</p>
           <NuxtLink to="#" class="underline underline-offset-4"
             >Release Notes</NuxtLink
           >
@@ -51,7 +53,7 @@ const announcement = true;
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
-        <div class="container flex justify-end">
+        <div class="container flex justify-center lg:justify-end">
           <h3 class="text-center text-xl lg:w-56 lg:text-right lg:text-2xl">
             A Registered Digital Public Good
           </h3>
