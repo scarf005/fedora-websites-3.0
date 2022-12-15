@@ -65,7 +65,7 @@ const getArticles = async (count, page_num) => {
           ? featured.media_details.sizes["post-image-thumbnail"].source_url
           : null,
       title: decode(p.title.rendered),
-      link: path + p.slug,
+      link: `${path}/${p.slug}`,
       date: new Date(p.date).toLocaleDateString("en-us", {
         month: "long",
         day: "numeric",
