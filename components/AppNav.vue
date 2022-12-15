@@ -15,8 +15,8 @@ defineProps({
 </script>
 <template>
   <nav>
-    <!-- Home Button-->
-    <div>
+    <!-- Home Button replaced in TheHeader on mobile -->
+    <div class="hidden lg:block">
       <NuxtLink :to="home.url"
         ><FpImage :src="home.image" :alt="home.altText"
       /></NuxtLink>
@@ -24,7 +24,7 @@ defineProps({
     <ul class="flex justify-center gap-5 pt-4 md:gap-12 lg:pt-0">
       <li v-for="item in navItems" :key="item.id">
         <!-- TODO emit toggle function -->
-        <button v-if="global">
+        <button v-if="global" @click.prevent="$emit('toggle')">
           <div class="my-2 lg:hidden">
             <Icon :name="item.icon" size="32" />
           </div>
