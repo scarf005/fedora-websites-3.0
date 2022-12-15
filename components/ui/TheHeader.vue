@@ -1,6 +1,8 @@
 <script setup>
 // logic for mobile detection
 
+import TheMenuButton from "./TheMenuButton.vue";
+
 // open menu function
 
 // close menu function
@@ -9,12 +11,12 @@
   <header
     class="bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
   >
-    <TheHeaderLogo />
-    <!-- Navigation -->
-    <TheNav />
-    <!-- Language, Darkmode, Search -->
-    <TheNavToggles />
-    <!-- Hamburger Menu -->
-    <TheNavButton class="justify-self-end md:hidden" />
+    <div class="flex items-center justify-between py-2 px-4 lg:px-12">
+      <TheHeaderLogo class="" />
+      <TheNav class="hidden md:block" />
+      <!-- Language, Darkmode, Search -->
+      <!-- Hamburger Menu -->
+      <TheMenuButton class="md:hidden" />
+    </div>
   </header>
 </template>
