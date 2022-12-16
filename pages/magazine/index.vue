@@ -22,16 +22,6 @@ const getArticles = async (count, page_num) => {
   let posts = posts_raw._data;
   let pages = posts_raw.headers.get("x-wp-totalpages");
 
-  let media_ids = [];
-  for (const p of posts) {
-    media_ids.push(p.featured_media);
-  }
-
-  let media;
-  if (media_ids.length > 0) {
-    media = await $fetch(`${api}/media?include=${media_ids}`);
-  }
-
   let page_links = [];
   for (let i = page_num - 2; i <= page_num + 2; i++) {
     if (i < 1) {
@@ -57,15 +47,20 @@ const getArticles = async (count, page_num) => {
 
   let articles = [];
   for (const p of posts) {
-    let featured = media.find((item) => item.id === p.featured_media);
+    let [featured] = await $fetch(`${api}/media?include=${p.featured_media}`);
+    let image_url = null;
+    if (featured) {
+      if (featured.media_details.sizes["post-image-thumbnail"]) {
+        image_url =
+          featured.media_details.sizes["post-image-thumbnail"].source_url;
+      }
+    }
+
     let comments = await $fetch.raw(`${api}/comments?per_page=1&post=${p.id}`);
     articles.push({
-      image:
-        typeof featured !== "undefined"
-          ? featured.media_details.sizes["post-image-thumbnail"].source_url
-          : null,
+      image: image_url,
       title: decode(p.title.rendered),
-      link: `${path}/${p.slug}`,
+      link: path + p.slug,
       date: new Date(p.date).toLocaleDateString("en-us", {
         month: "long",
         day: "numeric",
