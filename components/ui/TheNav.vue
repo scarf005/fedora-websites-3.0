@@ -1,34 +1,29 @@
 <script setup>
-// if props are null then use async call
-
-const { data } = await useAsyncData("navigation", () =>
-  queryContent("_navigation").findOne()
-);
-
-const categories = {
-  downloads: data._value.downloads,
-  community: data._value.community,
-  contributors: data._value.contributors,
-  support: data._value.support,
-};
+defineProps({
+  categories: {
+    type: [Array, Object],
+  },
+});
 </script>
 <template>
-  <nav>
+  <nav class="mx-auto">
     <!-- Category Menu -->
-    <ul class="flex gap-6">
+    <ul class="flex justify-center gap-5 pt-4 pb-4 md:gap-12 lg:pt-0">
       <li
         v-for="category in categories"
         :key="category.id"
         class="text-lg font-medium text-white lg:text-xl"
       >
-        <button @click.prevent="isMobile = !isMobile">
-          <!--  -->
-          <span>{{ category.icon }}</span>
-          <span>{{ category.label }}</span>
+        <button
+          class="underline-offset-4 hover:opacity-75 active:underline active:opacity-75"
+        >
+          <div class="my-2 lg:hidden">
+            <Icon :name="category.icon ? category.icon : ''" size="32" />
+          </div>
+          <p class="text-base md:text-xl">{{ category.label }}</p>
         </button>
       </li>
     </ul>
-    <!-- Populate Menu here -->
-    <section></section>
+    <!-- Drop Down Hero Menu Activated by Top Level Categories -->
   </nav>
 </template>

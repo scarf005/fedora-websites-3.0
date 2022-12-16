@@ -2,7 +2,7 @@
 <template>
   <NuxtLink
     to="/"
-    class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:fill-fp-gray-light"
+    class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:opacity-50"
   >
     <!-- SVG Icon Logo -->
     <svg viewBox="0 0 448 512" class="h-12">
