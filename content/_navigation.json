@@ -9,35 +9,35 @@
         "links": [
           {
             "label": "Workstation",
-            "path": "editions/workstation/",
+            "path": "workstation/",
             "href": "",
             "icon": "",
             "description": "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for."
           },
           {
             "label": "Server",
-            "path": "editions/server/",
+            "path": "server/",
             "href": "",
             "icon": "",
             "description": "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology."
           },
           {
             "label": "IoT",
-            "path": "editions/iot/",
+            "path": "iot/",
             "href": "",
             "icon": "",
             "description": "A foundation for Internet of Things and Device Edge ecosystem."
           },
           {
             "label": "Core Os",
-            "path": "editions/coreos/",
+            "path": "coreos/",
             "href": "",
             "icon": "",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
           },
           {
             "label": "Cloud",
-            "path": "editions/cloud/",
+            "path": "cloud/",
             "href": "",
             "icon": "",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
