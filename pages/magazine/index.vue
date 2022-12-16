@@ -60,7 +60,7 @@ const getArticles = async (count, page_num) => {
     articles.push({
       image: image_url,
       title: decode(p.title.rendered),
-      link: path + p.slug,
+      link: `${path}/${p.slug}`,
       date: new Date(p.date).toLocaleDateString("en-us", {
         month: "long",
         day: "numeric",
