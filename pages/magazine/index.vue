@@ -101,32 +101,32 @@ try {
         >
           <article>
             <div class="pb-4">
-              <NuxtLink :to="a.link"
+              <FpLink :href="a.link"
                 ><img
                   :src="a.image"
                   class="rounded-lg"
                   width="472"
                   height="200"
-              /></NuxtLink>
+              /></FpLink>
             </div>
             <div>
-              <NuxtLink
-                :to="a.link"
+              <FpLink
+                :href="a.link"
                 class="text-xl font-bold no-underline hover:underline"
-                >{{ a.title }}</NuxtLink
+                >{{ a.title }}</FpLink
               >
             </div>
             <div class="text-slate-500">
-              <NuxtLink
-                :to="a.link"
+              <FpLink
+                :href="a.link"
                 class="text-base no-underline hover:underline"
-                >{{ a.date }}</NuxtLink
+                >{{ a.date }}</FpLink
               >
               –
-              <NuxtLink
-                :to="a.link"
+              <FpLink
+                :href="a.link"
                 class="text-base no-underline hover:underline"
-                >{{ a.comments }} Comments</NuxtLink
+                >{{ a.comments }} Comments</FpLink
               >
             </div>
           </article>
@@ -136,7 +136,7 @@ try {
     <div class="my-4 w-10/12 border-y-2 p-4">
       <div class="flex justify-between font-bold text-slate-500">
         <div>
-          <a
+          <FpLink
             v-if="page_links[3] !== '…'"
             :href="
               path +
@@ -145,16 +145,19 @@ try {
                 ? page_links[page_links.length - 6]
                 : page_links[3])
             "
-            >← Previous</a
+            >← Previous</FpLink
           >
         </div>
         <div>
           <span v-for="p in page_links"
-            ><a :href="path + '?page_num=' + p">{{ ` ${p} ` }}</a></span
+            ><FpLink v-if="p != '…'" :href="path + '?page_num=' + p">{{
+              ` ${p} `
+            }}</FpLink>
+            <span v-else>{{ ` ${p} ` }}</span></span
           >
         </div>
         <div>
-          <a
+          <FpLink
             v-if="page_links[page_links.length - 4] !== '…'"
             :href="
               path +
@@ -163,7 +166,7 @@ try {
                 ? page_links[page_links.length - 4]
                 : page_links[5])
             "
-            >Next →</a
+            >Next →</FpLink
           >
         </div>
       </div>
