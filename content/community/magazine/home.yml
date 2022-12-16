@@ -1,0 +1,8 @@
+path: index
+title: Fedora Magazine
+description: >
+  Fedora Magazine is a website that hosts promotional articles
+  and short guides contributed from the community
+  about free/libre and open-source software
+  that runs on or works with the Fedora Linux operating system.
+api: https://fedoramagazine.org/wp-json/wp/v2
