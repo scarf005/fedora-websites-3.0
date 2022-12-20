@@ -44,8 +44,5 @@ export default defineNuxtConfig({
       titleTemplate: "%s | The Fedora Project",
       script: [{ src: path.join(base,'assets/js/darkmode.js'), defer: true}],
     },
-  },
-  experimental: {
-    payloadExtraction: false,
-  },
+  }
 });
