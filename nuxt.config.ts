@@ -47,7 +47,6 @@ export default defineNuxtConfig({
     },
   },
   experimental: {
-    noScripts: true,
     payloadExtraction: false,
   },
 });
