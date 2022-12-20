@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-13 10:57-0700\n"
-"PO-Revision-Date: 2022-11-17 09:33+0000\n"
+"PO-Revision-Date: 2022-12-15 03:20+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/fi/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: path
 msgid "download"
@@ -21,7 +21,7 @@ msgstr "lataa"
 
 #: title
 msgid "Download Fedora Workstation 37"
-msgstr ""
+msgstr "Lataa Fedora Workstation 37"
 
 #: description
 msgid ""
@@ -38,23 +38,23 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "release"
-msgstr ""
+msgstr "julkaisu"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "RELEASE DATE"
-msgstr ""
+msgstr "JULKAISUPÄIVÄ"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid "April 19, 2022"
-msgstr ""
+msgstr "19. huhtikuuta 2022"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "SUPPORTED THROUGH"
-msgstr ""
+msgstr "TUETTU SAAKKA"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "May 17, 2023"
-msgstr ""
+msgstr "17. toukokuuta 2023"
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Release Notes"
@@ -98,16 +98,16 @@ msgstr ""
 
 #: sections-%3E[1]-%3Eimages
 msgid "public/assets/images/media-writer-icon.png"
-msgstr ""
+msgstr "public/assets/images/media-writer-icon.png"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgctxt "sections->[1]->content->[0]->link->text"
 msgid "Download Now"
-msgstr ""
+msgstr "Lataa nyt"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -116,12 +116,12 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgctxt "sections->[1]->content->[1]->link->text"
 msgid "Download Now"
-msgstr ""
+msgstr "Lataa nyt"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -137,16 +137,19 @@ msgid ""
 "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
+"Etkö ole varma kuinka näitä tiedostoja käytetään? [Lisätietoja "
+"tästä](https://docs.fedoraproject.org/en-US/quick-docs/"
+"creating-and-using-a-live-installation-image/)"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
 msgctxt "sections->[2]->content->[0]->title"
 "sections->[2]->content->[0]->title"
 msgid "Fedora Workstation 37"
-msgstr ""
+msgstr "Fedora työasema 37"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "x86_64 DVD ISO"
-msgstr ""
+msgstr "x86_64 DVD ISO"
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -157,16 +160,16 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid "For Intel and AMD systems"
-msgstr ""
+msgstr "Intel- ja AMD-järjestelmille"
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
 msgctxt "sections->[2]->content->[1]->title"
 msgid "Fedora Workstation 37"
-msgstr ""
+msgstr "Fedora työasema 37"
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "aarch64 Live ISO"
-msgstr ""
+msgstr "aarch64 Live ISO"
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -178,16 +181,16 @@ msgstr ""
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
 msgctxt "sections->[2]->content->[1]->description"
 msgid "For ARM® aarch64"
-msgstr ""
+msgstr "ARM® aarch64:lle"
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
 msgctxt "sections->[2]->content->[2]->title"
 msgid "Fedora Workstation 37"
-msgstr ""
+msgstr "Fedora työasema 37"
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgid "aarch64 raw image"
-msgstr ""
+msgstr "aarch64 käsittelemätön levykuva"
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
@@ -199,11 +202,11 @@ msgstr ""
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
 msgctxt "sections->[2]->content->[2]->description"
 msgid "For ARM® aarch64"
-msgstr ""
+msgstr "ARM® aarch64:lle"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Security, Installs"
-msgstr ""
+msgstr "Turvallisuus, asennukset"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
@@ -213,7 +216,7 @@ msgstr "Suhtaudumme vakavasti tietoturvaan"
 msgid ""
 "Once you have downloaded an image, be sure to verify it for both security "
 "and integrity."
-msgstr ""
+msgstr "Kun olet ladannut kuvan, muista varmistaa sen turvallisuus ja eheys."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -222,7 +225,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Verify Your Download"
-msgstr ""
+msgstr "Tarkista latauksesi"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "But wait! There's more."
@@ -245,7 +248,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "Fedora 37 64-bit network install"
-msgstr ""
+msgstr "Fedora 37 64-bittinen verkkoasennus"
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Laptops pre-loaded with Fedora"
@@ -272,7 +275,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Explore Fedora Laptops"
-msgstr ""
+msgstr "Tutustu Fedora-kannettaviin"
 
 #: sections-%3E[5]-%3EsectionTitle
 msgid "Learn more about Fedora Media Writer"
@@ -288,6 +291,13 @@ msgid ""
 "changes to your computer. Once you are hooked, installing it to your hard "
 "drive is a matter of clicking a few buttons*."
 msgstr ""
+"Fedoran käyttäminen on helpompaa kuin koskaan. Tarvitset vain 2 Gt:n USB-"
+"muistitikun ja Fedora Media Writerin.\n"
+"Kun Fedora Media Writer on asennettu, se määrittää muistitikun käyttämään "
+"Fedora työaseman \"live\"-versiota, mikä tarkoittaa, että voit käynnistää "
+"sen muistitikultasi ja kokeilla sitä heti tekemättä pysyviä muutoksia "
+"tietokoneellesi. Kun olet tyytyväinen, sen asentaminen kiintolevyllesi on "
+"vain muutaman napinpainalluksen päässä*."
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -304,13 +314,15 @@ msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[6]-%3EsectionTitle
 msgid "Become a Fedora contributor"
-msgstr ""
+msgstr "Ryhdy Fedora-avustajaksi"
 
 #: sections-%3E[6]-%3EsectionDescription
 msgid ""
 "Once you've got Fedora installed and running, why not join and contribute to "
 "one of our online communities?"
 msgstr ""
+"Kun Fedora on asennettu ja käytössä, miksi et liittyisi ja osallistuisi "
+"johonkin verkkoyhteisöömme?"
 
 #: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
@@ -389,7 +401,7 @@ msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
 #, read-only

@@ -14,6 +14,8 @@ const availableLocales = computed(() => {
     href: switchLocalePath(i.code),
   }));
 });
+
+const open = useState("navopen", () => false);
 </script>
 
 <template>
@@ -62,7 +64,7 @@ const availableLocales = computed(() => {
         <!-- Mobile menu button-->
         <div class="flex items-center sm:hidden">
           <button
-            onclick="togglenav('mobile-menu')"
+            @click="open = !open"
             type="button"
             class="inline-flex items-center justify-center rounded-md p-2 text-white"
           >
@@ -73,7 +75,7 @@ const availableLocales = computed(() => {
     </div>
 
     <!-- Mobile menu, show/hide based on mobile menu state. -->
-    <div class="mb-2 hidden h-screen overflow-scroll" id="mobile-menu">
+    <div :class="`mb-2 ${!open && 'hidden'} h-screen overflow-scroll`">
       <div class="flex flex-col pb-4">
         <div class="ml-6 mb-4 md:ml-0 md:mr-0 lg:mb-4">
           <a
