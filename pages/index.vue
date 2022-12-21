@@ -2,12 +2,11 @@
 definePageMeta({
   layout: "development",
 });
-
 // temporary  boolean
 const announcement = true;
 </script>
 <template>
-  <main class="">
+  <main>
     <header
       class="flex h-screen flex-col bg-gradient-to-tl from-fp-blue to-fp-blue-light pt-8 text-white lg:pt-12"
     >

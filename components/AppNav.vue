@@ -1,43 +1,60 @@
 <script setup>
-defineProps({
-  global: {
-    type: Boolean,
-    default: false,
-  },
-  navItems: {
-    type: Array,
-    required: true,
-  },
+const props = defineProps({
+  global: { type: Boolean, default: false },
   home: {
     type: Object,
+    default() {
+      return {
+        url: "/",
+        label: "",
+      };
+    },
+  },
+  navLinks: {
+    type: Object || Array,
+    default: [
+      { label: "link 1", url: "#" },
+      { label: "link 2", url: "#" },
+    ],
+  },
+  textColor: {
+    type: String,
+    default: "text-white",
   },
 });
+const emit = defineEmits(["emitToggle"]);
 </script>
 <template>
-  <nav>
-    <!-- Home Button replaced in TheHeader on mobile -->
-    <div class="hidden lg:block">
-      <NuxtLink :to="home.url"
-        ><FpImage :src="home.image" :alt="home.altText"
-      /></NuxtLink>
+  <nav class="flex items-center">
+    <!-- Home Link for Local Navigation -->
+    <div v-if="!global">
+      <NuxtLink :to="home.url" class="font-display text-xl font-semibold"
+        >{{ home.label.toUpperCase() }}
+      </NuxtLink>
     </div>
-    <ul class="flex justify-center gap-5 pt-4 md:gap-12 lg:justify-end lg:pt-0">
-      <li v-for="item in navItems" :key="item.id">
-        <!-- TODO emit toggle function -->
-        <button v-if="global" @click.prevent="$emit('toggle')">
-          <div class="my-2 lg:hidden">
-            <Icon :name="item.icon" size="32" />
+    <ul class="flex gap-4 text-white">
+      <li v-for="link in navLinks" :key="link.id">
+        <!-- Event Listener -->
+        <button @click.prevent="emitToggle" v-if="global">
+          <div class="lg:hidden">
+            <Icon :name="link.icon" size="32" />
           </div>
-          <p class="text-base md:text-xl">{{ item.label }}</p>
+          <p>{{ link.label }}</p>
         </button>
-        <!-- If not Global Menu Render this -->
-        <NuxtLink v-else to="item.url">
-          <div class="my-2 lg:hidden" :class="item.color || 'text-white'">
-            <Icon :name="item.icon" size="32" />
-          </div>
-          <p>{{ item.label }}</p></NuxtLink
+        <!-- No Event Listener-->
+        <NuxtLink
+          v-else
+          :to="link.url"
+          class="block p-2 text-center hover:opacity-75"
+          :class="textColor"
         >
+          <span class="lg:hidden">
+            <Icon :name="link.icon" size="32" />
+          </span>
+          <span>{{ link.label }}</span>
+        </NuxtLink>
       </li>
     </ul>
+    <slot></slot>
   </nav>
 </template>

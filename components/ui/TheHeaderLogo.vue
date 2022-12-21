@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const route = useRoute();
+</script>
 <template>
   <NuxtLink
     to="/"

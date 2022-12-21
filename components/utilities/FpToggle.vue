@@ -19,13 +19,11 @@ function useToggle() {
 }
 </script>
 <template>
-  <div class="justify-self-end lg:hidden">
-    <button
-      @click="useToggle"
-      class="text-white duration-300 ease-in-out hover:opacity-50"
-    >
-      <Icon v-if="toggle" :name="altIcon" size="32" />
-      <Icon v-else :name="icon" size="32" />
-    </button>
-  </div>
+  <button
+    @click="useToggle"
+    class="text-white duration-300 ease-in-out hover:opacity-50"
+  >
+    <Icon v-if="toggle" :name="altIcon" size="32" />
+    <Icon v-else :name="icon" size="32" />
+  </button>
 </template>
