@@ -1,0 +1,43 @@
+<script setup>
+defineProps({
+  global: {
+    type: Boolean,
+    default: false,
+  },
+  navItems: {
+    type: Array,
+    required: true,
+  },
+  home: {
+    type: Object,
+  },
+});
+</script>
+<template>
+  <nav>
+    <!-- Home Button replaced in TheHeader on mobile -->
+    <div class="hidden lg:block">
+      <NuxtLink :to="home.url"
+        ><FpImage :src="home.image" :alt="home.altText"
+      /></NuxtLink>
+    </div>
+    <ul class="flex justify-center gap-5 pt-4 md:gap-12 lg:justify-end lg:pt-0">
+      <li v-for="item in navItems" :key="item.id">
+        <!-- TODO emit toggle function -->
+        <button v-if="global" @click.prevent="$emit('toggle')">
+          <div class="my-2 lg:hidden">
+            <Icon :name="item.icon" size="32" />
+          </div>
+          <p class="text-base md:text-xl">{{ item.label }}</p>
+        </button>
+        <!-- If not Global Menu Render this -->
+        <NuxtLink v-else to="item.url">
+          <div class="my-2 lg:hidden" :class="item.color || 'text-white'">
+            <Icon :name="item.icon" size="32" />
+          </div>
+          <p>{{ item.label }}</p></NuxtLink
+        >
+      </li>
+    </ul>
+  </nav>
+</template>
