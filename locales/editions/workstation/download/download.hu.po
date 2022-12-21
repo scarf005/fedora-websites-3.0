@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: 2022-09-21 10:18+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -101,8 +101,7 @@ msgid "Windows"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[0]->link->text"
-msgid "Download Now"
+msgid "fa-windows"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
@@ -115,8 +114,7 @@ msgid "Mac"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[1]->link->text"
-msgid "Download Now"
+msgid "fa-apple"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
@@ -132,69 +130,6 @@ msgstr ""
 msgid ""
 "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
-msgctxt "sections->[2]->content->[0]->title"
-"sections->[2]->content->[0]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "x86_64 DVD ISO"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgid "For Intel and AMD systems"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
-msgctxt "sections->[2]->content->[1]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "aarch64 Live ISO"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
-msgid "For ARM® aarch64"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[2]->content->[2]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "aarch64 raw image"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
-msgid "For ARM® aarch64"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionTitle

@@ -35,22 +35,6 @@ sections:
           url: https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg
   - sectionTitle: On Linux? Or just want an ISO file?
     sectionDescription: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
-    content:
-      - title: Fedora Workstation 37
-        link:
-          text: x86_64 DVD ISO
-          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso
-        description: For Intel and AMD systems
-      - title: Fedora Workstation 37
-        link:
-          text: aarch64 Live ISO
-          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso
-        description: For ARM® aarch64
-      - title: Fedora Workstation 37
-        link:
-          text: aarch64 raw image
-          url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz
-        description: For ARM® aarch64
   - sectionTitle: Security, Installs
     content:
       - title: We take security seriously
