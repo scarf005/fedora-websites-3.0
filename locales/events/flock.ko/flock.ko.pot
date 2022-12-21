@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgid "flock"
 msgstr ""
 
 #: title
-msgid "The Fedora Project Conference"
+msgid "페도라 프로젝트 회의"
 msgstr ""
 
 #: description
-msgid "August 5 - 7, 2023\n"
+msgid "2023년 8월 5일 - 7일\n"
 msgstr ""
 
 #, read-only
@@ -106,7 +106,7 @@ msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "View Projects"
+msgid "프로젝트 보기"
 msgstr ""
 
 #, read-only
@@ -129,7 +129,7 @@ msgid "페도라에서 수행한 작업과 미래를 위한 계획을 보여주�
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "View Topics"
+msgid "주제 보기"
 msgstr ""
 
 #, read-only
@@ -153,7 +153,7 @@ msgid "페도라인과 함께하는 모임과 사교를 위해 일상적이고, 
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "View Socials"
+msgid "사회적 보기"
 msgstr ""
 
 #, read-only
@@ -183,7 +183,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "Visit Fedora Youtube"
+msgid "페도라 유튜브 방문"
 msgstr ""
 
 #, read-only
@@ -196,10 +196,9 @@ msgid "복합 경험"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
-"Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
-"페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
+"Flock의 위치는 유럽과 북미 사이에서 매년 변경됩니다. 2020년에는 페도라인은 "
+"Nest와 함께 가상으로 옮겼으며, 이제 우리는 우리의 커뮤니티에 보다 쉽게 접근 "
 "할 수 있도록 Flock의 복합 버전을 제공합니다."
 msgstr ""
 
@@ -214,11 +213,10 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"Flock의 위치는 유럽과 북미 사이에서 1년 단위로 변경됩니다. 2020년에 "
-"페도라인는 Nest를 통해 가상으로 전환되었고, 이제 우리의 커뮤니티에서 더 접근 "
-"할 수 있도록 Flock의 복합 버전을 제공합니다."
+"Flock은 개인 경험에 몰입하도록 제공합니다. 세션에 참석하고, 다른 사람들과 "
+"협력하며, 새로운 사람을 탐색하고 만나보세요. 추가적으로, Flock은 자유롭게 "
+"참석 할 수 있습니다!"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
@@ -228,7 +226,7 @@ msgstr ""
 
 #, read-only
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
-msgid "public/assets/images/flock_nest_logo_mini.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
@@ -528,7 +526,7 @@ msgid "미디어"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
-msgid "none"
+msgid "없음"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
