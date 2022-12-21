@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:56-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,41 +14,43 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
+msgctxt "path"
 msgid "커뮤니티"
 msgstr ""
 
 #: title
-msgid "Community"
+msgctxt "title"
+msgid "커뮤니티"
 msgstr ""
 
 #: description
-msgid "Join a community of users and contributors focused on Fedora IoT."
+msgid "페도라 사물인터넷(IoT)에 중점을 둔 사용자와 공헌자의 커뮤니티에 참여합니다."
 msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
-msgid "Header Second Half"
+msgid "헤더 후반"
 msgstr ""
 
 #: sections-%3E[0]-%3EsectionDescription
 msgid ""
-"Fedora IoT is created by a team in the Fedora Project community called the "
-"IoT Working Group. It is comprised of official members who have decision-"
-"making powers, as well as other contributors. Learn more about this group "
-"and how you can get involved on the IoT Working Group website."
+"페도라 사물인터넷(IoT)는 IoT 작업 그룹이라고 불리는 페도라 프로젝트 "
+"커뮤니티에 있는 팀에 의해 생성되었습니다. 의사-결정 권한을 가진 공식 구성원 "
+"뿐만 아니라 다른 공헌자로 구성됩니다. IoT 작업 그룹 웹주소에서 이 그룹과 "
+"참여 방법에 대해 더 알아보세요."
 msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
-msgid "Communication Channels"
+msgid "통신 채널"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Forum"
+msgid "포럼"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"The **Fedora IoT** tag on Fedora's Discourse-based discussion forum is a "
-"great place to connect with other Fedora Workstation users and contributors."
+"페도라 디스코드-기반의 토의 포럼에서 **페도라 사물인터넷(IoT)** 표시는 다른 "
+"페도라 웍스테이션 사용자와 공헌자를 함께 연결하는 훌륭한 장소입니다."
 msgstr ""
 
 #, read-only
@@ -58,7 +60,7 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgctxt "sections->[1]->content->[0]->link->text"
-msgid "Visit Now"
+msgid "지금 방문하세요"
 msgstr ""
 
 #, read-only
@@ -67,13 +69,14 @@ msgid "https://discussion.fedoraproject.org/tag/iot"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
-msgid "Chat"
+msgid "대화"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
-"You can chat with the Fedora IoT Working Group via either Matrix or IRC: "
-"#iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat."
+"당신은 매트릭스와 #fedora-iot on irc.libera.chat에서 매트릭스 또는 IRC: #iot:"
+"fedoraproject.org를 통해서 페도라 사물인터넷(IoT) 작업 그룹과 대화 할 수 "
+"있습니다."
 msgstr ""
 
 #, read-only
@@ -82,7 +85,7 @@ msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "Chat Now"
+msgid "지금 대화하세요"
 msgstr ""
 
 #, read-only
@@ -91,18 +94,18 @@ msgid "https://chat.fedoraproject.org/#/welcome"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
-msgid "Mailing List"
+msgid "전자우편 목록"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
-"The Fedora IoT Working Group sends meeting agendas and minutes and has "
-"discussions on their mailing list at iot@lists.fedoraproject.org."
+"페도라 사물인터넷(IoT) 작업 그룹은 iot@lists.fedoraproject.org에 있는 이들 "
+"전자우편 목록에서 회의 의제와 의사록을 보내고 토론합니다."
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
 msgctxt "sections->[1]->content->[2]->link->text"
-msgid "Visit Now"
+msgid "지금 방문하세요"
 msgstr ""
 
 #, read-only
@@ -117,26 +120,25 @@ msgid "public/assets/images/hyperkitty-plus-logo.png"
 msgstr ""
 
 #: sections-%3E[2]-%3EsectionTitle
-msgid "Ways to get involved"
+msgid "참여하는 방법"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
-msgid "Report & discuss issues"
+msgid "사건 보고 & 토의"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue "
-"tracker](https://pagure.io/fedora-iot/issues)."
+"당신은 [페도라 IoT 사건 추적기](https://pagure.io/fedora-iot/issues)에서 "
+"페도라 사물인터넷(IoT) 문제를 보고, 철하며, 토의 할 수 있습니다."
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
-msgid "Attend a meeting"
+msgid "회의 참석"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
-"IoT Working Group meetings are open to all current and potential "
-"contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera."
-"chat."
+"사물인터넷(IoT) 작업 그룹 회의는 수요일 fedora-meeting@irc.libera.chat(미국 "
+"동부시간 오전 11시)에 현재 및 잠재적인 공헌자 모두에게 열려있습니다."
 msgstr ""

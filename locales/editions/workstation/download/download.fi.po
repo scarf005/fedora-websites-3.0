@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: 2022-12-15 03:20+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "download"
@@ -105,9 +105,8 @@ msgid "Windows"
 msgstr "Windows"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[0]->link->text"
-msgid "Download Now"
-msgstr "Lataa nyt"
+msgid "fa-windows"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -119,9 +118,8 @@ msgid "Mac"
 msgstr "Mac"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[1]->link->text"
-msgid "Download Now"
-msgstr "Lataa nyt"
+msgid "fa-apple"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -140,69 +138,6 @@ msgstr ""
 "Etkö ole varma kuinka näitä tiedostoja käytetään? [Lisätietoja "
 "tästä](https://docs.fedoraproject.org/en-US/quick-docs/"
 "creating-and-using-a-live-installation-image/)"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
-msgctxt "sections->[2]->content->[0]->title"
-"sections->[2]->content->[0]->title"
-msgid "Fedora Workstation 37"
-msgstr "Fedora työasema 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "x86_64 DVD ISO"
-msgstr "x86_64 DVD ISO"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgid "For Intel and AMD systems"
-msgstr "Intel- ja AMD-järjestelmille"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
-msgctxt "sections->[2]->content->[1]->title"
-msgid "Fedora Workstation 37"
-msgstr "Fedora työasema 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "aarch64 Live ISO"
-msgstr "aarch64 Live ISO"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
-msgid "For ARM® aarch64"
-msgstr "ARM® aarch64:lle"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[2]->content->[2]->title"
-msgid "Fedora Workstation 37"
-msgstr "Fedora työasema 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "aarch64 raw image"
-msgstr "aarch64 käsittelemätön levykuva"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
-msgid "For ARM® aarch64"
-msgstr "ARM® aarch64:lle"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Security, Installs"
@@ -458,6 +393,47 @@ msgstr ""
 "maista tai joihin muutoin sovelletaan näitä rajoituksia. Olet myös vastuussa "
 "ulkomaisten lakivaatimusten noudattamisesta, joita sovelletaan Fedora-"
 "ohjelmistojen ja teknisten tietojen tuontiin, vientiin ja käyttöön."
+
+#~ msgctxt "sections->[1]->content->[0]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "Lataa nyt"
+
+#~ msgctxt "sections->[1]->content->[1]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "Lataa nyt"
+
+#~ msgctxt "sections->[2]->content->[0]->title"
+#~ "sections->[2]->content->[0]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "Fedora työasema 37"
+
+#~ msgid "x86_64 DVD ISO"
+#~ msgstr "x86_64 DVD ISO"
+
+#~ msgid "For Intel and AMD systems"
+#~ msgstr "Intel- ja AMD-järjestelmille"
+
+#~ msgctxt "sections->[2]->content->[1]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "Fedora työasema 37"
+
+#~ msgid "aarch64 Live ISO"
+#~ msgstr "aarch64 Live ISO"
+
+#~ msgctxt "sections->[2]->content->[1]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64:lle"
+
+#~ msgctxt "sections->[2]->content->[2]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "Fedora työasema 37"
+
+#~ msgid "aarch64 raw image"
+#~ msgstr "aarch64 käsittelemätön levykuva"
+
+#~ msgctxt "sections->[2]->content->[2]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64:lle"
 
 #~ msgid "Security, Installs, Laptops Preloaded"
 #~ msgstr "Turvallisuus, asennukset, esiladatut kannettavat tietokoneet"

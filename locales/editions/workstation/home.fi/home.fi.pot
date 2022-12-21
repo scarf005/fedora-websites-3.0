@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,7 +338,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
-msgid "Raportoi ja keskustele asioista"
+msgid "Raportoi ja keskustele ongelmista"
 msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Edescription
@@ -373,6 +373,6 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"Open to all current and potential contributors on **Tuesdays, 10:00 AM US "
-"Eastern** on [Bluejeans]()."
+"Avoin kaikille nykyisille ja mahdollisille avustajille **tiistaisin, 10:00 "
+"US Eastern** kohteessa [Bluejeans]()."
 msgstr ""

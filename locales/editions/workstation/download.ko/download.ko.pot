@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgid "내려받기"
 msgstr ""
 
 #: title
-msgid "페도라 웍스테이션 37 내려받기."
+msgid "페도라 웍스테이션 37 내려받기"
 msgstr ""
 
 #: description
@@ -26,276 +26,305 @@ msgid "페도라 웍스테이션을 시도하기로 결정해주어 기쁘게 �
 "페도라 매력에 푹 빠질 것이라고 생각합니다."
 msgstr ""
 
-#: links-%3E[0]-%3Etext
+#, read-only
+#: header_images-%3E[0]-%3Eimage
+msgid "public/assets/images/workstation_background.jpg"
+msgstr ""
+
+#: sections-%3E[0]-%3EsectionTitle
+msgid "출시"
+msgstr ""
+
+#: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
+msgid "출시일"
+msgstr ""
+
+#: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
+msgid "2022년 4월 19일"
+msgstr ""
+
+#: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
+msgid "지원 범위"
+msgstr ""
+
+#: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
+msgid "2023년 5월 17일"
+msgstr ""
+
+#: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "출시 기록"
 msgstr ""
 
 #, read-only
-#: links-%3E[0]-%3Eurl
+#: sections-%3E[0]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 msgid "https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html"
 msgstr ""
 
-#: links-%3E[1]-%3Etext
+#: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "설치 안내"
 msgstr ""
 
 #, read-only
-#: links-%3E[1]-%3Eurl
+#: sections-%3E[0]-%3Econtent-%3E[3]-%3Elink-%3Eurl
 msgid "https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/"
 msgstr ""
 
-#: links-%3E[2]-%3Etext
+#: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
 msgid "커뮤니티 지원"
 msgstr ""
 
 #, read-only
-#: links-%3E[2]-%3Eurl
-msgctxt "links->[2]->url"
+#: sections-%3E[0]-%3Econtent-%3E[4]-%3Elink-%3Eurl
+msgctxt "sections->[0]->content->[4]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[0]-%3EsectionTitle
-msgid "내려받기 옵션"
-msgstr ""
-
-#: sections-%3E[0]-%3EsectionDescription
-msgctxt "sections->[0]->sectionDescription"
-msgid "부분설명"
-msgstr ""
-
-#: sections-%3E[0]-%3Eimages
-msgctxt "sections->[0]->images"
-msgid "이미지"
-msgstr ""
-
-#: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[1]-%3EsectionTitle
 msgid "윈도우 또는 맥OS에서?"
 msgstr ""
 
-#: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
+#: sections-%3E[1]-%3EsectionDescription
 msgid "페도라를 보다 쉽게 사용 할 수 있게 하는 페도라 미디어 작성기를 사용하여 "
 "시작하세요."
 msgstr ""
 
-#, read-only
-#: sections-%3E[0]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[1]-%3Eimages
 msgid "public/assets/images/media-writer-icon.png"
 msgstr ""
 
-#: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
-msgid "리눅스에서? 또는 ISO 파일만 원하나요?"
-msgstr ""
-
-#: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
-msgid ""
-"이들 파일의 사용 방법이 확실한가요? [더 알아보기](https://docs.fedoraproject."
-"org/en-US/quick-docs/creating-and-using-a-live-installation-image/)"
-msgstr ""
-
-#: sections-%3E[1]-%3EsectionTitle
-msgid "보안, 설치, 사전 적재된 랩탑"
-msgstr ""
-
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "우리는 보안을 중요하게 생각합니다"
-msgstr ""
-
-#: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
-msgid "한번 이미지를 내려 받으면, 보안과 무결성 모두를 위해 확인해야 합니다. "
+msgid "윈도우즈"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "내려받기를 확인합니다"
+msgctxt "sections->[1]->content->[0]->link->text"
+msgid "지금 내려받기"
 msgstr ""
 
 #, read-only
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-msgid "https://getfedora.org/security/"
+msgid "https://getfedora.org/fmw/FedoraMediaWriter-win32-latest.exe"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
+msgid "맥"
+msgstr ""
+
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgctxt "sections->[1]->content->[1]->link->text"
+msgid "지금 내려받기"
+msgstr ""
+
+#, read-only
+#: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+msgid "https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg"
+msgstr ""
+
+#: sections-%3E[2]-%3EsectionTitle
+msgid "리눅스에서? 또는 ISO 파일만 원하나요?"
+msgstr ""
+
+#: sections-%3E[2]-%3EsectionDescription
+msgid ""
+"이들 파일을 사용하는 방법이 확실하지 않나요? [여기서 알아보기](https://docs."
+"fedoraproject.org/ko/quick-docs/creating-and-using-a-live-installation-image/"
+")"
+msgstr ""
+
+#: sections-%3E[3]-%3EsectionTitle
+msgid "보안, 설치"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
+msgid "우리는 보안을 중요하게 생각합니다"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
+msgid "일단 당신이 이미지를 내려 받았으면, 보안과 무결성 모두를 확인하세요."
+msgstr ""
+
+#, read-only
+#: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+msgid "https://getfedora.org/security/"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "자신의 내려받기를 확인합니다"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "하지만 기다립니다! 더 있습니다."
 msgstr ""
 
-#: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "약간 다른 것이 필요한가요? [이 곳에서 다른 페도라 웍스테이션 내려받기를 "
 "확인하세요](https://alt.fedoraproject.org/), 이차적인 구조와 네트워키-기반 "
 "설치를 특징으로 하는 이미지."
 msgstr ""
 
-#: sections-%3E[1]-%3Econtent-%3E[2]-%3Etitle
+#, read-only
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+msgid "https://download.fedoraproject.org"
+msgstr ""
+
+#: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Etext
+msgid "페도라 37 64-비트 네트워크 설치"
+msgstr ""
+
+#: sections-%3E[4]-%3EsectionTitle
 msgid "페도라가 사전-탑재된 랩탑"
 msgstr ""
 
-#: sections-%3E[1]-%3Econtent-%3E[2]-%3Edescription
+#: sections-%3E[4]-%3EsectionDescription
 msgid ""
 "우리는 당신이 완전하게-지원되는 하드웨어 구성요소를 포함하는 페도라가 사전-"
 "탑재된 랩탑을 가져오도록 레노버와 같은 회사와 파트너가 되었습니다. "
 msgstr ""
 
 #, read-only
-#: sections-%3E[1]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Eimage
 msgid "public/assets/images/lenovo-laptop.png"
 msgstr ""
 
-#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "페도라 랩탑 살펴보기"
-msgstr ""
-
 #, read-only
-#: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 msgid "https://fedoramagazine.org/lenovo-fedora-now-available/"
 msgstr ""
 
-#: sections-%3E[2]-%3EsectionTitle
+#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
+msgid "페도라 랩탑 탐구하기"
+msgstr ""
+
+#: sections-%3E[5]-%3EsectionTitle
 msgid "페도라 미디어 작성기에 대허 더 알아보기"
 msgstr ""
 
-#: sections-%3E[2]-%3EsectionDescription
+#: sections-%3E[5]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"Getting going with Fedora is easier than ever. All you need is a 2GB USB "
-"flash drive, and Fedora Media Writer.\n"
-"\n"
-"Once Fedora Media Writer is installed, it will set up your flash drive to "
-"run a \"Live\" version of Fedora Workstation, meaning that you can boot it "
-"from your flash drive and try it out right away without making any permanent "
-"changes to your computer. Once you are hooked, installing it to your hard "
-"drive is a matter of clicking a few buttons*."
+"페도라 시작하기는 보다 더 쉬워졌습니다. 당신이 필요로 하는 모든 것은 2GB USB "
+"플래시 드라이브, 그리고 페도라 미디어 작성기입니다. \n"
+"페도라 미디어 작성기가 설치되면, 이는 자신의 플래쉬 드라이브를 페도라 "
+"웍스테이션의 \"라이브\" 버전을 실행하도록 설정하고, 당신은 자신의 플래시 "
+"드라이브에서 이를 부팅 할 수 있고 자신의 컴퓨터를 영구적으로 변경하지 않고 "
+"바로 사용해 볼 수 있다는 것을 의미합니다. 한번 빠지게 되면, 자신의 하드 "
+"드라이브에 몇 개의 누름단추*를 누르는 것만 이를 설치 할 수 있습니다."
 msgstr ""
 
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
+#: sections-%3E[5]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 " * 페도라는 성공적으로 설치하고 동작하려면, 최소 20GB 디스크, 2GB 램이 "
 "필요합니다. 최소 자원의 두 배가 추천됩니다. "
 msgstr ""
 
-#: sections-%3E[2]-%3Eimages
+#, read-only
+#: sections-%3E[5]-%3Econtent-%3E[1]-%3Eimage
 msgid "public/assets/images/monitor-2.png"
 msgstr ""
 
-#: sections-%3E[3]-%3EsectionTitle
-msgid "공식적으로 지원되는 페도라 커뮤니티 공간"
+#: sections-%3E[6]-%3EsectionTitle
+msgid "페도라 공헌자가 되기"
 msgstr ""
 
-#: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
-msgid "부분설명"
+#: sections-%3E[6]-%3EsectionDescription
+msgid "일단 당신이 페도라를 설치하고 동작 하면, 우리의 온라인 커뮤니티의 하나로 "
+"참여하고 공헌하는 것은 어떤가요?"
 msgstr ""
 
-#: sections-%3E[3]-%3Eimages
-msgctxt "sections->[3]->images"
-msgid "이미지"
-msgstr ""
-
-#: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
 msgid "페도라 토의"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
 msgid "public/assets/images/fedora-discussion-plus-icon.png"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[6]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Etitle
 msgid "페도라 대화"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
 msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Etitle
 msgid "페도라 질문(Ask)"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
 msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
 #, read-only
-#: sections-%3E[3]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-msgctxt "sections->[3]->content->[2]->link->url"
+#: sections-%3E[6]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+msgctxt "sections->[6]->content->[2]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[4]-%3EsectionTitle
+#: sections-%3E[7]-%3EsectionTitle
 msgid "커뮤니티-관리 공간"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "레딧"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "/r/fedora"
-msgstr ""
-
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 msgid "https://www.reddit.com/r/Fedora/"
 msgstr ""
 
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Eimage
 msgid "public/assets/images/reddit-brands-3.png"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
 msgid "디스코드"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "페도라 디스코드"
-msgstr ""
-
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 msgid "https://discord.com/invite/fedora"
 msgstr ""
 
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Eimage
 msgid "public/assets/images/discord-brands-2.png"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[4]->content->[2]->title"
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "텔레그램"
 msgstr ""
 
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
 msgid "public/assets/images/telegram-brands.png"
 msgstr ""
 
-#: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgctxt "sections->[4]->content->[2]->link->text"
-msgid "텔레그램"
-msgstr ""
-
 #, read-only
-#: sections-%3E[4]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 msgid "https://fedoraproject.org/wiki/Telegram"
 msgstr ""
 
-#: sections-%3E[5]-%3EsectionTitle
+#: sections-%3E[8]-%3EsectionTitle
 msgid "페도라를 눌러서 내려 받으면, 다음 이용 약관을 따르고 준수 할 것을 동의합니다."
 msgstr ""
 
-#: sections-%3E[5]-%3EsectionDescription
+#: sections-%3E[8]-%3EsectionDescription
 msgid ""
 "페도라 소프트웨어 내려 받을 때에, 다음과 같은 모든 사항을 이해하고 있음을 "
 "인정해야 합니다: 페도라 소프트웨어와 기술정보는 미국 수출 관리 규정(the "

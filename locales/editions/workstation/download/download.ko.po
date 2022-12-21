@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-20 15:46-1000\n"
 "PO-Revision-Date: 2022-12-15 03:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
 msgid "download"
@@ -103,9 +103,8 @@ msgid "Windows"
 msgstr "윈도우즈"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[0]->link->text"
-msgid "Download Now"
-msgstr "지금 내려받기"
+msgid "fa-windows"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -117,9 +116,8 @@ msgid "Mac"
 msgstr "맥"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[1]->link->text"
-msgid "Download Now"
-msgstr "지금 내려받기"
+msgid "fa-apple"
+msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -138,69 +136,6 @@ msgstr ""
 "이들 파일을 사용하는 방법이 확실하지 않나요? [여기서 알아보기](https://docs."
 "fedoraproject.org/ko/quick-docs/creating-and-using-a-live-installation-image/"
 ")"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
-msgctxt "sections->[2]->content->[0]->title"
-"sections->[2]->content->[0]->title"
-msgid "Fedora Workstation 37"
-msgstr "페도라 웍스테이션 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "x86_64 DVD ISO"
-msgstr "x86_64 DVD ISO"
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgid "For Intel and AMD systems"
-msgstr "인텔 및 AMD 시스템용"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
-msgctxt "sections->[2]->content->[1]->title"
-msgid "Fedora Workstation 37"
-msgstr "페도라 웍스테이션 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "aarch64 Live ISO"
-msgstr "aarch64 라이브 ISO"
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
-msgid "For ARM® aarch64"
-msgstr "ARM® aarch64용"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[2]->content->[2]->title"
-msgid "Fedora Workstation 37"
-msgstr "페도라 웍스테이션 37"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "aarch64 raw image"
-msgstr "aarch64 단순 이미지"
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
-msgid "For ARM® aarch64"
-msgstr "ARM® aarch64용"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Security, Installs"
@@ -450,6 +385,47 @@ msgstr ""
 "또는 기술 정보를 제공 받을 수 없습니다. 수입, 수출 및 페도라 소프트웨어와 "
 "기술 정보의 사용에 대해 적용하는 경우 외국 법규 요구 조건을 만족 할만한 "
 "책임이 있습니다."
+
+#~ msgctxt "sections->[1]->content->[0]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "지금 내려받기"
+
+#~ msgctxt "sections->[1]->content->[1]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "지금 내려받기"
+
+#~ msgctxt "sections->[2]->content->[0]->title"
+#~ "sections->[2]->content->[0]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "x86_64 DVD ISO"
+#~ msgstr "x86_64 DVD ISO"
+
+#~ msgid "For Intel and AMD systems"
+#~ msgstr "인텔 및 AMD 시스템용"
+
+#~ msgctxt "sections->[2]->content->[1]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "aarch64 Live ISO"
+#~ msgstr "aarch64 라이브 ISO"
+
+#~ msgctxt "sections->[2]->content->[1]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64용"
+
+#~ msgctxt "sections->[2]->content->[2]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "aarch64 raw image"
+#~ msgstr "aarch64 단순 이미지"
+
+#~ msgctxt "sections->[2]->content->[2]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64용"
 
 #~ msgid "Security, Installs, Laptops Preloaded"
 #~ msgstr "보안, 설치, 사전 적재된 랩탑"
