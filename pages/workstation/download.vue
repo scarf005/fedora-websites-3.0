@@ -1,4 +1,6 @@
 <script setup>
+import { release, revision, downloads } from "../../config/release.js";
+
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(
@@ -114,8 +116,8 @@ useContentHead(data);
           <p class="mb-10 text-fp-gray">
             {{ data.sections[2].sectionDescription }}
           </p>
-          <div v-for="item in data.sections[2].content">
-            <p class="mt-10 font-bold">{{ item.description }}</p>
+          <div v-for="(item, i) in downloads.workstation">
+            <p class="mt-10 font-bold">{{ item.group }}</p>
 
             <div
               class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
@@ -124,10 +126,10 @@ useContentHead(data);
                 <span class="mr-5 font-semibold text-gray-800">{{
                   item.title
                 }}</span
-                ><span class="text-gray-500"> {{ item.link.text }}</span>
+                ><span class="text-gray-500"> {{ item.text }}</span>
               </p>
               <FpLink
-                :href="item.link.url"
+                :href="`${item.url}${release}${item.url2}${release}-${revision}${item.url3}`"
                 class="rounded-xl border border-blue-400 p-3 px-5 text-blue-400"
               >
                 <Icon name="fa-download" />
