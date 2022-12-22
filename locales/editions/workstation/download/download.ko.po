@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-20 15:46-1000\n"
-"PO-Revision-Date: 2022-12-15 03:20+0000\n"
+"PO-Revision-Date: 2022-12-22 15:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/ko/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.15\n"
 
 #: path
 msgid "download"
@@ -104,7 +104,7 @@ msgstr "윈도우즈"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "fa-windows"
-msgstr ""
+msgstr "fa-윈도우즈"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -117,7 +117,7 @@ msgstr "맥"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "fa-apple"
-msgstr ""
+msgstr "fa-애플"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
