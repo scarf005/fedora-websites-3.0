@@ -14,7 +14,7 @@ const categories = {
     class="left-0 right-0 mx-auto h-screen lg:absolute lg:h-[30rem] lg:w-[64rem] lg:rounded-b-lg lg:bg-white lg:shadow-md dark:lg:bg-fp-blue xl:w-[100rem]"
   >
     <div
-      class="grid gap-8 lg:grid-cols-[minmax(200px,300px)_1fr] lg:grid-rows-[20px_1fr]"
+      class="grid h-full gap-8 lg:grid-cols-[minmax(200px,300px)_1fr_180px] lg:grid-rows-[50px_1fr_60px]"
     >
       <header class="m-4 hidden w-fit lg:block">
         <h2
@@ -24,7 +24,7 @@ const categories = {
         </h2>
       </header>
       <!-- Categories and mobile drop downs -->
-      <section class="w-full">
+      <section class="col-start-1 w-full">
         <ul>
           <li v-for="group in categories.downloads.categories" :key="group.id">
             <TheNavItem :itemData="group" />
@@ -57,6 +57,19 @@ const categories = {
           </li>
         </ul>
       </section>
+
+      <div
+        class="col-start-3 row-start-1 mr-8 hidden items-center justify-end text-white lg:flex"
+      >
+        <button>
+          <Icon name="fa6-solid:x" size="24" />
+        </button>
+      </div>
+      <div
+        class="mr-8 mb-12 self-center justify-self-end lg:col-span-2 lg:col-start-2 lg:row-start-3 lg:mb-0"
+      >
+        <FpImage src="assets/images/fedora_white.png" class="w-36" />
+      </div>
     </div>
   </nav>
 </template>
