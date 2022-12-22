@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-20 15:46-1000\n"
-"PO-Revision-Date: 2022-12-15 03:20+0000\n"
+"PO-Revision-Date: 2022-12-22 15:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/fi/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.15\n"
 
 #: path
 msgid "download"
@@ -106,7 +106,7 @@ msgstr "Windows"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "fa-windows"
-msgstr ""
+msgstr "fa-windows"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -119,7 +119,7 @@ msgstr "Mac"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "fa-apple"
-msgstr ""
+msgstr "fa-apple"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
