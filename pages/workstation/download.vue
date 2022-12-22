@@ -28,7 +28,7 @@ useContentHead(data);
         { name: 'Community', link: '/workstation/community' },
       ]"
     />
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-7xl">
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
           <h1 class="mb-4 mb-8 text-4xl text-fp-gray">
@@ -92,14 +92,14 @@ useContentHead(data);
               {{ data.sections[1].sectionDescription }}
             </p>
             <div
-              class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
+              class="flex items-center justify-between rounded-xl border border-gray-200 p-5"
             >
               <p>Fedora Media Writer</p>
-              <div>
+              <div class="flex">
                 <FpLink
                   :href="item.link.url"
                   v-for="item in data.sections[1].content"
-                  class="rounded-xl border border-blue-400 px-6 py-3 text-blue-400"
+                  class="mx-1 rounded-xl border border-blue-400 px-6 py-3 text-blue-400"
                 >
                   <Icon :name="item.link.text" />
                 </FpLink>
@@ -120,7 +120,7 @@ useContentHead(data);
             <p class="mt-10 font-bold">{{ item.group }}</p>
 
             <div
-              class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
+              class="flex items-center justify-between rounded-xl border border-gray-200 p-5"
             >
               <p>
                 <span class="mr-5 font-semibold text-gray-800">{{
@@ -140,8 +140,8 @@ useContentHead(data);
       </div>
 
       <!-- SECURITY -->
-      <div class="my-10 flex">
-        <div class="flex-1">
+      <div class="my-10 grid grid-cols-2">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="text-fp-blue">
             {{ data.sections[3].content[0].title }}
           </h2>
@@ -152,7 +152,7 @@ useContentHead(data);
             data.sections[3].content[0].link.text
           }}</FpLink>
         </div>
-        <div class="flex-1">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="text-fp-blue">
             {{ data.sections[3].content[1].title }}
           </h2>
@@ -166,11 +166,11 @@ useContentHead(data);
       </div>
 
       <!-- LAPTOPS PRELOADED -->
-      <div class="my-10 flex">
-        <div class="flex-1 p-5">
+      <div class="my-10 grid grid-cols-2">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <FpImage :src="data.sections[4].content[0].image" />
         </div>
-        <div class="flex-1 p-5">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="text-fp-blue">
             {{ data.sections[4].sectionTitle }}
           </h2>
@@ -184,8 +184,8 @@ useContentHead(data);
       </div>
 
       <!-- LEARN MORE ABOUT FEDORA MEDIA WRITER -->
-      <div class="my-10 flex">
-        <div class="flex-1 p-5">
+      <div class="my-10 grid grid-cols-2">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="text-fp-blue">
             {{ data.sections[5].sectionTitle }}
           </h2>
@@ -196,47 +196,51 @@ useContentHead(data);
             {{ data.sections[5].content[1].description }}
           </p>
         </div>
-        <div class="flex-1 p-5">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
           <FpImage :src="data.sections[5].content[1].image" />
         </div>
       </div>
 
       <!-- CONTRIBUTE -->
       <div class="my-10">
-        <h2 class="text-fp-blue">
-          {{ data.sections[6].sectionTitle }}
-        </h2>
-        <p class="text-base text-fp-gray">
-          {{ data.sections[6].sectionDescription }}
-        </p>
-        <div class="flex justify-between">
-          <FpLink
-            v-for="item in data.sections[6].content"
-            href="item.link.url"
-            >{{ item.title }}</FpLink
-          >
-        </div>
+        <div class="my-5 p-2">
+          <h2 class="text-fp-blue">
+            {{ data.sections[6].sectionTitle }}
+          </h2>
+          <p class="text-base text-fp-gray">
+            {{ data.sections[6].sectionDescription }}
+          </p>
+          <div class="flex justify-between">
+            <FpLink
+              v-for="item in data.sections[6].content"
+              href="item.link.url"
+              >{{ item.title }}</FpLink
+            >
+          </div>
 
-        <p class="text-base text-fp-gray">
-          {{ data.sections[7].sectionTitle }}
-        </p>
-        <div class="flex justify-between">
-          <FpLink
-            v-for="item in data.sections[7].content"
-            href="item.link.url"
-            >{{ item.title }}</FpLink
-          >
+          <p class="text-base text-fp-gray">
+            {{ data.sections[7].sectionTitle }}
+          </p>
+          <div class="flex justify-between">
+            <FpLink
+              v-for="item in data.sections[7].content"
+              href="item.link.url"
+              >{{ item.title }}</FpLink
+            >
+          </div>
         </div>
       </div>
 
       <!-- COMPLIANCE -->
       <div class="my-10">
-        <h2 class="text-fp-blue">
-          {{ data.sections[8].sectionTitle }}
-        </h2>
-        <p class="text-base text-fp-gray">
-          {{ data.sections[8].sectionDescription }}
-        </p>
+        <div class="my-5 p-2">
+          <h2 class="text-fp-blue">
+            {{ data.sections[8].sectionTitle }}
+          </h2>
+          <p class="text-base text-fp-gray">
+            {{ data.sections[8].sectionDescription }}
+          </p>
+        </div>
       </div>
     </div>
   </main>
