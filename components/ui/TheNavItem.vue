@@ -4,16 +4,18 @@ defineProps({
     type: Object,
   },
 });
+const emit = defineEmits(["emitToggle"]);
 const mobileMenuToggle = ref(false);
 
-function menuToggle() {
+const menuToggle = () => {
   if (window.innerWidth < 1024) {
     mobileMenuToggle.value = !mobileMenuToggle.value;
+  } else {
+    emit("emitToggle");
   }
-}
+};
 </script>
 <template>
-  <!-- Use onMounted() approach to switch function between showing the mobile and showing the desktop layouts -->
   <div
     class="mx-2 mt-4 flex cursor-pointer justify-between rounded-md py-4 px-2 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2"
     role="button"
