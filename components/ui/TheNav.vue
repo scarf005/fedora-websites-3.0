@@ -11,7 +11,7 @@ const categories = {
 </script>
 <template>
   <nav
-    class="left-0 right-0 mx-auto h-screen lg:absolute lg:h-[30rem] lg:w-[64rem] lg:rounded-b-lg lg:bg-white lg:shadow-md dark:lg:bg-fp-blue xl:w-[100rem]"
+    class="left-0 right-0 mx-auto h-screen px-8 lg:absolute lg:h-[40rem] lg:w-11/12 lg:rounded-b-lg lg:bg-white lg:shadow-md dark:lg:bg-fp-blue xl:h-[30rem]"
   >
     <div
       class="grid h-full gap-8 lg:grid-cols-[minmax(200px,300px)_1fr_180px] lg:grid-rows-[50px_1fr_60px]"
@@ -32,20 +32,21 @@ const categories = {
         </ul>
       </section>
       <!-- Right Column List Items only show on desktop -->
-      <section class="col-start-2 row-start-1 hidden dark:text-white lg:block">
+      <section
+        class="col-span-2 col-start-2 row-start-1 hidden dark:text-white lg:block"
+      >
         <ul>
-          <li
-            v-for="group in categories.downloads.categories"
-            :key="group.id"
-            class=""
-          >
+          <li>
             <header class="mb-6 mt-4">
-              <h3 class="font-semibold">{{ group.label }}</h3>
-              <p>{{ group.description }}</p>
+              <h3 class="font-semibold">
+                {{ categories.downloads.categories[0].label }}
+              </h3>
+              <p>{{ categories.downloads.categories[0].description }}</p>
             </header>
             <ul class="grid grid-cols-3 gap-4">
               <li
-                v-for="link in group.links"
+                v-for="link in categories.downloads.categories[0].links"
+                :key="link.id"
                 class="max-w-xs rounded-lg hover:bg-fp-blue-dark"
               >
                 <NuxtLink :to="link.url">
@@ -66,7 +67,7 @@ const categories = {
         </button>
       </div>
       <div
-        class="mr-8 mb-12 self-center justify-self-end lg:col-span-2 lg:col-start-2 lg:row-start-3 lg:mb-0"
+        class="mr-8 mb-12 self-center justify-self-end lg:col-span-2 lg:col-start-2 lg:row-start-4 lg:mb-0 xl:row-start-3"
       >
         <FpImage src="assets/images/fedora_white.png" class="w-36" />
       </div>
