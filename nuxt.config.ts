@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "~/components/partials",
   ],
   modules: [
+    "nuxt-lodash",
     "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
     "@nuxt/content",

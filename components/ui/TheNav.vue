@@ -51,6 +51,7 @@ const categories = {
               >
                 <NuxtLink :to="link.url">
                   <h4 class="mb-2 font-medium">{{ link.label }}</h4>
+                  <!-- TOOD: evaluate str length with useWords and return ellipsed reduced list on lg screen size -->
                   <p>{{ link.description }}</p>
                 </NuxtLink>
               </li>
