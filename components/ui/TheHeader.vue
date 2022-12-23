@@ -22,11 +22,9 @@ onMounted(() => {
   window.addEventListener("resize", onResize, { passive: true });
 });
 
-// bundle into emit more effectively to reduce code duplication
-// or create a useToggle composable to reduce duplication
-const menuToggle = () => {
+function menuToggle() {
   showMobile.value = !showMobile.value;
-};
+}
 </script>
 <template>
   <header
@@ -43,6 +41,7 @@ const menuToggle = () => {
         :class="showMobile ? 'block' : 'hidden'"
       />
       <LazyFpToggle
+        :iconToggle="showMobile"
         @emitToggle="menuToggle"
         class="col-start-2 row-start-1 justify-self-end lg:hidden"
       />
