@@ -12,7 +12,6 @@ const categories = {
 };
 
 let showMobile = useState("mobileToggle", () => false);
-
 // TODO: Fix switch while active and crossing threshold
 function onResize() {
   showMobile.value = window.innerWidth > 1024;
@@ -25,6 +24,9 @@ onMounted(() => {
 function menuToggle() {
   showMobile.value = !showMobile.value;
 }
+function greet(str) {
+  window.alert(`hello ${str}`);
+}
 </script>
 <template>
   <header
@@ -35,11 +37,20 @@ function menuToggle() {
       <TheHeaderLogo />
       <!-- TODO: Make each category click emit an event to open each drop down -->
       <LazyFpNav
-        :navLinks="categories"
         class="col-span-full justify-self-center py-4 lg:col-span-1 lg:justify-self-end"
-        :global="true"
         :class="showMobile ? 'block' : 'hidden'"
-      />
+      >
+        <button
+          v-for="category in categories"
+          :key="category.label"
+          @click.prevent="greet(category.label)"
+        >
+          <div class="lg:hidden">
+            <Icon :name="category.icon" size="32" />
+          </div>
+          <p>{{ category.label }}</p>
+        </button>
+      </LazyFpNav>
       <LazyFpToggle
         :iconToggle="showMobile"
         @emitToggle="menuToggle"
