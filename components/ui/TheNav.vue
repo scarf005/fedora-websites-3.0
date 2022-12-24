@@ -11,6 +11,12 @@ function useToggle() {
   emit("emitClose");
 }
 function toggleCategories() {}
+
+let innerMenuContent = ref(null);
+
+async function updateMenu(obj) {
+  innerMenuContent.value = await obj;
+}
 </script>
 <template>
   <nav
@@ -29,7 +35,12 @@ function toggleCategories() {}
       <!-- Categories and mobile drop downs -->
       <section class="col-start-1 w-full">
         <ul>
-          <li v-for="group in menuContent.categories" :key="group.id">
+          <li
+            v-for="group in menuContent.categories"
+            :key="group.id"
+            role="button"
+            @click="updateMenu(group)"
+          >
             <TheNavItem :itemData="group" />
           </li>
         </ul>
@@ -38,29 +49,7 @@ function toggleCategories() {}
       <section
         class="col-span-2 col-start-2 row-start-1 hidden dark:text-white lg:block"
       >
-        <ul>
-          <li>
-            <header class="mb-6 mt-4">
-              <h3 class="font-semibold">
-                {{ menuContent.categories[0].label }}
-              </h3>
-              <p>{{ menuContent.categories[0].description }}</p>
-            </header>
-            <ul class="grid grid-cols-3 gap-4">
-              <li
-                v-for="link in menuContent.categories[0].links"
-                :key="link.id"
-                class="max-w-xs rounded-lg hover:bg-fp-blue-dark"
-              >
-                <NuxtLink :to="link.url">
-                  <h4 class="mb-2 font-medium">{{ link.label }}</h4>
-                  <!-- TOOD: evaluate str length with useWords and return ellipsed reduced list on lg screen size -->
-                  <p>{{ link.description }}</p>
-                </NuxtLink>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <TheNavMenu :menu="innerMenuContent" />
       </section>
 
       <div
