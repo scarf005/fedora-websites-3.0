@@ -103,10 +103,10 @@
       {
         "label": "Coordination",
         "description": "General sites for getting involved and contributing to the Fedora Project.",
-        "link": []
+        "links": []
       },
       {
-        "Label": "Source Code",
+        "label": "Source Code",
         "description": "Our code can be found on the following Git Forges",
         "links": []
       },
