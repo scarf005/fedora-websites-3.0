@@ -17,6 +17,8 @@ let innerMenuContent = ref(null);
 async function updateMenu(obj) {
   innerMenuContent.value = await obj;
 }
+
+// TODO: watcher to automatically update the inner menu content when a top level menu categories is selected
 </script>
 <template>
   <nav
