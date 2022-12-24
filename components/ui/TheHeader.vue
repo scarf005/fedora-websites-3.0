@@ -23,8 +23,9 @@ onMounted(() => {
 
 function mobileToggle() {
   showMobile.value = !showMobile.value;
+  showMenu.value = !showMenu.value;
 }
-let showMenu = useState("menuToggle", () => false);
+let showMenu = ref(false);
 function menuToggle() {
   showMenu.value = !showMenu.value;
 }

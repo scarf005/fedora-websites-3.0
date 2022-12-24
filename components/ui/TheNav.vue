@@ -4,10 +4,13 @@ const props = defineProps({
     type: Object || Array,
   },
 });
+
 const emit = defineEmits(["emitClose"]);
+
 function useToggle() {
   emit("emitClose");
 }
+function toggleCategories() {}
 </script>
 <template>
   <nav
