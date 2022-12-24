@@ -12,10 +12,6 @@ const props = defineProps({
   },
   navLinks: {
     type: Object || Array,
-    default: [
-      { label: "link 1", url: "#" },
-      { label: "link 2", url: "#" },
-    ],
   },
   textColor: {
     type: String,

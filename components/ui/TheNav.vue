@@ -1,13 +1,13 @@
 <script setup>
-const { data } = await useAsyncData("navigation", () =>
-  queryContent("_navigation").findOne()
-);
-const categories = {
-  downloads: data._value.downloads,
-  community: data._value.community,
-  contributors: data._value.contributors,
-  support: data._value.support,
-};
+const props = defineProps({
+  menuContent: {
+    type: Object || Array,
+  },
+});
+const emit = defineEmits(["emitClose"]);
+function useToggle() {
+  emit("emitClose");
+}
 </script>
 <template>
   <nav
@@ -20,13 +20,13 @@ const categories = {
         <h2
           class="text-xl font-semibold uppercase text-fp-blue-dark dark:text-white"
         >
-          Fedora {{ categories.downloads.label }}
+          Fedora {{ menuContent.label }}
         </h2>
       </header>
       <!-- Categories and mobile drop downs -->
       <section class="col-start-1 w-full">
         <ul>
-          <li v-for="group in categories.downloads.categories" :key="group.id">
+          <li v-for="group in menuContent.categories" :key="group.id">
             <TheNavItem :itemData="group" />
           </li>
         </ul>
@@ -39,13 +39,13 @@ const categories = {
           <li>
             <header class="mb-6 mt-4">
               <h3 class="font-semibold">
-                {{ categories.downloads.categories[0].label }}
+                {{ menuContent.categories[0].label }}
               </h3>
-              <p>{{ categories.downloads.categories[0].description }}</p>
+              <p>{{ menuContent.categories[0].description }}</p>
             </header>
             <ul class="grid grid-cols-3 gap-4">
               <li
-                v-for="link in categories.downloads.categories[0].links"
+                v-for="link in menuContent.categories[0].links"
                 :key="link.id"
                 class="max-w-xs rounded-lg hover:bg-fp-blue-dark"
               >
@@ -63,7 +63,7 @@ const categories = {
       <div
         class="col-start-3 row-start-1 mr-8 hidden items-center justify-end text-white lg:flex"
       >
-        <button>
+        <button @click="useToggle" class="hover:opacity-75">
           <Icon name="fa6-solid:x" size="24" />
         </button>
       </div>

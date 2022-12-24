@@ -12,20 +12,29 @@ const categories = {
 };
 
 let showMobile = useState("mobileToggle", () => false);
-// TODO: Fix switch while active and crossing threshold
 function onResize() {
   showMobile.value = window.innerWidth > 1024;
 }
+
 onMounted(() => {
   onResize();
   window.addEventListener("resize", onResize, { passive: true });
 });
 
-function menuToggle() {
+function mobileToggle() {
   showMobile.value = !showMobile.value;
 }
-function greet(str) {
-  window.alert(`hello ${str}`);
+let showMenu = useState("menuToggle", () => false);
+function menuToggle() {
+  showMenu.value = !showMenu.value;
+}
+let menuContent = ref(null);
+
+async function updateValues(obj) {
+  menuContent.value = await obj;
+  if (showMenu.value == false) {
+    showMenu.value = true;
+  }
 }
 </script>
 <template>
@@ -37,13 +46,13 @@ function greet(str) {
       <TheHeaderLogo />
       <!-- TODO: Make each category click emit an event to open each drop down -->
       <LazyFpNav
-        class="col-span-full justify-self-center py-4 lg:col-span-1 lg:justify-self-end"
+        class="col-span-full flex gap-4 justify-self-center py-4 font-medium text-white lg:col-span-1 lg:justify-self-end"
         :class="showMobile ? 'block' : 'hidden'"
       >
         <button
           v-for="category in categories"
-          :key="category.label"
-          @click.prevent="greet(category.label)"
+          :key="category.id"
+          @click="updateValues(category)"
         >
           <div class="lg:hidden">
             <Icon :name="category.icon" size="32" />
@@ -53,11 +62,16 @@ function greet(str) {
       </LazyFpNav>
       <LazyFpToggle
         :iconToggle="showMobile"
-        @emitToggle="menuToggle"
+        @emitToggle="mobileToggle"
         class="col-start-2 row-start-1 justify-self-end lg:hidden"
       />
     </div>
     <!-- Dropdown Nav Menu -->
-    <LazyTheNav :class="showMobile ? 'block' : 'hidden'" />
+    <LazyTheNav
+      v-if="menuContent != null"
+      :menuContent="menuContent"
+      :class="showMenu ? 'block' : 'hidden'"
+      @emitClose="menuToggle"
+    />
   </header>
 </template>
