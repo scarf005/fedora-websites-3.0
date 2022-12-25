@@ -74,6 +74,7 @@ sections:
         image: public/assets/images/monitor-2.png
   - sectionTitle: Become a Fedora contributor
     sectionDescription: Once you've got Fedora installed and running, why not join and contribute to one of our online communities?
+  - sectionTitle: Officially Supported Fedora Community Spaces
     content:
       - title: Fedora Discussion
         image: public/assets/images/fedora-discussion-plus-icon.png
