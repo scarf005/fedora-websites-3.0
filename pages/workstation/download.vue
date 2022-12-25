@@ -29,6 +29,7 @@ useContentHead(data);
       ]"
     />
     <div class="container mx-auto max-w-7xl">
+      <!-- TITLE -->
       <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
         <div class="container mx-auto">
           <h1 class="mb-4 mb-8 text-4xl text-fp-gray">
@@ -54,6 +55,8 @@ useContentHead(data);
           </div>
         </div>
       </section>
+
+      <!--  -->
       <div class="flex">
         <FpLink
           :href="data.sections[0].content[2].link.url"
@@ -108,7 +111,7 @@ useContentHead(data);
           </div>
         </div>
 
-        <!-- DOWNLOADS -->
+        <!-- DESKTOP IMAGES -->
         <div class="col-span-2 p-5 md:col-span-1">
           <h2 class="text-fp-blue">
             {{ data.sections[2].sectionTitle }}
@@ -217,7 +220,6 @@ useContentHead(data);
               >{{ item.title }}</FpLink
             >
           </div>
-
           <p class="text-base text-fp-gray">
             {{ data.sections[7].sectionTitle }}
           </p>
