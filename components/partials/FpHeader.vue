@@ -26,7 +26,9 @@ defineProps({
 <template>
   <header>
     <!-- TODO: Insert Local Nav -->
-    <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
+    <section
+      class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
+    >
       <div class="container mx-auto">
         <h1 class="mb-4 xl:mb-8" :class="color">{{ title }}</h1>
         <p class="text-fp-gray">{{ description }}</p>
@@ -34,7 +36,7 @@ defineProps({
     </section>
     <section class="mx-auto flex flex-col pb-2" :class="bgColor">
       <div
-        class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start"
+        class="container mx-auto max-w-7xl px-8 py-12 text-center lg:px-0 lg:text-start"
       >
         <p class="text-fp-gray-darkest">
           {{ details }}

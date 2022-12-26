@@ -28,7 +28,9 @@ useContentHead(data);
         ]"
         textColor="text-fp-blue"
       />
-      <section class="my-8 mx-auto px-8 text-center lg:text-start xl:px-0">
+      <section
+        class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
+      >
         <div class="container mx-auto">
           <h1 class="mb-4 text-fp-blue xl:mb-8">{{ data.title }}</h1>
           <p class="text-fp-gray">{{ data.description }}</p>
