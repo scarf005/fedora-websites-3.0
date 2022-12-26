@@ -60,7 +60,7 @@ if (data._value.sections[3].content[6].description) {
     />
 
     <!-- Fedora Events -->
-    <EventSection color="text-fp-green" />
+    <FpEventSection color="text-fp-green" />
 
     <!-- Fedora Release Parties -->
     <section
@@ -103,6 +103,6 @@ if (data._value.sections[3].content[6].description) {
       </div>
     </article>
 
-    <PublicationSection />
+    <FpPublicationSection />
   </main>
 </template>

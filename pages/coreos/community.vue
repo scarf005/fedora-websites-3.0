@@ -56,9 +56,9 @@ useContentHead(data);
     />
 
     <!-- Fedora Events -->
-    <EventSection color="text-fp-magenta" />
+    <FpEventSection color="text-fp-magenta" />
 
     <!-- Publication Section -->
-    <PublicationSection />
+    <FpPublicationSection />
   </main>
 </template>
