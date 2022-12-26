@@ -7,5 +7,6 @@
   { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Magyar" },
   { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" },
-  { "code": "ko", "iso": "ko", "file": "ko.json", "name": "한국어" }
+  { "code": "ko", "iso": "ko", "file": "ko.json", "name": "한국어" },
+  { "code": "es", "iso": "es", "file": "es.json", "name": "Español" }
 ]
