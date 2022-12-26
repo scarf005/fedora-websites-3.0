@@ -8,13 +8,13 @@
 - Bugs (ie. logo squished on mobile) https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues
 - Who's working on what: https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/boards/4623394
 
+Note: To edit the content of this site you do not need below guide - simply go to the CMS linked in header. To develop new features or add new pages, read on.
+
 ## Development: Getting Started
 
 This repository was set up on July 20 2022 as the team voted on Fedora's static frontend pages.
 
-It is an off-the-shelf `create-nuxt-app` project.
-
-Note: To edit the content of this site you do not need this guide - simply go to the CMS above. To develop new features or add new pages, read on.
+It is an off-the-shelf `create-nuxt-app` project. For more information see [nuxt documentation](https://nuxt.com/docs).
 
 - Clone this repository and run in the folder:
 
@@ -22,7 +22,6 @@ Note: To edit the content of this site you do not need this guide - simply go to
   - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
-See also [nuxt configuration documentation](https://v3.nuxtjs.org/api/configuration/nuxt.config) - nuxt manages much of it's functionality inside the `nuxt.config.ts` file - and the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
 ### Vue Training Videos for Fedora Websites developers
 
@@ -41,7 +40,6 @@ We have a two-part training video series that takes you from start to finish imp
   - For those who want to not use a microsoft code editor but still want the plugins **and** a functioning integrated terminal
 - Or use vscode. Flatpak versions are generally fine as well, however the limited integrated terminal can cause issues
 - [Check out the Vue Documentation for Vue syntax](https://vuejs.org/)
-- For Nuxt particular details, [View the Nuxt 3 Documentation](https://v3.nuxtjs.org/guide/concepts/introduction)
 
 ### Linting and Formating
 
