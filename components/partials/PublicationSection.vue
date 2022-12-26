@@ -13,7 +13,7 @@ let { data } = await useAsyncData(() => {
 <template>
   <section class="bg-fp-gray-lightest">
     <div
-      class="container mx-auto grid grid-cols-1 gap-4 py-12 lg:grid-cols-2 lg:gap-10"
+      class="container mx-auto grid max-w-7xl grid-cols-1 gap-4 py-12 lg:grid-cols-2 lg:gap-10"
     >
       <!-- Loop through publications -->
       <article

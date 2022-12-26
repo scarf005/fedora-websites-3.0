@@ -29,7 +29,7 @@ for (let item of data._value.body[0].content) {
 <template>
   <section>
     <div
-      class="container my-12 mx-auto grid grid-cols-2 gap-4 lg:grid-cols-3 xl:gap-8"
+      class="container my-12 mx-auto grid max-w-7xl grid-cols-2 gap-4 p-5 lg:grid-cols-3"
     >
       <header class="container col-span-2 mx-auto flex flex-col justify-evenly">
         <!-- Events Header -->

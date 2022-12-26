@@ -23,7 +23,7 @@ for (let item of props.content) {
 <template>
   <section class="bg-fp-blue-light/10">
     <div
-      class="container mx-auto grid justify-center gap-8 py-12 lg:grid-cols-2 lg:justify-start xl:py-8"
+      class="container mx-auto grid max-w-7xl justify-center gap-8 py-12 lg:grid-cols-2 lg:justify-start xl:py-8"
     >
       <header class="col-span-full my-8 mx-auto text-center lg:text-start">
         <h2 :class="`text-fp-${color}`" class="xl:text-4xl">
