@@ -1,51 +1,70 @@
 <script setup>
-const { data } = await useAsyncData("navigation", () =>
-  queryContent("_navigation").findOne()
-);
+const props = defineProps({
+  menuContent: {
+    type: Object || Array,
+  },
+});
 
-const categories = {
-  downloads: data._value.downloads,
-  community: data._value.community,
-  contributors: data._value.contributors,
-  support: data._value.support,
-};
+const emit = defineEmits(["emitClose"]);
+
+function useToggle() {
+  emit("emitClose");
+}
+
+let innerMenuContent = ref(null);
+
+async function updateMenu(obj) {
+  innerMenuContent.value = await obj;
+}
+
+// TODO: watcher to automatically update the inner menu content when a top level menu categories is selected
 </script>
 <template>
   <nav
-    class="bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
+    class="left-0 right-0 mx-auto h-screen px-8 lg:absolute lg:h-[40rem] lg:w-11/12 lg:rounded-b-lg lg:bg-white lg:shadow-md dark:lg:bg-fp-blue xl:h-[30rem]"
   >
-    <!-- layout div-->
-    <div class="flex items-center justify-between gap-4 px-6 py-2 lg:py-4">
-      <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center gap-2 text-white">
-        <Icon name="fa6-brands:fedora" size="48" />
-        <!-- This needs to extract from the metadata-->
-        <p class="text-2xl font-medium">Fedora</p>
-      </NuxtLink>
-      <!-- Navigation Links -->
-      <!-- Hamburger Toggle-->
-      <div class="justify-self-end text-white md:hidden">
-        <button @click.prevent="">
-          <Icon name="fa6-solid:bars" class="text-xl" size="32" />
-        </button>
-      </div>
-      <!-- Category Menu -->
-      <div class="hidden lg:block">
-        <ul class="flex gap-3">
+    <div
+      class="grid h-full gap-8 lg:grid-cols-[minmax(200px,300px)_1fr_180px] lg:grid-rows-[50px_1fr_60px]"
+    >
+      <header class="m-4 hidden w-fit lg:block">
+        <h2
+          class="text-xl font-semibold uppercase text-fp-blue-dark dark:text-white"
+        >
+          Fedora {{ menuContent.label }}
+        </h2>
+      </header>
+      <!-- Categories and mobile drop downs -->
+      <section class="col-start-1 w-full">
+        <ul>
           <li
-            v-for="category in categories"
-            :key="category.id"
-            class="text-lg font-medium text-white lg:text-xl xl:text-2xl"
+            v-for="group in menuContent.categories"
+            :key="group.id"
+            role="button"
+            @click.prevent="updateMenu(group)"
           >
-            <!--  -->
-            <button class="">
-              <span>{{ category.icon }}</span>
-              <span>{{ category.label }}</span>
-            </button>
+            <TheNavItem :itemData="group" />
           </li>
         </ul>
+      </section>
+      <!-- Right Column List Items only show on desktop -->
+      <section
+        class="col-span-2 col-start-2 row-start-1 hidden dark:text-white lg:block"
+      >
+        <TheNavMenu v-if="innerMenuContent" :menu="innerMenuContent" />
+      </section>
+
+      <div
+        class="col-start-3 row-start-1 mr-8 hidden items-center justify-end text-white lg:flex"
+      >
+        <button @click="useToggle" class="hover:opacity-75">
+          <Icon name="fa6-solid:x" size="24" />
+        </button>
       </div>
-      <!-- Language Selector -->
+      <div
+        class="mr-8 mb-12 self-center justify-self-end lg:col-span-2 lg:col-start-2 lg:row-start-4 lg:mb-0 xl:row-start-3"
+      >
+        <FpImage src="assets/images/fedora_white.png" class="w-36" />
+      </div>
     </div>
   </nav>
 </template>

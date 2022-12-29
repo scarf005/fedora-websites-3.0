@@ -20,7 +20,6 @@ const open = useState("navopen", () => false);
 
 <template>
   <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
-    <!-- Menu bar -->
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
