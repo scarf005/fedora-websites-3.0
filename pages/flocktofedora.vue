@@ -20,7 +20,7 @@ const sponsorsBenefits = data._value.sections[7];
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-top">
     <FpBanner
-      :subtitle="data.title"
+      :subtitle="$t(data.title)"
       :logo="data.header_images[0].image"
       color="text-fp-purple"
       border="border border-fp-purple"
@@ -71,10 +71,10 @@ const sponsorsBenefits = data._value.sections[7];
           <FpCard
             v-for="card in explore.content"
             class="dark:bg-slate-800"
-            :title="card.title"
+            :title="$t(card.title)"
             :image="card.image"
             :link="card.link"
-            :description="card.description"
+            :description="$t(card.description)"
             :imgOrderFirst="true"
             :centerAlign="true"
           />
@@ -105,16 +105,16 @@ const sponsorsBenefits = data._value.sections[7];
             class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark dark:text-fp-blue-light sm:p-5 xl:mx-12"
           >
             <h4 class="mb-5 font-semibold">
-              {{ watch.content[0].title }}
+              {{ $t(watch.content[0].title) }}
             </h4>
             <p class="text-fp-gray-darkest dark:text-slate-200">
-              {{ watch.content[0].description }}
+              {{ $t(watch.content[0].description) }}
             </p>
             <p class="mt-8 text-right">
               <NuxtLink
                 class="text-fp-blue dark:text-fp-blue-light lg:text-xl"
                 :to="watch.content[0].link.url"
-                >{{ watch.content[0].link.text }}
+                >{{ $t(watch.content[0].link.text) }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
               </NuxtLink>
             </p>
