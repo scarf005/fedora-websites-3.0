@@ -20,7 +20,7 @@ const sponsorsBenefits = data._value.sections[7];
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-top">
     <FpBanner
-      :subtitle="$t(data.title)"
+      :subtitle="data.title"
       :logo="data.header_images[0].image"
       color="text-fp-purple"
       border="border border-fp-purple"
@@ -71,10 +71,10 @@ const sponsorsBenefits = data._value.sections[7];
           <FpCard
             v-for="card in explore.content"
             class="dark:bg-slate-800"
-            :title="$t(card.title)"
+            :title="card.title"
             :image="card.image"
             :link="card.link"
-            :description="$t(card.description)"
+            :description="card.description"
             :imgOrderFirst="true"
             :centerAlign="true"
           />

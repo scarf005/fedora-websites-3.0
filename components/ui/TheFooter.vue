@@ -41,28 +41,28 @@ import { editions, others, support, community } from "../../config/navigation";
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Privacy Statement</NuxtLink
+              >{{ $t("Privacy Statement") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Legal</NuxtLink
+              >{{ $t("Legal") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Code of Conduct</NuxtLink
+              >{{ $t("Code of Conduct") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Sponsors</NuxtLink
+              >{{ $t("Sponsors") }}</NuxtLink
             >
           </li>
         </ul>
@@ -82,9 +82,13 @@ import { editions, others, support, community } from "../../config/navigation";
 
         <div class="container text-center lg:text-left">
           <p class="text-white">
-            Fedora is sponsored by Red Hat.
+            {{ $t("Fedora is sponsored by Red Hat.") }}
             <span class="block text-fp-gray xl:ml-2 xl:inline">
-              Learn more about the relationship between Red Hat and Fedora.
+              {{
+                $t(
+                  "Learn more about the relationship between Red Hat and Fedora."
+                )
+              }}
             </span>
           </p>
         </div>
