@@ -18,7 +18,9 @@ if (props.description) {
       iconURI
         ? {
             background: `url(${
-              $config.app.baseURL + '/' + iconURI.replace('public/', '')
+              $config.app.baseURL.replace(new RegExp('/$'), '') +
+              '/' +
+              iconURI.replace('public/', '')
             }) no-repeat left top`,
             'padding-left': '60px',
             'list-style': 'none',
