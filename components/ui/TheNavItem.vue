@@ -6,14 +6,9 @@ defineProps({
 });
 const emit = defineEmits(["emitToggle"]);
 const mobileMenuToggle = ref(false);
-
-const menuToggle = () => {
-  if (window.innerWidth < 1024) {
-    mobileMenuToggle.value = !mobileMenuToggle.value;
-  } else {
-    emit("emitToggle");
-  }
-};
+function menuToggle() {
+  mobileMenuToggle = !mobileMenuToggle.value;
+}
 </script>
 <template>
   <div
