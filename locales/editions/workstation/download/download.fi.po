@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-26 13:33-0700\n"
-"PO-Revision-Date: 2022-12-22 15:19+0000\n"
+"PO-Revision-Date: 2022-12-29 19:20+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/fi/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.15\n"
 
 #: path
 msgid "download"
@@ -261,7 +261,7 @@ msgstr ""
 
 #: sections-%3E[7]-%3EsectionTitle
 msgid "Officially Supported Fedora Community Spaces"
-msgstr ""
+msgstr "Virallisesti tuetut Fedora-yhteisötilat"
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
