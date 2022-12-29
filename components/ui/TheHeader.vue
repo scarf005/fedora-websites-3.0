@@ -14,10 +14,9 @@ const categories = {
 
 function onResize() {
   showMobile.value = window.innerWidth > 1024;
-}
-
-function test() {
-  console.log("hello");
+  if (window.innerWidth > 1024) {
+    showMenu.value = false;
+  }
 }
 
 onMounted(() => {
@@ -30,20 +29,20 @@ function mobileToggle() {
   showMenu.value = !showMenu.value;
 }
 
+function menuToggle(mobile = false) {
+  if (mobile == true) {
+    showMobile.value = !showmobile.value;
+  }
+  showMenu.value = !showMenu.value;
+}
+
 let showMobile = useState("mobileToggle", () => false);
 
 let showMenu = useState("menuToggle", () => false);
 
-function menuToggle() {
-  showMenu.value = !showMenu.value;
-}
+let menuContent = ref({});
 
-let menuContent = ref(categories.downloads);
-
-function testData(obj) {
-  console.log(obj);
-}
-function updateValues(obj) {
+function updateMenuContent(obj) {
   menuContent.value = obj;
   if (showMenu.value == false) {
     showMenu.value = true;
@@ -55,11 +54,9 @@ function updateValues(obj) {
   <header
     class="bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
   >
-    <!-- TODO Fix up Padding and Alignment -->
     <div class="mx-4 grid grid-cols-2 items-center py-2 lg:pt-4 lg:pb-2">
       <TheHeaderLogo />
 
-      <!-- TODO: Make each category click emit an event to open each drop down -->
       <FpNav
         class="col-span-full flex gap-4 justify-self-center py-4 font-medium text-white lg:col-span-1 lg:justify-self-end"
         :class="showMobile ? 'block' : 'hidden'"
@@ -67,7 +64,7 @@ function updateValues(obj) {
         <button
           v-for="category in categories"
           :key="category.id"
-          @click.prevent="updateValues(category)"
+          @click.prevent="updateMenuContent(category)"
         >
           <div class="lg:hidden">
             <Icon :name="category.icon" size="32" />
@@ -81,7 +78,6 @@ function updateValues(obj) {
         class="col-start-2 row-start-1 justify-self-end lg:hidden"
       />
     </div>
-    <!-- Dropdown Nav Menu -->
     <TheNav
       :menuContent="menuContent"
       :class="showMenu ? 'block' : 'hidden'"
