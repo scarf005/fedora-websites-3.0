@@ -3,17 +3,11 @@ const { locale } = useI18n();
 const contentPath = "events/flock";
 
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent(contentPath + "." + locale._value).findOne();
+  return queryContent()
+    .where({ _file: contentPath + ".yml" })
+    .findOne();
 });
 
-if (data._value === null) {
-  // Fallback to english content
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent()
-      .where({ _file: contentPath + ".yml" })
-      .findOne();
-  }));
-}
 useContentHead(data);
 
 const explore = data._value.sections[1];
@@ -39,7 +33,7 @@ const sponsorsBenefits = data._value.sections[7];
         class="my-8 font-semibold text-white"
         style="text-shadow: 4px 4px 4px black"
       >
-        {{ data.description }}
+        {{ $t(data.description) }}
       </h2>
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12">
@@ -55,9 +49,9 @@ const sponsorsBenefits = data._value.sections[7];
             class="mr-1 inline h-10 max-w-none align-baseline"
             :src="card.image"
           />
-          {{ card.title }}
+          {{ $t(card.title) }}
         </div>
-        <p class="text-sm text-slate-300">{{ card.description }}</p>
+        <p class="text-sm text-slate-300">{{ $t(card.description) }}</p>
       </div>
     </div>
   </FpHero>
@@ -69,7 +63,7 @@ const sponsorsBenefits = data._value.sections[7];
         <h2
           class="mx-auto max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
-          {{ explore.sectionTitle }}
+          {{ $t(explore.sectionTitle) }}
         </h2>
         <div
           class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
@@ -89,7 +83,7 @@ const sponsorsBenefits = data._value.sections[7];
         <h3
           class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark dark:text-fp-blue-light sm:text-4xl"
         >
-          {{ watch.sectionTitle }}
+          {{ $t(watch.sectionTitle) }}
         </h3>
         <div
           class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white p-8 dark:bg-slate-800 lg:grid-cols-2"
@@ -134,10 +128,10 @@ const sponsorsBenefits = data._value.sections[7];
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
-          {{ hybrid.sectionTitle }}
+          {{ $t(hybrid.sectionTitle) }}
         </h2>
         <p class="mx-auto max-w-prose text-center">
-          {{ hybrid.sectionDescription }}
+          {{ $t(hybrid.sectionDescription) }}
         </p>
       </header>
       <div
@@ -148,26 +142,26 @@ const sponsorsBenefits = data._value.sections[7];
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ hybrid.content[0].title }}
+              {{ $t(hybrid.content[0].title) }}
             </h3>
             <FpImage
               :src="hybrid.content[0].image"
               class="order-first w-full"
             />
             <p class="my-2 w-72">
-              {{ hybrid.content[0].description }}
+              {{ $t(hybrid.content[0].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
                 class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >Destination</NuxtLink
+                >{{ $t("Destination") }}</NuxtLink
               >
               <NuxtLink
                 to="#"
                 class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
-                >Learn More</NuxtLink
+                >{{ $t("Learn More") }}</NuxtLink
               >
             </div>
           </article>
@@ -191,26 +185,26 @@ const sponsorsBenefits = data._value.sections[7];
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ hybrid.content[1].title }}
+              {{ $t(hybrid.content[1].title) }}
             </h3>
             <FpImage
               :src="hybrid.content[1].image"
               class="order-first -ml-3 w-5/6"
             />
             <p class="my-2 w-72">
-              {{ hybrid.content[1].description }}
+              {{ $t(hybrid.content[1].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
                 class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >Destination</NuxtLink
+                >{{ $t("Destination") }}</NuxtLink
               >
               <NuxtLink
                 to="#"
                 class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
-                >Learn More</NuxtLink
+                >{{ $t("Learn More") }}</NuxtLink
               >
             </div>
           </article>
@@ -221,7 +215,7 @@ const sponsorsBenefits = data._value.sections[7];
           <div
             class="mx-auto grid h-96 w-96 place-items-center rounded-md bg-black text-white xl:h-60 xl:w-80"
           >
-            <p>placeholder</p>
+            <p>{{ $t("placeholder") }}</p>
           </div>
         </div>
 
@@ -245,7 +239,7 @@ const sponsorsBenefits = data._value.sections[7];
         <NuxtLink
           to="#"
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
-          >Registration</NuxtLink
+          >{{ $t("Registration") }}</NuxtLink
         >
       </div>
     </section>
@@ -283,10 +277,10 @@ const sponsorsBenefits = data._value.sections[7];
           <h2
             class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
           >
-            {{ community.sectionTitle }}
+            {{ $t(community.sectionTitle) }}
           </h2>
           <h4 class="mx-0 mb-20 text-center text-lg text-fp-blue-dark sm:mx-20">
-            {{ community.description }}
+            {{ $t(community.sectionDescription) }}
           </h4>
 
           <FpList columns="sm:grid-cols-2">
@@ -306,10 +300,10 @@ const sponsorsBenefits = data._value.sections[7];
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
-        {{ sponsors.sectionTitle }}
+        {{ $t(sponsors.sectionTitle) }}
       </h2>
       <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
-        {{ sponsors.description }}
+        {{ $t(sponsors.sectionDescription) }}
       </p>
 
       <FpSponsors :sponsors="sponsors.content" />
@@ -321,7 +315,7 @@ const sponsorsBenefits = data._value.sections[7];
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
         <h3 class="mb-4 text-center font-medium text-fp-blue">
-          {{ sponsorsBenefits.sectionTitle }}
+          {{ $t(sponsorsBenefits.sectionTitle) }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2">
