@@ -10,7 +10,6 @@ const emit = defineEmits(["emitClose"]);
 function useToggle() {
   emit("emitClose");
 }
-function toggleCategories() {}
 
 let innerMenuContent = ref(null);
 
@@ -41,7 +40,7 @@ async function updateMenu(obj) {
             v-for="group in menuContent.categories"
             :key="group.id"
             role="button"
-            @click="updateMenu(group)"
+            @click.prevent="updateMenu(group)"
           >
             <TheNavItem :itemData="group" />
           </li>
@@ -51,7 +50,7 @@ async function updateMenu(obj) {
       <section
         class="col-span-2 col-start-2 row-start-1 hidden dark:text-white lg:block"
       >
-        <TheNavMenu :menu="innerMenuContent" />
+        <TheNavMenu v-if="innerMenuContent" :menu="innerMenuContent" />
       </section>
 
       <div
