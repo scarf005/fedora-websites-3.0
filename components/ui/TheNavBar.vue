@@ -49,11 +49,11 @@ const open = useState("navopen", () => false);
                 :icons="true"
               />
 
-              <TheNavItem :title="$t('Others')" :items="others" />
+              <TheNavBarItem :title="$t('Others')" :items="others" />
 
-              <TheNavItem :title="$t('Community')" :items="community" />
+              <TheNavBarItem :title="$t('Community')" :items="community" />
 
-              <TheNavItem :title="$t('Support')" :items="support" />
+              <TheNavBarItem :title="$t('Support')" :items="support" />
 
               <TheNavItem :title="$t('Languages')" :items="availableLocales" />
               <TheNavThemeSelector />
