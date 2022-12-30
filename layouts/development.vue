@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <TheHeader />
-    <slot />
-    <LazyTheFooter />
-  </div>
+  <TheNav />
+  <slot />
+  <TheFooter />
 </template>

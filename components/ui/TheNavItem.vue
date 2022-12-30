@@ -1,38 +1,39 @@
 <script setup>
 defineProps({
-  itemData: {
-    type: Object,
-  },
+  title: String,
+  items: Array,
+  icons: Boolean,
 });
-const emit = defineEmits(["emitToggle"]);
-const mobileMenuToggle = ref(false);
-function menuToggle() {
-  mobileMenuToggle = !mobileMenuToggle.value;
-}
 </script>
 <template>
-  <div
-    class="mx-2 mt-4 flex cursor-pointer justify-between rounded-md py-4 px-2 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2"
-    role="button"
-    @click.prevent="menuToggle"
-  >
-    <h3 class="font-medium">
-      {{ itemData.label }}
-    </h3>
-    <div class="lg:hidden">
-      <Icon name="fa6-solid:chevron-right" size="32" />
-    </div>
-  </div>
-  <ul
-    class="ml-10 text-lg text-white"
-    :class="mobileMenuToggle ? 'block' : 'hidden'"
-  >
-    <li v-for="link in itemData.links" :key="link.id" class="py-1">
-      <NuxtLink
-        :to="link.path.length > 0 ? link.path : link.url"
-        class="underline-offset-4 hover:underline"
-        >{{ link.label }}</NuxtLink
+  <div class="group relative inline-block">
+    <a
+      class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
+    >
+      <span class="mr-1">{{ title }}</span>
+      <svg
+        class="h-4 fill-white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
       >
-    </li>
-  </ul>
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </a>
+    <ul
+      class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block dark:border-fp-blue-dark dark:bg-black"
+    >
+      <li v-for="item in items" :key="item.name" class="mb-2">
+        <FpLink
+          :href="item.href"
+          :current="item.current"
+          class="rounded-md px-3 py-4 text-base font-medium text-gray-500 hover:text-fp-purple dark:text-gray-300"
+        >
+          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
+          {{ item.name }}
+        </FpLink>
+      </li>
+    </ul>
+  </div>
 </template>
