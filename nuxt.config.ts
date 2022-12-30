@@ -1,5 +1,5 @@
 import locales from "./locales/locales.json";
-var path = require("path");
+var path = require('path');
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     "~/components/partials",
   ],
   modules: [
-    "nuxt-lodash",
     "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
@@ -43,7 +42,7 @@ export default defineNuxtConfig({
     buildAssetsDir: "/_nuxt/",
     head: {
       titleTemplate: "%s | The Fedora Project",
-      script: [{ src: path.join(base, "assets/js/darkmode.js"), defer: true }],
+      script: [{ src: path.join(base,'assets/js/darkmode.js'), defer: true}],
     },
-  },
+  }
 });
