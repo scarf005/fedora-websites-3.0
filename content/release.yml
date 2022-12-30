@@ -1,0 +1,38 @@
+download_baseurl: https://download.fedoraproject.org
+ga:
+  releasever: 37
+  rc_version: 1.1
+  announcement_url: https://fedoramagazine.org/announcing-fedora-37
+  workstation:
+    x86_64:
+      title: For Intel and AMD x86_64 systems
+      items:
+        - name: Live ISO
+          uri: /pub/fedora/linux/releases/{releasever}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-{releasever}-{rc_version}.iso
+    aarch64:
+      title: For ARM® aarch64 systems
+      items:
+        - name: Live ISO
+          uri: /pub/fedora/linux/releases/{releasever}/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-{releasever}-{rc_version}.iso
+        - name: Raw Image
+          uri: /pub/fedora/linux/releases/{releasever}/Workstation/aarch64/images/Fedora-Workstation-{releasever}-{rc_version}.aarch64.raw.xz
+  server: {}
+  iot: {}
+
+beta:
+  enabled: True
+  releasever: 38
+  rc_version: 1.2
+  workstation:
+    x86_64:
+      items:
+        - name: Live ISO
+          uri: /pub/fedora/linux/releases/test/{releasever}_Beta/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-{releasever}_Beta-{rc_version}.iso
+    aarch64:
+      items:
+        - name: Live ISO
+          uri: /pub/fedora/linux/releases/test/{releasever}_Beta/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-{releasever}_Beta-{rc_version}.iso
+        - name: Raw Image
+          uri: /pub/fedora/linux/releases/test/{releasever}_Beta/Workstation/aarch64/images/Fedora-Workstation-{releasever}_Beta-{rc_version}.aarch64.raw.xz
+  server: {}
+  iot: {}

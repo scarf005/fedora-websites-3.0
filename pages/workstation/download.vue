@@ -1,6 +1,4 @@
 <script setup>
-import { release, revision, downloads } from "../../config/release.js";
-
 const { locale } = useI18n();
 let { data } = await useAsyncData("page-data", () => {
   return queryContent(
@@ -15,6 +13,17 @@ if (data._value === null) {
   data._value = data._value[data._value.length - 1];
 }
 useContentHead(data);
+
+const release_data = await getRelease();
+const arches = release_data._value.ga.workstation;
+const betaArches = release_data._value.beta.workstation;
+
+function evalLink(uri, release) {
+  uri = uri
+    .replaceAll("{releasever}", release.releasever)
+    .replaceAll("{rc_version}", release.rc_version);
+  return `${release_data._value.download_baseurl}${uri}`;
+}
 </script>
 
 <template>
@@ -33,20 +42,24 @@ useContentHead(data);
     <section class="py-24 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl">
         <h1 class="mb-4 mb-8 text-4xl text-fp-gray">
-          {{ data.title.substring(0, 8) }}
-          <span class="text-fp-green">{{
-            data.title.substring(8, data.title.length)
-          }}</span>
+          {{ $t("Download") }}
+          <span class="text-fp-green">
+            Fedora Workstation {{ release_data.ga.releasever }}
+          </span>
         </h1>
-        <p class="text-fp-gray">{{ data.description }}</p>
+        <p class="text-fp-gray">{{ $t(data.description) }}</p>
         <div class="mt-5 flex">
           <p class="mr-5 text-fp-gray">
-            <span class="text-sm">{{ data.sections[0].content[0].title }}</span>
-            {{ data.sections[0].content[0].description }}
+            <span class="text-sm">{{
+              $t(data.sections[0].content[0].title)
+            }}</span>
+            {{ $t(data.sections[0].content[0].description) }}
           </p>
           <p class="text-fp-gray">
-            <span class="text-sm">{{ data.sections[0].content[1].title }}</span>
-            {{ data.sections[0].content[1].description }}
+            <span class="text-sm">{{
+              $t(data.sections[0].content[1].title)
+            }}</span>
+            {{ $t(data.sections[0].content[1].description) }}
           </p>
         </div>
         <div class="mt-5 -ml-5 flex" id="ctas">
@@ -55,21 +68,21 @@ useContentHead(data);
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ data.sections[0].content[2].title }}
+            {{ $t(data.sections[0].content[2].title) }}
           </FpLink>
           <FpLink
             :href="data.sections[0].content[3].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ data.sections[0].content[3].title }}
+            {{ $t(data.sections[0].content[3].title) }}
           </FpLink>
           <FpLink
             :href="data.sections[0].content[4].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ data.sections[0].content[4].title }}
+            {{ $t(data.sections[0].content[4].title) }}
           </FpLink>
         </div>
       </div>
@@ -85,22 +98,22 @@ useContentHead(data);
             </div>
             <div>
               <h2 class="text-fp-blue">
-                {{ data.sections[1].sectionTitle }}
+                {{ $t(data.sections[1].sectionTitle) }}
               </h2>
               <p class="mb-10 text-fp-gray">
-                {{ data.sections[1].sectionDescription }}
+                {{ $t(data.sections[1].sectionDescription) }}
               </p>
             </div>
           </div>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
           >
             <p>Fedora Media Writer</p>
             <div class="flex">
               <FpLink
                 :href="item.link.url"
                 v-for="item in data.sections[1].content"
-                class="mx-1 rounded-xl border border-blue-400 px-6 py-3 text-blue-400"
+                class="mx-1 rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
               >
                 <Icon :name="item.link.text" />
               </FpLink>
@@ -111,26 +124,48 @@ useContentHead(data);
         <!-- DESKTOP IMAGES -->
         <div class="col-span-2 p-5 md:col-span-1">
           <h2 class="text-fp-blue">
-            {{ data.sections[2].sectionTitle }}
+            {{ $t(data.sections[2].sectionTitle) }}
           </h2>
           <p class="mb-10 text-fp-gray">
-            {{ data.sections[2].sectionDescription }}
+            {{ $t(data.sections[2].sectionDescription) }}
           </p>
-          <div v-for="(item, i) in downloads.workstation">
-            <p class="mt-10 font-bold">{{ item.group }}</p>
+          <div v-for="(arch, i) in arches">
+            <p class="mt-10 font-bold">{{ $t(arch.title) }}</p>
 
             <div
-              class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
+              v-for="item in arch.items"
             >
               <p>
-                <span class="mr-5 font-semibold text-gray-800">{{
-                  item.title
-                }}</span
-                ><span class="text-gray-500"> {{ item.text }}</span>
+                <span class="mr-5 font-semibold text-gray-800">
+                  Fedora Linux {{ release_data.ga.releasever }} </span
+                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
               </p>
               <FpLink
-                :href="`${item.url}${release}${item.url2}${release}-${revision}${item.url3}`"
-                class="rounded-xl border border-blue-400 p-3 px-5 text-blue-400"
+                :href="evalLink(item.uri, release_data.ga)"
+                class="rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
+              >
+                <Icon name="fa-download" />
+              </FpLink>
+            </div>
+
+            <div
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2"
+              v-for="item in betaArches[i].items"
+              v-if="release_data.beta.enabled"
+            >
+              <p>
+                <span class="mr-5 font-semibold text-gray-800">
+                  Fedora Linux {{ release_data.beta.releasever }} </span
+                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
+                <span
+                  class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white"
+                  >{{ $t("BETA") }}</span
+                >
+              </p>
+              <FpLink
+                :href="evalLink(item.uri, release_data.beta)"
+                class="rounded-xl border border-blue-400 p-2 px-4 text-blue-400"
               >
                 <Icon name="fa-download" />
               </FpLink>
@@ -145,33 +180,33 @@ useContentHead(data);
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[3].content[0].title }}
+            {{ $t(data.sections[3].content[0].title) }}
           </h2>
           <p class="mb-5 text-fp-gray">
-            {{ data.sections[3].content[0].description }}
+            {{ $t(data.sections[3].content[0].description) }}
           </p>
           <FpLink
             class="text-fp-blue"
             :href="data.sections[3].content[0].link.url"
-            >{{ data.sections[3].content[0].link.text }}</FpLink
+            >{{ $t(data.sections[3].content[0].link.text) }}</FpLink
           >
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[3].content[1].title }}
+            {{ $t(data.sections[3].content[1].title) }}
           </h2>
           <p class="mb-5 text-fp-gray">
-            {{ data.sections[3].content[1].description }}
+            {{ $t(data.sections[3].content[1].description) }}
           </p>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
           >
             <p>
-              {{ data.sections[3].content[1].link.text }}
+              {{ $t(data.sections[3].content[1].link.text) }}
             </p>
             <FpLink
               :href="data.sections[3].content[1].link.url"
-              class="rounded-xl border border-blue-400 p-3 px-5 text-blue-400"
+              class="rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
             >
               <Icon name="fa-download" />
             </FpLink>
@@ -190,13 +225,13 @@ useContentHead(data);
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[4].sectionTitle }}
+            {{ $t(data.sections[4].sectionTitle) }}
           </h2>
           <p class="mb-5 text-fp-gray">
-            {{ data.sections[4].sectionDescription }}
+            {{ $t(data.sections[4].sectionDescription) }}
           </p>
           <FpBtn :href="data.sections[4].content[0].link.url">{{
-            data.sections[4].content[0].link.text
+            $t(data.sections[4].content[0].link.text)
           }}</FpBtn>
         </div>
       </div>
@@ -207,13 +242,13 @@ useContentHead(data);
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[5].sectionTitle }}
+            {{ $t(data.sections[5].sectionTitle) }}
           </h2>
           <p class="text-base text-fp-gray">
-            {{ data.sections[5].content[0].description }}
+            {{ $t(data.sections[5].content[0].description) }}
           </p>
           <p class="mt-5 text-sm text-gray-300">
-            {{ data.sections[5].content[1].description }}
+            {{ $t(data.sections[5].content[1].description) }}
           </p>
         </div>
         <div
@@ -229,14 +264,14 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl">
         <div class="my-5 p-2">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[6].sectionTitle }}
+            {{ $t(data.sections[6].sectionTitle) }}
           </h2>
           <p class="mb-5 mt-12 text-base text-gray-800">
-            {{ data.sections[6].sectionDescription }}
+            {{ $t(data.sections[6].sectionDescription) }}
           </p>
 
           <p class="mb-5 mt-12 text-sm text-fp-gray">
-            {{ data.sections[7].sectionTitle }}
+            {{ $t(data.sections[7].sectionTitle) }}
           </p>
           <div class="flex justify-between">
             <FpLink
@@ -248,7 +283,7 @@ useContentHead(data);
             </FpLink>
           </div>
           <p class="mb-5 mt-12 text-sm text-fp-gray">
-            {{ data.sections[8].sectionTitle }}
+            {{ $t(data.sections[8].sectionTitle) }}
           </p>
           <div class="flex justify-between">
             <FpLink
@@ -257,7 +292,7 @@ useContentHead(data);
               href="item.link.url"
             >
               <FpImage class="max-h-32" :src="item.image" />
-              {{ item.title }}
+              {{ $t(item.title) }}
             </FpLink>
           </div>
         </div>
@@ -269,10 +304,10 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl">
         <div class="my-5 p-2">
           <h2 class="mb-5 text-fp-blue">
-            {{ data.sections[9].sectionTitle }}
+            {{ $t(data.sections[9].sectionTitle) }}
           </h2>
           <p class="text-base text-fp-gray">
-            {{ data.sections[9].sectionDescription }}
+            {{ $t(data.sections[9].sectionDescription) }}
           </p>
         </div>
       </div>
