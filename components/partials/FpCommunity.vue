@@ -1,12 +1,9 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-const { t } = useI18n();
-
 const props = defineProps({
   data: Object,
 });
 
-const descriptionMd = await mdparser(t(props.data.sectionDescription));
+const descriptionMd = await mdparser(props.data.sectionDescription);
 </script>
 
 <template>

@@ -1,5 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
 const { locale } = useI18n();
 
 let { data } = await useAsyncData("page-data", () => {

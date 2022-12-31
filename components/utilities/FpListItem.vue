@@ -1,7 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
-const { t } = useI18n();
 const props = defineProps({
   title: String,
   description: String,
@@ -11,7 +8,7 @@ const props = defineProps({
 });
 let descriptionMd;
 if (props.description) {
-  descriptionMd = await mdparser(t(props.description));
+  descriptionMd = await mdparser(props.description);
 }
 </script>
 <template>

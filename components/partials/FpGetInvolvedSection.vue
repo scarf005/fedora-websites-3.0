@@ -1,5 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
 const props = defineProps({
   color: {
     default: "green",

@@ -1,5 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
 // Dynamic Props
 const props = defineProps({
   color: {
