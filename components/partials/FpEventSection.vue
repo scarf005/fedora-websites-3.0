@@ -34,16 +34,16 @@ for (let item of data._value.body[0].content) {
         <!-- Events Header -->
         <section class="mx-8 mb-8 text-center md:text-start xl:mx-0">
           <h2 class="mb-4 xl:text-4xl" :class="color">
-            {{ data.body[0].sectionTitle }}
+            {{ $t(data.body[0].sectionTitle) }}
           </h2>
           <p class="text-fp-gray-darkest">
-            {{ data.body[0].sectionDescription }}
+            {{ $t(data.body[0].sectionDescription) }}
           </p>
         </section>
         <!-- Flock Info -->
         <article class="mx-8 mb-8 flex flex-col self-center xl:mx-0">
           <h3 class="text-center text-lg text-fp-blue-dark xl:text-xl">
-            {{ data.body[0].content[0].title }}
+            {{ $t(data.body[0].content[0].title) }}
           </h3>
           <FpImage
             :src="data.body[0].content[0].image"
@@ -57,7 +57,7 @@ for (let item of data._value.body[0].content) {
           <div
             class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest lg:py-3 lg:pl-4"
           >
-            <p>{{ data.body[0].content[0].link.text }}</p>
+            <p>{{ $t(data.body[0].content[0].link.text) }}</p>
           </div>
         </article>
       </header>
@@ -68,14 +68,14 @@ for (let item of data._value.body[0].content) {
       >
         <!-- flock sign text -->
         <p class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium">
-          {{ colurSlogan }}
+          {{ $t(colurSlogan) }}
         </p>
         <FpImage
           :src="data.body[0].content[1].image"
           class="z-10 col-start-1 row-start-1 w-48 lg:w-60"
         />
         <figcaption class="text-center text-xs text-fp-gray-dark">
-          {{ data.body[0].content[1].description }}
+          {{ $t(data.body[0].content[1].description) }}
         </figcaption>
       </figure>
 
@@ -89,7 +89,7 @@ for (let item of data._value.body[0].content) {
           class="container my-4 mx-auto flex w-fit flex-col gap-y-4 md:w-1/2"
         >
           <h4 class="text-base text-fp-blue xl:text-lg">
-            {{ card.title }}
+            {{ $t(card.title) }}
           </h4>
           <ContentRenderer
             tag="p"
@@ -112,7 +112,7 @@ for (let item of data._value.body[0].content) {
           <FpImage :src="data.body[0].content[2].image" class="w-80" />
         </NuxtLink>
         <figcaption class="mt-4 max-w-xs text-sm text-fp-gray-dark">
-          {{ data.body[0].content[2].description }}
+          {{ $t(data.body[0].content[2].description) }}
         </figcaption>
       </figure>
     </div>
