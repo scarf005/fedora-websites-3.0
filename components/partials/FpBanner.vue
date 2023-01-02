@@ -52,7 +52,7 @@ defineProps({
           },
         ]"
       >
-        <Icon v-if="idx === 1" :name="`fa6-brands:${icon}`" />
+        <Icon v-if="idx === 1 && icon" :name="`fa6-brands:${icon}`" />
         {{ $t(cta.text) }}
       </FpBtn>
       <div v-if="idx < ctas.length - 1" class="w-2" />

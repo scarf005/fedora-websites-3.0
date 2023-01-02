@@ -16,6 +16,11 @@ const hybrid = data._value.sections[3];
 const community = data._value.sections[5];
 const sponsors = data._value.sponsors;
 const sponsorsBenefits = data._value.sections[6];
+
+function formatDate(dateStr) {
+  const options = { month: "long", day: "2-digit" };
+  return new Date(dateStr).toLocaleDateString("en-US", options);
+}
 </script>
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-top">
@@ -27,7 +32,6 @@ const sponsorsBenefits = data._value.sections[6];
       background="text-white bg-fp-purple"
       :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
-      icon="calendar-days"
     >
       <h2
         class="my-8 font-semibold text-white"
@@ -108,7 +112,7 @@ const sponsorsBenefits = data._value.sections[6];
                 {{ $t(watch.content[0].description) }}
               </p>
               <NuxtLink
-                to="https://youtu.be"
+                :to="watch.content[0].image"
                 class="text-fp-blue dark:text-fp-blue-light"
                 >{{ $t("Visit Fedora Youtube") }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
@@ -273,14 +277,17 @@ const sponsorsBenefits = data._value.sections[6];
           >
             <div class="my-auto w-28 text-center">
               <h3 class="text-4xl font-semibold text-fp-blue">
-                {{ date.startDate }}
+                {{ formatDate(date.startDate) }}
               </h3>
             </div>
             <div class="text-center">
               <h3 class="text-2xl font-bold text-fp-blue">
                 {{ $t(date.name) }}
               </h3>
-              <p class="mb-2 text-fp-gray-darkest">
+              <p v-if="date.endDate" class="mb-2 text-fp-gray-darkest">
+                {{ $t("Deadline:") }} {{ formatDate(date.endDate) }}
+              </p>
+              <p v-if="date.description" class="mb-2 text-fp-gray-darkest">
                 {{ $t(date.description) }}
               </p>
               <div class="flex justify-evenly gap-4">

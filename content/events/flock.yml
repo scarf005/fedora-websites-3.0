@@ -132,38 +132,39 @@ sections:
         description:
           All sponsor booths include a video, customizable experience, chat,
           and social media engagement. Click below to learn more.
-
 importantDates:
   title: Important Dates
   description: Don't miss these important deadlines
   content:
     - name: Hatch Call for Proposals
-      description: "Deadline: May 29, 2023"
-      startDate: April 01
-      color: "#dedede"
+      startDate: 2023-04-01
+      color: "#b9daf0"
       link:
         - text: Submissions Closed
+      endDate: 2023-05-29
     - name: Flock Call for Proposals
-      description: "Deadline: July 8, 2023"
-      startDate: May 01
-      color: "#c5eac0"
+      startDate: 2023-05-01
+      color: "#b9daf0"
       link:
         - text: Submit Proposal
           url: "#"
+      endDate: 2023-07-08
     - name: Flock Registration Open
       description: Free Admission
-      startDate: July 08
+      startDate: 2023-07-08
       color: "#b9daf0"
       link:
         - text: Register to attend
           url: "#"
         - text: Accomodations
           url: "#"
+      endDate: ""
   footerText: Looking for a date that is not listed? Click here for help.
-
 sponsors:
   title: Our Sponsors
-  description: Thank you to our sponsors, supporting this event is one of the ways that they contribute to open source.
+  description:
+    Thank you to our sponsors, supporting this event is one of the ways
+    that they contribute to open source.
   content:
     - name: Red Hat
       image: public/assets/images/sponsors/Red_Hat_logo.png
@@ -177,12 +178,6 @@ sponsors:
     - name: openSuse
       image: public/assets/images/sponsors/opensuse_logo.png
       level: silver
-    - name: some Other Sponsor
-      image: ""
-      level: silver
-    - name: another Cool Sponsor
-      image: ""
-      level: bronze
     - name: GitLab
       image: public/assets/images/sponsors/Gitlab_logo.png
       level: bronze
@@ -204,4 +199,3 @@ sponsors:
     - name: opensource.com
       image: public/assets/images/sponsors/opensource.com_logo.png
       level: media
-    - level: placeholder
