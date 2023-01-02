@@ -1,6 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
 let props = defineProps({
   sectionDescription: {
     required: true,

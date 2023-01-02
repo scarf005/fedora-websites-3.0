@@ -1,16 +1,12 @@
 <script setup>
 const { locale } = useI18n();
+const contentPath = "editions/cloud/community";
 
 let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/cloud/community/" + locale._value).findOne();
+  return queryContent()
+    .where({ _file: contentPath + ".yml" })
+    .findOne();
 });
-
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/cloud/community").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
 
 useContentHead(data);
 </script>
@@ -32,8 +28,8 @@ useContentHead(data);
         class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
       >
         <div class="container mx-auto">
-          <h1 class="mb-4 text-fp-blue xl:mb-8">{{ data.title }}</h1>
-          <p class="text-fp-gray">{{ data.description }}</p>
+          <h1 class="mb-4 text-fp-blue xl:mb-8">{{ $t(data.title) }}</h1>
+          <p class="text-fp-gray">{{ $t(data.description) }}</p>
         </div>
       </section>
       <FpDescriptionSection
