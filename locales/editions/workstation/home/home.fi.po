@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-20 15:46-1000\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: 2022-11-18 13:47+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -47,7 +47,7 @@ msgstr "Lataa nyt"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
-msgid "https://getfedora.org/en/workstation/download/"
+msgid "/workstation/download"
 msgstr ""
 
 #: links-%3E[1]-%3Etext

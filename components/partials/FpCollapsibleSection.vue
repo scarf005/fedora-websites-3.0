@@ -18,7 +18,7 @@ const open = useState("collapseopen" + Math.random(), () => false);
           use === 'nav' ? 'text-fp-gray-lightest' : 'text-fp-gray-darkest'
         } dark:text-fp-gray-light md:justify-start lg:font-bold`"
       >
-        {{ title }}
+        {{ $t(title) }}
       </h6>
 
       <Icon
@@ -37,7 +37,7 @@ const open = useState("collapseopen" + Math.random(), () => false);
             use === 'nav' ? 'text-fp-gray-lightest' : 'text-fp-gray-darkest'
           } dark:text-fp-gray`"
         >
-          {{ item.name }}
+          {{ $t(item.name) }}
         </NuxtLink>
       </li>
     </ul>

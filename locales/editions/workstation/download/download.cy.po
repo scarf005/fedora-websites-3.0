@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-20 15:46-1000\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -233,102 +233,106 @@ msgid ""
 "one of our online communities?"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fedora Discussion"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
-#, read-only
-msgid "public/assets/images/fedora-discussion-plus-icon.png"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid "https://discussion.fedoraproject.org/"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Etitle
-msgid "Fedora Chat"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Elink-%3Eurl
-#, read-only
-msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
-#, read-only
-msgid "public/assets/images/fedora-chat-plus-element.png"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Etitle
-msgid "Ask Fedora"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
-#, read-only
-msgid "public/assets/images/ask-fedora.png"
-msgstr ""
-
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-#, read-only
-msgctxt "sections->[6]->content->[2]->link->url"
-msgid "https://ask.fedoraproject.org/"
-msgstr ""
-
 #: sections-%3E[7]-%3EsectionTitle
-msgid "Community-Maintained Spaces"
+msgid "Officially Supported Fedora Community Spaces"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
-msgid "Reddit"
-msgstr ""
-
-#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid "https://www.reddit.com/r/Fedora/"
+msgid "Fedora Discussion"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
-msgid "public/assets/images/reddit-brands-3.png"
+msgid "public/assets/images/fedora-discussion-plus-icon.png"
+msgstr ""
+
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
-msgid "Discord"
+msgid "Fedora Chat"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
-msgid "https://discord.com/invite/fedora"
+msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-msgid "public/assets/images/discord-brands-2.png"
+msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
-msgid "Telegram"
+msgid "Ask Fedora"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
-msgid "public/assets/images/telegram-brands.png"
+msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
 #: sections-%3E[7]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
-msgid "https://fedoraproject.org/wiki/Telegram"
+msgctxt "sections->[7]->content->[2]->link->url"
+msgid "https://ask.fedoraproject.org/"
 msgstr ""
 
 #: sections-%3E[8]-%3EsectionTitle
+msgid "Community-Maintained Spaces"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Etitle
+msgid "Reddit"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#, read-only
+msgid "https://www.reddit.com/r/Fedora/"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Eimage
+#, read-only
+msgid "public/assets/images/reddit-brands-3.png"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Etitle
+msgid "Discord"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#, read-only
+msgid "https://discord.com/invite/fedora"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Eimage
+#, read-only
+msgid "public/assets/images/discord-brands-2.png"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Etitle
+msgid "Telegram"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Eimage
+#, read-only
+msgid "public/assets/images/telegram-brands.png"
+msgstr ""
+
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#, read-only
+msgid "https://fedoraproject.org/wiki/Telegram"
+msgstr ""
+
+#: sections-%3E[9]-%3EsectionTitle
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
 
-#: sections-%3E[8]-%3EsectionDescription
+#: sections-%3E[9]-%3EsectionDescription
 msgid ""
 "By downloading Fedora software, you acknowledge that you understand all of "
 "the following: Fedora software and technical information may be subject to "

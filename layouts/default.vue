@@ -15,7 +15,7 @@ useHead({
 
 <template>
   <div id="app" class="dark:bg-neutral-700 dark:text-white">
-    <TheNavBar />
+    <NavBar />
     <div class="pt-12">
       <slot />
     </div>

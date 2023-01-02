@@ -16,20 +16,22 @@ defineProps({
 <template>
   <aside class="container my-2 flex gap-2">
     <div>
-      <h4 class="mb-2 text-lg font-semibold text-fp-blue-light">{{ title }}</h4>
+      <h4 class="mb-2 text-lg font-semibold text-fp-blue-light">
+        {{ $t(title) }}
+      </h4>
       <p class="max-w-3xl text-sm text-fp-gray-dark">
-        {{ description }}
+        {{ $t(description) }}
         <NuxtLink
           v-if="link"
           :to="link.url"
           class="ml-2 text-sm text-fp-blue-light transition duration-100 ease-in-out hover:opacity-75"
-          >{{ link.text }}</NuxtLink
+          >{{ $t(link.text) }}</NuxtLink
         >
         <NuxtLink
           v-else
           to="https://docs.fedoraproject.org/en-US/fedora-join/"
           class="ml-2 text-sm text-fp-blue-light transition duration-100 ease-in-out hover:opacity-75"
-          >Learn More</NuxtLink
+          >{{ $t("Learn More") }}</NuxtLink
         >
       </p>
     </div>

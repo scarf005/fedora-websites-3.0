@@ -59,7 +59,9 @@ function sponsorClass(sponsor) {
       <div
         class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs dark:bg-fp-blue"
       >
-        <p class="text-3xl text-black dark:text-white">Become a Sponsor</p>
+        <p class="text-3xl text-black dark:text-white">
+          {{ $t("Become a Sponsor") }}
+        </p>
       </div>
     </a>
   </div>

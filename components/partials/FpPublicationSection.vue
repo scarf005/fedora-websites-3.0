@@ -13,7 +13,7 @@ let { data } = await useAsyncData(() => {
 <template>
   <section class="bg-fp-gray-lightest">
     <div
-      class="container mx-auto grid grid-cols-1 gap-4 py-12 lg:grid-cols-2 lg:gap-10"
+      class="container mx-auto grid max-w-7xl grid-cols-1 gap-4 py-12 lg:grid-cols-2 lg:gap-10"
     >
       <!-- Loop through publications -->
       <article
@@ -22,12 +22,12 @@ let { data } = await useAsyncData(() => {
         class="my-10 flex flex-col items-center justify-between lg:my-8"
       >
         <header class="mx-4 flex flex-col justify-end xl:mx-0">
-          <h3 class="hidden">{{ card.title }}</h3>
+          <h3 class="hidden">{{ $t(card.title) }}</h3>
           <p class="mt-7 mb-1 max-w-prose text-fp-gray-darkest">
-            {{ card.description }}
+            {{ $t(card.description) }}
           </p>
           <FpBtn :url="card.link.url" class="mx-auto mt-10 px-4">{{
-            card.link.text
+            $t(card.link.text)
           }}</FpBtn>
         </header>
         <div class="order-first mx-4 lg:mx-auto">

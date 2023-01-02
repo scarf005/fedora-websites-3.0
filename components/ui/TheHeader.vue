@@ -52,7 +52,7 @@ function updateMenuContent(category) {
         </button>
       </FpNav>
 
-      <LazyFpToggle
+      <FpToggle
         :iconToggle="showMobileMenu"
         @emitToggle="toggleMobileMenu"
         class="col-start-2 row-start-1 justify-self-end lg:hidden"

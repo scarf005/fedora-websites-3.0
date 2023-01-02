@@ -1,6 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
 const props = defineProps({
   title: {
     type: String,
@@ -43,7 +41,7 @@ if (props.description) {
       class="px-2 text-2xl font-semibold text-fp-blue lg:px-0"
       :class="centerAlign ? 'text-center' : 'text-center md:text-start'"
     >
-      {{ title }}
+      {{ $t(title) }}
     </h3>
     <div>
       <ContentRenderer
@@ -68,7 +66,7 @@ if (props.description) {
       :to="link.url"
       class="mx-auto my-3 flex w-2/4 justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white sm:w-11/12"
       :class="centerAlign ? 'lg:w-prose' : 'lg-full'"
-      >{{ link.text }}</NuxtLink
+      >{{ $t(link.text) }}</NuxtLink
     >
   </article>
 </template>

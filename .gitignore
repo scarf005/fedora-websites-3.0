@@ -7,5 +7,4 @@ node_modules
 .env
 dist
 .cache_dnf/
-public/admin/config.yaml
 **/*.*.yml

@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "bash cms_gen_yml.sh && nuxt build",
-    "dev": "bash cms_gen_yml.sh && nuxt dev",
-    "generate": "bash cms_gen_yml.sh && nuxt generate",
-    "preview": "nuxt preview",
+    "build": "bash cms_gen_yml.sh && nuxi build",
+    "dev": "bash cms_gen_yml.sh && nuxi dev",
+    "generate": "bash cms_gen_yml.sh && nuxi generate",
+    "preview": "nuxi preview",
     "format": "npx prettier . --write",
     "prepare": "husky install"
   },
@@ -25,7 +25,6 @@
     "lint-staged": "^13.0.3",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
-    "nuxt-lodash": "^2.4.1",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13"
   },

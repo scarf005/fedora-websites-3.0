@@ -14,7 +14,7 @@
 
 
         **Flock typically takes place every August.**
-      image: public/assets/images/flock-two-colour-gradient-navy.png.png
+      image: public/assets/images/flock-two-colour-gradient-navy.png
       link:
         text:
           In-person Flock events are currently on-hold due to the ongoing COVID
@@ -30,7 +30,7 @@
         Nest is our at-home, virtual Flock that has been running since the
         global outbreak of COVID-19.  It takes place over 3 days and includes
         talks, workshops, hackfests, and social events.
-      image: public/assets/images/nest-dual-colour-navy.png.png
+      image: public/assets/images/nest-dual-colour-navy.png
     - title: Worldwide & Local Fedora Meetups
       description: Hatch is a series of small-scale, in-person global meetups
         organized in the weeks preceding the Flock / Nest conference enabling

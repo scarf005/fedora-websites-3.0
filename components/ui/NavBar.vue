@@ -20,6 +20,7 @@ const open = useState("navopen", () => false);
 
 <template>
   <nav class="fixed z-50 w-full bg-fp-blue dark:bg-neutral-900">
+    <!-- Menu bar -->
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -43,22 +44,19 @@ const open = useState("navopen", () => false);
                 <span class="mr-1">{{ $t("About") }}</span>
               </FpLink>
 
-              <TheNavBarItem
+              <NavBarItem
                 :title="$t('Editions')"
                 :items="editions"
                 :icons="true"
               />
 
-              <TheNavBarItem :title="$t('Others')" :items="others" />
+              <NavBarItem :title="$t('Others')" :items="others" />
 
-              <TheNavBarItem :title="$t('Community')" :items="community" />
+              <NavBarItem :title="$t('Community')" :items="community" />
 
-              <TheNavBarItem :title="$t('Support')" :items="support" />
+              <NavBarItem :title="$t('Support')" :items="support" />
 
-              <TheNavBarItem
-                :title="$t('Languages')"
-                :items="availableLocales"
-              />
+              <NavBarItem :title="$t('Languages')" :items="availableLocales" />
               <TheNavThemeSelector />
             </div>
           </div>

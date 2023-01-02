@@ -27,6 +27,7 @@ useContentHead(data);
         { name: 'Help', link: '/iot/help' },
       ]"
     />
+
     <FpHeader
       :title="data.title"
       :description="data.description"
@@ -34,6 +35,7 @@ useContentHead(data);
       color="text-fp-purple"
       bgColor="bg-fp-blue-light/10"
     />
+
     <!-- communication channels -->
     <FpCommunicationSection
       color="purple"
@@ -49,8 +51,8 @@ useContentHead(data);
     />
 
     <!-- Fedora Events -->
-    <EventSection color="text-fp-purple" />
+    <FpEventSection color="text-fp-purple" />
     <!-- Publication Section -->
-    <PublicationSection />
+    <FpPublicationSection />
   </main>
 </template>

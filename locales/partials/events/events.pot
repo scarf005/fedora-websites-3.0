@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-20 15:46-1000\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #, read-only
 #: [0]-%3Econtent-%3E[0]-%3Eimage
-msgid "public/assets/images/flock-two-colour-gradient-navy.png.png"
+msgid "public/assets/images/flock-two-colour-gradient-navy.png"
 msgstr ""
 
 #: [0]-%3Econtent-%3E[0]-%3Elink-%3Etext
@@ -93,7 +93,7 @@ msgstr ""
 
 #, read-only
 #: [0]-%3Econtent-%3E[3]-%3Eimage
-msgid "public/assets/images/nest-dual-colour-navy.png.png"
+msgid "public/assets/images/nest-dual-colour-navy.png"
 msgstr ""
 
 #: [0]-%3Econtent-%3E[4]-%3Etitle
