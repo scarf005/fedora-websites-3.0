@@ -19,6 +19,6 @@ useHead({
     <div class="pt-12">
       <slot />
     </div>
-    <!-- <TheFooter /> -->
+    <TheFooter />
   </div>
 </template>

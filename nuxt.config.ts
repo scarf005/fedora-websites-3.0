@@ -9,7 +9,6 @@ const base = process?.env?.CI_PAGES_URL
 export default defineNuxtConfig({
   components: [
     "~/components/",
-    "~/components/layout",
     "~/components/ui",
     "~/components/utilities",
     "~/components/partials",
