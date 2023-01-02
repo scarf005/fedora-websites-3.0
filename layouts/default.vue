@@ -15,10 +15,10 @@ useHead({
 
 <template>
   <div id="app" class="dark:bg-neutral-700 dark:text-white">
-    <NavBar />
+    <TheNav />
     <div class="pt-12">
       <slot />
     </div>
-    <TheFooter />
+    <!-- <TheFooter /> -->
   </div>
 </template>

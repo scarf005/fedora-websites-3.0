@@ -18,10 +18,9 @@ const props = defineProps({
     default: "text-white",
   },
 });
-const emit = defineEmits(["emitToggle"]);
 </script>
 <template>
-  <nav class="flex items-center">
+  <nav>
     <!-- Home Link for Local Navigation -->
     <div v-if="!global">
       <NuxtLink :to="home.url" class="font-display text-xl font-semibold"

@@ -2,44 +2,39 @@
   "downloads": {
     "label": "Downloads",
     "icon": "fa6-solid:download",
-    "categories": [
+    "sections": [
       {
         "label": "Editions",
         "description": "Fedora Editions are the official OS editions of Fedora Linux.",
         "links": [
           {
             "label": "Workstation",
-            "path": "workstation/",
-            "href": "",
-            "icon": "",
+            "path": "/workstation",
+            "icon": "fa6-solid:desktop",
             "description": "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for."
           },
           {
             "label": "Server",
-            "path": "server/",
-            "href": "",
-            "icon": "",
+            "path": "/server",
+            "icon": "fa6-solid:server",
             "description": "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology."
           },
           {
             "label": "IoT",
-            "path": "iot/",
-            "href": "",
-            "icon": "",
+            "path": "/iot",
+            "icon": "fa6-solid:microchip",
             "description": "A foundation for Internet of Things and Device Edge ecosystem."
           },
           {
-            "label": "Core Os",
-            "path": "coreos/",
-            "href": "",
-            "icon": "",
+            "label": "CoreOS",
+            "path": "/coreos",
+            "icon": "fa6-solid:circle",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
           },
           {
             "label": "Cloud",
-            "path": "cloud/",
-            "href": "",
-            "icon": "",
+            "path": "/cloud",
+            "icon": "fa6-solid:cloud",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
           }
         ]
@@ -50,8 +45,19 @@
         "links": [
           {
             "label": "Silverblue",
-            "path": "emerging-editions/silverblue/",
-            "href": "",
+            "path": "https://silverblue.fedoraproject.org/",
+            "icon": "",
+            "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
+          },
+          {
+            "label": "Kinoite",
+            "path": "https://kinoite.fedoraproject.org/",
+            "icon": "",
+            "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
+          },
+          {
+            "label": "Container Images",
+            "path": "https://hub.docker.com/_/fedora",
             "icon": "",
             "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
           }
@@ -60,12 +66,25 @@
       {
         "label": "Desktop Spins",
         "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
-        "link": []
+        "links": [
+          {
+            "label": "Fedora KDE",
+            "path": "https://spins.fedoraproject.org/en/kde/",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Fedora XFCE",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "Fedora Labs",
         "description": "The Labs are Fedora Linux set up with software bundles based on particular topics.",
-        "link": []
+        "links": []
       }
     ]
   },
@@ -73,21 +92,37 @@
     "label": "Community",
     "icon": "fa6-solid:users",
     "description": "Our community links connect you with our communication platforms, articles, blog posts, and events.",
-    "categories": [
+    "sections": [
       {
         "label": "Communications",
         "description": "Our community is big and there are many ways that we connect with one another.",
-        "links": []
+        "links": [
+          {
+            "label": "Community Blog",
+            "path": "https://communityblog.fedoraproject.org/"
+          },
+          {
+            "label": "About",
+            "path": "https://docs.fedoraproject.org/en-US/project/"
+          }
+        ]
       },
       {
         "label": "Publications",
         "description": "The Fedora Project publishes content regularly in the Community Blog and Fedora Magazine. Stay up to date with the latest in the Fedora Community.",
-        "links": []
+        "links": [
+          { "label": "Fedora Magazine", "path": "https://fedoramagazine.org/" }
+        ]
       },
       {
         "label": "Events",
         "description": "From our release parties to our annual conference and more, Fedorans regularly come together to celebrate our community and the hard work that we put into it.",
-        "links": []
+        "links": [
+          {
+            "label": "Flock To Fedora",
+            "path": "/flocktofedora"
+          }
+        ]
       },
       {
         "label": "Extended Community",
@@ -99,11 +134,16 @@
     "label": "Contributors",
     "icon": "fa6-solid:user",
     "description": "These pages connect you to all the different spaces that Fedorans work on projects. From new to long-term contributors, the following links will get you to where you want to go.",
-    "categories": [
+    "sections": [
       {
         "label": "Coordination",
         "description": "General sites for getting involved and contributing to the Fedora Project.",
-        "links": []
+        "links": [
+          { "label": "Join Fedora", "path": "#" },
+          { "label": "Matrix Chat Server", "path": "#" },
+          { "label": "Fedora Account System", "path": "#" },
+          { "label": "Fedora Developer Portal", "path": "#" }
+        ]
       },
       {
         "label": "Source Code",
@@ -118,7 +158,12 @@
       {
         "label": "New Contributors",
         "description": "We are always excited to work with new contributors. If you're new to the project, check out these sites.",
-        "links": []
+        "links": [
+          {
+            "label": "Discussion Board",
+            "path": "https://discussion.fedoraproject.org/"
+          }
+        ]
       }
     ]
   },
@@ -126,11 +171,16 @@
     "label": "Support",
     "icon": "bi:life-preserver",
     "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
-    "categories": [
+    "sections": [
       {
         "label": "User Docs",
         "description": "These are support docs for end users.",
-        "links": []
+        "links": [
+          {
+            "label": "Documentation",
+            "path": "https://docs.fedoraproject.org/"
+          }
+        ]
       },
       {
         "label": "Project Docs",

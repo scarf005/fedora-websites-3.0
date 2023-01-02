@@ -6,7 +6,7 @@ defineProps({
 });
 </script>
 <template>
-  <div class="group relative inline-block">
+  <div class="group relative hidden sm:inline-block">
     <a
       class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
     >

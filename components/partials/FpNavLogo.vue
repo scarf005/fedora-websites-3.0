@@ -7,7 +7,7 @@ const route = useRoute();
     class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:opacity-50"
   >
     <!-- SVG Icon Logo -->
-    <svg viewBox="0 0 448 512" class="h-12">
+    <svg viewBox="0 0 448 512" class="h-8">
       <title>Fedora Icon</title>
       <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
       <path
@@ -15,7 +15,7 @@ const route = useRoute();
       />
     </svg>
     <!-- SVG Text Logo -->
-    <svg viewBox="-0.306 -0.306 88.612 25.612" class="hidden h-8 md:block">
+    <svg viewBox="-0.306 -0.306 88.612 25.612" class="hidden h-6 md:block">
       <title>Fedora Text Logo</title>
       <g>
         <path
