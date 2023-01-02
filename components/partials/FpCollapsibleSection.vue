@@ -37,7 +37,7 @@ const open = useState("collapseopen" + Math.random(), () => false);
             use === 'nav' ? 'text-fp-gray-lightest' : 'text-fp-gray-darkest'
           } dark:text-fp-gray`"
         >
-          {{ $t(item.name) }}
+          {{ $t(item.label) }}
         </NuxtLink>
       </li>
     </ul>

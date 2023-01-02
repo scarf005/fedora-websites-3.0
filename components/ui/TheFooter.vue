@@ -1,5 +1,25 @@
 <script setup>
-import { editions, others, support, community } from "../../config/navigation";
+const { data } = await useAsyncData("navigation", () =>
+  queryContent("/_navigation").findOne()
+);
+const categories = {
+  downloads: data._value.downloads,
+  community: data._value.community,
+  contributors: data._value.contributors,
+  support: data._value.support,
+};
+
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    name: i.name,
+    href: switchLocalePath(i.code),
+  }));
+});
+
+const categoryOpen = useState("category", () => null);
+const sectionOpen = useState("section", () => null);
 </script>
 
 <template>
@@ -7,19 +27,23 @@ import { editions, others, support, community } from "../../config/navigation";
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <FpCollapsibleSection
-          title="Editions"
-          :navItems="editions"
-          use="footer"
-        />
-        <FpCollapsibleSection title="Others" :navItems="others" use="footer" />
-        <FpCollapsibleSection
-          title="User Support"
-          :navItems="support"
+          title="Downloads"
+          :navItems="categories.downloads.sections"
           use="footer"
         />
         <FpCollapsibleSection
           title="Community"
-          :navItems="community"
+          :navItems="categories.community.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          title="Contributors"
+          :navItems="categories.contributors.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          title="Support"
+          :navItems="categories.support.sections"
           use="footer"
         />
       </div>
