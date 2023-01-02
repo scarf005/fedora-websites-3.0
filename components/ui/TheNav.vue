@@ -25,21 +25,44 @@ const sectionOpen = useState("section", () => null);
     class="fixed z-50 w-full bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
   >
     <!-- NAVBAR  -->
-    <div class="mx-4 grid grid-cols-2">
+    <div class="grid grid-cols-2">
       <div
-        class="col-span-2 mt-2 flex items-center justify-center md:col-span-1 md:mt-0 md:justify-start"
+        class="col-span-2 my-1 flex items-center justify-between px-4 md:col-span-1 md:mt-0 md:justify-start"
       >
+        <!-- LOGO -->
         <FpNavLogo />
+        <!-- MOBILE EXPANDER -->
+        <button
+          @click="
+            if (
+              categoryOpen &&
+              categories.downloads.label === categoryOpen.label
+            ) {
+              categoryOpen = null;
+              sectionOpen = null;
+            } else {
+              categoryOpen = categories.downloads;
+              sectionOpen = categories.downloads.sections[0];
+            }
+          "
+          type="button"
+          class="rounded-md p-2 text-white md:hidden"
+        >
+          <Icon name="fa6-solid:bars" />
+        </button>
       </div>
 
+      <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        class="col-span-2 flex justify-center gap-3 py-4 text-white md:col-span-1 md:justify-end"
+        :class="`col-span-2 justify-center py-4 px-4 text-white md:col-span-1 md:flex md:justify-end ${
+          categoryOpen ? 'flex' : 'hidden'
+        }`"
       >
         <button
           v-for="category in categories"
           :key="category.id"
           role="navigation"
-          :class="`rounded-xl hover:bg-fp-blue-dark md:p-2  ${
+          :class="`rounded-xl p-1 hover:bg-fp-blue-dark md:p-3 ${
             categoryOpen === category && 'md:bg-fp-blue'
           }`"
           @click="
