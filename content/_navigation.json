@@ -10,31 +10,31 @@
           {
             "label": "Workstation",
             "path": "/workstation",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for."
           },
           {
             "label": "Server",
             "path": "/server",
-            "icon": "",
+            "icon": "fa6-solid:server",
             "description": "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology."
           },
           {
             "label": "IoT",
             "path": "/iot",
-            "icon": "",
+            "icon": "fa6-solid:microchip",
             "description": "A foundation for Internet of Things and Device Edge ecosystem."
           },
           {
-            "label": "Core Os",
+            "label": "CoreOS",
             "path": "/coreos",
-            "icon": "",
+            "icon": "fa6-solid:circle",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
           },
           {
             "label": "Cloud",
             "path": "/cloud",
-            "icon": "",
+            "icon": "fa6-solid:cloud",
             "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale."
           }
         ]
@@ -66,7 +66,7 @@
       {
         "label": "Desktop Spins",
         "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
-        "link": [
+        "links": [
           {
             "label": "Fedora KDE",
             "path": "https://spins.fedoraproject.org/en/kde/",
@@ -84,7 +84,7 @@
       {
         "label": "Fedora Labs",
         "description": "The Labs are Fedora Linux set up with software bundles based on particular topics.",
-        "link": []
+        "links": []
       }
     ]
   },
