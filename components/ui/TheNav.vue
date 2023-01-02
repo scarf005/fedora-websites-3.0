@@ -1,12 +1,10 @@
 <script setup>
-const { data } = await useAsyncData("navigation", () =>
-  queryContent("/_navigation").findOne()
-);
+import navigation from "../../config/navigation.json";
 const categories = {
-  downloads: data._value.downloads,
-  community: data._value.community,
-  contributors: data._value.contributors,
-  support: data._value.support,
+  downloads: navigation.downloads,
+  community: navigation.community,
+  contributors: navigation.contributors,
+  support: navigation.support,
 };
 
 const switchLocalePath = useSwitchLocalePath();
@@ -35,7 +33,7 @@ const sectionOpen = useState("section", () => null);
       </div>
 
       <FpNav
-        class="col-span-2 flex justify-center gap-3 py-4 text-white md:col-span-1"
+        class="col-span-2 flex justify-center gap-3 py-4 text-white md:col-span-1 md:justify-end"
       >
         <button
           v-for="category in categories"
