@@ -43,7 +43,7 @@ const open = useState("navopen", () => false);
                 <span class="mr-1">{{ $t("About") }}</span>
               </FpLink>
 
-              <TheNavItem
+              <TheNavBarItem
                 :title="$t('Editions')"
                 :items="editions"
                 :icons="true"
@@ -55,7 +55,10 @@ const open = useState("navopen", () => false);
 
               <TheNavBarItem :title="$t('Support')" :items="support" />
 
-              <TheNavItem :title="$t('Languages')" :items="availableLocales" />
+              <TheNavBarItem
+                :title="$t('Languages')"
+                :items="availableLocales"
+              />
               <TheNavThemeSelector />
             </div>
           </div>

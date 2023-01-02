@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted } from "vue";
-
 const { data } = await useAsyncData("navigation", () =>
   queryContent("_navigation").findOne()
 );
