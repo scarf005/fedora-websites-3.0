@@ -6,14 +6,6 @@ import {
   community,
   about,
 } from "../../config/navigation";
-const switchLocalePath = useSwitchLocalePath();
-const { locales } = useI18n();
-const availableLocales = computed(() => {
-  return locales.value.map((i) => ({
-    name: i.name,
-    href: switchLocalePath(i.code),
-  }));
-});
 
 const open = useState("navopen", () => false);
 </script>
@@ -57,7 +49,6 @@ const open = useState("navopen", () => false);
               <NavBarItem :title="$t('Support')" :items="support" />
 
               <NavBarItem :title="$t('Languages')" :items="availableLocales" />
-              <TheNavThemeSelector />
             </div>
           </div>
         </div>

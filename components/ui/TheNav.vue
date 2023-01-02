@@ -9,6 +9,15 @@ const categories = {
   support: data._value.support,
 };
 
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    name: i.name,
+    href: switchLocalePath(i.code),
+  }));
+});
+
 // Menu Toggles
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
@@ -16,17 +25,18 @@ const sectionOpen = useState("section", () => null);
 
 <template>
   <header
-    class="bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
+    class="fixed z-50 w-full bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
   >
-    <div class="mx-4 grid grid-cols-2 items-center py-2 lg:pt-4 lg:pb-2">
+    <div class="mx-4 flex justify-between py-2 lg:py-1">
       <TheNavLogo />
       <FpNav
-        class="col-span-full hidden gap-4 justify-self-center py-4 font-medium text-white lg:col-span-1 lg:flex lg:justify-self-end"
+        class="flex gap-4 justify-self-end justify-self-center py-4 font-medium text-white"
       >
         <button
           v-for="category in categories"
           :key="category.id"
           role="navigation"
+          class="hidden lg:block"
           @click="
             if (categoryOpen && category.label === categoryOpen.label) {
               categoryOpen = null;
@@ -42,10 +52,28 @@ const sectionOpen = useState("section", () => null);
           </div>
           <p>{{ category.label }}</p>
         </button>
-      </FpNav>
 
-      <FpToggle class="col-start-2 row-start-1 justify-self-end lg:hidden" />
+        <button
+          @click="
+            if (categoryOpen) {
+              categoryOpen = null;
+              sectionOpen = null;
+            } else {
+              categoryOpen = categories.downloads;
+              sectionOpen = categories.downloads;
+            }
+          "
+          type="button"
+          class="col-start-2 row-start-1 justify-self-end lg:hidden"
+        >
+          <Icon name="fa6-solid:bars" />
+        </button>
+
+        <TheNavThemeSelector />
+        <NavBarItem :title="$t('Languages')" :items="availableLocales" />
+      </FpNav>
     </div>
+
     <nav
       v-if="categoryOpen"
       class="left-0 right-0 mx-auto h-screen px-8 lg:absolute lg:h-[40rem] lg:w-11/12 lg:rounded-b-lg lg:bg-white lg:shadow-md dark:lg:bg-fp-blue xl:h-[30rem]"
@@ -69,9 +97,11 @@ const sectionOpen = useState("section", () => null);
               :key="section.id"
               role="button"
             >
-              <!-- category desktop & mobile -->
+              <!-- category for both desktop & mobile -->
               <div
-                class="mx-2 mt-4 flex cursor-pointer justify-between rounded-md py-4 px-2 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2"
+                :class="`mx-2 mt-4 flex cursor-pointer justify-between rounded-md py-4 px-2 text-fp-blue duration-150 ease-in-out hover:bg-fp-blue-dark dark:text-white lg:py-2 ${
+                  sectionOpen === section && 'bg-blue-300'
+                }`"
                 role="button"
                 @click="sectionOpen = section"
               >
@@ -82,7 +112,8 @@ const sectionOpen = useState("section", () => null);
                   <Icon name="fa6-solid:chevron-right" size="32" />
                 </div>
               </div>
-              <!-- mobile sections -->
+
+              <!-- Sections List Mobile -->
               <ul class="ml-10 block text-lg text-white sm:hidden">
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink
@@ -96,17 +127,19 @@ const sectionOpen = useState("section", () => null);
           </ul>
         </section>
 
-        <!-- Right Column List Items only show on desktop -->
+        <!-- Section List Desktop -->
         <section
           class="col-span-2 col-start-2 row-start-1 hidden dark:text-white lg:block"
           v-if="sectionOpen"
         >
           <div>
             <header class="mb-6 mt-4">
-              <h3 class="font-semibold">
+              <h3 class="font-semibold text-fp-blue dark:text-white">
                 {{ sectionOpen.label }}
               </h3>
-              <p>{{ sectionOpen.description }}</p>
+              <p class="text-fp-blue dark:text-white">
+                {{ sectionOpen.description }}
+              </p>
             </header>
             <ul class="grid grid-cols-3 gap-4">
               <li
@@ -115,25 +148,25 @@ const sectionOpen = useState("section", () => null);
                 class="max-w-xs rounded-lg p-2 hover:bg-fp-blue-dark"
               >
                 <FpLink :href="link.path">
-                  <h4 class="mb-2 font-medium">{{ link.label }}</h4>
-                  <p>{{ link.description }}</p>
+                  <h4 class="mb-2 font-medium text-fp-blue dark:text-white">
+                    {{ link.label }}
+                  </h4>
+                  <p class="text-fp-blue dark:text-white">
+                    {{ link.description }}
+                  </p>
                 </FpLink>
               </li>
             </ul>
           </div>
         </section>
 
+        <!-- close button -->
         <div
           class="col-start-3 row-start-1 mr-8 hidden items-center justify-end text-white lg:flex"
         >
           <button @click="categoryOpen = null" class="hover:opacity-75">
             <Icon name="fa6-solid:x" size="24" />
           </button>
-        </div>
-        <div
-          class="mr-8 mb-12 self-center justify-self-end lg:col-span-2 lg:col-start-2 lg:row-start-4 lg:mb-0 xl:row-start-3"
-        >
-          <FpImage src="assets/images/fedora_white.png" class="w-36" />
         </div>
       </div>
     </nav>

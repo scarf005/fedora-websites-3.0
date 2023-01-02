@@ -1,11 +1,7 @@
 <script setup></script>
 <template>
   <div class="group relative inline-block">
-    <button
-      type="button"
-      id="themeSwitch"
-      class="hidden fill-white stroke-white sm:block"
-    >
+    <button type="button" id="themeSwitch" class="fill-white stroke-white">
       <span class="dark:hidden">
         <svg
           viewBox="0 0 24 24"

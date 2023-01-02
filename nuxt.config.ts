@@ -1,4 +1,4 @@
-import locales from "./config/locales.json";
+import locales from "./locales/locales.json";
 var path = require('path');
 
 const base = process?.env?.CI_PAGES_URL
