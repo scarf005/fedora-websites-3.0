@@ -1,6 +1,6 @@
 <script setup>
 const { data } = await useAsyncData("navigation", () =>
-  queryContent("_navigation").findOne()
+  queryContent("/_navigation").findOne()
 );
 const categories = {
   downloads: data._value.downloads,
