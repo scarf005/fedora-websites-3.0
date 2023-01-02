@@ -1,6 +1,4 @@
 <script setup>
-const base = "";
-
 useHead({
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   charset: "utf-8",
@@ -17,7 +15,7 @@ useHead({
 
 <template>
   <div id="app" class="dark:bg-neutral-700 dark:text-white">
-    <TheNavBar />
+    <NavBar />
     <div class="pt-12">
       <slot />
     </div>
