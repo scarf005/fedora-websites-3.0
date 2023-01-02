@@ -1,12 +1,10 @@
 <script setup>
-const { data } = await useAsyncData("navigation", () =>
-  queryContent("/_navigation").findOne()
-);
+import navigation from "../../config/navigation.json";
 const categories = {
-  downloads: data._value.downloads,
-  community: data._value.community,
-  contributors: data._value.contributors,
-  support: data._value.support,
+  downloads: navigation.downloads,
+  community: navigation.community,
+  contributors: navigation.contributors,
+  support: navigation.support,
 };
 
 const switchLocalePath = useSwitchLocalePath();
@@ -17,15 +15,16 @@ const availableLocales = computed(() => {
     href: switchLocalePath(i.code),
   }));
 });
-
-const categoryOpen = useState("category", () => null);
-const sectionOpen = useState("section", () => null);
 </script>
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <FpCollapsibleSection
+          :title="$t('Languages')"
+          :items="availableLocales"
+        />
         <FpCollapsibleSection
           title="Downloads"
           :navItems="categories.downloads.sections"
