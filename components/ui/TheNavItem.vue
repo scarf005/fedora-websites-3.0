@@ -23,10 +23,7 @@ function menuToggle() {
       <Icon name="fa6-solid:chevron-right" size="32" />
     </div>
   </div>
-  <ul
-    class="ml-10 text-lg text-white"
-    :class="mobileMenuToggle ? 'block' : 'hidden'"
-  >
+  <ul class="ml-10 text-lg text-white">
     <li v-for="link in itemData.links" :key="link.id" class="py-1">
       <NuxtLink
         :to="link.path.length > 0 ? link.path : link.url"

@@ -1,8 +1,4 @@
-<script setup>
-definePageMeta({
-  layout: "development",
-});
-</script>
+<script setup></script>
 <template>
   <main class="">
     <header
