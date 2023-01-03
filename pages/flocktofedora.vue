@@ -14,8 +14,13 @@ const explore = data._value.sections[1];
 const watch = data._value.sections[2];
 const hybrid = data._value.sections[3];
 const community = data._value.sections[5];
-const sponsors = data._value.sections[6];
-const sponsorsBenefits = data._value.sections[7];
+const sponsors = data._value.sponsors;
+const sponsorsBenefits = data._value.sections[6];
+
+function formatDate(dateStr) {
+  const options = { month: "long", day: "2-digit" };
+  return new Date(dateStr).toLocaleDateString("en-US", options);
+}
 </script>
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-top">
@@ -27,7 +32,6 @@ const sponsorsBenefits = data._value.sections[7];
       background="text-white bg-fp-purple"
       :ctas="data.links"
       :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
-      icon="calendar-days"
     >
       <h2
         class="my-8 font-semibold text-white"
@@ -61,23 +65,29 @@ const sponsorsBenefits = data._value.sections[7];
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
+          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
           {{ $t(explore.sectionTitle) }}
         </h2>
         <div
-          class="flex flex-wrap items-stretch justify-around gap-4 text-center text-fp-blue-dark"
+          class="flex flex-wrap justify-between gap-4 text-center text-fp-blue-dark xl:gap-20"
         >
           <FpCard
             v-for="card in explore.content"
-            class="dark:bg-slate-800"
             :title="card.title"
-            :image="card.image"
-            :link="card.link"
             :description="card.description"
-            :imgOrderFirst="true"
-            :centerAlign="true"
-          />
+            :variants="['event']"
+            class="h-80 grow basis-64"
+          >
+            <template #prepend>
+              <FpCardImage slot="prepend" :src="card.image" />
+            </template>
+            <template #footer>
+              <NuxtLink :to="card.link.url" class="underline">{{
+                $t(card.link.text)
+              }}</NuxtLink>
+            </template>
+          </FpCard>
         </div>
 
         <h3
@@ -85,41 +95,31 @@ const sponsorsBenefits = data._value.sections[7];
         >
           {{ $t(watch.sectionTitle) }}
         </h3>
-        <div
-          class="mx-auto mt-8 grid w-full grid-cols-1 rounded-lg bg-white p-8 dark:bg-slate-800 lg:grid-cols-2"
+
+        <FpCard
+          class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
+          variant="wide"
         >
-          <div class="col-span-1 p-1 sm:p-5">
-            <iframe
-              width="560"
-              height="340"
-              :src="watch.content[0].image"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="w-full"
-            >
-            </iframe>
-          </div>
-          <div
-            class="col-span-1 mx-0 flex flex-col justify-center p-3 pt-5 text-left text-fp-blue-dark dark:text-fp-blue-light sm:p-5 xl:mx-12"
-          >
-            <h4 class="mb-5 font-semibold">
-              {{ $t(watch.content[0].title) }}
-            </h4>
-            <p class="text-fp-gray-darkest dark:text-slate-200">
-              {{ $t(watch.content[0].description) }}
-            </p>
-            <p class="mt-8 text-right">
+          <div class="flex flex-wrap justify-between gap-8">
+            <FpCardImage
+              slot="prepend"
+              class="flex-grow basis-24"
+              src="public/assets/images/flock_youtube.png"
+            />
+            <div class="my-auto">
+              <FpCardTitle :title="watch.content[0].title" />
+              <p class="text-fp-gray-darkest dark:text-slate-200">
+                {{ $t(watch.content[0].description) }}
+              </p>
               <NuxtLink
-                class="text-fp-blue dark:text-fp-blue-light lg:text-xl"
-                :to="watch.content[0].link.url"
-                >{{ $t(watch.content[0].link.text) }}
+                :to="watch.content[0].image"
+                class="text-fp-blue dark:text-fp-blue-light"
+                >{{ $t("Visit Fedora Youtube") }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
               </NuxtLink>
-            </p>
+            </div>
           </div>
-        </div>
+        </FpCard>
       </div>
     </section>
 
@@ -245,15 +245,76 @@ const sponsorsBenefits = data._value.sections[7];
     </section>
 
     <!-- TODO: Important Dates -->
-    <!--
-    <section class="w-10/12 mx-auto my-10">
+    <section class="mx-auto my-10 w-full">
       <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
-        Important Dates
+        {{ $t(data.importantDates.title) }}
       </h2>
+      <h4 class="mx-0 mb-16 text-center text-lg text-fp-blue-dark sm:mx-20">
+        {{ $t(data.importantDates.description) }}
+      </h4>
+      <div
+        class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
+      >
+        <figure class="mx-auto my-auto hidden lg:block">
+          <img
+            class="z-10 lg:w-60"
+            src="/assets/images/colur-flap.png"
+            alt="Screenshot"
+          />
+          <figcaption
+            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+          >
+            Colúr.
+          </figcaption>
+        </figure>
+        <section class="col-span-2">
+          <div
+            v-for="date in data.importantDates.content"
+            class="mx-auto mb-10 flex justify-center gap-5 rounded-xl p-2"
+            :style="{ backgroundColor: date.color }"
+          >
+            <div class="my-auto w-28 text-center">
+              <h3 class="text-4xl font-semibold text-fp-blue">
+                {{ formatDate(date.startDate) }}
+              </h3>
+            </div>
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-fp-blue">
+                {{ $t(date.name) }}
+              </h3>
+              <p v-if="date.endDate" class="mb-2 text-fp-gray-darkest">
+                {{ $t("Deadline:") }} {{ formatDate(date.endDate) }}
+              </p>
+              <p v-if="date.description" class="mb-2 text-fp-gray-darkest">
+                {{ $t(date.description) }}
+              </p>
+              <div class="flex justify-evenly gap-4">
+                <a class="font-bold" v-for="link in date.link" :href="link.url">
+                  {{ $t(link.text) }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-sm text-fp-gray">
+            {{ $t(data.importantDates.footerText) }}
+          </p>
+        </section>
+        <figure class="mx-auto my-auto hidden lg:block">
+          <img
+            class="z-10 lg:w-96"
+            src="/assets/images/panda_beefy_badger.png"
+            alt="Screenshot"
+          />
+          <figcaption
+            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+          >
+            Panda, Beefy and Badger.
+          </figcaption>
+        </figure>
+      </div>
     </section>
-    -->
 
     <!-- TODO: Event Calendar -->
     <!--
@@ -300,10 +361,10 @@ const sponsorsBenefits = data._value.sections[7];
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
-        {{ $t(sponsors.sectionTitle) }}
+        {{ $t(sponsors.title) }}
       </h2>
       <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
-        {{ $t(sponsors.sectionDescription) }}
+        {{ $t(sponsors.description) }}
       </p>
 
       <FpSponsors :sponsors="sponsors.content" />
