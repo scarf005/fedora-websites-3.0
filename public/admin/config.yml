@@ -335,6 +335,99 @@ collections:
                         widget: "string"
                         hint: "URL path for the link or button"
                         required: false
+          - label: "Important Dates"
+            name: "importantDates"
+            hint: "List of important dates related to the event"
+            summary: "{{fields.title}}"
+            widget: "object"
+            collapsed: true
+            fields:
+              - name: "title"
+                label: "Section Title"
+                widget: "string"
+              - name: "description"
+                label: "Section Description"
+                widget: "string"
+              - name: "footerText"
+                label: "Footer Text"
+                widget: "string"
+              - name: "content"
+                label: "dates"
+                widget: "list"
+                fields:
+                  - name: "name"
+                    label: "event name"
+                    widget: "string"
+                  - name: "description"
+                    label: "event description"
+                    widget: "string"
+                    required: false
+                  - name: "startDate"
+                    label: "Start Date"
+                    widget: "datetime"
+                    time_format: false
+                    format: "YYYY-MM-DD"
+                  - name: "endDate"
+                    label: "End Date"
+                    widget: "datetime"
+                    time_format: false
+                    format: "YYYY-MM-DD"
+                    required: false
+                  - name: "color"
+                    label: "event status"
+                    widget: "select"
+                    options:
+                      - { label: "not started", value: "#b9daf0" }
+                      - { label: "ongoing", value: "#c5eac0" }
+                      - { label: "ended", value: "#dedede" }
+                  - name: "link"
+                    label: "Links"
+                    widget: "list"
+                    fields:
+                      - name: "text"
+                        label: "URL Text"
+                        widget: "string"
+                        required: false
+                      - name: "url"
+                        label: "URL Link"
+                        widget: "string"
+                        required: false
+          - label: "Sponsors"
+            name: "sponsors"
+            hint: "List of Sponsors"
+            summary: "{{fields.title}}"
+            widget: "object"
+            collapsed: true
+            fields:
+              - name: "title"
+                label: "Section Title"
+                widget: "string"
+              - name: "description"
+                label: "Section Description"
+                widget: "string"
+              - name: "content"
+                label: "sponsors"
+                widget: "list"
+                fields:
+                  - name: "name"
+                    label: "Sponsor Name"
+                    widget: "string"
+                    required: false
+                  - name: "image"
+                    label: "Sponsor Image or Logo"
+                    widget: "string"
+                    required: false
+                  - name: "level"
+                    label: "Sponsor Level"
+                    widget: "select"
+                    options:
+                      - { label: "Platinium", value: "platinium" }
+                      - { label: "Gold", value: "gold" }
+                      - { label: "Silver", value: "silver" }
+                      - { label: "Bronze", value: "bronze" }
+                      - { label: "Media", value: "media" }
+                      - { label: "Placeholder", value: "placeholder" }
+
       # Events Partial Data
       - label: "Events Partial"
         name: "events-partial"
