@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgid "flock"
 msgstr ""
 
 #: title
-msgid "The Fedora Project Conference"
+msgid "Fedora-projektin konferenssi"
 msgstr ""
 
 #: description
-msgid "August 5 - 7, 2023\n"
+msgid "5.–7. elokuuta 2023\n"
 msgstr ""
 
 #, read-only
@@ -108,7 +108,7 @@ msgid "public/assets/images/flock_workshops_logo.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "View Projects"
+msgid "Näytä projektit"
 msgstr ""
 
 #, read-only
@@ -133,7 +133,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "View Topics"
+msgid "Näytä aiheet"
 msgstr ""
 
 #, read-only
@@ -158,7 +158,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "View Socials"
+msgid "Näytä yhteistilaisuudet"
 msgstr ""
 
 #, read-only
@@ -188,7 +188,7 @@ msgid ""
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "Visit Fedora Youtube"
+msgid "Vieraile Fedora Youtubessa"
 msgstr ""
 
 #, read-only
@@ -201,7 +201,6 @@ msgid "Hybridikokemus"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
 "Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
 "Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
@@ -219,11 +218,10 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"Flockin sijainti vaihtuu vuosittain Euroopan ja Pohjois-Amerikan välillä. "
-"Vuonna 2020 Fedora siirtyi virtuaaliseksi Nestin kanssa, nyt tarjoamme "
-"Flockin hybridiversion, jotta se olisi helpommin saatavilla yhteisöllemme."
+"Flock tarjoaa mukaansatempaavan henkilökohtaisen kokemuksen. Osallistu "
+"istuntoihin, tee yhteistyötä muiden kanssa, tutustu ja tapaa uusia ihmisiä. "
+"Lisäksi Flock on ilmainen!"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
@@ -233,7 +231,7 @@ msgstr ""
 
 #, read-only
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
-msgid "public/assets/images/flock_nest_logo_mini.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription
@@ -534,11 +532,11 @@ msgid "media"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Ename
-msgid "none"
+msgid "ei mitään"
 msgstr ""
 
 #: sections-%3E[6]-%3Econtent-%3E[13]-%3Edescription
-msgid "placeholder"
+msgid "paikanpitäjä"
 msgstr ""
 
 #: sections-%3E[7]-%3EsectionTitle

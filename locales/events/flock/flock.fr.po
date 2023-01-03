@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: 2022-10-26 11:57+0000\n"
 "Last-Translator: Francois Andrieu <darknao@drkn.ninja>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
-msgid "public/assets/images/nest-dual-colour-navy.png.png"
+msgid "public/assets/images/nest-dual-colour-navy.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription

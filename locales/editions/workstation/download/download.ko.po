@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
-"PO-Revision-Date: 2022-11-17 09:33+0000\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
+"PO-Revision-Date: 2022-12-29 19:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-websites-3-0/editionsworkstationdownload/ko/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"X-Generator: Weblate 4.15\n"
 
 #: path
 msgid "download"
@@ -21,7 +21,7 @@ msgstr "내려받기"
 
 #: title
 msgid "Download Fedora Workstation 37"
-msgstr ""
+msgstr "페도라 웍스테이션 37 내려받기"
 
 #: description
 msgid ""
@@ -37,23 +37,23 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "release"
-msgstr ""
+msgstr "출시"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "RELEASE DATE"
-msgstr ""
+msgstr "출시일"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid "April 19, 2022"
-msgstr ""
+msgstr "2022년 4월 19일"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "SUPPORTED THROUGH"
-msgstr ""
+msgstr "지원 범위"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid "May 17, 2023"
-msgstr ""
+msgstr "2023년 5월 17일"
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Release Notes"
@@ -96,16 +96,15 @@ msgstr "페도라를 보다 쉽게 사용 할 수 있게 하는 페도라 미디
 
 #: sections-%3E[1]-%3Eimages
 msgid "public/assets/images/media-writer-icon.png"
-msgstr ""
+msgstr "public/assets/images/media-writer-icon.png"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
 msgid "Windows"
-msgstr ""
+msgstr "윈도우즈"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[0]->link->text"
-msgid "Download Now"
-msgstr ""
+msgid "fa-windows"
+msgstr "fa-윈도우즈"
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -114,12 +113,11 @@ msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
 msgid "Mac"
-msgstr ""
+msgstr "맥"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgctxt "sections->[1]->content->[1]->link->text"
-msgid "Download Now"
-msgstr ""
+msgid "fa-apple"
+msgstr "fa-애플"
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
@@ -135,73 +133,13 @@ msgid ""
 "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/"
 "en-US/quick-docs/creating-and-using-a-live-installation-image/)"
 msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Etitle
-msgctxt "sections->[2]->content->[0]->title"
-"sections->[2]->content->[0]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Etext
-msgid "x86_64 DVD ISO"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgid "For Intel and AMD systems"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Etitle
-msgctxt "sections->[2]->content->[1]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Etext
-msgid "aarch64 Live ISO"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/iso/Fedora-Workstation-Live-aarch64-37-1.7.iso"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
-msgid "For ARM® aarch64"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Etitle
-msgctxt "sections->[2]->content->[2]->title"
-msgid "Fedora Workstation 37"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Etext
-msgid "aarch64 raw image"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Elink-%3Eurl
-#, read-only
-msgid ""
-"https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/"
-"aarch64/images/Fedora-Workstation-37-1.7.aarch64.raw.xz"
-msgstr ""
-
-#: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
-msgid "For ARM® aarch64"
-msgstr ""
+"이들 파일을 사용하는 방법이 확실하지 않나요? [여기서 알아보기](https://docs."
+"fedoraproject.org/ko/quick-docs/creating-and-using-a-live-installation-image/"
+")"
 
 #: sections-%3E[3]-%3EsectionTitle
 msgid "Security, Installs"
-msgstr ""
+msgstr "보안, 설치"
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
 msgid "We take security seriously"
@@ -211,7 +149,7 @@ msgstr "우리는 보안을 중요하게 생각합니다"
 msgid ""
 "Once you have downloaded an image, be sure to verify it for both security "
 "and integrity."
-msgstr ""
+msgstr "일단 당신이 이미지를 내려 받았으면, 보안과 무결성 모두를 확인하세요."
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
@@ -220,7 +158,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Verify Your Download"
-msgstr ""
+msgstr "자신의 내려받기를 확인합니다"
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
 msgid "But wait! There's more."
@@ -243,7 +181,7 @@ msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Elink-%3Etext
 msgid "Fedora 37 64-bit network install"
-msgstr ""
+msgstr "페도라 37 64-비트 네트워크 설치"
 
 #: sections-%3E[4]-%3EsectionTitle
 msgid "Laptops pre-loaded with Fedora"
@@ -269,7 +207,7 @@ msgstr ""
 
 #: sections-%3E[4]-%3Econtent-%3E[0]-%3Elink-%3Etext
 msgid "Explore Fedora Laptops"
-msgstr ""
+msgstr "페도라 랩탑 탐구하기"
 
 #: sections-%3E[5]-%3EsectionTitle
 msgid "Learn more about Fedora Media Writer"
@@ -285,6 +223,13 @@ msgid ""
 "changes to your computer. Once you are hooked, installing it to your hard "
 "drive is a matter of clicking a few buttons*."
 msgstr ""
+"페도라 시작하기는 보다 더 쉬워졌습니다. 당신이 필요로 하는 모든 것은 2GB USB "
+"플래시 드라이브, 그리고 페도라 미디어 작성기입니다. \n"
+"페도라 미디어 작성기가 설치되면, 이는 자신의 플래쉬 드라이브를 페도라 "
+"웍스테이션의 \"라이브\" 버전을 실행하도록 설정하고, 당신은 자신의 플래시 "
+"드라이브에서 이를 부팅 할 수 있고 자신의 컴퓨터를 영구적으로 변경하지 않고 "
+"바로 사용해 볼 수 있다는 것을 의미합니다. 한번 빠지게 되면, 자신의 하드 "
+"드라이브에 몇 개의 누름단추*를 누르는 것만 이를 설치 할 수 있습니다."
 
 #: sections-%3E[5]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
@@ -301,110 +246,115 @@ msgstr "public/assets/images/monitor-2.png"
 
 #: sections-%3E[6]-%3EsectionTitle
 msgid "Become a Fedora contributor"
-msgstr ""
+msgstr "페도라 공헌자가 되기"
 
 #: sections-%3E[6]-%3EsectionDescription
 msgid ""
 "Once you've got Fedora installed and running, why not join and contribute to "
 "one of our online communities?"
-msgstr ""
+msgstr "일단 당신이 페도라를 설치하고 동작 하면, 우리의 온라인 커뮤니티의 하나로 "
+"참여하고 공헌하는 것은 어떤가요?"
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[7]-%3EsectionTitle
+msgid "Officially Supported Fedora Community Spaces"
+msgstr "공식적으로 지원되는 페도라 커뮤니티 공간"
+
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
 msgid "Fedora Discussion"
 msgstr "페도라 토의"
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/fedora-discussion-plus-icon.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://discussion.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
 msgid "Fedora Chat"
 msgstr "페도라 대화"
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
 msgid "https://matrix.to/#/#matrix-meta-chat:fedoraproject.org"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
 msgid "public/assets/images/fedora-chat-plus-element.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
 msgid "Ask Fedora"
 msgstr "페도라 질문(Ask)"
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
 msgid "public/assets/images/ask-fedora.png"
 msgstr ""
 
-#: sections-%3E[6]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[7]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
-msgctxt "sections->[6]->content->[2]->link->url"
+msgctxt "sections->[7]->content->[2]->link->url"
 msgid "https://ask.fedoraproject.org/"
 msgstr ""
 
-#: sections-%3E[7]-%3EsectionTitle
+#: sections-%3E[8]-%3EsectionTitle
 msgid "Community-Maintained Spaces"
 msgstr "커뮤니티-관리 공간"
 
-#: sections-%3E[7]-%3Econtent-%3E[0]-%3Etitle
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reddit"
 msgstr "레딧"
 
-#: sections-%3E[7]-%3Econtent-%3E[0]-%3Elink-%3Eurl
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Elink-%3Eurl
 #, read-only
 msgid "https://www.reddit.com/r/Fedora/"
 msgstr ""
 
-#: sections-%3E[7]-%3Econtent-%3E[0]-%3Eimage
+#: sections-%3E[8]-%3Econtent-%3E[0]-%3Eimage
 #, read-only
 msgid "public/assets/images/reddit-brands-3.png"
 msgstr ""
 
-#: sections-%3E[7]-%3Econtent-%3E[1]-%3Etitle
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Etitle
 msgid "Discord"
 msgstr "디스코드"
 
-#: sections-%3E[7]-%3Econtent-%3E[1]-%3Elink-%3Eurl
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Elink-%3Eurl
 #, read-only
 msgid "https://discord.com/invite/fedora"
 msgstr ""
 
-#: sections-%3E[7]-%3Econtent-%3E[1]-%3Eimage
+#: sections-%3E[8]-%3Econtent-%3E[1]-%3Eimage
 #, read-only
 msgid "public/assets/images/discord-brands-2.png"
 msgstr ""
 
-#: sections-%3E[7]-%3Econtent-%3E[2]-%3Etitle
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Etitle
 msgid "Telegram"
-msgstr ""
+msgstr "텔레그램"
 
-#: sections-%3E[7]-%3Econtent-%3E[2]-%3Eimage
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Eimage
 #, read-only
 msgid "public/assets/images/telegram-brands.png"
 msgstr ""
 
-#: sections-%3E[7]-%3Econtent-%3E[2]-%3Elink-%3Eurl
+#: sections-%3E[8]-%3Econtent-%3E[2]-%3Elink-%3Eurl
 #, read-only
 msgid "https://fedoraproject.org/wiki/Telegram"
 msgstr ""
 
-#: sections-%3E[8]-%3EsectionTitle
+#: sections-%3E[9]-%3EsectionTitle
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr "페도라를 눌러서 내려 받으면, 다음 이용 약관을 따르고 준수 할 것을 동의합니다."
 
-#: sections-%3E[8]-%3EsectionDescription
+#: sections-%3E[9]-%3EsectionDescription
 msgid ""
 "By downloading Fedora software, you acknowledge that you understand all of "
 "the following: Fedora software and technical information may be subject to "
@@ -439,6 +389,47 @@ msgstr ""
 "또는 기술 정보를 제공 받을 수 없습니다. 수입, 수출 및 페도라 소프트웨어와 "
 "기술 정보의 사용에 대해 적용하는 경우 외국 법규 요구 조건을 만족 할만한 "
 "책임이 있습니다."
+
+#~ msgctxt "sections->[1]->content->[0]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "지금 내려받기"
+
+#~ msgctxt "sections->[1]->content->[1]->link->text"
+#~ msgid "Download Now"
+#~ msgstr "지금 내려받기"
+
+#~ msgctxt "sections->[2]->content->[0]->title"
+#~ "sections->[2]->content->[0]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "x86_64 DVD ISO"
+#~ msgstr "x86_64 DVD ISO"
+
+#~ msgid "For Intel and AMD systems"
+#~ msgstr "인텔 및 AMD 시스템용"
+
+#~ msgctxt "sections->[2]->content->[1]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "aarch64 Live ISO"
+#~ msgstr "aarch64 라이브 ISO"
+
+#~ msgctxt "sections->[2]->content->[1]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64용"
+
+#~ msgctxt "sections->[2]->content->[2]->title"
+#~ msgid "Fedora Workstation 37"
+#~ msgstr "페도라 웍스테이션 37"
+
+#~ msgid "aarch64 raw image"
+#~ msgstr "aarch64 단순 이미지"
+
+#~ msgctxt "sections->[2]->content->[2]->description"
+#~ msgid "For ARM® aarch64"
+#~ msgstr "ARM® aarch64용"
 
 #~ msgid "Security, Installs, Laptops Preloaded"
 #~ msgstr "보안, 설치, 사전 적재된 랩탑"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,11 +200,10 @@ msgid "Un esperienza ibrida"
 msgstr ""
 
 #: sections-%3E[3]-%3EsectionDescription
-msgctxt "sections->[3]->sectionDescription"
 msgid ""
-"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
-"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
-"di Flock per renderlo più accessibile alla nostra comunità."
+"The location of Flock changes each year between Europe and North America. In "
+"2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock "
+"to make it more accessible to our community."
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Etitle
@@ -218,11 +217,9 @@ msgid "public/assets/images/flock_logo_mini.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[3]->content->[0]->description"
 msgid ""
-"La sede di Flock cambia ogni anno tra Europa e Nord America. Nel 2020 i "
-"Fedorans sono diventati virtuali con Nest, ora offriamo una versione ibrida "
-"di Flock per renderlo più accessibile alla nostra comunità."
+"Flock offers an immersive in person experience. Attend sessions, collaborate "
+"with others, explore and meet new people. Plus, Flock is free to attend!"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Etitle
@@ -232,7 +229,7 @@ msgstr ""
 
 #, read-only
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Eimage
-msgid "public/assets/images/flock_nest_logo_mini.png"
+msgid "public/assets/images/nest-dual-colour-navy.png.png"
 msgstr ""
 
 #: sections-%3E[3]-%3Econtent-%3E[1]-%3Edescription

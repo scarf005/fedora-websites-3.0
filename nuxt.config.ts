@@ -1,4 +1,4 @@
-import locales from "./locales/locales.json";
+import locales from "./config/locales.json";
 var path = require('path');
 
 const base = process?.env?.CI_PAGES_URL
@@ -9,7 +9,6 @@ const base = process?.env?.CI_PAGES_URL
 export default defineNuxtConfig({
   components: [
     "~/components/",
-    "~/components/layout",
     "~/components/ui",
     "~/components/utilities",
     "~/components/partials",
@@ -42,12 +41,7 @@ export default defineNuxtConfig({
     buildAssetsDir: "/_nuxt/",
     head: {
       titleTemplate: "%s | The Fedora Project",
-      script: [{ children: 'function togglenav(id){document.getElementById(id).classList.toggle("hidden"); document.getElementById(id+"chevron").classList.toggle("rotate-90")}' },
-               { src: path.join(base,'assets/js/darkmode.js'), defer: true}],
+      script: [{ src: path.join(base,'assets/js/darkmode.js'), defer: true}],
     },
-  },
-  experimental: {
-    noScripts: true,
-    payloadExtraction: false,
-  },
+  }
 });

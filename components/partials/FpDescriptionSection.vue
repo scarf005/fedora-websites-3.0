@@ -1,6 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
 let props = defineProps({
   sectionDescription: {
     required: true,
@@ -16,7 +14,9 @@ if (props.sectionDescription) {
 
 <template>
   <section class="mx-auto bg-fp-blue-light/5">
-    <div class="container mx-auto px-8 py-12 text-center lg:px-0 lg:text-start">
+    <div
+      class="container mx-auto max-w-7xl px-8 py-12 text-center lg:px-0 lg:text-start"
+    >
       <ContentRenderer
         tag="p"
         class="text-fp-gray-darkest"

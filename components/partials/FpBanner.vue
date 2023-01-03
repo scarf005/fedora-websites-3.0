@@ -21,17 +21,18 @@ defineProps({
     <div class="mx-auto max-w-sm sm:max-w-xl">
       <FpImage v-if="logo" class="z-10" :src="logo" alt="logo" />
     </div>
-    <h1 class="font-semibold text-white">
-      <span class="block">{{ title }}</span>
+    <h1 v-if="title" class="font-semibold text-white">
+      <span class="block">{{ $t(title) }}</span>
     </h1>
     <h2
+      v-if="subtitle"
       class="mt-3"
       :class="[
         'text-' + (subtitleStyle?.color || 'white'),
         { 'font-semibold': subtitleStyle?.isBold },
       ]"
     >
-      {{ subtitle }}
+      {{ $t(subtitle) }}
     </h2>
   </div>
   <div class="my-5 flex justify-center">
@@ -51,8 +52,8 @@ defineProps({
           },
         ]"
       >
-        <Icon v-if="idx === 1" :name="`fa6-brands:${icon}`" />
-        {{ cta.text }}
+        <Icon v-if="idx === 1 && icon" :name="`fa6-brands:${icon}`" />
+        {{ $t(cta.text) }}
       </FpBtn>
       <div v-if="idx < ctas.length - 1" class="w-2" />
     </template>
@@ -63,7 +64,7 @@ defineProps({
       class="z-10 mx-2 cursor-pointer px-12 py-4 font-semibold"
       :class="color"
     >
-      Watch the latest reviews ➔
+      {{ $t("Watch the latest reviews ➔") }}
     </a>
   </div>
 </template>

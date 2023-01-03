@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
-msgid "index"
+msgid "индекс"
 msgstr ""
 
 #: title
@@ -54,7 +54,7 @@ msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
-msgid "Why Fedora Iot?"
+msgid "Почему Fedora Iot?"
 msgstr ""
 
 #: sections-%3E[0]-%3Eimages
@@ -67,10 +67,9 @@ msgid "Передовые технологии"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[0]->content->[0]->description"
 msgid ""
-"Built on the latest technologies and enhancements that open-source has to "
-"offer."
+"Создана на основе новейших технологий и улучшений, которые может предложить "
+"открытый исходный код."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
@@ -78,10 +77,9 @@ msgid "Контейнерная основа"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[0]->content->[1]->description"
 msgid ""
-"Fedora IoT is a container-based host that runs on your hardware, with a "
-"focus on edge device deployment."
+"Fedora IoT - это система на основе контейнеров, работающая на вашем "
+"оборудовании с акцентом на развертывание периферийных устройств."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
@@ -89,9 +87,9 @@ msgid "Экосистема с открытым исходным кодом"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[0]->content->[2]->description"
 msgid ""
-"Everything is supported by a totally free and open-source Fedora ecosystem."
+"Все поддерживается абсолютно бесплатной экосистемой Fedora с открытым "
+"исходным кодом."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
@@ -99,8 +97,7 @@ msgid "Гибкая"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
-msgctxt "sections->[0]->content->[3]->description"
-msgid "There are a wide variety of supported installation methods."
+msgid "Существует множество поддерживаемых методов установки."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
@@ -195,7 +192,6 @@ msgid "Report & discuss issues"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
-msgctxt "sections->[2]->content->[0]->description"
 msgid ""
 "Built on the latest technologies and enhancements that open-source has to "
 "offer."
@@ -206,7 +202,6 @@ msgid "Chat with the team"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[1]-%3Edescription
-msgctxt "sections->[2]->content->[1]->description"
 msgid ""
 "Fedora IoT is a container-based host that runs on your hardware, with a "
 "focus on edge device deployment."
@@ -217,7 +212,6 @@ msgid "Join the mailing list"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[2]-%3Edescription
-msgctxt "sections->[2]->content->[2]->description"
 msgid ""
 "Everything is supported by a totally free and open-source Fedora ecosystem."
 msgstr ""
@@ -227,6 +221,5 @@ msgid "Attend a meeting"
 msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[3]-%3Edescription
-msgctxt "sections->[2]->content->[3]->description"
 msgid "There are a wide variety of supported installation methods."
 msgstr ""

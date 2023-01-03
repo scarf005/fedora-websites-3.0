@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,17 +14,17 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
-msgid "index"
+msgid "índice"
 msgstr ""
 
 #: title
-msgid "The leading Linux desktop"
+msgid "O principal desktop Linux"
 msgstr ""
 
 #: description
 msgid ""
-"A beautiful, high-quality desktop, built on the latest open source "
-"technology. Trusted, powerful and easy.\n"
+"Um desktop bonito, de alta-qualidade, construído com as mais recentes "
+"tecnologias de código aberto. Confiável, poderoso e fácil.\n"
 msgstr ""
 
 #, read-only
@@ -38,7 +38,7 @@ msgid "public/assets/images/workstation_background.jpg"
 msgstr ""
 
 #: links-%3E[0]-%3Etext
-msgid "Download now"
+msgid "Baixar agora"
 msgstr ""
 
 #, read-only
@@ -47,7 +47,7 @@ msgid "https://getfedora.org/en/workstation/download/"
 msgstr ""
 
 #: links-%3E[1]-%3Etext
-msgid "Reviewed By TechHut"
+msgid "Revisado por TechHut"
 msgstr ""
 
 #, read-only
@@ -56,82 +56,84 @@ msgid "https://www.youtube.com/watch?v=54aoIGKEMnk"
 msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
-msgid "Why Fedora Workstation?"
+msgid "Por que o Fedora Workstation?"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
-msgid "Reliable"
+msgctxt "sections->[0]->content->[0]->title"
+msgid "Confiável"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"Each version is updated for 18 months, and upgrades between versions are "
-"quick and easy."
+"Cada versão é atualizada por 18 meses, e a atualização entre versões e "
+"rápida e fácil."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
-msgid "Free & private"
+msgid "Livre & privado"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
-"With Fedora, your desktop is your own. It's free, there are no ads, and your "
-"data belongs to you."
+"Com o Fedora, a sua área de trabalho e apenas sua. Aberto, sem propagandas, "
+"e os seus dados pertencem a você."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
-msgid "Beautiful"
+msgid "Bonito"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
-"Workstation is carefully curated to deliver a high-quality experience. The "
-"desktop is clean and uncluttered."
+"O Workstation e organizado cuidadosamente para entregar uma experiência de "
+"alta qualidade. Uma área de trabalho e limpa e organizada."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
-msgid "Trusted"
+msgctxt "sections->[0]->content->[3]->title"
+msgid "Confiável"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Edescription
 msgid ""
-"Developed in partnership with upstream projects. Rigorously tested. Backed "
-"by Red Hat."
+"Desenvolvido em parceria com projetos upstream. Rigorosamente testado. "
+"Apoiado pela Red Hat."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Etitle
-msgid "Leading technology"
+msgid "Tecnologia de ponta"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[4]-%3Edescription
 msgid ""
-"Built on the latest technologies and enhancements that open source has to "
-"offer."
+"Construído com as últimas tecnologias e melhoras que o código aberto tem a "
+"oferecer."
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Etitle
-msgid "Makes the most of your device"
+msgid "Tire o máximo do seu aparelho"
 msgstr ""
 
 #: sections-%3E[0]-%3Econtent-%3E[5]-%3Edescription
 msgid ""
-"Fedora works with hardware vendors to make excellent hardware support across "
-"a range of devices."
+"O Fedora trabalha com os fabricantes de acessórios para oferecer um "
+"excelente suporte para uma vasta gama de acessórios."
 msgstr ""
 
 #: sections-%3E[1]-%3EsectionTitle
-msgid "Features for everyone"
+msgid "Recursos para todos"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fantastic app"
+msgid "Um aplicativo fantástico"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"Browse a great collection of apps, covering everything you might need. "
-"Includes exciting new open source apps as well as familiar apps from other "
-"platforms."
+"Navegue por uma grande coleção de aplicativos, abrangendo tudo o que você "
+"pode precisar. Inclui aplicativos de código aberto emociantes, assim como "
+"aplicativos familiares de outras plataformas."
 msgstr ""
 
 #, read-only
@@ -140,7 +142,7 @@ msgid "public/assets/images/workstation_software_center.png"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Etitle
-msgid "Workstation speaks your language"
+msgid "O Workstation fala a sua língua"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[1]-%3Edescription

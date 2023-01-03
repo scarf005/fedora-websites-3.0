@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
-msgid "index"
+msgid "индекс"
 msgstr ""
 
 #: title
@@ -23,8 +23,9 @@ msgstr ""
 
 #: description
 msgid ""
-"A beautiful, high-quality desktop, built on the latest open source "
-"technology. Trusted, powerful and easy.\n"
+"Красивая, высококачественная настольная система, созданная на основе "
+"новейших технологий с открытым исходным кодом. Проверенная, мощная, удобная."
+"\n"
 msgstr ""
 
 #, read-only
@@ -124,7 +125,7 @@ msgid "Возможности для каждого"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Etitle
-msgid "Fantastic app"
+msgid "Фантастические приложения"
 msgstr ""
 
 #: sections-%3E[1]-%3Econtent-%3E[0]-%3Edescription

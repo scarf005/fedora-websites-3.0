@@ -4,5 +4,5 @@ defineProps({
 });
 </script>
 <template>
-  <FpImage class="mx-auto mb-4 max-h-[100px]" :src="src" />
+  <FpImage class="mx-auto mb-4" :src="src" />
 </template>

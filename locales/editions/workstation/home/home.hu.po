@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: 2022-09-23 18:19+0000\n"
 "Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -45,7 +45,7 @@ msgstr "Töltse le most"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
-msgid "https://getfedora.org/en/workstation/download/"
+msgid "/workstation/download"
 msgstr ""
 
 #: links-%3E[1]-%3Etext

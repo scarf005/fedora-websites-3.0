@@ -8,7 +8,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="mx-auto mt-12 flex max-w-7xl flex-col justify-between px-2 sm:flex-row sm:px-6 lg:px-8"
+    class="mx-auto mt-12 flex max-w-7xl flex-col justify-between sm:flex-row"
   >
     <FpLink :href="home">
       <FpImage
@@ -16,9 +16,11 @@ defineProps({
         :src="image"
       />
     </FpLink>
-    <div :class="`flex justify-end ${textColor || 'text-white'}`">
+    <div
+      :class="`flex justify-center md:justify-end ${textColor || 'text-white'}`"
+    >
       <FpLink class="px-5" v-for="item in items" :href="item.link">
-        {{ item.name }}
+        {{ $t(item.name) }}
       </FpLink>
     </div>
   </div>

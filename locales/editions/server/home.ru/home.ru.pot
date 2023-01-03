@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 10:57-0700\n"
+"POT-Creation-Date: 2022-12-26 13:33-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.7.3\n"
 
 #: path
-msgid "index"
+msgid "индекс"
 msgstr ""
 
 #: title
@@ -23,8 +23,9 @@ msgstr ""
 
 #: description
 msgid ""
-"Run applications on bare metal or the cloud with a Linux server OS packed "
-"with the latest open source technology\n"
+"Запускайте приложения на компьютере без ОС или в облаке на серверной ОС на "
+"основе Linux с использованием новейших технологий с открытым исходным кодом."
+"\n"
 msgstr ""
 
 #, read-only

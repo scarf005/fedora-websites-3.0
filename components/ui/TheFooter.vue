@@ -1,5 +1,20 @@
 <script setup>
-import { editions, others, support, community } from "../../config/navigation";
+import navigation from "../../config/navigation.json";
+const categories = {
+  downloads: navigation.downloads,
+  community: navigation.community,
+  contributors: navigation.contributors,
+  support: navigation.support,
+};
+
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    name: i.name,
+    href: switchLocalePath(i.code),
+  }));
+});
 </script>
 
 <template>
@@ -7,19 +22,27 @@ import { editions, others, support, community } from "../../config/navigation";
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <FpCollapsibleSection
-          title="Editions"
-          :navItems="editions"
-          use="footer"
+          :title="$t('Languages')"
+          :items="availableLocales"
         />
-        <FpCollapsibleSection title="Others" :navItems="others" use="footer" />
         <FpCollapsibleSection
-          title="User Support"
-          :navItems="support"
+          title="Downloads"
+          :navItems="categories.downloads.sections"
           use="footer"
         />
         <FpCollapsibleSection
           title="Community"
-          :navItems="community"
+          :navItems="categories.community.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          title="Contributors"
+          :navItems="categories.contributors.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          title="Support"
+          :navItems="categories.support.sections"
           use="footer"
         />
       </div>
@@ -41,34 +64,58 @@ import { editions, others, support, community } from "../../config/navigation";
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Privacy Statement</NuxtLink
+              >{{ $t("Privacy Statement") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Legal</NuxtLink
+              >{{ $t("Legal") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Code of Conduct</NuxtLink
+              >{{ $t("Code of Conduct") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Sponsors</NuxtLink
+              >{{ $t("Sponsors") }}</NuxtLink
             >
           </li>
         </ul>
       </div>
     </section>
+
     <!-- Red Hat Sponsorship Section -->
-    <TheRedHatSponsoredBanner />
+    <section class="bg-black py-10 text-center md:text-left">
+      <div class="container mx-auto flex flex-col lg:flex-row">
+        <div class="mx-auto lg:mx-0 lg:basis-3/12">
+          <FpImage
+            src="assets/images/logo-sponsored-by-red-hat.png"
+            alt="Sponsored by Red Hat Logo"
+            class="mb-4 xl:mb-0"
+          />
+        </div>
+
+        <div class="container text-center lg:text-left">
+          <p class="text-white">
+            {{ $t("Fedora is sponsored by Red Hat.") }}
+            <span class="block text-fp-gray xl:ml-2 xl:inline">
+              {{
+                $t(
+                  "Learn more about the relationship between Red Hat and Fedora."
+                )
+              }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
   </footer>
 </template>
