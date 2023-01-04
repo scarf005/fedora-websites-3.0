@@ -52,20 +52,50 @@
         ]
       },
       {
-        "label": "Desktop Spins",
+        "label": "Fedora Spins",
         "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
         "links": [
           {
             "label": "Fedora KDE",
             "path": "https://spins.fedoraproject.org/en/kde/",
             "icon": "fa6-solid:desktop",
-            "description": ""
+            "description": "A complete, modern desktop built using the KDE Plasma Desktop Environment."
           },
           {
             "label": "Fedora XFCE",
             "path": "https://spins.fedoraproject.org/en/xfce/",
             "icon": "fa6-solid:desktop",
-            "description": ""
+            "description": "A complete and well integrated desktop."
+          },
+          {
+            "label": "Cinnamon Desktop",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "fa6-solid:desktop",
+            "description": "A modern desktop featuring a traditional gnome user experience."
+          },
+          {
+            "label": "Mate-Compiz Desktop",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "fa6-solid:desktop",
+            "description": "A classic Fedora desktop with an additional 3D window manager."
+          },
+          {
+            "label": "i3 Tiling WM",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Linux with the i3 Tiling Window Manager."
+          },
+          {
+            "label": "LXQT Desktop",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "fa6-solid:desktop",
+            "description": "A lightweight and well intgrated LXQT desktop environment."
+          },
+          {
+            "label": "LXDE Desktop",
+            "path": "https://spins.fedoraproject.org/en/xfce/",
+            "icon": "fa6-solid:desktop",
+            "description": "A light, fast, and less resource hungry desktop environment"
           }
         ]
       },
