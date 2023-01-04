@@ -55,7 +55,7 @@ const sectionOpen = useState("section", () => null);
 
       <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        :class="`col-span-2 justify-center py-4 px-4 text-white md:col-span-1 md:flex md:justify-end ${
+        :class="`col-span-2 justify-center gap-4 py-4 px-4 text-white md:col-span-1 md:flex md:justify-end xl:gap-2 ${
           categoryOpen ? 'flex' : 'hidden'
         }`"
       >
@@ -90,7 +90,7 @@ const sectionOpen = useState("section", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen bg-fp-blue px-8 md:absolute md:h-[40rem] md:w-10/12 md:rounded-b-lg md:shadow-md"
+      class="left-0 right-0 mx-auto h-screen bg-fp-blue px-8 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg md:shadow-md xl:w-10/12"
     >
       <!-- close button -->
       <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
