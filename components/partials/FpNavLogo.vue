@@ -1,5 +1,13 @@
 <script setup>
 const route = useRoute();
+
+const showRoute = computed(() => {
+  if (route.path == "/") {
+    return null;
+  } else {
+    return route.name.split("__")[0].toUpperCase();
+  }
+});
 </script>
 <template>
   <NuxtLink
@@ -44,5 +52,6 @@ const route = useRoute();
         />
       </g>
     </svg>
+    <p class="text-xl font-medium md:hidden">{{ showRoute }}</p>
   </NuxtLink>
 </template>
