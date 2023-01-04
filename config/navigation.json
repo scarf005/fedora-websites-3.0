@@ -82,14 +82,14 @@
         ]
       },
       {
-        "label": "Fedora Labs",
+        "label": "Labs",
         "description": "The Labs are Fedora Linux set up with software bundles based on particular topics.",
         "links": []
       }
     ]
   },
   "community": {
-    "label": "Community",
+    "label": "Communities",
     "icon": "fa6-solid:users",
     "description": "Our community links connect you with our communication platforms, articles, blog posts, and events.",
     "sections": [
@@ -103,13 +103,13 @@
             "icon": "fa6-solid:desktop"
           },
           {
-            "label": "About",
-            "path": "https://docs.fedoraproject.org/en-US/project/",
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
             "icon": "fa6-solid:desktop"
           },
           {
-            "label": "Fedora Magazine",
-            "path": "https://fedoramagazine.org/",
+            "label": "Discussion Board",
+            "path": "https://discussion.fedoraproject.org/",
             "icon": "fa6-solid:desktop"
           }
         ]
@@ -133,7 +133,13 @@
       {
         "label": "Extended Community",
         "description": "Beyond the official channels for Fedorans to communicate, community members are involved on other popular platforms as well!",
-        "links": []
+        "links": [
+          {
+            "label": "Reddit",
+            "path": "https://www.reddit.com/r/Fedora/",
+            "icon": "fa6-solid:desktop"
+          }
+        ]
       }
     ]
   },
@@ -192,13 +198,14 @@
     "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
     "sections": [
       {
-        "label": "User Docs",
+        "label": "User Support",
         "description": "These are support docs for end users.",
         "links": [
           {
-            "label": "Discussion Board",
-            "path": "https://discussion.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Ask Fedora",
+            "path": "https://ask.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!"
           },
           {
             "label": "Documentation",
@@ -210,12 +217,13 @@
       {
         "label": "Project Docs",
         "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
-        "links": []
-      },
-      {
-        "label": "Ask Fedora",
-        "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!",
-        "links": []
+        "links": [
+          {
+            "label": "About",
+            "path": "https://docs.fedoraproject.org/en-US/project/",
+            "icon": "fa6-solid:desktop"
+          }
+        ]
       },
       {
         "label": "Other Support Sources",
