@@ -49,7 +49,6 @@ const sectionOpen = useState("section", () => null);
           class="rounded-md p-2 text-white md:hidden"
         >
           <Icon v-if="categoryOpen == null" name="fa6-solid:bars" />
-
           <Icon v-else name="fa6-solid:x" />
         </button>
       </div>
@@ -143,7 +142,7 @@ const sectionOpen = useState("section", () => null);
               <!-- Sections List Mobile -->
               <ul
                 v-if="sectionOpen.label === section.label"
-                class="ml-10 block text-lg text-white sm:hidden"
+                class="ml-10 block text-lg text-white lg:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path">
