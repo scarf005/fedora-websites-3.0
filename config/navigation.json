@@ -48,18 +48,6 @@
             "path": "https://silverblue.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
-          },
-          {
-            "label": "Kinoite",
-            "path": "https://kinoite.fedoraproject.org/",
-            "icon": "fa6-solid:desktop",
-            "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
-          },
-          {
-            "label": "Container Images",
-            "path": "https://hub.docker.com/_/fedora",
-            "icon": "fa6-solid:desktop",
-            "description": "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows."
           }
         ]
       },
