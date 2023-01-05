@@ -401,31 +401,156 @@
         "description": "These are support docs for end users.",
         "links": [
           {
-            "label": "Discussion Board",
-            "path": "https://discussion.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Quick Help",
+            "path": "#",
+            "icon": "",
+            "description": ""
           },
           {
-            "label": "Documentation",
-            "path": "https://docs.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Fedora Linux",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Workstation",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "IoT",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Server",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Cloud",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "CoreOS",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Emerging Desktops",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Spins & Labs",
+            "path": "#",
+            "icon": "",
+            "description": ""
           }
         ]
       },
       {
         "label": "Project Docs",
         "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
-        "links": []
+        "links": [
+          {
+            "label": "The Fedora Project",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Fedora Council",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Diversity & Inclusion",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Engineering Teams",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Mindshare Teams",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Program Management",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Packaging Guidelines",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Legal",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "Ask Fedora",
         "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!",
-        "links": []
+        "links": [
+          {
+            "label": "New Users",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Common Issues",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Announcements",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       },
       {
-        "label": "Other Support Sources",
+        "label": "Other Sources",
         "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
-        "links": []
+        "links": [
+          {
+            "label": "Fedora Wiki",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Fedora Developer",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       }
     ]
   }
