@@ -171,26 +171,54 @@
         "description": "Our community is big and there are many ways that we connect with one another.",
         "links": [
           {
-            "label": "Community Blog",
-            "path": "https://communityblog.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Fedora Discussion",
+            "path": "https://discussion.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "The official Fedora messaging board. Chat with other Fedorans about our many community projects."
           },
           {
-            "label": "About",
-            "path": "https://docs.fedoraproject.org/en-US/project/",
-            "icon": "fa6-solid:desktop"
+            "label": "Fedora Matrix Chat",
+            "path": "https://discussion.fedoraproject.org/t/how-to-link-to-a-fedora-chat-matrix-room/33186",
+            "icon": "fa6-solid:desktop",
+            "description": "The official chat space of Fedora Linux. This link will help you get logged into Fedora Matrix."
           },
           {
-            "label": "Fedora Magazine",
-            "path": "https://fedoramagazine.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Fedora Twitter",
+            "path": "https://twitter.com/fedora",
+            "icon": "fa6-solid:desktop",
+            "description": "Follow us on twitter! This is a great place to stay up to date on the latest in the Fedora community."
+          },
+          {
+            "label": "Ask Fedora",
+            "path": "https://ask.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Get help with your Fedora Operating System and learn more about the Fedora project on this official forum."
+          },
+          {
+            "label": "Mailing Lists",
+            "path": "https://lists.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Subscribe to the mailing lists to stay up to date on Fedora's development discussions."
           }
         ]
       },
       {
         "label": "Publications",
         "description": "The Fedora Project publishes content regularly in the Community Blog and Fedora Magazine. Stay up to date with the latest in the Fedora Community.",
-        "links": []
+        "links": [
+          {
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Magazine publishes user friendly F/OSS guides and articles about Fedora Linux."
+          },
+          {
+            "label": "Community Blog",
+            "path": "https://communityblog.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "The Community Blog is used to share important news and updates about things happening in the Fedora community."
+          }
+        ]
       },
       {
         "label": "Events",
@@ -199,7 +227,20 @@
           {
             "label": "Flock To Fedora",
             "path": "/flocktofedora",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-solid:desktop",
+            "description": "The annual contributor conference for Fedora Linux. Flock takes place at the beginning of August."
+          },
+          {
+            "label": "Week of Diversity",
+            "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
+            "icon": "fa6-solid:desktop",
+            "description": "This is a week in September where we highlight the contributions and experiences of women, lgbtq+, and bipoc in Fedora."
+          },
+          {
+            "label": "Release Parties",
+            "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/release-parties/#_what_is_a_release_party",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora releases two major versions every year. We celebrate the hard work of our contributors virtually at each release."
           }
         ]
       },
