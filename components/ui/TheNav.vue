@@ -55,7 +55,7 @@ const sectionOpen = useState("section", () => null);
 
       <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        :class="`col-span-2 justify-center gap-4 py-4 px-4 text-white md:col-span-1 md:flex md:justify-end xl:gap-2 ${
+        :class="`col-span-2 justify-center py-4 text-white md:col-span-1 md:flex md:justify-end md:px-4 md:py-1 xl:gap-2 ${
           categoryOpen ? 'flex' : 'hidden'
         }`"
       >
