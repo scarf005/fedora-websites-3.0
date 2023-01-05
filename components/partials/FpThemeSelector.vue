@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
-  <div class="group relative inline-block">
+  <div
+    class="group relative inline-block cursor-pointer rounded-xl hover:bg-fp-blue-dark md:p-3"
+  >
     <button type="button" id="themeSwitch" class="fill-white stroke-white">
       <span class="dark:hidden">
         <svg
