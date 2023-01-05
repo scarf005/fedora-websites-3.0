@@ -282,29 +282,112 @@
           {
             "label": "Fedora Accounts",
             "path": "#",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-brands:fedora",
+            "description": ""
           },
           {
-            "label": "Developer Portal",
+            "label": "Mote",
             "path": "#",
-            "icon": "fa6-solid:desktop"
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Badges",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Fedocal",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Elections",
+            "path": "#",
+            "icon": "",
+            "description": ""
           }
         ]
       },
       {
         "label": "Source Code",
         "description": "Our code can be found on the following Git Forges",
-        "links": []
+        "links": [
+          {
+            "label": "Gitlab",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Pagure",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Github",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "Packaging",
         "description": "Our package maintainers build their code using koji and buildah. Check out these sources and file bugs with Bugzilla.",
-        "links": []
+        "links": [
+          {
+            "label": "Bodhi",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Koji",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Copr",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Bugzilla",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "New Contributors",
         "description": "We are always excited to work with new contributors. If you're new to the project, check out these sites.",
-        "links": []
+        "links": [
+          {
+            "label": "Join SIG",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Easy Fix",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          },
+          {
+            "label": "Contributor Docs",
+            "path": "#",
+            "icon": "",
+            "description": ""
+          }
+        ]
       }
     ]
   },
