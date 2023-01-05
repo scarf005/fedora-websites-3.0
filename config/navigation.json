@@ -227,19 +227,19 @@
           {
             "label": "Flock To Fedora",
             "path": "/flocktofedora",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-brands:fedora",
             "description": "The annual contributor conference for Fedora Linux. Flock takes place at the beginning of August."
           },
           {
             "label": "Week of Diversity",
             "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:users",
             "description": "This is a week in September where we highlight the contributions and experiences of women, lgbtq+, and bipoc in Fedora."
           },
           {
             "label": "Release Parties",
             "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/release-parties/#_what_is_a_release_party",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-brands:fedora",
             "description": "Fedora releases two major versions every year. We celebrate the hard work of our contributors virtually at each release."
           }
         ]
@@ -247,7 +247,26 @@
       {
         "label": "Extended Community",
         "description": "Beyond the official channels for Fedorans to communicate, community members are involved on other popular platforms as well!",
-        "links": []
+        "links": [
+          {
+            "label": "IRC",
+            "path": "https://fedoraproject.org/wiki/Communicating_and_getting_help#IRC",
+            "icon": "fa6-solid:message",
+            "description": "Prior to the move to Matrix, Fedrans officially chatted over IRC. Many IRC spaces are still maintained by the community."
+          },
+          {
+            "label": "Discord",
+            "path": "https://discord.com/invite/fedora",
+            "icon": "fa6-brands:discord",
+            "description": "This is a community managed Discord server for Fedora."
+          },
+          {
+            "label": "Telegram",
+            "path": "https://fedoraproject.org/wiki/Telegram",
+            "icon": "fa6-brands:telegram",
+            "description": "Some SIG's in Fedora communicate over Telegram."
+          }
+        ]
       }
     ]
   },
@@ -260,12 +279,6 @@
         "label": "Coordination",
         "description": "General sites for getting involved and contributing to the Fedora Project.",
         "links": [
-          { "label": "Join Fedora", "path": "#", "icon": "fa6-solid:desktop" },
-          {
-            "label": "Matrix Chat Server",
-            "path": "#",
-            "icon": "fa6-solid:desktop"
-          },
           {
             "label": "Fedora Accounts",
             "path": "#",
@@ -274,11 +287,6 @@
           {
             "label": "Developer Portal",
             "path": "#",
-            "icon": "fa6-solid:desktop"
-          },
-          {
-            "label": "Discussion Board",
-            "path": "https://discussion.fedoraproject.org/",
             "icon": "fa6-solid:desktop"
           }
         ]
