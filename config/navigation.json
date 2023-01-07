@@ -52,7 +52,7 @@
         ]
       },
       {
-        "label": "Fedora Spins",
+        "label": "Spins",
         "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
         "links": [
           {
