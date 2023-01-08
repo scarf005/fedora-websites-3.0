@@ -11,13 +11,10 @@ const { data: test_data } = await useFetch(
 const { data: next_data } = await useFetch(
   "https://builds.coreos.fedoraproject.org/streams/next.json"
 );
-const stream_data = {
-  stable: stable_data,
-  test: test_data,
-  next: next_data,
-};
+
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
+
 const color = useState("streamColor", () => ({
   name: "blue",
   text: "text-fp-blue",
@@ -258,7 +255,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
         <div
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
         >
-          <FpDownload
+          <CoreOsDownloadSection
             name="Bare Metal"
             class="row-span-3"
             :theme="color.name"
@@ -266,7 +263,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
               metal: selectedStream.architectures[selectedArch].artifacts.metal,
             }"
           />
-          <FpDownload
+          <CoreOsDownloadSection
             name="Virtualized"
             :theme="color.name"
             :artifacts="
@@ -295,7 +292,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
         <div
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
         >
-          <FpDownload
+          <CoreOsDownloadSection
             :artifacts="
               cloud_arts(selectedStream.architectures[selectedArch].artifacts)
             "
@@ -304,7 +301,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             class=""
           />
           <!-- TODO: AMIs & GCP -->
-          <FpDownload
+          <CoreOsDownloadSection
             :artifacts="{}"
             name="Cloud Launchable"
             :theme="color.name"
