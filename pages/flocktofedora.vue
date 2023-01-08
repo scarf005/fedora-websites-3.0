@@ -261,7 +261,7 @@ function formatDate(dateStr) {
           <img
             class="z-10 lg:w-60"
             src="/assets/images/colur-flap.png"
-            alt="Screenshot"
+            :alt="$t('Screenshot')"
           />
           <figcaption
             class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
@@ -305,12 +305,12 @@ function formatDate(dateStr) {
           <img
             class="z-10 lg:w-96"
             src="/assets/images/panda_beefy_badger.png"
-            alt="Screenshot"
+            :alt="$t('Screenshot')"
           />
           <figcaption
             class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
           >
-            Panda, Beefy and Badger.
+            {{ $t("Panda, Beefy and Badger.") }}
           </figcaption>
         </figure>
       </div>

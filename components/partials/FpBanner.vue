@@ -19,7 +19,7 @@ defineProps({
 <template>
   <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:mt-24 sm:px-6">
     <div class="mx-auto max-w-sm sm:max-w-xl">
-      <FpImage v-if="logo" class="z-10" :src="logo" alt="logo" />
+      <FpImage v-if="logo" class="z-10" :src="logo" :alt="$t('logo')" />
     </div>
     <h1 v-if="title" class="font-semibold text-white">
       <span class="block">{{ $t(title) }}</span>
