@@ -34,6 +34,7 @@ function getMajor(version) {
           :type="art_type != 'metal' ? art_type : k"
           :format="k"
           :downloadLink="v.disk?.location"
+          @verify-click="$emit('verifyClick', v.disk)"
           :theme="theme"
           v-if="v.disk"
         />
@@ -42,6 +43,7 @@ function getMajor(version) {
           :type="art_type != 'metal' ? art_type : k"
           :format="name"
           :downloadLink="image.location"
+          @verify-click="$emit('verifyClick', image)"
           :theme="theme"
           v-else
           v-for="(image, name) in v"

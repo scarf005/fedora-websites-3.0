@@ -5,7 +5,7 @@ const props = defineProps({
     default: false,
   },
 });
-const showModal = useState("showModal", () => false);
+const verifyModal = useState("verifyModal");
 </script>
 <template>
   <div class="fixed inset-0 z-10 overflow-y-auto">
@@ -13,7 +13,7 @@ const showModal = useState("showModal", () => false);
       <!-- backdrop overlay -->
       <div
         class="fixed inset-0 bg-white/40 backdrop-blur-md dark:bg-black/50"
-        @click="showModal = false"
+        @click="verifyModal.show = false"
       ></div>
       <!-- modal -->
       <div
@@ -29,7 +29,7 @@ const showModal = useState("showModal", () => false);
           <footer class="flex justify-end border-t p-3 dark:border-gray-600">
             <slot name="footer">
               <button
-                @click="showModal = false"
+                @click="verifyModal.show = false"
                 class="rounded bg-fp-blue-light py-1 px-2 text-sm text-white hover:bg-fp-blue"
               >
                 Close

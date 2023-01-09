@@ -14,7 +14,7 @@ const { data: next_data } = await useFetch(
 
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
-const showModal = useState("showModal", () => false);
+const verifyModal = useState("verifyModal", () => ({ show: false }));
 
 function switchStream(name) {
   switch (name) {
@@ -28,7 +28,21 @@ function switchStream(name) {
       selectedStream.value = next_data;
       break;
   }
-  console.log(selectedStream);
+}
+
+function updateVerify(art) {
+  verifyModal.value.art_name = art.location.substring(
+    art.location.lastIndexOf("/") + 1
+  );
+  verifyModal.value.signature = art.signature;
+  verifyModal.value.checksum = `data:text/plain;charset=utf-8,SHA256 (${encodeURIComponent(
+    verifyModal.value.art_name
+  )}) = ${art.sha256}`;
+  verifyModal.value.sig_name = art.signature.substring(
+    art.signature.lastIndexOf("/") + 1
+  );
+  verifyModal.value.chk_name = `${verifyModal.value.art_name}-CHECKSUM`;
+  verifyModal.value.show = true;
 }
 
 function virt_arts(data) {
@@ -261,6 +275,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <CoreOsDownloadSection
             name="Bare Metal"
             class="coreos-theme row-span-3"
+            @verify-click="updateVerify"
             :artifacts="{
               metal: selectedStream.architectures[selectedArch].artifacts.metal,
             }"
@@ -268,6 +283,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <CoreOsDownloadSection
             name="Virtualized"
             class="coreos-theme"
+            @verify-click="updateVerify"
             :artifacts="
               virt_arts(selectedStream.architectures[selectedArch].artifacts)
             "
@@ -303,6 +319,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
               cloud_arts(selectedStream.architectures[selectedArch].artifacts)
             "
             name="Cloud Operators"
+            @verify-click="updateVerify"
             class="coreos-theme"
           />
           <!-- TODO: AMIs & GCP -->
@@ -324,7 +341,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
     leave-from-class="opacity-100"
     leave-to-class="opacity-0"
   >
-    <FpModal class="pt-12" v-if="showModal">
+    <FpModal class="pt-12" v-if="verifyModal.show">
       <template #header>
         <h5 class="text-xl font-medium">Verify your download</h5>
       </template>
@@ -340,15 +357,12 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             Download the
             <a
               class="text-fp-blue"
-              href="fedora-coreos-37.20221211.3.0-live.x86_64.iso-CHECKSUM"
+              :href="verifyModal.checksum"
+              :download="verifyModal.chk_name"
               >checksum file</a
             >
             and
-            <a
-              class="text-fp-blue"
-              href="https://builds.coreos.fedoraproject.org/prod/streams/stable/builds/37.20221211.3.0/x86_64/fedora-coreos-37.20221211.3.0-live.x86_64.iso.sig"
-              >signature</a
-            >
+            <a class="text-fp-blue" :href="verifyModal.signature">signature</a>
             into the same directory as the image you downloaded.
           </p>
         </li>
@@ -362,13 +376,13 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <p class="mb-2">Verify the signature file is valid</p>
           <pre
             class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
-          ><code>gpgv --keyring ./fedora.gpg fedora-coreos-37.20221211.3.0-live.x86_64.iso.sig fedora-coreos-37.20221211.3.0-live.x86_64.iso</code></pre>
+          ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.sig_name }} {{ verifyModal.art_name }}</code></pre>
         </li>
         <li>
           <p class="mb-2">Verify the checksum matches</p>
           <pre
             class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
-          ><code>sha256sum -c fedora-coreos-37.20221211.3.0-live.x86_64.iso-CHECKSUM</code></pre>
+          ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
         </li>
       </ul>
       <p>

@@ -51,8 +51,6 @@ const prettyType = {
   vmware: "VMware",
   vultr: "Vultr",
 };
-
-const showModal = useState("showModal");
 </script>
 
 <template>
@@ -68,7 +66,7 @@ const showModal = useState("showModal");
     </p>
     <div class="inline-flex">
       <slot name="btn">
-        <a @click="showModal = true" title="Verify" class="rounded-l-xl">
+        <a @click="$emit('verifyClick')" title="Verify" class="rounded-l-xl">
           <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
         </a>
         <FpLink
