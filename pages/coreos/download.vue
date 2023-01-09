@@ -14,6 +14,7 @@ const { data: next_data } = await useFetch(
 
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
+const showModal = useState("showModal", () => false);
 
 function switchStream(name) {
   switch (name) {
@@ -315,6 +316,66 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
     </section>
   </main>
+  <Transition
+    enter-active-class="transform duration-200 ease-out"
+    enter-from-class="opacity-0"
+    enter-to-class="opacity-30"
+    leave-active-class="transform duration-200 ease-out"
+    leave-from-class="opacity-100"
+    leave-to-class="opacity-0"
+  >
+    <FpModal class="pt-12" v-if="showModal">
+      <template #header>
+        <h5 class="text-xl font-medium">Verify your download</h5>
+      </template>
+      <p class="text-base">
+        Verify your download for security and integrity using the proper
+        checksum and signature file. If there is a good signature from one of
+        the Fedora keys, and the SHA256 checksum matches, then the download is
+        valid.
+      </p>
+      <ul class="list-outside list-decimal pl-8 pt-2">
+        <li>
+          <p class="mb-2">
+            Download the
+            <a
+              class="text-fp-blue"
+              href="fedora-coreos-37.20221211.3.0-live.x86_64.iso-CHECKSUM"
+              >checksum file</a
+            >
+            and
+            <a
+              class="text-fp-blue"
+              href="https://builds.coreos.fedoraproject.org/prod/streams/stable/builds/37.20221211.3.0/x86_64/fedora-coreos-37.20221211.3.0-live.x86_64.iso.sig"
+              >signature</a
+            >
+            into the same directory as the image you downloaded.
+          </p>
+        </li>
+        <li>
+          <p class="mb-2">Import Fedora's GPG key(s)</p>
+          <pre
+            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+          ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+        </li>
+        <li>
+          <p class="mb-2">Verify the signature file is valid</p>
+          <pre
+            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+          ><code>gpgv --keyring ./fedora.gpg fedora-coreos-37.20221211.3.0-live.x86_64.iso.sig fedora-coreos-37.20221211.3.0-live.x86_64.iso</code></pre>
+        </li>
+        <li>
+          <p class="mb-2">Verify the checksum matches</p>
+          <pre
+            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+          ><code>sha256sum -c fedora-coreos-37.20221211.3.0-live.x86_64.iso-CHECKSUM</code></pre>
+        </li>
+      </ul>
+      <p>
+        If the output states that the file is valid, then it's ready to use!
+      </p>
+    </FpModal>
+  </Transition>
 </template>
 
 <style>

@@ -33,7 +33,6 @@ function getMajor(version) {
           :name="'Fedora CoreOS ' + getMajor(arts.release)"
           :type="art_type != 'metal' ? art_type : k"
           :format="k"
-          verifyLink="#"
           :downloadLink="v.disk?.location"
           :theme="theme"
           v-if="v.disk"
@@ -42,7 +41,6 @@ function getMajor(version) {
           :name="'Fedora CoreOS ' + getMajor(arts.release)"
           :type="art_type != 'metal' ? art_type : k"
           :format="name"
-          verifyLink="#"
           :downloadLink="image.location"
           :theme="theme"
           v-else

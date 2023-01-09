@@ -51,6 +51,8 @@ const prettyType = {
   vmware: "VMware",
   vultr: "Vultr",
 };
+
+const showModal = useState("showModal");
 </script>
 
 <template>
@@ -66,14 +68,9 @@ const prettyType = {
     </p>
     <div class="inline-flex">
       <slot name="btn">
-        <FpLink
-          :href="verifyLink"
-          v-if="verifyLink"
-          title="Verify"
-          class="rounded-l-xl"
-        >
+        <a @click="showModal = true" title="Verify" class="rounded-l-xl">
           <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
-        </FpLink>
+        </a>
         <FpLink
           :href="downloadLink"
           v-if="downloadLink"
@@ -93,6 +90,6 @@ const prettyType = {
 }
 
 .fp-download-item a {
-  @apply border py-1 px-3 transition-colors;
+  @apply cursor-pointer border py-1 px-3 transition-colors;
 }
 </style>
