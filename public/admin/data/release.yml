@@ -121,3 +121,24 @@
                           name: "name"
                         - label: "Artifact URI"
                           name: "uri"
+
+###################################
+#      Download partials          #
+###################################
+- label: "Download Partials"
+  name: "downloadPartials"
+  files:
+    # Compliance Partial Data
+    - label: "Download Terms and Conditions"
+      name: "compliancePartial"
+      file: "/content/partials/compliance.yml"
+      format: yml
+      fields:
+        - label: "Title"
+          name: "title"
+          required: false
+          hint: "An optional title"
+        - label: "Description"
+          name: "description"
+          required: false
+          hint: "An optional description"

@@ -301,16 +301,7 @@ function evalLink(uri, release) {
 
     <!-- COMPLIANCE -->
     <section class="py-24">
-      <div class="container mx-auto max-w-7xl">
-        <div class="my-5 p-2">
-          <h2 class="mb-5 text-fp-blue">
-            {{ $t(data.sections[9].sectionTitle) }}
-          </h2>
-          <p class="text-base text-fp-gray">
-            {{ $t(data.sections[9].sectionDescription) }}
-          </p>
-        </div>
-      </div>
+      <DownloadComplianceSection />
     </section>
   </main>
 </template>
