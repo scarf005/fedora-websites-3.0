@@ -15,24 +15,16 @@ const { data: next_data } = await useFetch(
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
 
-const color = useState("streamColor", () => ({
-  name: "blue",
-  text: "text-fp-blue",
-}));
-
 function switchStream(name) {
   switch (name) {
     case "stable":
       selectedStream.value = stable_data;
-      color.value = { name: "blue", text: "text-fp-blue" };
       break;
     case "test":
       selectedStream.value = test_data;
-      color.value = { name: "green", text: "text-fp-green" };
       break;
     case "next":
       selectedStream.value = next_data;
-      color.value = { name: "orange", text: "text-fp-orange" };
       break;
   }
   console.log(selectedStream);
@@ -76,7 +68,10 @@ function cloud_arts(data) {
 useHead({ htmlAttrs: { class: "scroll-smooth" } });
 </script>
 <template>
-  <main class="mt-2 border-t-8 border-fp-magenta">
+  <main
+    class="border-t-8 border-fp-magenta md:mt-2"
+    :class="`coreos-theme-${selectedStream.stream}`"
+  >
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
       home="/coreos"
@@ -105,7 +100,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           class="container mx-auto mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3"
         >
           <!-- Stable -->
-          <FpStream
+          <CoreOsStream
             name="Stable"
             :version="stable_data.architectures.x86_64.artifacts.metal.release"
             :last_update="stable_data.metadata['last-modified']"
@@ -120,13 +115,12 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
                 id="stable"
                 @click="switchStream('stable')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm py-1 px-3 text-sm font-bold text-white"
-                :class="`bg-fp-blue`"
+                class="mx-auto mb-4 rounded-sm bg-fp-blue py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
-          </FpStream>
-          <FpStream
+          </CoreOsStream>
+          <CoreOsStream
             name="Testing"
             :version="test_data.architectures.x86_64.artifacts.metal.release"
             :last_update="test_data.metadata['last-modified']"
@@ -141,14 +135,13 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
                 id="test"
                 @click="switchStream('test')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm py-1 px-3 text-sm font-bold text-white"
-                :class="`bg-fp-blue`"
+                class="mx-auto mb-4 rounded-sm bg-fp-green py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
-          </FpStream>
+          </CoreOsStream>
           <!-- Next border-fp-orange bg-fp-orange -->
-          <FpStream
+          <CoreOsStream
             name="Next"
             :version="next_data.architectures.x86_64.artifacts.metal.release"
             :last_update="next_data.metadata['last-modified']"
@@ -163,19 +156,18 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
                 id="next"
                 @click="switchStream('next')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm py-1 px-3 text-sm font-bold text-white"
-                :class="`bg-fp-blue`"
+                class="mx-auto mb-4 rounded-sm bg-fp-orange py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
-          </FpStream>
+          </CoreOsStream>
         </div>
       </div>
     </section>
 
     <!-- ARCH SELECTOR -->
     <section
-      class="scroll-mt-20 bg-blue-50 py-6 dark:bg-neutral-900"
+      class="scroll-mt-14 bg-blue-50 py-6 dark:bg-neutral-900"
       id="arches"
     >
       <div class="container mx-auto max-w-7xl">
@@ -199,31 +191,37 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             <a
               @click="selectedArch = 'x86_64'"
               href="#download_section"
-              class="grow basis-64"
+              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
               <FpCard
                 title="x86_64"
                 description="Most computers with Intel and AMD processors."
+                class="coreos-theme"
               >
               </FpCard>
             </a>
             <a
               @click="selectedArch = 'aarch64'"
               href="#download_section"
-              class="grow basis-64"
+              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
               <FpCard
                 title="aarch64"
                 description="Also known as armv8. For most processors other than Intel and AMD like Rasperry Pi or other comparable devices."
+                class="coreos-theme"
               >
               </FpCard>
             </a>
             <a
               @click="selectedArch = 's390x'"
               href="#download_section"
-              class="grow basis-64"
+              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
-              <FpCard title="s390x" description="For IBM Cloud and zSystems">
+              <FpCard
+                title="s390x"
+                description="For IBM Cloud and zSystems"
+                class="coreos-theme"
+              >
               </FpCard>
             </a>
           </div>
@@ -233,11 +231,11 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
 
     <!-- DOWNLOAD ARTIFACTS -->
     <section
-      class="scroll-mt-20 bg-gradient-to-r from-pink-50 to-blue-50 py-6 dark:bg-neutral-800 dark:bg-none"
+      class="scroll-mt-14 bg-gradient-to-r from-pink-50 to-blue-50 py-6 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
       <div class="container mx-auto mb-8 max-w-7xl">
-        <div class="text-center lg:text-start">
+        <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             <Icon
               name="fa-solid:server"
@@ -247,9 +245,13 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             {{ $t("Bare Metal & Virtualized") }}
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
-            Fedora CoreOS
-            <span :class="color.text">{{ selectedStream.stream }}</span>
-            download artifacts for {{ selectedArch }}.
+            Download Fedora CoreOS
+            <span class="coreos-theme-text font-bold">{{
+              selectedStream.stream
+            }}</span>
+            artifacts for
+            <span class="font-bold">{{ selectedArch }}</span
+            >.
           </p>
         </div>
         <div
@@ -257,15 +259,14 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
         >
           <CoreOsDownloadSection
             name="Bare Metal"
-            class="row-span-3"
-            :theme="color.name"
+            class="coreos-theme row-span-3"
             :artifacts="{
               metal: selectedStream.architectures[selectedArch].artifacts.metal,
             }"
           />
           <CoreOsDownloadSection
             name="Virtualized"
-            :theme="color.name"
+            class="coreos-theme"
             :artifacts="
               virt_arts(selectedStream.architectures[selectedArch].artifacts)
             "
@@ -274,7 +275,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       </div>
 
       <div class="container mx-auto mb-8 max-w-7xl">
-        <div class="text-center lg:text-start">
+        <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             <Icon
               name="fa-solid:cloud"
@@ -284,9 +285,13 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             {{ $t("Cloud Images") }}
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
-            Fedora CoreOS
-            <span :class="color.text">{{ selectedStream.stream }}</span>
-            download artifacts for {{ selectedArch }}.
+            Download Fedora CoreOS
+            <span class="coreos-theme-text font-bold">{{
+              selectedStream.stream
+            }}</span>
+            cloud images for
+            <span class="font-bold">{{ selectedArch }}</span
+            >.
           </p>
         </div>
         <div
@@ -297,18 +302,46 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
               cloud_arts(selectedStream.architectures[selectedArch].artifacts)
             "
             name="Cloud Operators"
-            :theme="color.name"
-            class=""
+            class="coreos-theme"
           />
           <!-- TODO: AMIs & GCP -->
           <CoreOsDownloadSection
             :artifacts="{}"
             name="Cloud Launchable"
-            :theme="color.name"
-            class=""
+            class="coreos-theme"
           />
         </div>
       </div>
+      <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
     </section>
   </main>
 </template>
+
+<style>
+.coreos-theme-stable .coreos-theme-text,
+.coreos-theme-stable .fp-card.coreos-theme h3 {
+  @apply text-fp-blue;
+}
+
+.coreos-theme-testing .coreos-theme-text,
+.coreos-theme-testing .fp-card.coreos-theme h3 {
+  @apply text-fp-green;
+}
+
+.coreos-theme-next .coreos-theme-text,
+.coreos-theme-next .fp-card.coreos-theme h3 {
+  @apply text-fp-orange;
+}
+
+.coreos-theme-stable .coreos-theme .fp-download-item a {
+  @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+}
+
+.coreos-theme-testing .coreos-theme .fp-download-item a {
+  @apply border-fp-green text-fp-green hover:bg-fp-green hover:text-white dark:border-green-600 dark:text-green-600 dark:hover:bg-green-600 dark:hover:text-white;
+}
+
+.coreos-theme-next .coreos-theme .fp-download-item a {
+  @apply border-fp-orange text-fp-orange hover:bg-fp-orange hover:text-white;
+}
+</style>

@@ -41,7 +41,7 @@ const prettyType = {
   ibmcloud: "IBM Cloud",
   "raw.xz": "Raw",
   "4k.raw.xz": "Raw (4k Native)",
-  iso: "ISO",
+  iso: "Live DVD",
   pxe: "Netboot",
   nutanix: "Nutanix",
   openstack: "OpenStack",
@@ -70,7 +70,7 @@ const prettyType = {
           :href="verifyLink"
           v-if="verifyLink"
           title="Verify"
-          class="rounded-l-xl border py-1 px-3 hover:text-white"
+          class="rounded-l-xl"
         >
           <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
         </FpLink>
@@ -78,7 +78,7 @@ const prettyType = {
           :href="downloadLink"
           v-if="downloadLink"
           title="Download"
-          class="-ml-px rounded-r-xl border py-1 px-3 hover:text-white"
+          class="-ml-px rounded-r-xl"
         >
           <Icon name="fa-download" class="!align-baseline" />
         </FpLink>
@@ -92,15 +92,7 @@ const prettyType = {
   @apply flex items-center justify-between border border-gray-200 bg-white px-5 py-2 dark:border-gray-900 dark:bg-neutral-900;
 }
 
-.fp-download-item.blue a {
-  @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
-}
-
-.fp-download-item.green a {
-  @apply border-fp-green text-fp-green hover:bg-fp-green hover:text-white dark:border-green-600 dark:text-green-600 dark:hover:bg-green-600;
-}
-
-.fp-download-item.orange a {
-  @apply border-fp-orange text-fp-orange hover:bg-fp-orange hover:text-white;
+.fp-download-item a {
+  @apply border py-1 px-3 transition-colors;
 }
 </style>

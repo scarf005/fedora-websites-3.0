@@ -14,30 +14,6 @@ const props = defineProps({
   },
 });
 
-const prettyPlatforms = {
-  aliyun: "Alibaba Cloud",
-  aws: "AWS",
-  azure: "Azure",
-  azurestack: "Azure Stack",
-  digitalocean: "DigitalOcean",
-  exoscale: "Exoscale",
-  gcp: "GCP",
-  ibmcloud: "IBM Cloud",
-  metal: {
-    "raw.xz": "Raw",
-    "4k.raw.xz": "Raw (4k Native)",
-    iso: "ISO",
-    pxe: "PXE",
-  },
-  nutanix: "Nutanix",
-  openstack: "OpenStack",
-  packet: "Packet",
-  qemu: "QEMU",
-  virtualbox: "VirtualBox",
-  vmware: "VMware",
-  vultr: "Vultr",
-};
-
 function getMajor(version) {
   return version.split(".")[0];
 }
@@ -45,7 +21,7 @@ function getMajor(version) {
 
 <template>
   <div>
-    <p class="mt-2 font-bold">{{ $t(name) }}</p>
+    <p class="my-2 font-bold">{{ $t(name) }}</p>
 
     <template v-for="(arts, art_type) in artifacts" key="art_type">
       <div
