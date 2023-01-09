@@ -67,7 +67,9 @@ for (let item of data._value.body[0].content) {
         class="col-start-3 row-start-1 hidden gap-4 justify-self-start lg:grid"
       >
         <!-- flock sign text -->
-        <p class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium">
+        <p
+          class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium text-fp-gray"
+        >
           {{ $t(colurSlogan) }}
         </p>
         <FpImage
