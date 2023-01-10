@@ -390,6 +390,9 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       </p>
     </FpModal>
   </Transition>
+  <section class="bg-blue-50 py-12 dark:bg-neutral-900">
+    <BecomeContributorSection />
+  </section>
   <section class="py-12 dark:bg-black">
     <DownloadComplianceSection />
   </section>

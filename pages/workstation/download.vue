@@ -260,43 +260,8 @@ function evalLink(uri, release) {
     </section>
 
     <!-- CONTRIBUTE -->
-    <section class="bg-gray-50 py-24">
-      <div class="container mx-auto max-w-7xl">
-        <div class="my-5 p-2">
-          <h2 class="mb-5 text-fp-blue">
-            {{ $t(data.sections[6].sectionTitle) }}
-          </h2>
-          <p class="mb-5 mt-12 text-base text-gray-800">
-            {{ $t(data.sections[6].sectionDescription) }}
-          </p>
-
-          <p class="mb-5 mt-12 text-sm text-fp-gray">
-            {{ $t(data.sections[7].sectionTitle) }}
-          </p>
-          <div class="flex justify-between">
-            <FpLink
-              class="text-center text-blue-500"
-              v-for="item in data.sections[7].content"
-              href="item.link.url"
-            >
-              <FpImage class="max-h-32" :src="item.image" />
-            </FpLink>
-          </div>
-          <p class="mb-5 mt-12 text-sm text-fp-gray">
-            {{ $t(data.sections[8].sectionTitle) }}
-          </p>
-          <div class="flex justify-between">
-            <FpLink
-              class="text-center text-blue-500"
-              v-for="item in data.sections[8].content"
-              href="item.link.url"
-            >
-              <FpImage class="max-h-32" :src="item.image" />
-              {{ $t(item.title) }}
-            </FpLink>
-          </div>
-        </div>
-      </div>
+    <section class="bg-gray-50 py-24 dark:bg-neutral-900">
+      <BecomeContributorSection />
     </section>
 
     <!-- COMPLIANCE -->

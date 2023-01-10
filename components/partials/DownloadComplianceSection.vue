@@ -9,10 +9,10 @@ let { data } = await useAsyncData(() => {
 <template>
   <div class="container mx-auto max-w-7xl">
     <div class="p-2">
-      <h2 class="mb-5 text-center text-base text-white">
+      <h2 class="mb-5 text-center text-base dark:text-white">
         {{ $t(data.title) }}
       </h2>
-      <p class="text-sm text-fp-gray">
+      <p class="text-sm text-fp-gray-dark dark:text-fp-gray">
         {{ $t(data.description) }}
       </p>
     </div>
