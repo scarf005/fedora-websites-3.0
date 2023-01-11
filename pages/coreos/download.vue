@@ -129,6 +129,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
       home="/coreos"
+      textColor="text-fp-blue-light"
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
@@ -523,7 +524,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <tbody>
             <tr
               v-for="(ami, region) in showAMI.art.regions"
-              class="hover:bg-slate-800"
+              class="hover:bg-gray-200 hover:dark:bg-slate-800"
             >
               <td class="pr-6">{{ EC2_regions[region] || region }}</td>
               <td class="hidden pr-6 sm:block">{{ ami.image }}</td>
