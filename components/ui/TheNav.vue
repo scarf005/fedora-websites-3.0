@@ -63,8 +63,8 @@ const sectionOpen = useState("section", () => null);
           v-for="category in categories"
           :key="category.id"
           role="navigation"
-          :class="`rounded-xl p-1 hover:bg-fp-blue md:p-3 ${
-            categoryOpen === category && 'bg-fp-blue'
+          :class="`rounded-xl p-1 hover:bg-fp-blue-dark md:p-3 ${
+            categoryOpen?.label === category.label && 'md:bg-fp-blue'
           }`"
           @click="
             if (categoryOpen && category.label === categoryOpen.label) {
