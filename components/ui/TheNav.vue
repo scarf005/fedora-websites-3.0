@@ -64,7 +64,7 @@ const sectionOpen = useState("section", () => null);
           :key="category.id"
           role="navigation"
           :class="`rounded-xl p-1 hover:bg-fp-blue-dark md:p-3 ${
-            categoryOpen === category && 'md:bg-fp-blue'
+            categoryOpen?.label === category.label && 'md:bg-fp-blue'
           }`"
           @click="
             if (categoryOpen && category.label === categoryOpen.label) {

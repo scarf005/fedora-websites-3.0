@@ -101,7 +101,8 @@
             "label": "Kinoite",
             "path": "https://kinoite.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
-            "description": "Fedora Kinoite is an immutable KDE-based desktop."          }
+            "description": "Fedora Kinoite is an immutable KDE-based desktop."
+          }
         ]
       },
       {
@@ -176,26 +177,54 @@
         "description": "Our community is big and there are many ways that we connect with one another.",
         "links": [
           {
-            "label": "Community Blog",
-            "path": "https://communityblog.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
-          },
-          {
-            "label": "Fedora Magazine",
-            "path": "https://fedoramagazine.org/",
-            "icon": "fa6-solid:desktop"
-          },
-          {
-            "label": "Discussion Board",
+            "label": "Fedora Discussion",
             "path": "https://discussion.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-solid:desktop",
+            "description": "The official Fedora messaging board. Chat with other Fedorans about our many community projects."
+          },
+          {
+            "label": "Fedora Matrix Chat",
+            "path": "https://discussion.fedoraproject.org/t/how-to-link-to-a-fedora-chat-matrix-room/33186",
+            "icon": "fa6-solid:desktop",
+            "description": "The official chat space of Fedora Linux. This link will help you get logged into Fedora Matrix."
+          },
+          {
+            "label": "Fedora Twitter",
+            "path": "https://twitter.com/fedora",
+            "icon": "fa6-solid:desktop",
+            "description": "Follow us on twitter! This is a great place to stay up to date on the latest in the Fedora community."
+          },
+          {
+            "label": "Ask Fedora",
+            "path": "https://ask.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Get help with your Fedora Operating System and learn more about the Fedora project on this official forum."
+          },
+          {
+            "label": "Mailing Lists",
+            "path": "https://lists.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Subscribe to the mailing lists to stay up to date on Fedora's development discussions."
           }
         ]
       },
       {
         "label": "Publications",
         "description": "The Fedora Project publishes content regularly in the Community Blog and Fedora Magazine. Stay up to date with the latest in the Fedora Community.",
-        "links": []
+        "links": [
+          {
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Magazine publishes user friendly F/OSS guides and articles about Fedora Linux."
+          },
+          {
+            "label": "Community Blog",
+            "path": "https://communityblog.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "The Community Blog is used to share important news and updates about things happening in the Fedora community."
+          }
+        ]
       },
       {
         "label": "Events",
@@ -204,7 +233,20 @@
           {
             "label": "Flock To Fedora",
             "path": "/flocktofedora",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-brands:fedora",
+            "description": "The annual contributor conference for Fedora Linux. Flock takes place at the beginning of August."
+          },
+          {
+            "label": "Week of Diversity",
+            "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
+            "icon": "fa6-solid:users",
+            "description": "This is a week in September where we highlight the contributions and experiences of women, lgbtq+, and bipoc in Fedora."
+          },
+          {
+            "label": "Release Parties",
+            "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/release-parties/#_what_is_a_release_party",
+            "icon": "fa6-brands:fedora",
+            "description": "Fedora releases two major versions every year. We celebrate the hard work of our contributors virtually at each release."
           }
         ]
       },
@@ -213,9 +255,28 @@
         "description": "Beyond the official channels for Fedorans to communicate, community members are involved on other popular platforms as well!",
         "links": [
           {
+            "label": "IRC",
+            "path": "https://fedoraproject.org/wiki/Communicating_and_getting_help#IRC",
+            "icon": "fa6-solid:message",
+            "description": "Prior to the move to Matrix, Fedrans officially chatted over IRC. Many IRC spaces are still maintained by the community."
+          },
+          {
+            "label": "Discord",
+            "path": "https://discord.com/invite/fedora",
+            "icon": "fa6-brands:discord",
+            "description": "This is a community managed Discord server for Fedora."
+          },
+          {
+            "label": "Telegram",
+            "path": "https://fedoraproject.org/wiki/Telegram",
+            "icon": "fa6-brands:telegram",
+            "description": "Some SIG's in Fedora communicate over Telegram."
+          },
+          {
             "label": "Reddit",
-            "path": "https://www.reddit.com/r/Fedora/",
-            "icon": "fa6-solid:desktop"
+            "path": "https://reddit.com/r/reddit",
+            "icon": "fa6-brands:reddit",
+            "description": "This is a community managed subreddit for Fedora."
           }
         ]
       }
@@ -230,43 +291,115 @@
         "label": "Coordination",
         "description": "General sites for getting involved and contributing to the Fedora Project.",
         "links": [
-          { "label": "Join Fedora", "path": "#", "icon": "fa6-solid:desktop" },
-          {
-            "label": "Matrix Chat Server",
-            "path": "#",
-            "icon": "fa6-solid:desktop"
-          },
           {
             "label": "Fedora Accounts",
             "path": "#",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-brands:fedora",
+            "description": ""
           },
           {
-            "label": "Developer Portal",
+            "label": "Mote",
             "path": "#",
-            "icon": "fa6-solid:desktop"
+            "icon": "fa6-solid:desktop",
+            "description": ""
           },
           {
-            "label": "Discussion Board",
-            "path": "https://discussion.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Badges",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Fedocal",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Elections",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
           }
         ]
       },
       {
         "label": "Source Code",
         "description": "Our code can be found on the following Git Forges",
-        "links": []
+        "links": [
+          {
+            "label": "Gitlab",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Pagure",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Github",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "Packaging",
         "description": "Our package maintainers build their code using koji and buildah. Check out these sources and file bugs with Bugzilla.",
-        "links": []
+        "links": [
+          {
+            "label": "Bodhi",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Koji",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Copr",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Bugzilla",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
       },
       {
         "label": "New Contributors",
         "description": "We are always excited to work with new contributors. If you're new to the project, check out these sites.",
-        "links": []
+        "links": [
+          {
+            "label": "Join SIG",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Easy Fix",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Contributor Docs",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
       }
     ]
   },
@@ -281,14 +414,57 @@
         "links": [
           {
             "label": "Ask Fedora",
-            "path": "https://ask.fedoraproject.org/",
+            "path": "https://discussion.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!"
           },
           {
-            "label": "Documentation",
-            "path": "https://docs.fedoraproject.org/",
-            "icon": "fa6-solid:desktop"
+            "label": "Fedora Linux",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Workstation",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "IoT",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Server",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Cloud",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "CoreOS",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Emerging Desktops",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Spins & Labs",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
           }
         ]
       },
@@ -297,16 +473,95 @@
         "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
         "links": [
           {
-            "label": "About",
+            "label": "About the Fedora Project",
             "path": "https://docs.fedoraproject.org/en-US/project/",
             "icon": "fa6-solid:desktop"
+          },
+          {
+            "label": "Fedora Council",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Diversity & Inclusion",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Engineering Teams",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Mindshare Teams",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Program Management",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Packaging Guidelines",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Legal",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
           }
         ]
       },
       {
-        "label": "Other Support Sources",
+        "label": "Ask Fedora",
+        "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!",
+        "links": [
+          {
+            "label": "New Users",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Common Issues",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Announcements",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "Other Sources",
         "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
-        "links": []
+        "links": [
+          {
+            "label": "Fedora Wiki",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Fedora Developer",
+            "path": "#",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
       }
     ]
   }
