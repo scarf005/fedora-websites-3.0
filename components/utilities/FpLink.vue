@@ -7,15 +7,11 @@ defineProps({
 </script>
 
 <template>
-  <a
-    :href="`${
-      href.includes('https')
-        ? href
-        : $config.app.baseURL.replace(new RegExp('/$'), '') + href
-    }`"
+  <NuxtLink
+    :href="href"
     :aria-current="current ? 'page' : undefined"
     :class="class"
   >
     <slot></slot>
-  </a>
+  </NuxtLink>
 </template>
