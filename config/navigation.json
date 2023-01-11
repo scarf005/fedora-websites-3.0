@@ -1,6 +1,6 @@
 {
   "downloads": {
-    "label": "Downloads",
+    "label": "Get Fedora",
     "icon": "fa6-solid:download",
     "sections": [
       {
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "label": "Fedora Spins",
+        "label": "Spins",
         "description": "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
         "links": [
           {
@@ -96,11 +96,17 @@
             "path": "https://spins.fedoraproject.org/lxde/",
             "icon": "fa6-solid:desktop",
             "description": "A light, fast, and less resource hungry desktop environment"
+          },
+          {
+            "label": "Kinoite",
+            "path": "https://kinoite.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Kinoite is an immutable KDE-based desktop."
           }
         ]
       },
       {
-        "label": "Fedora Labs",
+        "label": "Labs",
         "description": "The Labs are Fedora Linux set up with software bundles based on particular topics.",
         "links": [
           {
@@ -162,7 +168,7 @@
     ]
   },
   "community": {
-    "label": "Community",
+    "label": "Communities",
     "icon": "fa6-solid:users",
     "description": "Our community links connect you with our communication platforms, articles, blog posts, and events.",
     "sections": [
@@ -265,6 +271,12 @@
             "path": "https://fedoraproject.org/wiki/Telegram",
             "icon": "fa6-brands:telegram",
             "description": "Some SIG's in Fedora communicate over Telegram."
+          },
+          {
+            "label": "Reddit",
+            "path": "https://reddit.com/r/reddit",
+            "icon": "fa6-brands:reddit",
+            "description": "This is a community managed subreddit for Fedora."
           }
         ]
       }
@@ -397,14 +409,14 @@
     "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
     "sections": [
       {
-        "label": "User Docs",
+        "label": "User Support",
         "description": "These are support docs for end users.",
         "links": [
           {
-            "label": "Quick Help",
-            "path": "#",
-            "icon": "",
-            "description": ""
+            "label": "Ask Fedora",
+            "path": "https://discussion.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!"
           },
           {
             "label": "Fedora Linux",
@@ -461,10 +473,9 @@
         "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
         "links": [
           {
-            "label": "The Fedora Project",
-            "path": "#",
-            "icon": "",
-            "description": ""
+            "label": "About the Fedora Project",
+            "path": "https://docs.fedoraproject.org/en-US/project/",
+            "icon": "fa6-solid:desktop"
           },
           {
             "label": "Fedora Council",
