@@ -300,25 +300,25 @@
           {
             "label": "Mote",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Badges",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Fedocal",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Elections",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -330,19 +330,19 @@
           {
             "label": "Gitlab",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Pagure",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Github",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -354,25 +354,25 @@
           {
             "label": "Bodhi",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Koji",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Copr",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Bugzilla",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -384,19 +384,19 @@
           {
             "label": "Join SIG",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Easy Fix",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Contributor Docs",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -421,49 +421,49 @@
           {
             "label": "Fedora Linux",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Workstation",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "IoT",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Server",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Cloud",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "CoreOS",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Emerging Desktops",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Spins & Labs",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -480,43 +480,43 @@
           {
             "label": "Fedora Council",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Diversity & Inclusion",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Engineering Teams",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Mindshare Teams",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Program Management",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Packaging Guidelines",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Legal",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -528,19 +528,19 @@
           {
             "label": "New Users",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Common Issues",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Announcements",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
@@ -552,13 +552,13 @@
           {
             "label": "Fedora Wiki",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Fedora Developer",
             "path": "#",
-            "icon": "",
+            "icon": "fa6-solid:desktop",
             "description": ""
           }
         ]
