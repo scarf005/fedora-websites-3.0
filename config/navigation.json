@@ -274,7 +274,7 @@
           },
           {
             "label": "Reddit",
-            "path": "https://reddit.com/r/reddit",
+            "path": "https://reddit.com/r/fedora",
             "icon": "fa6-brands:reddit",
             "description": "This is a community managed subreddit for Fedora."
           }
