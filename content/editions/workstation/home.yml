@@ -35,9 +35,9 @@ sections:
   - sectionTitle: Features for everyone
     content:
       - title: Fantastic app
-        description: Browse a great collection of apps, covering everything you might
-          need. Includes exciting new open source apps as well as familiar apps
-          from other platforms.
+        description: Browse an open-source collection of apps, covering everything you
+          might need. Includes exciting new open source apps as well as familiar
+          apps from other platforms.
         image: public/assets/images/workstation_software_center.png
       - title: Workstation speaks your language
         description: Thanks to a global community of translators, Workstation is

@@ -1,6 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
 const props = defineProps({
   data: Object,
 });
@@ -18,7 +16,7 @@ const descriptionMd = await mdparser(props.data.sectionDescription);
       <h2
         class="mb-5 text-center text-5xl font-semibold text-fp-blue dark:text-slate-100"
       >
-        {{ data.sectionTitle }}
+        {{ $t(data.sectionTitle) }}
       </h2>
       <ContentRendererMarkdown
         tag="h4"

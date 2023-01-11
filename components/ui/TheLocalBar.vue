@@ -16,9 +16,11 @@ defineProps({
         :src="image"
       />
     </FpLink>
-    <div :class="`flex justify-end ${textColor || 'text-white'}`">
+    <div
+      :class="`flex justify-center md:justify-end ${textColor || 'text-white'}`"
+    >
       <FpLink class="px-5" v-for="item in items" :href="item.link">
-        {{ item.name }}
+        {{ $t(item.name) }}
       </FpLink>
     </div>
   </div>

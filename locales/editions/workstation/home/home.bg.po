@@ -4,28 +4,32 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-26 13:33-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-01-10 09:20+0000\n"
+"Last-Translator: Bogomil Shopov <bogomil.fedora@gmail.com>\n"
+"Language-Team: Bulgarian <https://translate.fedoraproject.org/projects/"
+"fedora-websites-3-0/editionsworkstationhome/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.7.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15\n"
 
 #: path
 msgid "index"
-msgstr ""
+msgstr "Начало"
 
 #: title
 msgid "The leading Linux desktop"
-msgstr ""
+msgstr "Водещият Linux десктоп"
 
 #: description
 msgid ""
 "A beautiful, high-quality desktop, built on the latest open source "
 "technology. Trusted, powerful and easy.\n"
 msgstr ""
+"Красив, висококачествен десктоп, изграден чрез най-новите технологии с "
+"отворен код. Доверен, мощен и лесен за работа.\n"
 
 #: header_images-%3E[0]-%3Eimage
 #, read-only
@@ -39,7 +43,7 @@ msgstr ""
 
 #: links-%3E[0]-%3Etext
 msgid "Download now"
-msgstr ""
+msgstr "Изтегляне"
 
 #: links-%3E[0]-%3Eurl
 #, read-only
@@ -48,7 +52,7 @@ msgstr ""
 
 #: links-%3E[1]-%3Etext
 msgid "Reviewed By TechHut"
-msgstr ""
+msgstr "Преглед от TechHut"
 
 #: links-%3E[1]-%3Eurl
 #, read-only
@@ -57,37 +61,43 @@ msgstr ""
 
 #: sections-%3E[0]-%3EsectionTitle
 msgid "Why Fedora Workstation?"
-msgstr ""
+msgstr "Защо да изберем работната станция на Fedora?"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Etitle
 msgid "Reliable"
-msgstr ""
+msgstr "Надеждна е"
 
 #: sections-%3E[0]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
 "Each version is updated for 18 months, and upgrades between versions are "
 "quick and easy."
 msgstr ""
+"Всяка версия се актуализира в продължение на 18 месеца, а надстройките между "
+"версиите са бързи и лесни."
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Etitle
 msgid "Free & private"
-msgstr ""
+msgstr "Свободна и лична"
 
 #: sections-%3E[0]-%3Econtent-%3E[1]-%3Edescription
 msgid ""
 "With Fedora, your desktop is your own. It's free, there are no ads, and your "
 "data belongs to you."
 msgstr ""
+"С Fedora вашият работен плот е ваш собствен. Свободна е. Няма реклами и "
+"данните ви принадлежат."
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Etitle
 msgid "Beautiful"
-msgstr ""
+msgstr "Красива е"
 
 #: sections-%3E[0]-%3Econtent-%3E[2]-%3Edescription
 msgid ""
 "Workstation is carefully curated to deliver a high-quality experience. The "
 "desktop is clean and uncluttered."
 msgstr ""
+"Работната станция е внимателно подбрана, за да осигури висококачествено "
+"изживяване. Работният плот е чист и подреден."
 
 #: sections-%3E[0]-%3Econtent-%3E[3]-%3Etitle
 msgid "Trusted"

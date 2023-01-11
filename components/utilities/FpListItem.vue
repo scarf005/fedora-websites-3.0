@@ -1,6 +1,4 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
 const props = defineProps({
   title: String,
   description: String,
@@ -20,7 +18,9 @@ if (props.description) {
       iconURI
         ? {
             background: `url(${
-              $config.app.baseURL + '/' + iconURI.replace('public/', '')
+              $config.app.baseURL.replace(new RegExp('/$'), '') +
+              '/' +
+              iconURI.replace('public/', '')
             }) no-repeat left top`,
             'padding-left': '60px',
             'list-style': 'none',
@@ -31,8 +31,11 @@ if (props.description) {
     <div v-if="props.image" class="flex h-64 items-center justify-center">
       <FpImage :src="props.image" />
     </div>
-    <h4 class="inline font-bold text-fp-blue-dark dark:text-slate-100">
-      {{ props.title }}
+    <h4
+      v-if="title"
+      class="inline font-bold text-fp-blue-dark dark:text-slate-100"
+    >
+      {{ $t(props.title) }}
     </h4>
     <ContentRenderer
       v-if="descriptionMd"
@@ -42,7 +45,7 @@ if (props.description) {
     />
     <br />
     <div v-if="props.url" class="flex items-center justify-center">
-      <FpBtn :url="props.url">Learn More</FpBtn>
+      <FpBtn :url="props.url">{{ $t("Learn More") }}</FpBtn>
     </div>
   </li>
 </template>

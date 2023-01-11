@@ -335,6 +335,99 @@ collections:
                         widget: "string"
                         hint: "URL path for the link or button"
                         required: false
+          - label: "Important Dates"
+            name: "importantDates"
+            hint: "List of important dates related to the event"
+            summary: "{{fields.title}}"
+            widget: "object"
+            collapsed: true
+            fields:
+              - name: "title"
+                label: "Section Title"
+                widget: "string"
+              - name: "description"
+                label: "Section Description"
+                widget: "string"
+              - name: "footerText"
+                label: "Footer Text"
+                widget: "string"
+              - name: "content"
+                label: "dates"
+                widget: "list"
+                fields:
+                  - name: "name"
+                    label: "event name"
+                    widget: "string"
+                  - name: "description"
+                    label: "event description"
+                    widget: "string"
+                    required: false
+                  - name: "startDate"
+                    label: "Start Date"
+                    widget: "datetime"
+                    time_format: false
+                    format: "YYYY-MM-DD"
+                  - name: "endDate"
+                    label: "End Date"
+                    widget: "datetime"
+                    time_format: false
+                    format: "YYYY-MM-DD"
+                    required: false
+                  - name: "color"
+                    label: "event status"
+                    widget: "select"
+                    options:
+                      - { label: "not started", value: "#b9daf0" }
+                      - { label: "ongoing", value: "#c5eac0" }
+                      - { label: "ended", value: "#dedede" }
+                  - name: "link"
+                    label: "Links"
+                    widget: "list"
+                    fields:
+                      - name: "text"
+                        label: "URL Text"
+                        widget: "string"
+                        required: false
+                      - name: "url"
+                        label: "URL Link"
+                        widget: "string"
+                        required: false
+          - label: "Sponsors"
+            name: "sponsors"
+            hint: "List of Sponsors"
+            summary: "{{fields.title}}"
+            widget: "object"
+            collapsed: true
+            fields:
+              - name: "title"
+                label: "Section Title"
+                widget: "string"
+              - name: "description"
+                label: "Section Description"
+                widget: "string"
+              - name: "content"
+                label: "sponsors"
+                widget: "list"
+                fields:
+                  - name: "name"
+                    label: "Sponsor Name"
+                    widget: "string"
+                    required: false
+                  - name: "image"
+                    label: "Sponsor Image or Logo"
+                    widget: "string"
+                    required: false
+                  - name: "level"
+                    label: "Sponsor Level"
+                    widget: "select"
+                    options:
+                      - { label: "Platinium", value: "platinium" }
+                      - { label: "Gold", value: "gold" }
+                      - { label: "Silver", value: "silver" }
+                      - { label: "Bronze", value: "bronze" }
+                      - { label: "Media", value: "media" }
+                      - { label: "Placeholder", value: "placeholder" }
+
       # Events Partial Data
       - label: "Events Partial"
         name: "events-partial"
@@ -772,6 +865,129 @@ collections:
                     name: "url"
                     widget: "string"
                     hint: "Endpoint/url for the button"
+  #################
+  # Release Data #
+  #################
+
+  - label: "Release Information"
+    name: "release"
+    files:
+      - label: "Fedora Linux Release Data"
+        name: "releaseData"
+        file: "/content/release.yml"
+        format: yml
+        fields:
+          - label: "Download Base URL"
+            name: "download_baseurl"
+            widget: "string"
+            required: true
+          - label: "General Availability"
+            name: "ga"
+            summary: "Information about GA release"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Major release version"
+                name: "releasever"
+                widget: "number"
+                value_type: "int"
+                required: true
+              - label: "Release Candidate version"
+                name: "rc_version"
+                widget: "string"
+                required: true
+              - label: "Fedora Magazine announcement post"
+                name: "announcement_url"
+                widget: "string"
+              - label: "Workstation Artefacts"
+                name: "workstation"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "x86_64 Architecture"
+                    name: "x86_64"
+                    widget: "object"
+                    collapsed: false
+                    fields:
+                      - label: "Arch Title"
+                        name: "title"
+                      - label: "Artefacts List"
+                        name: "items"
+                        widget: "list"
+                        collapsed: true
+                        fields:
+                          - label: "Artifact name"
+                            name: "name"
+                          - label: "Artifact URI"
+                            name: "uri"
+                  - label: "aarch64 Architecture"
+                    name: "aarch64"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - label: "Arch Title"
+                        name: "title"
+                      - label: "Artefacts List"
+                        name: "items"
+                        widget: "list"
+                        collapsed: true
+                        fields:
+                          - label: "Artifact name"
+                            name: "name"
+                          - label: "Artifact URI"
+                            name: "uri"
+          - label: "Beta Availability"
+            name: "beta"
+            summary: "Information about BETA release"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Display beta download"
+                name: "enabled"
+                widget: "boolean"
+                required: true
+              - label: "Major release version"
+                name: "releasever"
+                widget: "number"
+                value_type: "int"
+                required: true
+              - label: "Release Candidate version"
+                name: "rc_version"
+                widget: "string"
+                required: true
+              - label: "Workstation Artefacts"
+                name: "workstation"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "x86_64 Architecture"
+                    name: "x86_64"
+                    widget: "object"
+                    collapsed: false
+                    fields:
+                      - label: "Artefacts List"
+                        name: "items"
+                        widget: "list"
+                        collapsed: true
+                        fields:
+                          - label: "Artifact name"
+                            name: "name"
+                          - label: "Artifact URI"
+                            name: "uri"
+                  - label: "aarch64 Architecture"
+                    name: "aarch64"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - label: "Artefacts List"
+                        name: "items"
+                        widget: "list"
+                        collapsed: true
+                        fields:
+                          - label: "Artifact name"
+                            name: "name"
+                          - label: "Artifact URI"
+                            name: "uri"
   #################
   # Server Pages #
   #################

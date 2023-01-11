@@ -1,12 +1,8 @@
-<script setup>
-definePageMeta({
-  layout: "development",
-});
-</script>
+<script setup></script>
 <template>
-  <main class="">
+  <main class="w-full">
     <header
-      class="flex h-screen flex-col bg-gradient-to-tl from-fp-blue to-fp-blue-light pt-16 text-white"
+      class="flex min-h-screen flex-col bg-gradient-to-tl from-fp-blue to-fp-blue-light pt-16 text-white"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
@@ -14,7 +10,7 @@ definePageMeta({
         <!-- Main Info -->
         <div>
           <!-- TODO: Add dynamic changing of text in the span -->
-          <h1 class="mx-auto mb-8 text-9xl font-semibold">
+          <h1 class="mx-auto mb-8 text-3xl font-semibold md:text-9xl">
             It's your <span>operating</span> system.
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">

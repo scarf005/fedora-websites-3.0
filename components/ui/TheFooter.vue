@@ -1,5 +1,20 @@
 <script setup>
-import { editions, others, support, community } from "../../config/navigation";
+import navigation from "../../config/navigation.json";
+const categories = {
+  downloads: navigation.downloads,
+  community: navigation.community,
+  contributors: navigation.contributors,
+  support: navigation.support,
+};
+
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    name: i.name,
+    href: switchLocalePath(i.code),
+  }));
+});
 </script>
 
 <template>
@@ -7,19 +22,27 @@ import { editions, others, support, community } from "../../config/navigation";
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <FpCollapsibleSection
-          title="Editions"
-          :navItems="editions"
-          use="footer"
+          :title="$t('Languages')"
+          :items="availableLocales"
         />
-        <FpCollapsibleSection title="Others" :navItems="others" use="footer" />
         <FpCollapsibleSection
-          title="User Support"
-          :navItems="support"
+          :title="$t('Downloads')"
+          :navItems="categories.downloads.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          title="Community"
-          :navItems="community"
+          :title="$t('Community')"
+          :navItems="categories.community.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          :title="$t('Contributors')"
+          :navItems="categories.contributors.sections"
+          use="footer"
+        />
+        <FpCollapsibleSection
+          :title="$t('Support')"
+          :navItems="categories.support.sections"
           use="footer"
         />
       </div>
@@ -30,7 +53,7 @@ import { editions, others, support, community } from "../../config/navigation";
         <div class="">
           <img
             src="~/assets/logos/fedora-blue.png"
-            alt="Fedora Logo"
+            :alt="$t('Fedora Logo')"
             class="ml-6 w-1/3 xl:ml-0"
           />
         </div>
@@ -41,28 +64,28 @@ import { editions, others, support, community } from "../../config/navigation";
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Privacy Statement</NuxtLink
+              >{{ $t("Privacy Statement") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Legal</NuxtLink
+              >{{ $t("Legal") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Code of Conduct</NuxtLink
+              >{{ $t("Code of Conduct") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
-              >Sponsors</NuxtLink
+              >{{ $t("Sponsors") }}</NuxtLink
             >
           </li>
         </ul>
@@ -75,16 +98,20 @@ import { editions, others, support, community } from "../../config/navigation";
         <div class="mx-auto lg:mx-0 lg:basis-3/12">
           <FpImage
             src="assets/images/logo-sponsored-by-red-hat.png"
-            alt="Sponsored by Red Hat Logo"
+            :alt="$t('Sponsored by Red Hat Logo')"
             class="mb-4 xl:mb-0"
           />
         </div>
 
         <div class="container text-center lg:text-left">
           <p class="text-white">
-            Fedora is sponsored by Red Hat.
+            {{ $t("Fedora is sponsored by Red Hat.") }}
             <span class="block text-fp-gray xl:ml-2 xl:inline">
-              Learn more about the relationship between Red Hat and Fedora.
+              {{
+                $t(
+                  "Learn more about the relationship between Red Hat and Fedora."
+                )
+              }}
             </span>
           </p>
         </div>

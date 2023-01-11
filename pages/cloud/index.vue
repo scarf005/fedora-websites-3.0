@@ -1,15 +1,12 @@
 <script setup>
 const { locale } = useI18n();
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/cloud/home." + locale._value).findOne();
-});
+const contentPath = "editions/cloud/home";
 
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/cloud/home").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
+let { data } = await useAsyncData("page-data", () => {
+  return queryContent()
+    .where({ _file: contentPath + ".yml" })
+    .findOne();
+});
 useContentHead(data);
 </script>
 
@@ -45,7 +42,7 @@ useContentHead(data);
       <h3
         class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
       >
-        {{ data.sections[0].sectionTitle }}
+        {{ $t(data.sections[0].sectionTitle) }}
       </h3>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
         <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
@@ -59,7 +56,7 @@ useContentHead(data);
       <h3
         class="mb-4 text-center font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
       >
-        {{ data.sections[1].sectionTitle }}
+        {{ $t(data.sections[1].sectionTitle) }}
       </h3>
       <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
         <FpListItem

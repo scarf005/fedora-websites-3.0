@@ -1,30 +1,22 @@
 <script setup>
-import { mdparser } from "../../config/utilities";
-
+const { t } = useI18n();
+const slots = useSlots();
 const props = defineProps({
   title: {
     type: String,
-    default: "Card Title",
   },
   description: {
     type: String,
-    default:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   image: {
     type: String,
-    default: "assets/logos/fedora-blue.png",
+  },
+  variants: {
+    type: Array,
+    default: [],
   },
   link: {
     type: Object,
-    default: {
-      url: "#",
-      text: "Button",
-    },
-  },
-  imgOrderFirst: {
-    type: Boolean,
-    default: false,
   },
   centerAlign: {
     type: Boolean,
@@ -32,43 +24,86 @@ const props = defineProps({
   },
 });
 
+const hasHeader = !!(props.title || slots.header || slots.prepend);
+const variantClasses = props.variants.map((v) => `fp-card--variant-${v}`);
+
 let descriptionMd;
 if (props.description) {
   descriptionMd = await mdparser(props.description);
 }
 </script>
-<template>
-  <article class="container m-4 flex flex-col justify-between md:max-w-xs">
-    <h3
-      class="px-2 text-2xl font-semibold text-fp-blue lg:px-0"
-      :class="centerAlign ? 'text-center' : 'text-center md:text-start'"
-    >
-      {{ title }}
-    </h3>
-    <div>
-      <ContentRenderer
-        v-if="descriptionMd"
-        class="lg:w-prose my-3 hidden w-11/12 break-words text-sm text-fp-gray-darkest sm:block lg:text-base"
-        :class="centerAlign ? 'text-center' : 'text-center md:text-start'"
-        tag="p"
-        :value="descriptionMd"
-      />
-    </div>
-    <FpImage
-      :src="image"
-      class="mx-auto my-4"
-      :class="
-        imgOrderFirst
-          ? 'order-first w-24 md:w-36'
-          : 'order-4 w-48 md:w-64 lg:w-full'
-      "
-    />
 
-    <NuxtLink
-      :to="link.url"
-      class="mx-auto my-3 flex w-2/4 justify-center rounded-lg bg-fp-blue-light py-2 font-medium text-white sm:w-11/12"
-      :class="centerAlign ? 'lg:w-prose' : 'lg-full'"
-      >{{ link.text }}</NuxtLink
-    >
+<template>
+  <article :class="['fp-card', variantClasses]">
+    <header v-if="hasHeader">
+      <slot name="header">
+        <FpCardTitle :title="title">
+          <template #prepend>
+            <slot slot="prepend" name="prepend" />
+          </template>
+        </FpCardTitle>
+      </slot>
+    </header>
+    <main>
+      <slot>
+        <ContentRenderer v-if="descriptionMd" tag="p" :value="descriptionMd" />
+      </slot>
+    </main>
+    <footer>
+      <slot name="footer">
+        <FpImage :src="image" v-if="image" />
+
+        <NuxtLink :to="link.url" v-if="link">{{ $t(link.text) }}</NuxtLink>
+      </slot>
+    </footer>
   </article>
 </template>
+
+<style>
+.fp-card {
+  @apply container flex flex-col justify-between;
+}
+
+.fp-card h3 {
+  @apply px-2 text-2xl font-semibold text-fp-blue dark:text-fp-blue-light lg:px-0;
+}
+
+.fp-card h4 {
+  @apply px-2 text-xl font-semibold text-fp-blue lg:px-0;
+}
+
+.fp-card main p {
+  @apply my-3 break-words text-sm text-fp-gray-darkest dark:text-fp-gray-light lg:max-w-prose lg:text-base;
+}
+
+.fp-card footer {
+}
+
+.fp-card footer > img {
+  @apply mx-auto my-4 w-48 md:w-64;
+}
+
+.fp-card--variant-btn footer > a {
+  @apply mx-auto my-3 flex max-w-fit justify-center rounded-lg bg-fp-blue-light py-2 px-10 font-medium text-white;
+}
+
+.fp-card--variant-wide {
+  @apply rounded-lg bg-white p-4 dark:bg-slate-800 md:max-w-full;
+}
+
+.fp-card--variant-event {
+  @apply rounded-lg bg-white p-6 dark:bg-slate-800;
+}
+
+.fp-card--variant-event main > p {
+  @apply mx-auto text-center dark:text-white;
+}
+
+.fp-card--variant-event footer > a {
+  @apply underline dark:text-fp-blue-light lg:max-w-prose;
+}
+
+.fp-card--variant-event img {
+  @apply max-h-[100px];
+}
+</style>

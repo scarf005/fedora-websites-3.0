@@ -1,7 +1,6 @@
 path: flock
 title: The Fedora Project Conference
-description: |
-  August 5 - 7, 2023
+description: August 5 - 7, 2023
 header_images:
   - image: public/assets/images/flock_logo_barcelona.png
   - image: public/assets/images/flock_background.jpg
@@ -47,7 +46,7 @@ sections:
   - sectionTitle: Watch Footage from Past Events
     content:
       - title: What to expect
-        image: https://www.youtube.com/embed/LqBVHz76Wxc
+        image: https://youtu.be/6fh3-_oopcg
         description:
           Flock is an annual conference for contributors of Fedora Linux. It
           is where the community plans and showcases the strategy and work on
@@ -112,52 +111,6 @@ sections:
         description: New to Fedora? Check our <b><a
           href="https://ask.fedoraproject.org/">community forum</a></b> for
           support and help with frequently asked questions.
-  - sectionTitle: Our Sponsors
-    sectionDescription:
-      Thank you to our sponsors, supporting this event is one of
-      the ways that they contribute to open source.
-    content:
-      - name: Red Hat
-        image: public/assets/images/sponsors/Red_Hat_logo.png
-        description: platinium
-      - name: Lenovo
-        image: public/assets/images/sponsors/Lenovo_logo.png
-        description: gold
-      - name: AlmaLinux
-        image: public/assets/images/sponsors/AlmaLinux_logo.png
-        description: gold
-      - name: openSuse
-        image: public/assets/images/sponsors/opensuse_logo.png
-        description: silver
-      - name: some Other Sponsor
-        image: ""
-        description: silver
-      - name: another Cool Sponsor
-        image: ""
-        description: bronze
-      - name: GitLab
-        image: public/assets/images/sponsors/Gitlab_logo.png
-        description: bronze
-      - name: datto
-        image: public/assets/images/sponsors/datto_logo.png
-        description: bronze
-      - name: daskeyboard
-        image: public/assets/images/sponsors/daskeyboard_logo.png
-        description: bronze
-      - name: Gnome
-        image: public/assets/images/sponsors/Gnome_logo.png
-        description: media
-      - name: TuxDigital
-        image: public/assets/images/sponsors/TuxDigital_logo.png
-        description: media
-      - name: KDE
-        image: public/assets/images/sponsors/KDE_logo.png
-        description: media
-      - name: opensource.com
-        image: public/assets/images/sponsors/opensource.com_logo.png
-        description: media
-      - name: none
-        description: placeholder
   - sectionTitle: Benefits of Sponsoring Flock
     content:
       - title: Brand Exposure
@@ -179,3 +132,70 @@ sections:
         description:
           All sponsor booths include a video, customizable experience, chat,
           and social media engagement. Click below to learn more.
+importantDates:
+  title: Important Dates
+  description: Don't miss these important deadlines
+  content:
+    - name: Hatch Call for Proposals
+      startDate: 2023-04-01
+      color: "#b9daf0"
+      link:
+        - text: Submissions Closed
+      endDate: 2023-05-29
+    - name: Flock Call for Proposals
+      startDate: 2023-05-01
+      color: "#b9daf0"
+      link:
+        - text: Submit Proposal
+          url: "#"
+      endDate: 2023-07-08
+    - name: Flock Registration Open
+      description: Free Admission
+      startDate: 2023-07-08
+      color: "#b9daf0"
+      link:
+        - text: Register to attend
+          url: "#"
+        - text: Accomodations
+          url: "#"
+      endDate: ""
+  footerText: Looking for a date that is not listed? Click here for help.
+sponsors:
+  title: Our Sponsors
+  description:
+    Thank you to our sponsors, supporting this event is one of the ways
+    that they contribute to open source.
+  content:
+    - name: Red Hat
+      image: public/assets/images/sponsors/Red_Hat_logo.png
+      level: platinium
+    - name: Lenovo
+      image: public/assets/images/sponsors/Lenovo_logo.png
+      level: gold
+    - name: AlmaLinux
+      image: public/assets/images/sponsors/AlmaLinux_logo.png
+      level: gold
+    - name: openSuse
+      image: public/assets/images/sponsors/opensuse_logo.png
+      level: silver
+    - name: GitLab
+      image: public/assets/images/sponsors/Gitlab_logo.png
+      level: bronze
+    - name: datto
+      image: public/assets/images/sponsors/datto_logo.png
+      level: bronze
+    - name: daskeyboard
+      image: public/assets/images/sponsors/daskeyboard_logo.png
+      level: bronze
+    - name: Gnome
+      image: public/assets/images/sponsors/Gnome_logo.png
+      level: media
+    - name: TuxDigital
+      image: public/assets/images/sponsors/TuxDigital_logo.png
+      level: media
+    - name: KDE
+      image: public/assets/images/sponsors/KDE_logo.png
+      level: media
+    - name: opensource.com
+      image: public/assets/images/sponsors/opensource.com_logo.png
+      level: media

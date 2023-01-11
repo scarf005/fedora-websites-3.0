@@ -16,11 +16,11 @@ defineProps({
 </script>
 
 <template>
-  <section class="mx-auto" :class="`bg-fp-${color}-light/10`">
+  <section class="mx-8" :class="`bg-fp-${color}-light/10`">
     <div class="container mx-auto flex max-w-7xl flex-col justify-center pb-8">
       <header class="py-8 text-center xl:text-start">
         <h2 class="xl:text-4xl" :class="`text-fp-${color}`">
-          {{ sectionTitle }}
+          {{ $t(sectionTitle) }}
         </h2>
       </header>
       <div class="flex flex-wrap justify-center gap-10 2xl:justify-between">
@@ -31,11 +31,16 @@ defineProps({
           :description="card.description"
           :image="card.image"
           :link="card.link"
-          class="m-4 flex flex-col justify-between md:max-w-xs"
+          :variants="['center', 'btn']"
+          class="h-80 grow basis-64 lg:h-96"
         />
       </div>
       <FpJoinTip
-        description="Your friendly and helpful contributions to these communication channels would be greatly appreciated"
+        :description="
+          $t(
+            'Your friendly and helpful contributions to these communication channels would be greatly appreciated'
+          )
+        "
       />
     </div>
   </section>
