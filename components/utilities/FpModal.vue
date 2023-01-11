@@ -1,19 +1,10 @@
-<script setup>
-const props = defineProps({
-  show: {
-    type: Boolean,
-    default: false,
-  },
-});
-const verifyModal = useState("verifyModal");
-</script>
 <template>
   <div class="fixed inset-0 z-10 overflow-y-auto">
     <div class="flex min-h-full items-center justify-center text-center sm:p-4">
       <!-- backdrop overlay -->
       <div
         class="fixed inset-0 bg-white/40 backdrop-blur-md dark:bg-black/50"
-        @click="verifyModal.show = false"
+        @click="$emit('closeModal')"
       ></div>
       <!-- modal -->
       <div
@@ -25,11 +16,11 @@ const verifyModal = useState("verifyModal");
               <h5>Title</h5>
             </slot>
           </header>
-          <div class="p-3"><slot /></div>
+          <div class="max-h-[32rem] overflow-y-scroll p-3"><slot /></div>
           <footer class="flex justify-end border-t p-3 dark:border-gray-600">
             <slot name="footer">
               <button
-                @click="verifyModal.show = false"
+                @click="$emit('closeModal')"
                 class="rounded bg-fp-blue-light py-1 px-2 text-sm text-white hover:bg-fp-blue"
               >
                 Close

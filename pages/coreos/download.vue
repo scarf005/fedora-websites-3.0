@@ -15,6 +15,7 @@ const { data: next_data } = await useFetch(
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
 const verifyModal = useState("verifyModal", () => ({ show: false }));
+const showAMI = useState("showAMI", () => ({ show: false }));
 
 function switchStream(name) {
   switch (name) {
@@ -43,6 +44,11 @@ function updateVerify(art) {
   );
   verifyModal.value.chk_name = `${verifyModal.value.art_name}-CHECKSUM`;
   verifyModal.value.show = true;
+}
+
+function updateAMIs(art) {
+  showAMI.value.art = art;
+  showAMI.value.show = true;
 }
 
 function virt_arts(data) {
@@ -79,6 +85,39 @@ function cloud_arts(data) {
   }
   return dict;
 }
+
+function getMajor(version) {
+  return version.split(".")[0];
+}
+
+const EC2_regions = {
+  "us-east-2": "US East (Ohio)",
+  "us-east-1": "US East (N. Virginia)",
+  "us-west-1": "US West (N. California)",
+  "us-west-2": "US West (Oregon)",
+  "af-south-1": "Africa (Cape Town)",
+  "ap-east-1": "Asia Pacific (Hong Kong)",
+  "ap-south-2": "Asia Pacific (Hyderabad)",
+  "ap-southeast-3": "Asia Pacific (Jakarta)",
+  "ap-south-1": "Asia Pacific (Mumbai)",
+  "ap-northeast-3": "Asia Pacific (Osaka)",
+  "ap-northeast-2": "Asia Pacific (Seoul)",
+  "ap-southeast-1": "Asia Pacific (Singapore)",
+  "ap-southeast-2": "Asia Pacific (Sydney)",
+  "ap-northeast-1": "Asia Pacific (Tokyo)",
+  "ca-central-1": "Canada (Central)",
+  "eu-central-1": "Europe (Frankfurt)",
+  "eu-west-1": "Europe (Ireland)",
+  "eu-west-2": "Europe (London)",
+  "eu-south-1": "Europe (Milan)",
+  "eu-west-3": "Europe (Paris)",
+  "eu-south-2": "Europe (Spain)",
+  "eu-north-1": "Europe (Stockholm)",
+  "eu-central-2": "Europe (Zurich)",
+  "me-south-1": "Middle East (Bahrain)",
+  "me-central-1": "Middle East (UAE)",
+  "sa-east-1": "South America (São Paulo)",
+};
 
 useHead({ htmlAttrs: { class: "scroll-smooth" } });
 </script>
@@ -322,80 +361,198 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             @verify-click="updateVerify"
             class="coreos-theme"
           />
-          <!-- TODO: AMIs & GCP -->
-          <CoreOsDownloadSection
-            :artifacts="{}"
-            name="Cloud Launchable"
+          <!-- AMIs & GCP -->
+          <div
             class="coreos-theme"
-          />
+            v-if="
+              Object.keys(selectedStream.architectures[selectedArch].images)
+                .length > 0
+            "
+          >
+            <p class="my-2 font-bold">{{ $t("Cloud Launchable") }}</p>
+
+            <div class="download-section mb-2">
+              <FpDownloadItem
+                :name="`Fedora CoreOS ${getMajor(
+                  Object.values(
+                    selectedStream.architectures[selectedArch].images.aws
+                      .regions
+                  )[0].release
+                )}`"
+                type="aws"
+                v-if="selectedStream.architectures[selectedArch].images.aws"
+              >
+                <template #btn>
+                  <a
+                    title="Launch"
+                    class="rounded-xl"
+                    @click="
+                      updateAMIs(
+                        selectedStream.architectures[selectedArch].images.aws
+                      )
+                    "
+                  >
+                    <Icon
+                      name="material-symbols:rocket-launch"
+                      class="!align-baseline"
+                    />
+                  </a>
+                </template>
+              </FpDownloadItem>
+            </div>
+            <div class="download-section mb-2">
+              <FpDownloadItem
+                :name="`Fedora CoreOS ${getMajor(
+                  selectedStream.architectures[selectedArch].images.gcp.release
+                )}`"
+                type="gcp"
+                v-if="selectedStream.architectures[selectedArch].images.gcp"
+              >
+                <template
+                  #btn
+                  v-for="art in [
+                    selectedStream.architectures[selectedArch].images.gcp,
+                  ]"
+                >
+                  <FpLink
+                    :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
+                    target="blank"
+                    title="Launch"
+                    class="rounded-xl"
+                  >
+                    <Icon
+                      name="material-symbols:rocket-launch"
+                      class="!align-baseline"
+                    />
+                  </FpLink>
+                </template>
+              </FpDownloadItem>
+            </div>
+          </div>
         </div>
       </div>
       <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
     </section>
-  </main>
-  <Transition
-    enter-active-class="transform duration-200 ease-out"
-    enter-from-class="opacity-0"
-    enter-to-class="opacity-30"
-    leave-active-class="transform duration-200 ease-out"
-    leave-from-class="opacity-100"
-    leave-to-class="opacity-0"
-  >
-    <FpModal class="pt-12" v-if="verifyModal.show">
-      <template #header>
-        <h5 class="text-xl font-medium">Verify your download</h5>
-      </template>
-      <p class="text-base">
-        Verify your download for security and integrity using the proper
-        checksum and signature file. If there is a good signature from one of
-        the Fedora keys, and the SHA256 checksum matches, then the download is
-        valid.
-      </p>
-      <ul class="list-outside list-decimal pl-8 pt-2">
-        <li>
-          <p class="mb-2">
-            Download the
-            <a
-              class="text-fp-blue"
-              :href="verifyModal.checksum"
-              :download="verifyModal.chk_name"
-              >checksum file</a
+    <section class="bg-blue-50 py-12 dark:bg-neutral-900">
+      <BecomeContributorSection />
+    </section>
+    <section class="py-12 dark:bg-black">
+      <DownloadComplianceSection />
+    </section>
+
+    <Transition
+      enter-active-class="transform duration-200 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-30"
+      leave-active-class="transform duration-200 ease-out"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <FpModal
+        class="pt-12"
+        v-if="verifyModal.show"
+        @close-modal="verifyModal.show = false"
+      >
+        <template #header>
+          <h5 class="text-xl font-medium">Verify your download</h5>
+        </template>
+        <p class="text-base">
+          Verify your download for security and integrity using the proper
+          checksum and signature file. If there is a good signature from one of
+          the Fedora keys, and the SHA256 checksum matches, then the download is
+          valid.
+        </p>
+        <ul class="list-outside list-decimal pl-8 pt-2">
+          <li>
+            <p class="mb-2">
+              Download the
+              <a
+                class="text-fp-blue"
+                :href="verifyModal.checksum"
+                :download="verifyModal.chk_name"
+                >checksum file</a
+              >
+              and
+              <a class="text-fp-blue" :href="verifyModal.signature"
+                >signature</a
+              >
+              into the same directory as the image you downloaded.
+            </p>
+          </li>
+          <li>
+            <p class="mb-2">Import Fedora's GPG key(s)</p>
+            <pre
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+            ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+          </li>
+          <li>
+            <p class="mb-2">Verify the signature file is valid</p>
+            <pre
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+            ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.sig_name }} {{ verifyModal.art_name }}</code></pre>
+          </li>
+          <li>
+            <p class="mb-2">Verify the checksum matches</p>
+            <pre
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+            ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
+          </li>
+        </ul>
+        <p>
+          If the output states that the file is valid, then it's ready to use!
+        </p>
+      </FpModal>
+    </Transition>
+    <Transition
+      enter-active-class="transform duration-200 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-30"
+      leave-active-class="transform duration-200 ease-out"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <FpModal
+        class="pt-12"
+        v-if="showAMI.show"
+        @close-modal="showAMI.show = false"
+      >
+        <template #header>
+          <h5 class="text-xl font-medium">Select AWS EC2 region</h5>
+        </template>
+        <table class="w-full table-auto">
+          <thead>
+            <tr>
+              <th class="">Region</th>
+              <th class="hidden sm:block">AMI ID</th>
+              <th class="text-center">Launch instance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(ami, region) in showAMI.art.regions"
+              class="hover:bg-slate-800"
             >
-            and
-            <a class="text-fp-blue" :href="verifyModal.signature">signature</a>
-            into the same directory as the image you downloaded.
-          </p>
-        </li>
-        <li>
-          <p class="mb-2">Import Fedora's GPG key(s)</p>
-          <pre
-            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
-          ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
-        </li>
-        <li>
-          <p class="mb-2">Verify the signature file is valid</p>
-          <pre
-            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
-          ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.sig_name }} {{ verifyModal.art_name }}</code></pre>
-        </li>
-        <li>
-          <p class="mb-2">Verify the checksum matches</p>
-          <pre
-            class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
-          ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
-        </li>
-      </ul>
-      <p>
-        If the output states that the file is valid, then it's ready to use!
-      </p>
-    </FpModal>
-  </Transition>
-  <section class="bg-blue-50 py-12 dark:bg-neutral-900">
-    <BecomeContributorSection />
-  </section>
-  <section class="py-12 dark:bg-black">
-    <DownloadComplianceSection />
-  </section>
+              <td class="pr-6">{{ EC2_regions[region] || region }}</td>
+              <td class="hidden pr-6 sm:block">{{ ami.image }}</td>
+              <td class="text-center">
+                <FpLink
+                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#launchAmi=${ami.image}`"
+                  target="blank"
+                  :title="`Launch in ${region}`"
+                  class="rounded-xl"
+                >
+                  <Icon
+                    name="material-symbols:rocket-launch"
+                    class="!align-baseline"
+                  />
+                </FpLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </FpModal>
+    </Transition>
+  </main>
 </template>
 
 <style>
