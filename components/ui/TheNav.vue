@@ -48,13 +48,14 @@ const sectionOpen = useState("section", () => null);
           type="button"
           class="rounded-md p-2 text-white md:hidden"
         >
-          <Icon name="fa6-solid:bars" />
+          <Icon v-if="categoryOpen == null" name="fa6-solid:bars" />
+          <Icon v-else name="fa6-solid:x" />
         </button>
       </div>
 
       <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        :class="`col-span-2 justify-center py-4 px-4 text-white md:col-span-1 md:flex md:justify-end ${
+        :class="`col-span-2 justify-center py-4 text-white md:col-span-1 md:flex md:justify-end md:px-4 md:py-1 xl:gap-2 ${
           categoryOpen ? 'flex' : 'hidden'
         }`"
       >
@@ -63,7 +64,7 @@ const sectionOpen = useState("section", () => null);
           :key="category.id"
           role="navigation"
           :class="`rounded-xl p-1 hover:bg-fp-blue-dark md:p-3 ${
-            categoryOpen === category && 'md:bg-fp-blue'
+            categoryOpen?.label === category.label && 'md:bg-fp-blue'
           }`"
           @click="
             if (categoryOpen && category.label === categoryOpen.label) {
@@ -89,7 +90,7 @@ const sectionOpen = useState("section", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen bg-fp-blue px-8 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg md:shadow-md"
+      class="left-0 right-0 mx-auto h-screen bg-fp-blue px-8 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg md:shadow-md xl:w-10/12"
     >
       <!-- close button -->
       <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
@@ -139,13 +140,11 @@ const sectionOpen = useState("section", () => null);
               </div>
 
               <!-- Sections List Mobile -->
-              <ul class="ml-10 block text-lg text-white sm:hidden">
-                <li
-                  v-if="sectionOpen.label === section.label"
-                  v-for="link in section.links"
-                  :key="link.id"
-                  class="py-1"
-                >
+              <ul
+                v-if="sectionOpen.label === section.label"
+                class="ml-10 block text-lg text-white lg:hidden"
+              >
+                <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path">
                     <Icon :name="link.icon" size="24" class="mr-2" />
                     {{ link.label }}

@@ -73,7 +73,7 @@ if (props.description) {
 }
 
 .fp-card main p {
-  @apply my-3 break-words text-sm text-fp-gray-darkest lg:max-w-prose lg:text-base;
+  @apply my-3 break-words text-sm text-fp-gray-darkest dark:text-fp-gray-light lg:max-w-prose lg:text-base;
 }
 
 .fp-card footer {

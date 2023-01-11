@@ -26,22 +26,22 @@ const availableLocales = computed(() => {
           :items="availableLocales"
         />
         <FpCollapsibleSection
-          title="Downloads"
+          :title="$t('Downloads')"
           :navItems="categories.downloads.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          title="Community"
+          :title="$t('Community')"
           :navItems="categories.community.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          title="Contributors"
+          :title="$t('Contributors')"
           :navItems="categories.contributors.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          title="Support"
+          :title="$t('Support')"
           :navItems="categories.support.sections"
           use="footer"
         />
@@ -53,7 +53,7 @@ const availableLocales = computed(() => {
         <div class="">
           <img
             src="~/assets/logos/fedora-blue.png"
-            alt="Fedora Logo"
+            :alt="$t('Fedora Logo')"
             class="ml-6 w-1/3 xl:ml-0"
           />
         </div>
@@ -98,7 +98,7 @@ const availableLocales = computed(() => {
         <div class="mx-auto lg:mx-0 lg:basis-3/12">
           <FpImage
             src="assets/images/logo-sponsored-by-red-hat.png"
-            alt="Sponsored by Red Hat Logo"
+            :alt="$t('Sponsored by Red Hat Logo')"
             class="mb-4 xl:mb-0"
           />
         </div>
