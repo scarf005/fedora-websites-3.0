@@ -57,7 +57,7 @@ onMounted(() => {
         <div>
           <!-- TODO: Add dynamic changing of text in the span -->
           <h1 class="mx-auto mb-8 text-3xl font-semibold md:text-9xl">
-            It's your <span>{{ typeValue }} </span>.
+            It's your <br/><span>{{ typeValue }} </span>.
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">
             An innovative platform for hardware, clouds, and containers, built
