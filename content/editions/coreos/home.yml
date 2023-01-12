@@ -2,7 +2,7 @@ path: index
 title: The container optimized OS
 description: A minimal OS with automatic update. Scalable and secure.
 header_images:
-  - image: public/assets/images/core-os-3.png
+  - image: public/assets/images/coreos-hero.png
   - image: public/assets/images/core-os-bg.png
 links:
   - text: Download Now
@@ -11,8 +11,9 @@ links:
     url: https://getfedora.org/en/coreos/release-notes/
 sections:
   - sectionTitle: Why Fedora CoreOS?
-    images: public/assets/images/coreos_background_why.jpg
+    images: ""
     content:
+      - image: public/assets/images/page-divider.png
       - title: Container-based
         description: The optimal container host will be offered in order to run
           containerized applications.
@@ -29,8 +30,9 @@ sections:
         description: The Fedora CoreOS image is kept minimal by design.
       - title: Flexible
         description: There are a wide variety of supported installation methods.
+      - image: public/assets/images/page-divider-blue.png
   - sectionTitle: Platforms Tested against CoreOS
-    images: public/assets/images/coreos_background_why.jpg
+    images: ""
     content:
       - title: Microsoft Azure
         image: public/assets/images/microsoftazure_2021.svg
@@ -73,3 +75,7 @@ sections:
       - title: Attend a meeting
         description: Open to all current and potential contributors on Wednesday 11 AM
           Eastern on fedora-meeting@irc.libera.chat.
+  - content:
+      - image: public/assets/images/backdrop-blue-circle.png
+      - image: public/assets/images/core-os-logo.png
+    sectionTitle: Try it now
