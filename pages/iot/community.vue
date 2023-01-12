@@ -1,18 +1,7 @@
 <script setup>
 const { locale } = useI18n();
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/iot/community." + locale._value).findOne();
-});
-
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/iot/community").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
-let events = await useAsyncData(() => {
-  return queryContent("/partials/events").findOne();
-});
+const data = await getCMS("editions/iot/community");
+const events = await getCMS("partials/events");
 useContentHead(data);
 </script>
 <template>

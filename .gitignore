@@ -8,3 +8,4 @@ node_modules
 dist
 .cache_dnf/
 **/*.*.yml
+public/admin/config.yml

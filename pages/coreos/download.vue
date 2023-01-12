@@ -1,7 +1,5 @@
 <script setup>
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/coreos/download").find();
-});
+const data = await getCMS("editions/coreos/download");
 const { data: stable_data } = await useFetch(
   "https://builds.coreos.fedoraproject.org/streams/stable.json"
 );
@@ -16,6 +14,8 @@ let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 const showAMI = useState("showAMI", () => ({ show: false }));
+const streams = data._value.sections[0];
+const architectures = data._value.sections[1];
 
 function switchStream(name) {
   switch (name) {
@@ -144,9 +144,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <span class="text-fp-magenta"> Fedora CoreOS </span>
         </h1>
         <p class="text-fp-gray dark:text-fp-gray-light">
-          {{
-            $t("Fedora CoreOS is available across 3 different release streams")
-          }}
+          {{ $t(streams.sectionDescription) }}
         </p>
 
         <!-- STREAMS -->
@@ -161,9 +159,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             icon="fa-solid:shield-alt"
             color="fp-blue"
           >
-            The Stable stream is the most reliable version of Fedora CoreOS.
-            Releases are battle-tested within the Testing stream before being
-            promoted.
+            {{ $t(streams.content[0].description) }}
             <template #footer>
               <a
                 id="stable"
@@ -181,9 +177,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             icon="fa-solid:flask"
             color="fp-green"
           >
-            The Testing stream contains the next Stable release. Mix a few
-            Testing machines into your cluster to catch any bugs specific to
-            your hardware or configuration.
+            {{ $t(streams.content[1].description) }}
             <template #footer>
               <a
                 id="test"
@@ -202,9 +196,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             icon="fa-solid:layer-group"
             color="fp-orange"
           >
-            The Next stream represents the future. It provides early access to
-            new features and to the next major version of Fedora. Run a few Next
-            machines in your cluster, or in staging, to help find problems.
+            {{ $t(streams.content[2].description) }}
             <template #footer>
               <a
                 id="next"
@@ -231,11 +223,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             <span class="text-fp-magenta">{{ $t("architecture") }} </span>
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
-            {{
-              $t(
-                "Fedora CoreOS can be deployed on 3 different CPU architecture."
-              )
-            }}
+            {{ $t(architectures.sectionDescription) }}
           </p>
         </div>
         <div class="mx-auto p-5">
@@ -249,7 +237,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             >
               <FpCard
                 title="x86_64"
-                description="Most computers with Intel and AMD processors."
+                :description="architectures.content[0].description"
                 class="coreos-theme"
               >
               </FpCard>
@@ -261,7 +249,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             >
               <FpCard
                 title="aarch64"
-                description="Also known as armv8. For most processors other than Intel and AMD like Rasperry Pi or other comparable devices."
+                :description="architectures.content[1].description"
                 class="coreos-theme"
               >
               </FpCard>
@@ -273,7 +261,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             >
               <FpCard
                 title="s390x"
-                description="For IBM Cloud and zSystems"
+                :description="architectures.content[2].description"
                 class="coreos-theme"
               >
               </FpCard>
@@ -454,13 +442,14 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
         @close-modal="verifyModal.show = false"
       >
         <template #header>
-          <h5 class="text-xl font-medium">Verify your download</h5>
+          <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
         </template>
         <p class="text-base">
-          Verify your download for security and integrity using the proper
-          checksum and signature file. If there is a good signature from one of
-          the Fedora keys, and the SHA256 checksum matches, then the download is
-          valid.
+          {{
+            $t(
+              "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+            )
+          }}
         </p>
         <ul class="list-outside list-decimal pl-8 pt-2">
           <li>
@@ -480,26 +469,30 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
             </p>
           </li>
           <li>
-            <p class="mb-2">Import Fedora's GPG key(s)</p>
+            <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
               class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
             ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
           </li>
           <li>
-            <p class="mb-2">Verify the signature file is valid</p>
+            <p class="mb-2">{{ $t("Verify the signature file is valid") }}</p>
             <pre
               class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
             ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.sig_name }} {{ verifyModal.art_name }}</code></pre>
           </li>
           <li>
-            <p class="mb-2">Verify the checksum matches</p>
+            <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
             <pre
               class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
             ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
           </li>
         </ul>
         <p>
-          If the output states that the file is valid, then it's ready to use!
+          {{
+            $t(
+              "If the output states that the file is valid, then it's ready to use!"
+            )
+          }}
         </p>
       </FpModal>
     </Transition>
