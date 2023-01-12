@@ -21,27 +21,24 @@ const availableLocales = computed(() => {
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <FpCollapsibleSection title="Languages" :items="availableLocales" />
         <FpCollapsibleSection
-          :title="$t('Languages')"
-          :items="availableLocales"
-        />
-        <FpCollapsibleSection
-          :title="$t('Downloads')"
+          title="Downloads"
           :navItems="categories.downloads.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          :title="$t('Community')"
+          title="Community"
           :navItems="categories.community.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          :title="$t('Contributors')"
+          title="Contributors"
           :navItems="categories.contributors.sections"
           use="footer"
         />
         <FpCollapsibleSection
-          :title="$t('Support')"
+          title="Support"
           :navItems="categories.support.sections"
           use="footer"
         />
