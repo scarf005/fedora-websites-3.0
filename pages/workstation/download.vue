@@ -1,22 +1,11 @@
 <script setup>
 const { locale } = useI18n();
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent(
-    "/editions/workstation/download." + locale._value
-  ).findOne();
-});
 
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/workstation/download").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
-useContentHead(data);
-
-const release_data = await getRelease();
+const data = await getCMS("editions/workstation/download");
+const release_data = await getCMS("release");
 const arches = release_data._value.ga.workstation;
 const betaArches = release_data._value.beta.workstation;
+useContentHead(data);
 
 function evalLink(uri, release) {
   uri = uri

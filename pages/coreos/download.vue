@@ -1,7 +1,5 @@
 <script setup>
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/coreos/download").find();
-});
+const data = await getCMS("editions/coreos/download");
 const { data: stable_data } = await useFetch(
   "https://builds.coreos.fedoraproject.org/streams/stable.json"
 );
