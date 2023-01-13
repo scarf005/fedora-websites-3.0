@@ -5,8 +5,8 @@
 ## Development: Getting Started
 
 - This repository is a standard [`create-nuxt-app`](https://nuxt.com/docs) project.
-- To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository. Ask an admin for write access on discussion.fedoraproject.org.
-- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages). Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically. The locale.json files are pulled in with the nuxt-i18n package, otherwise they fall back to English.
+- To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository. Ask an admin for write access on discussion.fedoraproject.org. This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
+- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages). Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically. The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English.
 
 - To add a new page or a new component, clone this repository, change into the folder, and run:
 
