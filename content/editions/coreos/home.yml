@@ -6,7 +6,7 @@ header_images:
   - image: public/assets/images/core-os-bg.png
 links:
   - text: Download Now
-    url: https://getfedora.org/en/coreos/download/
+    url: /coreos/download/
   - text: Release Notes
     url: https://getfedora.org/en/coreos/release-notes/
 sections:
