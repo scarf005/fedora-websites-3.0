@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./pages/**/*.vue", "./components/**/*.vue"],
-  darkMode: "media",
+  darkMode: "class",
   theme: {
     fontFamily: {
       display: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],

@@ -1,11 +1,9 @@
 import locales from "./config/locales.json";
-var path = require("path");
 
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
   : "/";
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   components: [
     "~/components/",

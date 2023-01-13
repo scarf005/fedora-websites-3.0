@@ -1,38 +1,35 @@
 <script setup>
-const colorMode = useColorMode();
+let colorMode = useColorMode();
+
+function setMode(value) {
+  colorMode.preference = value;
+}
 </script>
 
 <template>
   <div class="group relative inline-block">
     <button
-      type="button"
       v-if="colorMode.preference === 'system'"
-      @click="colorMode.preference = 'light'"
+      @click="setMode('light')"
       class="hidden fill-white stroke-white sm:block"
     >
       <Icon name="fa-solid:laptop" class="white" />
     </button>
 
     <button
-      type="button"
       v-if="colorMode.preference === 'light'"
-      @click="colorMode.preference = 'dark'"
+      @click="setMode('dark')"
       class="hidden fill-white stroke-white sm:block"
     >
       <Icon name="fa-solid:sun" class="white" />
     </button>
 
     <button
-      type="button"
       v-if="colorMode.preference === 'dark'"
-      @click="colorMode.preference = 'system'"
+      @click="setMode('system')"
       class="hidden fill-white stroke-white sm:block"
     >
-      <Icon
-        v-if="colorMode.preference === 'dark'"
-        name="fa-solid:moon"
-        class="white"
-      />
+      <Icon name="fa-solid:moon" class="white" />
     </button>
   </div>
 </template>
