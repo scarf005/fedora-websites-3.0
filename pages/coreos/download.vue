@@ -422,9 +422,15 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       </div>
       <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
     </section>
-    <section class="bg-blue-50 py-12 dark:bg-neutral-900">
+
+    <section class="bg-white py-8 dark:bg-neutral-900">
+      <CoreOsVerifySection />
+    </section>
+
+    <section class="bg-blue-50 py-12 dark:bg-neutral-800">
       <BecomeContributorSection />
     </section>
+
     <section class="py-12 dark:bg-black">
       <DownloadComplianceSection />
     </section>
