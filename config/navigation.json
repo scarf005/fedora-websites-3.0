@@ -205,6 +205,12 @@
             "path": "https://lists.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": "Subscribe to the mailing lists to stay up to date on Fedora's development discussions."
+          },
+          {
+            "label": "Fedora Mastodon",
+            "path": "https://mastodon.social/@fedora@fosstodon.org",
+            "icon": "fa6-solid:desktop",
+            "description": "Follow us on Mastodon! This is a great place to stay up to date on the latest in the Fedora community."
           }
         ]
       },
