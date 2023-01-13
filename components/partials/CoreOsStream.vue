@@ -61,12 +61,12 @@ function timeSince(rfc3339_timestamp) {
       </div>
       <div class="pl-8">
         <h3 class="font-weight-light">{{ name }}</h3>
-        <h6 class="mb-0 text-gray-500">v {{ version }}</h6>
-        <p class="text-gray-500">
+        <h6 class="mb-0 text-gray-500 dark:text-gray-400">v {{ version }}</h6>
+        <p class="text-gray-500 dark:text-gray-400">
           <span>
             <a
               href="https://builds.coreos.fedoraproject.org/streams/stable.json"
-              class="font-bold text-gray-500"
+              class="font-bold"
               >JSON</a
             >
           </span>

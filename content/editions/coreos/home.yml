@@ -2,35 +2,40 @@ path: index
 title: The container optimized OS
 description: A minimal OS with automatic update. Scalable and secure.
 header_images:
-  - image: public/assets/images/core-os-3.png
+  - image: public/assets/images/coreos-hero.png
   - image: public/assets/images/core-os-bg.png
 links:
   - text: Download Now
-    url: https://getfedora.org/en/coreos/download/
+    url: /coreos/download/
   - text: Release Notes
     url: https://getfedora.org/en/coreos/release-notes/
 sections:
   - sectionTitle: Why Fedora CoreOS?
-    images: public/assets/images/coreos_background_why.jpg
+    images: ""
     content:
+      - image: public/assets/images/page-divider.png
       - title: Container-based
         description: The optimal container host will be offered in order to run
           containerized applications.
       - title: Secure
-        description: Our goal is to provide the best container host to run workloads
+        description:
+          Our goal is to provide the best container host to run workloads
           securely and at scale.
       - title: Open-source Ecosystem
-        description: Everything is supported by a totally free and open-source Fedora
+        description:
+          Everything is supported by a totally free and open-source Fedora
           ecosystem.
       - title: Open to everyone
-        description: CoreOS is currently available on multiple platforms, with more
+        description:
+          CoreOS is currently available on multiple platforms, with more
           coming soon.
       - title: Minimal
         description: The Fedora CoreOS image is kept minimal by design.
       - title: Flexible
         description: There are a wide variety of supported installation methods.
+      - image: public/assets/images/page-divider-blue.png
   - sectionTitle: Platforms Tested against CoreOS
-    images: public/assets/images/coreos_background_why.jpg
+    images: ""
     content:
       - title: Microsoft Azure
         image: public/assets/images/microsoftazure_2021.svg
@@ -63,13 +68,20 @@ sections:
       Fedora CoreOS is created by a team in the Fedora community called the CoreOS Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the CoreOS Working Group website.
     content:
       - title: Report & discuss issues
-        description: You can view, file, and discuss Fedore CoreOS issues on the Fedora
+        description:
+          You can view, file, and discuss Fedore CoreOS issues on the Fedora
           CoreOS issue tracker.
       - title: Chat with the team
         description: Visit \#fedora-coreos on irc.libera.chat.
       - title: Join the mailing list
-        description: Sign up at coreos-status@lists.fedoraproject.org to receive meeting
+        description:
+          Sign up at coreos-status@lists.fedoraproject.org to receive meeting
           agendas and minutes.
       - title: Attend a meeting
-        description: Open to all current and potential contributors on Wednesday 11 AM
+        description:
+          Open to all current and potential contributors on Wednesday 11 AM
           Eastern on fedora-meeting@irc.libera.chat.
+  - content:
+      - image: public/assets/images/backdrop-blue-circle.png
+      - image: public/assets/images/core-os-logo.png
+    sectionTitle: Try it now

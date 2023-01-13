@@ -1,12 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const contentPath = "editions/cloud/community";
-
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent()
-    .where({ _file: contentPath + ".yml" })
-    .findOne();
-});
+const data = await getCMS("editions/cloud/community");
 
 useContentHead(data);
 </script>

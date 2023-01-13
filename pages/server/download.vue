@@ -1,7 +1,5 @@
 <script setup>
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/pages/editions/server/download").find();
-});
+const data = await getCMS("editions/server/dowload");
 </script>
 <template>
   <p>{{ data }}</p>

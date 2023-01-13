@@ -1,7 +1,5 @@
 <script setup>
-const { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/iot/download").find();
-});
+const data = await getCMS("editions/iot/download");
 </script>
 <template>
   <p>{{ data }}</p>

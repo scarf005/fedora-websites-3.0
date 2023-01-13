@@ -1,4 +1,50 @@
-<script setup></script>
+<script setup>
+let typeValue = ref("");
+let typeStatus = false;
+const arr = [
+  "Workspace",
+  "Game Center",
+  "Studio",
+  "Community",
+  "Operating System",
+];
+const speed = 150;
+const newTextDelay = 1000;
+let arrIndex = 0;
+let charIndex = 0;
+
+function writeText() {
+  if (charIndex < arr[arrIndex].length) {
+    if (!typeStatus) typeStatus = true;
+    typeValue.value += arr[arrIndex].charAt(charIndex);
+    charIndex += 1;
+    setTimeout(writeText, speed);
+  } else {
+    typeStatus = false;
+    setTimeout(eraseText, newTextDelay);
+  }
+}
+function eraseText() {
+  if (charIndex > 0) {
+    if (!typeStatus) typeStatus = true;
+    typeValue.value = arr[arrIndex].substring(0, charIndex - 1);
+    charIndex -= 1;
+    setTimeout(eraseText, speed);
+  } else {
+    typeStatus = false;
+    arrIndex += 1;
+    if (arrIndex < arr.length) {
+      setTimeout(writeText, speed + 1000);
+    } else {
+      typeValue.value = arr[4];
+    }
+  }
+}
+
+onMounted(() => {
+  setTimeout(writeText, newTextDelay + 200);
+});
+</script>
 <template>
   <main class="w-full">
     <header
@@ -11,7 +57,7 @@
         <div>
           <!-- TODO: Add dynamic changing of text in the span -->
           <h1 class="mx-auto mb-8 text-3xl font-semibold md:text-9xl">
-            It's your <span>operating</span> system.
+            It's your <br /><span>{{ typeValue }} </span>.
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">
             An innovative platform for hardware, clouds, and containers, built

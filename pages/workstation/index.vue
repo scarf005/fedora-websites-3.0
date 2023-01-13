@@ -1,15 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/workstation/home." + locale._value).findOne();
-});
-
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/workstation/home").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
+const data = await getCMS("editions/workstation/home");
 useContentHead(data);
 </script>
 <template>
@@ -61,7 +52,7 @@ useContentHead(data);
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
         >
-          {{ data.sections[0].title }}
+          {{ $t(data.sections[0].sectionTitle) }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
@@ -74,7 +65,7 @@ useContentHead(data);
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.sections[1].sectionTitle }}
+        {{ $t(data.sections[1].sectionTitle) }}
       </h2>
       <FpBenefit
         v-for="item in data.sections[1].content"
@@ -88,7 +79,7 @@ useContentHead(data);
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
-        {{ data.sections[2].sectionTitle }}
+        {{ $t(data.sections[2].sectionTitle) }}
       </h2>
       <div class="mx-auto mb-12 max-w-7xl">
         <FpBenefit
@@ -105,7 +96,7 @@ useContentHead(data);
     >
       <div class="p-2 sm:p-10">
         <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
-          {{ data.sections[3].sectionTitle }}
+          {{ $t(data.sections[3].sectionTitle) }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
           <FpListItem
