@@ -25,13 +25,12 @@
 
 
 
-### Vue Training Videos for Fedora Websites developers
+## Vue Training Videos for Fedora Websites developers
 
 We have a two-part training video series that takes you from start to finish implementing front end components using Vue.js starting with one of our design mockups and finishing with code. Part 1 is complete and part 2 is in editing:
 
 - [How to create vue components for the new Fedora Website - Part 1](https://peertube.linuxrocks.online/w/9c6NkDP8vLnH2eWgrWasaw)
 
----
 
 ## General Vue Setup
 
@@ -43,14 +42,13 @@ We have a two-part training video series that takes you from start to finish imp
 - Or use vscode. Flatpak versions are generally fine as well, however the limited integrated terminal can cause issues
 - [Check out the Vue Documentation for Vue syntax](https://vuejs.org/)
 
-### Linting and Formating
+## Linting and Formating
 
 - [eslint](https://eslint.org/)
 - [prettier](https://prettier.io/)
 - [eslint-prettier](https://github.com/prettier/eslint-config-prettier)
 
-### Style and CSS
+## Style and CSS
 
 - [Tailwindcss editor setup](https://tailwindcss.com/docs/editor-setup)
-- a postcss plugin is required if you use `<style lang="postcss"></style>` in your vue components
 - [Check out Tailwind's Documentation for help](https://tailwindcss.com/)
