@@ -2,25 +2,24 @@
 <img src="https://translate.fedoraproject.org/widgets/fedora-websites-3-0/-/svg-badge.svg" alt="Translation status" />
 </a>
 
-## Bugs:
+## Development: Getting Started
+
+- This repository is a standard [`create-nuxt-app`](https://nuxt.com/docs) project.
+- To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository. Ask an admin for write access on discussion.fedoraproject.org.
+- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages). Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically.
+
+- To add a new page or a new component, clone this repository, change into the folder, and run:
+
+  - `npm install`: to install the project dependencies
+  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
+  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
+
+## Bug reporting
 
 - Design questions and discussion: https://gitlab.com/fedora/design/team/wwwfpo-2022/-/issues
 - Bugs (ie. logo squished on mobile) https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues
 - Who's working on what: https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/boards/4623394
 
-Note: To edit the content of this site you do not need below guide - simply go to the CMS linked in header. To develop new features or add new pages, read on.
-
-## Development: Getting Started
-
-This repository was set up on July 20 2022 as the team voted on Fedora's static frontend pages.
-
-It is an off-the-shelf `create-nuxt-app` project. For more information see [nuxt documentation](https://nuxt.com/docs).
-
-- Clone this repository and run in the folder:
-
-  - `npm install`: to install the project dependencies
-  - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
-  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
 
 ### Vue Training Videos for Fedora Websites developers
