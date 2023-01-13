@@ -7,17 +7,9 @@ const categories = {
   support: navigation.support,
 };
 
-const switchLocalePath = useSwitchLocalePath();
-const { locales } = useI18n();
-const availableLocales = computed(() => {
-  return locales.value.map((i) => ({
-    name: i.name,
-    href: switchLocalePath(i.code),
-  }));
-});
-
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
+let languageOpen = useState("languageOpen", () => null);
 </script>
 
 <template>
@@ -34,6 +26,7 @@ const sectionOpen = useState("section", () => null);
         <!-- MOBILE EXPANDER -->
         <button
           @click="
+            languageOpen = null;
             if (
               categoryOpen &&
               categories.downloads.label === categoryOpen.label
@@ -67,6 +60,7 @@ const sectionOpen = useState("section", () => null);
             categoryOpen?.label === category.label && 'md:bg-fp-blue'
           }`"
           @click="
+            languageOpen = null;
             if (categoryOpen && category.label === categoryOpen.label) {
               categoryOpen = null;
               sectionOpen = null;
@@ -79,10 +73,32 @@ const sectionOpen = useState("section", () => null);
           <div class="md:hidden">
             <Icon :name="category.icon" size="24" />
           </div>
-          <p class="text-sm text-white">{{ category.label }}</p>
+          <p class="text-sm text-white">{{ $t(category.label) }}</p>
         </button>
+
         <div class="hidden items-center justify-end md:flex">
-          <FpThemeSelector />
+          <!-- language selector -->
+          <div
+            class="rounded-xl p-1 hover:bg-fp-blue-dark md:p-3"
+            @click="
+              languageOpen = !languageOpen;
+              categoryOpen = null;
+              sectionOpen = null;
+            "
+          >
+            <div class="hidden cursor-pointer sm:inline-block">
+              <a
+                class="inline-flex items-center rounded px-4 text-sm text-white"
+              >
+                <span class="mr-1">{{ $t("Languages") }}</span>
+              </a>
+              <FpLanguageSelector :open="languageOpen" />
+            </div>
+          </div>
+          <!-- theme selector -->
+          <div class="rounded-xl p-1 hover:bg-fp-blue-dark md:p-3">
+            <FpThemeSelector />
+          </div>
         </div>
       </FpNav>
     </div>
@@ -94,10 +110,6 @@ const sectionOpen = useState("section", () => null);
     >
       <!-- close button -->
       <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
-        <FpLanguageSelector
-          :title="$t('Languages')"
-          :items="availableLocales"
-        />
         <button @click="categoryOpen = null" class="hover:opacity-75">
           <Icon name="fa6-solid:x" size="24" />
         </button>
@@ -107,7 +119,7 @@ const sectionOpen = useState("section", () => null);
         <section class="col-span-3 w-full">
           <header class="m-4 hidden w-fit lg:block">
             <h2 class="text-xl font-semibold uppercase text-white">
-              Fedora {{ categoryOpen.label }}
+              {{ $t(categoryOpen.label) }}
             </h2>
           </header>
           <ul>
@@ -125,7 +137,7 @@ const sectionOpen = useState("section", () => null);
                 @click="sectionOpen = section"
               >
                 <h3 class="font-medium">
-                  {{ section.label }}
+                  {{ $t(section.label) }}
                 </h3>
                 <div class="lg:hidden">
                   <Icon
@@ -147,7 +159,7 @@ const sectionOpen = useState("section", () => null);
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path">
                     <Icon :name="link.icon" size="24" class="mr-2" />
-                    {{ link.label }}
+                    {{ $t(link.label) }}
                   </FpLink>
                 </li>
               </ul>
@@ -163,10 +175,10 @@ const sectionOpen = useState("section", () => null);
           <div>
             <header class="mb-6 mt-4">
               <h3 class="font-semibold text-white">
-                {{ sectionOpen.label }}
+                {{ $t(sectionOpen.label) }}
               </h3>
               <p class="text-white">
-                {{ sectionOpen.description }}
+                {{ $t(sectionOpen.description) }}
               </p>
             </header>
             <ul class="grid grid-cols-3 gap-4">
@@ -178,10 +190,10 @@ const sectionOpen = useState("section", () => null);
                 <FpLink :href="link.path">
                   <h4 class="mb-2 font-medium text-white">
                     <Icon :name="link.icon" size="32" />
-                    {{ link.label }}
+                    {{ $t(link.label) }}
                   </h4>
                   <p class="text-white">
-                    {{ link.description }}
+                    {{ $t(link.description) }}
                   </p>
                 </FpLink>
               </li>
