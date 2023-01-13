@@ -76,29 +76,23 @@ let languageOpen = useState("languageOpen", () => null);
           <p class="text-sm text-white">{{ $t(category.label) }}</p>
         </button>
 
+        <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
         <div class="hidden items-center justify-end md:flex">
-          <!-- language selector -->
           <div
-            class="rounded-xl p-1 hover:bg-fp-blue-dark md:p-3"
+            class="cursor-pointer rounded-xl hover:bg-fp-blue-dark md:p-3"
             @click="
               languageOpen = !languageOpen;
               categoryOpen = null;
               sectionOpen = null;
             "
           >
-            <div class="hidden cursor-pointer sm:inline-block">
-              <a
-                class="inline-flex items-center rounded px-4 text-sm text-white"
-              >
-                <span class="mr-1">{{ $t("Languages") }}</span>
-              </a>
-              <FpLanguageSelector :open="languageOpen" />
-            </div>
+            <a class="inline-flex items-center rounded text-sm text-white">
+              <span class="mr-1">{{ $t("Languages") }}</span>
+            </a>
+            <FpLanguageSelector :open="languageOpen" />
           </div>
-          <!-- theme selector -->
-          <div class="rounded-xl p-1 hover:bg-fp-blue-dark md:p-3">
-            <FpThemeSelector />
-          </div>
+
+          <FpThemeSelector />
         </div>
       </FpNav>
     </div>

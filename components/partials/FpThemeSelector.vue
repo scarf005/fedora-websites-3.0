@@ -7,29 +7,27 @@ function setMode(value) {
 </script>
 
 <template>
-  <div class="group relative inline-block">
-    <button
-      v-if="colorMode.preference === 'system'"
-      @click="setMode('light')"
-      class="hidden fill-white stroke-white sm:block"
-    >
-      <Icon name="fa-solid:laptop" class="white" />
-    </button>
+  <button
+    v-if="colorMode.preference === 'system'"
+    @click="setMode('light')"
+    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-blue-dark md:p-3"
+  >
+    <Icon name="fa-solid:laptop" class="white" />
+  </button>
 
-    <button
-      v-if="colorMode.preference === 'light'"
-      @click="setMode('dark')"
-      class="hidden fill-white stroke-white sm:block"
-    >
-      <Icon name="fa-solid:sun" class="white" />
-    </button>
+  <button
+    v-if="colorMode.preference === 'light'"
+    @click="setMode('dark')"
+    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-blue-dark md:p-3"
+  >
+    <Icon name="fa-solid:sun" class="white" />
+  </button>
 
-    <button
-      v-if="colorMode.preference === 'dark'"
-      @click="setMode('system')"
-      class="hidden fill-white stroke-white sm:block"
-    >
-      <Icon name="fa-solid:moon" class="white" />
-    </button>
-  </div>
+  <button
+    v-if="colorMode.preference === 'dark'"
+    @click="setMode('system')"
+    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-blue-dark md:p-3"
+  >
+    <Icon name="fa-solid:moon" class="white" />
+  </button>
 </template>
