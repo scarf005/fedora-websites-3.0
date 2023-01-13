@@ -1,39 +1,30 @@
 <script setup>
-defineProps({
-  title: String,
-  items: Array,
-  icons: Boolean,
+const props = defineProps({
+  open: Boolean || null,
+});
+
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    name: i.name,
+    href: switchLocalePath(i.code),
+  }));
 });
 </script>
 <template>
-  <div class="group relative hidden sm:inline-block">
-    <a
-      class="inline-flex cursor-pointer items-center rounded px-4 text-sm text-white"
-    >
-      <span class="mr-1">{{ title }}</span>
-      <svg
-        class="h-4 fill-white"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
+  <ul
+    class="absolute mt-5 w-56 rounded border border-fp-blue bg-fp-blue py-2 text-white"
+    v-if="open"
+  >
+    <li v-for="item in availableLocales" :key="item.name" class="mb-2">
+      <FpLink
+        :href="item.href"
+        :current="item.current"
+        class="rounded-md px-3 py-4 text-base font-medium text-white"
       >
-        <path
-          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-        />
-      </svg>
-    </a>
-    <ul
-      class="absolute hidden w-56 rounded border border-fp-blue bg-white py-2 text-gray-700 group-hover:block dark:border-fp-blue-dark dark:bg-black"
-    >
-      <li v-for="item in items" :key="item.name" class="mb-2">
-        <FpLink
-          :href="item.href"
-          :current="item.current"
-          class="rounded-md px-3 py-4 text-base font-medium text-gray-500 hover:text-fp-purple dark:text-gray-300"
-        >
-          <Icon v-if="icons" :name="`fa6-solid:${item.icon}`" />
-          {{ item.name }}
-        </FpLink>
-      </li>
-    </ul>
-  </div>
+        {{ item.name }}
+      </FpLink>
+    </li>
+  </ul>
 </template>
