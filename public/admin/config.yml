@@ -988,6 +988,89 @@ collections:
                             name: "name"
                           - label: "Artifact URI"
                             name: "uri"
+      # Compliance Partial Data
+      - label: "Download Terms and Conditions Partial"
+        name: "compliancePartial"
+        file: "/content/partials/compliance.yml"
+        format: yml
+        fields:
+          - label: "Title"
+            name: "title"
+            required: false
+            hint: "Section title"
+          - label: "Description"
+            name: "description"
+            required: false
+            widget: "text"
+            hint: "Section content"
+      # Become Contributors Partial Data
+      - label: "Become Contributor Partial"
+        name: "becomeContributorPartial"
+        file: "/content/partials/become_contributor.yml"
+        format: yml
+        fields:
+          - label: "Title"
+            name: "sectionTitle"
+            required: false
+            hint: "Section Title"
+          - label: "Description"
+            name: "sectionDescription"
+            required: false
+            hint: "An optional description"
+          - label: "Official Channels"
+            name: "officialChannels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Section Title"
+                name: "title"
+                required: false
+                hint: "An optional headline"
+              - label: "List of channels"
+                name: "content"
+                required: false
+                widget: "list"
+                collapsed: true
+                fields:
+                  - label: "Name"
+                    name: "title"
+                    required: false
+                    hint: "Communication channel name"
+                  - label: "Image"
+                    name: "image"
+                    required: false
+                    hint: "An optional image or logo"
+                  - label: "Link URL"
+                    name: "link"
+                    required: false
+                    hint: "An optional URL"
+          - label: "Community Channels"
+            name: "communityChannels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Section Title"
+                name: "title"
+                required: false
+                hint: "An optional headline"
+              - label: "List of channels"
+                name: "content"
+                required: false
+                widget: "list"
+                collapsed: true
+                fields:
+                  - label: "Name"
+                    name: "title"
+                    required: false
+                    hint: "Communication channel name"
+                  - label: "Image"
+                    name: "image"
+                    required: false
+                    hint: "An optional image or logo"
+                  - label: "Link URL"
+                    name: "link"
+                    required: false
+                    hint: "An optional URL"
   #################
   # Server Pages #
   #################
