@@ -120,6 +120,7 @@ const EC2_regions = {
 };
 
 useHead({ htmlAttrs: { class: "scroll-smooth" } });
+useContentHead(data);
 </script>
 <template>
   <main
@@ -478,8 +479,15 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <li>
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
-              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+              class="mb-1 bg-slate-100 px-4 text-sm text-gray-800"
             ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            <p class="mb-4 text-sm">
+              <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
+
+              {{ $t("You can verify the details of the GPG key(s)") }}
+              <FpLink class="text-sm text-fp-blue" href="/security">here</FpLink
+              >.
+            </p>
           </li>
           <li>
             <p class="mb-2">{{ $t("Verify the signature file is valid") }}</p>
