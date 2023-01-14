@@ -1,9 +1,11 @@
 <template>
-  <div class="container mx-auto grid max-w-7xl grid-cols-2">
-    <div class="col-span-2 my-5 p-2 md:col-span-1">
+  <div
+    class="container mx-auto flex max-w-7xl flex-row flex-wrap justify-center gap-8 lg:flex-nowrap"
+  >
+    <div class="my-5">
       <slot name="header">
         <h2 class="mb-5 text-center text-fp-blue lg:text-start">
-          {{ $t("We take security seriously.") }}
+          {{ $t("We take security seriously") }}
         </h2>
       </slot>
       <p class="mb-5 text-fp-gray">
@@ -33,9 +35,7 @@
         </template>
       </i18n-t>
     </div>
-    <div
-      class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
-    >
+    <div class="flex w-[400px] flex-none items-center justify-center">
       <FpImage
         class="max-h-72 drop-shadow-lg grayscale invert dark:grayscale-0 dark:invert-0"
         src="public/assets/images/verify_download_2.png"
