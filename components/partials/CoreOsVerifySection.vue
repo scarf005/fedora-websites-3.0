@@ -1,9 +1,11 @@
 <template>
   <div class="container mx-auto grid max-w-7xl grid-cols-2">
     <div class="col-span-2 my-5 p-2 md:col-span-1">
-      <h2 class="mb-5 text-fp-blue">
-        {{ $t("We take security seriously.") }}
-      </h2>
+      <slot name="header">
+        <h2 class="mb-5 text-center text-fp-blue lg:text-start">
+          {{ $t("We take security seriously.") }}
+        </h2>
+      </slot>
       <p class="mb-5 text-fp-gray">
         {{
           $t(

@@ -121,6 +121,95 @@
                           name: "name"
                         - label: "Artifact URI"
                           name: "uri"
+    # Security data
+    - label: "Security & GPG keys"
+      name: "securityData"
+      file: "/content/security.yml"
+      format: yml
+      fields:
+        - label: "Page Title"
+          name: "title"
+          widget: "string"
+          required: true
+        - label: "Page description"
+          name: "description"
+          widget: "string"
+        - label: "Verify Section"
+          name: "verifySection"
+          widget: "object"
+          collapsed: true
+          fields:
+            - label: "Title"
+              name: "title"
+              widget: "string"
+              required: true
+            - label: "Description"
+              name: "description"
+              widget: "string"
+              required: false
+        - label: "Package signing Section"
+          name: "packageSection"
+          widget: "object"
+          collapsed: true
+          fields:
+            - label: "Title"
+              name: "title"
+              widget: "string"
+              required: true
+            - label: "Description"
+              name: "description"
+              widget: "string"
+              required: false
+            - label: "Section text"
+              name: "content"
+              widget: "text"
+              required: true
+        - label: "Report Bug Section"
+          name: "bugSection"
+          widget: "object"
+          collapsed: true
+          fields:
+            - label: "Title"
+              name: "title"
+              widget: "string"
+              required: true
+            - label: "Description"
+              name: "description"
+              widget: "string"
+              required: false
+        - label: "GPG Keys"
+          name: "gpg_keys"
+          widget: "object"
+          collapsed: true
+          fields:
+            - label: "Current GPG keys"
+              name: "current"
+              widget: "list"
+              collapsed: true
+              fields:
+                - label: "Key Name"
+                  name: "name"
+                - label: "Key ID"
+                  name: "id"
+                - label: "Key Fingerprint"
+                  name: "fingerprint"
+                - label: "DNS OpenPGPKey"
+                  name: "openpgpkey"
+                  required: false
+            - label: "Obsolete GPG keys"
+              name: "obsolete"
+              widget: "list"
+              collapsed: true
+              fields:
+                - label: "Key Name"
+                  name: "name"
+                - label: "Key ID"
+                  name: "id"
+                - label: "Key Fingerprint"
+                  name: "fingerprint"
+                - label: "DNS OpenPGPKey"
+                  name: "openpgpkey"
+                  required: false
     # Compliance Partial Data
     - label: "Download Terms and Conditions Partial"
       name: "compliancePartial"
