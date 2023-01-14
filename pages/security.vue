@@ -53,7 +53,7 @@ useContentHead(data);
             <li>
               <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
               <pre
-                class="mb-1 bg-slate-100 px-4 text-sm text-gray-800"
+                class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
               ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
               <p class="mb-4 text-sm">
                 <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
@@ -64,13 +64,13 @@ useContentHead(data);
             <li>
               <p class="mb-2">{{ $t("Verify the CHECKSUM file is valid") }}</p>
               <pre
-                class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+                class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
               ><code>gpgv --keyring ./fedora.gpg *-CHECKSUM</code></pre>
             </li>
             <li>
               <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
               <pre
-                class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+                class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
               ><code>sha256sum -c *-CHECKSUM</code></pre>
             </li>
           </ul>
