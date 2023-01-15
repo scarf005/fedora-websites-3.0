@@ -18,7 +18,7 @@
               <h5>Title</h5>
             </slot>
           </header>
-          <div class="max-h-[32rem] overflow-y-scroll p-3 sm:h-full">
+          <div class="overflow-y-scroll p-3 sm:h-full">
             <slot />
           </div>
           <footer class="flex justify-end border-t p-3 dark:border-gray-600">

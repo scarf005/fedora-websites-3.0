@@ -48,7 +48,7 @@ useContentHead(data);
           </p>
 
           <ul
-            class="list-outside list-decimal pl-8 pt-2 text-fp-gray-darkest dark:text-fp-gray-light"
+            class="list-outside list-decimal pl-8 pt-2 text-start text-fp-gray-darkest dark:text-fp-gray-light"
           >
             <li>
               <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
@@ -112,25 +112,7 @@ useContentHead(data);
           </h2>
         </div>
       </div>
-      <div
-        class="container mx-auto grid max-w-max divide-y divide-dotted divide-fp-gray text-fp-gray dark:text-fp-gray-light"
-      >
-        <div v-for="gpg in data.gpg_keys.current" class="py-8">
-          <h3 class="pb-3 text-fp-blue">{{ gpg.name }}</h3>
-          <p>
-            <span class="font-bold">id: </span
-            ><code class="text-fp-gray">{{ gpg.id }}</code>
-          </p>
-          <p>
-            <span class="font-bold">Fingerprint: </span
-            ><code class="text-fp-gray">{{ gpg.fingerprint }}</code>
-          </p>
-          <p>
-            <span class="font-bold">DNS OpenPGPKey: </span
-            ><code class="text-fp-gray">{{ gpg.openpgpkey }}</code>
-          </p>
-        </div>
-      </div>
+      <GPGkeysSection :gpgs="data.gpg_keys.current" />
     </section>
 
     <section class="bg-gray-50 py-12 dark:bg-neutral-800">
@@ -146,26 +128,7 @@ useContentHead(data);
           <Icon name="fa-solid:chevron-down" size="24" v-if="obsolete_keys" />
         </div>
       </div>
-      <div
-        v-if="obsolete_keys"
-        class="container mx-auto grid max-w-max divide-y divide-dotted divide-fp-gray text-fp-gray dark:text-fp-gray-light"
-      >
-        <div v-for="gpg in data.gpg_keys.obsolete" class="py-8">
-          <h3 class="pb-3 text-fp-blue">{{ gpg.name }}</h3>
-          <p>
-            <span class="font-bold">id: </span
-            ><code class="text-fp-gray">{{ gpg.id }}</code>
-          </p>
-          <p>
-            <span class="font-bold">Fingerprint: </span
-            ><code class="text-fp-gray">{{ gpg.fingerprint }}</code>
-          </p>
-          <p v-if="gpg.openpgpkey">
-            <span class="font-bold">DNS OpenPGPKey: </span
-            ><code class="text-fp-gray">{{ gpg.openpgpkey }}</code>
-          </p>
-        </div>
-      </div>
+      <GPGkeysSection v-if="obsolete_keys" :gpgs="data.gpg_keys.obsolete" />
     </section>
 
     <section class="py-12 dark:bg-black">

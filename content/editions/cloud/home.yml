@@ -6,7 +6,7 @@ header_images:
   - image: public/assets/images/cloud_background.jpg
 links:
   - text: Download Now
-    url: https://getfedora.org/en/cloud/download/
+    url: /cloud/download/
   - text: Reviewed By TechHut
     url: https://www.youtube.com/watch?v=54aoIGKEMnk
 sections:

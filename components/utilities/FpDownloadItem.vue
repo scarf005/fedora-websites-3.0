@@ -50,9 +50,14 @@ const prettyType = {
   openstack: "OpenStack",
   packet: "Packet",
   qemu: "QEMU",
+  qcow2: "QEMU",
   virtualbox: "VirtualBox",
   vmware: "VMware",
   vultr: "Vultr",
+  "vagrant-libvirt": "Vagrant",
+  "vagrant-virtualbox": "Vagrant",
+  "tar-gz": "Compressed Image",
+  boot: "Netboot",
 };
 </script>
 

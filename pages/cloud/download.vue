@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("editions/server/download");
+const data = await getCMS("editions/cloud/download");
 const release_data = await getCMS("release");
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: images_data } = await useFetch(
@@ -28,8 +28,8 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  verifyModal.value.chk_name = `Fedora-Server-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
-  // Fedora-Server-37-1.7-x86_64-CHECKSUM
+  verifyModal.value.chk_name = `Fedora-Cloud-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+  // Fedora-Cloud-37-1.7-x86_64-CHECKSUM
   verifyModal.value.checksum = `${dlpath[art.arch]}/${
     release_data._value.ga.releasever
   }/${path}/${verifyModal.value.chk_name}`;
@@ -49,16 +49,16 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-orange md:mt-2">
+  <main class="border-t-8 border-fp-blue-light md:mt-2">
     <TheLocalBar
-      image="assets/images/fedora_white.png"
-      home="/server"
+      image="assets/images/fedora-cloud-logo.png"
+      home="/cloud"
       class="sm:px-2"
-      textColor="text-fp-orange"
+      textColor="text-fp-blue-light"
       :items="[
-        { name: 'Download', link: '/server/download' },
-        { name: 'Community', link: '/server/community' },
-        { name: 'Help', link: '/server/help' },
+        { name: 'Download', link: '/cloud/download' },
+        { name: 'Community', link: '/cloud/community' },
+        { name: 'Help', link: '/cloud/help' },
       ]"
     />
 
@@ -67,8 +67,8 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl">
         <h1 class="mb-4 text-4xl text-fp-gray">
           {{ $t("Download") }}
-          <span class="text-fp-orange">
-            Fedora Server {{ release_data.ga.releasever }}</span
+          <span class="text-fp-blue-light">
+            Fedora Cloud {{ release_data.ga.releasever }}</span
           >
         </h1>
         <p class="text-fp-gray dark:text-fp-gray-light">
@@ -99,39 +99,39 @@ useContentHead(data);
         >
           <DownloadSection
             name="For Intel and AMD x86_64 systems"
-            art_name="Fedora Server"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.x86_64"
+            :artifacts="images_data.payload.images.Cloud.x86_64"
             :dlPrefix="dlpath.x86_64"
             :version="release_data.ga.releasever"
-            class="server-theme"
+            class="cloud-theme"
           />
           <DownloadSection
             name="For ARM® aarch64 systems"
-            art_name="Fedora Server"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.aarch64"
+            :artifacts="images_data.payload.images.Cloud.aarch64"
             :dlPrefix="dlpath.aarch64"
             :version="release_data.ga.releasever"
-            class="server-theme"
+            class="cloud-theme"
           />
           <DownloadSection
             name="For Power ppc64le systems"
-            art_name="Fedora Server"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.ppc64le"
+            :artifacts="images_data.payload.images.Cloud.ppc64le"
             :dlPrefix="dlpath.ppc64le"
             :version="release_data.ga.releasever"
-            class="server-theme"
+            class="cloud-theme"
           />
           <DownloadSection
             name="For IBM s390x zSystems"
-            art_name="Fedora Server"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.s390x"
+            :artifacts="images_data.payload.images.Cloud.s390x"
             :dlPrefix="dlpath.s390x"
             :version="release_data.ga.releasever"
-            class="server-theme"
+            class="cloud-theme"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ body.has-modal {
   @apply overflow-hidden;
 }
 
-.server-theme .fp-download-item a {
-  @apply border-fp-orange text-fp-orange hover:bg-fp-orange hover:text-white;
+.cloud-theme .fp-download-item a {
+  @apply border-fp-blue-light text-fp-blue-light hover:bg-fp-blue-light hover:text-white;
 }
 </style>

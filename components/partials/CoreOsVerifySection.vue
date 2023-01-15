@@ -35,7 +35,9 @@
         </template>
       </i18n-t>
     </div>
-    <div class="flex w-[400px] flex-none items-center justify-center">
+    <div
+      class="flex w-[400px] flex-none shrink items-center justify-center sm:shrink-0"
+    >
       <FpImage
         class="max-h-72 drop-shadow-lg grayscale invert dark:grayscale-0 dark:invert-0"
         src="public/assets/images/verify_download_2.png"
