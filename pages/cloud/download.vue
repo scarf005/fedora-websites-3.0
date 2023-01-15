@@ -97,32 +97,36 @@ useContentHead(data);
         <div
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
         >
-          <CloudDownloadSection
+          <DownloadSection
             name="For Intel and AMD x86_64 systems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
             :artifacts="images_data.payload.images.Cloud.x86_64"
             :dlPrefix="dlpath.x86_64"
             :version="release_data.ga.releasever"
             class="cloud-theme"
           />
-          <CloudDownloadSection
+          <DownloadSection
             name="For ARM® aarch64 systems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
             :artifacts="images_data.payload.images.Cloud.aarch64"
             :dlPrefix="dlpath.aarch64"
             :version="release_data.ga.releasever"
             class="cloud-theme"
           />
-          <CloudDownloadSection
+          <DownloadSection
             name="For Power ppc64le systems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
             :artifacts="images_data.payload.images.Cloud.ppc64le"
             :dlPrefix="dlpath.ppc64le"
             :version="release_data.ga.releasever"
             class="cloud-theme"
           />
-          <CloudDownloadSection
+          <DownloadSection
             name="For IBM s390x zSystems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
             :artifacts="images_data.payload.images.Cloud.s390x"
             :dlPrefix="dlpath.s390x"

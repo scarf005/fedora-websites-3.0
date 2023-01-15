@@ -5,6 +5,9 @@ const props = defineProps({
   name: {
     type: String,
   },
+  art_name: {
+    type: String,
+  },
   version: {
     type: String,
   },
@@ -27,7 +30,7 @@ const props = defineProps({
 
     <div v-for="(v, k) in artifacts" key="k" class="download-section mb-2">
       <FpDownloadItem
-        :name="'Fedora Cloud ' + version"
+        :name="`${art_name} ${version}`"
         :type="v.type"
         :format="v.format"
         :downloadLink="`${dlPrefix}/${version}/${v.path}`"
