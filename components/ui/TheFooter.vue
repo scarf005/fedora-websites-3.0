@@ -20,28 +20,25 @@ const availableLocales = computed(() => {
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
-      <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        <FpCollapsibleSection title="Languages" :items="availableLocales" />
-        <FpCollapsibleSection
-          title="Downloads"
-          :navItems="categories.downloads.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          title="Community"
-          :navItems="categories.community.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          title="Contributors"
-          :navItems="categories.contributors.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          title="Support"
-          :navItems="categories.support.sections"
-          use="footer"
-        />
+      <div class="container">
+        <div class="px-3">
+          <p class="text-lg font-bold text-gray-500">
+            {{ $t("Languages") }}
+          </p>
+          <p class="text-gray-800" v-for="item in availableLocales">
+            <a :href="item.href" class="w-100">{{ item.name }}</a>
+          </p>
+        </div>
+        <div v-for="category in categories">
+          <div v-for="section in category.sections">
+            <p class="text-lg font-bold text-gray-500">
+              {{ $t(section.label) }}
+            </p>
+            <p class="text-gray-800" v-for="item in section.links">
+              <a :href="item.path" class="w-100">{{ item.label }}</a>
+            </p>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Privacy Links -->

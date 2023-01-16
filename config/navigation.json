@@ -326,6 +326,12 @@
             "path": "#",
             "icon": "fa6-solid:desktop",
             "description": ""
+          },
+          {
+            "label": "Edit this website",
+            "path": "/admin",
+            "icon": "fa6-brands:fedora",
+            "description": "Edit fedoraproject.org from the CMS"
           }
         ]
       },
