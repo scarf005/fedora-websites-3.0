@@ -9,5 +9,12 @@
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" },
   { "code": "ko", "iso": "ko", "file": "ko.json", "name": "한국어" },
   { "code": "es", "iso": "es", "file": "es.json", "name": "Español" },
-  { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" }
+  { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" },
+  { "code": "ar", "iso": "ar", "file": "ar.json", "name": "عربى" },
+  {
+    "code": "pt_br",
+    "iso": "pt_br",
+    "file": "pt_BR.json",
+    "name": "Portugues do Brasil"
+  }
 ]
