@@ -20,18 +20,21 @@ const availableLocales = computed(() => {
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
-      <div class="container">
-        <div class="px-3">
-          <p class="text-lg font-bold text-gray-500">
+      <div class="container grid grid-cols-5">
+        <div class="col-span-5 px-3 md:col-span-1">
+          <p class="mt-5 text-lg font-bold text-gray-500">
             {{ $t("Languages") }}
           </p>
           <p class="text-gray-800" v-for="item in availableLocales">
             <a :href="item.href" class="w-100">{{ item.name }}</a>
           </p>
         </div>
-        <div v-for="category in categories">
+        <div
+          v-for="category in categories"
+          class="col-span-4 px-3 md:col-span-1"
+        >
           <div v-for="section in category.sections">
-            <p class="text-lg font-bold text-gray-500">
+            <p class="mt-5 text-lg font-bold text-gray-500">
               {{ $t(section.label) }}
             </p>
             <p class="text-gray-800" v-for="item in section.links">
