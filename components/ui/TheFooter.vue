@@ -21,14 +21,6 @@ const availableLocales = computed(() => {
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid grid-cols-5">
-        <div class="col-span-5 px-3 md:col-span-1">
-          <p class="mt-5 text-lg font-bold text-gray-500">
-            {{ $t("Languages") }}
-          </p>
-          <p class="text-gray-800" v-for="item in availableLocales">
-            <a :href="item.href" class="w-100">{{ item.name }}</a>
-          </p>
-        </div>
         <div
           v-for="category in categories"
           class="col-span-4 px-3 md:col-span-1"
@@ -38,9 +30,17 @@ const availableLocales = computed(() => {
               {{ $t(section.label) }}
             </p>
             <p class="text-gray-800" v-for="item in section.links">
-              <a :href="item.path" class="w-100">{{ item.label }}</a>
+              <FpLink :href="item.path" class="w-100">{{ item.label }}</FpLink>
             </p>
           </div>
+        </div>
+        <div class="col-span-5 px-3 md:col-span-1">
+          <p class="mt-5 text-lg font-bold text-gray-500">
+            {{ $t("Languages") }}
+          </p>
+          <p class="text-gray-800" v-for="item in availableLocales">
+            <FpLink :href="item.href" class="w-100">{{ item.name }}</FpLink>
+          </p>
         </div>
       </div>
     </nav>
