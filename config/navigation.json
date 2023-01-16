@@ -329,7 +329,7 @@
           },
           {
             "label": "Edit this website",
-            "path": "/admin",
+            "path": "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/",
             "icon": "fa6-brands:fedora",
             "description": "Edit fedoraproject.org from the CMS"
           }
