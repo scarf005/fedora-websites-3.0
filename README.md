@@ -5,8 +5,14 @@
 ## Development: Getting Started
 
 - This repository is a standard [`create-nuxt-app`](https://nuxt.com/docs) project.
-- To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository. Ask an admin for write access on discussion.fedoraproject.org. This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
-- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/). Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically. The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English.
+- To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository. 
+  - Ask an admin for write access on discussion.fedoraproject.org. 
+  - This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
+  - 
+- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/). 
+  - Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically. 
+  - The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English. 
+  - To add a new language, please add it to the file locales.json
 
 - To add a new page or a new component, clone this repository, change into the folder, and run:
 
@@ -25,11 +31,15 @@
 
 
 
-## Vue Training Videos for Fedora Websites developers
+## Training
 
 We have a two-part training video series that takes you from start to finish implementing front end components using Vue.js starting with one of our design mockups and finishing with code. Part 1 is complete and part 2 is in editing:
 
 - [How to create vue components for the new Fedora Website - Part 1](https://peertube.linuxrocks.online/w/9c6NkDP8vLnH2eWgrWasaw)
+
+Other documentation:
+- [How to contribute](https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/wikis/Contributor-Guidelines)
+- [How to use Netlify CMS](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/wikis/Netlify-CMS)
 
 
 ## General Vue Setup
