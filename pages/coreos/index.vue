@@ -1,15 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-let { data } = await useAsyncData("page-data", () => {
-  return queryContent("/editions/coreos/home." + locale._value).findOne();
-});
-
-if (data._value === null) {
-  ({ data } = await useAsyncData("page-data-fallback", () => {
-    return queryContent("/editions/coreos/home").sort().find();
-  }));
-  data._value = data._value[data._value.length - 1];
-}
+const data = await getCMS("editions/coreos/home");
 useContentHead(data);
 </script>
 

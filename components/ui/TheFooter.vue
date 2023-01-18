@@ -20,31 +20,34 @@ const availableLocales = computed(() => {
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
-      <div class="container grid gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        <FpCollapsibleSection
-          :title="$t('Languages')"
-          :items="availableLocales"
-        />
-        <FpCollapsibleSection
-          :title="$t('Downloads')"
-          :navItems="categories.downloads.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          :title="$t('Community')"
-          :navItems="categories.community.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          :title="$t('Contributors')"
-          :navItems="categories.contributors.sections"
-          use="footer"
-        />
-        <FpCollapsibleSection
-          :title="$t('Support')"
-          :navItems="categories.support.sections"
-          use="footer"
-        />
+      <div class="container grid grid-cols-5">
+        <div
+          v-for="category in categories"
+          class="col-span-4 px-3 md:col-span-1"
+        >
+          <div v-for="section in category.sections">
+            <p class="mt-5 text-lg font-bold text-gray-500 dark:text-gray-300">
+              {{ $t(section.label) }}
+            </p>
+            <p
+              class="text-gray-800 dark:text-gray-500"
+              v-for="item in section.links"
+            >
+              <FpLink :href="item.path" class="w-100">{{ item.label }}</FpLink>
+            </p>
+          </div>
+        </div>
+        <div class="col-span-5 px-3 md:col-span-1">
+          <p class="mt-5 text-lg font-bold text-gray-500 dark:text-gray-300">
+            {{ $t("Languages") }}
+          </p>
+          <p
+            class="text-gray-800 dark:text-gray-500"
+            v-for="item in availableLocales"
+          >
+            <FpLink :href="item.href" class="w-100">{{ item.name }}</FpLink>
+          </p>
+        </div>
       </div>
     </nav>
     <!-- Privacy Links -->

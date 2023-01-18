@@ -2,33 +2,16 @@ image: fedora:latest
 
 before_script:
   - mkdir .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
-  - dnf install npm translate-toolkit git -y
+  - dnf install npm -y
 
 cache:
   paths:
     - node_modules/
     - .cache_dnf
 
-update_pos_if_yaml_changed:
-  script:
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - git config --global core.hooksPath .githooks
-    - ./i18n_gen_pot.sh # run whenever changes to /content. create/update the pot files used by weblate.
-    - ./i18n_update_po.sh # update the po files from the up-to-date pot files
-    - git add .
-      # "[ci skip]" and "-o ci-skip" prevent a CI trigger loop
-    - git commit -m "[ci skip] AUTOMATA - update .pot and .po files $CURRENTDATE" || echo "nothing to commit"
-    - git push -o ci-skip http://root:$ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:develop
-  artifacts:
-    expire_in: 1 day # unless marked as keep from job page
-  only:
-    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
-
 pages:
   script:
     - npm install
-    - ./i18n_gen_yml.sh # run at build time to create temporary yml files from weblate po files.
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public
@@ -43,7 +26,6 @@ build_preview:
   stage: build
   script:
     - npm install
-    - ./i18n_gen_yml.sh # run at build time to create temporary yml files from weblate po files.
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public

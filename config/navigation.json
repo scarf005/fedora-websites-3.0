@@ -205,6 +205,12 @@
             "path": "https://lists.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": "Subscribe to the mailing lists to stay up to date on Fedora's development discussions."
+          },
+          {
+            "label": "Fedora Mastodon",
+            "path": "https://mastodon.social/@fedora@fosstodon.org",
+            "icon": "fa6-solid:desktop",
+            "description": "Follow us on Mastodon! This is a great place to stay up to date on the latest in the Fedora community."
           }
         ]
       },
@@ -274,7 +280,7 @@
           },
           {
             "label": "Reddit",
-            "path": "https://reddit.com/r/reddit",
+            "path": "https://reddit.com/r/fedora",
             "icon": "fa6-brands:reddit",
             "description": "This is a community managed subreddit for Fedora."
           }
@@ -320,6 +326,12 @@
             "path": "#",
             "icon": "fa6-solid:desktop",
             "description": ""
+          },
+          {
+            "label": "Edit this website",
+            "path": "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/",
+            "icon": "fa6-brands:fedora",
+            "description": "Edit fedoraproject.org from the CMS"
           }
         ]
       },
