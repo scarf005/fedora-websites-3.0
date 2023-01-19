@@ -16,11 +16,11 @@ function evalLink(uri, release) {
 </script>
 
 <template>
-  <main class="mt-4 border-t-8 border-fp-green">
+  <main class="border-t-8 border-fp-green md:mt-2">
     <TheLocalBar
       image="assets/images/workstation_logo.png"
       home="/workstation"
-      textColor="text-fp-blue"
+      textColor="text-fp-green"
       :items="[
         { name: 'Download', link: '/workstation/download' },
         { name: 'Community', link: '/workstation/community' },

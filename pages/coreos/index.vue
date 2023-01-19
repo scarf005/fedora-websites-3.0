@@ -13,7 +13,6 @@ useContentHead(data);
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
-        { name: 'Help', link: '/coreos/help' },
       ]"
     />
 

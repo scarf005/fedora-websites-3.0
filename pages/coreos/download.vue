@@ -143,11 +143,10 @@ useContentHead(data);
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
       home="/coreos"
-      textColor="text-fp-blue-light"
+      textColor="text-fp-magenta"
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
-        { name: 'Help', link: '/coreos/help' },
       ]"
     />
 

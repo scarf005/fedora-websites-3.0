@@ -49,16 +49,15 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-blue-light md:mt-2">
+  <main class="border-t-8 border-fp-blue md:mt-2">
     <TheLocalBar
       image="assets/images/fedora-cloud-logo.png"
       home="/cloud"
       class="sm:px-2"
-      textColor="text-fp-blue-light"
+      textColor="text-fp-blue"
       :items="[
         { name: 'Download', link: '/cloud/download' },
         { name: 'Community', link: '/cloud/community' },
-        { name: 'Help', link: '/cloud/help' },
       ]"
     />
 
@@ -67,7 +66,7 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl">
         <h1 class="mb-4 text-4xl text-fp-gray">
           {{ $t("Download") }}
-          <span class="text-fp-blue-light">
+          <span class="text-fp-blue">
             Fedora Cloud {{ release_data.ga.releasever }}</span
           >
         </h1>

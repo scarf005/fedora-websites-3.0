@@ -13,7 +13,6 @@ useContentHead(data);
       :items="[
         { name: 'Download', link: '/cloud/download' },
         { name: 'Community', link: '/cloud/community' },
-        { name: 'Help', link: '/cloud/help' },
       ]"
     />
 
