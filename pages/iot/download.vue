@@ -41,14 +41,13 @@ useContentHead(data);
 <template>
   <main class="border-t-8 border-fp-purple md:mt-2">
     <TheLocalBar
-      image="assets/images/fiot-logo.png"
+      image="assets/images/fedora_white.png"
       home="/iot"
       class="sm:px-2"
       textColor="text-fp-purple"
       :items="[
         { name: 'Download', link: '/iot/download' },
         { name: 'Community', link: '/iot/community' },
-        { name: 'Help', link: '/iot/help' },
       ]"
     />
 

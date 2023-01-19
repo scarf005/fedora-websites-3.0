@@ -6,7 +6,7 @@ useContentHead(data);
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
-      image="assets/images/workstation_logo.png"
+      image="assets/images/fedora-workstation-logo.png"
       home="/workstation"
       :items="[
         { name: 'Download', link: '/workstation/download' },

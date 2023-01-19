@@ -54,8 +54,8 @@ const availableLocales = computed(() => {
     <section class="container mx-auto py-10">
       <div class="flex flex-wrap items-center gap-4">
         <div class="">
-          <img
-            src="~/assets/logos/fedora-blue.png"
+          <FpImage
+            src="assets/images/logos/fedora-blue.png"
             :alt="$t('Fedora Logo')"
             class="ml-6 w-1/3 xl:ml-0"
           />
