@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div :class="`mx-auto mt-8 grid w-10/12 grid-cols-1 md:grid-cols-${columns}`">
-    <div class="col-span-1 p-1 sm:p-5">
+    <div class="col-span-1 flex items-center justify-center p-1 sm:p-5">
       <FpImage :src="image" />
     </div>
     <div

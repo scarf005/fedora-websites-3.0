@@ -12,7 +12,7 @@ if (data._value.sections[3].content[6].description) {
 </script>
 
 <template>
-  <main class="mt-4 border-t-8 border-fp-green">
+  <main class="border-t-8 border-fp-green md:mt-2">
     <TheLocalBar
       image="assets/images/workstation_logo.png"
       home="/workstation"

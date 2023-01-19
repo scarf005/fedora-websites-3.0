@@ -6,7 +6,7 @@ useContentHead(data);
 </script>
 
 <template>
-  <main class="mt-4 border-t-8 border-fp-blue">
+  <main class="border-t-8 border-fp-blue md:mt-2">
     <header>
       <TheLocalBar
         image="assets/images/fedora-cloud-logo.png"
@@ -14,7 +14,6 @@ useContentHead(data);
         :items="[
           { name: 'Download', link: '/cloud/download' },
           { name: 'Community', link: '/cloud/community' },
-          { name: 'Help', link: '/cloud/help' },
         ]"
         textColor="text-fp-blue"
       />

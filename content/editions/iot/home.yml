@@ -7,8 +7,6 @@ header_images:
 links:
   - text: Download Now
     url: /iot/download/
-  - text: Reviewed By TechHut
-    url: https://www.youtube.com/watch?v=54aoIGKEMnk
 sections:
   - sectionTitle: Why Fedora Iot?
     images: public/assets/images/iot_background_why.jpg

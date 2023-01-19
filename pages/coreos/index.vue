@@ -1,5 +1,4 @@
 <script setup>
-const { locale } = useI18n();
 const data = await getCMS("editions/coreos/home");
 useContentHead(data);
 </script>
@@ -13,7 +12,6 @@ useContentHead(data);
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
-        { name: 'Help', link: '/coreos/help' },
       ]"
     />
 
