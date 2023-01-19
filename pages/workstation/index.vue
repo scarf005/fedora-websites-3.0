@@ -1,12 +1,11 @@
 <script setup>
-const { locale } = useI18n();
 const data = await getCMS("editions/workstation/home");
 useContentHead(data);
 </script>
 <template>
   <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
     <TheLocalBar
-      image="assets/images/workstation_logo.png"
+      image="assets/images/fedora-workstation-logo.png"
       home="/workstation"
       :items="[
         { name: 'Download', link: '/workstation/download' },

@@ -5,14 +5,14 @@ const events = await getCMS("partials/events");
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-purple md:mt-2">
+  <main class="border-t-8 border-fp-orange md:mt-2">
     <TheLocalBar
       image="assets/images/fedora_white.png"
       home="/iot"
-      textColor="text-fp-purple"
+      textColor="text-fp-orange"
       :items="[
-        { name: 'Download', link: '/iot/download' },
-        { name: 'Community', link: '/iot/community' },
+        { name: 'Download', link: '/server/download' },
+        { name: 'Community', link: '/server/community' },
       ]"
     />
 
@@ -20,13 +20,13 @@ useContentHead(data);
       :title="data.title"
       :description="data.description"
       :details="data.sections[0].sectionDescription"
-      color="text-fp-purple"
+      color="text-fp-orange"
       bgColor="bg-fp-blue-light/10"
     />
 
     <!-- communication channels -->
     <FpCommunicationSection
-      color="purple"
+      color="orange"
       :sectionTitle="data.sections[1].sectionTitle"
       :content="data.sections[1].content"
     />
