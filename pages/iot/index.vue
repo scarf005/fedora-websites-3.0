@@ -1,5 +1,4 @@
 <script setup>
-const { locale } = useI18n();
 const data = await getCMS("editions/iot/home");
 useContentHead(data);
 </script>
