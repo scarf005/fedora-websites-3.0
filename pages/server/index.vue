@@ -42,7 +42,7 @@ useContentHead(data);
   <section>
     <FpCallToAction
       :cta="data.links"
-      image="assets/images/workstation_logo.png"
+      image="assets/images/fedora-server-logo.png"
     />
   </section>
 </template>
