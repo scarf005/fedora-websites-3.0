@@ -38,6 +38,11 @@ useContentHead(data);
     />
   </section>
 
+  <!-- Community Section -->
+  <section class="max-w-full">
+    <FpCommunity :data="data.sections[1]" />
+  </section>
+
   <!-- Call To Action -->
   <section>
     <FpCallToAction
