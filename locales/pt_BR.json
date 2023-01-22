@@ -160,5 +160,13 @@
     "Developer Portal": "Portal do desenvolvedor",
     "Deadline: May 29, 2023": "Prazo final: 29 de Maio, 2023",
     "Deadline: July 8, 2023": "Prazo final: 8 de Julho, 2023",
-    "Deadline:": "Prazo final:"
+    "Deadline:": "Prazo final:",
+    "You can chat with the Fedora Workstation Working Group via either Matrix or IRC: **#workstation:fedoraproject.org** on Matrix and **#fedora-workstation** on irc.libera.chat.": "Você pode conversar com o Fedora Workstation Working Group via Matrix ou IRC: **#workstation:fedoraproject.org** no Matrix e **#fedora-workstation** no irc.libera.chat.",
+    "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/fedora-cloud/issues).": "Você pode visualizar, arquivar e discutir problemas do Fedora Cloud no [Rastreador de problemas do Fedora Cloud](https://pagure.io/fedora-cloud/issues).",
+    "You can view, file, and discuss Fedora CoreOS issues on the [Fedora CoreOS issue tracker](https://pagure.io/fedora-coreos/issues).": "Você pode visualizar, arquivar e discutir problemas do Fedora CoreOS no [Rastreador de problemas do Fedora CoreOS](https://pagure.io/fedora-coreos/issues).",
+    "You can view, file, and discuss Fedora Workstation issues on [the Fedora Workstation issue tracker]().": "Você pode visualizar, arquivar e discutir problemas do Fedora Workstation no [rastreador de problemas do Fedora Workstation]().",
+    "You can view, file, and discuss Fedora Workstation issues on [the Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla).": "Você pode visualizar, arquivar e discutir problemas do Fedora Workstation no [rastreador de problemas do Fedora Workstation](https://fedoraproject.org/wiki/Bugzilla).",
+    "You can view, file, and discuss Fedore Cloud issues on the Fedora Cloud issue tracker.": "Você pode visualizar, arquivar e discutir problemas do Fedore Cloud no rastreador de problemas do Fedora Cloud.",
+    "You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS issue tracker.": "Você pode visualizar, arquivar e discutir problemas do Fedore CoreOS no rastreador de problemas do Fedora CoreOS.",
+    "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "Suas contribuições amigáveis e úteis para esses canais de comunicação serão muito apreciadas"
 }
