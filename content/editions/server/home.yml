@@ -1,8 +1,7 @@
 path: index
-title: The leading edge server
-description: >
-  Run applications on bare metal or the cloud with a Linux server OS packed with
-  the latest open source technology
+title: A Community Server OS
+description: Run server workloads on bare metal or in the cloud with the latest
+  open source technologies curated by the Fedora Community
 header_images:
   - image: public/assets/images/server_main.png
   - image: public/assets/images/iot_background.jpg
@@ -13,19 +12,23 @@ sections:
   - sectionTitle: Features for everyone
     content:
       - title: Sensible Defaults
-        description: Quickly deploy a server with the tools you need to spin up your workloads
+        description: Quickly deploy a server with the tools you need to spin up your
+          workloads
         image: public/assets/images/fedora-server-3.png
       - title: Cockpit
-        description: A built-in remote server administration tool is ready to use on first boot
+        description: A built-in remote server administration tool is ready to use on
+          first boot
         image: public/assets/images/fedora-server-2.png
       - title: Latest Technologies
-        description: Run virtual machines or containers with libvert(link to project) and podman(link to project) managed through Cockpit
+        description: Run virtual machines or containers with libvert(link to project)
+          and podman(link to project) managed through Cockpit
         image: public/assets/images/fedora-server-1.png
       - title: Stable Ecosystem
         description: Enables a variety of server workloads
         image: public/assets/images/fedora-server-1.png
       - title: A Platform
-        description: Serving the needs of small businesses, home labs, and future enterprise workloads
+        description: Serving the needs of small businesses, home labs, and future
+          enterprise workloads
         image: public/assets/images/fedora-server-1.png
   - sectionTitle: Built by you
     images: public/assets/images/iot_flock_background.jpg
@@ -37,17 +40,14 @@ sections:
       Fedora Workstation is created by a team in the Fedora community called the **Workstation Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. [Learn more onthe Workstation Working Group Website](https://docs.fedoraproject.org/en-US/workstation-working-group/)
     content:
       - title: Report & discuss issues
-        description:
-          You can view, file, and discuss Fedora Workstation issues on [the
+        description: You can view, file, and discuss Fedora Workstation issues on [the
           Fedora Workstation issue tracker]().
       - title: Chat with the team
         description: Visit **#fedora-workstation** on [irc.libera.chat]() and on
           **#workstation** [on the Fedora Matrix Chat server]().
       - title: Join the mailing list
-        description:
-          Sign up at [desktop@lists.fedoraproject.org]() to receive meeting
+        description: Sign up at [desktop@lists.fedoraproject.org]() to receive meeting
           agendas and minute ([view archives]().)
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors on **Tuesdays, 10:00
+        description: Open to all current and potential contributors on **Tuesdays, 10:00
           AM US Eastern** on [Bluejeans]().
