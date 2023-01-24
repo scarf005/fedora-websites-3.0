@@ -41,4 +41,7 @@ export default defineNuxtConfig({
       titleTemplate: "%s | The Fedora Project",
     },
   },
+  experimental: {
+    componentIslands: true
+  }
 });
