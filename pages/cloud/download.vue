@@ -1,9 +1,9 @@
 <script setup>
-const data = await getCMS("editions/iot/download");
+const data = await getCMS("editions/cloud/download");
 const release_data = await getCMS("release");
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: images_data } = await useFetch(
-  `https://dl.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/metadata/images.json`
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
 // TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
@@ -15,14 +15,24 @@ const releaseDate =
   "-" +
   images_data._value.payload.compose.date.substr(6, 2);
 
+const dlpath = {
+  x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
+  aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
+  s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+  ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+};
+
 function updateVerify(art) {
   console.log(art);
   verifyModal.value.art_name = art.path.substring(
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.ga.releasever}-${art.arch}-${images_data._value.payload.compose.date}.${images_data._value.payload.compose.respin}-CHECKSUM`;
-  verifyModal.value.checksum = `https://download.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/${path}/${verifyModal.value.chk_name}`;
+  verifyModal.value.chk_name = `Fedora-Cloud-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+  // Fedora-Cloud-37-1.7-x86_64-CHECKSUM
+  verifyModal.value.checksum = `${dlpath[art.arch]}/${
+    release_data._value.ga.releasever
+  }/${path}/${verifyModal.value.chk_name}`;
   if (document) {
     document.body.classList.add("has-modal");
   }
@@ -39,15 +49,15 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-purple md:mt-2">
+  <main class="border-t-8 border-fp-blue md:mt-2">
     <TheLocalBar
-      image="assets/images/fedora_white.png"
-      home="/iot"
+      image="assets/images/fedora-cloud-logo.png"
+      home="/cloud"
       class="sm:px-2"
-      textColor="text-fp-purple"
+      textColor="text-fp-blue"
       :items="[
-        { name: 'Download', link: '/iot/download' },
-        { name: 'Community', link: '/iot/community' },
+        { name: 'Download', link: '/cloud/download' },
+        { name: 'Community', link: '/cloud/community' },
       ]"
     />
 
@@ -56,8 +66,8 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl">
         <h1 class="mb-4 text-4xl text-fp-gray">
           {{ $t("Download") }}
-          <span class="text-fp-purple">
-            Fedora IoT {{ release_data.ga.releasever }}</span
+          <span class="text-fp-blue">
+            Fedora Cloud {{ release_data.ga.releasever }}</span
           >
         </h1>
         <p class="text-fp-gray dark:text-fp-gray-light">
@@ -86,19 +96,41 @@ useContentHead(data);
         <div
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
         >
-          <IotDownloadSection
+          <DownloadSection
             name="For Intel and AMD x86_64 systems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.IoT.x86_64"
+            :artifacts="images_data.payload.images.Cloud.x86_64"
+            :dlPrefix="dlpath.x86_64"
             :version="release_data.ga.releasever"
-            class="iot-theme"
+            class="cloud-theme"
           />
-          <IotDownloadSection
+          <DownloadSection
             name="For ARM® aarch64 systems"
+            art_name="Fedora Cloud"
             @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.IoT.aarch64"
+            :artifacts="images_data.payload.images.Cloud.aarch64"
+            :dlPrefix="dlpath.aarch64"
             :version="release_data.ga.releasever"
-            class="iot-theme"
+            class="cloud-theme"
+          />
+          <DownloadSection
+            name="For Power ppc64le systems"
+            art_name="Fedora Cloud"
+            @verify-click="updateVerify"
+            :artifacts="images_data.payload.images.Cloud.ppc64le"
+            :dlPrefix="dlpath.ppc64le"
+            :version="release_data.ga.releasever"
+            class="cloud-theme"
+          />
+          <DownloadSection
+            name="For IBM s390x zSystems"
+            art_name="Fedora Cloud"
+            @verify-click="updateVerify"
+            :artifacts="images_data.payload.images.Cloud.s390x"
+            :dlPrefix="dlpath.s390x"
+            :version="release_data.ga.releasever"
+            class="cloud-theme"
           />
         </div>
       </div>
@@ -191,7 +223,7 @@ body.has-modal {
   @apply overflow-hidden;
 }
 
-.iot-theme .fp-download-item a {
-  @apply border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white;
+.cloud-theme .fp-download-item a {
+  @apply border-fp-blue-light text-fp-blue-light hover:bg-fp-blue-light hover:text-white;
 }
 </style>

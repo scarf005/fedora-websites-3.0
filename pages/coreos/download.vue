@@ -43,12 +43,25 @@ function updateVerify(art) {
     art.signature.lastIndexOf("/") + 1
   );
   verifyModal.value.chk_name = `${verifyModal.value.art_name}-CHECKSUM`;
+  if (document) {
+    document.body.classList.add("has-modal");
+  }
   verifyModal.value.show = true;
 }
 
 function updateAMIs(art) {
   showAMI.value.art = art;
+  if (document) {
+    document.body.classList.add("has-modal");
+  }
   showAMI.value.show = true;
+}
+
+function closeModal(state) {
+  if (document) {
+    document.body.classList.remove("has-modal");
+  }
+  state.show = false;
 }
 
 function virt_arts(data) {
@@ -120,6 +133,7 @@ const EC2_regions = {
 };
 
 useHead({ htmlAttrs: { class: "scroll-smooth" } });
+useContentHead(data);
 </script>
 <template>
   <main
@@ -129,11 +143,10 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
       home="/coreos"
-      textColor="text-fp-blue-light"
+      textColor="text-fp-magenta"
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
-        { name: 'Help', link: '/coreos/help' },
       ]"
     />
 
@@ -446,7 +459,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       <FpModal
         class="pt-12"
         v-if="verifyModal.show"
-        @close-modal="verifyModal.show = false"
+        @close-modal="closeModal(verifyModal)"
       >
         <template #header>
           <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
@@ -478,19 +491,26 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
           <li>
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
-              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+              class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
             ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            <p class="mb-4 text-sm">
+              <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
+
+              {{ $t("You can verify the details of the GPG key(s)") }}
+              <FpLink class="text-sm text-fp-blue" href="/security">here</FpLink
+              >.
+            </p>
           </li>
           <li>
             <p class="mb-2">{{ $t("Verify the signature file is valid") }}</p>
             <pre
-              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
             ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.sig_name }} {{ verifyModal.art_name }}</code></pre>
           </li>
           <li>
             <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
             <pre
-              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800"
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
             ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
           </li>
         </ul>
@@ -514,7 +534,7 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
       <FpModal
         class="pt-12"
         v-if="showAMI.show"
-        @close-modal="showAMI.show = false"
+        @close-modal="closeModal(showAMI)"
       >
         <template #header>
           <h5 class="text-xl font-medium">Select AWS EC2 region</h5>
@@ -556,6 +576,10 @@ useHead({ htmlAttrs: { class: "scroll-smooth" } });
 </template>
 
 <style>
+body.has-modal {
+  @apply overflow-hidden;
+}
+
 .coreos-theme-stable .coreos-theme-text,
 .coreos-theme-stable .fp-card.coreos-theme h3 {
   @apply text-fp-blue;

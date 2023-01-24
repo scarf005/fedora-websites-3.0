@@ -1,5 +1,4 @@
 <script setup>
-const { locale } = useI18n();
 const data = await getCMS("editions/iot/home");
 useContentHead(data);
 </script>
@@ -7,12 +6,11 @@ useContentHead(data);
   <main>
     <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
       <TheLocalBar
-        image="assets/images/fiot-logo.png"
+        image="assets/images/fedora_white.png"
         home="/iot"
         :items="[
           { name: 'Download', link: '/iot/download' },
           { name: 'Community', link: '/iot/community' },
-          { name: 'Help', link: '/iot/help' },
         ]"
       />
       <FpBanner
@@ -64,7 +62,10 @@ useContentHead(data);
 
     <!-- Call To Action -->
     <section>
-      <FpCallToAction :cta="data.links" image="assets/images/fiot-logo.png" />
+      <FpCallToAction
+        :cta="data.links"
+        image="assets/images/fedora-iot-logo.png"
+      />
     </section>
   </main>
 </template>

@@ -6,7 +6,7 @@ useContentHead(data);
 </script>
 
 <template>
-  <main class="mt-4 border-t-8 border-fp-magenta">
+  <main class="border-t-8 border-fp-magenta md:mt-2">
     <header>
       <TheLocalBar
         image="assets/images/fedora-coreos-logo.png"
@@ -14,7 +14,6 @@ useContentHead(data);
         :items="[
           { name: 'Download', link: '/coreos/download' },
           { name: 'Community', link: '/coreos/community' },
-          { name: 'Help', link: '/coreos/help' },
         ]"
         textColor="text-fp-magenta"
       />
