@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("editions/iot/community");
+const data = await getCMS("editions/server/community");
 const events = await getCMS("partials/events");
 useContentHead(data);
 </script>
