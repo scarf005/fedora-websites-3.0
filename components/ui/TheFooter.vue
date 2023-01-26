@@ -15,12 +15,19 @@ const availableLocales = computed(() => {
     href: switchLocalePath(i.code),
   }));
 });
+
+// TODO: recursive helper function to find all required list items-center
+
+// TODO: function for populating list entries
+
+// TODO: computed properties for each list category
 </script>
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
     <nav class="container mx-auto py-10">
       <div class="container grid grid-cols-5">
+        <!-- TODO: make each category stand alone using -->
         <div
           v-for="category in categories"
           class="col-span-4 px-3 md:col-span-1"
