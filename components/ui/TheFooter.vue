@@ -21,6 +21,26 @@ const availableLocales = computed(() => {
 // TODO: function for populating list entries
 
 // TODO: computed properties for each list category
+const desktops = computed(() => {
+  const labels = ["workstation", "silverblue", "kde", "kinoite"];
+  return;
+});
+const cloud = computed(() => {
+  const labels = ["server", "coreos", "cloud", "container"];
+  return;
+});
+const edge = computed(() => {
+  const labels = ["iot", "arm"];
+  return;
+});
+const support = computed(() => {
+  const labels = ["ask", "bugs", "magazine", "developer"];
+  return;
+});
+const community = computed(() => {
+  const labels = ["join", "blog", "matrix", "discussion", "fas"];
+  return;
+});
 </script>
 
 <template>
