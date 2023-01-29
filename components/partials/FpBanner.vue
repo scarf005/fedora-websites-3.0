@@ -1,5 +1,4 @@
 <script setup>
-import FpBtn from "../utilities/FpBtn.vue";
 defineProps({
   logo: String,
   title: String,
@@ -41,7 +40,7 @@ defineProps({
   <div class="spacing-1 mt-5 flex justify-center">
     <template v-for="(cta, idx) in ctas">
       <FpBtn
-        :url="cta.url"
+        :href="cta.url"
         :color="[
           'text-center',
           {
