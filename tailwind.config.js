@@ -29,6 +29,7 @@ module.exports = {
             lighest: "#e9f9dd",
             light: "#bbed97",
             DEFAULT: "#79db32",
+            dark: "#61b921",
           },
           magenta: {
             lightest: "#f9dde9",

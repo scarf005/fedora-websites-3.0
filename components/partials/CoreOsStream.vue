@@ -66,7 +66,7 @@ function timeSince(rfc3339_timestamp) {
           <span>
             <a
               href="https://builds.coreos.fedoraproject.org/streams/stable.json"
-              class="font-bold"
+              class="font-bold underline"
               >JSON</a
             >
           </span>
