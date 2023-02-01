@@ -1,13 +1,36 @@
 <script setup>
 const data = await getCMS("editions/coreos/download");
+const route = useRoute();
+const router = useRouter();
 const { data: stable_data } = await useFetch(
-  "https://builds.coreos.fedoraproject.org/streams/stable.json"
+  "https://builds.coreos.fedoraproject.org/streams/stable.json",
+  {
+    server: false,
+    onResponse({ request, response, options }) {
+      console.log("stable data loaded");
+      parseArgs();
+    },
+  }
 );
 const { data: test_data } = await useFetch(
-  "https://builds.coreos.fedoraproject.org/streams/testing.json"
+  "https://builds.coreos.fedoraproject.org/streams/testing.json",
+  {
+    server: false,
+    onResponse({ request, response, options }) {
+      console.log("testing data loaded");
+      parseArgs();
+    },
+  }
 );
 const { data: next_data } = await useFetch(
-  "https://builds.coreos.fedoraproject.org/streams/next.json"
+  "https://builds.coreos.fedoraproject.org/streams/next.json",
+  {
+    server: false,
+    onResponse({ request, response, options }) {
+      console.log("next data loaded");
+      parseArgs();
+    },
+  }
 );
 
 let selectedStream = useState("stream", () => stable_data);
@@ -17,16 +40,66 @@ const showAMI = useState("showAMI", () => ({ show: false }));
 const streams = data._value.sections[0];
 const architectures = data._value.sections[1];
 
+function parseArgs() {
+  if (!selectedStream.value) {
+    if (!route.query.stream) {
+      switchStream("stable");
+    } else if (route.query.stream.match("^(stable|testing|next)$")) {
+      if (route.query.arch) {
+        switchArch(route.query.arch);
+      }
+      switchStream(route.query.stream);
+    } else {
+      console.log("invalid stream");
+      switchStream("stable");
+    }
+  }
+}
+
 function switchStream(name) {
   switch (name) {
     case "stable":
+      router.replace({
+        hash: route.hash,
+        path: route.path,
+        query: { ...route.query, ...{ stream: "stable" } },
+      });
       selectedStream.value = stable_data;
+      console.log("switching to stable view");
       break;
-    case "test":
+    case "testing":
+      router.replace({
+        hash: route.hash,
+        path: route.path,
+        query: { ...route.query, ...{ stream: "testing" } },
+      });
       selectedStream.value = test_data;
+      console.log("switching to testing view");
       break;
     case "next":
+      router.replace({
+        hash: route.hash,
+        path: route.path,
+        query: { ...route.query, ...{ stream: "next" } },
+      });
       selectedStream.value = next_data;
+      console.log("switching to next view");
+      break;
+  }
+}
+
+function switchArch(name) {
+  switch (name) {
+    case "x86_64":
+    case "aarch64":
+    case "s390x":
+      router.replace({
+        hash: route.hash,
+        path: route.path,
+        query: { ...route.query, ...{ arch: name } },
+      });
+      selectedArch.value = name;
+      console.log("selected arch: " + name);
       break;
   }
 }
@@ -72,6 +145,20 @@ function virt_arts(data) {
       dict[k] = data[k];
     }
   }
+  return dict;
+}
+
+function metal_arts(data) {
+  let dict = { metal: JSON.parse(JSON.stringify(data)) };
+  // delete and recreate the 4k key at the end
+  // this is to avoid implementing a overly complicated
+  // sorting mechanism to get both raw images together.
+  if ("4k.raw.xz" in dict.metal.formats) {
+    let t = dict.metal.formats["4k.raw.xz"];
+    delete dict.metal.formats["4k.raw.xz"];
+    dict.metal.formats["4k.raw.xz"] = t;
+  }
+
   return dict;
 }
 
@@ -137,8 +224,8 @@ useContentHead(data);
 </script>
 <template>
   <main
-    class="border-t-8 border-fp-magenta md:mt-2"
-    :class="`coreos-theme-${selectedStream.stream}`"
+    class="border-t-8 border-fp-magenta bg-neutral-100 dark:bg-neutral-700 md:mt-2"
+    :class="`coreos-theme-${selectedStream?.stream}`"
   >
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
@@ -152,7 +239,7 @@ useContentHead(data);
 
     <!-- TITLE -->
     <section class="py-24 text-center lg:text-start">
-      <div class="container mx-auto max-w-7xl">
+      <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-fp-gray">
           {{ $t("Download") }}
           <span class="text-fp-magenta"> Fedora CoreOS </span>
@@ -164,10 +251,12 @@ useContentHead(data);
         <!-- STREAMS -->
         <div
           class="container mx-auto mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3"
+          v-if="selectedStream && 'architectures' in selectedStream"
         >
           <!-- Stable -->
           <CoreOsStream
             name="Stable"
+            v-if="stable_data"
             :version="stable_data.architectures.x86_64.artifacts.metal.release"
             :last_update="stable_data.metadata['last-modified']"
             icon="fa-solid:shield-alt"
@@ -184,27 +273,33 @@ useContentHead(data);
               >
             </template>
           </CoreOsStream>
+          <CoreOsStreamLoading v-else />
+
           <CoreOsStream
             name="Testing"
+            v-if="test_data"
             :version="test_data.architectures.x86_64.artifacts.metal.release"
             :last_update="test_data.metadata['last-modified']"
             icon="fa-solid:flask"
-            color="fp-green"
+            color="fp-green-dark"
           >
             {{ $t(streams.content[1].description) }}
             <template #footer>
               <a
                 id="test"
-                @click="switchStream('test')"
+                @click="switchStream('testing')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-green py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded-sm bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
           </CoreOsStream>
+          <CoreOsStreamLoading v-else />
+
           <!-- Next border-fp-orange bg-fp-orange -->
           <CoreOsStream
             name="Next"
+            v-if="next_data"
             :version="next_data.architectures.x86_64.artifacts.metal.release"
             :last_update="next_data.metadata['last-modified']"
             icon="fa-solid:layer-group"
@@ -221,6 +316,14 @@ useContentHead(data);
               >
             </template>
           </CoreOsStream>
+          <CoreOsStreamLoading v-else />
+        </div>
+        <div class="mx-auto mt-8 text-center" v-else>
+          <Icon
+            name="ei:spinner-3"
+            size="64"
+            class="animate-spin !align-baseline text-fp-magenta"
+          />
         </div>
       </div>
     </section>
@@ -229,8 +332,9 @@ useContentHead(data);
     <section
       class="scroll-mt-14 bg-blue-50 py-6 dark:bg-neutral-900"
       id="arches"
+      v-if="selectedStream && 'architectures' in selectedStream"
     >
-      <div class="container mx-auto max-w-7xl">
+      <div class="container mx-auto max-w-7xl px-2">
         <div class="text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             {{ $t("Pick your") }}
@@ -245,7 +349,7 @@ useContentHead(data);
             class="flex flex-wrap justify-between gap-4 text-center text-fp-blue-dark dark:text-white"
           >
             <a
-              @click="selectedArch = 'x86_64'"
+              @click="switchArch('x86_64')"
               href="#download_section"
               class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
@@ -257,7 +361,7 @@ useContentHead(data);
               </FpCard>
             </a>
             <a
-              @click="selectedArch = 'aarch64'"
+              @click="switchArch('aarch64')"
               href="#download_section"
               class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
@@ -269,7 +373,7 @@ useContentHead(data);
               </FpCard>
             </a>
             <a
-              @click="selectedArch = 's390x'"
+              @click="switchArch('s390x')"
               href="#download_section"
               class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
@@ -289,8 +393,9 @@ useContentHead(data);
     <section
       class="scroll-mt-14 bg-gradient-to-r from-pink-50 to-blue-50 py-6 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
+      v-if="selectedStream && 'architectures' in selectedStream"
     >
-      <div class="container mx-auto mb-8 max-w-7xl">
+      <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             <Icon
@@ -306,20 +411,22 @@ useContentHead(data);
               selectedStream.stream
             }}</span>
             artifacts for
-            <span class="font-bold">{{ selectedArch }}</span
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
             >.
           </p>
         </div>
         <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
+          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <CoreOsDownloadSection
             name="Bare Metal"
             class="coreos-theme row-span-3"
             @verify-click="updateVerify"
-            :artifacts="{
-              metal: selectedStream.architectures[selectedArch].artifacts.metal,
-            }"
+            :artifacts="
+              metal_arts(
+                selectedStream.architectures[selectedArch].artifacts.metal
+              )
+            "
           />
           <CoreOsDownloadSection
             name="Virtualized"
@@ -332,7 +439,7 @@ useContentHead(data);
         </div>
       </div>
 
-      <div class="container mx-auto mb-8 max-w-7xl">
+      <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             <Icon
@@ -348,12 +455,12 @@ useContentHead(data);
               selectedStream.stream
             }}</span>
             cloud images for
-            <span class="font-bold">{{ selectedArch }}</span
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
             >.
           </p>
         </div>
         <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
+          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <CoreOsDownloadSection
             :artifacts="
@@ -375,12 +482,7 @@ useContentHead(data);
 
             <div class="download-section mb-2">
               <FpDownloadItem
-                :name="`Fedora CoreOS ${getMajor(
-                  Object.values(
-                    selectedStream.architectures[selectedArch].images.aws
-                      .regions
-                  )[0].release
-                )}`"
+                name="Fedora CoreOS"
                 type="aws"
                 v-if="selectedStream.architectures[selectedArch].images.aws"
               >
@@ -404,9 +506,7 @@ useContentHead(data);
             </div>
             <div class="download-section mb-2">
               <FpDownloadItem
-                :name="`Fedora CoreOS ${getMajor(
-                  selectedStream.architectures[selectedArch].images.gcp.release
-                )}`"
+                name="Fedora CoreOS"
                 type="gcp"
                 v-if="selectedStream.architectures[selectedArch].images.gcp"
               >
@@ -587,7 +687,7 @@ body.has-modal {
 
 .coreos-theme-testing .coreos-theme-text,
 .coreos-theme-testing .fp-card.coreos-theme h3 {
-  @apply text-fp-green;
+  @apply text-fp-green-dark;
 }
 
 .coreos-theme-next .coreos-theme-text,
@@ -600,7 +700,7 @@ body.has-modal {
 }
 
 .coreos-theme-testing .coreos-theme .fp-download-item a {
-  @apply border-fp-green text-fp-green hover:bg-fp-green hover:text-white dark:border-green-600 dark:text-green-600 dark:hover:bg-green-600 dark:hover:text-white;
+  @apply border-fp-green-dark text-fp-green-dark hover:bg-fp-green-dark hover:text-white;
 }
 
 .coreos-theme-next .coreos-theme .fp-download-item a {

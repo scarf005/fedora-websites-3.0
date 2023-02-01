@@ -45,7 +45,7 @@ if (props.description) {
     />
     <br />
     <div v-if="props.url" class="flex items-center justify-center">
-      <FpBtn :url="props.url">{{ $t("Learn More") }}</FpBtn>
+      <FpBtn :href="props.url">{{ $t("Learn More") }}</FpBtn>
     </div>
   </li>
 </template>
