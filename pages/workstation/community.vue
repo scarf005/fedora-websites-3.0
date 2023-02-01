@@ -78,7 +78,7 @@ if (data._value.sections[3].content[6].description) {
             />
           </div>
           <FpBtn
-            :url="data.sections[3].content[6].link.url"
+            :href="data.sections[3].content[6].link.url"
             class="mx-auto block"
             >{{ data.sections[3].content[6].link.text }}</FpBtn
           >
