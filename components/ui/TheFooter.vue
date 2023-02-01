@@ -16,15 +16,18 @@ const availableLocales = computed(() => {
   }));
 });
 
-// TODO: recursive helper function to find all required list items-center
+const findLinks = (arr, labels) => {
+  labels.forEach((label) => {
+    // for each label, filter through the array
+    arr.filter((key) => key.id == label);
+    // return objects that have matching labels
+  });
+};
 
-// TODO: function for populating list entries
-
-// TODO: computed properties for each list category
 const desktops = computed(() => {
-  const labels = ["workstation", "silverblue", "kde", "kinoite"];
-  return;
+  const labels = ["Worstation", "Silverblue", "Fedora KDE", "Kinoite"];
 });
+
 const cloud = computed(() => {
   const labels = ["server", "coreos", "cloud", "container"];
   return;
@@ -45,6 +48,7 @@ const community = computed(() => {
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
+    <p>{{ data }}</p>
     <nav class="container mx-auto py-10">
       <div class="container grid grid-cols-5">
         <!-- TODO: make each category stand alone using -->
