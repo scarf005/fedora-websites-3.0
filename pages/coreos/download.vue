@@ -37,6 +37,7 @@ let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 const showAMI = useState("showAMI", () => ({ show: false }));
+const showGCP = useState("showGCP", () => ({ show: false }));
 const streams = data._value.sections[0];
 const architectures = data._value.sections[1];
 
@@ -516,17 +517,54 @@ useContentHead(data);
                     selectedStream.architectures[selectedArch].images.gcp,
                   ]"
                 >
+                  <a
+                    @click="showGCP.show = !showGCP.show"
+                    title="Details"
+                    class="rounded-l-xl"
+                  >
+                    <Icon name="fa-solid:info-circle" class="!align-baseline" />
+                  </a>
                   <FpLink
                     :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
                     target="blank"
                     title="Launch"
-                    class="rounded-xl"
+                    class="-ml-px rounded-r-xl"
                   >
                     <Icon
                       name="material-symbols:rocket-launch"
                       class="!align-baseline"
                     />
                   </FpLink>
+                </template>
+                <template #footer>
+                  <Transition
+                    enter-active-class="transform duration-100 ease"
+                    enter-from-class="opacity-0 -translate-y-12"
+                    enter-to-class="opacity-100 translate-y-0"
+                    leave-active-class="transform duration-150 ease-in"
+                    leave-from-class="opacity-100 translate-y-0"
+                    leave-to-class="opacity-0 -translate-y-8"
+                  >
+                    <div
+                      class="mt-2 border-t dark:border-gray-600 dark:text-gray-400"
+                      v-if="showGCP.show"
+                    >
+                      <p class="text-sm">
+                        Image family:
+                        <b class="font-semibold">{{
+                          selectedStream.architectures[selectedArch].images.gcp
+                            .family
+                        }}</b>
+                      </p>
+                      <p class="text-sm">
+                        Latest image:
+                        <b class="font-semibold">{{
+                          selectedStream.architectures[selectedArch].images.gcp
+                            .name
+                        }}</b>
+                      </p>
+                    </div>
+                  </Transition>
                 </template>
               </FpDownloadItem>
             </div>
