@@ -30,7 +30,7 @@ function getMajor(version) {
         class="download-section mb-2"
       >
         <FpDownloadItem
-          :name="'Fedora CoreOS ' + getMajor(arts.release)"
+          name="Fedora CoreOS"
           :type="art_type != 'metal' ? art_type : k"
           :format="k"
           :downloadLink="v.disk?.location"
@@ -39,7 +39,7 @@ function getMajor(version) {
           v-if="v.disk"
         />
         <FpDownloadItem
-          :name="'Fedora CoreOS ' + getMajor(arts.release)"
+          name="Fedora CoreOS"
           :type="art_type != 'metal' ? art_type : k"
           :format="name"
           :downloadLink="image.location"
@@ -55,6 +55,6 @@ function getMajor(version) {
 
 <style>
 .download-section .fp-download-item {
-  @apply first:rounded-t-xl last:rounded-b-xl;
+  @apply -mt-px first:rounded-t-xl last:rounded-b-xl;
 }
 </style>
