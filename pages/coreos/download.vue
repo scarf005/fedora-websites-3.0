@@ -8,7 +8,7 @@ const { data: stable_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("stable data loaded");
-      parseArgs();
+      parseArgs("stable");
     },
   }
 );
@@ -18,7 +18,7 @@ const { data: test_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("testing data loaded");
-      parseArgs();
+      parseArgs("testing");
     },
   }
 );
@@ -28,31 +28,57 @@ const { data: next_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("next data loaded");
-      parseArgs();
+      parseArgs("next");
     },
   }
 );
 
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
+let isloaded = useState("isloaded", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 const showAMI = useState("showAMI", () => ({ show: false }));
 const showGCP = useState("showGCP", () => ({ show: false }));
 const streams = data._value.sections[0];
 const architectures = data._value.sections[1];
 
-function parseArgs() {
-  if (!selectedStream.value) {
+async function parseArgs(initiator) {
+  if (!isloaded.value) {
     if (!route.query.stream) {
+      // default to stable stream
       switchStream("stable");
+      isloaded.value = true;
     } else if (route.query.stream.match("^(stable|testing|next)$")) {
-      if (route.query.arch) {
-        switchArch(route.query.arch);
+      if (initiator == route.query.stream) {
+        if (route.query.arch) {
+          switchArch(route.query.arch);
+        }
+        switchStream(route.query.stream);
+        isloaded.value = true;
       }
-      switchStream(route.query.stream);
     } else {
       console.log("invalid stream");
       switchStream("stable");
+      isloaded.value = true;
+    }
+  }
+  // if targeted stream is loaded
+  if (isloaded.value & (initiator == route.query.stream)) {
+    // scroll to hash
+    if (route.hash) {
+      // wait for DOM update
+      await nextTick();
+      // wait for client browser update
+      window.requestAnimationFrame(() => {
+        let id = route.hash.substring(1);
+        if (document.getElementById(id)) {
+          // wait 200ms more to make sure the dom is fully loaded
+          setTimeout(() => {
+            // then scroll
+            document.getElementById(id).scrollIntoView();
+          }, 200);
+        }
+      });
     }
   }
 }
@@ -396,91 +422,39 @@ useContentHead(data);
       id="download_section"
       v-if="selectedStream && 'architectures' in selectedStream"
     >
-      <div class="container mx-auto mb-8 max-w-7xl px-2">
+      <div
+        class="container mx-auto mb-8 max-w-7xl px-2"
+        v-if="
+          Object.keys(selectedStream.architectures[selectedArch].images)
+            .length > 0
+        "
+      >
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
-            <Icon
-              name="fa-solid:server"
-              size="24"
-              class="!align-baseline text-black dark:text-white"
-            />
-            {{ $t("Bare Metal & Virtualized") }}
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_launch">
+            <a class="" href="#cloud_launch">
+              <Icon
+                name="fa-solid:cloud"
+                size="38"
+                class="!align-top text-black dark:text-white"
+              />
+            </a>
+            {{ $t("Cloud Launchable") }}
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
-            Download Fedora CoreOS
+            Start Fedora CoreOS
             <span class="coreos-theme-text font-bold">{{
               selectedStream.stream
             }}</span>
-            artifacts for
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
-            >.
+            instances on
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
+            architecture on public cloud platforms.
           </p>
         </div>
-        <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
-        >
-          <CoreOsDownloadSection
-            name="Bare Metal"
-            class="coreos-theme row-span-3"
-            @verify-click="updateVerify"
-            :artifacts="
-              metal_arts(
-                selectedStream.architectures[selectedArch].artifacts.metal
-              )
-            "
-          />
-          <CoreOsDownloadSection
-            name="Virtualized"
-            class="coreos-theme"
-            @verify-click="updateVerify"
-            :artifacts="
-              virt_arts(selectedStream.architectures[selectedArch].artifacts)
-            "
-          />
-        </div>
-      </div>
-
-      <div class="container mx-auto mb-8 max-w-7xl px-2">
-        <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
-            <Icon
-              name="fa-solid:cloud"
-              size="24"
-              class="!align-baseline text-black dark:text-white"
-            />
-            {{ $t("Cloud Images") }}
-          </h2>
-          <p class="text-fp-gray dark:text-fp-gray-light">
-            Download Fedora CoreOS
-            <span class="coreos-theme-text font-bold">{{
-              selectedStream.stream
-            }}</span>
-            cloud images for
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
-            >.
-          </p>
-        </div>
-        <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
-        >
-          <CoreOsDownloadSection
-            :artifacts="
-              cloud_arts(selectedStream.architectures[selectedArch].artifacts)
-            "
-            name="Cloud Operators"
-            @verify-click="updateVerify"
-            class="coreos-theme"
-          />
+        <div class="container mx-auto max-w-7xl">
           <!-- AMIs & GCP -->
           <div
-            class="coreos-theme"
-            v-if="
-              Object.keys(selectedStream.architectures[selectedArch].images)
-                .length > 0
-            "
+            class="coreos-theme grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-x-8 lg:grid-cols-2"
           >
-            <p class="my-2 font-bold">{{ $t("Cloud Launchable") }}</p>
-
             <div class="download-section mb-2">
               <FpDownloadItem
                 name="Fedora CoreOS"
@@ -569,6 +543,85 @@ useContentHead(data);
               </FpDownloadItem>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mb-8 max-w-7xl px-2">
+        <div class="mb-6 text-center lg:text-start">
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="baremetal">
+            <a class="" href="#baremetal">
+              <Icon
+                name="fa-solid:server"
+                size="28"
+                class="-mt-4 text-black dark:text-white"
+              />
+            </a>
+            {{ $t("Bare Metal & Virtualized") }}
+          </h2>
+          <p class="text-fp-gray dark:text-fp-gray-light">
+            Download Fedora CoreOS
+            <span class="coreos-theme-text font-bold">{{
+              selectedStream.stream
+            }}</span>
+            artifacts for
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
+            >.
+          </p>
+        </div>
+        <div
+          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
+        >
+          <CoreOsDownloadSection
+            name="Bare Metal"
+            class="coreos-theme row-span-3"
+            @verify-click="updateVerify"
+            :artifacts="
+              metal_arts(
+                selectedStream.architectures[selectedArch].artifacts.metal
+              )
+            "
+          />
+          <CoreOsDownloadSection
+            name="Virtualized"
+            class="coreos-theme"
+            @verify-click="updateVerify"
+            :artifacts="
+              virt_arts(selectedStream.architectures[selectedArch].artifacts)
+            "
+          />
+        </div>
+      </div>
+
+      <div class="container mx-auto mb-8 max-w-7xl px-2">
+        <div class="mb-6 text-center lg:text-start">
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_images">
+            <a class="" href="#cloud_images">
+              <Icon
+                name="uiw:cloud-upload"
+                size="38"
+                class="!align-top text-black dark:text-white"
+              />
+            </a>
+            {{ $t("Cloud Images") }}
+          </h2>
+          <p class="text-fp-gray dark:text-fp-gray-light">
+            Download Fedora CoreOS
+            <span class="coreos-theme-text font-bold">{{
+              selectedStream.stream
+            }}</span>
+            images for
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
+            for cloud operators.
+          </p>
+        </div>
+        <div class="container mx-auto max-w-7xl">
+          <CoreOsDownloadSection
+            :artifacts="
+              cloud_arts(selectedStream.architectures[selectedArch].artifacts)
+            "
+            @verify-click="updateVerify"
+            class="coreos-theme grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-x-8 lg:grid-cols-2"
+          />
         </div>
       </div>
       <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
