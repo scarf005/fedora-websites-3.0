@@ -288,6 +288,7 @@ useContentHead(data);
             :last_update="stable_data.metadata['last-modified']"
             icon="fa-solid:shield-alt"
             color="fp-blue"
+            json_url="https://builds.coreos.fedoraproject.org/streams/stable.json"
           >
             {{ $t(streams.content[0].description) }}
             <template #footer>
@@ -295,7 +296,7 @@ useContentHead(data);
                 id="stable"
                 @click="switchStream('stable')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-blue py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-blue py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
@@ -309,6 +310,7 @@ useContentHead(data);
             :last_update="test_data.metadata['last-modified']"
             icon="fa-solid:flask"
             color="fp-green-dark"
+            json_url="https://builds.coreos.fedoraproject.org/streams/testing.json"
           >
             {{ $t(streams.content[1].description) }}
             <template #footer>
@@ -316,7 +318,7 @@ useContentHead(data);
                 id="test"
                 @click="switchStream('testing')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
@@ -331,6 +333,7 @@ useContentHead(data);
             :last_update="next_data.metadata['last-modified']"
             icon="fa-solid:layer-group"
             color="fp-orange"
+            json_url="https://builds.coreos.fedoraproject.org/streams/next.json"
           >
             {{ $t(streams.content[2].description) }}
             <template #footer>
@@ -338,7 +341,7 @@ useContentHead(data);
                 id="next"
                 @click="switchStream('next')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-orange py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-orange py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
