@@ -2,6 +2,7 @@
 defineProps({
   home: String,
   image: String,
+  imageDark: String,
   items: Array,
   textColor: String,
 });
@@ -14,6 +15,7 @@ defineProps({
       <FpImage
         class="mx-auto mb-5 max-h-8 w-auto sm:m-0 sm:mb-0"
         :src="image"
+        :darksrc="imageDark"
       />
     </FpLink>
     <div
