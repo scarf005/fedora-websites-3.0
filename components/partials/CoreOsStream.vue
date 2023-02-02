@@ -17,6 +17,9 @@ const props = defineProps({
   icon: {
     type: String,
   },
+  json_url: {
+    tyte: String,
+  },
 });
 
 function timeSince(rfc3339_timestamp) {
@@ -64,11 +67,7 @@ function timeSince(rfc3339_timestamp) {
         <h6 class="mb-0 text-gray-500 dark:text-gray-400">v {{ version }}</h6>
         <p class="text-gray-500 dark:text-gray-400">
           <span>
-            <a
-              href="https://builds.coreos.fedoraproject.org/streams/stable.json"
-              class="font-bold underline"
-              >JSON</a
-            >
+            <a :href="json_url" class="font-bold underline">JSON</a>
           </span>
           — <span class="font-normal">{{ timeSince(last_update) }}</span>
         </p>

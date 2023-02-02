@@ -21,7 +21,7 @@ function getMajor(version) {
 
 <template>
   <div>
-    <p class="my-2 font-bold">{{ $t(name) }}</p>
+    <p class="my-2 font-bold" v-if="name">{{ $t(name) }}</p>
 
     <template v-for="(arts, art_type) in artifacts" key="art_type">
       <div
