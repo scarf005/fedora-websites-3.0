@@ -15,43 +15,52 @@ const availableLocales = computed(() => {
     href: switchLocalePath(i.code),
   }));
 });
-
-const findLinks = (arr, labels) => {
-  labels.forEach((label) => {
-    // for each label, filter through the array
-    arr.filter((key) => key.id == label);
-    // return objects that have matching labels
-  });
+const path = {
+  downloads: navigation.downloads.sections,
+  community: navigation.community.sections,
+  contributors: navigation.contributors.sections,
+  support: navigation.support.sections,
 };
-
 const desktops = computed(() => {
-  const labels = ["Worstation", "Silverblue", "Fedora KDE", "Kinoite"];
+  return {
+    workstation: path.downloads[0].links[0],
+    silverblue: path.downloads[1].links[0],
+    kde: path.downloads[2].links[0],
+    kinoite: path.downloads[2].links[7],
+  };
 });
-
 const cloud = computed(() => {
-  const labels = ["server", "coreos", "cloud", "container"];
-  return;
+  return {
+    server: path.downloads[0].links[1],
+    coreos: path.downloads[0].links[3],
+    cloud: path.downloads[0].links[4],
+  };
 });
 const edge = computed(() => {
-  const labels = ["iot", "arm"];
-  return;
+  return { iot: path.downloads[0].links[2] };
 });
 const support = computed(() => {
-  const labels = ["ask", "bugs", "magazine", "developer"];
-  return;
+  return {
+    ask: path.support[0].links[0],
+    bugs: path.support[2].links[1],
+    magazine: path.community[1].links[0],
+    developer: path.support[3].links[1],
+  };
 });
 const community = computed(() => {
-  const labels = ["join", "blog", "matrix", "discussion", "fas"];
-  return;
+  return {
+    join: path.cotributors[3].links[0],
+    blog: path.community[1].links[1],
+    matrix: path.community[0].links[1],
+    discussion: path.community[0].links[0],
+  };
 });
 </script>
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
-    <p>{{ data }}</p>
     <nav class="container mx-auto py-10">
       <div class="container grid grid-cols-5">
-        <!-- TODO: make each category stand alone using -->
         <div
           v-for="category in categories"
           class="col-span-4 px-3 md:col-span-1"
