@@ -1,9 +1,9 @@
-title: The Fedora Project
-description: >
+title: Home
+description: |
   Welcome to the Fedora project
 header_images:
   - image: public/assets/images/workstation_registered_digital_public_good.png
-links:
+links: null
 sections:
   - sectionTitle: 🎉 Join us for Flock 2023!
     sectionDescription: active
