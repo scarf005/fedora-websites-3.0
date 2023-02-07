@@ -8,7 +8,7 @@ const { data: stable_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("stable data loaded");
-      parseArgs();
+      parseArgs("stable");
     },
   }
 );
@@ -18,7 +18,7 @@ const { data: test_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("testing data loaded");
-      parseArgs();
+      parseArgs("testing");
     },
   }
 );
@@ -28,30 +28,57 @@ const { data: next_data } = await useFetch(
     server: false,
     onResponse({ request, response, options }) {
       console.log("next data loaded");
-      parseArgs();
+      parseArgs("next");
     },
   }
 );
 
 let selectedStream = useState("stream", () => stable_data);
 let selectedArch = useState("arch", () => "x86_64");
+let isloaded = useState("isloaded", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 const showAMI = useState("showAMI", () => ({ show: false }));
+const showGCP = useState("showGCP", () => ({ show: false }));
 const streams = data._value.sections[0];
 const architectures = data._value.sections[1];
 
-function parseArgs() {
-  if (!selectedStream.value) {
+async function parseArgs(initiator) {
+  if (!isloaded.value) {
     if (!route.query.stream) {
+      // default to stable stream
       switchStream("stable");
+      isloaded.value = true;
     } else if (route.query.stream.match("^(stable|testing|next)$")) {
-      if (route.query.arch) {
-        switchArch(route.query.arch);
+      if (initiator == route.query.stream) {
+        if (route.query.arch) {
+          switchArch(route.query.arch);
+        }
+        switchStream(route.query.stream);
+        isloaded.value = true;
       }
-      switchStream(route.query.stream);
     } else {
       console.log("invalid stream");
       switchStream("stable");
+      isloaded.value = true;
+    }
+  }
+  // if targeted stream is loaded
+  if (isloaded.value & (initiator == route.query.stream)) {
+    // scroll to hash
+    if (route.hash) {
+      // wait for DOM update
+      await nextTick();
+      // wait for client browser update
+      window.requestAnimationFrame(() => {
+        let id = route.hash.substring(1);
+        if (document.getElementById(id)) {
+          // wait 200ms more to make sure the dom is fully loaded
+          setTimeout(() => {
+            // then scroll
+            document.getElementById(id).scrollIntoView();
+          }, 200);
+        }
+      });
     }
   }
 }
@@ -228,7 +255,8 @@ useContentHead(data);
     :class="`coreos-theme-${selectedStream?.stream}`"
   >
     <TheLocalBar
-      image="assets/images/fedora-coreos-logo.png"
+      image="assets/images/fedora-coreos-logo-light.png"
+      imageDark="assets/images/fedora-coreos-logo.png"
       home="/coreos"
       textColor="text-fp-magenta"
       :items="[
@@ -261,6 +289,7 @@ useContentHead(data);
             :last_update="stable_data.metadata['last-modified']"
             icon="fa-solid:shield-alt"
             color="fp-blue"
+            json_url="https://builds.coreos.fedoraproject.org/streams/stable.json"
           >
             {{ $t(streams.content[0].description) }}
             <template #footer>
@@ -268,7 +297,7 @@ useContentHead(data);
                 id="stable"
                 @click="switchStream('stable')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-blue py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-blue py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
@@ -282,6 +311,7 @@ useContentHead(data);
             :last_update="test_data.metadata['last-modified']"
             icon="fa-solid:flask"
             color="fp-green-dark"
+            json_url="https://builds.coreos.fedoraproject.org/streams/testing.json"
           >
             {{ $t(streams.content[1].description) }}
             <template #footer>
@@ -289,7 +319,7 @@ useContentHead(data);
                 id="test"
                 @click="switchStream('testing')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
@@ -304,6 +334,7 @@ useContentHead(data);
             :last_update="next_data.metadata['last-modified']"
             icon="fa-solid:layer-group"
             color="fp-orange"
+            json_url="https://builds.coreos.fedoraproject.org/streams/next.json"
           >
             {{ $t(streams.content[2].description) }}
             <template #footer>
@@ -311,7 +342,7 @@ useContentHead(data);
                 id="next"
                 @click="switchStream('next')"
                 href="#arches"
-                class="mx-auto mb-4 rounded-sm bg-fp-orange py-1 px-3 text-sm font-bold text-white"
+                class="mx-auto mb-4 rounded bg-fp-orange py-1 px-3 text-sm font-bold text-white"
                 >Show Downloads</a
               >
             </template>
@@ -395,14 +426,140 @@ useContentHead(data);
       id="download_section"
       v-if="selectedStream && 'architectures' in selectedStream"
     >
+      <div
+        class="container mx-auto mb-8 max-w-7xl px-2"
+        v-if="
+          Object.keys(selectedStream.architectures[selectedArch].images)
+            .length > 0
+        "
+      >
+        <div class="mb-6 text-center lg:text-start">
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_launch">
+            <a class="" href="#cloud_launch">
+              <Icon
+                name="fa-solid:cloud"
+                size="38"
+                class="!align-top text-black dark:text-white"
+              />
+            </a>
+            {{ $t("Cloud Launchable") }}
+          </h2>
+          <p class="text-fp-gray dark:text-fp-gray-light">
+            Start Fedora CoreOS
+            <span class="coreos-theme-text font-bold">{{
+              selectedStream.stream
+            }}</span>
+            instances on
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
+            architecture on public cloud platforms.
+          </p>
+        </div>
+        <div class="container mx-auto max-w-7xl">
+          <!-- AMIs & GCP -->
+          <div
+            class="coreos-theme grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-x-8 lg:grid-cols-2"
+          >
+            <div class="download-section mb-2">
+              <FpDownloadItem
+                name="Fedora CoreOS"
+                type="aws"
+                v-if="selectedStream.architectures[selectedArch].images.aws"
+              >
+                <template #btn>
+                  <a
+                    title="Launch"
+                    class="rounded-xl"
+                    @click="
+                      updateAMIs(
+                        selectedStream.architectures[selectedArch].images.aws
+                      )
+                    "
+                  >
+                    <Icon
+                      name="material-symbols:rocket-launch"
+                      class="!align-baseline"
+                    />
+                  </a>
+                </template>
+              </FpDownloadItem>
+            </div>
+            <div class="download-section mb-2">
+              <FpDownloadItem
+                name="Fedora CoreOS"
+                type="gcp"
+                v-if="selectedStream.architectures[selectedArch].images.gcp"
+              >
+                <template
+                  #btn
+                  v-for="art in [
+                    selectedStream.architectures[selectedArch].images.gcp,
+                  ]"
+                >
+                  <a
+                    @click="showGCP.show = !showGCP.show"
+                    title="Details"
+                    class="rounded-l-xl"
+                  >
+                    <Icon name="fa-solid:info-circle" class="!align-baseline" />
+                  </a>
+                  <FpLink
+                    :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
+                    target="blank"
+                    title="Launch"
+                    class="-ml-px rounded-r-xl"
+                  >
+                    <Icon
+                      name="material-symbols:rocket-launch"
+                      class="!align-baseline"
+                    />
+                  </FpLink>
+                </template>
+                <template #footer>
+                  <Transition
+                    enter-active-class="transform duration-100 ease"
+                    enter-from-class="opacity-0 -translate-y-12"
+                    enter-to-class="opacity-100 translate-y-0"
+                    leave-active-class="transform duration-150 ease-in"
+                    leave-from-class="opacity-100 translate-y-0"
+                    leave-to-class="opacity-0 -translate-y-8"
+                  >
+                    <div
+                      class="mt-2 border-t dark:border-gray-600 dark:text-gray-400"
+                      v-if="showGCP.show"
+                    >
+                      <p class="text-sm">
+                        Image family:
+                        <b class="font-semibold">{{
+                          selectedStream.architectures[selectedArch].images.gcp
+                            .family
+                        }}</b>
+                      </p>
+                      <p class="text-sm">
+                        Latest image:
+                        <b class="font-semibold">{{
+                          selectedStream.architectures[selectedArch].images.gcp
+                            .name
+                        }}</b>
+                      </p>
+                    </div>
+                  </Transition>
+                </template>
+              </FpDownloadItem>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
-            <Icon
-              name="fa-solid:server"
-              size="24"
-              class="!align-baseline text-black dark:text-white"
-            />
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="baremetal">
+            <a class="" href="#baremetal">
+              <Icon
+                name="fa-solid:server"
+                size="28"
+                class="-mt-4 text-black dark:text-white"
+              />
+            </a>
             {{ $t("Bare Metal & Virtualized") }}
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
@@ -441,12 +598,14 @@ useContentHead(data);
 
       <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
-            <Icon
-              name="fa-solid:cloud"
-              size="24"
-              class="!align-baseline text-black dark:text-white"
-            />
+          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_images">
+            <a class="" href="#cloud_images">
+              <Icon
+                name="uiw:cloud-upload"
+                size="38"
+                class="!align-top text-black dark:text-white"
+              />
+            </a>
             {{ $t("Cloud Images") }}
           </h2>
           <p class="text-fp-gray dark:text-fp-gray-light">
@@ -454,83 +613,19 @@ useContentHead(data);
             <span class="coreos-theme-text font-bold">{{
               selectedStream.stream
             }}</span>
-            cloud images for
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
-            >.
+            images for
+            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
+            for cloud operators.
           </p>
         </div>
-        <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
-        >
+        <div class="container mx-auto max-w-7xl">
           <CoreOsDownloadSection
             :artifacts="
               cloud_arts(selectedStream.architectures[selectedArch].artifacts)
             "
-            name="Cloud Operators"
             @verify-click="updateVerify"
-            class="coreos-theme"
+            class="coreos-theme grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-x-8 lg:grid-cols-2"
           />
-          <!-- AMIs & GCP -->
-          <div
-            class="coreos-theme"
-            v-if="
-              Object.keys(selectedStream.architectures[selectedArch].images)
-                .length > 0
-            "
-          >
-            <p class="my-2 font-bold">{{ $t("Cloud Launchable") }}</p>
-
-            <div class="download-section mb-2">
-              <FpDownloadItem
-                name="Fedora CoreOS"
-                type="aws"
-                v-if="selectedStream.architectures[selectedArch].images.aws"
-              >
-                <template #btn>
-                  <a
-                    title="Launch"
-                    class="rounded-xl"
-                    @click="
-                      updateAMIs(
-                        selectedStream.architectures[selectedArch].images.aws
-                      )
-                    "
-                  >
-                    <Icon
-                      name="material-symbols:rocket-launch"
-                      class="!align-baseline"
-                    />
-                  </a>
-                </template>
-              </FpDownloadItem>
-            </div>
-            <div class="download-section mb-2">
-              <FpDownloadItem
-                name="Fedora CoreOS"
-                type="gcp"
-                v-if="selectedStream.architectures[selectedArch].images.gcp"
-              >
-                <template
-                  #btn
-                  v-for="art in [
-                    selectedStream.architectures[selectedArch].images.gcp,
-                  ]"
-                >
-                  <FpLink
-                    :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
-                    target="blank"
-                    title="Launch"
-                    class="rounded-xl"
-                  >
-                    <Icon
-                      name="material-symbols:rocket-launch"
-                      class="!align-baseline"
-                    />
-                  </FpLink>
-                </template>
-              </FpDownloadItem>
-            </div>
-          </div>
         </div>
       </div>
       <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
