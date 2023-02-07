@@ -11,7 +11,7 @@ let { data } = await useAsyncData(() => {
 });
 </script>
 <template>
-  <section class="bg-fp-gray-lightest px-8">
+  <section class="bg-fp-gray-lightest px-8 dark:bg-fp-gray-darkest">
     <div
       class="container mx-auto grid max-w-7xl grid-cols-1 gap-4 py-12 lg:grid-cols-2 lg:gap-10"
     >
