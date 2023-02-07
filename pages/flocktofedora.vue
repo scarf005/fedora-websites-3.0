@@ -1,7 +1,5 @@
 <script setup>
-const { locale } = useI18n();
 const data = await getCMS("events/flock");
-
 useContentHead(data);
 
 const explore = data._value.sections[1];

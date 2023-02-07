@@ -78,7 +78,9 @@ function evalLink(uri, release) {
     </section>
 
     <!-- FEDORA MEDIA WRITER DOWNLOAD -->
-    <section class="bg-gradient-to-r from-green-50 to-blue-50 py-24">
+    <section
+      class="bg-gradient-to-r from-green-50 to-blue-50 py-24 dark:from-gray-900 dark:to-gray-800"
+    >
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 p-5 md:col-span-1">
           <div class="flex">
@@ -95,7 +97,7 @@ function evalLink(uri, release) {
             </div>
           </div>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
           >
             <p>Fedora Media Writer</p>
             <div class="flex">
@@ -122,7 +124,7 @@ function evalLink(uri, release) {
             <p class="mt-10 font-bold">{{ $t(arch.title) }}</p>
 
             <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
               v-for="item in arch.items"
             >
               <p>
@@ -139,7 +141,7 @@ function evalLink(uri, release) {
             </div>
 
             <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2"
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2 dark:bg-gray-800"
               v-for="item in betaArches[i].items"
               v-if="release_data.beta.enabled"
             >
@@ -148,7 +150,7 @@ function evalLink(uri, release) {
                   Fedora Linux {{ release_data.beta.releasever }} </span
                 ><span class="text-gray-500"> {{ $t(item.name) }}</span>
                 <span
-                  class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white"
+                  class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
                   >{{ $t("BETA") }}</span
                 >
               </p>
@@ -188,7 +190,7 @@ function evalLink(uri, release) {
             {{ $t(data.sections[3].content[1].description) }}
           </p>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
           >
             <p>
               {{ $t(data.sections[3].content[1].link.text) }}
@@ -205,7 +207,7 @@ function evalLink(uri, release) {
     </section>
 
     <!-- LAPTOPS PRELOADED -->
-    <section class="bg-blue-50 py-24">
+    <section class="bg-blue-50 py-24 dark:bg-gray-800">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"

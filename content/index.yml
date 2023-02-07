@@ -1,0 +1,26 @@
+title: The Fedora Project
+description: >
+  Welcome to the Fedora project
+header_images:
+  - image: public/assets/images/workstation_registered_digital_public_good.png
+links:
+sections:
+  - sectionTitle: 🎉 Join us for Flock 2023!
+    sectionDescription: active
+  - sectionTitle: Next upcoming event
+    sectionDescription: Flock to Fedora 2023
+    url: /flocktofedora
+  - sectionTitle: A Registered Digital Public Good
+    image: public/assets/images/workstation_registered_digital_public_good.png
+  - sectionTitle: Editions
+    content:
+      - title: The leading Linux Desktop
+        url: /workstation
+      - title: A Community Server OS
+        url: /server
+      - title: The solid foundation for IoT ecosystems
+        url: /iot
+      - title: The container optimized OS
+        url: /coreos
+      - title: The lightweight VM environment
+        url: /cloud
