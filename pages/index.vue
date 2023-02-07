@@ -62,17 +62,20 @@ const release_data = await getCMS("release");
         <!-- Main Info -->
         <div>
           <h1 class="mx-auto mb-8 text-3xl font-semibold md:text-9xl">
-          {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
+            {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">
-            {{ $t("An innovative platform for hardware, clouds, and containers, built
-            with love by <strong>you</strong>") }}
+            {{
+              $t(
+                "An innovative platform for hardware, clouds, and containers, built with love by you"
+              )
+            }}
           </p>
           <p class="uppercase">{{ $t("100% Free & Open Source") }}</p>
         </div>
         <!-- Circle -->
         <div class="mt-8 h-56 w-56 rounded-full bg-blue-400 p-12">
-          <p>{{ $("Latest release")}}</p>
+          <p>{{ $t("Latest release") }}</p>
           <p class="text-8xl font-bold">{{ release_data.ga.releasever }}</p>
         </div>
       </section>
@@ -81,7 +84,7 @@ const release_data = await getCMS("release");
         v-if="data.sections[0].sectionDescription === 'active'"
         class="order-first mb-8 flex w-1/4 items-center self-end rounded-l-md bg-fp-blue p-4"
       >
-        <p>{{ data.sections[0].sectionTitle }}</p>
+        <p>{{ $t(data.sections[0].sectionTitle) }}</p>
       </aside>
 
       <!-- hero bottom content-->
@@ -91,12 +94,12 @@ const release_data = await getCMS("release");
             {{ $t(data.sections[1].sectionTitle) }}
           </h3>
           <FpLink class="max-w-sm" :href="data.sections[1].url">
-            {{ $(data.sections[1].sectionDescription) }} >
+            {{ $t(data.sections[1].sectionDescription) }} >
           </FpLink>
         </div>
         <div class="hidden md:flex">
           <h3 class="mr-5 w-56 text-right text-2xl">
-            {{ $(data.sections[2].sectionTitle) }}
+            {{ $t(data.sections[2].sectionTitle) }}
           </h3>
           <FpImage :src="data.sections[2].image" />
         </div>
