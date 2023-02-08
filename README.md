@@ -62,3 +62,6 @@ Other documentation:
 
 - [Tailwindcss editor setup](https://tailwindcss.com/docs/editor-setup)
 - [Check out Tailwind's Documentation for help](https://tailwindcss.com/)
+
+## Meeting Notes
+- [HackMD](https://hackmd.io/Mxm2We3yTqKybLsdohadOA?both)
