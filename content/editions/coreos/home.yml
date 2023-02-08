@@ -2,8 +2,7 @@ path: index
 title: The container optimized OS
 description: A minimal OS with automatic update. Scalable and secure.
 header_images:
-  - image: public/assets/images/coreos-hero.png
-  - image: public/assets/images/core-os-bg.png
+  - image: public/assets/images/coreos-header.png
 links:
   - text: Download Now
     url: /coreos/download/
@@ -18,16 +17,13 @@ sections:
         description: The optimal container host will be offered in order to run
           containerized applications.
       - title: Secure
-        description:
-          Our goal is to provide the best container host to run workloads
+        description: Our goal is to provide the best container host to run workloads
           securely and at scale.
       - title: Open-source Ecosystem
-        description:
-          Everything is supported by a totally free and open-source Fedora
+        description: Everything is supported by a totally free and open-source Fedora
           ecosystem.
       - title: Open to everyone
-        description:
-          CoreOS is currently available on multiple platforms, with more
+        description: CoreOS is currently available on multiple platforms, with more
           coming soon.
       - title: Minimal
         description: The Fedora CoreOS image is kept minimal by design.
@@ -37,26 +33,32 @@ sections:
   - sectionTitle: Platforms Tested against CoreOS
     images: ""
     content:
-      - title: Microsoft Azure
-        image: public/assets/images/microsoftazure_2021.svg
-      - title: AWS
-        image: public/assets/images/aws.png
       - title: Alibaba Cloud
         image: public/assets/images/alibabacloud-ar21.svg
-      - title: Nutanix
-        image: public/assets/images/nutanix_logo_blue.png
-      - title: Openstack
-        image: public/assets/images/openstack-logo-horizontal.svg
+      - title: AWS
+        image: public/assets/images/aws.png
       - title: DigitalOcean
         image: public/assets/images/do_logo_horizontal_blue.svg
+      - title: EMU
+        image: public/assets/images/qemu-logo.png
       - title: Exoscale
         image: public/assets/images/exoscale-ar21.svg
       - title: Google Cloud
         image: public/assets/images/google_cloud-ar21.svg
       - title: IBM Cloud
         image: public/assets/images/ibm_cloud_logo-2048x793.png
+      - title: Microsoft Azure
+        image: public/assets/images/microsoftazure_2021.svg
+      - title: Nutanix
+        image: public/assets/images/nutanix_logo_blue.png
+      - title: Openstack
+        image: public/assets/images/openstack-logo-horizontal.svg
+      - title: Virtual Box
+        image: public/assets/images/virtualbox_logo.png
       - title: Vultr
         image: public/assets/images/logo__on-white.svg
+      - title: VM Ware
+        image: public/assets/images/vmware.svg.png
   - sectionTitle: Built By You
     images: public/assets/images/flock-budapest-2019-modified.png
     sectionDescription: >-
@@ -68,18 +70,15 @@ sections:
       Fedora CoreOS is created by a team in the Fedora community called the CoreOS Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the CoreOS Working Group website.
     content:
       - title: Report & discuss issues
-        description:
-          You can view, file, and discuss Fedore CoreOS issues on the Fedora
+        description: You can view, file, and discuss Fedore CoreOS issues on the Fedora
           CoreOS issue tracker.
       - title: Chat with the team
         description: Visit \#fedora-coreos on irc.libera.chat.
       - title: Join the mailing list
-        description:
-          Sign up at coreos-status@lists.fedoraproject.org to receive meeting
+        description: Sign up at coreos-status@lists.fedoraproject.org to receive meeting
           agendas and minutes.
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors on Wednesday 11 AM
+        description: Open to all current and potential contributors on Wednesday 11 AM
           Eastern on fedora-meeting@irc.libera.chat.
   - content:
       - image: public/assets/images/backdrop-blue-circle.png
