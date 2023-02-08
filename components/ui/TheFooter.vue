@@ -63,14 +63,19 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
     <!-- Footer Navigation -->
     <nav class="mx-auto py-10">
       <div class="grid gap-3 lg:grid-cols-4 lg:gap-6">
-        <FooterSection title="Desktops" :links="desktops" />
+        <FooterSection title="Desktops" :links="desktops" :addLabel="true" />
         <div>
           <FooterSection
             title="Server/Cloud Deployment"
             :links="cloud"
+            :addLabel="true"
             class="mb-4"
           />
-          <FooterSection title="IoT / Edge Deployment" :links="edge" />
+          <FooterSection
+            title="IoT / Edge Deployment"
+            :links="edge"
+            :addLabel="true"
+          />
         </div>
         <FooterSection title="User Support" :links="support" />
         <FooterSection title="Community" :links="community" />
