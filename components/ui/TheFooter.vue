@@ -49,7 +49,7 @@ const support = computed(() => {
 });
 const community = computed(() => {
   return {
-    join: path.cotributors[3].links[0],
+    join: path.contributors[3].links[0],
     blog: path.community[1].links[1],
     matrix: path.community[0].links[1],
     discussion: path.community[0].links[0],
@@ -60,7 +60,23 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 
 <template>
   <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
-    <nav class="mx-auto py-10"></nav>
+    <!-- Footer Navigation -->
+    <nav class="mx-auto py-10">
+      <div class="grid gap-3 lg:grid-cols-4 lg:gap-6">
+        <FooterSection title="Desktops" :links="desktops" />
+        <div>
+          <FooterSection
+            title="Server/Cloud Deployment"
+            :links="cloud"
+            class="mb-4"
+          />
+          <FooterSection title="IoT / Edge Deployment" :links="edge" />
+        </div>
+        <FooterSection title="User Support" :links="support" />
+        <FooterSection title="Community" :links="community" />
+      </div>
+    </nav>
+    <!-- Fedora Section -->
     <section class="container mx-auto py-10">
       <div class="flex flex-wrap items-center gap-4 md:flex-nowrap">
         <div class="ml-4 pb-6 md:ml-0 md:w-1/4 md:pb-0">
