@@ -59,17 +59,19 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
 <template>
-  <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
+  <footer class="bg-gray-200 dark:bg-neutral-900">
     <!-- Footer Navigation -->
-    <nav class="mx-auto py-10">
-      <div class="grid gap-3 lg:grid-cols-4 lg:gap-6">
+    <nav class="flex w-full py-9 md:justify-center xl:block">
+      <div
+        class="mx-4 grid w-full gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:max-w-6xl xl:gap-10"
+      >
         <FooterSection title="Desktops" :links="desktops" :addLabel="true" />
-        <div>
+        <div class="">
           <FooterSection
-            title="Server/Cloud Deployment"
+            title="Server / Cloud Deployment"
             :links="cloud"
             :addLabel="true"
-            class="mb-4"
+            class="mb-4 xl:mb-8"
           />
           <FooterSection
             title="IoT / Edge Deployment"
@@ -77,7 +79,11 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
             :addLabel="true"
           />
         </div>
-        <FooterSection title="User Support" :links="support" />
+        <FooterSection
+          title="User Support"
+          :links="support"
+          class="sm:col-start-2 sm:row-start-1 md:col-auto md:row-auto"
+        />
         <FooterSection title="Community" :links="community" />
       </div>
     </nav>
