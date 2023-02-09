@@ -1,11 +1,5 @@
 <script setup>
 import navigation from "../../config/navigation.json";
-const categories = {
-  downloads: navigation.downloads,
-  community: navigation.community,
-  contributors: navigation.contributors,
-  support: navigation.support,
-};
 
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
