@@ -65,11 +65,7 @@ const release_data = await getCMS("release");
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">
-            {{
-              $t(
-                "An innovative platform for hardware, clouds, and containers, built with love by you"
-              )
-            }}
+            {{ $t(data.description) }}
           </p>
           <p class="uppercase">{{ $t("100% Free & Open Source") }}</p>
         </div>
@@ -101,7 +97,7 @@ const release_data = await getCMS("release");
           <h3 class="mr-5 w-56 text-right text-2xl">
             {{ $t(data.sections[2].sectionTitle) }}
           </h3>
-          <FpImage :src="data.sections[2].image" />
+          <FpImage :src="data.header_images[0].image" />
         </div>
       </section>
     </header>
@@ -116,6 +112,7 @@ const release_data = await getCMS("release");
             >
               {{ $t(item.title) }}
             </h2>
+            <p class="text-center text-gray-500">{{ $t(item.description) }}</p>
           </div>
         </FpLink>
       </div>
