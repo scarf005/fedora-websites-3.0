@@ -2,8 +2,8 @@ path: index
 title: The container optimized OS
 description: A minimal OS with automatic update. Scalable and secure.
 header_images:
+  - image: public/assets/images/coreos-hero.png
   - image: public/assets/images/bg-pink.png
-  - image: public/assets/images/coreos-header.png
 links:
   - text: Download Now
     url: /coreos/download/

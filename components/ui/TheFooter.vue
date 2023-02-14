@@ -1,11 +1,5 @@
 <script setup>
 import navigation from "../../config/navigation.json";
-const categories = {
-  downloads: navigation.downloads,
-  community: navigation.community,
-  contributors: navigation.contributors,
-  support: navigation.support,
-};
 
 const switchLocalePath = useSwitchLocalePath();
 const { locales } = useI18n();
@@ -15,79 +9,136 @@ const availableLocales = computed(() => {
     href: switchLocalePath(i.code),
   }));
 });
+const path = {
+  downloads: navigation.downloads.sections,
+  community: navigation.community.sections,
+  contributors: navigation.contributors.sections,
+  support: navigation.support.sections,
+};
+const desktops = computed(() => {
+  return {
+    workstation: path.downloads[0].links[0],
+    silverblue: path.downloads[1].links[0],
+    kde: path.downloads[2].links[0],
+    kinoite: path.downloads[2].links[7],
+  };
+});
+const cloud = computed(() => {
+  return {
+    server: path.downloads[0].links[1],
+    coreos: path.downloads[0].links[3],
+    cloud: path.downloads[0].links[4],
+  };
+});
+const edge = computed(() => {
+  return { iot: path.downloads[0].links[2] };
+});
+const support = computed(() => {
+  return {
+    ask: path.support[0].links[0],
+    bugs: path.support[2].links[1],
+    magazine: path.community[1].links[0],
+    developer: path.support[3].links[1],
+  };
+});
+const community = computed(() => {
+  return {
+    join: path.contributors[3].links[0],
+    blog: path.community[1].links[1],
+    matrix: path.community[0].links[1],
+    discussion: path.community[0].links[0],
+  };
+});
+let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
 <template>
-  <footer class="flex flex-col bg-gray-200 dark:bg-neutral-900">
-    <nav class="container mx-auto py-10">
-      <div class="container grid grid-cols-5">
-        <div
-          v-for="category in categories"
-          class="col-span-4 px-3 md:col-span-1"
-        >
-          <div v-for="section in category.sections">
-            <p class="mt-5 text-lg font-bold text-gray-500 dark:text-gray-300">
-              {{ $t(section.label) }}
-            </p>
-            <p
-              class="text-gray-800 dark:text-gray-500"
-              v-for="item in section.links"
-            >
-              <FpLink :href="item.path" class="w-100">{{ item.label }}</FpLink>
-            </p>
-          </div>
+  <footer class="bg-gray-200 dark:bg-neutral-900">
+    <!-- Footer Navigation -->
+    <nav class="flex w-full py-9 md:justify-center xl:block">
+      <div
+        class="mx-4 grid w-full gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:max-w-6xl xl:gap-10"
+      >
+        <FooterSection title="Desktops" :links="desktops" :addLabel="true" />
+        <div class="">
+          <FooterSection
+            title="Server / Cloud Deployment"
+            :links="cloud"
+            :addLabel="true"
+            class="mb-4 xl:mb-8"
+          />
+          <FooterSection
+            title="IoT / Edge Deployment"
+            :links="edge"
+            :addLabel="true"
+          />
         </div>
-        <div class="col-span-5 px-3 md:col-span-1">
-          <p class="mt-5 text-lg font-bold text-gray-500 dark:text-gray-300">
-            {{ $t("Languages") }}
-          </p>
-          <p
-            class="text-gray-800 dark:text-gray-500"
-            v-for="item in availableLocales"
-          >
-            <FpLink :href="item.href" class="w-100">{{ item.name }}</FpLink>
-          </p>
-        </div>
+        <FooterSection
+          title="User Support"
+          :links="support"
+          class="sm:col-start-2 sm:row-start-1 md:col-auto md:row-auto"
+        />
+        <FooterSection title="Community" :links="community" />
       </div>
     </nav>
-    <!-- Privacy Links -->
+    <!-- Fedora Section -->
     <section class="container mx-auto py-10">
-      <div class="flex flex-wrap items-center gap-4">
-        <div class="">
+      <div class="flex flex-wrap items-center gap-4 md:flex-nowrap">
+        <div class="ml-4 pb-6 md:ml-0 md:w-1/4 md:pb-0">
           <FpImage
             src="assets/images/logos/fedora-blue.png"
             :alt="$t('Fedora Logo')"
-            class="ml-6 w-1/3 xl:ml-0"
+            class="h-12 xl:ml-0"
           />
         </div>
+        <!-- language selector -->
+        <div
+          class="mx-auto cursor-pointer pb-4 md:pb-0"
+          @click="
+            footerLanguageOpen = !footerLanguageOpen;
+            categoryOpen = null;
+            sectionOpen = null;
+          "
+        >
+          <a
+            class="inline-flex items-center rounded text-fp-gray-darkest underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+          >
+            <span class="hidden md:block">{{ $t("Languages") }}</span
+            ><span class="md:hidden"
+              ><Icon name="fa6-solid:language" size="48" />
+            </span>
+          </a>
+          <FpLanguageSelector :open="footerLanguageOpen" />
+        </div>
+        <!-- privacy etc links -->
         <ul
           class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
         >
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
-              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Privacy Statement") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
-              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Legal") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
-              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Code of Conduct") }}</NuxtLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <NuxtLink
               to="#"
-              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray"
+              class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Sponsors") }}</NuxtLink
             >
           </li>
