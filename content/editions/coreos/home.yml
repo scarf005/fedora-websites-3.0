@@ -3,7 +3,7 @@ title: The container optimized OS
 description: A minimal OS with automatic update. Scalable and secure.
 header_images:
   - image: public/assets/images/hack.png
-  - image: public/assets/images/coreos-header.png
+  - image: public/assets/images/coreos-header.jpg
 links:
   - text: Download Now
     url: /coreos/download/
