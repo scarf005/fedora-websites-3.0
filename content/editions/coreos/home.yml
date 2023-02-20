@@ -2,7 +2,7 @@ path: index
 title: The container optimized OS
 description: A minimal OS with automatic updates. Scalable and secure.
 image:
-  src: public/assets/images/coreos-header.jpg
+  src: https://stg.fedoraproject.org/assets/images/coreos-header.jpg
   alt: Fedora CoreOS Image
   width: 400
   height: 300
