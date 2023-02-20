@@ -34,9 +34,9 @@ useContentHead(data);
 
   <main class="mt-8 flex flex-col items-center">
     <!-- Why Fedora Workstation -->
-    <section class="w-10/12">
+    <section>
       <header
-        class="mx-auto grid gap-4 text-center md:w-11/12 md:grid-cols-2 md:text-left"
+        class="mx-auto grid max-w-screen-xl gap-4 text-center md:grid-cols-2 md:text-left"
       >
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
