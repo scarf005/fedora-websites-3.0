@@ -166,10 +166,12 @@ function closeModal(state) {
 
 function virt_arts(data) {
   let dict = {};
-  const virtualizedImages = ["qemu", "virtualbox", "vmware"];
+  const virtualizedImages = ["hyperv", "qemu", "virtualbox", "vmware"];
   if (data) {
     for (let k of virtualizedImages) {
-      dict[k] = data[k];
+      if (k in data) {
+        dict[k] = data[k];
+      }
     }
   }
   return dict;

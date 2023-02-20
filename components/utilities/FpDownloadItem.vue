@@ -38,6 +38,7 @@ const prettyType = {
   digitalocean: "DigitalOcean",
   exoscale: "Exoscale",
   gcp: "GCP",
+  hyperv: "Hyper-V",
   ibmcloud: "IBM Cloud",
   "raw.xz": "Raw",
   "raw-xz": "Raw",
