@@ -14,7 +14,7 @@ let languageOpen = useState("languageOpen", () => null);
 
 <template>
   <header
-    class="fixed z-50 w-full bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue dark:to-fp-blue-dark"
+    class="fixed z-50 w-full bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue-dark dark:to-fp-blue"
   >
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
@@ -48,7 +48,7 @@ let languageOpen = useState("languageOpen", () => null);
 
       <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        :class="`col-span-2 justify-center py-4 text-white md:col-span-1 md:flex md:justify-end md:px-4 md:py-1 xl:gap-2 ${
+        :class="`col-span-2 justify-center gap-2 py-4 text-white md:col-span-1 md:flex md:justify-end md:px-4 md:py-1 ${
           categoryOpen ? 'flex' : 'hidden'
         }`"
       >
@@ -100,19 +100,20 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen bg-fp-blue px-8 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg md:shadow-md xl:w-10/12"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-fp-blue shadow-xl dark:bg-fp-blue-dark md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg xl:w-10/12"
     >
       <!-- close button -->
-      <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
+      <!-- <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
         <button @click="categoryOpen = null" class="hover:opacity-75">
           <Icon name="fa6-solid:x" size="24" />
         </button>
-      </div>
+      </div> -->
 
-      <div class="grid h-full gap-8 lg:grid-cols-12">
-        <section class="col-span-3 w-full">
-          <header class="m-4 hidden w-fit lg:block">
-            <h2 class="text-xl font-semibold uppercase text-white">
+      <div class="grid lg:grid-cols-12">
+        <!-- LEFT COLUMN DESKTOP -->
+        <section class="col-span-3 pl-2 pt-5">
+          <header class="hidden w-fit lg:block">
+            <h2 class="px-2 text-xl font-semibold uppercase text-white">
               {{ $t(categoryOpen.label) }}
             </h2>
           </header>
@@ -124,8 +125,9 @@ let languageOpen = useState("languageOpen", () => null);
             >
               <!-- Category List -->
               <div
-                :class="`mx-2 mt-4 flex cursor-pointer justify-between rounded-md py-4 px-2 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2 ${
-                  sectionOpen === section && 'md:bg-fp-blue-dark'
+                :class="`mt-4 flex cursor-pointer justify-between rounded-l-xl px-2 py-4 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2 ${
+                  sectionOpen === section &&
+                  'md:bg-fp-blue-dark dark:md:bg-fp-blue'
                 }`"
                 role="button"
                 @click="sectionOpen = section"
@@ -161,32 +163,32 @@ let languageOpen = useState("languageOpen", () => null);
           </ul>
         </section>
 
-        <!-- Section List Desktop -->
+        <!-- RIGHT COLUMN DESKTOP -->
         <section
-          class="col-span-9 hidden text-white lg:block"
+          class="col-span-9 hidden min-h-screen bg-gray-200 p-5 text-white dark:bg-gray-900 lg:block"
           v-if="sectionOpen"
         >
           <div>
-            <header class="mb-6 mt-4">
-              <h3 class="font-semibold text-white">
+            <header class="mb-6">
+              <h3 class="font-semibold text-fp-blue dark:text-gray-200">
                 {{ $t(sectionOpen.label) }}
               </h3>
-              <p class="text-white">
+              <p class="text-gray-900 dark:text-gray-500">
                 {{ $t(sectionOpen.description) }}
               </p>
             </header>
-            <ul class="grid grid-cols-3 gap-4">
+            <ul class="grid grid-cols-3 gap-2">
               <li
                 v-for="link in sectionOpen.links"
                 :key="link.id"
-                class="max-w-xs rounded-lg p-2 hover:bg-fp-blue-dark"
+                class="rounded-lg p-4 hover:bg-gray-300 dark:hover:bg-fp-blue-dark"
               >
                 <FpLink :href="link.path">
-                  <h4 class="mb-2 font-medium text-white">
-                    <Icon :name="link.icon" size="32" />
+                  <h4 class="mb-2 font-medium text-gray-600 dark:text-gray-200">
+                    <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}
                   </h4>
-                  <p class="text-white">
+                  <p class="text-gray-700 dark:text-gray-500">
                     {{ $t(link.description) }}
                   </p>
                 </FpLink>
