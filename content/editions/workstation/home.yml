@@ -4,7 +4,7 @@ description: >
   A beautiful, high-quality desktop, built on the latest open source technology.
   Trusted, powerful and easy.
 image:
-  src: public/assets/images/workstation_framework.png
+  src: https://stg.fedoraproject.org/assets/images/workstation_framework.png
   alt: Fedora Workstation Image
   width: 400
   height: 300
