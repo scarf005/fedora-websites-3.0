@@ -163,7 +163,7 @@
     "Windows": "윈도우즈",
     "Verify Your Download": "자신의 내려받기를 확인합니다",
     "The leading Linux desktop": "최첨단 데스크탑",
-    "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas and minute ([view archives]().)": "[desktop{'@'}lists.fedoraproject.org]()에 서명하고 회의 안건 및 의사록 수신 ([view archives]().)",
+    "Sign up at [desktop@lists.fedoraproject.org]() to receive meeting agendas and minute ([view archives]().)": "[desktop{'@'}lists.fedoraproject.org]()에 서명하고 회의 안건 및 의사록 수신 ([보관소 보기]().)",
     "Release Notes": "출시 기록",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "이들 파일을 사용하는 방법이 확실하지 않나요? [여기서 알아보기](https://docs.fedoraproject.org/ko/quick-docs/creating-and-using-a-live-installation-image/)",
     "Learn more about Fedora Media Writer": "페도라 미디어 작성기에 대허 더 알아보기",
@@ -172,5 +172,6 @@
     "Explore Fedora Laptops": "페도라 랩탑 탐구하기",
     "Community Support": "커뮤니티 지원",
     "Each version is updated for 18 months, and upgrades between versions are quick and easy.": "각 버전은 18개월동안 최신화 되고, 버전 사이에서 향상은 빠르고 쉽습니다.",
-    "DNF is the Fedora package manager that enables you to install, update and manage OS components.": "DNF는 당신이 OS 구성요소를 설치, 최신화와 관리 할 수 있도록 하는 페도라 꾸러미 관리자입니다."
+    "DNF is the Fedora package manager that enables you to install, update and manage OS components.": "DNF는 당신이 OS 구성요소를 설치, 최신화와 관리 할 수 있도록 하는 페도라 꾸러미 관리자입니다.",
+    "Security, Installs": "보안, 설치"
 }

@@ -14,15 +14,15 @@ const availableLocales = computed(() => {
 </script>
 <template>
   <ul
-    class="absolute mt-4 w-56 rounded-b-xl border border-fp-blue bg-fp-blue py-2 text-white"
+    class="absolute mt-4 w-32 rounded-b-xl border border-fp-blue bg-fp-blue py-2 text-white"
     v-if="open"
   >
-    <li v-for="item in availableLocales" :key="item.name" class="mb-2">
-      <FpLink
-        :href="item.href"
-        :current="item.current"
-        class="px-3 py-4 text-base font-medium text-white"
-      >
+    <li
+      v-for="item in availableLocales"
+      :key="item.name"
+      class="mb-2 w-28 overflow-hidden text-ellipsis px-1"
+    >
+      <FpLink :href="item.href" :current="item.current">
         {{ item.name }}
       </FpLink>
     </li>

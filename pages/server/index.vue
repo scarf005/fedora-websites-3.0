@@ -27,7 +27,7 @@ useContentHead(data);
   <!-- Benefits Section -->
   <section class="mt-32">
     <h2
-      class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
+      class="mb-12 bg-gradient-to-r from-fp-green to-fp-orange bg-clip-text text-center text-5xl font-bold text-transparent"
     >
       {{ $t(data.sections[0].sectionTitle) }}
     </h2>

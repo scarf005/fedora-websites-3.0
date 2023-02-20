@@ -1,38 +1,12 @@
 <script setup>
 import navigation from "../../config/navigation.json";
 
-const switchLocalePath = useSwitchLocalePath();
-const { locales } = useI18n();
-const availableLocales = computed(() => {
-  return locales.value.map((i) => ({
-    name: i.name,
-    href: switchLocalePath(i.code),
-  }));
-});
 const path = {
-  downloads: navigation.downloads.sections,
   community: navigation.community.sections,
   contributors: navigation.contributors.sections,
   support: navigation.support.sections,
 };
-const desktops = computed(() => {
-  return {
-    workstation: path.downloads[0].links[0],
-    silverblue: path.downloads[1].links[0],
-    kde: path.downloads[2].links[0],
-    kinoite: path.downloads[2].links[7],
-  };
-});
-const cloud = computed(() => {
-  return {
-    server: path.downloads[0].links[1],
-    coreos: path.downloads[0].links[3],
-    cloud: path.downloads[0].links[4],
-  };
-});
-const edge = computed(() => {
-  return { iot: path.downloads[0].links[2] };
-});
+
 const support = computed(() => {
   return {
     ask: path.support[0].links[0],
@@ -49,7 +23,6 @@ const community = computed(() => {
     discussion: path.community[0].links[0],
   };
 });
-let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
 <template>
@@ -59,20 +32,23 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
       <div
         class="mx-4 grid w-full gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:max-w-6xl xl:gap-10"
       >
-        <FooterSection title="Desktops" :links="desktops" :addLabel="true" />
-        <div class="">
-          <FooterSection
-            title="Server / Cloud Deployment"
-            :links="cloud"
-            :addLabel="true"
-            class="mb-4 xl:mb-8"
-          />
-          <FooterSection
-            title="IoT / Edge Deployment"
-            :links="edge"
-            :addLabel="true"
-          />
-        </div>
+        <FooterSection
+          title="Editions"
+          :links="navigation.downloads.sections[0].links"
+        />
+        <!-- <FooterSection
+          title="Emerging Editions"
+          :links="navigation.downloads.sections[1].links"
+        /> -->
+        <FooterSection
+          title="Spins"
+          :links="navigation.downloads.sections[2].links"
+        />
+        <FooterSection
+          title="Labs"
+          :links="navigation.downloads.sections[3].links"
+        />
+
         <FooterSection
           title="User Support"
           :links="support"

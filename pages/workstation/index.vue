@@ -27,16 +27,6 @@ useContentHead(data);
             class="w-full"
             src="assets/images/workstation_framework.png"
           />
-          <video
-            class="-mt-[310px] w-full px-11 sm:-mt-[473px] sm:px-[70px]"
-            autoplay=""
-            loop=""
-            muted=""
-            playsinline=""
-            preload="auto"
-          >
-            <source src="/assets/images/hero.mp4" type="video/mp4" />
-          </video>
         </div>
       </div>
     </FpBanner>
