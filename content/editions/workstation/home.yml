@@ -9,8 +9,6 @@ header_images:
 links:
   - text: Download now
     url: /workstation/download
-  - text: Reviewed By TechHut
-    url: https://www.youtube.com/watch?v=54aoIGKEMnk
 sections:
   - sectionTitle: Why Fedora Workstation?
     content:

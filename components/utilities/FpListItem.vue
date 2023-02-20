@@ -39,7 +39,7 @@ if (props.description) {
     </h4>
     <ContentRenderer
       v-if="descriptionMd"
-      class="text-fp-blue-dark dark:text-slate-200 text-center"
+      class="text-fp-blue-dark dark:text-slate-200"
       tag="p"
       :value="descriptionMd"
     />
