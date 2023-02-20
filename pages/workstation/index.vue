@@ -36,7 +36,7 @@ useContentHead(data);
     <!-- Why Fedora Workstation -->
     <section>
       <header
-        class="mx-auto grid max-w-screen-xl gap-4 text-center md:grid-cols-2 md:text-left"
+        class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
       >
         <h3
           class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"

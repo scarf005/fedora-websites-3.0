@@ -30,7 +30,7 @@ useContentHead(data);
 
   <!-- Why Section -->
   <FpHero :background="data.sections[0].images" alignment="bg-bottom">
-    <section class="mx-auto w-10/12 pt-12">
+    <section class="mx-auto max-w-screen-xl p-2 pt-12 md:p-0">
       <h3
         class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
       >
