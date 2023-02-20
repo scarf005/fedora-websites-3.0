@@ -255,8 +255,10 @@ useContentHead(data);
     :class="`coreos-theme-${selectedStream?.stream}`"
   >
     <TheLocalBar
-      image="assets/images/fedora-coreos-logo-light.png"
-      imageDark="assets/images/fedora-coreos-logo.png"
+      :image="{
+        light: 'assets/images/fedora-coreos-logo-light.png',
+        dark: 'assets/images/fedora-coreos-logo.png',
+      }"
       home="/coreos"
       textColor="text-fp-magenta"
       :items="[
