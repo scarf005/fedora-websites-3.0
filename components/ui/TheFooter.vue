@@ -30,7 +30,7 @@ const community = computed(() => {
     <!-- Footer Navigation -->
     <nav class="flex w-full py-9 md:justify-center xl:block">
       <div
-        class="mx-4 grid w-full gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:max-w-6xl xl:gap-10"
+        class="mx-4 grid w-full max-w-screen-xl gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:gap-10"
       >
         <FooterSection
           title="Editions"
