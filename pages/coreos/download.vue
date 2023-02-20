@@ -798,30 +798,32 @@ body.has-modal {
 
 .coreos-theme-stable .coreos-theme-text,
 .coreos-theme-stable .fp-card.coreos-theme h3 {
-  @apply text-fp-blue;
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-testing .coreos-theme-text,
 .coreos-theme-testing .fp-card.coreos-theme h3 {
-  @apply text-[#4d8425] dark:text-[#85b761];
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-next .coreos-theme-text,
 .coreos-theme-next .fp-card.coreos-theme h3 {
-  @apply text-[#9d6413] dark:text-[#a88a60];
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-stable .coreos-theme .fp-download-item a {
-  @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
 }
 
 .coreos-theme-testing .coreos-theme .fp-download-item a {
-  @apply border-[#4d8425] text-[#4d8425] hover:bg-[#4d8425] hover:text-white dark:border-[#85b761] dark:text-[#85b761] hover:dark:bg-[#85b761] hover:dark:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
 }
 
 .coreos-theme-next .coreos-theme .fp-download-item a {
-  @apply border-[#9d6413] text-[#9d6413] hover:bg-[#9d6413] hover:text-white;
-  @apply dark:border-[#a88a60] dark:text-[#a88a60] hover:dark:bg-[#a88a60] hover:dark:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
 }
 
 #arches a {
