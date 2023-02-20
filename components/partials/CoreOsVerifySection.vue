@@ -4,7 +4,9 @@
   >
     <div class="my-5">
       <slot name="header">
-        <h2 class="mb-5 text-center text-fp-blue lg:text-start">
+        <h2
+          class="mb-5 text-center text-fp-blue dark:text-gray-200 lg:text-start"
+        >
           {{ $t("We take security seriously") }}
         </h2>
       </slot>
@@ -30,7 +32,7 @@
         <template #verify_button>
           <Icon
             name="fa-solid:clipboard-check"
-            class="!align-baseline text-fp-blue-light"
+            class="!align-baseline text-fp-blue-light dark:text-gray-200"
           />
         </template>
       </i18n-t>

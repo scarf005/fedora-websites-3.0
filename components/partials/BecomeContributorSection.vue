@@ -9,10 +9,12 @@ let { data } = await useAsyncData(() => {
 <template>
   <div class="container mx-auto max-w-7xl">
     <div class="my-5 p-2">
-      <h4 class="mb-2 text-lg font-semibold text-fp-blue-light">
+      <h4
+        class="mb-2 text-lg font-semibold text-fp-blue-light dark:text-gray-200"
+      >
         <Icon
           name="fa6-solid:door-open"
-          class="mr-1 !align-top text-fp-blue-light"
+          class="mr-1 !align-top text-fp-blue-light dark:text-gray-200"
           size="1.5rem"
         />
         {{ $t(data.sectionTitle) }}

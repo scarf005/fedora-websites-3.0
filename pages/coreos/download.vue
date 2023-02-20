@@ -649,7 +649,9 @@ useContentHead(data);
           />
         </div>
       </div>
-      <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
+      <div class="container mx-auto max-w-7xl">
+        <p class="mr-4 text-end"><a class="text-xs" href="#">Back to Top</a></p>
+      </div>
     </section>
 
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
