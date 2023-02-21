@@ -18,8 +18,7 @@ sections:
           selecting the specific packages and features you want to include.
       - title: Secure
         description: Designed with security in mind, Fedora Cloud includes functions
-          like SELinux, which boosts kernel security, and Security Profiles,
-          which let you easily change security parameters for various use cases.
+          like SELinux, which boosts kernel security, and Security Profiles.
       - title: Up-to-date
         description: Fedora Cloud offers the most recent software packages and updates,
           ensuring that you are constantly up to date.
