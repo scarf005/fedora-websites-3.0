@@ -32,7 +32,7 @@ sections:
       - title: Container-based
         description: Fedora Cloud is optimized for container workloads making it a great
           host for running containerized applications.
-  - sectionTitle: "Endorsed Partners of Cloud "
+  - sectionTitle: "Endorsed Partners of Fedora Cloud "
     images: public/assets/images/coreos_background_why.jpg
     content:
       - image: public/assets/images/aws.png
