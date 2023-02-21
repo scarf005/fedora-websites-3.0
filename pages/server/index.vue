@@ -25,7 +25,7 @@ useContentHead(data);
   </FpHero>
 
   <!-- Benefits Section -->
-  <section class="mt-32">
+  <section class="pt-32 dark:bg-neutral-900">
     <h2
       class="mb-12 bg-gradient-to-r from-fp-green to-fp-orange bg-clip-text text-center text-5xl font-bold text-transparent"
     >
@@ -39,12 +39,12 @@ useContentHead(data);
   </section>
 
   <!-- Community Section -->
-  <section class="max-w-full">
-    <FpCommunity :data="data.sections[1]" />
+  <section class="max-w-full dark:bg-neutral-800">
+    <FpCommunity :data="data.sections[1]" class="dark:!bg-none" />
   </section>
 
   <!-- Call To Action -->
-  <section>
+  <section class="dark:bg-black">
     <FpCallToAction
       :cta="data.links"
       image="assets/images/fedora-server-logo.png"

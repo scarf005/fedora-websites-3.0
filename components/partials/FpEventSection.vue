@@ -36,13 +36,15 @@ for (let item of data._value.body[0].content) {
           <h2 class="mb-4 xl:text-4xl" :class="color">
             {{ $t(data.body[0].sectionTitle) }}
           </h2>
-          <p class="text-fp-gray-darkest">
+          <p class="text-fp-gray-darkest dark:text-fp-gray">
             {{ $t(data.body[0].sectionDescription) }}
           </p>
         </section>
         <!-- Flock Info -->
         <article class="mx-8 mb-8 flex flex-col self-center xl:mx-0">
-          <h3 class="text-center text-lg text-fp-blue-dark xl:text-xl">
+          <h3
+            class="text-center text-lg text-fp-blue-dark dark:text-gray-200 xl:text-xl"
+          >
             {{ $t(data.body[0].content[0].title) }}
           </h3>
           <FpImage
@@ -51,11 +53,11 @@ for (let item of data._value.body[0].content) {
           />
           <ContentRenderer
             tag="p"
-            class="my-0 text-fp-gray-darkest md:my-2"
+            class="my-0 text-fp-gray-darkest dark:text-fp-gray md:my-2"
             :value="data.body[0].content[0].descriptionMd"
           />
           <div
-            class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest lg:py-3 lg:pl-4"
+            class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest dark:bg-neutral-900 dark:text-fp-gray lg:py-3 lg:pl-4"
           >
             <p>{{ $t(data.body[0].content[0].link.text) }}</p>
           </div>
@@ -76,7 +78,9 @@ for (let item of data._value.body[0].content) {
           :src="data.body[0].content[1].image"
           class="z-10 col-start-1 row-start-1 w-48 lg:w-60"
         />
-        <figcaption class="text-center text-xs text-fp-gray-dark">
+        <figcaption
+          class="text-center text-xs text-fp-gray-dark dark:text-fp-gray"
+        >
           {{ $t(data.body[0].content[1].description) }}
         </figcaption>
       </figure>
@@ -90,7 +94,7 @@ for (let item of data._value.body[0].content) {
           :key="card.id"
           class="container my-4 mx-auto flex w-fit flex-col gap-y-4 md:w-1/2"
         >
-          <h4 class="text-base text-fp-blue xl:text-lg">
+          <h4 class="text-base text-fp-blue dark:text-gray-200 xl:text-lg">
             {{ $t(card.title) }}
           </h4>
           <ContentRenderer
@@ -113,7 +117,9 @@ for (let item of data._value.body[0].content) {
         >
           <FpImage :src="data.body[0].content[2].image" class="w-80" />
         </NuxtLink>
-        <figcaption class="mt-4 max-w-xs text-sm text-fp-gray-dark">
+        <figcaption
+          class="mt-4 max-w-xs text-sm text-fp-gray-dark dark:text-fp-gray"
+        >
           {{ $t(data.body[0].content[2].description) }}
         </figcaption>
       </figure>

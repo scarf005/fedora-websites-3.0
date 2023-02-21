@@ -23,7 +23,9 @@ defineProps({
           {{ $t(sectionTitle) }}
         </h2>
       </header>
-      <div class="flex flex-wrap justify-center gap-10 2xl:justify-between">
+      <div
+        class="flex flex-wrap justify-center gap-10 pb-4 2xl:justify-between"
+      >
         <FpCard
           v-for="card in content"
           :key="card.id"

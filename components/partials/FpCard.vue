@@ -64,7 +64,7 @@ if (props.description) {
 }
 
 .fp-card h3 {
-  @apply px-2 text-2xl font-semibold text-fp-blue dark:text-fp-blue-light lg:px-0;
+  @apply px-2 text-2xl font-semibold text-fp-blue dark:text-gray-200 lg:px-0;
 }
 
 .fp-card h4 {

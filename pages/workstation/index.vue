@@ -32,23 +32,24 @@ useContentHead(data);
     </FpBanner>
   </FpHero>
 
-  <main class="mt-8 flex flex-col items-center">
+  <main>
     <!-- Why Fedora Workstation -->
-    <section>
-      <header
-        class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
-      >
-        <h3
-          class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
+    <div class="py-6 px-2 dark:bg-neutral-800">
+      <section>
+        <header
+          class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
         >
-          {{ $t(data.sections[0].sectionTitle) }}
-        </h3>
-      </header>
-      <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-        <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
-      </FpList>
-    </section>
-
+          <h3
+            class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
+          >
+            {{ $t(data.sections[0].sectionTitle) }}
+          </h3>
+        </header>
+        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+          <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
+        </FpList>
+      </section>
+    </div>
     <!-- Benefits Section -->
     <section class="mt-32">
       <h2
@@ -99,12 +100,12 @@ useContentHead(data);
     </section>
 
     <!-- Community Section -->
-    <section class="max-w-full">
-      <FpCommunity :data="data.sections[4]" />
+    <section class="max-w-full dark:bg-neutral-900">
+      <FpCommunity :data="data.sections[4]" class="dark:!bg-none" />
     </section>
 
     <!-- Call To Action -->
-    <section>
+    <section class="dark:bg-black">
       <FpCallToAction
         :cta="data.links"
         image="assets/images/workstation_logo.png"
