@@ -2,8 +2,8 @@ path: index
 title: The lightweight VM environment
 description: A customizable cloud native experience.
 header_images:
-  - image: public/assets/images/ballon-render-trans-bg.png
-  - image: public/assets/images/path2402.png
+  - image: public/assets/images/group-1-.png
+  - image: public/assets/images/image4099.png
 links:
   - text: Download Now
     url: /cloud/download/
@@ -14,29 +14,23 @@ sections:
     images: ""
     content:
       - title: Customizable
-        description:
-          Fedora Cloud allows you to tailor your environment to your needs by
+        description: Fedora Cloud allows you to tailor your environment to your needs by
           selecting the specific packages and features you want to include.
       - title: Up-to-date
-        description:
-          Fedora Cloud offers the most recent software packages and updates,
+        description: Fedora Cloud offers the most recent software packages and updates,
           ensuring that you are constantly up to date.
       - title: Open-source Ecosystem
-        description:
-          Everything is supported by a totally free and open-source Fedora
+        description: Everything is supported by a totally free and open-source Fedora
           ecosystem.
       - title: Secure
-        description:
-          Designed with security in mind, Fedora Cloud includes functions
+        description: Designed with security in mind, Fedora Cloud includes functions
           like SELinux, which boosts kernel security, and Security Profiles,
           which let you easily change security parameters for various use cases.
       - title: Community-driven
-        description:
-          Being an open source project means that there is a large pool of
+        description: Being an open source project means that there is a large pool of
           knowlege and expertise available.
       - title: Container-based
-        description:
-          Fedora Cloud is optimized for container workloads making it a great
+        description: Fedora Cloud is optimized for container workloads making it a great
           host for running containerized applications.
   - sectionTitle: Platforms Tested against Cloud
     images: public/assets/images/coreos_background_why.jpg
@@ -55,16 +49,13 @@ sections:
       Fedora Cloud is created by a team in the Fedora community called the Cloud Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the Cloud Working Group website.
     content:
       - title: Report & discuss issues
-        description:
-          You can view, file, and discuss Fedore Cloud issues on the Fedora
+        description: You can view, file, and discuss Fedore Cloud issues on the Fedora
           Cloud issue tracker.
       - title: Chat with the team
         description: Visit \#fedora-Cloud on irc.libera.chat.
       - title: Join the mailing list
-        description:
-          Sign up at Cloud-status@lists.fedoraproject.org to receive meeting
+        description: Sign up at Cloud-status@lists.fedoraproject.org to receive meeting
           agendas and minutes.
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors on **Wednesday 11 AM
+        description: Open to all current and potential contributors on **Wednesday 11 AM
           Eastern** on fedora-meeting@irc.libera.chat.
