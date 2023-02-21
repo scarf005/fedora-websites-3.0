@@ -13,7 +13,7 @@ if (props.description) {
 </script>
 <template>
   <li
-    class="mb-8 w-10/12"
+    class="mb-2 w-10/12"
     :style="
       iconURI
         ? {

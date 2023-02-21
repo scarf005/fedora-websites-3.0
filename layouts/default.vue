@@ -13,7 +13,7 @@ useHead({
 </script>
 
 <template>
-  <div id="app" class="dark:bg-neutral-700 dark:text-white">
+  <div id="app">
     <TheNav />
     <div class="pt-12">
       <slot />
@@ -21,3 +21,9 @@ useHead({
     <TheFooter />
   </div>
 </template>
+
+<style>
+body {
+  @apply dark:bg-neutral-700 dark:text-white;
+}
+</style>

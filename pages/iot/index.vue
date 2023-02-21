@@ -4,7 +4,11 @@ useContentHead(data);
 </script>
 <template>
   <main>
-    <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+    <FpHero
+      :background="data.header_images[1].image"
+      alignment="bg-bottom"
+      class="relative z-0"
+    >
       <TheLocalBar
         image="assets/images/fedora_white.png"
         home="/iot"
@@ -24,21 +28,47 @@ useContentHead(data);
       >
         <FpImage :src="data.header_images[0].image" />
       </FpBanner>
+      <svg
+        viewBox="0 0 209.9868 38.261421"
+        version="1.1"
+        id="svg4475"
+        class="absolute -bottom-2.5 -z-10"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg"
+      >
+        <defs id="defs4472" />
+        <g id="layer1" transform="translate(0.04450727,-135.47272)">
+          <path
+            class="fill-white dark:fill-neutral-800"
+            d="M -0.04450727,156.66286 209.94229,135.47272 v 38.26142 H -0.04450727 Z"
+            id="path6102"
+          />
+        </g>
+      </svg>
     </FpHero>
 
     <!-- why fedora iot -->
-    <FpHero :background="data.sections[0].images" alignment="bg-bottom">
-      <section class="mx-auto max-w-screen-xl p-2 pt-12 md:p-0">
-        <h3
-          class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
-        >
-          {{ data.sections[0].sectionTitle }}
-        </h3>
-        <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
-          <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
-        </FpList>
-      </section>
-    </FpHero>
+    <div class="py-6 px-2 dark:bg-neutral-800">
+      <FpHero
+        :background="data.sections[0].images"
+        alignment="bg-bottom"
+        class="dark:!bg-none"
+      >
+        <section class="mx-auto max-w-screen-xl p-2 pt-12 md:p-0">
+          <h3
+            class="mb-4 font-medium text-fp-blue md:col-span-2 xl:col-span-1 xl:mb-6"
+          >
+            {{ data.sections[0].sectionTitle }}
+          </h3>
+          <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+            <FpListItem
+              v-for="item in data.sections[0].content"
+              v-bind="item"
+            />
+          </FpList>
+        </section>
+      </FpHero>
+    </div>
     <div class="bg-magenta-100" style="min-height: 60vh">
       <section class="mx-auto w-10/12 pt-12">
         <h3
@@ -57,12 +87,12 @@ useContentHead(data);
     </div>
 
     <!-- Community Section -->
-    <section>
-      <FpCommunity :data="data.sections[2]" />
+    <section class="dark:bg-neutral-800">
+      <FpCommunity :data="data.sections[2]" class="dark:!bg-none" />
     </section>
 
     <!-- Call To Action -->
-    <section>
+    <section class="dark:bg-black">
       <FpCallToAction
         :cta="data.links"
         image="assets/images/fedora-iot-logo.png"
