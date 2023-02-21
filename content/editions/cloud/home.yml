@@ -2,7 +2,7 @@ path: index
 title: The lightweight VM environment
 description: A customizable cloud native experience.
 header_images:
-  - image: public/assets/images/group-1-.png
+  - image: public/assets/images/group-3-.png
   - image: public/assets/images/image4099.png
 links:
   - text: Download Now
@@ -16,16 +16,16 @@ sections:
       - title: Customizable
         description: Fedora Cloud allows you to tailor your environment to your needs by
           selecting the specific packages and features you want to include.
+      - title: Secure
+        description: Designed with security in mind, Fedora Cloud includes functions
+          like SELinux, which boosts kernel security, and Security Profiles,
+          which let you easily change security parameters for various use cases.
       - title: Up-to-date
         description: Fedora Cloud offers the most recent software packages and updates,
           ensuring that you are constantly up to date.
       - title: Open-source Ecosystem
         description: Everything is supported by a totally free and open-source Fedora
           ecosystem.
-      - title: Secure
-        description: Designed with security in mind, Fedora Cloud includes functions
-          like SELinux, which boosts kernel security, and Security Profiles,
-          which let you easily change security parameters for various use cases.
       - title: Community-driven
         description: Being an open source project means that there is a large pool of
           knowlege and expertise available.
