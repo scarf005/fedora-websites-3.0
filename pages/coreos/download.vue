@@ -402,6 +402,7 @@ useContentHead(data);
               id="x86_64"
               @click="switchArch('x86_64')"
               href="#download_section"
+              class="active"
             >
               <FpCard
                 title="x86_64"

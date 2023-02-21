@@ -5,7 +5,11 @@ useContentHead(data);
 
 <template>
   <!-- Hero Section -->
-  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+  <FpHero
+    :background="data.header_images[1].image"
+    alignment="bg-top"
+    class="relative z-0"
+  >
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
       home="/coreos"
@@ -26,6 +30,20 @@ useContentHead(data);
     >
       <FpImage :src="data.header_images[0].image" />
     </FpBanner>
+    <svg
+      viewBox="0 0 1918.6658 172.80759"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      class="absolute -bottom-2.5 -z-10"
+    >
+      <g transform="translate(-0.38340506,-449.49539)">
+        <path
+          class="fill-white dark:fill-neutral-800"
+          d="m 0.38340505,456.69538 c 0,0 534.13975495,87.11876 983.48064495,87.11876 449.34085,0 935.18515,-94.31876 935.18515,-94.31876 V 622.303 H 0.38340505 Z"
+        />
+      </g>
+    </svg>
   </FpHero>
 
   <!-- Why Section -->

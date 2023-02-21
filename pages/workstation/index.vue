@@ -3,7 +3,11 @@ const data = await getCMS("editions/workstation/home");
 useContentHead(data);
 </script>
 <template>
-  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+  <FpHero
+    :background="data.header_images[1].image"
+    alignment="bg-bottom"
+    class="dark:bg-neutral-900 dark:!bg-none"
+  >
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
       home="/workstation"

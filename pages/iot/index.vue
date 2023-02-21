@@ -4,7 +4,11 @@ useContentHead(data);
 </script>
 <template>
   <main>
-    <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+    <FpHero
+      :background="data.header_images[1].image"
+      alignment="bg-bottom"
+      class="relative z-0"
+    >
       <TheLocalBar
         image="assets/images/fedora_white.png"
         home="/iot"
@@ -24,6 +28,23 @@ useContentHead(data);
       >
         <FpImage :src="data.header_images[0].image" />
       </FpBanner>
+      <svg
+        viewBox="0 0 209.9868 38.261421"
+        version="1.1"
+        id="svg4475"
+        class="absolute -bottom-2.5 -z-10"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg"
+      >
+        <defs id="defs4472" />
+        <g id="layer1" transform="translate(0.04450727,-135.47272)">
+          <path
+            class="fill-white dark:fill-neutral-800"
+            d="M -0.04450727,156.66286 209.94229,135.47272 v 38.26142 H -0.04450727 Z"
+            id="path6102"
+          />
+        </g>
+      </svg>
     </FpHero>
 
     <!-- why fedora iot -->

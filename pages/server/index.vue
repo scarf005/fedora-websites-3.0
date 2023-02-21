@@ -3,7 +3,11 @@ const data = await getCMS("editions/server/home");
 useContentHead(data);
 </script>
 <template>
-  <FpHero :background="data.header_images[1].image" alignment="bg-bottom">
+  <FpHero
+    :background="data.header_images[1].image"
+    alignment="bg-bottom"
+    class="relative z-0"
+  >
     <TheLocalBar
       image="assets/images/fedora_white.png"
       home="/server"
