@@ -41,12 +41,14 @@ sections:
   - sectionTitle: Built By You
     images: public/assets/images/iot_flock_background.jpg
     sectionDescription: >-
-      The Fedora Project envisions a world where everyone benefits from free and
-      open source software built by inclusive, welcoming, and open-minded
-      communities.
+      #### The Fedora Project envisions a world where everyone benefits from
+      free and open source software built by inclusive, welcoming, and
+      open-minded communities. 
 
 
-      Fedora Cloud is created by a team in the Fedora community called the Cloud Working Group. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the Cloud Working Group website.
+
+
+      Fedora Cloud is created by a team in the Fedora community called the **Cloud Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. *Learn more on the Cloud Working Group website*.
     content:
       - title: Report & discuss issues
         description: You can view, file, and discuss Fedore Cloud issues on the **Fedora
