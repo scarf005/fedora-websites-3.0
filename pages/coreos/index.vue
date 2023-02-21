@@ -7,8 +7,8 @@ useContentHead(data);
   <!-- Hero Section -->
   <FpHero
     :background="data.header_images[1].image"
-    alignment="bg-top"
-    class="relative z-0"
+    alignment="bg-right md:bg-top"
+    class="coreos-hero relative z-0"
   >
     <TheLocalBar
       image="assets/images/fedora-coreos-logo.png"
@@ -28,7 +28,6 @@ useContentHead(data);
       :ctas="data.links"
       icon="youtube"
     >
-      <FpImage :src="data.header_images[0].image" />
     </FpBanner>
     <svg
       viewBox="0 0 1918.6658 172.80759"
@@ -90,3 +89,15 @@ useContentHead(data);
     <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.png" />
   </section>
 </template>
+<style>
+.coreos-hero .fp-banner {
+  @apply pt-16 pb-28 text-center md:text-left lg:pt-32 lg:pb-72 xl:px-0;
+}
+
+.coreos-hero .fp-banner h1 {
+  @apply text-4xl font-medium lg:text-6xl;
+}
+.coreos-hero .fp-banner h2 {
+  @apply pt-6 text-lg lg:text-2xl;
+}
+</style>

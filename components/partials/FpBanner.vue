@@ -16,7 +16,9 @@ defineProps({
 });
 </script>
 <template>
-  <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:mt-24 sm:px-6">
+  <div
+    class="fp-banner mx-auto mt-16 max-w-7xl px-4 text-center sm:mt-24 sm:px-6"
+  >
     <div class="mx-auto max-w-sm sm:max-w-xl">
       <FpImage v-if="logo" class="z-10" :src="logo" :alt="$t('logo')" />
     </div>
