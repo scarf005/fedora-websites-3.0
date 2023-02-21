@@ -6,7 +6,7 @@ useContentHead(data);
   <FpHero
     :background="data.header_images[1].image"
     alignment="bg-bottom"
-    class="dark:bg-neutral-900 dark:!bg-none"
+    class="workstation-hero pb-8 dark:bg-neutral-900 dark:!bg-none"
   >
     <TheLocalBar
       image="assets/images/fedora-workstation-logo.png"
@@ -26,7 +26,7 @@ useContentHead(data);
       icon="youtube"
     >
       <div class="hero-laptop-container">
-        <div class="px-auto mb-48 max-w-sm sm:max-w-xl">
+        <div class="px-auto mb-20 max-w-sm sm:max-w-xl">
           <FpImage
             class="w-full"
             src="assets/images/workstation_framework.png"
@@ -38,7 +38,7 @@ useContentHead(data);
 
   <main>
     <!-- Why Fedora Workstation -->
-    <div class="py-6 px-2 dark:bg-neutral-800">
+    <div class="py-12 px-2 dark:bg-neutral-800">
       <section>
         <header
           class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
@@ -55,7 +55,7 @@ useContentHead(data);
       </section>
     </div>
     <!-- Benefits Section -->
-    <section class="mt-32">
+    <section class="pt-24 pb-12 dark:bg-neutral-900">
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
@@ -69,13 +69,13 @@ useContentHead(data);
     </section>
 
     <!-- Developers Section -->
-    <section>
+    <section class="pt-24 dark:bg-neutral-800">
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-5xl font-bold text-transparent"
       >
         {{ $t(data.sections[2].sectionTitle) }}
       </h2>
-      <div class="mx-auto mb-12 max-w-7xl">
+      <div class="mx-auto max-w-7xl pb-12">
         <FpBenefit
           v-for="item in data.sections[2].content"
           v-bind="item"
@@ -85,14 +85,14 @@ useContentHead(data);
     </section>
 
     <!-- Get Started Developing Section -->
-    <section
-      class="mx-auto mb-10 max-w-7xl rounded-xl bg-gradient-to-r from-green-200 to-blue-100 dark:from-black dark:to-slate-800"
-    >
-      <div class="p-2 sm:p-10">
+    <section class="pt-10 dark:bg-neutral-900">
+      <div
+        class="mx-auto max-w-7xl rounded-xl bg-gradient-to-r from-green-200 to-blue-100 p-2 py-8 dark:bg-none sm:p-10"
+      >
         <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
           {{ $t(data.sections[3].sectionTitle) }}
         </h3>
-        <FpList columns="sm:grid-cols-3 gap-12 lg:gap-4" :disableDots="true">
+        <FpList columns="sm:grid-cols-3 gap-4 lg:gap-4" :disableDots="true">
           <FpListItem
             v-for="item in data.sections[3].content"
             v-bind="item"
@@ -104,7 +104,7 @@ useContentHead(data);
     </section>
 
     <!-- Community Section -->
-    <section class="max-w-full dark:bg-neutral-900">
+    <section class="max-w-full dark:bg-neutral-800">
       <FpCommunity :data="data.sections[4]" class="dark:!bg-none" />
     </section>
 
@@ -117,3 +117,11 @@ useContentHead(data);
     </section>
   </main>
 </template>
+<style>
+.workstation-hero .fp-banner h1 {
+  @apply text-4xl font-medium lg:text-7xl lg:font-semibold;
+}
+.workstation-hero .fp-banner h2 {
+  @apply pt-6 text-lg lg:text-3xl;
+}
+</style>

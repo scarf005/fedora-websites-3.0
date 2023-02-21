@@ -16,10 +16,10 @@ const descriptionMd = await mdparser(props.data.sectionDescription);
       </h2>
       <ContentRendererMarkdown
         tag="h4"
-        class="mx-14 mb-5 text-fp-blue-dark dark:text-slate-300"
+        class="text-normal sm:text-normal mb-5 text-fp-blue-dark dark:text-slate-300 sm:mx-14"
         :value="descriptionMd"
       />
-      <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4">
+      <FpList columns="sm:grid-cols-2 gap-2 lg:gap-4">
         <FpListItem v-for="item in data.content" v-bind="item" />
       </FpList>
     </section>
