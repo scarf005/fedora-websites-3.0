@@ -29,15 +29,15 @@ sections:
         description: Fedora works with hardware vendors to make excellent hardware
           support across a range of devices.
   - sectionTitle: Platforms Tested against IoT
-    images: public/assets/images/iot_background_why.jpg
+    images: ""
     content:
-      - title: arm Systemready
+      - title: ""
         image: public/assets/images/iot-platform1.png
-      - title: Pine64
+      - title: ""
         image: public/assets/images/iot-platform2.png
-      - title: SolidRun
+      - title: ""
         image: public/assets/images/iot-platform3.png
-      - title: nVidia
+      - title: ""
         image: public/assets/images/iot-platform4.png
   - sectionTitle: Built By You
     images: public/assets/images/iot_flock_background.jpg
