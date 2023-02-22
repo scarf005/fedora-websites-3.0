@@ -24,6 +24,9 @@ const props = defineProps({
   verifyLink: {
     type: String,
   },
+  betaVersion: {
+    type: Boolean,
+  },
 });
 
 const variantClasses = props.variants.map(
@@ -72,6 +75,11 @@ const prettyType = {
           </span>
           <span class="mr-5">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
+          <span
+            v-if="betaVersion"
+            class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
+            >{{ $t("BETA") }}</span
+          >
         </slot>
       </p>
       <div class="inline-flex">
