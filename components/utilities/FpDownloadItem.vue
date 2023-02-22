@@ -62,11 +62,18 @@ const prettyType = {
   "vagrant-virtualbox": "Vagrant",
   "tar-gz": "Compressed Image",
   boot: "Netboot",
+  live: "Live ISO",
 };
 </script>
 
 <template>
-  <div :class="['fp-download-item', variantClasses, theme]">
+  <div
+    :class="[
+      betaVersion ? 'fp-beta-download-item' : 'fp-download-item',
+      variantClasses,
+      theme,
+    ]"
+  >
     <div class="flex items-center justify-between">
       <p class="text-gray-800 dark:text-gray-400">
         <slot>
@@ -107,7 +114,12 @@ const prettyType = {
   @apply border border-gray-200 bg-white px-5 py-2 dark:border-gray-900 dark:bg-neutral-900;
 }
 
-.fp-download-item a {
+.fp-beta-download-item {
+  @apply border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-900 dark:bg-gray-800;
+}
+
+.fp-download-item a,
+.fp-beta-download-item a {
   @apply cursor-pointer border py-1 px-3 transition-colors;
 }
 </style>

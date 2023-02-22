@@ -42,6 +42,8 @@ const props = defineProps({
         v-if="v.arch != 'src'"
         class="mb-2"
       />
+    </div>
+    <div v-for="(v, k) in artifacts" key="k" class="download-section mb-2">
       <FpDownloadItem
         :name="`${art_name} ${betaVersion}`"
         :type="v.type"
@@ -57,7 +59,8 @@ const props = defineProps({
 </template>
 
 <style>
-.download-section .fp-download-item {
+.download-section .fp-download-item,
+.download-section .fp-beta-download-item {
   @apply first:rounded-t-xl last:rounded-b-xl;
 }
 </style>

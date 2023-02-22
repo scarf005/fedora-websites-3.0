@@ -11,6 +11,7 @@ const { data: images_data } = await useFetch(
 // TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
+// Not sure if we need this
 const releaseDate =
   images_data._value.payload.compose.date.substr(0, 4) +
   "-" +
@@ -49,16 +50,7 @@ function closeVerify() {
   verifyModal.value.show = false;
 }
 
-const arches = release_data._value.ga.workstation;
-const betaArches = release_data._value.beta.workstation;
 useContentHead(data);
-
-function evalLink(uri, release) {
-  uri = uri
-    .replaceAll("{releasever}", release.releasever)
-    .replaceAll("{rc_version}", release.rc_version);
-  return `${release_data._value.download_baseurl}${uri}`;
-}
 </script>
 
 <template>
@@ -167,49 +159,6 @@ function evalLink(uri, release) {
           <p class="mb-10 text-fp-gray">
             {{ $t(data.sections[2].sectionDescription) }}
           </p>
-
-          <!-- <div v-for="(arch, i) in arches">
-            <p class="mt-10 font-bold">{{ $t(arch.title) }}</p>
-
-            <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
-              v-for="item in arch.items"
-            >
-              <p>
-                <span class="mr-5 font-semibold text-gray-800">
-                  Fedora Linux {{ release_data.ga.releasever }} </span
-                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
-              </p>
-              <FpLink
-                :href="evalLink(item.uri, release_data.ga)"
-                class="rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
-              >
-                <Icon name="fa-download" />
-              </FpLink>
-            </div>
-
-            <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2 dark:bg-gray-800"
-              v-for="item in betaArches[i].items"
-              v-if="release_data.beta.enabled"
-            >
-              <p>
-                <span class="mr-5 font-semibold text-gray-800">
-                  Fedora Linux {{ release_data.beta.releasever }} </span
-                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
-                <span
-                  class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
-                  >{{ $t("BETA") }}</span
-                >
-              </p>
-              <FpLink
-                :href="evalLink(item.uri, release_data.beta)"
-                class="rounded-xl border border-blue-400 p-2 px-4 text-blue-400"
-              >
-                <Icon name="fa-download" />
-              </FpLink>
-            </div>
-          </div> -->
           <WorkstationDownloadSection
             name="For Intel and AMD x86_64 systems"
             art_name="Fedora Workstation"
@@ -240,7 +189,7 @@ function evalLink(uri, release) {
             :betaVersion="release_data.beta.releasever"
             class="workstation-theme"
           />
-          <DownloadSection
+          <!-- <DownloadSection
             name="For IBM s390x zSystems"
             art_name="Fedora Workstation"
             @verify-click="updateVerify"
@@ -248,7 +197,7 @@ function evalLink(uri, release) {
             :dlPrefix="dlpath.s390x"
             :version="release_data.ga.releasever"
             class="workstation-theme"
-          />
+          /> -->
         </div>
       </div>
     </section>
