@@ -1,10 +1,10 @@
 path: index
 title: A Community Server OS
-description: Run server workloads on bare metal or in the cloud with the latest
-  open source technologies curated by the Fedora Community
+description: Run server workloads on bare metal or virtual machines with the
+  latest open source technologies curated by the Fedora Community
 header_images:
   - image: public/assets/images/hack.png
-  - image: public/assets/images/idea-3.jpg
+  - image: public/assets/images/server.jpg
 links:
   - text: Download Now
     url: /server/download/
