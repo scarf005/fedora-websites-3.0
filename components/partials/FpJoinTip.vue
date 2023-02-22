@@ -16,10 +16,12 @@ defineProps({
 <template>
   <aside class="container my-2 flex gap-2">
     <div>
-      <h4 class="mb-2 text-lg font-semibold text-fp-blue-light">
+      <h4
+        class="mb-2 text-lg font-semibold text-fp-blue-light dark:text-gray-200"
+      >
         {{ $t(title) }}
       </h4>
-      <p class="max-w-3xl text-sm text-fp-gray-dark">
+      <p class="text-sm text-fp-gray-dark dark:text-fp-gray">
         {{ $t(description) }}
         <NuxtLink
           v-if="link"
@@ -37,7 +39,7 @@ defineProps({
     </div>
     <Icon
       name="fa6-solid:door-open"
-      class="order-first text-fp-blue-light"
+      class="order-first text-fp-blue-light dark:text-gray-200"
       size="1.5rem"
     />
   </aside>

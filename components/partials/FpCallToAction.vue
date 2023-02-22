@@ -6,7 +6,7 @@ defineProps({
 </script>
 <template>
   <div class="flex h-96 flex-col items-center justify-center">
-    <FpImage :src="image" class="max-w-sm" />
+    <FpImage :src="image" class="max-w-sm px-4" />
     <p class="p-10 text-center text-2xl text-gray-500 dark:text-gray-300">
       {{ $t("Try it now.") }}
     </p>

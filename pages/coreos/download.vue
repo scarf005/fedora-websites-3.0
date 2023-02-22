@@ -126,6 +126,16 @@ function switchArch(name) {
         query: { ...route.query, ...{ arch: name } },
       });
       selectedArch.value = name;
+      window.requestAnimationFrame(() => {
+        if (document) {
+          Array.from(document.querySelectorAll("#arches .active")).forEach(
+            function (el) {
+              el.classList.remove("active");
+            }
+          );
+          document.getElementById(name)?.classList.add("active");
+        }
+      });
       console.log("selected arch: " + name);
       break;
   }
@@ -166,10 +176,12 @@ function closeModal(state) {
 
 function virt_arts(data) {
   let dict = {};
-  const virtualizedImages = ["qemu", "virtualbox", "vmware"];
+  const virtualizedImages = ["hyperv", "qemu", "virtualbox", "vmware"];
   if (data) {
     for (let k of virtualizedImages) {
-      dict[k] = data[k];
+      if (k in data) {
+        dict[k] = data[k];
+      }
     }
   }
   return dict;
@@ -251,14 +263,16 @@ useContentHead(data);
 </script>
 <template>
   <main
-    class="border-t-8 border-fp-magenta bg-neutral-100 dark:bg-neutral-700 md:mt-2"
+    class="border-t-8 border-fp-magenta bg-neutral-100 dark:bg-neutral-800 md:mt-2"
     :class="`coreos-theme-${selectedStream?.stream}`"
   >
     <TheLocalBar
-      image="assets/images/fedora-coreos-logo-light.png"
-      imageDark="assets/images/fedora-coreos-logo.png"
+      :image="{
+        light: 'assets/images/fedora-coreos-logo-light.png',
+        dark: 'assets/images/fedora-coreos-logo.png',
+      }"
       home="/coreos"
-      textColor="text-fp-magenta"
+      textColor="text-fp-magenta dark:text-[#f472b6]"
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
@@ -266,13 +280,15 @@ useContentHead(data);
     />
 
     <!-- TITLE -->
-    <section class="py-24 text-center lg:text-start">
+    <section class="py-24 px-2 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl px-2">
-        <h1 class="mb-4 text-4xl text-fp-gray">
+        <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-magenta"> Fedora CoreOS </span>
+          <span class="text-fp-magenta dark:text-[#f472b6]">
+            Fedora CoreOS
+          </span>
         </h1>
-        <p class="text-fp-gray dark:text-fp-gray-light">
+        <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(streams.sectionDescription) }}
         </p>
 
@@ -301,6 +317,7 @@ useContentHead(data);
                 >Show Downloads</a
               >
             </template>
+            <!-- Testing border-fp-green-dark bg-fp-green-dark -->
           </CoreOsStream>
           <CoreOsStreamLoading v-else />
 
@@ -353,7 +370,7 @@ useContentHead(data);
           <Icon
             name="ei:spinner-3"
             size="64"
-            class="animate-spin !align-baseline text-fp-magenta"
+            class="animate-spin !align-baseline text-fp-magenta dark:text-[#f472b6]"
           />
         </div>
       </div>
@@ -361,17 +378,19 @@ useContentHead(data);
 
     <!-- ARCH SELECTOR -->
     <section
-      class="scroll-mt-14 bg-blue-50 py-6 dark:bg-neutral-900"
+      class="scroll-mt-14 bg-blue-50 py-6 px-2 dark:bg-neutral-900"
       id="arches"
       v-if="selectedStream && 'architectures' in selectedStream"
     >
       <div class="container mx-auto max-w-7xl px-2">
         <div class="text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
+          <h2 class="mb-4 text-fp-blue dark:text-gray-200">
             {{ $t("Pick your") }}
-            <span class="text-fp-magenta">{{ $t("architecture") }} </span>
+            <span class="text-fp-magenta dark:text-[#f472b6]"
+              >{{ $t("architecture") }}
+            </span>
           </h2>
-          <p class="text-fp-gray dark:text-fp-gray-light">
+          <p class="text-gray-600 dark:text-fp-gray-light">
             {{ $t(architectures.sectionDescription) }}
           </p>
         </div>
@@ -380,9 +399,10 @@ useContentHead(data);
             class="flex flex-wrap justify-between gap-4 text-center text-fp-blue-dark dark:text-white"
           >
             <a
+              id="x86_64"
               @click="switchArch('x86_64')"
               href="#download_section"
-              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
+              class="active"
             >
               <FpCard
                 title="x86_64"
@@ -392,9 +412,9 @@ useContentHead(data);
               </FpCard>
             </a>
             <a
+              id="aarch64"
               @click="switchArch('aarch64')"
               href="#download_section"
-              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
             >
               <FpCard
                 title="aarch64"
@@ -403,11 +423,7 @@ useContentHead(data);
               >
               </FpCard>
             </a>
-            <a
-              @click="switchArch('s390x')"
-              href="#download_section"
-              class="grow basis-64 rounded-xl p-2 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
-            >
+            <a id="s390x" @click="switchArch('s390x')" href="#download_section">
               <FpCard
                 title="s390x"
                 :description="architectures.content[2].description"
@@ -422,7 +438,7 @@ useContentHead(data);
 
     <!-- DOWNLOAD ARTIFACTS -->
     <section
-      class="scroll-mt-14 bg-gradient-to-r from-pink-50 to-blue-50 py-6 dark:bg-neutral-800 dark:bg-none"
+      class="scroll-mt-14 bg-gradient-to-r from-pink-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
       v-if="selectedStream && 'architectures' in selectedStream"
     >
@@ -434,7 +450,10 @@ useContentHead(data);
         "
       >
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_launch">
+          <h2
+            class="mb-4 scroll-mt-20 text-fp-blue dark:text-gray-200"
+            id="cloud_launch"
+          >
             <a class="" href="#cloud_launch">
               <Icon
                 name="fa-solid:cloud"
@@ -444,7 +463,7 @@ useContentHead(data);
             </a>
             {{ $t("Cloud Launchable") }}
           </h2>
-          <p class="text-fp-gray dark:text-fp-gray-light">
+          <p class="text-gray-600 dark:text-fp-gray-light">
             Start Fedora CoreOS
             <span class="coreos-theme-text font-bold">{{
               selectedStream.stream
@@ -467,7 +486,7 @@ useContentHead(data);
               >
                 <template #btn>
                   <a
-                    title="Launch"
+                    title="List AWS EC2 region"
                     class="rounded-xl"
                     @click="
                       updateAMIs(
@@ -475,10 +494,7 @@ useContentHead(data);
                       )
                     "
                   >
-                    <Icon
-                      name="material-symbols:rocket-launch"
-                      class="!align-baseline"
-                    />
+                    <Icon name="fa-solid:th-list" class="!align-baseline" />
                   </a>
                 </template>
               </FpDownloadItem>
@@ -552,7 +568,10 @@ useContentHead(data);
 
       <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="baremetal">
+          <h2
+            class="mb-4 scroll-mt-20 text-fp-blue dark:text-gray-200"
+            id="baremetal"
+          >
             <a class="" href="#baremetal">
               <Icon
                 name="fa-solid:server"
@@ -562,7 +581,7 @@ useContentHead(data);
             </a>
             {{ $t("Bare Metal & Virtualized") }}
           </h2>
-          <p class="text-fp-gray dark:text-fp-gray-light">
+          <p class="text-gray-600 dark:text-fp-gray-light">
             Download Fedora CoreOS
             <span class="coreos-theme-text font-bold">{{
               selectedStream.stream
@@ -598,7 +617,10 @@ useContentHead(data);
 
       <div class="container mx-auto mb-8 max-w-7xl px-2">
         <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 scroll-mt-20 text-fp-blue" id="cloud_images">
+          <h2
+            class="mb-4 scroll-mt-20 text-fp-blue dark:text-gray-200"
+            id="cloud_images"
+          >
             <a class="" href="#cloud_images">
               <Icon
                 name="uiw:cloud-upload"
@@ -608,7 +630,7 @@ useContentHead(data);
             </a>
             {{ $t("Cloud Images") }}
           </h2>
-          <p class="text-fp-gray dark:text-fp-gray-light">
+          <p class="text-gray-600 dark:text-fp-gray-light">
             Download Fedora CoreOS
             <span class="coreos-theme-text font-bold">{{
               selectedStream.stream
@@ -628,18 +650,20 @@ useContentHead(data);
           />
         </div>
       </div>
-      <a href="#"><p class="mr-4 text-end text-xs">Back to Top</p></a>
+      <div class="container mx-auto max-w-7xl">
+        <p class="mr-4 text-end"><a class="text-xs" href="#">Back to Top</a></p>
+      </div>
     </section>
 
-    <section class="bg-white py-8 dark:bg-neutral-900">
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
       <CoreOsVerifySection />
     </section>
 
-    <section class="bg-blue-50 py-12 dark:bg-neutral-800">
+    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-800">
       <BecomeContributorSection />
     </section>
 
-    <section class="py-12 dark:bg-black">
+    <section class="py-12 px-4 dark:bg-black">
       <DownloadComplianceSection />
     </section>
 
@@ -777,28 +801,39 @@ body.has-modal {
 
 .coreos-theme-stable .coreos-theme-text,
 .coreos-theme-stable .fp-card.coreos-theme h3 {
-  @apply text-fp-blue;
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-testing .coreos-theme-text,
 .coreos-theme-testing .fp-card.coreos-theme h3 {
-  @apply text-fp-green-dark;
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-next .coreos-theme-text,
 .coreos-theme-next .fp-card.coreos-theme h3 {
-  @apply text-fp-orange;
+  @apply text-black dark:text-gray-200;
 }
 
 .coreos-theme-stable .coreos-theme .fp-download-item a {
-  @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
 }
 
 .coreos-theme-testing .coreos-theme .fp-download-item a {
-  @apply border-fp-green-dark text-fp-green-dark hover:bg-fp-green-dark hover:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
 }
 
 .coreos-theme-next .coreos-theme .fp-download-item a {
-  @apply border-fp-orange text-fp-orange hover:bg-fp-orange hover:text-white;
+  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
+  @apply text-fp-magenta dark:text-[#f472b6];
+}
+
+#arches a {
+  @apply grow basis-64 border-b-8 border-transparent p-2 transition-colors hover:border-fp-blue-light dark:hover:border-gray-200;
+}
+
+#arches .active {
+  @apply border-fp-blue dark:border-gray-400;
 }
 </style>

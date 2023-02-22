@@ -1,8 +1,7 @@
 <script setup>
 defineProps({
   home: String,
-  image: String,
-  imageDark: String,
+  image: String | { light: String, dark: String },
   items: Array,
   textColor: String,
 });
@@ -15,7 +14,6 @@ defineProps({
       <FpImage
         class="b-5 mx-auto mb-5 max-h-8 w-auto sm:m-0 sm:mb-0 sm:pl-5 lg:mx-auto"
         :src="image"
-        :darksrc="imageDark"
       />
     </FpLink>
     <div
