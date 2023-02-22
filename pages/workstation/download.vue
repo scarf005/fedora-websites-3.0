@@ -119,6 +119,20 @@ useContentHead(data);
     <section
       class="bg-gradient-to-r from-green-50 to-blue-50 py-24 dark:from-gray-900 dark:to-gray-800"
     >
+      <!-- TODO: add some sort of switch button to enable the beta ones showing up -->
+      <!-- Probably make this into its own component, as other page will use it.. and clean up the styling -->
+      <div class="container mx-auto flex max-w-7xl justify-end">
+        <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
+        <div>
+          <label class="relative inline-flex cursor-pointer items-center">
+            <input type="checkbox" value="" class="peer sr-only" />
+            <div
+              class="peer h-6 w-11 rounded-full bg-fp-gray-light after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-fp-blue-light peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
+            ></div>
+          </label>
+        </div>
+      </div>
+
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 p-5 md:col-span-1">
           <div class="flex">
@@ -366,3 +380,9 @@ useContentHead(data);
     </Transition>
   </main>
 </template>
+<style>
+.workstation-theme .fp-download-item a,
+.workstation-theme .fp-beta-download-item a {
+  @apply border-fp-blue-light text-fp-blue-light hover:bg-fp-blue-light hover:text-white;
+}
+</style>
