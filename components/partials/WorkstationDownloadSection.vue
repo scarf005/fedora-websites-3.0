@@ -14,6 +14,9 @@ const props = defineProps({
   betaVersion: {
     type: String,
   },
+  betaSwitch: {
+    type: Boolean,
+  },
   artifacts: {
     type: Object,
   },
@@ -51,7 +54,7 @@ const props = defineProps({
         :downloadLink="`${dlPrefix}/${betaVersion}/${v.path}`"
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
-        v-if="v.arch != 'src' && betaVersion"
+        v-if="v.arch != 'src' && betaVersion && betaSwitch"
         betaVersion
       />
     </div>

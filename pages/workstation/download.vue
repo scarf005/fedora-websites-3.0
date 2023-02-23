@@ -8,6 +8,11 @@ const { data: images_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
 
+const betaSwitch = useState("betaSwitch", () => false);
+function toggleBetaSwitch() {
+  this.betaSwitch = !this.betaSwitch;
+}
+
 // TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
@@ -125,11 +130,19 @@ useContentHead(data);
         <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
         <div>
           <label class="relative inline-flex cursor-pointer items-center">
-            <input type="checkbox" value="" class="peer sr-only" />
+            <input
+              type="checkbox"
+              value=""
+              class="peer sr-only"
+              @click="toggleBetaSwitch()"
+            />
             <div
               class="peer h-6 w-11 rounded-full bg-fp-gray-light after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-fp-blue-light peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
             ></div>
           </label>
+        </div>
+        <div>
+          <FpSwitch @click="toggleBetaSwitch()" />
         </div>
       </div>
 
@@ -181,6 +194,7 @@ useContentHead(data);
             :dlPrefix="dlpath.x86_64"
             :version="release_data.ga.releasever"
             :betaVersion="release_data.beta.releasever"
+            :betaSwitch="betaSwitch"
             class="workstation-theme"
           />
           <WorkstationDownloadSection
@@ -191,6 +205,7 @@ useContentHead(data);
             :dlPrefix="dlpath.aarch64"
             :version="release_data.ga.releasever"
             :betaVersion="release_data.beta.releasever"
+            :betaSwitch="betaSwitch"
             class="workstation-theme"
           />
           <WorkstationDownloadSection
@@ -201,6 +216,7 @@ useContentHead(data);
             :dlPrefix="dlpath.ppc64le"
             :version="release_data.ga.releasever"
             :betaVersion="release_data.beta.releasever"
+            :betaSwitch="betaSwitch"
             class="workstation-theme"
           />
           <!-- <DownloadSection
