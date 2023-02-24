@@ -43,11 +43,15 @@ onMounted(() => {
 const data = await getCMS("index");
 useContentHead(data);
 const release_data = await getCMS("release");
+
+useHead({
+  title: "Fedora Linux",
+});
 </script>
 <template>
   <main class="w-full">
     <header
-      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-16 text-white"
+      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-4 text-white md:pt-16"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
@@ -56,17 +60,19 @@ const release_data = await getCMS("release");
         <div>
           <!-- TODO: Set up the typewriter to work with translation -->
           <h1
-            class="mx-auto mb-8 text-3xl font-semibold md:text-7xl xl:text-9xl"
+            class="mx-auto mb-4 text-4xl font-semibold md:text-7xl lg:mb-8 xl:text-9xl"
           >
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
-          <p class="mx-auto mb-6 w-4/6 text-3xl">
+          <p class="mx-auto mb-2 w-4/6 lg:mb-6 lg:text-3xl">
             {{ $t(data.description) }}
           </p>
           <p class="uppercase">{{ $t("100% Free & Open Source") }}</p>
         </div>
         <!-- Circle -->
-        <div class="mt-8 h-56 w-56 rounded-full bg-blue-400 p-12">
+        <div
+          class="my-4 flex h-48 w-48 flex-col items-center justify-center rounded-full bg-blue-400 p-10 md:my-8 md:h-56 md:w-56 lg:p-12"
+        >
           <p>{{ $t("Latest release") }}</p>
           <p class="text-8xl font-bold">{{ release_data.ga.releasever }}</p>
         </div>
@@ -74,26 +80,37 @@ const release_data = await getCMS("release");
       <!-- pop out announcements -->
       <aside
         v-if="data.sections[0].sectionDescription === 'active'"
-        class="order-first mb-8 flex w-1/4 items-center self-end rounded-l-md bg-fp-blue p-4"
+        class="order-first mb-8 flex items-center self-end rounded-l-md bg-fp-blue p-4 lg:w-1/4"
       >
         <p>{{ $t(data.sections[0].sectionTitle) }}</p>
       </aside>
 
       <!-- hero bottom content-->
-      <section class="align-end mx-auto flex w-full justify-between px-16">
-        <div>
-          <h3 class="text-xl font-semibold uppercase">
-            {{ $t(data.sections[1].sectionTitle) }}
-          </h3>
-          <FpLink class="max-w-sm" :href="data.sections[1].url">
-            {{ $t(data.sections[1].sectionDescription) }} >
+      <section
+        class="align-end mx-auto mb-2 flex w-full justify-between px-8 lg:mb-4 xl:px-20"
+      >
+        <div
+          class="flex w-48 flex-col justify-center sm:justify-start md:max-w-sm lg:w-auto"
+        >
+          <FpLink
+            :href="data.sections[1].url"
+            class="transition duration-150 ease-in hover:text-fp-gray-lighter"
+          >
+            <h3
+              class="text-base font-semibold uppercase sm:mt-6 md:text-xl lg:mt-8 xl:text-2xl 2xl:mb-2"
+            >
+              {{ $t(data.sections[1].sectionTitle) }}
+            </h3>
+            <p class="max-w-sm text-sm sm:text-base lg:text-xl">
+              {{ $t(data.sections[1].sectionDescription) }} >
+            </p>
           </FpLink>
         </div>
-        <div class="hidden md:flex">
-          <h3 class="mr-5 w-56 text-right text-2xl">
+        <div class="flex items-center gap-4">
+          <h3 class="hidden w-56 text-right text-2xl md:block">
             {{ $t(data.sections[2].sectionTitle) }}
           </h3>
-          <FpImage :src="data.header_images[0].image" />
+          <FpImage :src="data.header_images[0].image" class="w-28 lg:w-auto" />
         </div>
       </section>
       <svg
@@ -108,8 +125,13 @@ const release_data = await getCMS("release");
         />
       </svg>
     </header>
-
-    <div class="w-full bg-gray-100 dark:bg-gray-900">
+    <!-- 5 Main Editions-->
+    <section class="w-full bg-gray-100 dark:bg-gray-900">
+      <header class="hidden">
+        <h2 class="text-center">
+          {{ $t(data.sections[3].sectionTitle) }}
+        </h2>
+      </header>
       <div class="mx-auto grid max-w-5xl grid-cols-2 py-5">
         <FpLink v-for="item in data.sections[3].content" :href="item.url">
           <div
@@ -124,6 +146,20 @@ const release_data = await getCMS("release");
           </div>
         </FpLink>
       </div>
-    </div>
+    </section>
+    <section class="bg-gray-100 dark:bg-gray-900">
+      <header class="mx-auto py-8">
+        <h2 class="text-center">{{ $t(data.sections[4].sectionTitle) }}</h2>
+      </header>
+      <div>
+        <article v-for="card in data.sections[4].content" :key="card.id">
+          <h3>
+            {{ card.title }}
+          </h3>
+          <p>{{ card.description }}</p>
+          NuxtL
+        </article>
+      </div>
+    </section>
   </main>
 </template>
