@@ -1,15 +1,8 @@
 <script setup>
+// TODO: Move typewriter code into a composable and make it reusable
 let typeValue = ref("");
 let typeStatus = false;
-const arr = [
-  "Workspace.",
-  "Server.",
-  "Game Center.",
-  "Studio.",
-  "Community.",
-  "Operating System.",
-  "Cloud.",
-];
+const arr = ["Server.", "Workstation.", "Community.", "Operating System."];
 const speed = 150;
 const newTextDelay = 1000;
 let arrIndex = 0;
@@ -38,7 +31,7 @@ function eraseText() {
     if (arrIndex < arr.length) {
       setTimeout(writeText, speed + 1000);
     } else {
-      typeValue.value = arr[4];
+      typeValue.value = arr.slice(-1).join();
     }
   }
 }
@@ -54,14 +47,17 @@ const release_data = await getCMS("release");
 <template>
   <main class="w-full">
     <header
-      class="flex min-h-screen flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-16 text-white"
+      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-16 text-white"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
       >
         <!-- Main Info -->
         <div>
-          <h1 class="mx-auto mb-8 text-3xl font-semibold md:text-9xl">
+          <!-- TODO: Set up the typewriter to work with translation -->
+          <h1
+            class="mx-auto mb-8 text-3xl font-semibold md:text-7xl xl:text-9xl"
+          >
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
           <p class="mx-auto mb-6 w-4/6 text-3xl">
@@ -100,7 +96,19 @@ const release_data = await getCMS("release");
           <FpImage :src="data.header_images[0].image" />
         </div>
       </section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        style="-webkit-print-color-adjust: exact"
+        viewBox="3047 814.969 1200.032 142.328"
+      >
+        <path
+          d="M3047 915v42.297h1200.032V814.969L3047 915Z"
+          class="fill-gray-100"
+        />
+      </svg>
     </header>
+
     <div class="w-full bg-gray-100 dark:bg-gray-900">
       <div class="mx-auto grid max-w-5xl grid-cols-2 py-5">
         <FpLink v-for="item in data.sections[3].content" :href="item.url">
