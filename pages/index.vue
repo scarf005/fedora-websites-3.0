@@ -104,7 +104,7 @@ const release_data = await getCMS("release");
       >
         <path
           d="M3047 915v42.297h1200.032V814.969L3047 915Z"
-          class="fill-gray-100"
+          class="fill-gray-100 dark:fill-gray-900"
         />
       </svg>
     </header>
