@@ -1,4 +1,4 @@
-title: It's Your Operating System
+title: Fedora Linux
 description: An innovative platform for hardware, clouds, and containers, built
   with love by you.
 header_images:
@@ -96,18 +96,13 @@ sections:
           text: Fedora Docs
           url: https://docs.fedoraproject.org/en-US/
       - title: Support
-        description: Support is available at
-          [ask.fedoraproject.org](https://ask.fedoraproject.org/).
+        description: Get support from our the community on the Ask Fedora Forum.
         link:
           text: Ask Fedora
           url: https://ask.fedoraproject.org/
       - title: Chat
-        description:
-          "##### Users and developers are available in the **\\#fedora**
-          channel on [Fedora
-          Chat](https://matrix.to/#/#fedora:fedoraproject.org?web-instance%5Bel\
-          ement.io%5D=chat.fedoraproject.org) and on [Fedora
-          Discussion](https://discussion.fedoraproject.org/)."
+        description: "Users and developers are available in the #fedora
+          channel on Fedora Chat and Discussions."
         link:
           text: Fedora Discussion
           url: https://discussion.fedoraproject.org/

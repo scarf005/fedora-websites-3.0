@@ -36,6 +36,20 @@ function eraseText() {
   }
 }
 
+const supportCardIcon = (cardTitle) => {
+  switch (cardTitle) {
+    case "Documentation":
+      return "fa6-solid:book";
+      break;
+    case "Support":
+      return "fa6-solid:envelope";
+      break;
+    case "Chat":
+      return "fa6-solid:comments";
+      break;
+  }
+};
+
 onMounted(() => {
   setTimeout(writeText, newTextDelay + 200);
 });
@@ -49,7 +63,7 @@ useHead({
 });
 </script>
 <template>
-  <main class="w-full">
+  <main class="w-full dark:bg-slate-900">
     <header
       class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-4 text-white md:pt-16"
     >
@@ -132,32 +146,93 @@ useHead({
           {{ $t(data.sections[3].sectionTitle) }}
         </h2>
       </header>
-      <div class="mx-auto grid max-w-5xl grid-cols-2 py-5">
-        <FpLink v-for="item in data.sections[3].content" :href="item.url">
-          <div
-            class="shadows-lg m-5 rounded-3xl bg-white p-5 pt-8 dark:bg-gray-800"
-          >
-            <h2
-              class="mb-12 bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-xl font-bold text-transparent lg:text-5xl"
+      <div
+        class="container mx-auto flex flex-wrap justify-center gap-4 py-8 px-2 md:px-4 lg:gap-16"
+      >
+        <div
+          class="my-4 w-2/5 rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
+          v-for="item in data.sections[3].content"
+        >
+          <FpLink :href="item.url">
+            <h3
+              class="bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
             >
               {{ $t(item.title) }}
-            </h2>
-            <p class="text-center text-gray-500">{{ $t(item.description) }}</p>
-          </div>
-        </FpLink>
+            </h3>
+            <p class="text-center text-gray-700 dark:text-gray-300 lg:text-xl">
+              {{ $t(item.description) }}
+            </p>
+          </FpLink>
+        </div>
       </div>
     </section>
-    <section class="bg-gray-100 dark:bg-gray-900">
-      <header class="mx-auto py-8">
-        <h2 class="text-center">{{ $t(data.sections[4].sectionTitle) }}</h2>
+    <section
+      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-light/25 dark:to-fp-blue-light/25 md:bg-gradient-to-r lg:my-16"
+    >
+      <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
+        <h2
+          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+        >
+          {{ $t(data.sections[4].sectionTitle) }}
+        </h2>
       </header>
-      <div>
-        <article v-for="card in data.sections[4].content" :key="card.id">
-          <h3>
-            {{ card.title }}
-          </h3>
-          <p>{{ card.description }}</p>
-          NuxtL
+      <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
+        <article
+          v-for="card in data.sections[4].content"
+          :key="card.id"
+          class="m-4 max-w-sm"
+        >
+          <div class="mb-2">
+            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+              {{ $t(card.title) }}
+            </h3>
+          </div>
+          <div class="max-w-xs">
+            <p class="mb-2 text-gray-900 dark:text-gray-300">
+              {{ $t(card.description) }}
+            </p>
+            <NuxtLink
+              :to="$t(card.link.url)"
+              class="font-semibold text-fp-blue-dark underline-offset-4 transition duration-150 ease-in hover:text-fp-blue-light hover:underline dark:text-gray-300"
+              >{{ $t(card.link.text) }}</NuxtLink
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="container mx-auto">
+      <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
+        <h2
+          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+        >
+          {{ $t(data.sections[5].sectionTitle) }}
+        </h2>
+      </header>
+      <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
+        <article
+          v-for="card in data.sections[5].content"
+          :key="card.id"
+          class="flex max-w-sm flex-col items-center bg-gray-400 p-8 dark:bg-gray-800"
+        >
+          <div class="mb-2 flex gap-4">
+            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+              {{ $t(card.title) }}
+            </h3>
+
+            <Icon
+              :name="supportCardIcon(card.title)"
+              size="36"
+              class="order-first text-fp-blue-dark dark:text-fp-blue-light"
+            />
+          </div>
+          <div class="text-center">
+            <p class="mb-2">{{ $t(card.description) }}</p>
+            <NuxtLink
+              :to="card.link.url"
+              class="font-semibold transition duration-150 ease-in-out hover:text-fp-blue-dark hover:underline hover:dark:text-fp-blue-light"
+              >{{ $t(card.link.text) }}</NuxtLink
+            >
+          </div>
         </article>
       </div>
     </section>
