@@ -40,21 +40,35 @@ sections:
   - sectionTitle: Platforms Tested against CoreOS
     images: ""
     content:
-      - image: public/assets/images/alibabacloud-ar21.svg
-      - image: public/assets/images/aws.png
+      - image:
+          light: public/assets/images/alibabacloud-ar21.svg
+          dark: public/assets/images/alibabacloud-white.png
+      - image:
+          light: public/assets/images/aws.png
+          dark: public/assets/images/aws-white.png
       - image: public/assets/images/do_logo_horizontal_blue.svg
-      - image: public/assets/images/qemu-logo.png
-      - image: public/assets/images/exoscale-ar21.svg
+      - image:
+          light: public/assets/images/qemu-logo.png
+          dark: public/assets/images/qemu-white.svg
+      - image:
+          light: public/assets/images/exoscale-ar21.svg
+          dark: public/assets/images/exoscale-white.svg
       - image: public/assets/images/google_cloud-ar21.svg
-      - image: public/assets/images/ibm_cloud_logo-2048x793.png
+      - image:
+          light: public/assets/images/ibm_cloud_logo-2048x793.png
+          dark: public/assets/images/ibm_cloud_logo-white.png
       - image: public/assets/images/microsoftazure_2021.svg
       - image: public/assets/images/nutanix_logo_blue.png
-      - image: public/assets/images/openstack-logo-horizontal.svg
+      - image:
+          light: public/assets/images/openstack-logo-horizontal.svg
+          dark: public/assets/images/openstack-logo-white.svg
       - image: public/assets/images/virtualbox_logo.png
-      - image: public/assets/images/logo__on-white.svg
+      - image:
+          light: public/assets/images/logo__on-white.svg
+          dark: public/assets/images/logo__on-dark.svg
       - image: public/assets/images/vmware.svg.png
   - sectionTitle: Built By You
-    images: public/assets/images/flock-budapest-2019-modified.png
+    images: public/assets/images/flock-budapest-2019-bg.jpg
     sectionDescription: >-
       The Fedora Project envisions a world where everyone benefits from free and
       open source software built by inclusive, welcoming, and open-minded

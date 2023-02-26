@@ -91,7 +91,7 @@ sections:
         url: https://fedoradeveloper.com
         image: public/assets/images/podman.svg
   - sectionTitle: Built by you
-    images: public/assets/images/iot_flock_background.jpg
+    images: public/assets/images/flock-budapest-2019-bg.jpg
     sectionDescription: The Fedora Project envisions a world where everyone can
       benefit from free and open source software built by inclusive, welcoming,
       and open-minded communities. Fedora Workstation is the result of work done

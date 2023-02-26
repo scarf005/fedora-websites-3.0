@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   color: {
-    default: "text-fp-blue-dark",
+    default: "text-fp-darkblue-500",
     type: String,
   },
   class: String,
