@@ -19,7 +19,7 @@ defineProps({
   },
   bgColor: {
     type: String,
-    default: "bg-fp-blue-light/10",
+    default: "bg-fp-newblue-500/10",
   },
 });
 </script>

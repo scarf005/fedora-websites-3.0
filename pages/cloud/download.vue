@@ -49,12 +49,17 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-blue md:mt-2">
+  <main
+    class="border-t-8 border-fp-newblue dark:border-fp-newblue-700 dark:bg-neutral-800 md:mt-2"
+  >
     <TheLocalBar
-      image="assets/images/fedora-cloud-logo.png"
+      :image="{
+        light: 'assets/images/fedora-cloud-logo-light.png',
+        dark: 'assets/images/fedora-cloud-logo.png',
+      }"
       home="/cloud"
       class="sm:px-2"
-      textColor="text-fp-blue"
+      textColor="text-fp-newblue dark:text-fp-newblue-700"
       :items="[
         { name: 'Download', link: '/cloud/download' },
         { name: 'Community', link: '/cloud/community' },
@@ -62,19 +67,19 @@ useContentHead(data);
     />
 
     <!-- TITLE -->
-    <section class="py-24 text-center sm:px-2 lg:text-start">
-      <div class="container mx-auto max-w-7xl">
-        <h1 class="mb-4 text-4xl text-fp-gray">
+    <section class="px-2 pt-24 pb-12 text-center lg:text-start">
+      <div class="container mx-auto max-w-7xl px-2">
+        <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-blue">
+          <span class="text-fp-newblue dark:text-fp-newblue-700">
             Fedora Cloud {{ release_data.ga.releasever }}</span
           >
         </h1>
-        <p class="text-fp-gray dark:text-fp-gray-light">
+        <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-sm text-fp-gray">
+          <p class="mr-5 text-sm text-gray-600">
             {{ $t("Latest release:") }}
             <span class="font-semibold">{{ releaseDate }}</span>
           </p>
@@ -84,17 +89,12 @@ useContentHead(data);
 
     <!-- DOWNLOAD ARTIFACTS -->
     <section
-      class="scroll-mt-14 bg-gradient-to-r from-purple-50 to-blue-50 py-6 dark:bg-neutral-800 dark:bg-none sm:px-2"
+      class="scroll-mt-14 bg-gradient-to-r from-sky-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
-      <div class="container mx-auto mb-8 max-w-7xl">
-        <div class="mb-6 text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue">
-            {{ $t("") }}
-          </h2>
-        </div>
+      <div class="container mx-auto my-8 max-w-7xl">
         <div
-          class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 md:grid-cols-2"
+          class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <DownloadSection
             name="For Intel and AMD x86_64 systems"
@@ -136,15 +136,15 @@ useContentHead(data);
       </div>
     </section>
 
-    <section class="bg-white py-8 dark:bg-neutral-900 sm:px-2">
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
       <CoreOsVerifySection />
     </section>
 
-    <section class="bg-blue-50 py-12 dark:bg-neutral-800 sm:px-2">
+    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-800">
       <BecomeContributorSection />
     </section>
 
-    <section class="py-12 dark:bg-black sm:px-2">
+    <section class="py-12 px-4 dark:bg-black">
       <DownloadComplianceSection />
     </section>
 
@@ -224,6 +224,7 @@ body.has-modal {
 }
 
 .cloud-theme .fp-download-item a {
-  @apply border-fp-blue-light text-fp-blue-light hover:bg-fp-blue-light hover:text-white;
+  @apply border-fp-newblue-500 text-fp-newblue-500 hover:bg-fp-newblue-500 hover:text-white;
+  @apply dark:border-fp-newblue-700 dark:text-fp-newblue-700 dark:hover:bg-fp-newblue-700 dark:hover:text-white;
 }
 </style>

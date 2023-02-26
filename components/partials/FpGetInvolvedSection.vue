@@ -20,7 +20,7 @@ for (let item of props.content) {
 </script>
 
 <template>
-  <section class="bg-fp-blue-light/10 px-8">
+  <section class="bg-fp-newblue-500/10 px-8">
     <div class="container mx-auto flex max-w-7xl flex-col justify-center pb-8">
       <header class="py-8 text-center xl:text-start">
         <h2 :class="`text-fp-${color}`" class="xl:text-4xl">

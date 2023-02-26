@@ -32,7 +32,7 @@
         <template #verify_button>
           <Icon
             name="fa-solid:clipboard-check"
-            class="!align-baseline text-fp-blue-light dark:text-gray-200"
+            class="!align-baseline text-fp-newblue-500 dark:text-gray-200"
           />
         </template>
       </i18n-t>

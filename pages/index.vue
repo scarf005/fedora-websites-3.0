@@ -65,7 +65,7 @@ useHead({
 <template>
   <main class="w-full dark:bg-slate-900">
     <header
-      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-4 text-white md:pt-16"
+      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
@@ -155,7 +155,7 @@ useHead({
         >
           <FpLink :href="item.url">
             <h3
-              class="bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
+              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
             >
               {{ $t(item.title) }}
             </h3>

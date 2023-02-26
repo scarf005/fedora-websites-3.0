@@ -33,13 +33,13 @@ if (props.description) {
     </div>
     <h4
       v-if="title"
-      class="inline font-bold text-fp-blue-dark dark:text-slate-100"
+      class="inline font-bold text-fp-darkblue-500 dark:text-slate-100"
     >
       {{ $t(props.title) }}
     </h4>
     <ContentRenderer
       v-if="descriptionMd"
-      class="text-fp-blue-dark dark:text-slate-200"
+      class="text-fp-darkblue-500 dark:text-slate-200"
       tag="p"
       :value="descriptionMd"
     />

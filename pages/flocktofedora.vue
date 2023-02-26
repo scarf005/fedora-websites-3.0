@@ -57,12 +57,12 @@ function formatDate(dateStr) {
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
+          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
           {{ $t(explore.sectionTitle) }}
         </h2>
         <div
-          class="flex flex-wrap justify-between gap-4 text-center text-fp-blue-dark xl:gap-20"
+          class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 xl:gap-20"
         >
           <FpCard
             v-for="card in explore.content"
@@ -83,7 +83,7 @@ function formatDate(dateStr) {
         </div>
 
         <h3
-          class="mt-20 text-center text-2xl font-semibold text-fp-blue-dark dark:text-fp-blue-light sm:text-4xl"
+          class="mt-20 text-center text-2xl font-semibold text-fp-darkblue-500 dark:text-fp-newblue-500 sm:text-4xl"
         >
           {{ $t(watch.sectionTitle) }}
         </h3>
@@ -105,7 +105,7 @@ function formatDate(dateStr) {
               </p>
               <NuxtLink
                 :to="watch.content[0].image"
-                class="text-fp-blue dark:text-fp-blue-light"
+                class="text-fp-blue dark:text-fp-newblue-500"
                 >{{ $t("Visit Fedora Youtube") }}
                 <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
               </NuxtLink>
@@ -118,7 +118,7 @@ function formatDate(dateStr) {
     <section class="mx-auto w-full py-10 dark:bg-slate-800">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
-          class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
+          class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
           {{ $t(hybrid.sectionTitle) }}
         </h2>
@@ -147,12 +147,12 @@ function formatDate(dateStr) {
             <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
-                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
                 >{{ $t("Destination") }}</NuxtLink
               >
               <NuxtLink
                 to="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-darkblue-500"
                 >{{ $t("Learn More") }}</NuxtLink
               >
             </div>
@@ -190,12 +190,12 @@ function formatDate(dateStr) {
             <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
-                class="rounded-md bg-fp-blue-light px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
+                class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
                 >{{ $t("Destination") }}</NuxtLink
               >
               <NuxtLink
                 to="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-blue-dark"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-darkblue-500"
                 >{{ $t("Learn More") }}</NuxtLink
               >
             </div>
@@ -239,11 +239,11 @@ function formatDate(dateStr) {
     <!-- TODO: Important Dates -->
     <section class="mx-auto w-full py-10">
       <h2
-        class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+        class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
         {{ $t(data.importantDates.title) }}
       </h2>
-      <h4 class="mx-0 mb-16 text-center text-lg text-fp-blue-dark sm:mx-20">
+      <h4 class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 sm:mx-20">
         {{ $t(data.importantDates.description) }}
       </h4>
       <div
@@ -312,7 +312,7 @@ function formatDate(dateStr) {
     <!--
     <section class="w-10/12 mx-auto my-10">
       <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-blue-light"
+        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
       >
         Event Calendar
       </h2>
@@ -328,11 +328,13 @@ function formatDate(dateStr) {
       >
         <section class="mx-auto w-10/12 max-w-screen-xl py-24">
           <h2
-            class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+            class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
           >
             {{ $t(community.sectionTitle) }}
           </h2>
-          <h4 class="mx-0 mb-20 text-center text-lg text-fp-blue-dark sm:mx-20">
+          <h4
+            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 sm:mx-20"
+          >
             {{ $t(community.sectionDescription) }}
           </h4>
 
@@ -351,7 +353,7 @@ function formatDate(dateStr) {
     <!-- Our Sponsors -->
     <section class="mx-auto w-full py-10 dark:bg-slate-900">
       <h2
-        class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-blue-light to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+        class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
         {{ $t(sponsors.title) }}
       </h2>
