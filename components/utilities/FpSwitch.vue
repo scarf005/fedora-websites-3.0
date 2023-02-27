@@ -1,17 +1,7 @@
-<script setup>
-// Action? -> pass in function on what to happen once it is toggled
-// Label?
-defineProps({
-  url: String,
-  color: [String, Array],
-});
-</script>
-
 <template>
   <label class="relative inline-flex cursor-pointer items-center">
     <input
       type="checkbox"
-      value=""
       class="peer sr-only"
       @click="$emit('switchToggled')"
     />

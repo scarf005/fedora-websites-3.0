@@ -21,6 +21,10 @@ const props = defineProps({
   dlPrefix: {
     type: String,
   },
+  isBeta: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -37,6 +41,8 @@ const props = defineProps({
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
         v-if="v.arch != 'src'"
+        :variants="isBeta ? ['beta'] : []"
+        :isBeta="isBeta"
       />
     </div>
   </div>

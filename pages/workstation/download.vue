@@ -8,12 +8,16 @@ const { data: images_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
 
+// TODO: Fetch BETA metadata is beta toggle is enabled
+const { data: beta_data } = await useFetch(
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+);
+
 const betaSwitch = useState("betaSwitch", () => false);
 function toggleBetaSwitch() {
   this.betaSwitch = !this.betaSwitch;
 }
 
-// TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
 const dlpath = {
@@ -170,48 +174,68 @@ useContentHead(data);
           <p class="mb-10 text-fp-gray">
             {{ $t(data.sections[2].sectionDescription) }}
           </p>
-          <WorkstationDownloadSection
-            name="For Intel and AMD x86_64 systems"
-            art_name="Fedora Workstation"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Workstation.x86_64"
-            :dlPrefix="dlpath.x86_64"
-            :version="release_data.ga.releasever"
-            :betaVersion="release_data.beta.releasever"
-            :betaSwitch="betaSwitch"
-            class="workstation-theme"
-          />
-          <WorkstationDownloadSection
-            name="For ARM® aarch64 systems"
-            art_name="Fedora Workstation"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Workstation.aarch64"
-            :dlPrefix="dlpath.aarch64"
-            :version="release_data.ga.releasever"
-            :betaVersion="release_data.beta.releasever"
-            :betaSwitch="betaSwitch"
-            class="workstation-theme"
-          />
-          <WorkstationDownloadSection
-            name="For Power ppc64le systems"
-            art_name="Fedora Workstation"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Workstation.ppc64le"
-            :dlPrefix="dlpath.ppc64le"
-            :version="release_data.ga.releasever"
-            :betaVersion="release_data.beta.releasever"
-            :betaSwitch="betaSwitch"
-            class="workstation-theme"
-          />
-          <!-- <DownloadSection
-            name="For IBM s390x zSystems"
-            art_name="Fedora Workstation"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Workstation.s390x"
-            :dlPrefix="dlpath.s390x"
-            :version="release_data.ga.releasever"
-            class="workstation-theme"
-          /> -->
+          <div v-if="betaSwitch == false">
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+          </div>
+          <!-- Beta Releases -->
+          <div v-else>
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
+          </div>
         </div>
       </div>
     </section>

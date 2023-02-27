@@ -24,7 +24,7 @@ const props = defineProps({
   verifyLink: {
     type: String,
   },
-  betaVersion: {
+  isBeta: {
     type: Boolean,
   },
 });
@@ -67,13 +67,7 @@ const prettyType = {
 </script>
 
 <template>
-  <div
-    :class="[
-      betaVersion ? 'fp-beta-download-item' : 'fp-download-item',
-      variantClasses,
-      theme,
-    ]"
-  >
+  <div :class="['fp-download-item', variantClasses, theme]">
     <div class="flex items-center justify-between gap-4">
       <p class="flex flex-wrap gap-x-5 text-gray-800 dark:text-gray-400">
         <slot>
@@ -84,7 +78,7 @@ const prettyType = {
           <span class="">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
           <span
-            v-if="betaVersion"
+            v-if="isBeta"
             class="ml-4 items-center rounded-full bg-gray-300 px-2 text-[0.875rem] font-bold text-white dark:bg-gray-700"
             >{{ $t("BETA") }}
           </span>
@@ -115,12 +109,12 @@ const prettyType = {
   @apply border border-gray-200 bg-white px-5 py-2 dark:border-gray-900 dark:bg-neutral-900;
 }
 
-.fp-beta-download-item {
-  @apply border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-900 dark:bg-gray-800;
+.fp-download-item a,
+.fp-download-item--variant-beta a {
+  @apply cursor-pointer border py-1 px-3 transition-colors;
 }
 
-.fp-download-item a,
-.fp-beta-download-item a {
-  @apply cursor-pointer border py-1 px-3 transition-colors;
+.fp-download-item--variant-beta {
+  @apply border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-900 dark:bg-gray-800;
 }
 </style>
