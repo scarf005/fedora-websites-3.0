@@ -127,7 +127,10 @@ useContentHead(data);
     <section
       class="bg-gradient-to-r from-green-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
     >
-      <div class="container mx-auto flex max-w-7xl justify-end">
+      <div
+        class="container mx-auto flex max-w-7xl justify-end"
+        v-if="release_data.beta.enabled"
+      >
         <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
         <div>
           <FpSwitch @switchToggled="toggleBetaSwitch()" />
