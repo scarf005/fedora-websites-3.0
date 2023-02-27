@@ -2,7 +2,7 @@
 // Dynamic Props
 const props = defineProps({
   color: {
-    default: "text-fp-blue-dark",
+    default: "text-fp-darkblue-500",
     type: String,
   },
   eventsLink: {
@@ -43,7 +43,7 @@ for (let item of data._value.body[0].content) {
         <!-- Flock Info -->
         <article class="mx-8 mb-8 flex flex-col self-center xl:mx-0">
           <h3
-            class="text-center text-lg text-fp-blue-dark dark:text-gray-200 xl:text-xl"
+            class="text-center text-lg text-fp-darkblue-500 dark:text-gray-200 xl:text-xl"
           >
             {{ $t(data.body[0].content[0].title) }}
           </h3>

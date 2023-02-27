@@ -25,7 +25,7 @@
             <slot name="footer">
               <button
                 @click="$emit('closeModal')"
-                class="rounded bg-fp-blue-light py-1 px-2 text-sm text-white hover:bg-fp-blue"
+                class="rounded bg-fp-newblue-500 py-1 px-2 text-sm text-white hover:bg-fp-blue"
               >
                 Close
               </button>

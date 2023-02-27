@@ -74,13 +74,14 @@ const prettyType = {
       theme,
     ]"
   >
-    <div class="flex items-center justify-between">
-      <p class="text-gray-800 dark:text-gray-400">
+    <div class="flex items-center justify-between gap-4">
+      <p class="flex flex-wrap gap-x-5 text-gray-800 dark:text-gray-400">
         <slot>
-          <span class="mr-5 font-semibold">
+          <span class="font-semibold">
             {{ name }}
           </span>
-          <span class="mr-5">{{ prettyType[type] }}</span>
+          <span class="w-0 basis-full sm:hidden"></span>
+          <span class="">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
           <span
             v-if="betaVersion"

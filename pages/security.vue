@@ -151,6 +151,6 @@ useContentHead(data);
 
 <style>
 main.fp-security a {
-  @apply text-fp-blue dark:text-fp-blue-light;
+  @apply text-fp-blue dark:text-fp-newblue-500;
 }
 </style>

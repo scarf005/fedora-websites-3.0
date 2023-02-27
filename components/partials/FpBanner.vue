@@ -39,7 +39,7 @@ defineProps({
   <div class="my-5 flex justify-center">
     <slot />
   </div>
-  <div class="spacing-1 mt-5 flex justify-center">
+  <div class="spacing-1 mt-5 flex justify-center gap-8 md:gap-24">
     <template v-for="(cta, idx) in ctas">
       <FpBtn
         :href="cta.url"
@@ -50,13 +50,15 @@ defineProps({
             [color]: idx > 0,
             [border]: idx > 0,
             'bg-white': idx > 0,
+            'dark:bg-fp-darkblue-700': idx > 0,
+            'dark:border-fp-darkblue-700': idx > 0,
+            'dark:!text-white': idx > 0,
           },
         ]"
       >
         <Icon v-if="idx === 1 && icon" :name="`fa6-brands:${icon}`" />
         {{ $t(cta.text) }}
       </FpBtn>
-      <div v-if="idx < ctas.length - 1" class="w-2" />
     </template>
   </div>
   <div class="mt-5 flex justify-center px-4">
