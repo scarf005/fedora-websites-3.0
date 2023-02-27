@@ -98,7 +98,7 @@ function evalLink(uri, release) {
               <h2 class="text-fp-newblue-500">
                 {{ $t(data.sections[1].sectionTitle) }}
               </h2>
-              <p class="text-fp-gray-500 mb-10">
+              <p class="mb-10 text-fp-gray">
                 {{ $t(data.sections[1].sectionDescription) }}
               </p>
             </div>
@@ -124,7 +124,7 @@ function evalLink(uri, release) {
           <h2 class="text-fp-newblue-500">
             {{ $t(data.sections[2].sectionTitle) }}
           </h2>
-          <p class="text-fp-gray-500 mb-10">
+          <p class="mb-10 text-fp-gray">
             {{ $t(data.sections[2].sectionDescription) }}
           </p>
           <div v-for="(arch, i) in arches">
@@ -180,7 +180,7 @@ function evalLink(uri, release) {
           <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[3].content[0].title) }}
           </h2>
-          <p class="text-fp-gray-500 mb-5">
+          <p class="mb-5 text-fp-gray">
             {{ $t(data.sections[3].content[0].description) }}
           </p>
           <FpLink
@@ -193,7 +193,7 @@ function evalLink(uri, release) {
           <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[3].content[1].title) }}
           </h2>
-          <p class="text-fp-gray-500 mb-5">
+          <p class="mb-5 text-fp-gray">
             {{ $t(data.sections[3].content[1].description) }}
           </p>
           <div
@@ -225,7 +225,7 @@ function evalLink(uri, release) {
           <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[4].sectionTitle) }}
           </h2>
-          <p class="text-fp-gray-500 mb-5">
+          <p class="mb-5 text-fp-gray">
             {{ $t(data.sections[4].sectionDescription) }}
           </p>
           <FpBtn :href="data.sections[4].content[0].link.url">{{
@@ -242,7 +242,7 @@ function evalLink(uri, release) {
           <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[5].sectionTitle) }}
           </h2>
-          <p class="text-fp-gray-500 text-base">
+          <p class="text-base text-fp-gray">
             {{ $t(data.sections[5].content[0].description) }}
           </p>
           <p class="mt-5 text-sm text-gray-400">
