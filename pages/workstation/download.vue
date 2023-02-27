@@ -41,17 +41,17 @@ function evalLink(uri, release) {
             Fedora Workstation {{ release_data.ga.releasever }}
           </span>
         </h1>
-        <p class="text-gray-600 dark:text-fp-gray-light">
+        <p class="text-gray-600 dark:text-fp-gray-200">
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-gray-600 dark:text-fp-gray-light">
+          <p class="mr-5 text-gray-600 dark:text-fp-gray-200">
             <span class="text-sm">{{
               $t(data.sections[0].content[0].title)
             }}</span>
             {{ $t(data.sections[0].content[0].description) }}
           </p>
-          <p class="text-gray-600 dark:text-fp-gray-light">
+          <p class="text-gray-600 dark:text-fp-gray-200">
             <span class="text-sm">{{
               $t(data.sections[0].content[1].title)
             }}</span>
@@ -95,18 +95,18 @@ function evalLink(uri, release) {
               <FpImage :src="data.sections[1].images" />
             </div>
             <div>
-              <h2 class="text-fp-blue">
+              <h2 class="text-fp-newblue-500">
                 {{ $t(data.sections[1].sectionTitle) }}
               </h2>
-              <p class="mb-10 text-fp-gray">
+              <p class="text-fp-gray-500 mb-10">
                 {{ $t(data.sections[1].sectionDescription) }}
               </p>
             </div>
           </div>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
           >
-            <p>Fedora Media Writer</p>
+            <p class="font-semibold">Fedora Media Writer</p>
             <div class="flex">
               <FpLink
                 :href="item.link.url"
@@ -121,23 +121,23 @@ function evalLink(uri, release) {
 
         <!-- DESKTOP IMAGES -->
         <div class="col-span-2 p-5 md:col-span-1">
-          <h2 class="text-fp-blue">
+          <h2 class="text-fp-newblue-500">
             {{ $t(data.sections[2].sectionTitle) }}
           </h2>
-          <p class="mb-10 text-fp-gray">
+          <p class="text-fp-gray-500 mb-10">
             {{ $t(data.sections[2].sectionDescription) }}
           </p>
           <div v-for="(arch, i) in arches">
             <p class="mt-10 font-bold">{{ $t(arch.title) }}</p>
 
             <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
               v-for="item in arch.items"
             >
               <p>
-                <span class="mr-5 font-semibold text-gray-800">
+                <span class="mr-5 font-semibold">
                   Fedora Linux {{ release_data.ga.releasever }} </span
-                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
+                ><span> {{ $t(item.name) }}</span>
               </p>
               <FpLink
                 :href="evalLink(item.uri, release_data.ga)"
@@ -148,14 +148,14 @@ function evalLink(uri, release) {
             </div>
 
             <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2 dark:bg-gray-800"
+              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-700 dark:bg-gray-800"
               v-for="item in betaArches[i].items"
               v-if="release_data.beta.enabled"
             >
               <p>
-                <span class="mr-5 font-semibold text-gray-800">
+                <span class="mr-5 font-semibold">
                   Fedora Linux {{ release_data.beta.releasever }} </span
-                ><span class="text-gray-500"> {{ $t(item.name) }}</span>
+                ><span> {{ $t(item.name) }}</span>
                 <span
                   class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
                   >{{ $t("BETA") }}</span
@@ -177,29 +177,29 @@ function evalLink(uri, release) {
     <section class="bg-white py-24 px-4 dark:bg-neutral-900">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-blue">
+          <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[3].content[0].title) }}
           </h2>
-          <p class="mb-5 text-fp-gray">
+          <p class="text-fp-gray-500 mb-5">
             {{ $t(data.sections[3].content[0].description) }}
           </p>
           <FpLink
-            class="text-fp-blue"
+            class="text-fp-newblue-500"
             :href="data.sections[3].content[0].link.url"
             >{{ $t(data.sections[3].content[0].link.text) }}</FpLink
           >
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-blue">
+          <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[3].content[1].title) }}
           </h2>
-          <p class="mb-5 text-fp-gray">
+          <p class="text-fp-gray-500 mb-5">
             {{ $t(data.sections[3].content[1].description) }}
           </p>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:bg-gray-900"
+            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
           >
-            <p>
+            <p class="font-semibold">
               {{ $t(data.sections[3].content[1].link.text) }}
             </p>
             <FpLink
@@ -222,10 +222,10 @@ function evalLink(uri, release) {
           <FpImage class="max-h-72" :src="data.sections[4].content[0].image" />
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-blue">
+          <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[4].sectionTitle) }}
           </h2>
-          <p class="mb-5 text-fp-gray">
+          <p class="text-fp-gray-500 mb-5">
             {{ $t(data.sections[4].sectionDescription) }}
           </p>
           <FpBtn :href="data.sections[4].content[0].link.url">{{
@@ -239,13 +239,13 @@ function evalLink(uri, release) {
     <section class="py-24 px-4 dark:bg-neutral-900">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-blue">
+          <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[5].sectionTitle) }}
           </h2>
-          <p class="text-base text-fp-gray">
+          <p class="text-fp-gray-500 text-base">
             {{ $t(data.sections[5].content[0].description) }}
           </p>
-          <p class="mt-5 text-sm text-gray-300">
+          <p class="mt-5 text-sm text-gray-400">
             {{ $t(data.sections[5].content[1].description) }}
           </p>
         </div>

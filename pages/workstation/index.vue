@@ -6,7 +6,7 @@ useContentHead(data);
   <FpHero
     :background="data.header_images[1].image"
     alignment="bg-bottom"
-    class="workstation-hero pb-8 dark:!min-h-fit dark:bg-neutral-900 dark:!bg-none"
+    class="workstation-hero pb-8 dark:!min-h-fit dark:bg-neutral-900"
   >
     <TheLocalBar
       :image="{
@@ -155,7 +155,9 @@ useContentHead(data);
       <div
         class="mx-auto max-w-7xl rounded-xl bg-gradient-to-r from-green-200 to-blue-100 p-2 py-8 dark:bg-none sm:p-10"
       >
-        <h3 class="mb-8 text-center font-bold text-fp-blue dark:text-gray-100">
+        <h3
+          class="mb-8 text-center font-bold text-fp-newblue-500 dark:text-gray-100"
+        >
           {{ $t(data.sections[3].sectionTitle) }}
         </h3>
         <FpList columns="sm:grid-cols-3 gap-4 lg:gap-4" :disableDots="true">

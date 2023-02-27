@@ -36,7 +36,7 @@ if (data._value.sections[3].content[6].description) {
           <h1 class="mb-4 text-fp-green-700 xl:mb-8">
             {{ data.title }}
           </h1>
-          <p class="text-fp-gray">{{ data.description }}</p>
+          <p class="text-fp-gray-500">{{ data.description }}</p>
         </div>
       </section>
       <FpDescriptionSection
@@ -70,7 +70,7 @@ if (data._value.sections[3].content[6].description) {
       <h3 class="font-bold text-fp-darkblue-500 dark:text-fp-darkblue-300">
         {{ data.sections[3].content[5].title }}
       </h3>
-      <p class="mt-6 text-fp-gray-darkest dark:text-fp-gray">
+      <p class="text-fp-gray-500 mt-6">
         {{ data.sections[3].content[5].description }}
       </p>
     </section>
@@ -89,7 +89,7 @@ if (data._value.sections[3].content[6].description) {
           <div>
             <ContentRenderer
               tag="p"
-              class="mb-12 max-w-4xl text-center text-fp-gray-darkest dark:text-fp-gray md:text-start"
+              class="text-fp-gray-500 mb-12 max-w-4xl text-center md:text-start"
               :value="data.sections[3].content[6].descriptionMd"
             />
           </div>
