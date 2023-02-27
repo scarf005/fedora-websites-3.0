@@ -16,14 +16,6 @@ function toggleBetaSwitch() {
 // TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
-// Not sure if we need this
-const releaseDate =
-  images_data._value.payload.compose.date.substr(0, 4) +
-  "-" +
-  images_data._value.payload.compose.date.substr(4, 2) +
-  "-" +
-  images_data._value.payload.compose.date.substr(6, 2);
-
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
   aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -131,25 +123,10 @@ useContentHead(data);
     <section
       class="bg-gradient-to-r from-green-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
     >
-      <!-- TODO: add some sort of switch button to enable the beta ones showing up -->
-      <!-- Probably make this into its own component, as other page will use it.. and clean up the styling -->
       <div class="container mx-auto flex max-w-7xl justify-end">
         <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
         <div>
-          <label class="relative inline-flex cursor-pointer items-center">
-            <input
-              type="checkbox"
-              value=""
-              class="peer sr-only"
-              @click="toggleBetaSwitch()"
-            />
-            <div
-              class="peer-checked:bg-fp-blue-light peer h-6 w-11 rounded-full bg-fp-gray-light after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
-            ></div>
-          </label>
-        </div>
-        <div>
-          <FpSwitch @click="toggleBetaSwitch()" />
+          <FpSwitch @switchToggled="toggleBetaSwitch()" />
         </div>
       </div>
 
@@ -406,6 +383,6 @@ useContentHead(data);
 <style>
 .workstation-theme .fp-download-item a,
 .workstation-theme .fp-beta-download-item a {
-  @apply border-fp-blue-light text-fp-blue-light hover:bg-fp-blue-light hover:text-white;
+  @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
 }
 </style>

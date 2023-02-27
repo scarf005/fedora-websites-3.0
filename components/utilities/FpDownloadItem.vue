@@ -85,9 +85,9 @@ const prettyType = {
           <span class="text-gray-500"> {{ format }}</span>
           <span
             v-if="betaVersion"
-            class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
-            >{{ $t("BETA") }}</span
-          >
+            class="ml-4 items-center rounded-full bg-gray-300 px-2 text-[0.875rem] font-bold text-white dark:bg-gray-700"
+            >{{ $t("BETA") }}
+          </span>
         </slot>
       </p>
       <div class="inline-flex">
