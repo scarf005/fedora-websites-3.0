@@ -12,27 +12,31 @@ sections:
   - sectionTitle: Features for everyone
     content:
       - title: Sensible Defaults
-        description: Quickly deploy a server with the tools you need to spin up your
+        description:
+          Quickly deploy a server with the tools you need to spin up your
           workloads
-        image: public/assets/images/fedora-server-3.png
+        image: public/assets/images/interactive-local-020.png
       - title: Cockpit
-        description: A built-in remote server administration tool is ready to use on
+        description:
+          A built-in remote server administration tool is ready to use on
           first boot
-        image: public/assets/images/server_main.png
+        image: public/assets/images/vm-management-cockpit-001.png
       - title: Latest Technologies
-        description: Run virtual machines or containers with libvert(link to project)
-          and podman(link to project) managed through Cockpit
-        image: public/assets/images/monitor-2.png
+        description:
+          Run virtual machines or containers with libvert(link to project)
+          and podman(link to project) managed through Cockpit.
+        image: public/assets/images/podman.svg
       - title: Stable Ecosystem
         description: Enables a variety of server workloads
         image: public/assets/images/fedora-server-1.png
       - title: Platform
-        description: Serving the needs of small to medium businesses, home labs, and
+        description:
+          Serving the needs of small to medium businesses, home labs, and
           future enterprise workloads
-        image: public/assets/images/fedora-server-3.png
-    images: public/assets/images/fedora-server-1.png
+        image: public/assets/images/server_main.png
+    images: ""
   - sectionTitle: Built by you
-    images: public/assets/images/iot_flock_background.jpg
+    images: public/assets/images/flock-budapest-2019-bg.jpg
     sectionDescription: >-
       The Fedora Project envisions a world where everyone can benefit from free
       and open source software built by inclusive, welcoming, and open-minded
@@ -41,16 +45,20 @@ sections:
       Fedora Server is created by a team in the Fedora community called the **Server Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. [Learn more on the Server Working Group Website](https://docs.fedoraproject.org/en-US/server-working-group/).
     content:
       - title: Report & discuss issues
-        description: You can view, file, and discuss Fedora Server issues on [the
+        description:
+          You can view, file, and discuss Fedora Server issues on [the
           **Fedora Server issue
           tracker**](https://pagure.io/fedora-server/issues).
       - title: Chat with the team
-        description: Visit **\#fedora-server** on irc.libera.chat and on **\#server** on
+        description:
+          Visit **\#fedora-server** on irc.libera.chat and on **\#server** on
           the Fedora Matrix Chat server.
       - title: Join the mailing list
-        description: Sign up at **[server@lists.fedoraproject.org](<>)** to receive
+        description:
+          Sign up at **[server@lists.fedoraproject.org](<>)** to receive
           meeting agendas and minute (**[view
           archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)**)
       - title: Attend a meeting
-        description: "Open to all current and potential contributors **every 1st and 3rd
+        description:
+          "Open to all current and potential contributors **every 1st and 3rd
           Wednesday at 18:00 UTC** on **irc.libera.chat #fedora-meeting**."

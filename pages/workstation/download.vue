@@ -16,11 +16,16 @@ function evalLink(uri, release) {
 </script>
 
 <template>
-  <main class="border-t-8 border-fp-green md:mt-2">
+  <main
+    class="border-t-8 border-fp-green dark:border-fp-green-700 dark:bg-neutral-800 md:mt-2"
+  >
     <TheLocalBar
-      image="assets/images/workstation_logo.png"
+      :image="{
+        light: 'assets/images/fedora-workstation-logo-light.png',
+        dark: 'assets/images/fedora-workstation-logo.png',
+      }"
       home="/workstation"
-      textColor="text-fp-green"
+      textColor="text-fp-green-700"
       :items="[
         { name: 'Download', link: '/workstation/download' },
         { name: 'Community', link: '/workstation/community' },
@@ -28,23 +33,25 @@ function evalLink(uri, release) {
     />
 
     <!-- TITLE -->
-    <section class="py-24 text-center lg:text-start">
-      <div class="container mx-auto max-w-7xl">
-        <h1 class="mb-4 mb-8 text-4xl text-fp-gray">
+    <section class="px-2 pt-24 pb-12 text-center lg:text-start">
+      <div class="container mx-auto max-w-7xl px-2">
+        <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-green">
+          <span class="text-fp-green-700">
             Fedora Workstation {{ release_data.ga.releasever }}
           </span>
         </h1>
-        <p class="text-fp-gray">{{ $t(data.description) }}</p>
+        <p class="text-gray-600 dark:text-fp-gray-light">
+          {{ $t(data.description) }}
+        </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-fp-gray">
+          <p class="mr-5 text-gray-600 dark:text-fp-gray-light">
             <span class="text-sm">{{
               $t(data.sections[0].content[0].title)
             }}</span>
             {{ $t(data.sections[0].content[0].description) }}
           </p>
-          <p class="text-fp-gray">
+          <p class="text-gray-600 dark:text-fp-gray-light">
             <span class="text-sm">{{
               $t(data.sections[0].content[1].title)
             }}</span>
@@ -79,7 +86,7 @@ function evalLink(uri, release) {
 
     <!-- FEDORA MEDIA WRITER DOWNLOAD -->
     <section
-      class="bg-gradient-to-r from-green-50 to-blue-50 py-24 dark:from-gray-900 dark:to-gray-800"
+      class="bg-gradient-to-r from-green-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
     >
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 p-5 md:col-span-1">
@@ -167,7 +174,7 @@ function evalLink(uri, release) {
     </section>
 
     <!-- SECURITY -->
-    <section class="py-24">
+    <section class="bg-white py-24 px-4 dark:bg-neutral-900">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
@@ -207,7 +214,7 @@ function evalLink(uri, release) {
     </section>
 
     <!-- LAPTOPS PRELOADED -->
-    <section class="bg-blue-50 py-24 dark:bg-gray-800">
+    <section class="bg-blue-50 py-24 px-4 dark:bg-neutral-800">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
@@ -229,7 +236,7 @@ function evalLink(uri, release) {
     </section>
 
     <!-- LEARN MORE ABOUT FEDORA MEDIA WRITER -->
-    <section class="py-24">
+    <section class="py-24 px-4 dark:bg-neutral-900">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-blue">
@@ -251,12 +258,12 @@ function evalLink(uri, release) {
     </section>
 
     <!-- CONTRIBUTE -->
-    <section class="bg-gray-50 py-24 dark:bg-neutral-900">
+    <section class="bg-gray-50 py-12 px-4 dark:bg-neutral-800">
       <BecomeContributorSection />
     </section>
 
     <!-- COMPLIANCE -->
-    <section class="py-24">
+    <section class="py-12 px-4 dark:bg-black">
       <DownloadComplianceSection />
     </section>
   </main>

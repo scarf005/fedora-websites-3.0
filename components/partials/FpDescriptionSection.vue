@@ -13,7 +13,7 @@ if (props.sectionDescription) {
 </script>
 
 <template>
-  <section class="mx-auto bg-fp-blue-light/5">
+  <section class="mx-auto bg-fp-newblue-500/5">
     <div
       class="container mx-auto max-w-7xl px-8 py-12 text-center lg:px-0 lg:text-start"
     >

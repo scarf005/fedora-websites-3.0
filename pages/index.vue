@@ -65,7 +65,7 @@ useHead({
 <template>
   <main class="w-full dark:bg-slate-900">
     <header
-      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-blue-light pt-4 text-white md:pt-16"
+      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
@@ -155,7 +155,7 @@ useHead({
         >
           <FpLink :href="item.url">
             <h3
-              class="bg-gradient-to-r from-fp-green to-fp-blue-light bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
+              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
             >
               {{ $t(item.title) }}
             </h3>
@@ -167,11 +167,11 @@ useHead({
       </div>
     </section>
     <section
-      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-light/25 dark:to-fp-blue-light/25 md:bg-gradient-to-r lg:my-16"
+      class="dark:from-fp-green-light/25 dark:to-fp-blue-light/25 container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 md:bg-gradient-to-r lg:my-16"
     >
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-fp-blue-dark dark:text-fp-blue-light text-center font-semibold"
         >
           {{ $t(data.sections[4].sectionTitle) }}
         </h2>
@@ -183,7 +183,7 @@ useHead({
           class="m-4 max-w-sm"
         >
           <div class="mb-2">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="text-fp-blue-dark dark:text-fp-blue-light font-semibold">
               {{ $t(card.title) }}
             </h3>
           </div>
@@ -193,7 +193,7 @@ useHead({
             </p>
             <NuxtLink
               :to="$t(card.link.url)"
-              class="font-semibold text-fp-blue-dark underline-offset-4 transition duration-150 ease-in hover:text-fp-blue-light hover:underline dark:text-gray-300"
+              class="text-fp-blue-dark hover:text-fp-blue-light font-semibold underline-offset-4 transition duration-150 ease-in hover:underline dark:text-gray-300"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
@@ -203,7 +203,7 @@ useHead({
     <section class="container mx-auto">
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-fp-blue-dark dark:text-fp-blue-light text-center font-semibold"
         >
           {{ $t(data.sections[5].sectionTitle) }}
         </h2>
@@ -215,21 +215,21 @@ useHead({
           class="flex max-w-sm flex-col items-center bg-gray-400 p-8 dark:bg-gray-800"
         >
           <div class="mb-2 flex gap-4">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="text-fp-blue-dark dark:text-fp-blue-light font-semibold">
               {{ $t(card.title) }}
             </h3>
 
             <Icon
               :name="supportCardIcon(card.title)"
               size="36"
-              class="order-first text-fp-blue-dark dark:text-fp-blue-light"
+              class="text-fp-blue-dark dark:text-fp-blue-light order-first"
             />
           </div>
           <div class="text-center">
             <p class="mb-2">{{ $t(card.description) }}</p>
             <NuxtLink
               :to="card.link.url"
-              class="font-semibold transition duration-150 ease-in-out hover:text-fp-blue-dark hover:underline hover:dark:text-fp-blue-light"
+              class="hover:text-fp-blue-dark hover:dark:text-fp-blue-light font-semibold transition duration-150 ease-in-out hover:underline"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>

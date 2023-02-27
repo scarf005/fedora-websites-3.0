@@ -14,7 +14,7 @@ let languageOpen = useState("languageOpen", () => null);
 
 <template>
   <header
-    class="fixed z-50 w-full bg-gradient-to-tr from-fp-blue-light to-fp-blue dark:from-fp-blue-dark dark:to-fp-blue"
+    class="fixed z-50 w-full bg-gradient-to-tr from-fp-newblue-500 to-fp-blue dark:from-fp-darkblue-500 dark:to-fp-blue"
   >
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
@@ -56,7 +56,7 @@ let languageOpen = useState("languageOpen", () => null);
           v-for="category in categories"
           :key="category.id"
           role="navigation"
-          :class="`rounded-xl p-1 hover:bg-fp-blue-dark md:p-3 ${
+          :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 md:p-3 ${
             categoryOpen?.label === category.label && 'md:bg-fp-blue'
           }`"
           @click="
@@ -79,7 +79,7 @@ let languageOpen = useState("languageOpen", () => null);
         <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
         <div class="hidden items-center justify-end md:flex">
           <div
-            class="cursor-pointer rounded-xl hover:bg-fp-blue-dark md:p-3"
+            class="cursor-pointer rounded-xl hover:bg-fp-darkblue-500 md:p-3"
             @click="
               languageOpen = !languageOpen;
               categoryOpen = null;
@@ -100,7 +100,7 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-fp-blue shadow-xl dark:bg-fp-blue-dark md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg xl:w-10/12"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-fp-blue shadow-xl dark:bg-fp-darkblue-500 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg xl:w-10/12"
     >
       <!-- close button -->
       <!-- <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
@@ -125,9 +125,9 @@ let languageOpen = useState("languageOpen", () => null);
             >
               <!-- Category List -->
               <div
-                :class="`mt-4 flex cursor-pointer justify-between rounded-l-xl px-2 py-4 text-white duration-150 ease-in-out hover:bg-fp-blue-dark lg:py-2 ${
+                :class="`mt-4 flex cursor-pointer justify-between rounded-l-xl px-2 py-4 text-white duration-150 ease-in-out hover:bg-fp-darkblue-500 lg:py-2 ${
                   sectionOpen === section &&
-                  'md:bg-fp-blue-dark dark:md:bg-fp-blue'
+                  'md:bg-fp-darkblue-500 dark:md:bg-fp-blue'
                 }`"
                 role="button"
                 @click="sectionOpen = section"
@@ -181,7 +181,7 @@ let languageOpen = useState("languageOpen", () => null);
               <li
                 v-for="link in sectionOpen.links"
                 :key="link.id"
-                class="rounded-lg p-4 hover:bg-gray-300 dark:hover:bg-fp-blue-dark"
+                class="rounded-lg p-4 hover:bg-gray-300 dark:hover:bg-fp-darkblue-500"
               >
                 <FpLink :href="link.path">
                   <h4 class="mb-2 font-medium text-gray-600 dark:text-gray-200">
