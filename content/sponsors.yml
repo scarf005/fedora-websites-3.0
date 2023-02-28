@@ -1,0 +1,60 @@
+path: sponsors
+title: Fedora Sponsors
+description: The Fedora Project is proud to have the following organizations as sponsors.
+sections:
+  - sectionTitle: Red Hat
+    sectionDescription:
+      Red Hat, Inc. is the primary sponsor for the Fedora Project.
+      Red Hat provides the Fedora Project with a wide variety of resources,
+      including full-time employee support, infrastructure, hardware and
+      bandwidth, event funding, and legal counsel.
+    images: public/assets/images/redhat-trans.png
+  - sectionTitle: Sponsors
+    sectionDescription: "The Fedora Project is also grateful to the following
+      sponsors for providing substantial support:"
+    content:
+      - title: Dell
+        image: public/assets/images/dell.gif
+        link:
+          text: Dell
+          url: https://linux.dell.com/
+      - title: Proio
+        link:
+          url: https://www.proio.com/
+          text: Proio
+        image: public/assets/images/proio.jpg
+      - title: Server Beach
+        link:
+          url: https://aptum.com/
+          text: Aptum
+        image: public/assets/images/serverbeach.png
+      - title: Open Source Lab
+        link:
+          url: https://osuosl.org/
+          text: Open Source Lab
+        image: public/assets/images/open_source_lab.png
+      - title: Colocation
+        link:
+          url: https://www.colocationamerica.com/
+          text: Colocation
+        image: public/assets/images/colocation-america-logo.png
+      - title: Ibiblio
+        link:
+          url: https://www.ibiblio.org/
+          text: Ibiblio
+        image: public/assets/images/ibiblio.png
+      - title: Bodhost
+        image: public/assets/images/bodhost.png
+        link:
+          text: Bodhost
+          url: https://www.bodhost.com/
+      - title: Internetx
+        link:
+          url: https://www.internetx.com/
+          text: Internetx
+        image: public/assets/images/internetx.png
+      - title: Cdn77
+        image: public/assets/images/cdn77.png
+        link:
+          url: https://www.cdn77.com/
+          text: Cdn77

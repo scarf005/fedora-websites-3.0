@@ -4,7 +4,7 @@ description: Run server workloads on bare metal or virtual machines with the
   latest open source technologies curated by the Fedora Community
 header_images:
   - image: public/assets/images/hack.png
-  - image: public/assets/images/server.jpg
+  - image: public/assets/images/server-header.png
 links:
   - text: Download Now
     url: /server/download/
@@ -15,17 +15,17 @@ sections:
         description:
           Quickly deploy a server with the tools you need to spin up your
           workloads
-        image: public/assets/images/fedora-server-3.png
+        image: public/assets/images/interactive-local-020.png
       - title: Cockpit
         description:
           A built-in remote server administration tool is ready to use on
           first boot
-        image: public/assets/images/server_main.png
+        image: public/assets/images/vm-management-cockpit-001.png
       - title: Latest Technologies
         description:
           Run virtual machines or containers with libvert(link to project)
-          and podman(link to project) managed through Cockpit
-        image: public/assets/images/monitor-2.png
+          and podman(link to project) managed through Cockpit.
+        image: public/assets/images/podman.svg
       - title: Stable Ecosystem
         description: Enables a variety of server workloads
         image: public/assets/images/fedora-server-1.png
@@ -33,8 +33,8 @@ sections:
         description:
           Serving the needs of small to medium businesses, home labs, and
           future enterprise workloads
-        image: public/assets/images/fedora-server-3.png
-    images: public/assets/images/fedora-server-1.png
+        image: public/assets/images/server_main.png
+    images: ""
   - sectionTitle: Built by you
     images: public/assets/images/flock-budapest-2019-bg.jpg
     sectionDescription: >-
