@@ -4,22 +4,17 @@ const { locale } = useI18n();
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
 
+// TODO: Fetch BETA metadata if beta toggle is enabled
 const { data: images_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
-
-// TODO: Fetch BETA metadata if beta toggle is enabled
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
 );
 
-let betaSwitch = useState("betaSwitch", () => false);
-function toggleBetaSwitch() {
-  this.betaSwitch = !this.betaSwitch;
-}
-
+const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
-
+// for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
   aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -133,7 +128,7 @@ useContentHead(data);
       >
         <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
         <div>
-          <FpSwitch @switchToggled="toggleBetaSwitch()" />
+          <FpSwitch @switchToggled="betaSwitch = !betaSwitch" />
         </div>
       </div>
 
