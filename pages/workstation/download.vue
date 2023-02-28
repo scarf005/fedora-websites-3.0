@@ -13,9 +13,9 @@ const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
 );
 
-const betaSwitch = useState("betaSwitch", () => false);
+let betaSwitch = useState("betaSwitch", () => false);
 function toggleBetaSwitch() {
-  betaSwitch = !betaSwitch;
+  this.betaSwitch = !this.betaSwitch;
 }
 
 const verifyModal = useState("verifyModal", () => ({ show: false }));
