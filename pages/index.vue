@@ -167,11 +167,11 @@ useHead({
       </div>
     </section>
     <section
-      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-light/25 dark:to-fp-blue-light/25 md:bg-gradient-to-r lg:my-16"
+      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-300/25 dark:to-fp-newblue/25 md:bg-gradient-to-r lg:my-16"
     >
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
         >
           {{ $t(data.sections[4].sectionTitle) }}
         </h2>
@@ -183,7 +183,7 @@ useHead({
           class="m-4 max-w-sm"
         >
           <div class="mb-2">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
               {{ $t(card.title) }}
             </h3>
           </div>
@@ -193,17 +193,17 @@ useHead({
             </p>
             <NuxtLink
               :to="$t(card.link.url)"
-              class="font-semibold text-fp-blue-dark underline-offset-4 transition duration-150 ease-in hover:text-fp-blue-light hover:underline dark:text-gray-300"
+              class="font-semibold text-fp-darkblue underline-offset-4 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
         </article>
       </div>
     </section>
-    <section class="container mx-auto">
+    <section class="container mx-auto pb-8 lg:pb-12">
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
         >
           {{ $t(data.sections[5].sectionTitle) }}
         </h2>
@@ -212,24 +212,24 @@ useHead({
         <article
           v-for="card in data.sections[5].content"
           :key="card.id"
-          class="flex max-w-sm flex-col items-center bg-gray-400 p-8 dark:bg-gray-800"
+          class="flex max-w-sm flex-col items-center rounded-md bg-gray-400 p-8 dark:bg-gray-800"
         >
           <div class="mb-2 flex gap-4">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
               {{ $t(card.title) }}
             </h3>
 
             <Icon
               :name="supportCardIcon(card.title)"
               size="36"
-              class="order-first text-fp-blue-dark dark:text-fp-blue-light"
+              class="order-first text-fp-darkblue dark:text-fp-newblue"
             />
           </div>
           <div class="text-center">
             <p class="mb-2">{{ $t(card.description) }}</p>
             <NuxtLink
               :to="card.link.url"
-              class="font-semibold transition duration-150 ease-in-out hover:text-fp-blue-dark hover:underline hover:dark:text-fp-blue-light"
+              class="font-semibold transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
