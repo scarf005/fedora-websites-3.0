@@ -427,7 +427,7 @@ collections:
                       - { label: "Bronze", value: "bronze" }
                       - { label: "Media", value: "media" }
                       - { label: "Placeholder", value: "placeholder" }
-  
+
       # Events Partial Data
       - label: "Events Partial"
         name: "events-partial"
@@ -476,7 +476,7 @@ collections:
                 name: "url"
                 widget: "string"
                 required: false
-  
+
           - label: "Cards"
             label_singular: "card"
             name: "cards"
@@ -503,7 +503,7 @@ collections:
   #################
   # General Pages #
   #################
-  
+
   - label: "General Pages"
     name: "pages"
     files:
@@ -868,7 +868,7 @@ collections:
   #################
   # Release Data #
   #################
-  
+
   - label: "Release Information"
     name: "release"
     files:

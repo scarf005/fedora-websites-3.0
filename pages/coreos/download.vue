@@ -113,6 +113,16 @@ function switchStream(name) {
       console.log("switching to next view");
       break;
   }
+  window.requestAnimationFrame(() => {
+    if (document) {
+      Array.from(document.querySelectorAll(".coreos-stream-sel")).forEach(
+        function (el) {
+          el.classList.remove("active");
+        }
+      );
+      document.getElementById(name)?.classList.add("active");
+    }
+  });
 }
 
 function switchArch(name) {
@@ -272,7 +282,7 @@ useContentHead(data);
         dark: 'assets/images/fedora-coreos-logo.png',
       }"
       home="/coreos"
-      textColor="text-fp-magenta dark:text-[#f472b6]"
+      textColor="text-fp-magenta"
       :items="[
         { name: 'Download', link: '/coreos/download' },
         { name: 'Community', link: '/coreos/community' },
@@ -284,9 +294,7 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-magenta dark:text-[#f472b6]">
-            Fedora CoreOS
-          </span>
+          <span class="text-fp-magenta"> Fedora CoreOS </span>
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(streams.sectionDescription) }}
@@ -313,11 +321,11 @@ useContentHead(data);
                 id="stable"
                 @click="switchStream('stable')"
                 href="#arches"
-                class="mx-auto mb-4 rounded bg-fp-blue py-1 px-3 text-sm font-bold text-white"
+                class="coreos-stream-sel"
                 >Show Downloads</a
               >
             </template>
-            <!-- Testing border-fp-green-dark bg-fp-green-dark -->
+            <!-- Testing border-fp-green-700 bg-fp-green-700 -->
           </CoreOsStream>
           <CoreOsStreamLoading v-else />
 
@@ -327,16 +335,16 @@ useContentHead(data);
             :version="test_data.architectures.x86_64.artifacts.metal.release"
             :last_update="test_data.metadata['last-modified']"
             icon="fa-solid:flask"
-            color="fp-green-dark"
+            color="fp-green-700"
             json_url="https://builds.coreos.fedoraproject.org/streams/testing.json"
           >
             {{ $t(streams.content[1].description) }}
             <template #footer>
               <a
-                id="test"
+                id="testing"
                 @click="switchStream('testing')"
                 href="#arches"
-                class="mx-auto mb-4 rounded bg-fp-green-dark py-1 px-3 text-sm font-bold text-white"
+                class="coreos-stream-sel"
                 >Show Downloads</a
               >
             </template>
@@ -359,7 +367,7 @@ useContentHead(data);
                 id="next"
                 @click="switchStream('next')"
                 href="#arches"
-                class="mx-auto mb-4 rounded bg-fp-orange py-1 px-3 text-sm font-bold text-white"
+                class="coreos-stream-sel"
                 >Show Downloads</a
               >
             </template>
@@ -370,7 +378,7 @@ useContentHead(data);
           <Icon
             name="ei:spinner-3"
             size="64"
-            class="animate-spin !align-baseline text-fp-magenta dark:text-[#f472b6]"
+            class="animate-spin !align-baseline text-fp-magenta"
           />
         </div>
       </div>
@@ -386,9 +394,7 @@ useContentHead(data);
         <div class="text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue dark:text-gray-200">
             {{ $t("Pick your") }}
-            <span class="text-fp-magenta dark:text-[#f472b6]"
-              >{{ $t("architecture") }}
-            </span>
+            <span class="text-fp-magenta">{{ $t("architecture") }} </span>
           </h2>
           <p class="text-gray-600 dark:text-fp-gray-light">
             {{ $t(architectures.sectionDescription) }}
@@ -396,7 +402,7 @@ useContentHead(data);
         </div>
         <div class="mx-auto p-5">
           <div
-            class="flex flex-wrap justify-between gap-4 text-center text-fp-blue-dark dark:text-white"
+            class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 dark:text-white"
           >
             <a
               id="x86_64"
@@ -801,36 +807,44 @@ body.has-modal {
 
 .coreos-theme-stable .coreos-theme-text,
 .coreos-theme-stable .fp-card.coreos-theme h3 {
-  @apply text-black dark:text-gray-200;
+  @apply text-fp-blue-900 dark:text-fp-blue-500;
 }
 
 .coreos-theme-testing .coreos-theme-text,
 .coreos-theme-testing .fp-card.coreos-theme h3 {
-  @apply text-black dark:text-gray-200;
+  @apply text-fp-green-900 dark:text-fp-green-700;
 }
 
 .coreos-theme-next .coreos-theme-text,
 .coreos-theme-next .fp-card.coreos-theme h3 {
-  @apply text-black dark:text-gray-200;
+  @apply text-fp-orange-900 dark:text-fp-orange-700;
 }
 
 .coreos-theme-stable .coreos-theme .fp-download-item a {
-  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
-  @apply text-fp-magenta dark:text-[#f472b6];
+  @apply border-fp-blue-900 hover:bg-fp-blue-900 hover:text-white dark:border-fp-blue-500 hover:dark:bg-fp-blue-500 hover:dark:text-white;
+  @apply text-fp-blue-900 dark:text-fp-blue-500;
 }
 
 .coreos-theme-testing .coreos-theme .fp-download-item a {
-  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
-  @apply text-fp-magenta dark:text-[#f472b6];
+  @apply border-fp-green-900 hover:bg-fp-green-900 hover:text-white dark:border-fp-green-700 hover:dark:bg-fp-green-700 hover:dark:text-white;
+  @apply text-fp-green-900 dark:text-fp-green-700;
 }
 
 .coreos-theme-next .coreos-theme .fp-download-item a {
-  @apply border-fp-magenta hover:bg-fp-magenta hover:text-white dark:border-[#f472b6] hover:dark:bg-[#f472b6] hover:dark:text-white;
-  @apply text-fp-magenta dark:text-[#f472b6];
+  @apply border-fp-orange-900 hover:bg-fp-orange-900 hover:text-white dark:border-fp-orange-700 hover:dark:bg-fp-orange-900 hover:dark:text-white;
+  @apply text-fp-orange-900 dark:text-fp-orange-700;
+}
+
+a.coreos-stream-sel {
+  @apply mx-auto mb-4 border-b-8 border-fp-blue/10 py-1 px-6 text-sm font-bold text-black transition hover:border-fp-newblue-500 dark:text-white dark:hover:border-gray-200;
+}
+
+a.coreos-stream-sel.active {
+  @apply border-fp-blue dark:border-gray-400;
 }
 
 #arches a {
-  @apply grow basis-64 border-b-8 border-transparent p-2 transition-colors hover:border-fp-blue-light dark:hover:border-gray-200;
+  @apply grow basis-64 border-b-8 border-fp-blue/10 p-2 transition-colors hover:border-fp-newblue-500 dark:hover:border-gray-200;
 }
 
 #arches .active {

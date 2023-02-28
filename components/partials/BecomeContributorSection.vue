@@ -10,11 +10,11 @@ let { data } = await useAsyncData(() => {
   <div class="container mx-auto max-w-7xl">
     <div class="my-5 p-2">
       <h4
-        class="mb-2 text-lg font-semibold text-fp-blue-light dark:text-gray-200"
+        class="mb-2 text-lg font-semibold text-fp-newblue-500 dark:text-gray-200"
       >
         <Icon
           name="fa6-solid:door-open"
-          class="mr-1 !align-top text-fp-blue-light dark:text-gray-200"
+          class="mr-1 !align-top text-fp-newblue-500 dark:text-gray-200"
           size="1.5rem"
         />
         {{ $t(data.sectionTitle) }}
@@ -47,7 +47,7 @@ let { data } = await useAsyncData(() => {
       </p>
       <div class="flex flex-wrap items-center justify-center gap-24">
         <FpLink
-          class="text-center text-xl text-fp-blue-dark underline dark:text-gray-200"
+          class="text-center text-xl text-fp-darkblue-500 underline dark:text-gray-200"
           v-for="item in data.communityChannels.content"
           :href="item.link"
         >

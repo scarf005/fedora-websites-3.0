@@ -6,9 +6,7 @@ useContentHead(data);
 </script>
 
 <template>
-  <main
-    class="border-t-8 border-fp-magenta dark:border-[#f472b6] dark:bg-neutral-800 md:mt-2"
-  >
+  <main class="border-t-8 border-fp-magenta dark:bg-neutral-800 md:mt-2">
     <header>
       <TheLocalBar
         :image="{
@@ -20,13 +18,13 @@ useContentHead(data);
           { name: 'Download', link: '/coreos/download' },
           { name: 'Community', link: '/coreos/community' },
         ]"
-        textColor="text-fp-magenta dark:text-[#f472b6]"
+        textColor="text-fp-magenta"
       />
       <section
         class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
       >
         <div class="container mx-auto">
-          <h1 class="mb-4 text-fp-magenta dark:text-[#f472b6] xl:mb-8">
+          <h1 class="mb-4 text-fp-magenta xl:mb-8">
             {{ data.title }}
           </h1>
           <p class="text-fp-gray">{{ data.description }}</p>
@@ -54,7 +52,7 @@ useContentHead(data);
     />
 
     <!-- Fedora Events -->
-    <FpEventSection color="text-fp-magenta dark:text-[#f472b6]" />
+    <FpEventSection color="text-fp-magenta" />
 
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />

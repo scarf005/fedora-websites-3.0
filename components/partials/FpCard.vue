@@ -83,7 +83,7 @@ if (props.description) {
 }
 
 .fp-card--variant-btn footer > a {
-  @apply mx-auto my-3 flex max-w-fit justify-center rounded-lg bg-fp-blue-light py-2 px-10 font-medium text-white;
+  @apply mx-auto my-3 flex max-w-fit justify-center rounded-lg bg-fp-newblue-500 py-2 px-10 font-medium text-white hover:bg-fp-newblue-700 dark:bg-fp-newblue-700 hover:dark:bg-fp-newblue-500;
 }
 
 .fp-card--variant-wide {
@@ -99,7 +99,7 @@ if (props.description) {
 }
 
 .fp-card--variant-event footer > a {
-  @apply underline dark:text-fp-blue-light lg:max-w-prose;
+  @apply underline dark:text-fp-newblue-500 lg:max-w-prose;
 }
 
 .fp-card--variant-event img {

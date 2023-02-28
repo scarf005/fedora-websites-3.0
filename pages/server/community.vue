@@ -1,28 +1,41 @@
 <script setup>
 const { locale } = useI18n();
 const data = await getCMS("editions/server/community");
-const events = await getCMS("partials/events");
+
 useContentHead(data);
 </script>
-<template>
-  <main class="border-t-8 border-fp-orange md:mt-2">
-    <TheLocalBar
-      image="assets/images/fedora_white.png"
-      home="/iot"
-      textColor="text-fp-orange"
-      :items="[
-        { name: 'Download', link: '/server/download' },
-        { name: 'Community', link: '/server/community' },
-      ]"
-    />
 
-    <FpHeader
-      :title="data.title"
-      :description="data.description"
-      :details="data.sections[0].sectionDescription"
-      color="text-fp-orange"
-      bgColor="bg-fp-blue-light/10"
-    />
+<template>
+  <main class="border-t-8 border-fp-orange dark:bg-neutral-800 md:mt-2">
+    <header>
+      <TheLocalBar
+        :image="{
+          light: 'assets/images/fedora-server-logo-light.png',
+          dark: 'assets/images/fedora-server-logo.png',
+        }"
+        home="/server"
+        textColor="text-fp-orange"
+        :items="[
+          { name: 'Download', link: '/server/download' },
+          { name: 'Community', link: '/server/community' },
+        ]"
+      />
+
+      <section
+        class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
+      >
+        <div class="container mx-auto">
+          <h1 class="mb-4 text-fp-orange xl:mb-8">
+            {{ data.title }}
+          </h1>
+          <p class="text-fp-gray">{{ data.description }}</p>
+        </div>
+      </section>
+      <FpDescriptionSection
+        :sectionDescription="data.sections[0].sectionDescription"
+        class="dark:bg-neutral-900"
+      />
+    </header>
 
     <!-- communication channels -->
     <FpCommunicationSection
@@ -33,14 +46,16 @@ useContentHead(data);
 
     <!-- ways to get involved -->
     <FpGetInvolvedSection
-      color="purple"
+      color="orange"
       :sectionTitle="data.sections[2].sectionTitle"
       :content="data.sections[2].content"
+      class="dark:bg-neutral-900"
     />
 
     <!-- Fedora Events -->
-    <FpEventSection color="text-fp-purple" />
+    <FpEventSection color="text-fp-orange" />
+
     <!-- Publication Section -->
-    <FpPublicationSection />
+    <FpPublicationSection class="dark:bg-black" />
   </main>
 </template>
