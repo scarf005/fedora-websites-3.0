@@ -3,16 +3,55 @@ const { locale } = useI18n();
 
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
-const arches = release_data._value.ga.workstation;
-const betaArches = release_data._value.beta.workstation;
-useContentHead(data);
 
-function evalLink(uri, release) {
-  uri = uri
-    .replaceAll("{releasever}", release.releasever)
-    .replaceAll("{rc_version}", release.rc_version);
-  return `${release_data._value.download_baseurl}${uri}`;
+const { data: images_data } = await useFetch(
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
+);
+
+// TODO: Fetch BETA metadata is beta toggle is enabled
+const { data: beta_data } = await useFetch(
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+);
+
+const betaSwitch = useState("betaSwitch", () => false);
+function toggleBetaSwitch() {
+  this.betaSwitch = !this.betaSwitch;
 }
+
+const verifyModal = useState("verifyModal", () => ({ show: false }));
+
+const dlpath = {
+  x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
+  aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
+  s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+  ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+};
+
+function updateVerify(art) {
+  console.log(art);
+  verifyModal.value.art_name = art.path.substring(
+    art.path.lastIndexOf("/") + 1
+  );
+  let path = art.path.substring(0, art.path.lastIndexOf("/"));
+  verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+  // Fedora-Workstation-37-1.7-x86_64-CHECKSUM
+  verifyModal.value.checksum = `${dlpath[art.arch]}/${
+    release_data._value.ga.releasever
+  }/${path}/${verifyModal.value.chk_name}`;
+  if (document) {
+    document.body.classList.add("has-modal");
+  }
+  verifyModal.value.show = true;
+}
+
+function closeVerify() {
+  if (document) {
+    document.body.classList.remove("has-modal");
+  }
+  verifyModal.value.show = false;
+}
+
+useContentHead(data);
 </script>
 
 <template>
@@ -88,6 +127,16 @@ function evalLink(uri, release) {
     <section
       class="bg-gradient-to-r from-green-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
     >
+      <div
+        class="container mx-auto flex max-w-7xl justify-end"
+        v-if="release_data.beta.enabled"
+      >
+        <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
+        <div>
+          <FpSwitch @switchToggled="toggleBetaSwitch()" />
+        </div>
+      </div>
+
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 p-5 md:col-span-1">
           <div class="flex">
@@ -124,50 +173,71 @@ function evalLink(uri, release) {
           <h2 class="text-fp-newblue-500">
             {{ $t(data.sections[2].sectionTitle) }}
           </h2>
+
           <p class="mb-10 text-fp-gray">
             {{ $t(data.sections[2].sectionDescription) }}
           </p>
-          <div v-for="(arch, i) in arches">
-            <p class="mt-10 font-bold">{{ $t(arch.title) }}</p>
-
-            <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
-              v-for="item in arch.items"
-            >
-              <p>
-                <span class="mr-5 font-semibold">
-                  Fedora Linux {{ release_data.ga.releasever }} </span
-                ><span> {{ $t(item.name) }}</span>
-              </p>
-              <FpLink
-                :href="evalLink(item.uri, release_data.ga)"
-                class="rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
-              >
-                <Icon name="fa-download" />
-              </FpLink>
-            </div>
-
-            <div
-              class="mb-2 flex items-center justify-between rounded-xl border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-700 dark:bg-gray-800"
-              v-for="item in betaArches[i].items"
-              v-if="release_data.beta.enabled"
-            >
-              <p>
-                <span class="mr-5 font-semibold">
-                  Fedora Linux {{ release_data.beta.releasever }} </span
-                ><span> {{ $t(item.name) }}</span>
-                <span
-                  class="ml-4 rounded-full bg-gray-300 px-2 text-sm font-bold text-white dark:bg-gray-700"
-                  >{{ $t("BETA") }}</span
-                >
-              </p>
-              <FpLink
-                :href="evalLink(item.uri, release_data.beta)"
-                class="rounded-xl border border-blue-400 p-2 px-4 text-blue-400"
-              >
-                <Icon name="fa-download" />
-              </FpLink>
-            </div>
+          <div v-if="betaSwitch == false">
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.ga.releasever"
+              class="workstation-theme"
+            />
+          </div>
+          <!-- Beta Releases -->
+          <div v-else>
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Workstation"
+              @verify-click="updateVerify"
+              :artifacts="images_data.payload.images.Workstation.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="workstation-theme"
+            />
           </div>
         </div>
       </div>
@@ -266,5 +336,80 @@ function evalLink(uri, release) {
     <section class="py-12 px-4 dark:bg-black">
       <DownloadComplianceSection />
     </section>
+
+    <!-- Verify pop up -->
+    <Transition
+      enter-active-class="transform duration-200 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-30"
+      leave-active-class="transform duration-200 ease-out"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <FpModal class="pt-12" v-if="verifyModal.show" @close-modal="closeVerify">
+        <template #header>
+          <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
+        </template>
+        <p class="text-base">
+          {{
+            $t(
+              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+            )
+          }}
+        </p>
+        <ul class="list-outside list-decimal pl-8 pt-2">
+          <li>
+            <p class="mb-2">
+              Download the
+              <a
+                class="text-fp-blue"
+                :href="verifyModal.checksum"
+                target="_blank"
+                >checksum file</a
+              >
+              into the same directory as the image you downloaded.
+            </p>
+          </li>
+          <li>
+            <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
+            <pre
+              class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
+            ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            <p class="mb-4 text-sm">
+              <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
+
+              {{ $t("You can verify the details of the GPG key(s)") }}
+              <FpLink class="text-sm text-fp-blue" href="/security">here</FpLink
+              >.
+            </p>
+          </li>
+          <li>
+            <p class="mb-2">{{ $t("Verify the checksum file is valid") }}</p>
+            <pre
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
+            ><code>gpgv --keyring ./fedora.gpg {{ verifyModal.chk_name }}</code></pre>
+          </li>
+          <li>
+            <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
+            <pre
+              class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
+            ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
+          </li>
+        </ul>
+        <p>
+          {{
+            $t(
+              "If the output states that the file is valid, then it's ready to use!"
+            )
+          }}
+        </p>
+      </FpModal>
+    </Transition>
   </main>
 </template>
+<style>
+.workstation-theme .fp-download-item a,
+.workstation-theme .fp-beta-download-item a {
+  @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
+}
+</style>

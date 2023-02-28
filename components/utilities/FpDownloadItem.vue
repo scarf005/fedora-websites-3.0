@@ -24,6 +24,9 @@ const props = defineProps({
   verifyLink: {
     type: String,
   },
+  isBeta: {
+    type: Boolean,
+  },
 });
 
 const variantClasses = props.variants.map(
@@ -59,6 +62,7 @@ const prettyType = {
   "vagrant-virtualbox": "Vagrant",
   "tar-gz": "Compressed Image",
   boot: "Netboot",
+  live: "Live ISO",
 };
 </script>
 
@@ -73,6 +77,11 @@ const prettyType = {
           <span class="w-0 basis-full sm:hidden"></span>
           <span class="">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
+          <span
+            v-if="isBeta"
+            class="ml-4 items-center rounded-full bg-gray-300 px-2 text-[0.875rem] font-bold text-white dark:bg-gray-700"
+            >{{ $t("BETA") }}
+          </span>
         </slot>
       </p>
       <div class="inline-flex">
@@ -100,7 +109,12 @@ const prettyType = {
   @apply border border-gray-200 bg-white px-5 py-2 dark:border-gray-900 dark:bg-neutral-900;
 }
 
-.fp-download-item a {
+.fp-download-item a,
+.fp-download-item--variant-beta a {
   @apply cursor-pointer border py-1 px-3 transition-colors;
+}
+
+.fp-download-item--variant-beta {
+  @apply border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-900 dark:bg-gray-800;
 }
 </style>

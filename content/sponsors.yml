@@ -3,7 +3,8 @@ title: Fedora Sponsors
 description: The Fedora Project is proud to have the following organizations as sponsors.
 sections:
   - sectionTitle: Red Hat
-    sectionDescription: Red Hat, Inc. is the primary sponsor for the Fedora Project.
+    sectionDescription:
+      Red Hat, Inc. is the primary sponsor for the Fedora Project.
       Red Hat provides the Fedora Project with a wide variety of resources,
       including full-time employee support, infrastructure, hardware and
       bandwidth, event funding, and legal counsel.
