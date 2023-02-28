@@ -4,18 +4,20 @@ const data = await getCMS("sponsors");
 </script>
 <template>
   <main>
-    <header>
-      <div>
+    <header class="mx-auto grid grid-cols-2">
+      <div class="col-span-2 justify-self-center">
         <!-- h1 Hero Content -->
         <h1>{{ data.title }}</h1>
         <p>{{ data.description }}</p>
       </div>
-      <div>
+      <div class="bg-fp-newblue">
         <!-- Red Hat Section -->
-        <h2>{{ data.sections[0].sectionDescription }}</h2>
+        <FpImage :src="data.sections[0].images" class="" />
+      </div>
+      <div class="bg-fp-newblue">
+        <p class="max-w-prose">{{ data.sections[0].sectionDescription }}</p>
       </div>
     </header>
-    <pre> {{ data }} </pre>
     <section>
       <header>
         <!-- h2 General  Sponsor Gallery Header -->
