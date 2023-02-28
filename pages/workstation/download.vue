@@ -8,12 +8,12 @@ const { data: images_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
 
-// TODO: Fetch BETA metadata is beta toggle is enabled
+// TODO: Fetch BETA metadata if beta toggle is enabled
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
 );
 
-const betaSwitch = useState("betaSwitch", () => false);
+let betaSwitch = useState("betaSwitch", () => false);
 function toggleBetaSwitch() {
   this.betaSwitch = !this.betaSwitch;
 }
@@ -153,18 +153,17 @@ useContentHead(data);
             </div>
           </div>
           <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
+            v-for="item in data.sections[1].content"
+            class="download-section mb-2"
           >
-            <p class="font-semibold">Fedora Media Writer</p>
-            <div class="flex">
-              <FpLink
-                :href="item.link.url"
-                v-for="item in data.sections[1].content"
-                class="mx-1 rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
-              >
-                <Icon :name="item.link.text" />
-              </FpLink>
-            </div>
+            <FpDownloadItem
+              name="Fedora Media Writer"
+              type="Application"
+              :format="item.title"
+              :downloadLink="item.link.url"
+              :theme="theme"
+              :icon="item.link.text"
+            />
           </div>
         </div>
 
@@ -244,41 +243,20 @@ useContentHead(data);
     </section>
 
     <!-- SECURITY -->
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+      <CoreOsVerifySection />
+    </section>
+
+    <!-- BUT WAIT! THERE'S MORE. -->
     <section class="bg-white py-24 px-4 dark:bg-neutral-900">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
-        <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[3].content[0].title) }}
-          </h2>
-          <p class="mb-5 text-fp-gray">
-            {{ $t(data.sections[3].content[0].description) }}
-          </p>
-          <FpLink
-            class="text-fp-newblue-500"
-            :href="data.sections[3].content[0].link.url"
-            >{{ $t(data.sections[3].content[0].link.text) }}</FpLink
-          >
-        </div>
-        <div class="col-span-2 my-5 p-2 md:col-span-1">
+        <div class="col-span-2 my-5 p-2">
           <h2 class="mb-5 text-fp-newblue-500">
             {{ $t(data.sections[3].content[1].title) }}
           </h2>
           <p class="mb-5 text-fp-gray">
             {{ $t(data.sections[3].content[1].description) }}
           </p>
-          <div
-            class="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-2 dark:border-gray-700 dark:bg-gray-900"
-          >
-            <p class="font-semibold">
-              {{ $t(data.sections[3].content[1].link.text) }}
-            </p>
-            <FpLink
-              :href="data.sections[3].content[1].link.url"
-              class="rounded-xl border border-blue-400 py-2 px-4 text-blue-400"
-            >
-              <Icon name="fa-download" />
-            </FpLink>
-          </div>
         </div>
       </div>
     </section>
@@ -411,5 +389,9 @@ useContentHead(data);
 .workstation-theme .fp-download-item a,
 .workstation-theme .fp-beta-download-item a {
   @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
+}
+
+.download-section .fp-download-item {
+  @apply rounded-xl;
 }
 </style>

@@ -27,6 +27,9 @@ const props = defineProps({
   isBeta: {
     type: Boolean,
   },
+  icon: {
+    type: String,
+  },
 });
 
 const variantClasses = props.variants.map(
@@ -95,7 +98,7 @@ const prettyType = {
             title="Download"
             class="-ml-px rounded-r-xl"
           >
-            <Icon name="fa-download" class="!align-baseline" />
+            <Icon :name="icon ? icon : 'fa-download'" class="!align-baseline" />
           </FpLink>
         </slot>
       </div>
