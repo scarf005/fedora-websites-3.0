@@ -112,15 +112,15 @@ sections:
     content:
       - title: Chat with the team
         description: Participate in workstation discussions on
-          [discussions.fedoraproject.org](discussions.fedoraproject.org)
+          **[[discussion.fedoraproject.org/tag/workstation](https://discussion.fedoraproject.org/tag/workstation)]**
       - title: Report & discuss issues
         description: Ask and answer questions on
-          [ask.fedoraproject.org](ask.fedoraproject.org)
+          **[[discussion.fedoraproject.org/tag/ask](https://discussion.fedoraproject.org/tag/ask)]**
       - title: Participate in a test day
         description:
           Help keep the Fedora experience smooth, performant and bug-free by
-          participating in a [test
-          day](https://fedoraproject.org/wiki/QA/Test_Days)
+          participating in a **[[test
+          day](https://fedoraproject.org/wiki/QA/Test_Days)]**
       - title: Help the design and docs teams with workstation
         description:
           Open to all current and potential contributors on weekly - find

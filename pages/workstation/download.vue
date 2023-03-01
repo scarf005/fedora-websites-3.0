@@ -47,6 +47,20 @@ function closeVerify() {
 }
 
 useContentHead(data);
+
+// desktop images
+if (data._value.sections[2].sectionDescription) {
+  data._value.sections[2].sectionDescriptionMd = await mdparser(
+    data._value.sections[2].sectionDescription
+  );
+}
+
+// alternative images
+if (data._value.sections[3].content[1].description) {
+  data._value.sections[3].content[1].descriptionMd = await mdparser(
+    data._value.sections[3].content[1].description
+  );
+}
 </script>
 
 <template>
@@ -169,9 +183,11 @@ useContentHead(data);
             {{ $t(data.sections[2].sectionTitle) }}
           </h2>
 
-          <p class="mb-10 text-fp-gray">
-            {{ $t(data.sections[2].sectionDescription) }}
-          </p>
+          <ContentRenderer
+            tag="p"
+            class="mb-10 text-fp-gray"
+            :value="data.sections[2].sectionDescriptionMd"
+          />
           <div v-if="betaSwitch == false">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
