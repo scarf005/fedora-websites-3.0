@@ -155,6 +155,7 @@ useContentHead(data);
               name="Fedora Media Writer"
               type="Application"
               :format="item.title"
+              @verify-click="$emit('verifyClick', v)"
               :downloadLink="item.link.url"
               :theme="theme"
               :icon="item.link.text"
@@ -380,9 +381,10 @@ useContentHead(data);
     </Transition>
   </main>
 </template>
+
 <style>
-.workstation-theme .fp-download-item a,
-.workstation-theme .fp-beta-download-item a {
+.fp-download-item a,
+.fp-beta-download-item a {
   @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
 }
 
