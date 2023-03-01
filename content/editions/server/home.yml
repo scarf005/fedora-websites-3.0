@@ -2,6 +2,11 @@ path: index
 title: A Community Server OS
 description: Run server workloads on bare metal or virtual machines with the
   latest open source technologies curated by the Fedora Community
+image:
+  src: https://stg.fedoraproject.org/assets/images/server-header.jpg
+  alt: Fedora Server Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/hack.png
   - image: public/assets/images/server-header.jpg
