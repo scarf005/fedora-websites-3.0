@@ -13,8 +13,18 @@ let languageOpen = useState("languageOpen", () => null);
 </script>
 
 <template>
-  <header
-    class="fixed z-50 w-full bg-gradient-to-tr from-fp-newblue-500 to-fp-blue dark:from-fp-darkblue-500 dark:to-fp-blue"
+  <!-- BACKDROP, MAINLY TO CLOSE ON BLUR -->
+  <div
+    v-if="categoryOpen || languageOpen"
+    class="fixed inset-0"
+    @click="
+      categoryOpen = null;
+      languageOpen = null;
+    "
+  ></div>
+
+  <div
+    class="fixed z-50 w-full bg-gradient-to-r from-fp-newblue-500 to-fp-blue dark:from-fp-darkblue-500 dark:to-fp-blue"
   >
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
@@ -57,7 +67,7 @@ let languageOpen = useState("languageOpen", () => null);
           :key="category.id"
           role="navigation"
           :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 md:p-3 ${
-            categoryOpen?.label === category.label && 'md:bg-fp-blue'
+            categoryOpen?.label === category.label && 'md:bg-fp-darkblue-500'
           }`"
           @click="
             languageOpen = null;
@@ -100,18 +110,11 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-fp-blue shadow-xl dark:bg-fp-darkblue-500 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg xl:w-10/12"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-gradient-to-r from-fp-newblue-500 to-fp-blue shadow-xl dark:bg-fp-darkblue-500 dark:from-fp-darkblue-500 dark:to-fp-blue md:absolute md:h-[43rem]"
     >
-      <!-- close button -->
-      <!-- <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
-        <button @click="categoryOpen = null" class="hover:opacity-75">
-          <Icon name="fa6-solid:x" size="24" />
-        </button>
-      </div> -->
-
       <div class="grid lg:grid-cols-12">
         <!-- LEFT COLUMN DESKTOP -->
-        <section class="col-span-3 pl-2 pt-5">
+        <section class="col-span-3 pl-2 pt-5 lg:col-start-2">
           <header class="hidden w-fit lg:block">
             <h2 class="px-2 text-xl font-semibold uppercase text-white">
               {{ $t(categoryOpen.label) }}
@@ -127,7 +130,7 @@ let languageOpen = useState("languageOpen", () => null);
               <div
                 :class="`mt-4 flex cursor-pointer justify-between rounded-l-xl px-2 py-4 text-white duration-150 ease-in-out hover:bg-fp-darkblue-500 lg:py-2 ${
                   sectionOpen === section &&
-                  'md:bg-fp-darkblue-500 dark:md:bg-fp-blue'
+                  'md:bg-fp-darkblue-500 dark:md:bg-fp-darkblue-700'
                 }`"
                 role="button"
                 @click="sectionOpen = section"
@@ -165,7 +168,7 @@ let languageOpen = useState("languageOpen", () => null);
 
         <!-- RIGHT COLUMN DESKTOP -->
         <section
-          class="col-span-9 hidden min-h-screen bg-gray-200 p-5 text-white dark:bg-gray-900 lg:block"
+          class="col-span-7 hidden min-h-[42rem] rounded-xl bg-gray-200 p-5 text-white dark:bg-fp-darkblue-900 lg:block"
           v-if="sectionOpen"
         >
           <div>
@@ -198,5 +201,5 @@ let languageOpen = useState("languageOpen", () => null);
         </section>
       </div>
     </nav>
-  </header>
+  </div>
 </template>
