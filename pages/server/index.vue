@@ -26,6 +26,20 @@ useContentHead(data);
     >
       <FpImage :src="data.header_images[0].image" />
     </FpBanner>
+    <svg
+      viewBox="0 0 236 36"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      class="absolute -bottom-5 -z-10"
+    >
+      <g>
+        <path
+          class="fill-white dark:fill-neutral-900"
+          d="M 0 0 L 62 26 L 236 0 L 236 36 L 0 36 L 0 10"
+        />
+      </g>
+    </svg>
   </FpHero>
 
   <!-- Benefits Section -->
