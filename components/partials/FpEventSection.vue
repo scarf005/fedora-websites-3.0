@@ -53,7 +53,7 @@ for (let item of data._value.body[0].content) {
           />
           <ContentRenderer
             tag="p"
-            class="my-0 text-fp-gray-darkest dark:text-fp-gray md:my-2"
+            class="markdown my-0 text-fp-gray-darkest dark:text-fp-gray md:my-2"
             :value="data.body[0].content[0].descriptionMd"
           />
           <div
