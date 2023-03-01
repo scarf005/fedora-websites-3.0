@@ -22,9 +22,9 @@ sections:
           first boot
         image: public/assets/images/vm-management-cockpit-001.png
       - title: Latest Technologies
-        description:
-          Run virtual machines or containers with libvert(link to project)
-          and podman(link to project) managed through Cockpit.
+        description: Run virtual machines or containers with
+          [libvirt](https://libvirt.org/) and [podman](https://podman.io/)
+          managed through [Cockpit](https://cockpit-project.org/).
         image: public/assets/images/podman.svg
       - title: Stable Ecosystem
         description: Enables a variety of server workloads

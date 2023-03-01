@@ -259,22 +259,6 @@ if (data._value.sections[3].content[1].description) {
       <CoreOsVerifySection />
     </section>
 
-    <!-- BUT WAIT! THERE'S MORE. -->
-    <section class="bg-white py-24 px-4 dark:bg-neutral-900">
-      <div class="container mx-auto grid max-w-7xl grid-cols-2">
-        <div class="col-span-2 my-5 p-2">
-          <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[3].content[1].title) }}
-          </h2>
-          <ContentRenderer
-            tag="p"
-            class="mb-5 text-fp-gray"
-            :value="data.sections[3].content[1].descriptionMd"
-          />
-        </div>
-      </div>
-    </section>
-
     <!-- LAPTOPS PRELOADED -->
     <section class="bg-blue-50 py-24 px-4 dark:bg-neutral-800">
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
