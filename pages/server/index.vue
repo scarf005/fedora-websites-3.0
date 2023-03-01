@@ -35,7 +35,7 @@ useContentHead(data);
     >
       <g>
         <path
-          class="fill-white dark:fill-neutral-800"
+          class="fill-white dark:fill-neutral-900"
           d="M 0 0 L 62 26 L 236 0 L 236 36 L 0 36 L 0 10"
         />
       </g>
