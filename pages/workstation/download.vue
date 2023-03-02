@@ -47,6 +47,20 @@ function closeVerify() {
 }
 
 useContentHead(data);
+
+// desktop images
+if (data._value.sections[2].sectionDescription) {
+  data._value.sections[2].sectionDescriptionMd = await mdparser(
+    data._value.sections[2].sectionDescription
+  );
+}
+
+// alternative images
+if (data._value.sections[3].content[1].description) {
+  data._value.sections[3].content[1].descriptionMd = await mdparser(
+    data._value.sections[3].content[1].description
+  );
+}
 </script>
 
 <template>
@@ -155,6 +169,7 @@ useContentHead(data);
               name="Fedora Media Writer"
               type="Application"
               :format="item.title"
+              @verify-click="$emit('verifyClick', v)"
               :downloadLink="item.link.url"
               :theme="theme"
               :icon="item.link.text"
@@ -168,9 +183,11 @@ useContentHead(data);
             {{ $t(data.sections[2].sectionTitle) }}
           </h2>
 
-          <p class="mb-10 text-fp-gray">
-            {{ $t(data.sections[2].sectionDescription) }}
-          </p>
+          <ContentRenderer
+            tag="p"
+            class="mb-10 text-fp-gray"
+            :value="data.sections[2].sectionDescriptionMd"
+          />
           <div v-if="betaSwitch == false">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
@@ -240,20 +257,6 @@ useContentHead(data);
     <!-- SECURITY -->
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
       <CoreOsVerifySection />
-    </section>
-
-    <!-- BUT WAIT! THERE'S MORE. -->
-    <section class="bg-white py-24 px-4 dark:bg-neutral-900">
-      <div class="container mx-auto grid max-w-7xl grid-cols-2">
-        <div class="col-span-2 my-5 p-2">
-          <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[3].content[1].title) }}
-          </h2>
-          <p class="mb-5 text-fp-gray">
-            {{ $t(data.sections[3].content[1].description) }}
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- LAPTOPS PRELOADED -->
@@ -380,9 +383,10 @@ useContentHead(data);
     </Transition>
   </main>
 </template>
+
 <style>
-.workstation-theme .fp-download-item a,
-.workstation-theme .fp-beta-download-item a {
+.fp-download-item a,
+.fp-beta-download-item a {
   @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
 }
 

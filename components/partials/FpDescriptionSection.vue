@@ -19,7 +19,7 @@ if (props.sectionDescription) {
     >
       <ContentRenderer
         tag="p"
-        class="text-fp-gray-darkest dark:text-fp-gray"
+        class="markdown text-fp-gray-darkest dark:text-fp-gray"
         :value="sectionDescriptionMd"
       />
     </div>

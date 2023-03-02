@@ -416,7 +416,7 @@
     ]
   },
   "support": {
-    "label": "Support",
+    "label": "Help",
     "icon": "bi:life-preserver",
     "description": "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
     "sections": [

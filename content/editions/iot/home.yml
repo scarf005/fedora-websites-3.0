@@ -1,6 +1,11 @@
 path: index
 title: The solid foundation for IoT ecosystems
 description: A lightweight yet powerful and scalable OS
+image:
+  src: https://stg.fedoraproject.org/assets/images/iot.png
+  alt: Fedora IoT Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/iot.png
   - image: public/assets/images/iot_background.jpg
@@ -52,19 +57,18 @@ sections:
       communities.
 
 
-      Fedora IoT is created by a team in the Fedora community called the **IoT Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [IoT Working Group website](https://docs.fedoraproject.org/en-US/iot-wg/).
+      Fedora IoT is created by a team in the Fedora community called the **IoT Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the **[[IoT Working Group website](https://docs.fedoraproject.org/en-US/iot-wg/)]**.
     content:
       - title: Report & discuss issues
         description:
-          You can view, file, and discuss Fedora IoT issues on [the Fedora
-          IoT issue tracker](<>)
+          You can view, file, and discuss Fedora IoT issues on the **[[Fedora
+          IoT issue tracker](https://pagure.io/fedora-iot/issues)]**
       - title: Chat with the team
-        description:
-          Visit **\#fedora-iot** on [irc.libera.chat](<>) and on **\#iot**
-          [on the Fedora Matrix Chat server](<>).
+        description: Visit \#fedora-iot on irc.libera.chat or visit
+          **[[chat.fedoraproject.org/#/room/#iot:fedoraproject.org](https://chat.fedoraproject.org/#/room/#iot:fedoraproject.org)]**.
       - title: Join the mailing list
         description:
           Sign up at **iot@lists.fedoraproject.org** to receive meeting
-          agendas and minute (**view archives**)
+          agendas and minutes **[[view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)]**
       - title: Attend a meeting
-        description: There are a wide variety of supported installation methods.
+        description: Open to all current and potential contributors **every Wednesday at 16:00 UTC** on **[[chat.fedoraproject.org/#/room/#meeting:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org)]**.

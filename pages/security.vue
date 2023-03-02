@@ -95,7 +95,7 @@ useContentHead(data);
             {{ $t(data.packageSection.description) }}
           </p>
           <ContentRenderer
-            class="mt-2 text-start text-fp-gray-dark dark:text-fp-gray-light"
+            class="markdown mt-2 text-start text-fp-gray-dark dark:text-fp-gray-light"
             v-if="data.packageSection.contentMd"
             tag="p"
             :value="data.packageSection.contentMd"
