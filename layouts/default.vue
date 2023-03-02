@@ -26,4 +26,7 @@ useHead({
 body {
   @apply dark:bg-neutral-700 dark:text-white;
 }
+.markdown a {
+  text-decoration: underline;
+}
 </style>
