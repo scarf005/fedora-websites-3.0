@@ -30,9 +30,3 @@ const descriptionMd = await mdparser(props.description);
     </div>
   </div>
 </template>
-
-<style>
-.markdown a {
-  text-decoration: underline;
-}
-</style>
