@@ -34,7 +34,7 @@ sections:
           text: fa-apple
           url: https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg
   - sectionTitle: On Linux? Or just want an ISO file?
-    sectionDescription: Not sure how to use these files? Learn **[[here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)]**
+    sectionDescription: Not sure how to use these files? Learn [here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
   - sectionTitle: Security, Installs
     content:
       - title: We take security seriously
@@ -46,7 +46,7 @@ sections:
           text: Verify Your Download
       - title: But wait! There's more.
         description: Need something a bit different? Check out our other Fedora
-          Workstation downloads **[[here](https://alt.fedoraproject.org/)]**, featuring
+          Workstation downloads [here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
         link:
           url: https://download.fedoraproject.org

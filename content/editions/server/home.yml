@@ -47,21 +47,21 @@ sections:
       and open source software built by inclusive, welcoming, and open-minded
       communities.
 
-      Fedora Server is created by a team in the Fedora community called the **Server Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the **[[Server Working Group website](https://docs.fedoraproject.org/en-US/server-working-group/)]**.
+      Fedora Server is created by a team in the Fedora community called the **Server Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [Server Working Group website](https://docs.fedoraproject.org/en-US/server-working-group/).
     content:
       - title: Report & discuss issues
         description: You can view, file, and discuss Fedora Server issues on the
-          **[[Fedora Server issue
-          tracker](https://pagure.io/fedora-server/issues)]**.
+          [Fedora Server issue
+          tracker](https://pagure.io/fedora-server/issues).
       - title: Chat with the team
         description: Visit \#fedora-server on irc.libera.chat or visit
-          **[[chat.fedoraproject.org/#/room/#server:fedoraproject.org](https://chat.fedoraproject.org/#/room/#server:fedoraproject.org)]**
+          [chat.fedoraproject.org/#/room/#server:fedoraproject.org](https://chat.fedoraproject.org/#/room/#server:fedoraproject.org)
       - title: Join the mailing list
         description:
-          Sign up at **[server@lists.fedoraproject.org](mailto:server@lists.fedoraproject.org)** to receive
-          meeting agendas and minutes **[[view
-          archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)]**
+          Sign up at [server@lists.fedoraproject.org](mailto:server@lists.fedoraproject.org) to receive
+          meeting agendas and minutes [view
+          archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)
       - title: Attend a meeting
         description:
           "Open to all current and potential contributors **every 1st and 3rd
-          Wednesday at 18:00 UTC** on  **[[chat.fedoraproject.org/#/room/#meeting:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org)]**."
+          Wednesday at 18:00 UTC** on  [chat.fedoraproject.org/#/room/#meeting:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org)."

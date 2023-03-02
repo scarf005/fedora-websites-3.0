@@ -57,18 +57,18 @@ sections:
       communities.
 
 
-      Fedora IoT is created by a team in the Fedora community called the **IoT Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the **[[IoT Working Group website](https://docs.fedoraproject.org/en-US/iot-wg/)]**.
+      Fedora IoT is created by a team in the Fedora community called the **IoT Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [IoT Working Group website](https://docs.fedoraproject.org/en-US/iot-wg/).
     content:
       - title: Report & discuss issues
         description:
-          You can view, file, and discuss Fedora IoT issues on the **[[Fedora
-          IoT issue tracker](https://pagure.io/fedora-iot/issues)]**
+          You can view, file, and discuss Fedora IoT issues on the [Fedora
+          IoT issue tracker](https://pagure.io/fedora-iot/issues)
       - title: Chat with the team
         description: Visit \#fedora-iot on irc.libera.chat or visit
-          **[[chat.fedoraproject.org/#/room/#iot:fedoraproject.org](https://chat.fedoraproject.org/#/room/#iot:fedoraproject.org)]**.
+          [chat.fedoraproject.org/#/room/#iot:fedoraproject.org](https://chat.fedoraproject.org/#/room/#iot:fedoraproject.org).
       - title: Join the mailing list
         description:
           Sign up at **iot@lists.fedoraproject.org** to receive meeting
-          agendas and minutes **[[view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)]**
+          agendas and minutes [view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)
       - title: Attend a meeting
-        description: Open to all current and potential contributors **every Wednesday at 16:00 UTC** on **[[chat.fedoraproject.org/#/room/#meeting:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org)]**.
+        description: Open to all current and potential contributors **every Wednesday at 16:00 UTC** on [chat.fedoraproject.org/#/room/#meeting:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).
