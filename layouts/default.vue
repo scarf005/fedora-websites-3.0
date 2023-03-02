@@ -28,5 +28,6 @@ body {
 }
 .markdown a {
   text-decoration: underline;
+  font-weight: bold;
 }
 </style>
