@@ -4,6 +4,7 @@ defineProps({
   current: Boolean,
   class: String,
 });
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -11,7 +12,7 @@ defineProps({
     :href="`${
       href.includes('https')
         ? href
-        : $config.app.baseURL.replace(new RegExp('/$'), '') + href
+        : localePath($config.app.baseURL.replace(new RegExp('/$'), '') + href)
     }`"
     :aria-current="current ? 'page' : undefined"
     :class="class"
