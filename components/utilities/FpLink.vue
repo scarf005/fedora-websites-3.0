@@ -12,7 +12,7 @@ const localePath = useLocalePath();
     :href="`${
       href.includes('https')
         ? href
-        : localePath($config.app.baseURL.replace(new RegExp('/$'), '') + href)
+        : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href)
     }`"
     :aria-current="current ? 'page' : undefined"
     :class="class"
