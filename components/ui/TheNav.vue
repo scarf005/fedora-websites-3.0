@@ -186,7 +186,13 @@ let languageOpen = useState("languageOpen", () => null);
                 :key="link.id"
                 class="rounded-lg p-4 hover:bg-gray-300 dark:hover:bg-fp-darkblue-500"
               >
-                <FpLink :href="link.path">
+                <FpLink
+                  :href="link.path"
+                  @click="
+                    sectionOpen = null;
+                    categoryOpen = null;
+                  "
+                >
                   <h4 class="mb-2 font-medium text-gray-600 dark:text-gray-200">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}
