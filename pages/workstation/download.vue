@@ -185,7 +185,7 @@ if (data._value.sections[3].content[1].description) {
 
           <ContentRenderer
             tag="p"
-            class="mb-10 text-fp-gray"
+            class="markdown mb-10 text-fp-gray"
             :value="data.sections[2].sectionDescriptionMd"
           />
           <div v-if="betaSwitch == false">
