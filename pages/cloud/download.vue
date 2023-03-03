@@ -8,6 +8,10 @@ const { data: images_data } = await useFetch(
 // TODO: Fetch BETA metadata is beta toggle is enabled
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
+// Fetch pre-generated Cloud AMIs list
+const cloud_ami = await getCMS("editions/cloud/ami_list");
+const showAMI = useState("showAMI", () => ({ show: false }));
+
 const releaseDate =
   images_data._value.payload.compose.date.substr(0, 4) +
   "-" +
@@ -21,6 +25,44 @@ const dlpath = {
   s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
 };
+
+// TODO: Define this in a AMI component to be used here and by coreos dl page
+const EC2_regions = {
+  "us-east-2": "US East (Ohio)",
+  "us-east-1": "US East (N. Virginia)",
+  "us-west-1": "US West (N. California)",
+  "us-west-2": "US West (Oregon)",
+  "af-south-1": "Africa (Cape Town)",
+  "ap-east-1": "Asia Pacific (Hong Kong)",
+  "ap-south-2": "Asia Pacific (Hyderabad)",
+  "ap-southeast-3": "Asia Pacific (Jakarta)",
+  "ap-south-1": "Asia Pacific (Mumbai)",
+  "ap-northeast-3": "Asia Pacific (Osaka)",
+  "ap-northeast-2": "Asia Pacific (Seoul)",
+  "ap-southeast-1": "Asia Pacific (Singapore)",
+  "ap-southeast-2": "Asia Pacific (Sydney)",
+  "ap-northeast-1": "Asia Pacific (Tokyo)",
+  "ca-central-1": "Canada (Central)",
+  "eu-central-1": "Europe (Frankfurt)",
+  "eu-west-1": "Europe (Ireland)",
+  "eu-west-2": "Europe (London)",
+  "eu-south-1": "Europe (Milan)",
+  "eu-west-3": "Europe (Paris)",
+  "eu-south-2": "Europe (Spain)",
+  "eu-north-1": "Europe (Stockholm)",
+  "eu-central-2": "Europe (Zurich)",
+  "me-south-1": "Middle East (Bahrain)",
+  "me-central-1": "Middle East (UAE)",
+  "sa-east-1": "South America (São Paulo)",
+};
+
+function updateAMIs(art) {
+  showAMI.value.art = art;
+  if (document) {
+    document.body.classList.add("has-modal");
+  }
+  showAMI.value.show = true;
+}
 
 function updateVerify(art) {
   console.log(art);
@@ -39,11 +81,11 @@ function updateVerify(art) {
   verifyModal.value.show = true;
 }
 
-function closeVerify() {
+function closeModal(state) {
   if (document) {
     document.body.classList.remove("has-modal");
   }
-  verifyModal.value.show = false;
+  state.show = false;
 }
 
 useContentHead(data);
@@ -104,7 +146,28 @@ useContentHead(data);
             :dlPrefix="dlpath.x86_64"
             :version="release_data.ga.releasever"
             class="cloud-theme"
-          />
+          >
+            <template #extra>
+              <div class="download-section mb-2">
+                <FpDownloadItem
+                  :name="`Fedora Cloud ${release_data.ga.releasever}`"
+                  type="aws"
+                  v-if="cloud_ami?.ga?.x86_64"
+                >
+                  <template #btn>
+                    <a
+                      title="List AWS EC2 region"
+                      class="rounded-xl"
+                      @click="updateAMIs(cloud_ami.ga.x86_64)"
+                    >
+                      <Icon name="fa-solid:th-list" class="!align-baseline" />
+                    </a>
+                  </template>
+                </FpDownloadItem>
+              </div>
+            </template>
+          </DownloadSection>
+
           <DownloadSection
             name="For ARM® aarch64 systems"
             art_name="Fedora Cloud"
@@ -113,7 +176,27 @@ useContentHead(data);
             :dlPrefix="dlpath.aarch64"
             :version="release_data.ga.releasever"
             class="cloud-theme"
-          />
+          >
+            <template #extra>
+              <div class="download-section mb-2">
+                <FpDownloadItem
+                  :name="`Fedora Cloud ${release_data.ga.releasever}`"
+                  type="aws"
+                  v-if="cloud_ami?.ga?.arm64"
+                >
+                  <template #btn>
+                    <a
+                      title="List AWS EC2 region"
+                      class="rounded-xl"
+                      @click="updateAMIs(cloud_ami.ga.arm64)"
+                    >
+                      <Icon name="fa-solid:th-list" class="!align-baseline" />
+                    </a>
+                  </template>
+                </FpDownloadItem>
+              </div>
+            </template>
+          </DownloadSection>
           <DownloadSection
             name="For Power ppc64le systems"
             art_name="Fedora Cloud"
@@ -156,7 +239,11 @@ useContentHead(data);
       leave-from-class="opacity-100"
       leave-to-class="opacity-0"
     >
-      <FpModal class="pt-12" v-if="verifyModal.show" @close-modal="closeVerify">
+      <FpModal
+        class="pt-12"
+        v-if="verifyModal.show"
+        @close-modal="closeModal(verifyModal)"
+      >
         <template #header>
           <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
         </template>
@@ -213,6 +300,55 @@ useContentHead(data);
             )
           }}
         </p>
+      </FpModal>
+    </Transition>
+    <Transition
+      enter-active-class="transform duration-200 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-30"
+      leave-active-class="transform duration-200 ease-out"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <FpModal
+        class="pt-12"
+        v-if="showAMI.show"
+        @close-modal="closeModal(showAMI)"
+      >
+        <template #header>
+          <h5 class="text-xl font-medium">Select AWS EC2 region</h5>
+        </template>
+        <table class="w-full table-auto">
+          <thead>
+            <tr>
+              <th class="">Region</th>
+              <th class="hidden sm:block">AMI ID</th>
+              <th class="text-center">Launch instance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(ami, region) in showAMI.art"
+              class="hover:bg-gray-200 hover:dark:bg-slate-800"
+            >
+              <td class="pr-6">{{ EC2_regions[region] || region }}</td>
+              <td class="hidden pr-6 sm:block">{{ ami }}</td>
+              <td class="text-center">
+                <FpLink
+                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#launchAmi=${ami}`"
+                  target="blank"
+                  :title="`Launch in ${region}`"
+                  class="rounded-xl"
+                >
+                  <Icon
+                    name="material-symbols:rocket-launch"
+                    class="!align-baseline"
+                  />
+                </FpLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </FpModal>
     </Transition>
   </main>

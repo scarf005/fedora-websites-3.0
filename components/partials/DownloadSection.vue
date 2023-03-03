@@ -45,6 +45,7 @@ const props = defineProps({
         :isBeta="isBeta"
       />
     </div>
+    <slot name="extra" />
   </div>
 </template>
 
