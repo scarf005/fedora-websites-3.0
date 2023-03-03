@@ -28,10 +28,10 @@ sections:
         description: Run virtual machines or containers with
           [libvirt](https://libvirt.org/) and [podman](https://podman.io/)
           managed through [Cockpit](https://cockpit-project.org/).
-        image: public/assets/images/bricksv1-c.png
+        image: public/assets/images/bricks-v1-bw.png
       - title: Stable Ecosystem
         description: Enables a variety of server workloads
-        image: public/assets/images/jigsaw-v1-c.png
+        image: public/assets/images/jigsaw-v1-bw.png
       - title: Platform
         description: Serving the needs of small to medium businesses, home labs, and
           future enterprise workloads
