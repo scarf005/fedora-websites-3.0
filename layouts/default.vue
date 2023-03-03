@@ -31,4 +31,8 @@ body {
   text-underline-offset: 0.15em;
   font-weight: bold;
 }
+.markdown-inline,
+.markdown-inline > * {
+  display: inline;
+}
 </style>
