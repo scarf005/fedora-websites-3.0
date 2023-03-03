@@ -88,7 +88,6 @@ if (data._value.sections[3].content[6].description) {
           </h3>
           <div>
             <ContentRenderer
-              tag="p"
               class="markdown mb-12 max-w-4xl text-center text-fp-gray md:text-start"
               :value="data.sections[3].content[6].descriptionMd"
             />
