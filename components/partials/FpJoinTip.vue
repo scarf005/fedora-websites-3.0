@@ -22,7 +22,7 @@ const descriptionMd = await mdparser(props.description);
       >
         {{ $t(title) }}
       </h4>
-      <p>
+      <div>
         <ContentRendererMarkdown
           tag="span"
           class="markdown text-sm text-fp-gray-dark dark:text-fp-gray"
@@ -40,7 +40,7 @@ const descriptionMd = await mdparser(props.description);
           class="ml-2 text-sm text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
           >{{ $t("Learn More") }}</NuxtLink
         >
-      </p>
+      </div>
     </div>
     <Icon
       name="fa6-solid:door-open"

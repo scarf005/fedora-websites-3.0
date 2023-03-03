@@ -184,7 +184,6 @@ if (data._value.sections[3].content[1].description) {
           </h2>
 
           <ContentRenderer
-            tag="p"
             class="markdown mb-10 text-fp-gray"
             :value="data.sections[2].sectionDescriptionMd"
           />
