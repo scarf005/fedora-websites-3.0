@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: "Become a Fedora Contributor",
@@ -12,6 +12,7 @@ defineProps({
     type: "Object",
   },
 });
+const descriptionMd = await mdparser(props.description);
 </script>
 <template>
   <aside class="container my-2 flex gap-2">
@@ -21,8 +22,12 @@ defineProps({
       >
         {{ $t(title) }}
       </h4>
-      <p class="text-sm text-fp-gray-dark dark:text-fp-gray">
-        {{ $t(description) }}
+      <div>
+        <ContentRendererMarkdown
+          tag="p"
+          class="markdown text-sm text-fp-gray-dark dark:text-fp-gray"
+          :value="descriptionMd"
+        />
         <NuxtLink
           v-if="link"
           :to="link.url"
@@ -35,7 +40,7 @@ defineProps({
           class="ml-2 text-sm text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
           >{{ $t("Learn More") }}</NuxtLink
         >
-      </p>
+      </div>
     </div>
     <Icon
       name="fa6-solid:door-open"
