@@ -8,11 +8,15 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <NuxtLink
-    :href="localePath(href)"
+  <a
+    :href="`${
+      href.includes('https')
+        ? href
+        : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href)
+    }`"
     :aria-current="current ? 'page' : undefined"
     :class="class"
   >
     <slot></slot>
-  </NuxtLink>
+  </a>
 </template>
