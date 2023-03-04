@@ -9,7 +9,7 @@ const localePath = useLocalePath();
 
 <template>
   <NuxtLink
-    :href="href.includes('https') ? href : localePath(href)"
+    :href="localePath(href)"
     :aria-current="current ? 'page' : undefined"
     :class="class"
   >
