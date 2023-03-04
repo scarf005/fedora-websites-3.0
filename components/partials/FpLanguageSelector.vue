@@ -22,9 +22,9 @@ const availableLocales = computed(() => {
       :key="item.name"
       class="mb-2 w-28 overflow-hidden text-ellipsis px-1"
     >
-      <FpLink :href="item.href" :current="item.current">
+      <a :href="item.href" :current="item.current">
         {{ item.name }}
-      </FpLink>
+      </a>
     </li>
   </ul>
 </template>
