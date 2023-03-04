@@ -10,8 +10,8 @@ const showRoute = computed(() => {
 });
 </script>
 <template>
-  <FpLink
-    href="/"
+  <NuxtLink
+    to="/"
     class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:opacity-50"
   >
     <!-- SVG Icon Logo -->
@@ -53,5 +53,5 @@ const showRoute = computed(() => {
       </g>
     </svg>
     <p class="text-xl font-medium md:hidden">{{ showRoute }}</p>
-  </FpLink>
+  </NuxtLink>
 </template>

@@ -23,9 +23,9 @@ const props = defineProps({
   <nav>
     <!-- Home Link for Local Navigation -->
     <div v-if="!global">
-      <FpLink :href="home.url" class="font-display text-xl font-semibold"
+      <NuxtLink :to="home.url" class="font-display text-xl font-semibold"
         >{{ home.label.toUpperCase() }}
-      </FpLink>
+      </NuxtLink>
     </div>
     <ul class="flex gap-4 text-white">
       <li v-for="link in navLinks" :key="link.id">
