@@ -22,7 +22,12 @@ const availableLocales = computed(() => {
       :key="item.name"
       class="mb-2 w-28 overflow-hidden text-ellipsis px-1"
     >
-      <a :href="item.href" :current="item.current">
+      <a
+        :href="`${
+          $config.app.baseURL.replace(new RegExp('/$'), '') + item.href
+        }`"
+        :current="item.current"
+      >
         {{ item.name }}
       </a>
     </li>
