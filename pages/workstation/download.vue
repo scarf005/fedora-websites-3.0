@@ -4,8 +4,7 @@ const { locale } = useI18n();
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
 
-// TODO: Fetch BETA metadata if beta toggle is enabled
-const { data: images_data } = await useFetch(
+const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
 const { data: beta_data } = await useFetch(
@@ -14,6 +13,7 @@ const { data: beta_data } = await useFetch(
 
 const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
+
 // for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -28,11 +28,21 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
-  // Fedora-Workstation-37-1.7-x86_64-CHECKSUM
-  verifyModal.value.checksum = `${dlpath[art.arch]}/${
-    release_data._value.ga.releasever
-  }/${path}/${verifyModal.value.chk_name}`;
+  if (betaSwitch.value) {
+    // Beta
+    verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+    // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
+    verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
+      release_data._value.beta.releasever
+    }_Beta/${path}/${verifyModal.value.chk_name}`;
+  } else {
+    // GA
+    verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+    // Fedora-Workstation-37-1.7-x86_64-CHECKSUM
+    verifyModal.value.checksum = `${dlpath[art.arch]}/${
+      release_data._value.ga.releasever
+    }/${path}/${verifyModal.value.chk_name}`;
+  }
   if (document) {
     document.body.classList.add("has-modal");
   }
@@ -81,7 +91,7 @@ if (data._value.sections[3].content[1].description) {
     />
 
     <!-- TITLE -->
-    <section class="px-2 pt-24 pb-12 text-center lg:text-start">
+    <section class="px-2 pt-24 pb-8 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
@@ -132,122 +142,132 @@ if (data._value.sections[3].content[1].description) {
       </div>
     </section>
 
-    <!-- FEDORA MEDIA WRITER DOWNLOAD -->
     <section
       class="bg-gradient-to-r from-green-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
     >
-      <div
-        class="container mx-auto flex max-w-7xl justify-end"
-        v-if="release_data.beta.enabled"
-      >
-        <p class="mr-3 text-fp-gray">Show Beta Downloads</p>
-        <div>
-          <FpSwitch @switchToggled="betaSwitch = !betaSwitch" />
+      <div class="container mx-auto my-8 max-w-7xl px-2">
+        <div
+          class="flex items-center justify-end gap-4"
+          v-if="release_data.beta.enabled"
+        >
+          <p class="text-fp-gray">Show Beta downloads</p>
+          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
         </div>
-      </div>
-
-      <div class="container mx-auto grid max-w-7xl grid-cols-2">
-        <div class="col-span-2 p-5 md:col-span-1">
-          <div class="flex">
-            <div>
-              <FpImage :src="data.sections[1].images" />
-            </div>
-            <div>
-              <h2 class="text-fp-newblue-500">
-                {{ $t(data.sections[1].sectionTitle) }}
-              </h2>
-              <p class="mb-10 text-fp-gray">
-                {{ $t(data.sections[1].sectionDescription) }}
-              </p>
-            </div>
-          </div>
-          <div
-            v-for="item in data.sections[1].content"
-            class="download-section mb-2"
-          >
-            <FpDownloadItem
-              name="Fedora Media Writer"
-              type="Application"
-              :format="item.title"
-              @verify-click="$emit('verifyClick', v)"
-              :downloadLink="item.link.url"
-              :theme="theme"
-              :icon="item.link.text"
-            />
-          </div>
-        </div>
-
-        <!-- DESKTOP IMAGES -->
-        <div class="col-span-2 p-5 md:col-span-1">
-          <h2 class="text-fp-newblue-500">
-            {{ $t(data.sections[2].sectionTitle) }}
-          </h2>
-
-          <ContentRenderer
-            class="markdown mb-10 text-fp-gray"
-            :value="data.sections[2].sectionDescriptionMd"
+        <div class="flex justify-end pb-8">
+          <FpJoinTip
+            description="Help us with testing!"
+            inline="true"
+            class="origin-right scale-75"
           />
-          <div v-if="betaSwitch == false">
-            <DownloadSection
-              name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.x86_64"
-              :dlPrefix="dlpath.x86_64"
-              :version="release_data.ga.releasever"
-              class="workstation-theme"
-            />
-            <DownloadSection
-              name="For ARM® aarch64 systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.aarch64"
-              :dlPrefix="dlpath.aarch64"
-              :version="release_data.ga.releasever"
-              class="workstation-theme"
-            />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.ga.releasever"
-              class="workstation-theme"
-            />
+        </div>
+        <div
+          class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
+        >
+          <!-- FEDORA MEDIA WRITER DOWNLOAD -->
+          <div class="">
+            <div class="flex">
+              <div>
+                <FpImage :src="data.sections[1].images" />
+              </div>
+              <div>
+                <h3 class="text-fp-newblue-500">
+                  {{ $t(data.sections[1].sectionTitle) }}
+                </h3>
+                <p class="mb-10 text-fp-gray">
+                  {{ $t(data.sections[1].sectionDescription) }}
+                </p>
+              </div>
+            </div>
+            <div
+              v-for="item in data.sections[1].content"
+              class="workstation-theme download-section mb-2"
+            >
+              <FpDownloadItem name="Fedora Media Writer" :format="item.title">
+                <template #btn>
+                  <FpLink
+                    :href="item.link.url"
+                    title="Download"
+                    class="rounded-xl"
+                  >
+                    <Icon :name="item.link.text" class="!align-baseline" />
+                  </FpLink>
+                </template>
+              </FpDownloadItem>
+            </div>
           </div>
-          <!-- Beta Releases -->
-          <div v-else>
-            <DownloadSection
-              name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.x86_64"
-              :dlPrefix="dlpath.x86_64"
-              :version="release_data.beta.releasever"
-              isBeta
-              class="workstation-theme"
+
+          <!-- DESKTOP IMAGES -->
+          <div class="">
+            <h3 class="text-fp-newblue-500">
+              {{ $t(data.sections[2].sectionTitle) }}
+            </h3>
+
+            <ContentRenderer
+              class="markdown mb-10 text-fp-gray"
+              :value="data.sections[2].sectionDescriptionMd"
             />
-            <DownloadSection
-              name="For ARM® aarch64 systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.aarch64"
-              :dlPrefix="dlpath.aarch64"
-              :version="release_data.beta.releasever"
-              isBeta
-              class="workstation-theme"
-            />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Workstation"
-              @verify-click="updateVerify"
-              :artifacts="images_data.payload.images.Workstation.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.beta.releasever"
-              isBeta
-              class="workstation-theme"
-            />
+            <div v-if="betaSwitch == false">
+              <DownloadSection
+                name="For Intel and AMD x86_64 systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Workstation.x86_64"
+                :dlPrefix="dlpath.x86_64"
+                :version="release_data.ga.releasever"
+                class="workstation-theme"
+              />
+              <DownloadSection
+                name="For ARM® aarch64 systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Workstation.aarch64"
+                :dlPrefix="dlpath.aarch64"
+                :version="release_data.ga.releasever"
+                class="workstation-theme"
+              />
+              <DownloadSection
+                name="For Power ppc64le systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Workstation.ppc64le"
+                :dlPrefix="dlpath.ppc64le"
+                :version="release_data.ga.releasever"
+                class="workstation-theme"
+              />
+            </div>
+            <!-- Beta Releases -->
+            <div v-else>
+              <DownloadSection
+                name="For Intel and AMD x86_64 systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="beta_data.payload.images.Workstation.x86_64"
+                :dlPrefix="dlpath.x86_64"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="workstation-theme"
+              />
+              <DownloadSection
+                name="For ARM® aarch64 systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="beta_data.payload.images.Workstation.aarch64"
+                :dlPrefix="dlpath.aarch64"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="workstation-theme"
+              />
+              <DownloadSection
+                name="For Power ppc64le systems"
+                art_name="Fedora Workstation"
+                @verify-click="updateVerify"
+                :artifacts="beta_data.payload.images.Workstation.ppc64le"
+                :dlPrefix="dlpath.ppc64le"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="workstation-theme"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -384,9 +404,9 @@ if (data._value.sections[3].content[1].description) {
 </template>
 
 <style>
-.fp-download-item a,
-.fp-beta-download-item a {
-  @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
+.workstation-theme .fp-download-item a {
+  @apply border-fp-green-700 text-fp-green-700 hover:bg-fp-green-700 hover:text-white;
+  @apply dark:border-fp-green-900 dark:text-fp-green-900 dark:hover:bg-fp-green-900 dark:hover:text-white;
 }
 
 .download-section .fp-download-item {

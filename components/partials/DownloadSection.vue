@@ -37,12 +37,20 @@ const props = defineProps({
         :name="`${art_name} ${version}`"
         :type="v.type"
         :format="v.format"
+        :downloadLink="`${dlPrefix}/test/${version}_Beta/${v.path}`"
+        @verify-click="$emit('verifyClick', v)"
+        :theme="theme"
+        v-if="v.arch != 'src' && isBeta"
+        :variants="['beta']"
+      />
+      <FpDownloadItem
+        :name="`${art_name} ${version}`"
+        :type="v.type"
+        :format="v.format"
         :downloadLink="`${dlPrefix}/${version}/${v.path}`"
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
-        v-if="v.arch != 'src'"
-        :variants="isBeta ? ['beta'] : []"
-        :isBeta="isBeta"
+        v-if="v.arch != 'src' && !isBeta"
       />
     </div>
     <slot name="extra" />

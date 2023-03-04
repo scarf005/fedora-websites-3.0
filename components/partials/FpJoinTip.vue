@@ -11,11 +11,15 @@ const props = defineProps({
   link: {
     type: "Object",
   },
+  inline: {
+    type: Boolean,
+    default: false,
+  },
 });
 const descriptionMd = await mdparser(props.description);
 </script>
 <template>
-  <aside class="container my-2 flex gap-2">
+  <aside :class="{ 'fp-jointip-inline': inline, 'fp-jointip': !inline }">
     <div>
       <h4
         class="mb-2 text-lg font-semibold text-fp-newblue-500 dark:text-gray-200"
@@ -50,3 +54,24 @@ const descriptionMd = await mdparser(props.description);
     />
   </aside>
 </template>
+<style>
+.fp-jointip {
+  @apply container my-2 flex gap-2;
+}
+
+.fp-jointip-inline {
+  @apply flex gap-2;
+}
+
+.fp-jointip-inline > div {
+  @apply gap-2 sm:flex;
+}
+
+.fp-jointip-inline h4 {
+  @apply m-0 sm:after:content-['_-'];
+}
+
+.fp-jointip-inline > div > div {
+  @apply flex items-baseline justify-end;
+}
+</style>
