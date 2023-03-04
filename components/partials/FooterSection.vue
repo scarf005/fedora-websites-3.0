@@ -43,12 +43,12 @@ const fedoraLabel = computed(() => {
     </header>
     <ul :class="!mobileToggle ? 'hidden' : 'block'">
       <li v-for="link in links" :key="link.id">
-        <NuxtLink :to="link.path">{{ fedoraLabel }} {{ link.label }}</NuxtLink>
+        <FpLink :href="link.path">{{ fedoraLabel }} {{ link.label }}</FpLink>
       </li>
     </ul>
     <ul class="hidden sm:block">
       <li v-for="link in links" :key="link.id">
-        <NuxtLink :to="link.path">{{ fedoraLabel }} {{ link.label }}</NuxtLink>
+        <FpLink :href="link.path">{{ fedoraLabel }} {{ link.label }}</FpLink>
       </li>
     </ul>
   </section>

@@ -23,6 +23,7 @@ const community = computed(() => {
     discussion: path.community[0].links[0],
   };
 });
+let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
 <template>
@@ -36,10 +37,6 @@ const community = computed(() => {
           title="Editions"
           :links="navigation.downloads.sections[0].links"
         />
-        <!-- <FooterSection
-          title="Emerging Editions"
-          :links="navigation.downloads.sections[1].links"
-        /> -->
         <FooterSection
           title="Spins"
           :links="navigation.downloads.sections[2].links"
@@ -48,6 +45,21 @@ const community = computed(() => {
           title="Labs"
           :links="navigation.downloads.sections[3].links"
         />
+
+        <!-- language selector -->
+        <div
+          class="cursor-pointer pb-4 md:pb-0"
+          @click="
+            footerLanguageOpen = !footerLanguageOpen;
+            categoryOpen = null;
+            sectionOpen = null;
+          "
+        >
+          <a class="text-2xl font-semibold transition duration-300 ease-in-out">
+            {{ $t("Languages") }}
+          </a>
+          <FpLanguageSelector :open="footerLanguageOpen" />
+        </div>
 
         <FooterSection
           title="User Support"
@@ -67,55 +79,36 @@ const community = computed(() => {
             class="h-12 xl:ml-0"
           />
         </div>
-        <!-- language selector -->
-        <div
-          class="mx-auto cursor-pointer pb-4 md:pb-0"
-          @click="
-            footerLanguageOpen = !footerLanguageOpen;
-            categoryOpen = null;
-            sectionOpen = null;
-          "
-        >
-          <a
-            class="inline-flex items-center rounded text-fp-gray-darkest underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-          >
-            <span class="hidden md:block">{{ $t("Languages") }}</span
-            ><span class="md:hidden"
-              ><Icon name="fa6-solid:language" size="48" />
-            </span>
-          </a>
-          <FpLanguageSelector :open="footerLanguageOpen" />
-        </div>
         <!-- privacy etc links -->
         <ul
           class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
         >
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Privacy Statement") }}</NuxtLink
+              >{{ $t("Privacy Statement") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Legal") }}</NuxtLink
+              >{{ $t("Legal") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Code of Conduct") }}</NuxtLink
+              >{{ $t("Code of Conduct") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Sponsors") }}</NuxtLink
+              >{{ $t("Sponsors") }}</FpLink
             >
           </li>
         </ul>
