@@ -178,13 +178,13 @@
         "links": [
           {
             "label": "Fedora Discussion",
-            "path": "https://discussion.fedoraproject.org/",
+            "path": "https://discussion.fedoraproject.org/c/project",
             "icon": "fa6-solid:desktop",
             "description": "The official Fedora messaging board. Chat with other Fedorans about our many community projects."
           },
           {
             "label": "Fedora Matrix Chat",
-            "path": "https://discussion.fedoraproject.org/t/how-to-link-to-a-fedora-chat-matrix-room/33186",
+            "path": "https://chat.fedoraproject.org/#/welcome",
             "icon": "fa6-solid:desktop",
             "description": "The official chat space of Fedora Linux. This link will help you get logged into Fedora Matrix."
           },
@@ -196,7 +196,7 @@
           },
           {
             "label": "Ask Fedora",
-            "path": "https://ask.fedoraproject.org/",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": "Get help with your Fedora Operating System and learn more about the Fedora project on this official forum."
           },
@@ -299,31 +299,31 @@
         "links": [
           {
             "label": "Fedora Accounts",
-            "path": "#",
+            "path": "https://accounts.fedoraproject.org/",
             "icon": "fa6-brands:fedora",
             "description": ""
           },
           {
             "label": "Mote",
-            "path": "#",
+            "path": "https://meetbot.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Badges",
-            "path": "#",
+            "path": "https://badges.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Fedocal",
-            "path": "#",
+            "path": "https://calendar.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Elections",
-            "path": "#",
+            "path": "https://elections.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
@@ -340,20 +340,20 @@
         "description": "Our code can be found on the following Git Forges",
         "links": [
           {
-            "label": "Gitlab",
-            "path": "#",
+            "label": "GitLab",
+            "path": "https://gitlab.com/groups/fedora/-/saml/sso",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Pagure",
-            "path": "#",
+            "path": "https://pagure.io/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
-            "label": "Github",
-            "path": "#",
+            "label": "GitHub",
+            "path": "https://github.com/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -365,25 +365,25 @@
         "links": [
           {
             "label": "Bodhi",
-            "path": "#",
+            "path": "https://bodhi.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Koji",
-            "path": "#",
+            "path": "https://koji.fedoraproject.org/koji/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Copr",
-            "path": "#",
+            "path": "https://copr.fedorainfracloud.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Bugzilla",
-            "path": "#",
+            "path": "http://bugzilla.redhat.com/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -395,19 +395,19 @@
         "links": [
           {
             "label": "Join SIG",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/fedora-join/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Easy Fix",
-            "path": "#",
+            "path": "https://fedoraproject.org/easyfix/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Contributor Docs",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/project/join/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -426,55 +426,55 @@
         "links": [
           {
             "label": "Ask Fedora",
-            "path": "https://discussion.fedoraproject.org/",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": "Ask Fedora is a message board for getting help from the community.  you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, you’ve come to the right place!"
           },
           {
             "label": "Fedora Linux",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Workstation",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/workstation",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "IoT",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/iot",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Server",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/server",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Cloud",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/cloud",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "CoreOS",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/coreos",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Emerging Desktops",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Spins & Labs",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -491,43 +491,43 @@
           },
           {
             "label": "Fedora Council",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/project/leadership/#_fedora_council",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Diversity & Inclusion",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Engineering Teams",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/engineering/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Mindshare Teams",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/teams/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Program Management",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/council/fpgm/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Packaging Guidelines",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/packaging-guidelines/",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Legal",
-            "path": "#",
+            "path": "https://docs.fedoraproject.org/en-US/legal/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -539,19 +539,19 @@
         "links": [
           {
             "label": "New Users",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/ask",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Common Issues",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/ask/common-issues/82/none",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Announcements",
-            "path": "#",
+            "path": "https://discussion.fedoraproject.org/c/news",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
@@ -563,13 +563,13 @@
         "links": [
           {
             "label": "Fedora Wiki",
-            "path": "#",
+            "path": "https://fedoraproject.org/wiki/Fedora_Project_Wiki",
             "icon": "fa6-solid:desktop",
             "description": ""
           },
           {
             "label": "Fedora Developer",
-            "path": "#",
+            "path": "https://developer.fedoraproject.org/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }

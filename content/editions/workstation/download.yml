@@ -34,7 +34,7 @@ sections:
           text: fa-apple
           url: https://getfedora.org/fmw/FedoraMediaWriter-osx-latest.dmg
   - sectionTitle: On Linux? Or just want an ISO file?
-    sectionDescription: Not sure how to use these files? Learn [here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
+    sectionDescription: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
   - sectionTitle: Security, Installs
     content:
       - title: We take security seriously
@@ -79,15 +79,15 @@ sections:
       - title: Fedora Discussion
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/c/project
       - title: Fedora Chat
         link:
-          url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
+          url: https://chat.fedoraproject.org/#/welcome
         image: public/assets/images/fedora-chat-plus-element.png
       - title: Ask Fedora
         image: public/assets/images/ask-fedora.png
         link:
-          url: https://ask.fedoraproject.org/
+          url: https://ask.fedoraproject.org/c/ask
   - sectionTitle: Community-Maintained Spaces
     content:
       - title: Reddit

@@ -94,13 +94,13 @@ sections:
       - description:
           Guides on developing and deploying applications using Fedora
           workstation
-        url: https://fedoradeveloper.com
+        url: https://developer.fedoraproject.org/
         image: public/assets/images/fedora-devs.png
       - description: Easily install, update and manage software packages
-        url: https://fedoradeveloper.com
+        url: https://dnf5.readthedocs.io/en/latest/
         image: public/assets/images/logo-dnf.png
       - description: High-efficiency tool for creating, running and managing containers
-        url: https://fedoradeveloper.com
+        url: https://blog.podman.io/
         image: public/assets/images/podman.svg
   - sectionTitle: Built by you
     images: public/assets/images/flock-budapest-2019-bg.jpg
@@ -112,10 +112,10 @@ sections:
     content:
       - title: Chat with the team
         description: Participate in workstation discussions on
-          [discussion.fedoraproject.org/tag/workstation](https://discussion.fedoraproject.org/tag/workstation)
+          [discussion.fedoraproject.org/c/project](https://discussion.fedoraproject.org/tags/c/project/7/workstation)
       - title: Report & discuss issues
         description: Ask and answer questions on
-          [discussion.fedoraproject.org/tag/ask](https://discussion.fedoraproject.org/tag/ask)
+          [discussion.fedoraproject.org/c/ask](https://discussion.fedoraproject.org/tags/c/ask/6/all/workstation)
       - title: Participate in a test day
         description:
           Help keep the Fedora experience smooth, performant and bug-free by
