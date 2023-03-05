@@ -24,12 +24,6 @@ const props = defineProps({
   verifyLink: {
     type: String,
   },
-  isBeta: {
-    type: Boolean,
-  },
-  icon: {
-    type: String,
-  },
 });
 
 const variantClasses = props.variants.map(
@@ -80,11 +74,7 @@ const prettyType = {
           <span class="w-0 basis-full sm:hidden"></span>
           <span class="">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
-          <span
-            v-if="isBeta"
-            class="ml-4 items-center rounded-full bg-gray-300 px-2 text-[0.875rem] font-bold text-white dark:bg-gray-700"
-            >{{ $t("BETA") }}
-          </span>
+          <span class="beta-flag hidden">{{ $t("BETA") }} </span>
         </slot>
       </p>
       <div class="inline-flex">
@@ -98,7 +88,7 @@ const prettyType = {
             title="Download"
             class="-ml-px rounded-r-xl"
           >
-            <Icon :name="icon ? icon : 'fa-download'" class="!align-baseline" />
+            <Icon name="fa-download" class="!align-baseline" />
           </FpLink>
         </slot>
       </div>
@@ -118,6 +108,9 @@ const prettyType = {
 }
 
 .fp-download-item--variant-beta {
-  @apply border border-gray-200 bg-blue-50 px-5 py-2 dark:border-gray-900 dark:bg-gray-800;
+}
+
+.fp-download-item--variant-beta .beta-flag {
+  @apply inline self-center rounded-full bg-fp-newblue-500 px-2 text-sm font-bold leading-normal text-white dark:bg-fp-darkblue-500;
 }
 </style>

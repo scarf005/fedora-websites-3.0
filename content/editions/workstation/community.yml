@@ -7,8 +7,8 @@ sections:
       Project community called the **Workstation Working Group**. It is
       comprised of official members who have decision-making powers, as well as
       other contributors. Learn more about this group and how you can get
-      involved on the **[[Workstation Working Group
-      website](https://docs.fedoraproject.org/en-US/workstation-working-group/)]**.
+      involved on the [Workstation Working Group
+      website](https://docs.fedoraproject.org/en-US/workstation-working-group/).
     content: []
   - sectionTitle: Communication channels
     content:
@@ -19,7 +19,7 @@ sections:
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
           text: Visit Now
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/tag/workstation
       - title: Chat
         description:
           "You can chat with the Fedora Workstation Working Group via either
@@ -49,7 +49,7 @@ sections:
         description:
           Workstation Working Group meetings are open to all current and
           potential contributors on **Tuesdays, 9:30 AM US Eastern** on
-          **[[bluejeans.com/395383051](https://bluejeans.com/395383051)]**.
+          [bluejeans.com/395383051](https://bluejeans.com/395383051).
   - sectionTitle: Events
     sectionDescription:
       Fedora has events throughout the year that you can attend,
@@ -101,7 +101,7 @@ sections:
           deadline process with acceptance dates of **July 1st and July 8th,
           2022**.
 
-          **[[Read more about the call for proposals and propose your own](https://communityblog.fedoraproject.org/nest-2022-cfp/)]**!.
+          [Read more about the call for proposals and propose your own](https://communityblog.fedoraproject.org/nest-2022-cfp/)!.
         image: public/assets/images/colur-point.png
         link:
           text: Make a proposal
@@ -135,6 +135,6 @@ sections:
       - title: Become a Fedora contributor
         description:
           "Both the Fedora Community Blog and Fedora Magazine are always
-          **[[looking for article proposals, writers, and
+          [looking for article proposals, writers, and
           editors](https://docs.fedoraproject.org/en-US/fedora-magazine/contrib\
-          uting/)]**. "
+          uting/). "

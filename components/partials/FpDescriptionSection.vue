@@ -18,7 +18,6 @@ if (props.sectionDescription) {
       class="container mx-auto max-w-7xl px-8 py-12 text-center lg:px-0 lg:text-start"
     >
       <ContentRenderer
-        tag="p"
         class="markdown text-fp-gray-darkest dark:text-fp-gray"
         :value="sectionDescriptionMd"
       />

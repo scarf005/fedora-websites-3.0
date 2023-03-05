@@ -15,6 +15,10 @@ const props = defineProps({
     type: String,
     default: "blue",
   },
+  isBeta: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -27,10 +31,20 @@ const props = defineProps({
         :name="'Fedora IoT ' + version"
         :type="v.type"
         :format="v.format"
+        :downloadLink="`https://download.fedoraproject.org/pub/alt/iot/test/${version}/${v.path}`"
+        @verify-click="$emit('verifyClick', v)"
+        :theme="theme"
+        v-if="v.arch != 'src' && isBeta"
+        :variants="['beta']"
+      />
+      <FpDownloadItem
+        :name="'Fedora IoT ' + version"
+        :type="v.type"
+        :format="v.format"
         :downloadLink="`https://download.fedoraproject.org/pub/alt/iot/${version}/${v.path}`"
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
-        v-if="v.arch != 'src'"
+        v-if="v.arch != 'src' && !isBeta"
       />
     </div>
   </div>

@@ -99,13 +99,13 @@ sections:
         description: Get support from our the community on the Ask Fedora Forum.
         link:
           text: Ask Fedora
-          url: https://ask.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/c/ask
       - title: Chat
         description: "Users and developers are available in the #fedora
           channel on Fedora Chat and Discussions."
         link:
           text: Fedora Discussion
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/c/project
   - sectionTitle: Fedora Magazine
     sectionDescription: Make the most of using Fedora.
     images: public/assets/images/fedora-magazine.png

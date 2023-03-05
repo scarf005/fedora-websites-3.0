@@ -52,7 +52,6 @@ for (let item of data._value.body[0].content) {
             class="order-first mx-auto w-60 lg:max-w-lg"
           />
           <ContentRenderer
-            tag="p"
             class="markdown my-0 text-fp-gray-darkest dark:text-fp-gray md:my-2"
             :value="data.body[0].content[0].descriptionMd"
           />
@@ -97,11 +96,7 @@ for (let item of data._value.body[0].content) {
           <h4 class="text-base text-fp-blue dark:text-gray-200 xl:text-lg">
             {{ $t(card.title) }}
           </h4>
-          <ContentRenderer
-            tag="p"
-            class="max-w-sm"
-            :value="card.descriptionMd"
-          />
+          <ContentRenderer class="max-w-sm" :value="card.descriptionMd" />
           <div class="xl-mx-0 order-first">
             <FpImage :src="card.image" class="h-16" />
           </div>
