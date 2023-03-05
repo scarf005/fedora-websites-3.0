@@ -19,7 +19,7 @@ sections:
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
           text: Visit Now
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/tag/workstation
       - title: Chat
         description:
           "You can chat with the Fedora Workstation Working Group via either
