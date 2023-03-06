@@ -8,7 +8,7 @@ image:
   width: 400
   height: 300
 header_images:
-  - image:
+  - images:
       light: public/assets/images/server_rack_light.png
       dark: public/assets/images/server_rack_dark.png
   - image: public/assets/images/server_hero_bg.jpg

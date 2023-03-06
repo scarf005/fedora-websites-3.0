@@ -45,11 +45,11 @@ sections:
   - sectionTitle: "Endorsed Partners of Fedora Cloud "
     images: public/assets/images/coreos_background_why.jpg
     content:
-      - image:
+      - images:
           light: public/assets/images/aws.png
           dark: public/assets/images/aws-white.png
       - image: public/assets/images/google_cloud-ar21.svg
-      - image:
+      - images:
           light: public/assets/images/Vagrant_PrimaryLogo_Color_RGB.svg
           dark: public/assets/images/Vagrant_PrimaryLogo_ColorWhite_RGB.svg
   - sectionTitle: Built By You

@@ -25,7 +25,7 @@ useContentHead(data);
         background="text-white bg-fp-blue"
         :ctas="data.links"
       >
-        <FpImage class="absolute -z-20" :src="data.header_images[0].image" />
+        <FpImage class="absolute -z-20" :src="data.header_images[0].images" />
       </FpBanner>
     </div>
     <svg
