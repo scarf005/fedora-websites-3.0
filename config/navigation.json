@@ -576,5 +576,108 @@
         ]
       }
     ]
+  },
+  "connections": {
+    "label": "Connections",
+    "icon": "fa6-solid:user",
+    "description": "These are places to get (and give) user support.",
+    "sections": [
+      {
+        "label": "Announcements",
+        "description": "These are sites where updates about new and upcomming events, releases, packages, and projects are likely to be posted. You might want to subscribe to some of these to get the notices in your inbox.",
+        "links": [
+          {
+            "label": "News & Announcements",
+            "path": "https://discussion.fedoraproject.org/c/news/5",
+            "icon": "fa6-solid:desktop",
+            "description": "The Fedora Project Leader likes to post things here."
+          },
+          {
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora new release and beta release announcements show up here first. Test Day announcements are also posted here."
+          },
+          {
+            "label": "Fedora Community Blog",
+            "path": "https://communityblog.fedoraproject.org/",
+            "icon": "fa6-solid:desktop",
+            "description": "Announcements that are pertinent to Fedora developers and the Fedora infrastructure team tend to be posted here."
+          }
+        ]
+      },
+      {
+        "label": "Ask Fedora",
+        "description": "This is Fedora's main forum for all project collaboration and user support.",
+        "links": [
+          {
+            "label": "General Q&A",
+            "path": "https://discussion.fedoraproject.org/c/ask",
+            "icon": "fa6-solid:desktop",
+            "description": "If you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, this is the place to ask!"
+          },
+          {
+            "label": "Workstation",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/workstation",
+            "icon": "fa6-solid:desktop",
+            "description": "Use this link to focus on questions and answers about Fedora Workstation."
+          },
+          {
+            "label": "Server",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/server",
+            "icon": "fa6-solid:desktop",
+            "description": "Use this link to focus on questions and answers about Fedora Server."
+          },
+          {
+            "label": "Cloud",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/cloud",
+            "icon": "fa6-solid:desktop",
+            "description": "Use this link to focus on questions and answers about Fedora Cloud."
+          },
+          {
+            "label": "IoT",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/iot",
+            "icon": "fa6-solid:desktop",
+            "description": "Use this link to focus on questions and answers about Fedora IoT (Internet of Things)."
+          },
+          {
+            "label": "CoreOS",
+            "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/coreos",
+            "icon": "fa6-solid:desktop",
+            "description": "Use this link to focus on questions and answers about Fedora CoreOS."
+          }
+        ]
+      },
+      {
+        "label": "Project Discussion",
+        "description": "These are some convenient links to the discussion threads for several Fedora subprojects.",
+        "links": [
+          {
+            "label": "Workstation",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/workstation",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "Social",
+        "description": "These are a few free-form communication channels.",
+        "links": [
+          {
+            "label": "The Water Cooler",
+            "path": "https://discussion.fedoraproject.org/c/fun/8",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          },
+          {
+            "label": "Fedora Social on Matrix",
+            "path": "https://chat.fedoraproject.org/#/room/#social:fedoraproject.org",
+            "icon": "fa6-solid:desktop",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 }

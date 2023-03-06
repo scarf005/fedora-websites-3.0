@@ -5,6 +5,7 @@ const categories = {
   community: navigation.community,
   contributors: navigation.contributors,
   support: navigation.support,
+  connections: navigation.connections,
 };
 
 const categoryOpen = useState("category", () => null);
