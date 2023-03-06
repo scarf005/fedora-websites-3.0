@@ -20,8 +20,8 @@
         text: Visit now
         url: https://fedoramagazine.org/
     - title: Become a Fedora contributor
-      description:
-        "Both the Fedora Community Blog and Fedora Magazine are always
-        [looking for article proposals, writers, and
-        editors](https://docs.fedoraproject.org/en-US/fedora-magazine/contrib\
-        uting/). "
+      description: Both the Fedora Community Blog and Fedora Magazine are always
+        looking for article proposals, writers, and editors.
+      link:
+        text: Learn more
+        url: https://docs.fedoraproject.org/en-US/fedora-magazine/contributing/

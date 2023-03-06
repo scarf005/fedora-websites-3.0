@@ -9,7 +9,7 @@ const props = defineProps({
     default: "Contact the Join SIG to start contributing",
   },
   link: {
-    type: "Object",
+    type: Object,
   },
   inline: {
     type: Boolean,
@@ -42,7 +42,7 @@ const descriptionMd = await mdparser(props.description);
             v-else
             to="https://docs.fedoraproject.org/en-US/fedora-join/"
             class="ml-2 text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
-            >{{ $t("Learn More") }}</NuxtLink
+            >{{ $t("Learn more") }}</NuxtLink
           >
         </div>
       </div>
