@@ -383,7 +383,7 @@
           },
           {
             "label": "Bugzilla",
-            "path": "http://bugzilla.redhat.com/",
+            "path": "https://bugzilla.redhat.com/",
             "icon": "fa6-solid:desktop",
             "description": ""
           }
