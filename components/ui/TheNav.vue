@@ -7,11 +7,13 @@ const categories = {
   support: navigation.support,
 };
 
-// hack to duplicate the ask fedora section
-categories.support.sections = [
-  navigation.connections.sections[1], // ask fedora
-  ...navigation.support.sections, // other support sections
-];
+// hack to duplicate the ask fedora section in the help menu
+if (categories.support.sections[0].label != "Ask Fedora") {
+  categories.support.sections = [
+    navigation.connections.sections[1],
+    ...navigation.support.sections,
+  ];
+}
 
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
