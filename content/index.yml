@@ -1,6 +1,11 @@
 title: Fedora Linux
 description: An innovative platform for hardware, clouds, and containers, built
   with love by you.
+image:
+  src: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/assets/images/fedora-default-meta-image.jpg
+  alt: Fedora Index Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/workstation_registered_digital_public_good.png
 links:
