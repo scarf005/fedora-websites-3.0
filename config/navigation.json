@@ -586,11 +586,11 @@
   },
   "support": {
     "label": "Help",
-    "icon": "❔",
+    "icon": "bi:life-preserver",
     "description": "Help!",
     "sections": [
       {
-        "label": "Project Docs",
+        "label": "Documentation",
         "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
         "links": [
           {
