@@ -2,11 +2,16 @@
 import navigation from "../../config/navigation.json";
 const categories = {
   downloads: navigation.downloads,
-  community: navigation.community,
   contributors: navigation.contributors,
-  support: navigation.support,
   connections: navigation.connections,
+  support: navigation.support,
 };
+
+// hack to duplicate the ask fedora section
+categories.support.sections = [
+  navigation.connections.sections[1], // ask fedora
+  ...navigation.support.sections, // other support sections
+];
 
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
