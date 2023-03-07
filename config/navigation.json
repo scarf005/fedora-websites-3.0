@@ -474,7 +474,7 @@
           {
             "label": "Fedora Social",
             "path": "https://chat.fedoraproject.org/#/room/#social:fedoraproject.org",
-            "icon": "nav: fix matrix icon",
+            "icon": "cib:matrix",
             "description": "The Fedora Social chat room is a place for Fedora community members to relax and talk about most any topics they wish."
           },
           {
