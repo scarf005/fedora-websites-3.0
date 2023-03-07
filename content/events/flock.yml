@@ -109,7 +109,7 @@ sections:
       - title: Ask Fedora
         image: public/assets/images/ask_fedora_icon.png
         description: New to Fedora? Check our <b><a
-          href="https://ask.fedoraproject.org/">community forum</a></b> for
+          href="https://discussion.fedoraproject.org/c/ask">community forum</a></b> for
           support and help with frequently asked questions.
   - sectionTitle: Benefits of Sponsoring Flock
     content:
