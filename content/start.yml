@@ -1,2 +1,7 @@
 title: Fedora Start
 description: Default page when users load up firefox
+image:
+  src: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/assets/images/fedora-default-meta-image.jpg
+  alt: Fedora Index Image
+  width: 400
+  height: 300

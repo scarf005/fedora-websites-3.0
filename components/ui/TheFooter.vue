@@ -1,28 +1,6 @@
 <script setup>
 import navigation from "../../config/navigation.json";
 
-const path = {
-  community: navigation.community.sections,
-  contributors: navigation.contributors.sections,
-  support: navigation.support.sections,
-};
-
-const support = computed(() => {
-  return {
-    ask: path.support[0].links[0],
-    bugs: path.support[2].links[1],
-    magazine: path.community[1].links[0],
-    developer: path.support[3].links[1],
-  };
-});
-const community = computed(() => {
-  return {
-    join: path.contributors[3].links[0],
-    blog: path.community[1].links[1],
-    matrix: path.community[0].links[1],
-    discussion: path.community[0].links[0],
-  };
-});
 let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
@@ -60,13 +38,6 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
           </a>
           <FpLanguageSelector :open="footerLanguageOpen" />
         </div>
-
-        <FooterSection
-          title="User Support"
-          :links="support"
-          class="sm:col-start-2 sm:row-start-1 md:col-auto md:row-auto"
-        />
-        <FooterSection title="Community" :links="community" />
       </div>
     </nav>
     <!-- Fedora Section -->

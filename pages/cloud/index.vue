@@ -50,7 +50,7 @@ useContentHead(data);
       <div class="flex flex-wrap items-center justify-center gap-16">
         <FpImage
           v-for="item in data.sections[1].content"
-          :src="item.image"
+          :src="item.image || item.images"
           class="w-64"
         />
       </div>

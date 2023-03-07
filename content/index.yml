@@ -1,6 +1,11 @@
 title: Fedora Linux
 description: An innovative platform for hardware, clouds, and containers, built
   with love by you.
+image:
+  src: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/assets/images/fedora-default-meta-image.jpg
+  alt: Fedora Index Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/workstation_registered_digital_public_good.png
 links:
@@ -96,16 +101,16 @@ sections:
           text: Fedora Docs
           url: https://docs.fedoraproject.org/en-US/
       - title: Support
-        description: Get support from our the community on the Ask Fedora Forum.
+        description: Get support from our the community on the Fedora Discussion Forum.
         link:
-          text: Ask Fedora
+          text: Fedora Discussion
           url: https://discussion.fedoraproject.org/c/ask
       - title: Chat
         description: "Users and developers are available in the #fedora
-          channel on Fedora Chat and Discussions."
+          channel on Fedora Chat."
         link:
-          text: Fedora Discussion
-          url: https://discussion.fedoraproject.org/c/project
+          text: Fedora Chat
+          url: https://chat.fedoraproject.org/#/room/#fedora:fedoraproject.org
   - sectionTitle: Fedora Magazine
     sectionDescription: Make the most of using Fedora.
     images: public/assets/images/fedora-magazine.png

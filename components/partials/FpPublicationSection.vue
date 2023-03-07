@@ -34,7 +34,10 @@ let { data } = await useAsyncData(() => {
           </template>
         </FpCard>
       </div>
-      <FpJoinTip :description="data.body[0].content[2].description" />
+      <FpJoinTip
+        :description="data.body[0].content[2].description"
+        :link="data.body[0].content[2].link"
+      />
     </div>
   </section>
 </template>

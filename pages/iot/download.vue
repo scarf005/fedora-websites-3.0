@@ -193,7 +193,7 @@ useContentHead(data);
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
               class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-            ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
             <p class="mb-4 text-sm">
               <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
 
