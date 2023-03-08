@@ -255,15 +255,21 @@
             "description": ""
           },
           {
+            "label": "GitHub",
+            "path": "https://github.com/",
+            "icon": "fa6-brands:github",
+            "description": ""
+          },
+          {
             "label": "Pagure",
-            "path": "https://pagure.io/",
+            "path": "https://pagure.io/browse/projects/",
             "icon": "fa6-brands:fedora",
             "description": ""
           },
           {
-            "label": "GitHub",
-            "path": "https://github.com/",
-            "icon": "fa6-brands:github",
+            "label": "Package Sources",
+            "path": "https://src.fedoraproject.org/browse/projects/",
+            "icon": "fa6-brands:fedora",
             "description": ""
           }
         ]
