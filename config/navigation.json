@@ -270,54 +270,48 @@
       },
       {
         "label": "Documentation",
-        "description": "These doc pages are about the Fedora Project. They cover our organizational structure, core values, teams, legal docs, and community guidelines.",
+        "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs.",
         "links": [
           {
-            "label": "About the Fedora Project",
-            "path": "https://docs.fedoraproject.org/en-US/project/",
-            "icon": "fa6-solid:desktop",
-            "description": ""
-          },
-          {
-            "label": "Fedora Council",
-            "path": "https://docs.fedoraproject.org/en-US/project/leadership/#_fedora_council",
-            "icon": "fa6-solid:desktop",
-            "description": ""
-          },
-          {
-            "label": "Diversity & Inclusion",
-            "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
-            "icon": "fa6-solid:desktop",
+            "label": "Packaging Guidelines",
+            "path": "https://docs.fedoraproject.org/en-US/packaging-guidelines/",
+            "icon": "fa6-solid:book",
             "description": ""
           },
           {
             "label": "Engineering Teams",
             "path": "https://docs.fedoraproject.org/en-US/engineering/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:book",
             "description": ""
           },
           {
             "label": "Mindshare Teams",
             "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/teams/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:book",
+            "description": ""
+          },
+          {
+            "label": "Fedora Council",
+            "path": "https://docs.fedoraproject.org/en-US/project/leadership/#_fedora_council",
+            "icon": "fa6-solid:book",
             "description": ""
           },
           {
             "label": "Program Management",
             "path": "https://docs.fedoraproject.org/en-US/council/fpgm/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:book",
             "description": ""
           },
           {
-            "label": "Packaging Guidelines",
-            "path": "https://docs.fedoraproject.org/en-US/packaging-guidelines/",
-            "icon": "fa6-solid:desktop",
+            "label": "Diversity & Inclusion",
+            "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
+            "icon": "fa6-solid:book",
             "description": ""
           },
           {
             "label": "Legal",
             "path": "https://docs.fedoraproject.org/en-US/legal/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:book",
             "description": ""
           }
         ]
@@ -510,6 +504,18 @@
     "icon": "bi:life-preserver",
     "description": "Help!",
     "sections": [
+      {
+        "label": "Documentation",
+        "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started using Fedora Linux.",
+        "links": [
+          {
+            "label": "About the Fedora Project",
+            "path": "https://docs.fedoraproject.org/en-US/project/",
+            "icon": "fa6-brands:fedora",
+            "description": ""
+          }
+        ]
+      },
       {
         "label": "Other Sources",
         "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
