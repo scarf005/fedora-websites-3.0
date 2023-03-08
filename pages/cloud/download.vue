@@ -147,11 +147,11 @@ useContentHead(data);
       class="scroll-mt-14 bg-gradient-to-r from-sky-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
-      <div class="container mx-auto my-8 max-w-7xl px-2">
-        <div
-          class="flex items-center justify-end gap-4"
-          v-if="release_data.beta.enabled"
-        >
+      <div
+        class="container mx-auto max-w-7xl"
+        v-if="release_data.beta.enabled && beta_data"
+      >
+        <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
           <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
         </div>
@@ -162,6 +162,8 @@ useContentHead(data);
             class="origin-right scale-75"
           />
         </div>
+      </div>
+      <div class="container mx-auto my-8 max-w-7xl px-2">
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
