@@ -40,7 +40,7 @@ sections:
       - title: Platform
         description: Serving the needs of small to medium businesses, home labs, and
           future enterprise workloads
-        image: public/assets/images/feature-5.png
+        image: public/assets/images/features-5.png
     images: ""
   - sectionTitle: Built by you
     images: public/assets/images/flock-budapest-2019-bg.jpg
