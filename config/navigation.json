@@ -227,49 +227,49 @@
           {
             "label": "Bugzilla",
             "path": "https://bugzilla.redhat.com/",
-            "icon": "",
+            "icon": "🔵",
             "description": "Fedora bugs are reported to Red Hat's bugzilla."
           },
           {
             "label": "Bodhi",
             "path": "https://bodhi.fedoraproject.org/",
-            "icon": "",
+            "icon": "🔵",
             "description": "This is Fedora's official build system. It is used to create, test, and publish packages."
           },
           {
             "label": "Koji",
             "path": "https://koji.fedoraproject.org/koji/",
-            "icon": "",
+            "icon": "🔵",
             "description": "This is the software that builds Fedora's RPM packages."
           },
           {
             "label": "Copr",
             "path": "https://copr.fedorainfracloud.org/",
-            "icon": "",
+            "icon": "🔵",
             "description": "This is an easy-to-use build system for the Fedora community."
           },
           {
             "label": "GitLab",
             "path": "https://gitlab.com/groups/fedora/-/saml/sso",
-            "icon": "",
+            "icon": "🔵",
             "description": "GitLab is the newest of Fedora's official version control systems. It supports single-sign-on with Fedora accounts."
           },
           {
             "label": "GitHub",
             "path": "https://github.com/",
-            "icon": "",
+            "icon": "🔵",
             "description": "Many of Fedora's groups use this version control system."
           },
           {
             "label": "Pagure",
             "path": "https://pagure.io/browse/projects/",
-            "icon": "",
+            "icon": "🔵",
             "description": "This is an open-source git forge that the Fedora Project uses."
           },
           {
             "label": "Package Sources",
             "path": "https://src.fedoraproject.org/browse/projects/",
-            "icon": "",
+            "icon": "🔵",
             "description": "This is an open-source git forge that hosts most of Fedora's source RPM packages."
           }
         ]
