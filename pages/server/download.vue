@@ -165,7 +165,7 @@ useContentHead(data);
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Server.x86_64"
               :dlPrefix="dlpath.x86_64"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="server-theme"
               isBeta
             />
@@ -175,7 +175,7 @@ useContentHead(data);
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Server.aarch64"
               :dlPrefix="dlpath.aarch64"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="server-theme"
               isBeta
             />
@@ -185,7 +185,7 @@ useContentHead(data);
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Server.ppc64le"
               :dlPrefix="dlpath.ppc64le"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="server-theme"
               isBeta
             />
@@ -195,7 +195,7 @@ useContentHead(data);
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Server.s390x"
               :dlPrefix="dlpath.s390x"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="server-theme"
               isBeta
             />
