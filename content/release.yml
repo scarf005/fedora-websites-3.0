@@ -6,5 +6,5 @@ ga:
 
 beta:
   enabled: True
-  releasever: 37
-  rc_version: 1.5
+  releasever: 38
+  rc_version: 1.3
