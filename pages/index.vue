@@ -139,7 +139,8 @@ useHead({
         />
       </svg>
     </header>
-    <!-- 5 Main Editions-->
+
+    <!-- 5 MAIN EDITIONS-->
     <section class="w-full bg-gray-100 dark:bg-gray-900">
       <header class="hidden">
         <h2 class="text-center">
@@ -150,9 +151,10 @@ useHead({
         class="container mx-auto flex flex-wrap justify-center gap-4 py-8 px-2 md:px-4 lg:gap-16"
       >
         <div
-          class="my-4 w-2/5 rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
+          class="my-4 w-full rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
           v-for="item in data.sections[3].content"
         >
+          <FpImage :src="item.image" />
           <FpLink :href="item.url">
             <h3
               class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
@@ -176,6 +178,8 @@ useHead({
           {{ $t(data.sections[4].sectionTitle) }}
         </h2>
       </header>
+
+      <!-- WANT MORE FEDORA OPTIONS -->
       <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
         <article
           v-for="card in data.sections[4].content"
@@ -191,10 +195,10 @@ useHead({
             <p class="mb-2 text-gray-900 dark:text-gray-300">
               {{ $t(card.description) }}
             </p>
-            <NuxtLink
-              :to="$t(card.link.url)"
+            <FpLink
+              :href="card.link.url"
               class="font-semibold text-fp-darkblue underline-offset-4 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
-              >{{ $t(card.link.text) }}</NuxtLink
+              >{{ $t(card.link.text) }}</FpLink
             >
           </div>
         </article>

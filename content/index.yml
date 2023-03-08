@@ -34,7 +34,7 @@ sections:
         description:
           Fedora IoT provides a trusted open source platform as a strong
           foundation for IoT ecosystems.
-        image: public/assets/images/fedora-iot-logo.png
+        image: public/assets/images/fedora-iot-full-logo.png
         link:
           text: Download Now
       - title: The lightweight VM environment
@@ -50,7 +50,7 @@ sections:
         url: /cloud
         description: Fedora CoreOS is an automatically updating, minimal,
           container-focused operating system.
-        image: public/assets/images/core-os-logo.png
+        image: public/assets/images/fedora-coreos-logo.png
         link:
           text: Download Now
       - title: Tomorrow's server OS
