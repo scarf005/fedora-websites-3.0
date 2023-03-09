@@ -271,6 +271,12 @@
             "path": "https://src.fedoraproject.org/browse/projects/",
             "icon": "fa6-solid:circle",
             "description": "This is an open-source git forge that hosts most of Fedora's source RPM packages."
+          },
+          {
+            "label": "Sourcegraph",
+            "path": "https://sourcegraph.com/search?q=context:global+repo:%5Esrc.fedoraproject.org/&patternType=regexp",
+            "icon": "fa6-solid:circle",
+            "description": "You can use this to search for things in Fedora's code repositores. See the Fedora Magazine article for more info."
           }
         ]
       },
