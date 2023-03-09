@@ -515,28 +515,28 @@
         "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started with Fedora Linux.",
         "links": [
           {
-            "label": "About the Fedora Project",
+            "label": "About",
             "path": "https://docs.fedoraproject.org/en-US/project/",
             "icon": "fa6-brands:fedora",
-            "description": ""
+            "description": "The Fedora Project's Mission and Foundations"
           },
           {
             "label": "Downloading Fedora Linux",
-            "path": "https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#downloading-fedora",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/fedora-downloads-info/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "How to select the appropriate download."
           },
           {
             "label": "Getting Started",
-            "path": "https://docs.fedoraproject.org/en-US/quick-docs/getting-started-guide/",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/getting-started/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "An in-depth guide to installing Fedora Linux."
           },
           {
             "label": "Upgrading Fedora Linux",
-            "path": "https://docs.fedoraproject.org/en-US/quick-docs/upgrading/",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/system-upgrade/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "How to upgrade an existing Fedora Linux installation."
           }
         ]
       },
