@@ -228,7 +228,7 @@
             "label": "Bugzilla",
             "path": "https://bugzilla.redhat.com/",
             "icon": "fa6-solid:circle",
-            "description": "Fedora bugs are reported to Red Hat's bugzilla."
+            "description": "Fedora Linux bugs are reported to Red Hat's bugzilla."
           },
           {
             "label": "Bodhi",
