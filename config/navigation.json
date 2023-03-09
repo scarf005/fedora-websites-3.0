@@ -391,7 +391,7 @@
       },
       {
         "label": "Ask Fedora",
-        "description": "This is Fedora's main forum for all project collaboration and user support.",
+        "description": "This is Fedora's main forum for all project collaboration and user support. Also, if you have encountered a problem that might be a software bug, this is a good place to triage it with other users before escalating it to Red Hat's bugzilla reporting system.",
         "links": [
           {
             "label": "General Q&A",
