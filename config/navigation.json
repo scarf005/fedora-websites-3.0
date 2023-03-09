@@ -215,8 +215,8 @@
           {
             "label": "Edit this website",
             "path": "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/",
-            "icon": "fa6-brands:fedora",
-            "description": "Edit fedoraproject.org using its custom content management system! Tip: Use the GitLab SSO link to open a session first."
+            "icon": "fa6-solid:pencil",
+            "description": "Edit fedoraproject.org pages using its custom content management system! Tip: Use the GitLab SSO link to open a session first."
           }
         ]
       },
