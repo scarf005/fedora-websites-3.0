@@ -515,12 +515,6 @@
         "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started with Fedora Linux.",
         "links": [
           {
-            "label": "About",
-            "path": "https://docs.fedoraproject.org/en-US/project/",
-            "icon": "fa6-brands:fedora",
-            "description": "The Fedora Project's Mission and Foundations"
-          },
-          {
             "label": "Downloading Fedora Linux",
             "path": "https://docs.fedoraproject.org/en-US/fedora/latest/fedora-downloads-info/",
             "icon": "fa6-solid:book",
@@ -567,6 +561,18 @@
             "path": "https://developer.fedoraproject.org/",
             "icon": "fa6-solid:signs-post",
             "description": "From mobile apps to web; from desktop to GUIs to CLI tools; create it all easily with Fedora."
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "description": "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you to do useful stuff with it.",
+        "links": [
+          {
+            "label": "Fedora’s Mission and Foundations",
+            "path": "https://docs.fedoraproject.org/en-US/project/#_what_is_fedora_all_about",
+            "icon": "fa6-brands:fedora",
+            "description": ""
           }
         ]
       }
