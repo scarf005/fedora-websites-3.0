@@ -551,6 +551,12 @@
             "description": "This is the main index page for all of Fedora's Documentation. If you weren't able to find a direct link to what you were looking for in this site's menus, you can try searching from here."
           },
           {
+            "label": "Fedora Quick Docs",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/",
+            "icon": "fa6-solid:book",
+            "description": "This is a collection of short HOWTO and FAQ-style documentation for Fedora users."
+          },
+          {
             "label": "Fedora Wiki",
             "path": "https://fedoraproject.org/wiki/Fedora_Project_Wiki",
             "icon": "fa6-solid:book",
