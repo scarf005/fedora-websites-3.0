@@ -13,7 +13,7 @@ links:
   - text: Download Now
     url: /coreos/download/
   - text: Release Notes
-    url: https://getfedora.org/en/coreos
+    url: /coreos/release-notes/
 sections:
   - sectionTitle: Why Fedora CoreOS?
     images: ""
