@@ -56,21 +56,21 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
         >
           <li class="list-none underline underline-offset-1">
             <FpLink
-              href="#"
+              href="https://docs.fedoraproject.org/en-US/legal/privacy/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Privacy Statement") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <FpLink
-              href="#"
+              href="https://docs.fedoraproject.org/en-US/legal/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Legal") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
             <FpLink
-              href="#"
+              href="https://docs.fedoraproject.org/en-US/project/code-of-conduct/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Code of Conduct") }}</FpLink
             >
@@ -100,13 +100,15 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
         <div class="container text-center lg:text-left">
           <p class="text-white">
             {{ $t("Fedora is sponsored by Red Hat.") }}
-            <span class="block text-fp-gray xl:ml-2 xl:inline">
-              {{
+            <FpLink
+              href="https://www.redhat.com/en/technologies/linux-platforms/articles/relationship-between-fedora-and-rhel"
+              class="block text-fp-gray underline underline-offset-1 xl:ml-2 xl:inline"
+              >{{
                 $t(
                   "Learn more about the relationship between Red Hat and Fedora."
                 )
-              }}
-            </span>
+              }}</FpLink
+            >
           </p>
         </div>
       </div>
