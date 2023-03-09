@@ -82,6 +82,9 @@ module.exports = {
           },
         },
       },
+      textUnderlineOffset: {
+        1: "0.15em",
+      },
     },
   },
 };
