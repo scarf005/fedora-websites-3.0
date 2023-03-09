@@ -25,7 +25,7 @@ sections:
         description: Run virtual machines or containers with
           [libvirt](https://libvirt.org/) and [podman](https://podman.io/)
           managed through [Cockpit](https://cockpit-project.org/).
-        image: public/assets/images/feature-1.png
+        image: public/assets/images/feature-1v2.png
       - title: Sensible Defaults
         description: Quickly deploy a server with the tools you need to spin up your
           workloads
@@ -36,10 +36,10 @@ sections:
       - title: Cockpit
         description: A built-in remote server administration tool is ready to use on
           first boot
-        image: public/assets/images/feature-4.png
-      - title: Platform
+        image: public/assets/images/feature-4v2.png
+      - title: " From the Data Center to your Raspberry Pi"
         description: Serving the needs of small to medium businesses, home labs, and
-          future enterprise workloads
+          enterprise workloads
         image: public/assets/images/features-5.png
     images: ""
   - sectionTitle: Built by you
