@@ -282,43 +282,43 @@
             "label": "Packaging Guidelines",
             "path": "https://docs.fedoraproject.org/en-US/packaging-guidelines/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about packaging for Fedora Linux — from both a policy and a technical perspective."
           },
           {
             "label": "Engineering Teams",
             "path": "https://docs.fedoraproject.org/en-US/engineering/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about FESCo and Engineering subprojects, SIGs, Work Groups, and teams."
           },
           {
             "label": "Mindshare Teams",
             "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/teams/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Activities beyond engineering: Learn about the teams focused on Fedora's outreach, brand, & more."
           },
           {
             "label": "Fedora Council",
             "path": "https://docs.fedoraproject.org/en-US/project/leadership/#_fedora_council",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about the Fedora Project governance."
           },
           {
             "label": "Program Management",
             "path": "https://docs.fedoraproject.org/en-US/council/fpgm/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Release planning, scheduling, and status tracking."
           },
           {
             "label": "Diversity & Inclusion",
             "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "The goal of this initiative is to help foster diversity and inclusion in Fedora community."
           },
           {
             "label": "Legal",
             "path": "https://docs.fedoraproject.org/en-US/legal/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Policies for licensing, trademarks, and other legal issues."
           },
           {
             "label": "Edit these docs",
