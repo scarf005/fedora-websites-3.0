@@ -276,7 +276,7 @@
       },
       {
         "label": "Documentation",
-        "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs.",
+        "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.",
         "links": [
           {
             "label": "Packaging Guidelines",
