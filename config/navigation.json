@@ -512,31 +512,55 @@
     "sections": [
       {
         "label": "Documentation",
-        "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started using Fedora Linux.",
+        "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started with Fedora Linux.",
         "links": [
           {
             "label": "About the Fedora Project",
             "path": "https://docs.fedoraproject.org/en-US/project/",
             "icon": "fa6-brands:fedora",
             "description": ""
+          },
+          {
+            "label": "Downloading Fedora Linux",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#downloading-fedora",
+            "icon": "fa6-solid:book",
+            "description": ""
+          },
+          {
+            "label": "Getting Started",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/getting-started-guide/",
+            "icon": "fa6-solid:book",
+            "description": ""
+          },
+          {
+            "label": "Upgrading Fedora Linux",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/upgrading/",
+            "icon": "fa6-solid:book",
+            "description": ""
           }
         ]
       },
       {
         "label": "Other Sources",
-        "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
+        "description": "Over the years, Fedorans have created many sources of information about Fedora Linux and the Fedora Project.",
         "links": [
+          {
+            "label": "Fedora Docs",
+            "path": "https://docs.fedoraproject.org/en-US/docs/",
+            "icon": "fa6-solid:book",
+            "description": "This is the main index page for all of Fedora's Documentation. If you weren't able to find a direct link to what you were looking for in this site's menus, you can try searching from here."
+          },
           {
             "label": "Fedora Wiki",
             "path": "https://fedoraproject.org/wiki/Fedora_Project_Wiki",
-            "icon": "fa6-solid:desktop",
-            "description": ""
+            "icon": "fa6-solid:book",
+            "description": "This is primarily a collaboration tool for the community. Content that has been submitted here might be out of date and/or it might not have undergone the same level of scrutiny as the information on Fedora Docs."
           },
           {
             "label": "Fedora Developer",
             "path": "https://developer.fedoraproject.org/",
-            "icon": "fa6-solid:desktop",
-            "description": ""
+            "icon": "fa6-solid:signs-post",
+            "description": "From mobile apps to web; from desktop to GUIs to CLI tools; create it all easily with Fedora."
           }
         ]
       }
