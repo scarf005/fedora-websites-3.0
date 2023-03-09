@@ -511,8 +511,8 @@
     "description": "Help!",
     "sections": [
       {
-        "label": "Documentation",
-        "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started with Fedora Linux.",
+        "label": "User Guides",
+        "description": "These are some introductory guides to help users get started with Fedora Linux.",
         "links": [
           {
             "label": "Downloading Fedora Linux",
