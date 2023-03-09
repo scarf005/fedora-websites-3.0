@@ -47,7 +47,7 @@ let { data } = await useAsyncData(() => {
       </p>
       <div class="flex flex-wrap items-center justify-center gap-24">
         <FpLink
-          class="text-center text-xl text-fp-darkblue-500 underline dark:text-gray-200"
+          class="text-center text-xl text-fp-darkblue-500 underline underline-offset-1 dark:text-gray-200"
           v-for="item in data.communityChannels.content"
           :href="item.link"
         >

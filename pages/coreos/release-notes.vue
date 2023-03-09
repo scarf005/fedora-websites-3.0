@@ -296,7 +296,7 @@ useContentHead(data);
                       >
                         <a
                           :href="issue.url"
-                          class="text-sm underline underline-offset-2"
+                          class="text-sm underline underline-offset-1"
                           target="_blank"
                           >{{ issue.text }}</a
                         >

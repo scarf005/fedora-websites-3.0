@@ -193,7 +193,7 @@ useHead({
             </p>
             <NuxtLink
               :to="$t(card.link.url)"
-              class="font-semibold text-fp-darkblue underline-offset-4 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
+              class="font-semibold text-fp-darkblue underline-offset-1 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
@@ -229,7 +229,7 @@ useHead({
             <p class="mb-2">{{ $t(card.description) }}</p>
             <NuxtLink
               :to="card.link.url"
-              class="font-semibold transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
+              class="font-semibold underline-offset-1 transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
