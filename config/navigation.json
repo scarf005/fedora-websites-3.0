@@ -569,6 +569,12 @@
             "description": "This is primarily a collaboration tool for the community. Content that has been submitted here might be out of date and/or it might not have undergone the same level of scrutiny as the information on Fedora Docs."
           },
           {
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
+            "icon": "fa6-solid:bookmark",
+            "description": "Fedora Magazine is a website that hosts promotional articles and short guides contributed from the community about free/libre and open-source software that runs on or works with the Fedora Linux operating system."
+          },
+          {
             "label": "Fedora Developer",
             "path": "https://developer.fedoraproject.org/",
             "icon": "fa6-solid:signs-post",
