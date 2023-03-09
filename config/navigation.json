@@ -505,7 +505,7 @@
       }
     ]
   },
-  "support": {
+  "help": {
     "label": "Help",
     "icon": "bi:life-preserver",
     "description": "Help!",
