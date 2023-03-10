@@ -118,7 +118,7 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-gradient-to-r from-fp-newblue-500 to-fp-blue shadow-xl dark:bg-fp-darkblue-500 dark:from-fp-darkblue-500 dark:to-fp-blue md:absolute md:h-[43rem]"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
     >
       <div class="grid lg:grid-cols-12">
         <!-- LEFT COLUMN DESKTOP -->
