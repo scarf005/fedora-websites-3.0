@@ -37,7 +37,7 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
       <div
-        class="col-span-2 my-1 flex items-center justify-between px-4 lg:col-span-1 lg:mt-0 lg:justify-start"
+        class="col-span-2 my-1 flex items-center justify-between px-4 md:col-span-1 md:mt-0 md:justify-start"
       >
         <!-- LOGO -->
         <FpNavLogo />
@@ -57,7 +57,7 @@ let languageOpen = useState("languageOpen", () => null);
             }
           "
           type="button"
-          class="rounded-md p-2 text-white lg:hidden"
+          class="rounded-md p-2 text-white md:hidden"
         >
           <Icon v-if="categoryOpen == null" name="fa6-solid:bars" />
           <Icon v-else name="fa6-solid:x" />
@@ -66,7 +66,7 @@ let languageOpen = useState("languageOpen", () => null);
 
       <!-- CATEGORY BUTTONS IN NAVBAR -->
       <FpNav
-        :class="`col-span-2 justify-center gap-2 py-4 text-white lg:col-span-1 lg:flex lg:justify-end lg:px-4 lg:py-1 ${
+        :class="`col-span-2 justify-center gap-2 py-4 text-white md:col-span-1 md:flex md:justify-end md:px-4 md:py-1 ${
           categoryOpen ? 'flex' : 'hidden'
         }`"
       >
@@ -74,8 +74,8 @@ let languageOpen = useState("languageOpen", () => null);
           v-for="category in categories"
           :key="category.id"
           role="navigation"
-          :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 lg:p-3 ${
-            categoryOpen?.label === category.label && 'lg:bg-fp-darkblue-500'
+          :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 md:p-3 ${
+            categoryOpen?.label === category.label && 'md:bg-fp-darkblue-500'
           }`"
           @click="
             languageOpen = null;
@@ -88,16 +88,16 @@ let languageOpen = useState("languageOpen", () => null);
             }
           "
         >
-          <div class="lg:hidden">
+          <div class="md:hidden">
             <Icon :name="category.icon" size="24" />
           </div>
           <p class="text-sm text-white">{{ $t(category.label) }}</p>
         </button>
 
         <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
-        <div class="hidden items-center justify-end lg:flex">
+        <div class="hidden items-center justify-end md:flex">
           <div
-            class="cursor-pointer rounded-xl hover:bg-fp-darkblue-500 lg:p-3"
+            class="cursor-pointer rounded-xl hover:bg-fp-darkblue-500 md:p-3"
             @click="
               languageOpen = !languageOpen;
               categoryOpen = null;
@@ -118,14 +118,14 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl lg:absolute lg:h-[43rem] lg:bg-neutral-100 lg:dark:bg-neutral-900"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
     >
-      <div class="grid lg:grid-cols-12">
+      <div class="grid md:grid-cols-12">
         <!-- LEFT COLUMN DESKTOP -->
         <section class="col-span-3 pl-2 pt-5 lg:col-start-2">
-          <header class="hidden w-fit lg:block">
+          <header class="hidden w-fit md:block">
             <h2
-              class="px-2 text-base font-semibold uppercase text-white lg:text-fp-blue"
+              class="px-2 text-base font-semibold uppercase text-white md:text-fp-blue"
             >
               {{ $t(categoryOpen.label) }}
             </h2>
@@ -138,9 +138,9 @@ let languageOpen = useState("languageOpen", () => null);
             >
               <!-- Category List -->
               <div
-                :class="`mt-4 flex cursor-pointer justify-between px-2 py-4 text-white duration-150 ease-in-out hover:bg-gray-300 hover:dark:bg-gray-700 lg:py-2 lg:text-gray-700 lg:dark:text-gray-200 ${
+                :class="`mt-4 flex cursor-pointer justify-between px-2 py-4 text-white duration-150 ease-in-out hover:bg-gray-300 hover:dark:bg-gray-700 md:py-2 md:text-gray-700 md:dark:text-gray-200 ${
                   sectionOpen === section &&
-                  'lg:bg-gray-200 dark:lg:bg-gray-800'
+                  'md:bg-gray-200 dark:md:bg-gray-800'
                 } mr-2 rounded-xl`"
                 role="button"
                 @click="sectionOpen = section"
@@ -148,7 +148,7 @@ let languageOpen = useState("languageOpen", () => null);
                 <h3 class="font-medium">
                   {{ $t(section.label) }}
                 </h3>
-                <div class="lg:hidden">
+                <div class="md:hidden">
                   <Icon
                     name="fa6-solid:chevron-right"
                     :class="`${
@@ -163,7 +163,7 @@ let languageOpen = useState("languageOpen", () => null);
               <!-- Sections List Mobile -->
               <ul
                 v-if="sectionOpen.label === section.label"
-                class="ml-10 block text-lg text-white lg:hidden"
+                class="ml-10 block text-lg text-white md:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path">
@@ -178,7 +178,7 @@ let languageOpen = useState("languageOpen", () => null);
 
         <!-- RIGHT COLUMN DESKTOP -->
         <section
-          class="col-span-7 mt-2 hidden min-h-[42rem] border-l border-neutral-400 p-5 text-white dark:border-neutral-600 lg:block"
+          class="col-span-9 mt-2 hidden h-[42rem] overflow-hidden overflow-scroll border-l border-neutral-400 p-5 text-white dark:border-neutral-600 md:block lg:col-span-7"
           v-if="sectionOpen"
         >
           <div>

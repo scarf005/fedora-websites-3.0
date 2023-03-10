@@ -180,13 +180,13 @@
             "label": "Fedora Accounts",
             "path": "https://accounts.fedoraproject.org/",
             "icon": "fa6-brands:fedora",
-            "description": "To be granted access to things and to be credited for your contributions, you will need a Fedora account. Do this first!"
+            "description": "To be granted access and be credited for your contributions, you will need a Fedora account. Do this first!"
           },
           {
             "label": "Mote",
             "path": "https://meetbot.fedoraproject.org/",
             "icon": "fa6-brands:fedora",
-            "description": "Most subprojects hold weekly meetings in chatrooms. Fedora's Zodbot listens in on these meetings and keeps the logs here. The logs are open for everyone to browse."
+            "description": "Most subprojects hold weekly meetings in chatrooms. Fedora's Zodbot listens in on these meetings and keeps the logs here."
           },
           {
             "label": "Badges",
@@ -198,7 +198,7 @@
             "label": "Elections",
             "path": "https://elections.fedoraproject.org/",
             "icon": "fa6-brands:fedora",
-            "description": "To expedite the decission making process, talented leaders are elected to oversee the Fedora Project and Fedora's subprojects."
+            "description": "Talented leaders are elected to oversee the Fedora Project and Fedora's subprojects."
           },
           {
             "label": "Fedocal",
