@@ -4,14 +4,14 @@ const categories = {
   downloads: navigation.downloads,
   contributors: navigation.contributors,
   connections: navigation.connections,
-  support: navigation.support,
+  help: navigation.help,
 };
 
 // hack to duplicate the ask fedora section in the help menu
-if (categories.support.sections[0].label != "Ask Fedora") {
-  categories.support.sections = [
+if (categories.help.sections[0].label != "Ask Fedora") {
+  categories.help.sections = [
     navigation.connections.sections[1],
-    ...navigation.support.sections,
+    ...navigation.help.sections,
   ];
 }
 

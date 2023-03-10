@@ -215,8 +215,8 @@
           {
             "label": "Edit this website",
             "path": "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/",
-            "icon": "fa6-brands:fedora",
-            "description": "Edit fedoraproject.org using its custom content management system!"
+            "icon": "fa6-solid:pencil",
+            "description": "Edit fedoraproject.org pages using its custom content management system! Tip: Use the GitLab SSO link to open a session first."
           }
         ]
       },
@@ -225,100 +225,112 @@
         "description": "These are the tools and Git forges that Fedora packagers and developers use to build the Fedora systems.",
         "links": [
           {
+            "label": "Bugzilla",
+            "path": "https://bugzilla.redhat.com/",
+            "icon": "fa6-solid:circle",
+            "description": "Fedora Linux bugs are reported to Red Hat's bugzilla."
+          },
+          {
             "label": "Bodhi",
             "path": "https://bodhi.fedoraproject.org/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "This is Fedora's official build system. It is used to create, test, and publish packages."
           },
           {
             "label": "Koji",
             "path": "https://koji.fedoraproject.org/koji/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "This is the software that builds Fedora's RPM packages."
           },
           {
             "label": "Copr",
             "path": "https://copr.fedorainfracloud.org/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
-          },
-          {
-            "label": "Bugzilla",
-            "path": "https://bugzilla.redhat.com/",
-            "icon": "fa6-brands:redhat",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "This is an easy-to-use build system for the Fedora community."
           },
           {
             "label": "GitLab",
             "path": "https://gitlab.com/groups/fedora/-/saml/sso",
-            "icon": "fa6-brands:gitlab",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "GitLab is the newest of Fedora's official version control systems. It supports single-sign-on with Fedora accounts."
           },
           {
             "label": "GitHub",
             "path": "https://github.com/",
-            "icon": "fa6-brands:github",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "Many of Fedora's groups use this version control system."
           },
           {
             "label": "Pagure",
             "path": "https://pagure.io/browse/projects/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "This is an open-source git forge that the Fedora Project uses."
           },
           {
             "label": "Package Sources",
             "path": "https://src.fedoraproject.org/browse/projects/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
+            "icon": "fa6-solid:circle",
+            "description": "This is an open-source git forge that hosts most of Fedora's source RPM packages."
+          },
+          {
+            "label": "Sourcegraph",
+            "path": "https://sourcegraph.com/search?q=context:global+repo:%5Esrc.fedoraproject.org/&patternType=regexp",
+            "icon": "fa6-solid:circle",
+            "description": "You can use this to search for things in Fedora's code repositores. See the Fedora Magazine article for more info."
           }
         ]
       },
       {
         "label": "Documentation",
-        "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs.",
+        "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.",
         "links": [
           {
             "label": "Packaging Guidelines",
             "path": "https://docs.fedoraproject.org/en-US/packaging-guidelines/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about packaging for Fedora Linux — from both a policy and a technical perspective."
           },
           {
             "label": "Engineering Teams",
             "path": "https://docs.fedoraproject.org/en-US/engineering/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about FESCo and Engineering subprojects, SIGs, Work Groups, and teams."
           },
           {
             "label": "Mindshare Teams",
             "path": "https://docs.fedoraproject.org/en-US/mindshare-committee/teams/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Activities beyond engineering: Learn about the teams focused on Fedora's outreach, brand, & more."
           },
           {
             "label": "Fedora Council",
             "path": "https://docs.fedoraproject.org/en-US/project/leadership/#_fedora_council",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Learn about the Fedora Project governance."
           },
           {
             "label": "Program Management",
             "path": "https://docs.fedoraproject.org/en-US/council/fpgm/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Release planning, scheduling, and status tracking."
           },
           {
             "label": "Diversity & Inclusion",
             "path": "https://docs.fedoraproject.org/en-US/diversity-inclusion/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "The goal of this initiative is to help foster diversity and inclusion in Fedora community."
           },
           {
             "label": "Legal",
             "path": "https://docs.fedoraproject.org/en-US/legal/",
             "icon": "fa6-solid:book",
-            "description": ""
+            "description": "Policies for licensing, trademarks, and other legal issues."
+          },
+          {
+            "label": "Edit these docs",
+            "path": "https://docs.stg.fedoraproject.org/en-US/fedora-docs/contributing-docs/tools-7step-gitlab-howto/",
+            "icon": "fa6-solid:pencil",
+            "description": "Did you notice a glaring typo or a broken link in these docs? Click here to find out how you can help make it right!"
           }
         ]
       },
@@ -385,7 +397,7 @@
       },
       {
         "label": "Ask Fedora",
-        "description": "This is Fedora's main forum for all project collaboration and user support.",
+        "description": "This is Fedora's main forum for all project collaboration and user support. Also, if you have encountered a problem that might be a software bug, this is a good place to triage it with other users before escalating it to Red Hat's bugzilla reporting system.",
         "links": [
           {
             "label": "General Q&A",
@@ -505,37 +517,79 @@
       }
     ]
   },
-  "support": {
+  "help": {
     "label": "Help",
     "icon": "bi:life-preserver",
     "description": "Help!",
     "sections": [
       {
-        "label": "Documentation",
-        "description": "These documentation pages are user-focused. They provide a high-level overview of what the Fedora Project is all about and some introductory guides to help users get started using Fedora Linux.",
+        "label": "User Guides",
+        "description": "These are some introductory guides to help users get started with Fedora Linux.",
         "links": [
           {
-            "label": "About the Fedora Project",
-            "path": "https://docs.fedoraproject.org/en-US/project/",
-            "icon": "fa6-brands:fedora",
-            "description": ""
+            "label": "Downloading Fedora Linux",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/fedora-downloads-info/",
+            "icon": "fa6-solid:book",
+            "description": "How to select the appropriate download."
+          },
+          {
+            "label": "Getting Started",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/getting-started/",
+            "icon": "fa6-solid:book",
+            "description": "An in-depth guide to installing Fedora Linux."
+          },
+          {
+            "label": "Upgrading Fedora Linux",
+            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/system-upgrade/",
+            "icon": "fa6-solid:book",
+            "description": "How to upgrade an existing Fedora Linux installation."
           }
         ]
       },
       {
         "label": "Other Sources",
-        "description": "Over the years, Fedorans have created many sources of information for using our operating system. While these are not the official support sources, they are used and maintained by members of our community.",
+        "description": "Over the years, Fedorans have created many sources of information about Fedora Linux and the Fedora Project.",
         "links": [
+          {
+            "label": "Fedora Docs",
+            "path": "https://docs.fedoraproject.org/en-US/docs/",
+            "icon": "fa6-solid:book",
+            "description": "This is the main index page for all of Fedora's Documentation. If you weren't able to find a direct link to what you were looking for in this site's menus, you can try searching from here."
+          },
+          {
+            "label": "Fedora Quick Docs",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/",
+            "icon": "fa6-solid:book",
+            "description": "This is a collection of short HOWTO and FAQ-style documentation for Fedora users."
+          },
           {
             "label": "Fedora Wiki",
             "path": "https://fedoraproject.org/wiki/Fedora_Project_Wiki",
-            "icon": "fa6-solid:desktop",
-            "description": ""
+            "icon": "fa6-solid:book",
+            "description": "This is primarily a collaboration tool for the community. Content that has been submitted here might be out of date and/or it might not have undergone the same level of scrutiny as the information on Fedora Docs."
+          },
+          {
+            "label": "Fedora Magazine",
+            "path": "https://fedoramagazine.org/",
+            "icon": "fa6-solid:bookmark",
+            "description": "Fedora Magazine is a website that hosts promotional articles and short guides contributed from the community about free/libre and open-source software that runs on or works with the Fedora Linux operating system."
           },
           {
             "label": "Fedora Developer",
             "path": "https://developer.fedoraproject.org/",
-            "icon": "fa6-solid:desktop",
+            "icon": "fa6-solid:signs-post",
+            "description": "From mobile apps to web; from desktop to GUIs to CLI tools; create it all easily with Fedora."
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "description": "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you to do useful stuff with it.",
+        "links": [
+          {
+            "label": "Fedora’s Mission and Foundations",
+            "path": "https://docs.fedoraproject.org/en-US/project/#_what_is_fedora_all_about",
+            "icon": "fa6-brands:fedora",
             "description": ""
           }
         ]
