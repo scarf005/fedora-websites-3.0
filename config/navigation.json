@@ -439,37 +439,61 @@
       },
       {
         "label": "Project Discussion",
-        "description": "These are some convenient links to the discussion threads for several of Fedora's larger subprojects.",
+        "description": "These are some convenient links to the discussion threads for several of Fedora's larger subprojects and special interest groups.",
         "links": [
           {
             "label": "Workstation",
-            "path": "https://discussion.fedoraproject.org/tags/c/project/7/workstation",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/workstation-wg",
             "icon": "fa6-brands:discourse",
-            "description": ""
+            "description": "Use this link to connect with other workstation contributors."
           },
           {
             "label": "Server",
-            "path": "https://discussion.fedoraproject.org/tags/c/project/7/server",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/server-wg",
             "icon": "fa6-brands:discourse",
-            "description": ""
+            "description": "The Fedora Server edition working group"
           },
           {
             "label": "Cloud",
-            "path": "https://discussion.fedoraproject.org/tags/c/project/7/cloud",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/cloud-wg",
             "icon": "fa6-brands:discourse",
-            "description": ""
+            "description": "The Fedora Cloud edition working group"
           },
           {
             "label": "IoT",
-            "path": "https://discussion.fedoraproject.org/tags/c/project/7/iot",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/iot-wg",
             "icon": "fa6-brands:discourse",
-            "description": ""
+            "description": "The Fedora IoT (Internet of Things) edition working group"
           },
           {
             "label": "CoreOS",
-            "path": "https://discussion.fedoraproject.org/tags/c/project/7/coreos",
+            "path": "https://discussion.fedoraproject.org/tags/c/project/7/coreos-wg",
             "icon": "fa6-brands:discourse",
-            "description": ""
+            "description": "The Fedora Cloud edition working group"
+          },
+          {
+            "label": "Silverblue",
+            "path": "https://discussion.fedoraproject.org/tag/silverblue-team",
+            "icon": "fa6-brands:discourse",
+            "description": "The Fedora Silverblue team"
+          },
+          {
+            "label": "Kinoite",
+            "path": "https://discussion.fedoraproject.org/tag/kinoite-team",
+            "icon": "fa6-brands:discourse",
+            "description": "The Fedora Kinoite team"
+          },
+          {
+            "label": "EPEL",
+            "path": "https://discussion.fedoraproject.org/tag/epel-sig",
+            "icon": "fa6-brands:discourse",
+            "description": "The Extra Packages for Enterprise Linux special interest group"
+          },
+          {
+            "label": "All Teams & Tags",
+            "path": "https://discussion.fedoraproject.org/tags",
+            "icon": "fa6-brands:discourse",
+            "description": "Fedora has lots of teams! Click here to see a more-complete list."
           }
         ]
       },
