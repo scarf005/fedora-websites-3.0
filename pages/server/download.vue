@@ -1,6 +1,7 @@
 <script setup>
 const data = await getCMS("editions/server/download");
 const release_data = await getCMS("release");
+
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
@@ -19,6 +20,7 @@ const releaseDate =
   "-" +
   ga_data._value.payload.compose.date.substr(6, 2);
 
+// for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
   aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -89,10 +91,33 @@ useContentHead(data);
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-sm text-gray-600">
-            {{ $t("Latest release:") }}
+          <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
+            {{ $t("LATEST RELEASE") }}:
             <span class="font-semibold">{{ releaseDate }}</span>
           </p>
+        </div>
+        <div class="mt-5 -ml-5 flex" id="ctas">
+          <FpLink
+            :href="data.sections[0].content[1].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[1].title) }}
+          </FpLink>
+          <FpLink
+            :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t("Release Notes") }}
+          </FpLink>
+          <FpLink
+            :href="data.sections[0].content[2].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[2].title) }}
+          </FpLink>
         </div>
       </div>
     </section>

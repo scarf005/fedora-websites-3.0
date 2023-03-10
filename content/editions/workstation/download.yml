@@ -7,16 +7,10 @@ header_images:
 sections:
   - sectionTitle: release
     content:
-      - title: RELEASE DATE
-        description: November 15, 2022
-      - title: SUPPORTED THROUGH
-        description: November 14, 2023
-      - title: Release Notes
+      - date: "2022-11-15"
+      - title: Documentation
         link:
-          url: https://docs.fedoraproject.org/en-US/fedora/f37/release-notes/
-      - title: Installation Guide
-        link:
-          url: https://docs.fedoraproject.org/en-US/fedora/f37/install-guide/
+          url: https://docs.fedoraproject.org/en-US/workstation-docs/
       - title: Community Support
         link:
           url: https://discussion.fedoraproject.org/tag/workstation

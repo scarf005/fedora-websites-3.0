@@ -3,6 +3,18 @@ description: ""
 header_images:
   - image: public/assets/images/workstation_background.jpg
 sections:
+  - sectionTitle: release
+    content:
+      - date: ""
+      - title: Documentation
+        link:
+          url: https://docs.fedoraproject.org/en-US/fedora-coreos/
+      - title: Major Changes
+        link:
+          url: https://docs.fedoraproject.org/en-US/fedora-coreos/major-changes/
+      - title: Community Support
+        link:
+          url: https://discussion.fedoraproject.org/tag/coreos
   - sectionTitle: Streams
     sectionDescription: Fedora CoreOS is available across 3 different release streams
     content:
