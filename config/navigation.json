@@ -493,7 +493,7 @@
             "label": "All Teams & Tags",
             "path": "https://discussion.fedoraproject.org/tags",
             "icon": "fa6-brands:discourse",
-            "description": "Fedora has lots of teams! Click here to see a more-complete list."
+            "description": "Fedora has lots of teams! Click here to see a more complete list."
           }
         ]
       },
