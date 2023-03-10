@@ -151,20 +151,23 @@ useHead({
         class="container mx-auto flex flex-wrap justify-center gap-4 py-8 px-2 md:px-4 lg:gap-16"
       >
         <div
-          class="my-4 w-full rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
+          class="relative my-4 w-full rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 lg:max-w-sm"
           v-for="item in data.sections[3].content"
         >
-          <FpImage :src="item.image" />
+          <FpImage :src="item.image" class="-mt-16 mb-5" />
           <FpLink :href="item.url">
             <h3
-              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
+              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-xl font-bold text-transparent lg:mb-4 lg:text-4xl"
             >
               {{ $t(item.title) }}
             </h3>
-            <p class="text-center text-gray-700 dark:text-gray-300 lg:text-xl">
+            <p class="mb-16 text-gray-700 dark:text-gray-300">
               {{ $t(item.description) }}
             </p>
           </FpLink>
+          <div class="absolute bottom-6 right-4">
+            <FpBtn :href="item.url">Learn More</FpBtn>
+          </div>
         </div>
       </div>
     </section>

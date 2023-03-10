@@ -26,39 +26,38 @@ sections:
           Fedora Workstation is a polished, easy to use operating system for
           laptop and desktop computers, with a complete set of tools for
           developers and makers of all kinds.
-        image: public/assets/images/workstation-icon-text-logo.png
+        image: public/assets/images/fedora-workstation-logo-small.png
         link:
           text: Download Now
       - title: The solid edge foundation
-        url: /server
+        url: /iot
         description:
           Fedora IoT provides a trusted open source platform as a strong
           foundation for IoT ecosystems.
-        image: public/assets/images/fedora-iot-full-logo.png
+        image: public/assets/images/fedora-iot-logo-small.png
         link:
           text: Download Now
       - title: The lightweight VM environment
-        url: /coreos
+        url: /cloud
         description:
           Fedora Cloud edition is a powerful and minimal base operating
           system image with tailored images available for both public and many
           private cloud uses.
-        image: public/assets/images/cloud-icon-text-logo.png
+        image: public/assets/images/fedora-cloud-logo-small.png
         link:
           text: Download Now
       - title: The container optimized OS
-        url: /cloud
+        url: /coreos
         description: Fedora CoreOS is an automatically updating, minimal,
           container-focused operating system.
-        image: public/assets/images/fedora-coreos-logo.png
+        image: public/assets/images/fedora-coreos-logo-small.png
         link:
           text: Download Now
       - title: Tomorrow's server OS
         url: /server
         description: Fedora Server is a powerful, flexible operating system that
-          includes the best and latest datacenter technologies. It puts you in
-          control of all your infrastructure and services.
-        image: public/assets/images/fedora-server-logo.png
+          includes the best and latest datacenter technologies.
+        image: public/assets/images/fedora-server-logo-small.png
         link:
           text: Download Now
   - sectionTitle: Want more Fedora options?
