@@ -1,9 +1,8 @@
 <script setup>
-const { locale } = useI18n();
-
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
 
+// TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
@@ -13,6 +12,13 @@ const { data: beta_data } = await useFetch(
 
 const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
+
+const releaseDate =
+  ga_data._value.payload.compose.date.substr(0, 4) +
+  "-" +
+  ga_data._value.payload.compose.date.substr(4, 2) +
+  "-" +
+  ga_data._value.payload.compose.date.substr(6, 2);
 
 // for checksums
 const dlpath = {
@@ -103,40 +109,34 @@ if (data._value.sections[3].content[1].description) {
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-gray-600 dark:text-fp-gray-200">
-            <span class="text-sm">{{
-              $t(data.sections[0].content[0].title)
+          <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
+            {{ $t("RELEASE DATE") }}:
+            <span class="font-semibold">{{
+              data.sections[0].content[0].date
             }}</span>
-            {{ $t(data.sections[0].content[0].description) }}
-          </p>
-          <p class="text-gray-600 dark:text-fp-gray-200">
-            <span class="text-sm">{{
-              $t(data.sections[0].content[1].title)
-            }}</span>
-            {{ $t(data.sections[0].content[1].description) }}
           </p>
         </div>
         <div class="mt-5 -ml-5 flex" id="ctas">
+          <FpLink
+            :href="data.sections[0].content[1].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[1].title) }}
+          </FpLink>
+          <FpLink
+            :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t("Release Notes") }}
+          </FpLink>
           <FpLink
             :href="data.sections[0].content[2].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
             {{ $t(data.sections[0].content[2].title) }}
-          </FpLink>
-          <FpLink
-            :href="data.sections[0].content[3].link.url"
-            class="mx-5 text-blue-500"
-          >
-            <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[3].title) }}
-          </FpLink>
-          <FpLink
-            :href="data.sections[0].content[4].link.url"
-            class="mx-5 text-blue-500"
-          >
-            <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[4].title) }}
           </FpLink>
         </div>
       </div>
