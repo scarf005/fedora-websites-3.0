@@ -434,6 +434,24 @@
             "path": "https://discussion.fedoraproject.org/tags/c/ask/6/all/coreos",
             "icon": "fa6-brands:discourse",
             "description": "Use this link to focus on questions and answers about Fedora CoreOS."
+          },
+          {
+            "label": "GNOME",
+            "path": "https://discussion.fedoraproject.org/tag/gnome",
+            "icon": "fa6-brands:discourse",
+            "description": "Use this link to focus on questions and answers about the GNOME desktop environment."
+          },
+          {
+            "label": "KDE",
+            "path": "https://discussion.fedoraproject.org/tag/kde",
+            "icon": "fa6-brands:discourse",
+            "description": "Use this link to focus on questions and answers about the KDE desktop environment."
+          },
+          {
+            "label": "Installation",
+            "path": "https://discussion.fedoraproject.org/tag/installation",
+            "icon": "fa6-brands:discourse",
+            "description": "Use this link to focus on questions and answers about installing Fedora Linux."
           }
         ]
       },
