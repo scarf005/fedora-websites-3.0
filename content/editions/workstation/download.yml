@@ -8,18 +8,18 @@ sections:
   - sectionTitle: release
     content:
       - title: RELEASE DATE
-        description: April 19, 2022
+        description: November 15, 2022
       - title: SUPPORTED THROUGH
-        description: May 17, 2023
+        description: November 14, 2023
       - title: Release Notes
         link:
-          url: https://fedorapeople.org/groups/schedule/f-37/f-37-all-tasks.html
+          url: https://docs.fedoraproject.org/en-US/fedora/f37/release-notes/
       - title: Installation Guide
         link:
-          url: https://docs.fedoraproject.org/en-US/fedora/latest/install-guide/
+          url: https://docs.fedoraproject.org/en-US/fedora/f37/install-guide/
       - title: Community Support
         link:
-          url: https://ask.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/tag/workstation
   - sectionTitle: On Windows or macOS?
     sectionDescription: Get started by using Fedora Media Writer, which makes it
       super easy to give Fedora a try.
@@ -45,8 +45,8 @@ sections:
           url: https://getfedora.org/security/
           text: Verify Your Download
       - title: But wait! There's more.
-        description: Need something a bit different? [Check out our other Fedora
-          Workstation downloads here](https://alt.fedoraproject.org/), featuring
+        description: Need something a bit different? Check out our other Fedora
+          Workstation downloads [here](https://alt.fedoraproject.org/), featuring
           secondary architectures and network-based installation images.
         link:
           url: https://download.fedoraproject.org
@@ -79,15 +79,15 @@ sections:
       - title: Fedora Discussion
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/c/project
       - title: Fedora Chat
         link:
-          url: https://matrix.to/#/#matrix-meta-chat:fedoraproject.org
+          url: https://chat.fedoraproject.org/#/welcome
         image: public/assets/images/fedora-chat-plus-element.png
       - title: Ask Fedora
         image: public/assets/images/ask-fedora.png
         link:
-          url: https://ask.fedoraproject.org/
+          url: https://ask.fedoraproject.org/c/ask
   - sectionTitle: Community-Maintained Spaces
     content:
       - title: Reddit

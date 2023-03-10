@@ -53,8 +53,14 @@ useContentHead(data);
             <li>
               <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
               <pre
+                class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
+              ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
+            </li>
+            <li>
+              <p class="mb-2">{{ $t("List Fedora's GPG key(s)") }}</p>
+              <pre
                 class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-              ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+              ><code>gpg --with-fingerprint --show-keys --keyid-format long fedora.gpg</code></pre>
               <p class="mb-4 text-sm">
                 <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
 
@@ -95,9 +101,8 @@ useContentHead(data);
             {{ $t(data.packageSection.description) }}
           </p>
           <ContentRenderer
-            class="mt-2 text-start text-fp-gray-dark dark:text-fp-gray-light"
+            class="markdown mt-2 text-start text-fp-gray-dark dark:text-fp-gray-light"
             v-if="data.packageSection.contentMd"
-            tag="p"
             :value="data.packageSection.contentMd"
           />
         </div>
@@ -140,7 +145,6 @@ useContentHead(data);
           <ContentRenderer
             class="mt-2 text-start text-fp-gray-dark dark:text-fp-gray-light"
             v-if="data.bugSection.descriptionMd"
-            tag="p"
             :value="data.bugSection.descriptionMd"
           />
         </div>

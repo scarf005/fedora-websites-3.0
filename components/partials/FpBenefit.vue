@@ -1,10 +1,11 @@
 <script setup>
-defineProps({
+const props = defineProps({
   image: [Object, String],
   title: String,
   description: String,
   columns: String,
 });
+const descriptionMd = await mdparser(props.description);
 </script>
 
 <template>
@@ -22,9 +23,10 @@ defineProps({
       <h2 class="mb-5 font-bold text-gray-700 dark:text-gray-100">
         {{ $t(title) }}
       </h2>
-      <p class="font-normal text-gray-600 dark:text-gray-300">
-        {{ $t(description) }}
-      </p>
+      <ContentRendererMarkdown
+        class="markdown font-normal text-gray-600 dark:text-gray-300"
+        :value="descriptionMd"
+      />
     </div>
   </div>
 </template>

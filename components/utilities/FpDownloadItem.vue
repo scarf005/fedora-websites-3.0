@@ -59,6 +59,7 @@ const prettyType = {
   "vagrant-virtualbox": "Vagrant",
   "tar-gz": "Compressed Image",
   boot: "Netboot",
+  live: "Live ISO",
 };
 </script>
 
@@ -73,6 +74,7 @@ const prettyType = {
           <span class="w-0 basis-full sm:hidden"></span>
           <span class="">{{ prettyType[type] }}</span>
           <span class="text-gray-500"> {{ format }}</span>
+          <span class="beta-flag hidden">{{ $t("BETA") }} </span>
         </slot>
       </p>
       <div class="inline-flex">
@@ -100,7 +102,15 @@ const prettyType = {
   @apply border border-gray-200 bg-white px-5 py-2 dark:border-gray-900 dark:bg-neutral-900;
 }
 
-.fp-download-item a {
+.fp-download-item a,
+.fp-download-item--variant-beta a {
   @apply cursor-pointer border py-1 px-3 transition-colors;
+}
+
+.fp-download-item--variant-beta {
+}
+
+.fp-download-item--variant-beta .beta-flag {
+  @apply inline self-center rounded-full bg-fp-newblue-500 px-2 text-sm font-bold leading-normal text-white dark:bg-fp-darkblue-500;
 }
 </style>

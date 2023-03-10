@@ -45,7 +45,11 @@ if (props.description) {
     </header>
     <main>
       <slot>
-        <ContentRenderer v-if="descriptionMd" tag="p" :value="descriptionMd" />
+        <ContentRenderer
+          v-if="descriptionMd"
+          :value="descriptionMd"
+          class="markdown"
+        />
       </slot>
     </main>
     <footer>

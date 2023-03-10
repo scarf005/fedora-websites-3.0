@@ -1,28 +1,7 @@
 <script setup>
 import navigation from "../../config/navigation.json";
 
-const path = {
-  community: navigation.community.sections,
-  contributors: navigation.contributors.sections,
-  support: navigation.support.sections,
-};
-
-const support = computed(() => {
-  return {
-    ask: path.support[0].links[0],
-    bugs: path.support[2].links[1],
-    magazine: path.community[1].links[0],
-    developer: path.support[3].links[1],
-  };
-});
-const community = computed(() => {
-  return {
-    join: path.contributors[3].links[0],
-    blog: path.community[1].links[1],
-    matrix: path.community[0].links[1],
-    discussion: path.community[0].links[0],
-  };
-});
+let footerLanguageOpen = useState("footerLanguageOpen", () => null);
 </script>
 
 <template>
@@ -36,10 +15,6 @@ const community = computed(() => {
           title="Editions"
           :links="navigation.downloads.sections[0].links"
         />
-        <!-- <FooterSection
-          title="Emerging Editions"
-          :links="navigation.downloads.sections[1].links"
-        /> -->
         <FooterSection
           title="Spins"
           :links="navigation.downloads.sections[2].links"
@@ -49,12 +24,20 @@ const community = computed(() => {
           :links="navigation.downloads.sections[3].links"
         />
 
-        <FooterSection
-          title="User Support"
-          :links="support"
-          class="sm:col-start-2 sm:row-start-1 md:col-auto md:row-auto"
-        />
-        <FooterSection title="Community" :links="community" />
+        <!-- language selector -->
+        <div
+          class="cursor-pointer pb-4 md:pb-0"
+          @click="
+            footerLanguageOpen = !footerLanguageOpen;
+            categoryOpen = null;
+            sectionOpen = null;
+          "
+        >
+          <a class="text-2xl font-semibold transition duration-300 ease-in-out">
+            {{ $t("Languages") }}
+          </a>
+          <FpLanguageSelector :open="footerLanguageOpen" />
+        </div>
       </div>
     </nav>
     <!-- Fedora Section -->
@@ -67,55 +50,36 @@ const community = computed(() => {
             class="h-12 xl:ml-0"
           />
         </div>
-        <!-- language selector -->
-        <div
-          class="mx-auto cursor-pointer pb-4 md:pb-0"
-          @click="
-            footerLanguageOpen = !footerLanguageOpen;
-            categoryOpen = null;
-            sectionOpen = null;
-          "
-        >
-          <a
-            class="inline-flex items-center rounded text-fp-gray-darkest underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-          >
-            <span class="hidden md:block">{{ $t("Languages") }}</span
-            ><span class="md:hidden"
-              ><Icon name="fa6-solid:language" size="48" />
-            </span>
-          </a>
-          <FpLanguageSelector :open="footerLanguageOpen" />
-        </div>
         <!-- privacy etc links -->
         <ul
           class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
         >
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="https://docs.fedoraproject.org/en-US/legal/privacy/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Privacy Statement") }}</NuxtLink
+              >{{ $t("Privacy Statement") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="https://docs.fedoraproject.org/en-US/legal/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Legal") }}</NuxtLink
+              >{{ $t("Legal") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="https://docs.fedoraproject.org/en-US/project/code-of-conduct/"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Code of Conduct") }}</NuxtLink
+              >{{ $t("Code of Conduct") }}</FpLink
             >
           </li>
           <li class="list-none underline underline-offset-1">
-            <NuxtLink
-              to="#"
+            <FpLink
+              href="#"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Sponsors") }}</NuxtLink
+              >{{ $t("Sponsors") }}</FpLink
             >
           </li>
         </ul>
@@ -136,13 +100,15 @@ const community = computed(() => {
         <div class="container text-center lg:text-left">
           <p class="text-white">
             {{ $t("Fedora is sponsored by Red Hat.") }}
-            <span class="block text-fp-gray xl:ml-2 xl:inline">
-              {{
+            <FpLink
+              href="https://www.redhat.com/en/technologies/linux-platforms/articles/relationship-between-fedora-and-rhel"
+              class="block text-fp-gray underline underline-offset-1 xl:ml-2 xl:inline"
+              >{{
                 $t(
                   "Learn more about the relationship between Red Hat and Fedora."
                 )
-              }}
-            </span>
+              }}</FpLink
+            >
           </p>
         </div>
       </div>

@@ -2,18 +2,22 @@
 const data = await getCMS("editions/server/download");
 const release_data = await getCMS("release");
 // TODO: fallback to n-1 version if metadata are not yet available
-const { data: images_data } = await useFetch(
+const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
 );
-// TODO: Fetch BETA metadata is beta toggle is enabled
+const { data: beta_data } = await useFetch(
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+);
+
+const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
 const releaseDate =
-  images_data._value.payload.compose.date.substr(0, 4) +
+  ga_data._value.payload.compose.date.substr(0, 4) +
   "-" +
-  images_data._value.payload.compose.date.substr(4, 2) +
+  ga_data._value.payload.compose.date.substr(4, 2) +
   "-" +
-  images_data._value.payload.compose.date.substr(6, 2);
+  ga_data._value.payload.compose.date.substr(6, 2);
 
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -28,11 +32,20 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  verifyModal.value.chk_name = `Fedora-Server-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
-  // Fedora-Server-37-1.7-x86_64-CHECKSUM
-  verifyModal.value.checksum = `${dlpath[art.arch]}/${
-    release_data._value.ga.releasever
-  }/${path}/${verifyModal.value.chk_name}`;
+  if (betaSwitch.value) {
+    // Beta
+    verifyModal.value.chk_name = `Fedora-Server-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+    // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
+    verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
+      release_data._value.beta.releasever
+    }_Beta/${path}/${verifyModal.value.chk_name}`;
+  } else {
+    verifyModal.value.chk_name = `Fedora-Server-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+    // Fedora-Server-37-1.7-x86_64-CHECKSUM
+    verifyModal.value.checksum = `${dlpath[art.arch]}/${
+      release_data._value.ga.releasever
+    }/${path}/${verifyModal.value.chk_name}`;
+  }
   if (document) {
     document.body.classList.add("has-modal");
   }
@@ -89,46 +102,106 @@ useContentHead(data);
       class="scroll-mt-14 bg-gradient-to-r from-orange-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
+      <div
+        class="container mx-auto max-w-7xl"
+        v-if="release_data.beta.enabled && beta_data"
+      >
+        <div class="flex items-center justify-end gap-4">
+          <p class="text-fp-gray">Show Beta downloads</p>
+          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
+        </div>
+        <div class="flex justify-end">
+          <FpJoinTip
+            description="Help us with testing!"
+            inline="true"
+            class="origin-right scale-75"
+          />
+        </div>
+      </div>
       <div class="container mx-auto my-8 max-w-7xl">
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <DownloadSection
-            name="For Intel and AMD x86_64 systems"
-            art_name="Fedora Server"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.x86_64"
-            :dlPrefix="dlpath.x86_64"
-            :version="release_data.ga.releasever"
-            class="server-theme"
-          />
-          <DownloadSection
-            name="For ARM® aarch64 systems"
-            art_name="Fedora Server"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.aarch64"
-            :dlPrefix="dlpath.aarch64"
-            :version="release_data.ga.releasever"
-            class="server-theme"
-          />
-          <DownloadSection
-            name="For Power ppc64le systems"
-            art_name="Fedora Server"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.ppc64le"
-            :dlPrefix="dlpath.ppc64le"
-            :version="release_data.ga.releasever"
-            class="server-theme"
-          />
-          <DownloadSection
-            name="For IBM s390x zSystems"
-            art_name="Fedora Server"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.Server.s390x"
-            :dlPrefix="dlpath.s390x"
-            :version="release_data.ga.releasever"
-            class="server-theme"
-          />
+          <template v-if="betaSwitch == false">
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Server.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.ga.releasever"
+              class="server-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Server.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.ga.releasever"
+              class="server-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Server.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.ga.releasever"
+              class="server-theme"
+            />
+            <DownloadSection
+              name="For IBM s390x zSystems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Server.s390x"
+              :dlPrefix="dlpath.s390x"
+              :version="release_data.ga.releasever"
+              class="server-theme"
+            />
+          </template>
+          <template v-else>
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Server.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              class="server-theme"
+              isBeta
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Server.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.beta.releasever"
+              class="server-theme"
+              isBeta
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Server.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.beta.releasever"
+              class="server-theme"
+              isBeta
+            />
+            <DownloadSection
+              name="For IBM s390x zSystems"
+              art_name="Fedora Server"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Server.s390x"
+              :dlPrefix="dlpath.s390x"
+              :version="release_data.beta.releasever"
+              class="server-theme"
+              isBeta
+            />
+          </template>
         </div>
       </div>
     </section>
@@ -181,7 +254,7 @@ useContentHead(data);
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
               class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-            ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
             <p class="mb-4 text-sm">
               <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
 

@@ -75,9 +75,11 @@ function formatDate(dateStr) {
               <FpCardImage slot="prepend" :src="card.image" />
             </template>
             <template #footer>
-              <NuxtLink :to="card.link.url" class="underline">{{
-                $t(card.link.text)
-              }}</NuxtLink>
+              <NuxtLink
+                :to="card.link.url"
+                class="underline underline-offset-1"
+                >{{ $t(card.link.text) }}</NuxtLink
+              >
             </template>
           </FpCard>
         </div>
@@ -152,7 +154,7 @@ function formatDate(dateStr) {
               >
               <NuxtLink
                 to="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-darkblue-500"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
                 >{{ $t("Learn More") }}</NuxtLink
               >
             </div>
@@ -195,7 +197,7 @@ function formatDate(dateStr) {
               >
               <NuxtLink
                 to="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-4 duration-300 ease-in-out hover:text-fp-darkblue-500"
+                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
                 >{{ $t("Learn More") }}</NuxtLink
               >
             </div>

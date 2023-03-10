@@ -2,10 +2,18 @@
 import navigation from "../../config/navigation.json";
 const categories = {
   downloads: navigation.downloads,
-  community: navigation.community,
   contributors: navigation.contributors,
-  support: navigation.support,
+  connections: navigation.connections,
+  help: navigation.help,
 };
+
+// hack to duplicate the ask fedora section in the help menu
+if (categories.help.sections[0].label != "Ask Fedora") {
+  categories.help.sections = [
+    navigation.connections.sections[1],
+    ...navigation.help.sections,
+  ];
+}
 
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
@@ -13,8 +21,18 @@ let languageOpen = useState("languageOpen", () => null);
 </script>
 
 <template>
-  <header
-    class="fixed z-50 w-full bg-gradient-to-tr from-fp-newblue-500 to-fp-blue dark:from-fp-darkblue-500 dark:to-fp-blue"
+  <!-- BACKDROP, MAINLY TO CLOSE ON BLUR -->
+  <div
+    v-if="categoryOpen || languageOpen"
+    class="fixed inset-0"
+    @click="
+      categoryOpen = null;
+      languageOpen = null;
+    "
+  ></div>
+
+  <div
+    class="fixed z-50 w-full bg-gradient-to-r from-fp-newblue-500 to-fp-blue dark:from-fp-darkblue-500 dark:to-fp-blue"
   >
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
@@ -57,7 +75,7 @@ let languageOpen = useState("languageOpen", () => null);
           :key="category.id"
           role="navigation"
           :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 md:p-3 ${
-            categoryOpen?.label === category.label && 'md:bg-fp-blue'
+            categoryOpen?.label === category.label && 'md:bg-fp-darkblue-500'
           }`"
           @click="
             languageOpen = null;
@@ -100,20 +118,15 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden bg-fp-blue shadow-xl dark:bg-fp-darkblue-500 md:absolute md:h-[40rem] md:w-11/12 md:rounded-b-lg xl:w-10/12"
+      class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
     >
-      <!-- close button -->
-      <!-- <div class="mt-3 mr-8 hidden items-center justify-end text-white md:flex">
-        <button @click="categoryOpen = null" class="hover:opacity-75">
-          <Icon name="fa6-solid:x" size="24" />
-        </button>
-      </div> -->
-
-      <div class="grid lg:grid-cols-12">
+      <div class="grid md:grid-cols-12">
         <!-- LEFT COLUMN DESKTOP -->
-        <section class="col-span-3 pl-2 pt-5">
-          <header class="hidden w-fit lg:block">
-            <h2 class="px-2 text-xl font-semibold uppercase text-white">
+        <section class="col-span-3 pl-2 pt-5 lg:col-start-2">
+          <header class="hidden w-fit md:block">
+            <h2
+              class="px-2 text-base font-semibold uppercase text-white md:text-fp-blue"
+            >
               {{ $t(categoryOpen.label) }}
             </h2>
           </header>
@@ -125,17 +138,17 @@ let languageOpen = useState("languageOpen", () => null);
             >
               <!-- Category List -->
               <div
-                :class="`mt-4 flex cursor-pointer justify-between rounded-l-xl px-2 py-4 text-white duration-150 ease-in-out hover:bg-fp-darkblue-500 lg:py-2 ${
+                :class="`mt-4 flex cursor-pointer justify-between px-2 py-4 text-white duration-150 ease-in-out hover:bg-gray-300 hover:dark:bg-gray-700 md:py-2 md:text-gray-700 md:dark:text-gray-200 ${
                   sectionOpen === section &&
-                  'md:bg-fp-darkblue-500 dark:md:bg-fp-blue'
-                }`"
+                  'md:bg-gray-200 dark:md:bg-gray-800'
+                } mr-2 rounded-xl`"
                 role="button"
                 @click="sectionOpen = section"
               >
                 <h3 class="font-medium">
                   {{ $t(section.label) }}
                 </h3>
-                <div class="lg:hidden">
+                <div class="md:hidden">
                   <Icon
                     name="fa6-solid:chevron-right"
                     :class="`${
@@ -150,7 +163,7 @@ let languageOpen = useState("languageOpen", () => null);
               <!-- Sections List Mobile -->
               <ul
                 v-if="sectionOpen.label === section.label"
-                class="ml-10 block text-lg text-white lg:hidden"
+                class="ml-10 block text-lg text-white md:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path">
@@ -165,15 +178,15 @@ let languageOpen = useState("languageOpen", () => null);
 
         <!-- RIGHT COLUMN DESKTOP -->
         <section
-          class="col-span-9 hidden min-h-screen bg-gray-200 p-5 text-white dark:bg-gray-900 lg:block"
+          class="col-span-9 mt-2 hidden h-[42rem] overflow-hidden overflow-scroll border-l border-neutral-400 p-5 text-white dark:border-neutral-600 md:block lg:col-span-7"
           v-if="sectionOpen"
         >
           <div>
             <header class="mb-6">
-              <h3 class="font-semibold text-fp-blue dark:text-gray-200">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
                 {{ $t(sectionOpen.label) }}
               </h3>
-              <p class="text-gray-900 dark:text-gray-500">
+              <p class="text-gray-500 dark:text-gray-500">
                 {{ $t(sectionOpen.description) }}
               </p>
             </header>
@@ -181,14 +194,14 @@ let languageOpen = useState("languageOpen", () => null);
               <li
                 v-for="link in sectionOpen.links"
                 :key="link.id"
-                class="rounded-lg p-4 hover:bg-gray-300 dark:hover:bg-fp-darkblue-500"
+                class="rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-800"
               >
                 <FpLink :href="link.path">
-                  <h4 class="mb-2 font-medium text-gray-600 dark:text-gray-200">
+                  <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}
                   </h4>
-                  <p class="text-gray-700 dark:text-gray-500">
+                  <p class="text-base text-gray-700 dark:text-gray-500">
                     {{ $t(link.description) }}
                   </p>
                 </FpLink>
@@ -198,5 +211,5 @@ let languageOpen = useState("languageOpen", () => null);
         </section>
       </div>
     </nav>
-  </header>
+  </div>
 </template>

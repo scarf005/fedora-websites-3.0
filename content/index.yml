@@ -1,6 +1,11 @@
 title: Fedora Linux
 description: An innovative platform for hardware, clouds, and containers, built
   with love by you.
+image:
+  src: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/assets/images/fedora-default-meta-image.jpg
+  alt: Fedora Index Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/workstation_registered_digital_public_good.png
 links:
@@ -21,39 +26,38 @@ sections:
           Fedora Workstation is a polished, easy to use operating system for
           laptop and desktop computers, with a complete set of tools for
           developers and makers of all kinds.
-        image: public/assets/images/workstation-icon-text-logo.png
-        link:
-          text: Download Now
-      - title: The solid edge foundation
-        url: /server
-        description:
-          Fedora IoT provides a trusted open source platform as a strong
-          foundation for IoT ecosystems.
-        image: public/assets/images/fedora-iot-logo.png
-        link:
-          text: Download Now
-      - title: The lightweight VM environment
-        url: /coreos
-        description:
-          Fedora Cloud edition is a powerful and minimal base operating
-          system image with tailored images available for both public and many
-          private cloud uses.
-        image: public/assets/images/cloud-icon-text-logo.png
-        link:
-          text: Download Now
-      - title: The container optimized OS
-        url: /cloud
-        description: Fedora CoreOS is an automatically updating, minimal,
-          container-focused operating system.
-        image: public/assets/images/core-os-logo.png
+        image: public/assets/images/fedora-workstation-logo-small.png
         link:
           text: Download Now
       - title: Tomorrow's server OS
         url: /server
         description: Fedora Server is a powerful, flexible operating system that
-          includes the best and latest datacenter technologies. It puts you in
-          control of all your infrastructure and services.
-        image: public/assets/images/fedora-server-logo.png
+          includes the best and latest datacenter technologies.
+        image: public/assets/images/fedora-server-logo-small.png
+        link:
+          text: Download Now
+      - title: The solid edge foundation
+        url: /iot
+        description:
+          Fedora IoT provides a trusted open source platform as a strong
+          foundation for IoT ecosystems.
+        image: public/assets/images/fedora-iot-logo-small.png
+        link:
+          text: Download Now
+      - title: The lightweight VM environment
+        url: /cloud
+        description:
+          Fedora Cloud edition is a powerful and minimal base operating
+          system image with tailored images available for both public and many
+          private cloud uses.
+        image: public/assets/images/fedora-cloud-logo-small.png
+        link:
+          text: Download Now
+      - title: The container optimized OS
+        url: /coreos
+        description: Fedora CoreOS is an automatically updating, minimal,
+          container-focused operating system.
+        image: public/assets/images/fedora-coreos-logo-small.png
         link:
           text: Download Now
   - sectionTitle: Want more Fedora options?
@@ -96,16 +100,16 @@ sections:
           text: Fedora Docs
           url: https://docs.fedoraproject.org/en-US/
       - title: Support
-        description: Get support from our the community on the Ask Fedora Forum.
-        link:
-          text: Ask Fedora
-          url: https://ask.fedoraproject.org/
-      - title: Chat
-        description: "Users and developers are available in the #fedora
-          channel on Fedora Chat and Discussions."
+        description: Get support from our the community on the Fedora Discussion Forum.
         link:
           text: Fedora Discussion
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/c/ask
+      - title: Chat
+        description: "Users and developers are available in the #fedora
+          channel on Fedora Chat."
+        link:
+          text: Fedora Chat
+          url: https://chat.fedoraproject.org/#/room/#fedora:fedoraproject.org
   - sectionTitle: Fedora Magazine
     sectionDescription: Make the most of using Fedora.
     images: public/assets/images/fedora-magazine.png

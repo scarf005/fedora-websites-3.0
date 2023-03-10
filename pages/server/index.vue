@@ -6,7 +6,7 @@ useContentHead(data);
   <FpHero
     :background="data.header_images[1].image"
     alignment="bg-bottom"
-    class="relative z-0"
+    class="server-hero relative z-0 dark:bg-gray-300 dark:bg-blend-multiply"
   >
     <TheLocalBar
       image="assets/images/fedora-server-logo.png"
@@ -16,16 +16,28 @@ useContentHead(data);
         { name: 'Community', link: '/server/community' },
       ]"
     />
-    <FpBanner
-      :title="data.title"
-      :subtitle="data.description"
-      color="text-fp-blue"
-      border="border border-fp-blue"
-      background="text-white bg-fp-blue"
-      :ctas="data.links"
+    <div class="relative mx-auto max-w-screen-2xl">
+      <FpBanner
+        :title="data.title"
+        :subtitle="data.description"
+        color="text-fp-blue"
+        border="border border-fp-blue"
+        background="text-white bg-fp-blue"
+        :ctas="data.links"
+      >
+        <FpImage class="absolute -z-20" :src="data.header_images[0].images" />
+      </FpBanner>
+    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 35 11"
+      class="absolute -bottom-5 -z-10 h-56 fill-white dark:fill-neutral-900 md:h-1/2"
+      width="100%"
+      height="100%"
+      preserveAspectRatio="none"
     >
-      <FpImage :src="data.header_images[0].image" />
-    </FpBanner>
+      <path d="m 0 6 L 11 9 L 35 0 V 11 H 0 z" />
+    </svg>
   </FpHero>
 
   <!-- Benefits Section -->
@@ -110,6 +122,26 @@ useContentHead(data);
 </template>
 
 <style>
+.server-hero > div > div > .FPImage {
+  @apply bottom-4 w-1/2 md:left-0 xl:w-fit;
+}
+
+.server-hero .fp-banner {
+  @apply mx-0 ml-auto mt-2 px-2 pt-12 pb-40 text-center;
+  @apply sm:pt-24 sm:pb-80;
+  @apply md:w-1/2 md:pt-40 md:pb-56 md:text-left;
+  @apply lg:pb-60;
+  @apply 2xl:w-2/3 2xl:pl-64 2xl:pb-80;
+}
+
+.server-hero .fp-banner h1 {
+  @apply text-2xl font-medium sm:text-3xl lg:text-4xl xl:text-6xl;
+}
+
+.server-hero .fp-banner h2 {
+  @apply pt-6 text-lg lg:text-2xl;
+}
+
 ul.server-accent,
 .server-accent ul {
   @apply marker:text-fp-orange-500 dark:marker:text-fp-orange-700;

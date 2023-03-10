@@ -19,12 +19,12 @@ sections:
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
           text: Visit Now
-          url: https://discussion.fedoraproject.org/
+          url: https://discussion.fedoraproject.org/tag/workstation
       - title: Chat
         description:
           "You can chat with the Fedora Workstation Working Group via either
-          Matrix or IRC: **#workstation:fedoraproject.org** on Matrix and
-          **#fedora-workstation** on irc.libera.chat."
+          Matrix or IRC: **#workstation:fedoraproject.org** on Matrix or
+          #fedora-workstation on irc.libera.chat."
         image: public/assets/images/fedora-chat-plus-element.png
         link:
           text: Chat Now
@@ -49,7 +49,7 @@ sections:
         description:
           Workstation Working Group meetings are open to all current and
           potential contributors on **Tuesdays, 9:30 AM US Eastern** on
-          [Bluejeans](https://bluejeans.com/395383051).
+          [bluejeans.com/395383051](https://bluejeans.com/395383051).
   - sectionTitle: Events
     sectionDescription:
       Fedora has events throughout the year that you can attend,
@@ -100,7 +100,6 @@ sections:
           year's Nest virtual Fedora annual conference! We have a rolling
           deadline process with acceptance dates of **July 1st and July 8th,
           2022**.
-
 
           [Read more about the call for proposals and propose your own](https://communityblog.fedoraproject.org/nest-2022-cfp/)!.
         image: public/assets/images/colur-point.png

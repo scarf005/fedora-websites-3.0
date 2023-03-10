@@ -139,7 +139,8 @@ useHead({
         />
       </svg>
     </header>
-    <!-- 5 Main Editions-->
+
+    <!-- 5 MAIN EDITIONS-->
     <section class="w-full bg-gray-100 dark:bg-gray-900">
       <header class="hidden">
         <h2 class="text-center">
@@ -150,32 +151,38 @@ useHead({
         class="container mx-auto flex flex-wrap justify-center gap-4 py-8 px-2 md:px-4 lg:gap-16"
       >
         <div
-          class="my-4 w-2/5 rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
+          class="relative my-4 w-full rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 lg:max-w-sm"
           v-for="item in data.sections[3].content"
         >
+          <FpImage :src="item.image" class="-mt-16 mb-5" />
           <FpLink :href="item.url">
             <h3
-              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
+              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-xl font-bold text-transparent lg:mb-4 lg:text-4xl"
             >
               {{ $t(item.title) }}
             </h3>
-            <p class="text-center text-gray-700 dark:text-gray-300 lg:text-xl">
+            <p class="mb-16 text-gray-700 dark:text-gray-300">
               {{ $t(item.description) }}
             </p>
           </FpLink>
+          <div class="absolute bottom-6 right-4">
+            <FpBtn :href="item.url">Learn More</FpBtn>
+          </div>
         </div>
       </div>
     </section>
     <section
-      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-light/25 dark:to-fp-blue-light/25 md:bg-gradient-to-r lg:my-16"
+      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-300/25 dark:to-fp-newblue/25 md:bg-gradient-to-r lg:my-16"
     >
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
         >
           {{ $t(data.sections[4].sectionTitle) }}
         </h2>
       </header>
+
+      <!-- WANT MORE FEDORA OPTIONS -->
       <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
         <article
           v-for="card in data.sections[4].content"
@@ -183,7 +190,7 @@ useHead({
           class="m-4 max-w-sm"
         >
           <div class="mb-2">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
               {{ $t(card.title) }}
             </h3>
           </div>
@@ -191,19 +198,19 @@ useHead({
             <p class="mb-2 text-gray-900 dark:text-gray-300">
               {{ $t(card.description) }}
             </p>
-            <NuxtLink
-              :to="$t(card.link.url)"
-              class="font-semibold text-fp-blue-dark underline-offset-4 transition duration-150 ease-in hover:text-fp-blue-light hover:underline dark:text-gray-300"
-              >{{ $t(card.link.text) }}</NuxtLink
+            <FpLink
+              :href="card.link.url"
+              class="font-semibold text-fp-darkblue underline-offset-4 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
+              >{{ $t(card.link.text) }}</FpLink
             >
           </div>
         </article>
       </div>
     </section>
-    <section class="container mx-auto">
+    <section class="container mx-auto pb-8 lg:pb-12">
       <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
         <h2
-          class="text-center font-semibold text-fp-blue-dark dark:text-fp-blue-light"
+          class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
         >
           {{ $t(data.sections[5].sectionTitle) }}
         </h2>
@@ -212,24 +219,24 @@ useHead({
         <article
           v-for="card in data.sections[5].content"
           :key="card.id"
-          class="flex max-w-sm flex-col items-center bg-gray-400 p-8 dark:bg-gray-800"
+          class="flex max-w-sm flex-col items-center rounded-md bg-gray-400 p-8 dark:bg-gray-800"
         >
           <div class="mb-2 flex gap-4">
-            <h3 class="font-semibold text-fp-blue-dark dark:text-fp-blue-light">
+            <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
               {{ $t(card.title) }}
             </h3>
 
             <Icon
               :name="supportCardIcon(card.title)"
               size="36"
-              class="order-first text-fp-blue-dark dark:text-fp-blue-light"
+              class="order-first text-fp-darkblue dark:text-fp-newblue"
             />
           </div>
           <div class="text-center">
             <p class="mb-2">{{ $t(card.description) }}</p>
             <NuxtLink
               :to="card.link.url"
-              class="font-semibold transition duration-150 ease-in-out hover:text-fp-blue-dark hover:underline hover:dark:text-fp-blue-light"
+              class="font-semibold underline-offset-1 transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>

@@ -2,7 +2,7 @@ title: Fedora keeps you safe
 description: Learn how to verify your downloads
 verifySection:
   title: Verify with CHECKSUM files
-  description: If your download comes with a CHECKSUM file, follow these three easy steps to verify your image for both security and integrity.
+  description: If your download comes with a CHECKSUM file, follow these easy steps to verify your image for both security and integrity.
 packageSection:
   title: Package signing keys
   description: Learn how Fedora uses package signing to help protect you.

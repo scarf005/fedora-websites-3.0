@@ -1,6 +1,11 @@
 path: index
 title: The lightweight VM environment
 description: A customizable cloud native experience.
+image:
+  src: https://stg.fedoraproject.org/assets/images/group-3-.png
+  alt: Fedora Cloud Image
+  width: 400
+  height: 300
 header_images:
   - image: public/assets/images/group-3-.png
   - image: public/assets/images/image4099.png
@@ -40,11 +45,11 @@ sections:
   - sectionTitle: "Endorsed Partners of Fedora Cloud "
     images: public/assets/images/coreos_background_why.jpg
     content:
-      - image:
+      - images:
           light: public/assets/images/aws.png
           dark: public/assets/images/aws-white.png
       - image: public/assets/images/google_cloud-ar21.svg
-      - image:
+      - images:
           light: public/assets/images/Vagrant_PrimaryLogo_Color_RGB.svg
           dark: public/assets/images/Vagrant_PrimaryLogo_ColorWhite_RGB.svg
   - sectionTitle: Built By You

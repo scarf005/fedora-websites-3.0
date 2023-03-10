@@ -2,18 +2,22 @@
 const data = await getCMS("editions/iot/download");
 const release_data = await getCMS("release");
 // TODO: fallback to n-1 version if metadata are not yet available
-const { data: images_data } = await useFetch(
+const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/metadata/images.json`
 );
-// TODO: Fetch BETA metadata is beta toggle is enabled
+const { data: beta_data } = await useFetch(
+  `https://dl.fedoraproject.org/pub/alt/iot/test/${release_data._value.beta.releasever}/metadata/images.json`
+);
+
+const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
 const releaseDate =
-  images_data._value.payload.compose.date.substr(0, 4) +
+  ga_data._value.payload.compose.date.substr(0, 4) +
   "-" +
-  images_data._value.payload.compose.date.substr(4, 2) +
+  ga_data._value.payload.compose.date.substr(4, 2) +
   "-" +
-  images_data._value.payload.compose.date.substr(6, 2);
+  ga_data._value.payload.compose.date.substr(6, 2);
 
 function updateVerify(art) {
   console.log(art);
@@ -21,8 +25,14 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.ga.releasever}-${art.arch}-${images_data._value.payload.compose.date}.${images_data._value.payload.compose.respin}-CHECKSUM`;
-  verifyModal.value.checksum = `https://download.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/${path}/${verifyModal.value.chk_name}`;
+  if (betaSwitch.value) {
+    // Beta
+    verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.beta.releasever}-${art.arch}-${beta_data._value.payload.compose.date}.${beta_data._value.payload.compose.respin}-CHECKSUM`;
+    verifyModal.value.checksum = `https://download.fedoraproject.org/pub/alt/iot/test/${release_data._value.beta.releasever}/${path}/${verifyModal.value.chk_name}`;
+  } else {
+    verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.ga.releasever}-${art.arch}-${ga_data._value.payload.compose.date}.${ga_data._value.payload.compose.respin}-CHECKSUM`;
+    verifyModal.value.checksum = `https://download.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/${path}/${verifyModal.value.chk_name}`;
+  }
   if (document) {
     document.body.classList.add("has-modal");
   }
@@ -54,7 +64,7 @@ useContentHead(data);
     />
 
     <!-- TITLE -->
-    <section class="px-2 pt-24 pb-12 text-center lg:text-start">
+    <section class="px-2 pt-24 pb-8 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
@@ -79,24 +89,60 @@ useContentHead(data);
       class="scroll-mt-14 bg-gradient-to-r from-purple-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
-      <div class="container mx-auto my-8 max-w-7xl">
+      <div
+        class="container mx-auto max-w-7xl"
+        v-if="release_data.beta.enabled && beta_data"
+      >
+        <div class="flex items-center justify-end gap-4">
+          <p class="text-fp-gray">Show Beta downloads</p>
+          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
+        </div>
+        <div class="flex justify-end pb-8">
+          <FpJoinTip
+            description="Help us with testing!"
+            inline="true"
+            class="origin-right scale-75"
+          />
+        </div>
+      </div>
+      <div class="container mx-auto my-8 max-w-7xl px-2">
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <IotDownloadSection
-            name="For Intel and AMD x86_64 systems"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.IoT.x86_64"
-            :version="release_data.ga.releasever"
-            class="iot-theme"
-          />
-          <IotDownloadSection
-            name="For ARM® aarch64 systems"
-            @verify-click="updateVerify"
-            :artifacts="images_data.payload.images.IoT.aarch64"
-            :version="release_data.ga.releasever"
-            class="iot-theme"
-          />
+          <template v-if="betaSwitch == false">
+            <IotDownloadSection
+              name="For Intel and AMD x86_64 systems"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.IoT.x86_64"
+              :version="release_data.ga.releasever"
+              class="iot-theme"
+            />
+            <IotDownloadSection
+              name="For ARM® aarch64 systems"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.IoT.aarch64"
+              :version="release_data.ga.releasever"
+              class="iot-theme"
+            />
+          </template>
+          <template v-else>
+            <IotDownloadSection
+              name="For Intel and AMD x86_64 systems"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.IoT.x86_64"
+              :version="release_data.beta.releasever"
+              class="iot-theme"
+              isBeta
+            />
+            <IotDownloadSection
+              name="For ARM® aarch64 systems"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.IoT.aarch64"
+              :version="release_data.beta.releasever"
+              class="iot-theme"
+              isBeta
+            />
+          </template>
         </div>
       </div>
     </section>
@@ -149,7 +195,7 @@ useContentHead(data);
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
               class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-            ><code>curl -O https://getfedora.org/static/fedora.gpg</code></pre>
+            ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
             <p class="mb-4 text-sm">
               <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
 

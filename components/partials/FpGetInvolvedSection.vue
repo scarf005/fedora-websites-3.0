@@ -37,8 +37,7 @@ for (let item of props.content) {
             {{ $t(item.title) }}
           </h3>
           <ContentRenderer
-            tag="p"
-            class="max-w-sm text-fp-gray-darkest dark:text-fp-gray"
+            class="markdown max-w-sm text-fp-gray-darkest dark:text-fp-gray"
             :value="item.descriptionMd"
           />
         </div>

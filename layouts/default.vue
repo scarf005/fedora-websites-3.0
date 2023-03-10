@@ -26,4 +26,13 @@ useHead({
 body {
   @apply dark:bg-neutral-700 dark:text-white;
 }
+.markdown a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  font-weight: bold;
+}
+.markdown-inline,
+.markdown-inline > * {
+  display: inline;
+}
 </style>

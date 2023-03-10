@@ -38,11 +38,7 @@ defineProps({
         />
       </div>
       <FpJoinTip
-        :description="
-          $t(
-            'Your friendly and helpful contributions to these communication channels would be greatly appreciated'
-          )
-        "
+        description="Your friendly and helpful contributions to these communication channels would be greatly appreciated"
       />
     </div>
   </section>

@@ -88,6 +88,21 @@
               name: "description"
               widget: "markdown"
               required: false
+            - label: "Image (Dark/Light variant)"
+              name: "images"
+              widget: "object"
+              required: false
+              fields:
+                - label: "Image Dark"
+                  name: "dark"
+                  widget: "image"
+                  required: true
+                  hint: "Image visible on dark theme"
+                - label: "Image Light"
+                  name: "light"
+                  widget: "image"
+                  required: true
+                  hint: "Image visible on light theme"
             - label: "Image"
               name: "image"
               widget: "image"
