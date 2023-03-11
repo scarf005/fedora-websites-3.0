@@ -1,11 +1,10 @@
-title: Download Fedora CoreOS
+title: Fedora CoreOS
 description: ""
 header_images:
   - image: public/assets/images/workstation_background.jpg
 sections:
   - sectionTitle: release
     content:
-      - date: ""
       - title: Documentation
         link:
           url: https://docs.fedoraproject.org/en-US/fedora-coreos/

@@ -1,11 +1,10 @@
 path: download
-title: Download Fedora Server 37
+title: Fedora Server
 description: We're so glad you've decided to give Fedora Server a try. We
   know you'll love it.
 sections:
   - sectionTitle: release
     content:
-      - date: ""
       - title: Documentation
         link:
           url: https://docs.fedoraproject.org/en-US/fedora-server/

@@ -1,9 +1,8 @@
-title: Download Fedora IoT
+title: Fedora IoT
 description: Download the latest version of Fedora IoT Edition for your architecture here.
 sections:
   - sectionTitle: release
     content:
-      - date: ""
       - title: Documentation
         link:
           url: https://docs.fedoraproject.org/en-US/iot/

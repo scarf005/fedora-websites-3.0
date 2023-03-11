@@ -102,7 +102,7 @@ if (data._value.sections[3].content[1].description) {
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
           <span class="text-fp-green-700">
-            Fedora Workstation {{ release_data.ga.releasever }}
+            {{ data.title }} {{ release_data.ga.releasever }}
           </span>
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-200">
@@ -110,9 +110,9 @@ if (data._value.sections[3].content[1].description) {
         </p>
         <div class="mt-5 flex">
           <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
-            {{ $t("RELEASE DATE") }}:
+            {{ $t(data.sections[0].content[0].title) }}:
             <span class="font-semibold">{{
-              data.sections[0].content[0].date
+              data.sections[0].content[0].description
             }}</span>
           </p>
         </div>

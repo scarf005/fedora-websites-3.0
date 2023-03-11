@@ -128,7 +128,7 @@ useContentHead(data);
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
           <span class="text-fp-newblue dark:text-fp-newblue-700">
-            Fedora Cloud {{ release_data.ga.releasever }}</span
+            {{ data.title }} {{ release_data.ga.releasever }}</span
           >
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-light">
@@ -142,11 +142,11 @@ useContentHead(data);
         </div>
         <div class="mt-5 -ml-5 flex" id="ctas">
           <FpLink
-            :href="data.sections[0].content[1].link.url"
+            :href="data.sections[0].content[0].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[1].title) }}
+            {{ $t(data.sections[0].content[0].title) }}
           </FpLink>
           <FpLink
             :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
@@ -156,11 +156,11 @@ useContentHead(data);
             {{ $t("Release Notes") }}
           </FpLink>
           <FpLink
-            :href="data.sections[0].content[2].link.url"
+            :href="data.sections[0].content[1].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[2].title) }}
+            {{ $t(data.sections[0].content[1].title) }}
           </FpLink>
         </div>
       </div>
