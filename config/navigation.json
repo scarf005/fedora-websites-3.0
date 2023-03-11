@@ -654,14 +654,14 @@
         "links": [
           {
             "label": "Add translation",
-            "path": "https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages",
+            "path": "https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/",
             "icon": "simple-icons:weblate",
             "description": ""
           },
           {
             "label": "How to use Weblate",
             "path": "https://docs.fedoraproject.org/en-US/localization/weblate/",
-            "icon": "fa6-brands:fedora",
+            "icon": "fa6-solid:book",
             "description": ""
           }
 
