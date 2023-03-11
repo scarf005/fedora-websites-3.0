@@ -143,7 +143,7 @@ useContentHead(data);
         </p>
         <div class="mt-5 flex">
           <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
-            {{ $t("LATEST RELEASE") }}:
+            {{ $t("RELEASE DATE") }}:
             <span class="font-semibold" v-if="betaSwitch == false">{{
               $d(new Date(release_data.ga.release_date), { dateStyle: "full" })
             }}</span>
