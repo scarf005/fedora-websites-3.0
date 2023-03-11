@@ -109,6 +109,7 @@ useHead({
           <FpLink
             :href="data.sections[1].url"
             class="transition duration-150 ease-in hover:text-fp-gray-lighter"
+            v-if="data.sections[1].sectionDescription"
           >
             <h3
               class="text-base font-semibold uppercase sm:mt-6 md:text-xl lg:mt-8 xl:text-2xl 2xl:mb-2"
@@ -116,7 +117,7 @@ useHead({
               {{ $t(data.sections[1].sectionTitle) }}
             </h3>
             <p class="max-w-sm text-sm sm:text-base lg:text-xl">
-              {{ $t(data.sections[1].sectionDescription) }} >
+              {{ $t(data.sections[1].sectionDescription) }} &gt;
             </p>
           </FpLink>
         </div>
