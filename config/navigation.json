@@ -655,7 +655,7 @@
           {
             "label": "Add translation",
             "path": "https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages",
-            "icon": "bi:globe",
+            "icon": "simple-icons:weblate",
             "description": ""
           },
           {
