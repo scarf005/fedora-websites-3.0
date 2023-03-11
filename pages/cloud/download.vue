@@ -131,10 +131,10 @@ useContentHead(data);
             class="text-fp-newblue dark:text-fp-newblue-700"
             v-if="betaSwitch == false"
           >
-            Fedora Cloud {{ release_data.ga.releasever }}</span
+            {{ data.title }} {{ release_data.ga.releasever }}</span
           >
           <span class="text-fp-newblue dark:text-fp-newblue-700" v-else>
-            Fedora Cloud {{ release_data.beta.releasever }}
+            {{ data.title }} {{ release_data.beta.releasever }}
             {{ $t("BETA").toLowerCase() }}
           </span>
         </h1>
@@ -156,11 +156,11 @@ useContentHead(data);
         </div>
         <div class="mt-5 -ml-5 flex" id="ctas">
           <FpLink
-            :href="data.sections[0].content[1].link.url"
+            :href="data.sections[0].content[0].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[1].title) }}
+            {{ $t(data.sections[0].content[0].title) }}
           </FpLink>
           <FpLink
             :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
@@ -170,11 +170,11 @@ useContentHead(data);
             {{ $t("Release Notes") }}
           </FpLink>
           <FpLink
-            :href="data.sections[0].content[2].link.url"
+            :href="data.sections[0].content[1].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[2].title) }}
+            {{ $t(data.sections[0].content[1].title) }}
           </FpLink>
         </div>
       </div>

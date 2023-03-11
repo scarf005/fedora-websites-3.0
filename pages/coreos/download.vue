@@ -294,12 +294,19 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-magenta">Fedora CoreOS</span>
+          <span class="text-fp-magenta">{{ data.title }}</span>
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(streams.sectionDescription) }}
         </p>
         <div class="mt-5 -ml-5 flex" id="ctas">
+          <FpLink
+            :href="data.sections[0].content[0].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[0].title) }}
+          </FpLink>
           <FpLink
             :href="data.sections[0].content[1].link.url"
             class="mx-5 text-blue-500"
@@ -313,13 +320,6 @@ useContentHead(data);
           >
             <Icon name="fa-book" />
             {{ $t(data.sections[0].content[2].title) }}
-          </FpLink>
-          <FpLink
-            :href="data.sections[0].content[3].link.url"
-            class="mx-5 text-blue-500"
-          >
-            <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[3].title) }}
           </FpLink>
         </div>
 

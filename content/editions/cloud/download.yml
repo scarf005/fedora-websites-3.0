@@ -1,9 +1,8 @@
-title: Download Fedora Cloud
+title: Fedora Cloud
 description: Download the latest version of Fedora Cloud Edition for your architecture here.
 sections:
   - sectionTitle: release
     content:
-      - date: ""
       - title: Documentation
         link:
           url: https://fedoraproject.org/wiki/Cloud_SIG

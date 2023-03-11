@@ -102,10 +102,10 @@ if (data._value.sections[3].content[1].description) {
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
           <span class="text-fp-green-700" v-if="betaSwitch == false">
-            Fedora Workstation {{ release_data.ga.releasever }}
+            {{ data.title }} {{ release_data.ga.releasever }}
           </span>
           <span class="text-fp-green-700" v-else>
-            Fedora Workstation {{ release_data.beta.releasever }}
+            {{ data.title }} {{ release_data.beta.releasever }}
             {{ $t("BETA").toLowerCase() }}
           </span>
         </h1>
