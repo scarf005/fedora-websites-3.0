@@ -12,10 +12,10 @@ let categories = {
   languages: {
     label: "Languages",
     icon: "bi:globe",
-    description: "Help!",
+    description: "Languages",
     sections: [
       {
-        label: "Languages",
+        label: "Translations",
         description: "Pick a language to view this page in your language",
         links: [],
       },
@@ -207,7 +207,7 @@ let languageOpen = useState("languageOpen", () => null);
               >
                 <FpLink
                   :href="link.path"
-                  v-if="sectionOpen.label !== 'Languages'"
+                  v-if="sectionOpen.label !== 'Translations'"
                 >
                   <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
@@ -219,14 +219,14 @@ let languageOpen = useState("languageOpen", () => null);
                 </FpLink>
 
                 <a
-                  v-if="sectionOpen.label === 'Languages'"
+                  v-if="sectionOpen.label === 'Translations'"
                   class="mb-2 font-medium text-fp-blue"
                   :href="`${
                     $config.app.baseURL.replace(new RegExp('/$'), '') +
                     link.path
                   }`"
                 >
-                  {{ link.label }}
+                  {{ $t(link.label) }}
                 </a>
               </li>
             </ul>
