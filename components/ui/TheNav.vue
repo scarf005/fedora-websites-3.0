@@ -27,6 +27,7 @@ locales.value.map((i) => {
   categories.languages.sections[0].links.push({
     label: i.name,
     path: switchLocalePath(i.code),
+    i18n: true,
   });
 });
 
@@ -127,7 +128,7 @@ let languageOpen = useState("languageOpen", () => null);
     <!-- MENU -->
     <nav
       v-if="categoryOpen"
-      class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
+      class="left-0 right-0 mx-auto h-screen shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
     >
       <div class="grid md:grid-cols-12">
         <!-- LEFT COLUMN DESKTOP, HAS EXPANDERS ON MOBILE -->
@@ -175,10 +176,20 @@ let languageOpen = useState("languageOpen", () => null);
                 class="ml-10 block text-lg text-white md:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
-                  <FpLink :href="link.path">
+                  <FpLink :href="link.path" v-if="!link.i18n">
                     <Icon :name="link.icon" size="24" class="mr-2" />
                     {{ $t(link.label) }}
                   </FpLink>
+
+                  <a
+                    v-if="link.i18n"
+                    :href="`${
+                      $config.app.baseURL.replace(new RegExp('/$'), '') +
+                      link.path
+                    }`"
+                  >
+                    {{ $t(link.label) }}
+                  </a>
                 </li>
               </ul>
             </li>
@@ -205,10 +216,7 @@ let languageOpen = useState("languageOpen", () => null);
                 :key="link.id"
                 class="rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-800"
               >
-                <FpLink
-                  :href="link.path"
-                  v-if="sectionOpen.label !== 'Translations'"
-                >
+                <FpLink :href="link.path" v-if="!link.i18n">
                   <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}
@@ -219,7 +227,7 @@ let languageOpen = useState("languageOpen", () => null);
                 </FpLink>
 
                 <a
-                  v-if="sectionOpen.label === 'Translations'"
+                  v-if="link.i18n"
                   class="mb-2 font-medium text-fp-blue"
                   :href="`${
                     $config.app.baseURL.replace(new RegExp('/$'), '') +
