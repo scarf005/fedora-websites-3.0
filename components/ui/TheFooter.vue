@@ -23,21 +23,6 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
           title="Labs"
           :links="navigation.downloads.sections[3].links"
         />
-
-        <!-- language selector -->
-        <div
-          class="cursor-pointer pb-4 md:pb-0"
-          @click="
-            footerLanguageOpen = !footerLanguageOpen;
-            categoryOpen = null;
-            sectionOpen = null;
-          "
-        >
-          <a class="text-2xl font-semibold transition duration-300 ease-in-out">
-            {{ $t("Languages") }}
-          </a>
-          <FpLanguageSelector :open="footerLanguageOpen" />
-        </div>
       </div>
     </nav>
     <!-- Fedora Section -->

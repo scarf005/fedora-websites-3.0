@@ -1,11 +1,34 @@
 <script setup>
 import navigation from "../../config/navigation.json";
-const categories = {
+
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+
+let categories = {
   downloads: navigation.downloads,
   contributors: navigation.contributors,
   connections: navigation.connections,
   help: navigation.help,
+  languages: {
+    label: "Languages",
+    icon: "bi:globe",
+    description: "Help!",
+    sections: [
+      {
+        label: "Languages",
+        description: "Pick a language to view this page in your language",
+        links: [],
+      },
+    ],
+  },
 };
+
+locales.value.map((i) => {
+  categories.languages.sections[0].links.push({
+    label: i.name,
+    path: switchLocalePath(i.code),
+  });
+});
 
 // hack to duplicate the ask fedora section in the help menu
 if (categories.help.sections[0].label != "Ask Fedora") {
@@ -75,7 +98,7 @@ let languageOpen = useState("languageOpen", () => null);
           :key="category.id"
           role="navigation"
           :class="`rounded-xl p-1 hover:bg-fp-darkblue-500 md:p-3 ${
-            categoryOpen?.label === category.label && 'md:bg-fp-darkblue-500'
+            categoryOpen?.label === category.label && 'bg-fp-darkblue-500'
           }`"
           @click="
             languageOpen = null;
@@ -96,20 +119,6 @@ let languageOpen = useState("languageOpen", () => null);
 
         <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
         <div class="hidden items-center justify-end md:flex">
-          <div
-            class="cursor-pointer rounded-xl hover:bg-fp-darkblue-500 md:p-3"
-            @click="
-              languageOpen = !languageOpen;
-              categoryOpen = null;
-              sectionOpen = null;
-            "
-          >
-            <a class="inline-flex items-center rounded text-sm text-white">
-              <span class="mr-1">{{ $t("Languages") }}</span>
-            </a>
-            <FpLanguageSelector :open="languageOpen" />
-          </div>
-
           <FpThemeSelector />
         </div>
       </FpNav>
@@ -121,7 +130,7 @@ let languageOpen = useState("languageOpen", () => null);
       class="left-0 right-0 mx-auto h-screen overflow-hidden shadow-xl md:absolute md:h-[43rem] md:bg-neutral-100 md:dark:bg-neutral-900"
     >
       <div class="grid md:grid-cols-12">
-        <!-- LEFT COLUMN DESKTOP -->
+        <!-- LEFT COLUMN DESKTOP, HAS EXPANDERS ON MOBILE -->
         <section class="col-span-3 pl-2 pt-5 lg:col-start-2">
           <header class="hidden w-fit md:block">
             <h2
@@ -136,11 +145,11 @@ let languageOpen = useState("languageOpen", () => null);
               :key="section.id"
               role="button"
             >
-              <!-- Category List -->
+              <!-- CATEGORIES -->
               <div
-                :class="`mt-4 flex cursor-pointer justify-between px-2 py-4 text-white duration-150 ease-in-out hover:bg-gray-300 hover:dark:bg-gray-700 md:py-2 md:text-gray-700 md:dark:text-gray-200 ${
+                :class="`flex cursor-pointer justify-between px-2 py-2 text-white duration-150 ease-in-out hover:bg-gray-300 hover:dark:bg-gray-700 md:mt-4 md:py-4 md:py-2 md:text-gray-700 md:dark:text-gray-200 ${
                   sectionOpen === section &&
-                  'md:bg-gray-200 dark:md:bg-gray-800'
+                  'bg-fp-darkblue-500 md:bg-gray-200 dark:md:bg-gray-800'
                 } mr-2 rounded-xl`"
                 role="button"
                 @click="sectionOpen = section"
@@ -160,7 +169,7 @@ let languageOpen = useState("languageOpen", () => null);
                 </div>
               </div>
 
-              <!-- Sections List Mobile -->
+              <!-- SECTIONS MOBILE (HIDDEN ON DESKTOP) -->
               <ul
                 v-if="sectionOpen.label === section.label"
                 class="ml-10 block text-lg text-white md:hidden"
@@ -176,7 +185,7 @@ let languageOpen = useState("languageOpen", () => null);
           </ul>
         </section>
 
-        <!-- RIGHT COLUMN DESKTOP -->
+        <!-- SECTIONS DESKTOP (RIGHT COLUMN, HIDDEN ON MOBILE) -->
         <section
           class="col-span-9 mt-2 hidden h-[42rem] overflow-hidden overflow-scroll border-l border-neutral-400 p-5 text-white dark:border-neutral-600 md:block lg:col-span-7"
           v-if="sectionOpen"
@@ -196,7 +205,10 @@ let languageOpen = useState("languageOpen", () => null);
                 :key="link.id"
                 class="rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-800"
               >
-                <FpLink :href="link.path">
+                <FpLink
+                  :href="link.path"
+                  v-if="sectionOpen.label !== 'Languages'"
+                >
                   <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}
@@ -205,6 +217,17 @@ let languageOpen = useState("languageOpen", () => null);
                     {{ $t(link.description) }}
                   </p>
                 </FpLink>
+
+                <a
+                  v-if="sectionOpen.label === 'Languages'"
+                  class="mb-2 font-medium text-fp-blue"
+                  :href="`${
+                    $config.app.baseURL.replace(new RegExp('/$'), '') +
+                    link.path
+                  }`"
+                >
+                  {{ link.label }}
+                </a>
               </li>
             </ul>
           </div>
