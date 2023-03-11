@@ -11,11 +11,11 @@ header_images:
 links:
   - text: Release Notes
 sections:
-  - sectionTitle: 🎉 Join us for Flock 2023!
+  - sectionTitle: 🎉 Fedora Linux 38 Beta released!
     sectionDescription: active
   - sectionTitle: Next upcoming event
-    sectionDescription: Flock to Fedora 2023
-    url: /flocktofedora
+    sectionDescription: ""
+    url: ""
   - sectionTitle: A Registered Digital Public Good
     image: public/assets/images/workstation_registered_digital_public_good.png
   - sectionTitle: Editions

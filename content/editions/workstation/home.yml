@@ -10,7 +10,7 @@ image:
   height: 300
 header_images:
   - image: public/assets/images/workstation_framework.png
-  - image: public/assets/images/workstation_background.png
+  - image: public/assets/images/workstation_background.jpg
 links:
   - text: Download now
     url: /workstation/download
