@@ -637,5 +637,29 @@
         ]
       }
     ]
+  },
+  "languages": {
+    "label": "Languages",
+    "icon": "bi:globe",
+    "description": "Languages",
+    "sections": [
+      {
+        "label": "Translations",
+        "description": "Pick a language to view this page in your language",
+        "links": []
+      },
+      {
+        "label": "Add a translation",
+        "description": "We use weblate to translate our site. Please find relevant links below.",
+        "links": [
+          {
+            "label": "Translate the website!",
+            "path": "https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages",
+            "icon": "fa6-brands:fedora",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 }
