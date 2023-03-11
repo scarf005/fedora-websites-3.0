@@ -9,18 +9,7 @@ let categories = {
   contributors: navigation.contributors,
   connections: navigation.connections,
   help: navigation.help,
-  languages: {
-    label: "Languages",
-    icon: "bi:globe",
-    description: "Languages",
-    sections: [
-      {
-        label: "Translations",
-        description: "Pick a language to view this page in your language",
-        links: [],
-      },
-    ],
-  },
+  languages: navigation.languages,
 };
 
 locales.value.map((i) => {
