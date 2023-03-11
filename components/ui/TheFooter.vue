@@ -101,7 +101,7 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
           <p class="text-white">
             {{ $t("Fedora is sponsored by Red Hat.") }}
             <FpLink
-              href="https://www.redhat.com/en/technologies/linux-platforms/articles/relationship-between-fedora-and-rhel"
+              href="https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/"
               class="block text-fp-gray underline underline-offset-1 xl:ml-2 xl:inline"
               >{{
                 $t(
