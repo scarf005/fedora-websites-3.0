@@ -127,9 +127,16 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-newblue dark:text-fp-newblue-700">
+          <span
+            class="text-fp-newblue dark:text-fp-newblue-700"
+            v-if="betaSwitch == false"
+          >
             Fedora Cloud {{ release_data.ga.releasever }}</span
           >
+          <span class="text-fp-newblue dark:text-fp-newblue-700" v-else>
+            Fedora Cloud {{ release_data.beta.releasever }}
+            {{ $t("BETA").toLowerCase() }}
+          </span>
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(data.description) }}
@@ -137,7 +144,14 @@ useContentHead(data);
         <div class="mt-5 flex">
           <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
             {{ $t("LATEST RELEASE") }}:
-            <span class="font-semibold">{{ releaseDate }}</span>
+            <span class="font-semibold" v-if="betaSwitch == false">{{
+              $d(new Date(release_data.ga.release_date), { dateStyle: "full" })
+            }}</span>
+            <span class="font-semibold" v-else>{{
+              $d(new Date(release_data.beta.release_date), {
+                dateStyle: "full",
+              })
+            }}</span>
           </p>
         </div>
         <div class="mt-5 -ml-5 flex" id="ctas">
