@@ -655,9 +655,18 @@
           {
             "label": "Translate the website!",
             "path": "https://translate.fedoraproject.org/projects/fedora-websites-3-0/#languages",
-            "icon": "fa6-brands:fedora",
+            "icon": "bi:globe",
+            "description": ""
+          },
+          {
+            "label": "How to use Weblate",
+            "path": "https://docs.fedoraproject.org/en-US/localization/weblate/",
+            "icon": "bi:globe",
             "description": ""
           }
+
+
+          
         ]
       }
     ]
