@@ -101,7 +101,7 @@ useHead({
 
       <!-- hero bottom content-->
       <section
-        class="align-end mx-auto mb-2 flex w-full justify-between px-8 lg:mb-4 xl:px-20"
+        class="align-end mx-auto mb-2 flex w-full max-w-screen-2xl justify-between px-8 lg:mb-4 xl:px-20"
       >
         <div
           class="flex w-48 flex-col justify-center sm:justify-start md:max-w-sm lg:w-auto"
