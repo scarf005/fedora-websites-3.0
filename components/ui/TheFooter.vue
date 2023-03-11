@@ -77,7 +77,7 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
           </li>
           <li class="list-none underline underline-offset-1">
             <FpLink
-              href="#"
+              href="/sponsors"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Sponsors") }}</FpLink
             >
