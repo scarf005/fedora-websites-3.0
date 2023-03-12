@@ -13,21 +13,18 @@ sections:
     sectionDescription: "The Fedora Project is also grateful to the following
       sponsors for providing substantial support."
     content:
-      - title: Dell
-        image: public/assets/images/sponsors/dell-light.svg
+      - title: AWS
         link:
-          text: Dell
-          url: https://linux.dell.com/
+          url: https://aws.amazon.com/what-is-cloud-computing
+          text: Powered by AWS Cloud Computing
+        image:
+          light: public/assets/images/sponsors/PB_AWS-light.png
+          dark: public/assets/images/sponsors/PB_AWS-dark.png
       - title: Proio
         link:
           url: https://www.proio.com/
           text: Proio
         image: public/assets/images/proio.jpg
-      - title: Server Beach
-        link:
-          url: https://aptum.com/
-          text: Aptum
-        image: public/assets/images/serverbeach.png
       - title: Open Source Lab
         link:
           url: https://osuosl.org/
@@ -35,11 +32,6 @@ sections:
         image:
           light: public/assets/images/sponsors/osllogo-light.png
           dark: public/assets/images/sponsors/osllogo-white.png
-      - title: Colocation
-        link:
-          url: https://www.colocationamerica.com/
-          text: Colocation
-        image: public/assets/images/sponsors/colocation-america-light.png
       - title: Ibiblio
         link:
           url: https://www.ibiblio.org/
@@ -59,13 +51,6 @@ sections:
         image:
           light: public/assets/images/sponsors/internetx-light.svg
           dark: public/assets/images/sponsors/internetx-dark.svg
-      - title: Cdn77
-        image:
-          light: public/assets/images/sponsors/cdn77-light.svg
-          dark: public/assets/images/sponsors/cdn77-dark.svg
-        link:
-          url: https://www.cdn77.com/
-          text: Cdn77
       - title: Dedicated Solutions
         image:
           light: public/assets/images/sponsors/dedicatedsolutions-light.png
@@ -73,3 +58,10 @@ sections:
         link:
           url: https://www.dedicatedsolutions.com/
           text: Dedicated Solutions
+      - title: Heficed
+        image:
+          light: public/assets/images/sponsors/heficed-light.svg
+          dark: public/assets/images/sponsors/heficed-dark.svg
+        link:
+          url: https://www.heficed.com/
+          text: Heficed
