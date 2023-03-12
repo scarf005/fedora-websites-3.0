@@ -213,6 +213,12 @@
             "description": "Yes, they still exist."
           },
           {
+            "label": "Infrastructure Status",
+            "path": "https://www.fedorastatus.org/",
+            "icon": "fa6-brands:fedora",
+            "description": "This page lists known and scheduled outages of Fedora Project services."
+          },
+          {
             "label": "Edit this website",
             "path": "https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/",
             "icon": "fa6-solid:pencil",
