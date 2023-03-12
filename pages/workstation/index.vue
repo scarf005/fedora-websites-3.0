@@ -246,7 +246,10 @@ useContentHead(data);
       </svg>
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/workstation_logo.png"
+        :image="{
+          light: 'assets/images/workstation-logo-light.png',
+          dark: 'assets/images/workstation-logo-dark.png',
+        }"
       />
     </section>
   </main>

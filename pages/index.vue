@@ -155,7 +155,7 @@ useHead({
           class="relative my-4 w-full rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 lg:max-w-sm"
           v-for="item in data.sections[3].content"
         >
-          <FpImage :src="item.image" class="-mt-16 mb-5" />
+          <FpImage :src="item.image" class="-mt-11 mb-5 h-20" />
           <FpLink :href="item.url">
             <h3
               class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-xl font-bold text-transparent lg:mb-4 lg:text-4xl"

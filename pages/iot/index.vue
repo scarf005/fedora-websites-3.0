@@ -229,7 +229,10 @@ useContentHead(data);
 
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/fedora-iot-full-logo.png"
+        :image="{
+          light: 'assets/images/IoT-logo-light.png',
+          dark: 'assets/images/IoT-logo-dark.png',
+        }"
       />
     </section>
   </main>

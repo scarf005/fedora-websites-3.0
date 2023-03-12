@@ -116,7 +116,10 @@ useContentHead(data);
     </svg>
     <FpCallToAction
       :cta="data.links"
-      image="assets/images/fedora-server-full-logo.png"
+      :image="{
+        light: 'assets/images/server-logo-light.png',
+        dark: 'assets/images/server-logo-dark.png',
+      }"
     />
   </section>
 </template>

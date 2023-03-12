@@ -26,14 +26,18 @@ sections:
           Fedora Workstation is a polished, easy to use operating system for
           laptop and desktop computers, with a complete set of tools for
           developers and makers of all kinds.
-        image: public/assets/images/fedora-workstation-logo-small.png
+        image:
+          light: public/assets/images/workstation-logo-light.png
+          dark: public/assets/images/workstation-logo-dark.png
         link:
           text: Download Now
       - title: Tomorrow's server OS
         url: /server
         description: Fedora Server is a powerful, flexible operating system that
           includes the best and latest datacenter technologies.
-        image: public/assets/images/fedora-server-logo-small.png
+        image:
+          light: public/assets/images/server-logo-light.png
+          dark: public/assets/images/server-logo-dark.png
         link:
           text: Download Now
       - title: The solid edge foundation
@@ -41,7 +45,9 @@ sections:
         description:
           Fedora IoT provides a trusted open source platform as a strong
           foundation for IoT ecosystems.
-        image: public/assets/images/fedora-iot-logo-small.png
+        image:
+          light: public/assets/images/IoT-logo-light.png
+          dark: public/assets/images/IoT-logo-dark.png
         link:
           text: Download Now
       - title: The lightweight VM environment
@@ -50,14 +56,18 @@ sections:
           Fedora Cloud edition is a powerful and minimal base operating
           system image with tailored images available for both public and many
           private cloud uses.
-        image: public/assets/images/fedora-cloud-logo-small.png
+        image:
+          light: public/assets/images/cloud-logo-light.png
+          dark: public/assets/images/cloud-logo-dark.png
         link:
           text: Download Now
       - title: The container optimized OS
         url: /coreos
         description: Fedora CoreOS is an automatically updating, minimal,
           container-focused operating system.
-        image: public/assets/images/fedora-coreos-logo-small.png
+        image:
+          light: public/assets/images/coreos-logo-light.png
+          dark: public/assets/images/coreos-logo-dark.png
         link:
           text: Download Now
   - sectionTitle: Want more Fedora options?
