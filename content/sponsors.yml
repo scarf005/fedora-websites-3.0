@@ -24,7 +24,9 @@ sections:
         link:
           url: https://www.proio.com/
           text: Proio
-        image: public/assets/images/proio.jpg
+        image:
+          light: public/assets/images/proio.jpg
+          dark: public/assets/images/proio.jpg
       - title: Open Source Lab
         link:
           url: https://osuosl.org/
@@ -40,7 +42,9 @@ sections:
           light: public/assets/images/sponsors/ibiblio-light.png
           dark: public/assets/images/sponsors/ibiblio-dark.png
       - title: Bodhost
-        image: public/assets/images/sponsors/bodhost-dark.png
+        image:
+          light: public/assets/images/sponsors/bodhost-dark.png
+          dark: public/assets/images/sponsors/bodhost-dark.png
         link:
           text: Bodhost
           url: https://www.bodhost.com/
