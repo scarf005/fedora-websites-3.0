@@ -102,6 +102,12 @@
             "path": "https://spins.fedoraproject.org/lxde/",
             "icon": "fa6-solid:desktop",
             "description": "A light, fast, and less resource hungry desktop environment"
+          },
+          {
+            "label": "Mobility Spin",
+            "path": "https://fedoraproject.org/wiki/Mobility",
+            "icon": "fa6-solid:phone",
+            "description": "Fedora built for Pinephone and Pinephone Pro"
           }
         ]
       },
