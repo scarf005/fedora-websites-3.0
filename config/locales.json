@@ -12,8 +12,8 @@
   { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" },
   { "code": "ar", "iso": "ar", "file": "ar.json", "name": "عربى" },
   {
-    "code": "pt_br",
-    "iso": "pt_br",
+    "code": "pt-br",
+    "iso": "pt-BR",
     "file": "pt_BR.json",
     "name": "Português do Brasil"
   }
