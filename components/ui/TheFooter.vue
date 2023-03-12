@@ -1,7 +1,15 @@
 <script setup>
 import navigation from "../../config/navigation.json";
 
-let footerLanguageOpen = useState("footerLanguageOpen", () => null);
+const switchLocalePath = useSwitchLocalePath();
+const { locales } = useI18n();
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    label: i.name,
+    path: switchLocalePath(i.code),
+    i18n: true,
+  }));
+});
 </script>
 
 <template>
@@ -22,6 +30,11 @@ let footerLanguageOpen = useState("footerLanguageOpen", () => null);
         <FooterSection
           title="Labs"
           :links="navigation.downloads.sections[3].links"
+        />
+        <FooterSection
+          class="md:hidden"
+          title="Languages"
+          :links="availableLocales"
         />
       </div>
     </nav>

@@ -101,10 +101,20 @@ let languageOpen = useState("languageOpen", () => null);
             }
           "
         >
-          <div class="md:hidden">
+          <div
+            :class="`${category.label == 'Languages' ? 'hidden' : 'md:hidden'}`"
+          >
             <Icon :name="category.icon" size="24" />
           </div>
-          <p class="text-sm text-white">{{ $t(category.label) }}</p>
+          <p
+            :class="`text-sm text-white ${
+              category.label == 'Languages'
+                ? 'hidden md:inline-block'
+                : 'inline-block'
+            }`"
+          >
+            {{ $t(category.label) }}
+          </p>
         </button>
 
         <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
