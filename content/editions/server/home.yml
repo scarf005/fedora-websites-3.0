@@ -25,7 +25,7 @@ sections:
         description: Run virtual machines and containers with
           [libvirt](https://libvirt.org/) and [podman](https://podman.io/) or
           build amazing applications on top of the
-          [WildFly](https://www.wildfly.org) application runtime.
+          [WildFly](https://www.wildfly.org) application runtime
         image: public/assets/images/feature-1v3.png
       - title: Sensible Defaults
         description: Quickly deploy a server with the tools you need to spin up your
