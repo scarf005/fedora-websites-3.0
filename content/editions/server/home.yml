@@ -22,26 +22,24 @@ sections:
   - sectionTitle: Features for everyone
     content:
       - title: Latest Technologies
-        description: Run virtual machines or containers with
-          [libvirt](https://libvirt.org/) and [podman](https://podman.io/)
-          managed through [Cockpit](https://cockpit-project.org/).
-        image: public/assets/images/feature-1v2.png
+        description: Run virtual machines and containers with
+          [libvirt](https://libvirt.org/) and [podman](https://podman.io/) or
+          build amazing applications on top of the
+          [WildFly](https://www.wildfly.org) application runtime.
+        image: public/assets/images/feature-1v3.png
       - title: Sensible Defaults
-        description:
-          Quickly deploy a server with the tools you need to spin up your
+        description: Quickly deploy a server with the tools you need to spin up your
           workloads
         image: public/assets/images/feature-2.png
       - title: Stable Ecosystem
         description: Enables a variety of server workloads
         image: public/assets/images/feature-3.png
       - title: Cockpit
-        description:
-          A built-in remote server administration tool is ready to use on
+        description: A built-in remote server administration tool is ready to use on
           first boot
         image: public/assets/images/feature-4v2.png
       - title: " From the Data Center to your Raspberry Pi"
-        description:
-          Serving the needs of small to medium businesses, home labs, and
+        description: Serving the needs of small to medium businesses, home labs, and
           enterprise workloads
         image: public/assets/images/features-5.png
     images: ""
@@ -55,8 +53,7 @@ sections:
       Fedora Server is created by a team in the Fedora community called the **Server Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [Server Working Group website](https://docs.fedoraproject.org/en-US/server-working-group/).
     content:
       - title: Report & discuss issues
-        description:
-          You can view, file, and discuss Fedora Server issues on the [Fedora
+        description: You can view, file, and discuss Fedora Server issues on the [Fedora
           Server issue tracker](https://pagure.io/fedora-server/issues).
       - title: Chat with the team
         description: Visit \#fedora-server on irc.libera.chat or visit
@@ -67,7 +64,6 @@ sections:
           to receive meeting agendas and minutes [view
           archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors **every 1st and 3rd
+        description: Open to all current and potential contributors **every 1st and 3rd
           Wednesday at 18:00 UTC**
           on  [​chat​.​fedoraproject​.​org​/​#​/​room​/​#​meeting​:​fedoraproject​.​org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).
