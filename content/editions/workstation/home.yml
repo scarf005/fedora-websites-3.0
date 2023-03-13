@@ -18,7 +18,8 @@ sections:
   - sectionTitle: Why Fedora Workstation?
     content:
       - title: Reliable
-        description: Each version is updated for 18 months, and upgrades between
+        description:
+          Each version is updated for approximately 13 months, and upgrades between
           versions are quick and easy.
       - title: Free & private
         description:
