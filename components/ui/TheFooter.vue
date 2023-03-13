@@ -24,6 +24,10 @@ const availableLocales = computed(() => {
           :links="navigation.downloads.sections[0].links"
         />
         <FooterSection
+          title="Immutable Desktops"
+          :links="navigation.downloads.sections[1].links"
+        />
+        <FooterSection
           title="Spins"
           :links="navigation.downloads.sections[2].links"
         />
