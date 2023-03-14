@@ -29,6 +29,6 @@ sections:
       - title: x86_64
         description: Most computers with Intel and AMD processors.
       - title: aarch64
-        description: Also known as armv8. For most processors other than Intel and AMD like Rasperry Pi or other comparable devices.
+        description: Also known as armv8. For most processors other than Intel and AMD like Raspberry Pi or other comparable devices.
       - title: s390x
         description: For IBM Cloud and zSystems.
