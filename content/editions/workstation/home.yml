@@ -10,7 +10,7 @@ image:
   height: 300
 header_images:
   - image: public/assets/images/workstation_framework.png
-  - image: public/assets/images/workstation_background.png
+  - image: public/assets/images/workstation_background.jpg
 links:
   - text: Download now
     url: /workstation/download
@@ -18,7 +18,8 @@ sections:
   - sectionTitle: Why Fedora Workstation?
     content:
       - title: Reliable
-        description: Each version is updated for 18 months, and upgrades between
+        description:
+          Each version is updated for approximately 13 months, and upgrades between
           versions are quick and easy.
       - title: Free & private
         description:

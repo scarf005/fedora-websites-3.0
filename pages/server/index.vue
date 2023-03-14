@@ -31,7 +31,7 @@ useContentHead(data);
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 35 11"
-      class="absolute -bottom-5 -z-10 h-56 fill-white dark:fill-neutral-900 md:h-1/2"
+      class="absolute -bottom-5 -z-10 h-56 fill-white dark:fill-neutral-900 md:h-2/5"
       width="100%"
       height="100%"
       preserveAspectRatio="none"
@@ -116,7 +116,10 @@ useContentHead(data);
     </svg>
     <FpCallToAction
       :cta="data.links"
-      image="assets/images/fedora-server-full-logo.png"
+      :image="{
+        light: 'assets/images/server-logo-light.png',
+        dark: 'assets/images/server-logo-dark.png',
+      }"
     />
   </section>
 </template>

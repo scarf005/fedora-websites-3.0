@@ -1,5 +1,5 @@
 {
-  "A minimal OS with automatic update. Scalable and secure.": "A minimal OS with automatic update. Scalable and secure.",
+  "A minimal OS with automatic updates. Scalable and secure.": "A minimal OS with automatic updates. Scalable and secure.",
   "Attend a meeting": "Attend a meeting",
   "Built By You": "Built By You",
   "Chat with the team": "Chat with the team",
@@ -7,6 +7,7 @@
   "CoreOS is currently available on multiple platforms, with more coming soon.": "CoreOS is currently available on multiple platforms, with more coming soon.",
   "Download Now": "Download Now",
   "Everything is supported by a totally free and open-source Fedora ecosystem.": "Everything is supported by a totally free and open-source Fedora ecosystem.",
+  "Fedora CoreOS Image": "Fedora CoreOS Image",
   "Flexible": "Flexible",
   "Join the mailing list": "Join the mailing list",
   "Minimal": "Minimal",
@@ -24,6 +25,7 @@
   "The container optimized OS": "The container optimized OS",
   "The optimal container host will be offered in order to run containerized applications.": "The optimal container host will be offered in order to run containerized applications.",
   "There are a wide variety of supported installation methods.": "There are a wide variety of supported installation methods.",
+  "Try it now": "Try it now",
   "Visit \\#fedora-coreos on irc.libera.chat.": "Visit \\#fedora-coreos on irc.libera.chat.",
   "Why Fedora CoreOS?": "Why Fedora CoreOS?",
   "You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS issue tracker.": "You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS issue tracker."

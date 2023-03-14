@@ -101,7 +101,7 @@ useHead({
 
       <!-- hero bottom content-->
       <section
-        class="align-end mx-auto mb-2 flex w-full justify-between px-8 lg:mb-4 xl:px-20"
+        class="align-end mx-auto mb-2 flex w-full max-w-screen-2xl justify-between px-8 lg:mb-4 xl:px-20"
       >
         <div
           class="flex w-48 flex-col justify-center sm:justify-start md:max-w-sm lg:w-auto"
@@ -109,6 +109,7 @@ useHead({
           <FpLink
             :href="data.sections[1].url"
             class="transition duration-150 ease-in hover:text-fp-gray-lighter"
+            v-if="data.sections[1].sectionDescription"
           >
             <h3
               class="text-base font-semibold uppercase sm:mt-6 md:text-xl lg:mt-8 xl:text-2xl 2xl:mb-2"
@@ -116,7 +117,7 @@ useHead({
               {{ $t(data.sections[1].sectionTitle) }}
             </h3>
             <p class="max-w-sm text-sm sm:text-base lg:text-xl">
-              {{ $t(data.sections[1].sectionDescription) }} >
+              {{ $t(data.sections[1].sectionDescription) }} &gt;
             </p>
           </FpLink>
         </div>
@@ -139,7 +140,8 @@ useHead({
         />
       </svg>
     </header>
-    <!-- 5 Main Editions-->
+
+    <!-- 5 MAIN EDITIONS-->
     <section class="w-full bg-gray-100 dark:bg-gray-900">
       <header class="hidden">
         <h2 class="text-center">
@@ -150,19 +152,23 @@ useHead({
         class="container mx-auto flex flex-wrap justify-center gap-4 py-8 px-2 md:px-4 lg:gap-16"
       >
         <div
-          class="my-4 w-2/5 rounded-xl bg-white p-4 pt-8 shadow-lg dark:bg-gray-800 lg:max-w-sm lg:p-6"
+          class="relative my-4 w-full rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 lg:max-w-sm"
           v-for="item in data.sections[3].content"
         >
+          <FpImage :src="item.image" class="-mt-11 mb-5 h-20" />
           <FpLink :href="item.url">
             <h3
-              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-xl font-bold text-transparent lg:mb-6 lg:text-4xl"
+              class="bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-xl font-bold text-transparent lg:mb-4 lg:text-4xl"
             >
               {{ $t(item.title) }}
             </h3>
-            <p class="text-center text-gray-700 dark:text-gray-300 lg:text-xl">
+            <p class="mb-16 text-gray-700 dark:text-gray-300">
               {{ $t(item.description) }}
             </p>
           </FpLink>
+          <div class="absolute bottom-6 right-4">
+            <FpBtn :href="item.url">Learn More</FpBtn>
+          </div>
         </div>
       </div>
     </section>
@@ -176,6 +182,8 @@ useHead({
           {{ $t(data.sections[4].sectionTitle) }}
         </h2>
       </header>
+
+      <!-- WANT MORE FEDORA OPTIONS -->
       <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
         <article
           v-for="card in data.sections[4].content"
@@ -191,10 +199,10 @@ useHead({
             <p class="mb-2 text-gray-900 dark:text-gray-300">
               {{ $t(card.description) }}
             </p>
-            <NuxtLink
-              :to="$t(card.link.url)"
+            <FpLink
+              :href="card.link.url"
               class="font-semibold text-fp-darkblue underline-offset-4 transition duration-150 ease-in hover:text-fp-newblue hover:underline dark:text-gray-300"
-              >{{ $t(card.link.text) }}</NuxtLink
+              >{{ $t(card.link.text) }}</FpLink
             >
           </div>
         </article>
@@ -229,7 +237,7 @@ useHead({
             <p class="mb-2">{{ $t(card.description) }}</p>
             <NuxtLink
               :to="card.link.url"
-              class="font-semibold transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
+              class="font-semibold underline-offset-1 transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
               >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>

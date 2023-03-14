@@ -116,6 +116,12 @@ useContentHead(data);
         </g>
       </g>
     </svg>
-    <FpCallToAction :cta="data.links" image="assets/images/cloud_logo.png" />
+    <FpCallToAction
+      :cta="data.links"
+      :image="{
+        light: 'assets/images/cloud-logo-light.png',
+        dark: 'assets/images/cloud-logo-dark.png',
+      }"
+    />
   </section>
 </template>

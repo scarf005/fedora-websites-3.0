@@ -5,8 +5,8 @@ useContentHead(data);
 <template>
   <FpHero
     :background="data.header_images[1].image"
-    alignment="bg-bottom"
-    class="workstation-hero pb-8 dark:!min-h-fit dark:bg-neutral-900"
+    alignment="bg-left"
+    class="workstation-hero relative z-0 pb-8 dark:bg-fp-blue-300 dark:bg-blend-multiply"
   >
     <TheLocalBar
       :image="{
@@ -37,6 +37,17 @@ useContentHead(data);
         </div>
       </div>
     </FpBanner>
+    <svg
+      viewBox="0 0 35 4"
+      width="100%"
+      height="100%"
+      class="absolute -bottom-5 -z-10 h-1/3 fill-white dark:fill-neutral-900 sm:h-1/2"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+    >
+      <path d="m 0 2 L 35 0 V 4 H 0 z" />
+    </svg>
   </FpHero>
 
   <main>
@@ -235,7 +246,10 @@ useContentHead(data);
       </svg>
       <FpCallToAction
         :cta="data.links"
-        image="assets/images/workstation_logo.png"
+        :image="{
+          light: 'assets/images/workstation-logo-light.png',
+          dark: 'assets/images/workstation-logo-dark.png',
+        }"
       />
     </section>
   </main>

@@ -13,7 +13,7 @@ sections:
       - title: Forum
         description:
           The **Fedora Server** tag on Fedora's Discourse-based discussion forum
-          is a great place to connect with other Fedora Workstation users and
+          is a great place to connect with other Fedora Server users and
           contributors.
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:

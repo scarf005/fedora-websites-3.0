@@ -76,6 +76,7 @@ if (data._value.sections[3].content[6].description) {
     </section>
 
     <!-- Nest Banner -->
+    <!--
     <article
       class="bg-gradient-to-r from-fp-green-300/40 to-fp-newblue-500/40 p-12 dark:bg-neutral-900 dark:bg-none"
     >
@@ -104,6 +105,7 @@ if (data._value.sections[3].content[6].description) {
         />
       </div>
     </article>
+    -->
 
     <FpPublicationSection class="dark:bg-black" />
   </main>

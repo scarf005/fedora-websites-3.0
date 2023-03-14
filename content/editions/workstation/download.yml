@@ -1,5 +1,5 @@
 path: download
-title: Download Fedora Workstation 37
+title: Fedora Workstation
 description: We're so glad you've decided to give Fedora Workstation a try. We
   know you'll love it.
 header_images:
@@ -8,15 +8,10 @@ sections:
   - sectionTitle: release
     content:
       - title: RELEASE DATE
-        description: November 15, 2022
-      - title: SUPPORTED THROUGH
-        description: November 14, 2023
-      - title: Release Notes
+        description: "2022-11-15"
+      - title: Documentation
         link:
-          url: https://docs.fedoraproject.org/en-US/fedora/f37/release-notes/
-      - title: Installation Guide
-        link:
-          url: https://docs.fedoraproject.org/en-US/fedora/f37/install-guide/
+          url: https://docs.fedoraproject.org/en-US/workstation-docs/
       - title: Community Support
         link:
           url: https://discussion.fedoraproject.org/tag/workstation

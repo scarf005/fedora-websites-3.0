@@ -11,40 +11,40 @@ sections:
     images: public/assets/images/redhat-trans.png
   - sectionTitle: Sponsors
     sectionDescription: "The Fedora Project is also grateful to the following
-      sponsors for providing substantial support:"
+      sponsors for providing substantial support."
     content:
-      - title: Dell
-        image: public/assets/images/dell.gif
+      - title: AWS
         link:
-          text: Dell
-          url: https://linux.dell.com/
+          url: https://aws.amazon.com/what-is-cloud-computing
+          text: Powered by AWS Cloud Computing
+        image:
+          light: public/assets/images/sponsors/PB_AWS-light.png
+          dark: public/assets/images/sponsors/PB_AWS-dark.png
       - title: Proio
         link:
           url: https://www.proio.com/
           text: Proio
-        image: public/assets/images/proio.jpg
-      - title: Server Beach
-        link:
-          url: https://aptum.com/
-          text: Aptum
-        image: public/assets/images/serverbeach.png
+        image:
+          light: public/assets/images/proio.jpg
+          dark: public/assets/images/proio.jpg
       - title: Open Source Lab
         link:
           url: https://osuosl.org/
           text: Open Source Lab
-        image: public/assets/images/open_source_lab.png
-      - title: Colocation
-        link:
-          url: https://www.colocationamerica.com/
-          text: Colocation
-        image: public/assets/images/colocation-america-logo.png
+        image:
+          light: public/assets/images/sponsors/osllogo-light.png
+          dark: public/assets/images/sponsors/osllogo-white.png
       - title: Ibiblio
         link:
           url: https://www.ibiblio.org/
           text: Ibiblio
-        image: public/assets/images/ibiblio.png
+        image:
+          light: public/assets/images/sponsors/ibiblio-light.png
+          dark: public/assets/images/sponsors/ibiblio-dark.png
       - title: Bodhost
-        image: public/assets/images/bodhost.png
+        image:
+          light: public/assets/images/sponsors/bodhost-dark.png
+          dark: public/assets/images/sponsors/bodhost-dark.png
         link:
           text: Bodhost
           url: https://www.bodhost.com/
@@ -52,9 +52,20 @@ sections:
         link:
           url: https://www.internetx.com/
           text: Internetx
-        image: public/assets/images/internetx.png
-      - title: Cdn77
-        image: public/assets/images/cdn77.png
+        image:
+          light: public/assets/images/sponsors/internetx-light.svg
+          dark: public/assets/images/sponsors/internetx-dark.svg
+      - title: Dedicated Solutions
+        image:
+          light: public/assets/images/sponsors/dedicatedsolutions-light.png
+          dark: public/assets/images/sponsors/dedicatedsolutions-dark.png
         link:
-          url: https://www.cdn77.com/
-          text: Cdn77
+          url: https://www.dedicatedsolutions.com/
+          text: Dedicated Solutions
+      - title: Heficed
+        image:
+          light: public/assets/images/sponsors/heficed-light.svg
+          dark: public/assets/images/sponsors/heficed-dark.svg
+        link:
+          url: https://www.heficed.com/
+          text: Heficed
