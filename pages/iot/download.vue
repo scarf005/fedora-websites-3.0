@@ -1,6 +1,7 @@
 <script setup>
 const data = await getCMS("editions/iot/download");
 const release_data = await getCMS("release");
+
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/iot/${release_data._value.ga.releasever}/metadata/images.json`
@@ -68,18 +69,52 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-purple">
-            Fedora IoT {{ release_data.ga.releasever }}</span
+          <span class="text-fp-purple" v-if="betaSwitch == false">
+            {{ data.title }} {{ release_data.ga.releasever }}</span
           >
+          <span class="text-fp-purple" v-else>
+            {{ data.title }} {{ release_data.beta.releasever }}
+            {{ $t("BETA").toLowerCase() }}
+          </span>
         </h1>
         <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-sm text-gray-600">
-            {{ $t("Latest release:") }}
-            <span class="font-semibold">{{ releaseDate }}</span>
+          <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
+            {{ $t("RELEASE DATE") }}:
+            <span class="font-semibold" v-if="betaSwitch == false">{{
+              $d(new Date(release_data.ga.release_date), { dateStyle: "full" })
+            }}</span>
+            <span class="font-semibold" v-else>{{
+              $d(new Date(release_data.beta.release_date), {
+                dateStyle: "full",
+              })
+            }}</span>
           </p>
+        </div>
+        <div class="mt-5 -ml-5 flex" id="ctas">
+          <FpLink
+            :href="data.sections[0].content[0].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[0].title) }}
+          </FpLink>
+          <FpLink
+            :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t("Release Notes") }}
+          </FpLink>
+          <FpLink
+            :href="data.sections[0].content[1].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[1].title) }}
+          </FpLink>
         </div>
       </div>
     </section>
@@ -89,11 +124,11 @@ useContentHead(data);
       class="scroll-mt-14 bg-gradient-to-r from-purple-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
-      <div class="container mx-auto my-8 max-w-7xl px-2">
-        <div
-          class="flex items-center justify-end gap-4"
-          v-if="release_data.beta.enabled"
-        >
+      <div
+        class="container mx-auto max-w-7xl"
+        v-if="release_data.beta.enabled && beta_data"
+      >
+        <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
           <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
         </div>
@@ -104,6 +139,8 @@ useContentHead(data);
             class="origin-right scale-75"
           />
         </div>
+      </div>
+      <div class="container mx-auto my-8 max-w-7xl px-2">
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >

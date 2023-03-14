@@ -96,12 +96,12 @@
                 - label: "Image Dark"
                   name: "dark"
                   widget: "image"
-                  required: true
+                  required: false
                   hint: "Image visible on dark theme"
                 - label: "Image Light"
                   name: "light"
                   widget: "image"
-                  required: true
+                  required: false
                   hint: "Image visible on light theme"
             - label: "Image"
               name: "image"

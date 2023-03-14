@@ -231,7 +231,13 @@ useContentHead(data);
         </g>
       </g>
     </svg>
-    <FpCallToAction :cta="data.links" image="assets/images/coreos_logo.png" />
+    <FpCallToAction
+      :cta="data.links"
+      :image="{
+        light: 'assets/images/coreos-logo-light.png',
+        dark: 'assets/images/coreos-logo-dark.png',
+      }"
+    />
   </section>
 </template>
 <style>

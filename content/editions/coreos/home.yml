@@ -13,7 +13,7 @@ links:
   - text: Download Now
     url: /coreos/download/
   - text: Release Notes
-    url: https://getfedora.org/en/coreos
+    url: /coreos/release-notes/
 sections:
   - sectionTitle: Why Fedora CoreOS?
     images: ""
@@ -85,12 +85,12 @@ sections:
         description: Visit \#fedora-coreos on irc.libera.chat.
       - title: Join the mailing list
         description:
-          Sign up at coreos-status@lists.fedoraproject.org to receive meeting
+          Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting
           agendas and minutes.
       - title: Attend a meeting
         description:
           Open to all current and potential contributors on Wednesday 11 AM
-          Eastern on fedora-meeting@irc.libera.chat.
+          Eastern on [fedora-meeting@irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).
   - content:
       - image: public/assets/images/backdrop-blue-circle.png
       - image: public/assets/images/core-os-logo.png

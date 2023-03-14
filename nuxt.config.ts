@@ -43,5 +43,17 @@ export default defineNuxtConfig({
   },
   experimental: {
     componentIslands: true
-  }
+  },
+  hooks: {
+   'pages:extend' (pages) {
+      pages.forEach((page) => {
+        pages.push({
+	  name: `${page.name}-alias`,
+	  path: page.path.length > 1 ? `${page.path}/index.html` : '/index.html',
+          redirect: page.path,
+	  file: page.file,
+	})
+      })
+    },
+  },
 });

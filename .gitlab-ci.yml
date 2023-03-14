@@ -1,7 +1,7 @@
 image: fedora:latest
 
 before_script:
-  - mkdir .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
+  - mkdir -p .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
   - dnf install npm -y
 
 cache:
