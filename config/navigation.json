@@ -594,7 +594,7 @@
           },
           {
             "label": "Upgrading Fedora Linux",
-            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/system-upgrade/",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/",
             "icon": "fa6-solid:book",
             "description": "How to upgrade an existing Fedora Linux installation."
           }
