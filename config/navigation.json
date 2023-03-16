@@ -499,7 +499,7 @@
             "label": "CoreOS",
             "path": "https://discussion.fedoraproject.org/tags/c/project/7/coreos-wg",
             "icon": "fa6-brands:discourse",
-            "description": "The Fedora Cloud edition working group"
+            "description": "The Fedora CoreOS working group"
           },
           {
             "label": "Silverblue",
