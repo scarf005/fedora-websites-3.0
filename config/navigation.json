@@ -499,7 +499,7 @@
             "label": "CoreOS",
             "path": "https://discussion.fedoraproject.org/tags/c/project/7/coreos-wg",
             "icon": "fa6-brands:discourse",
-            "description": "The Fedora Cloud edition working group"
+            "description": "The Fedora CoreOS working group"
           },
           {
             "label": "Silverblue",
@@ -594,7 +594,7 @@
           },
           {
             "label": "Upgrading Fedora Linux",
-            "path": "https://docs.fedoraproject.org/en-US/fedora/latest/system-upgrade/",
+            "path": "https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/",
             "icon": "fa6-solid:book",
             "description": "How to upgrade an existing Fedora Linux installation."
           }
