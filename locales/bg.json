@@ -1,1 +1,10 @@
-{}
+{
+    "It's your": "Това е твоята",
+    "The leading Linux desktop": "Водещата линукс среда",
+    "A Registered Digital Public Good": "Регистрирано като дигитално обществено благо",
+    "An innovative platform for hardware, clouds, and containers, built with love by you.": "Иновативна платформа за хардуер, облачни и контейнерни услуги, изградена с много любов.",
+    "A 3 day conference hosted on Hopin.io": "Тридневна конференция през Hopin.io",
+    "100% Free & Open Source": "100% Свободен & Отворен Код",
+    " From the Data Center to your Raspberry Pi": " От центъра за данни до вашия Raspberry Pi",
+    " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run successfully. Double those amounts is recommended. ": " * Fedora изисква минумум 20GB диск и 2GB RAM, за да се инсталира и върви успешно. Препоръчваме ви да удвоите тези параметри. "
+}
