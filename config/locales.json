@@ -19,6 +19,7 @@
   { "code": "id", "iso": "id", "file": "id.json", "name": "Indonesian" },
   { "code": "sq", "iso": "sq", "file": "sq.json", "name": "Albanian" },
   { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "Chinese (Simplified)" },
+  { "code": "bg", "iso": "bg", "file": "bg.json", "name": "Bulgarian" },
   {
     "code": "pt-br",
     "iso": "pt-BR",
