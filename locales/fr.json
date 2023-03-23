@@ -1,5 +1,8 @@
 {
     "Languages": "Langues",
+    "its_your_Server.": "Serveur.",
+    "its_your_Workstation.": "Poste de travail.",
+    "its_your_Operating System.": "Systeme d'exploitation",
     "Workshops and hackfests offer opportunities for active learning and collaboration.": "Les ateliers et hackfests offrent des opportunités pour l'apprentissage actif et la collaboration.",
     "Workshops": "Ateliers",
     "Virtual": "Virtuel",
@@ -606,7 +609,7 @@
     "Join a community of users and contributors focused on Fedora Server.": "Rejoignez une communauté d'utilisateurs et de contributeurs orientés Fedora Server.",
     "Join a community of users and contributors focused on Fedora IoT.": "Rejoignez une communauté d'utilisateurs et de contributeurs orientés Fedora IoT.",
     "Join SIG": "Rejoindre SIG",
-    "It's your": "C'est la vôtre",
+    "It's your": "C'est vôtre",
     "It's Fedora's calendar!": "C'est le calendrier Fedora !",
     "It is a compilation of software packages, each under its own license. Images that can be downloaded here are available under the combination of licenses of the constituent software packages and the license of the Fedora Linux distribution itself. [View License](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)": "Il s'agit d'un ensemble de paquets logiciel avec chacun avec sa propre licence. Les paquets sont disponibles au téléchargement sous double license : celle du paquet à proprement parlé et la licence de la distribution Fedora. [Voir la licence](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)",
     "IoT Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera.chat.": "Les réunions du Groupe de travail travaillant sur l'Iot sont ouvertes à tous les contributeurs actuels et potentiels le mercredi à 11 heures fuseau horaire US Eastern sur fedora-meeting{'@'}irc.libera.chat.",
