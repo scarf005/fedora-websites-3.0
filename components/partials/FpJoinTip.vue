@@ -30,18 +30,18 @@ const descriptionMd = await mdparser(props.description);
         <ContentRendererMarkdown
           class="markdown markdown-inline"
           :value="descriptionMd"
-        />
+        />&nbsp;
         <div class="inline whitespace-nowrap">
           <NuxtLink
             v-if="link"
             :to="link.url"
-            class="ml-2 text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
+            class="text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
             >{{ $t(link.text) }}</NuxtLink
           >
           <NuxtLink
             v-else
             to="https://docs.fedoraproject.org/en-US/fedora-join/"
-            class="ml-2 text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
+            class="text-fp-newblue-500 transition duration-100 ease-in-out hover:text-fp-newblue-700 hover:dark:text-fp-newblue-300"
             >{{ $t("Learn more") }}</NuxtLink
           >
         </div>

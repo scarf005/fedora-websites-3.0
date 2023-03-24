@@ -52,7 +52,7 @@ function timeSince(rfc3339_timestamp) {
 
 <template>
   <div
-    class="flex flex-col justify-between gap-6 border-l-8 pt-3 pl-6"
+    class="flex flex-col justify-between gap-6 pt-3 ltr:border-l-8 ltr:pl-6 rtl:border-r-8 rtl:pr-6"
     :class="`border-${color}`"
   >
     <div class="flex items-center justify-center">

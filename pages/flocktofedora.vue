@@ -35,14 +35,14 @@ function formatDate(dateStr) {
     <div class="mx-auto flex max-w-screen-xl p-12">
       <div
         v-for="card in data.sections[0].content"
-        class="mr-8 max-w-[17rem] rounded-lg bg-black/70 p-4"
+        class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
       >
         <div
           class="text-lg font-semibold leading-none text-fp-blue"
           style="text-shadow: 1px 2px 4px black"
         >
           <FpImage
-            class="mr-1 inline h-10 max-w-none align-baseline"
+            class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
             :src="card.image"
           />
           {{ $t(card.title) }}
@@ -107,9 +107,8 @@ function formatDate(dateStr) {
               </p>
               <NuxtLink
                 :to="watch.content[0].image"
-                class="text-fp-blue dark:text-fp-newblue-500"
-                >{{ $t("Visit Fedora Youtube") }}
-                <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
+                class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
+                >{{ $t("Visit Fedora Youtube") }}&nbsp;
               </NuxtLink>
             </div>
           </div>

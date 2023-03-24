@@ -132,7 +132,7 @@ useContentHead(data);
 .server-hero .fp-banner {
   @apply mx-0 ml-auto mt-2 px-2 pt-12 pb-40 text-center;
   @apply sm:pt-24 sm:pb-80;
-  @apply md:w-1/2 md:pt-40 md:pb-56 md:text-left;
+  @apply md:w-1/2 md:pt-40 md:pb-56 ltr:md:text-left rtl:md:text-right;
   @apply lg:pb-60;
   @apply 2xl:w-2/3 2xl:pl-64 2xl:pb-80;
 }

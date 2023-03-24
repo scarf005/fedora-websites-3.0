@@ -79,14 +79,18 @@ const prettyType = {
       </p>
       <div class="inline-flex">
         <slot name="btn">
-          <a @click="$emit('verifyClick')" title="Verify" class="rounded-l-xl">
+          <a
+            @click="$emit('verifyClick')"
+            title="Verify"
+            class="ltr:rounded-l-xl rtl:rounded-r-xl"
+          >
             <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
           </a>
           <FpLink
             :href="downloadLink"
             v-if="downloadLink"
             title="Download"
-            class="-ml-px rounded-r-xl"
+            class="ltr:-ml-px ltr:rounded-r-xl rtl:-mr-px rtl:rounded-l-xl"
           >
             <Icon name="fa-download" class="!align-baseline" />
           </FpLink>
