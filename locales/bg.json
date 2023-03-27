@@ -1,5 +1,5 @@
 {
-    "It's your": "Това е",
+    "It's your": "Това е твоята",
     "The leading Linux desktop": "Водещата линукс среда",
     "A Registered Digital Public Good": "Регистрирано като дигитално обществено благо",
     "An innovative platform for hardware, clouds, and containers, built with love by you.": "Иновативна платформа за хардуер, облачни и контейнерни услуги, изградена с много любов.",
@@ -20,7 +20,7 @@
     "Badges": "Значки",
     "BETA": "Бета версия",
     "August 5 - 7, 2023": "5 - 7 Април, 2023",
-    "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "Посещаването на среща или докладването и обсъждането на проблеми, които сте открили, може да бъде чудесна първа стъпка към вашия участие",
+    "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "Посещаването на среща или докладването и обсъждането на проблеми, които сте открили, може да бъде чудесна първа стъпка към вашето участие",
     "Attend a meeting": "Участвай в среща",
     "Astronomy": "Астрономия",
     "Ask and answer questions on [discussion​.​fedoraproject​.​org​/​c​/​ask](https://discussion.fedoraproject.org/tags/c/ask/6/all/workstation)": "Участвай в дискусията чрез [discussion​.​fedoraproject​.​org​/​c​/​ask](https://discussion.fedoraproject.org/tags/c/ask/6/all/workstation)",
@@ -62,5 +62,9 @@
     "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.": "Fedora Server е мощна, гъвкава операционна система, която включва най-добрите и най-новите технологии за центрове за данни. Тя ви дава контрол над цялата ви инфраструктура и услуги.",
     "Tomorrow's server OS": "Сървърната операционна система на бъдещето",
     "Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.": "Fedora Workstation е идеална, лесна за използване операционна система за лаптопи и настолни компютри, с пълен набор от инструменти за разработчици и създатели от всякакъв вид.",
-    "Both the Fedora Community Blog and Fedora Magazine are always looking for article proposals, writers, and editors.": "Както Fedora Community Blog, така и Fedora Magazine винаги търсят предложения за статии, писатели и редактори."
+    "Both the Fedora Community Blog and Fedora Magazine are always looking for article proposals, writers, and editors.": "Както Fedora Community Blog, така и Fedora Magazine винаги търсят предложения за статии, писатели и редактори.",
+    "its_your_Server.": "Сървърна система.",
+    "its_your_Workstation.": "Работна станция.",
+    "its_your_Community.": "Общност.",
+    "its_your_Operating System.": "Операционна система."
 }
