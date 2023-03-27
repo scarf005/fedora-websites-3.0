@@ -172,11 +172,15 @@ let languageOpen = useState("languageOpen", () => null);
               <!-- SECTIONS MOBILE (HIDDEN ON DESKTOP) -->
               <ul
                 v-if="sectionOpen.label === section.label"
-                class="ml-10 block text-lg text-white md:hidden"
+                class="block text-lg text-white ltr:ml-10 rtl:mr-10 md:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path" v-if="!link.i18n">
-                    <Icon :name="link.icon" size="24" class="mr-2" />
+                    <Icon
+                      :name="link.icon"
+                      size="24"
+                      class="ltr:mr-2 rtl:ml-2"
+                    />
                     {{ $t(link.label) }}
                   </FpLink>
 
@@ -197,7 +201,7 @@ let languageOpen = useState("languageOpen", () => null);
 
         <!-- SECTIONS DESKTOP (RIGHT COLUMN, HIDDEN ON MOBILE) -->
         <section
-          class="col-span-9 mt-2 hidden h-[42rem] overflow-hidden overflow-scroll border-l border-neutral-400 p-5 text-white dark:border-neutral-600 md:block lg:col-span-7"
+          class="col-span-9 mt-2 hidden h-[42rem] overflow-hidden overflow-scroll border-neutral-400 p-5 text-white ltr:border-l rtl:border-r dark:border-neutral-600 md:block lg:col-span-7"
           v-if="sectionOpen"
         >
           <div>

@@ -14,7 +14,7 @@ let { data } = await useAsyncData(() => {
       >
         <Icon
           name="fa6-solid:door-open"
-          class="mr-1 !align-top text-fp-newblue-500 dark:text-gray-200"
+          class="!align-top text-fp-newblue-500 ltr:mr-1 rtl:ml-1 dark:text-gray-200"
           size="1.5rem"
         />
         {{ $t(data.sectionTitle) }}
@@ -52,7 +52,7 @@ let { data } = await useAsyncData(() => {
           :href="item.link"
         >
           <FpImage
-            class="mr-2 inline-block max-h-14 dark:brightness-200 dark:grayscale"
+            class="inline-block max-h-14 ltr:mr-2 rtl:ml-2 dark:brightness-200 dark:grayscale"
             :src="item.image"
           />{{ $t(item.title) }}</FpLink
         >

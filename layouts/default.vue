@@ -1,5 +1,11 @@
 <script setup>
+const i18nHead = useLocaleHead({
+  addDirAttribute: true,
+});
 useHead({
+  htmlAttrs: {
+    dir: i18nHead.value.htmlAttrs.dir || "ltr",
+  },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   charset: "utf-8",
   link: [

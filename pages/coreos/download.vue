@@ -299,7 +299,7 @@ useContentHead(data);
         <p class="text-gray-600 dark:text-fp-gray-light">
           {{ $t(streams.sectionDescription) }}
         </p>
-        <div class="mt-5 -ml-5 flex" id="ctas">
+        <div class="mt-5 flex ltr:-ml-5 rtl:-mr-5" id="ctas">
           <FpLink
             :href="data.sections[0].content[0].link.url"
             class="mx-5 text-blue-500"
@@ -543,7 +543,7 @@ useContentHead(data);
                   <a
                     @click="showGCP.show = !showGCP.show"
                     title="Details"
-                    class="rounded-l-xl"
+                    class="ltr:rounded-l-xl rtl:rounded-r-xl"
                   >
                     <Icon name="fa-solid:info-circle" class="!align-baseline" />
                   </a>
@@ -551,7 +551,7 @@ useContentHead(data);
                     :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
                     target="blank"
                     title="Launch"
-                    class="-ml-px rounded-r-xl"
+                    class="-ml-px ltr:rounded-r-xl rtl:rounded-l-xl"
                   >
                     <Icon
                       name="material-symbols:rocket-launch"
@@ -680,7 +680,9 @@ useContentHead(data);
         </div>
       </div>
       <div class="container mx-auto max-w-7xl">
-        <p class="mr-4 text-end"><a class="text-xs" href="#">Back to Top</a></p>
+        <p class="text-end ltr:mr-4 rtl:ml-4">
+          <a class="text-xs" href="#">Back to Top</a>
+        </p>
       </div>
     </section>
 
@@ -710,16 +712,20 @@ useContentHead(data);
         @close-modal="closeModal(verifyModal)"
       >
         <template #header>
-          <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
+          <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
+            {{ $t("Verify your download") }}
+          </h5>
         </template>
-        <p class="text-base">
+        <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
               "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
             )
           }}
         </p>
-        <ul class="list-outside list-decimal pl-8 pt-2">
+        <ul
+          class="list-outside list-decimal pt-2 ltr:pl-8 ltr:text-left rtl:pr-8 rtl:text-right"
+        >
           <li>
             <p class="mb-2">
               Download the
@@ -762,7 +768,7 @@ useContentHead(data);
             ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
           </li>
         </ul>
-        <p>
+        <p class="ltr:text-left rtl:text-right">
           {{
             $t(
               "If the output states that the file is valid, then it's ready to use!"
@@ -785,9 +791,11 @@ useContentHead(data);
         @close-modal="closeModal(showAMI)"
       >
         <template #header>
-          <h5 class="text-xl font-medium">Select AWS EC2 region</h5>
+          <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
+            Select AWS EC2 region
+          </h5>
         </template>
-        <table class="w-full table-auto">
+        <table class="w-full table-auto ltr:text-left rtl:text-right">
           <thead>
             <tr>
               <th class="">Region</th>
@@ -800,8 +808,10 @@ useContentHead(data);
               v-for="(ami, region) in showAMI.art.regions"
               class="hover:bg-gray-200 hover:dark:bg-slate-800"
             >
-              <td class="pr-6">{{ EC2_regions[region] || region }}</td>
-              <td class="hidden pr-6 sm:block">{{ ami.image }}</td>
+              <td class="ltr:pr-6 rtl:pl-6">
+                {{ EC2_regions[region] || region }}
+              </td>
+              <td class="hidden ltr:pr-6 rtl:pl-6 sm:block">{{ ami.image }}</td>
               <td class="text-center">
                 <FpLink
                   :href="`https://console.aws.amazon.com/ec2/home?region=${region}#launchAmi=${ami.image}`"

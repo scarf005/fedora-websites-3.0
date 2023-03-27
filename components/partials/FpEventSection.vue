@@ -69,7 +69,7 @@ for (let item of data._value.body[0].content) {
       >
         <!-- flock sign text -->
         <p
-          class="z-20 col-start-1 row-start-1 ml-14 mt-12 font-medium text-fp-gray"
+          class="z-20 col-start-1 row-start-1 mt-12 font-medium text-fp-gray ltr:ml-14 rtl:mr-32"
         >
           {{ $t(colurSlogan) }}
         </p>
