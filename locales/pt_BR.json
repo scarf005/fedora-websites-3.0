@@ -663,5 +663,9 @@
     "Our main IRC channel for the event is <b>#fedora-flock</b> on <b>libera.chat</b>. Join <b><a href=\"https://web.libera.chat/?channels=#fedora-flock\">#fedora-flock</a></b> to chat on Matrix or IRC.": "Nosso canal principal do IRC para o evento é <b>#fedora-flock</b> no <b>libera.chat</b>. Junte-se a <b><a href=\"https://web.libera.chat/?channels=#fedora-flock\">#fedora-flock</a></b> para conversar no Matrix ou IRC.",
     "The Fedora Cloud Working Group sends meeting agendas and minutes and has discussions on their mailing list at cloud@lists.fedoraproject.org.": "O Grupo de Trabalho Fedora Cloud envia agendas e atas de reuniões e realiza discussões em sua lista de e-mails em cloud{'@'}lists.fedoraproject.org.",
     "The **Fedora Cloud** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Cloud users and contributors.": "A tag **Fedora Cloud** no fórum de discussão baseado no Discourse da Fedora é um ótimo lugar para se conectar com outros usuários e contribuidores do Fedora Cloud.",
-    "Sponsored by Red Hat Logo": "Patrocinado por Red Hat"
+    "Sponsored by Red Hat Logo": "Patrocinado por Red Hat",
+    "The solid edge foundation": "A base sólida",
+    "Support Resources": "Recursos de suporte",
+    "The lightweight VM environment": "O ambiente de máquina virtual leve",
+    "Verify the CHECKSUM file is valid": "Verifique se o arquivo CHECKSUM é válido"
 }
