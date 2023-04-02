@@ -15,6 +15,7 @@ pages:
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public
+    - mv -f ./static/* ./public
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
     paths:
@@ -29,6 +30,7 @@ build_preview:
     - npm run generate
     - rm -rf ./public
     - mv .output/public ./public
+    - mv -f ./static/* ./public
   variables:
     CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
   artifacts:
