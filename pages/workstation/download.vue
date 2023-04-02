@@ -70,13 +70,6 @@ if (data._value.sections[2].sectionDescription) {
     data._value.sections[2].sectionDescription
   );
 }
-
-// alternative images
-if (data._value.sections[3].content[1].description) {
-  data._value.sections[3].content[1].descriptionMd = await mdparser(
-    data._value.sections[3].content[1].description
-  );
-}
 </script>
 
 <template>
@@ -113,7 +106,9 @@ if (data._value.sections[3].content[1].description) {
           {{ $t(data.description) }}
         </p>
         <div class="mt-5 flex">
-          <p class="mr-5 text-sm text-gray-600 dark:text-fp-gray-200">
+          <p
+            class="text-sm text-gray-600 ltr:mr-5 rtl:ml-5 dark:text-fp-gray-200"
+          >
             {{ $t("RELEASE DATE") }}:
             <span class="font-semibold" v-if="betaSwitch == false">{{
               $d(new Date(release_data.ga.release_date), { dateStyle: "full" })
@@ -125,7 +120,7 @@ if (data._value.sections[3].content[1].description) {
             }}</span>
           </p>
         </div>
-        <div class="mt-5 -ml-5 flex" id="ctas">
+        <div class="mt-5 flex ltr:-ml-5 rtl:-mr-5" id="ctas">
           <FpLink
             :href="data.sections[0].content[1].link.url"
             class="mx-5 text-blue-500"
@@ -295,17 +290,17 @@ if (data._value.sections[3].content[1].description) {
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
         >
-          <FpImage class="max-h-72" :src="data.sections[4].content[0].image" />
+          <FpImage class="max-h-72" :src="data.sections[3].content[0].image" />
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[4].sectionTitle) }}
+            {{ $t(data.sections[3].sectionTitle) }}
           </h2>
           <p class="mb-5 text-fp-gray">
-            {{ $t(data.sections[4].sectionDescription) }}
+            {{ $t(data.sections[3].sectionDescription) }}
           </p>
-          <FpBtn :href="data.sections[4].content[0].link.url">{{
-            $t(data.sections[4].content[0].link.text)
+          <FpBtn :href="data.sections[3].content[0].link.url">{{
+            $t(data.sections[3].content[0].link.text)
           }}</FpBtn>
         </div>
       </div>
@@ -316,19 +311,19 @@ if (data._value.sections[3].content[1].description) {
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[5].sectionTitle) }}
+            {{ $t(data.sections[4].sectionTitle) }}
           </h2>
           <p class="text-base text-fp-gray">
-            {{ $t(data.sections[5].content[0].description) }}
+            {{ $t(data.sections[4].content[0].description) }}
           </p>
           <p class="mt-5 text-sm text-gray-400">
-            {{ $t(data.sections[5].content[1].description) }}
+            {{ $t(data.sections[4].content[1].description) }}
           </p>
         </div>
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
         >
-          <FpImage class="max-h-72" :src="data.sections[5].content[1].image" />
+          <FpImage class="max-h-72" :src="data.sections[4].content[1].image" />
         </div>
       </div>
     </section>
@@ -354,16 +349,20 @@ if (data._value.sections[3].content[1].description) {
     >
       <FpModal class="pt-12" v-if="verifyModal.show" @close-modal="closeVerify">
         <template #header>
-          <h5 class="text-xl font-medium">{{ $t("Verify your download") }}</h5>
+          <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
+            {{ $t("Verify your download") }}
+          </h5>
         </template>
-        <p class="text-base">
+        <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
               "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
             )
           }}
         </p>
-        <ul class="list-outside list-decimal pl-8 pt-2">
+        <ul
+          class="list-outside list-decimal pt-2 ltr:pl-8 ltr:text-left rtl:pr-8 rtl:text-right"
+        >
           <li>
             <p class="mb-2">
               Download the
@@ -402,7 +401,7 @@ if (data._value.sections[3].content[1].description) {
             ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
           </li>
         </ul>
-        <p>
+        <p class="ltr:text-left rtl:text-right">
           {{
             $t(
               "If the output states that the file is valid, then it's ready to use!"

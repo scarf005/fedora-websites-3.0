@@ -680,5 +680,9 @@
     "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.": "Nämä dokumentaatiosivut ovat osallistujakeskeisiä. Ne sisältävät Fedoran ohjeet, tiimit, organisaatiorakenteen ja lakiasiakirjat. Jos etsit käyttöohjeita (asennus, aloitus jne.), tarkista ohje-valikosta.",
     "These are the tools and Git forges that Fedora packagers and developers use to build the Fedora systems.": "Tässä on työkaluja ja Git-forgeja, joita Fedora-pakkaajat ja -kehittäjät käyttävät Fedora-järjestelmien rakentamiseen.",
     "These are some of the tools that you will use when contributing to the Fedora Project.": "Tässä on joitain työkaluja, joita käytät osallistuessasi Fedora-projektiin.",
-    "These are some low-priority items that are thought to be good entry-level tasks for a new contributor to start with.": "Tässä on joitakin alhaisen prioriteetin kohteita, joiden uskotaan olevan hyviä aloitustason tehtäviä uudelle avustajalle."
+    "These are some low-priority items that are thought to be good entry-level tasks for a new contributor to start with.": "Tässä on joitakin alhaisen prioriteetin kohteita, joiden uskotaan olevan hyviä aloitustason tehtäviä uudelle avustajalle.",
+    "its_your_Operating System.": "Käyttöjärjestelmä.",
+    "its_your_Community.": "Yhteisö.",
+    "its_your_Workstation.": "Työasema.",
+    "its_your_Server.": "Palvelin."
 }

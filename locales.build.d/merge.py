@@ -13,4 +13,4 @@ for js_file in js_files:
       merged_js[k] = v if v else k
 
 with open('../locales/en.json', 'w') as f:
-  json.dump(merged_js, f, indent=2, sort_keys=True)
+  json.dump(merged_js, f, indent=2, sort_keys=False)

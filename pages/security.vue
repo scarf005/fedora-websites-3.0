@@ -48,7 +48,7 @@ useContentHead(data);
           </p>
 
           <ul
-            class="list-outside list-decimal pl-8 pt-2 text-start text-fp-gray-darkest dark:text-fp-gray-light"
+            class="list-outside list-decimal pt-2 text-start text-fp-gray-darkest ltr:pl-8 rtl:pr-8 dark:text-fp-gray-light"
           >
             <li>
               <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
