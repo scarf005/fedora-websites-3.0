@@ -23,6 +23,11 @@
           widget: "text"
           hint: "Page header description text"
           required: false
+        - label: "Event location"
+          name: "location"
+          widget: "text"
+          hint: "Location of the event, if any"
+          required: false
         - label: "Header Images"
           name: "header_images"
           widget: "list"
