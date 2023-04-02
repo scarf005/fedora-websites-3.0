@@ -15,18 +15,36 @@ function formatDate(dateStr) {
 }
 </script>
 <template>
-  <FpHero :background="data.header_images[1].image" alignment="bg-top">
+  <FpHero
+    :background="data.header_images[1].image"
+    alignment="bg-top"
+    class="bg-gray-300 bg-blend-multiply dark:bg-gray-500"
+  >
     <FpBanner
-      :subtitle="data.title"
       :logo="data.header_images[0].image"
       color="text-fp-purple"
       border="border border-fp-purple"
       background="text-white bg-fp-purple"
       :ctas="data.links"
-      :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
     >
+      <template #title>
+        <div
+          class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-16 sm:max-w-lg sm:text-2xl"
+          style="text-shadow: 2px 2px 2px black"
+        >
+          {{ $t(data.location) }}
+        </div>
+      </template>
+      <template #subtitle>
+        <h2
+          class="mt-16 font-semibold text-fp-blue sm:mt-24"
+          style="text-shadow: 4px 4px 4px black"
+        >
+          {{ $t(data.title) }}
+        </h2>
+      </template>
       <h2
-        class="my-8 font-semibold text-white"
+        class="my-4 text-center font-semibold text-white"
         style="text-shadow: 4px 4px 4px black"
       >
         {{ $t(data.description) }}

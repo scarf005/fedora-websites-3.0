@@ -22,19 +22,23 @@ defineProps({
     <div class="mx-auto max-w-sm sm:max-w-xl">
       <FpImage v-if="logo" class="z-10" :src="logo" :alt="$t('logo')" />
     </div>
-    <h1 v-if="title" class="font-semibold text-white">
-      <span class="block">{{ $t(title) }}</span>
-    </h1>
-    <h2
-      v-if="subtitle"
-      class="mt-3"
-      :class="[
-        'text-' + (subtitleStyle?.color || 'white'),
-        { 'font-semibold': subtitleStyle?.isBold },
-      ]"
-    >
-      {{ $t(subtitle) }}
-    </h2>
+    <slot name="title">
+      <h1 v-if="title" class="font-semibold text-white">
+        <span class="block">{{ $t(title) }}</span>
+      </h1>
+    </slot>
+    <slot name="subtitle">
+      <h2
+        v-if="subtitle"
+        class="mt-3"
+        :class="[
+          'text-' + (subtitleStyle?.color || 'white'),
+          { 'font-semibold': subtitleStyle?.isBold },
+        ]"
+      >
+        {{ $t(subtitle) }}
+      </h2>
+    </slot>
   </div>
   <div class="my-5 flex justify-center">
     <slot />
