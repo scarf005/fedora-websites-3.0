@@ -12,7 +12,7 @@ useHead({
     {
       rel: "icon",
       type: "image/x-icon",
-      href: "https://getfedora.org/static/images/favicon.ico",
+      href: "/favicon.ico",
     },
   ],
 });
