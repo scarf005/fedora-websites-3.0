@@ -70,13 +70,6 @@ if (data._value.sections[2].sectionDescription) {
     data._value.sections[2].sectionDescription
   );
 }
-
-// alternative images
-if (data._value.sections[3].content[1].description) {
-  data._value.sections[3].content[1].descriptionMd = await mdparser(
-    data._value.sections[3].content[1].description
-  );
-}
 </script>
 
 <template>
@@ -297,17 +290,17 @@ if (data._value.sections[3].content[1].description) {
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
         >
-          <FpImage class="max-h-72" :src="data.sections[4].content[0].image" />
+          <FpImage class="max-h-72" :src="data.sections[3].content[0].image" />
         </div>
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[4].sectionTitle) }}
+            {{ $t(data.sections[3].sectionTitle) }}
           </h2>
           <p class="mb-5 text-fp-gray">
-            {{ $t(data.sections[4].sectionDescription) }}
+            {{ $t(data.sections[3].sectionDescription) }}
           </p>
-          <FpBtn :href="data.sections[4].content[0].link.url">{{
-            $t(data.sections[4].content[0].link.text)
+          <FpBtn :href="data.sections[3].content[0].link.url">{{
+            $t(data.sections[3].content[0].link.text)
           }}</FpBtn>
         </div>
       </div>
@@ -318,19 +311,19 @@ if (data._value.sections[3].content[1].description) {
       <div class="container mx-auto grid max-w-7xl grid-cols-2">
         <div class="col-span-2 my-5 p-2 md:col-span-1">
           <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[5].sectionTitle) }}
+            {{ $t(data.sections[4].sectionTitle) }}
           </h2>
           <p class="text-base text-fp-gray">
-            {{ $t(data.sections[5].content[0].description) }}
+            {{ $t(data.sections[4].content[0].description) }}
           </p>
           <p class="mt-5 text-sm text-gray-400">
-            {{ $t(data.sections[5].content[1].description) }}
+            {{ $t(data.sections[4].content[1].description) }}
           </p>
         </div>
         <div
           class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
         >
-          <FpImage class="max-h-72" :src="data.sections[5].content[1].image" />
+          <FpImage class="max-h-72" :src="data.sections[4].content[1].image" />
         </div>
       </div>
     </section>
