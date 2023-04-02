@@ -15,18 +15,36 @@ function formatDate(dateStr) {
 }
 </script>
 <template>
-  <FpHero :background="data.header_images[1].image" alignment="bg-top">
+  <FpHero
+    :background="data.header_images[1].image"
+    alignment="bg-top"
+    class="bg-gray-300 bg-blend-multiply dark:bg-gray-500"
+  >
     <FpBanner
-      :subtitle="data.title"
       :logo="data.header_images[0].image"
       color="text-fp-purple"
       border="border border-fp-purple"
       background="text-white bg-fp-purple"
       :ctas="data.links"
-      :subtitleStyle="{ color: 'fp-blue', isBold: 'true' }"
     >
+      <template #title>
+        <div
+          class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-16 sm:max-w-lg sm:text-2xl"
+          style="text-shadow: 2px 2px 2px black"
+        >
+          {{ $t(data.location) }}
+        </div>
+      </template>
+      <template #subtitle>
+        <h2
+          class="mt-16 font-semibold text-fp-blue sm:mt-24"
+          style="text-shadow: 4px 4px 4px black"
+        >
+          {{ $t(data.title) }}
+        </h2>
+      </template>
       <h2
-        class="my-8 font-semibold text-white"
+        class="my-4 text-center font-semibold text-white"
         style="text-shadow: 4px 4px 4px black"
       >
         {{ $t(data.description) }}
@@ -35,14 +53,14 @@ function formatDate(dateStr) {
     <div class="mx-auto flex max-w-screen-xl p-12">
       <div
         v-for="card in data.sections[0].content"
-        class="mr-8 max-w-[17rem] rounded-lg bg-black/70 p-4"
+        class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
       >
         <div
           class="text-lg font-semibold leading-none text-fp-blue"
           style="text-shadow: 1px 2px 4px black"
         >
           <FpImage
-            class="mr-1 inline h-10 max-w-none align-baseline"
+            class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
             :src="card.image"
           />
           {{ $t(card.title) }}
@@ -107,9 +125,8 @@ function formatDate(dateStr) {
               </p>
               <NuxtLink
                 :to="watch.content[0].image"
-                class="text-fp-blue dark:text-fp-newblue-500"
-                >{{ $t("Visit Fedora Youtube") }}
-                <Icon class="ml-2" name="fa6-solid:arrow-right-long" />
+                class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
+                >{{ $t("Visit Fedora Youtube") }}&nbsp;
               </NuxtLink>
             </div>
           </div>

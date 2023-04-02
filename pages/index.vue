@@ -1,17 +1,19 @@
 <script setup>
+const { t } = useI18n();
 // TODO: Move typewriter code into a composable and make it reusable
 let typeValue = ref("");
 let typeStatus = false;
 const arr = ["Server.", "Workstation.", "Community.", "Operating System."];
+const l10n_arr = arr.map((w) => t("its_your_" + w));
 const speed = 150;
 const newTextDelay = 1000;
 let arrIndex = 0;
 let charIndex = 0;
 
 function writeText() {
-  if (charIndex < arr[arrIndex].length) {
+  if (charIndex < l10n_arr[arrIndex].length) {
     if (!typeStatus) typeStatus = true;
-    typeValue.value += arr[arrIndex].charAt(charIndex);
+    typeValue.value += l10n_arr[arrIndex].charAt(charIndex);
     charIndex += 1;
     setTimeout(writeText, speed);
   } else {
@@ -22,16 +24,16 @@ function writeText() {
 function eraseText() {
   if (charIndex > 0) {
     if (!typeStatus) typeStatus = true;
-    typeValue.value = arr[arrIndex].substring(0, charIndex - 1);
+    typeValue.value = l10n_arr[arrIndex].substring(0, charIndex - 1);
     charIndex -= 1;
     setTimeout(eraseText, speed);
   } else {
     typeStatus = false;
     arrIndex += 1;
-    if (arrIndex < arr.length) {
+    if (arrIndex < l10n_arr.length) {
       setTimeout(writeText, speed + 1000);
     } else {
-      typeValue.value = arr.slice(-1).join();
+      typeValue.value = l10n_arr.slice(-1).join();
     }
   }
 }

@@ -1,9 +1,10 @@
 path: flock
 title: The Fedora Project Conference
-description: August 5 - 7, 2023
+location: Cork
+description: August 1 - 4, 2023
 header_images:
-  - image: public/assets/images/flock_logo_barcelona.png
-  - image: public/assets/images/flock_background.jpg
+  - image: public/assets/images/flock_logo.png
+  - image: public/assets/images/cork.jpg
 links:
   - text: Register
     url: "#"
@@ -61,13 +62,13 @@ sections:
       North America. In 2020 Fedorans went virtual with Nest, now we offer a
       hybrid version of Flock to make it more accessible to our community.
     content:
-      - title: July 1 - 31 2023
+      - title: August 1 - 4, 2023
         image: public/assets/images/flock_logo_mini.png
         description:
           Flock offers an immersive in person experience. Attend sessions,
           collaborate with others, explore and meet new people. Plus, Flock is
           free to attend!
-      - title: July 1 - 31 2023
+      - title: August 1 - 4, 2023
         image: public/assets/images/nest-dual-colour-navy.png
         description: During the Covid-19 pandemic, we created Nest as a virtual
           alternative to Flock. Now it exists as a virtual option for those who
@@ -169,33 +170,6 @@ sponsors:
     - name: Red Hat
       image: public/assets/images/sponsors/Red_Hat_logo.png
       level: platinium
-    - name: Lenovo
-      image: public/assets/images/sponsors/Lenovo_logo.png
-      level: gold
-    - name: AlmaLinux
-      image: public/assets/images/sponsors/AlmaLinux_logo.png
-      level: gold
-    - name: openSuse
-      image: public/assets/images/sponsors/opensuse_logo.png
-      level: silver
-    - name: GitLab
-      image: public/assets/images/sponsors/Gitlab_logo.png
-      level: bronze
-    - name: datto
-      image: public/assets/images/sponsors/datto_logo.png
-      level: bronze
-    - name: daskeyboard
-      image: public/assets/images/sponsors/daskeyboard_logo.png
-      level: bronze
-    - name: Gnome
-      image: public/assets/images/sponsors/Gnome_logo.png
-      level: media
-    - name: TuxDigital
-      image: public/assets/images/sponsors/TuxDigital_logo.png
-      level: media
-    - name: KDE
-      image: public/assets/images/sponsors/KDE_logo.png
-      level: media
-    - name: opensource.com
-      image: public/assets/images/sponsors/opensource.com_logo.png
-      level: media
+    - level: placeholder
+    - level: placeholder
+    - level: placeholder

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex animate-pulse flex-col justify-between gap-6 border-l-8 border-gray-200 pt-3 pl-6 dark:border-gray-500"
+    class="flex animate-pulse flex-col justify-between gap-6 border-gray-200 pt-3 ltr:border-l-8 ltr:pl-6 rtl:border-r-8 rtl:pr-6 dark:border-gray-500"
   >
     <div class="flex items-center justify-center">
       <div

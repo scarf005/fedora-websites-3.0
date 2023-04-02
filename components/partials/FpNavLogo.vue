@@ -12,7 +12,7 @@ const showRoute = computed(() => {
 <template>
   <FpLink
     href="/"
-    class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:opacity-50"
+    class="flex items-center gap-4 fill-white transition duration-300 ease-in-out hover:opacity-50 ltr:flex-row rtl:flex-row-reverse"
   >
     <!-- SVG Icon Logo -->
     <svg viewBox="0 0 448 512" class="h-8">
