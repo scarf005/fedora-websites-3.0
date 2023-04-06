@@ -219,7 +219,7 @@ let languageOpen = useState("languageOpen", () => null);
                 :key="link.id"
                 class="rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-800"
               >
-                <FpLink :href="link.path" v-if="!link.i18n">
+                <FpLink :href="link.path" v-if="!link.i18n" :rel="link.rel">
                   <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}

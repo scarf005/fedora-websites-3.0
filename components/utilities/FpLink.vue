@@ -3,6 +3,7 @@ defineProps({
   href: String,
   current: Boolean,
   class: String,
+  rel: String,
 });
 const localePath = useLocalePath();
 </script>
@@ -15,6 +16,7 @@ const localePath = useLocalePath();
         : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href)
     }`"
     :aria-current="current ? 'page' : undefined"
+    :rel="rel"
     :class="class"
   >
     <slot></slot>
