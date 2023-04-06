@@ -395,7 +395,8 @@
           },
           {
             "label": "Fedora Mastodon",
-            "path": "https://mastodon.social/@fedora@fosstodon.org",
+            "path": "https://fosstodon.org/@fedora",
+	    "rel": "me",
             "icon": "fa6-brands:mastodon",
             "description": "Follow us on Mastodon! This is a great place to stay up to date on the latest in the Fedora community."
           },
