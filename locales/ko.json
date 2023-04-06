@@ -246,5 +246,15 @@
     "The Fedora CoreOS Working Group sends meeting agendas and minutes and has discussions on their mailing list at coreos@lists.fedoraproject.org.": "페도라 CoreOS 작업 그룹은 coreos{'@'}lists.fedoraproject.org에 있는 이들 전자우편 목록에서 회의 의제와 의사록을 보내고 토론합니다.",
     "The **Fedora CoreOS** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora CoreOS users and contributors.": "페도라 디스코드-기반의 토의 포럼에서 **페도라 CoreOS** 표시는 다른 페도라 CoreOS 사용자와 공헌자를 함께 연결하는 훌륭한 장소입니다.",
     "SUPPORTED THROUGH": "지원 범위",
-    "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology.": "최신 개방형 원천 기술로 채워진 리눅스 서버 OS와 함께 베어 메탈 혹은 클라우드에서 응용프로그램을 실행하세요."
+    "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology.": "최신 개방형 원천 기술로 채워진 리눅스 서버 OS와 함께 베어 메탈 혹은 클라우드에서 응용프로그램을 실행하세요.",
+    "Free Admission": "무료 입장",
+    "July 08": "7월 8일",
+    "May 01": "5월 1일",
+    "Deadline: May 29, 2023": "마감일: 2023년 5월 29일",
+    "Deadline: July 8, 2023": "마감일: 2023년 7월 8일",
+    "Accomodations": "숙박시설",
+    "April 01": "4월 1일",
+    "Sponsored by Red Hat Logo": "Red Hat 로고 후원",
+    "Fedora Logo": "페도라 로고",
+    "Contributors": "공헌자"
 }
