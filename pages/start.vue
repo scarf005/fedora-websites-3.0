@@ -96,7 +96,7 @@ if (magazine != null && newsfeed != null) {
     })
     .slice(0, 6);
 } else if (magazine != null) {
-  headlines = magainze;
+  headlines = magazine;
 } else if (newsfeed != null) {
   headlines = newsfeed;
 }
