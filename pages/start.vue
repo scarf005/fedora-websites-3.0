@@ -103,42 +103,44 @@ if (magazine != null && newsfeed != null) {
 </script>
 
 <template>
-  <div class="mx-auto w-4/5 max-w-7xl md:mt-2">
-    <h2 class="py-4 text-[30px] font-semibold">{{ data.description }}</h2>
-    <div
-      v-for="h in headlines"
-      class="sm:max-h-22 mb-6 flex flex-wrap bg-gray-200 px-4 py-4 dark:bg-neutral-900 sm:flex-nowrap"
-    >
-      <div class="w-16 w-1/2 flex-shrink-0 pr-4 align-top sm:w-auto">
-        <div
-          class="text-[16px] font-semibold uppercase leading-none sm:text-center"
-        >
-          {{ h.month }}
+  <FpHero :background="data.header_images[0].image">
+    <div class="mx-auto w-4/5 max-w-7xl md:mt-2">
+      <h2 class="py-4 text-[30px] font-semibold">{{ data.description }}</h2>
+      <div
+        v-for="h in headlines"
+        class="sm:max-h-22 mb-6 flex flex-wrap bg-gray-200 px-4 py-4 dark:bg-neutral-900 sm:flex-nowrap"
+      >
+        <div class="w-16 w-1/2 flex-shrink-0 pr-4 align-top sm:w-auto">
+          <div
+            class="text-[16px] font-semibold uppercase leading-none sm:text-center"
+          >
+            {{ h.month }}
+          </div>
+          <div class="text-[30px] font-bold leading-none sm:text-center">
+            {{ h.day }}
+          </div>
         </div>
-        <div class="text-[30px] font-bold leading-none sm:text-center">
-          {{ h.day }}
+        <div class="w-1/2 flex-shrink-0 pb-4 sm:w-auto sm:pr-4 md:pb-0">
+          <a :href="h.link">
+            <img v-if="h.feature" :src="h.feature" class="float-right h-14" />
+            <FpImage
+              v-if="h.icon"
+              :src="h.icon"
+              class="float-right h-14 w-[132px] bg-white py-4 px-4"
+            />
+          </a>
         </div>
-      </div>
-      <div class="w-1/2 flex-shrink-0 pb-4 sm:w-auto sm:pr-4 md:pb-0">
-        <a :href="h.link">
-          <img v-if="h.feature" :src="h.feature" class="float-right h-14" />
-          <FpImage
-            v-if="h.icon"
-            :src="h.icon"
-            class="float-right h-14 w-[132px] bg-white py-4 px-4"
-          />
-        </a>
-      </div>
-      <div class="mb-[1px] h-14 max-h-14 overflow-y-hidden align-top">
-        <div class="text-lg font-semibold leading-none text-fp-blue sm:text-xl">
-          <a :href="h.link">{{ h.title }}</a>
-        </div>
-        <div v-if="h.excerpt" class="hidden text-lg sm:block sm:truncate">
-          {{ h.excerpt }}
+        <div class="mb-[1px] h-14 max-h-14 overflow-y-hidden align-top">
+          <div class="text-lg font-semibold leading-none text-fp-blue sm:text-xl">
+            <a :href="h.link">{{ h.title }}</a>
+          </div>
+          <div v-if="h.excerpt" class="hidden text-lg sm:block sm:truncate">
+            {{ h.excerpt }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </FpHero>
 
   <FpPublicationSection class="bg-gray-200 dark:bg-neutral-900" />
 

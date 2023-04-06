@@ -1,6 +1,8 @@
 path: start
 title: Fedora Start
 description: "Fedora News & Publications:"
+header_images:
+  - image: public/assets/images/start.png
 sections:
   - sectionTitle: Communication channels
     content:
