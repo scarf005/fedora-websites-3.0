@@ -115,12 +115,14 @@ function formatDate(dateStr) {
           <div class="flex flex-wrap justify-between gap-8">
             <FpCardImage
               slot="prepend"
-              class="flex-grow basis-24"
+              class="flex-grow basis-24 lg:max-w-prose"
               src="public/assets/images/flock_youtube.png"
             />
             <div class="my-auto">
               <FpCardTitle :title="watch.content[0].title" />
-              <p class="text-fp-gray-darkest dark:text-slate-200">
+              <p
+                class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
+              >
                 {{ $t(watch.content[0].description) }}
               </p>
               <NuxtLink
