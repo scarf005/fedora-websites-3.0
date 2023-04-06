@@ -1,7 +1,20 @@
+path: start
 title: Fedora Start
-description: Default page when users load up firefox
-image:
-  src: https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/assets/images/fedora-default-meta-image.jpg
-  alt: Fedora Index Image
-  width: 400
-  height: 300
+description: "Fedora News & Publications:"
+header_images:
+  - image: public/assets/images/start.png
+sections:
+  - sectionTitle: Communication channels
+    content:
+      - title: Fedora Discussion
+        description: Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Project users and contributors.
+        image: public/assets/images/fedora-discussion-plus-icon.png
+        link:
+          text: Visit Now
+          url: https://discussion.fedoraproject.org/
+      - title: Fedora Chat
+        description: Fedora's Matrix-powered chat server is a great place to chat in real time with other Fedora Project users and contributors.
+        image: public/assets/images/fedora-chat-plus-element.png
+        link:
+          text: Chat Now
+          url: https://chat.fedoraproject.org/#/welcome

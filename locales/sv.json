@@ -321,7 +321,7 @@
     "Podman is a daemonless container engine for creating and managing containers and container images.": "Podman är en daemonlös containermotor för att skapa och hantera behållare och behållaravbilder.",
     "Our goal is to provide the best container host to run workloads securely and at scale.": "Vårt mål är att tillhandahålla den bästa containervärden för att köra arbetslaster säkert och skalbart.",
     "Make a proposal": "Kom med ett förslag",
-    "It's your": "Det är din",
+    "It's your": "Det är",
     "Fedora Kinoite is an immutable KDE-based desktop.": "Fedora Kinoite är ett oföränderligt KDE-baserat skrivbord.",
     "Fedora CoreOS is available across 3 different release streams": "Fedora CoreOS är tillgängligt över tre olika släppströmmar",
     "Fedora CoreOS can be deployed on 3 different CPU architecture.": "Fedora CoreOS kan rullas ut på 3 olika CPU -arkitekturer.",
@@ -684,8 +684,8 @@
     "Add a translation": "Lägg till en översättning",
     "Activities beyond engineering: Learn about the teams focused on Fedora's outreach, brand, & more.": "Aktiviteter utöver teknik: lär dig om teamen fokuserade på Fedoras uppsökande verksamhet, varumärke och mer.",
     " From the Data Center to your Raspberry Pi": " Från datacentret till din Raspberry Pi",
-    "its_your_Operating System.": "Oprativsystem.",
-    "its_your_Community.": "Gemenskap.",
-    "its_your_Workstation.": "Arbetsstation.",
-    "its_your_Server.": "Server."
+    "its_your_Operating System.": "ditt operativsystem.",
+    "its_your_Community.": "din gemenskap.",
+    "its_your_Workstation.": "din arbetsstation.",
+    "its_your_Server.": "din server."
 }
