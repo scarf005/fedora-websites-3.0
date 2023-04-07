@@ -69,3 +69,9 @@ sections:
         link:
           url: https://www.heficed.com/
           text: Heficed
+  - sectionTitle: Interested in sponsoring something for Fedora?
+    sectionDescription:
+      To sponsor our [Flock to Fedora](https://flocktofedora.org) conference, see the prospectus or email [sponsors@fedoraproject.org](mailto:sponsors@fedoraproject.org).
+
+
+      To mirror the repos, see the [Mirroring page](https://fedoraproject.org/wiki/Infrastructure/Mirroring) or contact the [Infrastructure team](https://docs.fedoraproject.org/en-US/infra/#_communicating).
