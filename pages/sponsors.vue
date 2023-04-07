@@ -1,6 +1,10 @@
 <script setup>
 const data = await getCMS("sponsors");
 // import data from cms see line 2 of flocktofedora.vue
+const engage = data._value.sections[2];
+if (engage.sectionDescription) {
+  engage.sectionDescriptionMd = await mdparser(engage.sectionDescription);
+}
 </script>
 <template>
   <main class="dark:bg-neutral-800 md:mt-2">
@@ -56,12 +60,24 @@ const data = await getCMS("sponsors");
         <!-- Gallery Content See line 364 of flocktofedora.vue -->
       </div>
     </section>
-    <section>
-      <header>
-        <!-- h2 Sponsor Engagement Header -->
-      </header>
-      <div>
-        <!-- Sponsor Engagement content -->
+    <section class="bg-fp-newblue-100/30 py-8 px-2 dark:bg-neutral-800">
+      <div class="container mx-auto max-w-7xl px-2">
+        <header>
+          <!-- h2 Sponsor Engagement Header -->
+          <h3
+            class="mb-16 text-center font-medium text-fp-blue dark:text-fp-newblue"
+          >
+            {{ engage.sectionTitle }}
+          </h3>
+        </header>
+        <div class="">
+          <!-- Sponsor Engagement content -->
+          <ContentRenderer
+            class="markdown mt-2 text-center dark:text-white"
+            v-if="engage.sectionDescriptionMd"
+            :value="engage.sectionDescriptionMd"
+          />
+        </div>
       </div>
     </section>
   </main>

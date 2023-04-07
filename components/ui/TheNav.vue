@@ -49,6 +49,11 @@ let languageOpen = useState("languageOpen", () => null);
   >
     <!-- NAVBAR  -->
     <div class="grid grid-cols-2">
+      <a
+        href="#main"
+        class="sr-only !fixed top-0 !h-[54px] bg-fp-blue-700 !py-4 !px-6 text-sm text-white focus:not-sr-only"
+        >Skip to content</a
+      >
       <div
         class="col-span-2 my-1 flex items-center justify-between px-4 md:col-span-1 md:mt-0 md:justify-start"
       >
@@ -219,7 +224,7 @@ let languageOpen = useState("languageOpen", () => null);
                 :key="link.id"
                 class="rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-800"
               >
-                <FpLink :href="link.path" v-if="!link.i18n">
+                <FpLink :href="link.path" v-if="!link.i18n" :rel="link.rel">
                   <h4 class="mb-2 font-medium text-fp-blue">
                     <Icon :name="link.icon" size="32" class="text-fp-blue" />
                     {{ $t(link.label) }}

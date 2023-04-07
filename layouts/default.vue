@@ -21,6 +21,12 @@ useHead({
 <template>
   <div id="app">
     <TheNav />
+    <a
+      id="main"
+      class="sr-only !absolute !w-full !pt-8 focus:not-sr-only"
+      href="#main"
+      >Start of main content</a
+    >
     <div class="pt-12">
       <slot />
     </div>
