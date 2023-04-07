@@ -88,17 +88,19 @@ try {
 }
 
 let headlines;
-if (magazine != null && newsfeed != null) {
+if (magazine.length > 0 && newsfeed.length > 0) {
   let combined = [...magazine, ...newsfeed];
   headlines = combined
     .sort(function (a, b) {
       return b.date - a.date;
     })
     .slice(0, 6);
-} else if (magazine != null) {
+} else if (magazine.length > 0) {
   headlines = magazine;
-} else if (newsfeed != null) {
+} else if (newsfeed.length > 0) {
   headlines = newsfeed;
+} else {
+  headlines = [];
 }
 </script>
 
@@ -131,7 +133,9 @@ if (magazine != null && newsfeed != null) {
           </a>
         </div>
         <div class="mb-[1px] h-14 max-h-14 overflow-y-hidden align-top">
-          <div class="text-lg font-semibold leading-none text-fp-blue sm:text-xl">
+          <div
+            class="text-lg font-semibold leading-none text-fp-blue sm:text-xl"
+          >
             <a :href="h.link">{{ h.title }}</a>
           </div>
           <div v-if="h.excerpt" class="hidden text-lg sm:block sm:truncate">
