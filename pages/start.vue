@@ -88,17 +88,19 @@ try {
 }
 
 let headlines;
-if (magazine != null && newsfeed != null) {
+if (magazine.length > 0 && newsfeed.length > 0) {
   let combined = [...magazine, ...newsfeed];
   headlines = combined
     .sort(function (a, b) {
       return b.date - a.date;
     })
     .slice(0, 6);
-} else if (magazine != null) {
+} else if (magazine.length > 0) {
   headlines = magazine;
-} else if (newsfeed != null) {
+} else if (newsfeed.length > 0) {
   headlines = newsfeed;
+} else {
+  headlines = [];
 }
 </script>
 
