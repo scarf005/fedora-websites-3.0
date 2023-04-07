@@ -5,16 +5,19 @@ defineProps({});
 let { data } = await useAsyncData(() => {
   return queryContent("/partials/compliance").findOne();
 });
+if (data._value.description) {
+  data._value.descriptionMd = await mdparser(data._value.description);
+}
 </script>
 <template>
   <div class="container mx-auto max-w-7xl">
     <div class="p-2">
-      <h2 class="mb-5 text-center text-base dark:text-white">
-        {{ $t(data.title) }}
-      </h2>
-      <p class="text-sm text-fp-gray-dark dark:text-fp-gray">
-        {{ $t(data.description) }}
-      </p>
+      <ContentRenderer
+        class="markdown text-center dark:text-white"
+        tag="p"
+        v-if="data.descriptionMd"
+        :value="data.descriptionMd"
+      />
     </div>
   </div>
 </template>
