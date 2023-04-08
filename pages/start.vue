@@ -73,14 +73,14 @@ const fp_headlines = async () => {
   return headlines;
 };
 
-let magazine;
+let magazine = [];
 try {
   magazine = await fm_headlines();
 } catch (e) {
   console.log(e);
 }
 
-let newsfeed;
+let newsfeed = [];
 try {
   newsfeed = await fp_headlines();
 } catch (e) {
