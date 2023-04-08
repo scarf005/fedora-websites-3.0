@@ -124,7 +124,7 @@ if (magazine.length > 0 && newsfeed.length > 0) {
             {{ h.day }}
           </div>
         </div>
-        <div class="w-1/2 flex-shrink-0 pb-4 sm:w-auto sm:pr-4 md:pb-0">
+        <div class="mb-4 w-1/2 flex-shrink-0 sm:mb-0 sm:w-auto sm:pr-4">
           <a :href="h.link">
             <img v-if="h.feature" :src="h.feature" class="float-right h-14" />
             <FpImage
