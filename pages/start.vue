@@ -105,7 +105,7 @@ if (magazine.length > 0 && newsfeed.length > 0) {
 </script>
 
 <template>
-  <FpHero :background="data.header_images[0].image" alignment="mt-2">
+  <FpHero :background="data.header_images[0].image" alignment="md:mt-2">
     <div class="mx-auto w-4/5 max-w-7xl pb-6 md:mt-2">
       <h2 class="py-4 text-[30px] font-semibold text-white dark:text-gray-400">
         {{ data.description }}
