@@ -1,10 +1,16 @@
 title: Fedora Phosh
 description: >-
-  The Fedora Sway Spin provides the popular Sway tiling window manager. 
-  It makes Sway accessible and appealing to both novices and advanced users who prefer not to use a mouse, 
-  touchpad, or other pointing device to interact with their environment. 
-  Featuring lightweight applications for web browsing, text editing, and media playback, 
-  the Fedora Sway Spin offers a complete experience with a minimalist user interface.
+  The Phosh spin provides a mobile friendly, touch based desktop interface. It's
+  built for mobile devices like phones and tablets, but also latops with
+  touchscreens. 
+
+
+
+  Phosh allows you to use a touch based device to quickly launch and switch applications as well as handy settings like battery level and wan signal strength. 
+
+
+
+  Behind this desktop is the entire Fedora collection of packages which you can install and use as you see fit. Phosh is built on wayland and other modern gnome desktop technologies.
 image:
   src: https://stg.fedoraproject.org/assets/images/server-header.jpg
   alt: Fedora Sway Image
@@ -16,14 +22,4 @@ links:
 screenshot_image:
   image: public/assets/images/spins/screenshot-sway.jpg
   alt_text: Screenshot of Fedora Sway desktop
-sections:
-  - sectionTitle: Going Online
-    content:
-      - title: Firefox
-        description:
-          Explore the World Wide Web with Firefox, the full featured web browser
-        image: public/assets/images/spins/firefox.png
-      - title: Thunderbird
-        description:
-          Mozilla Thunderbird is a standalone Matrix, mail and newsgroup client. Organize your schedule with the included Lightning calendar application.
-        image: public/assets/images/spins/thunderbird.png
+sections: []
