@@ -1,0 +1,31 @@
+title: Fedora Budgie Spin
+description: >-
+  The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user.
+  Budgie Desktop uses common desktop design metaphors while offering uses sophisticated functionality
+  such as its Raven widget and notification center, and an approachable method to personalization.
+
+
+  This Spin is designed to align closely with upstream Budgie Desktop,
+  providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.
+image:
+  src: https://stg.fedoraproject.org/assets/images/server-header.jpg
+  alt: Fedora Budgie Image
+  width: 400
+  height: 300
+links:
+  - text: Download Now
+    url: /spins/budgie/download/
+screenshot_image:
+  image: public/assets/images/spins/screenshot-budgie.jpg
+  alt_text: Screenshot of Fedora Budgie desktop
+sections:
+  - sectionTitle: Going Online
+    content:
+      - title: Firefox
+        description:
+          Explore the World Wide Web with Firefox, the full featured web browser
+        image: public/assets/images/spins/firefox.png
+      - title: Thunderbird
+        description:
+          Mozilla Thunderbird is a standalone Matrix, mail and newsgroup client. Organize your schedule with the included Lightning calendar application.
+        image: public/assets/images/spins/thunderbird.png
