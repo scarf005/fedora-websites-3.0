@@ -196,7 +196,7 @@
     "Labs": "المختبرات",
     "July 1 - 31 2023\nIn the month leading up to Flock, Fedorans are encouraged to organize local community events. Set the format and topic of your choice. The Fedora Council will help support your initiative with financial and organizating aid. Click below to set up a Hatch! Deadline for submissions is May 29.": "1 - 31 يوليو/تموز 2023\nفي الشهر السابق لفلوك، يُشجّع الفيدوريون على تنظيم مناسبات مجتمعية محليّة. اختر الهيئة والموضوع اللذان تشاء. سيدعمك مجلس فيدورا مبادرتك ماديًّا وتنظيميًّا. اضغط أدناه لتبدأ هاتش! الموعد النهائي للطلبات 29 من مايو.",
     "July 1 - 31 2023": "1 - 31 يوليو/تموز 2023",
-    "Design Suite": "بالتصميم والرسوميات",
+    "Design Suite": "التصميم والرسوميات",
     "Customizable": "مُخصّص",
     "Current GPG keys": "مفاتيح التشفير الحالية",
     "Connections": "اتصالات",
@@ -407,7 +407,7 @@
     "LXDE Desktop": "سطح مكتب لِكسدي",
     "Join a community of users and contributors focused on Fedora Server.": "انضم لمجتمع من المستخدمين والمساهمين يركّز على فيدورا الخادم.",
     "Join a community of users and contributors focused on Fedora IoT.": "انضم لمجتمع من المستخدمين والمساهمين يركّز على فيدورا إنترنت الأشياء.",
-    "Join SIG": "انظم لمجموعة اهتمام خاصّ",
+    "Join SIG": "انضم لمجموعة اهتمام خاصّ",
     "It's your": "إنـــه",
     "It's Fedora's calendar!": "إنها روزنامة فيدورا!",
     "It is a compilation of software packages, each under its own license. Images that can be downloaded here are available under the combination of licenses of the constituent software packages and the license of the Fedora Linux distribution itself. [View License](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)": "إنها تجميعة من حزم البرمجيات، لكل رخصته. الصور المتاحة للتحميل هنا متاحة تحت مجموع رخص الحزم البرمجية التي تتألف منها بالإضافة لرخصة توزيع فيدورا لينكس نفسه. [عرض الرخصة](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)",
@@ -639,5 +639,11 @@
     "its_your_Operating System.": "نظام تشغيلك.",
     "its_your_Community.": "مجتمعك.",
     "its_your_Workstation.": "منصة عملك.",
-    "its_your_Server.": "خادمك."
+    "its_your_Server.": "خادمك.",
+    "Cork": "كورك",
+    "Use the **\\#NestWithFedora** hashtags on your preferred social media platforms. Follow **[@fedora](https://twitter.com/fedora)** on Twitter for updates.": "استخدم وسم **\\#NestWithFedora** في وسيلة التواصل الاجتماعي التي تفضل. تابع **[{'@'}fedora](https://twitter.com/fedora)** على تويتر لتبقَ على اطلاع.",
+    "Use our messaging board Fedora Discussions to stay up to date on Flock Notifications. **[Check it out here](https://discussion.fedoraproject.org/)**.": "استخدم منتدى نقاشات فيدورا لتبقى مُطّلعًا على إشعارات فلوك. **[تفقّده هنا](https://discussion.fedoraproject.org/)**.",
+    "Our main IRC channel for the event is **\\#fedora-flock** on **libera.chat**. Join **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** to chat on Matrix or IRC.": "قناتنا الآي آر سي الخاصة بالحدث **\\#fedora-flock** على **libera.chat**. انضم إلى **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** للدردشة على ماتريكس أو آي آر سي.",
+    "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "حديث عهد بفيدورا؟ تفقّد **[منتدى المجتمع](https://discussion.fedoraproject.org/c/ask)** للحصول على الدعم والمساعدة بشأل الأسئلة الشائعة.",
+    "August 1 - 4, 2023": "1-4 أغسطس/آب 2023"
 }
