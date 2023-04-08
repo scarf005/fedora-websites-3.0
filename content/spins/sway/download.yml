@@ -1,0 +1,10 @@
+title: Fedora Sway Spin
+description:
+  We're so glad you've decided to give Fedora Sway Spin a try. We
+  know you'll love it.
+sections:
+  - sectionTitle: release
+    content:
+      - title: Upstream Documentation
+        link:
+          url: ""
