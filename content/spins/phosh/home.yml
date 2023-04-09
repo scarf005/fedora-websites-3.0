@@ -18,7 +18,7 @@ image:
   height: 300
 links:
   - text: Download Now
-    url: /spins/sway/download/
+    url: /spins/phosh/download/
 screenshot_image:
   image: public/assets/images/spins/screenshot-phosh.jpg
   alt_text: Screenshot of Fedora Phosh on mobile
