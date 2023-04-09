@@ -119,7 +119,9 @@ if (magazine.length > 0 && newsfeed.length > 0) {
             v-for="h in headlines"
             class="sm:max-h-22 opacity-85 mb-6 flex flex-wrap bg-white px-4 py-4 dark:bg-gray-600 dark:opacity-80 sm:flex-nowrap"
           >
-            <div class="w-16 w-1/2 flex-shrink-0 pr-4 align-top sm:w-auto">
+            <div
+              class="w-16 w-1/2 flex-shrink-0 align-top ltr:pr-4 rtl:pl-4 sm:w-auto"
+            >
               <div
                 class="text-[16px] font-semibold uppercase leading-none sm:text-center"
               >
@@ -129,9 +131,14 @@ if (magazine.length > 0 && newsfeed.length > 0) {
                 {{ h.day }}
               </div>
             </div>
-            <div class="mb-4 w-1/2 flex-shrink-0 sm:mb-0 sm:w-auto sm:pr-4">
+            <div
+              class="mb-4 w-1/2 flex-shrink-0 sm:mb-0 sm:w-auto ltr:sm:pr-4 rtl:sm:pl-4"
+            >
               <a :href="h.link">
-                <img :src="h.thumbnail" class="float-right h-14" />
+                <img
+                  :src="h.thumbnail"
+                  class="h-14 ltr:float-right rtl:float-left"
+                />
               </a>
             </div>
             <div class="mb-[1px] h-14 max-h-14 overflow-y-hidden align-top">
