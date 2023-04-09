@@ -137,7 +137,7 @@ if (magazine.length > 0 && newsfeed.length > 0) {
               <a :href="h.link">
                 <img
                   :src="h.thumbnail"
-                  class="h-14 ltr:float-right rtl:float-left"
+                  class="h-14 min-w-[132px] ltr:float-right rtl:float-left"
                 />
               </a>
             </div>
