@@ -13,13 +13,6 @@ const { data: beta_data } = await useFetch(
 const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
 
-const releaseDate =
-  ga_data._value.payload.compose.date.substr(0, 4) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(4, 2) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(6, 2);
-
 function updateVerify(art) {
   console.log(art);
   verifyModal.value.art_name = art.path.substring(
@@ -146,7 +139,7 @@ useContentHead(data);
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <template v-if="betaSwitch == false">
+          <template v-if="betaSwitch == false && ga_data?.payload">
             <IotDownloadSection
               name="For Intel and AMD x86_64 systems"
               @verify-click="updateVerify"
@@ -162,7 +155,7 @@ useContentHead(data);
               class="iot-theme"
             />
           </template>
-          <template v-else>
+          <template v-else-if="betaSwitch == true && beta_data?.payload">
             <IotDownloadSection
               name="For Intel and AMD x86_64 systems"
               @verify-click="updateVerify"
@@ -179,6 +172,11 @@ useContentHead(data);
               class="iot-theme"
               isBeta
             />
+          </template>
+          <template v-else>
+            <div class="text-center font-bold lg:col-span-2">
+              {{ $t("No files available for this version.") }}
+            </div>
           </template>
         </div>
       </div>

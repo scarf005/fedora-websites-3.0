@@ -1,11 +1,12 @@
 <script setup>
 defineProps({
   background: String,
+  bgClass: String,
 });
 </script>
 
 <template>
-  <section class="relative z-0 dark:bg-neutral-800">
+  <section class="relative z-0 dark:bg-neutral-900">
     <svg
       viewBox="0 0 209.9868 38.261421"
       width="100%"
@@ -36,6 +37,7 @@ defineProps({
       }"
       style="min-height: 100vh"
       class="w-screen max-w-full bg-cover bg-center bg-no-repeat"
+      :class="bgClass"
     ></div>
     <svg
       viewBox="0 0 209.98682 22.494961"

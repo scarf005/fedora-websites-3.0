@@ -37,7 +37,10 @@ data._value.descriptionMd = await mdparser(data._value.description);
     </section>
 
     <!-- Screenshot Section -->
-    <FpSpinPreviewSection :background="data.screenshot_image.image" />
+    <FpSpinPreviewSection
+      :background="data.screenshot_image.image"
+      bgClass="!bg-contain"
+    />
 
     <!-- Features Section -->
     <section
