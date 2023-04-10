@@ -9,7 +9,7 @@ description: >-
 
   This Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-budgie.jpg
+  src: https://stg.fedoraproject.org/assets/images/spins/spins-budgie-dark.png
   alt: Fedora Budgie Image
   width: 400
   height: 300
