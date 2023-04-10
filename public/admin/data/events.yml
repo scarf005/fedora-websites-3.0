@@ -36,7 +36,14 @@
           fields:
             - label: "Image"
               name: "image"
-              widget: "image"
+              widget: "object"
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"
         - label: "Header Links & Buttons"
           label_singular: "Link"
           name: "links"
@@ -74,7 +81,14 @@
             - label: "Section Images"
               singular_label: "image"
               name: "images"
-              widget: "image"
+              widget: "object"
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"
               required: false
             - label: "Section Content"
               name: "content"
@@ -92,7 +106,14 @@
                   required: false
                 - label: "Image"
                   name: "image"
-                  widget: "image"
+                  widget: "object"
+                  fields:
+                    - label: "Image Path"
+                      name: "path"
+                      widget: "image"
+                    - label: "Image Alt Text"
+                      name: "alt"
+                      widget: "string"
                   required: false
                 - label: "Link"
                   name: "link"
@@ -238,8 +259,15 @@
           fields:
             - label: "Image"
               name: "image"
-              widget: "image"
+              widget: "object"
               required: false
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"
             - label: "Text"
               name: "text"
               widget: "string"
@@ -267,7 +295,14 @@
               widget: "markdown"
             - label: "Event Logo"
               name: "logo"
-              widget: "image"
+              widget: "object"
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"
             - label: "URL"
               name: "url"
               widget: "string"

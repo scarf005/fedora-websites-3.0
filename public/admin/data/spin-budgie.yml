@@ -82,5 +82,12 @@
               required: false
             - label: "Image"
               name: "image"
-              widget: "image"
+              widget: "object"
               required: false
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"

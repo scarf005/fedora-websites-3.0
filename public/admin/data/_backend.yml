@@ -7,9 +7,6 @@ backend:
   squash_merges: true
 publish_mode: editorial_workflow
 
-# Deploy Preview Links Docs: https://www.netlifycms.org/docs/deploy-preview-links/
-local_backend: true
-
 # Assets
 media_folder: "public/assets/images"
 public_folder: "public/assets/images"

@@ -259,9 +259,16 @@
                   required: false
                   hint: "Communication channel name"
                 - label: "Image"
-                  name: "image"
+                  name: "object"
                   required: false
                   hint: "An optional image or logo"
+                  fields:
+                    - label: "Image Path"
+                      name: "path"
+                      widget: "image"
+                    - label: "Image Alt Text"
+                      name: "alt"
+                      widget: "string"
                 - label: "Link URL"
                   name: "link"
                   required: false
@@ -286,7 +293,14 @@
                   required: false
                   hint: "Communication channel name"
                 - label: "Image"
-                  name: "image"
+                  name: "object"
+                  fields:
+                    - label: "Image Path"
+                      name: "path"
+                      widget: "image"
+                    - label: "Image Alt Text"
+                      name: "alt"
+                      widget: "string"
                   required: false
                   hint: "An optional image or logo"
                 - label: "Link URL"

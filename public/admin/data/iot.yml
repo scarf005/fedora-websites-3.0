@@ -39,7 +39,14 @@
       fields:
         - label: "Image"
           name: "image"
-          widget: "image"
+          widget: "object"
+          fields:
+            - label: "Image Path"
+              name: "path"
+              widget: "image"
+            - label: "Image Alt Text"
+              name: "alt"
+              widget: "string"
     - label: "Header Links & Buttons"
       label_singular: "Link"
       name: "links"
@@ -76,8 +83,15 @@
         - label: "Section Images"
           singular_label: "image"
           name: "images"
-          widget: "image"
+          widget: "object"
           required: false
+          fields:
+            - label: "Image Path"
+              name: "path"
+              widget: "image"
+            - label: "Image Alt Text"
+              name: "alt"
+              widget: "string"
         - label: "Section Content"
           name: "content"
           widget: "list"

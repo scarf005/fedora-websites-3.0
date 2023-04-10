@@ -35,7 +35,14 @@
               required: false
             - label: "Image"
               name: "image"
-              widget: "image"
+              widget: "object"
+              fields:
+                - label: "Image Path"
+                  name: "path"
+                  widget: "image"
+                - label: "Image Alt Text"
+                  name: "alt"
+                  widget: "string"
               hint: "A wider logo will fit best here"
             - label: "Button"
               name: "button"

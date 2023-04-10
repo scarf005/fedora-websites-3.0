@@ -95,14 +95,28 @@
               fields:
                 - label: "Image Dark"
                   name: "dark"
-                  widget: "image"
+                  widget: "object"
                   required: false
                   hint: "Image visible on dark theme"
+                  fields:
+                    - label: "Image Path"
+                      name: "path"
+                      widget: "image"
+                    - label: "Image Alt Text"
+                      name: "alt"
+                      widget: "string"
                 - label: "Image Light"
                   name: "light"
-                  widget: "image"
+                  widget: "object"
                   required: false
                   hint: "Image visible on light theme"
+                  fields:
+                    - label: "Image Path"
+                      name: "path"
+                      widget: "string"
+                    - label: "Image Alt Text"
+                      name: "alt"
+                      widget: "string"
             - label: "Image"
               name: "image"
               widget: "image"
