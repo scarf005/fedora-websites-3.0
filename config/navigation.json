@@ -114,6 +114,12 @@
             "path": "/spins/sway",
             "icon": "fa6-solid:desktop",
             "description": "Fedora Linux with the Sway Tiling Window Manager"
+          },
+          {
+            "label": "Budgie Desktop",
+            "path": "/spins/budgie",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Linux with the Budgie Desktop"
           }
         ]
       },
