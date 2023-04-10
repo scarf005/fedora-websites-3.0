@@ -31,7 +31,7 @@ sections:
           dark: public/assets/images/workstation-logo-dark.png
         link:
           text: Download Now
-      - title: Tomorrow's server OS
+      - title: A Community Server OS
         url: /server
         description: Fedora Server is a powerful, flexible operating system that
           includes the best and latest datacenter technologies.

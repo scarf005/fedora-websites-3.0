@@ -105,7 +105,7 @@
           },
           {
             "label": "Mobility Spin",
-            "path": "https://fedoraproject.org/wiki/Mobility",
+            "path": "/spins/phosh",
             "icon": "fa6-solid:mobile",
             "description": "Fedora built for Pinephone and Pinephone Pro"
           }
