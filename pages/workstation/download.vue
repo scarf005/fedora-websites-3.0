@@ -3,8 +3,18 @@ const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version if metadata are not yet available
+// Alt location:
+// https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/
+// https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/
+// Final location should be:
+// https://dl.fedoraproject.org/pub/fedora/linux/releases/37/metadata
+/* 
 const { data: ga_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
+);
+*/
+const { data: ga_data } = await useFetch(
+  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`
 );
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
@@ -12,13 +22,6 @@ const { data: beta_data } = await useFetch(
 
 const betaSwitch = useState("betaSwitch", () => false);
 const verifyModal = useState("verifyModal", () => ({ show: false }));
-
-const releaseDate =
-  ga_data._value.payload.compose.date.substr(0, 4) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(4, 2) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(6, 2);
 
 // for checksums
 const dlpath = {
@@ -212,7 +215,7 @@ if (data._value.sections[2].sectionDescription) {
               class="markdown mb-10 text-fp-gray"
               :value="data.sections[2].sectionDescriptionMd"
             />
-            <div v-if="betaSwitch == false">
+            <div v-if="betaSwitch == false && ga_data?.payload">
               <DownloadSection
                 name="For Intel and AMD x86_64 systems"
                 art_name="Fedora Workstation"
@@ -242,7 +245,7 @@ if (data._value.sections[2].sectionDescription) {
               />
             </div>
             <!-- Beta Releases -->
-            <div v-else>
+            <div v-else-if="betaSwitch == true && beta_data?.payload">
               <DownloadSection
                 name="For Intel and AMD x86_64 systems"
                 art_name="Fedora Workstation"
@@ -273,6 +276,11 @@ if (data._value.sections[2].sectionDescription) {
                 isBeta
                 class="workstation-theme"
               />
+            </div>
+            <div v-else>
+              <p class="text-center font-bold">
+                {{ $t("No files available for this version.") }}
+              </p>
             </div>
           </div>
         </div>

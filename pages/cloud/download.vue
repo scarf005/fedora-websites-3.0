@@ -4,7 +4,7 @@ const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
-  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.ga.releasever}_RC-${release_data._value.ga.rc_version}/metadata/images.json`
+  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`
 );
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
@@ -16,13 +16,6 @@ const verifyModal = useState("verifyModal", () => ({ show: false }));
 // Fetch pre-generated Cloud AMIs list
 const cloud_ami = await getCMS("editions/cloud/ami_list");
 const showAMI = useState("showAMI", () => ({ show: false }));
-
-const releaseDate =
-  ga_data._value.payload.compose.date.substr(0, 4) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(4, 2) +
-  "-" +
-  ga_data._value.payload.compose.date.substr(6, 2);
 
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -207,7 +200,7 @@ useContentHead(data);
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <template v-if="betaSwitch == false">
+          <template v-if="betaSwitch == false && ga_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Cloud"
@@ -286,7 +279,7 @@ useContentHead(data);
               class="cloud-theme"
             />
           </template>
-          <template v-else>
+          <template v-else-if="betaSwitch == true && beta_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Cloud"
@@ -370,6 +363,11 @@ useContentHead(data);
               class="cloud-theme"
               isBeta
             />
+          </template>
+          <template v-else>
+            <div class="text-center font-bold lg:col-span-2">
+              {{ $t("No files available for this version.") }}
+            </div>
           </template>
         </div>
       </div>

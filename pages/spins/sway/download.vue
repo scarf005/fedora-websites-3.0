@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("editions/server/download");
+const data = await getCMS("spins/sway/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version if metadata are not yet available
@@ -16,7 +16,7 @@ const verifyModal = useState("verifyModal", () => ({ show: false }));
 // for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
-  aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
+  aarch64: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
 };
@@ -29,13 +29,13 @@ function updateVerify(art) {
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
   if (betaSwitch.value) {
     // Beta
-    verifyModal.value.chk_name = `Fedora-Server-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+    verifyModal.value.chk_name = `Fedora-Spins-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
     // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
     verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
       release_data._value.beta.releasever
     }_Beta/${path}/${verifyModal.value.chk_name}`;
   } else {
-    verifyModal.value.chk_name = `Fedora-Server-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+    verifyModal.value.chk_name = `Fedora-Spins-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
     // Fedora-Server-37-1.7-x86_64-CHECKSUM
     verifyModal.value.checksum = `${dlpath[art.arch]}/${
       release_data._value.ga.releasever
@@ -57,18 +57,15 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-orange dark:bg-neutral-800 md:mt-2">
+  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-server-logo-light.png',
-        dark: 'assets/images/fedora-server-logo.png',
+        light: 'assets/images/spins/spins-Sway-logo-light.png',
+        dark: 'assets/images/spins/spins-Sway-logo-dark.png',
       }"
-      home="/server"
-      textColor="text-fp-orange"
-      :items="[
-        { name: 'Download', link: '/server/download' },
-        { name: 'Community', link: '/server/community' },
-      ]"
+      home="/spins/sway"
+      textColor="text-fp-newblue"
+      :items="[{ name: 'Download', link: '/spins/sway/download' }]"
     />
 
     <!-- TITLE -->
@@ -76,10 +73,10 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
-          <span class="text-fp-orange" v-if="betaSwitch == false">
+          <span class="text-fp-newblue" v-if="betaSwitch == false">
             {{ data.title }} {{ release_data.ga.releasever }}</span
           >
-          <span class="text-fp-orange" v-else>
+          <span class="text-fp-newblue" v-else>
             {{ data.title }} {{ release_data.beta.releasever }}
             {{ $t("BETA").toLowerCase() }}
           </span>
@@ -117,20 +114,13 @@ useContentHead(data);
             <Icon name="fa-book" />
             {{ $t("Release Notes") }}
           </FpLink>
-          <FpLink
-            :href="data.sections[0].content[1].link.url"
-            class="mx-5 text-blue-500"
-          >
-            <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[1].title) }}
-          </FpLink>
         </div>
       </div>
     </section>
 
     <!-- DOWNLOAD ARTIFACTS -->
     <section
-      class="scroll-mt-14 bg-gradient-to-r from-orange-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
+      class="scroll-mt-14 bg-gradient-to-r from-sky-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
       id="download_section"
     >
       <div
@@ -156,82 +146,64 @@ useContentHead(data);
           <template v-if="betaSwitch == false && ga_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Server"
+              :art_name="data.title"
               @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Server.x86_64"
+              :artifacts="
+                ga_data.payload.images.Spins.x86_64.filter(
+                  (a) => a.subvariant == 'Sway'
+                )
+              "
               :dlPrefix="dlpath.x86_64"
               :version="release_data.ga.releasever"
-              class="server-theme"
+              class="spins-theme"
             />
+            <!--
             <DownloadSection
               name="For ARM® aarch64 systems"
-              art_name="Fedora Server"
+              :art_name="data.title"
               @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Server.aarch64"
+              :artifacts="
+                ga_data.payload.images.Spins.aarch64.filter(
+                  (a) => a.subvariant == 'Sway'
+                )
+              "
               :dlPrefix="dlpath.aarch64"
               :version="release_data.ga.releasever"
-              class="server-theme"
+              class="spins-theme"
             />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Server"
-              @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Server.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.ga.releasever"
-              class="server-theme"
-            />
-            <DownloadSection
-              name="For IBM s390x zSystems"
-              art_name="Fedora Server"
-              @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Server.s390x"
-              :dlPrefix="dlpath.s390x"
-              :version="release_data.ga.releasever"
-              class="server-theme"
-            />
+            -->
           </template>
           <template v-else-if="betaSwitch == true && beta_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Server"
+              :art_name="data.title"
               @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Server.x86_64"
+              :artifacts="
+                beta_data.payload.images.Spins.x86_64.filter(
+                  (a) => a.subvariant == 'Sway'
+                )
+              "
               :dlPrefix="dlpath.x86_64"
               :version="release_data.beta.releasever"
-              class="server-theme"
+              class="spins-theme"
               isBeta
             />
+            <!--
             <DownloadSection
               name="For ARM® aarch64 systems"
-              art_name="Fedora Server"
+              :art_name="data.title"
               @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Server.aarch64"
+              :artifacts="
+                beta_data.payload.images.Spins.aarch64.filter(
+                  (a) => a.subvariant == 'Sway'
+                )
+              "
               :dlPrefix="dlpath.aarch64"
               :version="release_data.beta.releasever"
-              class="server-theme"
+              class="spins-theme"
               isBeta
             />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Server"
-              @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Server.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.beta.releasever"
-              class="server-theme"
-              isBeta
-            />
-            <DownloadSection
-              name="For IBM s390x zSystems"
-              art_name="Fedora Server"
-              @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Server.s390x"
-              :dlPrefix="dlpath.s390x"
-              :version="release_data.beta.releasever"
-              class="server-theme"
-              isBeta
-            />
+            -->
           </template>
           <template v-else>
             <div class="text-center font-bold lg:col-span-2">
@@ -333,8 +305,8 @@ body.has-modal {
   @apply overflow-hidden;
 }
 
-.server-theme .fp-download-item a {
-  @apply border-fp-orange text-fp-orange hover:bg-fp-orange hover:text-white;
-  @apply dark:border-fp-orange-700 dark:text-fp-orange-700 dark:hover:bg-fp-orange-700 dark:hover:text-white;
+.spins-theme .fp-download-item a {
+  @apply border-fp-newblue text-fp-newblue hover:bg-fp-newblue hover:text-white;
+  @apply dark:border-fp-newblue-700 dark:text-fp-newblue-700 dark:hover:bg-fp-newblue-700 dark:hover:text-white;
 }
 </style>
