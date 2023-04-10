@@ -12,7 +12,7 @@ description: >-
 
   Behind this desktop is the entire Fedora collection of packages which you can install and use as you see fit. Phosh is built on wayland and other modern gnome desktop technologies.
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-phosh.jpg
+  src: https://stg.fedoraproject.org/assets/images/spins/spins-phosh-dark.png
   alt: Fedora Sway Image
   width: 200
   height: 400

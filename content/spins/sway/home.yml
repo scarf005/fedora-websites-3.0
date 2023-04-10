@@ -6,7 +6,7 @@ description: The Fedora Sway Spin provides the popular Sway tiling window
   browsing, text editing, and media playback,  the Fedora Sway Spin offers a
   complete experience with a minimalist user interface.
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-sway.jpg
+  src: https://stg.fedoraproject.org/assets/images/spins/spins-sway-dark.png
   alt: Fedora Sway Image
   width: 400
   height: 300
