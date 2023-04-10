@@ -1,10 +1,10 @@
-title: Fedora Sway Spin
-description: The Fedora Sway Spin provides the popular Sway tiling window
-  manager. It makes Sway accessible and appealing to both novices and advanced
-  users who prefer not to use a mouse,touchpad, or other pointing device to
-  interact with their environment. Featuring lightweight applications for web
-  browsing, text editing, and media playback, the Fedora Sway Spin offers a
-  complete experience with a minimalist user interface.
+title: Fedora Sericea
+description: Fedora Sericea provides the popular Sway tiling window manager in
+  an immutable fashion. It makes Sway accessible and appealing to both novices
+  and advanced users who prefer not to use a mouse, touchpad, or other
+  pointing device to interact with their environment. Featuring lightweight
+  applications for web browsing, text editing, and media playback, the Fedora
+  Sericea offers a complete experience with a minimalist user interface.
 image:
   src: https://stg.fedoraproject.org/assets/images/spins/spins-sway-dark.png
   alt: Fedora Sway Image
@@ -12,10 +12,10 @@ image:
   height: 300
 links:
   - text: Download Now
-    url: /spins/sway/download/
+    url: /immutable/sericea/download/
 screenshot_image:
   image: public/assets/images/spins/screenshot-sway.jpg
-  alt_text: Screenshot of Fedora Sway desktop
+  alt_text: Screenshot of Fedora Sericea
 sections:
   - sectionTitle: Going Online
     content:
