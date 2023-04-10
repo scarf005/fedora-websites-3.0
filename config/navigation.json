@@ -108,6 +108,12 @@
             "path": "/spins/phosh",
             "icon": "fa6-solid:mobile",
             "description": "Fedora built for Pinephone and Pinephone Pro"
+          },
+          {
+            "label": "Sway Tiling WM",
+            "path": "/spins/sway",
+            "icon": "fa6-solid:desktop",
+            "description": "Fedora Linux with the Sway Tiling Window Manager"
           }
         ]
       },
