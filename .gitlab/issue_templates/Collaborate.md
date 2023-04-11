@@ -17,4 +17,4 @@ By clicking the `Create Issue` button below, you agree to the following terms.
 - [x] I agree to the terms of the [Fedora Project Contributor Agreement](https://docs.fedoraproject.org/en-US/legal/fpca/).
 - [x] I will adhere to the [Fedora Community Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/).
 
-A GitLab admin will leave a follow-up comment on this issue to let you know when your account has been granted write access to the [fedora-websites-3.0](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0) repo.
+A GitLab admin will leave a follow-up comment on this issue to let you know when your account has been granted write access to the [fedora-websites-3.0](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0) repo.git 
