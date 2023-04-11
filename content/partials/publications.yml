@@ -1,14 +1,5 @@
 - sectionTitle: Fedora Publications
   content:
-    - title: Fedora Community Blog
-      description:
-        The Community Blog provides a single source for members of the
-        community to share important news, updates, and information about
-        Fedora with others in the Project community.
-      image: public/assets/images/community-blog.png
-      link:
-        text: Visit Now
-        url: https://communityblog.fedoraproject.org/
     - title: Fedora Magazine
       description:
         Fedora Magazine is a website that hosts promotional articles and
@@ -19,6 +10,15 @@
       link:
         text: Visit now
         url: https://fedoramagazine.org/
+    - title: Fedora Community Blog
+      description:
+        The Community Blog provides a single source for members of the
+        community to share important news, updates, and information about
+        Fedora with others in the Project community.
+      image: public/assets/images/community-blog.png
+      link:
+        text: Visit Now
+        url: https://communityblog.fedoraproject.org/
     - title: Become a Fedora contributor
       description: Both the Fedora Community Blog and Fedora Magazine are always
         looking for article proposals, writers, and editors.
