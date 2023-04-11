@@ -39,7 +39,7 @@ We have a two-part training video series that takes you from start to finish imp
 
 Other documentation:
 - [How to contribute](https://gitlab.com/groups/fedora/websites-apps/fedora-websites/-/wikis/Contributor-Guidelines)
-- [How to use Netlify CMS](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/wikis/Netlify-CMS)
+- [How to use Decap CMS](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/wikis/Netlify-CMS)
 
 
 ## General Vue Setup
