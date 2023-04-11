@@ -144,7 +144,6 @@ useContentHead(data);
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <template v-if="betaSwitch == false && ga_data?.payload">
-            <!--
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Sericea"
@@ -154,7 +153,6 @@ useContentHead(data);
               :version="release_data.ga.releasever"
               class="spins-theme"
             />
-            -->
             <!--
             <DownloadSection
               name="For ARM® aarch64 systems"
