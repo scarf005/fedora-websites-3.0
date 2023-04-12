@@ -160,11 +160,18 @@ try {
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
-    <div v-if="headlines.length == count_headlines" class="mx-auto py-8">
+  <div class="min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
+    <div
+      v-if="headlines.length == count_headlines"
+      class="mx-8 flex gap-8 py-12"
+    >
       <ClientOnly>
-        <div class="mx-auto pt-4 2xl:max-w-[50%]">
-          <div class="mx-auto w-11/12">
+        <div
+          v-if="solved.length == count_solved"
+          class="hidden flex-none 2xl:block 2xl:w-[22em]"
+        ></div>
+        <div class="mx-auto flex-1">
+          <div class="">
             <h2
               class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
               dir="ltr"
@@ -200,7 +207,7 @@ try {
         </div>
         <div
           v-if="solved.length == count_solved"
-          class="absolute top-8 right-6 hidden 2xl:block 2xl:w-[22em]"
+          class="hidden flex-none 2xl:block 2xl:w-[22em]"
           dir="ltr"
         >
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
