@@ -66,7 +66,7 @@ sections:
         image: public/assets/images/spins/gnome-terminal.png
   - sectionTitle: Utilities
     content:
-      - title: sway lock
+      - title: swaylock
         description: Simple screen locker.
         image: public/assets/images/spins/gnome-terminal.png
       - title: waybar
