@@ -39,13 +39,31 @@ data._value.descriptionMd = await mdparser(data._value.description);
     <!-- Screenshot Section -->
     <FpSpinPreviewSection :background="data.screenshot_image.image" />
 
+    <!-- Benefits Section -->
+    <section class="pt-24 pb-12 dark:bg-neutral-900">
+      <h2
+        class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
+      >
+        {{ $t(data.sections[0].sectionTitle) }}
+      </h2>
+      <FpBenefit
+        v-for="item in data.sections[0].content"
+        v-bind="item"
+        columns="2"
+      />
+    </section>
+
     <!-- Features Section -->
     <section
       class="relative z-0 space-y-24 bg-gradient-to-b from-fp-newblue-100 to-fp-purple-100 pt-16 pb-32 dark:bg-neutral-800 dark:bg-none"
     >
       <div
         class="mx-auto max-w-7xl rounded-lg bg-white px-12 pt-6 pb-10 dark:bg-neutral-900"
-        v-for="section in data.sections"
+        v-for="section in [
+          data.sections[1],
+          data.sections[2],
+          data.sections[3],
+        ]"
       >
         <h2
           class="mb-4 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
