@@ -160,38 +160,37 @@ try {
 </script>
 
 <template>
-  <div class="min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
-    <div
-      v-if="headlines.length == count_headlines"
-      class="mx-auto flex w-11/12 gap-10 py-8"
-    >
+  <div class="relative min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
+    <div v-if="headlines.length == count_headlines" class="mx-auto py-8">
       <ClientOnly>
-        <div class="w-full flex-auto pt-4 2xl:w-4/5">
-          <h2
-            class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
-            dir="ltr"
-          >
-            {{ "Latest news and publications from the Fedora Project:" }}
-          </h2>
-          <div class="flex flex-wrap" dir="ltr">
-            <div
-              v-for="h in headlines"
-              class="mb-4 w-full p-4 md:w-1/2 lg:w-1/4"
+        <div class="mx-auto pt-4 2xl:max-w-[50%]">
+          <div class="mx-auto w-11/12">
+            <h2
+              class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
+              dir="ltr"
             >
-              <div>
-                <a :href="h.link">
-                  <img :src="h.thumbnail" class="w-full rounded-lg" />
-                </a>
-              </div>
-              <div class="text-base leading-8 text-gray-500">
-                {{ h.date }}
-              </div>
-              <div class="max-h-[5.25rem] overflow-hidden">
-                <a
-                  :href="h.link"
-                  class="align-top text-xl font-semibold text-fp-blue"
-                  >{{ h.title }}</a
-                >
+              {{ "Latest news and publications from the Fedora Project:" }}
+            </h2>
+            <div class="flex flex-wrap" dir="ltr">
+              <div
+                v-for="h in headlines"
+                class="mb-4 w-full p-4 md:w-1/2 lg:w-1/4"
+              >
+                <div>
+                  <a :href="h.link">
+                    <img :src="h.thumbnail" class="w-full rounded-lg" />
+                  </a>
+                </div>
+                <div class="text-base leading-8 text-gray-500">
+                  {{ h.date }}
+                </div>
+                <div class="max-h-[5.25rem] overflow-hidden">
+                  <a
+                    :href="h.link"
+                    class="align-top text-xl font-semibold text-fp-blue"
+                    >{{ h.title }}</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -201,7 +200,7 @@ try {
         </div>
         <div
           v-if="solved.length == count_solved"
-          class="hidden flex-none px-4 2xl:block 2xl:w-1/5"
+          class="absolute top-8 right-6 hidden 2xl:block 2xl:w-[22em]"
           dir="ltr"
         >
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
