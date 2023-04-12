@@ -15,25 +15,14 @@ const availableLocales = computed(() => {
 <template>
   <footer class="bg-gray-200 dark:bg-neutral-900">
     <!-- Footer Navigation -->
-    <nav class="flex w-full py-9 md:justify-center xl:block">
+    <nav class="p-4 sm:px-[4em] sm:py-[1.5em]">
       <div
-        class="mx-4 grid w-full max-w-screen-xl gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:gap-10"
+        class="mx-auto grid max-w-screen-xl gap-x-[4em] gap-y-2 sm:grid-cols-2 sm:gap-y-[1.5em] md:grid-cols-3 lg:grid-cols-4"
       >
         <FooterSection
-          title="Editions"
-          :links="navigation.downloads.sections[0].links"
-        />
-        <FooterSection
-          title="Immutable Desktops"
-          :links="navigation.downloads.sections[1].links"
-        />
-        <FooterSection
-          title="Spins"
-          :links="navigation.downloads.sections[2].links"
-        />
-        <FooterSection
-          title="Labs"
-          :links="navigation.downloads.sections[3].links"
+          v-for="category in navigation.downloads.sections"
+          :title="category.label"
+          :links="category.links"
         />
         <FooterSection
           class="md:hidden"
