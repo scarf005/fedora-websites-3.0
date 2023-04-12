@@ -12,7 +12,7 @@ image:
   height: 300
 links:
   - text: Download Now
-    url: /immutable/sericea/download/
+    url: /spins/sericea/download/
 screenshot_image:
   image: public/assets/images/spins/screenshot-sway.jpg
   alt_text: Screenshot of Fedora Sericea

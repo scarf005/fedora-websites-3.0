@@ -10,9 +10,9 @@ data._value.descriptionMd = await mdparser(data._value.description);
         light: 'assets/images/spins/spins-Sway-logo-light.png',
         dark: 'assets/images/spins/spins-Sway-logo-dark.png',
       }"
-      home="/immutable/sericea"
+      home="/spins/sericea"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/immutable/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/spins/sericea/download' }]"
     />
 
     <!-- TITLE -->
