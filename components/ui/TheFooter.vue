@@ -34,7 +34,7 @@ const availableLocales = computed(() => {
     <!-- Fedora Section -->
     <section class="container mx-auto py-10">
       <div class="flex flex-wrap items-center gap-4 md:flex-nowrap">
-        <div class="pb-6 ltr:ml-4 rtl:mr-4 md:ml-0 md:w-1/4 md:pb-0">
+        <div class="pb-6 ltr:ml-4 rtl:mr-4 md:ml-0 md:w-1/5 md:pb-0">
           <FpImage
             src="assets/images/logos/fedora-blue.png"
             :alt="$t('Fedora Logo')"
@@ -43,7 +43,7 @@ const availableLocales = computed(() => {
         </div>
         <!-- privacy etc links -->
         <ul
-          class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
+          class="mx-4 flex grow flex-wrap justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
         >
           <li class="list-none underline underline-offset-1">
             <FpLink
@@ -71,6 +71,20 @@ const availableLocales = computed(() => {
               href="/sponsors"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Sponsors") }}</FpLink
+            >
+          </li>
+          <li class="list-none text-fp-gray-darkest">
+            {{ $t("Help improve this website on the ") }}
+            <FpLink
+              href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
+              class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+              >{{ $t("CMS") }}</FpLink
+            >
+            {{ $t("or the ") }}
+            <FpLink
+              href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
+              class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+              >{{ $t("Gitlab Repo") }}</FpLink
             >
           </li>
         </ul>
