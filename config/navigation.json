@@ -57,7 +57,7 @@
           },
           {
             "label": "Sericea",
-            "path": "/sericea",
+            "path": "/spins/sericea",
             "icon": "fa6-solid:desktop",
             "description": "Fedora Sericea is an immutable Sway-based desktop."
           }
