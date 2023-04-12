@@ -37,7 +37,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
     </section>
 
     <!-- Screenshot Section -->
-    <FpSpinPreviewSection :background="data.screenshot_image.image" />
+    <!-- <FpSpinPreviewSection :background="data.screenshot_image.image" /> -->
 
     <!-- Benefits Section -->
     <section class="pt-24 pb-12 dark:bg-neutral-900">
@@ -49,7 +49,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpBenefit
         v-for="item in data.sections[0].content"
         v-bind="item"
-        columns="2"
+        columns="3"
       />
     </section>
 
