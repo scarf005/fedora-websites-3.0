@@ -170,8 +170,8 @@ try {
           v-if="solved.length == count_solved"
           class="hidden flex-none 2xl:block 2xl:w-[22em]"
         ></div>
-        <div class="mx-auto flex-1">
-          <div class="">
+        <div class="mx-auto max-w-screen-xl flex-initial">
+          <div>
             <h2
               class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
               dir="ltr"
