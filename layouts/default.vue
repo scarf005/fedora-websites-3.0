@@ -14,6 +14,10 @@ useHead({
       type: "image/x-icon",
       href: "/favicon.ico",
     },
+    {
+      rel: "me",
+      href: "https://fosstodon.org/@fedora",
+    },
   ],
 });
 </script>

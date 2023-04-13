@@ -177,7 +177,7 @@ let languageOpen = useState("languageOpen", () => null);
               <!-- SECTIONS MOBILE (HIDDEN ON DESKTOP) -->
               <ul
                 v-if="sectionOpen.label === section.label"
-                class="block text-lg text-white ltr:ml-10 rtl:mr-10 md:hidden"
+                class="block max-h-48 overflow-hidden overflow-scroll text-lg text-white ltr:ml-10 rtl:mr-10 md:hidden"
               >
                 <li v-for="link in section.links" :key="link.id" class="py-1">
                   <FpLink :href="link.path" v-if="!link.i18n">
