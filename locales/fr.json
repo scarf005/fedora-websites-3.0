@@ -1,8 +1,8 @@
 {
     "Languages": "Langues",
-    "its_your_Server.": "Serveur.",
-    "its_your_Workstation.": "Poste de travail.",
-    "its_your_Operating System.": "Systeme d'exploitation",
+    "its_your_Server.": "serveur.",
+    "its_your_Workstation.": "poste de travail.",
+    "its_your_Operating System.": "système d’exploitation.",
     "Workshops and hackfests offer opportunities for active learning and collaboration.": "Les ateliers et hackfests offrent des opportunités pour l'apprentissage actif et la collaboration.",
     "Workshops": "Ateliers",
     "Virtual": "Virtuel",
@@ -292,7 +292,7 @@
     "Developer Portal": "Portail des développeurs",
     "Deadline: May 29, 2023": "Date limite : 29 Mai 2023",
     "Deadline: July 8, 2023": "Date limite : 8 Juillet 2023",
-    "Deadline:": "Date limite :",
+    "Deadline:": "Échéance :",
     "CoreOS is currently available on multiple platforms, with more coming soon.": "CoreOS est actuellement disponible sur plusieurs plates-formes, et d'autres seront bientôt disponibles.",
     "Coordination": "Coordination",
     "Container-based": "Basé sur les conteneurs",
@@ -600,7 +600,7 @@
     "Learn how Fedora uses package signing to help protect you.": "Découvrez comment Fedora utilise la signature de paquets pour vous protéger.",
     "Learn about the Fedora Project governance.": "En savoir plus sur la gouvernance du projet Fedora.",
     "Learn about FESCo and Engineering subprojects, SIGs, Work Groups, and teams.": "En savoir plus sur la FESCo et les sous-projets d'ingénierie, les SIG, les groupes de travail et les équipes.",
-    "Latest release:": "La dernière release :",
+    "Latest release:": "Dernière version :",
     "Latest Technologies": "Les dernières technologies",
     "Laptops pre-loaded with Fedora": "Ordinateurs portables préchargés avec Fedora",
     "LXDE Desktop": "L'environnement de bureau LXDE",
@@ -609,7 +609,7 @@
     "Join a community of users and contributors focused on Fedora Server.": "Rejoignez une communauté d'utilisateurs et de contributeurs orientés Fedora Server.",
     "Join a community of users and contributors focused on Fedora IoT.": "Rejoignez une communauté d'utilisateurs et de contributeurs orientés Fedora IoT.",
     "Join SIG": "Rejoindre SIG",
-    "It's your": "C'est vôtre",
+    "It's your": "C’est votre",
     "It's Fedora's calendar!": "C'est le calendrier Fedora !",
     "It is a compilation of software packages, each under its own license. Images that can be downloaded here are available under the combination of licenses of the constituent software packages and the license of the Fedora Linux distribution itself. [View License](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)": "Il s'agit d'un ensemble de paquets logiciel avec chacun avec sa propre licence. Les paquets sont disponibles au téléchargement sous double license : celle du paquet à proprement parlé et la licence de la distribution Fedora. [Voir la licence](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)",
     "IoT Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera.chat.": "Les réunions du Groupe de travail travaillant sur l'Iot sont ouvertes à tous les contributeurs actuels et potentiels le mercredi à 11 heures fuseau horaire US Eastern sur fedora-meeting{'@'}irc.libera.chat.",
@@ -670,5 +670,7 @@
     "Verify your download": "Vérifier votre téléchargement",
     "i3 Tiling WM": "i3 Tiling WM",
     "Release Parties": "Soirées de lancement",
-    "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "Nouveau sur Fedora ? Visitez notre **[forum de la communauté] (https://discussion.fedoraproject.org/c/ask)** pour obtenir de l'aide et les réponses aux questions les plus fréquemment posées."
+    "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "Nouveau sur Fedora ? Visitez notre **[forum de la communauté] (https://discussion.fedoraproject.org/c/ask)** pour obtenir de l'aide et les réponses aux questions les plus fréquemment posées.",
+    "August 1 - 4, 2023": "du 1er au 4 aout 2023",
+    "its_your_Community.": "communauté."
 }
