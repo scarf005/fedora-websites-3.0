@@ -7,7 +7,7 @@ defineProps({
   class: String,
 });
 // Data Import
-let { data } = await useAsyncData(() => {
+const { data } = await useAsyncData(() => {
   return queryContent("/partials/publications").findOne();
 });
 </script>
@@ -19,7 +19,7 @@ let { data } = await useAsyncData(() => {
       >
         <!-- Loop through publications -->
         <FpCard
-          v-for="card in data.body[0].content.slice(0, 2)"
+          v-for="card in data?.body[0].content.slice(0, 2)"
           :description="card.description"
           :variants="['btn']"
           :link="card.link"
@@ -35,8 +35,8 @@ let { data } = await useAsyncData(() => {
         </FpCard>
       </div>
       <FpJoinTip
-        :description="data.body[0].content[2].description"
-        :link="data.body[0].content[2].link"
+        :description="data?.body[0].content[2].description"
+        :link="data?.body[0].content[2].link"
       />
     </div>
   </section>

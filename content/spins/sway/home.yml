@@ -14,7 +14,7 @@ links:
   - text: Download Now
     url: /spins/sway/download/
 screenshot_image:
-  image: public/assets/images/spins/screenshot-sway.jpg
+  image: public/assets/images/spins/screenshot-sway.png
   alt_text: Screenshot of Fedora Sway desktop
 sections:
   - sectionTitle: Going Online
