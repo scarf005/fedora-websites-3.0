@@ -14,14 +14,14 @@ links:
   - text: Download Now
     url: /sericea/download/
 screenshot_image:
-  image: public/assets/images/spins/screenshot-sway.jpg
+  image: public/assets/images/spins/screenshot-sway.png
   alt_text: Screenshot of Fedora Sericea
 sections:
   - sectionTitle: Built on top of the best
     content:
       - title: Sway WM
         description: Highly customizable Wayland window manager Sway is great for keyboard-first workflows.
-        image: public/assets/images/spins/screenshot-sway.jpg
+        image: public/assets/images/spins/screenshot-sway.png
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
         image: public/assets/images/immutable/rpm-ostree.png
