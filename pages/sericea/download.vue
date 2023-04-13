@@ -60,12 +60,12 @@ useContentHead(data);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Sericea-logo-light.png',
-        dark: 'assets/images/spins/spins-Sericea-logo-dark.png',
+        light: 'assets/images/fedora-sericea-logo-light.png',
+        dark: 'assets/images/fedora-sericea-logo-dark.png',
       }"
-      home="/spins/sericea"
+      home="/sericea"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/spins/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/sericea/download' }]"
     />
 
     <!-- TITLE -->
