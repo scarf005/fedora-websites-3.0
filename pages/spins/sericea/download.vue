@@ -143,7 +143,9 @@ useContentHead(data);
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <template v-if="betaSwitch == false && ga_data?.payload">
+          <template
+            v-if="betaSwitch == false && ga_data?.payload.images.Sericea"
+          >
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Sericea"
