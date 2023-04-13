@@ -15,25 +15,14 @@ const availableLocales = computed(() => {
 <template>
   <footer class="bg-gray-200 dark:bg-neutral-900">
     <!-- Footer Navigation -->
-    <nav class="flex w-full py-9 md:justify-center xl:block">
+    <nav class="p-4 sm:px-[4em] sm:py-[1.5em]">
       <div
-        class="mx-4 grid w-full max-w-screen-xl gap-3 sm:mx-auto sm:w-auto sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:grid-cols-4 xl:gap-10"
+        class="mx-auto grid max-w-screen-xl gap-x-[4em] gap-y-2 sm:grid-cols-2 sm:gap-y-[1.5em] md:grid-cols-3 lg:grid-cols-4"
       >
         <FooterSection
-          title="Editions"
-          :links="navigation.downloads.sections[0].links"
-        />
-        <FooterSection
-          title="Immutable Desktops"
-          :links="navigation.downloads.sections[1].links"
-        />
-        <FooterSection
-          title="Spins"
-          :links="navigation.downloads.sections[2].links"
-        />
-        <FooterSection
-          title="Labs"
-          :links="navigation.downloads.sections[3].links"
+          v-for="category in navigation.downloads.sections"
+          :title="category.label"
+          :links="category.links"
         />
         <FooterSection
           class="md:hidden"
@@ -54,7 +43,7 @@ const availableLocales = computed(() => {
         </div>
         <!-- privacy etc links -->
         <ul
-          class="mx-4 flex grow justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
+          class="mx-4 flex grow flex-wrap justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
         >
           <li class="list-none underline underline-offset-1">
             <FpLink
@@ -82,6 +71,20 @@ const availableLocales = computed(() => {
               href="/sponsors"
               class="text-fp-gray-darkest transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("Sponsors") }}</FpLink
+            >
+          </li>
+          <li class="list-none text-fp-gray-darkest">
+            Help improve this website on the 
+            <FpLink
+              href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
+              class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+              >{{ $t("CMS") }}</FpLink
+            >
+            or the 
+            <FpLink
+              href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
+              class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+              >{{ $t("Gitlab Repo") }}</FpLink
             >
           </li>
         </ul>

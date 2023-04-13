@@ -7,12 +7,12 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Sway-logo-light.png',
-        dark: 'assets/images/spins/spins-Sway-logo-dark.png',
+        light: 'assets/images/fedora-sericea-logo-light.png',
+        dark: 'assets/images/fedora-sericea-logo-dark.png',
       }"
-      home="/immutable/sericea"
+      home="/sericea"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/immutable/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/sericea/download' }]"
     />
 
     <!-- TITLE -->
@@ -37,7 +37,21 @@ data._value.descriptionMd = await mdparser(data._value.description);
     </section>
 
     <!-- Screenshot Section -->
-    <FpSpinPreviewSection :background="data.screenshot_image.image" />
+    <!-- <FpSpinPreviewSection :background="data.screenshot_image.image" /> -->
+
+    <!-- Benefits Section -->
+    <section class="pt-24 pb-12 dark:bg-neutral-900">
+      <h2
+        class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
+      >
+        {{ $t(data.sections[0].sectionTitle) }}
+      </h2>
+      <FpBenefit
+        v-for="item in data.sections[0].content"
+        v-bind="item"
+        columns="3"
+      />
+    </section>
 
     <!-- Features Section -->
     <section
@@ -45,7 +59,11 @@ data._value.descriptionMd = await mdparser(data._value.description);
     >
       <div
         class="mx-auto max-w-7xl rounded-lg bg-white px-12 pt-6 pb-10 dark:bg-neutral-900"
-        v-for="section in data.sections"
+        v-for="section in [
+          data.sections[1],
+          data.sections[2],
+          data.sections[3],
+        ]"
       >
         <h2
           class="mb-4 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
@@ -106,8 +124,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpCallToAction
         :cta="data.links"
         :image="{
-          light: 'assets/images/spins/spins-sway-light.png',
-          dark: 'assets/images/spins/spins-sway-dark.png',
+          light: 'assets/images/fedora-sericea-light.png',
+          dark: 'assets/images/fedora-sericea-dark.png',
         }"
       />
     </section>
