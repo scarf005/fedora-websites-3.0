@@ -60,8 +60,8 @@ useContentHead(data);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Sway-logo-light.png',
-        dark: 'assets/images/spins/spins-Sway-logo-dark.png',
+        light: 'assets/images/spins/spins-Sericea-logo-light.png',
+        dark: 'assets/images/spins/spins-Sericea-logo-dark.png',
       }"
       home="/spins/sericea"
       textColor="text-fp-newblue"

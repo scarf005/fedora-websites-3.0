@@ -6,8 +6,8 @@ description: Fedora Sericea provides the popular Sway tiling window manager in
   applications for web browsing, text editing, and media playback, the Fedora
   Sericea offers a complete experience with a minimalist user interface.
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/spins-sway-dark.png
-  alt: Fedora Sway Image
+  src: https://stg.fedoraproject.org/assets/images/spins/spins-sericea-dark.png
+  alt: Fedora Sericea Image
   width: 400
   height: 300
 links:

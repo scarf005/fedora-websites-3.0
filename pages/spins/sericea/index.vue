@@ -7,8 +7,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Sway-logo-light.png',
-        dark: 'assets/images/spins/spins-Sway-logo-dark.png',
+        light: 'assets/images/spins/spins-Sericea-logo-light.png',
+        dark: 'assets/images/spins/spins-Sericea-logo-dark.png',
       }"
       home="/spins/sericea"
       textColor="text-fp-newblue"
@@ -124,8 +124,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpCallToAction
         :cta="data.links"
         :image="{
-          light: 'assets/images/spins/spins-sway-light.png',
-          dark: 'assets/images/spins/spins-sway-dark.png',
+          light: 'assets/images/spins/spins-sericea-light.png',
+          dark: 'assets/images/spins/spins-sericea-dark.png',
         }"
       />
     </section>
