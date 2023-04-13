@@ -29,13 +29,13 @@ function updateVerify(art) {
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
   if (betaSwitch.value) {
     // Beta
-    verifyModal.value.chk_name = `Fedora-Spins-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+    verifyModal.value.chk_name = `Fedora-Sericea-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
     // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
     verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
       release_data._value.beta.releasever
     }_Beta/${path}/${verifyModal.value.chk_name}`;
   } else {
-    verifyModal.value.chk_name = `Fedora-Spins-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+    verifyModal.value.chk_name = `Fedora-Sericea-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
     // Fedora-Server-37-1.7-x86_64-CHECKSUM
     verifyModal.value.checksum = `${dlpath[art.arch]}/${
       release_data._value.ga.releasever
@@ -143,8 +143,9 @@ useContentHead(data);
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <template v-if="betaSwitch == false && ga_data?.payload">
-            <!--
+          <template
+            v-if="betaSwitch == false && ga_data?.payload.images.Sericea"
+          >
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Sericea"
@@ -154,7 +155,6 @@ useContentHead(data);
               :version="release_data.ga.releasever"
               class="spins-theme"
             />
-            -->
             <!--
             <DownloadSection
               name="For ARM® aarch64 systems"
