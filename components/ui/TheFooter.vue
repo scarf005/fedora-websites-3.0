@@ -34,7 +34,7 @@ const availableLocales = computed(() => {
     <!-- Fedora Section -->
     <section class="container mx-auto py-10">
       <div class="flex flex-wrap items-center gap-4 md:flex-nowrap">
-        <div class="pb-6 ltr:ml-4 rtl:mr-4 md:ml-0 md:w-1/5 md:pb-0">
+        <div class="pb-6 ltr:ml-4 rtl:mr-4 md:ml-0 md:w-1/4 md:pb-0">
           <FpImage
             src="assets/images/logos/fedora-blue.png"
             :alt="$t('Fedora Logo')"
