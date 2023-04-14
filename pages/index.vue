@@ -87,10 +87,12 @@ useHead({
         </div>
         <!-- Circle -->
         <div
-          class="my-4 flex h-48 w-48 flex-col items-center justify-center rounded-full bg-blue-400 p-10 md:mt-8"
+          class="my-4 flex h-32 w-32 flex-col items-center justify-center rounded-full bg-blue-400 p-3 md:mt-8 md:h-48 md:w-48 md:p-10"
         >
-          <p class="text-sm">{{ $t("Latest release") }}</p>
-          <p class="text-6xl font-bold">{{ release_data.ga.releasever }}</p>
+          <p class="text-xs md:text-sm">{{ $t("Latest release") }}</p>
+          <p class="text-5xl font-bold md:text-6xl">
+            {{ release_data.ga.releasever }}
+          </p>
         </div>
       </section>
       <!-- pop out announcements -->
