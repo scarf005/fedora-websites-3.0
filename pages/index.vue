@@ -222,7 +222,7 @@ useHead({
         <article
           v-for="card in data.sections[5].content"
           :key="card.id"
-          class="flex max-w-sm flex-col items-center rounded-md bg-gray-400 p-8 dark:bg-gray-800"
+          class="flex max-w-sm flex-col items-center rounded-md bg-gray-100 p-8 dark:bg-gray-800"
         >
           <div class="mb-2 flex gap-4">
             <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
