@@ -67,7 +67,7 @@ useHead({
 <template>
   <main class="w-full dark:bg-slate-900">
     <header
-      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
+      class="-mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
     >
       <section
         class="container mx-auto flex max-w-7xl flex-col items-center text-center"
@@ -86,14 +86,15 @@ useHead({
           <p class="uppercase">{{ $t("100% Free & Open Source") }}</p>
         </div>
         <!-- Circle -->
-        <div
+        <a
+          href="#editions"
           class="my-4 flex h-32 w-32 flex-col items-center justify-center rounded-full bg-blue-400 p-3 md:mt-8 md:h-48 md:w-48 md:p-10"
         >
           <p class="text-xs md:text-sm">{{ $t("Latest release") }}</p>
           <p class="text-5xl font-bold md:text-6xl">
             {{ release_data.ga.releasever }}
           </p>
-        </div>
+        </a>
       </section>
       <!-- pop out announcements -->
       <aside
@@ -139,6 +140,7 @@ useHead({
         viewBox="3047 814.969 1200.032 142.328"
       >
         <path
+          id="editions"
           d="M3047 915v42.297h1200.032V814.969L3047 915Z"
           class="fill-gray-100 dark:fill-gray-900"
         />
@@ -170,23 +172,31 @@ useHead({
               {{ $t(item.description) }}
             </p>
           </FpLink>
+          <div class="absolute bottom-6 left-4">
+            <FpLink
+              class="text-base text-fp-blue underline underline-offset-4"
+              :href="item.url + '/download'"
+              >Download Now</FpLink
+            >
+          </div>
           <div class="absolute bottom-6 right-4">
             <FpBtn :href="item.url">Learn More</FpBtn>
           </div>
         </div>
       </div>
     </section>
-    <section
-      class="container mx-auto my-8 bg-gradient-to-b from-fp-green/25 to-fp-blue/25 dark:from-fp-green-300/25 dark:to-fp-newblue/25 md:bg-gradient-to-r lg:my-16"
-    >
-      <header class="mx-4 pt-12 pb-4 lg:mx-auto lg:pb-8">
-        <h2
-          class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
-        >
-          {{ $t(data.sections[4].sectionTitle) }}
-        </h2>
-      </header>
 
+    <header class="mx-4 mt-8 pt-12 pb-4 lg:mx-auto lg:pb-8">
+      <h2
+        class="text-center font-semibold text-fp-darkblue dark:text-fp-newblue"
+      >
+        {{ $t(data.sections[4].sectionTitle) }}
+      </h2>
+    </header>
+
+    <section
+      class="container mx-auto mb-8 rounded-lg bg-gradient-to-b from-fp-green/25 to-fp-blue/25 pt-6 dark:from-fp-green-300/25 dark:to-fp-newblue/25 md:bg-gradient-to-r lg:mb-16"
+    >
       <!-- WANT MORE FEDORA OPTIONS -->
       <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
         <article
