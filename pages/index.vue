@@ -67,77 +67,67 @@ useHead({
 <template>
   <main class="w-full dark:bg-slate-900">
     <header
-      class="flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
+      class="min-h-5/6 -mb-1 flex flex-col bg-gradient-to-b from-fp-blue to-fp-newblue-500 pt-4 text-white md:pt-16"
     >
-      <section class="container mx-auto flex flex-col items-center text-center">
+      <section
+        class="container mx-auto flex max-w-7xl flex-col items-center text-center"
+      >
         <!-- Main Info -->
         <div>
           <!-- TODO: Set up the typewriter to work with translation -->
           <h1
-            class="mx-auto mb-[0.25em] text-[6vw] font-semibold leading-[1.25em] md:text-[4vw]"
+            class="mx-auto mb-4 text-4xl font-semibold md:text-7xl lg:mb-8 xl:text-9xl"
           >
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
-          <p
-            class="mx-auto mb-[0.5em] w-[50vw] text-[3vw] leading-[1.25em] md:text-[2vw]"
-          >
+          <p class="mx-auto mb-2 w-4/6 lg:mb-6 lg:text-3xl">
             {{ $t(data.description) }}
           </p>
-          <p class="mb-[1em] text-[1.5vw] uppercase md:text-[1vw]">
-            {{ $t("100% Free & Open Source") }}
-          </p>
+          <p class="uppercase">{{ $t("100% Free & Open Source") }}</p>
         </div>
         <!-- Circle -->
         <div
-          class="flex h-[14.6vw] w-[14.6vw] flex-col items-center justify-center rounded-full bg-blue-400 md:h-[11vw] md:w-[11vw]"
+          class="my-4 flex h-48 w-48 flex-col items-center justify-center rounded-full bg-blue-400 p-10 md:my-8 md:h-56 md:w-56 lg:p-12"
         >
-          <p class="whitespace-nowrap text-[1.5vw] leading-[1em] md:text-[1vw]">
-            {{ $t("Latest release") }}
-          </p>
-          <p class="text-[6.6vw] font-bold leading-[1em] md:text-[5vw]">
-            {{ release_data.ga.releasever }}
-          </p>
+          <p>{{ $t("Latest release") }}</p>
+          <p class="text-8xl font-bold">{{ release_data.ga.releasever }}</p>
         </div>
       </section>
       <!-- pop out announcements -->
       <aside
         v-if="data.sections[0].sectionDescription === 'active'"
-        class="order-first mb-[2vw] flex items-center self-end rounded-l-md bg-fp-blue px-8"
+        class="order-first mb-8 flex items-center self-end rounded-l-md bg-fp-blue p-4 lg:w-1/4"
       >
-        <p class="whitespace-nowrap text-[2vw] leading-[2em] md:text-[1.5vw]">
-          {{ $t(data.sections[0].sectionTitle) }}
-        </p>
+        <p>{{ $t(data.sections[0].sectionTitle) }}</p>
       </aside>
 
       <!-- hero bottom content-->
       <section
-        class="align-end mx-auto mb-[2vw] flex w-full justify-between px-8"
+        class="align-end mx-auto mb-2 flex w-full max-w-screen-2xl justify-between px-8 lg:mb-4 xl:px-20"
       >
-        <div class="flex w-[28vw] flex-col">
+        <div
+          class="flex w-48 flex-col justify-center sm:justify-start md:max-w-sm lg:w-auto"
+        >
           <FpLink
             :href="data.sections[1].url"
             class="transition duration-150 ease-in hover:text-fp-gray-lighter"
             v-if="data.sections[1].sectionDescription"
           >
             <h3
-              class="text-[3vw] font-semibold uppercase leading-[1.5em] md:text-[2vw]"
+              class="text-base font-semibold uppercase sm:mt-6 md:text-xl lg:mt-8 xl:text-2xl 2xl:mb-2"
             >
               {{ $t(data.sections[1].sectionTitle) }}
             </h3>
-            <p class="text-[2vw] leading-[2.2em] md:text-[2vw]">
+            <p class="max-w-sm text-sm sm:text-base lg:text-xl">
               {{ $t(data.sections[1].sectionDescription) }} &gt;
             </p>
           </FpLink>
         </div>
-        <div class="flex items-center">
-          <h3
-            class="hidden w-[18.6vw] text-right text-[3vw] leading-[1.2em] md:block md:w-[10vw] md:text-[1.2vw]"
-          >
-            {{ $t("A Registered Digital Public Good") }}
+        <div class="flex items-center gap-4">
+          <h3 class="hidden w-56 text-right text-2xl md:block">
+            {{ $t(data.sections[2].sectionTitle) }}
           </h3>
-          <FpDPGA
-            class="h-[18.6vw] w-[18.6vw] object-contain p-[1vw] md:h-[10vw] md:w-[10vw]"
-          />
+          <FpImage :src="data.header_images[0].image" class="w-28" />
         </div>
       </section>
       <svg
