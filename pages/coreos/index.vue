@@ -26,7 +26,6 @@ useContentHead(data);
       border="border border-fp-magenta dark:border-fp-magenta-700"
       background="text-white bg-fp-magenta dark:bg-fp-magenta-700"
       :ctas="data.links"
-      icon="youtube"
     >
     </FpBanner>
     <svg
