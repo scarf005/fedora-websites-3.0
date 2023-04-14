@@ -76,7 +76,7 @@ useHead({
         <div>
           <!-- TODO: Set up the typewriter to work with translation -->
           <h1
-            class="mx-auto mb-4 text-4xl font-semibold md:text-7xl lg:mb-8 xl:text-9xl"
+            class="mx-auto mb-4 text-4xl font-semibold md:text-5xl lg:mb-8 xl:text-6xl"
           >
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
@@ -87,10 +87,10 @@ useHead({
         </div>
         <!-- Circle -->
         <div
-          class="my-4 flex h-48 w-48 flex-col items-center justify-center rounded-full bg-blue-400 p-10 md:my-8 md:h-56 md:w-56 lg:p-12"
+          class="my-4 flex h-48 w-48 flex-col items-center justify-center rounded-full bg-blue-400 p-10 md:mt-8"
         >
-          <p>{{ $t("Latest release") }}</p>
-          <p class="text-8xl font-bold">{{ release_data.ga.releasever }}</p>
+          <p class="text-sm">{{ $t("Latest release") }}</p>
+          <p class="text-6xl font-bold">{{ release_data.ga.releasever }}</p>
         </div>
       </section>
       <!-- pop out announcements -->
@@ -124,7 +124,7 @@ useHead({
           </FpLink>
         </div>
         <div class="flex items-center gap-4">
-          <h3 class="hidden w-56 text-right text-2xl md:block">
+          <h3 class="hidden w-56 text-right text-xl md:block">
             {{ $t(data.sections[2].sectionTitle) }}
           </h3>
           <FpImage :src="data.header_images[0].image" class="w-28" />
