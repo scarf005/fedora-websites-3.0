@@ -127,7 +127,7 @@ useHead({
           <h3 class="hidden w-56 text-right text-2xl md:block">
             {{ $t(data.sections[2].sectionTitle) }}
           </h3>
-          <FpImage :src="data.header_images[0].image" class="w-28 lg:w-auto" />
+          <FpImage :src="data.header_images[0].image" class="w-28" />
         </div>
       </section>
       <svg
