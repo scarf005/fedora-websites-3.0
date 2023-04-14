@@ -26,7 +26,6 @@ useContentHead(data);
       color="text-fp-green"
       border="border border-fp-green dark:border-fp-green-700"
       background="text-white bg-fp-green dark:bg-fp-green-700"
-      icon="youtube"
     >
       <div class="hero-laptop-container">
         <div class="px-auto mb-20 max-w-sm sm:max-w-xl">

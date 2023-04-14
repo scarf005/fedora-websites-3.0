@@ -60,7 +60,7 @@ defineProps({
           },
         ]"
       >
-        <Icon v-if="idx === 1 && icon" :name="`fa6-brands:${icon}`" />
+        <Icon v-if="idx === 0" :name="`fa-download`" />
         {{ $t(cta.text) }}
       </FpBtn>
     </template>
