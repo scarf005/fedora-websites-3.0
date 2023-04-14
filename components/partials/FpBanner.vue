@@ -43,24 +43,24 @@ defineProps({
   <div class="my-5 flex justify-center">
     <slot />
   </div>
-  <div class="spacing-1 mt-5 flex justify-center gap-8 md:gap-24">
-    <template v-for="(cta, idx) in ctas">
+  <div class="spacing-1 mt-5 flex flex-wrap justify-center gap-4">
+    <template v-for="(cta, idx) in ctas.reverse()">
       <FpBtn
         :href="cta.url"
         :color="[
           'text-center',
           {
-            [background]: idx == 0,
-            [color]: idx > 0,
-            [border]: idx > 0,
-            'bg-white': idx > 0,
-            'dark:bg-fp-darkblue-700': idx > 0,
-            'dark:border-fp-darkblue-700': idx > 0,
-            'dark:!text-white': idx > 0,
+            [background]: idx == ctas.length - 1,
+            [color]: idx !== ctas.length - 1,
+            [border]: idx !== ctas.length - 1,
+            'bg-white': idx !== ctas.length - 1,
+            'dark:bg-fp-darkblue-700': idx !== ctas.length - 1,
+            'dark:border-fp-darkblue-700': idx !== ctas.length - 1,
+            'dark:!text-white': idx !== ctas.length - 1,
           },
         ]"
       >
-        <Icon v-if="idx === 0" :name="`fa-download`" />
+        <Icon v-if="idx === ctas.length - 1" :name="`fa-download`" />
         {{ $t(cta.text) }}
       </FpBtn>
     </template>
