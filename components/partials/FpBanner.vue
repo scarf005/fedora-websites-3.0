@@ -62,7 +62,10 @@ defineProps({
           },
         ]"
       >
-        <Icon v-if="idx === 0" name="fa-download" />
+        <Icon
+          v-if="idx === 0 && cta.text.includes('Download')"
+          name="fa-download"
+        />
         {{ $t(cta.text) }}
       </FpBtn>
     </template>
