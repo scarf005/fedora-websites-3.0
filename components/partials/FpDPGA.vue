@@ -1,16 +1,10 @@
 <template>
   <svg
     version="1.1"
-    id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    x="0px"
-    y="0px"
-    width="153px"
-    height="117px"
-    viewBox="0 0 153 117"
-    style="enable-background: new 0 0 153 117"
-    xml:space="preserve"
+    width="100%"
+    height="100%"
+    viewbox="0 0 153 117"
   >
     <g>
       <path

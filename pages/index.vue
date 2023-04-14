@@ -79,7 +79,7 @@ useHead({
             {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
           </h1>
           <p
-            class="mx-auto mb-[0.5em] w-2/3 text-[3vw] leading-[1.25em] md:text-[2vw]"
+            class="mx-auto mb-[0.5em] w-[50vw] text-[3vw] leading-[1.25em] md:text-[2vw]"
           >
             {{ $t(data.description) }}
           </p>
@@ -111,7 +111,7 @@ useHead({
 
       <!-- hero bottom content-->
       <section
-        class="align-end mx-auto mb-[2vw] flex w-full max-w-screen-2xl justify-between px-8"
+        class="align-end mx-auto mb-[2vw] flex w-full justify-between px-8"
       >
         <div class="flex w-[28vw] flex-col">
           <FpLink
@@ -129,13 +129,15 @@ useHead({
             </p>
           </FpLink>
         </div>
-        <div class="flex items-center gap-[2vw]">
+        <div class="flex items-center">
           <h3
-            class="hidden w-[18.6vw] text-right text-[3vw] leading-[1.2em] md:block md:w-[14vw] md:text-[2vw]"
+            class="hidden w-[18.6vw] text-right text-[3vw] leading-[1.2em] md:block md:w-[10vw] md:text-[1.2vw]"
           >
             {{ $t("A Registered Digital Public Good") }}
           </h3>
-          <FpDPGA class="w-[16vw] md:w-[12vw]" />
+          <FpDPGA
+            class="h-[18.6vw] w-[18.6vw] object-contain p-[1vw] md:h-[10vw] md:w-[10vw]"
+          />
         </div>
       </section>
       <svg
@@ -230,7 +232,7 @@ useHead({
         <article
           v-for="card in data.sections[5].content"
           :key="card.id"
-          class="flex max-w-sm flex-col items-center rounded-md bg-gray-400 p-8 dark:bg-gray-800"
+          class="flex max-w-sm flex-col items-center rounded-md bg-gray-100 p-8 dark:bg-gray-800"
         >
           <div class="mb-2 flex gap-4">
             <h3 class="font-semibold text-fp-darkblue dark:text-fp-newblue">
