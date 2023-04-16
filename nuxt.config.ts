@@ -40,21 +40,33 @@ export default defineNuxtConfig({
     buildAssetsDir: "/_nuxt/",
     head: {
       titleTemplate: "%s | The Fedora Project",
+      link: [
+        {
+          rel: "me",
+          href: "https://fosstodon.org/@fedora",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico",
+        },
+      ],
     },
   },
   experimental: {
-    componentIslands: true
+    componentIslands: true,
   },
   hooks: {
-   'pages:extend' (pages) {
+    "pages:extend"(pages) {
       pages.forEach((page) => {
         pages.push({
-	  name: `${page.name}-alias`,
-	  path: page.path.length > 1 ? `${page.path}/index.html` : '/index.html',
+          name: `${page.name}-alias`,
+          path:
+            page.path.length > 1 ? `${page.path}/index.html` : "/index.html",
           redirect: page.path,
-	  file: page.file,
-	})
-      })
+          file: page.file,
+        });
+      });
     },
   },
 });
