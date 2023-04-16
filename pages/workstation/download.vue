@@ -67,6 +67,13 @@ function closeVerify() {
 
 useContentHead(data);
 
+// fedora media writer
+if (data._value.sections[1].sectionDescription) {
+  data._value.sections[1].sectionDescriptionMd = await mdparser(
+    data._value.sections[1].sectionDescription
+  );
+}
+
 // desktop images
 if (data._value.sections[2].sectionDescription) {
   data._value.sections[2].sectionDescriptionMd = await mdparser(
@@ -182,9 +189,11 @@ if (data._value.sections[2].sectionDescription) {
                 <h3 class="text-fp-newblue-500">
                   {{ $t(data.sections[1].sectionTitle) }}
                 </h3>
-                <p class="mb-10 text-fp-gray">
-                  {{ $t(data.sections[1].sectionDescription) }}
-                </p>
+
+                <ContentRenderer
+                  class="markdown mb-10 text-fp-gray"
+                  :value="data.sections[1].sectionDescriptionMd"
+                />
               </div>
             </div>
             <div
