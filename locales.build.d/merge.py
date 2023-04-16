@@ -5,7 +5,7 @@ import glob
 
 js_files = glob.glob("*.json")
 merged_js = {}
-for js_file in js_files:
+for js_file in sorted(js_files):
   with open(js_file, 'r') as f:
     js = json.load(f)
   for k, v in js.items():
