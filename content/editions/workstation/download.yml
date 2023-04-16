@@ -15,9 +15,9 @@ sections:
       - title: Community Support
         link:
           url: https://discussion.fedoraproject.org/tag/workstation
-  - sectionTitle: On Windows or macOS?
+  - sectionTitle: On Windows, macOS or Linux?
     sectionDescription: Get started by using Fedora Media Writer, which makes it
-      super easy to give Fedora a try. [Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)
+      super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)
     images: public/assets/images/media-writer-icon.png
     content:
       - title: Windows
@@ -28,7 +28,11 @@ sections:
         link:
           text: fa-apple
           url: https://fedoraproject.org/fmw/FedoraMediaWriter-osx-latest.dmg
-  - sectionTitle: On Linux? Or just want an ISO file?
+      - title: Linux
+        link:
+          text: fa-linux
+          url: https://flathub.org/apps/details/org.fedoraproject.MediaWriter
+  - sectionTitle: Just want an ISO file?
     sectionDescription: Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)
   - sectionTitle: Laptops pre-loaded with Fedora
     sectionDescription:
