@@ -161,17 +161,31 @@ try {
 
 <template>
   <div class="min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
-    <div
-      v-if="headlines.length == count_headlines"
-      class="mx-8 flex gap-8 py-12"
-    >
-      <ClientOnly>
+    <ClientOnly>
+      <div class="mx-8 flex gap-8 py-12">
         <div
           v-if="solved.length == count_solved"
           class="hidden flex-none 2xl:block 2xl:w-[22em]"
         ></div>
         <div class="mx-auto max-w-screen-xl flex-initial">
-          <div>
+          <div class="flex justify-center pb-12">
+            <form
+              class="max-h-[2em]"
+              method="get"
+              id="search"
+              action="https://duckduckgo.com/"
+            >
+              <input
+                class="w-full rounded-2xl bg-white py-2 pl-6 font-semibold leading-[2em] dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
+                type="text"
+                name="q"
+                maxlength="300"
+                placeholder="Search with DuckDuckGo"
+              />
+              <input type="submit" value="Search" style="visibility: hidden" />
+            </form>
+          </div>
+          <div v-if="headlines.length == count_headlines">
             <h2
               class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
               dir="ltr"
@@ -261,8 +275,8 @@ try {
             </div>
           </div>
         </div>
-      </ClientOnly>
-    </div>
+      </div>
+    </ClientOnly>
   </div>
 
   <!-- communication channels -->
