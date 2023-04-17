@@ -121,11 +121,15 @@ if (data._value.sections[2].sectionDescription) {
           >
             {{ $t("RELEASE DATE") }}:
             <span class="font-semibold" v-if="betaSwitch == false">{{
-              $d(new Date(release_data.ga.release_date), { dateStyle: "full" })
+              $d(Number(release_data.ga.release_date), {
+                dateStyle: "full",
+                timeZone: "UTC",
+              })
             }}</span>
             <span class="font-semibold" v-else>{{
-              $d(new Date(release_data.beta.release_date), {
+              $d(Number(release_data.beta.release_date), {
                 dateStyle: "full",
+                timeZone: "UTC",
               })
             }}</span>
           </p>
