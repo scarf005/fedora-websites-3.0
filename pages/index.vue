@@ -59,9 +59,11 @@ onMounted(() => {
 const data = await getCMS("index");
 useContentHead(data);
 const release_data = await getCMS("release");
+const announce = await mdparser(data._value.sections[0].sectionTitle);
 
 useHead({
   title: "Fedora Linux",
+  htmlAttrs: { class: "scroll-smooth" },
 });
 </script>
 <template>
@@ -101,7 +103,7 @@ useHead({
         v-if="data.sections[0].sectionDescription === 'active'"
         class="order-first mb-8 flex items-center self-end rounded-l-md bg-fp-blue p-4 lg:w-1/4"
       >
-        <p>{{ $t(data.sections[0].sectionTitle) }}</p>
+        <ContentRendererMarkdown class="markdown" :value="announce" />
       </aside>
 
       <!-- hero bottom content-->

@@ -1,4 +1,5 @@
 {
+  "A Community Server OS": "A Community Server OS",
   "A Registered Digital Public Good": "A Registered Digital Public Good",
   "An innovative platform for hardware, clouds, and containers, built with love by you.": "An innovative platform for hardware, clouds, and containers, built with love by you.",
   "Call to action": "Call to action",
@@ -19,11 +20,10 @@
   "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.",
   "Fedora Linux": "Fedora Linux",
   "Fedora Magazine": "Fedora Magazine",
-  "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.": "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.",
+  "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies.": "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies.",
   "Fedora Spins": "Fedora Spins",
   "Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.": "Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.",
   "Fedora is always free for anyone to **use, modify, and distribute**. It is built and used by people across the globe who work together as a community.": "Fedora is always free for anyone to **use, modify, and distribute**. It is built and used by people across the globe who work together as a community.",
-  "Flock to Fedora 2023": "Flock to Fedora 2023",
   "Get support from our the community on the Fedora Discussion Forum.": "Get support from our the community on the Fedora Discussion Forum.",
   "If you prefer an alternative desktop environment such as KDE Plasma Desktop or Xfce, you can download a Fedora Spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.": "If you prefer an alternative desktop environment such as KDE Plasma Desktop or Xfce, you can download a Fedora Spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.",
   "It is a compilation of software packages, each under its own license. Images that can be downloaded here are available under the combination of licenses of the constituent software packages and the license of the Fedora Linux distribution itself. [View License](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)": "It is a compilation of software packages, each under its own license. Images that can be downloaded here are available under the combination of licenses of the constituent software packages and the license of the Fedora Linux distribution itself. [View License](https://fedoraproject.org/wiki/Legal:Licenses/LicenseAgreement#License)",
@@ -41,13 +41,12 @@
   "The leading Linux desktop": "The leading Linux desktop",
   "The lightweight VM environment": "The lightweight VM environment",
   "The solid edge foundation": "The solid edge foundation",
-  "Tomorrow's server OS": "Tomorrow's server OS",
   "Users and developers are available in the #fedora channel on Fedora Chat.": "Users and developers are available in the #fedora channel on Fedora Chat.",
   "View more articles on [Fedora Magazine](https://fedoramagazine.org/)": "View more articles on [Fedora Magazine](https://fedoramagazine.org/)",
   "Want more Fedora options?": "Want more Fedora options?",
-  "\ud83c\udf89 Join us for Flock 2023!": "\ud83c\udf89 Join us for Flock 2023!",
   "its_your_Server.": "Server.",
   "its_your_Workstation.": "Workstation.",
   "its_your_Community.": "Community.",
-  "its_your_Operating System." : "Operating System."
+  "its_your_Operating System." : "Operating System.",
+  "\ud83c\udf89 [Fedora Linux 38 Beta released!](https://fedoramagazine.org/announcing-fedora-38-beta)": "\ud83c\udf89 [Fedora Linux 38 Beta released!](https://fedoramagazine.org/announcing-fedora-38-beta)"
 }

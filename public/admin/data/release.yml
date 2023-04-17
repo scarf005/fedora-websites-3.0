@@ -29,46 +29,16 @@
               name: "rc_version"
               widget: "string"
               required: true
+            - label: "Release Date"
+              name: "release_date"
+              widget: "datetime"
+              format: "x"
+              date_format: true
+              time_format: false
+              picker_utc: true
             - label: "Fedora Magazine announcement post"
               name: "announcement_url"
               widget: "string"
-            - label: "Workstation Artefacts"
-              name: "workstation"
-              widget: "object"
-              collapsed: true
-              fields:
-                - label: "x86_64 Architecture"
-                  name: "x86_64"
-                  widget: "object"
-                  collapsed: false
-                  fields:
-                    - label: "Arch Title"
-                      name: "title"
-                    - label: "Artefacts List"
-                      name: "items"
-                      widget: "list"
-                      collapsed: true
-                      fields:
-                        - label: "Artifact name"
-                          name: "name"
-                        - label: "Artifact URI"
-                          name: "uri"
-                - label: "aarch64 Architecture"
-                  name: "aarch64"
-                  widget: "object"
-                  collapsed: true
-                  fields:
-                    - label: "Arch Title"
-                      name: "title"
-                    - label: "Artefacts List"
-                      name: "items"
-                      widget: "list"
-                      collapsed: true
-                      fields:
-                        - label: "Artifact name"
-                          name: "name"
-                        - label: "Artifact URI"
-                          name: "uri"
         - label: "Beta Availability"
           name: "beta"
           summary: "Information about BETA release"
@@ -88,39 +58,6 @@
               name: "rc_version"
               widget: "string"
               required: true
-            - label: "Workstation Artefacts"
-              name: "workstation"
-              widget: "object"
-              collapsed: true
-              fields:
-                - label: "x86_64 Architecture"
-                  name: "x86_64"
-                  widget: "object"
-                  collapsed: false
-                  fields:
-                    - label: "Artefacts List"
-                      name: "items"
-                      widget: "list"
-                      collapsed: true
-                      fields:
-                        - label: "Artifact name"
-                          name: "name"
-                        - label: "Artifact URI"
-                          name: "uri"
-                - label: "aarch64 Architecture"
-                  name: "aarch64"
-                  widget: "object"
-                  collapsed: true
-                  fields:
-                    - label: "Artefacts List"
-                      name: "items"
-                      widget: "list"
-                      collapsed: true
-                      fields:
-                        - label: "Artifact name"
-                          name: "name"
-                        - label: "Artifact URI"
-                          name: "uri"
     # Security data
     - label: "Security & GPG keys"
       name: "securityData"

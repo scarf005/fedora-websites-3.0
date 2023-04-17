@@ -12,6 +12,8 @@ header_images:
 links:
   - text: Download Now
     url: /coreos/download/
+  - text: Documentation
+    url: https://docs.fedoraproject.org/en-US/fedora-coreos/
   - text: Release Notes
     url: /coreos/release-notes/
 sections:

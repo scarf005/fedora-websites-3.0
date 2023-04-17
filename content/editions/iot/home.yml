@@ -12,6 +12,8 @@ header_images:
 links:
   - text: Download Now
     url: /iot/download/
+  - text: Documentation
+    url: https://docs.fedoraproject.org/en-US/iot/
 sections:
   - sectionTitle: Why Fedora Iot?
     images: ""

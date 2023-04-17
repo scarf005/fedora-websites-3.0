@@ -14,6 +14,8 @@ header_images:
 links:
   - text: Download now
     url: /workstation/download
+  - text: Documentation
+    url: https://docs.fedoraproject.org/en-US/workstation-docs/
 sections:
   - sectionTitle: Why Fedora Workstation?
     content:
