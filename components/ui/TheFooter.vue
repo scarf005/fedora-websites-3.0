@@ -15,7 +15,7 @@ const availableLocales = computed(() => {
 <template>
   <footer class="bg-gray-200 dark:bg-neutral-900">
     <!-- Footer Navigation -->
-    <nav class="p-4 sm:px-[4em] sm:py-[1.5em]">
+    <nav class="p-4 sm:px-8 sm:py-[1.5em]">
       <div
         class="mx-auto grid max-w-screen-xl gap-x-[4em] gap-y-2 sm:grid-cols-2 sm:gap-y-[1.5em] md:grid-cols-3 lg:grid-cols-4"
       >
@@ -32,19 +32,17 @@ const availableLocales = computed(() => {
       </div>
     </nav>
     <!-- Fedora Section -->
-    <section class="container mx-auto py-10">
-      <div class="flex flex-wrap items-center gap-4 md:flex-nowrap">
-        <div class="pb-6 ltr:ml-4 rtl:mr-4 md:ml-0 md:w-1/4 md:pb-0">
+    <section class="px-4 py-10 md:px-8">
+      <div class="flex flex-wrap items-center md:flex-nowrap">
+        <div class="flex-none pb-6 md:w-1/4 md:pb-0">
           <FpImage
             src="assets/images/logos/fedora-blue.png"
             :alt="$t('Fedora Logo')"
-            class="h-12 xl:ml-0"
+            class="h-12"
           />
         </div>
         <!-- privacy etc links -->
-        <ul
-          class="mx-4 flex grow flex-wrap justify-center gap-4 lg:mx-0 lg:gap-8 xl:justify-start"
-        >
+        <ul class="mx-4 flex w-full flex-wrap justify-center gap-4 md:w-1/2">
           <li class="list-none underline underline-offset-1">
             <FpLink
               href="https://docs.fedoraproject.org/en-US/legal/privacy/"
@@ -74,13 +72,13 @@ const availableLocales = computed(() => {
             >
           </li>
           <li class="list-none text-fp-gray-darkest">
-            Help improve this website on the 
+            Help improve this website on the
             <FpLink
               href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
               class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
               >{{ $t("CMS") }}</FpLink
             >
-            or the 
+            or the
             <FpLink
               href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
               class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
@@ -92,7 +90,7 @@ const availableLocales = computed(() => {
     </section>
 
     <!-- Red Hat Sponsorship Section -->
-    <section class="bg-black py-10 text-center md:text-left">
+    <section class="bg-black px-4 py-10 text-center md:px-8 md:text-left">
       <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="mx-auto lg:mx-0 lg:basis-3/12">
           <FpImage

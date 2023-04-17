@@ -35,7 +35,7 @@ useContentHead(data);
       </section>
       <FpDescriptionSection
         :sectionDescription="data.sections[0].sectionDescription"
-        class="dark:bg-neutral-900"
+        class="px-8 dark:bg-neutral-900"
       />
     </header>
 
