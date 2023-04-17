@@ -62,6 +62,7 @@ const release_data = await getCMS("release");
 
 useHead({
   title: "Fedora Linux",
+  htmlAttrs: { class: "scroll-smooth" },
 });
 </script>
 <template>
