@@ -41,7 +41,7 @@ if (data._value.sections[3].content[6].description) {
       </section>
       <FpDescriptionSection
         :sectionDescription="data.sections[0].sectionDescription"
-        class="dark:bg-neutral-900"
+        class="px-8 dark:bg-neutral-900"
       />
     </header>
 
@@ -65,7 +65,7 @@ if (data._value.sections[3].content[6].description) {
 
     <!-- Fedora Release Parties -->
     <section
-      class="container col-span-full mx-auto my-8 flex max-w-7xl flex-col items-center md:items-start"
+      class="container col-span-full my-8 flex max-w-7xl flex-col items-center px-8 md:items-start"
     >
       <h3 class="font-bold text-fp-darkblue-500 dark:text-fp-darkblue-300">
         {{ data.sections[3].content[5].title }}

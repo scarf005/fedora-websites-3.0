@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="mx-8" :class="`bg-fp-${color}-light/10`">
+  <section class="px-8" :class="`bg-fp-${color}-light/10`">
     <div class="container mx-auto flex max-w-7xl flex-col justify-center pb-8">
       <header class="py-8 text-center xl:text-start">
         <h2 class="xl:text-4xl" :class="`text-fp-${color}`">
