@@ -43,7 +43,9 @@ defineProps({
   <div class="my-5 flex justify-center">
     <slot />
   </div>
-  <div class="spacing-1 mt-5 flex justify-center gap-8 md:gap-24">
+  <div
+    class="spacing-1 mt-5 flex flex-row-reverse flex-wrap justify-center gap-4"
+  >
     <template v-for="(cta, idx) in ctas">
       <FpBtn
         :href="cta.url"
@@ -60,7 +62,10 @@ defineProps({
           },
         ]"
       >
-        <Icon v-if="idx === 1 && icon" :name="`fa6-brands:${icon}`" />
+        <Icon
+          v-if="idx === 0 && cta.text.includes('Download')"
+          name="fa-download"
+        />
         {{ $t(cta.text) }}
       </FpBtn>
     </template>

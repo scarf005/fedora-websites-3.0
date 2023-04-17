@@ -11,7 +11,6 @@
   { "code": "es", "iso": "es", "file": "es.json", "name": "Español" },
   { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" },
   { "code": "ar", "iso": "ar", "file": "ar.json", "name": "عربى", "dir": "rtl" },
-  { "code": "cs", "iso": "cs", "file": "cs.json", "name": "Czech" },
   { "code": "fa", "iso": "fa", "file": "fa.json", "name": "Persian", "dir": "rtl" },
   { "code": "fur", "iso": "fur", "file": "fur.json", "name": "Friulian" },
   { "code": "he", "iso": "he", "file": "he.json", "name": "Hebrew", "dir": "rtl" },
@@ -21,6 +20,7 @@
   { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "Chinese (Simplified)" },
   { "code": "bg", "iso": "bg", "file": "bg.json", "name": "Bulgarian" },
   { "code": "nl", "iso": "nl", "file": "nl.json", "name": "Nederlands" },
+  { "code": "ja", "iso": "ja", "file": "ja.json", "name": "日本"},
   {
     "code": "pt-br",
     "iso": "pt-BR",

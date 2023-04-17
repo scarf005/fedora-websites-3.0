@@ -24,7 +24,6 @@ useContentHead(data);
         border="border border-fp-purple dark:border-fp-purple-700"
         background="text-white bg-fp-purple dark:bg-fp-purple-700"
         :ctas="data.links"
-        icon="youtube"
       >
         <FpImage :src="data.header_images[0].image" />
       </FpBanner>

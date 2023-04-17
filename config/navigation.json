@@ -5,7 +5,7 @@
     "sections": [
       {
         "label": "Editions",
-        "description": "Fedora Editions are the official OS editions of Fedora Linux.",
+        "description": "Our flagship Fedora Linux variants for different uses.",
         "links": [
           {
             "label": "Workstation",

@@ -11,8 +11,8 @@ if (engage.sectionDescription) {
     <header class="">
       <div class="mx-auto w-4/5 max-w-7xl py-12">
         <!-- h1 Hero Content -->
-        <h1>{{ data.title }}</h1>
-        <p>{{ data.description }}</p>
+        <h1>{{ $t(data.title) }}</h1>
+        <p>{{ $t(data.description) }}</p>
       </div>
     </header>
 
@@ -24,7 +24,7 @@ if (engage.sectionDescription) {
         >
           <FpImage :src="data.sections[0].images" class="object-contain" />
           <p class="">
-            {{ data.sections[0].sectionDescription }}
+            {{ $t(data.sections[0].sectionDescription) }}
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ if (engage.sectionDescription) {
           <h3
             class="mb-16 text-center font-medium text-fp-blue dark:text-fp-newblue"
           >
-            {{ data.sections[1].sectionDescription }}
+            {{ $t(data.sections[1].sectionDescription) }}
           </h3>
         </header>
         <div class="flex flex-wrap items-center justify-center gap-16">
@@ -67,7 +67,7 @@ if (engage.sectionDescription) {
           <h3
             class="mb-16 text-center font-medium text-fp-blue dark:text-fp-newblue"
           >
-            {{ engage.sectionTitle }}
+            {{ $t(engage.sectionTitle) }}
           </h3>
         </header>
         <div class="">
