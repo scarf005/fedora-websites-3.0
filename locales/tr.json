@@ -1,1 +1,24 @@
-{}
+{
+    "Next": "Sonraki",
+    "Help": "Yardım",
+    "Secure": "Güvenli",
+    "Customizable": "Özelleştirilebilir",
+    "Community Support": "Topluluk Desteği",
+    "Description": "Açıklama",
+    "Download Now": "Şimdi İndir",
+    "Obsolete GPG keys": "Eski GPG anahtarları",
+    "Current GPG keys": "Geçerli GPG anahtarları",
+    "Latest release": "En son sürüm",
+    "Release Notes": "Sürüm Notları",
+    "Become a Sponsor": "Sponsor Ol",
+    "BETA": "BETA",
+    "Download": "İndir",
+    "Try it now.": "Şimdi dene.",
+    "Sponsors": "Sponsorlar",
+    "Fedora Logo": "Fedora Logosu",
+    "Support": "Destek",
+    "Contributors": "Katkıcılar",
+    "Community": "Topluluk",
+    "Downloads": "İndirmeler",
+    "Languages": "Diller"
+}
