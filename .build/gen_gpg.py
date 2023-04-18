@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import gnupg
 import tempfile
 import yaml
