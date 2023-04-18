@@ -82,7 +82,7 @@ const availableLocales = computed(() => {
             <FpLink
               href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
               class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-              >{{ $t("Gitlab Repo") }}</FpLink
+              >{{ $t("GitLab repo") }}</FpLink
             >
           </li>
         </ul>
