@@ -311,7 +311,7 @@
         ]
       },
       {
-        "label": "Documentation",
+        "label": "Contributor Guides",
         "description": "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.",
         "links": [
           {
@@ -620,7 +620,7 @@
         ]
       },
       {
-        "label": "Other Sources",
+        "label": "Documentation",
         "description": "Over the years, Fedorans have created many sources of information about Fedora Linux and the Fedora Project.",
         "links": [
           {
