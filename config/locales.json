@@ -17,7 +17,7 @@
   { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Hungarian" },
   { "code": "id", "iso": "id", "file": "id.json", "name": "Indonesian" },
   { "code": "sq", "iso": "sq", "file": "sq.json", "name": "Albanian" },
-  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "Chinese (Simplified)" },
+  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "中文（简体）" },
   { "code": "bg", "iso": "bg", "file": "bg.json", "name": "Bulgarian" },
   { "code": "nl", "iso": "nl", "file": "nl.json", "name": "Nederlands" },
   { "code": "ja", "iso": "ja", "file": "ja.json", "name": "日本"},
