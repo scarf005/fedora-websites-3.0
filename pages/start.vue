@@ -123,14 +123,18 @@ const fp_solved_issues = async () => {
 
 let magazine = [];
 try {
-  magazine = await fm_headlines();
+  if (process.client) {
+    magazine = await fm_headlines();
+  }
 } catch (e) {
   console.log(e);
 }
 
 let newsfeed = [];
 try {
-  newsfeed = await fp_headlines();
+  if (process.client) {
+    newsfeed = await fp_headlines();
+  }
 } catch (e) {
   console.log(e);
 }
@@ -153,7 +157,9 @@ if (magazine.length > 0 && newsfeed.length > 0) {
 
 let solved = [];
 try {
-  solved = await fp_solved_issues();
+  if (process.client) {
+    solved = await fp_solved_issues();
+  }
 } catch (e) {
   console.log(e);
 }
