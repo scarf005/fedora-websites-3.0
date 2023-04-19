@@ -20,16 +20,16 @@ useContentHead(data);
         ]"
         textColor="text-fp-magenta"
       />
-      <section
-        class="my-8 mx-auto max-w-7xl px-8 text-center lg:text-start xl:px-0"
-      >
-        <div class="container mx-auto">
-          <h1 class="mb-4 text-fp-magenta xl:mb-8">
-            {{ data.title }}
-          </h1>
-          <p class="text-fp-gray">{{ data.description }}</p>
+      <div class="px-8">
+        <div class="my-8 mx-auto max-w-7xl text-center lg:text-start">
+          <div class="container mx-auto lg:mx-0">
+            <h1 class="mb-4 text-fp-magenta xl:mb-8">
+              {{ data.title }}
+            </h1>
+            <p class="text-fp-gray">{{ data.description }}</p>
+          </div>
         </div>
-      </section>
+      </div>
       <FpDescriptionSection
         :sectionDescription="data.sections[0].sectionDescription"
         class="px-8 dark:bg-neutral-900"
