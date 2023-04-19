@@ -115,5 +115,13 @@
     "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Verifieer uw download, voor uw veiligheid en om zeker te zijn van zijn integriteit, aan de hand van het juiste bestand met controlesom en handtekening. Als de handtekening overeenkomt met een van de sleutels van Fedora, en de SHA-256-hash komt overeen met de controlesom, dan deugt de download.",
     "If the output states that the file is valid, then it's ready to use!": "Als de uitvoer stelt dat het bestand deugt, dan is het klaar voor gebruik!",
     "Verify the checksum matches": "Verifieer dat de controlesom overeenkomt",
-    "Verify the checksum file is valid": "Verifieer dat het bestand met de controlesom deugt"
+    "Verify the checksum file is valid": "Verifieer dat het bestand met de controlesom deugt",
+    "Fedora Budgie Spin": "Fedora Linux met het bureaublad Budgie",
+    "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "We zijn zeer verheugd dat u hebt besloten Fedora Linux met het bureaublad Budgie uit te proberen. We weten zeker dat u het fantastisch zult vinden.",
+    "Upstream Documentation": "Bovenstroomse documentatie",
+    "Both the Fedora Community Blog and Fedora Magazine are always looking for article proposals, writers, and editors.": "Zowel de Fedora Community Blog als het Fedora Magazine staan altijd open voor te publiceren artikelen, schrijvers en redacteuren.",
+    "For IBM s390x zSystems": "Als een Linux op IBM Z",
+    "For Intel and AMD x86_64 systems": "Voor systemen die de x86_64-instructieset gebruiken",
+    "For Power ppc64le systems": "Voor systemen die de ppc64le-instructieset gebruiken",
+    "For ARM® aarch64 systems": "Voor systemen die de AArch64-instructieset gebruiken"
 }
