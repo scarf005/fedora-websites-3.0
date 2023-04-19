@@ -25,14 +25,26 @@ async function switchStream(stream) {
   selectedStream.value = stream;
   // Fetch build list & release notes if not yet cached
   if (!buildsList.value[stream]) {
-    const buildUrl = `${baseProdUrl}/prod/streams/${stream}/builds/builds.json`;
-    const { data: builds } = await useFetch(buildUrl);
-    const notesUrl = `${baseProdUrl}/release-notes/${stream}.json`;
-    const { data: notes } = await useFetch(notesUrl);
-    buildsList.value[stream] = {
-      builds: builds.value.builds,
-      releases: notes.value.releases,
-    };
+    try {
+      const buildUrl = `${baseProdUrl}/prod/streams/${stream}/builds/builds.json`;
+      const buildsrq = await $fetch(buildUrl, {
+        key: "buildsrq",
+        server: false,
+        watch: false,
+      });
+      const notesUrl = `${baseProdUrl}/release-notes/${stream}.json`;
+      const notesrq = await $fetch(notesUrl, {
+        key: `notesrq-${stream}`,
+        server: false,
+        watch: false,
+      });
+      buildsList.value[stream] = {
+        builds: buildsrq.builds,
+        releases: notesrq.releases,
+      };
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   // Update URL parameters
