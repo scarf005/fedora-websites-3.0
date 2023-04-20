@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     locales: locales,
     lazy: true,
     langDir: "./locales/",
-    strategy: "prefix_except_default",
+    strategy: "prefix_and_default",
     defaultLocale: "en",
     vueI18n: {
       legacy: false,
