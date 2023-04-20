@@ -358,7 +358,7 @@
           },
           {
             "label": "Edit these docs",
-            "path": "https://docs.stg.fedoraproject.org/en-US/fedora-docs/contributing-docs/tools-7step-gitlab-howto/",
+            "path": "https://docs.fedoraproject.org/en-US/fedora-docs/contributing-docs/tools-gitlab-howto/",
             "icon": "fa6-solid:pencil",
             "description": "Did you notice a glaring typo or a broken link in these docs? Click here to find out how you can help make it right!"
           }
