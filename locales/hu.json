@@ -1,3 +1,16 @@
 {
-  "Languages": "Nyelv"
+    "Languages": "Nyelv",
+    "architecture": "architektúra",
+    "Download": "Letöltés",
+    "Try it now.": "Próbálja ki",
+    "Learn More": "Tudjon meg többet",
+    "Registration": "Regisztráció",
+    "Sponsors": "Támogatók",
+    "Code of Conduct": "Magatartási kódex",
+    "Legal": "Jogi információk",
+    "Privacy Statement": "Adatvédelmi nyilatkozat",
+    "Fedora Logo": "Fedora Logo",
+    "Support": "Támogatás",
+    "Contributors": "Hozzájárulók",
+    "Community": "Közösség"
 }
