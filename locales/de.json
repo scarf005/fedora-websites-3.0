@@ -243,7 +243,7 @@
     "Help us with testing!": "Helfen Sie uns beim Testen!",
     "List Fedora's GPG key(s)": "Liste der GPG-Schlüssel von Fedora",
     "Latest release": "Aktuelle Version",
-    "It's your": "Es ist Ihr",
+    "It's your": "Es ist Ihr/Ihre",
     "If the output states that the file is valid, then it's ready to use!": "Die Datei ist bereit für den Einsatz, wenn die Ausgabe besagt, dass die Datei gültig ist.",
     "Verify the checksum matches": "Prüfen Sie, ob die Prüfsumme übereinstimmt",
     "Verify the checksum file is valid": "Prüfen Sie, ob die Prüfsummendatei gültig ist",
@@ -259,5 +259,7 @@
     "Each version is updated for approximately 13 months, and upgrades between versions are quick and easy.": "Jede Version wird etwa 13 Monate lang aktualisiert, und Upgrades zwischen den Versionen lassen sich schnell und einfach durchführen.",
     "Fedora Logo": "Fedora Logo",
     "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "Ihre freundlichen und hilfreichen Beiträge zu unseren Kommunikationskanälen würden wir sehr zu schätzen wissen",
-    "Privacy Statement": "Datenschutzerklärung"
+    "Privacy Statement": "Datenschutzerklärung",
+    "🎉 [Fedora Linux 38 released!](https://fedoramagazine.org/announcing-fedora-38)": "🎉 [Fedora Linux 38 wurde veröffentlicht!](https://fedoramagazine.org/announcing-fedora-38)",
+    "its_your_Operating System.": "Betriebssystem."
 }
