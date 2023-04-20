@@ -64,15 +64,17 @@ if (data._value.sections[3].content[6].description) {
     <FpEventSection color="text-fp-green-700" />
 
     <!-- Fedora Release Parties -->
-    <section
-      class="container col-span-full my-8 flex max-w-7xl flex-col items-center px-8 md:items-start"
-    >
-      <h3 class="font-bold text-fp-darkblue-500 dark:text-fp-darkblue-300">
-        {{ data.sections[3].content[5].title }}
-      </h3>
-      <p class="mt-6 text-fp-gray">
-        {{ data.sections[3].content[5].description }}
-      </p>
+    <section class="px-8">
+      <div
+        class="container col-span-full mx-auto my-8 flex max-w-7xl flex-col items-center md:items-start"
+      >
+        <h3 class="font-bold text-fp-darkblue-500 dark:text-fp-darkblue-300">
+          {{ data.sections[3].content[5].title }}
+        </h3>
+        <p class="mt-6 text-fp-gray">
+          {{ data.sections[3].content[5].description }}
+        </p>
+      </div>
     </section>
 
     <!-- Nest Banner -->
