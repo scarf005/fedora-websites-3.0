@@ -25,6 +25,6 @@
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" },
   { "code": "sq", "iso": "sq", "file": "sq.json", "name": "Albanian" },
   { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" },
-  { "code": "uk", "iso": "uk", "file": "uk.json", "name": "українська"}
+  { "code": "uk", "iso": "uk", "file": "uk.json", "name": "українська"},
   { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "中文（简体）" }
 ]
