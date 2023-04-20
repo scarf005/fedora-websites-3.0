@@ -4,8 +4,8 @@ sections:
   - sectionTitle: User Documentation
     content:
       - link:
-          text: Fedora Linux
-          url: https://docs.fedoraproject.org/en-US/fedora/latest/
+          url: https://docs.fedoraproject.org/en-US/workstation-docs/
+          text: Fedora Workstation
       - link:
           text: Fedora Server
           url: https://docs.fedoraproject.org/en-US/fedora-server/
@@ -16,8 +16,8 @@ sections:
           text: Fedora IoT
           url: https://docs.fedoraproject.org/en-US/iot/
       - link:
-          url: https://docs.fedoraproject.org/en-US/workstation-docs/
-          text: Fedora Workstation
+          text: Emerging Fedora Desktops
+          url: https://docs.fedoraproject.org/en-US/emerging/
   - sectionTitle: Communication channels
     content:
       - title: Fedora Discussion
