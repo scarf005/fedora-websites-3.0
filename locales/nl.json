@@ -139,5 +139,10 @@
     "Being an open source project means that there is a large pool of knowlege and expertise available.": "Voor een opensourceproject geldt dat er veel kennis en expertise voorhanden is.",
     "A customizable cloud native experience.": "Een beleving van de cloud die ongekunsteld en aanpasbaar is.",
     "Download the latest version of Fedora Cloud Edition for your architecture here.": "Download hier de laatste versie van Fedora Cloud Edition voor uw instructieset.",
-    "A modern media player, using gtk3 and the gstreamer plugin framework.": "Een moderne mediaspeler, die gebruik maakt van GStreamer en GTK 3."
+    "A modern media player, using gtk3 and the gstreamer plugin framework.": "Een moderne mediaspeler, die gebruik maakt van GStreamer en GTK 3.",
+    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering uses sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "De Budgie-variant van Fedora laat ons de Budgie Desktop zien, een moderne grafische schil die rijk is aan mogelijkheden en die ontworpen is om ons niet in de weg lopen. Budgie Desktop is ontworpen vanuit gangbare metaforen maar biedt geavanceerde functionaliteit zoals zijn Raven-gadget en berichtencentrum, en een toegankelijke methode voor het personaliseren.\n\nDeze variant is ontworpen om nauw aan te sluiten bij de bovenstroomse Budgie Desktop, waardoor een bijna conventionele gebruikservaring ontstaat. De variant installeert ook standaard een zorgvuldig gekozen verzameling van toepassingsprogramma's die het best passen bij Budgie.",
+    "Simple interface. Powerful music management. Playlists. Streaming Radio. Podcasts.": "Simpele interface. Uitgebreid beheer van muziek. Afspeellijsten. Internetradio. Luisterbestanden.",
+    "Screenshot of Fedora Budgie desktop": "Schermafbeelding van Fedora Budgie",
+    "Office & Productivity": "Software voor kantoor, huishouden en persoonlijke organisatie",
+    "Multimedia": "Multimedia"
 }
