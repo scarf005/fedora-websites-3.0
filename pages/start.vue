@@ -262,7 +262,7 @@ try {
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
-                href="https://docs.fedoraproject.org/"
+                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
                 >{{ user_documentation.sectionTitle }}</a
               >
