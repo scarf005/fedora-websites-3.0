@@ -19,7 +19,7 @@ const user_documentation = data._value.sections[0];
 const comm_channels = data._value.sections[1];
 
 const magazine_uri = "https://fedoramagazine.org";
-const magazine_api = "wp-json/fedora-ssg-endpoint";
+const magazine_api = "wp-json/fedora-ssr-endpoint";
 
 const fm_headlines = async () => {
   let index = await $fetch(`${magazine_uri}/${magazine_api}/v1/index/1`);
