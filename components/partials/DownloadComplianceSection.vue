@@ -14,7 +14,7 @@ if (data._value.description) {
     <div class="p-2">
       <ContentRenderer
         class="markdown text-center dark:text-white"
-        tag="p"
+        tag="div"
         v-if="data.descriptionMd"
         :value="data.descriptionMd"
       />

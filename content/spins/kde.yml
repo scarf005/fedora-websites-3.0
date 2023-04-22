@@ -121,3 +121,10 @@ sections:
           Kalzium allows you to explore the periodic table of elements. It
           has a 3D molecule editor plus multiple simulators and calculators.
         image: public/assets/images/spins/kalzium.png
+downloadSection:
+  description:
+    We're so glad you've decided to give Fedora KDE Plasma Desktop a try. We
+    know you'll love it.
+  links:
+    - text: Upstream Documentation
+      url: https://userbase.kde.org/Welcome_to_KDE_UserBase

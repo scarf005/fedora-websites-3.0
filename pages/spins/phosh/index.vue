@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("spins/phosh/home");
+const data = await getCMS("spins/phosh");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
@@ -7,8 +7,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Phosh-logo-light.png',
-        dark: 'assets/images/spins/spins-Phosh-logo-dark.png',
+        light: 'assets/images/spins/spins-phosh-logo-light.png',
+        dark: 'assets/images/spins/spins-phosh-logo-dark.png',
       }"
       home="/spins/phosh"
       textColor="text-fp-newblue"
@@ -31,7 +31,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
           class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5 lg:justify-end"
           id="ctas"
         >
-          <FpBtn :href="data.links[0].url">{{ $t("Download Now") }}</FpBtn>
+          <FpBtn href="/spins/phosh/download">{{ $t("Download Now") }}</FpBtn>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ const props = defineProps({
     type: String,
   },
   version: {
-    type: String,
+    type: Number,
   },
   artifacts: {
     type: Object,

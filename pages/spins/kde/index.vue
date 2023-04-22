@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("spins/kde/home");
+const data = await getCMS("spins/kde");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
