@@ -69,7 +69,7 @@
         "links": [
           {
             "label": "Fedora KDE",
-            "path": "https://spins.fedoraproject.org/kde/",
+            "path": "/spins/kde",
             "icon": "fa6-solid:desktop",
             "description": "A complete, modern desktop built using the KDE Plasma Desktop Environment."
           },
