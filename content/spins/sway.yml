@@ -67,3 +67,9 @@ sections:
       - title: Thunar
         description: File manager for Linux and other Unix-like systems.
         image: public/assets/images/spins/thunar.png
+downloadSection:
+  description: We're so glad you've decided to give Fedora Sway Spin a try. We
+    know you'll love it.
+  links:
+    - text: Upstream Documentation
+      url: "https://github.com/swaywm/sway/wiki"

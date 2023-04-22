@@ -23,3 +23,7 @@ screenshot_image:
   image: public/assets/images/spins/screenshot-phosh.jpg
   alt_text: Screenshot of Fedora Phosh on mobile
 sections: []
+downloadSection:
+  description: We're so glad you've decided to give Fedora Phosh a try. We
+    know you'll love it.
+  links: []

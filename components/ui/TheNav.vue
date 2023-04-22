@@ -196,7 +196,7 @@ let languageOpen = useState("languageOpen", () => null);
                       link.path
                     }`"
                   >
-                    {{ $t(link.label) }}
+                    {{ link.label }}
                   </a>
                 </li>
               </ul>
@@ -242,7 +242,7 @@ let languageOpen = useState("languageOpen", () => null);
                     link.path
                   }`"
                 >
-                  {{ $t(link.label) }}
+                  {{ link.label }}
                 </a>
               </li>
             </ul>

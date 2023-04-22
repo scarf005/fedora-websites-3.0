@@ -39,7 +39,7 @@ const mobileToggle = ref(false);
             $config.app.baseURL.replace(new RegExp('/$'), '') + link.path
           }`"
         >
-          {{ $t(link.label) }}
+          {{ link.label }}
         </a>
       </li>
     </ul>
@@ -54,7 +54,7 @@ const mobileToggle = ref(false);
             $config.app.baseURL.replace(new RegExp('/$'), '') + link.path
           }`"
         >
-          {{ $t(link.label) }}
+          {{ link.label }}
         </a>
       </li>
     </ul>

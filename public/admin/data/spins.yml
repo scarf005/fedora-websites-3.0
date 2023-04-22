@@ -1,10 +1,10 @@
 #################
 # Spins Pages #
 #################
-- name: "sway" # Used in routes, e.g., /admin/collections/blog
-  label: "Sway Spin Pages" # Used in the UI
-  label_singular: "Sway Spin Page"
-  folder: "/content/spins/sway" # The path to the folder where the documents are stored
+- name: "spins" # Used in routes, e.g., /admin/collections/blog
+  label: "Spin Pages" # Used in the UI
+  label_singular: "Spin Page"
+  folder: "/content/spins" # The path to the folder where the documents are stored
   media_folder: "/public/assets/images/spins"
   public_folder: "public/assets/images/spins"
   format: "yml"
@@ -83,4 +83,29 @@
             - label: "Image"
               name: "image"
               widget: "image"
+              required: false
+    - label: "Download Section"
+      name: "downloadSection"
+      widget: "object"
+      collapsed: true
+      fields:
+        - label: "Download Description"
+          name: "description"
+          hint: "Download page description text"
+          required: true
+        - label: "Links"
+          label_singular: "Link"
+          name: "links"
+          widget: "list"
+          summary: "Documentation & other links"
+          hint: "Add links to the download page header"
+          collapsed: true
+          minimized_collapsed: true
+          fields:
+            - label: "Link Text"
+              name: "text"
+              widget: "string"
+            - label: "Link URL"
+              name: "url"
+              widget: "string"
               required: false
