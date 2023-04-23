@@ -232,5 +232,16 @@
     "placeholder": "Symbol zastępczy",
     "Sponsored by Red Hat Logo": "Sponsorowane przez Red Hat Logo",
     "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "Uczestnictwo w spotkaniu lub zgłaszanie i omawianie znalezionych problemów może być świetnym pierwszym krokiem do wniesienia wkładu",
-    "verify_button_instruction": "Kliknij przycisk weryfikacji {verify_button}, aby uzyskać instrukcje dostosowane do pobierania."
+    "verify_button_instruction": "Kliknij przycisk weryfikacji {verify_button}, aby uzyskać instrukcje dostosowane do pobierania.",
+    "Sessions": "Sesje",
+    "Stable Ecosystem": "Stabilny ekosystem",
+    "Submit Proposal": "Prześlij propozycję",
+    "Designed with security in mind, Fedora Cloud includes functions like SELinux, which boosts kernel security, and Security Profiles.": "Zaprojektowana z myślą o bezpieczeństwie, Fedora Cloud zawiera funkcje takie jak SELinux, który zwiększa bezpieczeństwo jądra oraz profile bezpieczeństwa.",
+    "Utilities & Configuration": "Narzędzia i konfiguracja",
+    "Users and developers are available in the #fedora channel on Fedora Chat.": "Użytkownicy i programiści są dostępni na kanale #fedora na czacie Fedory.",
+    "Get support from our the community on the Fedora Discussion Forum.": "Uzyskaj wsparcie od naszej społeczności na forum dyskusyjnym Fedory.",
+    "Extensive documentation is available at the Fedora documentation page.": "Obszerna dokumentacja jest dostępna na stronie dokumentacji Fedory.",
+    "The Fedora Alternative Downloads are either special-purpose - for testing, for specific architectures - or are more standard versions of Fedora in alternative formats such as network installer format or formatted for BitTorrent download.": "Alternatywne wersje Fedory są to systemy specjalnego przeznaczenia, do testowania, dla określonych architektur lub standardowymi wersjami Fedory w alternatywnych formatach, takich jak format instalatora sieciowego lub do pobierania za pomocą BitTorrent.",
+    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "Fedora Labs to wybór wyselekcjonowanych pakietów ukierunkowanego na cel oprogramowania i treści, które zostały opracowane i utrzymywane przez członków społeczności Fedory. Mogą one być instalowane jako samodzielne, pełne wersje Fedory lub jako dodatki do istniejących instalacji Fedory.",
+    "If you prefer an alternative desktop environment such as KDE Plasma Desktop or Xfce, you can download a Fedora Spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.": "Jeśli wolisz alternatywne środowisko graficzne, takie jak KDE Plasma Desktop lub Xfce, możesz pobrać Fedora Spin dla preferowanego środowiska graficznego i użyć go do zainstalowania Fedory, wstępnie skonfigurowanej dla wybranego środowiska graficznego."
 }
