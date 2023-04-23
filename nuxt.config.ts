@@ -26,7 +26,9 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: locales,
-    lazy: true,
+    lazy: {
+      skipNuxtState: true,
+    },
     langDir: "./locales/",
     strategy: "prefix_and_default",
     defaultLocale: "en",
@@ -69,6 +71,13 @@ export default defineNuxtConfig({
          });
        });
        }
+     },
+
+     "build:manifest"(manifest) {
+      for (const key in manifest) {
+        manifest[key].dynamicImports = [];
+        manifest[key].imports = [];
+      }
      },
 
   },
