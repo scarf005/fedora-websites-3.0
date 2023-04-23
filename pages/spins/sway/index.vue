@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("spins/sway/home");
+const data = await getCMS("spins/sway");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
@@ -7,8 +7,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
     <TheLocalBar
       :image="{
-        light: 'assets/images/spins/spins-Sway-logo-light.png',
-        dark: 'assets/images/spins/spins-Sway-logo-dark.png',
+        light: 'assets/images/spins/spins-sway-logo-light.png',
+        dark: 'assets/images/spins/spins-sway-logo-dark.png',
       }"
       home="/spins/sway"
       textColor="text-fp-newblue"
