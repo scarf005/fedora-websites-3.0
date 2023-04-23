@@ -181,5 +181,8 @@
     "Fedora Labs": "Набори Fedora",
     "Fedora CoreOS is an automatically updating, minimal, container-focused operating system.": "Fedora CoreOS — мінімалістична операційна система з автоматичним оновленням і акцентом на контейнеризації.",
     "Open-source Ecosystem": "Екосистема з відкритим програмним кодом",
-    "Fedora Cloud edition is a powerful and minimal base operating system image with tailored images available for both public and many private cloud uses.": "Fedora Cloud — потужна, мінімалістична базова операційна система, для якої доступні спеціальні образи для використання в загальнодоступних і приватних хмарних середовищах."
+    "Fedora Cloud edition is a powerful and minimal base operating system image with tailored images available for both public and many private cloud uses.": "Fedora Cloud — потужна, мінімалістична базова операційна система, для якої доступні спеціальні образи для використання в загальнодоступних і приватних хмарних середовищах.",
+    "A minimal OS with automatic updates. Scalable and secure.": "Операційна система, що містить лише найнеобхідніше й оновлюється автоматично. Безпечна й масштабовна.",
+    "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "У потоці «Testing» проходить перевірка та зневадження наступного стабільного випуску. Додайте у ваш кластер кілька машин з тестовою версією, щоб швидше розібратися з вадами, специфічними для ваших апаратних засобів чи конфігурації.",
+    "The Stable stream is the most reliable version of Fedora CoreOS. Releases are battle-tested within the Testing stream before being promoted.": "Потік «Stable» — найнадійніша з погляду стабільності версія Fedora CoreOS. Сюди потрапляють випуски, що були ретельно відтестовані в умовах, наближених до реальних, у потоці «Testing»."
 }
