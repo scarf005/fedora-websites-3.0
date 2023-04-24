@@ -1,3 +1,3 @@
 <template>
-  <SpinsDownloadPage name="Xfce" localnav="False" />
+  <SpinsDownloadPage name="Xfce" />
 </template>

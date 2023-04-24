@@ -74,8 +74,8 @@
             "description": "A complete, modern desktop built using the KDE Plasma Desktop Environment."
           },
           {
-            "label": "XFCE Desktop",
-            "path": "https://spins.fedoraproject.org/xfce/",
+            "label": "Fedora XFCE",
+            "path": "/spins/xfce/",
             "icon": "fa6-solid:desktop",
             "description": "A complete and well integrated desktop."
           },
