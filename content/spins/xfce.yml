@@ -1,15 +1,10 @@
 title: Fedora XFCE
 description: >-
-  The Fedora KDE Plasma Desktop Edition is a powerful Fedora-based operating
-  system utilizing the KDE Plasma Desktop as the main user interface.
+  The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and lightweight, while still being visually appealing and user friendly.
 
-
-  Fedora KDE Plasma Desktop comes with many pre-selected top quality applications that suit all modern desktop use cases - from online communication like web browsing, instant messaging and electronic mail correspondence, through multimedia and entertainment, to an advanced productivity suite, including office applications and enterprise grade personal information management.
-
-
-  All KDE applications are well integrated, with a similar look and feel and an easy to use interface, accompanied by an outstanding graphical appearance.
+  Fedora Xfce is a full-fledged desktop using the freedesktop.org standards.
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/spins-kde-dark.png
+  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-xfce.png
   alt: Fedora XFCE Image
   width: 400
   height: 300
@@ -122,9 +117,8 @@ sections:
           has a 3D molecule editor plus multiple simulators and calculators.
         image: public/assets/images/spins/kalzium.png
 downloadSection:
-  description:
-    We're so glad you've decided to give Fedora KDE Plasma Desktop a try. We
+  description: We're so glad you've decided to give Fedora XFCE a try. We
     know you'll love it.
   links:
     - text: Upstream Documentation
-      url: https://userbase.kde.org/Welcome_to_KDE_UserBase
+      url: https://docs.xfce.org/
