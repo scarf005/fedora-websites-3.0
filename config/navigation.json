@@ -75,7 +75,7 @@
           },
           {
             "label": "Fedora XFCE",
-            "path": "https://spins.fedoraproject.org/xfce/",
+            "path": "/spins/xfce/",
             "icon": "fa6-solid:desktop",
             "description": "A complete and well integrated desktop."
           },

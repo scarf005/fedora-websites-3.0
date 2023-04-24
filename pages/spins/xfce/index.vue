@@ -12,7 +12,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       }"
       home="/spins/xfce"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/spins/sway/download' }]"
+      :items="[{ name: 'Download', link: '/spins/xfce/download' }]"
     />
 
     <!-- TITLE -->
@@ -106,8 +106,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpCallToAction
         :cta="data.links"
         :image="{
-          light: 'assets/images/spins/spins-sway-light.png',
-          dark: 'assets/images/spins/spins-sway-dark.png',
+          light: 'assets/images/spins/spins-xfce-light.png',
+          dark: 'assets/images/spins/spins-xfce-dark.png',
         }"
       />
     </section>
