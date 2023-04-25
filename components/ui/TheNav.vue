@@ -30,18 +30,14 @@ if (categories.help.sections[0].label != "Ask Fedora") {
 
 const categoryOpen = useState("category", () => null);
 const sectionOpen = useState("section", () => null);
-let languageOpen = useState("languageOpen", () => null);
 </script>
 
 <template>
   <!-- BACKDROP, MAINLY TO CLOSE ON BLUR -->
   <div
-    v-if="categoryOpen || languageOpen"
+    v-if="categoryOpen"
     class="fixed inset-0"
-    @click="
-      categoryOpen = null;
-      languageOpen = null;
-    "
+    @click="categoryOpen = null"
   ></div>
 
   <div
@@ -62,7 +58,6 @@ let languageOpen = useState("languageOpen", () => null);
         <!-- MOBILE EXPANDER -->
         <button
           @click="
-            languageOpen = null;
             if (
               categoryOpen &&
               categories.downloads.label === categoryOpen.label
@@ -96,7 +91,6 @@ let languageOpen = useState("languageOpen", () => null);
             categoryOpen?.label === category.label && 'bg-fp-darkblue-500'
           }`"
           @click="
-            languageOpen = null;
             if (categoryOpen && category.label === categoryOpen.label) {
               categoryOpen = null;
               sectionOpen = null;
@@ -122,7 +116,7 @@ let languageOpen = useState("languageOpen", () => null);
           </p>
         </button>
 
-        <!-- LANGUAGE & THEME SELECTOR (HIDDEN ON MOBILE) -->
+        <!-- THEME SELECTOR (HIDDEN ON MOBILE) -->
         <div class="hidden items-center justify-end md:flex">
           <FpThemeSelector />
         </div>
