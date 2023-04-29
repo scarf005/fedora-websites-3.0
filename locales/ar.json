@@ -570,5 +570,10 @@
     "Use our messaging board Fedora Discussions to stay up to date on Flock Notifications. **[Check it out here](https://discussion.fedoraproject.org/)**.": "استخدم منتدى نقاشات فيدورا لتبقى مُطّلعًا على إشعارات فلوك. **[تفقّده هنا](https://discussion.fedoraproject.org/)**.",
     "Our main IRC channel for the event is **\\#fedora-flock** on **libera.chat**. Join **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** to chat on Matrix or IRC.": "قناتنا الآي آر سي الخاصة بالحدث **\\#fedora-flock** على **libera.chat**. انضم إلى **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** للدردشة على ماتريكس أو آي آر سي.",
     "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "حديث عهد بفيدورا؟ تفقّد **[منتدى المجتمع](https://discussion.fedoraproject.org/c/ask)** للحصول على الدعم والمساعدة بشأل الأسئلة الشائعة.",
-    "August 1 - 4, 2023": "1-4 أغسطس/آب 2023"
+    "August 1 - 4, 2023": "1-4 أغسطس/آب 2023",
+    "🎉 [Fedora Linux 38 released!](https://fedoramagazine.org/announcing-fedora-38)": "🎉 [فيدورا لينكس 38 قد أُصدر!](https://fedoramagazine.org/announcing-fedora-38)",
+    "A modern media player, using gtk3 and the gstreamer plugin framework.": "مشغل وسائط عصريّ، يستخدم جي تي كي 3 وإطار عمل إضافات جيستريمر.",
+    "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "سعيدون بقرارك تجربة متحوّر فيدورا بَدْجي. واثقون أنك ستحبه.",
+    "Upstream Documentation": "وثائق المنبع",
+    "Fedora Budgie Spin": "متحوّر فيدورا بَدْجي"
 }
