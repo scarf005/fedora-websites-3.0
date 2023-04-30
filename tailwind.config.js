@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./pages/**/*.vue", "./components/**/*.vue"],
+  content: [
+    "./index.html",
+    "./pages/**/*.vue",
+    "./components/**/*.vue",
+    "./public/assets/js/*.js",
+  ],
   darkMode: "class",
   theme: {
     fontFamily: {

@@ -1,5 +1,5 @@
 import locales from "./config/locales.json";
-
+import path from "path";
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
   : "/";
@@ -53,32 +53,40 @@ export default defineNuxtConfig({
           href: "/favicon.ico",
         },
       ],
+      script: [
+        {
+          src: path.join(base, "js/navbar.js"),
+          defer: true,
+        },
+        { src: path.join(base, "js/darkmode.js"), defer: true },
+      ],
     },
   },
-  experimental: {
-    componentIslands: true,
-  },
   hooks: {
-     "pages:extend"(pages) {
-       if(process?.env?.CI){
-       pages.forEach((page) => {
-         pages.push({
-           name: `${page.name}-alias`,
-           path:
-             page.path.length > 1 ? `${page.path}/index.html` : "/index.html",
-	   redirect: page.path,
-           file: page.file,
-         });
-       });
-       }
-     },
+    "pages:extend"(pages) {
+      if (process?.env?.CI) {
+        pages.forEach((page) => {
+          pages.push({
+            name: `${page.name}-alias`,
+            path:
+              page.path.length > 1 ? `${page.path}/index.html` : "/index.html",
+            redirect: page.path,
+            file: page.file,
+          });
+        });
+      }
+    },
 
-     "build:manifest"(manifest) {
+    "build:manifest"(manifest) {
       for (const key in manifest) {
         manifest[key].dynamicImports = [];
         manifest[key].imports = [];
       }
-     },
-
+    },
+  },
+  routeRules: {
+    "/*": { experimentalNoScripts: true },
+    "/coreos/download": { experimentalNoScripts: false },
+    "/start": { experimentalNoScripts: false },
   },
 });

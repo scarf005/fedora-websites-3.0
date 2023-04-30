@@ -1,43 +1,4 @@
 <script setup>
-const { t } = useI18n();
-// TODO: Move typewriter code into a composable and make it reusable
-let typeValue = ref("");
-let typeStatus = false;
-const arr = ["Server.", "Workstation.", "Community.", "Operating System."];
-const l10n_arr = arr.map((w) => t("its_your_" + w));
-const speed = 150;
-const newTextDelay = 1000;
-let arrIndex = 0;
-let charIndex = 0;
-
-function writeText() {
-  if (charIndex < l10n_arr[arrIndex].length) {
-    if (!typeStatus) typeStatus = true;
-    typeValue.value += l10n_arr[arrIndex].charAt(charIndex);
-    charIndex += 1;
-    setTimeout(writeText, speed);
-  } else {
-    typeStatus = false;
-    setTimeout(eraseText, newTextDelay);
-  }
-}
-function eraseText() {
-  if (charIndex > 0) {
-    if (!typeStatus) typeStatus = true;
-    typeValue.value = l10n_arr[arrIndex].substring(0, charIndex - 1);
-    charIndex -= 1;
-    setTimeout(eraseText, speed);
-  } else {
-    typeStatus = false;
-    arrIndex += 1;
-    if (arrIndex < l10n_arr.length) {
-      setTimeout(writeText, speed + 1000);
-    } else {
-      typeValue.value = l10n_arr.slice(-1).join();
-    }
-  }
-}
-
 const supportCardIcon = (cardTitle) => {
   switch (cardTitle) {
     case "Documentation":
@@ -51,10 +12,6 @@ const supportCardIcon = (cardTitle) => {
       break;
   }
 };
-
-onMounted(() => {
-  setTimeout(writeText, newTextDelay + 200);
-});
 
 const data = await getCMS("index");
 useContentHead(data);
@@ -76,11 +33,10 @@ useHead({
       >
         <!-- Main Info -->
         <div>
-          <!-- TODO: Set up the typewriter to work with translation -->
           <h1
             class="mx-auto mb-4 text-4xl font-semibold md:text-5xl lg:mb-8 xl:text-6xl"
           >
-            {{ $t("It's your") }}<br />&nbsp;<span>{{ typeValue }} </span>
+            {{ $t("It's your Operating System") }}
           </h1>
           <p class="mx-auto mb-2 w-4/6 lg:mb-6 lg:text-3xl">
             {{ $t(data.description) }}

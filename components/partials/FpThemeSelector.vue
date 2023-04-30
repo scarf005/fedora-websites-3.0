@@ -1,33 +1,17 @@
-<script setup>
-let colorMode = useColorMode();
-
-function setMode(value) {
-  colorMode.preference = value;
-}
-</script>
-
+<script setup></script>
 <template>
-  <button
-    v-if="colorMode.preference === 'system'"
-    @click="setMode('light')"
-    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-darkblue-500 md:p-3"
-  >
-    <Icon name="fa-solid:laptop" class="white" />
-  </button>
-
-  <button
-    v-if="colorMode.preference === 'light'"
-    @click="setMode('dark')"
-    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-darkblue-500 md:p-3"
-  >
-    <Icon name="fa-solid:sun" class="white" />
-  </button>
-
-  <button
-    v-if="colorMode.preference === 'dark'"
-    @click="setMode('system')"
-    class="cursor-pointer rounded-xl p-1 text-white hover:bg-fp-darkblue-500 md:p-3"
-  >
-    <Icon name="fa-solid:moon" class="white" />
-  </button>
+  <div class="group relative inline-block">
+    <button
+      type="button"
+      id="themeSwitch"
+      class="hidden fill-white stroke-white sm:block"
+    >
+      <span class="dark:hidden">
+        <Icon name="fa-solid:sun" class="white" />
+      </span>
+      <span class="hidden dark:inline">
+        <Icon name="fa-solid:moon" class="white" />
+      </span>
+    </button>
+  </div>
 </template>

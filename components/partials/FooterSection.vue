@@ -1,4 +1,6 @@
 <script setup>
+const switchLocalePath = useSwitchLocalePath();
+
 const props = defineProps({
   title: {
     type: String,
@@ -8,55 +10,31 @@ const props = defineProps({
     type: Object,
   },
 });
-
-const mobileToggle = ref(false);
 </script>
 
 <template>
-  <section>
-    <header>
-      <button
-        class="flex w-full items-center justify-between transition duration-150 ease-in-out hover:bg-blue-200 sm:hidden"
-        @click.prevent="mobileToggle = !mobileToggle"
-      >
-        <h4 class="text-2xl font-semibold">{{ $t(title) }}</h4>
-        <div class="sm:hidden">
-          <Icon name="fa6-solid:chevron-right" />
-        </div>
-      </button>
-      <div class="hidden sm:block">
-        <h4 class="text-2xl font-semibold">{{ $t(title) }}</h4>
+  <div>
+    <label
+      :onclick="`toggleFooter('${title}')`"
+      class="flex w-full cursor-pointer items-center justify-between"
+    >
+      <h4 class="text-2xl font-semibold">{{ $t(title) }}</h4>
+      <div class="ltr:hidden sm:hidden">
+        <Icon name="fa6-solid:chevron-left" />
       </div>
-    </header>
-    <ul :class="!mobileToggle ? 'hidden' : 'block'">
+      <div class="rtl:hidden sm:hidden">
+        <Icon name="fa6-solid:chevron-right" />
+      </div>
+    </label>
+    <ul class="hidden md:inline-block" :id="`${title}-footer`">
       <li v-for="link in links" :key="link.id">
-        <FpLink :href="link.path" v-if="!link.i18n">{{
+        <FpLink :href="link.path" v-if="!link.code">{{
           $t(link.label)
         }}</FpLink>
-        <a
-          v-if="link.i18n"
-          :href="`${
-            $config.app.baseURL.replace(new RegExp('/$'), '') + link.path
-          }`"
-        >
-          {{ link.label }}
+        <a :href="switchLocalePath(link.code)" v-if="link.code">
+          {{ link.name }}
         </a>
       </li>
     </ul>
-    <ul class="hidden sm:block">
-      <li v-for="link in links" :key="link.id">
-        <FpLink :href="link.path" v-if="!link.i18n">{{
-          $t(link.label)
-        }}</FpLink>
-        <a
-          v-if="link.i18n"
-          :href="`${
-            $config.app.baseURL.replace(new RegExp('/$'), '') + link.path
-          }`"
-        >
-          {{ link.label }}
-        </a>
-      </li>
-    </ul>
-  </section>
+  </div>
 </template>
