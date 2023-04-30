@@ -1,15 +1,5 @@
 <script setup>
-import navigation from "../../config/navigation.json";
-
-const switchLocalePath = useSwitchLocalePath();
-const { locales } = useI18n();
-const availableLocales = computed(() => {
-  return locales.value.map((i) => ({
-    label: i.name,
-    path: switchLocalePath(i.code),
-    i18n: true,
-  }));
-});
+import navigation from "../../config/navigation.js";
 </script>
 
 <template>
@@ -27,7 +17,7 @@ const availableLocales = computed(() => {
         <FooterSection
           class="md:hidden"
           title="Languages"
-          :links="availableLocales"
+          :links="navigation.languages.sections[0].links"
         />
       </div>
     </nav>

@@ -4,6 +4,7 @@ defineProps({
   current: Boolean,
   class: String,
   rel: String,
+  i18n: Boolean,
 });
 const localePath = useLocalePath();
 </script>
@@ -11,7 +12,9 @@ const localePath = useLocalePath();
 <template>
   <a
     :href="`${
-      href.includes('https')
+      i18n
+        ? href
+        : href.includes('https')
         ? href
         : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href)
     }`"
