@@ -12,11 +12,11 @@ const localePath = useLocalePath();
 <template>
   <a
     :href="`${
-      i18n
-        ? href
-        : href.includes('https')
-        ? href
-        : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href)
+      i18n // i18n switcher link
+        ? $config.app.baseURL.replace(new RegExp('/$'), '') + href
+        : href.includes('https') // external link
+        ? href 
+        : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href) // normal in-site link
     }`"
     :aria-current="current ? 'page' : undefined"
     :rel="rel"
