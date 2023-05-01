@@ -130,7 +130,7 @@ const navigation = {
             label: "Phosh (Phone Shell)",
             path: "/spins/phosh",
             icon: "fa6-solid:mobile",
-            description: "Fedora built for Pinephone and Pinephone Pro",
+            description: "Preview of Fedora for mobile devices",
           },
           {
             label: "Sway Tiling WM",
