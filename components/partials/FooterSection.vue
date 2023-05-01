@@ -19,10 +19,10 @@ const props = defineProps({
       class="flex w-full cursor-pointer items-center justify-between"
     >
       <h4 class="text-2xl font-semibold">{{ $t(title) }}</h4>
-      <div class="ltr:hidden sm:hidden">
+      <div class="ltr:hidden md:hidden">
         <Icon name="fa6-solid:chevron-left" />
       </div>
-      <div class="rtl:hidden sm:hidden">
+      <div class="rtl:hidden md:hidden">
         <Icon name="fa6-solid:chevron-right" />
       </div>
     </label>
