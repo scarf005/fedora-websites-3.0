@@ -1,5 +1,7 @@
 import locales from "./locales.json";
 
+var ask_fedora;
+
 const navigation = {
   downloads: {
     label: "Get\u00A0Fedora",
@@ -485,7 +487,7 @@ const navigation = {
           },
         ],
       },
-      {
+      (ask_fedora = {
         label: "Ask Fedora",
         description:
           "This is Fedora's main forum for all project collaboration and user support. Also, if you have encountered a problem that might be a software bug, this is a good place to triage it with other users before escalating it to Red Hat's bugzilla reporting system.",
@@ -554,7 +556,7 @@ const navigation = {
               "Use this link to focus on questions and answers about installing Fedora Linux.",
           },
         ],
-      },
+      }),
       {
         label: "Project Discussion",
         description:
@@ -676,6 +678,12 @@ const navigation = {
     icon: "bi:life-preserver",
     description: "Help!",
     sections: [
+      {
+        // This label is padded with a zero-width space to make it a unique "key".
+        label: `${ask_fedora.label}\u200B`,
+        description: ask_fedora.description,
+        links: ask_fedora.links,
+      },
       {
         label: "User Guides",
         description:
