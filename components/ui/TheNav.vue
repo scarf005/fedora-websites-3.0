@@ -92,7 +92,7 @@ const switchLocalePath = useSwitchLocalePath();
                   role="button"
                   :onclick="`selectSection('${section.label}')`"
                 >
-                  <h4 class="py-2 font-medium !leading-none md:text-xl">
+                  <h4 class="py-2 font-medium !leading-none">
                     {{ $t(section.label) }}
                   </h4>
                   <div class="md:hidden">
@@ -132,7 +132,7 @@ const switchLocalePath = useSwitchLocalePath();
                           link.code ? switchLocalePath(link.code) : link.path
                         "
                       >
-                        <h4
+                        <h5
                           :class="`${
                             link.code ? '' : 'mb-2'
                           } font-medium text-fp-blue`"
@@ -144,7 +144,7 @@ const switchLocalePath = useSwitchLocalePath();
                             class="text-fp-blue"
                           />
                           {{ link.code ? link.name : $t(link.label) }}
-                        </h4>
+                        </h5>
                         <p
                           v-if="!link.code"
                           class="hidden text-base text-gray-700 dark:text-gray-500 md:inline-block"
