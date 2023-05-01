@@ -75,9 +75,9 @@ const switchLocalePath = useSwitchLocalePath();
             class="fpCategory hidden"
             :id="category.label"
           >
-            <ul class="px-2 md:mt-[1vh] md:w-[20vw]">
+            <ul class="mt-2 px-2 md:w-[20vw]">
               <h2
-                class="px-2 text-base font-semibold uppercase text-fp-blue md:mb-[1vh] md:text-[1vw]"
+                class="hidden px-2 text-base text-[1vw] font-semibold uppercase text-fp-blue md:mb-1 md:flex"
               >
                 {{ $t(category.label) }}
               </h2>
@@ -88,17 +88,17 @@ const switchLocalePath = useSwitchLocalePath();
               >
                 <div
                   :id="`${section.label}-button`"
-                  class="fpSectionButtons flex cursor-pointer justify-between rounded-xl px-2 py-1 text-gray-700 duration-150 ease-in-out hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 md:mb-[1vh]"
+                  class="fpSectionButtons flex cursor-pointer justify-between rounded-xl px-2 py-1 text-gray-700 duration-150 ease-in-out hover:bg-gray-300 dark:text-gray-200 dark:hover:bg-gray-800 md:mb-[1vh]"
                   role="button"
                   :onclick="`selectSection('${section.label}')`"
                 >
-                  <h4 class="font-medium !leading-none md:text-[2vw]">
+                  <h4 class="py-2 font-medium !leading-none md:text-xl">
                     {{ $t(section.label) }}
                   </h4>
                   <div class="md:hidden">
                     <Icon
                       name="fa6-solid:chevron-right"
-                      :class="`mt-1 rotate-90 duration-150 ease-in-out`"
+                      :class="`rotate-90 duration-150 ease-in-out`"
                       size="16"
                     />
                   </div>
@@ -106,10 +106,10 @@ const switchLocalePath = useSwitchLocalePath();
 
                 <!-- SECTIONS (RIGHT COLUMN DESKTOP, ACCORDION MOBILE) -->
                 <section
-                  class="p-1 text-white ltr:border-l rtl:border-r dark:border-neutral-600 md:absolute md:top-0 md:mt-2 md:border-neutral-400 md:p-5 ltr:md:left-[20%] rtl:md:right-[20%] ltr:lg:left-[30%] ltr:lg:right-[10%] rtl:lg:right-[30%] rtl:lg:left-[10%]"
+                  class="p-1 pl-5 text-white md:absolute md:top-0 md:mt-2 md:border-neutral-400 md:p-5 ltr:md:left-[20%] md:ltr:border-l rtl:md:right-[20%] md:rtl:border-r md:dark:border-neutral-600 ltr:lg:left-[30%] ltr:lg:right-[10%] rtl:lg:right-[30%] rtl:lg:left-[10%]"
                 >
                   <div
-                    class="fpSection hidden h-60 overflow-scroll md:h-[50vh]"
+                    class="fpSection hidden h-60 overflow-scroll md:h-[55vh]"
                     :id="section.label"
                   >
                     <header class="mb-6 hidden md:inline-block">
@@ -132,7 +132,11 @@ const switchLocalePath = useSwitchLocalePath();
                           link.code ? switchLocalePath(link.code) : link.path
                         "
                       >
-                        <h4 class="mb-2 font-medium text-fp-blue">
+                        <h4
+                          :class="`${
+                            link.code ? '' : 'mb-2'
+                          } font-medium text-fp-blue`"
+                        >
                           <Icon
                             v-if="link.icon"
                             :name="link.icon"
@@ -142,9 +146,10 @@ const switchLocalePath = useSwitchLocalePath();
                           {{ link.code ? link.name : $t(link.label) }}
                         </h4>
                         <p
+                          v-if="!link.code"
                           class="hidden text-base text-gray-700 dark:text-gray-500 md:inline-block"
                         >
-                          {{ link.code ? "" : $t(link.description) }}
+                          {{ $t(link.description) }}
                         </p>
                       </FpLink>
                     </div>
