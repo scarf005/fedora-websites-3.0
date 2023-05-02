@@ -109,7 +109,7 @@ const switchLocalePath = useSwitchLocalePath();
                   class="p-1 pl-5 text-white md:absolute md:top-0 md:mt-2 md:border-neutral-400 md:p-5 ltr:md:left-[20%] md:ltr:border-l rtl:md:right-[20%] md:rtl:border-r md:dark:border-neutral-600 ltr:lg:left-[30%] ltr:lg:right-[10%] rtl:lg:right-[30%] rtl:lg:left-[10%]"
                 >
                   <div
-                    class="fpSection hidden h-60 overflow-scroll md:h-[55vh]"
+                    class="fpSection hidden h-60 overflow-y-auto md:h-[55vh]"
                     :id="section.label"
                   >
                     <header class="mb-6 hidden md:inline-block">
