@@ -85,7 +85,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "*": { experimentalNoScripts: true },
+    "**": { experimentalNoScripts: true },
     "/coreos/download": { experimentalNoScripts: false },
     "/start": { experimentalNoScripts: false },
   },
