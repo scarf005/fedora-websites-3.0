@@ -7,7 +7,7 @@ const data = await getCMS("start");
 useContentHead(data);
 
 // number of headlines to display
-const count_headlines = 8;
+const count_headlines = 12;
 
 // number of solved issues to display
 const count_solved = 6;
@@ -155,6 +155,8 @@ if (magazine.length > 0 && newsfeed.length > 0) {
   headlines = [];
 }
 
+const got_headlines = headlines.length == count_headlines;
+
 let solved = [];
 try {
   if (process.client) {
@@ -163,35 +165,58 @@ try {
 } catch (e) {
   console.log(e);
 }
+
+const got_solved = solved.length == count_solved;
 </script>
 
 <template>
-  <div class="min-h-screen bg-fp-gray-lightest dark:bg-neutral-900">
-    <ClientOnly>
-      <div class="mx-8 flex gap-8 py-12">
-        <div
-          v-if="solved.length == count_solved"
-          class="hidden flex-none 2xl:block 2xl:w-[22em]"
-        ></div>
-        <div class="mx-auto max-w-screen-xl flex-initial">
-          <div class="flex justify-center pb-12">
-            <form
-              class="max-h-[2em]"
-              method="get"
-              id="search"
-              action="https://duckduckgo.com/"
-            >
-              <input
-                class="w-full rounded-2xl bg-white py-2 pl-6 font-semibold leading-[2em] dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
-                type="text"
-                name="q"
-                maxlength="300"
-                placeholder="Search with DuckDuckGo"
-              />
-              <input type="submit" value="Search" style="visibility: hidden" />
-            </form>
+  <div class="bg-fp-gray-lightest dark:bg-neutral-900">
+    <div class="mx-8 flex gap-8 py-12">
+      <ClientOnly>
+        <div v-if="got_solved" class="hidden flex-none xl:block xl:w-[22em]">
+          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
+                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >{{ user_documentation.sectionTitle }}</a
+              >
+            </h2>
+            <div v-for="d in user_documentation.content" class="mb-6">
+              <div class="flex items-center">
+                <a :href="d.link.url" class="flex-none"
+                  ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
+                /></a>
+                <a
+                  :href="d.link.url"
+                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ d.link.text }}</a
+                >
+              </div>
+            </div>
           </div>
-          <div v-if="headlines.length == count_headlines">
+        </div>
+      </ClientOnly>
+      <div class="mx-auto max-w-screen-xl flex-initial">
+        <div class="flex justify-center pb-12">
+          <form
+            class="max-h-[2em]"
+            method="get"
+            id="search"
+            action="https://duckduckgo.com/"
+          >
+            <input
+              class="w-full rounded-2xl bg-white py-2 pl-6 font-semibold leading-[2em] dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
+              type="text"
+              name="q"
+              maxlength="300"
+              placeholder="Search with DuckDuckGo"
+            />
+            <input type="submit" value="Search" style="visibility: hidden" />
+          </form>
+        </div>
+        <ClientOnly>
+          <div v-if="got_headlines">
             <h2
               class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
               dir="ltr"
@@ -201,7 +226,7 @@ try {
             <div class="flex flex-wrap" dir="ltr">
               <div
                 v-for="h in headlines"
-                class="mb-4 w-full p-4 md:w-1/2 lg:w-1/4"
+                class="mb-4 w-full p-4 md:w-1/2 lg:w-1/3 2xl:w-1/4"
               >
                 <div>
                   <a :href="h.link">
@@ -221,13 +246,96 @@ try {
               </div>
             </div>
           </div>
-          <FpPublicationSection
-            class="bg-fp-gray-lightest dark:bg-neutral-900"
-          />
-        </div>
+          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
+                :href="`${discourse_uri}/search?${solved_query}`"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >{{ "Latest Solved Issues" }}</a
+              >
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div v-for="s in solved">
+                <div class="flex items-center">
+                  <a :href="s.link" class="flex-none"
+                    ><img
+                      :src="s.avatar"
+                      class="h-12 w-12 rounded object-cover"
+                  /></a>
+                  <a
+                    :href="s.link"
+                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                    >{{ s.title }}</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="whitespace-no-wrap text-right">
+              <span class="text-base/4text-gray-400 font-semibold"
+                >From
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
+                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >{{ user_documentation.sectionTitle }}</a
+              >
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div v-for="d in user_documentation.content">
+                <div class="flex items-center">
+                  <a :href="d.link.url" class="flex-none"
+                    ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
+                  /></a>
+                  <a
+                    :href="d.link.url"
+                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                    >{{ d.link.text }}</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <template #fallback>
+            <div class="rounded-2xl bg-white p-6 dark:bg-gray-700">
+              <h2 class="mb-8 text-2xl leading-none">
+                <a
+                  href="https://docs.fedoraproject.org/en-US/fedora/latest/"
+                  class="text-2xl font-semibold leading-none text-fp-newblue"
+                  >{{ user_documentation.sectionTitle }}</a
+                >
+              </h2>
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div v-for="d in user_documentation.content">
+                  <div class="flex items-center">
+                    <a :href="d.link.url" class="flex-none"
+                      ><Icon
+                        name="fa6-solid:book"
+                        size="48"
+                        class="text-fp-blue"
+                    /></a>
+                    <a
+                      :href="d.link.url"
+                      class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                      >{{ d.link.text }}</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </ClientOnly>
+      </div>
+      <ClientOnly>
         <div
-          v-if="solved.length == count_solved"
-          class="hidden flex-none 2xl:block 2xl:w-[22em]"
+          v-if="got_solved"
+          class="hidden flex-none xl:block xl:w-[22em]"
           dir="ltr"
         >
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
@@ -259,33 +367,13 @@ try {
               >
             </div>
           </div>
-          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ user_documentation.sectionTitle }}</a
-              >
-            </h2>
-            <div v-for="d in user_documentation.content" class="mb-6">
-              <div class="flex items-center">
-                <a :href="d.link.url" class="flex-none"
-                  ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
-                /></a>
-                <a
-                  :href="d.link.url"
-                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ d.link.text }}</a
-                >
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </ClientOnly>
+      </ClientOnly>
+    </div>
   </div>
 
-  <!-- communication channels -->
+  <FpPublicationSection class="bg-fp-gray-lightest dark:bg-neutral-900" />
+
   <FpCommunicationSection
     color="magenta"
     :sectionTitle="comm_channels.sectionTitle"
