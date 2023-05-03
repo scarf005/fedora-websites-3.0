@@ -98,6 +98,7 @@ export default defineNuxtConfig({
     // "/security/**": { experimentalNoScripts: true },
     // "/sponsors/**": { experimentalNoScripts: true },
     "/coreos/download": { experimentalNoScripts: false },
+    "/coreos/release-notes/": { experimentalNoScripts: false },
     "/start": { experimentalNoScripts: false },
   },
 });
