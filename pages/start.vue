@@ -173,7 +173,7 @@ const got_solved = solved.length == count_solved;
   <div class="bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-12">
       <ClientOnly>
-        <div v-if="got_solved" class="hidden flex-none xl:block xl:w-[22em]">
+        <div class="hidden flex-none xl:block xl:w-[22em]">
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -333,11 +333,7 @@ const got_solved = solved.length == count_solved;
         </ClientOnly>
       </div>
       <ClientOnly>
-        <div
-          v-if="got_solved"
-          class="hidden flex-none xl:block xl:w-[22em]"
-          dir="ltr"
-        >
+        <div class="hidden flex-none xl:block xl:w-[22em]" dir="ltr">
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
