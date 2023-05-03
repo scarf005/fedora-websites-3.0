@@ -26,7 +26,7 @@ async function switchStream(stream) {
   // Fetch build list & release notes if not yet cached
   if (!buildsList.value[stream]) {
     try {
-      const buildUrl = `${baseProdUrl}/prod/streams/${stream}/builds/builds.json`;
+      const buildUrl = `${baseProdUrl}/prod/streams/${stream}/releases.json`;
       const buildsrq = await $fetch(buildUrl, {
         key: "buildsrq",
         server: false,
@@ -39,7 +39,12 @@ async function switchStream(stream) {
         watch: false,
       });
       buildsList.value[stream] = {
-        builds: buildsrq.builds,
+        builds: buildsrq.releases
+          .map((release) => ({
+            id: release.version,
+            arches: release.commits.map((arch) => arch.architecture),
+          }))
+          .reverse(),
         releases: notesrq.releases,
       };
     } catch (e) {
@@ -248,13 +253,7 @@ useContentHead(data);
       >
         <template v-if="buildsList[selectedStream]?.builds">
           <template v-for="build in buildsList[selectedStream]?.builds">
-            <div
-              v-if="
-                build.arches.includes(selectedArch) &&
-                buildsList[selectedStream]?.releases[build.id]
-              "
-              class="py-8"
-            >
+            <div v-if="build.arches.includes(selectedArch)" class="py-8">
               <FpObserver @intersect="loadBuild(build.id)" />
               <h3
                 class="pb-3 text-center text-fp-blue dark:text-fp-newblue sm:text-start"
@@ -295,6 +294,14 @@ useContentHead(data);
                   <div
                     v-if="
                       buildsList[selectedStream]?.releases[build.id]?.issues
+                        .length === 0
+                    "
+                  >
+                    No specific issues fixed in this release.
+                  </div>
+                  <div
+                    v-else-if="
+                      buildsList[selectedStream]?.releases[build.id]?.issues
                         .length
                     "
                   >
@@ -316,7 +323,7 @@ useContentHead(data);
                     </ul>
                   </div>
                   <div v-else class="font-bold">
-                    No specific issues fixed in this release.
+                    Release notes for this release are still pending review.
                   </div>
                 </div>
                 <div class="flex flex-wrap items-baseline gap-x-4">
