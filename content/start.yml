@@ -19,7 +19,7 @@ sections:
           text: Fedora IoT
           url: https://docs.fedoraproject.org/en-US/iot/
       - link:
-          text: Emerging Fedora Desktops
+          text: Immutable Desktops
           url: https://docs.fedoraproject.org/en-US/emerging/
   - sectionTitle: Communication channels
     content:
