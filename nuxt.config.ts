@@ -26,9 +26,9 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: locales,
-    lazy: {
-      skipNuxtState: true,
-    },
+    // lazy: {
+    //   skipNuxtState: true,
+    // },
     langDir: "./locales/",
     strategy: "prefix_and_default",
     defaultLocale: "en",
@@ -86,6 +86,18 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/**": { experimentalNoScripts: true },
+    // "/cloud/**": { experimentalNoScripts: true },
+    // "/coreos/**": { experimentalNoScripts: true },
+    // "/everything/**": { experimentalNoScripts: true },
+    // "/iot/**": { experimentalNoScripts: true },
+    // "/sericea/**": { experimentalNoScripts: true },
+    // "/server/**": { experimentalNoScripts: true },
+    // "/spins/**": { experimentalNoScripts: true },
+    // "/workstation/**": { experimentalNoScripts: true },
+    // "/flocktofedora/**": { experimentalNoScripts: true },
+    // "/**": { experimentalNoScripts: true },
+    // "/security/**": { experimentalNoScripts: true },
+    // "/sponsors/**": { experimentalNoScripts: true },
     "/coreos/download": { experimentalNoScripts: false },
     "/start": { experimentalNoScripts: false },
   },
