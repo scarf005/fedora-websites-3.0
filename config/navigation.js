@@ -43,8 +43,7 @@ const navigation = {
             label: "Cloud",
             path: "/cloud",
             icon: "fa6-solid:cloud",
-            description:
-              "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
+            description: "Images optimized to run on cloud infrastructures.",
           },
         ],
       },
