@@ -95,7 +95,6 @@ export default defineNuxtConfig({
     // "/spins/**": { experimentalNoScripts: true },
     // "/workstation/**": { experimentalNoScripts: true },
     // "/flocktofedora/**": { experimentalNoScripts: true },
-    // "/**": { experimentalNoScripts: true },
     // "/security/**": { experimentalNoScripts: true },
     // "/sponsors/**": { experimentalNoScripts: true },
     "/coreos/download": { experimentalNoScripts: false },
