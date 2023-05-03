@@ -26,9 +26,9 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: locales,
-    // lazy: {
-    //   skipNuxtState: true,
-    // },
+    lazy: {
+      skipNuxtState: true,
+    },
     langDir: "./locales/",
     strategy: "prefix_and_default",
     defaultLocale: "en",
@@ -85,7 +85,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "/**": { experimentalNoScripts: true },
+    // "/**": { experimentalNoScripts: true },
     // "/cloud/**": { experimentalNoScripts: true },
     // "/coreos/**": { experimentalNoScripts: true },
     // "/everything/**": { experimentalNoScripts: true },
