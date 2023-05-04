@@ -228,5 +228,22 @@
     "Fedora Developer": "Fedora 開発者",
     "Fedora Council": "Fedora Council",
     "Fedora Accounts": "Fedora アカウント",
-    "its_your_Workstation.": "ワークステーション。"
+    "its_your_Workstation.": "ワークステーション。",
+    "Thanks to a global community of translators, Workstation is available in many languages.": "グローバルな翻訳者のコミュニティのおかげで、Fedora Workstation はたくさんの言語で利用可能です。",
+    "Reliable": "堅牢",
+    "Helpful out of the box": "すぐに使える",
+    "Turn the lights down low": "光を少なく抑える",
+    "Trusted": "信頼性",
+    "Use performance mode to boost hardware speed when you need it. Turn off notifications with Do Not Disturb. Press the Super key and just type to search for what you need.": "パフォーマンスモードを使えば、必要な時にハードウェアのスピードをブーストします。「通知ポップアップを表示しない」の設定で通知をオフにできます。Super キーを押すだけで必要なものを検索できます。",
+    "User Guides": "ユーザーガイド",
+    "Up-to-date": "最新",
+    "Users and developers are available in the #fedora channel on Fedora Chat.": "ユーザーと開発者が Fedora Chat の #fedora チャンネルにいます。",
+    "View more articles on [Fedora Magazine](https://fedoramagazine.org/)": "[Fedora Magazine](https://fedoramagazine.org/) でもっと記事をみる",
+    "Want more Fedora options?": "もっと、他の Fedora が欲しい？",
+    "Support Resources": "サポートリソース",
+    "Next upcoming event": "近いうちに開かれるイベント",
+    "Mission Statement": "ミッションステートメント",
+    "License Details": "ライセンスの詳細",
+    "License": "ライセンス",
+    "its_your_Community.": "コミュニティ。"
 }
