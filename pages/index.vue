@@ -16,7 +16,11 @@ const supportCardIcon = (cardTitle) => {
 const data = await getCMS("index");
 useContentHead(data);
 const release_data = await getCMS("release");
-const announce = await mdparser(data._value.sections[0].sectionTitle);
+
+const announcement = data._value.sections[0];
+const announcement_text = await mdparser(announcement.sectionTitle);
+const next_upcoming_event = data._value.sections[1];
+const digital_public_good = data._value.sections[2].content[0];
 
 useHead({
   title: "Fedora Linux",
@@ -56,40 +60,45 @@ useHead({
       </section>
       <!-- pop out announcements -->
       <aside
-        v-if="data.sections[0].sectionDescription === 'active'"
+        v-if="announcement.sectionDescription === 'active'"
         class="order-first mb-8 flex items-center self-end rounded-l-md bg-fp-blue p-4 lg:w-1/4"
       >
-        <ContentRendererMarkdown class="markdown" :value="announce" />
+        <ContentRendererMarkdown class="markdown" :value="announcement_text" />
       </aside>
 
       <!-- hero bottom content-->
       <section
         class="align-end mx-auto mb-2 flex w-full max-w-screen-2xl justify-between px-8 lg:mb-4 xl:px-20"
       >
+        <!-- Next Upcoming Event -->
         <div
           class="flex w-48 flex-col justify-center sm:justify-start md:max-w-sm lg:w-auto"
         >
           <FpLink
-            :href="data.sections[1].url"
+            :href="next_upcoming_event.url"
             class="transition duration-150 ease-in hover:text-fp-gray-lighter"
-            v-if="data.sections[1].sectionDescription"
+            v-if="next_upcoming_event.sectionDescription"
           >
             <h3
               class="text-base font-semibold uppercase sm:mt-6 md:text-xl lg:mt-8 xl:text-2xl 2xl:mb-2"
             >
-              {{ $t(data.sections[1].sectionTitle) }}
+              {{ $t(next_upcoming_event.sectionTitle) }}
             </h3>
             <p class="max-w-sm text-sm sm:text-base lg:text-xl">
-              {{ $t(data.sections[1].sectionDescription) }} &gt;
+              {{ $t(next_upcoming_event.sectionDescription) }} &gt;
             </p>
           </FpLink>
         </div>
-        <div class="flex items-center gap-4">
-          <h3 class="hidden w-56 text-right text-xl md:block">
-            {{ $t(data.sections[2].sectionTitle) }}
-          </h3>
-          <FpImage :src="data.header_images[0].image" class="w-28" />
-        </div>
+
+        <!-- Digital Public Good Logo -->
+        <FpLink :href="digital_public_good.url">
+          <div class="flex items-center gap-4">
+            <h3 class="hidden w-56 text-right text-xl md:block">
+              {{ $t(digital_public_good.title) }}
+            </h3>
+            <FpImage :src="digital_public_good.image" class="w-28" />
+          </div>
+        </FpLink>
       </section>
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -6,8 +6,6 @@ image:
   alt: Fedora Index Image
   width: 400
   height: 300
-header_images:
-  - image: public/assets/images/digital-public-goods.svg
 links:
   - text: Release Notes
 sections:
@@ -16,8 +14,11 @@ sections:
   - sectionTitle: Next upcoming event
     sectionDescription: ""
     url: ""
-  - sectionTitle: A Registered Digital Public Good
-    image: public/assets/images/digital-public-goods.svg
+  - sectionTitle: Digital Public Good Logo
+    content:
+      - title: A Registered Digital Public Good
+        url: https://digitalpublicgoods.net/
+        image: public/assets/images/digital-public-goods.svg
   - sectionTitle: Editions
     content:
       - title: The leading Linux desktop
