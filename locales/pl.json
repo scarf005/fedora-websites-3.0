@@ -33,7 +33,7 @@
     "For IBM s390x zSystems": "Dla systemów IBM s390x zSystems",
     "For Power ppc64le systems": "Dla systemów Power ppc64le",
     "For ARM® aarch64 systems": "Dla systemów ARM® aarch64",
-    "For Intel and AMD x86_64 systems": "Dla systemów Intel and AMD x86_64",
+    "For Intel and AMD x86_64 systems": "Dla systemów x86_64 (Intel oraz AMD)",
     "Help us with testing!": "Pomóż nam testować!",
     "Obsolete GPG keys": "Przestarzałe klucze GPG",
     "Current GPG keys": "Aktualne klucze GPG",
