@@ -7,10 +7,14 @@ const data = await getCMS("start");
 useContentHead(data);
 
 // number of headlines to display
-const count_headlines = 12;
+const count_headlines = 9;
+const count_headlines_narrow = 6;
 
 // number of solved issues to display
-const count_solved = 6;
+const count_solved = 4;
+
+// number of commblog posts to display
+const count_commblog = 4;
 
 // user documentation
 const user_documentation = data._value.sections[0];
@@ -39,6 +43,35 @@ const fm_headlines = async () => {
       }),
       title: decode(index[i].title),
       link: `${magazine_uri}/${index[i].slug}`,
+    });
+
+    i++;
+  }
+
+  return headlines;
+};
+
+const commblog_uri = "https://communityblog.fedoraproject.org";
+const commblog_api = "wp-json/fedora-ssr-endpoint";
+
+const cb_headlines = async () => {
+  let index = await $fetch(`${commblog_uri}/${commblog_api}/v1/index/1`);
+
+  let i = 0;
+  let headlines = [];
+  while (i < count_commblog) {
+    let date = new Date(index[i].date);
+
+    headlines.push({
+      timestamp: date,
+      thumbnail: index[i].feature,
+      date: date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
+      title: decode(index[i].title),
+      link: `${commblog_uri}/${index[i].slug}`,
     });
 
     i++;
@@ -129,6 +162,17 @@ try {
 } catch (e) {
   console.log(e);
 }
+
+let commblog = [];
+try {
+  if (process.client) {
+    commblog = await cb_headlines();
+  }
+} catch (e) {
+  console.log(e);
+}
+
+const got_commblog = commblog.length == count_commblog;
 
 let newsfeed = [];
 try {
@@ -243,7 +287,7 @@ const width_2xl = 1536;
             <div class="flex flex-wrap" dir="ltr">
               <div
                 v-for="h in width < width_2xl
-                  ? headlines.slice(0, count_headlines / 2)
+                  ? headlines.slice(0, count_headlines_narrow)
                   : headlines"
                 class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
               >
@@ -273,7 +317,7 @@ const width_2xl = 1536;
                 >{{ "Latest Solved Issues" }}</a
               >
             </h2>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div v-for="s in solved">
                 <div class="flex items-center">
                   <a :href="s.link" class="flex-none"
@@ -298,6 +342,35 @@ const width_2xl = 1536;
               >
             </div>
           </div>
+          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+            <h2 class="text-2xl leading-none">
+              <a
+                href="https://communityblog.fedoraproject.org/"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >Fedora Community Blog</a
+              >
+              <p class="mb-6 font-semibold text-fp-newblue">
+                (news for project contributors)
+              </p>
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div v-for="p in commblog" class="mb-6">
+                <div class="ml-2 flex items-center">
+                  <a :href="p.link" class="flex-none p-2"
+                    ><Icon
+                      name="fa6-solid:feather-pointed"
+                      size="32"
+                      class="text-fp-blue"
+                  /></a>
+                  <a
+                    :href="p.link"
+                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                    >{{ p.title }}</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -306,7 +379,7 @@ const width_2xl = 1536;
                 >{{ user_documentation.sectionTitle }}</a
               >
             </h2>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div v-for="d in user_documentation.content">
                 <div class="flex items-center">
                   <a :href="d.link.url" class="flex-none"
@@ -321,6 +394,7 @@ const width_2xl = 1536;
               </div>
             </div>
           </div>
+          <!-- the fallback template is shown when the client has javascript disabled -->
           <template #fallback>
             <div class="rounded-2xl bg-white p-6 dark:bg-gray-700">
               <h2 class="mb-8 text-2xl leading-none">
@@ -380,6 +454,33 @@ const width_2xl = 1536;
                   >ask​.​fedoraproject​.​org</a
                 ></span
               >
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
+            <h2 class="text-2xl leading-none">
+              <a
+                href="https://communityblog.fedoraproject.org/"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >Fedora Community Blog</a
+              >
+              <p class="mb-6 font-semibold text-fp-newblue">
+                (news for project contributors)
+              </p>
+            </h2>
+            <div v-for="p in commblog" class="mb-6">
+              <div class="ml-2 flex items-center">
+                <a :href="p.link" class="flex-none p-2"
+                  ><Icon
+                    name="fa6-solid:feather-pointed"
+                    size="32"
+                    class="text-fp-blue"
+                /></a>
+                <a
+                  :href="p.link"
+                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ p.title }}</a
+                >
+              </div>
             </div>
           </div>
         </div>
