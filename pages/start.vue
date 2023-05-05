@@ -167,13 +167,33 @@ try {
 }
 
 const got_solved = solved.length == count_solved;
+
+// https://stackoverflow.com/a/71210364 (CC BY-SA 4.0)
+const get_width = () => {
+  let width = ref(window.innerWidth);
+
+  const onWidthChange = () => (width.value = window.innerWidth);
+
+  onMounted(() => window.addEventListener("resize", onWidthChange));
+  onUnmounted(() => window.removeEventListener("resize", onWidthChange));
+
+  return computed(() => width.value);
+};
+
+let width = 0;
+if (process.client) {
+  width = get_width();
+}
+
+// https://tailwindcss.com/docs/responsive-design
+const width_2xl = 1536;
 </script>
 
 <template>
   <div class="bg-fp-gray-lightest dark:bg-neutral-900">
-    <div class="mx-8 flex gap-8 py-12">
+    <div class="mx-8 flex gap-8 py-8">
       <ClientOnly>
-        <div class="hidden flex-none xl:block xl:w-[22em]">
+        <div class="hidden w-[22em] flex-none xl:block">
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -217,16 +237,15 @@ const got_solved = solved.length == count_solved;
         </div>
         <ClientOnly>
           <div v-if="got_headlines">
-            <h2
-              class="mb-2 px-4 text-2xl font-semibold leading-none text-gray-600 dark:text-gray-400"
-              dir="ltr"
-            >
+            <h2 class="mb-2 px-4 text-2xl font-semibold leading-none" dir="ltr">
               {{ "Latest news and publications from the Fedora Project:" }}
             </h2>
             <div class="flex flex-wrap" dir="ltr">
               <div
-                v-for="h in headlines"
-                class="mb-4 w-full p-4 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+                v-for="h in width < width_2xl
+                  ? headlines.slice(0, count_headlines / 2)
+                  : headlines"
+                class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
               >
                 <div>
                   <a :href="h.link">
@@ -333,7 +352,7 @@ const got_solved = solved.length == count_solved;
         </ClientOnly>
       </div>
       <ClientOnly>
-        <div class="hidden flex-none xl:block xl:w-[22em]" dir="ltr">
+        <div class="hidden w-[22em] flex-none xl:block" dir="ltr">
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
