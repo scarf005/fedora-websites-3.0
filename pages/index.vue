@@ -40,7 +40,7 @@ useHead({
           <h1
             class="mx-auto mb-4 text-4xl font-semibold md:text-5xl lg:mb-8 xl:text-6xl"
           >
-            {{ $t("It's your Operating System") }}
+            {{ $t("It's your Operating System.") }}
           </h1>
           <p class="mx-auto mb-2 w-4/6 lg:mb-6 lg:text-3xl">
             {{ $t(data.description) }}
