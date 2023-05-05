@@ -14,7 +14,7 @@
   - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
-- Static rendering: Templates are written in Vue, but most of the site is compiled down to simple HTML at build time on the CI similar to static sites made with Jekyll or Hugo frameworks (with a few exceptions being rendered on the client using the full Vue client-side feature set listed in `nuxt.config.js` like the CoreOS downloads page, etc.).
+- Static rendering: Templates are written in Vue, but most of the site is compiled down to simple HTML at build time on the CI similar to static sites made with Jekyll or Hugo frameworks (with a few exceptions being rendered on the client using the full Vue client-side feature set listed in `nuxt.config.ts` like the CoreOS downloads page, etc.).
 
 ## Translations / i18n
 
