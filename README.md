@@ -8,19 +8,21 @@
 - To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository.
   - Ask an admin for write access on discussion.fedoraproject.org.
   - This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
-- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/).
-
-  - Every change made there will generate a merge request into the /locales folder of this project, and once that's accepted the site will be rebuilt with the changes automatically.
-  - The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English.
-  - To add a new language, please add it to the file locales.json
-
 - To add a new page or a new component, clone this repository, change into the folder, and run:
 
   - `npm install`: to install the project dependencies
   - [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to run a live development server on localhost:3000
   - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
 
-- Static rendering: Templates are written in Vue, but most of the site is compiled down to simple HTML at build time on the CI - similar to static sites made with Jekyll or Hugo frameworks (this is signaled by the components being named [foo.server.vue](https://nuxt.com/docs/guide/directory-structure/components#server-components)). There are some exceptions where full Vue components are requried, like the navbar (where it was simpler to use Vue state) or the CoreOS downloads component (which pulls up-to-the-minute builds from CoreOS pipeline). These are named foo.vue, and are rendered on the client.
+- Static rendering: Templates are written in Vue, but most of the site is compiled down to simple HTML at build time on the CI similar to static sites made with Jekyll or Hugo frameworks (with a few exceptions being rendered on the client using the full Vue client-side feature set listed in `nuxt.config.js` like the CoreOS downloads page, etc.).
+
+## Translations / i18n
+
+- To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/).
+- If an (English) string is changed in the project, please add it to the .json in locales.build.d, and run locales/build.d/merge.py and push to develop to add it to Weblate.
+- If it is updated in Weblate, changes made there will update the /locales folder of this project, and site will be rebuilt with the changes automatically.
+- The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English.
+- To add a new language to the navbar/footer, please add it to the file locales.json
 
 ## Bug reporting
 
