@@ -19,10 +19,8 @@
 ## Translations / i18n
 
 - To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/).
-- If an (English) string is changed in the project, please add it to the .json in locales.build.d, and run locales/build.d/merge.py and push to develop to add it to Weblate.
-- If it is updated in Weblate, changes made there will update the /locales folder of this project, and site will be rebuilt with the changes automatically.
-- The translated locale/foo.json files are pulled in with the [nuxt-i18n](https://www.npmjs.com/package/@nuxtjs/i18n) package, fallback is English.
-- To add a new language to the navbar/footer, please add it to the file locales.json
+- For more information on nuxt-i18n, and how to add new strings to the project, please see (and update!) the [translatsion readme](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/blob/develop/locales.build.d/README.md) 
+- To add a new language to the navbar/footer, please add it to the file `locales/locales.json`.
 
 ## Bug reporting
 
