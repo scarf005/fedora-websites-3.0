@@ -650,5 +650,7 @@
     "The **Fedora Server** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Server users and contributors.": "Tag **Fedora Server** na forum dyskusyjnym Fedory to świetne miejsce do łączenia się z innymi użytkownikami i współtwórcami Fedora Server.",
     "Server Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera.chat.": "Spotkania grupy roboczej Server są otwarte dla wszystkich obecnych i potencjalnych współpracowników w środy o godzinie 11:00 czasu wschodniego w fedora-meeting{'@'}irc.libera.chat.",
     "Join a community of users and contributors focused on Fedora Server.": "Dołącz do społeczności użytkowników i współpracowników skupionych na Fedora Server.",
-    "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree to hybrydowy system obrazów/pakietów. Łączy libostree i libdnf, aby zapewnić atomowe i bezpieczne aktualizacje z lokalnymi warstwami pakietów RPM."
+    "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree to hybrydowy system obrazów/pakietów. Łączy libostree i libdnf, aby zapewnić atomowe i bezpieczne aktualizacje z lokalnymi warstwami pakietów RPM.",
+    "Images optimized to run on cloud infrastructures.": "Obrazy zoptymalizowane do działania w infrastrukturach chmurowych.",
+    "It's your Operating System.": "To twój System Operacyjny."
 }
