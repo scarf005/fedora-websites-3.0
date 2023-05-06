@@ -245,5 +245,22 @@
     "Mission Statement": "ミッションステートメント",
     "License Details": "ライセンスの詳細",
     "License": "ライセンス",
-    "its_your_Community.": "コミュニティ。"
+    "its_your_Community.": "コミュニティ。",
+    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering uses sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie スピンは、ユーザーの邪魔をしないように設計され、豪華な機能を備えた、モダンなデスクトップである、Budige デスクトップを提供します。",
+    "Simple interface. Powerful music management. Playlists. Streaming Radio. Podcasts.": "シンプルなインターフェイス。パワフルな音楽の管理。プレイリストも。ラジオも。ポットキャストも。",
+    "Screenshot of Fedora Budgie desktop": "Fedora Budgie デスクトップのスクリーンショット",
+    "Office & Productivity": "オフィスと生産性",
+    "Multimedia": "マルチメディア",
+    "Mozilla Thunderbird is a standalone Matrix, mail and newsgroup client. Organize your schedule with the included Lightning calendar application.": "Mozilla Thunderbird は、Matrix、メールやニュースグループのスタンドアロンなクライアントです。Lightning カレンダーを使ってスケジュールを管理できます。",
+    "LibreOffice is an integrated office suite. It utilizes free and open standards for its document formats and components.": "LibreOffice は、統合感のあるオフィススイートです。自由・オープンなスタンダードドキュメントフォーマットとコンポーネントを利用します。",
+    "Going Online": "オンライン",
+    "Fedora Budgie Spin ships Gnome Terminal, the gateway to the real power of any UNIX/Linux machine.": "Fedora Budige スピンには、GNOME 端末が入っており、これは、UNIX/Linux マシンの真の力を使うための「入り口」です。",
+    "Fedora Budgie Image": "Fedora Budgie イメージ",
+    "Eye of MATE is meant to be a fast and functional image viewer.": "Eye of MATE は、高速で多機能なイメージビューアーです。",
+    "Explore the World Wide Web with Firefox, the full featured web browser.": "ワールドワイドウェブを、完全な機能を備えたウェブブラウザ Firefox と共に探索しましょう。",
+    "Budgie Desktop Settings provide a wide range of capabilities for personalization, from Raven and panel management to theming.": "Budgie デスクトップの設定は、広範囲にわたり、Raven やパネル管理のカスタマイズ機能を提供します。",
+    "Atril is a simple multi-page document viewer. It can display and print PostScript, DVI, XPS and Portable Document Format files.": "Atril は、シンプルな複数のページに対応する、ドキュメントビューアーです。PostScript、DVI、XPS、PDF（ポータブルドキュメントフォーマット）ファイルの表示と印刷ができます。",
+    "Watch the latest reviews ➔": "最新レビューを観る ➔",
+    "Get Started": "始めましょう",
+    "It's your Operating System.": "コレがあなたのオペレーティングシステム。"
 }
