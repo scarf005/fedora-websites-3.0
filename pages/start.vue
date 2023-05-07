@@ -3,6 +3,8 @@
 <script setup>
 import { decode } from "html-entities";
 
+const { t } = useI18n();
+
 const data = await getCMS("start");
 useContentHead(data);
 
@@ -243,7 +245,7 @@ const width_2xl = 1536;
               <a
                 href="https://docs.fedoraproject.org/en-US/fedora/latest/"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ user_documentation.sectionTitle }}</a
+                >{{ $t(user_documentation.sectionTitle) }}</a
               >
             </h2>
             <div v-for="d in user_documentation.content" class="mb-6">
@@ -253,7 +255,7 @@ const width_2xl = 1536;
                 /></a>
                 <a
                   :href="d.link.url"
-                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
                   >{{ d.link.text }}</a
                 >
               </div>
@@ -270,19 +272,19 @@ const width_2xl = 1536;
             action="https://duckduckgo.com/"
           >
             <input
-              class="w-full rounded-2xl bg-white py-2 pl-6 font-semibold leading-[2em] dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
+              class="w-full rounded-2xl bg-white py-2 font-semibold leading-[2em] ltr:pl-6 rtl:pr-6 dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
               type="text"
               name="q"
               maxlength="300"
-              placeholder="Search with DuckDuckGo"
+              :placeholder="t('Search with DuckDuckGo')"
             />
             <input type="submit" value="Search" style="visibility: hidden" />
           </form>
         </div>
         <ClientOnly>
           <div v-if="got_headlines">
-            <h2 class="mb-2 px-4 text-2xl font-semibold leading-none" dir="ltr">
-              {{ "Latest news and publications from the Fedora Project:" }}
+            <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
+              {{ $t("Latest news and publications from the Fedora Project") }}:
             </h2>
             <div class="flex flex-wrap" dir="ltr">
               <div
@@ -314,7 +316,7 @@ const width_2xl = 1536;
               <a
                 :href="`${discourse_uri}/search?${solved_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ "Latest Solved Issues" }}</a
+                >{{ $t("Latest Solved Issues") }}</a
               >
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -327,7 +329,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="s.link"
-                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
                     >{{ s.title }}</a
                   >
                 </div>
@@ -335,14 +337,17 @@ const width_2xl = 1536;
             </div>
             <div class="whitespace-no-wrap text-right">
               <span class="text-base/4text-gray-400 font-semibold"
-                >From
+                >{{ $t("From") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
               >
             </div>
           </div>
-          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+          <div
+            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+            dir="ltr"
+          >
             <h2 class="text-2xl leading-none">
               <a
                 href="https://communityblog.fedoraproject.org/"
@@ -350,12 +355,12 @@ const width_2xl = 1536;
                 >Fedora Community Blog</a
               >
               <p class="mb-6 font-semibold text-fp-newblue">
-                (news for project contributors)
+                ({{ $t("news for project contributors") }})
               </p>
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div v-for="p in commblog" class="mb-6">
-                <div class="ml-2 flex items-center">
+                <div class="flex items-center ltr:ml-2 rtl:mr-2">
                   <a :href="p.link" class="flex-none p-2"
                     ><Icon
                       name="fa6-solid:feather-pointed"
@@ -364,7 +369,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="p.link"
-                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
                     >{{ p.title }}</a
                   >
                 </div>
@@ -376,7 +381,7 @@ const width_2xl = 1536;
               <a
                 href="https://docs.fedoraproject.org/en-US/fedora/latest/"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ user_documentation.sectionTitle }}</a
+                >{{ $t(user_documentation.sectionTitle) }}</a
               >
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -387,7 +392,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="d.link.url"
-                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
                     >{{ d.link.text }}</a
                   >
                 </div>
@@ -401,7 +406,7 @@ const width_2xl = 1536;
                 <a
                   href="https://docs.fedoraproject.org/en-US/fedora/latest/"
                   class="text-2xl font-semibold leading-none text-fp-newblue"
-                  >{{ user_documentation.sectionTitle }}</a
+                  >{{ $t(user_documentation.sectionTitle) }}</a
                 >
               </h2>
               <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -415,7 +420,7 @@ const width_2xl = 1536;
                     /></a>
                     <a
                       :href="d.link.url"
-                      class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                      class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
                       >{{ d.link.text }}</a
                     >
                   </div>
@@ -426,13 +431,13 @@ const width_2xl = 1536;
         </ClientOnly>
       </div>
       <ClientOnly>
-        <div class="hidden w-[22em] flex-none xl:block" dir="ltr">
+        <div class="hidden w-[22em] flex-none xl:block">
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 :href="`${discourse_uri}/search?${solved_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ "Latest Solved Issues" }}</a
+                >{{ $t("Latest Solved Issues") }}</a
               >
             </h2>
             <div v-for="s in solved" class="mb-6">
@@ -442,21 +447,21 @@ const width_2xl = 1536;
                 /></a>
                 <a
                   :href="s.link"
-                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
                   >{{ s.title }}</a
                 >
               </div>
             </div>
             <div class="whitespace-no-wrap text-right">
               <span class="text-base/4text-gray-400 font-semibold"
-                >From
+                >{{ $t("From") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
               >
             </div>
           </div>
-          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
+          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
             <h2 class="text-2xl leading-none">
               <a
                 href="https://communityblog.fedoraproject.org/"
@@ -464,11 +469,11 @@ const width_2xl = 1536;
                 >Fedora Community Blog</a
               >
               <p class="mb-6 font-semibold text-fp-newblue">
-                (news for project contributors)
+                ({{ $t("news for project contributors") }})
               </p>
             </h2>
             <div v-for="p in commblog" class="mb-6">
-              <div class="ml-2 flex items-center">
+              <div class="flex items-center ltr:ml-2 rtl:mr-2">
                 <a :href="p.link" class="flex-none p-2"
                   ><Icon
                     name="fa6-solid:feather-pointed"
@@ -477,7 +482,7 @@ const width_2xl = 1536;
                 /></a>
                 <a
                   :href="p.link"
-                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
                   >{{ p.title }}</a
                 >
               </div>
