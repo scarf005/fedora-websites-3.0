@@ -237,7 +237,7 @@ const width_2xl = 1536;
   <div class="bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-8">
       <ClientOnly>
-        <div class="hidden w-[22em] flex-none xl:block">
+        <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block">
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -426,7 +426,7 @@ const width_2xl = 1536;
         </ClientOnly>
       </div>
       <ClientOnly>
-        <div class="hidden w-[22em] flex-none xl:block" dir="ltr">
+        <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block" dir="ltr">
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
