@@ -86,7 +86,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "**": { experimentalNoScripts: true }, // no matter how deeply nested, render all pages statically
-    "/**/download/": { experimentalNoScripts: false }, // except the download pages, where we need JS (coreOS images, or just GPG modal)
+    "**/**/download/": { experimentalNoScripts: false }, // except the download pages, where we need JS (coreOS images, or just GPG modal)
     "/coreos/release-notes/": { experimentalNoScripts: false }, // except release notes
     "/start": { experimentalNoScripts: false }, // except start pages
   },
