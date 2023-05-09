@@ -181,7 +181,7 @@
     "Flexible": "Elastyczny",
     "Fedora CoreOS Image": "Obraz Fedora CoreOS",
     "A minimal OS with automatic updates. Scalable and secure.": "Minimalny system operacyjny z automatycznymi aktualizacjami. Skalowalny i bezpieczny.",
-    "Testing": "",
+    "Testing": "Testowanie",
     "Streams": "Strumienie",
     "Pick your architecture": "Wybierz swoją architekturę",
     "Fedora CoreOS is available across 3 different release streams": "Fedora CoreOS jest dostępny w 3 różnych strumieniach",
@@ -643,5 +643,8 @@
     "Join a community of users and contributors focused on Fedora Server.": "Dołącz do społeczności użytkowników i współpracowników skupionych na Fedora Server.",
     "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree to hybrydowy system obrazów/pakietów. Łączy libostree i libdnf, aby zapewnić atomowe i bezpieczne aktualizacje z lokalnymi warstwami pakietów RPM.",
     "Images optimized to run on cloud infrastructures.": "Obrazy zoptymalizowane do działania w infrastrukturach chmurowych.",
-    "It's your Operating System.": "To twój System Operacyjny."
+    "It's your Operating System.": "To twój system operacyjny.",
+    "Workstation": "Workstation",
+    "Fedora Linux": "Fedora Linux",
+    "Eye of MATE": "Eye of MATE"
 }
