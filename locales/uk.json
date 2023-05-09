@@ -204,5 +204,11 @@
     "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the CoreOS Working Group website.": "Над Fedora CoreOS працює окрема команда учасників спільноти Fedora — робоча група CoreOS. У її складі працюють як офіційні члени проєкту, уповноважені ухвалювати рішення, так і інші учасники спільноти. Докладніше про цю групу й те, якої допомоги вона потребує, можна прочитати на відповідному вебсайті.",
     "The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.": "У потоці «Next» на вас чекає майбутнє. Тут можна отримати дочасний доступ до нових функцій і наступного великого випуску Fedora. Кілька Next-машин у кластері чи тестовому середовищі допоможе виявити можливі проблеми.",
     "Workstation speaks your language": "Система, що розмовляє зрозумілою мовою",
-    "The Fedora Project envisions a world where everyone benefits from free and open source software built by inclusive, welcoming, and open-minded communities. Stay connected during Flock through the following channels.": "Проєкт Fedora прагне збудувати світ, де кожен може користуватися вільними програмними засобами з відкритим кодом, створеними інклюзивними, гостинними та прогресивними спільнотами. Залишайтеся на зв'язку під час Flock за допомогою наведених нижче каналів зв'язку."
+    "The Fedora Project envisions a world where everyone benefits from free and open source software built by inclusive, welcoming, and open-minded communities. Stay connected during Flock through the following channels.": "Проєкт Fedora прагне збудувати світ, де кожен може користуватися вільними програмними засобами з відкритим кодом, створеними інклюзивними, гостинними та прогресивними спільнотами. Залишайтеся на зв'язку під час Flock за допомогою наведених нижче каналів зв'язку.",
+    "Fedora i3 Spin": "Fedora i3",
+    "Fedora KDE Plasma Desktop": "Fedora зі стільницею KDE Plasma",
+    "Fedora Cloud Image": "Образ Fedora Cloud",
+    "GNOME Terminal": "Термінал GNOME",
+    "GitLab repo": "Репозиторій на GitLab",
+    "It's your Operating System.": "Ваша операційна система."
 }
