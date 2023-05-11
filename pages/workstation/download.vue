@@ -300,6 +300,11 @@ if (data._value.sections[2].sectionDescription) {
       </div>
     </section>
 
+    <!-- BUT WAIT THERE'S MORE  -->
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+      <OtherDownloads />
+    </section>
+
     <!-- SECURITY -->
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
       <CoreOsVerifySection />
