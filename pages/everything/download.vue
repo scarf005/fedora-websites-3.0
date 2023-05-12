@@ -58,7 +58,7 @@ useHead({
 });
 </script>
 <template>
-  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-2">
+  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-1">
     <!-- TITLE -->
     <section class="px-2 pt-24 pb-12 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl px-2">

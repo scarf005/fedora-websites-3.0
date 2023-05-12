@@ -273,7 +273,7 @@ useContentHead(data);
 </script>
 <template>
   <main
-    class="border-t-8 border-fp-magenta bg-neutral-100 dark:bg-neutral-800 md:mt-2"
+    class="border-t-8 border-fp-magenta bg-neutral-100 dark:bg-neutral-800 md:mt-1"
     :class="`coreos-theme-${selectedStream?.stream}`"
   >
     <TheLocalBar

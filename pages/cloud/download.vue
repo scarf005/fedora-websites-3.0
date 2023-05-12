@@ -99,7 +99,7 @@ useContentHead(data);
 </script>
 <template>
   <main
-    class="border-t-8 border-fp-newblue dark:border-fp-newblue-700 dark:bg-neutral-800 md:mt-2"
+    class="border-t-8 border-fp-newblue dark:border-fp-newblue-700 dark:bg-neutral-800 md:mt-1"
   >
     <TheLocalBar
       :image="{

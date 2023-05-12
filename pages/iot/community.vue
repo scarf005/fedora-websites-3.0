@@ -5,7 +5,7 @@ const data = await getCMS("editions/iot/community");
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-purple dark:bg-neutral-800 md:mt-2">
+  <main class="border-t-8 border-fp-purple dark:bg-neutral-800 md:mt-1">
     <header>
       <TheLocalBar
         :image="{
