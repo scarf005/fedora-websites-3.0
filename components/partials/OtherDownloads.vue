@@ -21,7 +21,7 @@
         href="https://alt.fedoraproject.org"
         color="text-center bg-white dark:bg-fp-darkblue-700 dark:border-fp-darkblue-700 dark:!text-white"
       >
-        {{ $t("See More") }}
+        {{ $t("Other Downloads") }}
       </FpBtn>
     </div>
   </div>
