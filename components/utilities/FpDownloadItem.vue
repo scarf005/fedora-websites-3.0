@@ -58,7 +58,7 @@ const prettyType = {
   "vagrant-libvirt": "Vagrant",
   "vagrant-virtualbox": "Vagrant",
   "tar-gz": "Compressed Image",
-  boot: "Netboot",
+  boot: "Network Install",
   live: "Live ISO",
 };
 </script>
