@@ -17,10 +17,7 @@
           )
         }}
       </p>
-      <FpBtn
-        href="https://alt.fedoraproject.org"
-        color="text-center bg-white dark:bg-fp-darkblue-700 dark:border-fp-darkblue-700 dark:!text-white"
-      >
+      <FpBtn href="https://alt.fedoraproject.org">
         {{ $t("Other Downloads") }}
       </FpBtn>
     </div>
