@@ -1,5 +1,6 @@
 [
   { "code": "ar", "iso": "ar", "file": "ar.json", "name": "عربى", "dir": "rtl" },
+  { "code": "be", "iso": "be", "file": "be.json", "name": "Беларускі" },
   { "code": "bg", "iso": "bg", "file": "bg.json", "name": "Bulgarian" },
   { "code": "cs", "iso": "cs", "file": "cs.json", "name": "Czech" },
   { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" },
