@@ -59,6 +59,7 @@ sections:
       - images:
           light: public/assets/images/ibm_cloud_logo-2048x793.png
           dark: public/assets/images/ibm_cloud_logo-white.png
+      - image: public/assets/images/kubevirt-horizontal-color.png
       - image: public/assets/images/microsoftazure_2021.svg
       - image: public/assets/images/nutanix_logo_blue.png
       - images:

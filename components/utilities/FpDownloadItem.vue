@@ -46,6 +46,7 @@ const prettyType = {
   iso: "Live DVD",
   dvd: "DVD",
   "dvd-ostree": "OSTree",
+  kubevirt: "KubeVirt",
   pxe: "Netboot",
   nutanix: "Nutanix",
   openstack: "OpenStack",
