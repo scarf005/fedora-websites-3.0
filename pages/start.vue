@@ -435,6 +435,25 @@ const width_2xl = 1536;
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
+                href="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
+                target="_blank"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >{{ $t("Latest Council Video") }}</a
+              >
+            </h2>
+            <div class="mb-6 grid place-items-center">
+              <iframe
+                type="text/html"
+                src="council-video.html"
+                frameborder="0"
+                class="h-[9em] w-[16em]"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
                 :href="`${discourse_uri}/search?${solved_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
                 >{{ $t("Latest Solved Issues") }}</a
