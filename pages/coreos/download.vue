@@ -222,6 +222,7 @@ function cloud_arts(data) {
     "exoscale",
     "gcp",
     "ibmcloud",
+    "kubevirt",
     "nutanix",
     "openstack",
     "packet",
