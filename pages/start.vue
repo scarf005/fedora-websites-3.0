@@ -12,6 +12,9 @@ useContentHead(data);
 const count_headlines = 9;
 const count_headlines_narrow = 6;
 
+// number of common issues to display
+const count_common = 6;
+
 // number of solved issues to display
 const count_solved = 4;
 
@@ -117,6 +120,33 @@ const fp_headlines = async () => {
   return headlines.slice(0, count_headlines);
 };
 
+const common_query = "c/ask/common-issues/82/none";
+
+const fp_common_issues = async () => {
+  let dcdata = await $fetch(`${discourse_uri}/${common_query}.json`);
+  let topics = dcdata.topic_list.topics;
+
+  let i = 0;
+  let issues = [];
+  while (i < count_common + 1) {
+    let title = topics[i].title;
+
+    if (title == "About the Common Issues category") {
+      i++;
+      continue;
+    }
+
+    issues.push({
+      title: title,
+      link: `${discourse_uri}/t/${topics[i].slug}`,
+    });
+
+    i++;
+  }
+
+  return issues.slice(0, count_common);
+};
+
 const solved_query = "q=%23ask%20status%3Asolved%20order%3Alatest_topic";
 const user_avatars = "https://sea1.discourse-cdn.com/fedoraproject";
 
@@ -203,6 +233,17 @@ if (magazine.length > 0 && newsfeed.length > 0) {
 
 const got_headlines = headlines.length == count_headlines;
 
+let common = [];
+try {
+  if (process.client) {
+    common = await fp_common_issues();
+  }
+} catch (e) {
+  console.log(e);
+}
+
+const got_common = common.length == count_common;
+
 let solved = [];
 try {
   if (process.client) {
@@ -240,7 +281,7 @@ const width_2xl = 1536;
     <div class="mx-8 flex gap-8 py-8">
       <ClientOnly>
         <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block">
-          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700">
+          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 href="https://docs.fedoraproject.org/en-US/fedora/latest/"
@@ -259,6 +300,35 @@ const width_2xl = 1536;
                   >{{ d.link.text }}</a
                 >
               </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
+                :href="`${discourse_uri}/${common_query}`"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >Common Issues</a
+              >
+            </h2>
+            <div v-for="i in common" class="mb-6">
+              <div class="ml-2 flex items-center">
+                <a :href="i.link" class="flex-none p-2"
+                  ><Icon name="fa6-solid:wrench" size="32" class="text-fp-blue"
+                /></a>
+                <a
+                  :href="i.link"
+                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ i.title }}</a
+                >
+              </div>
+            </div>
+            <div class="whitespace-no-wrap text-right">
+              <span class="text-base/4text-gray-400 font-semibold"
+                >{{ $t("From") }}
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
             </div>
           </div>
         </div>
@@ -309,6 +379,40 @@ const width_2xl = 1536;
                   >
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+            <h2 class="mb-8 text-2xl leading-none">
+              <a
+                :href="`${discourse_uri}/${common_query}`"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >Common Issues</a
+              >
+            </h2>
+            <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div v-for="i in common">
+                <div class="flex items-center ltr:ml-2 rtl:mr-2">
+                  <a :href="i.link" class="flex-none p-2"
+                    ><Icon
+                      name="fa6-solid:wrench"
+                      size="32"
+                      class="text-fp-blue"
+                  /></a>
+                  <a
+                    :href="i.link"
+                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
+                    >{{ i.title }}</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="whitespace-no-wrap text-right">
+              <span class="text-base/4text-gray-400 font-semibold"
+                >{{ $t("From") }}
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
             </div>
           </div>
           <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
