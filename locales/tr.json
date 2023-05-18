@@ -186,5 +186,7 @@
     "Container-based": "Container tabanlı",
     "Community-driven": "Topluluk odaklı",
     "You can chat with the Fedora Cloud Working Group via Matrix: #cloud:fedoraproject.org.": "Fedora Cloud Çalışma Grubu ile Matrix üzerinden sohbet edebilirsiniz: #cloud:fedoraproject.org.",
-    "The Fedora Cloud Working Group sends meeting agendas and minutes and has discussions on their mailing list at cloud@lists.fedoraproject.org.": "Fedora Cloud Çalışma Grubu, cloud{'@'}lists.fedoraproject.org adresli bir e-posta dağıtım sunucusu kullanarak toplantı gündemlerini ve tutanaklarını gönderir ve tartışmalar yapar."
+    "The Fedora Cloud Working Group sends meeting agendas and minutes and has discussions on their mailing list at cloud@lists.fedoraproject.org.": "Fedora Cloud Çalışma Grubu, cloud{'@'}lists.fedoraproject.org adresli bir e-posta dağıtım sunucusu kullanarak toplantı gündemlerini ve tutanaklarını gönderir ve tartışmalar yapar.",
+    "Also known as armv8. For most processors other than Intel and AMD like Rasperry Pi or other comparable devices.": "Armv8 olarak da bilinir. Raspberry Pi veya diğer karşılaştırılabilir cihazlar gibi Intel ve AMD dışındaki çoğu işlemci için.",
+    "Bare Metal & Virtualized": "Ana makine & sanal makinede"
 }
