@@ -12,5 +12,6 @@
     "We take security seriously": "我們認真看待安全",
     "verify_button_instruction": "點擊驗證按鈕 {verify_button} 來取得為您的下載量身訂做的說明。",
     "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity": "在您自己的電腦上計算映像檔的校驗碼，然後與原始的校驗碼比對，您可以核驗出該映像檔是否被竄改或損毀。映像檔也有經過 Fedora 金鑰做 gpg 簽署，以呈現其完整性",
-    "Once you have downloaded an image, be sure to verify it for both security and integrity": "一旦您下載好映像檔，請務必核驗檔案以確保安全性與完整性"
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "一旦您下載好映像檔，請務必核驗檔案以確保安全性與完整性",
+    "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "誠摯感謝您於溝通頻道中提供的友善且有助益的貢獻"
 }
