@@ -548,7 +548,7 @@ const width_2xl = 1536;
             <div class="mb-6 grid place-items-center">
               <iframe
                 type="text/html"
-                src="council-video.html"
+                src="/council-video.html"
                 frameborder="0"
                 class="h-[9em] w-[16em]"
               >
