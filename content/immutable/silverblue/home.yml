@@ -1,6 +1,6 @@
 title: Fedora Silverblue
 description:
-  Fedora Silverblue provides the Gnome desktop experience you know and love in
+  Fedora Silverblue provides the GNOME desktop experience you know and love in
   an immutable fashion.  It looks, feels and behaves like a regular desktop operating system,
   and the experience is similar to what you find with using a standard Fedora Workstation.
   Silverblue's immutable design is intended to make it more stable, less prone to bugs,
@@ -21,7 +21,7 @@ screenshot_image:
 sections:
   - sectionTitle: Built on top of the best
     content:
-      - title: Gnome Desktop
+      - title: GNOME Desktop
         description: A beautiful, high-quality desktop, built on the latest open source technology.
         image: public/assets/images/workstation_framework_f38_screenshot.png
       - title: rpm-ostree
