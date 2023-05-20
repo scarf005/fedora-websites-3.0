@@ -7,8 +7,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-1">
     <TheLocalBar
       :image="{
-        light: 'assets/images/immutable/silverblue-logo.svg',
-        dark: 'assets/images/silverblue-logo.svg',
+        light: 'assets/images/fedora-silverblue-logo-light.png',
+        dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
       home="/silverblue"
       textColor="text-fp-newblue"
@@ -120,8 +120,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpCallToAction
         :cta="data.links"
         :image="{
-          light: 'assets/images/immutable/silverblue-logo.svg',
-          dark: 'assets/images/immutable/silverblue-logo.svg',
+          light: 'assets/images/immutable/fedora-silverblue-logo.png',
+          dark: 'assets/images/immutable/fedora-silverblue-logo.png',
         }"
       />
     </section>

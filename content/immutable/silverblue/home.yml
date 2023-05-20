@@ -40,7 +40,7 @@ sections:
     content:
       - title:
         description: An immutable desktop operating system featuring the modern and modular Plasma Desktop
-        image: public/assets/images/immutable/kinoite-logo_horiz.svg
+        image: public/assets/images/immutable/fedora-kinoite-logo.png
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
         image: public/assets/images/fedora-sericea-light.png
