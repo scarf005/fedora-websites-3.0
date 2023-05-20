@@ -54,7 +54,7 @@ const navigation = {
         links: [
           {
             label: "Silverblue",
-            path: "https://fedoraproject.org/silverblue",
+            path: "/silverblue",
             icon: "fa6-solid:desktop",
             description:
               "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows.",
