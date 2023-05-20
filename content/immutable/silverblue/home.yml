@@ -8,8 +8,8 @@ description:
   for containerized applications, as well as container-based software development. Your apps
   are kept separate from the host system, improving stability and reliability.
 image:
-  src: https://stg.fedoraproject.org/assets/images/fedora-sericea-dark.png
-  alt: Fedora Sericea Image
+  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-silverblue.png
+  alt: Fedora Silverblue Image
   width: 400
   height: 300
 links:
