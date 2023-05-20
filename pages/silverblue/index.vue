@@ -31,7 +31,16 @@ data._value.descriptionMd = await mdparser(data._value.description);
           class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5 lg:justify-end"
           id="ctas"
         >
-          <FpBtn :href="data.links[0].url">{{ $t("Download Now") }}</FpBtn>
+          <FpBtn
+            :href="data.links[1].url"
+            class="mr-1 border !border-fp-blue !bg-gray-100 text-fp-blue dark:!bg-gray-800 dark:!text-white"
+          >
+            {{ $t(data.links[1].text) }}
+          </FpBtn>
+          <FpBtn :href="data.links[0].url">
+            {{ $t(data.links[0].text) }}
+            <Icon name="fa-download" />
+          </FpBtn>
         </div>
       </div>
     </section>

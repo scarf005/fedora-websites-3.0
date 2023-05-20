@@ -15,6 +15,8 @@ image:
 links:
   - text: Download Now
     url: /silverblue/download/
+  - text: Documentation
+    url: "https://docs.fedoraproject.org/en-US/fedora-silverblue/"
 screenshot_image:
   image: public/assets/images/spins/screenshot-silverblue.png
   alt_text: Screenshot of Fedora Silverblue
