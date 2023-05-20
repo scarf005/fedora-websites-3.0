@@ -149,6 +149,7 @@ useContentHead(data);
           <template
             v-if="betaSwitch == false && ga_data?.payload.images.Silverblue"
           >
+            {{ ga_data?.payload.images.Silverblue }}
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
               art_name="Fedora Silverblue"
