@@ -158,6 +158,24 @@ useContentHead(data);
               :version="release_data.ga.releasever"
               class="spins-theme"
             />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Silverblue"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Silverblue.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.ga.releasever"
+              class="spins-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Silverblue"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Silverblue.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.ga.releasever"
+              class="spins-theme"
+            />
           </template>
           <template v-else-if="betaSwitch == true && beta_data?.payload">
             <DownloadSection
@@ -166,6 +184,26 @@ useContentHead(data);
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Silverblue.x86_64"
               :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              class="spins-theme"
+              isBeta
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Silverblue"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Silverblue.aarch64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              class="spins-theme"
+              isBeta
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Silverblue"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Silverblue.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
               :version="release_data.beta.releasever"
               class="spins-theme"
               isBeta
