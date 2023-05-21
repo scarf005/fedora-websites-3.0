@@ -27,7 +27,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
           {{ $t(data.leadin) }}
         </h2>
         <div class="mb-2 flex justify-center">
-          <img :src="data.screenshot_image.image" class="lg:max-w-[50%]" />
+          <FpImage :src="data.screenshot_image.image" class="lg:max-w-[50%]" />
         </div>
         <div class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5" id="ctas">
           <FpBtn
