@@ -1,12 +1,19 @@
 title: Fedora Silverblue
+leadin: The GNOME desktop experience you know and love in an immutable fashion.
 description:
-  Fedora Silverblue provides the GNOME desktop experience you know and love in
-  an immutable fashion.  It looks, feels and behaves like a regular desktop operating system,
-  and the experience is similar to what you find with using a standard Fedora Workstation.
-  Silverblue's immutable design is intended to make it more stable, less prone to bugs,
-  and easier to test and develop. Its also an excellent platform
-  for containerized applications, as well as container-based software development. Your apps
-  are kept separate from the host system, improving stability and reliability.
+  An immutable variant looks, feels, and behaves just like a regular desktop operating system,
+  but your updates are delivered as full images of a working system. This makes every installation
+  identical to every other, and it will never change while in use. What's more, Silverblue will
+  always keep an older version of the system around for you to boot back into, should you need to,
+  allowing you to try new programs, desktops, or even complete version upgrades fearlessly!
+  <br /><br />
+  The immutable design makes a Silverblue system more stable, less prone to bugs, and easier to
+  test and develop. Applications are installed via Flatpak completely independent of the base system,
+  and CLI tools can utilize the power of containerization with Toolbox.
+  <br /><br/>
+  Silverblue comes with the popular GNOME desktop and follows the standard 13 month release-cycle,
+  making the experience very similar to that of Fedora Workstation.
+
 image:
   src: https://stg.fedoraproject.org/assets/images/spins/screenshot-silverblue.png
   alt: Fedora Silverblue Image
@@ -18,7 +25,7 @@ links:
   - text: Documentation
     url: "https://docs.fedoraproject.org/en-US/fedora-silverblue/"
 screenshot_image:
-  image: public/assets/images/spins/screenshot-silverblue.png
+  image: assets/images/workstation_framework.png
   alt_text: Screenshot of Fedora Silverblue
 sections:
   - sectionTitle: Built on top of the best

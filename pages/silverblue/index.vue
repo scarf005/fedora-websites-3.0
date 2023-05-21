@@ -17,20 +17,19 @@ data._value.descriptionMd = await mdparser(data._value.description);
 
     <!-- TITLE -->
     <section
-      class="bg-gradient-to-b from-white to-fp-newblue-100 px-2 pt-24 pb-12 text-center dark:bg-none lg:text-start"
+      class="workstation-hero bg-gradient-to-b from-white to-fp-newblue-100 px-2 pt-10 pb-12 text-center dark:bg-none lg:pt-24"
     >
-      <div class="container mx-auto max-w-7xl px-2">
-        <h1 class="mb-8 text-4xl text-gray-600 dark:text-gray-200">
-          {{ $t(data.title) }}
+      <div class="fp-banner container mx-auto max-w-7xl px-2">
+        <h1 class="text-gray-600 dark:text-gray-200 lg:mb-3">
+          <span>{{ $t(data.title) }}</span>
         </h1>
-        <ContentRendererMarkdown
-          class="space-y-6 text-start text-gray-600 dark:text-fp-gray-light lg:w-4/5"
-          :value="data.descriptionMd"
-        />
-        <div
-          class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5 lg:justify-end"
-          id="ctas"
-        >
+        <h2 class="mb-5 text-gray-600 dark:text-gray-200">
+          {{ $t(data.leadin) }}
+        </h2>
+        <div class="mb-2 flex justify-center">
+          <img :src="data.screenshot_image.image" class="lg:max-w-[50%]" />
+        </div>
+        <div class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5" id="ctas">
           <FpBtn
             :href="data.links[1].url"
             class="mr-1 border !border-fp-blue !bg-gray-100 text-fp-blue dark:!bg-gray-800 dark:!text-white"
@@ -45,11 +44,63 @@ data._value.descriptionMd = await mdparser(data._value.description);
       </div>
     </section>
 
-    <!-- Screenshot Section -->
-    <!-- <FpSpinPreviewSection :background="data.screenshot_image.image" /> -->
+    <!-- Why Immutable Section-->
+    <section class="pt-24 pb-12 dark:bg-neutral-900">
+      <h2
+        class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
+      >
+        Why Go Immutable?
+      </h2>
+      <div class="flex justify-center px-10">
+        <ContentRendererMarkdown
+          class="space-y-6 text-center text-gray-600 dark:text-fp-gray-light lg:w-4/5 lg:text-start"
+          :value="data.descriptionMd"
+        />
+      </div>
+    </section>
+
+    <svg
+      width="614.927"
+      height="101.23"
+      class="absolute right-0 -z-10 dark:hidden"
+      id="screenshot-00734247-430e-11ed-8d85-8fd7de2f268d"
+      viewBox="961 1746 614.92701 101.23"
+      style="-webkit-print-color-adjust: exact"
+      fill="none"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+    >
+      <defs id="defs2340"></defs>
+      <g
+        id="shape-00734247-430e-11ed-8d85-8fd7de2f268d"
+        transform="translate(0,-1.659)"
+      >
+        <g class="fills" id="fills-00734247-430e-11ed-8d85-8fd7de2f268d">
+          <path
+            rx="0"
+            ry="0"
+            d="m 961,1796.942 614.927,-49.283 v 101.23 z"
+            style="opacity: 1; fill: #51a2da; fill-opacity: 0.1"
+            id="path2328"
+          ></path>
+        </g>
+        <g id="strokes-00734247-430e-11ed-8d85-8fd7de2f268d" class="strokes">
+          <g class="stroke-shape" id="g2333">
+            <path
+              rx="0"
+              ry="0"
+              d="m 961,1796.942 614.927,-49.283 v 101.23 z"
+              style="opacity: 1; fill: none"
+              id="path2331"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
 
     <!-- Benefits Section -->
-    <section class="pt-24 pb-12 dark:bg-neutral-900">
+    <section class="mt-3 pt-24 pb-12 dark:bg-neutral-900">
       <h2
         class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
       >
