@@ -113,7 +113,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       v-for="section in [data.sections[1]]"
     >
       <h2
-        class="mb-4 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
+        class="mb-8 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
       >
         {{ $t(section.sectionTitle) }}
       </h2>
@@ -127,7 +127,9 @@ data._value.descriptionMd = await mdparser(data._value.description);
           class="mx-auto grow basis-64"
         >
           <template #prepend>
-            <FpCardImage slot="prepend" :src="card.image" />
+            <FpLink :href="card.url">
+              <FpCardImage slot="prepend" :src="card.image" class="h-16" />
+            </FpLink>
           </template>
         </FpCard>
       </div>
