@@ -2,9 +2,15 @@
 const data = await getCMS("immutable/silverblue/download");
 const release_data = await getCMS("release");
 
-// TODO: fallback to n-1 version if metadata are not yet available
+// TODO: fallback to n-1 version everywhere if metadata are not yet available
 const kojiUrl = `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`;
+const kojiBackupUrl = `https://kojipkgs.fedoraproject.org/compose/${
+  release_data._value.ga.releasever - 1
+}/latest-Fedora-${
+  release_data._value.ga.releasever - 1
+}/compose/metadata/images.json`;
 const { data: ga_data } = await useFetch(kojiUrl);
+const backup = await useFetch(kojiBackupUrl);
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
 );
@@ -15,7 +21,7 @@ const verifyModal = useState("verifyModal", () => ({ show: false }));
 // for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
-  aarch64: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+  aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
   s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
 };
@@ -165,9 +171,16 @@ useContentHead(data);
               name="For ARM® aarch64 systems"
               art_name="Fedora Silverblue"
               @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Silverblue.aarch64"
+              :artifacts="
+                ga_data.payload.images.Silverblue.aarch64 ||
+                backup.data.value.payload.images.Silverblue.aarch64
+              "
               :dlPrefix="dlpath.aarch64"
-              :version="release_data.ga.releasever"
+              :version="
+                ga_data.payload.images.Silverblue.aarch64
+                  ? release_data.ga.releasever
+                  : release_data.ga.releasever - 1
+              "
               class="spins-theme"
             />
             <DownloadSection
