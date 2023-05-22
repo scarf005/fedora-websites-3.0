@@ -64,7 +64,10 @@ useContentHead(data);
       }"
       home="/silverblue"
       textColor="text-fp-newblue"
-      :items="[{ name: 'About', link: '/silverblue' }]"
+      :items="[
+        { name: 'About', link: '/silverblue' },
+        { name: 'Community', link: '/silverblue/community' },
+      ]"
     />
 
     <!-- TITLE -->
