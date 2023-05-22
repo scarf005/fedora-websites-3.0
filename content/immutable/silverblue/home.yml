@@ -50,9 +50,12 @@ sections:
       - title:
         description: An immutable desktop operating system featuring the modern and modular Plasma Desktop
         image: public/assets/images/immutable/fedora-kinoite-logo.png
+        url: https://kinoite.fedoraproject.org
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
         image: public/assets/images/fedora-sericea-light.png
+        url: /sericea
       - title:
         description: Fedora IoT provides a strong foundation for IoT ecosystems - a project at home, industrial gateways, smart cities or analytics with AI/ML.
         image: public/assets/images/IoT-logo-light.png
+        url: /iot

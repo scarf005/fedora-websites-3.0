@@ -29,7 +29,7 @@ sections:
         image: public/assets/images/fedora-chat-plus-element.png
         link:
           text: Chat Now
-          url: https://chat.fedoraproject.org/#/welcome
+          url: https://chat.fedoraproject.org/#/room/#silverblue:fedoraproject.org
       - title: Mailing List
         description:
           The Fedora Workstation Working Group sends meeting agendas and
