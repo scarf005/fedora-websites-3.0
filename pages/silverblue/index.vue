@@ -12,7 +12,10 @@ data._value.descriptionMd = await mdparser(data._value.description);
       }"
       home="/silverblue"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/silverblue/download' }]"
+      :items="[
+        { name: 'Download', link: '/silverblue/download' },
+        { name: 'Community', link: '/silverblue/community' },
+      ]"
     />
 
     <!-- TITLE -->
