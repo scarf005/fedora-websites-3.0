@@ -2,7 +2,7 @@
 const data = await getCMS("immutable/silverblue/download");
 const release_data = await getCMS("release");
 
-// TODO: fallback to n-1 version if metadata are not yet available
+// TODO: fallback to n-1 version everywhere if metadata are not yet available
 const kojiUrl = `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`;
 const kojiBackupUrl = `https://kojipkgs.fedoraproject.org/compose/${
   release_data._value.ga.releasever - 1
