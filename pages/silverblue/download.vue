@@ -127,6 +127,24 @@ useContentHead(data);
             {{ $t("Release Notes") }}
           </FpLink>
         </div>
+        <div class="mt-5 flex">
+          <p class="text-sm">
+            <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
+            Silverblue 38 ISOs for ARM
+            <FpLink
+              class="text-sm text-fp-blue"
+              href="https://github.com/fedora-silverblue/issue-tracker/issues/453"
+              >have been delayed</FpLink
+            >
+            - but you can still download/install the above 37 release, and
+            <FpLink
+              class="text-sm text-fp-blue"
+              href="https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#upgrading"
+              >then rebase</FpLink
+            >
+            , while this is being fixed.
+          </p>
+        </div>
       </div>
     </section>
 
