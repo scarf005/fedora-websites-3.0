@@ -26,18 +26,18 @@ const navigation = {
               "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology.",
           },
           {
-            label: "IoT",
-            path: "/iot",
-            icon: "fa6-solid:microchip",
-            description:
-              "A foundation for Internet of Things and Device Edge ecosystem.",
-          },
-          {
             label: "CoreOS",
             path: "/coreos",
             icon: "fa6-solid:circle",
             description:
               "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.",
+          },
+          {
+            label: "IoT",
+            path: "/iot",
+            icon: "fa6-solid:microchip",
+            description:
+              "A foundation for Internet of Things and Device Edge ecosystem.",
           },
           {
             label: "Cloud",
