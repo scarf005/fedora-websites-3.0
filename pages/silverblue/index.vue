@@ -9,7 +9,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
   >
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-silverblue-logo-light.png',
+        light: 'assets/images/fedora-silverblue-logo-dark.png',
         dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
       home="/silverblue"

@@ -15,7 +15,7 @@ useContentHead(data);
           light: 'assets/images/fedora-silverblue-logo-light.png',
           dark: 'assets/images/fedora-silverblue-logo-dark.png',
         }"
-        home="/workstation"
+        home="/silverblue"
         textColor="text-fp-newblue-700"
         :items="[
           { name: 'Download', link: '/silverblue/download' },
