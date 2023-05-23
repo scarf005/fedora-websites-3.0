@@ -1,7 +1,3 @@
-<a href="https://translate.fedoraproject.org/engage/fedora-websites-3-0/">
-<img src="https://translate.fedoraproject.org/widgets/fedora-websites-3-0/-/fedoraproject-org/svg-badge.svg" alt="Translation status" />
-</a>
-
 ## Development: Getting Started
 
 - This repository is a standard [`create-nuxt-app`](https://nuxt.com/docs) project.
@@ -21,6 +17,10 @@
 - To edit translations, go to Fedora's [Weblate](https://translate.fedoraproject.org/projects/fedora-websites-3-0/fedoraproject-org/).
 - For more information on nuxt-i18n, and how to add new strings to the project, please see (and update!) the [translatsion readme](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/blob/develop/locales.build.d/README.md) 
 - To add a new language to the navbar/footer, please add it to the file `locales/locales.json`.
+
+<a href="https://translate.fedoraproject.org/engage/fedora-websites-3-0/">
+<img src="https://translate.fedoraproject.org/widgets/fedora-websites-3-0/-/fedoraproject-org/horizontal-auto.svg" alt="Translation status" />
+</a>
 
 ## Bug reporting
 
