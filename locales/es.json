@@ -402,5 +402,20 @@
     "You can view, file, and discuss Fedore Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Puedes ver, reportar y discutir asuntos de Fedora Cloud en el [rastreador de asuntos de Fedora Cloud](https://pagure.io/cloud-sig/issues).",
     "The **Fedora CoreOS** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora CoreOS users and contributors.": "La etiqueta **Fedora CoreOS** en el foro de discusión basado en Discourse de Fedora es un gran lugar para conectar con otros contribuyentes y usuarios de Fedora CoreOS.",
     "The Fedora CoreOS Working Group sends meeting agendas and minutes and has discussions on their mailing list at coreos@lists.fedoraproject.org.": "El Grupo de Trabajo de Fedora CoreOS envía citaciones a reuniones y minutas y tiene discusiones en su lista de correos en coreos{'@'}lists.fedoraproject.org.",
-    "You can chat with the Fedora CoreOS Working Group via either Matrix or IRC: #coreos:fedoraproject.org on Matrix and #fedora-coreos on irc.libera.chat.": "Puedes chatear con el Grupo de Trabajo Fedora CoreOS a través de Matrix o IRC: #coreos:fedoraproject.org en Matrix y #fedora-coreos en irc.libera.chat."
+    "You can chat with the Fedora CoreOS Working Group via either Matrix or IRC: #coreos:fedoraproject.org on Matrix and #fedora-coreos on irc.libera.chat.": "Puedes chatear con el Grupo de Trabajo Fedora CoreOS a través de Matrix o IRC: #coreos:fedoraproject.org en Matrix y #fedora-coreos en irc.libera.chat.",
+    "Testing": "Pruebas",
+    "Stable": "Estable",
+    "Streams": "Streams",
+    "The Stable stream is the most reliable version of Fedora CoreOS. Releases are battle-tested within the Testing stream before being promoted.": "El *stream* estable es la versión mas confiable de Fedora CoreOS. Los lanzamientos están probados en combate en el stream de Pruebas antes de ser promovidos.",
+    "Fedora Everything": "Fedora Everything",
+    "Eye of MATE": "Ojo de MATE",
+    "Fedora Cinnamon Spin": "Fedora Cinnamon Spin",
+    "We're so glad you've decided to give Fedora Cinnamon Spin a try. We know you'll love it.": "Nos complacemos de que le hayas dado una oportunidad a Fedora Budgie Spin. Sabemos que lo amarás.",
+    "Budgie Desktop Settings": "Configuraciones del Escritorio Budgie",
+    "Also known as armv8. For most processors other than Intel and AMD like Raspberry Pi or other comparable devices.": "También conocida como armv8. Para la mayoría de procesadores que no sean Intel o AMD como la Raspberry Pi u otros dispositivos similares.",
+    "We're so glad you've decided to give Fedora Everything a try. We know you'll love it.": "Estamos encantados que hayas decidido darle a Fedora Everything una oportunidad. Sabemos que te encantará.",
+    "You can view, file, and discuss Fedora CoreOS issues on the [Fedora CoreOS issue tracker](https://pagure.io/fedora-coreos/issues).": "Puedes ver, enviar y discutir errores de Fedora Cloud en el [rastreador de errores de Fedora Cloud](https://pagure.io/fedora-cloud/issues).",
+    "Fedora CoreOS is available across 3 different release streams": "Fedora CoreOS está disponible en 3 canales de lanzamiento diferentes",
+    "The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.": "El siguiente *stream* representa el futuro. Provee acceso anticipado a nuevas características y a la siguiente versión de Fedora. Corre algunas máquinas con Next en tu cluster o en staging para ayudar a encontrar problemas.",
+    "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "El *stream* de Pruebas contiene el próximo lanzamiento de Estable. Mezcla unas cuantas máquinas de Pruebas en su cluster para cachar cualquier error específico a tu configuración."
 }
