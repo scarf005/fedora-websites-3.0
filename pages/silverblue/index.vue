@@ -38,7 +38,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <!-- Why Immutable Section-->
   <section class="pt-24 pb-12 dark:bg-neutral-900">
     <h2
-      class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
+      class="mb-12 min-h-[50px] bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
     >
       Why Go Immutable?
     </h2>
