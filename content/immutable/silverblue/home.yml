@@ -28,23 +28,23 @@ screenshot_image:
   image: assets/images/workstation_framework.png
   alt_text: Screenshot of Fedora Silverblue
 sections:
-  - sectionTitle: Built on top of the best
+  - sectionTitle: Built On Top of the Best
     content:
       - title: GNOME Desktop
         description: A beautiful, high-quality desktop, built on the latest open source technology.
-        image: public/assets/images/workstation_framework_f38_screenshot.png
+        image: public/assets/images/immutable/gnome-desktop-square.png
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
-        image: public/assets/images/immutable/rpm-ostree.png
+        image: public/assets/images/immutable/rpm-ostree-square.png
       - title: Applications as Flatpaks
         description: Download thousands of open-source and proprietary, containerized applications thanks to Flatpak.
-        image: public/assets/images/immutable/flatpak-apps-faded.png
-      - title: Podman for development
-        description: Podman is a daemonless container engine for developing, managing and running Open Container Initiative (OCI) containers and container images on your Linux system.
-        image: public/assets/images/immutable/podman.png
+        image: public/assets/images/immutable/flatpak-apps-faded-square.png
+      - title: Toolbx for Development
+        description: Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.
+        image: public/assets/images/immutable/podman-toolbox-square.png
       - title: Fedora Community & Support
         description: Fedora creates an innovative, free and open source platform for hardware, clouds, and containers that enables software developers and community members to build tailored solutions for their users.
-        image: public/assets/images/immutable/fedora-circle.png
+        image: public/assets/images/immutable/fedora-square.png
   - sectionTitle: Related Projects
     content:
       - title:
