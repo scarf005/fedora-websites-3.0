@@ -9,8 +9,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   >
     <TheLocalBar
       :image="{
-        light: 'assets/images/logos/fedora-logo.png',
-        dark: 'assets/images/logos/fedora-white.png',
+        light: 'assets/images/fedora-silverblue-logo-dark.png',
+        dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
       home="/silverblue"
       :items="[
@@ -172,8 +172,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
     <FpCallToAction
       :cta="data.links"
       :image="{
-        light: 'assets/images/immutable/fedora-silverblue-logo.png',
-        dark: 'assets/images/immutable/fedora-silverblue-logo.png',
+        light: 'assets/images/immutable/fedora-logo.png',
+        dark: 'assets/images/immutable/fedora-white.png',
       }"
     />
   </section>
