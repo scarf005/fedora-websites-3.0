@@ -13,7 +13,6 @@ data._value.descriptionMd = await mdparser(data._value.description);
         dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
       home="/silverblue"
-      textColor="text-fp-newblue"
       :items="[
         { name: 'Download', link: '/silverblue/download' },
         { name: 'Community', link: '/silverblue/community' },
@@ -23,7 +22,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       :title="data.title"
       :subtitle="data.leadin"
       :ctas="data.links"
-      color="text-white"
+      color="text-fp-blue"
       border="border border-fp-blue dark:border-fp-blue-700"
       background="text-white bg-fp-blue dark:bg-fp-blue-700"
     >
