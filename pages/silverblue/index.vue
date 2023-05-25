@@ -23,7 +23,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       :title="data.title"
       :subtitle="data.leadin"
       :ctas="data.links"
-      color="text-fp-blue"
+      color="text-white"
       border="border border-fp-blue dark:border-fp-blue-700"
       background="text-white bg-fp-blue dark:bg-fp-blue-700"
     >
