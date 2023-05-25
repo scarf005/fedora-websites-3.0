@@ -10,6 +10,6 @@ defineProps({
     <p class="p-10 text-center text-2xl text-gray-500 dark:text-gray-300">
       {{ $t("Try it now.") }}
     </p>
-    <FpBtn :href="cta[0].url">{{ $t("Get Started") }}</FpBtn>
+    <FpBtn :href="cta[0].url">{{ $t("Download Now") }}</FpBtn>
   </div>
 </template>
