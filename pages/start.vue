@@ -277,7 +277,7 @@ const width_2xl = 1536;
 </script>
 
 <template>
-  <div class="bg-fp-gray-lightest dark:bg-neutral-900">
+  <div class="mt-2 bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-8">
       <ClientOnly>
         <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block">
