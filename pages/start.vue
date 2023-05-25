@@ -381,7 +381,10 @@ const width_2xl = 1536;
               </div>
             </div>
           </div>
-          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+          <div
+            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+            dir="ltr"
+          >
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 :href="`${discourse_uri}/${common_query}`"
@@ -391,7 +394,7 @@ const width_2xl = 1536;
             </h2>
             <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div v-for="i in common">
-                <div class="flex items-center ltr:ml-2 rtl:mr-2">
+                <div class="ml-2 flex items-center">
                   <a :href="i.link" class="flex-none p-2"
                     ><Icon
                       name="fa6-solid:wrench"
@@ -400,7 +403,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="i.link"
-                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
+                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
                     >{{ i.title }}</a
                   >
                 </div>
@@ -415,7 +418,10 @@ const width_2xl = 1536;
               >
             </div>
           </div>
-          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+          <div
+            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+            dir="ltr"
+          >
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 :href="`${discourse_uri}/search?${solved_query}`"
@@ -433,7 +439,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="s.link"
-                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
+                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
                     >{{ s.title }}</a
                   >
                 </div>
@@ -464,7 +470,7 @@ const width_2xl = 1536;
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div v-for="p in commblog" class="mb-6">
-                <div class="flex items-center ltr:ml-2 rtl:mr-2">
+                <div class="ml-2 flex items-center">
                   <a :href="p.link" class="flex-none p-2"
                     ><Icon
                       name="fa6-solid:feather-pointed"
@@ -473,7 +479,7 @@ const width_2xl = 1536;
                   /></a>
                   <a
                     :href="p.link"
-                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
+                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
                     >{{ p.title }}</a
                   >
                 </div>
@@ -555,7 +561,7 @@ const width_2xl = 1536;
               </iframe>
             </div>
           </div>
-          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
+          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 :href="`${discourse_uri}/search?${solved_query}`"
@@ -570,7 +576,7 @@ const width_2xl = 1536;
                 /></a>
                 <a
                   :href="s.link"
-                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
+                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
                   >{{ s.title }}</a
                 >
               </div>
@@ -596,7 +602,7 @@ const width_2xl = 1536;
               </p>
             </h2>
             <div v-for="p in commblog" class="mb-6">
-              <div class="flex items-center ltr:ml-2 rtl:mr-2">
+              <div class="ml-2 flex items-center">
                 <a :href="p.link" class="flex-none p-2"
                   ><Icon
                     name="fa6-solid:feather-pointed"
@@ -605,7 +611,7 @@ const width_2xl = 1536;
                 /></a>
                 <a
                   :href="p.link"
-                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-4 rtl:mr-4"
+                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
                   >{{ p.title }}</a
                 >
               </div>
