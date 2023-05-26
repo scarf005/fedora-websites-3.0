@@ -35,7 +35,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
               :alt="data.header_images[0].text"
             />
             <div class="absolute top-0 left-0 ml-[10%] mt-[2%] w-[80%]">
-              <img
+              <FpImage
                 class="img-fluid"
                 :src="data.header_images[1].image"
                 :alt="data.header_images[1].text"
