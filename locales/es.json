@@ -420,5 +420,8 @@
     "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "El *stream* de Pruebas contiene el próximo lanzamiento de Estable. Mezcla unas cuantas máquinas de Pruebas en su cluster para cachar cualquier error específico a tu configuración.",
     "Platforms Tested against CoreOS": "Plataformas Probadas con CoreOS",
     "Open to all current and potential contributors on Wednesday 11 AM Eastern on [fedora-meeting@irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).": "Abierto a todos los actuales y potenciales contribuyentes el **miércoles a las 11 a.m., hora del Este** en [fedora-meeting{'@'}irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).",
-    "CoreOS is currently available on multiple platforms, with more coming soon.": "CoreOS está actualmente disponible en múltiples plataformas, y pronto aún en más."
+    "CoreOS is currently available on multiple platforms, with more coming soon.": "CoreOS está actualmente disponible en múltiples plataformas, y pronto aún en más.",
+    "There are a wide variety of supported installation methods.": "Hay una amplia variedad de métodos de instalación soportados.",
+    "The Fedora CoreOS image is kept minimal by design.": "La imagen de Fedora CoreOS se mantiene mínima por diseño.",
+    "Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "Regístrate en [cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) para recibir citaciones a reuniones y minutas."
 }
