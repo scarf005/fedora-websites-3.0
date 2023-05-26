@@ -24,7 +24,6 @@ header_images:
     alt_text: Screenshot of blank laptop as background to KDE desktop
   - image: assets/images/immutable/kde-desktop.jpg
     alt_text: Screenshot of KDE Desktop
-  - image: public/assets/images/workstation_background.jpg
 links:
   - text: Download Now
     url: /kinoite/download/

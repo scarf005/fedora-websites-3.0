@@ -24,9 +24,9 @@ links:
     url: /silverblue/download/
   - text: Documentation
     url: "https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-screenshot_image:
-  image: assets/images/workstation_framework.png
-  alt_text: Screenshot of Fedora Silverblue
+header_images:
+  - image: assets/images/workstation_framework.png
+    alt_text: Screenshot of Fedora Silverblue
 sections:
   - sectionTitle: Built On Top of the Best
     content:

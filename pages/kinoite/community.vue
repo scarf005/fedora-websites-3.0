@@ -12,16 +12,17 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/fedora-silverblue-logo-light.png',
-          dark: 'assets/images/fedora-silverblue-logo-dark.png',
+          light: 'assets/images/immutable/fedora-kinoite-logo.png',
+          dark: 'assets/images/immutable/fedora-kinoite-logo.png',
         }"
-        home="/silverblue"
-        textColor="text-fp-newblue-700"
+        home="/kinoite"
+        textColor="text-teal"
         :items="[
-          { name: 'Download', link: '/silverblue/download' },
-          { name: 'Community', link: '/silverblue/community' },
+          { name: 'Download', link: '/kinoite/download' },
+          { name: 'Community', link: '/kinoite/community' },
         ]"
       />
+
       <div class="px-8">
         <div class="my-8 mx-auto max-w-7xl text-center lg:text-start">
           <div class="container mx-auto lg:mx-0">

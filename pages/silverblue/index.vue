@@ -28,7 +28,11 @@ data._value.descriptionMd = await mdparser(data._value.description);
     >
       <div class="hero-laptop-container">
         <div class="px-auto mb-20 max-w-sm sm:max-w-xl">
-          <FpImage class="w-full" :src="data.screenshot_image.image" />
+          <FpImage
+            class="w-full"
+            :src="data.header_images[0].image"
+            :alt="data.header_images[0].alt_text"
+          />
         </div>
       </div>
     </FpBanner>
