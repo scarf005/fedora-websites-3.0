@@ -51,7 +51,7 @@ sections:
     content:
       - title:
         description: An immutable desktop operating system featuring the modern and GNOME Desktop
-        image: public/assets/images/fedora-silverblue-logo-light.png
+        image: public/assets/images/fedora-silverblue-light.png
         url: /silverblue
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
