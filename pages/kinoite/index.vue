@@ -1,21 +1,21 @@
 <script setup>
-const data = await getCMS("immutable/silverblue/home");
+const data = await getCMS("immutable/kinoite/home");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
 <template>
   <section
-    class="fp-banner to-fp-white relative -mt-12 bg-gradient-to-b from-fp-blue-700 pt-12 dark:to-neutral-900"
+    class="fp-banner to-fp-white relative -mt-12 bg-gradient-to-b from-teal-700 pt-12 dark:to-neutral-900"
   >
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-silverblue-logo-dark.png',
-        dark: 'assets/images/fedora-silverblue-logo-dark.png',
+        light: 'assets/images/fedora-kinoite-logo-dark.png',
+        dark: 'assets/images/fedora-kinoite-logo-dark.png',
       }"
-      home="/silverblue"
+      home="/kinoite"
       :items="[
-        { name: 'Download', link: '/silverblue/download' },
-        { name: 'Community', link: '/silverblue/community' },
+        { name: 'Download', link: '/kinoite/download' },
+        { name: 'Community', link: '/kinoite/community' },
       ]"
     />
     <FpBanner
@@ -27,12 +27,21 @@ data._value.descriptionMd = await mdparser(data._value.description);
       background="text-white bg-fp-blue dark:bg-fp-blue-700"
     >
       <div class="hero-laptop-container">
-        <div class="px-auto mb-20 max-w-sm sm:max-w-xl">
-          <FpImage
-            class="w-full"
-            :src="data.header_images[0].image"
-            :alt="data.header_images[0].alt_text"
-          />
+        <div class="px-auto mb-20 max-w-sm sm:max-w-2xl">
+          <div class="laptop-with-overlay relative mt-2 mb-3">
+            <FpImage
+              class="img-fluid relative mt-3"
+              :src="data.header_images[0].image"
+              :alt="data.header_images[0].text"
+            />
+            <div class="absolute top-0 left-0 ml-[10%] mt-[2%] w-[80%]">
+              <FpImage
+                class="img-fluid"
+                :src="data.header_images[1].image"
+                :alt="data.header_images[1].text"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </FpBanner>
@@ -131,7 +140,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
         >
           <template #prepend>
             <FpLink :href="card.url">
-              <FpCardImage slot="prepend" :src="card.image" class="h-16" />
+              <FpCardImage slot="prepend" :src="card.image" class="max-h-16" />
             </FpLink>
           </template>
         </FpCard>
@@ -176,8 +185,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
     <FpCallToAction
       :cta="data.links"
       :image="{
-        light: 'assets/images/fedora-silverblue-light.png',
-        dark: 'assets/images/fedora-silverblue-dark.png',
+        light: 'assets/images/fedora-kinoite-light.png',
+        dark: 'assets/images/fedora-kinoite-dark.png',
       }"
     />
   </section>

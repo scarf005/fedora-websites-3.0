@@ -1,38 +1,40 @@
-title: Fedora Silverblue
-leadin: The GNOME desktop experience you know and love in an immutable fashion.
+title: The Next Generation Operating System
+leadin: Surf the web, keep in touch with friends, manage files, enjoy music and video, and get productive at work without having to worry about breaking your system.
 description:
   An immutable variant looks, feels, and behaves just like a regular desktop operating system,
   but your updates are delivered as full images of a working system. This makes every installation
-  identical to every other, and it will never change while in use. What's more, Silverblue will
+  identical to every other, and it will never change while in use. What's more, Kinoite will
   always keep an older version of the system around for you to boot back into, should you need to,
   allowing you to try new programs, desktops, or even complete version upgrades fearlessly!
   <br /><br />
-  The immutable design makes a Silverblue system more stable, less prone to bugs, and easier to
+  The immutable design makes a Kinoite system more stable, less prone to bugs, and easier to
   test and develop. Applications are installed via Flatpak completely independent of the base system,
   and CLI tools can utilize the power of containerization with Toolbox.
   <br /><br/>
-  Silverblue comes with the popular GNOME desktop and follows the standard 13 month release-cycle,
+  Kinoite comes with the popular GNOME desktop and follows the standard 13 month release-cycle,
   making the experience very similar to that of Fedora Workstation.
 
 image:
-  src: https://stg.fedoraproject.org/assets/images/spins/screenshot-silverblue.png
-  alt: Fedora Silverblue Image
+  src: https://stg.fedoraproject.org/assets/images/immutable/fedora-kinoite-logo.png
+  alt: Fedora Kinoite Image
   width: 400
   height: 300
+header_images:
+  - image: assets/images/immutable/laptop.svg
+    alt_text: Screenshot of blank laptop as background to KDE desktop
+  - image: assets/images/immutable/kde-desktop.jpg
+    alt_text: Screenshot of KDE Desktop
 links:
   - text: Download Now
-    url: /silverblue/download/
+    url: /kinoite/download/
   - text: Documentation
-    url: "https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-header_images:
-  - image: assets/images/workstation_framework.png
-    alt_text: Screenshot of Fedora Silverblue
+    url: "https://docs.fedoraproject.org/en-US/fedora-kinoite/"
 sections:
   - sectionTitle: Built On Top of the Best
     content:
-      - title: GNOME Desktop
+      - title: KDE Desktop
         description: A beautiful, high-quality desktop, built on the latest open source technology.
-        image: public/assets/images/immutable/gnome-desktop-square.png
+        image: public/assets/images/immutable/kde-desktop.jpg
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
         image: public/assets/images/immutable/rpm-ostree-square.png
@@ -48,14 +50,14 @@ sections:
   - sectionTitle: Related Projects
     content:
       - title:
-        description: An immutable desktop operating system featuring the modern and modular Plasma Desktop
-        image: public/assets/images/immutable/fedora-kinoite-logo.png
-        url: https://kinoite.fedoraproject.org
+        description: An immutable desktop operating system featuring the modern and GNOME Desktop
+        image: public/assets/images/fedora-silverblue-logo-light.png
+        url: /silverblue
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
         image: public/assets/images/fedora-sericea-light.png
         url: /sericea
       - title:
         description: Fedora CoreOS Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.
-        image: public/assets/images/IoT-logo-light.png
+        image: public/assets/images/coreos-logo-light.png
         url: /coreos
