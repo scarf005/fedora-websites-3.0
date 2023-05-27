@@ -12,7 +12,7 @@ description:
   and CLI tools can utilize the power of containerization with Toolbox.
   <br /><br/>
   Kinoite comes with the popular GNOME desktop and follows the standard 13 month release-cycle,
-  making the experience very similar to that of Fedora Workstation.
+  making the experience very similar to that of Fedora's KDE Spin.
 
 image:
   src: https://stg.fedoraproject.org/assets/images/fedora-kinoite-light.png
@@ -32,9 +32,9 @@ links:
 sections:
   - sectionTitle: Built On Top of the Best
     content:
-      - title: KDE Desktop
+      - title: KDE Plasma Desktop
         description: A beautiful, high-quality desktop, built on the latest open source technology.
-        image: public/assets/images/immutable/kde-desktop.jpg
+        image: public/assets/images/immutable/kde-desktop-square.jpg
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
         image: public/assets/images/immutable/rpm-ostree-square.png
@@ -50,7 +50,7 @@ sections:
   - sectionTitle: Related Projects
     content:
       - title:
-        description: An immutable desktop operating system featuring the modern and GNOME Desktop
+        description: An immutable desktop operating system featuring the modern and elegant GNOME Desktop
         image: public/assets/images/fedora-silverblue-light.png
         url: /silverblue
       - title:
