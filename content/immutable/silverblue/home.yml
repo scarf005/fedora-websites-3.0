@@ -49,13 +49,13 @@ sections:
     content:
       - title:
         description: An immutable desktop operating system featuring the modern and modular Plasma Desktop
-        image: public/assets/images/immutable/fedora-kinoite-logo.png
-        url: https://kinoite.fedoraproject.org
+        image: public/assets/images/fedora-kinoite-light.png
+        url: /kinoite
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
         image: public/assets/images/fedora-sericea-light.png
         url: /sericea
       - title:
         description: Fedora CoreOS Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.
-        image: public/assets/images/IoT-logo-light.png
+        image: public/assets/images/coreos-logo-light.png
         url: /coreos
