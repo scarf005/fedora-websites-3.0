@@ -12,8 +12,8 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/immutable/fedora-kinoite-logo.png',
-          dark: 'assets/images/immutable/fedora-kinoite-logo.png',
+          light: 'assets/images/fedora-kinoite-logo-light.png',
+          dark: 'assets/images/fedora-kinoite-logo-dark.png',
         }"
         home="/kinoite"
         textColor="text-teal"
