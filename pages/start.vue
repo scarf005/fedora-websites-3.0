@@ -1,4 +1,4 @@
-<!-- vim:set ts=2 et: -->
+<!-- vim:set ts=2 sw=2 et: -->
 
 <script setup>
 import { decode } from "html-entities";
@@ -6,7 +6,15 @@ import { decode } from "html-entities";
 const { t } = useI18n();
 
 const data = await getCMS("start");
-useContentHead(data);
+useHead({
+  title: data._value.title,
+  meta: [
+    {
+      name: "parameters",
+      content: "sidebars: 0|1",
+    },
+  ],
+});
 
 // number of headlines to display
 const count_headlines = 9;
@@ -26,6 +34,55 @@ const user_documentation = data._value.sections[0];
 
 // communication channels
 const comm_channels = data._value.sections[1];
+
+// query string parameters
+const { sidebars = "1" } = useRoute().query;
+
+const discourse_uri = "https://discussion.fedoraproject.org";
+const discourse_api = "c/news/announce-list/76";
+
+const fp_headlines = async () => {
+  let dcdata = await $fetch(`${discourse_uri}/${discourse_api}.json`);
+  let topics = dcdata.topic_list.topics;
+
+  let i = 0;
+  let headlines = [];
+  while (i < count_headlines + 1) {
+    let title = topics[i].title;
+
+    if (title == "About the Announce List category") {
+      i++;
+      continue;
+    }
+
+    let date = new Date(topics[i].created_at);
+
+    headlines.push({
+      timestamp: date,
+      thumbnail: "/assets/images/announcements-472x200.png",
+      date: date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
+      title: title,
+      link: `${discourse_uri}/t/${topics[i].slug}`,
+    });
+
+    i++;
+  }
+
+  return headlines.slice(0, count_headlines);
+};
+
+let newsfeed = [];
+try {
+  if (process.client) {
+    newsfeed = await fp_headlines();
+  }
+} catch (e) {
+  console.log(e);
+}
 
 const magazine_uri = "https://fedoramagazine.org";
 const magazine_api = "wp-json/fedora-ssr-endpoint";
@@ -56,69 +113,32 @@ const fm_headlines = async () => {
   return headlines;
 };
 
-const commblog_uri = "https://communityblog.fedoraproject.org";
-const commblog_api = "wp-json/fedora-ssr-endpoint";
-
-const cb_headlines = async () => {
-  let index = await $fetch(`${commblog_uri}/${commblog_api}/v1/index/1`);
-
-  let i = 0;
-  let headlines = [];
-  while (i < count_commblog) {
-    let date = new Date(index[i].date);
-
-    headlines.push({
-      timestamp: date,
-      thumbnail: index[i].feature,
-      date: date.toLocaleDateString("en-US", {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      }),
-      title: decode(index[i].title),
-      link: `${commblog_uri}/${index[i].slug}`,
-    });
-
-    i++;
+let magazine = [];
+try {
+  if (process.client) {
+    magazine = await fm_headlines();
   }
+} catch (e) {
+  console.log(e);
+}
 
-  return headlines;
-};
+let headlines;
+if (newsfeed.length > 0 && magazine.length > 0) {
+  let combined = [...newsfeed, ...magazine];
+  headlines = combined
+    .sort(function (a, b) {
+      return b.timestamp - a.timestamp;
+    })
+    .slice(0, count_headlines);
+} else if (newsfeed.length > 0) {
+  headlines = newsfeed;
+} else if (magazine.length > 0) {
+  headlines = magazine;
+} else {
+  headlines = [];
+}
 
-const discourse_uri = "https://discussion.fedoraproject.org";
-const discourse_api = "c/news/announce-list/76.json";
-
-const fp_headlines = async () => {
-  let dcdata = await $fetch(`${discourse_uri}/${discourse_api}`);
-  let topics = dcdata.topic_list.topics;
-
-  let i = 0;
-  let headlines = [];
-  while (i < count_headlines + 1) {
-    let date = new Date(topics[i].created_at);
-
-    if (topics[i].title == "About the Announce List category") {
-      i++;
-      continue;
-    }
-
-    headlines.push({
-      timestamp: date,
-      thumbnail: "/assets/images/announcements-472x200.png",
-      date: date.toLocaleDateString("en-US", {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      }),
-      title: topics[i].title,
-      link: `${discourse_uri}/t/${topics[i].slug}`,
-    });
-
-    i++;
-  }
-
-  return headlines.slice(0, count_headlines);
-};
+const got_headlines = headlines.length == count_headlines;
 
 const common_query = "c/ask/common-issues/82/none";
 
@@ -186,74 +206,65 @@ const fp_solved_issues = async () => {
   return issues;
 };
 
-let magazine = [];
-try {
-  if (process.client) {
-    magazine = await fm_headlines();
+const commblog_uri = "https://communityblog.fedoraproject.org";
+const commblog_api = "wp-json/fedora-ssr-endpoint";
+
+const cb_headlines = async () => {
+  let index = await $fetch(`${commblog_uri}/${commblog_api}/v1/index/1`);
+
+  let i = 0;
+  let headlines = [];
+  while (i < count_commblog) {
+    let date = new Date(index[i].date);
+
+    headlines.push({
+      timestamp: date,
+      thumbnail: index[i].feature,
+      date: date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
+      title: decode(index[i].title),
+      link: `${commblog_uri}/${index[i].slug}`,
+    });
+
+    i++;
   }
-} catch (e) {
-  console.log(e);
-}
 
-let commblog = [];
-try {
-  if (process.client) {
-    commblog = await cb_headlines();
-  }
-} catch (e) {
-  console.log(e);
-}
+  return headlines;
+};
 
-const got_commblog = commblog.length == count_commblog;
+let common = [],
+  solved = [],
+  commblog = [];
+let got_common, got_solved, got_commblog;
 
-let newsfeed = [];
-try {
-  if (process.client) {
-    newsfeed = await fp_headlines();
-  }
-} catch (e) {
-  console.log(e);
-}
-
-let headlines;
-if (magazine.length > 0 && newsfeed.length > 0) {
-  let combined = [...magazine, ...newsfeed];
-  headlines = combined
-    .sort(function (a, b) {
-      return b.timestamp - a.timestamp;
-    })
-    .slice(0, count_headlines);
-} else if (magazine.length > 0) {
-  headlines = magazine;
-} else if (newsfeed.length > 0) {
-  headlines = newsfeed;
-} else {
-  headlines = [];
-}
-
-const got_headlines = headlines.length == count_headlines;
-
-let common = [];
-try {
-  if (process.client) {
+if (parseInt(sidebars) && process.client) {
+  try {
     common = await fp_common_issues();
+  } catch (e) {
+    console.log(e);
   }
-} catch (e) {
-  console.log(e);
-}
 
-const got_common = common.length == count_common;
+  got_common = common.length == count_common;
 
-let solved = [];
-try {
-  if (process.client) {
+  try {
     solved = await fp_solved_issues();
+  } catch (e) {
+    console.log(e);
   }
-} catch (e) {
-  console.log(e);
-}
 
-const got_solved = solved.length == count_solved;
+  got_solved = solved.length == count_solved;
+
+  try {
+    commblog = await cb_headlines();
+  } catch (e) {
+    console.log(e);
+  }
+
+  got_commblog = commblog.length == count_commblog;
+}
 
 // https://stackoverflow.com/a/71210364 (CC BY-SA 4.0)
 const get_width = () => {
@@ -279,8 +290,12 @@ const width_2xl = 1536;
 <template>
   <div class="mt-2 bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-8">
+      <!-- LEFT SIDEBAR -->
       <ClientOnly>
-        <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block">
+        <div
+          v-if="sidebars != '0'"
+          class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
+        >
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -333,6 +348,8 @@ const width_2xl = 1536;
           </div>
         </div>
       </ClientOnly>
+
+      <!-- CENTER COLUMN -->
       <div class="mx-auto max-w-screen-xl flex-initial">
         <div class="flex justify-center pb-12">
           <form
@@ -540,8 +557,13 @@ const width_2xl = 1536;
           </template>
         </ClientOnly>
       </div>
+
+      <!-- RIGHT SIDEBAR -->
       <ClientOnly>
-        <div class="hidden w-[22em] max-w-[25vw] flex-none xl:block">
+        <div
+          v-if="sidebars != '0'"
+          class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
+        >
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
