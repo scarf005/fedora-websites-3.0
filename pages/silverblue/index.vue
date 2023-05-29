@@ -15,7 +15,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       home="/silverblue"
       :items="[
         { name: 'Download', link: '/silverblue/download' },
-        { name: 'Community', link: '/silverblue/community' },
+        { name: 'Contributing', link: '/silverblue/contributing' },
       ]"
     />
     <FpBanner
@@ -37,20 +37,19 @@ data._value.descriptionMd = await mdparser(data._value.description);
       </div>
     </FpBanner>
   </section>
-
-  <!-- Why Immutable Section-->
-  <section class="pt-24 pb-12 dark:bg-neutral-900">
-    <h2
-      class="mb-12 min-h-[50px] bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
+  <section class="mx-auto max-w-screen-xl px-6 py-12">
+    <header
+      class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
     >
-      Why Go Immutable?
-    </h2>
-    <div class="flex justify-center px-10">
-      <ContentRendererMarkdown
-        class="space-y-6 text-center text-gray-600 dark:text-fp-gray-light lg:w-4/5 lg:text-start"
-        :value="data.descriptionMd"
-      />
-    </div>
+      <h3
+        class="mb-4 font-medium text-fp-green md:col-span-2 xl:col-span-1 xl:mb-6"
+      >
+        {{ $t(data.sections[0].sectionTitle) }}
+      </h3>
+    </header>
+    <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4 workstation-accent">
+      <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
+    </FpList>
   </section>
 
   <svg
@@ -98,10 +97,10 @@ data._value.descriptionMd = await mdparser(data._value.description);
     <h2
       class="mb-12 bg-gradient-to-r from-fp-green to-fp-newblue-500 bg-clip-text text-center text-5xl font-bold text-transparent"
     >
-      {{ $t(data.sections[0].sectionTitle) }}
+      {{ $t(data.sections[1].sectionTitle) }}
     </h2>
     <FpBenefit
-      v-for="item in data.sections[0].content"
+      v-for="item in data.sections[1].content"
       v-bind="item"
       columns="3"
     />
@@ -113,7 +112,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
   >
     <div
       class="mx-auto max-w-7xl rounded-lg bg-white px-12 pt-6 pb-10 dark:bg-neutral-900"
-      v-for="section in [data.sections[1]]"
+      v-for="section in [data.sections[2]]"
     >
       <h2
         class="mb-8 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"

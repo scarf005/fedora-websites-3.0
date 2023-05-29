@@ -28,6 +28,20 @@ header_images:
   - image: assets/images/workstation_framework.png
     alt_text: Screenshot of Fedora Silverblue
 sections:
+  - sectionTitle: Why Fedora Silverblue?
+    content:
+      - title: Reliable
+        description: Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!
+      - title: Atomic
+        description: The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.
+      - title: Safe
+        description: A previous version of your system is always kept around, just in case. If you need to go back in time, you can!
+      - title: Containerized
+        description: Graphical applications are installed via Flatpak, and keep themselves separate from the base system. They also allow for fine-grained control over their permissions.
+      - title: Developer-Friendly
+        description: Toolbx keeps all of your development tools neatly organized per-project. Keep multiple versions of your tools independent from each other and unaffected by changes to the base system.
+      - title: Private, Trusted, Open Source
+        description: There are no ads, and all your data belongs to you! Fedora is built on the latest open source technologies, and backed by Red Hat.
   - sectionTitle: Built On Top of the Best
     content:
       - title: GNOME Desktop
