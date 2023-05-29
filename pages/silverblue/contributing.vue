@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("immutable/silverblue/community");
+const data = await getCMS("immutable/silverblue/contributing");
 
 useContentHead(data);
 </script>
@@ -19,7 +19,7 @@ useContentHead(data);
         textColor="text-fp-newblue-700"
         :items="[
           { name: 'Download', link: '/silverblue/download' },
-          { name: 'Community', link: '/silverblue/community' },
+          { name: 'Contributing', link: '/silverblue/contributing' },
         ]"
       />
       <div class="px-8">
@@ -46,15 +46,12 @@ useContentHead(data);
     />
 
     <!-- ways to get involved -->
-    <FpGetInvolvedSection
+    <FpContributingSection
       color="newblue"
       :sectionTitle="data.sections[2].sectionTitle"
       :content="data.sections[2].content"
       class="dark:bg-neutral-900"
     />
-
-    <!-- Fedora Events -->
-    <FpEventSection color="text-fp-newblue" />
 
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />

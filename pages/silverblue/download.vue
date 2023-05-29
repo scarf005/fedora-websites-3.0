@@ -72,7 +72,7 @@ useContentHead(data);
       textColor="text-fp-newblue"
       :items="[
         { name: 'Download', link: '/silverblue/download' },
-        { name: 'Community', link: '/silverblue/community' },
+        { name: 'Contributing', link: '/silverblue/contributing' },
       ]"
     />
 
