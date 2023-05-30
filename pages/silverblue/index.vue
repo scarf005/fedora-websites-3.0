@@ -1,7 +1,6 @@
 <script setup>
 const data = await getCMS("immutable/silverblue/home");
 useContentHead(data);
-data._value.descriptionMd = await mdparser(data._value.description);
 </script>
 <template>
   <section
@@ -37,6 +36,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       </div>
     </FpBanner>
   </section>
+
+  <!-- why fedora silverblue -->
   <section class="mx-auto max-w-screen-xl px-6 py-12">
     <header
       class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
@@ -181,5 +182,3 @@ data._value.descriptionMd = await mdparser(data._value.description);
     />
   </section>
 </template>
-
-<style></style>
