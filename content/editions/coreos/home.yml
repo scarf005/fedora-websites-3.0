@@ -82,7 +82,7 @@ sections:
     content:
       - title: Report & discuss issues
         description:
-          You can view, file, and discuss Fedore CoreOS issues on the Fedora
+          You can view, file, and discuss Fedora CoreOS issues on the Fedora
           CoreOS issue tracker.
       - title: Chat with the team
         description: Visit \#fedora-coreos on irc.libera.chat.

@@ -6,14 +6,14 @@
   { "code": "de", "iso": "de", "file": "de.json", "name": "Deutsch" },
   { "code": "en", "iso": "en", "file": "en.json", "name": "English" },
   { "code": "es", "iso": "es", "file": "es.json", "name": "Español" },
-  { "code": "fi", "iso": "fi", "file": "fi.json", "name": "Suomi" },
   { "code": "fa", "iso": "fa", "file": "fa.json", "name": "Persian", "dir": "rtl" },
-  { "code": "fur", "iso": "fur", "file": "fur.json", "name": "Friulian" },
+  { "code": "fi", "iso": "fi", "file": "fi.json", "name": "Suomi" },
   { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
-  { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Magyar" },
+  { "code": "fur", "iso": "fur", "file": "fur.json", "name": "Friulian" },
   { "code": "he", "iso": "he", "file": "he.json", "name": "Hebrew", "dir": "rtl" },
-  { "code": "it", "iso": "it", "file": "it.json", "name": "Italiano" },
+  { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Magyar" },
   { "code": "id", "iso": "id", "file": "id.json", "name": "Indonesian" },
+  { "code": "it", "iso": "it", "file": "it.json", "name": "Italiano" },
   { "code": "ja", "iso": "ja", "file": "ja.json", "name": "日本"},
   { "code": "ko", "iso": "ko", "file": "ko.json", "name": "한국어" },
   { "code": "nl", "iso": "nl", "file": "nl.json", "name": "Nederlands" },
@@ -24,9 +24,11 @@
     "file": "pt_BR.json",
     "name": "Português do Brasil"
   },
+  { "code": "pt", "iso": "pt", "file": "pt.json", "name": "Português" },
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" },
-  { "code": "sq", "iso": "sq", "file": "sq.json", "name": "Albanian" },
   { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" },
+  { "code": "tr", "iso": "tr", "file": "tr.json", "name": "Türkçe" },
   { "code": "uk", "iso": "uk", "file": "uk.json", "name": "українська"},
-  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "中文（简体）" }
+  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "中文（简体）" },
+  { "code": "zh-Hant", "iso": "zh-Hant", "file": "zh_Hant.json", "name": "繁体中文" }
 ]

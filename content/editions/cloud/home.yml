@@ -63,7 +63,7 @@ sections:
       Fedora Cloud is created by a team in the Fedora community called the **Cloud Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [Cloud Working Group website](https://fedoraproject.org/wiki/Cloud_SIG).
     content:
       - title: Report & discuss issues
-        description: You can view, file, and discuss Fedore Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).
+        description: You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).
       - title: Chat with the team
         description: Visit **\#fedora-Cloud** on irc.libera.chat.
       - title: Join the mailing list
