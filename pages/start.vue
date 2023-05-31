@@ -288,8 +288,8 @@ const width_2xl = 1536;
 </script>
 
 <template>
-  <div class="mt-2 bg-fp-gray-lightest dark:bg-neutral-900">
-    <div class="mx-8 flex gap-8 py-8">
+  <div class="bg-fp-gray-lightest dark:bg-neutral-900">
+    <div class="mx-8 flex gap-8 py-10">
       <!-- LEFT SIDEBAR -->
       <ClientOnly>
         <div
@@ -404,43 +404,6 @@ const width_2xl = 1536;
           >
             <h2 class="mb-8 text-2xl leading-none">
               <a
-                :href="`${discourse_uri}/${common_query}`"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >Common Issues</a
-              >
-            </h2>
-            <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div v-for="i in common">
-                <div class="ml-2 flex items-center">
-                  <a :href="i.link" class="flex-none p-2"
-                    ><Icon
-                      name="fa6-solid:wrench"
-                      size="32"
-                      class="text-fp-blue"
-                  /></a>
-                  <a
-                    :href="i.link"
-                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                    >{{ i.title }}</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="whitespace-no-wrap text-right">
-              <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
-                ></span
-              >
-            </div>
-          </div>
-          <div
-            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-            dir="ltr"
-          >
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
                 :href="`${discourse_uri}/search?${solved_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
                 >{{ $t("Latest Solved Issues") }}</a
@@ -503,7 +466,7 @@ const width_2xl = 1536;
               </div>
             </div>
           </div>
-          <div class="rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 href="https://docs.fedoraproject.org/en-US/fedora/latest/"
@@ -524,6 +487,43 @@ const width_2xl = 1536;
                   >
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+            dir="ltr"
+          >
+            <h2 class="text-2xl leading-none">
+              <a
+                :href="`${discourse_uri}/${common_query}`"
+                class="text-2xl font-semibold leading-none text-fp-newblue"
+                >Common Issues</a
+              >
+            </h2>
+            <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div v-for="i in common">
+                <div class="ml-2 flex items-center">
+                  <a :href="i.link" class="flex-none p-2"
+                    ><Icon
+                      name="fa6-solid:wrench"
+                      size="32"
+                      class="text-fp-blue"
+                  /></a>
+                  <a
+                    :href="i.link"
+                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                    >{{ i.title }}</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="whitespace-no-wrap text-right">
+              <span class="text-base/4text-gray-400 font-semibold"
+                >{{ $t("From") }}
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
             </div>
           </div>
           <!-- the fallback template is shown when the client has javascript disabled -->
