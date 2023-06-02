@@ -1,1 +1,20 @@
-{}
+{
+    "Community": "Заједница",
+    "Legal": "Правне ствари",
+    "Sponsors": "Спонзори",
+    "Join Us!": "Придружите нам се!",
+    "Languages": "Језици",
+    "Destination": "Одредиште",
+    "Learn More": "Сазнајте више",
+    "Learn more about the relationship between Red Hat and Fedora.": "Сазнајте више о односу Ред Хета и Федоре.",
+    "Download": "Преузимање",
+    "architecture": "aрхитектура",
+    "Learn more": "Сазнајте више",
+    "Verify your download": "Проверите ваше преузимање",
+    "If the output states that the file is valid, then it's ready to use!": "Ако излаз показује да је датотека исправна, онда је спремна за употребу!",
+    "We take security seriously": "Ми озбиљно схватамо безбедност",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "Када будете преузели слику, обавезно је верификујте због интегритета и безбедности",
+    "Fedora is sponsored by Red Hat": "Федору помаже компанија Ред Хет",
+    "Learn more about the relationship between Red Hat and Fedora": "Сазнајте више о односу Ред Хета и Федоре",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity.": "Када будете преузели слику, обавезно је верификујте због интегритета и безбедности."
+}
