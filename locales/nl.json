@@ -437,5 +437,7 @@
     "Fedora Linux with the Sway Tiling Window Manager": "Fedora Linux met Sway, de vensterbeheerder die vensters niet laat overlappen. Sway is ontworpen om de vensterbeheerder i3 simpel te kunnen vervangen. Sway maakt gebruik van het modernere protocol Wayland.",
     "Fedora Linux with the i3 Tiling Window Manager.": "Fedora Linux met i3, een vensterbeheerder die vensters niet laat overlappen. i3 is ontworpen voor het venstersysteem X11.",
     "Engineering Teams": "Technische teams",
-    "Edit fedoraproject.org using the content management system! Tip: Use the GitLab SSO link to open a session first.": "Redigeer fedoraproject.org met het contentmanagementsysteem! Tip: gebruik eerst de link voor eenmalig inloggen bij GitLab om een sessie te openen."
+    "Edit fedoraproject.org using the content management system! Tip: Use the GitLab SSO link to open a session first.": "Redigeer fedoraproject.org met het contentmanagementsysteem! Tip: gebruik eerst de link voor eenmalig inloggen bij GitLab om een sessie te openen.",
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "U kunt problemen met Fedora CoreOS bekijken, melden en bespreken met het foutenbeheerprogramma van Fedora CoreOS.",
+    "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "U kunt problemen in Fedora Cloud bekijken, melden en bespreken met het [foutenbeheerprogramma van Fedora Cloud](https://pagure.io/cloud-sig/issues)."
 }
