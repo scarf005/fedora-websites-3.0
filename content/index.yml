@@ -9,7 +9,8 @@ image:
 links:
   - text: Release Notes
 sections:
-  - sectionTitle: 🎉 [Fedora Linux 38 released!](https://fedoramagazine.org/announcing-fedora-38)
+  - sectionTitle: 🎉 [Fedora Linux 38
+      released!](https://fedoramagazine.org/announcing-fedora-38)
     sectionDescription: active
   - sectionTitle: Next upcoming event
     sectionDescription: ""
@@ -23,13 +24,12 @@ sections:
     content:
       - title: The leading Linux desktop
         url: /workstation
-        description:
-          Fedora Workstation is a polished, easy to use operating system for
+        description: Fedora Workstation is a polished, easy to use operating system for
           laptop and desktop computers, with a complete set of tools for
           developers and makers of all kinds.
         image:
-          light: public/assets/images/workstation-logo-light.png
-          dark: public/assets/images/workstation-logo-dark.png
+          light: public/assets/images/colur-flap.png
+          dark: public/assets/images/colur-flap.png
         link:
           text: Download Now
       - title: A Community Server OS
@@ -43,8 +43,7 @@ sections:
           text: Download Now
       - title: The solid edge foundation
         url: /iot
-        description:
-          Fedora IoT provides a trusted open source platform as a strong
+        description: Fedora IoT provides a trusted open source platform as a strong
           foundation for IoT ecosystems.
         image:
           light: public/assets/images/IoT-logo-light.png
@@ -53,8 +52,7 @@ sections:
           text: Download Now
       - title: The lightweight VM environment
         url: /cloud
-        description:
-          Fedora Cloud edition is a powerful and minimal base operating
+        description: Fedora Cloud edition is a powerful and minimal base operating
           system image with tailored images available for both public and many
           private cloud uses.
         image:
@@ -73,9 +71,14 @@ sections:
           text: Download Now
   - sectionTitle: Want more Fedora options?
     content:
+      - title: Immutable Desktops
+        description: The Fedora desktop experiences you know with an additional layer of
+          security and reliability.
+        link:
+          text: Learn More
+          url: /silverblue
       - title: Fedora Spins
-        description:
-          If you prefer an alternative desktop environment such as KDE Plasma
+        description: If you prefer an alternative desktop environment such as KDE Plasma
           Desktop or Xfce, you can download a Fedora Spin for your preferred
           desktop environment and use that to install Fedora, pre-configured for
           the desktop environment of your choice.
@@ -84,8 +87,7 @@ sections:
           url: https://spins.fedoraproject.org/
         image: public/assets/images/fedora-spins-logo.png
       - title: Fedora Labs
-        description:
-          Fedora Labs is a selection of curated bundles of purpose-driven
+        description: Fedora Labs is a selection of curated bundles of purpose-driven
           software and content as curated and maintained by members of the
           Fedora Community. These may be installed as standalone full versions
           of Fedora or as add-ons to existing Fedora installations.
@@ -94,8 +96,7 @@ sections:
           text: Learn more
           url: https://labs.fedoraproject.org/
       - title: Fedora ALT Downloads
-        description:
-          The Fedora Alternative Downloads are either special-purpose - for
+        description: The Fedora Alternative Downloads are either special-purpose - for
           testing, for specific architectures - or are more standard versions of
           Fedora in alternative formats such as network installer format or
           formatted for BitTorrent download.
@@ -116,8 +117,8 @@ sections:
           text: Fedora Discussion
           url: https://discussion.fedoraproject.org/c/ask
       - title: Chat
-        description: "Users and developers are available in the #fedora
-          channel on Fedora Chat."
+        description: "Users and developers are available in the #fedora channel on
+          Fedora Chat."
         link:
           text: Fedora Chat
           url: https://chat.fedoraproject.org/#/room/#fedora:fedoraproject.org
@@ -137,8 +138,7 @@ sections:
     images: public/assets/images/fedora-blue.png
     content:
       - title: License Details
-        description:
-          It is a compilation of software packages, each under its own
+        description: It is a compilation of software packages, each under its own
           license. Images that can be downloaded here are available under the
           combination of licenses of the constituent software packages and the
           license of the Fedora Linux distribution itself. [View
