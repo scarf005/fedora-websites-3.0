@@ -28,8 +28,8 @@ sections:
           laptop and desktop computers, with a complete set of tools for
           developers and makers of all kinds.
         image:
-          light: public/assets/images/colur-flap.png
-          dark: public/assets/images/colur-flap.png
+          light: public/assets/images/workstation-logo-light.png
+          dark: public/assets/images/workstation-logo-dark.png
         link:
           text: Download Now
       - title: A Community Server OS
