@@ -165,7 +165,7 @@ useHead({
       class="container mx-auto mb-8 rounded-lg bg-gradient-to-b from-fp-green/25 to-fp-blue/25 pt-6 dark:from-fp-green-300/25 dark:to-fp-newblue/25 md:bg-gradient-to-r lg:mb-16"
     >
       <!-- WANT MORE FEDORA OPTIONS -->
-      <div class="flex flex-wrap justify-center gap-4 pb-8 lg:gap-8">
+      <div class="flex flex-wrap justify-center gap-4 pb-8">
         <article
           v-for="card in data.sections[4].content"
           :key="card.id"

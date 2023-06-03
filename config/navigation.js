@@ -61,7 +61,7 @@ const navigation = {
           },
           {
             label: "Kinoite",
-            path: "https://kinoite.fedoraproject.org",
+            path: "/kinoite",
             icon: "fa6-solid:desktop",
             description: "Fedora Kinoite is an immutable KDE-based desktop.",
           },
