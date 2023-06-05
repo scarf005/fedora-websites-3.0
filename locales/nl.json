@@ -439,5 +439,10 @@
     "Engineering Teams": "Technische teams",
     "Edit fedoraproject.org using the content management system! Tip: Use the GitLab SSO link to open a session first.": "Redigeer fedoraproject.org met het contentmanagementsysteem! Tip: gebruik eerst de link voor eenmalig inloggen bij GitLab om een sessie te openen.",
     "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "U kunt problemen met Fedora CoreOS bekijken, melden en bespreken met het foutenbeheerprogramma van Fedora CoreOS.",
-    "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "U kunt problemen in Fedora Cloud bekijken, melden en bespreken met het [foutenbeheerprogramma van Fedora Cloud](https://pagure.io/cloud-sig/issues)."
+    "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "U kunt problemen in Fedora Cloud bekijken, melden en bespreken met het [foutenbeheerprogramma van Fedora Cloud](https://pagure.io/cloud-sig/issues).",
+    "Fedora Quick Docs": "Korte handleidingen van Fedora",
+    "Fedora Social": "Chatten binnen Fedora",
+    "Fedora Sericea is an immutable Sway-based desktop.": "Fedora Sericea is een onveranderbare Fedora Linux die gebruik maakt van de vensterbeheerder Sway.",
+    "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows.": "Fedora Silverblue is een onveranderbare Fedora Linux met een goede ondersteuning voor toepassingsprogramma's in containers.",
+    "Fedora built for Pinephone and Pinephone Pro": "Een Fedora Linux gemaakt voor de PinePhone en de PinePhone Pro"
 }
