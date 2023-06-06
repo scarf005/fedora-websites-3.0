@@ -143,11 +143,11 @@ useHead({
             <FpLink
               class="text-base text-fp-blue underline underline-offset-4"
               :href="item.url + '/download'"
-              >Download Now</FpLink
+              >{{ $t("Download Now") }}</FpLink
             >
           </div>
           <div class="absolute bottom-6 right-4">
-            <FpBtn :href="item.url">Learn More</FpBtn>
+            <FpBtn :href="item.url">{{ $t("Learn More") }}</FpBtn>
           </div>
         </div>
       </div>
