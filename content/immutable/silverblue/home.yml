@@ -67,7 +67,7 @@ sections:
         url: /kinoite
       - title:
         description: An immutable desktop operating system featuring the keyboard-driven Sway window manager.
-        image: public/assets/images/sericea-final-transparent.png
+        image: public/assets/images/fedora-sericea-light.png
         url: /sericea
       - title:
         description: Fedora CoreOS Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.

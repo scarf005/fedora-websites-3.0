@@ -124,8 +124,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
       <FpCallToAction
         :cta="data.links"
         :image="{
-          light: 'assets/images/sericea-final-transparent.png',
-          dark: 'assets/images/sericea-final-transparent.png',
+          light: 'assets/images/fedora-sericea-light.png',
+          dark: 'assets/images/fedora-sericea-dark.png',
         }"
       />
     </section>
