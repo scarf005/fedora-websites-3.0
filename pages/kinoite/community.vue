@@ -47,15 +47,12 @@ useContentHead(data);
     />
 
     <!-- ways to get involved -->
-    <FpGetInvolvedSection
+    <FpContributingSection
       color="newblue"
       :sectionTitle="data.sections[2].sectionTitle"
       :content="data.sections[2].content"
       class="dark:bg-neutral-900"
     />
-
-    <!-- Fedora Events -->
-    <FpEventSection color="text-fp-newblue" />
 
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />
