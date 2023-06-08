@@ -52,5 +52,6 @@
     "Become a Fedora Contributor": "Menjadi Kontributor Fedora",
     "Code of Conduct": "Kode Etik",
     "Sponsors": "Sponsor",
-    "Fedora is sponsored by Red Hat": "Fedora disponsori oleh Red Hat"
+    "Fedora is sponsored by Red Hat": "Fedora disponsori oleh Red Hat",
+    "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity.": "Dengan menghitung checksum image di komputer Anda dan membandingkannya dengan checksum asli, Anda dapat memverifikasi bahwa image tersebut tidak dirusak atau korup. Image juga ditandatangani dengan kunci gpg Fedora untuk menunjukkan integritasnya."
 }
