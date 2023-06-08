@@ -60,7 +60,22 @@ function closeVerify() {
 }
 
 useContentHead(data);
+
+// fedora media writer
+if (data._value.sections[1].sectionDescription) {
+  data._value.sections[1].sectionDescriptionMd = await mdparser(
+    data._value.sections[1].sectionDescription
+  );
+}
+
+// desktop images
+if (data._value.sections[2].sectionDescription) {
+  data._value.sections[2].sectionDescriptionMd = await mdparser(
+    data._value.sections[2].sectionDescription
+  );
+}
 </script>
+
 <template>
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-1">
     <TheLocalBar
@@ -77,13 +92,13 @@ useContentHead(data);
     />
 
     <!-- TITLE -->
-    <section class="px-2 pt-24 pb-12 text-center lg:text-start">
+    <section class="px-2 pt-24 pb-8 text-center lg:text-start">
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-4 text-4xl text-gray-600 dark:text-gray-200">
           {{ $t("Download") }}
           <span class="text-fp-newblue" v-if="betaSwitch == false">
-            {{ data.title }} {{ release_data.ga.releasever }}</span
-          >
+            {{ data.title }} {{ release_data.ga.releasever }}
+          </span>
           <span class="text-fp-newblue" v-else>
             {{ data.title }} {{ release_data.beta.releasever }}
             {{ $t("BETA").toLowerCase() }}
@@ -113,11 +128,11 @@ useContentHead(data);
         </div>
         <div class="mt-5 flex ltr:-ml-5 rtl:-mr-5" id="ctas">
           <FpLink
-            :href="data.sections[0].content[0].link.url"
+            :href="data.sections[0].content[1].link.url"
             class="mx-5 text-blue-500"
           >
             <Icon name="fa-book" />
-            {{ $t(data.sections[0].content[0].title) }}
+            {{ $t(data.sections[0].content[1].title) }}
           </FpLink>
           <FpLink
             :href="`https://docs.fedoraproject.org/en-US/fedora/f${release_data.ga.releasever}/release-notes/`"
@@ -126,32 +141,19 @@ useContentHead(data);
             <Icon name="fa-book" />
             {{ $t("Release Notes") }}
           </FpLink>
-        </div>
-        <div class="mt-5 flex">
-          <p class="text-sm">
-            <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
-            Silverblue 38 ISOs for ARM
-            <FpLink
-              class="text-sm text-fp-blue"
-              href="https://github.com/fedora-silverblue/issue-tracker/issues/453"
-              >have been delayed</FpLink
-            >
-            - but you can still download/install the above 37 release, and
-            <FpLink
-              class="text-sm text-fp-blue"
-              href="https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#upgrading"
-              >then rebase</FpLink
-            >
-            , while this is being fixed.
-          </p>
+          <FpLink
+            :href="data.sections[0].content[2].link.url"
+            class="mx-5 text-blue-500"
+          >
+            <Icon name="fa-book" />
+            {{ $t(data.sections[0].content[2].title) }}
+          </FpLink>
         </div>
       </div>
     </section>
 
-    <!-- DOWNLOAD ARTIFACTS -->
     <section
       class="scroll-mt-14 bg-gradient-to-r from-sky-50 to-blue-50 py-6 px-2 dark:bg-neutral-800 dark:bg-none"
-      id="download_section"
     >
       <div
         class="container mx-auto max-w-7xl"
@@ -161,7 +163,7 @@ useContentHead(data);
           <p class="text-fp-gray">Show Beta downloads</p>
           <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
         </div>
-        <div class="flex justify-end">
+        <div class="flex justify-end pb-8">
           <FpJoinTip
             description="Help us with testing!"
             inline="true"
@@ -169,101 +171,195 @@ useContentHead(data);
           />
         </div>
       </div>
-      <div class="container mx-auto my-8 max-w-7xl">
+      <div class="container mx-auto my-8 max-w-7xl px-2">
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <template
-            v-if="betaSwitch == false && ga_data?.payload.images.Silverblue"
-          >
-            <DownloadSection
-              name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Silverblue.x86_64"
-              :dlPrefix="dlpath.x86_64"
-              :version="release_data.ga.releasever"
-              class="spins-theme"
-            />
-            <DownloadSection
-              name="For ARM® aarch64 systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="
-                ga_data.payload.images.Silverblue.aarch64 ||
-                backup.data.value.payload.images.Silverblue.aarch64
-              "
-              :dlPrefix="dlpath.aarch64"
-              :version="
-                ga_data.payload.images.Silverblue.aarch64
-                  ? release_data.ga.releasever
-                  : release_data.ga.releasever - 1
-              "
-              class="spins-theme"
-            />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Silverblue.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.ga.releasever"
-              class="spins-theme"
-            />
-          </template>
-          <template v-else-if="betaSwitch == true && beta_data?.payload">
-            <DownloadSection
-              name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Silverblue.x86_64"
-              :dlPrefix="dlpath.x86_64"
-              :version="release_data.beta.releasever"
-              class="spins-theme"
-              isBeta
-            />
-            <DownloadSection
-              name="For ARM® aarch64 systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="beta_data.payload.images.Silverblue.aarch64"
-              :dlPrefix="dlpath.x86_64"
-              :version="release_data.beta.releasever"
-              class="spins-theme"
-              isBeta
-            />
-            <DownloadSection
-              name="For Power ppc64le systems"
-              art_name="Fedora Silverblue"
-              @verify-click="updateVerify"
-              :artifacts="ga_data.payload.images.Silverblue.ppc64le"
-              :dlPrefix="dlpath.ppc64le"
-              :version="release_data.beta.releasever"
-              class="spins-theme"
-              isBeta
-            />
-          </template>
-          <template v-else>
-            <div class="text-center font-bold lg:col-span-2">
-              {{ $t("No files available for this version.") }}
+          <!-- FEDORA MEDIA WRITER DOWNLOAD -->
+          <div class="">
+            <div class="flex">
+              <div>
+                <FpImage :src="data.sections[1].images" />
+              </div>
+              <div>
+                <h3 class="text-fp-newblue-500">
+                  {{ $t(data.sections[1].sectionTitle) }}
+                </h3>
+
+                <ContentRenderer
+                  class="markdown mb-10 text-fp-gray"
+                  :value="data.sections[1].sectionDescriptionMd"
+                />
+              </div>
             </div>
-          </template>
+            <div
+              v-for="item in data.sections[1].content"
+              class="workstation-theme download-section mb-2"
+            >
+              <FpDownloadItem name="Fedora Media Writer" :format="item.title">
+                <template #btn>
+                  <FpLink
+                    :href="item.link.url"
+                    title="Download"
+                    class="rounded-xl"
+                  >
+                    <Icon :name="item.link.text" class="!align-baseline" />
+                  </FpLink>
+                </template>
+              </FpDownloadItem>
+            </div>
+          </div>
+
+          <!-- DESKTOP IMAGES -->
+          <div class="">
+            <h3 class="text-fp-newblue-500">
+              {{ $t(data.sections[2].sectionTitle) }}
+            </h3>
+
+            <ContentRenderer
+              class="markdown mb-10 text-fp-gray"
+              :value="data.sections[2].sectionDescriptionMd"
+            />
+            <div v-if="betaSwitch == false && ga_data?.payload">
+              <DownloadSection
+                name="For Intel and AMD x86_64 systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Silverblue.x86_64"
+                :dlPrefix="dlpath.x86_64"
+                :version="release_data.ga.releasever"
+                class="spins-theme"
+              />
+              <DownloadSection
+                name="For ARM® aarch64 systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="
+                  ga_data.payload.images.Silverblue.aarch64 ||
+                  backup.data.value.payload.images.Silverblue.aarch64
+                "
+                :dlPrefix="dlpath.aarch64"
+                :version="
+                  ga_data.payload.images.Silverblue.aarch64
+                    ? release_data.ga.releasever
+                    : release_data.ga.releasever - 1
+                "
+                class="spins-theme"
+              />
+              <div class="mt-5 flex">
+                <div class="mx-2 align-middle">
+                  <Icon name="fa-solid:info-circle" />
+                </div>
+                <div>
+                  <p class="text-sm">
+                    Silverblue 38 ISOs for ARM
+                    <FpLink
+                      class="text-sm text-fp-blue"
+                      href="https://github.com/fedora-silverblue/issue-tracker/issues/453"
+                      >have been delayed</FpLink
+                    >
+                    - but you can still download/install the above 37 release,
+                    and
+                    <FpLink
+                      class="text-sm text-fp-blue"
+                      href="https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#upgrading"
+                      >then rebase</FpLink
+                    >
+                    , while this is being fixed.
+                  </p>
+                </div>
+              </div>
+              <DownloadSection
+                name="For Power ppc64le systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Silverblue.ppc64le"
+                :dlPrefix="dlpath.ppc64le"
+                :version="release_data.ga.releasever"
+                class="spins-theme"
+              />
+            </div>
+            <!-- Beta Releases -->
+            <div v-else-if="betaSwitch == true && beta_data?.payload">
+              <DownloadSection
+                name="For Intel and AMD x86_64 systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="beta_data.payload.images.Silverblue.x86_64"
+                :dlPrefix="dlpath.x86_64"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="spins-theme"
+              />
+              <DownloadSection
+                name="For ARM® aarch64 systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="beta_data.payload.images.Silverblue.aarch64"
+                :dlPrefix="dlpath.x86_64"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="spins-theme"
+              />
+              <DownloadSection
+                name="For Power ppc64le systems"
+                art_name="Fedora Silverblue"
+                @verify-click="updateVerify"
+                :artifacts="ga_data.payload.images.Silverblue.ppc64le"
+                :dlPrefix="dlpath.ppc64le"
+                :version="release_data.beta.releasever"
+                isBeta
+                class="spins-theme"
+              />
+            </div>
+            <div v-else>
+              <p class="text-center font-bold">
+                {{ $t("No files available for this version.") }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- SECURITY -->
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
       <CoreOsVerifySection />
     </section>
 
+    <!-- LEARN MORE ABOUT FEDORA MEDIA WRITER -->
+    <section class="py-24 px-4 dark:bg-neutral-900">
+      <div class="container mx-auto grid max-w-7xl grid-cols-2">
+        <div class="col-span-2 my-5 p-2 md:col-span-1">
+          <h2 class="mb-5 text-fp-newblue-500">
+            {{ $t(data.sections[3].sectionTitle) }}
+          </h2>
+          <p class="text-base text-fp-gray">
+            {{ $t(data.sections[3].content[0].description) }}
+          </p>
+          <p class="mt-5 text-sm text-gray-400">
+            {{ $t(data.sections[3].content[1].description) }}
+          </p>
+        </div>
+        <div
+          class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
+        >
+          <FpImage class="max-h-72" :src="data.sections[3].content[1].image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTE -->
     <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-800">
       <BecomeContributorSection />
     </section>
 
+    <!-- COMPLIANCE -->
     <section class="py-12 px-4 dark:bg-black">
       <DownloadComplianceSection />
     </section>
 
+    <!-- Verify pop up -->
     <Transition
       enter-active-class="transform duration-200 ease-out"
       enter-from-class="opacity-0"
