@@ -422,5 +422,8 @@
     "CoreOS is currently available on multiple platforms, with more coming soon.": "CoreOS está actualmente disponible en múltiples plataformas, y pronto aún en más.",
     "There are a wide variety of supported installation methods.": "Hay una amplia variedad de métodos de instalación soportados.",
     "The Fedora CoreOS image is kept minimal by design.": "La imagen de Fedora CoreOS se mantiene mínima por diseño.",
-    "Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "Regístrate en [cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) para recibir citaciones a reuniones y minutas."
+    "Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "Regístrate en [cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) para recibir citaciones a reuniones y minutas.",
+    "Fedora CoreOS Release Notes": "Notas de lanzamiento de Fedora CoreOS",
+    "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Puedes ver, reportar y discutir asuntos de Fedora Cloud en el [rastreador de asuntos de Fedora Cloud](https://pagure.io/cloud-sig/issues).",
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Puedes ver, enviar y discutir asuntos de Fedora CoreOS en el rastreador de asuntos de Fedora CoreOS."
 }
