@@ -4,12 +4,11 @@ description: Join a community of users and contributors focused on Fedora Kinoit
 sections:
   - sectionTitle: Description
     sectionDescription:
-      Fedora Kinoite is an open community seeking contributors from everywhere, and of every type. From documentation writing,
-      to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Kinoite!
+      Fedora Kinoite is maintained by the [KDE Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/KDE) in Fedora and is the fruit of collaboration between the Fedora and KDE community.
       <br /><br />
-      Fedora Kinoite (and all other immutable variants) are powered by some amazing open-source projects, including
-      [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), and [flatpak](https://github.com/flatpak/flatpak). If you are
-      a developer, consider helping out with one of these projects.
+      The KDE SIG is an open community seeking contributors from everywhere, and of every type. From documentation writing, to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Kinoite!
+      <br /><br />
+      The KDE community creates the software and they also have a [get involved page](https://community.kde.org/Get_Involved) with a lot of helpful information on how to help.
     content: []
   - sectionTitle: Communication channels
     content:
@@ -31,77 +30,25 @@ sections:
           url: https://chat.fedoraproject.org/#/room/#kinoite:fedoraproject.org
   - sectionTitle: Ways to get involved
     content:
-      - title: Report & discuss issues
+      - title: Developers
         description:
-          You can view, file, and discuss Fedora Kinoite issues on [the
-          KDE SIG issue
-          tracker](https://pagure.io/fedora-kde/SIG/issues).
-      - title: Help with Documentation
+          Fedora Kinoite is powered by some amazing open-source projects, including
+          [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), and [flatpak](https://github.com/flatpak/flatpak). If you are
+          a developer, consider helping out with one of these projects.
+        image: public/assets/images/computer.svg
+      - title: Writers
         description:
-          You can help add new documentation, or request something to be
-          added, by visiting [the Fedora Kinoite docs.](https://pagure.io/fedora-kde/kinoite-docs)
+          Fedora Kinoite utilizes interesting, cutting-edge technology, and we need to tell more people about it!
+          If you're a keen writer, contributing to the
+          [Fedora Kinoite documentation](https://pagure.io/fedora-kde/kinoite-docs) will help others learn how their
+          system works, and all the cool things they can do with it.
+        image: public/assets/images/writing-notepad.svg
+      - title: Testers
+        description:
+          Found something that isn't quite right? Want to propose a change to the way Silverblue works? We want to hear from you!
+          Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.
+        image: public/assets/images/bug.svg
 
-  - sectionTitle: Events
-    sectionDescription:
-      Fedora has events throughout the year that you can attend,
-      typically in-person or virtually, to learn more about Fedora Workstation
-      as well as meet other users and contributors.
-    images: ""
-    content:
-      - title: The Annual Fedora Project Conference
-        description: >-
-          Flock is the Fedora Project's annual multi-day **in-person**
-          conference focused on our contributors. It typically alternates
-          between European and North American locations. The conference provides
-          a venue for face-to-face meetings and conversations. It is also a
-          place to celebrate our community. 
-
-
-          **Flock typically takes place every August.**
-        image: public/assets/images/flock-two-colour-gradient-navy.png
-        link:
-          text:
-            In-person Flock events are currently on-hold due to the ongoing COVID
-            pandemic.
-      - title: Colúr
-        description: Colúr (cuh-loohr) is our Flock mascot.
-        image: public/assets/images/colur-sign.png
-      - title: Recap
-        image: public/assets/images/presentation-thumbnail.png
-        description: Check out the recap from our latest event, the Fedora 36 release party!
-      - title: The Virtual Fedora Project Conference
-        description:
-          Nest is our at-home, virtual Flock that has been running since the
-          global outbreak of COVID-19.  It takes place over 3 days and includes
-          talks, workshops, hackfests, and social events.
-        image: public/assets/images/nest-dual-colour-navy.png
-      - title: Worldwide & Local Fedora Meetups
-        description: Hatch is a series of small-scale, in-person global meetups
-          organized in the weeks preceding the Flock / Nest conference enabling
-          Fedorans local to each other to meet.
-        image: public/assets/images/hatch.png
-      - title: Fedora Release Parties
-        description:
-          'Twice a year, in coordination with the release of each new version
-          of Fedora Linux, we hold global virtual release parties. These are
-          typically a 1.5 day "mini-conference" with talks and social events. '
-      - title: We want you to be part of Nest 2022
-        description: >-
-          We have a **currently-open call for proposals and sponsors** for this
-          year's Nest virtual Fedora annual conference! We have a rolling
-          deadline process with acceptance dates of **July 1st and July 8th,
-          2022**.
-
-          [Read more about the call for proposals and propose your own](https://communityblog.fedoraproject.org/nest-2022-cfp/)!.
-        image: public/assets/images/colur-point.png
-        link:
-          text: Make a proposal
-          url: "#   "
-      - title: Become a Fedora contributor
-        description:
-          There's a Fedora release party every six months and a Flock event
-          every year. Make a plan to attend and even propose a talk!
-        image: public/assets/images/door-open-solid.png
   - sectionTitle: Fedora Publications
     content:
       - title: Fedora Community Blog

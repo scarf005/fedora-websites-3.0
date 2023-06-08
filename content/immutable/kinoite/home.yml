@@ -1,4 +1,4 @@
-title: The Next Generation Operating System
+title: The KDE Plasma desktop, in an immutable fashion
 leadin: Surf the web, keep in touch with friends, manage files, enjoy music and video, and get productive at work without having to worry about breaking your system.
 
 image:
@@ -34,14 +34,14 @@ sections:
   - sectionTitle: Built On Top of the Best
     content:
       - title: KDE Plasma Desktop
-        description: A beautiful, high-quality desktop, built on the latest open source technology.
+        description: Includes the latest versions of the modern and modular desktop, built by the KDE community.
         image: public/assets/images/immutable/kde-desktop-square.jpg
+      - title: Applications as Flatpaks
+        description: Download thousands of open-source and proprietary, containerized applications thanks to Flatpak and Flathub.
+        image: public/assets/images/immutable/flatpak-apps-faded-square.png
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
         image: public/assets/images/immutable/rpm-ostree-square.png
-      - title: Applications as Flatpaks
-        description: Download thousands of open-source and proprietary, containerized applications thanks to Flatpak.
-        image: public/assets/images/immutable/flatpak-apps-faded-square.png
       - title: Toolbx for Development
         description: Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.
         image: public/assets/images/immutable/toolbox-square.png
