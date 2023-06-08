@@ -38,10 +38,11 @@ const comm_channels = data._value.sections[1];
 // query string parameters
 const { sidebars = "1" } = useRoute().query;
 
+// fedora announcements
 const discourse_uri = "https://discussion.fedoraproject.org";
 const discourse_api = "c/news/announce-list/76";
 
-const fp_headlines = async () => {
+const fa_headlines = async () => {
   let dcdata = await $fetch(`${discourse_uri}/${discourse_api}.json`);
   let topics = dcdata.topic_list.topics;
 
@@ -78,12 +79,13 @@ const fp_headlines = async () => {
 let newsfeed = [];
 try {
   if (process.client) {
-    newsfeed = await fp_headlines();
+    newsfeed = await fa_headlines();
   }
 } catch (e) {
   console.log(e);
 }
 
+// fedora magazine
 const magazine_uri = "https://fedoramagazine.org";
 const magazine_api = "wp-json/fedora-ssr-endpoint";
 
@@ -122,21 +124,51 @@ try {
   console.log(e);
 }
 
-let headlines;
-if (newsfeed.length > 0 && magazine.length > 0) {
-  let combined = [...newsfeed, ...magazine];
-  headlines = combined
-    .sort(function (a, b) {
-      return b.timestamp - a.timestamp;
-    })
-    .slice(0, count_headlines);
-} else if (newsfeed.length > 0) {
-  headlines = newsfeed;
-} else if (magazine.length > 0) {
-  headlines = magazine;
-} else {
-  headlines = [];
+// fedora podcast
+const podcast_data = await getCMS("podcast");
+
+const fp_headlines = async () => {
+  let topics = podcast_data._value.sections[0].content;
+
+  let i = 0;
+  let headlines = [];
+  let count = Math.min(topics.length, count_headlines);
+  while (i < count) {
+    let date = new Date(topics[i].description);
+
+    headlines.push({
+      timestamp: date,
+      thumbnail: "/assets/images/podcast-472x200.png",
+      date: date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
+      title: decode(topics[i].title),
+      link: topics[i].link.url,
+    });
+
+    i++;
+  }
+
+  return headlines;
+};
+
+let podcasts = [];
+try {
+  if (process.client) {
+    podcasts = await fp_headlines();
+  }
+} catch (e) {
+  console.log(e);
 }
+
+let combined = [...newsfeed, ...magazine, ...podcasts];
+let headlines = combined
+  .sort(function (a, b) {
+    return b.timestamp - a.timestamp;
+  })
+  .slice(0, count_headlines);
 
 const got_headlines = headlines.length == count_headlines;
 
@@ -493,7 +525,7 @@ const width_2xl = 1536;
             class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
             dir="ltr"
           >
-            <h2 class="text-2xl leading-none">
+            <h2 class="mb-8 text-2xl leading-none">
               <a
                 :href="`${discourse_uri}/${common_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
