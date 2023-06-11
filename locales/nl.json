@@ -281,7 +281,7 @@
     "Fedora ALT Downloads": "Alternatieve downloads van Fedora Linux",
     "Fedora Cloud edition is a powerful and minimal base operating system image with tailored images available for both public and many private cloud uses.": "Fedora Cloud-editie is een krachtig en minimaal besturingssysteem, waarvoor schijfbestanden beschikbaar zijn voor zowel publieke als private toepassingen.",
     "Extensive documentation is available at the Fedora documentation page.": "Uitgebreide documentatie is beschikbaar op de documentatiepagina van Fedora.",
-    "Editions": "Edities",
+    "Editions": "Standaard versies",
     "Call to action": "Oproep om in actie te komen",
     "An innovative platform for hardware, clouds, and containers, built with love by you.": "Een vernieuwend platform voor hardware, clouds en containers, dat met zorg door de gemeenschap van Fedora gebouwd is.",
     "A Registered Digital Public Good": "Een geregistreerde digitale publieke voorziening",
@@ -462,5 +462,18 @@
     "Fedora has lots of teams! Click here to see a more complete list.": "Fedora heeft vele teams! Klik hier voor een meer complete lijst.",
     "Getting Started": "Starten met Fedora Linux",
     "Get Fedora": "Fedora Linux verkrijgen",
-    "GitLab is the newest of Fedora's official version control systems. It supports single-sign-on with Fedora accounts.": "GitLab is het nieuwste versiebeheersysteem dat door Fedora wordt gebruikt. Het ondersteunt eenmalig inloggen met een account bij Fedora."
+    "GitLab is the newest of Fedora's official version control systems. It supports single-sign-on with Fedora accounts.": "GitLab is het nieuwste versiebeheersysteem dat door Fedora wordt gebruikt. Het ondersteunt eenmalig inloggen met een account bij Fedora.",
+    "These editions are supported but not yet a part of the official Fedora editions.": "De onveranderbare versies worden ondersteund maar worden nog niet tot de standaard versies van Fedora Linux gerekend.",
+    "Infrastructure Status": "Storingen en gepland onderhoud",
+    "Fedora Sericea provides the popular Sway tiling window manager in an immutable fashion. It makes Sway accessible and appealing to both novices and advanced users who prefer not to use a mouse, touchpad, or other pointing device to interact with their environment. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Sericea offers a complete experience with a minimalist user interface.": "Fedora Sericea is een onveranderbare versie met de Sway vensterbeheerder, die vensters niet laat overlappen. Dit maakt Sway toegankelijk en aantrekkelijk voor zowel beginners als gevorderden die liever geen muis, aanraakvlak of ander aanwijsapparaat gebruiken. Met een webbrowser, editor en mediaspeler die elk weinig geheugenruimte vergen en weinig processorbelasting geven, biedt Fedora Sericea een compleet platform met een minimalistische gebruikersinterface.",
+    "Learn about FESCo and Engineering subprojects, SIGs, Work Groups, and teams.": "Wordt bekend met de technische teams van Fedora. Zo is er een belangrijke technische stuurcommissie met gekozen leden maar ook een team voor de ontwikkeling van spelletjes voor Fedora Linux waar u al welkom bent als u over het spelen van spelletjes wilt meepraten.",
+    "Installation": "Installatie",
+    "It's Fedora's calendar!": "Fedocal is a web based calendar application for Fedora. A number of groups in Fedora are using a calendar to coordinate their work.",
+    "Join SIG": "Introductieteam van Fedora",
+    "LXDE Desktop": "LXDE",
+    "LXQT Desktop": "LXQt",
+    "Labs": "Gespecialiseerde versies",
+    "Immutable Desktops": "Onveranderbare versies",
+    "Images optimized to run on cloud infrastructures.": "Een variant van Fedora Linux die geoptimaliseerd is om op een groep van servers geïnstalleerd te worden, voor een schaalbare dienstverlening.",
+    "If you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, this is the place to ask!": "U kunt deze link volgen voor het stellen van algemene vragen over Fedora Linux of het Fedora-project. De vragen over het besturingssysteem kunnen bijvoorbeeld gaan over de installatie, het gebruik, of de aanpassing aan uw behoeften. Dus als u hulp nodig heeft, stel dan uw vragen!"
 }
