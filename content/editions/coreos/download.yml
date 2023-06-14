@@ -24,7 +24,7 @@ sections:
       - title: Next
         description: The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.
   - sectionTitle: Pick your architecture
-    sectionDescription: Fedora CoreOS can be deployed on 4 different CPU architectures.
+    sectionDescription: Fedora CoreOS can be deployed on 3 different CPU architecture.
     content:
       - title: x86_64
         description: Most computers with Intel and AMD processors.
@@ -32,5 +32,3 @@ sections:
         description: Also known as armv8. For most processors other than Intel and AMD like Raspberry Pi or other comparable devices.
       - title: s390x
         description: For IBM Cloud and zSystems.
-      - title: ppc64le
-        description: For IBM PowerPC systems.

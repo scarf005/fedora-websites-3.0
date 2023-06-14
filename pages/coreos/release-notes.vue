@@ -160,7 +160,7 @@ function parseArgs() {
   if (!route.query.arch) {
     // default to x86_64 arch
     switchArch("x86_64");
-  } else if (route.query.arch.match("^(x86_64|aarch64|s390x|ppc64le)$")) {
+  } else if (route.query.arch.match("^(x86_64|aarch64|s390x)$")) {
     switchArch(route.query.arch);
   }
 }
@@ -240,15 +240,6 @@ useContentHead(data);
             </a>
             <a id="s390x" href="#" @click="switchArch('s390x')">
               <FpCard title="s390x"> </FpCard>
-            </a>
-            <!-- TODO: Remove the v-if when the stable data is available -->
-            <a
-              id="ppc64le"
-              href="#"
-              @click="switchArch('ppc64le')"
-              v-if="selectedStream !== 'stable'"
-            >
-              <FpCard title="ppc64le"> </FpCard>
             </a>
           </div>
         </div>
