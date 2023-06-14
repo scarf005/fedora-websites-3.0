@@ -130,6 +130,7 @@ function switchArch(name) {
     case "x86_64":
     case "aarch64":
     case "s390x":
+    case "ppc64le":
       router.replace({
         hash: route.hash,
         path: route.path,
@@ -457,6 +458,20 @@ useContentHead(data);
               <FpCard
                 title="s390x"
                 :description="architectures.content[2].description"
+                class="coreos-theme"
+              >
+              </FpCard>
+            </a>
+            <!-- TODO: Remove the v-if when the stable data is available -->
+            <a
+              id="ppc64le"
+              @click="switchArch('ppc64le')"
+              href="#download_section"
+              v-if="selectedStream.stream !== 'stable'"
+            >
+              <FpCard
+                title="ppc64le"
+                :description="architectures.content[3].description"
                 class="coreos-theme"
               >
               </FpCard>
