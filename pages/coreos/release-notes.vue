@@ -11,6 +11,8 @@ let selectedArch = useState("arch", () => "x86_64");
 let buildsList = useState("buildsList", () => ({}));
 let buildsDetails = useState("buildsDetails", () => ({}));
 
+const diffType = ["added", "removed", "upgraded", "downgraded"];
+
 const importantPkgs = [
   "kernel",
   "systemd",
@@ -122,7 +124,10 @@ async function loadBuild(id) {
       meta: build_data.value,
       commitmeta: meta_data.value,
     };
-    parsePkgs(id);
+    if (build_data.value) {
+      parsePkgs(id);
+      if (meta_data.value) parsePkgDiff(id);
+    }
   }
 }
 
@@ -139,13 +144,26 @@ function parsePkgs(id) {
   }
 }
 
-function prettyDateTime(ts) {
-  const date = new Date(ts);
-  const year = new Intl.DateTimeFormat("en", { year: "numeric" }).format(date);
-  const month = new Intl.DateTimeFormat("en", { month: "short" }).format(date);
-  const day = new Intl.DateTimeFormat("en", { day: "2-digit" }).format(date);
-
-  return `${month} ${day}, ${year}`;
+function parsePkgDiff(id) {
+  if (!buildsDetails.value[selectedArch.value][id]["pkgdiff"]) {
+    var pkgdiff = {};
+    diffType.forEach((t) => (pkgdiff[t] = []));
+    // parent-pkgdiff key should have all the information we need, we just need to sort by diffType (added/removed/upgraded)
+    if (buildsDetails.value[selectedArch.value][id].meta["parent-pkgdiff"]) {
+      buildsDetails.value[selectedArch.value][id].meta[
+        "parent-pkgdiff"
+      ].forEach((d) => pkgdiff[diffType[d[1]]].push(d));
+    } else if (buildsDetails.value[selectedArch.value][id].meta["pkgdiff"]) {
+      buildsDetails.value[selectedArch.value][id].meta["pkgdiff"].forEach((d) =>
+        pkgdiff[diffType[d[1]]].push(d)
+      );
+    } else {
+      // No diff ?!
+      console.log(`no pkgdiff for ${id}`);
+    }
+    console.log(pkgdiff);
+    buildsDetails.value[selectedArch.value][id]["pkgdiff"] = pkgdiff;
+  }
 }
 
 function parseArgs() {
@@ -262,166 +280,13 @@ useContentHead(data);
       >
         <template v-if="buildsList[selectedStream]?.builds">
           <template v-for="build in buildsList[selectedStream]?.builds">
-            <div v-if="build.arches.includes(selectedArch)" class="py-8">
-              <FpObserver @intersect="loadBuild(build.id)" />
-              <h3
-                class="pb-3 text-center text-fp-blue dark:text-fp-newblue sm:text-start"
-              >
-                {{ build.id }}
-              </h3>
-              <template v-if="buildsDetails[selectedArch]?.[build.id]">
-                <div class="mb-4 flex gap-2">
-                  <div class="">Release Date:</div>
-                  <div
-                    v-if="buildsDetails[selectedArch]?.[build.id]"
-                    class="font-bold"
-                  >
-                    {{
-                      prettyDateTime(
-                        buildsDetails[selectedArch]?.[build.id]?.["meta"]?.[
-                          "coreos-assembler.build-timestamp"
-                        ]
-                      )
-                    }}
-                  </div>
-
-                  <div v-else class="animate-pulse">
-                    <div class="grid grid-cols-6 gap-4">
-                      <div
-                        class="col-span-2 h-6 w-full rounded bg-gray-200 dark:bg-gray-500"
-                      ></div>
-                      <div
-                        class="h-6 w-full rounded bg-gray-200 dark:bg-gray-500"
-                      ></div>
-                      <div
-                        class="col-span-3 h-6 w-full rounded bg-gray-200 dark:bg-gray-500"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-4 flex flex-wrap items-baseline gap-x-1">
-                  <div
-                    v-if="
-                      buildsList[selectedStream]?.releases[build.id]?.issues
-                        .length === 0
-                    "
-                  >
-                    No specific issues fixed in this release.
-                  </div>
-                  <div
-                    v-else-if="
-                      buildsList[selectedStream]?.releases[build.id]?.issues
-                        .length
-                    "
-                  >
-                    <div class="font-bold">Issues fixed:</div>
-                    <ul class="ml-8 list-[square]">
-                      <li
-                        v-for="issue in buildsList[selectedStream]?.releases[
-                          build.id
-                        ]?.issues"
-                        class="text-base"
-                      >
-                        <a
-                          :href="issue.url"
-                          class="text-sm underline underline-offset-1"
-                          target="_blank"
-                          >{{ issue.text }}</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="font-bold">
-                    Release notes for this release are still pending review.
-                  </div>
-                </div>
-                <div class="flex flex-wrap items-baseline gap-x-4">
-                  <div
-                    v-for="pkg in buildsDetails[selectedArch]?.[build.id]?.[
-                      'pkglist'
-                    ]"
-                  >
-                    {{ pkg[0] }} <b>{{ pkg[2] }}</b>
-                  </div>
-                </div>
-              </template>
-              <template v-else>
-                <div class="w-full animate-pulse lg:w-[962px]">
-                  <div class="mb-4 grid grid-cols-6 gap-4">
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                  <div class="mb-2 grid grid-cols-6 gap-4">
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                  <div class="mb-2 ml-10 grid grid-cols-6 gap-4">
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                  <div class="mb-2 ml-10 grid grid-cols-6 gap-4">
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                  <div class="mb-4 ml-10 grid grid-cols-6 gap-4">
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                  <div class="grid grid-cols-12 gap-4">
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-2 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                    <div
-                      class="col-span-1 h-4 rounded bg-gray-200 dark:bg-gray-500"
-                    ></div>
-                  </div>
-                </div>
-              </template>
-            </div>
+            <CoreOsBuildInfo
+              v-if="build.arches.includes(selectedArch)"
+              :buildid="build.id"
+              :build-details="buildsDetails[selectedArch]?.[build.id]"
+              :build-info="buildsList[selectedStream]?.releases[build.id]"
+              @load-build="loadBuild"
+            />
           </template>
         </template>
         <template v-else>
