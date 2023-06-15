@@ -92,10 +92,12 @@ function getPkgEvra(tuple) {
               packages included
             </div>
           </template>
-          <div class="my-2 border border-gray-600 bg-neutral-900 p-2">
+          <div
+            class="my-2 border border-gray-600 bg-gray-50 p-2 dark:bg-neutral-900"
+          >
             <ul class="list-none font-mono">
               <li
-                class="text-sm"
+                class="text-sm leading-relaxed"
                 v-for="pkg in buildDetails.commitmeta[
                   'rpmostree.rpmdb.pkglist'
                 ]"
@@ -107,25 +109,27 @@ function getPkgEvra(tuple) {
         </FpCollapse>
         <ul class="ml-12 list-outside list-[square]">
           <template v-for="(diff, diffType) in buildDetails.pkgdiff">
-            <li v-if="diff.length">
+            <li class="text-sm" v-if="diff.length">
               <FpCollapse>
                 <template #head> {{ diff.length }} {{ diffType }} </template>
-                <div class="my-2 border border-gray-600 bg-neutral-900 p-2">
+                <div
+                  class="my-2 border border-gray-600 bg-gray-50 p-2 dark:bg-neutral-900"
+                >
                   <ul class="list-none font-mono">
                     <template v-if="diffType == 'added'">
-                      <li class="text-sm" v-for="pkg in diff">
+                      <li class="text-sm leading-relaxed" v-for="pkg in diff">
                         {{ getPkgNevra(pkg[2].NewPackage) }}
                       </li>
                     </template>
                     <template v-if="diffType == 'removed'">
-                      <li class="text-sm" v-for="pkg in diff">
+                      <li class="text-sm leading-relaxed" v-for="pkg in diff">
                         {{ getPkgNevra(pkg[2].PreviousPackage) }}
                       </li>
                     </template>
                     <template
                       v-if="diffType == 'upgraded' || diffType == 'downgraded'"
                     >
-                      <li class="text-sm" v-for="pkg in diff">
+                      <li class="text-sm leading-relaxed" v-for="pkg in diff">
                         {{ getPkgNevra(pkg[2].PreviousPackage) }} ⟶
                         {{ getPkgEvra(pkg[2].NewPackage) }}
                       </li>

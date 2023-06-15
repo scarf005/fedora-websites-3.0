@@ -161,7 +161,6 @@ function parsePkgDiff(id) {
       // No diff ?!
       console.log(`no pkgdiff for ${id}`);
     }
-    console.log(pkgdiff);
     buildsDetails.value[selectedArch.value][id]["pkgdiff"] = pkgdiff;
   }
 }
