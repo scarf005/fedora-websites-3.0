@@ -226,6 +226,7 @@ function cloud_arts(data) {
     "kubevirt",
     "nutanix",
     "openstack",
+    "powervs",
     "packet",
     "vultr",
   ];

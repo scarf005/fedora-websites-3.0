@@ -50,6 +50,7 @@ const prettyType = {
   pxe: "Netboot",
   nutanix: "Nutanix",
   openstack: "OpenStack",
+  powervs: "PowerVS",
   packet: "Packet",
   qemu: "QEMU",
   qcow2: "QEMU",
