@@ -255,5 +255,7 @@
     "Privacy Statement": "Datenschutzerklärung",
     "🎉 [Fedora Linux 38 released!](https://fedoramagazine.org/announcing-fedora-38)": "🎉 [Fedora Linux 38 wurde veröffentlicht!](https://fedoramagazine.org/announcing-fedora-38)",
     "its_your_Operating System.": "Betriebssystem.",
-    "It's your Operating System.": "Es ist dein Betriebssystem."
+    "It's your Operating System.": "Es ist dein Betriebssystem.",
+    "Visit Fedora Youtube": "Besuchen Sie Fedora auf Youtube",
+    "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Überprüfen Sie die Sicherheit und Integrität Ihres Downloads anhand der entsprechenden Prüfsummendatei. Wenn eine gültige Signatur von einem der Fedora-Schlüssel vorliegt und die SHA256-Prüfsumme übereinstimmt, dann ist der Download gültig"
 }
