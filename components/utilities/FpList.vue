@@ -11,7 +11,7 @@ defineProps({
     :class="`${columns} ${
       disableDots
         ? 'list-none'
-        : 'list-outside marker:text-4xl marker:text-fp-newblue-500'
+        : 'list-outside marker:text-2xl marker:text-fp-newblue-500'
     }`"
   >
     <slot></slot>
