@@ -64,10 +64,9 @@ import navigation from "../../config/navigation.js";
                   >{{ $t("Sponsors") }}</FpLink
                 >
               </li>
-              <li
+              <i18n-t keypath="Help improve this website on the {0} or the {0}" tag="li"
                 class="w-full flex-none list-none text-center text-fp-gray-darkest"
               >
-                Help improve this website on the
                 <FpLink
                   href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
                   class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
@@ -79,7 +78,7 @@ import navigation from "../../config/navigation.js";
                   class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
                   >{{ $t("GitLab repo") }}</FpLink
                 >
-              </li>
+              </i18n-t>
             </ul>
           </div>
         </div>
