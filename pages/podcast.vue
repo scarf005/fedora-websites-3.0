@@ -4,21 +4,18 @@
 const data = await getCMS("podcast");
 useContentHead(data);
 
-// podcasts
-const podcasts = data._value.sections[0];
-
-// communication channels
-const comm_channels = data._value.sections[1];
-
-// show the newest episodes at the top of the page
-let episodes = podcasts.content;
-episodes.reverse();
+// show the newest podcasts at the top of the page
+let podcasts = data._value.links;
+podcasts.reverse();
 
 const date_format = {
   month: "long",
   day: "numeric",
   year: "numeric",
 };
+
+// communication channels
+const comm_channels = data._value.sections[0];
 </script>
 
 <template>
@@ -26,20 +23,19 @@ const date_format = {
     <div class="mx-auto max-w-screen-xl">
       <div class="mb-8 text-center xl:text-start">
         <h2 class="xl:text-4xl">
-          {{ podcasts.sectionTitle }}
+          {{ $t("Podcasts") }}
         </h2>
       </div>
       <ul>
-        <li v-for="e in episodes" class="mb-4">
+        <li v-for="p in podcasts" class="mb-4">
           <a
-            :href="e.link.url"
+            :href="p.url"
             class="text-2xl font-semibold leading-none text-fp-blue"
           >
             {{
-              `${e.title} (${new Date(e.description).toLocaleDateString(
-                "en-US",
-                date_format
-              )})`
+              `${p.text} (${new Date(
+                parseInt(p.publication_date)
+              ).toLocaleDateString("en-US", date_format)})`
             }}
           </a>
         </li>

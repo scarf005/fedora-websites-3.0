@@ -1,23 +1,16 @@
 path: podcast
 title: Fedora Podcast
+links:
+  - publication_date: "1682440879269"
+    text: "Fedora Podcast 23: Welcome to the Podcast"
+    url: https://www.youtube.com/watch?v=w7f9eIZ10w8&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=1
+  - publication_date: "1683650598253"
+    text: "Fedora Podcast 24: Fedora Linux 38 Released"
+    url: https://www.youtube.com/watch?v=AoCTOHRjjbU&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=2
+  - publication_date: "1686069834956"
+    text: "Fedora Podcast 25: Fedora Websites 3.0"
+    url: https://www.youtube.com/watch?v=PBFOpjA7eE0&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=3
 sections:
-  - sectionTitle: Podcasts
-    content:
-      - title: "Fedora Podcast 23: Welcome to the Podcast"
-        description: 2023-04-25
-        link:
-          text: Play
-          url: https://www.youtube.com/watch?v=w7f9eIZ10w8&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=1
-      - title: "Fedora Podcast 24: Fedora Linux 38 Released"
-        description: 2023-05-09
-        link:
-          text: Play
-          url: https://www.youtube.com/watch?v=AoCTOHRjjbU&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=2
-      - title: "Fedora Podcast 25: Fedora Websites 3.0"
-        description: 2023-06-06
-        link:
-          text: Play
-          url: https://www.youtube.com/watch?v=PBFOpjA7eE0&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=3
   - sectionTitle: Communication channels
     content:
       - title: Fedora Discussion

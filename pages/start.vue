@@ -128,13 +128,13 @@ try {
 const podcast_data = await getCMS("podcast");
 
 const fp_headlines = async () => {
-  let topics = podcast_data._value.sections[0].content;
+  let topics = podcast_data._value.links;
 
   let i = 0;
   let headlines = [];
   let count = Math.min(topics.length, count_headlines);
   while (i < count) {
-    let date = new Date(topics[i].description);
+    let date = new Date(parseInt(topics[i].publication_date));
 
     headlines.push({
       timestamp: date,
@@ -144,8 +144,8 @@ const fp_headlines = async () => {
         day: "2-digit",
         year: "numeric",
       }),
-      title: decode(topics[i].title),
-      link: topics[i].link.url,
+      title: decode(topics[i].text),
+      link: topics[i].url,
     });
 
     i++;
@@ -608,7 +608,7 @@ const width_2xl = 1536;
             <div class="mb-6 grid place-items-center">
               <iframe
                 type="text/html"
-                src="../council-video.html"
+                src="/council-video.html"
                 frameborder="0"
                 class="h-[9em] w-[16em]"
               >

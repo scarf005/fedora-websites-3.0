@@ -223,29 +223,14 @@
           name: "title"
           widget: "string"
           hint: "Main headline and h1 tag on the web page"
-        - label: "Header Description"
-          name: "description"
-          widget: "text"
-          hint: "Page header description text"
-          required: false
-        - label: "Header Images"
-          name: "header_images"
-          widget: "list"
-          hint: "Add background and foreground images to the header"
-          required: false
-          fields:
-            - label: "Image"
-              name: "image"
-              widget: "image"
-        - label: "Header Links & Buttons"
+        - label: "Podcast Links"
           label_singular: "Link"
           name: "links"
           widget: "list"
-          max: 3
           summary: "{{fields.text}}"
-          hint: "Add buttons or links to the page header"
+          hint: "Add links to the podcasts"
           collapsed: true
-          minimized_collapsed: true
+          minimized_collapsed: false
           fields:
             - label: "Link Text"
               name: "text"
@@ -254,6 +239,12 @@
               name: "url"
               widget: "string"
               required: false
+            - label: "Publication Date"
+              name: "publication_date"
+              widget: "datetime"
+              format: "x"
+              date_format: true
+              time_format: false
         - label: "Page Sections"
           label_singular: "Page Section"
           name: "sections"
@@ -266,16 +257,6 @@
               name: "sectionTitle"
               widget: "string"
               hint: "A headline title for a section of content (probably an h2)"
-            - label: "Section Description"
-              name: "sectionDescription"
-              widget: "markdown"
-              hint: "Longer text that accompanies the title"
-              required: false
-            - label: "Section Images"
-              singular_label: "image"
-              name: "images"
-              widget: "image"
-              required: false
             - label: "Section Content"
               name: "content"
               widget: "list"
