@@ -112,7 +112,7 @@ sections:
           text: Fedora Docs
           url: https://docs.fedoraproject.org/en-US/
       - title: Support
-        description: Get support from our the community on the Fedora Discussion Forum.
+        description: Get support from our community on the Fedora Discussion Forum.
         link:
           text: Fedora Discussion
           url: https://discussion.fedoraproject.org/c/ask
