@@ -64,20 +64,23 @@ import navigation from "../../config/navigation.js";
                   >{{ $t("Sponsors") }}</FpLink
                 >
               </li>
-              <i18n-t keypath="Help improve this website on the {0} or the {0}" tag="li"
+              <i18n-t keypath="help_improve_this_website" tag="li"
                 class="w-full flex-none list-none text-center text-fp-gray-darkest"
               >
-                <FpLink
-                  href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
-                  class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-                  >{{ $t("CMS") }}</FpLink
-                >
-                or the
-                <FpLink
-                  href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
-                  class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
-                  >{{ $t("GitLab repo") }}</FpLink
-                >
+                <template #cms>
+                  <FpLink
+                    href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
+                    class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+                    >{{ $t("CMS") }}</FpLink
+                  >
+                </template>
+                <template #gitlab_repo>
+                  <FpLink
+                    href="https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0"
+                    class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
+                    >{{ $t("GitLab repo") }}</FpLink
+                  >
+                </template>
               </i18n-t>
             </ul>
           </div>
