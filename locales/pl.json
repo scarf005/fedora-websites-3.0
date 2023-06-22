@@ -696,5 +696,6 @@
     "Networking": "Sieć",
     "Highly customizable Wayland bar for Sway and Wlroots based compositors.": "Wysoce konfigurowalny panel Wayland dla kompozytorów opartych na Sway i Wlroots.",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Możesz przeglądać, zgłaszać i omawiać błędy Fedory Cloud na [Śledzenie błędów Fedory Cloud](https://pagure.io/cloud-sig/issues).",
-    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Możesz przeglądać, zgłaszać i omawiać błędy Fedory CoreOS na śledzenie błędów Fedory CoreOS."
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Możesz przeglądać, zgłaszać i omawiać błędy Fedory CoreOS na śledzenie błędów Fedory CoreOS.",
+    "help_improve_this_website": "Pomóż ulepszyć tę witrynę w {cms} lub {gitlab_repo}"
 }
