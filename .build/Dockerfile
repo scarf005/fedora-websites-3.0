@@ -7,6 +7,8 @@ RUN .build/load_gpg.sh
 # RUN python3 .build/fetch_amis.py content/release.yml content/editions/cloud/ami_list.yml
 RUN npm install
 RUN npm run generate
+# override default 404 error page with the custom one
+RUN cp -v .output/public/404/index.html .output/public/404.html
 
 FROM quay.io/fedora/fedora:37
 RUN dnf -y install s3cmd  && dnf clean all
