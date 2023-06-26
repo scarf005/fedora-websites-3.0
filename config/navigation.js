@@ -211,7 +211,7 @@ const navigation = {
             path: "https://labs.fedoraproject.org/security",
             icon: "fa6-solid:desktop",
             description:
-              "A bundle of open source scientific and numerical tools used in research.",
+              "A safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies.",
           },
         ],
       },
