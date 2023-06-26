@@ -683,4 +683,6 @@ const width_2xl = 1536;
     :sectionTitle="comm_channels.sectionTitle"
     :content="comm_channels.content"
   />
+
+  <FpOrgChartSection />
 </template>
