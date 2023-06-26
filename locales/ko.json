@@ -703,5 +703,6 @@
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "적당한 체크썸 파일을 사용하여 보안 및 통합을 위해 자신의 내려받기를 확인합니다. 만약 이는 페도라 키 중 하나에서 좋은 서명이 있고, SHA256 체크썸이 일치하면, 내려받기는 유효합니다.",
     "No files available for this version.": "이 버전을 위해 사용 가능한 파일이 없습니다.",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "당신은 [페도라 클라우드 문제 추적기](https://pagure.io/cloud-sig/issues)에서 페도라 클라우드 문제를 보고, 파일화하며 토의 할 수 있습니다.",
-    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "당신은 페도라 코어OS 사건 추적기에서 페도라 코어OS 문제를 보고, 파일화, 그리고 토의 할 수 있습니다."
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "당신은 페도라 코어OS 사건 추적기에서 페도라 코어OS 문제를 보고, 파일화, 그리고 토의 할 수 있습니다.",
+    "help_improve_this_website": "{cms} 또는 {gitlab_repo}에서 이 웹사이트를 개선하는데 도움을 주세요"
 }
