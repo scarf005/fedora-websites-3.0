@@ -29,6 +29,6 @@
   { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" },
   { "code": "tr", "iso": "tr", "file": "tr.json", "name": "Türkçe" },
   { "code": "uk", "iso": "uk", "file": "uk.json", "name": "українська"},
-  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "中文（简体）" },
+  { "code": "zh-Hans", "iso": "zh-Hans", "file": "zh_Hans.json", "name": "简体中文" },
   { "code": "zh-Hant", "iso": "zh-Hant", "file": "zh_Hant.json", "name": "繁体中文" }
 ]
