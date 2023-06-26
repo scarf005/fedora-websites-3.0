@@ -215,10 +215,11 @@ useContentHead(data);
     </section>
     <!-- Mini stream selector -->
     <section class="scroll-mt-14 bg-blue-50 py-2 px-2 dark:bg-neutral-900">
+      <h1 class="text-center text-3xl text-fp-magenta">Streams<br /><br /></h1>
       <div class="coreos-stream container mx-auto max-w-7xl px-2">
         <div class="mx-auto px-24 pb-4">
           <div
-            class="coreos-selector flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 dark:text-white"
+            class="coreos-selector grid grid-cols-1 gap-4 text-center text-fp-darkblue-500 dark:text-white sm:grid-cols-3"
           >
             <a
               id="stable"
@@ -237,12 +238,14 @@ useContentHead(data);
           </div>
         </div>
       </div>
-
       <!-- Mini arch selector -->
+      <h1 class="text-center text-3xl text-fp-magenta">
+        <br />Architectures<br /><br />
+      </h1>
       <div class="coreos-arch container mx-auto max-w-7xl px-2">
         <div class="mx-auto px-24 pb-4">
           <div
-            class="coreos-selector flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 dark:text-white"
+            class="coreos-selector grid grid-cols-1 gap-4 text-center text-fp-darkblue-500 dark:text-white sm:grid-cols-2"
           >
             <a
               id="x86_64"
