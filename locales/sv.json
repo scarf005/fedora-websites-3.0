@@ -703,5 +703,6 @@
     "No files available for this version.": "Inga filer tillgängliga för den här versionen.",
     "It's your Operating System.": "Det är ditt operativsystem.",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Du kan visa, skicka in och diskutera Fedora Cloud problem på [Fedora Cloud felspårare](https://pagure.io/cloud-sig/issues).",
-    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Du kan se, arkivera och diskutera Fedora CoreOS-problem på Fedora CoreOS felspårare."
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Du kan se, arkivera och diskutera Fedora CoreOS-problem på Fedora CoreOS felspårare.",
+    "help_improve_this_website": "Hjälp till att förbättra denna webbplats med vårat {cms} eller genom att bidra till vårat {gitlab_repo}"
 }
