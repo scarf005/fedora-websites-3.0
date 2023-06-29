@@ -701,5 +701,6 @@
     "Fedora Cinnamon Spin": "Fedora Cinnamon Spin",
     "Fedora Sugar on a Stick Spin": "Fedora Sugar on a Stick",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Você pode visualizar, arquivar e discutir problemas do Fedora Cloud no [Issue tracker do Fedora Cloud](https://pagure.io/cloud-sig/issues).",
-    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Você pode visualizar, arquivar e discutir problemas do Fedora CoreOS no Issue Tracker do Fedora CoreOS."
+    "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Você pode visualizar, arquivar e discutir problemas do Fedora CoreOS no Issue Tracker do Fedora CoreOS.",
+    "help_improve_this_website": "Ajude a melhorar este site no {cms} ou no {gitlab_repo}"
 }
