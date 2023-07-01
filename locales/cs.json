@@ -687,5 +687,6 @@
     "help_improve_this_website": "Pomozte vylepšit tyto webové stránky v {cms} nebo {gitlab_repo}",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Procházet, nahlásit a diskutovat problémy s Fedorou Cloud lze v [systému hlášení Fedory Cloud](https://pagure.io/cloud-sig/issues).",
     "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Procházet, nahlásit nebo diskutovat problémy s Fedorou CoreOS lze v systému hlášení Fedory CoreOS.",
-    "GitLab repo": "GitLab repozitáři"
+    "GitLab repo": "GitLab repozitáři",
+    "GNOME Terminal": "Terminál GNOME"
 }
