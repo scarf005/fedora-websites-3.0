@@ -458,7 +458,7 @@
     "Fedora releases two major versions every year. We celebrate the hard work of our contributors virtually at each release.": "Fedora brengt twee keer per jaar een nieuwe versie uit van Fedora Linux. Dan vieren we online onze bijdragers die met hun harde werk een nieuwe versie tot stand brachten.",
     "From mobile apps to web; from desktop to GUIs to CLI tools; create it all easily with Fedora.": "Van webpagina's tot applicaties voor smartphones, van programma's voor systeembeheer met een CLI tot toepassingsprogramma's met een GUI, creëer ze allemaal gemakkelijk met Fedora's documentatie voor ontwikkelaars.",
     "Games": "Spelletjes",
-    "General Q&A": "Algemene vragen",
+    "General Q&A": "Algemeen",
     "Fedora has lots of teams! Click here to see a more complete list.": "Fedora heeft vele teams! Klik hier voor een meer complete lijst.",
     "Getting Started": "Starten met Fedora Linux",
     "Get Fedora": "Fedora Linux verkrijgen",
@@ -530,5 +530,7 @@
     "The Water Cooler": "Stoom afblazen",
     "These are some low-priority items that are thought to be good entry-level tasks for a new contributor to start with.": "Er zijn een groot aantal onbelangrijke problemen in een lijst bijeen gezet die zeer geschikt zijn voor een beginnende ontwikkelaar.",
     "The Labs are Fedora Linux set up with software bundles based on particular topics.": "De gespecialiseerde versies van Fedora Linux zijn voorzien van toepassingsprogramma's die een specifieke interesse ondersteunen.",
-    "These are some convenient links to the discussion threads for several of Fedora's larger subprojects and special interest groups.": "Hieronder staan enkele links naar de discussies die gevoerd worden door enkele grotere werkgroepen van Fedora."
+    "These are some convenient links to the discussion threads for several of Fedora's larger subprojects and special interest groups.": "Hieronder staan enkele links naar de discussies die gevoerd worden door enkele grotere werkgroepen van Fedora.",
+    "These are the tools and Git forges that Fedora packagers and developers use to build the Fedora systems.": "Hieronder staan de programma's en de op Git gebaseerde sites die voor het samenstellen van pakketten en voor de ontwikkeling van software worden gebruikt.",
+    "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.": "Hieronder staan de handleidingen voor bijdragers. De handleidingen voor aankomende en bestaande gebruikers van Fedora Linux kunt u vinden onder Hulp in het hoofdmenu."
 }
