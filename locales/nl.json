@@ -98,7 +98,7 @@
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid": "Verifieer uw download, voor uw veiligheid en om zeker te zijn van zijn integriteit, aan de hand van het juiste bestand met controlesommen. Als de handtekening overeenkomt met een van de sleutels van Fedora en de SHA-256-controlesom komt ook overeen, dan deugt de download.",
     "Verify your download": "Verifieer uw download",
     "Become a Sponsor": "Word een sponsor",
-    "Learn more": "Meer informatie.",
+    "Learn more": "Meer informatie",
     "Obsolete GPG keys": "Verouderde GPG-sleutels",
     "Current GPG keys": "Huidige GPG-sleutels",
     "Verify the CHECKSUM file is valid": "Verifieer dat het bestand met de controlesom deugt",
@@ -532,5 +532,12 @@
     "The Labs are Fedora Linux set up with software bundles based on particular topics.": "De gespecialiseerde versies van Fedora Linux zijn voorzien van toepassingsprogramma's die een specifieke interesse ondersteunen.",
     "These are some convenient links to the discussion threads for several of Fedora's larger subprojects and special interest groups.": "Hieronder staan enkele links naar de discussies die gevoerd worden door enkele grotere werkgroepen van Fedora.",
     "These are the tools and Git forges that Fedora packagers and developers use to build the Fedora systems.": "Hieronder staan de programma's en de op Git gebaseerde sites die voor het samenstellen van pakketten en voor de ontwikkeling van software worden gebruikt.",
-    "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.": "Hieronder staan de handleidingen voor bijdragers. De handleidingen voor aankomende en bestaande gebruikers van Fedora Linux kunt u vinden onder Hulp in het hoofdmenu."
+    "These documentation pages are contributor-focused. They include Fedora's guidelines, teams, organizational structure, and legal docs. If you are looking for user guides (installation, getting started, etc.) check under the Help menu.": "Hieronder staan de handleidingen voor bijdragers. De handleidingen voor aankomende en bestaande gebruikers van Fedora Linux kunt u vinden onder Hulp in het hoofdmenu.",
+    "This is Fedora's main forum for all project collaboration and user support. Also, if you have encountered a problem that might be a software bug, this is a good place to triage it with other users before escalating it to Red Hat's bugzilla reporting system.": "Hieronder staan een aantal links voor het stellen van vragen. Deze links kunt u ook gebruiken om een probleem te bespreken waarvan u niet zeker weet of het veroorzaakt wordt door een programmeerfout in een programma.",
+    "This is a week in September where we highlight the contributions and experiences of women, lgbtq+, and bipoc in Fedora.": "De 'week van de diversiteit' is een week in september waarin we de bijdragen en ervaringen van bepaalde mensen binnen Fedora onder de aandacht brengen. Het gaat dan om vrouwen, leden van de lgbt-gemeenschap en mensen met een andere dan blanke huidskleur.",
+    "This is Fedora's official build system. It is used to create, test, and publish packages.": "Bodhi is Fedora's officiële systeem om pakketten gebruiksklaar te maken. Het wordt gebruikt om ze samen te stellen, ze te kunnen testen, en ze uit te geven.",
+    "This is a collection of short HOWTO and FAQ-style documentation for Fedora users.": "Een geordende verzameling van documenten waarmee gebruikers veel voorkomende problemen kunnen oplossen.",
+    "This is an easy-to-use build system for the Fedora community.": "Copr is een systeem voor het samenstellen van pakketten dat gemakkelijk is te gebruiken.",
+    "Learn more about Fedora Media Writer": "Fedora Linux uitproberen met een geprepareerde USB-stick",
+    "This is a special interest group that has formed for the sole purpose of helping new contributors get involved. Fedora is big and complex and it needs your help!": "Het introductieteam van Fedora heeft tot doel om mensen die willen bijdragen aan Fedora Linux op weg te helpen."
 }
