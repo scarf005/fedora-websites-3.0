@@ -7,7 +7,7 @@ image:
   width: 400
   height: 300
 header_images:
-  - image: public/assets/images/iot-header-dark.png
+  - image: public/assets/images/iot-hero-dark.png
 links:
   - text: Download Now
     url: /iot/download/
