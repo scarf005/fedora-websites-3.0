@@ -33,9 +33,9 @@ if (data._value.sections[3].content[6].description) {
         <div class="mx-auto my-8 max-w-7xl text-center lg:text-start">
           <div class="container mx-auto lg:mx-0">
             <h1 class="mb-4 text-fp-green-700 xl:mb-8">
-              {{ data.title }}
+              {{ $t(data.title) }}
             </h1>
-            <p class="text-fp-gray">{{ data.description }}</p>
+            <p class="text-fp-gray">{{ $t(data.description) }}</p>
           </div>
         </div>
       </div>
@@ -69,10 +69,10 @@ if (data._value.sections[3].content[6].description) {
         class="container col-span-full mx-auto my-8 flex max-w-7xl flex-col items-center md:items-start"
       >
         <h3 class="font-bold text-fp-darkblue-500 dark:text-fp-darkblue-300">
-          {{ data.sections[3].content[5].title }}
+          {{ $t(data.sections[3].content[5].title) }}
         </h3>
         <p class="mt-6 text-fp-gray">
-          {{ data.sections[3].content[5].description }}
+          {{ $t(data.sections[3].content[5].description) }}
         </p>
       </div>
     </section>
