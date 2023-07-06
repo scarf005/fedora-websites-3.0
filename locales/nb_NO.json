@@ -56,9 +56,12 @@
     "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "Dine vennlige og hjelpsomme bidrag til disse kanalene vil bli satt stor pris på",
     "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "Å være i et møte eller å rapportere og diskutere problemer du har funnet kan være flott når du begynner å bidra",
     "Become a Fedora Contributor": "Bli en Fedora-bidragsyter",
-    "Once you have downloaded an image, be sure to verify it for both security and integrity.": "Når du har lastet ned et bilde, husk å bekrefte det for både sikkerhet og integritet",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity.": "Når du har lastet ned et bilde, husk å bekrefte det for både sikkerhet og integritet.",
     "No files available for this version.": "Ingen filer tilgjengelig for denne versjonen.",
     "Fedora Budgie Spin": "Fedora Budgie-spinn",
     "Release Notes": "Utgivelsesmerknader",
-    "RELEASE DATE": "LANSERINGSDATO"
+    "RELEASE DATE": "LANSERINGSDATO",
+    "Verify the checksum matches": "Sjekk at sjekksummen samsvarer",
+    "If the output states that the file is valid, then it's ready to use!": "Hvis det står at filen er gyldig, så er den klar til bruk!",
+    "Watch the latest reviews ➔": "Se de siste anmeldelsene ➔"
 }
