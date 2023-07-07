@@ -562,5 +562,13 @@
     "Use this link to focus on questions and answers about Fedora Cloud.": "Gebruik deze link om vragen te stellen over Fedora Cloud.",
     "Use this link to focus on questions and answers about the GNOME desktop environment.": "Gebruik deze link om vragen te stellen over de grafische schil GNOME.",
     "Use this link to focus on questions and answers about the KDE desktop environment.": "Gebruik deze link om vragen te stellen over de grafische schil KDE.",
-    "We are always excited to work with new contributors. If you're new to the project, check out these sites.": "Het verblijdt ons altijd als iemand ons wil komen versterken. Als u wilt gaan bijdragen aan Fedora Linux, kijk dan eens of onderstaande voorzieningen u van pas komen."
+    "We are always excited to work with new contributors. If you're new to the project, check out these sites.": "Het verblijdt ons altijd als iemand ons wil komen versterken. Als u wilt gaan bijdragen aan Fedora Linux, kijk dan eens of onderstaande voorzieningen u van pas komen.",
+    "We use weblate to translate our site. Please find relevant links below.": "We gebruiken Weblate om deze site te vertalen naar andere talen dan het Engels.",
+    "Week of Diversity": "Week van de diversiteit",
+    "Yes, they still exist.": "De bijdragers van Fedora zijn georganiseerd in vele groepen. Elke groep heeft een elektronische verzendlijst.",
+    "By clicking on and downloading Fedora, you agree to comply with the [Fedora Export Control Policy](https://docs.fedoraproject.org/en-US/legal/export/).": "Door Fedora Linux te downloaden, gaat u akkoord met de [Fedora Export Control Policy](https://docs.fedoraproject.org/en-US/legal/export/).",
+    "Fedora Sway Image": "Schijfbestand voor Fedora Sway",
+    "Screenshot of Fedora Phosh on mobile": "Schermopname van Fedora Phosh op een mobiele telefoon",
+    "Workstation": "Workstation",
+    "You can use this to search for things in Fedora's code repositores. See the Fedora Magazine article for more info.": "Via deze link kunt u alle broncode van Fedora Linux doorzoeken met behulp van Sourcegraph. Er is een artikel in Fedora Magazine over hoe Sourcegraph kan worden gebruikt."
 }
