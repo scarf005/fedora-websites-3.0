@@ -161,7 +161,7 @@
     "Description": "Leírás",
     "Panda, Beefy and Badger.": "Panda, Húsos és Borz.",
     "Open to all current and potential contributors on **Wednesday 11 AM Eastern** on [fedora-meeting@irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).": "Nyitva áll minden jelenlegi és potenciális közreműködőknek **Szerdán 11:00 órakor Keleti idő szerint** a [fedora-meeting{'@'}irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org) oldalon.",
-    "Sign up at [cloud@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "Regisztrálj a [cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) oldalon, hogy kapjál értesítéseket a találkozókról.",
+    "Sign up at [cloud@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "Regisztráljon a [cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) oldalon, hogy megkapja a megbeszélések napirendjét és időpontját.",
     "Pick your architecture": "Válaszd ki az architektúrádat",
     "Testing": "Tesztelés alatt",
     "The Fedora CoreOS Working Group sends meeting agendas and minutes and has discussions on their mailing list at coreos@lists.fedoraproject.org.": "A Fedora CoreOS Working Group elküldi az ülések napirendjeit és jegyzőkönyveit, és megbeszéléseket folytat a coreos{'@'}lists.fedoraproject.org levelezőlistáján.",
@@ -331,5 +331,11 @@
     "Fantastic apps": "Fantasztikus alkalmazások",
     "Why Fedora Workstation?": "Miért a Fedora Munkaállomás?",
     "Easy Fix": "Könnyű javítás",
-    "Events": "Események"
+    "Events": "Események",
+    "No need to know cryptic commands and config files. Click the options you like to change and choose the settings that make you happy.": "Nincs szükség titkos parancsokra és beállítófájlokra. Egy kattintással kiválaszthatja azokat a beállításokat, amelyek Önnek a leginkább megfelelnek.",
+    "Workstation speaks your language": "A Workstation az Ön nyelvét beszéli",
+    "Turn the lights down low": "Tekerje le a fényeket halványra",
+    "A quick and easy to use image viewer.": "Egy gyors és egyszerűen használható képnézegető.",
+    "Claws Mail is an easy to configure and full featured email application for the Xfce Desktop.": "A Claws Mail egy egyszerűen beállítható és teljes értékű e-mail alkalmazás az Xfce asztalhoz.",
+    "Manage and play your music with ease.": "Kezelje és játssza le a zenéit könnyedén."
 }
