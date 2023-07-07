@@ -5,7 +5,7 @@ useContentHead(data);
 <template>
   <main>
     <FpHero
-      :background="data.header_images[0].image"
+      :background="data.header_images[1].image"
       alignment="bg-bottom"
       class="relative z-0"
     >
