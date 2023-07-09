@@ -702,5 +702,11 @@
     "It's your Operating System.": "Det är ditt operativsystem.",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Du kan visa, skicka in och diskutera Fedora Cloud problem på [Fedora Cloud felspårare](https://pagure.io/cloud-sig/issues).",
     "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Du kan se, arkivera och diskutera Fedora CoreOS-problem på Fedora CoreOS felspårare.",
-    "help_improve_this_website": "Hjälp till att förbättra denna webbplats med vårat {cms} eller genom att bidra till vårat {gitlab_repo}"
+    "help_improve_this_website": "Hjälp till att förbättra denna webbplats med vårat {cms} eller genom att bidra till vårat {gitlab_repo}",
+    "Other Downloads": "Andra nedladdningar",
+    "Get support from our community on the Fedora Discussion Forum.": "Få support från vår gemenskap på Fedoras diskussionsforum.",
+    "The Fedora desktop experiences you know with an additional layer of security and reliability.": "Fedoras skrivbordsupplevelser du känner igen med ett extra lager av säkerhet och tillförlitlighet.",
+    "But wait! There's more.": "Men vänta! Det finns mer.",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Behöver du något lite annorlunda? Kolla in våra andra nedladdningar nedan, med alternativa arkitekturer, torrents och nätverksbaserade installationsavbilder.",
+    "High-efficiency tools for creating, running and managing containers": "Högeffektiva verktyg för att skapa, köra och hantera behållare"
 }
