@@ -4,7 +4,7 @@ useContentHead(data);
 </script>
 <template>
   <section
-    class="fp-banner to-fp-white relative -mt-12 bg-gradient-to-b from-teal-700 pt-12 dark:to-neutral-900"
+    class="fp-banner to-fp-white relative bg-gradient-to-b from-teal-700 pt-6 dark:to-neutral-900"
   >
     <TheLocalBar
       :image="{
