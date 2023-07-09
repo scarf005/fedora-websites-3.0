@@ -1,7 +1,6 @@
 <script setup>
 defineProps({
   background: String,
-  bgClass: String,
 });
 </script>
 
@@ -36,8 +35,7 @@ defineProps({
         })`,
       }"
       style="min-height: 100vh"
-      class="w-screen max-w-full bg-cover bg-center bg-no-repeat"
-      :class="bgClass"
+      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat"
     ></div>
     <svg
       viewBox="0 0 209.98682 22.494961"
