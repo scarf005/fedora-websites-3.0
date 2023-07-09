@@ -702,5 +702,11 @@
     "No files available for this version.": "이 버전을 위해 사용 가능한 파일이 없습니다.",
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "당신은 [페도라 클라우드 문제 추적기](https://pagure.io/cloud-sig/issues)에서 페도라 클라우드 문제를 보고, 파일화하며 토의 할 수 있습니다.",
     "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "당신은 페도라 코어OS 사건 추적기에서 페도라 코어OS 문제를 보고, 파일화, 그리고 토의 할 수 있습니다.",
-    "help_improve_this_website": "{cms} 또는 {gitlab_repo}에서 이 웹사이트를 개선하는데 도움을 주세요"
+    "help_improve_this_website": "{cms} 또는 {gitlab_repo}에서 이 웹사이트를 개선하는데 도움을 주세요",
+    "But wait! There's more.": "하지만 기다립니다! 더 있습니다.",
+    "Other Downloads": "다른 내려받기",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "조금 다른 게 필요한가요? 대체 구조, 토렌트 및 네트워크-기반의 설치 이미지를 특징으로 하는 아래의 다른 내려받기를 확인하세요.",
+    "Get support from our community on the Fedora Discussion Forum.": "페도라 토의 포럼의 우리 커뮤니티에서 지원을 받아요.",
+    "The Fedora desktop experiences you know with an additional layer of security and reliability.": "페도라 데스크탑은 추가적인 보안과 신뢰성 계층을 통해 알 수 있도록 경험하게 합니다.",
+    "High-efficiency tools for creating, running and managing containers": "컨테이너 생성, 동작 및 관리를 위한 매우-효율적인 도구"
 }
