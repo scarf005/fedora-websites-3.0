@@ -13,7 +13,7 @@ if (data._value.sections[3].content[6].description) {
 
 <template>
   <main
-    class="border-t-8 border-fp-green dark:border-fp-green-700 dark:bg-neutral-800 md:mt-1"
+    class="border-t-8 border-fp-green dark:border-fp-green-700 dark:bg-neutral-800"
   >
     <header>
       <TheLocalBar

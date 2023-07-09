@@ -4,7 +4,7 @@ useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
 <template>
-  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-1">
+  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800">
     <TheLocalBar
       :image="{
         light: 'assets/images/spins/spins-sway-logo-light.png',

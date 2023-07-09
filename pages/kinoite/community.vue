@@ -7,7 +7,7 @@ useContentHead(data);
 
 <template>
   <main
-    class="border-t-8 border-fp-newblue dark:border-fp-newblue-700 dark:bg-neutral-800 md:mt-1"
+    class="border-t-8 border-fp-newblue dark:border-fp-newblue-700 dark:bg-neutral-800"
   >
     <header>
       <TheLocalBar

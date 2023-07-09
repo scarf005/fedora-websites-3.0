@@ -6,7 +6,7 @@ useContentHead(data);
 </script>
 
 <template>
-  <main class="border-t-8 border-fp-orange dark:bg-neutral-800 md:mt-1">
+  <main class="border-t-8 border-fp-orange dark:bg-neutral-800">
     <header>
       <TheLocalBar
         :image="{

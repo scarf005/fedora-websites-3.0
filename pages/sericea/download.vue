@@ -57,7 +57,7 @@ function closeVerify() {
 useContentHead(data);
 </script>
 <template>
-  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800 md:mt-1">
+  <main class="border-t-8 border-fp-newblue dark:bg-neutral-800">
     <TheLocalBar
       :image="{
         light: 'assets/images/fedora-sericea-logo-light.png',
