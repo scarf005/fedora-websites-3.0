@@ -686,5 +686,11 @@
     "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "Procházet, nahlásit a diskutovat problémy s Fedorou Cloud lze v [systému hlášení Fedory Cloud](https://pagure.io/cloud-sig/issues).",
     "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "Procházet, nahlásit nebo diskutovat problémy s Fedorou CoreOS lze v systému hlášení Fedory CoreOS.",
     "GitLab repo": "GitLab repozitáři",
-    "GNOME Terminal": "Terminál GNOME"
+    "GNOME Terminal": "Terminál GNOME",
+    "But wait! There's more.": "Ale počkat! Je toho více.",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Potřebujete něco trochu jiného? Zkontrolujte níže naše další odkazy ke stažení, obsahující alternativní architektury, torrenty a obrazy pro instalaci po síti.",
+    "Other Downloads": "Další možnosti ke stažení",
+    "High-efficiency tools for creating, running and managing containers": "Vysoce efektivní nástroje pro tvorbu, běh a správu kontejnerů",
+    "Get support from our community on the Fedora Discussion Forum.": "Získejte podporu od naší komunity na Diskuzním fóru Fedory.",
+    "The Fedora desktop experiences you know with an additional layer of security and reliability.": "Známá zkušenost s desktopy Fedory s vrstvou bezpečnosti a spolehlivosti navíc."
 }
