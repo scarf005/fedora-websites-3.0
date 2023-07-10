@@ -181,7 +181,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"You can view, file, and discuss Fedore Cloud issues on the Fedora Cloud "
+"You can view, file, and discuss Fedora Cloud issues on the Fedora Cloud "
 "issue tracker."
 msgstr ""
 
