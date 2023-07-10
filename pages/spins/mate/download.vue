@@ -1,3 +1,3 @@
 <template>
-  <SpinsDownloadPage name="Mate" localnav="false" />
+  <SpinsDownloadPage name="Mate" />
 </template>

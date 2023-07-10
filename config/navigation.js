@@ -100,7 +100,7 @@ const navigation = {
           },
           {
             label: "Mate-Compiz Desktop",
-            path: "https://spins.fedoraproject.org/mate-compiz/",
+            path: "/spins/mate/",
             icon: "fa6-solid:desktop",
             description:
               "A classic Fedora desktop with an additional 3D window manager.",
