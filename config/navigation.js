@@ -120,7 +120,7 @@ const navigation = {
           },
           {
             label: "LXDE Desktop",
-            path: "https://spins.fedoraproject.org/lxde/",
+            path: "/spins/lxde/",
             icon: "fa6-solid:desktop",
             description:
               "A light, fast, and less resource hungry desktop environment",

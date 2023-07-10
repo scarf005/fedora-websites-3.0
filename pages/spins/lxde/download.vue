@@ -1,3 +1,3 @@
 <template>
-  <SpinsDownloadPage name="LXDE" localnav="false" />
+  <SpinsDownloadPage name="LXDE" />
 </template>

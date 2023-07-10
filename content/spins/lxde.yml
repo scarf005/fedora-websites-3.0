@@ -1,4 +1,62 @@
 title: Fedora LXDE Spin
+description: >-
+  LXDE, the "Lightweight X11 Desktop Environment", is an extremely fast, performant, and energy-saving desktop environment. It maintained by an international community of developers and comes with a beautiful interface, multi-language support, standard keyboard shortcuts and additional features like tabbed file browsing.
+
+
+  LXDE is not designed to be powerful and bloated, but to be usable and slim. A main goal of LXDE is to keep computer resource usage low. It is especially designed for computers with low hardware specifications like netbooks, mobile devices (e.g. MIDs) or older computers.
+image:
+  src: https://stg.fedoraproject.org/assets/images/spins/spins-lxde-dark.png
+  alt: Fedora LXDE Image
+  width: 400
+  height: 300
+links:
+  - text: Download Now
+    url: /spins/lxde/download/
+screenshot_image:
+  image: public/assets/images/spins/screenshot-lxde.jpg
+  alt_text: Screenshot of Fedora LXDE desktop
+sections:
+  - sectionTitle: Going Online
+    content:
+      - title: Sylpheed
+        description: Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client.
+        image: public/assets/images/spins/sylpheed.png
+      - title: Midori
+        description: A lightweight and full featured web browser using GTK+2 and WebKit. Surf the web with speed and simplicity.
+        image: public/assets/images/spins/midori.png
+      - title: Pidgin
+        description: Universal messaging client. Communicate with the world via IRC, AIM, MSN, Yahoo and other instant messaging systems.
+        image: public/assets/images/spins/pidgin.png
+      - title: Transmission
+        description: Are you a downloader? Use Transmission to get new versions of Fedora LXDE Desktop!
+        image: public/assets/images/spins/transmission.png
+  - sectionTitle: Utilities & Configuration
+    content:
+      - title: LXTerminal
+        description: Fedora LXDE Desktop ships a terminal, the gateway to the real power of any UNIX/linux machine, called LXTerminal.
+        image: public/assets/images/spins/gnome-terminal.png
+      - title: ObConf
+        description: ObConf easily installs new themes which use the .obt Openbox theme archive format for distribution.
+        image: public/assets/images/spins/obconf.png
+  - sectionTitle: Office & Productivity Suite
+    content:
+      - title: AbiWord
+        description: Quick and full featured word processing made easy.
+        image: public/assets/images/spins/abiword.png
+      - title: Osmo
+        description: Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules.
+        image: public/assets/images/spins/osmo.png
+  - sectionTitle: Multimedia
+    content:
+      - title: LXMusic
+        description: LXMusic is the minimalist music player for LXDE. This is based on XMMS2, which is lightweight and has server/client design.
+        image: public/assets/images/spins/xmms2.png
+      - title: GPicView
+        description: GPicView is the standard picture viewer of LXDE. GPicView features lightning fast startup and an intuitive interface.
+        image: public/assets/images/spins/gpicview.png
+      - title: ASunder
+        description: ASunder is a graphical Audio CD ripper and encoder. You can use it to save tracks from an Audio CD as any of WAV, MP3, OGG, FLAC, Opus, WavPack, Musepack, AAC, and Monkey's Audio files.
+        image: public/assets/images/spins/asunder.png
 downloadSection:
   description: We're so glad you've decided to give Fedora LXDE Spin a try. We
     know you'll love it.
