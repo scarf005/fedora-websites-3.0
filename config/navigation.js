@@ -113,7 +113,7 @@ const navigation = {
           },
           {
             label: "LXQT Desktop",
-            path: "https://spins.fedoraproject.org/lxqt/",
+            path: "/spins/lxqt/",
             icon: "fa6-solid:desktop",
             description:
               "A lightweight and well intgrated LXQT desktop environment.",

@@ -1,3 +1,3 @@
 <template>
-  <SpinsDownloadPage name="LXQt" localnav="false" />
+  <SpinsDownloadPage name="LXQt" />
 </template>
