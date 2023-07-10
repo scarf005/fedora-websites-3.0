@@ -190,7 +190,7 @@ msgstr ""
 
 #: sections-%3E[2]-%3Econtent-%3E[0]-%3Edescription
 msgid ""
-"You can view, file, and discuss Fedore CoreOS issues on the Fedora CoreOS "
+"You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS "
 "issue tracker."
 msgstr ""
 
