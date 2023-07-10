@@ -93,7 +93,7 @@ const navigation = {
           },
           {
             label: "Cinnamon Desktop",
-            path: "https://spins.fedoraproject.org/cinnamon/",
+            path: "/spins/cinnamon/",
             icon: "fa6-solid:desktop",
             description:
               "A modern desktop featuring a traditional gnome user experience.",
