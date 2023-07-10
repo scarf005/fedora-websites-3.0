@@ -107,7 +107,7 @@ const navigation = {
           },
           {
             label: "i3 Tiling WM",
-            path: "https://spins.fedoraproject.org/i3/",
+            path: "/spins/i3/",
             icon: "fa6-solid:desktop",
             description: "Fedora Linux with the i3 Tiling Window Manager.",
           },
