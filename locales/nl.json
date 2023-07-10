@@ -588,5 +588,13 @@
     "Get support from our community on the Fedora Discussion Forum.": "Krijg hulp van onze gemeenschap via het forum Fedora Discussion.",
     "If your download comes with a CHECKSUM file, follow these easy steps to verify your image for both security and integrity.": "Als uw download vergezeld gaat van een bestand 'CHECKSUM', volg dan de volgende stappen om het schijfbestand eenvoudig te verifiëren.",
     "Please take a moment and let us know. [Learn how on our wiki page](https://fedoraproject.org/wiki/Security_Bugs#Reporting_a_Security_Vulnerability).": "Laat het ons alstublieft weten. [Hoe kan ik een kwetsbaarheid melden?](https://fedoraproject.org/wiki/Security_Bugs#Reporting_a_Security_Vulnerability)",
-    "Applications as Flatpaks": "Toepassingsprogramma's in de vorm van Flatpaks"
+    "Applications as Flatpaks": "Toepassingsprogramma's in de vorm van Flatpaks",
+    "Fedora Community & Support": "Fedora gemeenschap",
+    "Fedora Sericea Image": "Fedora Sericea schijfbestand",
+    "Configuration": "Voorzieningen",
+    "Download thousands of open-source and proprietary, containerized applications thanks to Flatpak.": "Met Flatpak kunt u duizenden toepassingsprogramma's downloaden die vrij of propriëtair zijn.",
+    "Built on top of the best": "Gebaseerd op het beste",
+    "Fedora creates an innovative, free and open source platform for hardware, clouds, and containers that enables software developers and community members to build tailored solutions for their users.": "Fedora maakt innovatieve platformen die gebaseerd zijn op vrije software. Voor computers, voor een schaalbare groep van servers, en voor de toepassing van containers. Deze platformen stellen ontwikkelaars in staat programmatuur te maken die aansluit op de behoeften van de gebruikers.",
+    "File manager for Linux and other Unix-like systems.": "Thunar is een bestandsbeheerder voor Linux en andere Unix-achtige systemen.",
+    "CLI application to control the NetworkManager configuration. It gives you the power of the nm-applet, but in the terminal.": "nmcli is een hulpprogramma voor de bediening van NetworkManager. Het geeft de functionaliteit van nm-applet, maar gebruikt de commandoregel."
 }
