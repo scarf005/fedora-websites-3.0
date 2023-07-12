@@ -1,6 +1,6 @@
 title: Fedora LXQT Spin
 description: >-
-  Fedora LXQt provides a lightweight, well-integrated LXQt desktop environment. In addition to LXQt itself it provides a small, well selected collection of applications like the QupZilla browser, which combines Chromium's rendering engine with a nice Qt experience. Other applications include the Trojita mail client, the qBittorrent client, the Yarock music player and a set of some more commonly used applications. As all applications use the same Qt5 toolkit and the Breeze theme known from KDE, the desktop provides a unified and well-integrated style and theming. In addition breeze-gtk is provided to allow the user to integrate GTK applications too.
+  Fedora LXQt provides a lightweight, well-integrated LXQt desktop environment. In addition to LXQt itself it provides a small, well selected collection of applications like the Falkon browser, which combines Chromium's rendering engine with a nice Qt experience. Other applications include the Trojita mail client, the qBittorrent client, the Yarock music player and a set of some more commonly used applications. As all applications use the same Qt5 toolkit and the Breeze theme known from KDE, the desktop provides a unified and well-integrated style and theming. In addition breeze-gtk is provided to allow the user to integrate GTK applications too.
 image:
   src: https://stg.fedoraproject.org/assets/images/spins/spins-lxqt-dark.png
   alt: Fedora LXQT Image
@@ -18,9 +18,9 @@ sections:
       - title: NetworkManager
         description: The goal of NetworkManager is to make networking just work with a minimum of user hassle, but still allow customization.
         image: public/assets/images/spins/nm.png
-      - title: QupZilla
+      - title: Falkon
         description: A lightweight multiplatform web browser written in Qt Framework and using its web rendering engine QtWebEngine.
-        image: public/assets/images/spins/qupzilla.png
+        image: public/assets/images/spins/falkon.png
       - title: Quassel
         description: Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one clients can attach to and detach from a central core
         image: public/assets/images/spins/quassel.png
