@@ -89,5 +89,6 @@ export default defineNuxtConfig({
     "/coreos/download/": { experimentalNoScripts: false }, // except the download pages, where we need JS (coreOS images, or just GPG modal)
     "/coreos/release-notes/": { experimentalNoScripts: false }, // except release notes
     "/start": { experimentalNoScripts: false }, // except start pages
+    "/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing
   },
 });

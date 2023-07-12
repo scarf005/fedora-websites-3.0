@@ -14,7 +14,7 @@ const obsolete_keys = useState("obsolete_keys", () => false);
 useContentHead(data);
 </script>
 <template>
-  <main class="fp-security md:mt-2">
+  <main class="fp-security">
     <!-- TITLE -->
     <section class="py-12 text-center dark:bg-neutral-800 lg:text-start">
       <div class="container mx-auto max-w-7xl">
