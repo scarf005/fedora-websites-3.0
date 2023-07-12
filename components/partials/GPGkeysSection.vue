@@ -6,6 +6,10 @@ const props = defineProps({
     type: Object,
   },
 });
+
+function splitkey(key) {
+  return key.match(/[\S]{1,4}/g) || [];
+}
 </script>
 
 <template>
@@ -21,10 +25,12 @@ const props = defineProps({
         ><code class="text-xs text-fp-gray sm:text-base">{{ gpg.id }}</code>
       </p>
       <p class="flex flex-wrap items-baseline gap-x-1">
-        <span class="font-bold">Fingerprint: </span
-        ><code class="break-all text-xs text-fp-gray sm:text-base">{{
-          gpg.fingerprint
-        }}</code>
+        <span class="font-bold">Fingerprint: </span>
+        <code class="break-all text-xs text-fp-gray sm:text-base">
+          <span class="pr-2" v-for="kp in splitkey(gpg.fingerprint)">
+            {{ kp }}
+          </span>
+        </code>
       </p>
       <p v-if="gpg.openpgpkey" class="flex flex-wrap items-baseline gap-x-1">
         <span class="font-bold">DNS OpenPGPKey: </span
