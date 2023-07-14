@@ -126,6 +126,12 @@ const navigation = {
               "A light, fast, and less resource hungry desktop environment",
           },
           {
+            label: "SOAS Desktop",
+            path: "/spins/soas/",
+            icon: "fa6-solid:desktop",
+            description: "Discover. Reflect. Share. Learn.",
+          },
+          {
             label: "Phosh (Phone Shell)",
             path: "/spins/phosh",
             icon: "fa6-solid:mobile",
