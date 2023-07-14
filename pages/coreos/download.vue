@@ -463,12 +463,10 @@ useContentHead(data);
               >
               </FpCard>
             </a>
-            <!-- TODO: Remove the v-if when the stable data is available -->
             <a
               id="ppc64le"
               @click="switchArch('ppc64le')"
               href="#download_section"
-              v-if="selectedStream.stream !== 'stable'"
             >
               <FpCard
                 title="ppc64le"

@@ -261,13 +261,7 @@ useContentHead(data);
             <a id="s390x" href="#" @click="switchArch('s390x')">
               <FpCard title="s390x"> </FpCard>
             </a>
-            <!-- TODO: Remove the v-if when the stable data is available -->
-            <a
-              id="ppc64le"
-              href="#"
-              @click="switchArch('ppc64le')"
-              v-if="selectedStream !== 'stable'"
-            >
+            <a id="ppc64le" href="#" @click="switchArch('ppc64le')">
               <FpCard title="ppc64le"> </FpCard>
             </a>
           </div>
