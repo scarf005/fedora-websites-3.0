@@ -27,7 +27,7 @@ useContentHead(data);
 
     <!-- TITLE -->
     <section
-      class="bg-gradient-to-b from-white to-fp-newblue-100 px-2 pt-24 pb-12 text-center dark:bg-none lg:text-start"
+      class="relative z-10 bg-gradient-to-b from-white to-fp-newblue-100 px-2 pt-24 pb-12 text-center dark:bg-none lg:text-start"
     >
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-8 text-4xl text-gray-600 dark:text-gray-200">

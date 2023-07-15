@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="relative z-0 dark:bg-neutral-900">
+  <section class="group relative z-0 dark:bg-neutral-900">
     <svg
       viewBox="0 0 209.9868 38.261421"
       width="100%"
@@ -13,7 +13,7 @@ defineProps({
       preserveAspectRatio="none"
       version="1.1"
       id="svg4475"
-      class="absolute top-0 z-10 h-20 md:h-40"
+      class="absolute top-0 z-10 h-20 transition delay-200 duration-700 ease-out group-hover:-translate-y-24 group-hover:opacity-75 md:h-40"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:svg="http://www.w3.org/2000/svg"
     >
@@ -35,7 +35,7 @@ defineProps({
         })`,
       }"
       style="min-height: 100vh"
-      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat"
+      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat transition duration-500 ease-out md:group-hover:scale-95 md:group-hover:bg-contain"
     ></div>
     <svg
       viewBox="0 0 209.98682 22.494961"
@@ -44,7 +44,7 @@ defineProps({
       preserveAspectRatio="none"
       version="1.1"
       id="svg4475"
-      class="absolute bottom-0 z-10 h-10 sm:h-20"
+      class="absolute bottom-0 z-10 h-10 transition delay-200 duration-700 ease-out group-hover:translate-y-20 group-hover:opacity-75 sm:h-20"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:svg="http://www.w3.org/2000/svg"
     >
