@@ -89,7 +89,7 @@ sections:
           the desktop environment of your choice.
         link:
           text: Learn more
-          url: https://spins.fedoraproject.org/
+          url: /spins
         image: public/assets/images/fedora-spins-logo.png
       - title: Fedora Labs
         description:
