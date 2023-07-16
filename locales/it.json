@@ -556,5 +556,18 @@
     "These are some introductory guides to help users get started with Fedora Linux.": "Queste sono alcune guide introduttive per aiutare gli utenti a iniziare a utilizzare Fedora Linux.",
     "These are sites where updates about new and upcomming events, releases, packages, and projects are likely to be posted. You might want to subscribe to some of these to get the notices in your inbox.": "Sono siti in cui è probabile che vengano pubblicati aggiornamenti su eventi, rilasci, pacchetti e progetti nuovi e imminenti. È possibile iscriversi ad alcuni di essi per ricevere le notifiche nella propria casella di posta elettronica.",
     "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "",
-    "Upstream Documentation": ""
+    "Upstream Documentation": "",
+    "CMS": "CMS",
+    "But wait! There's more.": "Ma aspetta! C'è di più.",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Hai bisogno di qualcosa di diverso? Dai un'occhiata agli altri download qui sotto, con architetture alternative, torrent e immagini di installazione basate sulla rete.",
+    "Other Downloads": "Altri Downloads",
+    "We're so glad you've decided to give Fedora Everything a try. We know you'll love it.": "Siamo felici che tu abbia deciso di provare Fedora Everything. Sappiamo che ti piacerà.",
+    "Atril is a simple multi-page document viewer. It can display and print PostScript, DVI, XPS and Portable Document Format files.": "Atril è un semplice visualizzatore di documenti multipagina. Può visualizzare e stampare file PostScript, DVI, XPS e Portable Document Format.",
+    "help_improve_this_website": "Contribuisci a migliorare questo sito web sul {cms} o sul {gitlab_repo}",
+    "GitLab repo": "Repo GitLab",
+    "Fedora Everything": "Fedora Everything",
+    "It's your Operating System.": "È il tuo sistema operativo.",
+    "No files available for this version.": "Nessun file disponibile per questa versione.",
+    "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Verifica la sicurezza e l'integrità del tuo download utilizzando l'apposito file di checksum. Se c'è una firma valida di una delle chiavi di Fedora e il checksum SHA256 corrisponde, il download è valido.",
+    "A modern media player, using gtk3 and the gstreamer plugin framework.": "Un moderno lettore multimediale che utilizza gtk3 e il framework di plugin gstreamer."
 }
