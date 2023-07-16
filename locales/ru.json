@@ -15,5 +15,9 @@
     " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run successfully. Double those amounts is recommended. ": " * Для установки и успешного запуска Fedora требуется минимум 20 ГБ на диске, 2 ГБ ОЗУ. Рекомендуется удвоить эти значения. ",
     "BETA": "БЕТА",
     "Join Us!": "Присоединяйтесь к нам!",
-    "verify_button_instruction": "Нажмите на кнопку проверки {verify_button}, чтобы получить инструкцию, специально подогнанную под загружаемый файл."
+    "verify_button_instruction": "Нажмите на кнопку проверки {verify_button}, чтобы получить инструкцию, специально подогнанную под загружаемый файл.",
+    "For Power ppc64le systems": "Для систем на Power ppc64le",
+    "For IBM s390x zSystems": "Для IBM s390x zSystems",
+    "We take security seriously": "Мы серьёзно относимся к безопасности",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "После загрузки образа, обязательно проверьте его на безопасность и на целостность"
 }
