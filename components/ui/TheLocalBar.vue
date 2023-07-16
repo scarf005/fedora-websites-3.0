@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div class="px-8">
     <div
-      class="mx-auto mt-12 flex max-w-7xl flex-col justify-between sm:flex-row"
+      class="mx-auto flex max-w-7xl flex-col justify-between pt-12 sm:flex-row"
     >
       <FpLink :href="home">
         <FpImage class="mx-auto mb-5 max-h-8 w-auto sm:m-0" :src="image" />

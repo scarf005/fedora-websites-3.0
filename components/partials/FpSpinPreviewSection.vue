@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="group relative z-0 dark:bg-neutral-900">
+  <section class="group relative z-0 overflow-hidden dark:bg-neutral-900">
     <svg
       viewBox="0 0 209.9868 38.261421"
       width="100%"
@@ -35,7 +35,7 @@ defineProps({
         })`,
       }"
       style="min-height: 100vh"
-      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat transition duration-500 ease-out md:group-hover:scale-95 md:group-hover:bg-contain"
+      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat transition duration-1000 ease-out md:scale-110 md:group-hover:scale-100 md:group-hover:bg-contain lg:group-hover:scale-95"
     ></div>
     <svg
       viewBox="0 0 209.98682 22.494961"
