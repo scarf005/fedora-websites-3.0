@@ -31,7 +31,7 @@
     "Latest release": "آخرین عرضه",
     "Download Now": "همین حالا دانلود کنید",
     "Become a Fedora Contributor": "به شرکت کننده Fedora تبدیل شوید",
-    "Community": "انجمن",
+    "Community": "فضای ارتباطی",
     "Fedora Logo": "آرم Fedora",
     "Once you have downloaded an image, be sure to verify it for both security and integrity": "هنگامی که image مربوطه را دانلود کردید مطمئن شوید که ا امنیت و یکپارچگی را تایید میکنید.",
     "Legal": "قانونی",
@@ -44,5 +44,14 @@
     "Try it now.": "همین حالا امتحان کنید",
     "Fedora is sponsored by Red Hat.": "فدورا توسط ردهت پشتیبانی مالی می شود.",
     "Become a Sponsor": "به اسپانسر تبدیل شوید",
-    "Verify your download": "دانلود خود را تأیید کنید."
+    "Verify your download": "دانلود خود را تأیید کنید.",
+    "help_improve_this_website": "در {cms} یا در {gitlab_repo} به بهبود این سایت کمک کنید",
+    "Privacy Statement": "بیانیه حریم خصوصی",
+    "Destination": "مقصود",
+    "But wait! There's more.": "اما صبر کنید! چیز‌های بیشتری وجود دارد.",
+    "Other Downloads": "دانلود های دیگر",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "به چیزی کمی متفاوت نیاز دارید؟ دانلودهای دیگر ما را در زیر بررسی کنید که شامل معماری های جایگزین، تورنت ها و image های نصب مبتنی بر شبکه است.",
+    "Registration": "ثبت نام",
+    "Code of Conduct": "کد رفتار",
+    "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "شرکت در یک جلسه یا گزارش و بحث در مورد موضوعاتی که پیدا کرده اید می تواند قدمی عالی در مشارکت باشد"
 }
