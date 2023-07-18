@@ -39,7 +39,7 @@ sections:
       - title: Report & discuss issues
         description:
           You can view, file, and discuss Fedora Cloud issues on the [Fedora
-          Cloud issue tracker](https://pagure.io/fedora-cloud/issues).
+          Cloud issue tracker](https://pagure.io/cloud-sig/issues).
       - title: Attend a meeting
         description:
           Cloud Working Group meetings are open to all current and potential

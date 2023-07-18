@@ -42,7 +42,7 @@ sections:
       - title: Report & discuss issues
         description:
           You can view, file, and discuss Fedora CoreOS issues on the [Fedora
-          CoreOS issue tracker](https://pagure.io/fedora-coreos/issues).
+          CoreOS issue tracker](https://github.com/coreos/fedora-coreos-tracker/issues).
       - title: Attend a meeting
         description:
           CoreOS Working Group meetings are open to all current and potential
