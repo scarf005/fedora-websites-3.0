@@ -36,7 +36,7 @@ That's why we split up this file in `/locales.build.d/`. Each file here match ei
 `base.json` contains all the hard coded strings found in vue files. It is created using `vue-i18n-extract` with the following command:
 
 ```
-npx vue-i18n-extract --vueFiles './{pages,components}/**/*.vue' --languageFiles ./locales.build.d/base.json --add --remove
+npx vue-i18n-extract --vueFiles './{pages,components}/**/*.vue' --languageFiles ./locales.build.d/base.json --add --remove --separator "|"
 ```
 
 `flock.json` contains all the strings from the flock page in the CMS. It's generated with `genLocale.py` script that basically takes all strings from the yaml, and flatten the result in the json. 
