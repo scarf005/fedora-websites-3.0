@@ -742,33 +742,45 @@ useContentHead(data);
           class="list-outside list-decimal pt-2 ltr:pl-8 ltr:text-left rtl:pr-8 rtl:text-right"
         >
           <li>
-            <p class="mb-2">
-              Download the
-              <a
-                class="text-fp-blue"
-                :href="verifyModal.checksum"
-                :download="verifyModal.chk_name"
-                >checksum file</a
-              >
-              and
-              <a class="text-fp-blue" :href="verifyModal.signature"
-                >signature</a
-              >
-              into the same directory as the image you downloaded.
-            </p>
+            <i18n-t
+              keypath="download_the_checksum_and_signature"
+              tag="p"
+              class="mb-2"
+            >
+              <template #checksum_file>
+                <a
+                  class="text-fp-blue"
+                  :href="verifyModal.checksum"
+                  :download="verifyModal.chk_name"
+                  >{{ $t("checksum file") }}</a
+                >
+              </template>
+              <template #signature>
+                <a class="text-fp-blue" :href="verifyModal.signature">{{
+                  $t("signature")
+                }}</a>
+              </template>
+            </i18n-t>
           </li>
           <li>
             <p class="mb-2">{{ $t("Import Fedora's GPG key(s)") }}</p>
             <pre
               class="mb-1 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
             ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
-            <p class="mb-4 text-sm">
-              <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
-
-              {{ $t("You can verify the details of the GPG key(s)") }}
-              <FpLink class="text-sm text-fp-blue" href="/security">here</FpLink
-              >.
-            </p>
+            <i18n-t
+              keypath="you_can_verify_the_GPG_details"
+              tag="p"
+              class="mb-4 text-sm"
+            >
+              <template #icon>
+                <Icon name="fa-solid:info-circle" class="mx-2 !align-sub" />
+              </template>
+              <template #here>
+                <FpLink class="text-sm text-fp-blue" href="security">{{
+                  $t("here")
+                }}</FpLink>
+              </template>
+            </i18n-t>
           </li>
           <li>
             <p class="mb-2">{{ $t("Verify the signature file is valid") }}</p>
