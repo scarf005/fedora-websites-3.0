@@ -65,3 +65,7 @@ Other documentation:
 ## Meeting Notes
 
 - [HackMD](https://hackmd.io/Mxm2We3yTqKybLsdohadOA?both)
+
+## License
+
+This project is licensed under the [GNU Affero General Public License v3.0 only](LICENSE) (AGPL-3.0-only).
