@@ -871,5 +871,6 @@
     "Latest Solved Issues": "Masalah Terbaru yang Diselesaikan",
     "Latest Council Video": "Video Dewan Terbaru",
     "We think Panda lost it.": "Kami pikir Panda telah menghilangkannya.",
-    "news for project contributors": "berita untuk kontributor proyek"
+    "news for project contributors": "berita untuk kontributor proyek",
+    "download_the_checksum_file": "Unduh {checksum_file} ke dalam direktori yang sama dengan image yang Anda unduh."
 }
