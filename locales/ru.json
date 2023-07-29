@@ -19,5 +19,7 @@
     "For Power ppc64le systems": "Для систем на Power ppc64le",
     "For IBM s390x zSystems": "Для IBM s390x zSystems",
     "We take security seriously": "Мы серьёзно относимся к безопасности",
-    "Once you have downloaded an image, be sure to verify it for both security and integrity": "После загрузки образа, обязательно проверьте его на безопасность и на целостность"
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "После загрузки образа, обязательно проверьте его на безопасность и на целостность",
+    "For ARM® aarch64 systems": "Для систем ARM® aarch64",
+    "For Intel and AMD x86_64 systems": "Для систем Intel и AMD x86_64"
 }
