@@ -22,8 +22,6 @@ useHead({
       >Start of main content</a
     >
     <div class="pt-12">
-      <!-- Banner -->
-      <TheBanner />
       <slot />
     </div>
     <TheFooter />
