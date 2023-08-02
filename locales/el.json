@@ -20,7 +20,7 @@
     "its_your_Server.": "Διακομιστής.",
     "Fedora Council": "Συμβούλιο Fedora",
     "Installation": "Εγκατάσταση",
-    "LXDE Desktop": "Επιφάνεια Εργασίας LXDE",
+    "LXDE Desktop": "Επιφάνεια Εργασίας KDE",
     "Mailing Lists": "Λίστες Ταχυδρομείου",
     "Translations": "Μεταφράσεις",
     "help_improve_this_website": "Βοηθήστε στη βελτίωση αυτής της σελίδας στο {cms} ή στο {gitlab_repo}",
@@ -61,5 +61,6 @@
     "Try it now": "Δοκιμάστε το τώρα.",
     "Learn more": "Μάθετε περισσότερα",
     "its_your_Community.": "Κοινότητα",
-    "Become a Fedora contributor": "Συνεισφέρετε στο Fedora"
+    "Become a Fedora contributor": "Συνεισφέρετε στο Fedora",
+    "Browse": "Εξερεύνηση"
 }
