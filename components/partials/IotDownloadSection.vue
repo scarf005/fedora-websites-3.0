@@ -34,7 +34,7 @@ const props = defineProps({
         :downloadLink="`https://download.fedoraproject.org/pub/alt/iot/test/${version}/${v.path}`"
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
-        v-if="v.arch != 'src' && isBeta"
+        v-if="v.arch != 'src' && v.type != 'dvd' && isBeta"
         :variants="['beta']"
       />
       <FpDownloadItem
@@ -44,7 +44,7 @@ const props = defineProps({
         :downloadLink="`https://download.fedoraproject.org/pub/alt/iot/${version}/${v.path}`"
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
-        v-if="v.arch != 'src' && !isBeta"
+        v-if="v.arch != 'src' && v.type != 'dvd' && !isBeta"
       />
     </div>
   </div>
