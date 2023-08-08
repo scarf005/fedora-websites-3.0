@@ -63,7 +63,7 @@ sections:
           Server issue tracker](https://pagure.io/fedora-server/issues).
       - title: Chat with the team
         description: Visit \#fedora-server on irc.libera.chat or visit
-          [chat​.​fedoraproject​.​org​/​#​/​room​/​#​server​:​fedoraproject​.​org](https://chat.fedoraproject.org/#/room/#server:fedoraproject.org)
+          [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
       - title: Join the mailing list
         description: Sign up at
           [server@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/server.lists.fedoraproject.org/)
@@ -73,4 +73,4 @@ sections:
         description:
           Open to all current and potential contributors **every 1st and 3rd
           Wednesday at 18:00 UTC**
-          on  [​chat​.​fedoraproject​.​org​/​#​/​room​/​#​meeting​:​fedoraproject​.​org](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).
+          on [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).

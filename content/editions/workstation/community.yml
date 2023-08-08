@@ -42,8 +42,8 @@ sections:
     content:
       - title: Report & discuss issues
         description:
-          You can view, file, and discuss Fedora Workstation issues on [the
-          Fedora Workstation issue
+          You can view, file, and discuss Fedora Workstation issues on the
+          [Fedora Workstation issue
           tracker](https://fedoraproject.org/wiki/Bugzilla).
       - title: Attend a meeting
         description:
@@ -77,7 +77,7 @@ sections:
         image: public/assets/images/colur-sign.png
       - title: Recap
         image: public/assets/images/presentation-thumbnail.png
-        description: Check out the recap from our latest event, the Fedora 36 release party!
+        description: Check out the recap from our latest event, the Fedora 37 release party!
       - title: The Virtual Fedora Project Conference
         description:
           Nest is our at-home, virtual Flock that has been running since the

@@ -82,8 +82,8 @@ sections:
     content:
       - title: Report & discuss issues
         description:
-          You can view, file, and discuss Fedora CoreOS issues on the Fedora
-          CoreOS issue tracker.
+          You can view, file, and discuss Fedora CoreOS issues on the [Fedora
+          CoreOS issue tracker](https://github.com/coreos/fedora-coreos-tracker/issues).
       - title: Chat with the team
         description: Visit \#fedora-coreos on irc.libera.chat.
       - title: Join the mailing list
@@ -93,7 +93,7 @@ sections:
       - title: Attend a meeting
         description:
           Open to all current and potential contributors on Wednesday 11 AM
-          Eastern on [fedora-meeting@irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).
+          Eastern on [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
   - content:
       - image: public/assets/images/backdrop-blue-circle.png
       - image: public/assets/images/core-os-logo.png
