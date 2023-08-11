@@ -14,21 +14,24 @@ links:
   - text: Download Now
     url: /spins/sway/download/
 screenshot_image:
-  image: public/assets/images/spins/screenshot_from_2023-08-09_19-42-39.png
+  image: public/assets/images/spins/screenshot-sway.png
   alt_text: Screenshot of Fedora Sway desktop
 sections:
   - sectionTitle: Going Online
     content:
       - title: Firefox
-        description: The popular and free web browser backed by Mozilla, a non-profit
+        description:
+          The popular and free web browser backed by Mozilla, a non-profit
           dedicated to internet health and privacy.
         image: public/assets/images/spins/firefox.png
       - title: NetworkManager Applet
-        description: Just a click and you're connected to your wireless LAN router, or
+        description:
+          Just a click and you're connected to your wireless LAN router, or
           online via many supported 3G mobile broadband cards.
         image: public/assets/images/spins/nm.png
       - title: nmcli
-        description: CLI application to control the NetworkManager configuration. It
+        description:
+          CLI application to control the NetworkManager configuration. It
           gives you the power of the nm-applet, but in the terminal.
         image: public/assets/images/spins/gnome-terminal.png
   - sectionTitle: Configuration
@@ -40,7 +43,8 @@ sections:
         description: light gets and sets the screen back-light brightness on Linux.
         image: public/assets/images/spins/gnome-terminal.png
       - title: imv
-        description: imv is a command line image viewer intended for use with tiling
+        description:
+          imv is a command line image viewer intended for use with tiling
           window managers.
         image: public/assets/images/spins/gnome-terminal.png
   - sectionTitle: Utilities
@@ -68,4 +72,4 @@ downloadSection:
     know you'll love it.
   links:
     - text: Upstream Documentation
-      url: https://github.com/swaywm/sway/wiki
+      url: "https://github.com/swaywm/sway/wiki"
