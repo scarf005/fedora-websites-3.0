@@ -738,7 +738,7 @@
     "Fedora Workstation Image": "Образ Fedora Workstation",
     "Fedora comes with a fantastic collection of apps which cater to every need. Easily install the very best desktop apps with the click of a button from Fedora's repositories, Flathub or anywhere else.": "Fedora поставляется с фантастической коллекцией приложений, удовлетворяющих любые потребности. Легко устанавливайте самые лучшие настольные приложения одним нажатием кнопки из репозиториев Fedora, Flathub или откуда угодно.",
     "Flip a switch to turn on dark mode and give your eyes a break. Or use night light to reduce screen glare and help with sleep.": "Используйте переключатель, чтобы включить тёмный режим и дать глазам отдохнуть от дневного света. Используйте ночной свет, чтобы уменьшить блики на экране и облегчить отход ко сну.",
-    "Workstation speaks your language": "Workstation говорит на вашем языке",
+    "Workstation speaks your language": "Говорит на вашем языке",
     "A modern media player, using GTK+3 and the GStreamer plugin framework.": "Современный медиа плеер, использующий GTK+3 и среду подключаемых модулей GStreamer.",
     "Claws Mail is an easy to configure and full featured email application for the Xfce Desktop.": "Claws Mail - легко настраиваемое полнофункциональное приложение электронной почты для среды Xfce Desktop.",
     "Gnumeric is a lightweight application to create lightning fast spreadsheets.": "Gnumeric - легкое приложение для создания быстрых электронных таблиц.",
@@ -820,5 +820,11 @@
     "We are always excited to work with new contributors. If you're new to the project, check out these sites.": "Мы всегда рады работать с новыми участниками. Если вы новичок в проекте, загляните на эти сайты.",
     "FotoToon": "FotоToon",
     "Fedora SOAS Image": "Образ Fedora SOAS",
-    "Jukebox": "Jukebox"
+    "Jukebox": "Jukebox",
+    "Fedora creates an innovative, free and open source platform for hardware, clouds, and containers that enables software developers and community members to build tailored solutions for their users.": "Fedora создаёт инновационную бесплатную платформу с открытым исходным кодом для оборудования, облаков и контейнеров, которая позволяет разработчикам программного обеспечения и членам сообщества создавать индивидуальные решения для своих пользователей.",
+    "Fedora Sericea Image": "Образ Fedora Sericea",
+    "Foot is a fast, lightweight and minimalistic Wayland terminal emulator.": "Foot — это быстрый, легкий и минималистичный эмулятор терминала Wayland.",
+    "File manager for Linux and other Unix-like systems.": "Файловый менеджер для Linux и других Unix-подобных систем.",
+    "Fedora Sericea provides the popular Sway tiling window manager in an immutable fashion. It makes Sway accessible and appealing to both novices and advanced users who prefer not to use a mouse, touchpad, or other pointing device to interact with their environment. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Sericea offers a complete experience with a minimalist user interface.": "Fedora Sericea предоставляет популярный мозаичный оконный менеджер Sway в неизменном виде. Это делает Sway доступным и привлекательным как для новичков, так и для опытных пользователей, которые предпочитают не использовать мышь, сенсорную панель или другое указывающее устройство для взаимодействия со своей средой. Предлагая легкие приложения для просмотра веб-страниц, редактирования текста и воспроизведения мультимедиа, Fedora Sericea предлагает полный набор функций с минималистичным пользовательским интерфейсом.",
+    "Highly customizable Wayland bar for Sway and Wlroots based compositors.": "Настраиваемая панель Wayland для композиторов на основе Sway и Wlroots."
 }
