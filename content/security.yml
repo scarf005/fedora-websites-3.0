@@ -15,6 +15,10 @@ gpg_keys:
   current:
     # Fedora
     - name: Fedora Rawhide
+      id: rsa4096/A15B79CC 2023-01-24
+      fingerprint: 115D F9AE F857 853E E844 5D0A 0727 707E A15B 79CC
+      openpgpkey: 4d0cd6e4349d5979387749daf5995f20d0de7f7b2fdfdc76d7eb21a1._openpgpkey.fedoraproject.org
+    - name: Fedora 39
       id: rsa4096/18B8E74C 2022-08-09
       fingerprint: E8F2 3996 F232 1864 0CB4 4CBE 75CF 5AC4 18B8 E74C
       openpgpkey: 48cb71516f035e33db6249d81d145d8b9198da654fbfbcf16c06104d._openpgpkey.fedoraproject.org
