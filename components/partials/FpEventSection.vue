@@ -55,11 +55,6 @@ for (let item of data._value.body[0].content) {
             class="markdown my-0 text-fp-gray-darkest dark:text-fp-gray md:my-2"
             :value="data.body[0].content[0].descriptionMd"
           />
-          <div
-            class="xl-mx-0 mt-6 w-full bg-pink-200 p-2 text-fp-gray-darkest dark:bg-neutral-900 dark:text-fp-gray lg:py-3 lg:pl-4"
-          >
-            <p>{{ $t(data.body[0].content[0].link.text) }}</p>
-          </div>
         </article>
       </header>
 
