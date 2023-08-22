@@ -68,10 +68,6 @@ sections:
 
           **Flock typically takes place every August.**
         image: public/assets/images/flock-two-colour-gradient-navy.png
-        link:
-          text:
-            In-person Flock events are currently on-hold due to the ongoing COVID
-            pandemic.
       - title: Colúr
         description: Colúr (cuh-loohr) is our Flock mascot.
         image: public/assets/images/colur-sign.png
