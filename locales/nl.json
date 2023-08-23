@@ -43,7 +43,7 @@
     "Colúr (cuh-loohr) is our Flock mascot.": "Colúr is onze mascotte.",
     "Check out the recap from our latest event, the Fedora 36 release party!": "Ga eens kijken naar de korte samenvatting van ons laatste evenement, het feest ter gelegenheid van het uitbrengen van Fedora 36!",
     "By clicking on and downloading Fedora, you agree to comply with the following terms and conditions.": "Door Fedora te downloaden gaat u akkoord met de volgende bepalingen en voorwaarden.",
-    "Once you've got Fedora installed and running, why not join and contribute to one of our online communities?": "Als u goed en wel Fedora geïnstalleerd heeft, waarom zou u zich dan niet aansluiten bij één van onze online gemeenschappen en daaraan bijdragen?",
+    "Once you've got Fedora installed and running, why not join and contribute to one of our online communities?": "Als u goed en wel Fedora Linux geïnstalleerd heeft, waarom zou u zich dan niet aansluiten bij één van onze online gemeenschappen en daaraan bijdragen?",
     "Officially-supported Fedora community spaces": "Ruimten die officieel worden ondersteund door Fedora",
     "Community-maintained spaces": "Ruimten die door de gemeenschap onderhouden worden",
     "Become a Fedora contributor": "Wordt een bijdrager van Fedora",
@@ -770,7 +770,7 @@
     "A built-in remote server administration tool is ready to use on first boot": "Een ingebouwd gereedschap voor serverbeheer op afstand is klaar voor gebruik bij de eerste keer opstarten",
     "Serving the needs of small to medium businesses, home labs, and enterprise workloads": "Voldoet aan de behoeften van kleine tot middelgrote bedrijven, thuislabs en enterprise-workloads",
     "Communication channels": "Communicatiekanalen",
-    " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run successfully. Double those amounts is recommended. ": " * Fedora vereist voor het installeren en succesvol uitvoeren een minimum van 20GB schijf en 2GB RAM. Verdubbeling van deze hoeveelheid wordt aanbevolen. ",
+    " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run successfully. Double those amounts is recommended. ": " * Fedora Linux heeft voor de installatie en een goede werking minima van 20 GB aan permanente opslagcapaciteit en 2 GB aan RAM nodig. De dubbele hoeveelheden worden aanbevolen. ",
     "Journal": "Logboek",
     "Jukebox": "Jukebox",
     "Jukebox is a simple media player to consume different kinds of audio and video files as well as your own creations.": "Jukebox is een eenvoudige mediaspeler om verschillende soorten audio- en videobestanden en je eigen creaties tot je te nemen.",
@@ -813,5 +813,6 @@
     "Understanding and creating content": "Inhoud begrijpen en maken",
     "Use images and text to create comic strips. FotoToon provides many options to add motion, speech and thought to creations.": "Gebruik afbeeldingen en tekst om strips te maken. FotoToon biedt vele opties om beweging, spraak en gedachten toe te voegen aan creaties.",
     "Write": "Schrijven",
-    "Fedora Workstation is created by a team in the Fedora Project community called the **Workstation Working Group**. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [Workstation Working Group website](https://docs.fedoraproject.org/en-US/workstation-working-group/).": "Fedora Workstation is gemaakt door een team in de Fedora Project-gemeenschap genaamd de **Workstation Working Group**. Het bestaat uit officiële leden die beslissingsbevoegdheid hebben, evenals andere contribuanten. Lees meer over deze groep en hoe je erbij betrokken kunt raken op de [Workstation Working Group website](https://docs.fedoraproject.org/en-US/workstation-working-group/)."
+    "Fedora Workstation is created by a team in the Fedora Project community called the **Workstation Working Group**. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [Workstation Working Group website](https://docs.fedoraproject.org/en-US/workstation-working-group/).": "Fedora Workstation is gemaakt door een team in de Fedora Project-gemeenschap genaamd de **Workstation Working Group**. Het bestaat uit officiële leden die beslissingsbevoegdheid hebben, evenals andere contribuanten. Lees meer over deze groep en hoe je erbij betrokken kunt raken op de [Workstation Working Group website](https://docs.fedoraproject.org/en-US/workstation-working-group/).",
+    "Explore Fedora Laptops": "Onderzoek de laptops met Fedora Linux"
 }
