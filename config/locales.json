@@ -26,6 +26,7 @@
   },
   { "code": "pt", "iso": "pt", "file": "pt.json", "name": "Português" },
   { "code": "ru", "iso": "ru", "file": "ru.json", "name": "русский" },
+  { "code": "sr", "iso": "sr", "file": "sr.json", "name": "српски" },
   { "code": "sv", "iso": "sv", "file": "sv.json", "name": "Svenska" },
   { "code": "tr", "iso": "tr", "file": "tr.json", "name": "Türkçe" },
   { "code": "uk", "iso": "uk", "file": "uk.json", "name": "українська"},
