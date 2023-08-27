@@ -7,7 +7,7 @@ const props = defineProps({
   },
   eventsLink: {
     default:
-      "https://www.youtube.com/playlist?list=PL0x39xti0_65XVnGBABWSz3DTMi6txyEw",
+      "https://www.youtube.com/playlist?list=PL0x39xti0_65yW1PKac2lO3XD1Dl9siwB",
     type: String,
   },
   colurSlogan: {
