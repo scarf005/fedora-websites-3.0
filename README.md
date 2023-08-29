@@ -2,7 +2,7 @@
 
 - This repository is a standard [`create-nuxt-app`](https://nuxt.com/docs) project.
 - To edit the text/images of this site you do not need this guide, simply go to the [CMS](https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/) once you have write access to this repository.
-  - Ask an admin for write access on discussion.fedoraproject.org.
+  - To get write access to this repository, file a ticket [here](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues/new?issuable_template=Collaborate&issue[title]=new%20collaborator%20request).
   - This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
 - To add a new page or a new component, clone this repository, change into the folder, and run:
 
