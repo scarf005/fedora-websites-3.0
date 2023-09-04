@@ -116,7 +116,7 @@ const navigation = {
             path: "/spins/lxqt/",
             icon: "fa6-solid:desktop",
             description:
-              "A lightweight and well intgrated LXQT desktop environment.",
+              "A lightweight and well integrated LXQT desktop environment.",
           },
           {
             label: "LXDE Desktop",
