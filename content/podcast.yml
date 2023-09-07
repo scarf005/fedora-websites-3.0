@@ -3,19 +3,22 @@ title: Fedora Podcast
 links:
   - publication_date: "1682440879269"
     text: "Fedora Podcast 23: Welcome to the Podcast"
-    url: https://www.youtube.com/watch?v=w7f9eIZ10w8&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=1
+    url: https://www.youtube.com/watch?v=w7f9eIZ10w8
   - publication_date: "1683650598253"
     text: "Fedora Podcast 24: Fedora Linux 38 Released"
-    url: https://www.youtube.com/watch?v=AoCTOHRjjbU&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=2
+    url: https://www.youtube.com/watch?v=AoCTOHRjjbU
   - publication_date: "1686069834956"
     text: "Fedora Podcast 25: Fedora Websites 3.0"
-    url: https://www.youtube.com/watch?v=PBFOpjA7eE0&list=PL0x39xti0_66iZn1HReQZPobVJIF42KAC&index=3
+    url: https://www.youtube.com/watch?v=PBFOpjA7eE0
   - publication_date: "1687277100756"
     text: "Fedora Podcast 26: Extra Packages for Enterprise Linux"
     url: https://www.youtube.com/watch?v=Ls3fSAHZNL8
   - publication_date: "1692135544082"
     text: "Fedora Podcast 27: Fedora Cloud Edition"
-    url: https://www.youtube.com/live/aA-pBYxUPgU
+    url: https://www.youtube.com/watch?v=aA-pBYxUPgU
+  - publication_date: "1693348737918"
+    text: "Fedora Podcast 28: Getting Fedora with your Lenovo"
+    url: https://www.youtube.com/watch?v=hGmSmr0s3E0
 sections:
   - sectionTitle: Communication channels
     content:
