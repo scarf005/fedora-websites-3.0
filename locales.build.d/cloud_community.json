@@ -2,7 +2,7 @@
   "Attend a meeting": "Attend a meeting",
   "Chat": "Chat",
   "Chat Now": "Chat Now",
-  "Cloud Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at fedora-meeting@irc.libera.chat.": "Cloud Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at fedora-meeting{'@'}irc.libera.chat.",
+  "Cloud Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at [#cloud:fedoraproject.org](https://matrix.to/#/#cloud:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).": "Cloud Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at [#cloud:fedoraproject.org](https://matrix.to/#/#cloud:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).",
   "Communication Channels": "Communication Channels",
   "Community": "Community",
   "Description": "Description",
@@ -16,6 +16,5 @@
   "Visit Now": "Visit Now",
   "Ways to get involved": "Ways to get involved",
   "You can chat with the Fedora Cloud Working Group via Matrix: #cloud:fedoraproject.org.": "You can chat with the Fedora Cloud Working Group via Matrix: #cloud:fedoraproject.org.",
-  "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/fedora-cloud/issues).": "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/fedora-cloud/issues).",
-  "community": "community"
+  "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues).": "You can view, file, and discuss Fedora Cloud issues on the [Fedora Cloud issue tracker](https://pagure.io/cloud-sig/issues)."
 }

@@ -4,7 +4,8 @@
   "Both the Fedora Community Blog and Fedora Magazine are always [looking for article proposals, writers, and editors](https://docs.fedoraproject.org/en-US/fedora-magazine/contributing/). ": "Both the Fedora Community Blog and Fedora Magazine are always [looking for article proposals, writers, and editors](https://docs.fedoraproject.org/en-US/fedora-magazine/contributing/). ",
   "Chat": "Chat",
   "Chat Now": "Chat Now",
-  "Check out the recap from our latest event, the Fedora 36 release party!": "Check out the recap from our latest event, the Fedora 36 release party!",
+  "Check out the recap from our latest event, the Fedora 37 release party!": "Check out the recap from our latest event, the Fedora 37 release party!",
+  "Col\u00far": "Col\u00far",
   "Col\u00far (cuh-loohr) is our Flock mascot.": "Col\u00far (cuh-loohr) is our Flock mascot.",
   "Communication channels": "Communication channels",
   "Community": "Community",
@@ -20,7 +21,6 @@
   "Flock is the Fedora Project's annual multi-day **in-person** conference focused on our contributors. It typically alternates between European and North American locations. The conference provides a venue for face-to-face meetings and conversations. It is also a place to celebrate our community. \n\n**Flock typically takes place every August.**": "Flock is the Fedora Project's annual multi-day **in-person** conference focused on our contributors. It typically alternates between European and North American locations. The conference provides a venue for face-to-face meetings and conversations. It is also a place to celebrate our community. \n\n**Flock typically takes place every August.**",
   "Forum": "Forum",
   "Hatch is a series of small-scale, in-person global meetups organized in the weeks preceding the Flock / Nest conference enabling Fedorans local to each other to meet.": "Hatch is a series of small-scale, in-person global meetups organized in the weeks preceding the Flock / Nest conference enabling Fedorans local to each other to meet.",
-  "In-person Flock events are currently on-hold due to the ongoing COVID pandemic.": "In-person Flock events are currently on-hold due to the ongoing COVID pandemic.",
   "Join a community of users and contributors focused on Fedora Workstation.": "Join a community of users and contributors focused on Fedora Workstation.",
   "Mailing List": "Mailing List",
   "Make a proposal": "Make a proposal",
@@ -42,5 +42,5 @@
   "Workstation Working Group meetings are open to all current and potential contributors on **Tuesdays, 9:30 AM US Eastern** on [bluejeans.com/395383051](https://bluejeans.com/395383051).": "Workstation Working Group meetings are open to all current and potential contributors on **Tuesdays, 9:30 AM US Eastern** on [bluejeans.com/395383051](https://bluejeans.com/395383051).",
   "Worldwide & Local Fedora Meetups": "Worldwide & Local Fedora Meetups",
   "You can chat with the Fedora Workstation Working Group via either Matrix or IRC: **#workstation:fedoraproject.org** on Matrix or #fedora-workstation on irc.libera.chat.": "You can chat with the Fedora Workstation Working Group via either Matrix or IRC: **#workstation:fedoraproject.org** on Matrix or #fedora-workstation on irc.libera.chat.",
-  "You can view, file, and discuss Fedora Workstation issues on [the Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla).": "You can view, file, and discuss Fedora Workstation issues on [the Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla)."
+  "You can view, file, and discuss Fedora Workstation issues on the [Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla).": "You can view, file, and discuss Fedora Workstation issues on the [Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla)."
 }
