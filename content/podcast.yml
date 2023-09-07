@@ -13,6 +13,9 @@ links:
   - publication_date: "1687277100756"
     text: "Fedora Podcast 26: Extra Packages for Enterprise Linux"
     url: https://www.youtube.com/watch?v=Ls3fSAHZNL8
+  - publication_date: "1692135544082"
+    text: "Fedora Podcast 27: Fedora Cloud Edition"
+    url: https://www.youtube.com/live/aA-pBYxUPgU
 sections:
   - sectionTitle: Communication channels
     content:
