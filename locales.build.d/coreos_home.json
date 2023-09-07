@@ -12,7 +12,7 @@
   "Flexible": "Flexible",
   "Join the mailing list": "Join the mailing list",
   "Minimal": "Minimal",
-  "Open to all current and potential contributors on Wednesday 11 AM Eastern on [fedora-meeting@irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).": "Open to all current and potential contributors on Wednesday 11 AM Eastern on [fedora-meeting{'@'}irc.libera.chat](https://chat.fedoraproject.org/#/room/#meeting:fedoraproject.org).",
+  "Open to all current and potential contributors on Wednesday 11 AM Eastern on [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).": "Open to all current and potential contributors on Wednesday 11 AM Eastern on [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).",
   "Open to everyone": "Open to everyone",
   "Open-source Ecosystem": "Open-source Ecosystem",
   "Our goal is to provide the best container host to run workloads securely and at scale.": "Our goal is to provide the best container host to run workloads securely and at scale.",
@@ -29,5 +29,5 @@
   "Try it now": "Try it now",
   "Visit \\#fedora-coreos on irc.libera.chat.": "Visit \\#fedora-coreos on irc.libera.chat.",
   "Why Fedora CoreOS?": "Why Fedora CoreOS?",
-  "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker.": "You can view, file, and discuss Fedora CoreOS issues on the Fedora CoreOS issue tracker."
+  "You can view, file, and discuss Fedora CoreOS issues on the [Fedora CoreOS issue tracker](https://github.com/coreos/fedora-coreos-tracker/issues).": "You can view, file, and discuss Fedora CoreOS issues on the [Fedora CoreOS issue tracker](https://github.com/coreos/fedora-coreos-tracker/issues)."
 }

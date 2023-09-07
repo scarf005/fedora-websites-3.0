@@ -27,7 +27,7 @@
                 @click="$emit('closeModal')"
                 class="rounded bg-fp-newblue-500 py-1 px-2 text-sm text-white hover:bg-fp-blue"
               >
-                Close
+                {{ $t("Close") }}
               </button>
             </slot>
           </footer>
