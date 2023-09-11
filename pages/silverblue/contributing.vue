@@ -53,6 +53,9 @@ useContentHead(data);
       class="dark:bg-neutral-900"
     />
 
+    <!-- Event Section -->
+    <FpEventSection color="text-fp-green-700" />
+
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />
   </main>
