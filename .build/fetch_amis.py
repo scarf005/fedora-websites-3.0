@@ -50,16 +50,16 @@ def collect(release):
     # 1 - transform release vars into an image name we want to query for
     templates = [
         (f"Fedora-Cloud-Base-{release['ga']['releasever']}-{release['ga']['rc_version']}.x86_64", {
-            'x86_64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
+            'x86_64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
         (f"Fedora-Cloud-Base-{release['ga']['releasever']}-{release['ga']['rc_version']}.aarch64", {
-            'aarch64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
+            'aarch64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
         (f"Fedora-Cloud-Base-{release['beta']['releasever']}_Beta-{release['beta']['rc_version']}.x86_64", {
-            'pre_X86_64_base_AMI':  lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
+            'pre_X86_64_base_AMI':  lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
         (f"Fedora-Cloud-Base-{release['beta']['releasever']}_Beta-{release['beta']['rc_version']}.aarch64", {
-            'pre_AARCH64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
+            'pre_AARCH64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
     ]
 
