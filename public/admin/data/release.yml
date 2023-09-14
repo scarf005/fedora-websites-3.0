@@ -58,6 +58,13 @@
               name: "rc_version"
               widget: "string"
               required: true
+            - label: "Release Date"
+              name: "release_date"
+              widget: "datetime"
+              format: "x"
+              date_format: true
+              time_format: false
+              picker_utc: true
     # Security data
     - label: "Security & GPG keys"
       name: "securityData"
