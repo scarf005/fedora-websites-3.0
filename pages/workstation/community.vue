@@ -1,6 +1,12 @@
 <script setup>
 const { locale } = useI18n();
 const data = await getCMS("editions/workstation/community");
+const meetings = await getMeetingTime("workstation");
+
+const get_involved = data._value.sections[2];
+for (let c of get_involved.content) {
+  setMeetingTime(c, meetings);
+}
 
 useContentHead(data);
 
@@ -55,8 +61,8 @@ if (data._value.sections[3].content[6].description) {
     <!-- ways to get involved -->
     <FpGetInvolvedSection
       color="green-700"
-      :sectionTitle="data.sections[2].sectionTitle"
-      :content="data.sections[2].content"
+      :sectionTitle="get_involved.sectionTitle"
+      :content="get_involved.content"
       class="dark:bg-neutral-900"
     />
 

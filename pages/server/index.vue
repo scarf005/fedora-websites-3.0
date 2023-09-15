@@ -1,5 +1,12 @@
 <script setup>
 const data = await getCMS("editions/server/home");
+const meetings = await getMeetingTime("server");
+
+const community_section = data._value.sections[1];
+for (let c of community_section.content) {
+  setMeetingTime(c, meetings);
+}
+
 useContentHead(data);
 </script>
 <template>
@@ -77,7 +84,10 @@ useContentHead(data);
       </g>
     </svg>
 
-    <FpCommunity :data="data.sections[1]" class="server-accent dark:!bg-none" />
+    <FpCommunity
+      :data="community_section"
+      class="server-accent dark:!bg-none"
+    />
   </section>
 
   <!-- Call To Action -->

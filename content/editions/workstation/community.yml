@@ -46,10 +46,7 @@ sections:
           [Fedora Workstation issue
           tracker](https://fedoraproject.org/wiki/Bugzilla).
       - title: Attend a meeting
-        description:
-          Workstation Working Group meetings are open to all current and
-          potential contributors on **Tuesdays, 9:30 AM US Eastern** on
-          [bluejeans.com/395383051](https://bluejeans.com/395383051).
+        description: Workstation Working Group meetings are open to all current and potential contributors every **$day** at **$time** in **$location**.
   - sectionTitle: Events
     sectionDescription:
       Fedora has events throughout the year that you can attend,
