@@ -37,9 +37,13 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
+  let edition =
+    art.format == "iso"
+      ? "Fedora-Workstation-iso"
+      : "Fedora-Workstation-images";
   if (betaSwitch.value) {
     // Beta
-    verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+    verifyModal.value.chk_name = `${edition}-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
     // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
     verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
       release_data._value.beta.releasever

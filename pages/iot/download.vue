@@ -19,9 +19,10 @@ function updateVerify(art) {
     art.path.lastIndexOf("/") + 1
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
+  let edition = art.format == "iso" ? "Fedora-IoT-iso" : "Fedora-IoT-images";
   if (betaSwitch.value) {
     // Beta
-    verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.beta.releasever}-${art.arch}-${beta_data._value.payload.compose.date}.${beta_data._value.payload.compose.respin}-CHECKSUM`;
+    verifyModal.value.chk_name = `${edition}-${release_data._value.beta.releasever}-${art.arch}-${beta_data._value.payload.compose.date}.${beta_data._value.payload.compose.respin}-CHECKSUM`;
     verifyModal.value.checksum = `https://download.fedoraproject.org/pub/alt/iot/test/${release_data._value.beta.releasever}/${path}/${verifyModal.value.chk_name}`;
   } else {
     verifyModal.value.chk_name = `Fedora-IoT-${release_data._value.ga.releasever}-${art.arch}-${ga_data._value.payload.compose.date}.${ga_data._value.payload.compose.respin}-CHECKSUM`;
