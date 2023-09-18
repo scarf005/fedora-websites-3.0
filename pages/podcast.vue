@@ -4,9 +4,16 @@
 const data = await getCMS("podcast");
 useContentHead(data);
 
+const links = data._value.links;
+
 // show the newest podcasts at the top of the page
-let podcasts = data._value.links;
-podcasts.reverse();
+let podcasts = [];
+for (let i = links.length - 1; i >= 0; i--) {
+  // filter out podcasts with a future pub. date
+  if (links[i].publication_date <= Date.now()) {
+    podcasts.push(links[i]);
+  }
+}
 
 const date_format = {
   month: "long",
