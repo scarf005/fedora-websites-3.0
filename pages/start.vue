@@ -97,17 +97,20 @@ const fm_headlines = async () => {
   while (i < count_headlines) {
     let date = new Date(index[i].date);
 
-    headlines.push({
-      timestamp: date,
-      thumbnail: index[i].feature,
-      date: date.toLocaleDateString("en-US", {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      }),
-      title: decode(index[i].title),
-      link: `${magazine_uri}/${index[i].slug}`,
-    });
+    // filter out podcasts with a future pub. date
+    if (date.getTime() <= Date.now()) {
+      headlines.push({
+        timestamp: date,
+        thumbnail: index[i].feature,
+        date: date.toLocaleDateString("en-US", {
+          month: "short",
+          day: "2-digit",
+          year: "numeric",
+        }),
+        title: decode(index[i].title),
+        link: `${magazine_uri}/${index[i].slug}`,
+      });
+    }
 
     i++;
   }
