@@ -54,6 +54,7 @@ const prettyType = {
   packet: "Packet",
   qemu: "QEMU",
   qcow2: "QEMU",
+  vhd: "Azure",
   virtualbox: "VirtualBox",
   vmware: "VMware",
   vultr: "Vultr",
