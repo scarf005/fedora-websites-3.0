@@ -87,7 +87,7 @@ if (data._value.sections[2].sectionDescription) {
       textColor="text-fp-newblue"
       :items="[
         { name: 'Download', link: '/onyx/download' },
-        { name: 'Contributing', link: '/onyx/contributing' },
+        { name: 'Community', link: '/onyx/community' },
       ]"
     />
 
