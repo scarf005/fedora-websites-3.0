@@ -1,34 +1,17 @@
-title: Fedora Silverblue
-leadin: The GNOME desktop experience you know and love in an immutable fashion.
-description:
-  An immutable variant looks, feels, and behaves just like a regular desktop operating system,
-  but your updates are delivered as full images of a working system. This makes every installation
-  identical to every other, and it will never change while in use. What's more, Silverblue will
-  always keep an older version of the system around for you to boot back into, should you need to,
-  allowing you to try new programs, desktops, or even complete version upgrades fearlessly!
-  <br /><br />
-  The immutable design makes a Silverblue system more stable, less prone to bugs, and easier to
-  test and develop. Applications are installed via Flatpak completely independent of the base system,
-  and CLI tools can utilize the power of containerization with Toolbox.
-  <br /><br/>
-  Silverblue comes with the popular GNOME desktop and follows the standard 13 month release-cycle,
-  making the experience very similar to that of Fedora Workstation.
+title: Fedora Onyx
+leadin: The Budgie desktop experience in an immutable fashion.
+description: Fedora Onyx ships the popular Budgie desktop environment in an immutable fashion. This enables you to surf the web, play games, enjoy music and video, manage files, and be productive without having to worry about breaking your system.
 
-image:
-  src: https://stg.fedoraproject.org/assets/images/fedora-silverblue-light.png
-  alt: Fedora Silverblue Image
-  width: 400
-  height: 300
 links:
   - text: Download Now
-    url: /silverblue/download/
-  - text: Documentation
-    url: "https://docs.fedoraproject.org/en-US/fedora-silverblue/"
+    url: /onyx/download/
 header_images:
-  - image: assets/images/workstation_framework.png
-    alt_text: Screenshot of Fedora Silverblue
+  - image: assets/images/immutable/laptop.svg
+    alt_text: Screenshot of blank laptop as background to Budgie desktop
+  - image: assets/images/immutable/budgie-desktop.jpg
+    alt_text: Screenshot of Budgie Desktop
 sections:
-  - sectionTitle: Why Fedora Silverblue?
+  - sectionTitle: Why Fedora Onyx?
     content:
       - title: Reliable
         description: Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!
@@ -44,9 +27,9 @@ sections:
         description: There are no ads, and all your data belongs to you! Fedora is built on the latest open source technologies, and backed by Red Hat.
   - sectionTitle: Built On Top of the Best
     content:
-      - title: GNOME Desktop
-        description: A beautiful, high-quality desktop, built on the latest open source technology.
-        image: public/assets/images/immutable/gnome-desktop-square.png
+      - title: Budgie Desktop
+        description: A feature-rich, modern desktop designed to keep out the way of the user.
+        image: public/assets/images/immutable/budgie-desktop-square.jpg
       - title: rpm-ostree
         description: rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.
         image: public/assets/images/immutable/rpm-ostree-square.png
@@ -61,6 +44,10 @@ sections:
         image: public/assets/images/immutable/fedora-square.png
   - sectionTitle: Related Projects
     content:
+      - title:
+        description: An immutable desktop operating system featuring the modern and elegant GNOME Desktop
+        image: public/assets/images/fedora-silverblue-light.png
+        url: /silverblue
       - title:
         description: An immutable desktop operating system featuring the modern and modular Plasma Desktop
         image: public/assets/images/fedora-kinoite-light.png

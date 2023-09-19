@@ -71,6 +71,12 @@ const navigation = {
             icon: "fa6-solid:desktop",
             description: "Fedora Sericea is an immutable Sway-based desktop.",
           },
+          {
+            label: "Onyx",
+            path: "/onyx",
+            icon: "fa6-solid:desktop",
+            description: "Fedora Onyx is an immutable Budgie-based desktop.",
+          },
         ],
       },
       {
