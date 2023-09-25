@@ -195,5 +195,7 @@
     "Next": "Next",
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid": "請以適當的校驗碼檔案核驗你下載的檔案，以確保安全與信實。確認是否有以 Fedora 金鑰之一作的良好簽章，以及 SHA256 校驗碼是否相符，如果都有的話，則下載的檔案有效",
     "Getting Started": "開始",
-    "Description": "描述說明"
+    "Description": "描述說明",
+    "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "我們很開心你決定好要嘗試 Fedora Budgie Spin 思變特製版。我們知道你會愛上它的。",
+    "A modern media player, using the gstreamer plugin framework.": "現代的媒體播放器，採用 gstreamer 插件框架。"
 }
