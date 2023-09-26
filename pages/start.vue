@@ -357,7 +357,7 @@ const width_2xl = 1536;
               <a
                 :href="`${discourse_uri}/${common_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >Common Issues</a
+                >{{ $t("Common Issues") }}</a
               >
             </h2>
             <div v-for="i in common" class="mb-6">
@@ -532,7 +532,7 @@ const width_2xl = 1536;
               <a
                 :href="`${discourse_uri}/${common_query}`"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >Common Issues</a
+                >{{ $t("Common Issues") }}</a
               >
             </h2>
             <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
