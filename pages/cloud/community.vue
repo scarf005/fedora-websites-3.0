@@ -1,6 +1,12 @@
 <script setup>
 const { locale } = useI18n();
 const data = await getCMS("editions/cloud/community");
+const meetings = await getMeetingTime("cloud");
+
+const get_involved = data._value.sections[2];
+for (let c of get_involved.content) {
+  setMeetingTime(c, meetings);
+}
 
 useContentHead(data);
 </script>
@@ -48,8 +54,8 @@ useContentHead(data);
     <!-- ways to get involved -->
     <FpGetInvolvedSection
       color="newblue"
-      :sectionTitle="data.sections[2].sectionTitle"
-      :content="data.sections[2].content"
+      :sectionTitle="get_involved.sectionTitle"
+      :content="get_involved.content"
       class="dark:bg-neutral-900"
     />
 

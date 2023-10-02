@@ -73,4 +73,4 @@ sections:
           Sign up at [iot@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/iot.lists.fedoraproject.org/) to receive meeting
           agendas and minutes [view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)
       - title: Attend a meeting
-        description: Open to all current and potential contributors **every Wednesday at 16:00 UTC** on [#iot:fedoraproject.org](https://matrix.to/#/#iot:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
+        description: Open to all current and potential contributors every **$day** at **$time** in **$location**.

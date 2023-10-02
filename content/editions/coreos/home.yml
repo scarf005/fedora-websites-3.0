@@ -91,10 +91,8 @@ sections:
           Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting
           agendas and minutes.
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors on Wednesday 11 AM
-          Eastern on [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
-  - content:
+        description: Open to all current and potential contributors every **$day** at **$time** in **$location**.
+  - sectionTitle: Try it now
+    content:
       - image: public/assets/images/backdrop-blue-circle.png
       - image: public/assets/images/core-os-logo.png
-    sectionTitle: Try it now

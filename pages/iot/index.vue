@@ -1,5 +1,12 @@
 <script setup>
 const data = await getCMS("editions/iot/home");
+const meetings = await getMeetingTime("IoT");
+
+const community_section = data._value.sections[2];
+for (let c of community_section.content) {
+  setMeetingTime(c, meetings);
+}
+
 useContentHead(data);
 </script>
 <template>
@@ -188,7 +195,7 @@ useContentHead(data);
           />
         </g>
       </svg>
-      <FpCommunity :data="data.sections[2]" class="iot-accent dark:!bg-none" />
+      <FpCommunity :data="community_section" class="iot-accent dark:!bg-none" />
     </section>
 
     <!-- Call To Action -->

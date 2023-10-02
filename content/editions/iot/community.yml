@@ -43,7 +43,4 @@ sections:
           You can view, file, and discuss Fedora IoT issues on the [Fedora
           IoT issue tracker](https://pagure.io/fedora-iot/issues).
       - title: Attend a meeting
-        description:
-          IoT Working Group meetings are open to all current and potential
-          contributors on Wednesdays, 11 AM US Eastern at
-          [#iot:fedoraproject.org](https://matrix.to/#/#iot:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
+        description: IoT Working Group meetings are open to all current and potential contributors every **$day** at **$time** in **$location**.
