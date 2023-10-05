@@ -38,10 +38,6 @@ gpg_keys:
       id: rsa4096/9867C58F 2021-02-04
       fingerprint: 787E A6AE 1147 EEE5 6C40 B30C DB46 3971 9867 C58F
       openpgpkey: e27f1efe21ae589b7796e61af3ac4a4c1c2428615daca70d8f1c9e96._openpgpkey.fedoraproject.org
-    - name: Fedora IOT
-      id: rsa4096/DBBDCF7C 2018-11-13
-      fingerprint: C2A3 FA9D C67F 68B9 8BB5 43F4 7BB9 0722 DBBD CF7C
-      openpgpkey: 8b6135462c1d8c1a927b1a9eb1f47c2c1cde3429ae60ccd630d057ac._openpgpkey.fedoraproject.org
 
     # EPEL
     - name: EPEL 9
@@ -210,3 +206,7 @@ gpg_keys:
     - name: Legacy
       id: dsa1024/731002FA 2004-01-19
       fingerprint: D66D 121F 9784 5E7B 2757 8C46 108C 4512 7310 02FA
+    - name: Fedora IOT
+      id: rsa4096/DBBDCF7C 2018-11-13
+      fingerprint: C2A3 FA9D C67F 68B9 8BB5 43F4 7BB9 0722 DBBD CF7C
+      openpgpkey: 8b6135462c1d8c1a927b1a9eb1f47c2c1cde3429ae60ccd630d057ac._openpgpkey.fedoraproject.org
