@@ -86,6 +86,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "*": { experimentalNoScripts: true }, // one level deep, render all pages statically
+    "*/community/" : { experimentalNoScripts: true }, // no js for community pages
     "/coreos/download/": { experimentalNoScripts: false }, // except the download pages, where we need JS (coreOS images, or just GPG modal)
     "/coreos/release-notes/": { experimentalNoScripts: false }, // except release notes
     "/start": { experimentalNoScripts: false }, // except start pages
