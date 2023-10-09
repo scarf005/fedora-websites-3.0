@@ -1,10 +1,12 @@
 <script setup>
 const data = await getCMS("editions/coreos/home");
-const meetings = await getMeetingTime("CoreOS");
 
 const community_section = data._value.sections[2];
-for (let c of community_section.content) {
-  setMeetingTime(c, meetings);
+if (process.server) {
+  const meetings = await getMeetingTime("CoreOS");
+  for (let c of community_section.content) {
+    setMeetingTime(c, meetings);
+  }
 }
 
 useContentHead(data);

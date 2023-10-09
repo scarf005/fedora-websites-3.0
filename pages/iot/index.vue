@@ -1,10 +1,12 @@
 <script setup>
 const data = await getCMS("editions/iot/home");
-const meetings = await getMeetingTime("IoT");
 
 const community_section = data._value.sections[2];
-for (let c of community_section.content) {
-  setMeetingTime(c, meetings);
+if (process.server) {
+  const meetings = await getMeetingTime("IoT");
+  for (let c of community_section.content) {
+    setMeetingTime(c, meetings);
+  }
 }
 
 useContentHead(data);
