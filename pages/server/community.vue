@@ -1,11 +1,13 @@
 <script setup>
 const { locale } = useI18n();
 const data = await getCMS("editions/server/community");
-const meetings = await getMeetingTime("server");
 
 const get_involved = data._value.sections[2];
-for (let c of get_involved.content) {
-  setMeetingTime(c, meetings);
+if (process.server) {
+  const meetings = await getMeetingTime("server");
+  for (let c of get_involved.content) {
+    setMeetingTime(c, meetings);
+  }
 }
 
 useContentHead(data);
