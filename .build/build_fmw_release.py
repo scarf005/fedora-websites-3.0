@@ -23,13 +23,6 @@ def list_releases(releases):
     out = []
     final_vers = int(releases["ga"]["releasever"])
 
-    iot = fedfind.release.get_release(url="/".join((IOT_URL, str(final_vers))))
-    iot._version = str(final_vers)
-    iot.__class__ = fedfind.release.Pungi4Mirror
-
-    out.append(fedfind.release.get_release(final_vers, milestone="final"))
-    out.append(iot)
-
     if releases["beta"]["enabled"]:
         beta_vers = int(releases["beta"]["releasever"])
         out.append(fedfind.release.get_release(beta_vers, milestone="beta"))
@@ -40,6 +33,14 @@ def list_releases(releases):
         iot_beta.__class__ = fedfind.release.Pungi4Mirror
         out.append(iot_beta)
 
+    for vers in range(final_vers, final_vers-2, -1):
+        iot = fedfind.release.get_release(url="/".join((IOT_URL, str(vers))))
+        iot._version = str(vers)
+        iot.__class__ = fedfind.release.Pungi4Mirror
+
+        out.append(fedfind.release.get_release(vers, milestone="final"))
+        out.append(iot)
+
     return out
 
 
@@ -49,7 +50,6 @@ def parse_args(args):
           """
     parser = ArgumentParser(usage=usage)
     parser.add_argument("input", help="input YAML file with release information")
-    parser.add_argument("output", help="output JSON file")
     opts = parser.parse_args(args)
     return opts
 
@@ -81,5 +81,4 @@ if __name__ == "__main__":
 
             output.append(h)
 
-    with open(opts.output, "w") as f:
-        json.dump(output, f, indent=2)
+    print(json.dumps(output, indent=2))
