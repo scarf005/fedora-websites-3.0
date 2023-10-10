@@ -37,10 +37,9 @@ if (props.description) {
     >
       {{ $t(props.title) }}
     </h4>
-    <ContentRenderer
+    <ContentRendererMarkdown
       v-if="descriptionMd"
       class="markdown text-fp-darkblue-500 dark:text-slate-200"
-      tag="p"
       :value="descriptionMd"
     />
     <br />
