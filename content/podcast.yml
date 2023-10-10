@@ -22,6 +22,9 @@ links:
   - publication_date: "1694545423224"
     text: "Fedora Podcast 29: Fedora Spins: Budgie"
     url: https://www.youtube.com/watch?v=RbDVxFC-qrQ
+  - publication_date: "1696954133049"
+    url: https://www.youtube.com/watch?v=cHYyGVOae84
+    text: "Fedora Podcast 30: Silverblue and Immutable Desktops"
 sections:
   - sectionTitle: Communication channels
     content:
