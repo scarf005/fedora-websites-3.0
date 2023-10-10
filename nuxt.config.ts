@@ -87,6 +87,7 @@ export default defineNuxtConfig({
   routeRules: {
     "*": { experimentalNoScripts: true }, // one level deep, render all pages statically
     "*/*/": { experimentalNoScripts: true }, // same, but for translated pages
+    "*/download/": { experimentalNoScripts: false }, // except the download pages
     "spins/": { experimentalNoScripts: true }, // no js on spins home page
     "*/spins/": { experimentalNoScripts: true }, // no js on spins home page - translated
     "spins/*/": { experimentalNoScripts: true }, // no js on spins pages either
