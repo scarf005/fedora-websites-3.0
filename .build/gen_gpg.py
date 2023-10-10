@@ -25,7 +25,7 @@ if __name__ == "__main__":
   with open(opts.yamlfile, 'r') as f:
     y=yaml.safe_load(f)
   
-  fps = [ x['fingerprint'] for x in y['gpg_keys']['current'] ]
+  fps = [ x['fingerprint'] for x in y['gpg_keys']['current'] if x['name'].startswith("Fedora")]
   
   with tempfile.TemporaryDirectory() as workdir:
     gpg = gnupg.GPG(gnupghome=workdir)
