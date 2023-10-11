@@ -97,20 +97,17 @@ const fm_headlines = async () => {
   while (i < count_headlines) {
     let date = new Date(index[i].date);
 
-    // filter out podcasts with a future pub. date
-    if (date.getTime() <= Date.now()) {
-      headlines.push({
-        timestamp: date,
-        thumbnail: index[i].feature,
-        date: date.toLocaleDateString("en-US", {
-          month: "short",
-          day: "2-digit",
-          year: "numeric",
-        }),
-        title: decode(index[i].title),
-        link: `${magazine_uri}/${index[i].slug}`,
-      });
-    }
+    headlines.push({
+      timestamp: date,
+      thumbnail: index[i].feature,
+      date: date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
+      title: decode(index[i].title),
+      link: `${magazine_uri}/${index[i].slug}`,
+    });
 
     i++;
   }
@@ -139,17 +136,20 @@ const fp_headlines = async () => {
   while (i < count) {
     let date = new Date(parseInt(topics[i].publication_date));
 
-    headlines.push({
-      timestamp: date,
-      thumbnail: "/assets/images/podcast-472x200.png",
-      date: date.toLocaleDateString("en-US", {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      }),
-      title: decode(topics[i].text),
-      link: topics[i].url,
-    });
+    // filter out podcasts with a future pub. date
+    if (date.getTime() <= Date.now()) {
+      headlines.push({
+        timestamp: date,
+        thumbnail: "/assets/images/podcast-472x200.png",
+        date: date.toLocaleDateString("en-US", {
+          month: "short",
+          day: "2-digit",
+          year: "numeric",
+        }),
+        title: decode(topics[i].text),
+        link: topics[i].url,
+      });
+    }
 
     i++;
   }
