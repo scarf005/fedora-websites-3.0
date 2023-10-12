@@ -32,9 +32,9 @@ export default defineNuxtConfig({
     langDir: "./locales/",
     strategy: "prefix_and_default",
     defaultLocale: "en",
-    vueI18n: {
-      legacy: false,
-      fallbackLocale: "en",
+    vueI18n: './nuxt-i18n.js',
+    compilation: {
+      strictMessage: false,
     },
   },
   app: {
