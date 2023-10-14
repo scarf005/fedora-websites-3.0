@@ -1,0 +1,4 @@
+[submodule "cms_content"]
+	path = cms_content
+	url = https://gitlab.com/fedora/websites-apps/fedora-websites/cms/fedoraproject.org.git
+	branch = main

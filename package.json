@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "bash cms_gen_yml.sh && nuxi build",
-    "dev": "bash cms_gen_yml.sh && nuxi dev",
-    "generate": "bash cms_gen_yml.sh && nuxi generate",
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "cp -r cms_content/public/assets/images public/assets/ && nuxi generate",
     "preview": "nuxi preview",
     "format": "npx prettier . --write",
     "prepare": "husky install"
