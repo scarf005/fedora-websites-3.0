@@ -26,6 +26,10 @@ const comm_channels = data._value.sections[0];
 </script>
 
 <template>
+  <FpImage
+    class="w-full from-fp-newblue-500 to-fp-blue ltr:bg-gradient-to-r rtl:bg-gradient-to-l dark:from-fp-darkblue-500 dark:to-fp-blue"
+    :src="data.image"
+  />
   <div class="bg-fp-gray-lightest px-8 pt-8 dark:bg-neutral-900">
     <div class="mx-auto max-w-screen-xl">
       <div class="mb-8 text-center xl:text-start">
