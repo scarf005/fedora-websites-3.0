@@ -16,7 +16,7 @@ const navigation = {
             path: "/workstation",
             icon: "fa6-solid:desktop",
             description:
-              "The flagship Fedora edition featuring the latest Gnome desktop. The Linux desktop you've been waiting for.",
+              "The flagship Fedora edition featuring the latest GNOME desktop. The Linux desktop you've been waiting for.",
           },
           {
             label: "Server",
@@ -82,7 +82,7 @@ const navigation = {
       {
         label: "Spins",
         description:
-          "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the Gnome Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
+          "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the GNOME Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.",
         links: [
           {
             label: "KDE Desktop",
@@ -102,7 +102,7 @@ const navigation = {
             path: "/spins/cinnamon/",
             icon: "fa6-solid:desktop",
             description:
-              "A modern desktop featuring a traditional gnome user experience.",
+              "A modern desktop featuring a traditional GNOME user experience.",
           },
           {
             label: "Mate-Compiz Desktop",
