@@ -80,7 +80,7 @@
     "Want more Fedora options?": "Треба більше варіантів?",
     "View more articles on [Fedora Magazine](https://fedoramagazine.org/)": "Більше статей можна прочитати у [Fedora Magazine](https://fedoramagazine.org/)",
     "The leading Linux desktop": "Провідний дистрибутив Linux для ПК",
-    "An innovative platform for hardware, clouds, and containers, built with love by you.": "Інноваційна платформа для комп'ютерів, хмарного середовища й контейнерного застосування. З любов'ю створена вами.",
+    "An innovative platform for hardware, clouds, and containers, built with love by you.": "Інноваційна платформа для компʼютерів, хмарного середовища та контейнерного застосування. Створена з любов'ю.",
     "Office & Productivity Suite": "Офісний пакет",
     "Fedora KDE Plasma Image": "Образ Fedora KDE Plasma",
     "Fedora Linux with the Sway Tiling Window Manager": "Fedora Linux із мозаїчним менеджером вікон Sway",
@@ -218,5 +218,9 @@
     "Verify the signature file is valid": "Звірте файл підпису",
     "You can verify the details of the GPG key(s) below.": "Звірити GPG-ключі можна нижче.",
     "No files available for this version.": "Немає файлів для цієї версії.",
-    "Budgie Desktop Settings": "Параметри стільниці Bugdie"
+    "Budgie Desktop Settings": "Параметри стільниці Bugdie",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Хочете чогось трохи іншого? Перегляньте наші інші завантаження нижче, де представлені альтернативні архітектури, торренти та мережеві інсталяційні образи.",
+    "But wait! There's more.": "Зачекайте! Це ще не все.",
+    "help_improve_this_website": "Допоможіть покращити цей сайт використовуючи {cms} або {gitlab_repo}",
+    "Other Downloads": "Інші Завантаження"
 }
