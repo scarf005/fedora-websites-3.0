@@ -130,10 +130,10 @@ const podcast_data = await getCMS("podcast");
 const fp_headlines = async () => {
   let topics = podcast_data._value.links;
 
-  let i = 0;
+  let i = topics.length - 1;
+  let last = i - count_headlines;
   let headlines = [];
-  let count = Math.min(topics.length, count_headlines);
-  while (i < count) {
+  while (i >= 0 && i >= last) {
     let date = new Date(parseInt(topics[i].publication_date));
 
     // filter out podcasts with a future pub. date
@@ -151,7 +151,7 @@ const fp_headlines = async () => {
       });
     }
 
-    i++;
+    i--;
   }
 
   return headlines;
