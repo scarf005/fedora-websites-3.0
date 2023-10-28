@@ -105,7 +105,7 @@ const navigation = {
               "A modern desktop featuring a traditional GNOME user experience.",
           },
           {
-            label: "Mate-Compiz Desktop",
+            label: "MATE+Compiz Desktop",
             path: "/spins/mate/",
             icon: "fa6-solid:desktop",
             description:
