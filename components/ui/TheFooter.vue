@@ -64,7 +64,10 @@ import navigation from "../../config/navigation.js";
                   >{{ $t("Sponsors") }}</FpLink
                 >
               </li>
-              <i18n-t keypath="help_improve_this_website" tag="li"
+              <i18n-t
+                keypath="help_improve_this_website"
+                scope="global"
+                tag="li"
                 class="w-full flex-none list-none text-center text-fp-gray-darkest"
               >
                 <template #cms>
@@ -109,7 +112,7 @@ import navigation from "../../config/navigation.js";
                 class="block w-full text-fp-gray underline underline-offset-1"
                 >{{
                   $t(
-                    "Learn more about the relationship between Red Hat and Fedora."
+                    "Learn more about the relationship between Red Hat and Fedora.",
                   )
                 }}</FpLink
               >

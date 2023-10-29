@@ -1,5 +1,9 @@
 import locales from "./config/locales.json";
 import path from "path";
+const locales_ci = [
+  { "code": "en", "iso": "en", "file": "en.json", "name": "English" },
+  { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
+];
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
   : "/";
@@ -25,7 +29,7 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
   i18n: {
-    locales: locales,
+    locales: process?.env?.CI_MERGE_REQUEST_ID ? locales_ci : locales,
     lazy: {
       skipNuxtState: true,
     },
@@ -76,13 +80,9 @@ export default defineNuxtConfig({
         });
       }
     },
-
-    "build:manifest"(manifest) {
-      for (const key in manifest) {
-        manifest[key].dynamicImports = [];
-        manifest[key].imports = [];
-      }
-    },
+  },
+  experimental: {
+    inlineSSRStyles: false,
   },
   routeRules: {
     "*": { experimentalNoScripts: true }, // one level deep, render all pages statically

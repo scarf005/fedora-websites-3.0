@@ -33,7 +33,7 @@ useContentHead(data);
       :subtitle="data.description"
       :ctas="data.links"
       color="text-fp-green"
-      border="border border-fp-green dark:border-fp-green-700"
+      border="border border-fp-green"
       background="text-white bg-fp-green dark:bg-fp-green-700"
     >
       <div class="hero-laptop-container">
