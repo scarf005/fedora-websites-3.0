@@ -13,19 +13,20 @@
       <p class="mb-5 text-fp-gray">
         {{
           $t(
-            "Once you have downloaded an image, be sure to verify it for both security and integrity."
+            "Once you have downloaded an image, be sure to verify it for both security and integrity.",
           )
         }}
       </p>
       <p class="mb-5 text-fp-gray">
         {{
           $t(
-            "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity."
+            "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity.",
           )
         }}
       </p>
       <i18n-t
         keypath="verify_button_instruction"
+        scope="global"
         tag="p"
         class="mb-5 text-fp-gray"
       >

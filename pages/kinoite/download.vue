@@ -12,7 +12,7 @@ const kojiBackupUrl = `https://kojipkgs.fedoraproject.org/compose/${
 const { data: ga_data } = await useFetch(kojiUrl);
 const backup = await useFetch(kojiBackupUrl);
 const { data: beta_data } = await useFetch(
-  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`,
 );
 
 const betaSwitch = useState("betaSwitch", () => false);
@@ -29,7 +29,7 @@ const dlpath = {
 function updateVerify(art) {
   console.log(art);
   verifyModal.value.art_name = art.path.substring(
-    art.path.lastIndexOf("/") + 1
+    art.path.lastIndexOf("/") + 1,
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
   let edition =
@@ -66,14 +66,14 @@ useContentHead(data);
 // fedora media writer
 if (data._value.sections[1].sectionDescription) {
   data._value.sections[1].sectionDescriptionMd = await mdparser(
-    data._value.sections[1].sectionDescription
+    data._value.sections[1].sectionDescription,
   );
 }
 
 // desktop images
 if (data._value.sections[2].sectionDescription) {
   data._value.sections[2].sectionDescriptionMd = await mdparser(
-    data._value.sections[2].sectionDescription
+    data._value.sections[2].sectionDescription,
   );
 }
 </script>
@@ -349,7 +349,7 @@ if (data._value.sections[2].sectionDescription) {
         <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
-              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.",
             )
           }}
         </p>
@@ -357,7 +357,12 @@ if (data._value.sections[2].sectionDescription) {
           class="list-outside list-decimal pt-2 ltr:pl-8 ltr:text-left rtl:pr-8 rtl:text-right"
         >
           <li>
-            <i18n-t keypath="download_the_checksum_file" tag="p" class="mb-2">
+            <i18n-t
+              keypath="download_the_checksum_file"
+              scope="global"
+              tag="p"
+              class="mb-2"
+            >
               <template #checksum_file>
                 <a
                   class="text-fp-blue"
@@ -375,6 +380,7 @@ if (data._value.sections[2].sectionDescription) {
             ><code>curl -O https://fedoraproject.org/fedora.gpg</code></pre>
             <i18n-t
               keypath="you_can_verify_the_GPG_details"
+              scope="global"
               tag="p"
               class="mb-4 text-sm"
             >
@@ -404,7 +410,7 @@ if (data._value.sections[2].sectionDescription) {
         <p class="ltr:text-left rtl:text-right">
           {{
             $t(
-              "If the output states that the file is valid, then it's ready to use!"
+              "If the output states that the file is valid, then it's ready to use!",
             )
           }}
         </p>

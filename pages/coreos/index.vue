@@ -32,7 +32,7 @@ useContentHead(data);
       :title="data.title"
       :subtitle="data.description"
       color="text-fp-magenta dark:text-fp-magenta-700"
-      border="border border-fp-magenta dark:border-fp-magenta-700"
+      border="border border-fp-magenta"
       background="text-white bg-fp-magenta dark:bg-fp-magenta-700"
       :ctas="data.links"
     >

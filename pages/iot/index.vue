@@ -30,7 +30,7 @@ useContentHead(data);
         :title="data.title"
         :subtitle="data.description"
         color="text-fp-purple"
-        border="border border-fp-purple dark:border-fp-purple-700"
+        border="border border-fp-purple"
         background="text-white bg-fp-purple dark:bg-fp-purple-700"
         :ctas="data.links"
       >
