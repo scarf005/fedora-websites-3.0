@@ -210,7 +210,7 @@
     "It's your Operating System.": "Ваша операційна система.",
     "Try it now.": "Спробуйте самі.",
     "Get Started": "Починаймо",
-    "Fedora XFCE Image": "Образ Fedora XFCE",
+    "Fedora Xfce Image": "Образ Fedora Xfce",
     "Use the latest container tools from the Red Hat ecosystem. No setup required. Access the Red Hat container registry.": "До ваших послуг — новітній контейнерний інструментарій з екосистеми Red Hat і реєстр контейнерів компанії. І не треба нічого налаштовувати.",
     "Online account integration": "Зручна робота з обліковими записами онлайн-сервісів",
     "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Завантажений образ можна перевірити на безпечність і цілісність за допомогою відповідних файлів із контрольною сумою та підписом. Якщо образ має актуальний підпис із ключа Fedora та збігається контрольна сума SHA256, тоді з ним усе добре.",

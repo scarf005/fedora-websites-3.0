@@ -420,7 +420,7 @@
     "Workshops": "Workshops",
     "Search with DuckDuckGo": "Buscar con DuckDuckGo",
     "Fedora Cinnamon Image": "Imagen de Fedora Cinnamon",
-    "We're so glad you've decided to give Fedora XFCE a try. We know you'll love it.": "Estamos muy contentos de que haya decidido probar Fedora Server. Sabemos que le encantará.",
+    "We're so glad you've decided to give Fedora Xfce a try. We know you'll love it.": "Estamos muy contentos de que haya decidido probar Fedora Server. Sabemos que le encantará.",
     "Don't miss these important deadlines": "No se pierda estas fechas importantes",
     "Open to all current and potential contributors on Wednesday 11 AM Eastern on [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).": "Abierto a todos los contribuidores actuales y potenciales los miércoles a las 11 AM hora del este de EE.UU en [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).",
     "Transmission": "Transmission",
@@ -511,7 +511,7 @@
     "help_improve_this_website": "Ayude a mejorar este sitio en el {cms} o en el {gitlab_repo}",
     "Mozilla Thunderbird is a standalone mail and newsgroup client. Organize your schedule with the included Lightning calendar application.": "Mozilla Thunderbird es un cliente de correo y grupos de noticias. Organice su agenda con la aplicación de calendario Lightning.",
     "The location of Flock changes each year between Europe and North America. In 2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make it more accessible to our community.": "La ubicación de Flock cambia cada año entre Europa y América del Norte. En 2020, la comunidad Fedora se unió en línea con Nest, ahora ofrecemos una versión híbrida de Flock para hacerla más accesible a nuestra comunidad.",
-    "Screenshot of Fedora XFCE desktop": "Captura de Pantalla del escritorio Fedora Xfce",
+    "Screenshot of Fedora Xfce desktop": "Captura de Pantalla del escritorio Fedora Xfce",
     "The Fedora Project envisions a world where everyone benefits from free and open source software built by inclusive, welcoming, and open-minded communities. Stay connected during Flock through the following channels.": "El Proyecto Fedora visualiza un mundo en el que todos se benefician del software libre y de código abierto construido por una comunidad inclusiva, acogedora y de mentalidad abierta. Manténgase conectado durante Flock a través de los siguientes canales.",
     "Networking": "Red",
     "Free Admission": "Entrada Libre",
@@ -530,6 +530,6 @@
     "Office & Productivity Suite": "Suite de Oficina y Productividad",
     "Shotwell is an easy-to-use, fast photo organizer and editor.": "Shotwell es un organizador y editor de fotos rápido y fácil de usar.",
     "CoreOS Working Group meetings are open to all current and potential contributors on Wednesdays, 11 AM US Eastern at [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).": "Las reuniones del Grupo de Trabajo de CoreOS están abiertas a todos los contribuidores actuales y potenciales los miércoles, 11 AM hora del este de los EE.UU en [#coreos:fedoraproject.org](https://matrix.to/#/#coreos:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).",
-    "Fedora XFCE Image": "Imagen de Fedora XFCE",
+    "Fedora Xfce Image": "Imagen de Fedora Xfce",
     "Stay connected with your friends and colleagues using Hexchat, an easy to use IRC client.": "Mantenga el contacto con sus amigos y colegas mediante Hexchat, un cliente IRC fácil de usar."
 }
