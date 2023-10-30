@@ -1,9 +1,9 @@
-title: Fedora LXQT Spin
+title: Fedora LXQt Spin
 description: >-
   Fedora LXQt provides a lightweight, well-integrated LXQt desktop environment. In addition to LXQt itself it provides a small, well selected collection of applications like the Falkon browser, which combines Chromium's rendering engine with a nice Qt experience. Other applications include the Trojita mail client, the qBittorrent client, the Yarock music player and a set of some more commonly used applications. As all applications use the same Qt5 toolkit and the Breeze theme known from KDE, the desktop provides a unified and well-integrated style and theming. In addition breeze-gtk is provided to allow the user to integrate GTK applications too.
 image:
   src: https://stg.fedoraproject.org/assets/images/spins/spins-lxqt-dark.png
-  alt: Fedora LXQT Image
+  alt: Fedora LXQt Image
   width: 400
   height: 300
 links:
@@ -11,7 +11,7 @@ links:
     url: /spins/lxqt/download/
 screenshot_image:
   image: public/assets/images/spins/screenshot-lxqt.jpg
-  alt_text: Screenshot of Fedora LXQT desktop
+  alt_text: Screenshot of Fedora LXQt desktop
 sections:
   - sectionTitle: Going Online
     content:
@@ -55,6 +55,6 @@ sections:
         description: Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty music collection browser based on cover art.
         image: public/assets/images/spins/yarock.png
 downloadSection:
-  description: We're so glad you've decided to give Fedora LXQT Spin a try. We
+  description: We're so glad you've decided to give Fedora LXQt Spin a try. We
     know you'll love it.
   links: []

@@ -118,11 +118,11 @@ const navigation = {
             description: "Fedora Linux with the i3 Tiling Window Manager.",
           },
           {
-            label: "LXQT Desktop",
+            label: "LXQt Desktop",
             path: "/spins/lxqt/",
             icon: "fa6-solid:desktop",
             description:
-              "A lightweight and well integrated LXQT desktop environment.",
+              "A lightweight and well integrated LXQt desktop environment.",
           },
           {
             label: "LXDE Desktop",
