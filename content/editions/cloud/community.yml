@@ -41,4 +41,4 @@ sections:
           You can view, file, and discuss Fedora Cloud issues on the [Fedora
           Cloud issue tracker](https://pagure.io/cloud-sig/issues).
       - title: Attend a meeting
-        description: Cloud Working Group meetings are open to all current and potential contributors every **$day** at **$time** in **$location**.
+        description: Cloud Working Group meetings are open to all current and potential contributors every other **Thursday** at **15:00 UTC** in **[#meeting-1​:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting-1:fedoraproject.org)**.
