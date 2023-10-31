@@ -86,7 +86,7 @@ sections:
         url: https://developer.fedoraproject.org/
         image: public/assets/images/fedora-devs.png
       - description: Easily install, update and manage software packages
-        url: https://dnf5.readthedocs.io/en/latest/
+        url: https://dnf.readthedocs.io/en/latest/
         image: public/assets/images/logo-dnf.png
       - description: High-efficiency tools for creating, running and managing containers
         url: https://blog.podman.io/
