@@ -32,20 +32,21 @@ links:
   - publication_date: "1698171141519"
     url: https://www.youtube.com/watch?v=-n34_oM8Wec
     text: "Fedora Podcast 32: How Do You Fedora: Neal Gompa"
+  - publication_date: "1699391035892"
+    text: "Fedora Podcast 33: The Birthday Episode"
+    url: https://www.youtube.com/watch?v=9SfwaDWHTZ8
 sections:
   - sectionTitle: Communication channels
     content:
       - title: Fedora Discussion
-        description:
-          Fedora's Discourse-based discussion forum is a great place to
+        description: Fedora's Discourse-based discussion forum is a great place to
           connect with other Fedora Project users and contributors.
         image: public/assets/images/fedora-discussion-plus-icon.png
         link:
           text: Visit Now
           url: https://discussion.fedoraproject.org/
       - title: Fedora Chat
-        description:
-          Fedora's Matrix-powered chat server is a great place to chat in
+        description: Fedora's Matrix-powered chat server is a great place to chat in
           real time with other Fedora Project users and contributors.
         image: public/assets/images/fedora-chat-plus-element.png
         link:
