@@ -43,7 +43,4 @@ sections:
           You can view, file, and discuss Fedora Server issues on the [Fedora
           Server issue tracker](https://pagure.io/fedora-server/issues).
       - title: Attend a meeting
-        description:
-          Server Working Group meetings are open to all current and potential
-          contributors on Wednesdays, 11 AM US Eastern at
-          [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
+        description: Server Working Group meetings are open to all current and potential contributors every **1st** and **3rd** **Wednesday** at **17:00 UTC** in **[#server​:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org)**.

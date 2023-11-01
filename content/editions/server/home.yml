@@ -70,7 +70,4 @@ sections:
           to receive meeting agendas and minutes [view
           archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)
       - title: Attend a meeting
-        description:
-          Open to all current and potential contributors **every 1st and 3rd
-          Wednesday at 18:00 UTC**
-          on [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).
+        description: Open to all current and potential contributors every **1st** and **3rd** **Wednesday** at **17:00 UTC** in **[#server​:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org)**.
