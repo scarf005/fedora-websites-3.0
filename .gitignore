@@ -9,4 +9,3 @@ dist
 .cache_dnf/
 **/*.*.yml
 public/admin/config.yml
-public/assets/images/
