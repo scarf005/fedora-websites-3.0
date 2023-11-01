@@ -1,11 +1,11 @@
-title: Fedora XFCE
+title: Fedora Xfce
 description: >-
   The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and lightweight, while still being visually appealing and user friendly.
 
   Fedora Xfce is a full-fledged desktop using the freedesktop.org standards.
 image:
   src: https://stg.fedoraproject.org/assets/images/spins/screenshot-xfce.png
-  alt: Fedora XFCE Image
+  alt: Fedora Xfce Image
   width: 400
   height: 300
 links:
@@ -13,7 +13,7 @@ links:
     url: /spins/xfce/download/
 screenshot_image:
   image: public/assets/images/spins/screenshot-xfce.jpg
-  alt_text: Screenshot of Fedora XFCE desktop
+  alt_text: Screenshot of Fedora Xfce desktop
 sections:
   - sectionTitle: Going Online
     content:
@@ -56,7 +56,7 @@ sections:
         description: Manage and play your music with ease.
         image: public/assets/images/spins/pragha.png
 downloadSection:
-  description: We're so glad you've decided to give Fedora XFCE a try. We
+  description: We're so glad you've decided to give Fedora Xfce a try. We
     know you'll love it.
   links:
     - text: Upstream Documentation

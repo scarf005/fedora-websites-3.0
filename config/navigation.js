@@ -92,7 +92,7 @@ const navigation = {
               "A complete, modern desktop built using the KDE Plasma Desktop Environment.",
           },
           {
-            label: "XFCE Desktop",
+            label: "Xfce Desktop",
             path: "/spins/xfce/",
             icon: "fa6-solid:desktop",
             description: "A complete and well integrated desktop.",
