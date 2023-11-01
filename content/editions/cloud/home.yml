@@ -71,4 +71,4 @@ sections:
           Sign up at [cloud@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) to receive
           meeting agendas and minutes.
       - title: Attend a meeting
-        description: Open to all current and potential contributors every **$day** at **$time** in **$location**.
+        description: Open to all current and potential contributors every other **Thursday** at **15:00 UTC** in **[#meeting-1​:fedoraproject.org](https://chat.fedoraproject.org/#/room/#meeting-1:fedoraproject.org)**.
