@@ -9,6 +9,10 @@ cache:
     - node_modules/
     - .cache_dnf
 
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  GIT_SUBMODULE_FORCE_HTTPS: "true"
+
 pages:
   script:
     - npm install
