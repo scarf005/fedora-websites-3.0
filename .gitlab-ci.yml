@@ -25,6 +25,7 @@ pages:
       - public
   only:
     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
+  interruptible: true
 
 build_preview:
   stage: build
