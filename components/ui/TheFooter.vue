@@ -72,7 +72,7 @@ import navigation from "../../config/navigation.js";
               >
                 <template #cms>
                   <FpLink
-                    href="https://fedora.gitlab.io/websites-apps/fedora-websites/fedora-websites-3.0/admin/"
+                    href="https://fedora.gitlab.io/websites-apps/fedora-websites/cms/fedoraproject.org/admin/"
                     class="underline underline-offset-1 transition duration-300 ease-in-out hover:text-fp-gray dark:text-fp-gray-light dark:hover:text-fp-gray-dark"
                     >{{ $t("CMS") }}</FpLink
                   >
