@@ -1,30 +1,39 @@
 // vim:set ts=2 sw=2 et:
 
 export const setMeetingTime = (target, data) => {
-  if (!data.meetings || data.meetings.length != 1) {
-    console.log('failed to set meeting time: data missing/invalid');
-    return;
-  }
-
-  data = data.meetings[0];
+  const { locale, t } = useI18n();
 
   if (!target.description) {
     return;
   }
 
+  let count = data.meetings?.length;
+  if (!(count > 0 && count <= 3)) {
+    console.log('failed to set meeting time: data missing/invalid');
+    return;
+  }
+
+  // use the times from the first meeting and discard the rest.
+  data = data.meetings[0];
+
   if (data.meeting_date && data.meeting_time_start && data.meeting_timezone) {
     let date = new Date(
       `${data.meeting_date}T${data.meeting_time_start}Z`
     );
+    // bi-weekly meetings are signaled by providing fewer than three meetings
+    // in the original data set.
+    target.description = target.description.replace(
+      "$cadence", (count == 3) ? t('cadence_every') : t('cadence_every_other')
+    );
     target.description = target.description.replace(
       "$day", date.toLocaleString(
-        'en-US', { "weekday": "long" }
+        locale.value, { "weekday": "long" }
       )
     );
     target.description = target.description.replace(
       "$time", date.toLocaleString(
-        'en-US', { "timeStyle": "short", "hour12": false, "timeZone": "UTC" }
-      ) + ' ' + data.meeting_timezone
+        locale.value, { "timeStyle": "short", "hour12": false, "timeZone": "UTC" }
+      )
     );
   }
 
