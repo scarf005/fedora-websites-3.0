@@ -15,7 +15,28 @@ const release_data = await getCMS("release");
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
   `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`,
+  {
+    transform: (ga_data) => {
+      let image = "Spins";
+      if (release_data._value.ga.compose_overrides?.[image]) {
+        console.log("Overrides: ");
+        console.log(release_data._value.ga.compose_overrides[image]);
+        for (var arch in release_data._value.ga.compose_overrides[image]) {
+          if (arch in ga_data.payload.images[image]) {
+            ga_data.payload.images[image][arch].push(
+              ...release_data._value.ga.compose_overrides[image][arch],
+            );
+          } else {
+            ga_data.payload.images[image][arch] =
+              release_data._value.ga.compose_overrides[image][arch];
+          }
+        }
+      }
+      return ga_data;
+    },
+  },
 );
+
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`,
 );
