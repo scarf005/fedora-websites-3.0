@@ -11,7 +11,7 @@ const { data: ga_data } = await useFetch(
       if (release_data._value.ga.compose_overrides?.[image]) {
         console.log("Overrides: ");
         console.log(release_data._value.ga.compose_overrides[image]);
-        if (!ga_data.payload.images[image]) ga_data.payload.images[image] = [];
+        if (!ga_data.payload.images[image]) ga_data.payload.images[image] = {};
         for (var arch in release_data._value.ga.compose_overrides[image]) {
           if (arch in ga_data.payload.images[image]) {
             ga_data.payload.images[image][arch].push(
@@ -25,6 +25,7 @@ const { data: ga_data } = await useFetch(
       }
       return ga_data;
     },
+    key: "koji-ga",
   },
 );
 

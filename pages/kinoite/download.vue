@@ -9,13 +9,14 @@ const kojiBackupUrl = `https://kojipkgs.fedoraproject.org/compose/${
 }/latest-Fedora-${
   release_data._value.ga.releasever - 1
 }/compose/metadata/images.json`;
+
 const { data: ga_data } = await useFetch(kojiUrl, {
   transform: (ga_data) => {
     let image = "Kinoite";
     if (release_data._value.ga.compose_overrides?.[image]) {
       console.log("Overrides: ");
       console.log(release_data._value.ga.compose_overrides[image]);
-      if (!ga_data.payload.images[image]) ga_data.payload.images[image] = [];
+      if (!ga_data.payload.images[image]) ga_data.payload.images[image] = {};
       for (var arch in release_data._value.ga.compose_overrides[image]) {
         if (arch in ga_data.payload.images[image]) {
           ga_data.payload.images[image][arch].push(
@@ -29,6 +30,7 @@ const { data: ga_data } = await useFetch(kojiUrl, {
     }
     return ga_data;
   },
+  key: "koji-ga",
 });
 
 const backup = await useFetch(kojiBackupUrl);
