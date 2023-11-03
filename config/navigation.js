@@ -482,6 +482,13 @@ const navigation = {
               "Announcements that are pertinent to Fedora developers and the Fedora infrastructure team tend to be posted here.",
           },
           {
+            label: "Fedora Podcast",
+            path: "/podcast",
+            icon: "fa6-solid:tower-cell",
+            description:
+              "The Fedora Podcast features interviews and talks with the people who make the Fedora community awesome!",
+          },
+          {
             label: "Fedora Mastodon",
             path: "https://fosstodon.org/@fedora",
             rel: "me",
