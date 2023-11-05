@@ -1,0 +1,99 @@
+ignore_files:
+  - partials_fporgchart.json
+  - editions_cloud_ami_list.json
+  - release.json
+ignore_keys:
+  - color
+  - fingerprint
+  - id
+  - image
+  - level
+  - openpgpkey
+  - path
+  - publication_date
+  - url
+ignore_values:
+  - ^(?:http|ftp)s?://
+  - ^/r/.*
+  - ^EPEL \d+$
+  - ^fa-.*
+  - ^Fedora \d+ s390x$
+  - ^Fedora \d+ Secondary$
+  - ^Fedora \d+ Testing$
+  - ^Fedora \d+$
+  - aarch64
+  - Abiword
+  - Ark
+  - Atril
+  - azote
+  - brightlight
+  - Claws Mail
+  - Cockpit
+  - Col\u00far
+  - dmenu
+  - Dolphin
+  - Dragon Player
+  - dunst
+  - Elisa
+  - Falkon
+  - Fedora
+  - Fedora Cloud
+  - Fedora CoreOS
+  - Fedora IoT
+  - Fedora Kinoite
+  - Fedora Media Writer
+  - Fedora Phosh
+  - Fedora Sericea
+  - Fedora Server
+  - Fedora Workstation
+  - Fedora Xfce
+  - Firefox
+  - foot
+  - Gnumeric
+  - Gwenview
+  - htop
+  - i3lock
+  - i3status
+  - imv
+  - K3B
+  - Kalzium
+  - kanshi
+  - Kiten
+  - Kontact
+  - KTorrent & KGet
+  - LibreOffice
+  - light
+  - Linux
+  - LXImage-Qt
+  - Mac
+  - Marble
+  - mousepad
+  - mpv
+  - Network Manager
+  - nmcli
+  - Okular
+  - Parley
+  - Parole
+  - Pidgin
+  - ppc64le
+  - Pragha
+  - Quassel
+  - Red Hat
+  - release
+  - Rhythmbox
+  - Ristretto
+  - rofi
+  - rpm-ostree
+  - rxvt-unicode
+  - s390x
+  - sway lock
+  - Sway WM
+  - swaylock
+  - Telegram
+  - Telepathy
+  - Thunar
+  - Thunderbird
+  - Twitter
+  - waybar
+  - Windows
+  - x86_64
