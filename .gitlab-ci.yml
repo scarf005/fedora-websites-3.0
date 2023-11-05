@@ -39,6 +39,8 @@ gen_locales:
       fi
   rules:
     - if: $CI_COMMIT_BRANCH == "develop" && $CI_PROJECT_ROOT_NAMESPACE == "fedora"
+      changes:
+        - cms_content
       when: always
     - when: never
 
@@ -54,7 +56,8 @@ pages:
     paths:
       - public
   needs:
-  - gen_locales
+    - job: gen_locales
+      optional: true
   only:
     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
   interruptible: true
