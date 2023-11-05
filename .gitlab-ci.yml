@@ -2,7 +2,7 @@ image: fedora:latest
 
 before_script:
   - mkdir -p .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
-  - dnf install npm git -y
+  - dnf install npm git python3-pyyaml
 
 cache:
   paths:
