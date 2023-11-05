@@ -22,7 +22,7 @@ gen_locales:
   stage: build
   script:
     - git checkout -b l10n_update
-    - git remote set-url --push origin http://ci-git-token:${CI_GIT_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git
+    - git remote set-url --push origin https://ci-git-token:${CI_GIT_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git
     - cd locales.build.d
     - ./genLocale.py ../content/ --all
     - ./merge.py
