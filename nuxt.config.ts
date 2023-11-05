@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
   i18n: {
-    locales: process?.env?.CI_JOB_NAME == "build_preview" ? locales_ci : locales,
+    locales: process?.env?.CI_FAST_BUILD ? locales_ci : locales,
     lazy: {
       skipNuxtState: true,
     },

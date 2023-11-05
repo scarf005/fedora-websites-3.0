@@ -13,7 +13,13 @@ variables:
   GIT_SUBMODULE_STRATEGY: normal
   GIT_SUBMODULE_FORCE_HTTPS: "true"
 
+stages:
+  - build
+  - test
+  - deploy
+
 pages:
+  stage: build
   script:
     - npm install
     - npm run generate
@@ -35,7 +41,8 @@ build_preview:
     - rm -rf ./public
     - mv .output/public ./public
   variables:
-    CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
+    CI_PAGES_URL: https://${CI_SERVER_HOST}/${CI_PROJECT_PATH}/-/jobs/${CI_JOB_ID}/artifacts/public
+    CI_FAST_BUILD: "true"
   artifacts:
     paths:
       - public/
