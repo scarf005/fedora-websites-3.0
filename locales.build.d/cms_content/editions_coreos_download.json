@@ -1,0 +1,19 @@
+{
+  "Also known as armv8. For most processors other than Intel and AMD, such as Raspberry Pi.": "Also known as armv8. For most processors other than Intel and AMD, such as Raspberry Pi.",
+  "Community Support": "Community Support",
+  "Documentation": "Documentation",
+  "Fedora CoreOS can be deployed on 4 different CPU architectures.": "Fedora CoreOS can be deployed on 4 different CPU architectures.",
+  "Fedora CoreOS is available across 3 different release streams": "Fedora CoreOS is available across 3 different release streams",
+  "For IBM Cloud and zSystems.": "For IBM Cloud and zSystems.",
+  "For IBM PowerPC systems.": "For IBM PowerPC systems.",
+  "Most computers with Intel and AMD processors.": "Most computers with Intel and AMD processors.",
+  "Next": "Next",
+  "Pick your architecture": "Pick your architecture",
+  "Release Notes": "Release Notes",
+  "Stable": "Stable",
+  "Streams": "Streams",
+  "Testing": "Testing",
+  "The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.": "The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.",
+  "The Stable stream is the most reliable version of Fedora CoreOS. Releases are battle-tested within the Testing stream before being promoted.": "The Stable stream is the most reliable version of Fedora CoreOS. Releases are battle-tested within the Testing stream before being promoted.",
+  "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration."
+}

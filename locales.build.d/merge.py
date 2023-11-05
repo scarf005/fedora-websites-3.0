@@ -3,9 +3,10 @@
 import json
 import glob
 
-js_files = glob.glob("*.json")
+js_files = glob.glob("**/*.json", recursive=True)
 merged_js = {}
 for js_file in sorted(js_files):
+  print(js_file)
   with open(js_file, 'r') as f:
     js = json.load(f)
   for k, v in js.items():
