@@ -27,7 +27,7 @@ gen_locales:
     - ./genLocale.py ../content/ --all
     - ./merge.py
     - cd ..
-    - git add cms_content ../locales/en.json
+    - git add locales.build.d/cms_content locales/en.json
     - git status
     - |-
       CHANGES=$(git status --porcelain | wc -l)
