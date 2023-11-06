@@ -14,10 +14,33 @@ const { data: ga_data } = await useFetch(
 );
 */
 const { data: ga_data } = await useFetch(
-  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`
+  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`,
+  {
+    transform: (ga_data) => {
+      let image = "Workstation";
+      if (release_data._value.ga.compose_overrides?.[image]) {
+        console.log("Overrides: ");
+        console.log(release_data._value.ga.compose_overrides[image]);
+        if (!ga_data.payload.images[image]) ga_data.payload.images[image] = {};
+        for (var arch in release_data._value.ga.compose_overrides[image]) {
+          if (arch in ga_data.payload.images[image]) {
+            ga_data.payload.images[image][arch].push(
+              ...release_data._value.ga.compose_overrides[image][arch],
+            );
+          } else {
+            ga_data.payload.images[image][arch] =
+              release_data._value.ga.compose_overrides[image][arch];
+          }
+        }
+      }
+      return ga_data;
+    },
+    key: "koji-ga",
+  },
 );
+
 const { data: beta_data } = await useFetch(
-  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`,
 );
 
 const betaSwitch = useState("betaSwitch", () => false);
@@ -33,28 +56,41 @@ const dlpath = {
 
 function updateVerify(art) {
   console.log(art);
-  verifyModal.value.art_name = art.path.substring(
-    art.path.lastIndexOf("/") + 1
-  );
-  let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  let edition =
-    art.format == "iso"
-      ? "Fedora-Workstation-iso"
-      : "Fedora-Workstation-images";
-  if (betaSwitch.value) {
-    // Beta
-    verifyModal.value.chk_name = `${edition}-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
-    // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
-    verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
-      release_data._value.beta.releasever
-    }_Beta/${path}/${verifyModal.value.chk_name}`;
+  if (art.checksum_file) {
+    verifyModal.value.chk_name = art.checksum_file.substring(
+      art.path.lastIndexOf("/") + 1,
+    );
+    if (art.dl_prefix) {
+      verifyModal.value.checksum = `${art.dl_prefix}/${art.checksum_file}`;
+    } else {
+      verifyModal.value.checksum = `${dlpath[art.arch]}/${
+        release_data._value.ga.releasever
+      }/${art.checksum_file}`;
+    }
   } else {
-    // GA
-    verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
-    // Fedora-Workstation-37-1.7-x86_64-CHECKSUM
-    verifyModal.value.checksum = `${dlpath[art.arch]}/${
-      release_data._value.ga.releasever
-    }/${path}/${verifyModal.value.chk_name}`;
+    verifyModal.value.art_name = art.path.substring(
+      art.path.lastIndexOf("/") + 1,
+    );
+    let path = art.path.substring(0, art.path.lastIndexOf("/"));
+    let edition =
+      art.format == "iso"
+        ? "Fedora-Workstation-iso"
+        : "Fedora-Workstation-images";
+    if (betaSwitch.value) {
+      // Beta
+      verifyModal.value.chk_name = `${edition}-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+      // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
+      verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
+        release_data._value.beta.releasever
+      }_Beta/${path}/${verifyModal.value.chk_name}`;
+    } else {
+      // GA
+      verifyModal.value.chk_name = `Fedora-Workstation-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+      // Fedora-Workstation-37-1.7-x86_64-CHECKSUM
+      verifyModal.value.checksum = `${dlpath[art.arch]}/${
+        release_data._value.ga.releasever
+      }/${path}/${verifyModal.value.chk_name}`;
+    }
   }
   if (document) {
     document.body.classList.add("has-modal");
@@ -74,14 +110,14 @@ useContentHead(data);
 // fedora media writer
 if (data._value.sections[1].sectionDescription) {
   data._value.sections[1].sectionDescriptionMd = await mdparser(
-    data._value.sections[1].sectionDescription
+    data._value.sections[1].sectionDescription,
   );
 }
 
 // desktop images
 if (data._value.sections[2].sectionDescription) {
   data._value.sections[2].sectionDescriptionMd = await mdparser(
-    data._value.sections[2].sectionDescription
+    data._value.sections[2].sectionDescription,
   );
 }
 </script>
@@ -386,7 +422,7 @@ if (data._value.sections[2].sectionDescription) {
         <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
-              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.",
             )
           }}
         </p>
@@ -441,7 +477,7 @@ if (data._value.sections[2].sectionDescription) {
         <p class="ltr:text-left rtl:text-right">
           {{
             $t(
-              "If the output states that the file is valid, then it's ready to use!"
+              "If the output states that the file is valid, then it's ready to use!",
             )
           }}
         </p>

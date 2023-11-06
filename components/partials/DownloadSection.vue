@@ -47,7 +47,11 @@ const props = defineProps({
         :name="`${art_name} ${version}`"
         :type="v.type"
         :format="v.format"
-        :downloadLink="`${dlPrefix}/${version}/${v.path}`"
+        :downloadLink="
+          v.dl_prefix
+            ? `${v.dl_prefix}/${v.path}`
+            : `${dlPrefix}/${version}/${v.path}`
+        "
         @verify-click="$emit('verifyClick', v)"
         :theme="theme"
         v-if="v.arch != 'src' && !isBeta"

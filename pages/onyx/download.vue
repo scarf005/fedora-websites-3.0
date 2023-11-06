@@ -9,7 +9,30 @@ const kojiBackupUrl = `https://kojipkgs.fedoraproject.org/compose/${
 }/latest-Fedora-${
   release_data._value.ga.releasever - 1
 }/compose/metadata/images.json`;
-const { data: ga_data } = await useFetch(kojiUrl);
+
+const { data: ga_data } = await useFetch(kojiUrl, {
+  transform: (ga_data) => {
+    let image = "Onyx";
+    if (release_data._value.ga.compose_overrides?.[image]) {
+      console.log("Overrides: ");
+      console.log(release_data._value.ga.compose_overrides[image]);
+      if (!ga_data.payload.images[image]) ga_data.payload.images[image] = {};
+      for (var arch in release_data._value.ga.compose_overrides[image]) {
+        if (arch in ga_data.payload.images[image]) {
+          ga_data.payload.images[image][arch].push(
+            ...release_data._value.ga.compose_overrides[image][arch],
+          );
+        } else {
+          ga_data.payload.images[image][arch] =
+            release_data._value.ga.compose_overrides[image][arch];
+        }
+      }
+    }
+    return ga_data;
+  },
+  key: "koji-ga",
+});
+
 const backup = await useFetch(kojiBackupUrl);
 const { data: beta_data } = await useFetch(
   `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`,
@@ -28,23 +51,36 @@ const dlpath = {
 
 function updateVerify(art) {
   console.log(art);
-  verifyModal.value.art_name = art.path.substring(
-    art.path.lastIndexOf("/") + 1,
-  );
-  let path = art.path.substring(0, art.path.lastIndexOf("/"));
-  if (betaSwitch.value) {
-    // Beta
-    verifyModal.value.chk_name = `Fedora-Onyx-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
-    // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
-    verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
-      release_data._value.beta.releasever
-    }_Beta/${path}/${verifyModal.value.chk_name}`;
+  if (art.checksum_file) {
+    verifyModal.value.chk_name = art.checksum_file.substring(
+      art.path.lastIndexOf("/") + 1,
+    );
+    if (art.dl_prefix) {
+      verifyModal.value.checksum = `${art.dl_prefix}/${art.checksum_file}`;
+    } else {
+      verifyModal.value.checksum = `${dlpath[art.arch]}/${
+        release_data._value.ga.releasever
+      }/${art.checksum_file}`;
+    }
   } else {
-    verifyModal.value.chk_name = `Fedora-Onyx-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
-    // Fedora-Server-37-1.7-x86_64-CHECKSUM
-    verifyModal.value.checksum = `${dlpath[art.arch]}/${
-      release_data._value.ga.releasever
-    }/${path}/${verifyModal.value.chk_name}`;
+    verifyModal.value.art_name = art.path.substring(
+      art.path.lastIndexOf("/") + 1,
+    );
+    let path = art.path.substring(0, art.path.lastIndexOf("/"));
+    if (betaSwitch.value) {
+      // Beta
+      verifyModal.value.chk_name = `Fedora-Onyx-${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}-${art.arch}-CHECKSUM`;
+      // Fedora-Workstation-37_Beta-1.5-x86_64-CHECKSUM
+      verifyModal.value.checksum = `${dlpath[art.arch]}/test/${
+        release_data._value.beta.releasever
+      }_Beta/${path}/${verifyModal.value.chk_name}`;
+    } else {
+      verifyModal.value.chk_name = `Fedora-Onyx-${release_data._value.ga.releasever}-${release_data._value.ga.rc_version}-${art.arch}-CHECKSUM`;
+      // Fedora-Server-37-1.7-x86_64-CHECKSUM
+      verifyModal.value.checksum = `${dlpath[art.arch]}/${
+        release_data._value.ga.releasever
+      }/${path}/${verifyModal.value.chk_name}`;
+    }
   }
   if (document) {
     document.body.classList.add("has-modal");
