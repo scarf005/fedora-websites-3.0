@@ -55,9 +55,13 @@ function updateVerify(art) {
     verifyModal.value.chk_name = art.checksum_file.substring(
       art.path.lastIndexOf("/") + 1,
     );
-    verifyModal.value.checksum = `${dlpath[art.arch]}/${
-      release_data._value.ga.releasever
-    }/${art.checksum_file}`;
+    if (art.dl_prefix) {
+      verifyModal.value.checksum = `${art.dl_prefix}/${art.checksum_file}`;
+    } else {
+      verifyModal.value.checksum = `${dlpath[art.arch]}/${
+        release_data._value.ga.releasever
+      }/${art.checksum_file}`;
+    }
   } else {
     verifyModal.value.art_name = art.path.substring(
       art.path.lastIndexOf("/") + 1,

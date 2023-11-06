@@ -103,11 +103,15 @@ if __name__ == '__main__':
         if k == "Labs":
           basepath = f"{labspath[art['arch']]}/{FVERS}" if not opts.beta else f"{labspath[art['arch']]}/test/{FVERS}_Beta"
         link = f"{basepath}/{art['path']}"
+        if 'dl_prefix' in art:
+          link = f"{art['dl_prefix'].replace('/download.','/dl.')}/{art['path']}"
         rc.append(check_download_link(link))
         subpath = os.path.dirname(art['path'])
         art_format = 'iso' if art['format'] == 'iso' else 'images'
         if 'checksum_file' in art:
           cksum = f"{basepath}/{art['checksum_file']}"
+          if 'dl_prefix' in art:
+            cksum = f"{art['dl_prefix'].replace('/download.','/dl.')}/{art['checksum_file']}"
         else:
           cksum = f"{basepath}/{subpath}/Fedora-{k}-{FVERS}-{FRC}-{arch}-CHECKSUM" if not opts.beta else f"{basepath}/{subpath}/Fedora-{k}-{art_format}-{FVERS}_Beta-{FRC}-{arch}-CHECKSUM"
         if cksum not in cksums:
