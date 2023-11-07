@@ -1,4 +1,16 @@
 {
-  "cadence_every": "every",
-  "cadence_every_other": "every other"
+  "every_sunday": "every **Sunday**",
+  "every_monday": "every **Monday**",
+  "every_tuesday": "every **Tuesday**",
+  "every_wednesday": "every **Wednesday**",
+  "every_thursday": "every **Thursday**",
+  "every_friday": "every **Friday**",
+  "every_saturday": "every **Saturday**",
+  "every_other_sunday": "every other **Sunday**",
+  "every_other_monday": "every other **Monday**",
+  "every_other_tuesday": "every other **Tuesday**",
+  "every_other_wednesday": "every other **Wednesday**",
+  "every_other_thursday": "every other **Thursday**",
+  "every_other_friday": "every other **Friday**",
+  "every_other_saturday": "every other **Saturday**"
 }

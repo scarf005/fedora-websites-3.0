@@ -20,15 +20,11 @@ export const setMeetingTime = (target, data) => {
     let date = new Date(
       `${data.meeting_date}T${data.meeting_time_start}Z`
     );
+    let day = date.toLocaleString('en-US', { "weekday": "long" }).toLowerCase();
     // bi-weekly meetings are signaled by providing fewer than three meetings
     // in the original data set.
     target.description = target.description.replace(
-      "$cadence", (count == 3) ? t('cadence_every') : t('cadence_every_other')
-    );
-    target.description = target.description.replace(
-      "$day", date.toLocaleString(
-        locale.value, { "weekday": "long" }
-      )
+      "$cadence", (count == 3) ? t('every_' + day) : t('every_other_' + day)
     );
     target.description = target.description.replace(
       "$time", date.toLocaleString(
