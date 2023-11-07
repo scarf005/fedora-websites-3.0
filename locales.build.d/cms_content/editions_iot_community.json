@@ -7,7 +7,7 @@
   "Fedora IoT is created by a team in the Fedora Project community called the IoT Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the IoT Working Group website.": "Fedora IoT is created by a team in the Fedora Project community called the IoT Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the IoT Working Group website.",
   "Forum": "Forum",
   "Header Second Half": "Header Second Half",
-  "IoT Working Group meetings are open to all current and potential contributors $cadence **$day** at **$time** UTC in **$location** (see [fedocal\u2192iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "IoT Working Group meetings are open to all current and potential contributors {'$'}cadence **{'$'}day** at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192iot](https://calendar.fedoraproject.org/list/IoT/) for updates).",
+  "IoT Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal\u2192iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "IoT Working Group meetings are open to all current and potential contributors {'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192iot](https://calendar.fedoraproject.org/list/IoT/) for updates).",
   "Join a community of users and contributors focused on Fedora IoT.": "Join a community of users and contributors focused on Fedora IoT.",
   "Mailing List": "Mailing List",
   "Report & discuss issues": "Report & discuss issues",

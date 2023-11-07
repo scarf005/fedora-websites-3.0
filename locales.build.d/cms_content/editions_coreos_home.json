@@ -12,7 +12,7 @@
   "Flexible": "Flexible",
   "Join the mailing list": "Join the mailing list",
   "Minimal": "Minimal",
-  "Open to all current and potential contributors $cadence **$day** at **$time** UTC in **$location** (see [fedocal\u2192coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "Open to all current and potential contributors {'$'}cadence **{'$'}day** at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).",
+  "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal\u2192coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "Open to all current and potential contributors {'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).",
   "Open to everyone": "Open to everyone",
   "Open-source Ecosystem": "Open-source Ecosystem",
   "Our goal is to provide the best container host to run workloads securely and at scale.": "Our goal is to provide the best container host to run workloads securely and at scale.",
