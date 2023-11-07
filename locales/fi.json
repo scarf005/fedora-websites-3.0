@@ -878,5 +878,6 @@
     "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "Luo helposti OCI-kontteja, jotka on täysin integroitu isäntäjärjestelmääsi, mikä mahdollistaa sekä GUI- että CLI-työkalujen saumattoman käytön.",
     "Fedora Kinoite Image": "Fedora Kinoite -levykuva",
     "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Voit keskustella Fedora Kinoite -yhteisön kanssa joko Matrixin tai IRC:n kautta: **#kinoite:fedoraproject.org** Matrixissa tai #kinoite irc.libera.chatissa.",
-    "A lightweight and well integrated LXQt desktop environment.": "Kevyt, hyvin integroitu LXQt työpöytäympäristö."
+    "A lightweight and well integrated LXQt desktop environment.": "Kevyt, hyvin integroitu LXQt työpöytäympäristö.",
+    "Fedora CoreOS can be deployed on 4 different CPU architectures.": "Fedora CoreOS voidaan ottaa käyttöön kolmella eri prosessoriarkkitehtuurilla."
 }
