@@ -353,21 +353,21 @@
   {
     "version": "39",
     "arch": "aarch64",
-    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/Fedora-KDE-Live-aarch64-39-1.5-respin.iso",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/aarch64/Fedora-KDE-Live-aarch64-39-1.5-respin.iso",
     "variant": "Fedora",
     "subvariant": "KDE"
   },
   {
     "version": "39",
     "arch": "aarch64",
-    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/Fedora-LXQt-Live-aarch64-39-1.5-respin.iso",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/aarch64/Fedora-LXQt-Live-aarch64-39-1.5-respin.iso",
     "variant": "Fedora",
     "subvariant": "LXQt"
   },
   {
     "version": "39",
     "arch": "aarch64",
-    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/Fedora-Workstation-Live-aarch64-39-1.5-respin.iso",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Spins/aarch64/Fedora-Workstation-Live-aarch64-39-1.5-respin.iso",
     "variant": "Fedora",
     "subvariant": "Workstation"
   },
@@ -395,7 +395,7 @@
   {
     "version": "39",
     "arch": "x86_64",
-    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Sericea/x86_64/Fedora-Sericea-ostree-x86_64-39-1.5-respin.iso",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Sericea/x86_64/Fedora-Sericea-ostree-x86_64-39-1.5-respin2.iso",
     "variant": "Fedora",
     "subvariant": "Sericea"
   },
