@@ -390,7 +390,7 @@
     "arch": "x86_64",
     "link": "https://download.fedoraproject.org/pub/alt/releases/39/respins/Onyx/x86_64/Fedora-Onyx-ostree-x86_64-39-1.5-respin.iso",
     "variant": "Fedora",
-    "subvariant": ""
+    "subvariant": "Onyx"
   },
   {
     "version": "39",
