@@ -35,6 +35,9 @@ const user_documentation = data._value.sections[0];
 // communication channels
 const comm_channels = data._value.sections[1];
 
+// latest council video
+const latest_council_video = data._value.sections[2];
+
 // query string parameters
 const { sidebars = "1" } = useRoute().query;
 
@@ -133,7 +136,7 @@ const fp_headlines = async () => {
   let i = topics.length - 1;
   let last = i - count_headlines;
   let headlines = [];
-  while (i >= 0 && i >= last) {
+  while (i >= 0 && i > last) {
     let date = new Date(parseInt(topics[i].publication_date));
 
     // filter out podcasts with a future pub. date
@@ -173,7 +176,7 @@ let headlines = combined
   })
   .slice(0, count_headlines);
 
-const got_headlines = headlines.length == count_headlines;
+const got_headlines = process.server || headlines.length == count_headlines;
 
 const common_query = "c/ask/common-issues/82/none";
 
@@ -301,6 +304,9 @@ if (parseInt(sidebars) && process.client) {
   got_commblog = commblog.length == count_commblog;
 }
 
+// https://tailwindcss.com/docs/responsive-design
+const width_2xl = 1536;
+
 // https://stackoverflow.com/a/71210364 (CC BY-SA 4.0)
 const get_width = () => {
   let width = ref(window.innerWidth);
@@ -313,45 +319,46 @@ const get_width = () => {
   return computed(() => width.value);
 };
 
-let width = 0;
+let width = width_2xl;
 if (process.client) {
   width = get_width();
 }
 
-// https://tailwindcss.com/docs/responsive-design
-const width_2xl = 1536;
+let static_headlines = await fp_headlines();
 </script>
 
 <template>
   <div class="bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-10">
-      <!-- LEFT SIDEBAR -->
-      <ClientOnly>
-        <div
-          v-if="sidebars != '0'"
-          class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
-        >
-          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
-            <h2 class="mb-8 text-2xl leading-none">
+      <!-- Left Sidebar -->
+      <div
+        v-if="sidebars != '0'"
+        class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
+      >
+        <!-- Documentation -->
+        <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
+          <h2 class="mb-8 text-2xl leading-none">
+            <a
+              href="https://docs.fedoraproject.org/en-US/fedora/latest/"
+              class="text-2xl font-semibold leading-none text-fp-newblue"
+              >{{ $t(user_documentation.sectionTitle) }}</a
+            >
+          </h2>
+          <div v-for="d in user_documentation.content" class="mb-6">
+            <div class="flex items-center">
+              <a :href="d.link.url" class="flex-none"
+                ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
+              /></a>
               <a
-                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t(user_documentation.sectionTitle) }}</a
+                :href="d.link.url"
+                class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
+                >{{ d.link.text }}</a
               >
-            </h2>
-            <div v-for="d in user_documentation.content" class="mb-6">
-              <div class="flex items-center">
-                <a :href="d.link.url" class="flex-none"
-                  ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
-                /></a>
-                <a
-                  :href="d.link.url"
-                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
-                  >{{ d.link.text }}</a
-                >
-              </div>
             </div>
           </div>
+        </div>
+        <ClientOnly>
+          <!-- Common Issues -->
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -381,11 +388,12 @@ const width_2xl = 1536;
               >
             </div>
           </div>
-        </div>
-      </ClientOnly>
+        </ClientOnly>
+      </div>
 
-      <!-- CENTER COLUMN -->
+      <!-- Center Column -->
       <div class="mx-auto max-w-screen-xl flex-initial">
+        <!-- Search Bar -->
         <div class="flex justify-center pb-12">
           <form
             class="max-h-[2em]"
@@ -403,209 +411,213 @@ const width_2xl = 1536;
             <input type="submit" value="Search" style="visibility: hidden" />
           </form>
         </div>
-        <ClientOnly>
-          <div v-if="got_headlines">
+        <div>
+          <ClientOnly>
+            <!-- Center Grid Content -->
             <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
               {{ $t("Latest news and publications from the Fedora Project") }}:
             </h2>
-            <div class="flex flex-wrap" dir="ltr">
+            <div v-if="got_headlines" class="flex flex-wrap" dir="ltr">
               <div
                 v-for="h in width < width_2xl
                   ? headlines.slice(0, count_headlines_narrow)
                   : headlines"
                 class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
               >
-                <div>
-                  <a :href="h.link">
-                    <img :src="h.thumbnail" class="w-full rounded-lg" />
-                  </a>
-                </div>
-                <div class="text-base leading-8 text-gray-500">
-                  {{ h.date }}
-                </div>
-                <div class="max-h-[5.25rem] overflow-hidden">
-                  <a
-                    :href="h.link"
-                    class="align-top text-xl font-semibold text-fp-blue"
-                    >{{ h.title }}</a
-                  >
-                </div>
+                <StartPageNewsItem
+                  :link="h.link"
+                  :thumbnail="h.thumbnail"
+                  :date="h.date"
+                  :title="h.title"
+                />
               </div>
             </div>
-          </div>
-          <div
-            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-            dir="ltr"
-          >
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                :href="`${discourse_uri}/search?${solved_query}`"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t("Latest Solved Issues") }}</a
+            <div v-else class="flex flex-wrap" dir="ltr">
+              <div
+                v-for="i in count_headlines"
+                class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
               >
-            </h2>
-            <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div v-for="s in solved">
-                <div class="flex items-center">
-                  <a :href="s.link" class="flex-none"
-                    ><img
-                      :src="s.avatar"
-                      class="h-12 w-12 rounded object-cover"
-                  /></a>
-                  <a
-                    :href="s.link"
-                    class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
-                    >{{ s.title }}</a
-                  >
-                </div>
+                <StartPageNewsItemLoading />
               </div>
             </div>
-            <div class="whitespace-no-wrap text-right">
-              <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
-                ></span
-              >
-            </div>
-          </div>
-          <div
-            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-            dir="ltr"
-          >
-            <h2 class="text-2xl leading-none">
-              <a
-                href="https://communityblog.fedoraproject.org/"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >Fedora Community Blog</a
-              >
-              <p class="mb-6 font-semibold text-fp-newblue">
-                ({{ $t("news for project contributors") }})
-              </p>
-            </h2>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div v-for="p in commblog" class="mb-6">
-                <div class="ml-2 flex items-center">
-                  <a :href="p.link" class="flex-none p-2"
-                    ><Icon
-                      name="fa6-solid:feather-pointed"
-                      size="32"
-                      class="text-fp-blue"
-                  /></a>
-                  <a
-                    :href="p.link"
-                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                    >{{ p.title }}</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t(user_documentation.sectionTitle) }}</a
-              >
-            </h2>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div v-for="d in user_documentation.content">
-                <div class="flex items-center">
-                  <a :href="d.link.url" class="flex-none"
-                    ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
-                  /></a>
-                  <a
-                    :href="d.link.url"
-                    class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
-                    >{{ d.link.text }}</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-            dir="ltr"
-          >
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                :href="`${discourse_uri}/${common_query}`"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t("Common Issues") }}</a
-              >
-            </h2>
-            <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div v-for="i in common">
-                <div class="ml-2 flex items-center">
-                  <a :href="i.link" class="flex-none p-2"
-                    ><Icon
-                      name="fa6-solid:wrench"
-                      size="32"
-                      class="text-fp-blue"
-                  /></a>
-                  <a
-                    :href="i.link"
-                    class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                    >{{ i.title }}</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="whitespace-no-wrap text-right">
-              <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
-                ></span
-              >
-            </div>
-          </div>
-          <!-- the fallback template is shown when the client has javascript disabled -->
-          <template #fallback>
-            <div class="rounded-2xl bg-white p-6 dark:bg-gray-700">
-              <h2 class="mb-8 text-2xl leading-none">
-                <a
-                  href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-                  class="text-2xl font-semibold leading-none text-fp-newblue"
-                  >{{ $t(user_documentation.sectionTitle) }}</a
-                >
+            <!-- the fallback template is what users without javascript will see -->
+            <template #fallback>
+              <!-- Center Grid Content no Javascript -->
+              <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
+                {{ $t("Latest Fedora Podcasts") }}:
+                <!-- <Icon
+                  name="ei:spinner-3"
+                  size="1.5rem"
+                  :class="`${got_headlines ? '' : 'hidden'} animate-spin text-fp-blue`"
+                /> -->
               </h2>
-              <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-                <div v-for="d in user_documentation.content">
-                  <div class="flex items-center">
-                    <a :href="d.link.url" class="flex-none"
-                      ><Icon
-                        name="fa6-solid:book"
-                        size="48"
-                        class="text-fp-blue"
-                    /></a>
-                    <a
-                      :href="d.link.url"
-                      class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
-                      >{{ d.link.text }}</a
-                    >
+              <div
+                v-if="static_headlines.length > 0"
+                class="flex flex-wrap"
+                dir="ltr"
+              >
+                <div class="flex flex-wrap" dir="ltr">
+                  <div
+                    v-for="h in width < width_2xl
+                      ? static_headlines.slice(0, count_headlines_narrow)
+                      : static_headlines"
+                    class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
+                  >
+                    <StartPageNewsItem
+                      :link="h.link"
+                      :thumbnail="h.thumbnail"
+                      :date="h.date"
+                      :title="h.title"
+                    />
                   </div>
                 </div>
               </div>
+            </template>
+          </ClientOnly>
+        </div>
+        <!-- Latest Solved Issues Mobile View -->
+        <div
+          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+          dir="ltr"
+        >
+          <h2 class="mb-8 text-2xl leading-none">
+            <a
+              :href="`${discourse_uri}/search?${solved_query}`"
+              class="text-2xl font-semibold leading-none text-fp-newblue"
+              >{{ $t("Latest Solved Issues") }}</a
+            >
+          </h2>
+          <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div v-for="s in solved">
+              <div class="flex items-center">
+                <a :href="s.link" class="flex-none"
+                  ><img :src="s.avatar" class="h-12 w-12 rounded object-cover"
+                /></a>
+                <a
+                  :href="s.link"
+                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ s.title }}</a
+                >
+              </div>
             </div>
-          </template>
-        </ClientOnly>
+          </div>
+          <div class="whitespace-no-wrap text-right">
+            <span class="text-base/4text-gray-400 font-semibold"
+              >{{ $t("From") }}
+              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                >ask​.​fedoraproject​.​org</a
+              ></span
+            >
+          </div>
+        </div>
+        <!-- Community Blog Mobile View -->
+        <div
+          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+          dir="ltr"
+        >
+          <h2 class="text-2xl leading-none">
+            <a
+              href="https://communityblog.fedoraproject.org/"
+              class="text-2xl font-semibold leading-none text-fp-newblue"
+              >Fedora Community Blog</a
+            >
+            <p class="mb-6 font-semibold text-fp-newblue">
+              ({{ $t("news for project contributors") }})
+            </p>
+          </h2>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div v-for="p in commblog" class="mb-6">
+              <div class="ml-2 flex items-center">
+                <a :href="p.link" class="flex-none p-2"
+                  ><Icon
+                    name="fa6-solid:feather-pointed"
+                    size="32"
+                    class="text-fp-blue"
+                /></a>
+                <a
+                  :href="p.link"
+                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ p.title }}</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Documentation Mobile View -->
+        <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
+          <h2 class="mb-8 text-2xl leading-none">
+            <a
+              href="https://docs.fedoraproject.org/en-US/fedora/latest/"
+              class="text-2xl font-semibold leading-none text-fp-newblue"
+              >{{ $t(user_documentation.sectionTitle) }}</a
+            >
+          </h2>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div v-for="d in user_documentation.content">
+              <div class="flex items-center">
+                <a :href="d.link.url" class="flex-none"
+                  ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
+                /></a>
+                <a
+                  :href="d.link.url"
+                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
+                  >{{ d.link.text }}</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Common Issues Mobile View -->
+        <div
+          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
+          dir="ltr"
+        >
+          <h2 class="mb-8 text-2xl leading-none">
+            <a
+              :href="`${discourse_uri}/${common_query}`"
+              class="text-2xl font-semibold leading-none text-fp-newblue"
+              >{{ $t("Common Issues") }}</a
+            >
+          </h2>
+          <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div v-for="i in common">
+              <div class="ml-2 flex items-center">
+                <a :href="i.link" class="flex-none p-2"
+                  ><Icon name="fa6-solid:wrench" size="32" class="text-fp-blue"
+                /></a>
+                <a
+                  :href="i.link"
+                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
+                  >{{ i.title }}</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="whitespace-no-wrap text-right">
+            <span class="text-base/4text-gray-400 font-semibold"
+              >{{ $t("From") }}
+              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                >ask​.​fedoraproject​.​org</a
+              ></span
+            >
+          </div>
+        </div>
       </div>
 
-      <!-- RIGHT SIDEBAR -->
-      <ClientOnly>
-        <div
-          v-if="sidebars != '0'"
-          class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
-        >
+      <!-- Right Sidebar -->
+      <div
+        v-if="sidebars != '0'"
+        class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
+      >
+        <ClientOnly>
+          <!-- Latest Council Video -->
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
             <h2 class="mb-8 text-2xl leading-none">
               <a
                 href="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
                 target="_blank"
                 class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t("Latest Council Video") }}</a
+                >{{ $t(latest_council_video.sectionTitle) }}</a
               >
             </h2>
             <div class="mb-6 grid place-items-center">
@@ -618,6 +630,7 @@ const width_2xl = 1536;
               </iframe>
             </div>
           </div>
+          <!-- Latest Solved Issues -->
           <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
             <h2 class="mb-8 text-2xl leading-none">
               <a
@@ -647,6 +660,7 @@ const width_2xl = 1536;
               >
             </div>
           </div>
+          <!-- Fedora Community Blog -->
           <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
             <h2 class="text-2xl leading-none">
               <a
@@ -674,8 +688,38 @@ const width_2xl = 1536;
               </div>
             </div>
           </div>
-        </div>
-      </ClientOnly>
+          <!-- right-hand sidebar content for users without javascript -->
+          <template #fallback>
+            <!-- Latest Council Video no Javascript -->
+            <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
+              <h2 class="mb-8 text-2xl leading-none">
+                <a
+                  href="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
+                  target="_blank"
+                  class="text-2xl font-semibold leading-none text-fp-newblue"
+                  >{{ $t(latest_council_video.sectionTitle) }}</a
+                >
+              </h2>
+              <div class="mb-6 grid place-items-center">
+                <div class="relative bg-black h-[9em] w-[16em] overflow-hidden">
+                  <FpLink :href="latest_council_video.content[0].link.url">
+                    <FpImage :src="latest_council_video.content[0].image" />
+                  </FpLink>
+                  <div
+                    class="z-1 absolute top-2 w-full grid place-items-center"
+                  >
+                    <div
+                      class="px-2 text-2xl font-semibold bg-white/50 rounded-2xl text-center"
+                    >
+                      {{ latest_council_video.content[0].link.text }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </ClientOnly>
+      </div>
     </div>
   </div>
 
