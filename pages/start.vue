@@ -16,7 +16,9 @@ useHead({
   ],
   script: [
     {
-      children: `document.getElementById("spinner").style.visibility = "visible";`,
+      children: `\
+        document.getElementById("spinner").style.visibility = "visible"; \
+      `,
       body: true,
     },
   ],
@@ -87,9 +89,7 @@ const fa_headlines = async () => {
 
 let newsfeed = [];
 try {
-  if (process.client) {
-    newsfeed = await fa_headlines();
-  }
+  newsfeed = await fa_headlines();
 } catch (e) {
   console.log(e);
 }
@@ -126,9 +126,7 @@ const fm_headlines = async () => {
 
 let magazine = [];
 try {
-  if (process.client) {
-    magazine = await fm_headlines();
-  }
+  magazine = await fm_headlines();
 } catch (e) {
   console.log(e);
 }
@@ -168,9 +166,7 @@ const fp_headlines = async () => {
 
 let podcasts = [];
 try {
-  if (process.client) {
-    podcasts = await fp_headlines();
-  }
+  podcasts = await fp_headlines();
 } catch (e) {
   console.log(e);
 }
@@ -182,7 +178,7 @@ let headlines = combined
   })
   .slice(0, count_headlines);
 
-const got_headlines = process.server || headlines.length == count_headlines;
+const got_headlines = headlines.length == count_headlines;
 
 const common_query = "c/ask/common-issues/82/none";
 
@@ -290,7 +286,7 @@ let common = [],
   commblog = [];
 let got_common, got_solved, got_commblog;
 
-if (parseInt(sidebars) && process.client) {
+if (parseInt(sidebars)) {
   try {
     common = await fp_common_issues();
   } catch (e) {
@@ -335,8 +331,6 @@ let width = width_2xl;
 if (process.client) {
   width = get_width();
 }
-
-let static_headlines = await fp_headlines();
 </script>
 
 <template>
@@ -355,25 +349,23 @@ let static_headlines = await fp_headlines();
           iconname="fa6-solid:book"
           iconsize="48"
         />
-        <ClientOnly>
-          <!-- Common Issues -->
-          <StartPageSidebarBlock
-            :link="`${discourse_uri}/${common_query}`"
-            title="Common Issues"
-            :content="common"
-            iconname="fa6-solid:wrench"
-            iconsize="32"
-          >
-            <template #footnote>
-              <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
-                ></span
-              >
-            </template>
-          </StartPageSidebarBlock>
-        </ClientOnly>
+        <!-- Common Issues -->
+        <StartPageSidebarBlock
+          :link="`${discourse_uri}/${common_query}`"
+          title="Common Issues"
+          :content="common"
+          iconname="fa6-solid:wrench"
+          iconsize="32"
+        >
+          <template #footnote>
+            <span class="text-base/4text-gray-400 font-semibold"
+              >{{ $t("From") }}
+              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                >ask​.​fedoraproject​.​org</a
+              ></span
+            >
+          </template>
+        </StartPageSidebarBlock>
       </div>
 
       <!-- Center Column -->
@@ -429,7 +421,9 @@ let static_headlines = await fp_headlines();
             <template #fallback>
               <!-- Center Grid Content no Javascript -->
               <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
-                {{ $t("Latest Fedora Podcasts") }}:
+                {{
+                  $t("Latest news and publications from the Fedora Project")
+                }}:
                 <!-- Evil Icons Spinner-3 by Alexander Madyankin and Roman Shamin (MIT) -->
                 <svg
                   id="spinner"
@@ -446,16 +440,12 @@ let static_headlines = await fp_headlines();
                   />
                 </svg>
               </h2>
-              <div
-                v-if="static_headlines.length > 0"
-                class="flex flex-wrap"
-                dir="ltr"
-              >
+              <div v-if="got_headlines" class="flex flex-wrap" dir="ltr">
                 <div class="flex flex-wrap" dir="ltr">
                   <div
                     v-for="h in width < width_2xl
-                      ? static_headlines.slice(0, count_headlines_narrow)
-                      : static_headlines"
+                      ? headlines.slice(0, count_headlines_narrow)
+                      : headlines"
                     class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
                   >
                     <StartPageNewsItem
@@ -544,31 +534,6 @@ let static_headlines = await fp_headlines();
               </iframe>
             </template>
           </StartPageSidebarBlock>
-          <!-- Latest Solved Issues -->
-          <StartPageSidebarBlock
-            :link="`${discourse_uri}/search?${solved_query}`"
-            title="Latest Solved Issues"
-            :content="solved"
-          >
-            <template #footnote>
-              <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
-                ></span
-              >
-            </template>
-          </StartPageSidebarBlock>
-          <!-- Fedora Community Blog -->
-          <StartPageSidebarBlock
-            link="https://communityblog.fedoraproject.org/"
-            title="Fedora Community Blog"
-            subtitle="news for project contributors"
-            :content="commblog"
-            iconname="fa6-solid:feather-pointed"
-            iconsize="32"
-          />
-          <!-- right-hand sidebar content for users without javascript -->
           <template #fallback>
             <!-- Latest Council Video no Javascript -->
             <StartPageSidebarBlock
@@ -596,6 +561,30 @@ let static_headlines = await fp_headlines();
             </StartPageSidebarBlock>
           </template>
         </ClientOnly>
+        <!-- Latest Solved Issues -->
+        <StartPageSidebarBlock
+          :link="`${discourse_uri}/search?${solved_query}`"
+          title="Latest Solved Issues"
+          :content="solved"
+        >
+          <template #footnote>
+            <span class="text-base/4text-gray-400 font-semibold"
+              >{{ $t("From") }}
+              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                >ask​.​fedoraproject​.​org</a
+              ></span
+            >
+          </template>
+        </StartPageSidebarBlock>
+        <!-- Fedora Community Blog -->
+        <StartPageSidebarBlock
+          link="https://communityblog.fedoraproject.org/"
+          title="Fedora Community Blog"
+          subtitle="news for project contributors"
+          :content="commblog"
+          iconname="fa6-solid:feather-pointed"
+          iconsize="32"
+        />
       </div>
     </div>
   </div>
