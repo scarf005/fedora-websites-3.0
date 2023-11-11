@@ -70,7 +70,7 @@ build_preview:
     - rm -rf ./public
     - mv .output/public ./public
   variables:
-    CI_PAGES_URL: https://${CI_SERVER_HOST}/${CI_PROJECT_PATH}/-/jobs/${CI_JOB_ID}/artifacts/public
+    CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
     CI_FAST_BUILD: "true"
   artifacts:
     paths:
@@ -78,8 +78,8 @@ build_preview:
     expire_in: 1 day
     expose_as: "build preview"
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_PROJECT_ROOT_NAMESPACE == "fedora"
   environment:
     name: preview MR_${CI_MERGE_REQUEST_IID}
-    url: https://${CI_SERVER_HOST}/${CI_PROJECT_PATH}/-/jobs/${CI_JOB_ID}/artifacts/file/public/index.html
+    url: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public/index.html
     auto_stop_in: 1 week
