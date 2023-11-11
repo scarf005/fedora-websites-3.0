@@ -201,8 +201,10 @@ const fp_common_issues = async () => {
     }
 
     issues.push({
-      title: title,
-      link: `${discourse_uri}/t/${topics[i].slug}`,
+      link: {
+        url: `${discourse_uri}/t/${topics[i].slug}`,
+        text: title,
+      },
     });
 
     i++;
@@ -239,8 +241,10 @@ const fp_solved_issues = async () => {
     if (topic) {
       issues.push({
         avatar: avatar,
-        title: topic.title,
-        link: `${discourse_uri}/t/${topic.slug}`,
+        link: {
+          url: `${discourse_uri}/t/${topic.slug}`,
+          text: topic.title,
+        },
       });
     }
 
@@ -269,8 +273,10 @@ const cb_headlines = async () => {
         day: "2-digit",
         year: "numeric",
       }),
-      title: decode(index[i].title),
-      link: `${commblog_uri}/${index[i].slug}`,
+      link: {
+        url: `${commblog_uri}/${index[i].slug}`,
+        text: decode(index[i].title),
+      },
     });
 
     i++;
@@ -342,58 +348,31 @@ let static_headlines = await fp_headlines();
         class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
       >
         <!-- Documentation -->
-        <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
-          <h2 class="mb-8 text-2xl leading-none">
-            <a
-              href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-              class="text-2xl font-semibold leading-none text-fp-newblue"
-              >{{ $t(user_documentation.sectionTitle) }}</a
-            >
-          </h2>
-          <div v-for="d in user_documentation.content" class="mb-6">
-            <div class="flex items-center">
-              <a :href="d.link.url" class="flex-none"
-                ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
-              /></a>
-              <a
-                :href="d.link.url"
-                class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
-                >{{ d.link.text }}</a
-              >
-            </div>
-          </div>
-        </div>
+        <StartPageSidebarBlock
+          link="https://docs.fedoraproject.org/en-US/fedora/latest/"
+          :title="user_documentation.sectionTitle"
+          :content="user_documentation.content"
+          iconname="fa6-solid:book"
+          iconsize="48"
+        />
         <ClientOnly>
           <!-- Common Issues -->
-          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                :href="`${discourse_uri}/${common_query}`"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t("Common Issues") }}</a
-              >
-            </h2>
-            <div v-for="i in common" class="mb-6">
-              <div class="ml-2 flex items-center">
-                <a :href="i.link" class="flex-none p-2"
-                  ><Icon name="fa6-solid:wrench" size="32" class="text-fp-blue"
-                /></a>
-                <a
-                  :href="i.link"
-                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ i.title }}</a
-                >
-              </div>
-            </div>
-            <div class="whitespace-no-wrap text-right">
+          <StartPageSidebarBlock
+            :link="`${discourse_uri}/${common_query}`"
+            title="Common Issues"
+            :content="common"
+            iconname="fa6-solid:wrench"
+            iconsize="32"
+          >
+            <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("From") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
               >
-            </div>
-          </div>
+            </template>
+          </StartPageSidebarBlock>
         </ClientOnly>
       </div>
 
@@ -491,132 +470,56 @@ let static_headlines = await fp_headlines();
             </template>
           </ClientOnly>
         </div>
-        <!-- Latest Solved Issues Mobile View -->
-        <div
-          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-          dir="ltr"
-        >
-          <h2 class="mb-8 text-2xl leading-none">
-            <a
-              :href="`${discourse_uri}/search?${solved_query}`"
-              class="text-2xl font-semibold leading-none text-fp-newblue"
-              >{{ $t("Latest Solved Issues") }}</a
-            >
-          </h2>
-          <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div v-for="s in solved">
-              <div class="flex items-center">
-                <a :href="s.link" class="flex-none"
-                  ><img :src="s.avatar" class="h-12 w-12 rounded object-cover"
-                /></a>
-                <a
-                  :href="s.link"
-                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ s.title }}</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="whitespace-no-wrap text-right">
-            <span class="text-base/4text-gray-400 font-semibold"
-              >{{ $t("From") }}
-              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                >ask​.​fedoraproject​.​org</a
-              ></span
-            >
-          </div>
-        </div>
-        <!-- Community Blog Mobile View -->
-        <div
-          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-          dir="ltr"
-        >
-          <h2 class="text-2xl leading-none">
-            <a
-              href="https://communityblog.fedoraproject.org/"
-              class="text-2xl font-semibold leading-none text-fp-newblue"
-              >Fedora Community Blog</a
-            >
-            <p class="mb-6 font-semibold text-fp-newblue">
-              ({{ $t("news for project contributors") }})
-            </p>
-          </h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div v-for="p in commblog" class="mb-6">
-              <div class="ml-2 flex items-center">
-                <a :href="p.link" class="flex-none p-2"
-                  ><Icon
-                    name="fa6-solid:feather-pointed"
-                    size="32"
-                    class="text-fp-blue"
-                /></a>
-                <a
-                  :href="p.link"
-                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ p.title }}</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Documentation Mobile View -->
-        <div class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden">
-          <h2 class="mb-8 text-2xl leading-none">
-            <a
-              href="https://docs.fedoraproject.org/en-US/fedora/latest/"
-              class="text-2xl font-semibold leading-none text-fp-newblue"
-              >{{ $t(user_documentation.sectionTitle) }}</a
-            >
-          </h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div v-for="d in user_documentation.content">
-              <div class="flex items-center">
-                <a :href="d.link.url" class="flex-none"
-                  ><Icon name="fa6-solid:book" size="48" class="text-fp-blue"
-                /></a>
-                <a
-                  :href="d.link.url"
-                  class="max-h-12 overflow-hidden text-base font-semibold ltr:ml-6 rtl:mr-6"
-                  >{{ d.link.text }}</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Common Issues Mobile View -->
-        <div
-          class="mb-6 rounded-2xl bg-white p-6 dark:bg-gray-700 xl:hidden"
-          dir="ltr"
-        >
-          <h2 class="mb-8 text-2xl leading-none">
-            <a
-              :href="`${discourse_uri}/${common_query}`"
-              class="text-2xl font-semibold leading-none text-fp-newblue"
-              >{{ $t("Common Issues") }}</a
-            >
-          </h2>
-          <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div v-for="i in common">
-              <div class="ml-2 flex items-center">
-                <a :href="i.link" class="flex-none p-2"
-                  ><Icon name="fa6-solid:wrench" size="32" class="text-fp-blue"
-                /></a>
-                <a
-                  :href="i.link"
-                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ i.title }}</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="whitespace-no-wrap text-right">
-            <span class="text-base/4text-gray-400 font-semibold"
-              >{{ $t("From") }}
-              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                >ask​.​fedoraproject​.​org</a
-              ></span
-            >
-          </div>
+        <div class="xl:hidden">
+          <!-- Latest Solved Issues Mobile View -->
+          <StartPageSidebarBlock
+            :link="`${discourse_uri}/search?${solved_query}`"
+            title="Latest Solved Issues"
+            :content="solved"
+          >
+            <template #footnote>
+              <span class="text-base/4text-gray-400 font-semibold"
+                >{{ $t("From") }}
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
+            </template>
+          </StartPageSidebarBlock>
+          <!-- Community Blog Mobile View -->
+          <StartPageSidebarBlock
+            link="https://communityblog.fedoraproject.org/"
+            title="Fedora Community Blog"
+            subtitle="news for project contributors"
+            :content="commblog"
+            iconname="fa6-solid:feather-pointed"
+            iconsize="32"
+          />
+          <!-- Documentation Mobile View -->
+          <StartPageSidebarBlock
+            link="https://docs.fedoraproject.org/en-US/fedora/latest/"
+            :title="user_documentation.sectionTitle"
+            :content="user_documentation.content"
+            iconname="fa6-solid:book"
+            iconsize="48"
+          />
+          <!-- Common Issues Mobile View -->
+          <StartPageSidebarBlock
+            :link="`${discourse_uri}/${common_query}`"
+            title="Common Issues"
+            :content="common"
+            iconname="fa6-solid:wrench"
+            iconsize="32"
+          >
+            <template #footnote>
+              <span class="text-base/4text-gray-400 font-semibold"
+                >{{ $t("From") }}
+                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
+                  >ask​.​fedoraproject​.​org</a
+                ></span
+              >
+            </template>
+          </StartPageSidebarBlock>
         </div>
       </div>
 
@@ -627,97 +530,55 @@ let static_headlines = await fp_headlines();
       >
         <ClientOnly>
           <!-- Latest Council Video -->
-          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                href="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
-                target="_blank"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t(latest_council_video.sectionTitle) }}</a
-              >
-            </h2>
-            <div class="mb-6 grid place-items-center">
+          <StartPageSidebarBlock
+            link="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
+            :title="latest_council_video.sectionTitle"
+          >
+            <template #loneitem>
               <iframe
                 type="text/html"
                 src="/council-video.html"
                 frameborder="0"
-                class="h-[9em] w-[16em]"
+                class="mx-auto h-[9em] w-[16em]"
               >
               </iframe>
-            </div>
-          </div>
+            </template>
+          </StartPageSidebarBlock>
           <!-- Latest Solved Issues -->
-          <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
-            <h2 class="mb-8 text-2xl leading-none">
-              <a
-                :href="`${discourse_uri}/search?${solved_query}`"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >{{ $t("Latest Solved Issues") }}</a
-              >
-            </h2>
-            <div v-for="s in solved" class="mb-6">
-              <div class="flex items-center">
-                <a :href="s.link" class="flex-none"
-                  ><img :src="s.avatar" class="h-12 w-12 rounded object-cover"
-                /></a>
-                <a
-                  :href="s.link"
-                  class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ s.title }}</a
-                >
-              </div>
-            </div>
-            <div class="whitespace-no-wrap text-right">
+          <StartPageSidebarBlock
+            :link="`${discourse_uri}/search?${solved_query}`"
+            title="Latest Solved Issues"
+            :content="solved"
+          >
+            <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("From") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
               >
-            </div>
-          </div>
+            </template>
+          </StartPageSidebarBlock>
           <!-- Fedora Community Blog -->
-          <div class="rounded-2xl bg-white p-4 dark:bg-gray-700" dir="ltr">
-            <h2 class="text-2xl leading-none">
-              <a
-                href="https://communityblog.fedoraproject.org/"
-                class="text-2xl font-semibold leading-none text-fp-newblue"
-                >Fedora Community Blog</a
-              >
-              <p class="mb-6 font-semibold text-fp-newblue">
-                ({{ $t("news for project contributors") }})
-              </p>
-            </h2>
-            <div v-for="p in commblog" class="mb-6">
-              <div class="ml-2 flex items-center">
-                <a :href="p.link" class="flex-none p-2"
-                  ><Icon
-                    name="fa6-solid:feather-pointed"
-                    size="32"
-                    class="text-fp-blue"
-                /></a>
-                <a
-                  :href="p.link"
-                  class="ml-4 max-h-12 overflow-hidden text-base font-semibold"
-                  >{{ p.title }}</a
-                >
-              </div>
-            </div>
-          </div>
+          <StartPageSidebarBlock
+            link="https://communityblog.fedoraproject.org/"
+            title="Fedora Community Blog"
+            subtitle="news for project contributors"
+            :content="commblog"
+            iconname="fa6-solid:feather-pointed"
+            iconsize="32"
+          />
           <!-- right-hand sidebar content for users without javascript -->
           <template #fallback>
             <!-- Latest Council Video no Javascript -->
-            <div class="mb-6 rounded-2xl bg-white p-4 dark:bg-gray-700">
-              <h2 class="mb-8 text-2xl leading-none">
-                <a
-                  href="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
-                  target="_blank"
-                  class="text-2xl font-semibold leading-none text-fp-newblue"
-                  >{{ $t(latest_council_video.sectionTitle) }}</a
+            <StartPageSidebarBlock
+              link="https://www.youtube.com/playlist?list=PL0x39xti0_64uSci6Wqk_E-IMSyq6vEuE"
+              :title="latest_council_video.sectionTitle"
+            >
+              <template #loneitem>
+                <div
+                  class="relative mx-auto h-[9em] w-[16em] bg-black overflow-hidden"
                 >
-              </h2>
-              <div class="mb-6 grid place-items-center">
-                <div class="relative bg-black h-[9em] w-[16em] overflow-hidden">
                   <FpLink :href="latest_council_video.content[0].link.url">
                     <FpImage :src="latest_council_video.content[0].image" />
                   </FpLink>
@@ -731,8 +592,8 @@ let static_headlines = await fp_headlines();
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </template>
+            </StartPageSidebarBlock>
           </template>
         </ClientOnly>
       </div>
