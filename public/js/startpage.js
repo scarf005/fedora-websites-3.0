@@ -15,4 +15,5 @@ for (let i = 0; i < c_elements.length; i++) {
 const p_elements = document.getElementsByClassName("sp_pulser");
 for (let i = 0; i < p_elements.length; i++) {
   p_elements[i].style.visibility = "visible";
+  p_elements[i].style.position = "static";
 }

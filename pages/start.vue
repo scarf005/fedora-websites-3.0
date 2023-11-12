@@ -310,26 +310,6 @@ if (parseInt(sidebars)) {
 
   got_commblog = commblog.length == count_commblog;
 }
-
-// https://tailwindcss.com/docs/responsive-design
-const width_2xl = 1536;
-
-// https://stackoverflow.com/a/71210364 (CC BY-SA 4.0)
-const get_width = () => {
-  let width = ref(window.innerWidth);
-
-  const onWidthChange = () => (width.value = window.innerWidth);
-
-  onMounted(() => window.addEventListener("resize", onWidthChange));
-  onUnmounted(() => window.removeEventListener("resize", onWidthChange));
-
-  return computed(() => width.value);
-};
-
-let width = width_2xl;
-if (process.client) {
-  width = get_width();
-}
 </script>
 
 <template>
@@ -413,10 +393,22 @@ if (process.client) {
         <!-- this is the static/ssr version of the newsitems -->
         <div class="sp_static flex flex-wrap" dir="ltr">
           <div
-            v-for="h in width < width_2xl
-              ? headlines.slice(0, count_headlines_narrow)
-              : headlines"
+            v-for="h in headlines.slice(0, count_headlines_narrow)"
             class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
+          >
+            <StartPageNewsItem
+              :link="h.link"
+              :thumbnail="h.thumbnail"
+              :date="h.date"
+              :title="h.title"
+            />
+          </div>
+          <div
+            v-for="h in headlines.slice(
+              count_headlines_narrow,
+              count_headlines,
+            )"
+            class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3 hidden 2xl:block"
           >
             <StartPageNewsItem
               :link="h.link"
@@ -430,10 +422,22 @@ if (process.client) {
           <!-- this is the dynamic/client-side version of the newsitems -->
           <div class="flex flex-wrap" dir="ltr">
             <div
-              v-for="h in width < width_2xl
-                ? headlines.slice(0, count_headlines_narrow)
-                : headlines"
+              v-for="h in headlines.slice(0, count_headlines_narrow)"
               class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
+            >
+              <StartPageNewsItem
+                :link="h.link"
+                :thumbnail="h.thumbnail"
+                :date="h.date"
+                :title="h.title"
+              />
+            </div>
+            <div
+              v-for="h in headlines.slice(
+                count_headlines_narrow,
+                count_headlines,
+              )"
+              class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3 hidden 2xl:block"
             >
               <StartPageNewsItem
                 :link="h.link"
@@ -444,10 +448,16 @@ if (process.client) {
             </div>
           </div>
           <template #fallback>
-            <div class="sp_pulser flex flex-wrap invisible" dir="ltr">
+            <div class="sp_pulser flex flex-wrap collapse fixed" dir="ltr">
               <div
-                v-for="i in count_headlines"
+                v-for="i in count_headlines_narrow"
                 class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
+              >
+                <StartPageNewsItemLoading />
+              </div>
+              <div
+                v-for="i in count_headlines - count_headlines_narrow"
+                class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3 hidden 2xl:block"
               >
                 <StartPageNewsItemLoading />
               </div>
