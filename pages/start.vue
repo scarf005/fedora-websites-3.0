@@ -16,12 +16,8 @@ useHead({
   ],
   script: [
     {
-      // these are here so they will run very early if the client supports js
-      children: `\
-        document.getElementById("spinner").style.visibility = "visible"; \
-        document.getElementById("static").style.display = "none"; \
-        document.getElementById("pulsers").style.visibility = "visible"; \
-      `,
+      // this is here so it will run very early if the client supports js
+      src: "/js/startpage.js",
       body: true,
     },
   ],
@@ -359,10 +355,11 @@ if (process.client) {
           :content="common"
           iconname="fa6-solid:wrench"
           iconsize="32"
+          :pulsers="count_common.toString()"
         >
           <template #footnote>
             <span class="text-base/4text-gray-400 font-semibold"
-              >{{ $t("From") }}
+              >{{ $t("source:") }}
               <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                 >ask​.​fedoraproject​.​org</a
               ></span
@@ -391,32 +388,47 @@ if (process.client) {
             <input type="submit" value="Search" style="visibility: hidden" />
           </form>
         </div>
-        <div>
-          <!-- Center Grid Content -->
-          <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
-            {{ $t("Latest news and publications from the Fedora Project") }}:
-            <ClientOnly>
-              <template #fallback>
-                <!-- Evil Icons Spinner-3 by Alexander Madyankin and Roman Shamin (MIT) -->
-                <svg
-                  id="spinner"
-                  style="visibility: hidden"
-                  class="inline animate-spin text-fp-blue"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 50 50"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M41.9 23.9c-.3-6.1-4-11.8-9.5-14.4c-6-2.7-13.3-1.6-18.3 2.6c-4.8 4-7 10.5-5.6 16.6c1.3 6 6 10.9 11.9 12.5c7.1 2 13.6-1.4 17.6-7.2c-3.6 4.8-9.1 8-15.2 6.9c-6.1-1.1-11.1-5.7-12.5-11.7c-1.5-6.4 1.5-13.1 7.2-16.4c5.9-3.4 14.2-2.1 18.1 3.7c1 1.4 1.7 3.1 2 4.8c.3 1.4.2 2.9.4 4.3c.2 1.3 1.3 3 2.8 2.1c1.3-.8 1.2-2.5 1.1-3.8c0-.4.1.7 0 0z"
-                  />
-                </svg>
-              </template>
-            </ClientOnly>
-          </h2>
-          <!-- this is the static/ssr version of the newsitems -->
-          <div id="static" class="flex flex-wrap" dir="ltr">
+        <!-- Center Grid Content -->
+        <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
+          {{ $t("Latest news and publications from the Fedora Project") }}:
+          <ClientOnly>
+            <template #fallback>
+              <!-- Evil Icons Spinner-3 by Alexander Madyankin and Roman Shamin (MIT) -->
+              <svg
+                id="sp_spinner"
+                class="inline animate-spin text-fp-blue invisible"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  fill="currentColor"
+                  d="M41.9 23.9c-.3-6.1-4-11.8-9.5-14.4c-6-2.7-13.3-1.6-18.3 2.6c-4.8 4-7 10.5-5.6 16.6c1.3 6 6 10.9 11.9 12.5c7.1 2 13.6-1.4 17.6-7.2c-3.6 4.8-9.1 8-15.2 6.9c-6.1-1.1-11.1-5.7-12.5-11.7c-1.5-6.4 1.5-13.1 7.2-16.4c5.9-3.4 14.2-2.1 18.1 3.7c1 1.4 1.7 3.1 2 4.8c.3 1.4.2 2.9.4 4.3c.2 1.3 1.3 3 2.8 2.1c1.3-.8 1.2-2.5 1.1-3.8c0-.4.1.7 0 0z"
+                />
+              </svg>
+            </template>
+          </ClientOnly>
+        </h2>
+        <!-- this is the static/ssr version of the newsitems -->
+        <div class="sp_static flex flex-wrap" dir="ltr">
+          <div
+            v-for="h in width < width_2xl
+              ? headlines.slice(0, count_headlines_narrow)
+              : headlines"
+            class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
+          >
+            <StartPageNewsItem
+              :link="h.link"
+              :thumbnail="h.thumbnail"
+              :date="h.date"
+              :title="h.title"
+            />
+          </div>
+        </div>
+        <ClientOnly>
+          <!-- this is the dynamic/client-side version of the newsitems -->
+          <div class="flex flex-wrap" dir="ltr">
             <div
               v-for="h in width < width_2xl
                 ? headlines.slice(0, count_headlines_narrow)
@@ -431,50 +443,28 @@ if (process.client) {
               />
             </div>
           </div>
-          <ClientOnly>
-            <!-- this is the dynamic/client-side version of the newsitems -->
-            <div class="flex flex-wrap" dir="ltr">
+          <template #fallback>
+            <div class="sp_pulser flex flex-wrap invisible" dir="ltr">
               <div
-                v-for="h in width < width_2xl
-                  ? headlines.slice(0, count_headlines_narrow)
-                  : headlines"
+                v-for="i in count_headlines"
                 class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
               >
-                <StartPageNewsItem
-                  :link="h.link"
-                  :thumbnail="h.thumbnail"
-                  :date="h.date"
-                  :title="h.title"
-                />
+                <StartPageNewsItemLoading />
               </div>
             </div>
-            <template #fallback>
-              <div
-                id="pulsers"
-                class="flex flex-wrap"
-                dir="ltr"
-                style="visibility: hidden"
-              >
-                <div
-                  v-for="i in count_headlines"
-                  class="mb-4 w-full p-4 md:w-1/2 2xl:w-1/3"
-                >
-                  <StartPageNewsItemLoading />
-                </div>
-              </div>
-            </template>
-          </ClientOnly>
-        </div>
+          </template>
+        </ClientOnly>
         <div class="xl:hidden">
           <!-- Latest Solved Issues Mobile View -->
           <StartPageSidebarBlock
             :link="`${discourse_uri}/search?${solved_query}`"
             title="Latest Solved Issues"
             :content="solved"
+            :pulsers="count_solved.toString()"
           >
             <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
+                >{{ $t("source:") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
@@ -489,6 +479,7 @@ if (process.client) {
             :content="commblog"
             iconname="fa6-solid:feather-pointed"
             iconsize="32"
+            :pulsers="count_commblog.toString()"
           />
           <!-- Documentation Mobile View -->
           <StartPageSidebarBlock
@@ -505,10 +496,11 @@ if (process.client) {
             :content="common"
             iconname="fa6-solid:wrench"
             iconsize="32"
+            :pulsers="count_common.toString()"
           >
             <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
-                >{{ $t("From") }}
+                >{{ $t("source:") }}
                 <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                   >ask​.​fedoraproject​.​org</a
                 ></span
@@ -571,10 +563,11 @@ if (process.client) {
           :link="`${discourse_uri}/search?${solved_query}`"
           title="Latest Solved Issues"
           :content="solved"
+          :pulsers="count_solved.toString()"
         >
           <template #footnote>
             <span class="text-base/4text-gray-400 font-semibold"
-              >{{ $t("From") }}
+              >{{ $t("source:") }}
               <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
                 >ask​.​fedoraproject​.​org</a
               ></span
@@ -589,6 +582,7 @@ if (process.client) {
           :content="commblog"
           iconname="fa6-solid:feather-pointed"
           iconsize="32"
+          :pulsers="count_commblog.toString()"
         />
       </div>
     </div>
