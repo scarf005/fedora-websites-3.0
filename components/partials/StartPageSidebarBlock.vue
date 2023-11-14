@@ -84,7 +84,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
     </div>
     <ClientOnly>
       <div
-        v-if="content != null"
+        v-if="content != null && content.length > 0"
         v-show="pulsers != '0'"
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-6"
       >
@@ -108,6 +108,21 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
               >{{ c.link.text }}</a
             >
+          </div>
+        </div>
+      </div>
+      <div
+        v-else-if="pulsers != '0'"
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-6"
+      >
+        <div v-for="p in parseInt(pulsers)" class="mb-6">
+          <div class="flex">
+            <div
+              class="h-12 w-12 rounded inline-block startpage-stripes opacity-25 dark:opacity-10"
+            ></div>
+            <div
+              class="h-12 flex-1 ml-6 inline-block startpage-stripes opacity-25 dark:opacity-10"
+            ></div>
           </div>
         </div>
       </div>
@@ -137,3 +152,18 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
     </div>
   </div>
 </template>
+
+<style>
+/* css-tricks.com/stripes-css */
+.startpage-stripes {
+  color: black;
+  background: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 10px,
+      #aaa 10px,
+      #aaa 20px
+    ),
+    linear-gradient(to bottom, #eee, #555);
+}
+</style>
