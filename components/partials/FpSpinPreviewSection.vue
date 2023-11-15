@@ -26,17 +26,14 @@ defineProps({
         />
       </g>
     </svg>
-    <div
-      :style="{
-        backgroundImage: `url(${
-          $config.app.baseURL.replace(new RegExp('/$'), '') +
-          '/' +
-          background.replace('public/', '')
-        })`,
-      }"
-      style="min-height: 100vh"
-      class="fp-spin-preview-bg w-screen max-w-full bg-cover bg-center bg-no-repeat transition duration-1000 ease-out md:scale-110 md:group-hover:scale-100 md:group-hover:bg-contain lg:group-hover:scale-95"
-    ></div>
+    <img
+      :src="`${
+        $config.app.baseURL.replace(new RegExp('/$'), '') +
+        '/' +
+        background.replace('public/', '')
+      }`"
+      class="z-0 w-full scale-110 transition duration-1000 ease-in-out hover:scale-90"
+    />
     <svg
       viewBox="0 0 209.98682 22.494961"
       width="100%"
