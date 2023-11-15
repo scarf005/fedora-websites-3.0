@@ -13,8 +13,8 @@ useHead({
     >
       <TheLocalBar
         :image="{
-          light: `assets/images/fedora-blue.png`,
-          dark: `assets/images/fedora-blue.png`,
+          light: `assets/images/fedora-atomic-desktops-logo-light.png`,
+          dark: `assets/images/fedora-atomic-desktops-logo-dark.png`,
         }"
         home="/atomic-desktops/"
         textColor="text-fp-newblue"
