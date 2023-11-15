@@ -13,7 +13,7 @@ const props = defineProps({
     <div class="col-span-1 flex items-center justify-center p-5">
       <FpImage
         :src="`assets/images/atomic-desktops/screenshot-${name}.jpg`"
-        class="max-h-72 rounded-lg border border-neutral-900 drop-shadow-lg"
+        class="h-128 aspect-video object-cover rounded-lg border border-neutral-900 drop-shadow-lg"
       />
     </div>
     <div
@@ -24,7 +24,7 @@ const props = defineProps({
           light: `assets/images/fedora-${name}-logo-light.png`,
           dark: `assets/images/fedora-${name}-logo-dark.png`,
         }"
-        class="w-max"
+        class="h-10"
       />
       <p class="pt-4 pb-12 font-normal text-gray-600 dark:text-gray-300">
         <slot></slot>
