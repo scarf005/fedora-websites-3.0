@@ -32,6 +32,7 @@ const variantClasses = props.variants.map(
 
 const prettyType = {
   aliyun: "Alibaba Cloud",
+  applehv: "Apple Hypervisor",
   aws: "AWS",
   azure: "Azure",
   azurestack: "Azure Stack",
