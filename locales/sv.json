@@ -959,5 +959,21 @@
     "IoT Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "IoT-arbetsgruppens möten är öppna för alla nuvarande och potentiella bidragsgivare {'$'}cadence klockan **{'$'}time** UTC på **{'$'}location** (se [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) för uppdateringar).",
     "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "Har du hittat något som inte stämmer? Vill du föreslå en förändring av hur Kinoite fungerar? Vi vill höra från dig! Gå över till [KDE SIG-problemspårare](https://pagure.io/fedora-kde/SIG/issues) och låt oss veta.",
     "Participate in workstation discussions on [discussion​.fedoraproject​.org​/tag​/workstation-wg](https://discussion.fedoraproject.org/tag/workstation-wg)": "Delta i workstation diskussioner på [discussion​.fedoraproject​.org​/tag​/workstation-wg](https://discussion.fedoraproject.org/tag/workstation-wg)",
-    "Ask and answer questions on [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)": "Fråga och svara på frågor på [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)"
+    "Ask and answer questions on [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)": "Fråga och svara på frågor på [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)",
+    "SPDX Licenses": "SPDX Licenser",
+    "🎉 [Fedora Linux 39 released!](https://fedoramagazine.org/announcing-fedora-linux-39)": "🎉 [Fedora Linux 39 har släppts!](https://fedoramagazine.org/announcing-fedora-linux-39)",
+    "every_other_friday": "Varannan **Fredag**",
+    "every_other_tuesday": "Varannan **Tisdag**",
+    "every_other_monday": "Varannan **Måndag**",
+    "every_thursday": "Varje **Torsdag**",
+    "every_saturday": "Varje **Lördag**",
+    "every_other_wednesday": "Varannan **Onsdag**",
+    "every_monday": "varje **Måndag**",
+    "every_other_saturday": "Varannan **Lördag**",
+    "every_sunday": "varje **Söndag**",
+    "every_wednesday": "Varje **Onsdag**",
+    "every_friday": "Varje **Fredag**",
+    "every_tuesday": "varje **Tisdag**",
+    "every_other_thursday": "Varannan **Torsdag**",
+    "every_other_sunday": "Varannan **Söndag**"
 }
