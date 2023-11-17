@@ -16,5 +16,5 @@
   "Visit Now": "Visit Now",
   "Ways to get involved": "Ways to get involved",
   "You can chat with the Fedora IoT Working Group via either Matrix or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat.": "You can chat with the Fedora IoT Working Group via either Matrix or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat.",
-  "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues).": "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues)."
+  "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)."
 }
