@@ -363,8 +363,6 @@
     "Many of Fedora's groups use this version control system.": "많은 페도라 그룹은 이와 같은 버전 제어 시스템을 사용합니다.",
     "Mailing Lists": "전자우편 목록",
     "A wide variety of free and open robotics software packages for beginners and experts.": "초보자와 전문가를 위해 다양한 무료 및 개방형 로봇 소프트웨어 꾸러미.",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues)": "당신은 [페도라 사물인터넷(IOT) 사건 추적기](https://pagure.io/fedora-iot/issues)에서 페도라 사물인터넷(IOT) 문제를 보고, 철하며, 토의 할 수 있습니다",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues).": "당신은 [페도라 사물인터넷(IOT) 사건 추적기](https://pagure.io/fedora-iot/issues)에서 페도라 사물인터넷(IOT) 문제를 보고, 철하며, 토의 할 수 있습니다.",
     "You can chat with the Fedora IoT Working Group via either Matrix or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat.": "당신은 매트릭스 및 #fedora-iot on irc.libera.chat의 매트릭스 또는 IRC: #iot:fedoraproject.org중에 하나를 통해 페도라 사물인터넷(IOT) 작업 그룹과 함께 대화 할 수 있습니다.",
     "The Fedora IoT Working Group sends meeting agendas and minutes and has discussions on their mailing list at iot@lists.fedoraproject.org.": "페도라 사물인터넷(IOT) 작업 그룹은 회의 의제 및 의사록을 보내고 iot{'@'}lists.fedoraproject.org에서 이들 전자우편 목록에서 토의를 합니다.",
     "The **Fedora IoT** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora IoT users and contributors.": "페도라 디스코스-기반의 토의의 **페도라 사물인터넷(IOT)** 태그는 다른 페도라 사물인터넷(IOT) 사용자와 공헌자와 함께하도록 연결하는 훌륭한 장소입니다.",

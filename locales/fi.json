@@ -463,8 +463,6 @@
     "A built-in remote server administration tool is ready to use on first boot": "Sisäänrakennettu etäpalvelimen hallintatyökalu on valmis käytettäväksi ensimmäisessä käynnistyksessä",
     " From the Data Center to your Raspberry Pi": " Palvelinkeskuksesta Raspberry Pi -laitteeseen",
     "You can view, file, and discuss Fedora Server issues on the [Fedora Server issue tracker](https://pagure.io/fedora-server/issues).": "Voit tarkastella, raportoida ja keskustella Fedora Server -ongelmista [Fedora Serverin ongelmanseurantaohjelmassa](https://pagure.io/fedora-server/issues).",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues).": "Voit tarkastella, raportoida ja keskustella Fedora IoT -ongelmista [Fedora IoT -ongelmanseurantaohjelmassa](https://pagure.io/fedora-iot/issues).",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues)": "Voit tarkastella, raportoida ja keskustella Fedora IoT -ongelmista [Fedora IoT -ongelmanseurantaohjelmassa](https://pagure.io/fedora-iot/issues)",
     "You can verify the details of the GPG key(s) below.": "Voit tarkistaa GPG-avainten tiedot alta.",
     "You can verify the details of the GPG key(s)": "Voit tarkistaa GPG-avainten tiedot",
     "You can use this to search for things in Fedora's code repositores. See the Fedora Magazine article for more info.": "Voit käyttää tätä etsiäksesi asioita Fedoran lähdevarastoista. Katso lisätietoja Fedora-lehden artikkelista.",

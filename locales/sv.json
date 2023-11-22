@@ -241,8 +241,6 @@
     "Header Second Half": "Huvud andrahalva",
     "Fedora CoreOS Release Notes": "Fedora CoreOS Versionsinformation",
     "You can view, file, and discuss Fedora Server issues on the [Fedora Server issue tracker](https://pagure.io/fedora-server/issues).": "Du kan se, arkivera och diskutera Fedora Server-problem på [Fedoras Server felspårare](https://pagure.io/fedora-cloud/issues).",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues).": "Du kan se, arkivera och diskutera Fedora IoT-problem på [Fedoras IoT felspårare](https://pagure.io/fedora-cloud/issues).",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://pagure.io/fedora-iot/issues)": "Du kan se, arkivera och diskutera Fedora IoT-problem på [Fedoras IoT felspårare](https://pagure.io/fedora-cloud/issues)",
     "You can verify the details of the GPG key(s) below.": "Du kan verifiera detaljerna för GPG-nycklarna nedan.",
     "You can verify the details of the GPG key(s)": "Du kan verifiera detaljerna för GPG-nycklarna",
     "You can chat with the Fedora Workstation Working Group via either Matrix or IRC: **#workstation:fedoraproject.org** on Matrix or #fedora-workstation on irc.libera.chat.": "Du kan chatta med Fedora Workstation arbetsgruppen via antingen Matrix eller IRC: **#workstation:fedoraproject.org** på Matrix eller #fedora-workstation på irc.libera.chat.",
