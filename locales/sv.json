@@ -975,5 +975,6 @@
     "every_other_thursday": "Varannan **Torsdag**",
     "every_other_sunday": "Varannan **Söndag**",
     "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "Du kan se, arkivera och diskutera Fedora IoT-problem på [Fedoras IoT felspårare](https://pagure.io/fedora-cloud/issues)",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Du kan se, arkivera och diskutera Fedora IoT-problem på [Fedoras IoT felspårare](https://pagure.io/fedora-cloud/issues)."
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Du kan se, arkivera och diskutera Fedora IoT-problem på [Fedoras IoT felspårare](https://pagure.io/fedora-cloud/issues).",
+    "Fedora Podcast 34: Fedora Docs": "Fedora Podcast 34: Fedora Dokumentation"
 }
