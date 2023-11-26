@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("immutable/kinoite/community");
+const data = await getCMS("atomic-desktops/silverblue/contributing");
 
 useContentHead(data);
 </script>
@@ -12,17 +12,19 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/fedora-kinoite-logo-light.png',
-          dark: 'assets/images/fedora-kinoite-logo-dark.png',
+          light: 'assets/images/fedora-silverblue-logo-light.png',
+          dark: 'assets/images/fedora-silverblue-logo-dark.png',
         }"
-        home="/kinoite"
-        textColor="text-teal"
+        home="/silverblue"
+        textColor="text-fp-newblue-700"
         :items="[
-          { name: 'Download', link: '/kinoite/download' },
-          { name: 'Community', link: '/kinoite/community' },
+          { name: 'Download', link: '/atomic-desktops/silverblue/download' },
+          {
+            name: 'Contributing',
+            link: '/atomic-desktops/silverblue/contributing',
+          },
         ]"
       />
-
       <div class="px-8">
         <div class="my-8 mx-auto max-w-7xl text-center lg:text-start">
           <div class="container mx-auto lg:mx-0">
@@ -53,7 +55,7 @@ useContentHead(data);
       :content="data.sections[2].content"
       class="dark:bg-neutral-900"
     />
-    
+
     <!-- Event Section -->
     <FpEventSection color="text-fp-green-700" />
 

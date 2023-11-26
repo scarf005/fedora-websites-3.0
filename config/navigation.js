@@ -48,34 +48,34 @@ const navigation = {
         ],
       },
       {
-        label: "Immutable Desktops",
+        label: "Atomic Desktops",
         description:
           "These editions are supported but not yet a part of the official Fedora editions.",
         links: [
           {
             label: "Silverblue",
-            path: "/silverblue",
+            path: "/atomic-desktops/silverblue",
             icon: "fa6-solid:desktop",
             description:
-              "Fedora Silverblue is an immutable desktop operating system aimed at good support for container-focused workflows.",
+              "Fedora Silverblue is an atomic desktop operating system aimed at good support for container-focused workflows.",
           },
           {
             label: "Kinoite",
-            path: "/kinoite",
+            path: "/atomic-desktops/kinoite",
             icon: "fa6-solid:desktop",
-            description: "Fedora Kinoite is an immutable KDE-based desktop.",
+            description: "Fedora Kinoite is an atomic KDE-based desktop.",
           },
           {
             label: "Sericea",
-            path: "/sericea",
+            path: "/atomic-desktops/sericea",
             icon: "fa6-solid:desktop",
-            description: "Fedora Sericea is an immutable Sway-based desktop.",
+            description: "Fedora Sericea is an atomic Sway-based desktop.",
           },
           {
             label: "Onyx",
-            path: "/onyx",
+            path: "/atomic-desktops/onyx",
             icon: "fa6-solid:desktop",
-            description: "Fedora Onyx is an immutable Budgie-based desktop.",
+            description: "Fedora Onyx is an atomic Budgie-based desktop.",
           },
         ],
       },

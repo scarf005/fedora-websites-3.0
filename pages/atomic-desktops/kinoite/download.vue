@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("immutable/kinoite/download");
+const data = await getCMS("atomic-desktops/kinoite/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version everywhere if metadata are not yet available
@@ -124,8 +124,8 @@ if (data._value.sections[2].sectionDescription) {
       home="/kinoite"
       textColor="text-teal"
       :items="[
-        { name: 'Download', link: '/kinoite/download' },
-        { name: 'Community', link: '/kinoite/community' },
+        { name: 'Download', link: '/atomic-desktops/kinoite/download' },
+        { name: 'Community', link: '/atomic-desktops/kinoite/community' },
       ]"
     />
 

@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("immutable/onyx/community");
+const data = await getCMS("atomic-desktops/kinoite/community");
 
 useContentHead(data);
 </script>
@@ -12,14 +12,14 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/fedora-onyx-logo-light.png',
-          dark: 'assets/images/fedora-onyx-logo-dark.png',
+          light: 'assets/images/fedora-kinoite-logo-light.png',
+          dark: 'assets/images/fedora-kinoite-logo-dark.png',
         }"
-        home="/onyx"
+        home="/kinoite"
         textColor="text-teal"
         :items="[
-          { name: 'Download', link: '/onyx/download' },
-          { name: 'Community', link: '/onyx/community' },
+          { name: 'Download', link: '/atomic-desktops/kinoite/download' },
+          { name: 'Community', link: '/atomic-desktops/kinoite/community' },
         ]"
       />
 
@@ -53,6 +53,9 @@ useContentHead(data);
       :content="data.sections[2].content"
       class="dark:bg-neutral-900"
     />
+
+    <!-- Event Section -->
+    <FpEventSection color="text-fp-green-700" />
 
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />

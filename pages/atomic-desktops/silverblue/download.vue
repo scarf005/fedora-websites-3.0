@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("immutable/silverblue/download");
+const data = await getCMS("atomic-desktops/silverblue/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version everywhere if metadata are not yet available
@@ -126,8 +126,11 @@ if (data._value.sections[2].sectionDescription) {
       home="/silverblue"
       textColor="text-fp-newblue"
       :items="[
-        { name: 'Download', link: '/silverblue/download' },
-        { name: 'Contributing', link: '/silverblue/contributing' },
+        { name: 'Download', link: '/atomic-desktops/silverblue/download' },
+        {
+          name: 'Contributing',
+          link: '/atomic-desktops/silverblue/contributing',
+        },
       ]"
     />
 

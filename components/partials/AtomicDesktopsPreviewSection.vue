@@ -31,12 +31,12 @@ const props = defineProps({
       </p>
       <div class="flex gap-4">
         <FpBtn
-          :href="`/${name}`"
+          :href="`/atomic-desktops/${name}`"
           class="!rounded-md !px-10 !py-4 font-display text-sm font-bold"
           >{{ $t("Get Started") }}</FpBtn
         >
         <FpBtn
-          :href="`/${name}/download`"
+          :href="`/atomic-desktops/${name}/download`"
           class="!rounded-md !px-10 !py-4 font-display text-sm font-bold"
           >{{ $t("Download Now") }}</FpBtn
         >

@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("immutable/kinoite/home");
+const data = await getCMS("atomic-desktops/onyx/home");
 useContentHead(data);
 </script>
 <template>
@@ -8,13 +8,13 @@ useContentHead(data);
   >
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-kinoite-logo-dark.png',
-        dark: 'assets/images/fedora-kinoite-logo-dark.png',
+        light: 'assets/images/fedora-onyx-logo-dark.png',
+        dark: 'assets/images/fedora-onyx-logo-dark.png',
       }"
-      home="/kinoite"
+      home="/onyx"
       :items="[
-        { name: 'Download', link: '/kinoite/download' },
-        { name: 'Community', link: '/kinoite/community' },
+        { name: 'Download', link: '/atomic-desktops/onyx/download' },
+        { name: 'Community', link: '/atomic-desktops/onyx/community' },
       ]"
     />
     <FpBanner
@@ -46,7 +46,7 @@ useContentHead(data);
     </FpBanner>
   </section>
 
-  <!-- why fedora kinoite -->
+  <!-- why fedora onyx -->
   <section class="mx-auto max-w-screen-xl px-6 py-12">
     <header
       class="mx-auto grid max-w-screen-xl gap-4 p-2 text-center md:grid-cols-2 md:p-0 md:text-left"
@@ -146,48 +146,5 @@ useContentHead(data);
         </FpCard>
       </div>
     </div>
-  </section>
-
-  <!-- Call To Action -->
-  <section class="relative z-0 dark:bg-black">
-    <svg
-      viewBox="185 3538 1202.8086 213"
-      width="100%"
-      height="100%"
-      class="md:h-54 absolute -top-20 -z-10 h-36 fill-[url(#light)] dark:fill-black"
-      preserveAspectRatio="none"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:svg="http://www.w3.org/2000/svg"
-    >
-      <g transform="translate(-145.0957)">
-        <defs>
-          <linearGradient
-            x1="185"
-            y1="3495"
-            x2="185"
-            y2="3699"
-            gradientUnits="userSpaceOnUse"
-            id="light"
-          >
-            <stop style="stop-color: #e0f2ff; stop-opacity: 1" offset="0" />
-            <stop style="stop-color: #ffffff; stop-opacity: 1" offset="1" />
-          </linearGradient>
-        </defs>
-        <g class="fills">
-          <path
-            rx="0"
-            ry="0"
-            d="m 931.5,3538 c -246.60668,0 -465.44392,34.1944 -601.4043,86.8574 3e-4,75.3984 0,126.1426 0,126.1426 H 906.66992 931.5 956.33008 1532.9043 c 0,0 -3e-4,-50.7442 0,-126.1426 C 1396.9439,3572.1944 1178.1067,3538 931.5,3538 Z"
-          />
-        </g>
-      </g>
-    </svg>
-    <FpCallToAction
-      :cta="data.links"
-      :image="{
-        light: 'assets/images/fedora-kinoite-light.png',
-        dark: 'assets/images/fedora-kinoite-dark.png',
-      }"
-    />
   </section>
 </template>

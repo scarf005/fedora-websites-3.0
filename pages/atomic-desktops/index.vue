@@ -51,9 +51,9 @@ useHead({
     <section class="space-y-24 py-24">
       <AtomicDesktopsPreviewSection
         v-for="atomic_desktop in navigation.downloads.sections.find(
-          ({ label }) => label === 'Immutable Desktops',
+          ({ label }) => label === 'Atomic Desktops',
         ).links"
-        :name="`${atomic_desktop.path.split('/')[1]}`"
+        :name="`${atomic_desktop.path.split('/')[2]}`"
       >
         {{ atomic_desktop.description }}
       </AtomicDesktopsPreviewSection>

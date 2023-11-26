@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("immutable/sericea/home");
+const data = await getCMS("atomic-desktops/sericea/home");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
@@ -12,7 +12,7 @@ data._value.descriptionMd = await mdparser(data._value.description);
       }"
       home="/sericea"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/atomic-desktops/sericea/download' }]"
     />
 
     <!-- TITLE -->

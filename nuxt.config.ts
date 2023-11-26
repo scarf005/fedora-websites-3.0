@@ -75,6 +75,27 @@ export default defineNuxtConfig({
           });
         });
       }
+
+      ['silverblue', 'kinoite', 'sericea', 'onyx'].forEach((pagename) => {
+        pages.push({
+          name: `${pagename}-redirect`,
+          path: `/${pagename}`,
+          redirect: `/atomic-desktops/${pagename}`,
+        });
+        ['download', 'community'].forEach((subpagename) => {
+          if (subpagename == 'community') {
+            if (pagename == 'sericea')
+              return; // return == continue in forEach()
+            if (pagename == 'silverblue')
+              subpagename = 'contributing';
+          }
+          pages.push({
+            name: `${pagename}-${subpagename}-redirect`,
+            path: `/${pagename}/${subpagename}`,
+            redirect: `/atomic-desktops/${pagename}/${subpagename}`,
+          });
+        });
+      });
     },
   },
   nitro: {
@@ -89,6 +110,10 @@ export default defineNuxtConfig({
     "*": { experimentalNoScripts: true }, // one level deep, render all pages statically
     "*/*/": { experimentalNoScripts: true }, // same, but for translated pages
     "*/download/": { experimentalNoScripts: false }, // except the download pages
+    "atomic-desktops/": { experimentalNoScripts: true }, // no js on atomic-desktops home page
+    "*/atomic-desktops/": { experimentalNoScripts: true }, // no js on atomic-desktops home page - translated
+    "atomic-desktops/*/": { experimentalNoScripts: true }, // no js on atomic-desktops pages either
+    "*/atomic-desktops/*/": { experimentalNoScripts: true }, // no js on atomic-desktops pages either - translated
     "spins/": { experimentalNoScripts: true }, // no js on spins home page
     "*/spins/": { experimentalNoScripts: true }, // no js on spins home page - translated
     "spins/*/": { experimentalNoScripts: true }, // no js on spins pages either

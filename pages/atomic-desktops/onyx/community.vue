@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("immutable/silverblue/contributing");
+const data = await getCMS("atomic-desktops/onyx/community");
 
 useContentHead(data);
 </script>
@@ -12,16 +12,17 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/fedora-silverblue-logo-light.png',
-          dark: 'assets/images/fedora-silverblue-logo-dark.png',
+          light: 'assets/images/fedora-onyx-logo-light.png',
+          dark: 'assets/images/fedora-onyx-logo-dark.png',
         }"
-        home="/silverblue"
-        textColor="text-fp-newblue-700"
+        home="/onyx"
+        textColor="text-teal"
         :items="[
-          { name: 'Download', link: '/silverblue/download' },
-          { name: 'Contributing', link: '/silverblue/contributing' },
+          { name: 'Download', link: '/atomic-desktops/onyx/download' },
+          { name: 'Community', link: '/atomic-desktops/onyx/community' },
         ]"
       />
+
       <div class="px-8">
         <div class="my-8 mx-auto max-w-7xl text-center lg:text-start">
           <div class="container mx-auto lg:mx-0">
@@ -52,9 +53,6 @@ useContentHead(data);
       :content="data.sections[2].content"
       class="dark:bg-neutral-900"
     />
-
-    <!-- Event Section -->
-    <FpEventSection color="text-fp-green-700" />
 
     <!-- Publication Section -->
     <FpPublicationSection class="dark:bg-black" />
