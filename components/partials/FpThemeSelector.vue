@@ -4,7 +4,7 @@
     <button
       type="button"
       id="themeSwitch"
-      class="hidden fill-white stroke-white sm:block"
+      class="hidden cursor-default fill-white stroke-white sm:block"
     >
       <span class="dark:hidden">
         <Icon name="fa-solid:sun" class="white" />

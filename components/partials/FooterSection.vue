@@ -13,20 +13,19 @@ const props = defineProps({
 </script>
 
 <template>
-  <div>
-    <label
-      :onclick="`toggleFooter('${title}')`"
-      class="flex w-full cursor-pointer items-center justify-between"
-    >
-      <h4 class="text-2xl font-semibold">{{ $t(title) }}</h4>
+  <div tabindex="1" class="footer-label">
+    <div class="flex w-full cursor-default items-center justify-between">
+      <div class="select-none text-2xl font-semibold whitespace-nowrap">
+        {{ $t(title) }}
+      </div>
       <div class="ltr:hidden md:hidden">
         <Icon name="fa6-solid:chevron-left" />
       </div>
       <div class="rtl:hidden md:hidden">
         <Icon name="fa6-solid:chevron-right" />
       </div>
-    </label>
-    <ul class="hidden md:inline-block" :id="`${title}-footer`">
+    </div>
+    <ul class="footer-links overflow-hidden h-0 md:h-fit md:block">
       <li v-for="link in links" :key="link.id">
         <FpLink :href="link.path" v-if="!link.code">{{
           $t(link.label)
@@ -38,3 +37,11 @@ const props = defineProps({
     </ul>
   </div>
 </template>
+
+<style>
+.footer-label:hover .footer-links,
+.footer-label:focus .footer-links,
+.footer-label:focus-within .footer-links {
+  @apply h-fit;
+}
+</style>

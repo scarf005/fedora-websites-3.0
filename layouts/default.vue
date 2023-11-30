@@ -14,6 +14,12 @@ useHead({
 
 <template>
   <div id="app">
+    <a
+      href="#main"
+      class="sr-only !fixed z-50 top-[3px] left-[3px] !h-[48px] leading-[48px] bg-fp-blue-700 !px-6 text-sm text-white focus:not-sr-only"
+    >
+      Skip to main content
+    </a>
     <TheNav />
     <a
       id="main"

@@ -58,10 +58,6 @@ export default defineNuxtConfig({
         },
       ],
       script: [
-        {
-          src: path.join(base, "js/navbar.js"),
-          defer: true,
-        },
         { src: path.join(base, "js/darkmode.js"), defer: true },
       ],
     },

@@ -27,7 +27,7 @@ const props = defineProps({
 });
 
 const variantClasses = props.variants.map(
-  (v) => `fp-download-item--variant-${v}`
+  (v) => `fp-download-item--variant-${v}`,
 );
 
 const prettyType = {
