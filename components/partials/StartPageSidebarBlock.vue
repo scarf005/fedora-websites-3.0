@@ -71,7 +71,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
           </a>
           <a
             :href="c.link.url"
-            class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+            class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
             >{{ c.link.text }}</a
           >
         </div>
