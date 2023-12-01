@@ -105,7 +105,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
             </a>
             <a
               :href="c.link.url"
-              class="ml-6 max-h-12 overflow-hidden text-base font-semibold"
+              class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
               >{{ c.link.text }}</a
             >
           </div>
@@ -121,7 +121,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               class="h-12 w-12 rounded inline-block startpage-stripes opacity-25 dark:opacity-10"
             ></div>
             <div
-              class="h-12 flex-1 ml-6 inline-block startpage-stripes opacity-25 dark:opacity-10"
+              class="h-12 flex-1 ltr:ml-6 rtl:mr-6 inline-block startpage-stripes opacity-25 dark:opacity-10"
             ></div>
           </div>
         </div>
@@ -140,7 +140,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
                 class="h-12 w-12 rounded bg-gray-400 dark:bg-gray-500 inline-block"
               ></div>
               <div
-                class="h-12 flex-1 ml-6 bg-gray-400 dark:bg-gray-500 inline-block"
+                class="h-12 flex-1 ltr:ml-6 rtl:mr-6 bg-gray-400 dark:bg-gray-500 inline-block"
               ></div>
             </div>
           </div>
