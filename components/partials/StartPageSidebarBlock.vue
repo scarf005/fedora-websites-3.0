@@ -66,7 +66,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               v-else-if="iconname"
               :name="iconname"
               :size="iconsize"
-              class="text-fp-blue"
+              class="text-fp-blue rtl:-scale-x-100"
             />
           </a>
           <a
@@ -100,7 +100,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
                 v-else-if="iconname"
                 :name="iconname"
                 :size="iconsize"
-                class="text-fp-blue"
+                class="text-fp-blue rtl:-scale-x-100"
               />
             </a>
             <a
