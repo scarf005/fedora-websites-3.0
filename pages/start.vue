@@ -340,8 +340,10 @@ if (parseInt(sidebars)) {
           <template #footnote>
             <span class="text-base/4text-gray-400 font-semibold"
               >{{ $t("source:") }}
-              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                >ask​.​fedoraproject​.​org</a
+              <a
+                href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
+                class="text-fp-newblue"
+                >discussion​.​fedoraproject​.​org</a
               ></span
             >
           </template>
@@ -475,8 +477,10 @@ if (parseInt(sidebars)) {
             <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("source:") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
+                <a
+                  href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
+                  class="text-fp-newblue"
+                  >discussion​.​fedoraproject​.​org</a
                 ></span
               >
             </template>
@@ -511,8 +515,10 @@ if (parseInt(sidebars)) {
             <template #footnote>
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("source:") }}
-                <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                  >ask​.​fedoraproject​.​org</a
+                <a
+                  href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
+                  class="text-fp-newblue"
+                  >discussion​.​fedoraproject​.​org</a
                 ></span
               >
             </template>
@@ -578,8 +584,10 @@ if (parseInt(sidebars)) {
           <template #footnote>
             <span class="text-base/4text-gray-400 font-semibold"
               >{{ $t("source:") }}
-              <a href="https://ask.fedoraproject.org/" class="text-fp-newblue"
-                >ask​.​fedoraproject​.​org</a
+              <a
+                href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
+                class="text-fp-newblue"
+                >discussion​.​fedoraproject​.​org</a
               ></span
             >
           </template>
