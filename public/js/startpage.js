@@ -9,6 +9,15 @@ window.addEventListener("pageshow", function (event) {
   }
 });
 
+const sidebars = new URLSearchParams(window.location.search).get("sidebars");
+
+if (sidebars != "0") {
+  const s_columns = document.getElementsByClassName("sp_sidebar");
+  for (let i = 0; i < s_columns.length; i++) {
+    s_columns[i].classList.add("xl:block");
+  }
+}
+
 document.getElementById("sp_spinner").style.visibility = "visible";
 
 const s_elements = document.getElementsByClassName("sp_static");

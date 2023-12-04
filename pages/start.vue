@@ -315,10 +315,7 @@ if (parseInt(sidebars)) {
   <div class="bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-10">
       <!-- Left Sidebar -->
-      <div
-        v-if="sidebars != '0'"
-        class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
-      >
+      <div class="sp_sidebar hidden w-[22em] max-w-[25vw] flex-none">
         <!-- Documentation -->
         <StartPageSidebarBlock
           link="https://docs.fedoraproject.org/en-US/fedora/latest/"
@@ -533,10 +530,7 @@ if (parseInt(sidebars)) {
       </div>
 
       <!-- Right Sidebar -->
-      <div
-        v-if="sidebars != '0'"
-        class="hidden w-[22em] max-w-[25vw] flex-none xl:block"
-      >
+      <div class="sp_sidebar hidden w-[22em] max-w-[25vw] flex-none">
         <ClientOnly>
           <!-- Latest Council Video -->
           <StartPageSidebarBlock
