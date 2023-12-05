@@ -53,7 +53,10 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
         pulsers != '0' ? 'sp_static' : ''
       }`"
     >
-      <div v-for="c in content" class="mb-6">
+      <div
+        v-for="c in content"
+        class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+      >
         <div class="flex items-center">
           <a
             target="_blank"
@@ -92,7 +95,10 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
         v-show="pulsers != '0'"
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-6"
       >
-        <div v-for="c in content" class="mb-6">
+        <div
+          v-for="c in content"
+          class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+        >
           <div class="flex items-center">
             <a
               target="_blank"
@@ -156,7 +162,10 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
         </div>
       </template>
     </ClientOnly>
-    <div v-if="slots.footnote" class="whitespace-no-wrap text-right">
+    <div
+      v-if="slots.footnote"
+      class="whitespace-no-wrap text-right hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+    >
       <slot name="footnote" />
     </div>
   </div>

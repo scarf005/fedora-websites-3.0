@@ -325,7 +325,7 @@ if (parseInt(sidebars)) {
           :title="user_documentation.sectionTitle"
           :content="user_documentation.content"
           iconname="fa6-solid:book"
-          iconsize="48"
+          iconsize="40"
         />
         <!-- Common Issues -->
         <StartPageSidebarBlock
@@ -343,7 +343,7 @@ if (parseInt(sidebars)) {
                 target="_blank"
                 href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
                 class="text-fp-newblue"
-                >discussion​.​fedoraproject​.​org</a
+                >discussion​.fedoraproject​.org</a
               ></span
             >
           </template>
@@ -485,7 +485,7 @@ if (parseInt(sidebars)) {
                   target="_blank"
                   href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
                   class="text-fp-newblue"
-                  >discussion​.​fedoraproject​.​org</a
+                  >discussion​.fedoraproject​.org</a
                 ></span
               >
             </template>
@@ -506,7 +506,7 @@ if (parseInt(sidebars)) {
             :title="user_documentation.sectionTitle"
             :content="user_documentation.content"
             iconname="fa6-solid:book"
-            iconsize="48"
+            iconsize="40"
           />
           <!-- Common Issues Mobile View -->
           <StartPageSidebarBlock
@@ -524,7 +524,7 @@ if (parseInt(sidebars)) {
                   target="_blank"
                   href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
                   class="text-fp-newblue"
-                  >discussion​.​fedoraproject​.​org</a
+                  >discussion​.fedoraproject​.org</a
                 ></span
               >
             </template>
@@ -594,7 +594,7 @@ if (parseInt(sidebars)) {
                 target="_blank"
                 href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
                 class="text-fp-newblue"
-                >discussion​.​fedoraproject​.​org</a
+                >discussion​.fedoraproject​.org</a
               ></span
             >
           </template>
