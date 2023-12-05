@@ -1,5 +1,3 @@
-<!-- vim:set ts=2 sw=2 et: -->
-
 <script setup>
 import { decode } from "html-entities";
 
@@ -115,6 +113,7 @@ const fm_headlines = async () => {
       }),
       title: decode(index[i].title),
       link: `${magazine_uri}/${index[i].slug}`,
+      comments: index[i].comments.toString(),
     });
 
     i++;
@@ -341,6 +340,7 @@ if (parseInt(sidebars)) {
             <span class="text-base/4text-gray-400 font-semibold"
               >{{ $t("source:") }}
               <a
+                target="_blank"
                 href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
                 class="text-fp-newblue"
                 >discussion​.​fedoraproject​.​org</a
@@ -403,6 +403,7 @@ if (parseInt(sidebars)) {
               :thumbnail="h.thumbnail"
               :date="h.date"
               :title="h.title"
+              :comments="h.comments"
             />
           </div>
           <div
@@ -417,6 +418,7 @@ if (parseInt(sidebars)) {
               :thumbnail="h.thumbnail"
               :date="h.date"
               :title="h.title"
+              :comments="h.comments"
             />
           </div>
         </div>
@@ -432,6 +434,7 @@ if (parseInt(sidebars)) {
                 :thumbnail="h.thumbnail"
                 :date="h.date"
                 :title="h.title"
+                :comments="h.comments"
               />
             </div>
             <div
@@ -446,6 +449,7 @@ if (parseInt(sidebars)) {
                 :thumbnail="h.thumbnail"
                 :date="h.date"
                 :title="h.title"
+                :comments="h.comments"
               />
             </div>
           </div>
@@ -478,6 +482,7 @@ if (parseInt(sidebars)) {
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("source:") }}
                 <a
+                  target="_blank"
                   href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
                   class="text-fp-newblue"
                   >discussion​.​fedoraproject​.​org</a
@@ -516,6 +521,7 @@ if (parseInt(sidebars)) {
               <span class="text-base/4text-gray-400 font-semibold"
                 >{{ $t("source:") }}
                 <a
+                  target="_blank"
                   href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
                   class="text-fp-newblue"
                   >discussion​.​fedoraproject​.​org</a
@@ -585,6 +591,7 @@ if (parseInt(sidebars)) {
             <span class="text-base/4text-gray-400 font-semibold"
               >{{ $t("source:") }}
               <a
+                target="_blank"
                 href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
                 class="text-fp-newblue"
                 >discussion​.​fedoraproject​.​org</a
@@ -616,3 +623,9 @@ if (parseInt(sidebars)) {
 
   <FpOrgChartSection />
 </template>
+
+<style scoped>
+a {
+  cursor: default;
+}
+</style>

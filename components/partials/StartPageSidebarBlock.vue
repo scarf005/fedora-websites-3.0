@@ -1,5 +1,3 @@
-<!-- vim:set ts=2 sw=2 et: -->
-
 <script setup>
 const { t } = useI18n();
 const slots = useSlots();
@@ -40,6 +38,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
   <div class="mb-6 p-6 xl:p-4 rounded-2xl bg-white dark:bg-gray-700">
     <h2 class="mb-8 text-2xl leading-none">
       <a
+        target="_blank"
         :href="link"
         class="text-2xl font-semibold leading-none text-fp-newblue"
         >{{ $t(title) }}</a
@@ -56,7 +55,11 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
     >
       <div v-for="c in content" class="mb-6">
         <div class="flex items-center">
-          <a :href="c.link.url" :class="`flex-none p-${padding}`">
+          <a
+            target="_blank"
+            :href="c.link.url"
+            :class="`flex-none p-${padding}`"
+          >
             <img
               v-if="c.avatar"
               :src="c.avatar"
@@ -70,6 +73,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
             />
           </a>
           <a
+            target="_blank"
             :href="c.link.url"
             class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
             >{{ c.link.text }}</a
@@ -90,7 +94,11 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
       >
         <div v-for="c in content" class="mb-6">
           <div class="flex items-center">
-            <a :href="c.link.url" :class="`flex-none p-${padding}`">
+            <a
+              target="_blank"
+              :href="c.link.url"
+              :class="`flex-none p-${padding}`"
+            >
               <img
                 v-if="c.avatar"
                 :src="c.avatar"
@@ -104,6 +112,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               />
             </a>
             <a
+              target="_blank"
               :href="c.link.url"
               class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
               >{{ c.link.text }}</a
@@ -153,7 +162,11 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
   </div>
 </template>
 
-<style>
+<style scoped>
+a {
+  cursor: default;
+}
+
 /* css-tricks.com/stripes-css */
 .startpage-stripes {
   color: black;
