@@ -1,4 +1,13 @@
-// vim:set ts=2 sw=2 et:
+// https://stackoverflow.com/a/43043658 (CC BY-SA 4.0)
+window.addEventListener("pageshow", function (event) {
+  var historyTraversal =
+    event.persisted ||
+    (typeof window.performance != "undefined" &&
+      window.performance.navigation.type === 2);
+  if (historyTraversal) {
+    window.location.reload();
+  }
+});
 
 document.getElementById("sp_spinner").style.visibility = "visible";
 
