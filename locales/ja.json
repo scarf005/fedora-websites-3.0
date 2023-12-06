@@ -451,5 +451,7 @@
     "The Fedora Project envisions a world where everyone benefits from free and open source software built by inclusive, welcoming, and open-minded communities.\n\nFedora Cloud is created by a team in the Fedora community called the **Cloud Working Group**. It is comprised of official members who have decision making powers, as well as other contributors. Learn more on the [Cloud Working Group website](https://fedoraproject.org/wiki/Cloud_SIG).": "Fedora Project は、包括的で、歓迎的で、オープンマインドなコミュニティによって構築された、自由でオープンソースなソフトウェアから誰もが恩恵を受ける世界を構想しています。\n\nFedora Cloud は、Fedora コミュニティの **Cloud Working Group** というチームによって作られています。これは、決定権を持つ公式メンバーと他の貢献者で構成されています。詳しくは、[Cloud Working Group ウェブサイト](https://fedoraproject.org/wiki/Cloud_SIG) をご覧ください。",
     "Packaging Guidelines": "パッケージ作成のガイドライン",
     "you_can_verify_the_GPG_details": "{icon}GPG キーの詳細は {here} で確認できます。",
-    "Workstation": "Workstation"
+    "Workstation": "Workstation",
+    "Screenshot of Fedora Xfce desktop": "Fedora Budgie デスクトップのスクリーンショット",
+    "A lightweight and well integrated LXQt desktop environment.": "軽量でよく統合された LXQT デスクトップ環境。"
 }
