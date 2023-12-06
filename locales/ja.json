@@ -452,6 +452,13 @@
     "Packaging Guidelines": "パッケージ作成のガイドライン",
     "you_can_verify_the_GPG_details": "{icon}GPG キーの詳細は {here} で確認できます。",
     "Workstation": "Workstation",
-    "Screenshot of Fedora Xfce desktop": "Fedora Budgie デスクトップのスクリーンショット",
-    "A lightweight and well integrated LXQt desktop environment.": "軽量でよく統合された LXQT デスクトップ環境。"
+    "Screenshot of Fedora Xfce desktop": "Fedora Xfce デスクトップのスクリーンショット",
+    "A lightweight and well integrated LXQt desktop environment.": "軽量でよく統合された LXQT デスクトップ環境。",
+    "Red Hat, Inc. is the primary sponsor for the Fedora Project. Red Hat provides the Fedora Project with a wide variety of resources, including full-time employee support, infrastructure, hardware and bandwidth, event funding, and legal counsel.": "Red Hat, Inc. は Fedora Project の主なスポンサーです。Red Hat は、Fedora Project に、フルタイムの従業員のサポート、インフラ、ハードウェア、ネットワーク回線、イベント開催時の金銭的支援、法的な助言など、さまざまな提供を行っています。",
+    "Gnumeric is a lightweight application to create lightning fast spreadsheets.": "Gnumeric は、軽量で高速な表計算のアプリケーションです。",
+    "A modern media player, using GTK+3 and the GStreamer plugin framework.": "GTK3+ と GStreamer プラグインフレームワークで実装されたモダンなメディアプレイヤーです。",
+    "Manage and play your music with ease.": "楽曲を簡単に管理、再生ができます。",
+    "A quick and easy to use image viewer.": "軽快で簡単に使えるイメージビューアーです。",
+    "Visual design, multimedia production, and publishing suite of free and open source creative tools.": "ビジュアルデザイン、マルチメディア制作、そしてパブリッシングのための自由でオープンソースなクリエイティブツール群。",
+    "Claws Mail is an easy to configure and full featured email application for the Xfce Desktop.": "Claws Mail は、簡単に設定ができ、使い始められる多機能な E メールアプリケーションです。Xfce デスクトップ環境で利用することができます。"
 }
