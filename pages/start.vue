@@ -312,7 +312,7 @@ if (parseInt(sidebars)) {
 </script>
 
 <template>
-  <div class="bg-fp-gray-lightest dark:bg-neutral-900">
+  <div id="startpage" class="bg-fp-gray-lightest dark:bg-neutral-900">
     <div class="mx-8 flex gap-8 py-10">
       <!-- Left Sidebar -->
       <div class="sp_sidebar hidden w-[22em] max-w-[25vw] flex-none">
@@ -605,17 +605,18 @@ if (parseInt(sidebars)) {
         />
       </div>
     </div>
+
+    <FpPublicationSection class="dark:bg-neutral-900" />
+
+    <FpCommunicationSection
+      color="magenta"
+      :sectionTitle="comm_channels.sectionTitle"
+      :content="comm_channels.content"
+      class="bg-white dark:bg-neutral-900"
+    />
+
+    <FpOrgChartSection />
   </div>
-
-  <FpPublicationSection class="bg-fp-gray-lightest dark:bg-neutral-900" />
-
-  <FpCommunicationSection
-    color="magenta"
-    :sectionTitle="comm_channels.sectionTitle"
-    :content="comm_channels.content"
-  />
-
-  <FpOrgChartSection />
 </template>
 
 <style scoped>
