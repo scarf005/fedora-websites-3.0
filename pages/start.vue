@@ -338,7 +338,7 @@ if (parseInt(sidebars)) {
               >{{ $t("source:") }}
               <a
                 target="_blank"
-                href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
+                :href="`${discourse_uri}/${common_query}`"
                 class="text-fp-newblue"
                 >discussion​.fedoraproject​.org</a
               ></span
@@ -480,7 +480,7 @@ if (parseInt(sidebars)) {
                 >{{ $t("source:") }}
                 <a
                   target="_blank"
-                  href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
+                  :href="`${discourse_uri}/search?${solved_query}`"
                   class="text-fp-newblue"
                   >discussion​.fedoraproject​.org</a
                 ></span
@@ -519,7 +519,7 @@ if (parseInt(sidebars)) {
                 >{{ $t("source:") }}
                 <a
                   target="_blank"
-                  href="https://discussion.fedoraproject.org/c/ask/common-issues/82/all"
+                  :href="`${discourse_uri}/${common_query}`"
                   class="text-fp-newblue"
                   >discussion​.fedoraproject​.org</a
                 ></span
@@ -573,7 +573,7 @@ if (parseInt(sidebars)) {
               >{{ $t("source:") }}
               <a
                 target="_blank"
-                href="https://discussion.fedoraproject.org/c/ask/6/all?solved=yes"
+                :href="`${discourse_uri}/search?${solved_query}`"
                 class="text-fp-newblue"
                 >discussion​.fedoraproject​.org</a
               ></span
