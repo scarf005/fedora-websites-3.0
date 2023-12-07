@@ -555,21 +555,8 @@ if (parseInt(sidebars)) {
             >
               <template #loneitem>
                 <div
-                  class="relative mx-auto h-[9em] w-[16em] bg-black overflow-hidden"
-                >
-                  <FpLink :href="latest_council_video.content[0].link.url">
-                    <FpImage :src="latest_council_video.content[0].image" />
-                  </FpLink>
-                  <div
-                    class="z-1 absolute top-2 w-full grid place-items-center"
-                  >
-                    <div
-                      class="px-2 text-2xl font-semibold bg-white/50 rounded-2xl text-center"
-                    >
-                      {{ latest_council_video.content[0].link.text }}
-                    </div>
-                  </div>
-                </div>
+                  class="mx-auto h-[9em] w-[16em] bg-gray-400 animate-pulse"
+                ></div>
               </template>
             </StartPageSidebarBlock>
           </template>
