@@ -312,8 +312,39 @@ if (parseInt(sidebars)) {
 </script>
 
 <template>
-  <div id="startpage" class="bg-fp-gray-lightest dark:bg-neutral-900">
-    <div class="mx-8 flex gap-8 py-10">
+  <div id="startpage" class="relative bg-fp-gray-lightest dark:bg-neutral-900">
+    <!-- https://daniel.do/article/making-noisy-svgs/ -->
+    <svg
+      viewbox="0 0 100% 100%"
+      class="absolute left-0 w-full top-0 h-full dark:hidden"
+    >
+      <defs>
+        <rect id="sp-background" x="0" y="0" width="100%" height="100%" />
+        <filter id="sp-background-noise">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="19.5"
+            numOctaves="10"
+            result="turbulence"
+          />
+          <feComposite
+            operator="in"
+            in="turbulence"
+            in2="SourceAlpha"
+            result="composite"
+          />
+          <feColorMatrix in="composite" type="luminanceToAlpha" />
+          <feBlend in="SourceGraphic" in2="composite" mode="color-burn" />
+        </filter>
+      </defs>
+      <use
+        href="#sp-background"
+        fill="white"
+        filter="url('#sp-background-noise')"
+        opacity="0.5"
+      />
+    </svg>
+    <div class="relative z-10 mx-8 flex gap-8 py-10">
       <!-- Left Sidebar -->
       <div class="sp_sidebar hidden w-[22em] max-w-[25vw] flex-none">
         <!-- Documentation -->
@@ -593,16 +624,20 @@ if (parseInt(sidebars)) {
       </div>
     </div>
 
-    <FpPublicationSection class="dark:bg-neutral-900" />
+    <FpPublicationSection
+      class="relative z-10 bg-transparent dark:bg-neutral-900"
+    />
 
     <FpCommunicationSection
       color="magenta"
       :sectionTitle="comm_channels.sectionTitle"
       :content="comm_channels.content"
-      class="bg-white dark:bg-neutral-900"
+      class="relative z-10 bg-white dark:bg-neutral-900"
     />
 
-    <FpOrgChartSection />
+    <FpOrgChartSection
+      class="relative z-10 bg-fp-gray-lightest dark:bg-neutral-900"
+    />
   </div>
 </template>
 
