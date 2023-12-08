@@ -399,7 +399,9 @@ if (parseInt(sidebars)) {
           </form>
         </div>
         <!-- Center Grid Content -->
-        <h2 class="mb-2 px-4 text-2xl font-semibold leading-none">
+        <h2
+          class="mb-2 px-4 text-2xl font-semibold leading-none text-black dark:text-fp-gray-200"
+        >
           {{ $t("Latest news and publications from the Fedora Project") }}:
           <ClientOnly>
             <template #fallback>
