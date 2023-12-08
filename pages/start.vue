@@ -4,6 +4,8 @@ import { decode } from "html-entities";
 const { t } = useI18n();
 
 const data = await getCMS("start");
+const release_data = await getCMS("release");
+
 useHead({
   title: data._value.title,
   meta: [
@@ -27,6 +29,7 @@ const count_headlines_narrow = 6;
 
 // number of common issues to display
 const count_common = 6;
+const current_release = release_data._value.ga.releasever;
 
 // number of solved issues to display
 const count_solved = 4;
@@ -178,7 +181,7 @@ let headlines = combined
 
 const got_headlines = headlines.length == count_headlines;
 
-const common_query = "c/ask/common-issues/82/none";
+const common_query = "tags/c/ask/common-issues/82/none/f" + current_release;
 
 const fp_common_issues = async () => {
   let dcdata = await $fetch(`${discourse_uri}/${common_query}.json`);
