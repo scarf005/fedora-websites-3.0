@@ -41,7 +41,7 @@ const props = defineProps({
       </a>
     </div>
     <div
-      class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl"
+      class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-500/10 dark:hover:bg-gray-800 rounded-xl"
     >
       <a
         target="_blank"
