@@ -940,5 +940,6 @@
     "every_other_sunday": "每隔一周的**周日**",
     "Blueberry": "Blueberry",
     "Eye of MATE is meant to be a fast and functional image viewer for the MATE+Compiz Desktop.": "MATE之眼（Eye of MATE）是针对 MATE+Compiz 桌面的一个快速、实用的图片查看器。",
-    "Fedora MATE+Compiz Image": "Fedora MATE+Compiz 映像"
+    "Fedora MATE+Compiz Image": "Fedora MATE+Compiz 映像",
+    "Fedora MATE+Compiz ships a terminal, the gateway to the real power of any UNIX/Linux machine, called MATE Terminal.": "Fedora MATE-Compiz 提供一个打开真正UNIX/Linux系统力量的终端，MATE Terminal。"
 }
