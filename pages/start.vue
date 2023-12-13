@@ -49,6 +49,46 @@ const latest_council_video = data._value.sections[2];
 // query string parameters
 const { sidebars = "1" } = useRoute().query;
 
+// fedora reminders (weekly)
+const reminder_data = await getCMS("reminders");
+
+const fr_headlines = async () => {
+  let reminders = reminder_data._value.links;
+
+  let i = reminders.length - 1;
+  let headlines = [];
+  while (i >= 0) {
+    let date = new Date(parseInt(reminders[i].reminder_date));
+    let today = new Date();
+
+    // only show reminders that are set for the current weekday
+    if (date.getUTCDay() == today.getDay()) {
+      headlines.push({
+        timestamp: date,
+        thumbnail: "/assets/images/reminders-472x200.png",
+        date: today.toLocaleDateString("en-US", {
+          month: "short",
+          day: "2-digit",
+          year: "numeric",
+        }),
+        title: decode(reminders[i].text),
+        link: reminders[i].url,
+      });
+    }
+
+    i--;
+  }
+
+  return headlines;
+};
+
+let reminders = [];
+try {
+  reminders = await fr_headlines();
+} catch (e) {
+  console.log(e);
+}
+
 // fedora announcements
 const discourse_uri = "https://discussion.fedoraproject.org";
 const discourse_api = "c/news/announce-list/76";
@@ -172,7 +212,7 @@ try {
   console.log(e);
 }
 
-let combined = [...newsfeed, ...magazine, ...podcasts];
+let combined = [...reminders, ...newsfeed, ...magazine, ...podcasts];
 let headlines = combined
   .sort(function (a, b) {
     return b.timestamp - a.timestamp;
