@@ -84,7 +84,9 @@ const fr_headlines = async () => {
 
 let reminders = [];
 try {
-  reminders = await fr_headlines();
+  if (process.client) {
+    reminders = await fr_headlines();
+  }
 } catch (e) {
   console.log(e);
 }
