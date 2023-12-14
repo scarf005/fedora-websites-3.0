@@ -26,7 +26,7 @@ const props = defineProps({
         :href="link"
         class="ease-in-out duration-300 hover:opacity-80"
       >
-        <img :src="thumbnail" class="w-full rounded-lg overflow-hidden" />
+        <FpImage :src="thumbnail" class="w-full rounded-lg overflow-hidden" />
       </FpLink>
     </div>
     <div class="text-base leading-8 text-gray-500 flex justify-between">

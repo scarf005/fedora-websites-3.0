@@ -9,9 +9,11 @@ const props = defineProps({
     v-if="typeof src === 'string'"
     class="FPImage"
     :src="`${
-      $config.app.baseURL.replace(new RegExp('/$'), '') +
-      '/' +
-      src.replace('public/', '')
+      /^https:/.test(src)
+        ? src // external link
+        : $config.app.baseURL.replace(new RegExp('/$'), '') +
+          '/' +
+          src.replace('public/', '')
     }`"
   />
   <template v-else>
