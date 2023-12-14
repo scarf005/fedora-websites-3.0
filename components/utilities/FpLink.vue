@@ -6,6 +6,7 @@ const localePath = useLocalePath();
 
 const props = defineProps({
   href: String,
+  target: String,
   current: Boolean,
   class: String,
   rel: String,
@@ -29,6 +30,7 @@ if (/^https:\/\/docs.fedoraproject.org\//.test(link) && locale._value != "en") {
         ? link
         : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href) // normal in-site link
     }`"
+    :target="target"
     :aria-current="current ? 'page' : undefined"
     :rel="rel"
     :class="class"

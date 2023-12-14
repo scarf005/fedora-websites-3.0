@@ -37,11 +37,11 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
 <template>
   <div class="mb-6 p-6 xl:p-4 rounded-2xl bg-white dark:bg-gray-700">
     <h2 class="mb-8 text-2xl leading-none">
-      <a
+      <FpLink
         target="_blank"
         :href="link"
         class="text-2xl font-semibold leading-none text-fp-newblue"
-        >{{ $t(title) }}</a
+        >{{ $t(title) }}</FpLink
       >
       <p v-if="subtitle" class="mb-6 font-semibold text-fp-newblue">
         ({{ $t(subtitle) }})
@@ -57,12 +57,8 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
         v-for="c in content"
         class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
       >
-        <div class="flex items-center">
-          <a
-            target="_blank"
-            :href="c.link.url"
-            :class="`flex-none p-${padding}`"
-          >
+        <FpLink target="_blank" :href="c.link.url" class="flex items-center">
+          <div :class="`flex-none p-${padding}`">
             <img
               v-if="c.avatar"
               :src="c.avatar"
@@ -74,14 +70,13 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               :size="iconsize"
               class="text-fp-blue rtl:-scale-x-100"
             />
-          </a>
-          <a
-            target="_blank"
-            :href="c.link.url"
+          </div>
+          <div
             class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
-            >{{ c.link.text }}</a
           >
-        </div>
+            {{ c.link.text }}
+          </div>
+        </FpLink>
       </div>
     </div>
     <div v-else>
@@ -99,12 +94,8 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
           v-for="c in content"
           class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
         >
-          <div class="flex items-center">
-            <a
-              target="_blank"
-              :href="c.link.url"
-              :class="`flex-none p-${padding}`"
-            >
+          <FpLink target="_blank" :href="c.link.url" class="flex items-center">
+            <div :class="`flex-none p-${padding}`">
               <img
                 v-if="c.avatar"
                 :src="c.avatar"
@@ -116,14 +107,13 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
                 :size="iconsize"
                 class="text-fp-blue rtl:-scale-x-100"
               />
-            </a>
-            <a
-              target="_blank"
-              :href="c.link.url"
+            </div>
+            <div
               class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
-              >{{ c.link.text }}</a
             >
-          </div>
+              {{ c.link.text }}
+            </div>
+          </FpLink>
         </div>
       </div>
       <div

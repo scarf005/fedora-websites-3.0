@@ -21,13 +21,13 @@ const props = defineProps({
 <template>
   <div>
     <div class="bg-fp-blue aspect-[472/200] rounded-lg bg-white">
-      <a
+      <FpLink
         target="_blank"
         :href="link"
         class="ease-in-out duration-300 hover:opacity-80"
       >
         <img :src="thumbnail" class="w-full rounded-lg overflow-hidden" />
-      </a>
+      </FpLink>
     </div>
     <div class="text-base leading-8 text-gray-500 flex justify-between">
       <div>{{ date }}</div>
@@ -43,11 +43,11 @@ const props = defineProps({
     <div
       class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-500/10 dark:hover:bg-gray-800 rounded-xl"
     >
-      <a
+      <FpLink
         target="_blank"
         :href="link"
         class="align-top text-xl font-semibold text-fp-blue"
-        >{{ title }}</a
+        >{{ title }}</FpLink
       >
     </div>
   </div>
