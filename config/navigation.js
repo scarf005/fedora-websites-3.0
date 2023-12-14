@@ -697,8 +697,7 @@ const navigation = {
     description: "Help!",
     sections: [
       {
-        // This label is padded with a zero-width space to make it a unique "key".
-        label: `${ask_fedora.label}\u200B`,
+        label: ask_fedora.label,
         description: ask_fedora.description,
         links: ask_fedora.links,
       },
