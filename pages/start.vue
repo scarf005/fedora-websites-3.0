@@ -3,6 +3,8 @@ import { decode } from "html-entities";
 
 const { t } = useI18n();
 
+const base = t._value == "en" ? ".." : "../..";
+
 const data = await getCMS("start");
 const release_data = await getCMS("release");
 
@@ -17,7 +19,7 @@ useHead({
   script: [
     {
       // this is here so it will run very early if the client supports js
-      src: "/js/startpage.js",
+      src: `${base}/js/startpage.js`,
       body: true,
     },
   ],
@@ -618,7 +620,7 @@ if (parseInt(sidebars)) {
             <template #loneitem>
               <iframe
                 type="text/html"
-                src="/council-video.html"
+                :src="`${base}/council-video.html`"
                 frameborder="0"
                 class="mx-auto h-[9em] w-[16em]"
               >
