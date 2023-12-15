@@ -40,16 +40,15 @@ const props = defineProps({
         </div>
       </a>
     </div>
-    <div
-      class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-500/10 dark:hover:bg-gray-800 rounded-xl"
-    >
-      <FpLink
-        target="_blank"
-        :href="link"
-        class="align-top text-xl font-semibold text-fp-blue"
-        >{{ title }}</FpLink
+    <FpLink target="_blank" :href="link">
+      <div
+        class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-500/10 dark:hover:bg-gray-800 rounded-xl"
       >
-    </div>
+        <span class="align-top text-xl font-semibold text-fp-blue">{{
+          title
+        }}</span>
+      </div>
+    </FpLink>
   </div>
 </template>
 
