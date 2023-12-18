@@ -1,9 +1,9 @@
 <script setup>
 import { decode } from "html-entities";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
-const base = t._value == "en" ? ".." : "../..";
+const base = locale._value == "en" ? ".." : "../..";
 
 const data = await getCMS("start");
 const release_data = await getCMS("release");
