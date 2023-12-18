@@ -55,15 +55,16 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
     >
       <div
         v-for="c in content"
-        class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+        class="group mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg"
       >
         <FpLink target="_blank" :href="c.link.url" class="flex items-center">
           <div :class="`flex-none p-${padding}`">
-            <img
-              v-if="c.avatar"
-              :src="c.avatar"
-              class="h-12 w-12 rounded object-cover"
-            />
+            <div v-if="c.avatar" class="h-12 w-12 rounded-lg bg-white">
+              <img
+                :src="c.avatar"
+                class="h-full w-full rounded-lg object-cover group-hover:opacity-80"
+              />
+            </div>
             <Icon
               v-else-if="iconname"
               :name="iconname"
@@ -92,15 +93,16 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
       >
         <div
           v-for="c in content"
-          class="mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+          class="group mb-6 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg"
         >
           <FpLink target="_blank" :href="c.link.url" class="flex items-center">
             <div :class="`flex-none p-${padding}`">
-              <img
-                v-if="c.avatar"
-                :src="c.avatar"
-                class="h-12 w-12 rounded object-cover"
-              />
+              <div v-if="c.avatar" class="h-12 w-12 rounded-lg bg-white">
+                <img
+                  :src="c.avatar"
+                  class="h-full w-full rounded-lg object-cover group-hover:opacity-80"
+                />
+              </div>
               <Icon
                 v-else-if="iconname"
                 :name="iconname"
@@ -123,7 +125,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
         <div v-for="p in parseInt(pulsers)" class="mb-6">
           <div class="flex">
             <div
-              class="h-12 w-12 rounded inline-block startpage-stripes opacity-25 dark:opacity-10"
+              class="h-12 w-12 rounded-lg inline-block startpage-stripes opacity-25 dark:opacity-10"
             ></div>
             <div
               class="h-12 flex-1 ltr:ml-6 rtl:mr-6 inline-block startpage-stripes opacity-25 dark:opacity-10"
@@ -142,7 +144,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
           >
             <div class="flex animate-pulse">
               <div
-                class="h-12 w-12 rounded bg-gray-400 dark:bg-gray-500 inline-block"
+                class="h-12 w-12 rounded-lg bg-gray-400 dark:bg-gray-500 inline-block"
               ></div>
               <div
                 class="h-12 flex-1 ltr:ml-6 rtl:mr-6 bg-gray-400 dark:bg-gray-500 inline-block"
@@ -154,7 +156,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
     </ClientOnly>
     <div
       v-if="slots.footnote"
-      class="whitespace-no-wrap text-right hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl"
+      class="whitespace-no-wrap text-right hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg"
     >
       <slot name="footnote" />
     </div>
