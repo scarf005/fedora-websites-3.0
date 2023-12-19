@@ -977,5 +977,7 @@
     "Fedora Podcast 29: Fedora Spins: Budgie": "Fedora Podcast 29: Fedoran muunnelmat: Budgie",
     "Dedicated Solutions": "Dedicated Solutions -palvelut",
     "Legacy": "Jäännejulkaisu",
-    "every_other_sunday": "joka toinen **sunnuntai**"
+    "every_other_sunday": "joka toinen **sunnuntai**",
+    "It's update Tueday. Have you run \"sudo dnf update\" lately?": "On päivitys tiistai. Oletko suorittanut \"sudo dnf update\" -ohjelmaa viime aikoina?",
+    "1702339200000": "1702339200000"
 }
