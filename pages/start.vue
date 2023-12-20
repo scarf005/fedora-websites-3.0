@@ -67,7 +67,7 @@ const fr_headlines = async () => {
     if (date.getUTCDay() == today.getDay()) {
       headlines.push({
         timestamp: date,
-        thumbnail: "/assets/images/reminders-472x200.png",
+        thumbnail: "public/assets/images/reminders-472x200.png",
         date: today.toLocaleDateString("en-US", {
           month: "short",
           day: "2-digit",
@@ -115,7 +115,7 @@ const fa_headlines = async () => {
 
     headlines.push({
       timestamp: date,
-      thumbnail: "/assets/images/announcements-472x200.png",
+      thumbnail: "public/assets/images/announcements-472x200.png",
       date: date.toLocaleDateString("en-US", {
         month: "short",
         day: "2-digit",
@@ -192,7 +192,7 @@ const fp_headlines = async () => {
     if (date.getTime() <= Date.now()) {
       headlines.push({
         timestamp: date,
-        thumbnail: "/assets/images/podcast-472x200.png",
+        thumbnail: "public/assets/images/podcast-472x200.png",
         date: date.toLocaleDateString("en-US", {
           month: "short",
           day: "2-digit",
