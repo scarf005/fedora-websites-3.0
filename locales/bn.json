@@ -1,1 +1,24 @@
-{}
+{
+    "For Power ppc64le systems": "পাওয়ার ppc64le সিস্টেমের জন্য",
+    "For IBM s390x zSystems": "IBM s390x zSystems-এর জন্য",
+    "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity": "আপনার নিজের কম্পিউটারে ইমেজ এর চেকসাম গণনা করে এবং এটিকে আসল চেকসামের সাথে তুলনা করে, আপনি যাচাই করতে পারেন যে ইমেজ কোনও টেম্পার বা ক্ষতিগ্রস্থ হয়নি। এছাড়াও ইমেজগুলিকে তাদের সততা প্রদর্শনের জন্য ফেডোরা কী সহ জিপিজি স্বাক্ষর করা হয়",
+    "Languages": "ভাষা",
+    "Community": "সম্প্রদায়",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "একটু ভিন্ন কিছু প্রয়োজন? বিকল্প আর্কিটেক্চার, টরেন্ট এবং নেটওয়ার্ক-ভিত্তিক ইনস্টলেশন ইমেজ সমন্বিত, নীচে আমাদের অন্যান্য ডাউনলোডগুলি দেখুন।",
+    "Contributors": "অবদানকারী",
+    "Downloads": "ডাউনলোডগুলো",
+    "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "একটি মিটিংয়ে যোগ দেওয়া বা রিপোর্ট করা এবং আপনি যে সমস্যাগুলি খুঁজে পেয়েছেন তা নিয়ে আলোচনা করা অবদানের ক্ষেত্রে একটি দুর্দান্ত প্রথম পদক্ষেপ হতে পারে",
+    "Become a Fedora Contributor": "ফেডোরা কন্ট্রিবিউটর হয়ে উঠুন",
+    "Privacy Statement": "গোপনীয়তা বিবৃতি",
+    "verify_button_instruction": "আপনার ডাউনলোডের জন্য উপযুক্ত নির্দেশাবলী পেতে যাচাই বোতাম {verify_button} এ ক্লিক করুন।",
+    "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "এই যোগাযোগের চ্যানেলগুলিতে আপনার বন্ধুত্বপূর্ণ এবং সহায়ক অবদানগুলি অত্যন্ত প্রশংসা করা হবে",
+    "We take security seriously": "আমরা নিরাপত্তাকে গুরুত্ব সহকারে নিই",
+    "But wait! There's more.": "কিন্তু অপেক্ষা করো! আরো আছে।",
+    "For ARM® aarch64 systems": "ARM® aarch64 সিস্টেমের জন্য",
+    "Join Us!": "আমাদের সাথে যোগ দিন!",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "একবার আপনি একটি ইমেজ ডাউনলোড করার পরে, এটি সুরক্ষিত এবং সঠিক কিনা উভয়ের জন্য যাচাই করতে ভুলবেন না।",
+    "Other Downloads": "অন্যান্য ডাউনলোডগুলো",
+    "Support": "সহায়তা",
+    "For Intel and AMD x86_64 systems": "ইন্টেল এবং এ এম ডি x86_64 সিস্টেমের জন্য",
+    "Fedora Logo": "ফেডোরা লোগো"
+}
