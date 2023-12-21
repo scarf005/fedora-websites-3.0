@@ -44,9 +44,10 @@ const props = defineProps({
       <div
         class="relative -left-1 w-[calc(100%+8px)] -top-1 h-[calc(100%+8px)] max-h-[5.25rem] p-1 overflow-hidden hover:bg-gray-500/10 dark:hover:bg-gray-800 rounded-xl"
       >
-        <span class="align-top text-xl font-semibold text-fp-blue">{{
-          title
-        }}</span>
+        <span
+          class="align-top text-xl font-semibold text-fp-blue line-clamp-3"
+          >{{ title }}</span
+        >
       </div>
     </FpLink>
   </div>

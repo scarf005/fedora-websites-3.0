@@ -73,7 +73,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
             />
           </div>
           <div
-            class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
+            class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold line-clamp-2"
           >
             {{ c.link.text }}
           </div>
@@ -111,7 +111,7 @@ const padding = (48 - Math.min(48, parseInt(props.iconsize))) / 8;
               />
             </div>
             <div
-              class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold"
+              class="ltr:ml-6 rtl:mr-6 max-h-12 overflow-hidden text-base font-semibold line-clamp-2"
             >
               {{ c.link.text }}
             </div>
