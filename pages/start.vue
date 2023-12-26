@@ -66,7 +66,7 @@ const fr_headlines = async () => {
     // only show reminders that are set for the current weekday
     if (date.getUTCDay() == today.getDay()) {
       headlines.push({
-        timestamp: date,
+        timestamp: today,
         thumbnail: "public/assets/images/reminders-472x200.png",
         date: today.toLocaleDateString("en-US", {
           month: "short",
