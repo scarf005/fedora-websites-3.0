@@ -406,6 +406,7 @@ if (parseInt(sidebars)) {
         <StartPageSidebarBlock
           :link="`${discourse_uri}/${common_query}`"
           title="Common Issues"
+          :subtitle="t('for Fedora Linux') + ' ' + current_release"
           :content="common"
           iconname="fa6-solid:wrench"
           iconsize="32"
@@ -589,6 +590,7 @@ if (parseInt(sidebars)) {
           <StartPageSidebarBlock
             :link="`${discourse_uri}/${common_query}`"
             title="Common Issues"
+            :subtitle="t('for Fedora Linux') + ' ' + current_release"
             :content="common"
             iconname="fa6-solid:wrench"
             iconsize="32"
