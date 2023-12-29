@@ -950,6 +950,5 @@
     "every_tuesday": "**úterý**",
     "every_other_thursday": "každý druhý **čtvrtek**",
     "every_other_sunday": "každou druhou **neděli**",
-    "It's update Tueday. Have you run \"sudo dnf update\" lately?": "Je úterý aktualizační. Už jste spustili příkaz \"sudo dnf update\"?",
     "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering users sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Spin Fedora Budgie poskytuje ukázku Budgie Desktopu, moderního prostředí pracovní plochy plného vlastností, navrženého s cílem neklást překážky uživateli. Budgie Desktop využívá obecných metafor desktopového návrhu, zároveň uživatelům nabízí důmyslnou funkcionalitu, jako např. centrum doplňků a upozornění Raven a snadno dostupnou metodu personalizace.\n\nSpin je navržen tak, aby byl úzce napojen na Budgie Desktop dodavatelského projektu a poskytoval blízkou vanilkovou zkušenost s opečovávanou standardní sadou aplikací, které se k sobě s Budgie hodí nejlépe."
 }
