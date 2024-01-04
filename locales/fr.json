@@ -704,5 +704,7 @@
     "dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 and uses libYui.": "dnfdragora est une interface pour DNF, basée sur rpmdragora, écrite en Python 3 et utilisant libYui.",
     "Are you a downloader? Use Transmission to get new versions of Fedora MATE+Compiz Desktop!": "Vous téléchargez beaucoup ? Utilisez Transmission pour obtenir les nouvelles versions du bureau MATE+Compiz avec Fedora !",
     "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail est une application de messagerie complète et facile à configurer pour le bureau MATE+Compiz.",
-    "FileZilla is a cross-platform free FTP solution with tons of intuitive tools, helping you to move files quickly between your computer and Web server.": "FilleZilla est une solution FTP multiplateforme libre, dotée d’une multitude d’outils intuitifs pour déplacer rapidement des fichiers entre votre ordinateur et un serveur Web."
+    "FileZilla is a cross-platform free FTP solution with tons of intuitive tools, helping you to move files quickly between your computer and Web server.": "FilleZilla est une solution FTP multiplateforme libre, dotée d’une multitude d’outils intuitifs pour déplacer rapidement des fichiers entre votre ordinateur et un serveur Web.",
+    "🎉 [Fedora Linux 39 released!](https://fedoramagazine.org/announcing-fedora-linux-39)": "[Fedora Linux 39 est sortie !] (https ://fedoramagazine.org/announcing-fedora-linux-39)",
+    "Alternative desktops for Fedora.": "Environnements de bureau alternatifs pour Fedora."
 }
