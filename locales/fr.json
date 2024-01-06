@@ -720,5 +720,9 @@
     "Atomic": "Atomique",
     "Safe": "Sûre",
     "you_can_verify_the_GPG_details": "{icon}Vous pouvez vérifier les détails de la ou des clés GPG ci-dessous {here}.",
-    "logo": "logo"
+    "logo": "logo",
+    "Podcasts": "Podcasts",
+    "Search with DuckDuckGo": "Rechercher avec DuckDuckGo",
+    "Latest news and publications from the Fedora Project": "Dernières nouvelles et publications du Fedora Project",
+    "Find a Fedora Spin to enhance your experience! You can find the latest versions of our spins here.": "Trouvez un Spin Fedora pour améliorer votre expérience ! Vous pouvez trouver les dernières versions de nos spins ici."
 }
