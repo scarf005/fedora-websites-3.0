@@ -736,5 +736,6 @@
     "Also known as armv8. For most processors other than Intel and AMD, such as Raspberry Pi.": "Aussi connu sous le nom armv8. Pour la plupart des processeurs autres que Intel et AMD, comme le Rasberry Pi.",
     "For IBM PowerPC systems.": "Pour les systèmes IBM PowerPC.",
     "Fedora CoreOS can be deployed on 4 different CPU architectures.": "Fedora CoreOS peut être déployé sur 4 architectures CPU différentes.",
-    "Just want an ISO file?": "Vous ne voulez qu'un fichier ISO ?"
+    "Just want an ISO file?": "Vous ne voulez qu'un fichier ISO ?",
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues)"
 }
