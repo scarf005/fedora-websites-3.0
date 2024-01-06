@@ -719,5 +719,6 @@
     "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Chaque version est maintenue pendant 13 mois, et chaque mise à jour prend effet au prochain redémarrage, ce qui garantit la cohérence de votre système. Vous pouvez quand même continuer à travailler pendant que les mises à jour sont appliquées!",
     "Atomic": "Atomique",
     "Safe": "Sûre",
-    "you_can_verify_the_GPG_details": "{icon}Vous pouvez vérifier les détails de la ou des clés GPG ci-dessous {here}."
+    "you_can_verify_the_GPG_details": "{icon}Vous pouvez vérifier les détails de la ou des clés GPG ci-dessous {here}.",
+    "logo": "logo"
 }
