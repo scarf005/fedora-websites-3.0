@@ -556,7 +556,7 @@
     "Education": "Éducation",
     "Dolphin is a file manager that lets you navigate and browse the contents of your hard drives, USB sticks, SD cards, and more. Creating, moving, or deleting files and folders is simple and fast.": "Dolphin est un gestionnaire de fichiers vous permettant de naviguer dans le contenu de vos disques durs, clés USB, cartes SD et plus. Créer, déplacer ou supprimer des fichiers et des dossiers est simple et rapide.",
     "Fedora Sericea is an immutable Sway-based desktop.": "Fedora Sericea est un bureau immuable basé sur Sway.",
-    "Applications as Flatpaks": "Applications Flatpaks",
+    "Applications as Flatpaks": "Applications en Flatpaks",
     "Fedora Sericea Image": "Image Fedora Sericea",
     "Podman for development": "Podman pour le développement",
     "Interested in sponsoring something for Fedora?": "Vous désirez sponsoriser quelque chose pour Fedora ?",
@@ -708,5 +708,16 @@
     "🎉 [Fedora Linux 39 released!](https://fedoramagazine.org/announcing-fedora-linux-39)": "🎉 [Fedora Linux 39 est sortie !](https://fedoramagazine.org/announcing-fedora-linux-39)",
     "Alternative desktops for Fedora.": "Environnements de bureau alternatifs pour Fedora.",
     "download_the_checksum_and_signature": "Téléchargez les fichiers {checksum_file} et {signature} dans le même répertoire que l'image que vous avez téléchargée.",
-    "download_the_checksum_file": "Téléchargez le fichier {checksum_file} dans le même répertoire que l'image que vous avez téléchargée."
+    "download_the_checksum_file": "Téléchargez le fichier {checksum_file} dans le même répertoire que l'image que vous avez téléchargée.",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Vous avez besoin de quelque chose d'un peu différent ? Consultez nos autres téléchargements ci-dessous, qui présentent des architectures alternatives, des torrents et des images d'installation en réseau.",
+    "Private, Trusted, Open Source": "Privé, fiable, open source",
+    "signature": "signature",
+    "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "L'ensemble du système est mis à jour en une seule fois, et une mise à jour ne s'appliquera pas en cas de problème, ce qui signifie que vous aurez <i>toujours</i> un ordinateur en état de marche.",
+    "Developer-Friendly": "Convivialité pour les développeurs",
+    "Why Fedora Silverblue?": "Pourquoi Fedora Silverblue?",
+    "Page not found": "Page non trouvée",
+    "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Chaque version est maintenue pendant 13 mois, et chaque mise à jour prend effet au prochain redémarrage, ce qui garantit la cohérence de votre système. Vous pouvez quand même continuer à travailler pendant que les mises à jour sont appliquées!",
+    "Atomic": "Atomique",
+    "Safe": "Sûre",
+    "you_can_verify_the_GPG_details": "{icon}Vous pouvez vérifier les détails de la ou des clés GPG ci-dessous {here}."
 }
