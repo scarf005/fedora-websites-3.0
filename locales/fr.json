@@ -73,7 +73,7 @@
     "Visit Now": "Visitez maintenant",
     "Use Fedora IoT to support your workloads that are computed outside of the traditional datacenter.": "Utilisez Fedora IoT pour prendre en charge vos workloads en dehors du centre de données traditionnel.",
     "Twice a year, in coordination with the release of each new version of Fedora Linux, we hold global virtual release parties. These are typically a 1.5 day \"mini-conference\" with talks and social events. ": "Deux fois par an, en coordination avec la sortie de chaque nouvelle version de Fedora Linux, nous organisons des fêtes de lancement virtuelles mondiales. Il s'agit généralement d'une \"mini-conférence\" d'une journée et demie avec des discussions et des événements sociaux. ",
-    "Try it now.": "Essayer maintenant.",
+    "Try it now.": "Essayer le maintenant.",
     "There's a Fedora release party every six months and a Flock event every year. Make a plan to attend and even propose a talk!": "Il y a une fête de lancement de Fedora tous les six mois et un événement Flock chaque année. Préparez-vous pour y assister et proposez même une conférence !",
     "The lightweight VM environment": "Un environnement virtuel léger",
     "The Virtual Fedora Project Conference": "La conférence virtuelle du Projet Fedora",
@@ -706,9 +706,9 @@
     "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail est une application de messagerie complète et facile à configurer pour le bureau MATE+Compiz.",
     "FileZilla is a cross-platform free FTP solution with tons of intuitive tools, helping you to move files quickly between your computer and Web server.": "FilleZilla est une solution FTP multiplateforme libre, dotée d’une multitude d’outils intuitifs pour déplacer rapidement des fichiers entre votre ordinateur et un serveur Web.",
     "🎉 [Fedora Linux 39 released!](https://fedoramagazine.org/announcing-fedora-linux-39)": "🎉 [Fedora Linux 39 est sortie !](https://fedoramagazine.org/announcing-fedora-linux-39)",
-    "Alternative desktops for Fedora.": "Environnements de bureau alternatifs pour Fedora.",
+    "Alternative desktops for Fedora.": "Environnements de bureau alternatifs pour Fedora",
     "download_the_checksum_and_signature": "Téléchargez les fichiers {checksum_file} et {signature} dans le même répertoire que l'image que vous avez téléchargé.",
-    "download_the_checksum_file": "Téléchargez les fichiers {checksum_file} et {signature} dans le même répertoire que l'image que vous avez téléchargé.",
+    "download_the_checksum_file": "Téléchargez les fichiers {checksum_file} dans le même répertoire que l'image que vous avez téléchargé.",
     "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Vous avez besoin de quelque chose d'un peu différent ? Consultez nos autres téléchargements ci-dessous, qui présentent des architectures alternatives, des torrents et des images d'installation en réseau.",
     "Private, Trusted, Open Source": "Privé, fiable, open source",
     "signature": "pas de signature",
@@ -726,7 +726,7 @@
     "Latest news and publications from the Fedora Project": "Dernières nouvelles et publications du projet Fedora",
     "Find a Fedora Spin to enhance your experience! You can find the latest versions of our spins here.": "Trouvez un Spin Fedora pour améliorer votre expérience ! Vous pouvez trouver les dernières versions de nos spins ici.",
     "here": "ici",
-    "checksum file": "fichier de somme de contrôle",
+    "checksum file": "fichier checksum",
     "Close": "Fermer",
     "Latest Solved Issues": "Derniers problèmes résolus",
     "From": "De",
@@ -898,5 +898,6 @@
     "Fedora Silverblue": "Fedora Silverblue",
     "placeholder": "espace réservé",
     "Fedora Silverblue Image": "Fedora Silverblue 33",
-    "Fedora Rawhide": "Fedora Rawhide"
+    "Fedora Rawhide": "Fedora Rawhide",
+    "Latest Council Video": "Dernière vidéo du Conseil"
 }
