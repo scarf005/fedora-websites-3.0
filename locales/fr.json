@@ -713,8 +713,8 @@
     "Private, Trusted, Open Source": "Privé, fiable, open source",
     "signature": "signature",
     "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "L'ensemble du système est mis à jour en une seule fois, et une mise à jour ne s'appliquera pas en cas de problème, ce qui signifie que vous aurez <i>toujours</i> un ordinateur en état de marche.",
-    "Developer-Friendly": "Convivialité pour les développeurs",
-    "Why Fedora Silverblue?": "Pourquoi Fedora Silverblue?",
+    "Developer-Friendly": "Convivial pour les développeurs",
+    "Why Fedora Silverblue?": "Pourquoi Fedora Silverblue ?",
     "Page not found": "Page non trouvée",
     "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Chaque version est maintenue pendant 13 mois, et chaque mise à jour prend effet au prochain redémarrage, ce qui garantit la cohérence de votre système. Vous pouvez quand même continuer à travailler pendant que les mises à jour sont appliquées!",
     "Atomic": "Atomique",
@@ -771,5 +771,7 @@
     "Fedora Community & Support": "Communauté & Support de Fedora",
     "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "Créez facilement des conteneurs OCI entièrement intégrés à votre système hôte, permettant une utilisation fluide des outils GUI et CLI.",
     "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "Vous avez trouvé quelque chose qui ne va pas ? Vous souhaitez proposer une modification du fonctionnement de Kinoite ? Nous aimerions que vous nous fassiez part de vos commentaires ! Rendez-vous sur le [suivi des problèmes de KDE SIG](https://pagure.io/fedora-kde/SIG/issues) et faites-nous en part.",
-    "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Vous pouvez discuter avec la communauté Fedora Kinoite via Matrix ou IRC : **#kinoite:fedoraproject.org** sur Matrix ou #kinoite sur irc.libera.chat."
+    "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Vous pouvez discuter avec la communauté Fedora Kinoite via Matrix ou IRC : **#kinoite:fedoraproject.org** sur Matrix ou #kinoite sur irc.libera.chat.",
+    "Graphical applications are installed via Flatpak, and keep themselves separate from the base system. They also allow for fine-grained control over their permissions.": "Les applications graphiques sont installés via Flatpak, et restent séparés de la base du sytème. Elles permettent également un contrôle plus fin de leur autorisations.",
+    "The GNOME desktop experience you know and love in an immutable fashion.": "L’expérience du bureau GNOME que vous connaissez et aimez dans une version immuable."
 }
