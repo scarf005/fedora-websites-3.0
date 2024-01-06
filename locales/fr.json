@@ -733,5 +733,8 @@
     "We think Panda lost it.": "Nous pensons que Panda a perdu la tête.",
     "Contributor survey banner": "Bannière d'enquête auprès des contributeurs",
     "You can view, file, and discuss Fedora CoreOS issues on the [Fedora CoreOS issue tracker](https://github.com/coreos/fedora-coreos-tracker/issues).": "Vous pouvez consulter, rapporter et discuter des problèmes de Fedora CoreOS sur [l'outil de gestion des problèmes de Fedora CoreOS](https://github.com/coreos/fedora-coreos-tracker/issues).",
-    "Also known as armv8. For most processors other than Intel and AMD, such as Raspberry Pi.": "Également connu sous le nom d'armv8. Pour la plupart des processeurs autres qu'Intel et AMD, comme le Raspberry Pi."
+    "Also known as armv8. For most processors other than Intel and AMD, such as Raspberry Pi.": "Aussi connu sous le nom armv8. Pour la plupart des processeurs autres que Intel et AMD, comme le Rasberry Pi.",
+    "For IBM PowerPC systems.": "Pour les systèmes IBM PowerPC.",
+    "Fedora CoreOS can be deployed on 4 different CPU architectures.": "Fedora CoreOS peut être déployé sur 4 architectures CPU différentes.",
+    "Just want an ISO file?": "Vous ne voulez qu'un fichier ISO ?"
 }
