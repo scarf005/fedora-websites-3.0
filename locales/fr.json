@@ -741,7 +741,7 @@
     "Check out the recap from our latest event, the Fedora 37 release party!": "Découvrez le récapitulatif de notre dernier événement, le lancement de Fedora 37 !",
     "Developers": "Développeurs",
     "You can view, file, and discuss Fedora Workstation issues on the [Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla).": "Vous pouvez consulter, rapporter et discuter des problèmes liés à Fedora Workstation sur le [Suivi des problèmes liés à Fedora Workstation](https://fedoraproject.org/wiki/Bugzilla).",
-    "High-efficiency tools for creating, running and managing containers": "Outils très efficaces pour créer, exécuter et gérer des conteneurs",
+    "High-efficiency tools for creating, running and managing containers": "Outils très efficaces pour la création, l'exécution et la gestion de conteneurs",
     "Ask and answer questions on [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)": "Posez et répondez à des questions sur [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)",
     "You can chat with the Fedora Budgie community on Matrix at **#budgie:fedoraproject.org**": "Vous pouvez discuter avec la communauté Fedora Budgie sur Matrix à **#budgie:fedoraproject.org**",
     "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Onyx users and contributors.": "La balise **Fedora IoT** sur le forum de discussion de Fedora est un endroit idéal pour se connecter avec d’autres utilisateurs et contributeurs de Fedora IoT.",
@@ -848,5 +848,6 @@
     "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme) website.": "Fedora CoreOS est créé par une équipe de la communauté Fedora Project appelé the CoreOS Working Group. Il est composé de membres officiels qui ont un pouvoir de décision, ainsi que d'autres contributeurs. Pour en savoir plus sur ce groupe et sur la manière dont vous pouvez vous impliquer, consultez le site Web du [CoreOS Working Group] (https://github.com/coreos/fedora-coreos-tracker#readme).",
     "Built On Top of the Best": "Construit sur les meilleures bases",
     "Fedora IOT": "Fedora IOT",
-    "Fedora Kinoite Image": "Image Fedora Kinoite"
+    "Fedora Kinoite Image": "Image Fedora Kinoite",
+    "Common Issues": "Problèmes courants"
 }
