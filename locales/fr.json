@@ -191,7 +191,7 @@
     "A classroom lab for teaching the Python programming language to students.": "Un labo pour enseigner le langage de programmation Python en classe.",
     "A classic Fedora desktop with an additional 3D window manager.": "Un bureau Fedora classique avec en plus un gestionnaire de fenêtres 3D.",
     "A bundle of open source scientific and numerical tools used in research.": "Une suite open source d’outils scientifiques et de calculs utilisés pour la recherche.",
-    "A beautiful, high-quality desktop, built on the latest open source technology. Trusted, powerful and easy.\n": "Un beau bureau, de haute qualité, construit autour des dernières technologies open source. Fiable, puissant et simple.\n",
+    "A beautiful, high-quality desktop, built on the latest open source technology. Trusted, powerful and easy.\n": "Un bureau magnifique et de haute qualité, construit autour des dernières technologies open source. Fiable, puissant et simple.\n",
     " * Fedora requires a minimum of 20GB disk, 2GB RAM, to install and run successfully. Double those amounts is recommended. ": " * Fedora nécessite un minimum de 20GB de disque et 2GB de RAM pour s’installer et s’exécuter correctement. Le double de ces valeurs est recommandé. ",
     "Why Fedora CoreOS?": "Pourquoi Fedora CoreOS ?",
     "Pick your": "Choisissez votre",
@@ -759,7 +759,7 @@
     "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "Une version antérieure de votre système est toujours conservée, au cas où. Si vous avez besoin de revenir en arrière, c'est possible !",
     "Fedora Onyx is maintained by the [Budgie Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/Budgie) in Fedora and is the result of collaboration between the Fedora and Budgie community. <br /><br /> The Budgie SIG is an open community seeking contributors from everywhere, and of every type. From documentation writing, to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Onyx! <br /><br /> The Buddies of Budgie organization is responsible for the developmeng of Budgie Desktop and have their own [Getting Involved](https://docs.buddiesofbudgie.org/organization/getting-involved) page detailing how you can get help their project!": "Fedora Onyx est maintenu par le [Budgie Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/Budgie) dans Fedora et est le résultat d'une collaboration entre les communautés Fedora et Budgie. <br /><br /> Le Budgie SIG est une communauté ouverte qui recherche des contributeurs de tous horizons et de tous types. Qu'il s'agisse d'écrire de la documentation, de tester la version bêta ou d'aider les autres en répondant à des questions, il existe de nombreuses façons de s'impliquer et d'aider à façonner l'avenir d'Onyx ! <br /><br /> L'organisation Buddies of Budgie est responsable du développement de Budgie Desktop et dispose de sa propre page [Participer](https://docs.buddiesofbudgie.org/organization/getting-involved) qui explique en détail comment vous pouvez contribuer à leur projet !",
     "Toolbx for Development": "Toolbx pour le développement",
-    "Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.": "Fedora CoreOS est un système d'exploitation à mise à jour automatique, minimal, monolithique, axé sur les conteneurs, conçu pour les clusters mais également exploitable de manière autonome, optimisé pour Kubernetes mais aussi excellent sans lui.",
+    "Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.": "Fedora CoreOS est un système d'exploitation avec mises à jours automatiques, minimal, monolithique, centré sur les conteneurs, conçu pour les clusters mais aussi exploitable de manière isolé, optimisé pour Kubernetes mais aussi excellent sans.",
     "Found something that isn't quite right? Want to propose a change to the way Onyx works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "Vous avez trouvé quelque chose qui ne va pas ? Vous souhaitez proposer une modification du fonctionnement d'Onyx ? Votre avis nous intéresse ! Rendez-vous sur le [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) et faites-nous en part.",
     "Join a community of users and contributors focused on Fedora Kinoite.": "Rejoignez une communauté d'utilisateurs et de contributeurs focalisés sur Fedora Kinoite.",
     "Related Projects": "Projets liés",
@@ -841,5 +841,12 @@
     "Dedicated Solutions": "Solutions dédiées",
     "We're so glad you've decided to give Fedora Silverblue a try. We know you'll love it.": "Nous sommes très heureux que vous ayez décidé d’essayer Fedora Server. Nous savons que vous allez l’adorer.",
     "Screenshot of Fedora Sway desktop": "Capture d'écran du bureau Fedora Sway",
-    "every_other_sunday": "un **dimanche** sur deux"
+    "every_other_sunday": "un **dimanche** sur deux",
+    "Fedora Extras": "Fedora Extras",
+    "Fedora Discord": "Fedora Discord",
+    "GNOME Desktop": "Bureau GNOME",
+    "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme) website.": "Fedora CoreOS est créé par une équipe de la communauté Fedora Project appelé the CoreOS Working Group. Il est composé de membres officiels qui ont un pouvoir de décision, ainsi que d'autres contributeurs. Pour en savoir plus sur ce groupe et sur la manière dont vous pouvez vous impliquer, consultez le site Web du [CoreOS Working Group] (https://github.com/coreos/fedora-coreos-tracker#readme).",
+    "Built On Top of the Best": "Construit sur les meilleures bases",
+    "Fedora IOT": "Fedora IOT",
+    "Fedora Kinoite Image": "Image Fedora Kinoite"
 }
