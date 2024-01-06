@@ -737,5 +737,7 @@
     "For IBM PowerPC systems.": "Pour les systèmes IBM PowerPC.",
     "Fedora CoreOS can be deployed on 4 different CPU architectures.": "Fedora CoreOS peut être déployé sur 4 architectures CPU différentes.",
     "Just want an ISO file?": "Vous ne voulez qu'un fichier ISO ?",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues)"
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues)",
+    "Check out the recap from our latest event, the Fedora 37 release party!": "Découvrez le récapitulatif de notre dernier événement, le lancement de Fedora 37 !",
+    "Developers": "Développeurs"
 }
