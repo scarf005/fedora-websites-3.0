@@ -849,5 +849,7 @@
     "Built On Top of the Best": "Construit sur les meilleures bases",
     "Fedora IOT": "Fedora IOT",
     "Fedora Kinoite Image": "Image Fedora Kinoite",
-    "Common Issues": "Problèmes courants"
+    "Common Issues": "Problèmes courants",
+    "active": "actif",
+    "The Fedora Sway Spin provides the popular Sway tiling window manager. It makes Sway accessible and appealing to both novices and advanced users who prefer not to use a mouse, touchpad, or other pointing device to interact with their environment. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Sway Spin offers a complete experience with a minimalist user interface.": "Le Spin Fedora Sway fournit le populaire gestionnaire de fenêtre Sway. Il rend Sway accessible et attrayant à la fois pour les novices et les utilisateurs avancés qui préfèrent ne pas utiliser de souris, de pavé tactile ou de tout autre périphérique de pointage pour interagir avec leur environnement. Doté d'applications légères pour la navigation Web, l'édition de texte et la lecture multimédia, le Spin Fedora Sway offre une expérience complète avec une interface utilisateur minimaliste."
 }
