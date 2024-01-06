@@ -726,5 +726,8 @@
     "Latest news and publications from the Fedora Project": "Dernières nouvelles et publications du Fedora Project",
     "Find a Fedora Spin to enhance your experience! You can find the latest versions of our spins here.": "Trouvez un Spin Fedora pour améliorer votre expérience ! Vous pouvez trouver les dernières versions de nos spins ici.",
     "here": "ici",
-    "checksum file": "fichier de somme de contrôle"
+    "checksum file": "fichier de somme de contrôle",
+    "Close": "Fermer",
+    "Latest Solved Issues": "Derniers bugs résolus",
+    "From": "De"
 }
