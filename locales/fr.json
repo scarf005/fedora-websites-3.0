@@ -511,7 +511,7 @@
     "Why Fedora Iot?": "Pourquoi Fedora IdO ?",
     "Week of Diversity": "Semaine de la diversité",
     "We've partnered with companies like Lenovo to bring you laptops pre-loaded with Fedora that include fully-supported hardware components. ": "Nous nous sommes associés à des entreprises comme Lenovo pour vous proposer des ordinateurs portables préchargés avec Fedora incluant des composants matériels entièrement pris en charge par la distribution. ",
-    "We're so glad you've decided to give Fedora Server a try. We know you'll love it.": "Nous sommes ravis que vous ayez décidé d'essayer Fedora Server. Nous savons que vous l'aimerez.",
+    "We're so glad you've decided to give Fedora Server a try. We know you'll love it.": "Nous sommes très heureux que vous ayez décidé d’essayer Fedora Server. Nous savons que vous allez l’adorer.",
     "We use weblate to translate our site. Please find relevant links below.": "Nous utilisons weblate pour traduire notre site. Vous trouverez ci-dessous les liens pertinents.",
     "We have a **currently-open call for proposals and sponsors** for this year's Nest virtual Fedora annual conference! We have a rolling deadline process with acceptance dates of **July 1st and July 8th, 2022**.\n[Read more about the call for proposals and propose your own](https://communityblog.fedoraproject.org/nest-2022-cfp/)!.": "Nous avons un **appel à des propositions et aux sponsors** en vue de la conférence annuelle virtuelle Fedora Nest (Nest virtual Fedora annual conference) de cette année ! Les dates limites d’acceptation sont fixées au **1er juillet et au 8 juillet 2022**.\n[En savoir plus sur l’appel à propositions et proposer la vôtre](https://communityblog.fedoraproject.org/nest-2022-cfp/) !",
     "We are always excited to work with new contributors. If you're new to the project, check out these sites.": "Nous sommes toujours enthousiastes à l’idée de travailler avec de nouveaux contributeurs. Si vous êtes nouveau dans le projet, consultez ces sites.",
@@ -847,7 +847,7 @@
     "GNOME Desktop": "Bureau GNOME",
     "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme) website.": "Fedora CoreOS est créé par une équipe de la communauté Fedora Project appelé the CoreOS Working Group. Il est composé de membres officiels qui ont un pouvoir de décision, ainsi que d'autres contributeurs. Pour en savoir plus sur ce groupe et sur la manière dont vous pouvez vous impliquer, consultez le site Web du [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme).",
     "Built On Top of the Best": "Construit sur les meilleures bases",
-    "Fedora IOT": "Fedora IOT",
+    "Fedora IOT": "Fedora IoT",
     "Fedora Kinoite Image": "Image Fedora Kinoite",
     "Common Issues": "Problèmes courants",
     "active": "actif",
@@ -899,5 +899,6 @@
     "placeholder": "espace réservé",
     "Fedora Silverblue Image": "Fedora Silverblue 33",
     "Fedora Rawhide": "Fedora Rawhide",
-    "Latest Council Video": "Dernière vidéo du Conseil"
+    "Latest Council Video": "Dernière vidéo du Conseil",
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues)."
 }
