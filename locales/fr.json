@@ -716,7 +716,7 @@
     "Developer-Friendly": "Convivial pour les développeurs",
     "Why Fedora Silverblue?": "Pourquoi Fedora Silverblue ?",
     "Page not found": "Page non trouvée",
-    "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Chaque version est maintenue pendant 13 mois, et chaque mise à jour prend effet au prochain redémarrage, ce qui garantit la cohérence de votre système. Vous pouvez quand même continuer à travailler pendant que les mises à jour sont appliquées!",
+    "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Chaque version est maintenue pendant 13 mois, et chaque mise à jour prend effet au prochain redémarrage, ce qui garantit la cohérence de votre système. Vous pouvez quand même continuer à travailler pendant que les mises à jour sont appliquées !",
     "Atomic": "Atomique",
     "Safe": "Sûre",
     "you_can_verify_the_GPG_details": "{icon}Vous pouvez vérifier les détails de la ou des clés GPG {here}.",
@@ -903,5 +903,8 @@
     "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues).",
     "Ask Fedora": "Questions Fedora",
     "Hatch Call for Proposals": "Flock : Appel à propositions",
-    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Ouvert à tous les actuels et potentiels contributeurs{'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates)."
+    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Ouvert à tous les actuels et potentiels contributeurs{'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).",
+    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "Ouvert à tous les contributeurs actuels et potentiels {'$'}cadence à **{'$'}heure** UTC à **{'$'}emplacement** (voir [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) pour les mises à jour).",
+    "CoreOS Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "Les réunions du groupe de travail CoreOS sont ouvertes à tous les contributeurs actuels et potentiels {'$'}cadence à **{'$'}heure** UTC à **{'$'}emplacement** (voir [fedocal→cloud](https://calendar.fedoraproject.org/list/CoreOS/) pour les mises à jour).",
+    "Cloud Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Les réunions du groupe de travail Cloud sont ouvertes à tous les contributeurs actuels et potentiels {'$'}cadence à **{'$'}heure** UTC à **{'$'}emplacement** (voir [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) pour les mises à jour)."
 }
