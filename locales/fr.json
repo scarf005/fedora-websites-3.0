@@ -145,7 +145,7 @@
     "The Fedora CoreOS Working Group sends meeting agendas and minutes and has discussions on their mailing list at coreos@lists.fedoraproject.org.": "Le groupe de travail Fedora CoreOS envoie les ordres du jour et les comptes rendus des réunions ainsi que leurs discussions sur leurs liste de diffusion coreos{'@'}lists.fedoraproject.org.",
     "The **Fedora Workstation** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Workstation users and contributors.": "La balise **Fedora Workstation** sur le forum de discussion de Fedora est un endroit idéal pour se connecter avec d'autres utilisateurs et contributeurs de Fedora Workstation.",
     "The **Fedora CoreOS** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora CoreOS users and contributors.": "La balise **Fedora CoreOS** sur le forum de discussion de Fedora est un endroit idéal pour se connecter avec d’autres utilisateurs et contributeurs de Fedora CoreOS.",
-    "Thanks to a global community of translators, Workstation is available in many languages.": "Grace à une grande communauté de traducteurs, Workstation est disponible dans de nombreuse langues.",
+    "Thanks to a global community of translators, Workstation is available in many languages.": "Grâce à une grande communauté de traducteurs, Workstation est disponible dans de nombreuses langues.",
     "Screenshot": "Captures d’écran",
     "Run applications on bare metal or the cloud with a Linux server OS packed with the latest open source technology.": "Exécutez des applications sur votre matériel ou le cloud avec un serveur Linux doté la dernière technologie open source.",
     "Reliable": "Fiable",
@@ -227,7 +227,7 @@
     "Once you have downloaded an image, be sure to verify it for both security and integrity": "Une fois que vous avez téléchargé une image, assurez-vous de la vérifier pour sa sécurité et son intégrité",
     "Latest release": "Dernière version",
     "Labs": "Labs",
-    "Fantastic apps": "Applications fantastique",
+    "Fantastic apps": "Applications fantastiques",
     "Fedora Cloud Image": "Image Fedora Cloud",
     "Fedora ALT Downloads": "Téléchargements alternatifs de Fedora",
     "Extensive documentation is available at the Fedora documentation page.": "Une documentation complète est disponible sur la page de documentation de Fedora.",
@@ -741,7 +741,7 @@
     "Check out the recap from our latest event, the Fedora 37 release party!": "Découvrez le récapitulatif de notre dernier événement, le lancement de Fedora 37 !",
     "Developers": "Développeurs",
     "You can view, file, and discuss Fedora Workstation issues on the [Fedora Workstation issue tracker](https://fedoraproject.org/wiki/Bugzilla).": "Vous pouvez consulter, rapporter et discuter des problèmes liés à Fedora Workstation sur le [Suivi des problèmes liés à Fedora Workstation](https://fedoraproject.org/wiki/Bugzilla).",
-    "High-efficiency tools for creating, running and managing containers": "Outils très efficaces pour la création, l'exécution et la gestion de conteneurs",
+    "High-efficiency tools for creating, running and managing containers": "Outil à haute efficacité pour la création, l'exécution et la gestion de conteneurs",
     "Ask and answer questions on [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)": "Posez et répondez à des questions sur [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)",
     "You can chat with the Fedora Budgie community on Matrix at **#budgie:fedoraproject.org**": "Vous pouvez discuter avec la communauté Fedora Budgie sur Matrix à **#budgie:fedoraproject.org**",
     "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Onyx users and contributors.": "La balise **Fedora Onyx** sur le forum de discussion de Fedora est un endroit idéal pour se connecter avec d’autres utilisateurs et contributeurs de Fedora Onyx.",
@@ -900,5 +900,8 @@
     "Fedora Silverblue Image": "Fedora Silverblue 33",
     "Fedora Rawhide": "Fedora Rawhide",
     "Latest Council Video": "Dernière vidéo du Conseil",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues)."
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "Vous pouvez afficher, classer et discuter des problèmes de Fedora IoT sur le [gestionnaire de suivi des problèmes de Fedora IoT](https://pagure.io/fedora-iot/issues).",
+    "Ask Fedora": "Questions Fedora",
+    "Hatch Call for Proposals": "Flock : Appel à propositions",
+    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Ouvert à tous les actuels et potentiels contributeurs{'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates)."
 }
