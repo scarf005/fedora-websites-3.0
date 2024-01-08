@@ -93,7 +93,7 @@ useContentHead(data);
         <h3
           class="mb-4 font-medium text-fp-magenta md:col-span-2 xl:col-span-1 xl:mb-6"
         >
-          {{ data.sections[0].sectionTitle }}
+          {{ $t(data.sections[0].sectionTitle) }}
         </h3>
         <FpList columns="sm:grid-cols-2 gap-12 lg:gap-4 coreos-accent">
           <FpListItem v-for="item in data.sections[0].content" v-bind="item" />
