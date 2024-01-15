@@ -852,7 +852,6 @@
     "Cinnamon Settings": "Cinnamon 设置",
     "Fedora LXDE Desktop ships a terminal, the gateway to the real power of any UNIX/linux machine, called LXTerminal.": "Fedora LXDE 桌面环境搭载了一个终端，一种接触真实 UNIX/Linux 设备的方式，它就是 LXTerminal 。",
     "LXDE, the \"Lightweight X11 Desktop Environment\", is an extremely fast, performant, and energy-saving desktop environment. It maintained by an international community of developers and comes with a beautiful interface, multi-language support, standard keyboard shortcuts and additional features like tabbed file browsing.\n\nLXDE is not designed to be powerful and bloated, but to be usable and slim. A main goal of LXDE is to keep computer resource usage low. It is especially designed for computers with low hardware specifications like netbooks, mobile devices (e.g. MIDs) or older computers.": "LXDE 是 \"轻量级 X11 桌面环境\"，是一种速度极快、性能极佳且节能的桌面环境。它由一个国际开发者社区维护，拥有漂亮的界面、多语言支持、标准键盘快捷键以及标签式文件浏览等附加功能。\n\nLXDE 的设计目标不是强大和臃肿，而是实用和轻薄。LXDE 的主要目标是降低计算机资源使用率。它尤其适用于上网本、移动设备（如 MID）或旧电脑等硬件规格较低的电脑。",
-    "Fedora Podcast 34: Fedora Docs": "Fedora 播客 34：Fedora 文档",
     "GPicView": "GPicView",
     "Fedora Podcast 26: Extra Packages for Enterprise Linux": "Fedora 播客 26：企业版 Linux 的额外软件包",
     "A modern media player, using the gstreamer plugin framework.": "使用 gstreamer 插件框架的现代媒体播放器。",
