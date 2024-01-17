@@ -3,6 +3,7 @@ import locales from "../../config/locales.json";
 
 const { locale } = useI18n();
 const localePath = useLocalePath();
+const config = useRuntimeConfig();
 
 const props = defineProps({
   href: String,
@@ -13,24 +14,31 @@ const props = defineProps({
   i18n: Boolean,
 });
 
-let link = props.href;
-if (/^https:\/\/docs.fedoraproject.org\//.test(link) && locale._value != "en") {
-  let code = locales.find((l) => l.code == locale._value).iso;
-  code = code.replace("-", "_"); // make pt-br (and others?) work
-  link = props.href.replace("en-US", code);
+function processLink(href) {
+  let link = href;
+  if (
+    /^https:\/\/docs.fedoraproject.org\//.test(href) &&
+    locale._value != "en"
+  ) {
+    let code = locales.find((l) => l.code == locale._value).iso;
+    code = code.replace("-", "_"); // make pt-br (and others?) work
+    link = href.replace("en-US", code);
+  }
+
+  if (props.i18n) {
+    // i18n switcher link
+    link = config.app.baseURL.replace(new RegExp("/$"), "") + href;
+  } else if (!/^https:/.test(href)) {
+    link = config.app.baseURL.replace(new RegExp("/$"), "") + localePath(href); // normal in-site link
+  }
+
+  return link;
 }
 </script>
 
 <template>
   <a
-    :href="`${
-      i18n // i18n switcher link
-        ? $config.app.baseURL.replace(new RegExp('/$'), '') + href
-        : /^https:/.test(link) // external link
-        ? link
-        : $config.app.baseURL.replace(new RegExp('/$'), '') + localePath(href) // normal in-site link
-    }`"
-    :target="target"
+    :href="processLink(href)"
     :aria-current="current ? 'page' : undefined"
     :rel="rel"
     :class="class"
