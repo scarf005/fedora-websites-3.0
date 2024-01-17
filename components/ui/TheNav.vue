@@ -223,7 +223,7 @@ nav {
 input {
   appearance: none;
   -webkit-appearance: none;
-  outline-sytle: none;
+  outline-style: none;
 }
 
 /* desktop nav styling */
