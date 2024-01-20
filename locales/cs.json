@@ -954,5 +954,6 @@
     "Atomic Desktops for Fedora.": "Atomické desktopy Fedory.",
     "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Vyberte si atomický desktop Fedory pro získání své lepší zkušenosti! Nejnovější verze našich atomických prostředí pracovní plochy lze nalézt zde.",
     "for Fedora Linux": "pro Fedora Linux",
-    "source:": "zdroj:"
+    "source:": "zdroj:",
+    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Je úterý aktualizační. Už jste spustili příkaz \"sudo dnf update\"?"
 }
