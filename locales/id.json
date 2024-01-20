@@ -978,5 +978,9 @@
     "every_other_sunday": "setiap hari **Minggu**",
     "1702339200000": "1702339200000",
     "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering users sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie Spin menampilkan Budgie Desktop, desktop modern yang kaya fitur dan dirancang untuk memudahkan pengguna. Budgie Desktop menggunakan metafora desain desktop yang umum sambil menawarkan fungsionalitas canggih kepada pengguna seperti widget Raven dan pusat notifikasi, dan metode personalisasi yang mudah digunakan.\n\nSpin ini dirancang untuk menyelaraskan dengan Budgie Desktop hulu, memberikan pengalaman yang hampir sama dengan vanila dengan seperangkat aplikasi default yang telah dikurasi yang paling sesuai dengan Budgie.",
-    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Ini adalah pembaruan hari Selasa. Sudahkah Anda menjalankan \"sudo dnf update\" akhir-akhir ini?"
+    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Ini adalah pembaruan hari Selasa. Sudahkah Anda menjalankan \"sudo dnf update\" akhir-akhir ini?",
+    "Atomic Desktops for Fedora.": "Desktop Atomic untuk Fedora.",
+    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Temukan desktop atomic Fedora untuk meningkatkan pengalaman Anda! Anda bisa menemukan versi terbaru dari desktop atomic kami di sini.",
+    "for Fedora Linux": "untuk Fedora Linux",
+    "source:": "sumber:"
 }
