@@ -712,7 +712,7 @@
     "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Vous avez besoin de quelque chose d'un peu différent ? Consultez nos autres téléchargements ci-dessous, qui présentent des architectures alternatives, des torrents et des images d'installation en réseau.",
     "Private, Trusted, Open Source": "Privé, fiable, open source",
     "signature": "pas de signature",
-    "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "L'ensemble du système est mis à jour en une  fois,. En  cas de problème, la mise à jour ne s'appliquera pas, ce qui signifie que vous garderez  <i>toujours</i> un ordinateur en état de marche.",
+    "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "L'ensemble du système est mis à jour en une fois. En cas de problème, la mise à jour ne s'appliquera pas, ce qui signifie que vous garderez <i>toujours</i> un ordinateur en état de marche.",
     "Developer-Friendly": "Convivial pour les développeurs",
     "Why Fedora Silverblue?": "Pourquoi Fedora Silverblue ?",
     "Page not found": "Page non trouvée",
@@ -764,7 +764,7 @@
     "Join a community of users and contributors focused on Fedora Kinoite.": "Rejoignez une communauté d’utilisateurs et de contributeurs axée sur Fedora Kinoite.",
     "Related Projects": "Projets liés",
     "Toolbx keeps all of your development tools neatly organized per-project. Keep multiple versions of your tools independent from each other and unaffected by changes to the base system.": "Toolbx permet d'organiser soigneusement tous vos outils de développement par projet. Les différentes versions de vos outils sont indépendantes les unes des autres et ne sont pas affectées par les changements apportés au système de base.",
-    "There are no ads, and all your data belongs to you! Fedora is built on the latest open source technologies, and backed by Red Hat.": "Il n'y a pas de publicité, et vous restez propriétaires de l'ensemble de  vos données ! Fedora est construit sur les dernières technologies open source et est soutenu par Red Hat.",
+    "There are no ads, and all your data belongs to you! Fedora is built on the latest open source technologies, and backed by Red Hat.": "Il n'y a pas de publicité, et vous restez propriétaires de l'ensemble de vos données ! Fedora est construit sur les dernières technologies open source et est soutenu par Red Hat.",
     "Screenshot of KDE Desktop": "Captures d'écran du bureau KDE",
     "Containerized": "Conteneurisé",
     "Surf the web, keep in touch with friends, manage files, enjoy music and video, and get productive at work without having to worry about breaking your system.": "Naviguez sur internet, restez en contact avec vos amis, gérez vos fichiers, profitez de vos musiques et films, et soyez productif dans votre travail sans vous soucier de rendre votre système inutilisable.",
@@ -982,5 +982,5 @@
     "Atomic Desktops for Fedora.": "Bureau atomique pour Fedora.",
     "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Trouvez un bureau atomique Fedora pour améliorer votre expérience ! Vous pouvez trouver les dernières versions de nos bureaux atomiques ici.",
     "for Fedora Linux": "pour Fedora Linux",
-    "source:": "source"
+    "source:": "source :"
 }
