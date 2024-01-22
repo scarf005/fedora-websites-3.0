@@ -71,5 +71,8 @@
     "Verify the checksum file is valid": "Comprova que el fitxer de suma de verificació sigui vàlid",
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid": "Verifiqueu la seguretat i integritat de la vostra baixada utilitzant el fitxer apropiat de suma de verificació. Si veieu una signatura bona d'una de les claus Fedora i la suma de verificació SHA256 coincideix, llavors la baixada és vàlida",
     "If the output states that the file is valid, then it's ready to use!": "Si el resultat indica que el fitxer és vàlid, llavors ja el podeu utilitzar!",
-    "You can verify the details of the GPG key(s) below.": "Podeu verificar els detalls de les clau(s) GPG a sota."
+    "You can verify the details of the GPG key(s) below.": "Podeu verificar els detalls de les clau(s) GPG a sota.",
+    "RELEASE DATE": "DATA DE LLANÇAMENT",
+    "Both the Fedora Community Blog and Fedora Magazine are always looking for article proposals, writers, and editors.": "Tant la comunitat del Bloc Fedora com Fedora Magazine sempre cerquen proposicions per articles, escriptors i editors.",
+    "No files available for this version.": "No hi han fitxers disponibles per aquesta versió."
 }
