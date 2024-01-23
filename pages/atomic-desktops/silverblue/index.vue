@@ -15,8 +15,8 @@ useContentHead(data);
       :items="[
         { name: 'Download', link: '/atomic-desktops/silverblue/download' },
         {
-          name: 'Contributing',
-          link: '/atomic-desktops/silverblue/contributing',
+          name: 'Community',
+          link: '/atomic-desktops/silverblue/community',
         },
       ]"
     />

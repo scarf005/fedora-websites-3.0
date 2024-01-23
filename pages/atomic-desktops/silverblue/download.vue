@@ -128,8 +128,8 @@ if (data._value.sections[2].sectionDescription) {
       :items="[
         { name: 'Download', link: '/atomic-desktops/silverblue/download' },
         {
-          name: 'Contributing',
-          link: '/atomic-desktops/silverblue/contributing',
+          name: 'Community',
+          link: '/atomic-desktops/silverblue/community',
         },
       ]"
     />

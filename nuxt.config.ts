@@ -84,10 +84,8 @@ export default defineNuxtConfig({
         });
         ['download', 'community'].forEach((subpagename) => {
           if (subpagename == 'community') {
-            if (pagename == 'sericea')
+            if (pagename == 'silverblue' || pagename == 'sericea')
               return; // return == continue in forEach()
-            if (pagename == 'silverblue')
-              subpagename = 'contributing';
           }
           pages.push({
             name: `${pagename}-${subpagename}-redirect`,
@@ -95,6 +93,11 @@ export default defineNuxtConfig({
             redirect: `/atomic-desktops/${pagename}/${subpagename}`,
           });
         });
+      });
+      pages.push({
+        name: `silverblue-contributing-redirect`,
+        path: `/silverblue/contributing`,
+        redirect: `/atomic-desktops/silverblue/community`,
       });
     },
   },

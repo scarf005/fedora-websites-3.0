@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("atomic-desktops/silverblue/contributing");
+const data = await getCMS("atomic-desktops/silverblue/community");
 
 useContentHead(data);
 </script>
@@ -20,8 +20,8 @@ useContentHead(data);
         :items="[
           { name: 'Download', link: '/atomic-desktops/silverblue/download' },
           {
-            name: 'Contributing',
-            link: '/atomic-desktops/silverblue/contributing',
+            name: 'Community',
+            link: '/atomic-desktops/silverblue/community',
           },
         ]"
       />
