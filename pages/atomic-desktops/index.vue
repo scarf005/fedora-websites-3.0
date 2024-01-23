@@ -24,7 +24,7 @@ useHead({
 
       <div class="container mx-auto max-w-7xl px-2 pt-12">
         <h1 class="text-4xl text-gray-600 dark:text-gray-200">
-          {{ $t("Atomic Desktops for Fedora.") }}
+          {{ $t("Atomic Desktops for Fedora") }}
         </h1>
         <div class="flex flex-col flex-wrap gap-8 lg:flex-row">
           <p class="mt-8 text-gray-600 dark:text-fp-gray-light">
