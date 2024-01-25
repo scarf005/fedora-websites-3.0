@@ -14,8 +14,8 @@ const { data: ga_data } = await useFetch(kojiUrl, {
   transform: (ga_data) => {
     let image = "Onyx";
     if (release_data._value.ga.compose_overrides?.[image]) {
-      console.log("Overrides: ");
-      console.log(release_data._value.ga.compose_overrides[image]);
+      // console.log("Overrides: ");
+      // console.log(release_data._value.ga.compose_overrides[image]);
       if (!ga_data.payload.images[image]) ga_data.payload.images[image] = {};
       for (var arch in release_data._value.ga.compose_overrides[image]) {
         if (arch in ga_data.payload.images[image]) {

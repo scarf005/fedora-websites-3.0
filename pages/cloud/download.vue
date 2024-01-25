@@ -4,10 +4,10 @@ const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
-  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`
+  `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`,
 );
 const { data: beta_data } = await useFetch(
-  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`
+  `https://dl.fedoraproject.org/pub/alt/stage/${release_data._value.beta.releasever}_Beta-${release_data._value.beta.rc_version}/metadata/images.json`,
 );
 
 const betaSwitch = useState("betaSwitch", () => false);
@@ -63,9 +63,9 @@ function updateAMIs(art) {
 }
 
 function updateVerify(art) {
-  console.log(art);
+  // console.log(art);
   verifyModal.value.art_name = art.path.substring(
-    art.path.lastIndexOf("/") + 1
+    art.path.lastIndexOf("/") + 1,
   );
   let path = art.path.substring(0, art.path.lastIndexOf("/"));
   let edition =
@@ -412,7 +412,7 @@ useContentHead(data);
         <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
-              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+              "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.",
             )
           }}
         </p>
@@ -467,7 +467,7 @@ useContentHead(data);
         <p class="ltr:text-left rtl:text-right">
           {{
             $t(
-              "If the output states that the file is valid, then it's ready to use!"
+              "If the output states that the file is valid, then it's ready to use!",
             )
           }}
         </p>
