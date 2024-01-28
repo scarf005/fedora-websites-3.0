@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("atomic-desktops/onyx/download");
+const data = await getCMS("atomic-desktops/budgie/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version everywhere if metadata are not yet available
@@ -119,11 +119,11 @@ if (data._value.sections[2].sectionDescription) {
         light: 'assets/images/fedora-onyx-logo-light.png',
         dark: 'assets/images/fedora-onyx-logo-dark.png',
       }"
-      home="/onyx"
+      home="/atomic-desktops/budgie"
       textColor="text-fp-newblue"
       :items="[
-        { name: 'Download', link: '/atomic-desktops/onyx/download' },
-        { name: 'Community', link: '/atomic-desktops/onyx/community' },
+        { name: 'Download', link: '/atomic-desktops/budgie/download' },
+        { name: 'Community', link: '/atomic-desktops/budgie/community' },
       ]"
     />
 

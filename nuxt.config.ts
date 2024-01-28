@@ -76,7 +76,7 @@ export default defineNuxtConfig({
         });
       }
 
-      ['silverblue', 'kinoite', 'sericea', 'onyx'].forEach((pagename) => {
+      ['silverblue', 'kinoite', 'sericea'].forEach((pagename) => {
         pages.push({
           name: `${pagename}-redirect`,
           path: `/${pagename}`,
@@ -129,5 +129,8 @@ export default defineNuxtConfig({
     "*/start": { experimentalNoScripts: false }, // except start pages - translated
     "/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing
     "*/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing - translated
+    "/onyx": { redirect: "/atomic-desktops/budgie" },
+    "/onyx/download": { redirect: "/atomic-desktops/budgie/download" },
+    "/onyx/community": { redirect: "/atomic-desktops/budgie/community" },
   },
 });

@@ -1,6 +1,6 @@
 <script setup>
 const { locale } = useI18n();
-const data = await getCMS("atomic-desktops/onyx/community");
+const data = await getCMS("atomic-desktops/budgie/community");
 
 useContentHead(data);
 </script>
@@ -15,11 +15,11 @@ useContentHead(data);
           light: 'assets/images/fedora-onyx-logo-light.png',
           dark: 'assets/images/fedora-onyx-logo-dark.png',
         }"
-        home="/onyx"
+        home="/atomic-desktops/budgie"
         textColor="text-teal"
         :items="[
-          { name: 'Download', link: '/atomic-desktops/onyx/download' },
-          { name: 'Community', link: '/atomic-desktops/onyx/community' },
+          { name: 'Download', link: '/atomic-desktops/budgie/download' },
+          { name: 'Community', link: '/atomic-desktops/budgie/community' },
         ]"
       />
 

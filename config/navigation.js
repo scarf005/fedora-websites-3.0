@@ -74,7 +74,7 @@ const navigation = {
           },
           {
             label: "Budgie Atomic",
-            path: "/atomic-desktops/onyx",
+            path: "/atomic-desktops/budgie",
             icon: "fa6-solid:desktop",
             description:
               "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.",

@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("atomic-desktops/onyx/home");
+const data = await getCMS("atomic-desktops/budgie/home");
 useContentHead(data);
 </script>
 <template>
@@ -11,10 +11,10 @@ useContentHead(data);
         light: 'assets/images/fedora-onyx-logo-dark.png',
         dark: 'assets/images/fedora-onyx-logo-dark.png',
       }"
-      home="/onyx"
+      home="/atomic-desktops/budgie"
       :items="[
-        { name: 'Download', link: '/atomic-desktops/onyx/download' },
-        { name: 'Community', link: '/atomic-desktops/onyx/community' },
+        { name: 'Download', link: '/atomic-desktops/budgie/download' },
+        { name: 'Community', link: '/atomic-desktops/budgie/community' },
       ]"
     />
     <FpBanner
