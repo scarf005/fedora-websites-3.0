@@ -63,7 +63,8 @@ const navigation = {
             label: "Kinoite",
             path: "/atomic-desktops/kinoite",
             icon: "fa6-solid:desktop",
-            description: "Fedora Kinoite is an atomic KDE-based desktop.",
+            description:
+              "Fedora Kinoite is an atomic KDE Plasma-based desktop.",
           },
           {
             label: "Sericea",
@@ -72,10 +73,11 @@ const navigation = {
             description: "Fedora Sericea is an atomic Sway-based desktop.",
           },
           {
-            label: "Onyx",
+            label: "Budgie Atomic",
             path: "/atomic-desktops/onyx",
             icon: "fa6-solid:desktop",
-            description: "Fedora Onyx is an atomic Budgie-based desktop.",
+            description:
+              "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.",
           },
         ],
       },
