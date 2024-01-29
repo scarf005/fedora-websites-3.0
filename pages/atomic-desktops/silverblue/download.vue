@@ -123,7 +123,7 @@ if (data._value.sections[2].sectionDescription) {
         light: 'assets/images/fedora-silverblue-logo-light.png',
         dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
-      home="/silverblue"
+      home="/atomic-desktops/silverblue"
       textColor="text-fp-newblue"
       :items="[
         { name: 'Download', link: '/atomic-desktops/silverblue/download' },

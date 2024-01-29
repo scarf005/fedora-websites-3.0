@@ -67,10 +67,10 @@ const navigation = {
               "Fedora Kinoite is an atomic KDE Plasma-based desktop.",
           },
           {
-            label: "Sericea",
-            path: "/atomic-desktops/sericea",
+            label: "Sway Atomic",
+            path: "/atomic-desktops/sway",
             icon: "fa6-solid:desktop",
-            description: "Fedora Sericea is an atomic Sway-based desktop.",
+            description: "Fedora Sway Atomic is an atomic Sway-based desktop.",
           },
           {
             label: "Budgie Atomic",

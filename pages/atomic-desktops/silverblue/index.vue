@@ -11,7 +11,7 @@ useContentHead(data);
         light: 'assets/images/fedora-silverblue-logo-dark.png',
         dark: 'assets/images/fedora-silverblue-logo-dark.png',
       }"
-      home="/silverblue"
+      home="/atomic-desktops/silverblue"
       :items="[
         { name: 'Download', link: '/atomic-desktops/silverblue/download' },
         {

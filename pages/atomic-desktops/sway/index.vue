@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("atomic-desktops/sericea/home");
+const data = await getCMS("atomic-desktops/sway/home");
 useContentHead(data);
 data._value.descriptionMd = await mdparser(data._value.description);
 </script>
@@ -10,9 +10,9 @@ data._value.descriptionMd = await mdparser(data._value.description);
         light: 'assets/images/fedora-sericea-logo-light.png',
         dark: 'assets/images/fedora-sericea-logo-dark.png',
       }"
-      home="/sericea"
+      home="/atomic-desktops/sway"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/atomic-desktops/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/atomic-desktops/sway/download' }]"
     />
 
     <!-- TITLE -->

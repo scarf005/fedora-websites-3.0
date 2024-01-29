@@ -1,5 +1,5 @@
 <script setup>
-const data = await getCMS("atomic-desktops/sericea/download");
+const data = await getCMS("atomic-desktops/sway/download");
 const release_data = await getCMS("release");
 
 // TODO: fallback to n-1 version if metadata are not yet available
@@ -102,9 +102,9 @@ useContentHead(data);
         light: 'assets/images/fedora-sericea-logo-light.png',
         dark: 'assets/images/fedora-sericea-logo-dark.png',
       }"
-      home="/sericea"
+      home="/atomic-desktops/sway"
       textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: '/atomic-desktops/sericea/download' }]"
+      :items="[{ name: 'Download', link: '/atomic-desktops/sway/download' }]"
     />
 
     <!-- TITLE -->
@@ -191,7 +191,7 @@ useContentHead(data);
           >
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Sericea"
+              art_name="Fedora Sway Atomic"
               @verify-click="updateVerify"
               :artifacts="ga_data.payload.images.Sericea.x86_64"
               :dlPrefix="dlpath.x86_64"
@@ -213,7 +213,7 @@ useContentHead(data);
           <template v-else-if="betaSwitch == true && beta_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Sericea"
+              art_name="Fedora Sway Atomic"
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Sericea.x86_64"
               :dlPrefix="dlpath.x86_64"

@@ -11,7 +11,7 @@ useContentHead(data);
         light: 'assets/images/fedora-kinoite-logo-dark.png',
         dark: 'assets/images/fedora-kinoite-logo-dark.png',
       }"
-      home="/kinoite"
+      home="/atomic-desktops/kinoite"
       :items="[
         { name: 'Download', link: '/atomic-desktops/kinoite/download' },
         { name: 'Community', link: '/atomic-desktops/kinoite/community' },

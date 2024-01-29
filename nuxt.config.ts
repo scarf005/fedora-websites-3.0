@@ -76,7 +76,7 @@ export default defineNuxtConfig({
         });
       }
 
-      ['silverblue', 'kinoite', 'sericea'].forEach((pagename) => {
+      ['silverblue', 'kinoite'].forEach((pagename) => {
         pages.push({
           name: `${pagename}-redirect`,
           path: `/${pagename}`,
@@ -84,7 +84,7 @@ export default defineNuxtConfig({
         });
         ['download', 'community'].forEach((subpagename) => {
           if (subpagename == 'community') {
-            if (pagename == 'silverblue' || pagename == 'sericea')
+            if (pagename == 'silverblue')
               return; // return == continue in forEach()
           }
           pages.push({

@@ -121,7 +121,7 @@ if (data._value.sections[2].sectionDescription) {
         light: 'assets/images/fedora-kinoite-logo-light.png',
         dark: 'assets/images/fedora-kinoite-logo-dark.png',
       }"
-      home="/kinoite"
+      home="/atomic-desktops/kinoite"
       textColor="text-teal"
       :items="[
         { name: 'Download', link: '/atomic-desktops/kinoite/download' },

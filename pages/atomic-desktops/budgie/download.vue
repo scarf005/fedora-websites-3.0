@@ -258,7 +258,7 @@ if (data._value.sections[2].sectionDescription) {
             >
               <DownloadSection
                 name="For Intel and AMD x86_64 systems"
-                art_name="Fedora Onyx"
+                art_name="Fedora Budgie Atomic"
                 @verify-click="updateVerify"
                 :artifacts="ga_data.payload.images.Onyx.x86_64"
                 :dlPrefix="dlpath.x86_64"
@@ -276,7 +276,7 @@ if (data._value.sections[2].sectionDescription) {
             >
               <DownloadSection
                 name="For Intel and AMD x86_64 systems"
-                art_name="Fedora Onyx"
+                art_name="Fedora Budgie Atomic"
                 @verify-click="updateVerify"
                 :artifacts="beta_data.payload.images.Onyx.x86_64"
                 :dlPrefix="dlpath.x86_64"
