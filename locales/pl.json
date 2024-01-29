@@ -940,5 +940,6 @@
     "Fedora Rawhide": "Fedora Rawhide",
     "Fedora IOT": "Fedora IoT",
     "for Fedora Linux": "dla Fedory Linux",
-    "source:": "źródło:"
+    "source:": "źródło:",
+    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Aktualizacja jest we wtorek. Czy ostatnio uruchamiałeś „sudo dnf update”?"
 }
