@@ -129,8 +129,5 @@ export default defineNuxtConfig({
     "*/start": { experimentalNoScripts: false }, // except start pages - translated
     "/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing
     "*/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing - translated
-    "/onyx": { redirect: "/atomic-desktops/budgie" },
-    "/onyx/download": { redirect: "/atomic-desktops/budgie/download" },
-    "/onyx/community": { redirect: "/atomic-desktops/budgie/community" },
   },
 });
