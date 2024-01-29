@@ -951,5 +951,6 @@
     "Ask and answer questions on [discussion​.fedoraproject​.org​/tag​/workstation](https://discussion.fedoraproject.org/tag/workstation)": "Задавайте вопросы и отвечайте на них на [discussion.fedoraproject.org/tag/workstation](https://discussion.fedoraproject.org/tag/workstation)",
     "Dedicated Solutions": "Специализированные решения",
     "Legacy": "Устаревший",
-    "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "Нашли что-то не совсем правильное? Хотите предложить изменения в работе Kinoite? Мы хотим услышать это от вас! Зайдите на [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) и дайте нам знать."
+    "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "Нашли что-то не совсем правильное? Хотите предложить изменения в работе Kinoite? Мы хотим услышать это от вас! Зайдите на [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) и дайте нам знать.",
+    "active": "активно"
 }
