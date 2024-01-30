@@ -21,8 +21,8 @@ const props = defineProps({
     >
       <FpImage
         :src="{
-          light: `assets/images/fedora-${name}-logo-light.png`,
-          dark: `assets/images/fedora-${name}-logo-dark.png`,
+          light: `assets/images/atomic-desktops/atomic-${name}-logo-light.png`,
+          dark: `assets/images/atomic-desktops/atomic-${name}-logo-dark.png`,
         }"
         class="h-10"
       />

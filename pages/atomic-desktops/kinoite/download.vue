@@ -118,8 +118,8 @@ if (data._value.sections[2].sectionDescription) {
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800">
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-kinoite-logo-light.png',
-        dark: 'assets/images/fedora-kinoite-logo-dark.png',
+        light: 'assets/images/atomic-desktops/atomic-kinoite-logo-light.png',
+        dark: 'assets/images/atomic-desktops/atomic-kinoite-logo-dark.png',
       }"
       home="/atomic-desktops/kinoite"
       textColor="text-teal"

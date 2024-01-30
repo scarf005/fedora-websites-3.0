@@ -8,8 +8,8 @@ useContentHead(data);
   >
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-silverblue-logo-dark.png',
-        dark: 'assets/images/fedora-silverblue-logo-dark.png',
+        light: 'assets/images/atomic-desktops/atomic-silverblue-logo-dark.png',
+        dark: 'assets/images/atomic-desktops/atomic-silverblue-logo-dark.png',
       }"
       home="/atomic-desktops/silverblue"
       :items="[

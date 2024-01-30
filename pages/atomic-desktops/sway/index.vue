@@ -7,8 +7,8 @@ data._value.descriptionMd = await mdparser(data._value.description);
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800">
     <TheLocalBar
       :image="{
-        light: 'assets/images/fedora-sericea-logo-light.png',
-        dark: 'assets/images/fedora-sericea-logo-dark.png',
+        light: 'assets/images/atomic-desktops/atomic-sway-logo-light.png',
+        dark: 'assets/images/atomic-desktops/atomic-sway-logo-dark.png',
       }"
       home="/atomic-desktops/sway"
       textColor="text-fp-newblue"

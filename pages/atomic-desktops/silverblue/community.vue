@@ -12,8 +12,9 @@ useContentHead(data);
     <header>
       <TheLocalBar
         :image="{
-          light: 'assets/images/fedora-silverblue-logo-light.png',
-          dark: 'assets/images/fedora-silverblue-logo-dark.png',
+          light:
+            'assets/images/atomic-desktops/atomic-silverblue-logo-light.png',
+          dark: 'assets/images/atomic-desktops/atomic-silverblue-logo-dark.png',
         }"
         home="/atomic-desktops/silverblue"
         textColor="text-fp-newblue-700"
