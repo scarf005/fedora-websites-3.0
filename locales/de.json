@@ -269,5 +269,19 @@
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Überprüfen Sie die Sicherheit und Integrität Ihres Downloads anhand der entsprechenden Prüfsummendatei. Wenn eine gültige Signatur von einem der Fedora-Schlüssel vorliegt und die SHA256-Prüfsumme übereinstimmt, dann ist der Download gültig.",
     "help_improve_this_website": "Hilf uns die Website zu verbessern unter {cms} oder dem {gitlab_repo}",
     "you_can_verify_the_GPG_details": "{icon}Sie können die Details der GPG-Schlüssel {here} überprüfen.",
-    "No files available for this version.": "Keine Dateien für diese Version verfügbar."
+    "No files available for this version.": "Keine Dateien für diese Version verfügbar.",
+    "LibreOffice is an integrated office suite. It utilizes free and open standards for its document formats and components.": "LibreOffice ist eine integrierte Bürosoftware. Sie verwendet freie und offene Standard für seine Dokumentenformate und Komponenten.",
+    "Search with DuckDuckGo": "Suche mit DuckDuckGo",
+    "Atomic Desktops for Fedora.": "Atomic Desktops für Fedora.",
+    "Close": "Schließen",
+    "Latest Council Video": "Das neueste Council Video",
+    "Fedora Budgie Image": "Fedora Budgie Image",
+    "Fedora Budgie Spin ships GNOME Terminal, the gateway to the real power of any UNIX/Linux machine.": "Fedora Budgie Spin kommt mit GNOME Terminal, dem Tor zur wahren Macht auf jeder UNIX/Linux Maschine.",
+    "Latest Solved Issues": "Kürzlich behobene Fehler",
+    "From": "Von",
+    "Going Online": "Online gehen",
+    "Common Issues": "Allgemeine Fehler",
+    "Latest news and publications from the Fedora Project": "Aktuellste Nachrichten und Publikationen des Fedora Projects",
+    "Find a Fedora Spin to enhance your experience! You can find the latest versions of our spins here.": "Finde den Fedora Spin, der Deine Erfahrung maximiert! Die neuesten Versionen der Spins findest Du hier.",
+    "news for project contributors": "Neuigkeiten für Project Contributors"
 }
