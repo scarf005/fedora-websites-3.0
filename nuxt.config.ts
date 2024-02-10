@@ -75,32 +75,8 @@ export default defineNuxtConfig({
           });
         });
       }
-
-      ['silverblue', 'kinoite'].forEach((pagename) => {
-        pages.push({
-          name: `${pagename}-redirect`,
-          path: `/${pagename}`,
-          redirect: `/atomic-desktops/${pagename}`,
-        });
-        ['download', 'community'].forEach((subpagename) => {
-          if (subpagename == 'community') {
-            if (pagename == 'silverblue')
-              return; // return == continue in forEach()
-          }
-          pages.push({
-            name: `${pagename}-${subpagename}-redirect`,
-            path: `/${pagename}/${subpagename}`,
-            redirect: `/atomic-desktops/${pagename}/${subpagename}`,
-          });
-        });
-      });
-      pages.push({
-        name: `silverblue-contributing-redirect`,
-        path: `/silverblue/contributing`,
-        redirect: `/atomic-desktops/silverblue/community`,
-      });
     },
-  },
+   },
   nitro: {
     prerender: {
       concurrency: 1
