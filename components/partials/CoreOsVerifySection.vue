@@ -24,19 +24,21 @@
           )
         }}
       </p>
-      <i18n-t
-        keypath="verify_button_instruction"
-        scope="global"
-        tag="p"
-        class="mb-5 text-fp-gray"
-      >
-        <template #verify_button>
-          <Icon
-            name="fa-solid:clipboard-check"
-            class="!align-baseline text-fp-newblue-500 dark:text-gray-200"
-          />
-        </template>
-      </i18n-t>
+      <slot name="instructions">
+        <i18n-t
+          keypath="verify_button_instruction"
+          scope="global"
+          tag="p"
+          class="mb-5 text-fp-gray"
+        >
+          <template #verify_button>
+            <Icon
+              name="fa-solid:clipboard-check"
+              class="!align-baseline text-fp-newblue-500 dark:text-gray-200"
+            />
+          </template>
+        </i18n-t>
+      </slot>
     </div>
     <div
       class="flex w-[400px] flex-none shrink items-center justify-center sm:shrink-0"

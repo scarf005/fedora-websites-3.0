@@ -18,11 +18,20 @@ const props = defineProps({
     type: Array,
     default: [],
   },
+  arch: {
+    type: String,
+  },
+  peer: {
+    type: String,
+  },
   downloadLink: {
     type: String,
   },
-  verifyLink: {
+  checksumLink: {
     type: String,
+  },
+  size: {
+    type: Number,
   },
 });
 
@@ -59,13 +68,22 @@ const prettyType = {
   vmware: "VMware",
   vpc: "Azure",
   vultr: "Vultr",
-  "vagrant-libvirt": "Vagrant",
-  "vagrant-virtualbox": "Vagrant",
+  "vagrant-libvirt": "Vagrant libvirt",
+  "vagrant-virtualbox": "Vagrant VirtualBox",
   "tar-gz": "Compressed Image",
   boot: "Network Install",
   live: "Live ISO",
   "vhd-compressed": "Azure",
 };
+
+function humanSize(n) {
+  var e = (Math.log(n) / Math.log(1024)) | 0;
+  return (
+    (n / Math.pow(1024, e)).toFixed(1) +
+    " " +
+    (e ? "KMGTPEZY"[--e] + "iB" : "Bytes")
+  );
+}
 </script>
 
 <template>
@@ -76,24 +94,47 @@ const prettyType = {
     <div class="flex items-center justify-between gap-4">
       <p class="flex flex-wrap gap-x-5 text-gray-800 dark:text-gray-400">
         <slot>
-          <span class="font-semibold">
-            {{ name }}
-          </span>
-          <span class="w-0 basis-full sm:hidden"></span>
-          <span class="">{{ prettyType[type] }}</span>
-          <span class="text-gray-500"> {{ format }}</span>
-          <span class="beta-flag hidden">{{ $t("BETA") }} </span>
+          <template v-if="variants.includes('labs')">
+            <span class="font-semibold">
+              {{ name }}
+            </span>
+            <span class="beta-flag hidden">{{ $t("BETA") }} </span>
+            <span class="w-0 basis-full"></span>
+            <span class="">{{ prettyType[type] }}</span>
+            <span class="dl-format text-gray-500"> {{ format }}</span>
+            <span class="size">{{ humanSize(size) }}</span>
+          </template>
+          <template v-else>
+            <span class="font-semibold">
+              {{ name }}
+            </span>
+            <span class="w-0 basis-full sm:hidden"></span>
+            <span class="">{{ prettyType[type] }}</span>
+            <span class="dl-format text-gray-500"> {{ format }}</span>
+            <span class="beta-flag hidden">{{ $t("BETA") }} </span>
+          </template>
         </slot>
       </p>
       <div class="inline-flex">
         <slot name="btn">
-          <a
-            @click="$emit('verifyClick')"
-            title="Verify"
-            class="ltr:rounded-l-xl rtl:rounded-r-xl"
-          >
-            <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
-          </a>
+          <template v-if="variants.includes('labs')">
+            <a
+              class="ltr:rounded-l-xl rtl:rounded-r-xl"
+              target="_blank"
+              :href="checksumLink"
+            >
+              <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
+            </a>
+          </template>
+          <template v-else>
+            <a
+              @click="$emit('verifyClick')"
+              title="Verify"
+              class="ltr:rounded-l-xl rtl:rounded-r-xl"
+            >
+              <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
+            </a>
+          </template>
           <FpLink
             :href="downloadLink"
             v-if="downloadLink"
@@ -117,9 +158,6 @@ const prettyType = {
 .fp-download-item a,
 .fp-download-item--variant-beta a {
   @apply cursor-pointer border py-1 px-3 transition-colors;
-}
-
-.fp-download-item--variant-beta {
 }
 
 .fp-download-item--variant-beta .beta-flag {

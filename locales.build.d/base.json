@@ -65,6 +65,7 @@
   "signature": "",
   "download_the_checksum_and_signature": "Download the {checksum_file} and {signature} into the same directory as the image you downloaded.",
   "you_can_verify_the_GPG_details": "{icon}You can verify the details of the GPG key(s) {here}.",
+  "verify_button_download": "Click the verify button {verify_button} to download the checksum file for your downloaded image.",
   "logo": "",
   "But wait! There's more.": "",
   "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "",

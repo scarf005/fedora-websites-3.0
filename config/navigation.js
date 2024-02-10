@@ -187,7 +187,7 @@ const navigation = {
           },
           {
             label: "Games",
-            path: "https://labs.fedoraproject.org/games",
+            path: "/labs/games",
             icon: "fa6-solid:desktop",
             description:
               "A collection and perfect showcase of the best games available in Fedora.",
@@ -201,7 +201,7 @@ const navigation = {
           },
           {
             label: "Python Classroom",
-            path: "https://labs.fedoraproject.org/python-classroom/",
+            path: "/labs/python-classroom/",
             icon: "fa6-solid:desktop",
             description:
               "A classroom lab for teaching the Python programming language to students.",

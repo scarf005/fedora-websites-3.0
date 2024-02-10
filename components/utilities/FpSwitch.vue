@@ -9,6 +9,7 @@ const props = defineProps({
 <template>
   <label class="relative inline-flex cursor-pointer items-center">
     <input
+      :id="$attrs.id"
       type="checkbox"
       class="peer sr-only"
       @click="$emit('switchToggled', $event)"
