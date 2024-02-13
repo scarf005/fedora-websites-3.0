@@ -792,5 +792,6 @@
     "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "Crie facilmente contêineres OCI totalmente integrados ao seu sistema host, permitindo o uso contínuo de ferramentas GUI e CLI.",
     "Fedora Kinoite Image": "Imagem do Fedora Kinoite",
     "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "Encontrou algo que não está certo? Quer propor uma mudança na forma como o Kinoite funciona? Nós queremos ouvir de você! Acesse o [rastreador de problemas do KDE SIG](https://pagure.io/fedora-kde/SIG/issues) e informe-nos.",
-    "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Você pode conversar com a comunidade Fedora Kinoite via Matrix ou IRC: **#kinoite:fedoraproject.org** no Matrix ou #kinoite em irc.libera.chat."
+    "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Você pode conversar com a comunidade Fedora Kinoite via Matrix ou IRC: **#kinoite:fedoraproject.org** no Matrix ou #kinoite em irc.libera.chat.",
+    "We're so glad you've decided to give Fedora Sericea a try. We know you'll love it.": "Estamos muito felizes por você ter decidido experimentar o Fedora Server. Nós sabemos que você vai adorar."
 }
