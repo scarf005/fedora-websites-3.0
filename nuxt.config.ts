@@ -63,19 +63,19 @@ export default defineNuxtConfig({
     },
   },
   hooks: {
-    "pages:extend"(pages) {
-      if (process?.env?.CI) {
-        pages.forEach((page) => {
-          pages.push({
-            name: `${page.name}-alias`,
-            path:
-              page.path.length > 1 ? `${page.path}/index.html` : "/index.html",
-            redirect: page.path,
-            file: page.file,
-          });
-        });
-      }
-    },
+    // "pages:extend"(pages) {
+    //   if (process?.env?.CI_JOB_NAME == "build_preview") {
+    //     pages.forEach((page) => {
+    //       pages.push({
+    //         name: `${page.name}-alias`,
+    //         path:
+    //           page.path.length > 1 ? `${page.path}/index.html` : "/index.html",
+    //         redirect: page.path,
+    //         file: page.file,
+    //       });
+    //     });
+    //   }
+    // },
    },
   nitro: {
     prerender: {
