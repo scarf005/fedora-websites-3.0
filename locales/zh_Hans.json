@@ -993,8 +993,8 @@
     "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering users sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie Spin 展示了 Budgie Desktop，这是一款功能丰富的现代化桌面，旨在不妨碍用户。 Budgie Desktop 使用常见的桌面设计隐喻，同时为用户提供复杂的功能，例如 Raven 小部件和通知中心，以及一种平易近人的个性化方法。\n\n此 Spin 旨在与上游 Budgie Desktop 紧密结合，通过一组最适合 Budgie 的精选默认应用程序提供接近普通的体验。",
     "Fedora Silverblue is an atomic desktop operating system aimed at good support for container-focused workflows.": "Fedora Silverblue 是一个 atomic 桌面操作系统，旨在为以容器为中心的工作流程提供良好支持。",
     "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "周二更新了。您最近运行过“sudo dnf update”吗？",
-    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "寻找 Fedora atomic 桌面来增强您的体验！ 您可以在这里找到我们 atomic 桌面的最新版本。",
-    "Atomic Desktops for Fedora.": "Fedora 的 atomic 桌面。",
+    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "寻找 Fedora 原子桌面来增强您的体验！ 您可以在这里找到我们原子桌面的最新版本。",
+    "Atomic Desktops for Fedora.": "Fedora 的原子桌面 。",
     "for Fedora Linux": "对于 Fedora Linux",
     "source:": "来源："
 }
