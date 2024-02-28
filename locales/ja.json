@@ -230,7 +230,7 @@
     "License Details": "ライセンスの詳細",
     "License": "ライセンス",
     "its_your_Community.": "コミュニティ。",
-    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering uses sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie スピンは、ユーザーの邪魔をしないように設計され、豊富な機能を備えた、モダンなデスクトップである、Budige デスクトップを提供します。Budgie デスクトップは一般的なデスクトップデザインのメタファーを使用しながら、Raven ウィジェットや通知センターなどの洗練された機能を提供し、親しみやすいカスタマイズ方法も備えています。\n\nこのスピンは、上流の Budgie デスクトップに密接に連動するよう設計されており、Budgie と最適に合うデフォルトのアプリケーションセットを備えた vanilla experience に近いものを提供します。",
+    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering uses sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie スピンは、ユーザーの邪魔をしないように設計され、豊富な機能を備えた、モダンなデスクトップである、Budgie デスクトップを提供します。Budgie デスクトップは一般的なデスクトップデザインのメタファーを使用しながら、Raven ウィジェットや通知センターなどの洗練された機能を提供し、親しみやすいカスタマイズ方法も備えています。\n\nこのスピンは、上流の Budgie デスクトップに密接に連動するよう設計されており、Budgie と最適に合うデフォルトのアプリケーションセットを備えた、バニラな Budgie 体験に近いものを提供します。",
     "Simple interface. Powerful music management. Playlists. Streaming Radio. Podcasts.": "シンプルなインターフェイス。パワフルな音楽の管理。プレイリストも。ラジオも。ポットキャストも。",
     "Screenshot of Fedora Budgie desktop": "Fedora Budgie デスクトップのスクリーンショット",
     "Office & Productivity": "オフィスと生産性",
@@ -507,5 +507,18 @@
     "Atomic Desktops for Fedora.": "Fedora の Atomic デスクトップ。",
     "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "より良い体験を提供する Fedora Atomic Desktopを探しましょう！最新バージョン Atomic Desktopをこちらから探してください。",
     "Why Fedora Onyx?": "Fedora Onyx を使う理由",
-    "source:": "ソース"
+    "source:": "ソース:",
+    "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Budgie Atomic users and contributors.": "**Fedora Onyx** のタグの付いた Fedora のディスカッションフォーラム（Discourse ベース）は、他の Fedora Budgie Atomic ユーザーとコントリビューターとつながれる絶好の場所です。",
+    "By clicking on and downloading Fedora, you agree to comply with the [Fedora Export Control Policy](https://docs.fedoraproject.org/en-US/legal/export/).": "Fedora をクリックしてダウンロードすることによって、あなたは、[Fedora Export Control Policy](https://docs.fedoraproject.org/en-US/legal/export/) に同意したことになります。",
+    "You can chat with the Fedora Budgie community on Matrix at **#budgie:fedoraproject.org**": "Matrix の **#budgie:fedoraproject.org** で Fedora Budgie コミュニティとチャットできます",
+    "Getting going with Fedora is easier than ever. All you need is a 2GB USB flash drive, and Fedora Media Writer.\nOnce Fedora Media Writer is installed, it will set up your flash drive to run a \"Live\" version of Fedora Workstation, meaning that you can boot it from your flash drive and try it out right away without making any permanent changes to your computer. Once you are hooked, installing it to your hard drive is a matter of clicking a few buttons*.": "Fedora を使い始めるのは今まで以上に簡単です。必要なのは 2GB の USB フラッシュドライブと Fedora Media Writer だけです。\nFedora Media Writer は、インストールさえすれば、\"ライブ\"バージョンの Fedora Workstation を起動できるように フラッシュドライブ をセットアップします。つまり、あなたのコンピューターに永続的な変更を加えることなく、フラッシュドライブから Fedora を起動できるということです。Fedora に夢中になったら、数クリックでハードドライブへインストールできます*。",
+    "The Fedora desktop experiences you know with an additional layer of security and reliability.": "いつもの Fedora デスクトップ体験に、さらなるセキュリティと信頼性のレイヤーが追加されています。",
+    "Just want an ISO file?": "ISO ファイルが欲しい？",
+    "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "キーボード操作の Sway ウィンドウマネージャをフィーチャーした Atomic なデスクトップ OS。",
+    "Testers": "テスター",
+    "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "これらのファイルの使い方が分からない？[こちらで学べます](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
+    "Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)": "超カンタンに Fedora を試せる Fedora Media Writer を使って、Fedora を始めましょう。[もっと知る](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)",
+    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作方法について変更を提案したいですか？あなたの声を聞かせてください！[Budgie SIG のバグトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
+    "Join a community of users and contributors focused on Fedora Budgie Atomic.": "Fedora Budgie Atomic に焦点を当てた、ユーザー／コントリビューターのコミュニティに参加しましょう。",
+    "Fedora Budgie Atomic": "Fedora Budgie Atomic"
 }
