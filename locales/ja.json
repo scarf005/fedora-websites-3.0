@@ -518,7 +518,13 @@
     "Testers": "テスター",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "これらのファイルの使い方が分からない？[こちらで学べます](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
     "Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)": "超カンタンに Fedora を試せる Fedora Media Writer を使って、Fedora を始めましょう。[もっと知る](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)",
-    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作方法について変更を提案したいですか？あなたの声を聞かせてください！[Budgie SIG のバグトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
+    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作について改善を提案したいですか？あなたの声を聞かせてください！[Budgie SIG のバグトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
     "Join a community of users and contributors focused on Fedora Budgie Atomic.": "Fedora Budgie Atomic に焦点を当てた、ユーザー／コントリビューターのコミュニティに参加しましょう。",
-    "Fedora Budgie Atomic": "Fedora Budgie Atomic"
+    "Fedora Budgie Atomic": "Fedora Budgie Atomic",
+    "Built On Top of the Best": "最高のベースで造られる",
+    "An atomic desktop operating system featuring the modern and elegant GNOME Desktop": "モダンでエレガントな GNOME デスクトップをフィーチャーした Atomic なデスクトップ OS",
+    "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "万が一に備えて、以前のバージョンのシステムは常に保管されます。必要なとき、過去のバージョンに戻ることができます！",
+    "Atomic": "Atomic (アトミック)",
+    "Fedora Everything": "Fedora Everything",
+    "An atomic desktop operating system featuring the modern and modular Plasma Desktop": "モダンで人気な Plasma デスクトップをフィーチャーした Atomic なデスクトップ OS"
 }
