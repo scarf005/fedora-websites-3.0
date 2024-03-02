@@ -532,5 +532,6 @@
     "Developer-Friendly": "デベロッパーにフレンドリー",
     "Free & private": "自由でプライベート",
     "KDE Plasma Desktop": "KDE Plasma デスクトップ",
-    "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "システムに完全に統合された OCI コンテナーを容易に作成でき、GUI と CLI ツールの両方の用途にシームレスに対応します。"
+    "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "システムに完全に統合された OCI コンテナーを容易に作成でき、GUI と CLI ツールの両方の用途にシームレスに対応します。",
+    "GitLab repo": "GitLab レポジトリ"
 }
