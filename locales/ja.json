@@ -95,7 +95,7 @@
     "Fedora Magazine is a website that hosts promotional articles and short guides contributed from the community about free/libre and open-source software that runs on or works with the Fedora Linux operating system.": "Fedora Magazine は、Fedora Linux OS 上で動作する自由・オープンソースソフトウェアに関するコミュニティからのショートガイドや宣伝記事をお伝えするウェブサイトです。",
     "The **Fedora Cloud** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Cloud users and contributors.": "**Fedora Cloud** のタグが付いた Fedora のディスカッションフォーラム（Discourse ベース）は、他の Fedora Cloud ユーザーやコントリビューターとつながれる絶好の場所です。",
     "A modern media player, using gtk3 and the gstreamer plugin framework.": "GTK3 と GStreamer プラグインフレームワークを使用した、モダンなメディアプレイヤー。",
-    "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "Fedora Budgie スピンを試そう思ったことに、私たちは感激します！あなたがこのスピンを好きになるであろうことを私たちは知っています。",
+    "We're so glad you've decided to give Fedora Budgie Spin a try. We know you'll love it.": "あなたが Fedora Budgie スピンを試そうと決心したことに、私達は感激します。私たちは知っています！このスピンが好きになるであろうことを。",
     "Upstream Documentation": "上流のドキュメント",
     "Fedora Budgie Spin": "Fedora Budgie スピン",
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid": "セキュリティと整合性のために、ダウンロードされたイメージを適切なチェックサムを使って検証します。Fedora Key からのちゃんとした署名があり、かつ SHA256 チェックサムがマッチすれば、適切なダウンロードファイルです",
@@ -518,7 +518,7 @@
     "Testers": "テスター",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "これらのファイルの使い方が分からない？[こちらで学べます](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
     "Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)": "超カンタンに Fedora を試せる Fedora Media Writer を使って、Fedora を始めましょう。[もっと知る](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)",
-    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作について改善を提案したいですか？あなたの声を聞かせてください！[Budgie SIG のバグトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
+    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作方法について改良を提案したいですか？あなたの声を聞かせてください！[Budgie SIG の issueトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
     "Join a community of users and contributors focused on Fedora Budgie Atomic.": "Fedora Budgie Atomic に焦点を当てた、ユーザー／コントリビューターのコミュニティに参加しましょう。",
     "Fedora Budgie Atomic": "Fedora Budgie Atomic",
     "Built On Top of the Best": "最高のベースで造られる",
@@ -544,5 +544,9 @@
     "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "システム全体が一度にアップデートされても、問題が発生した場合はアップデートは適用されません。つまり、<i>何が起こっても</i>コンピューターを動作させることができます。",
     "Screenshot of Budgie Desktop": "Budgie デスクトップのスクリーンショット",
     "The Budgie desktop experience in an atomic fashion.": "アトミックな Fedora での Budgie デスクトップ体験。",
-    "Why Fedora Budgie Atomic?": "Fedora Budgie Atomic を使う理由"
+    "Why Fedora Budgie Atomic?": "Fedora Budgie Atomic を使う理由",
+    "Writers": "ライター",
+    "We're so glad you've decided to give Fedora Kinoite a try. We know you'll love it.": "あなたが Fedora Kinoite を試そうと決心したことに、私達に感謝します。私たちは知っています！この Fedora が好きになるであろうことを。",
+    "Found something that isn't quite right? Want to propose a change to the way Kinoite works? We want to hear from you! Head over to the [KDE SIG issue tracker](https://pagure.io/fedora-kde/SIG/issues) and let us know.": "何かおかしな所を見つけましたか？Kinoite の動作方法に改良を提案したいですか？あなたの声を聞かせてください！[KDE SIG の issue トラッカー](https://pagure.io/fedora-kde/SIG/issues)で、私達にお知らせください。",
+    "You can chat with the Fedora Kinoite community via either Matrix or IRC: **#kinoite:fedoraproject.org** on Matrix or #kinoite on irc.libera.chat.": "Fedora Kinoite コミュニティと Matrix や IRC を通じてチャットすることができます。**#kinoite:fedoraproject.org** on Matrix または #kinoite on irc.libera.chat をご覧ください。"
 }
