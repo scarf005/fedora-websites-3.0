@@ -50,5 +50,6 @@
     "Most computers with Intel and AMD processors.": "Intel va AMD protsessordagi ko'pchilik kompyuterlar.",
     "Once you have downloaded an image, be sure to verify it for both security and integrity.": "Obrazni yuklab olgandan so'ng, albatta uning xavfsizligi va butunligini tekshiring.",
     "Fedora CoreOS can be deployed on 3 different CPU architecture.": "Fedora CoreOS uch xil CPU arxitekturasida ishlashi mumkin.",
-    "Panda, Beefy and Badger.": "Panda, Beefy va Badger."
+    "Panda, Beefy and Badger.": "Panda, Beefy va Badger.",
+    "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity.": "Tekshirish summasini kompyuteringizda hisoblab, uni haqiqiy summa bilan solishtirish yo'li orqali siz obrazning qalbakilashtirilmagan yoki shikast yetmaganligiga ishonch hosil qilasiz. Obrazlar shu bilan birga gpg kalitlari orqali ham imzolanadi, bu ularni butunligini namoyon etish uchun"
 }
