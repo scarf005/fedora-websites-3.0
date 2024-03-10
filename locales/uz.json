@@ -53,5 +53,6 @@
     "Panda, Beefy and Badger.": "Panda, Beefy va Badger.",
     "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity.": "Tekshirish summasini kompyuteringizda hisoblab, uni haqiqiy summa bilan solishtirish yo'li orqali siz obrazning qalbakilashtirilmagan yoki shikast yetmaganligiga ishonch hosil qilasiz. Obrazlar shu bilan birga gpg kalitlari orqali ham imzolanadi, bu ularni butunligini namoyon etish uchun.",
     "Watch the latest reviews ➔": "Oxirgi sharhlarni ko'ring ➔",
-    "Get Started": "Boshlash"
+    "Get Started": "Boshlash",
+    "Learn more": "Ko'proq bilish"
 }
