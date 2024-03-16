@@ -554,5 +554,10 @@
     "Screenshot of KDE Desktop": "KDE デスクトップのスクリーンショット",
     "Screenshot of blank laptop as background to KDE desktop": "KDE デスクトップのバックグラウンドとしての、何も表示されていないラップトップのスクリーンショット",
     "Fedora Kinoite Image": "Fedora Kinoite のイメージ",
-    "Foot is a fast, lightweight and minimalistic Wayland terminal emulator.": "Foot は、高速、軽量、ミニマルな Wayland 向け端末エミュレータです。"
+    "Foot is a fast, lightweight and minimalistic Wayland terminal emulator.": "Foot は、高速、軽量、ミニマルな Wayland 向け端末エミュレータです。",
+    "Highly customizable Wayland window manager Sway is great for keyboard-first workflows.": "キーボード操作のワークフローに最適で、高いカスタマイズ性を持つ、Wayland ウィンドウマネージャ Sway。",
+    "Fedora Silverblue is a community-driven project seeking contributions from folks with any skillset. From documentation writing, to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Silverblue!": "Fedora Silverblue は、コミュニティ主体のプロジェクトであり、様々なスキルを持つコントリビューターを探しています。ドキュメントを書くことから、ベータテストをしたり、質問に回答して他の人を助けることまで、コミュニティに参加し、Silverblue の未来を創るのに貢献する方法はたくさんあります！",
+    "Highly customizable Wayland bar for Sway and Wlroots based compositors.": "カスタマイズ性の高い Sway や Wlroots ベースコンポジタ向けの Wayland バー。",
+    "imv is a command line image viewer intended for use with tiling window managers.": "imv は、タイル型ウィンドウマネージャ向けに作られたコマンドラインのイメージビューアです。",
+    "light gets and sets the screen back-light brightness on Linux.": "light は、Linux 上でバックライトの明るさを取得・調節します。"
 }
