@@ -585,5 +585,16 @@
     "Sign up at [cloud@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "[cloud{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/cloud.lists.fedoraproject.org/) にサインアップして、ミーティングの議題と議事録を受け取れます。",
     "The Next stream represents the future. It provides early access to new features and to the next major version of Fedora. Run a few Next machines in your cluster, or in staging, to help find problems.": "Next ストリームは未来を象徴しています。新しい機能・Fedora の次期メジャーバージョンへのアーリーアクセスを提供します。クラスターまたはステージング内でいくつか Next マシンを走らせて、問題を見つけるのに貢献できます。",
     "CoreOS Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "CoreOS Working Group ミーティングは、すべての現在および将来的なコントリビューターに向けて開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) をご覧ください）。",
-    "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "Testing ストリームには、次期 Stable リリースの内容が含まれています。クラスターにいくつかの Testing マシンを混ぜて、固有のハードウェアや設定で起こるバグを見つけ出してください。"
+    "The Testing stream contains the next Stable release. Mix a few Testing machines into your cluster to catch any bugs specific to your hardware or configuration.": "Testing ストリームには、次期 Stable リリースの内容が含まれています。クラスターにいくつかの Testing マシンを混ぜて、固有のハードウェアや設定で起こるバグを見つけ出してください。",
+    "The optimal container host will be offered in order to run containerized applications.": "コンテナ化されたアプリケーションの実行するための最適化されたコンテナホストを提供します。",
+    "Fedora CoreOS Release Notes": "Fedora CoreOS リリースノート",
+    "The Fedora CoreOS image is kept minimal by design.": "Fedora CoreOS イメージは設計により最小限に抑えられています。",
+    "Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "[coreos-status{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) にサインアップして、ミーティングの議題と議事録を受け取れます。",
+    "Open to everyone": "誰もにオープン",
+    "There are a wide variety of supported installation methods.": "サポートされているインストール方法は多岐にわたります。",
+    "Platforms Tested against CoreOS": "CoreOS でテストされたプラットフォーム",
+    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "すべての現在および将来的なコントリビューターに開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) をご覧ください）。",
+    "Visit \\#fedora-coreos on irc.libera.chat.": "irc.libera.chat on \\#fedora-coreos をご覧ください。",
+    "Our goal is to provide the best container host to run workloads securely and at scale.": "我々の目標は、ワークロードを安全かつ大スケールに実行するために最適なコンテナホストを提供することです。",
+    "IoT Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "IoT Working Group ミーティングは、すべての現在および将来的なコントリビューターに向けて開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** で実施されます（最新情報は [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) をご覧ください）。"
 }
