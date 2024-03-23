@@ -598,5 +598,7 @@
     "Our goal is to provide the best container host to run workloads securely and at scale.": "我々の目標は、ワークロードを安全かつ大スケールに実行するために最適なコンテナホストを提供することです。",
     "IoT Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "IoT Working Group ミーティングは、すべての現在および将来的なコントリビューターに向けて開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** で実施されます（最新情報は [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) をご覧ください）。",
     "You can chat with the Fedora IoT Working Group via either Matrix or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat.": "Fedora IoT Working Groupと Matrix や IRC を通じてチャットすることができます。#iot:fedoraproject on Matrix か #fedora-iot on irc.libera.chat. をご覧ください。",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "ファイルや Fedora CoreOS の問題についての議論を [Fedora CoreOS のバグトラッカー](https://github.com/coreos/fedora-coreos-tracker/issues) で閲覧できます。"
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues).": "ファイルや Fedora IoT の問題についての議論を [Fedora IoT のバグトラッカー](https://github.com/coreos/fedora-coreos-tracker/issues) で閲覧できます。",
+    "Built on the latest technologies and enhancements that open-source has to offer.": "オープンソースが提供する最新テクノロジーとエンハンスメントによって構成されています。",
+    "A lightweight yet powerful and scalable OS": "軽量ながらパワフルでスケーラブルな OS"
 }
