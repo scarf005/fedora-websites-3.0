@@ -10,7 +10,7 @@ const { data: stable_data } = await useFetch(
       console.log("stable data loaded");
       parseArgs("stable");
     },
-  }
+  },
 );
 const { data: test_data } = await useFetch(
   "https://builds.coreos.fedoraproject.org/streams/testing.json",
@@ -20,7 +20,7 @@ const { data: test_data } = await useFetch(
       console.log("testing data loaded");
       parseArgs("testing");
     },
-  }
+  },
 );
 const { data: next_data } = await useFetch(
   "https://builds.coreos.fedoraproject.org/streams/next.json",
@@ -30,7 +30,7 @@ const { data: next_data } = await useFetch(
       console.log("next data loaded");
       parseArgs("next");
     },
-  }
+  },
 );
 
 let selectedStream = useState("stream", () => stable_data);
@@ -118,7 +118,7 @@ function switchStream(name) {
       Array.from(document.querySelectorAll(".coreos-stream-sel")).forEach(
         function (el) {
           el.classList.remove("active");
-        }
+        },
       );
       document.getElementById(name)?.classList.add("active");
     }
@@ -142,7 +142,7 @@ function switchArch(name) {
           Array.from(document.querySelectorAll("#arches .active")).forEach(
             function (el) {
               el.classList.remove("active");
-            }
+            },
           );
           document.getElementById(name)?.classList.add("active");
         }
@@ -154,14 +154,14 @@ function switchArch(name) {
 
 function updateVerify(art) {
   verifyModal.value.art_name = art.location.substring(
-    art.location.lastIndexOf("/") + 1
+    art.location.lastIndexOf("/") + 1,
   );
   verifyModal.value.signature = art.signature;
   verifyModal.value.checksum = `data:text/plain;charset=utf-8,SHA256 (${encodeURIComponent(
-    verifyModal.value.art_name
+    verifyModal.value.art_name,
   )}) = ${art.sha256}`;
   verifyModal.value.sig_name = art.signature.substring(
-    art.signature.lastIndexOf("/") + 1
+    art.signature.lastIndexOf("/") + 1,
   );
   verifyModal.value.chk_name = `${verifyModal.value.art_name}-CHECKSUM`;
   if (document) {
@@ -187,7 +187,13 @@ function closeModal(state) {
 
 function virt_arts(data) {
   let dict = {};
-  const virtualizedImages = ["applehv", "hyperv", "qemu", "virtualbox", "vmware"];
+  const virtualizedImages = [
+    "applehv",
+    "hyperv",
+    "qemu",
+    "virtualbox",
+    "vmware",
+  ];
   if (data) {
     for (let k of virtualizedImages) {
       if (k in data) {
@@ -534,7 +540,7 @@ useContentHead(data);
                     class="rounded-xl"
                     @click="
                       updateAMIs(
-                        selectedStream.architectures[selectedArch].images.aws
+                        selectedStream.architectures[selectedArch].images.aws,
                       )
                     "
                   >
@@ -644,7 +650,7 @@ useContentHead(data);
             @verify-click="updateVerify"
             :artifacts="
               metal_arts(
-                selectedStream.architectures[selectedArch].artifacts.metal
+                selectedStream.architectures[selectedArch].artifacts.metal,
               )
             "
           />
@@ -734,7 +740,7 @@ useContentHead(data);
         <p class="text-base ltr:text-left rtl:text-right">
           {{
             $t(
-              "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid."
+              "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.",
             )
           }}
         </p>
@@ -798,7 +804,7 @@ useContentHead(data);
         <p class="ltr:text-left rtl:text-right">
           {{
             $t(
-              "If the output states that the file is valid, then it's ready to use!"
+              "If the output states that the file is valid, then it's ready to use!",
             )
           }}
         </p>
@@ -841,7 +847,7 @@ useContentHead(data);
               <td class="hidden ltr:pr-6 rtl:pl-6 sm:block">{{ ami.image }}</td>
               <td class="text-center">
                 <FpLink
-                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#launchAmi=${ami.image}`"
+                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#LaunchInstances:ami=${ami.image}`"
                   target="blank"
                   :title="`Launch in ${region}`"
                   class="rounded-xl"

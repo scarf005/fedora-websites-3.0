@@ -42,6 +42,7 @@ function processLink(href) {
     :aria-current="current ? 'page' : undefined"
     :rel="rel"
     :class="class"
+    :target="target"
   >
     <slot></slot>
   </a>

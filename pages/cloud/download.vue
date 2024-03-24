@@ -510,7 +510,7 @@ useContentHead(data);
               <td class="hidden ltr:pr-6 rtl:pl-6 sm:block">{{ ami }}</td>
               <td class="text-center">
                 <FpLink
-                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#launchAmi=${ami}`"
+                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#LaunchInstances:ami=${ami}`"
                   target="blank"
                   :title="`Launch in ${region}`"
                   class="rounded-xl"
