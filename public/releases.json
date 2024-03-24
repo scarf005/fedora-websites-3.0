@@ -1,5 +1,540 @@
 [
   {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-AmazonEC2.x86_64-40-1.10.raw.xz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "66dc695ce7c7949516d915576b729f484445fc832d2bc5ff505575e04fd251ee",
+    "size": "368549988"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-GCE.x86_64-40-1.10.tar.gz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "7284937103b1d6fa09374b2a31db4d17c1c4f5d3a467c9a9d2283d3c782514d7",
+    "size": "401823271"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-Generic.x86_64-40-1.10.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "8c2d3f4d2379d45f4da99d33e0ded893f136baeb21647f1d50a99ba03acbc1f1",
+    "size": "399507456"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-UEFI-UKI.x86_64-40-1.10.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base_UKI",
+    "sha256": "73628ef46ceaab0b26ed172078ba59b32138f230e4fc68c691eb3812aecdde86",
+    "size": "402718720"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-AmazonEC2.aarch64-40-1.10.raw.xz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "38975e67aad363d55f6d37e70e5cb27de6ce988c8b57cd6064a549cbc04c65e6",
+    "size": "365349116"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-GCE.aarch64-40-1.10.tar.gz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "f0b016267637442e1bd0dcc7bd6dc36276a178b012df3a1d3c60457671d553dd",
+    "size": "403681921"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-Generic.aarch64-40-1.10.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base",
+    "sha256": "d760b2c4d9281f2de6e93ef14fa2b1bbbaa0e2294eb7b3131b9e445ecf6b3e8d",
+    "size": "404619264"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-UEFI-UKI.aarch64-40-1.10.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base_UKI",
+    "sha256": "30585c6c43edc6cf0ae5ad257530c887b1d727ac909dd33af35f5d4b31a4494b",
+    "size": "395771904"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/x86_64/images/Fedora-Container-Base-Generic-Minimal.x86_64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Minimal_Base",
+    "sha256": "8d702e70164dd18266d7b6fba2f8e9e471337b1bca4faabd8e7065299120f93c",
+    "size": "46097388"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/x86_64/images/Fedora-Container-Base-Generic.x86_64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Base",
+    "sha256": "70c9423c27c95dddf5770dd0a5268cdf580c760706e808aa0b313d6748b0c83a",
+    "size": "80765776"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/x86_64/images/Fedora-Container-Toolbox.x86_64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Toolbox",
+    "sha256": "6e3366edc9aa05a539d3dd9c1d13efd62c3e56c22b6d3cc9b14af3dfbf0ffea0",
+    "size": "333632240"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/aarch64/images/Fedora-Container-Base-Generic-Minimal.aarch64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Minimal_Base",
+    "sha256": "c6c9dc8ce2f5760ae09a5ba719f115a3a02f023d8fe3d658a20a26a2ad2370ea",
+    "size": "44535944"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/aarch64/images/Fedora-Container-Base-Generic.aarch64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Base",
+    "sha256": "426d7c54c1d35b6659594ec2e7a4c8bb3f9aeae8e7bd8ffe25b1a834fd720d55",
+    "size": "79071232"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Container/aarch64/images/Fedora-Container-Toolbox.aarch64-40-1.10.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Toolbox",
+    "sha256": "bc97026807ade4a058e8dde6231e64c53f9cb3f672c88cc571075674180266cf",
+    "size": "306894436"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-40_Beta-1.10.iso",
+    "variant": "Everything",
+    "subvariant": "Everything",
+    "sha256": "608d96ec117adac51383c60c6a0d0d887349f092e6153e4077c531fbe96c1dfe",
+    "size": "807098368"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-40_Beta-1.10.iso",
+    "variant": "Everything",
+    "subvariant": "Everything",
+    "sha256": "fcfff7e78b8abbf31dc016a91a4f8f5c416cbd58567da61e12de23ff33a0f5e1",
+    "size": "832819200"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Kinoite/x86_64/images/Fedora-Kinoite-40_Beta.1.10.ociarchive",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Kinoite/x86_64/iso/Fedora-Kinoite-ostree-x86_64-40_Beta-1.10.iso",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite",
+    "sha256": "2b502043fc56b13ce1e52c306f55cf124fb514b22f1fc67044a1853a7ed349df",
+    "size": "4165603328"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Kinoite/aarch64/images/Fedora-Kinoite-40_Beta.1.10.ociarchive",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Kinoite/aarch64/iso/Fedora-Kinoite-ostree-aarch64-40_Beta-1.10.iso",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite",
+    "sha256": "349e1cbdf2bb7ba28ef10ec7b6f204e5fe9ff5388e27cde68d324bbe354495e4",
+    "size": "4139296768"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Sericea/x86_64/images/Fedora-Sericea-40_Beta.1.10.ociarchive",
+    "variant": "Sericea",
+    "subvariant": "Sericea"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Sericea/x86_64/iso/Fedora-Sericea-ostree-x86_64-40_Beta-1.10.iso",
+    "variant": "Sericea",
+    "subvariant": "Sericea",
+    "sha256": "e48a57dd45cf2b8b46eafe604882559dc075eccf1532ec76fbbdefc3c6fc16db",
+    "size": "2504404992"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Sericea/aarch64/images/Fedora-Sericea-40_Beta.1.10.ociarchive",
+    "variant": "Sericea",
+    "subvariant": "Sericea"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/x86_64/images/Fedora-Server-KVM-40_Beta-1.10.x86_64.qcow2",
+    "variant": "Server",
+    "subvariant": "Server_KVM",
+    "sha256": "4027ff2472251c863baca6c6a96b5ed2d63e062b86dd1ad80e6fa6596850d054",
+    "size": "658243584"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/x86_64/iso/Fedora-Server-dvd-x86_64-40_Beta-1.10.iso",
+    "variant": "Server",
+    "subvariant": "Server",
+    "sha256": "89ed544a677aa73ab81871b428da2ecad461edfe2ea44818416308eacb1c2712",
+    "size": "2626813952"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/x86_64/iso/Fedora-Server-netinst-x86_64-40_Beta-1.10.iso",
+    "variant": "Server",
+    "subvariant": "Server",
+    "sha256": "f83f99d12991025bbf530101feca82bbc103e0b59f50910b9a79eb279db75caf",
+    "size": "807157760"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/aarch64/images/Fedora-Server-40_Beta-1.10.aarch64.raw.xz",
+    "variant": "Server",
+    "subvariant": "Server",
+    "sha256": "f19d49cc45e0534362cb09751159a8b9d584a5e36aaaab9ee6757f0823eb49b9",
+    "size": "1104465732"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/aarch64/images/Fedora-Server-KVM-40_Beta-1.10.aarch64.qcow2",
+    "variant": "Server",
+    "subvariant": "Server_KVM",
+    "sha256": "88b670ddc42b7794b52ee8d166dbbe441f73cb4c10f47337e818de6844dca830",
+    "size": "675414016"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/aarch64/iso/Fedora-Server-dvd-aarch64-40_Beta-1.10.iso",
+    "variant": "Server",
+    "subvariant": "Server",
+    "sha256": "329c0514b9fba28b7b00714cc9311397bf9be8d6ab4bf4b398c05a9326dc3f63",
+    "size": "2553872384"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Server/aarch64/iso/Fedora-Server-netinst-aarch64-40_Beta-1.10.iso",
+    "variant": "Server",
+    "subvariant": "Server",
+    "sha256": "6b91426603263a7551140fd3c83387d75707459a3ab3396a226b5f078867fbbf",
+    "size": "832888832"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Silverblue/x86_64/images/Fedora-Silverblue-40_Beta.1.10.ociarchive",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-40_Beta-1.10.iso",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue",
+    "sha256": "2ae231b4b7425c9ef49a7e4c601a6102b539fbb4cfe5c942a2df4d383c2c7066",
+    "size": "3589492736"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Silverblue/aarch64/images/Fedora-Silverblue-40_Beta.1.10.ociarchive",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-40_Beta-1.10.iso",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue",
+    "sha256": "d9cf263fdf86e3786d8af0d4894f7782ea9db44bbc4630f2ff88abd9ffca47e8",
+    "size": "3573426176"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-Budgie-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "Budgie",
+    "sha256": "d11d409a03d66eaaabf4c5e3480aff0fe77065cad81d652286879c1144b2bfab",
+    "size": "2124746752"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "Cinnamon",
+    "sha256": "f924ac4223a07a42162f6648dbfcfc91810dfaba4c4e91771363f38cec09d332",
+    "size": "2526021632"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "KDE",
+    "sha256": "7f6018f113969ca531e7654a55103470f6745cf3468a3f7f8478e255e331c02e",
+    "size": "2637453312"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "LXDE",
+    "sha256": "5bd08568fe1b86c2eaaecc0344e31ee80ca78a4ccaa20742def724471db5993b",
+    "size": "1716133888"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "LXQt",
+    "sha256": "b8055384f3d112a022d483c6e3f64191da2d081555dc3922583eb3e168f8c8ba",
+    "size": "1963407360"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "Mate",
+    "sha256": "c2b7a3cc34ae370fdf8f0ccd06ff9521af7872b73938d3dce1da12240983c87b",
+    "size": "2446178304"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "SoaS",
+    "sha256": "ef17f56f616c2a5d5b7a746f72586249778f2451463381466d34cf41fdb1bdd8",
+    "size": "1435232256"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-Sway-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "Sway",
+    "sha256": "862bfb3af975e5c2242892cef810a61e1c679c52fe109cba4ba844297a307e45",
+    "size": "1629048832"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "Xfce",
+    "sha256": "afa00fa255feb141bf584768d47db36f0c0afb34100196633f8fada7b2ee1c00",
+    "size": "1863948288"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Spins/x86_64/iso/Fedora-i3-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Spins",
+    "subvariant": "i3",
+    "sha256": "a33d9f1c9917be2a08c0d7321bc237b99ec7d826ac86f95652cbaf02cbd9d3a6",
+    "size": "1610858496"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Workstation/x86_64/iso/Fedora-Workstation-Live-osb-40_Beta-1.10.x86_64.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation",
+    "sha256": "59fabc22b89c80967da23c922ac76be0a96e0f74b4877705aad24f3cb733d45d",
+    "size": "2614689792"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation",
+    "sha256": "ede3d2a07744fbebcb32e84baecd327aed06d7ba158fd4423d8ce143200bae69",
+    "size": "2284748800"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Workstation/aarch64/images/Fedora-Workstation-40_Beta-1.10.aarch64.raw.xz",
+    "variant": "Workstation",
+    "subvariant": "Workstation",
+    "sha256": "1ee78de96bc5900dd651d3d2c33677e4390d64967e2a1104332fd037a9380665",
+    "size": "2619408200"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Workstation/aarch64/iso/Fedora-Workstation-Live-osb-40_Beta-1.10.aarch64.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation",
+    "sha256": "9637aab9e1f8eb5738274274dd6bc22f36b6cb7a7aa72b518674556e4e6c0a19",
+    "size": "2575841280"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Onyx/x86_64/images/Fedora-Onyx-40_Beta.1.10.ociarchive",
+    "variant": "Onyx",
+    "subvariant": ""
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/40_Beta/Onyx/x86_64/iso/Fedora-Onyx-ostree-x86_64-40_Beta-1.10.iso",
+    "variant": "Onyx",
+    "subvariant": "Onyx",
+    "sha256": "e275969ebde33cecb7c87ff2ca923b6fe0a360eb62644351d2ff72c2f93f6d30",
+    "size": "2674311168"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-40_Beta-1.10.x86_64.vagrant-virtualbox.box",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom",
+    "sha256": "d8f2d239985fdc333d1556bca6059c3efddc9a79a38deaeaaa9c2fea2f20210e",
+    "size": "1569689600"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-40_Beta-1.10.x86_64.vagrant-libvirt.box",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom",
+    "sha256": "846bce7eda651fb1da3cbe09697455dff606062596ee3ce1cc7dec9812300947",
+    "size": "1548498909"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/images/Fedora-Scientific-Vagrant-40_Beta-1.10.x86_64.vagrant-libvirt.box",
+    "variant": "Labs",
+    "subvariant": "Scientific",
+    "sha256": "f18d8fa2b3983079724eb7edeef6cf546cf03de8f7201166feefe6c241d86138",
+    "size": "4926144018"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/images/Fedora-Scientific-Vagrant-40_Beta-1.10.x86_64.vagrant-virtualbox.box",
+    "variant": "Labs",
+    "subvariant": "Scientific",
+    "sha256": "5c51d56c97d81c339d863552f1e119b454618ad341fff2152faaed4ef4edcc5f",
+    "size": "4982435840"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Astronomy_KDE",
+    "sha256": "1f0dff7a4de4ef52e1afba57c4eba06154aa13c6465256dd2a8e0637e975eedd",
+    "size": "4623587328"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Comp_Neuro-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Comp_Neuro",
+    "sha256": "f26d992cad844198933fdf6c2ae819041cca52e798c74433e73c1b6a205dc490",
+    "size": "3064027136"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Games-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Games",
+    "sha256": "9b0d95ea81dc6a1f1d3124f4521cfc3757d0353882c6de1c47df94f685c8de8c",
+    "size": "6863560704"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Jam_KDE-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Jam_KDE",
+    "sha256": "c06af5759523de23c0f0bf07e810b4a4d361eec0a7b6a4358e4795feb6b06303",
+    "size": "3511683072"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom",
+    "sha256": "1a12da509e3c5532d530445c53dbc7a12188c45656f66c69cfa369971d87ceeb",
+    "size": "2335234048"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Scientific_KDE-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Scientific_KDE",
+    "sha256": "c78dd6bd266f3fdcc07b6657ae548000b6bb53e635322b39c16b8488b261d5d5",
+    "size": "5536098304"
+  },
+  {
+    "version": "40 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/40_Beta/Labs/x86_64/iso/Fedora-Security-Live-x86_64-40_Beta-1.10.iso",
+    "variant": "Labs",
+    "subvariant": "Security",
+    "sha256": "afaa134417725a7ba96e8ecd759035b255190fe2a402543a3e63026ed31e0340",
+    "size": "2437244928"
+  },
+  {
     "version": "39",
     "arch": "x86_64",
     "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/39/Cloud/x86_64/images/Fedora-Cloud-Base-Azure-39-1.5.x86_64.vhd",
