@@ -940,5 +940,6 @@
     "Fedora IOT": "Fedora IoT",
     "for Fedora Linux": "dla Fedory Linux",
     "source:": "źródło:",
-    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Aktualizacja jest we wtorek. Czy ostatnio uruchamiałeś „sudo dnf update”?"
+    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Aktualizacja jest we wtorek. Czy ostatnio uruchamiałeś „sudo dnf update”?",
+    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Wydano wersję beta Fedory Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)"
 }
