@@ -1,9 +1,18 @@
+<script setup>
+const props = defineProps({
+  checked: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>
 <template>
   <label class="relative inline-flex cursor-pointer items-center">
     <input
       type="checkbox"
       class="peer sr-only"
       @click="$emit('switchToggled', $event)"
+      :checked="checked"
     />
     <div class="fp-switch peer"></div>
   </label>

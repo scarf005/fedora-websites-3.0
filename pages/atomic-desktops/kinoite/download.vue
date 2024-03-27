@@ -1,6 +1,7 @@
 <script setup>
 const data = await getCMS("atomic-desktops/kinoite/download");
 const release_data = await getCMS("release");
+const route = useRoute();
 
 // TODO: fallback to n-1 version everywhere if metadata are not yet available
 const kojiUrl = `https://kojipkgs.fedoraproject.org/compose/${release_data._value.ga.releasever}/latest-Fedora-${release_data._value.ga.releasever}/compose/metadata/images.json`;
@@ -98,6 +99,8 @@ function closeVerify() {
 }
 
 useContentHead(data);
+
+betaSwitch.value = typeof route.query.beta != "undefined";
 
 // fedora media writer
 if (data._value.sections[1].sectionDescription) {
@@ -199,7 +202,10 @@ if (data._value.sections[2].sectionDescription) {
       >
         <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
-          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
+          <FpSwitch
+            @switchToggled="betaSwitch = $event.target.checked"
+            :checked="betaSwitch"
+          />
         </div>
         <div class="flex justify-end pb-8">
           <FpJoinTip

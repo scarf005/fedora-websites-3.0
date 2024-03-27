@@ -1,6 +1,7 @@
 <script setup>
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
+const route = useRoute();
 
 // TODO: fallback to n-1 version if metadata are not yet available
 // Alt location:
@@ -120,6 +121,8 @@ if (data._value.sections[2].sectionDescription) {
     data._value.sections[2].sectionDescription,
   );
 }
+
+betaSwitch.value = typeof route.query.beta != "undefined";
 </script>
 
 <template>
@@ -209,7 +212,10 @@ if (data._value.sections[2].sectionDescription) {
       >
         <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
-          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
+          <FpSwitch
+            @switchToggled="betaSwitch = $event.target.checked"
+            :checked="betaSwitch"
+          />
         </div>
         <div class="flex justify-end pb-8">
           <FpJoinTip

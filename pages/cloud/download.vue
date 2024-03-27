@@ -1,6 +1,7 @@
 <script setup>
 const data = await getCMS("editions/cloud/download");
 const release_data = await getCMS("release");
+const route = useRoute();
 
 // TODO: fallback to n-1 version if metadata are not yet available
 const { data: ga_data } = await useFetch(
@@ -97,6 +98,8 @@ function closeModal(state) {
   state.show = false;
 }
 
+betaSwitch.value = typeof route.query.beta != "undefined";
+
 useContentHead(data);
 </script>
 <template>
@@ -192,7 +195,10 @@ useContentHead(data);
       >
         <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
-          <FpSwitch @switchToggled="betaSwitch = $event.target.checked" />
+          <FpSwitch
+            @switchToggled="betaSwitch = $event.target.checked"
+            :checked="betaSwitch"
+          />
         </div>
         <div class="flex justify-end pb-8">
           <FpJoinTip
