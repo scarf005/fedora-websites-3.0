@@ -70,7 +70,7 @@ const prettyType = {
 <template>
   <div
     :class="['fp-download-item', variantClasses, theme]"
-    v-if="prettyType[type]"
+    v-if="!type || prettyType[type]"
   >
     <div class="flex items-center justify-between gap-4">
       <p class="flex flex-wrap gap-x-5 text-gray-800 dark:text-gray-400">
