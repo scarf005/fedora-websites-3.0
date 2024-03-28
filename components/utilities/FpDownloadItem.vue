@@ -64,6 +64,7 @@ const prettyType = {
   "tar-gz": "Compressed Image",
   boot: "Network Install",
   live: "Live ISO",
+  "vhd-compressed": "Azure",
 };
 </script>
 
