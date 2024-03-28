@@ -610,5 +610,6 @@
     "Fedora Silverblue Image": "Fedora Silverblue イメージ",
     "Screenshot of Fedora Silverblue": "Fedora Silverblue のスクリーンショット",
     "Sign up at [iot@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/iot.lists.fedoraproject.org/) to receive meeting agendas and minutes [view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)": "[iot{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/iot.lists.fedoraproject.org/) にサインアップして、会議の議題や議事録を受け取りましょう（[アーカイブを表示](https://lists.fedoraproject.org/archives/list/iot{'@'}lists.fedoraproject.org/)）",
-    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "ファイルや Fedora IoT の問題についての議論を [Fedora IoT のバグトラッカー](https://github.com/coreos/fedora-coreos-tracker/issues) で閲覧できます。"
+    "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "ファイルや Fedora IoT の問題についての議論を[Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues) で閲覧できます",
+    "Server Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "Server Working Group ミーティングは、すべての現在および将来的なコントリビューターに対して開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→server](https://calendar.fedoraproject.org/list/server/) をご覧ください）。"
 }
