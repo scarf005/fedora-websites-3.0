@@ -412,7 +412,7 @@
     "Fedora CoreOS is available across 3 different release streams": "Fedora CoreOS は、3 つの異なるリリースストリームで利用できます",
     "QTerminal is a lightweight Qt terminal emulator based on QTermWidget.": "QTerminal は QTermWidget ベースの軽量な Qt ターミナルエミュレーターです。",
     "Fedora LXQt provides a lightweight, well-integrated LXQt desktop environment. In addition to LXQt itself it provides a small, well selected collection of applications like the Falkon browser, which combines Chromium's rendering engine with a nice Qt experience. Other applications include the Trojita mail client, the qBittorrent client, the Yarock music player and a set of some more commonly used applications. As all applications use the same Qt5 toolkit and the Breeze theme known from KDE, the desktop provides a unified and well-integrated style and theming. In addition breeze-gtk is provided to allow the user to integrate GTK applications too.": "Fedora LXQt は軽量で高い統一感のある LXQt デスクトップを提供します。LXQt 自体に加え、Chromium のレンダリングエンジンと素晴らしい Qt エクスペリエンスを組み合わせた、Falkon ブラウザーのような厳選された軽量なアプリケーションのコレクションを提供します。他のアプリケーションとして、Trojita メールクライアント、qBittorrent クライアント、Yarock ミュージックプレイヤー、および一般的に使用されるアプリケーションのセットが含まれます。すべてのアプリケーションは、KDE から知られている同じ Qt5 ツールキットと Breeze テーマを使用しており、デスクトップは統一感のあるスタイルとテーマを提供します。また、ユーザーが GTK アプリケーションも統合できるように、breeze-gtk が提供されています。",
-    "Over the years, Fedorans have created many sources of information about Fedora Linux and the Fedora Project.": "何年もの間、Fedorans（Fedora のユーザー）は Fedora Linux と Fedora Project に関する多くのソースを作ってきました。",
+    "Over the years, Fedorans have created many sources of information about Fedora Linux and the Fedora Project.": "何年もの間、Fedorans（Fedora ユーザー）は Fedora Linux と Fedora Project に関する多くのリソースを作成してきました。",
     "LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you can also take screenshots with.": "LXImage-Qt は LXImage の Qt 移植版で、スクリーンショットも撮れるシンプルで高速な画像ビューアです。",
     "Universal messaging client. Communicate with the world via IRC, AIM, MSN, Yahoo and other instant messaging systems.": "統合型メッセンジャークライアントです。IRC、AIM、MSN、Yahooや、その他のインスタントメッセージングサービスと接続する事ができ、世界中と会話が可能です。",
     "Midori": "Midori",
@@ -516,7 +516,7 @@
     "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "キーボード操作の Sway ウィンドウマネージャをフィーチャーした Atomic なデスクトップ OS。",
     "Testers": "テスター",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "これらのファイルの使い方が分からない？[こちらで学べます](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
-    "Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)": "超カンタンに Fedora を試せる Fedora Media Writer を使って、Fedora を始めましょう。[もっと知る](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)",
+    "Get started by using Fedora Media Writer, which makes it super easy to give Fedora a try. [Learn More](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)": "超簡単に Fedora を試せる Fedora Media Writer を使って、始めましょう。[もっと知る](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer)",
     "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "何かおかしな所を発見しましたか？Budgie Atomic の動作方法について改良を提案したいですか？あなたの声を聞かせてください！[Budgie SIG の issueトラッカー](https://pagure.io/fedora-budgie/project/issues) で、私達にお知らせください。",
     "Join a community of users and contributors focused on Fedora Budgie Atomic.": "Fedora Budgie Atomic に焦点を当てた、ユーザー／コントリビューターのコミュニティに参加しましょう。",
     "Fedora Budgie Atomic": "Fedora Budgie Atomic",
@@ -612,5 +612,13 @@
     "Sign up at [iot@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/iot.lists.fedoraproject.org/) to receive meeting agendas and minutes [view archives](https://lists.fedoraproject.org/archives/list/iot@lists.fedoraproject.org/)": "[iot{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/iot.lists.fedoraproject.org/) にサインアップして、会議の議題や議事録を受け取りましょう（[アーカイブを表示](https://lists.fedoraproject.org/archives/list/iot{'@'}lists.fedoraproject.org/)）",
     "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "ファイルや Fedora IoT の問題についての議論を[Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues) で閲覧できます",
     "Server Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "Server Working Group ミーティングは、すべての現在および将来的なコントリビューターに対して開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→server](https://calendar.fedoraproject.org/list/server/) をご覧ください）。",
-    "You can chat with the Fedora Server Working Group via either Matrix or IRC: #server:fedoraproject.org on Matrix and #fedora-server on irc.libera.chat.": "Fedora CoreOS ワーキンググループと Matrix や IRC を通じてチャットすることができます。#coreos:fedoraproject.org on Matrix か #fedora-coreos on irc.libera.chat. をご覧ください。"
+    "You can chat with the Fedora Server Working Group via either Matrix or IRC: #server:fedoraproject.org on Matrix and #fedora-server on irc.libera.chat.": "Fedora Server Working Group と Matrix や IRC を通じてチャットすることができます。#server:fedoraproject.org on Matrix か #fedora-server on irc.libera.chat をご覧ください。",
+    "A built-in remote server administration tool is ready to use on first boot": "備え付けのリモートサーバー管理ツールは初回起動時から使用できます",
+    " From the Data Center to your Raspberry Pi": " データセンターから Raspberry Pi まで",
+    "Built by you": "あなたと造る",
+    "Features for everyone": "すべての人のための機能",
+    "Latest Technologies": "最新のテクノロジー",
+    "Fedora Server Image": "Fedora Server イメージ",
+    "We're so glad you've decided to give Fedora Server a try. We know you'll love it.": "この度は Fedora Server をお試しいただきありがとうございます。気に入っていただければ幸いです。",
+    "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "すべての現在および将来的なコントリビューターに開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→server](https://calendar.fedoraproject.org/list/server/) をご覧ください）。"
 }
