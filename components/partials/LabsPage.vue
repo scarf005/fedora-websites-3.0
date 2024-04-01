@@ -170,14 +170,14 @@ useContentHead(data);
 
     <!-- Features Section -->
     <section
-      class="relative z-0 space-y-24 bg-gradient-to-b from-fp-newblue-100 to-fp-purple-100 pb-32 dark:bg-neutral-900 dark:bg-none"
+      class="relative z-0 space-y-24 bg-gradient-to-b from-fp-newblue-100 to-fp-purple-100 pb-20 dark:bg-neutral-900 dark:bg-none"
     >
       <div
         class="mx-auto max-w-7xl rounded-lg bg-white px-12 pt-6 pb-10 dark:bg-neutral-800"
         v-for="section in data.sections"
       >
         <h2
-          class="mb-4 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
+          class="mb-8 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
         >
           {{ $t(section.sectionTitle) }}
         </h2>
@@ -189,7 +189,7 @@ useContentHead(data);
             :title="card.title"
             :description="card.description"
             :link="card.link"
-            class="mx-auto grow basis-64"
+            class="mx-auto basis-80 lg:basis-64"
           >
             <template #prepend>
               <FpCardImage slot="prepend" :src="card.image" />
@@ -277,7 +277,7 @@ useContentHead(data);
           />
         </div>
         <div
-          class="flex gap-8 flex-wrap justify-center peer-has-[:checked]/beta:hidden"
+          class="group flex gap-8 flex-wrap justify-center peer-has-[:checked]/beta:hidden"
         >
           <!-- GA artifacts -->
           <template v-if="ga_data?.payload">
@@ -286,14 +286,14 @@ useContentHead(data);
                 :name="arch_desc"
                 v-if="
                   ga_data.payload.images.Labs[arch_id]?.filter(
-                    (a) => a.subvariant == variant_name,
+                    (a) => a.subvariant.startsWith(variant_name),
                   ).length
                 "
                 :art_name="data.title"
                 art_variant="Labs"
                 :artifacts="
                   ga_data.payload.images.Labs[arch_id].filter(
-                    (a) => a.subvariant == variant_name,
+                    (a) => a.subvariant.startsWith(variant_name),
                   )
                 "
                 :dlPrefix="dlpath[arch_id]"
@@ -305,31 +305,29 @@ useContentHead(data);
               />
             </template>
           </template>
-          <template v-else>
-            <div class="text-center font-bold lg:col-span-2">
-              {{ $t("No files available for this version.") }}
-            </div>
-          </template>
+          <div class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden">
+            {{ $t("No files available for this version.") }}
+          </div>
         </div>
 
         <!-- Beta artifacts -->
         <div
-          class="gap-8 flex-wrap justify-center hidden peer-has-[:checked]/beta:flex"
+          class="group gap-8 flex-wrap justify-center hidden peer-has-[:checked]/beta:flex"
         >
-          <template v-if="beta_data?.payload">
+          <template v-if="beta_data?.payload?.images?.Labs">
             <template v-for="(arch_desc, arch_id) in arches">
               <DownloadSection
                 :name="arch_desc"
                 v-if="
                   beta_data.payload.images.Labs[arch_id]?.filter(
-                    (a) => a.subvariant == variant_name,
+                    (a) => a.subvariant.startsWith(variant_name),
                   ).length
                 "
                 :art_name="data.title"
                 art_variant="Labs"
                 :artifacts="
                   beta_data.payload.images.Labs[arch_id].filter(
-                    (a) => a.subvariant == variant_name,
+                    (a) => a.subvariant.startsWith(variant_name),
                   )
                 "
                 :dlPrefix="dlpath[arch_id]"
@@ -342,11 +340,9 @@ useContentHead(data);
               />
             </template>
           </template>
-          <template v-else>
-            <div class="text-center font-bold lg:col-span-2">
-              {{ $t("No files available for this version.") }}
-            </div>
-          </template>
+          <div class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden">
+            {{ $t("No files available for this version.") }}
+          </div>
         </div>
       </div>
     </section>

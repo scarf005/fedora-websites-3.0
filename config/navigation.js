@@ -173,14 +173,14 @@ const navigation = {
           },
           {
             label: "Comp Neuro",
-            path: "https://labs.fedoraproject.org/comp-neuro/",
+            path: "/labs/comp-neuro/",
             icon: "fa6-solid:desktop",
             description:
               "A plethora of Free/Open source computational modelling tools for Neuroscience.",
           },
           {
             label: "Design Suite",
-            path: "https://labs.fedoraproject.org/design-suite/",
+            path: "/labs/design-suite/",
             icon: "fa6-solid:desktop",
             description:
               "Visual design, multimedia production, and publishing suite of free and open source creative tools.",
@@ -215,7 +215,7 @@ const navigation = {
           },
           {
             label: "Scientific",
-            path: "https://labs.fedoraproject.org/scientific",
+            path: "/labs/scientific",
             icon: "fa6-solid:desktop",
             description:
               "A bundle of open source scientific and numerical tools used in research.",
