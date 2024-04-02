@@ -102,7 +102,7 @@ function humanSize(n) {
             <span class="w-0 basis-full"></span>
             <span class="">{{ prettyType[type] }}</span>
             <span class="dl-format text-gray-500"> {{ format }}</span>
-            <span class="size">{{ humanSize(size) }}</span>
+            <span class="size" v-if="size">{{ humanSize(size) }}</span>
           </template>
           <template v-else>
             <span class="font-semibold">

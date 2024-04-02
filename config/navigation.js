@@ -166,7 +166,7 @@ const navigation = {
         links: [
           {
             label: "Astronomy",
-            path: "https://labs.fedoraproject.org/astronomy/",
+            path: "/labs/astronomy/",
             icon: "fa6-solid:desktop",
             description:
               "Powerful, completely open-source and free tools for amateur and professional astronomers.",
@@ -194,7 +194,7 @@ const navigation = {
           },
           {
             label: "Jam",
-            path: "https://labs.fedoraproject.org/jam/",
+            path: "/labs/jam/",
             icon: "fa6-solid:desktop",
             description:
               "For audio enthusiasts and musicians who want to create, edit, and produce audio and music on Linux.",
@@ -208,7 +208,7 @@ const navigation = {
           },
           {
             label: "Robotics Suite",
-            path: "https://labs.fedoraproject.org/robotics",
+            path: "/labs/robotics",
             icon: "fa6-solid:desktop",
             description:
               "A wide variety of free and open robotics software packages for beginners and experts.",
@@ -222,7 +222,7 @@ const navigation = {
           },
           {
             label: "Security Lab",
-            path: "https://labs.fedoraproject.org/security",
+            path: "/labs/security",
             icon: "fa6-solid:desktop",
             description:
               "A safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies.",
