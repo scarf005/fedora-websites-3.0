@@ -86,6 +86,7 @@
   "signature": "signature",
   "download_the_checksum_and_signature": "Download the {checksum_file} and {signature} into the same directory as the image you downloaded.",
   "you_can_verify_the_GPG_details": "{icon}You can verify the details of the GPG key(s) {here}.",
+  "verify_button_download": "Click the verify button {verify_button} to download the checksum file for your downloaded image.",
   "logo": "logo",
   "here": "here",
   "Contributor survey banner": "Contributor survey banner",
