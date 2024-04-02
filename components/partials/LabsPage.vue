@@ -272,7 +272,7 @@ useContentHead(data);
         <div class="flex justify-end">
           <FpJoinTip
             description="Help us with testing!"
-            inline="true"
+            inline
             class="origin-right scale-75"
           />
         </div>
@@ -285,15 +285,15 @@ useContentHead(data);
               <DownloadSection
                 :name="arch_desc"
                 v-if="
-                  ga_data.payload.images.Labs[arch_id]?.filter(
-                    (a) => a.subvariant.startsWith(variant_name),
+                  ga_data.payload.images.Labs[arch_id]?.filter((a) =>
+                    a.subvariant.startsWith(variant_name),
                   ).length
                 "
                 :art_name="data.title"
                 art_variant="Labs"
                 :artifacts="
-                  ga_data.payload.images.Labs[arch_id].filter(
-                    (a) => a.subvariant.startsWith(variant_name),
+                  ga_data.payload.images.Labs[arch_id].filter((a) =>
+                    a.subvariant.startsWith(variant_name),
                   )
                 "
                 :dlPrefix="dlpath[arch_id]"
@@ -305,7 +305,9 @@ useContentHead(data);
               />
             </template>
           </template>
-          <div class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden">
+          <div
+            class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden"
+          >
             {{ $t("No files available for this version.") }}
           </div>
         </div>
@@ -319,15 +321,15 @@ useContentHead(data);
               <DownloadSection
                 :name="arch_desc"
                 v-if="
-                  beta_data.payload.images.Labs[arch_id]?.filter(
-                    (a) => a.subvariant.startsWith(variant_name),
+                  beta_data.payload.images.Labs[arch_id]?.filter((a) =>
+                    a.subvariant.startsWith(variant_name),
                   ).length
                 "
                 :art_name="data.title"
                 art_variant="Labs"
                 :artifacts="
-                  beta_data.payload.images.Labs[arch_id].filter(
-                    (a) => a.subvariant.startsWith(variant_name),
+                  beta_data.payload.images.Labs[arch_id].filter((a) =>
+                    a.subvariant.startsWith(variant_name),
                   )
                 "
                 :dlPrefix="dlpath[arch_id]"
@@ -340,7 +342,9 @@ useContentHead(data);
               />
             </template>
           </template>
-          <div class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden">
+          <div
+            class="text-center font-bold lg:col-span-2 group-has-[.download-section]:hidden"
+          >
             {{ $t("No files available for this version.") }}
           </div>
         </div>
