@@ -996,5 +996,14 @@
     "Join a community of users and contributors focused on Fedora Budgie Atomic.": "페도라 버지 아토믹에 중점을 둔 사용자와 공헌자의 커뮤니티에 참여하세요.",
     "The GNOME desktop experience you know and love in an atomic fashion.": "당신이 알고 사랑하는 아토믹 유형의 그놈 데스크탑 경험입니다.",
     "The KDE Plasma desktop, in an atomic fashion": "아토믹 유형인 KDE 플래즈마 데스크탑",
-    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [페도라 리눅스 40 베타 출시!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)"
+    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [페도라 리눅스 40 베타 출시!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)",
+    "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "INDI 라이브러리는 천문학 장비의 자동제어를 위해 설계된 다중 기술환경 소프트웨어입니다.",
+    "A highly flexible and extensible simulator for modelling spiking neural networks.": "급증하는 신경망 네트워크를 위한 높은 유연성과 확장형 모의실험.",
+    "Brian": "뇌",
+    "GENESIS": "기원",
+    "MOOSE": "말코손바닥사슴",
+    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "세포내 구성요소, 생화학 반응, 단일 신경의 복합 모형, 그리고 네트워크.",
+    "NEST": "둥지",
+    "Neuron": "뉴런",
+    "SciPy": "SciPy"
 }
