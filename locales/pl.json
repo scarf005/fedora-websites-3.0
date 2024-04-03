@@ -941,5 +941,13 @@
     "for Fedora Linux": "dla Fedory Linux",
     "source:": "źródło:",
     "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "Aktualizacja jest we wtorek. Czy ostatnio uruchamiałeś „sudo dnf update”?",
-    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Wydano wersję beta Fedory Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)"
+    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Wydano wersję beta Fedory Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)",
+    "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "Atomowy system operacyjny dla komputerów stacjonarnych wyposażony w menedżera okien Sway sterowanego klawiaturą.",
+    "verify_button_download": "Kliknij przycisk weryfikacji {verify_button}, aby pobrać plik sumy kontrolnej pobranego obrazu.",
+    "We're so glad you've decided to give Fedora Budgie Atomic a try. We know you'll love it.": "Bardzo się cieszymy, że zdecydowałeś się wypróbować Fedorę Budgie Atomic. Wiemy, że ci się spodoba.",
+    "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "Znalazłeś coś, co nie jest do końca w porządku? Chcesz zaproponować zmianę w działaniu Budgie Atomic? Chcemy usłyszeć od Ciebie! Przejdź do [narzędzia do śledzenia problemów Budgie SIG](https://pagure.io/fedora-budgie/project/issues) i daj nam znać.",
+    "Join a community of users and contributors focused on Fedora Budgie Atomic.": "Dołącz do społeczności użytkowników i współpracowników skupionych na Fedorze Budgie Atomic.",
+    "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Budgie Atomic users and contributors.": "Znacznik **Fedora Onyx** na forum dyskusyjnym Fedory opartym na dyskursie to świetne miejsce do nawiązania kontaktu z innymi użytkownikami i współpracownikami Fedory Budgie Atomic.",
+    "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion. This enables you to surf the web, play games, enjoy music and video, manage files, and be productive without having to worry about breaking your system.": "Fedora Budgie Atomic dostarcza popularne środowisko graficzne Budgie w sposób atomowy. Dzięki temu możesz surfować po Internecie, grać w gry, cieszyć się muzyką i filmami, zarządzać plikami i pracować wydajnie bez martwienia się o uszkodzenie systemu.",
+    "The Budgie desktop experience in an atomic fashion.": "Doświadczenie pulpitu Budgie w atomowy sposób."
 }
