@@ -1005,5 +1005,6 @@
     "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "세포내 구성요소, 생화학 반응, 단일 신경의 복합 모형, 그리고 네트워크.",
     "NEST": "둥지",
     "Neuron": "뉴런",
-    "SciPy": "SciPy"
+    "SciPy": "SciPy",
+    "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "개별적인 신경과 신경 네트워크의 상세한 모형을 위한 모의실험 환경."
 }
