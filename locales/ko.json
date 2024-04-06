@@ -1014,5 +1014,6 @@
     "A simple Python editor for beginner programmers": "초급 프로그래머를 위한 간단한 파이썬 편집기",
     "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "최신 Cpython 및 PyPy 버전을 포함하여 파이썬 프로그래밍 언어의 다중 구현",
     "MegaGlest": "메가글레스트",
-    "Mu editor": "Mu 편집기"
+    "Mu editor": "Mu 편집기",
+    "Development environment for the Arduino open source hardware platform.": "아두이노 오픈 소스 하드웨어 기술환경을 위한 개발 환경."
 }
