@@ -1006,5 +1006,6 @@
     "NEST": "둥지",
     "Neuron": "뉴런",
     "SciPy": "SciPy",
-    "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "개별적인 신경과 신경 네트워크의 상세한 모형을 위한 모의실험 환경."
+    "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "개별적인 신경과 신경 네트워크의 상세한 모형을 위한 모의실험 환경.",
+    "A simulation environment for modelling large scale spiking neural networks.": "큰 규모의 급증 신경 네트워크 모의를 위한 모의실험 환경."
 }
