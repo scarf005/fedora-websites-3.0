@@ -1010,5 +1010,9 @@
     "A simulation environment for modelling large scale spiking neural networks.": "큰 규모의 급증 신경 네트워크 모의를 위한 모의실험 환경.",
     "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "확률적 화학 계산, 다중구획 단일-신경 모형, 그리고 급증하는 신경 네트워크 모델을 모의실험합니다.",
     "The complete Python Science stack, for teaching, modelling, and analysis.": "가르키기, 모형제작과 분석을 위한 준비된 파이썬 과학 더미.",
-    "Fillets": "필렛"
+    "Fillets": "필렛",
+    "A simple Python editor for beginner programmers": "초급 프로그래머를 위한 간단한 파이썬 편집기",
+    "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "최신 Cpython 과 PyPy 버전을 포함하여 파이썬 프로그래밍 언어의 다중 구현",
+    "MegaGlest": "메가글레스트",
+    "Mu editor": "Mu 편집기"
 }
