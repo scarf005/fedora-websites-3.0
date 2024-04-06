@@ -1007,5 +1007,7 @@
     "Neuron": "뉴런",
     "SciPy": "SciPy",
     "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "개별적인 신경과 신경 네트워크의 상세한 모형을 위한 모의실험 환경.",
-    "A simulation environment for modelling large scale spiking neural networks.": "큰 규모의 급증 신경 네트워크 모의를 위한 모의실험 환경."
+    "A simulation environment for modelling large scale spiking neural networks.": "큰 규모의 급증 신경 네트워크 모의를 위한 모의실험 환경.",
+    "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "확률적 화학 계산, 다중구획 단일-신경 모형, 그리고 급증하는 신경 네트워크 모델을 모의실험합니다.",
+    "The complete Python Science stack, for teaching, modelling, and analysis.": "가르키기, 모형제작과 분석을 위한 준비된 파이썬 과학 더미."
 }
