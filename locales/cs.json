@@ -970,5 +970,15 @@
     "Fedora Sway Atomic": "Fedora Sway Atomic",
     "Screenshot of Fedora Sway Atomic": "Snímek Fedory Sway Atomic",
     "The GNOME desktop experience you know and love in an atomic fashion.": "Zážitek s pracovním prostředím GNOME, které znáte a milujete, v atomickém stylu.",
-    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Fedora Linux 40 Beta zveřejněn!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)"
+    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Fedora Linux 40 Beta zveřejněn!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)",
+    "A powerful image composition and graphic editing app, similar to Adobe® Photoshop™.": "Mocná aplikace pro skladbu obrázků a úpravu grafiky, podobná Adobe® Photoshop™.",
+    "AstrOmatic is a set of astronomical pipeline software.": "AstrOmatic je sada astronomického pipeline softwaru.",
+    "verify_button_download": "Klepněte na tlačítko ověřit {verify_button}, aby se stáhl soubor kontrolního součtu pro stažený obraz.",
+    "Astromatic": "Astromatic",
+    "Astropy": "Astropy",
+    "Celestia": "Celestia",
+    "Featured Applications": "Vybrané aplikace",
+    "Allow you to visualize any planet aspect at any time. Include extended feature database and texture.": "Dovolí vám vizuální prezentaci kterékoliv aspektu planety. Obsahuje rozšířenou databázi vlastností a texturu.",
+    "Astropy is a community python library for Astronomy to foster interoperability between astronomy packages.": "Astropy je komunitní knihovna v Pythonu pro astronomii, která posouvá dále interoperabilitu mezi astronomickými balíčky.",
+    "Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.\n\nThe Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.": "Fedora Astronomy přináší ucelenou, open-source sadu nástrojů jak pro amatérské, tak profesionální astronomy.\n\nTento spin obsahuje pracovní plochu Fedory KDE obohacenou o celé prostředí scientific Python a software AstrOmatic pro analýzu dat. Přidaný program KStars poskytuje plně vybavený nástroj pro fotografování oblohy. A protože KStars využívá pro ovládání zařízení knihovnu INDI, jsou podporovány různé teleskopy, kamery atd. Stručně shrnuto, Fedora Astronomy poskytuje úplnou sadu softwaru od plánování pozorování až po konečné výsledky."
 }
