@@ -988,5 +988,10 @@
     "Siril": "Siril",
     "Siril, a free astronomical image processing software.": "Siril je svobodný software pro zpracování obrazů astronomických objektů",
     "GIMP": "GIMP",
-    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars poskytuje přesnou grafickou simulaci noční oblohy, z kteréhokoliv místa na Zemi, v kterékoliv datum a čas."
+    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars poskytuje přesnou grafickou simulaci noční oblohy, z kteréhokoliv místa na Zemi, v kterékoliv datum a čas.",
+    "A Python package for simulator-independent specification of neuronal network models.": "Pythonní balíček pro specifikaci modelů neuronové sítě nezávislou na simulátoru.",
+    "A Model Description Language for Computational Neuroscience.": "Popisný jazyk modelu pro počítačovou neurovědu.",
+    "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "Knihovna INDI je multiplatformní software navržený pro automatizaci a ovládání astronomických nástrojů.",
+    "The free space simulation that lets you explore our universe in three dimensions.": "Simulace volného prostoru, která vám umožní prozkoumávat náš vesmír ve třech rozměrech.",
+    "Virtualplanet": "Virtualplanet"
 }
