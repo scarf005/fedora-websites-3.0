@@ -110,36 +110,11 @@ useContentHead(data);
     />
   </section>
 
-  <!-- Features Section -->
+  <!-- Related Projects Section -->
   <section
     class="relative z-0 space-y-24 bg-gradient-to-b from-fp-newblue-100 to-fp-purple-100 pt-16 pb-32 dark:bg-neutral-800 dark:bg-none"
   >
-    <div
-      class="mx-auto max-w-7xl rounded-lg bg-white px-12 pt-6 pb-10 dark:bg-neutral-900"
-      v-for="section in [data.sections[2]]"
-    >
-      <h2
-        class="mb-8 text-center text-4xl font-semibold text-fp-blue-500 dark:text-gray-200"
-      >
-        {{ $t(section.sectionTitle) }}
-      </h2>
-      <div
-        class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 xl:gap-10"
-      >
-        <FpCard
-          v-for="card in section.content"
-          :title="card.title"
-          :description="card.description"
-          class="mx-auto grow basis-64"
-        >
-          <template #prepend>
-            <FpLink :href="card.url">
-              <FpCardImage slot="prepend" :src="card.image" class="h-16" />
-            </FpLink>
-          </template>
-        </FpCard>
-      </div>
-    </div>
+    <AtomicDesktopsRelatedSection />
   </section>
 
   <!-- Call To Action -->

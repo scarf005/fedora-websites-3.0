@@ -87,6 +87,13 @@ data._value.descriptionMd = await mdparser(data._value.description);
       </div>
     </section>
 
+    <!-- Related Projects Section -->
+    <section
+      class="relative z-0 space-y-24 bg-gradient-to-b from-fp-newblue-100 to-fp-purple-100 pt-16 pb-32 dark:bg-neutral-800 dark:bg-none"
+    >
+      <AtomicDesktopsRelatedSection />
+    </section>
+
     <!-- Call To Action -->
     <section class="relative z-0 dark:bg-black">
       <svg
