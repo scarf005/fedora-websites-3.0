@@ -27,7 +27,11 @@ const cards = data._value.cards.filter((card) => {
       >
         <template #prepend>
           <FpLink :href="card.url">
-            <FpCardImage slot="prepend" :src="card.image" class="h-16" />
+            <FpImage
+              slot="prepend"
+              class="mx-auto mb-4 h-16"
+              :src="card.images"
+            />
           </FpLink>
         </template>
       </FpCard>
