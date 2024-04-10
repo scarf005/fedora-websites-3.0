@@ -1000,5 +1000,20 @@
     "AstrOmatic is a set of astronomical pipeline software.": "AstrOmatic är en uppsättning av programvara för astronomiska pipelines.",
     "verify_button_download": "Klicka på verifieringsknappen {verify_button} för att ladda ner kontrollsummafilen för din nedladdade avbild.",
     "Fedora Astronomy Lab": "Fedora astronomilabb",
-    "Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.\n\nThe Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.": "Fedora Astronomi ger en komplett verktygskedja med öppen källkod för både amatörer och professionella astronomer.\n\nDenna spinn tillhandahåller Fedora KDE-skrivbordet utökat med en komplett vetenskaplig Python miljö och AstrOmatic programvaran för dataanalys. KStars lades till för att tillhandahålla ett fullfjädrat astrofotografiverktyg. Eftersom KStars använder INDI-biblioteket för att styra utrustning, stöds olika teleskop, kameror etc.. Sammanfattningsvis tillhandahåller Fedora Astronomi en komplett uppsättning programvara, från observationsplaneringen till de slutliga resultaten."
+    "Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.\n\nThe Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.": "Fedora Astronomi ger en komplett verktygskedja med öppen källkod för både amatörer och professionella astronomer.\n\nDenna spinn tillhandahåller Fedora KDE-skrivbordet utökat med en komplett vetenskaplig Python miljö och AstrOmatic programvaran för dataanalys. KStars lades till för att tillhandahålla ett fullfjädrat astrofotografiverktyg. Eftersom KStars använder INDI-biblioteket för att styra utrustning, stöds olika teleskop, kameror etc.. Sammanfattningsvis tillhandahåller Fedora Astronomi en komplett uppsättning programvara, från observationsplaneringen till de slutliga resultaten.",
+    "Astromatic": "Astromatic",
+    "A powerful image composition and graphic editing app, similar to Adobe® Photoshop™.": "Ett kraftfullt program för bildkomposition och grafisk redigering, liknande Adobe® Photoshop™.",
+    "Allow you to visualize any planet aspect at any time. Include extended feature database and texture.": "Låter dig visualisera godtycklig planets vinkelförhållande vid godtycklig tidpunkt. Inkluderar en utökad egenskapsdatabas och textur.",
+    "Astropy": "Astropy",
+    "Astropy is a community python library for Astronomy to foster interoperability between astronomy packages.": "Astropy är ett pythonbibliotek från gemenskapen för astronomi för att fostra interoperabilitet mellan astronomipaket.",
+    "Celestia": "Celestia",
+    "Featured Applications": "Utvalda program",
+    "GIMP": "GIMP",
+    "INDI": "INDI",
+    "Kstars": "Kstars",
+    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars tillhandahåller en noggrann grafisk simulering av natthimlen från vilken plats som helst på jorden, vid vilken dag och tid som helst.",
+    "Redshift": "Redshift",
+    "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift justerar färgtemperaturen på din skärm enligt din omgivning.",
+    "Siril": "Siril",
+    "Siril, a free astronomical image processing software.": "Siril, en fri programvara för astronomisk bildbearbetning"
 }
