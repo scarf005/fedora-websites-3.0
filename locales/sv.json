@@ -1047,7 +1047,7 @@
     "Command the forces in a battle to rebuild the world after mankind has almost been destroyed by nuclear missiles.": "För befäl över styrkor i en strid för att återuppbygga världen efter att mänskligheten nästan har utplånats av kärnmissiler.",
     "Extreme Tux Racer": "Extreme Tux Racer",
     "Fillets": "Fillets",
-    "Fish Fillets NG is a Linux port of the wonderful puzzle game Fish Fillets from ALTAR interactive.": "Fish Fillets NG är en Linuxportering av det underbara logikspelet Fish Fillets från ALTAR interactive.",
+    "Fish Fillets NG is a Linux port of the wonderful puzzle game Fish Fillets from ALTAR interactive.": "Fish Fillets NG är en Linuxportering av det underbara pusselspelet Fish Fillets från ALTAR interactive.",
     "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Utveckla, simulera, parallellisera, analysera och optimera biologiska neuronala nätverk med hjälp av NEURON-simulatorn.",
     "A desktop publishing and page layout application with professional publishing features.": "Ett program för skrivbordspublicering och sidlayout med professionella funktioner för publicering.",
     "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "INDI biblioteket är en plattformsoberoende programvara designad för automatisering och styrning av astronomiska instrument.",
@@ -1090,5 +1090,17 @@
     "Mu editor": "Redigeraren Mu",
     "Multiple Pythons": "Flera Python:ar",
     "IPython": "IPython",
-    "Jupyter Notebook": "Jupyter Notebook"
+    "Jupyter Notebook": "Jupyter Notebook",
+    "The Battle for Wesnoth is a free, turn-based tactical strategy game with a high fantasy theme.": "Battle for Wesnoth är ett fritt, omgångsbaserat taktiskt strategispel med ett högt fantasy tema.",
+    "A powerful multi-channel digital audio workstation, provides everything you need for your audio projects.": "En kraftfull flerkanals digital ljudarbetsstation, som tillhandahåller allt du behöver för dina ljudprojekt.",
+    "Fedora Jam Lab": "Fedora Jam labb",
+    "Freeciv is a Free and Open Source empire-building strategy game inspired by the history of human civilization.": "Freeciv är ett fritt imperiebyggande strategispel med öppen källkod som är inspirerat av den mänskliga civilisationens historia.",
+    "Hedgewars is a turn based strategy, artillery, action and comedy game.": "Hedgewars är ett omgångsbaserat strategi, artilleri, action och komedispel.",
+    "MegaGlest is an entertaining free and open source cross-platform 3D real-time strategy (RTS) game.": "MegaGlest är ett underhållande fritt 3D-realtidsstrategispel (RTS) med öppen källkod för flera plattformar.",
+    "A digital audio workstation with advanced midi sequencers geared for personal home use.": "En digital ljudarbetsstation med avancerade midi-sekvenserare inriktat för personligt hemmabruk.",
+    "A realtime software looping sampler perfect for live performance.": "En realtids, loopande, programvarusamplare perfekt för live-framträdande.",
+    "Fedora Python Classroom Lab": "Fedora Python klassrum labb",
+    "The Fedora Games lab offers a perfect showcase of the best games available in Fedora. The included games span several genres, from first-person shooters to real-time and turn-based strategy games to puzzle games.\n\nNot all the games available in Fedora are included on this lab, but trying out this lab will give you a fair impression of Fedora's ability to run great games.": "Fedora Spel labb erbjuder en perfekt presentation av de bästa spelen som finns tillgängliga i Fedora. De inkluderade spelen spänner över flera genrer, från förstapersonsskjutare till realtids och turbaserade strategispel till pusselspel.\n\nAlla spel som finns tillgängliga i Fedora är inte inkluderade i det här labbet, men att testa det här labbet kommer att ge dig ett rättvist intryck av Fedoras förmåga att köra fantastiska spel.",
+    "An advanced drum machine that features professional yet simple and intuitive pattern-based drum programming.": "En avancerad trummaskin som erbjuder ett professionellt men ändå enkel och intuitiv mönsterbaserad trumprogrammering.",
+    "Fedora Jam is for audio enthusiasts and musicians who want to create,  edit and produce audio and music on Linux.  It comes with JACK, ALSA and PulseAudio by default including a suite of programs to tailor your studio.\n\nFedora Jam is a full-featured audio creation spin. It includes all the tools needed to help create the music you want, anything from classical to jazz to heavy metal. Included in Fedora Jam is full support for JACK and JACK to PulseAudio bridging, the newest release of Ardour, and a full set of LV2 plugins.": "Fedora Jam är för ljudentusiaster och musiker som vill skapa, redigera och producera ljud och musik på Linux. Det levereras med JACK, ALSA och PulseAudio som standard inklusive en uppsättning program för att skräddarsy din studio.\n\nFedora Jam är en fullfjädrad spinn för ljud och musikskapande. Det innehåller alla verktyg som behövs för att skapa den musik du vill ha, allt från klassiskt till jazz till heavy metal. Inkluderat i Fedora Jam är fullt stöd för JACK och JACK till PulseAudio-bryggning, den senaste versionen av Ardour och en komplett uppsättning LV2-plugins."
 }
