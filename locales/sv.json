@@ -1015,7 +1015,7 @@
     "Redshift": "Redshift",
     "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift justerar färgtemperaturen på din skärm enligt din omgivning.",
     "Siril": "Siril",
-    "Siril, a free astronomical image processing software.": "Siril, en fri programvara för astronomisk bildbearbetning",
+    "Siril, a free astronomical image processing software.": "Siril, en fri programvara för astronomisk bildbearbetning.",
     "Virtualplanet": "Virtualplanet",
     "Brian": "Brian",
     "SciPy": "SciPy",
@@ -1049,5 +1049,18 @@
     "Fillets": "Fillets",
     "Fish Fillets NG is a Linux port of the wonderful puzzle game Fish Fillets from ALTAR interactive.": "Fish Fillets NG är en Linuxportering av det underbara logikspelet Fish Fillets från ALTAR interactive.",
     "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Utveckla, simulera, parallellisera, analysera och optimera biologiska neuronala nätverk med hjälp av NEURON-simulatorn.",
-    "A desktop publishing and page layout application with professional publishing features.": "Ett program för skrivbordspublicering och sidlayout med professionella funktioner för publicering."
+    "A desktop publishing and page layout application with professional publishing features.": "Ett program för skrivbordspublicering och sidlayout med professionella funktioner för publicering.",
+    "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "INDI biblioteket är en plattformsoberoende programvara designad för automatisering och styrning av astronomiska instrument.",
+    "The free space simulation that lets you explore our universe in three dimensions.": "Den fria rymdsimulatorn som låter dig utforska vårt universum i tre dimensioner.",
+    "A Model Description Language for Computational Neuroscience.": "Ett modellbeskrivningsspråk för beräkningsneurovetenskap.",
+    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "Modellera subcellulära komponenter, biokemiska reaktioner, komplexa modeller av ensamma neuroner och nätverk.",
+    "NetPyNE": "NetPyNE",
+    "NeuroML": "NeuroML",
+    "PyNN": "PyNN",
+    "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "Simulera stokastiska kemiska beräkningar, flerrums enkelneuronsmodeller och impulsgivande neuronnätverksmodeller.",
+    "A virtual light-table and darkroom for photographers; includes tools to develop and enhance raw images.": "Ett virtuellt ljusbord och mörkrum för fotografer; inkluderar verktyg för att framkalla och förbättra rå bilder.",
+    "Fedora Design Suite": "Fedora Designsvit",
+    "Looking for a ready-to-go desktop environment brimming with free and open source multimedia production and publishing tools? Try the Design Suite, a Fedora Spin created by designers, for designers.\n\nThe Design Suite includes the favorite tools of the Fedora Design Team. These are the same programs we use to create all the artwork that you see within the Fedora Project, from desktop backgrounds to CD sleeves, web page designs, application interfaces, flyers, posters and more. From document publication to vector and bitmap editing or 3D modeling to photo management, the Design Suite has an application for you — and you can install thousands more from the Fedora universe of packages.": "Letar du efter en färdig skrivbordsmiljö fylld av gratis och öppen källkod för multimediaproduktion och publiceringsverktyg? Prova Design svit, en Fedora spinn skapad av designers, för designers.\n\nDesignsviten innehåller favoritverktygen från Fedora Design Teamet. Det här är samma program som vi använder för att skapa alla konstverk som du ser inom Fedora-projektet, från skrivbordsbakgrunder till CD-fodral, webbdesign, programgränssnitt, flygblad, affischer och mer. Från dokumentpublicering till vektor och bitmappsredigering eller 3D-modellering till fotohantering, Design sviten har programmen för dig – och du kan installera tusentals fler från Fedoras universum av paket.",
+    "Fedora Games Lab": "Fedora spel labb",
+    "A creative sketching and digital painting app, modeled on real-life painting materials and workflows.": "Ett program för kreativt skissande och digitalt målande, modellerat på målningsmaterial och arbetsflöden från verkligheten."
 }
