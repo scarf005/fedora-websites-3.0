@@ -1088,7 +1088,7 @@
     "An enhanced interactive Python shell": "Ett förbättrat interaktivt Pythonskal",
     "Create isolated python environments": "Skapa isolerade pythonmiljöer",
     "Mu editor": "Redigeraren Mu",
-    "Multiple Pythons": "Flera Python:ar",
+    "Multiple Pythons": "Flera Python versioner",
     "IPython": "IPython",
     "Jupyter Notebook": "Jupyter Notebook",
     "The Battle for Wesnoth is a free, turn-based tactical strategy game with a high fantasy theme.": "Battle for Wesnoth är ett fritt, omgångsbaserat taktiskt strategispel med ett högt fantasy tema.",
@@ -1143,5 +1143,11 @@
     "Skipfish": "Skipfish",
     "Sqlninja": "Sqlninja",
     "Matplotlib is the most feature-rich Python library for creating publication ready graphs and figures.": "Matplotlib är det mest funktionsrika Pythonbiblioteket för att skapa publiceringsfärdiga grafer och bilder.",
-    "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "Flera implementationer av programmeringsspråket Python, inklusive dom nyaste CPython och PyPy versionerna"
+    "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "Flera implementationer av programmeringsspråket Python, inklusive dom nyaste CPython och PyPy versionerna",
+    "A flexible 2.5D simulator for robotic sensors and movement.": "En flexibel 2,5D-simulator för robotsensorer och rörelser.",
+    "Gnuplot is a command line driven utility for creating 2D and 3D graphs.": "Gnuplot är ett kommandoradsverktyg för att skapa 2D och 3D-grafer.",
+    "R": "R",
+    "Scap-workbench": "Scap-workbench",
+    "Python’s Integrated Development and Learning Environment": "Pythons integrerade utvecklings och utbildningsmiljö",
+    "Development environment for the Arduino open source hardware platform.": "Utvecklingsmiljö för hårdvaruplattformen Arduino baserad på öppen källkod."
 }
