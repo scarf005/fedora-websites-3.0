@@ -23,7 +23,7 @@ const cards = data._value.cards.filter((card) => {
       <FpCard
         v-for="card in cards"
         :description="card.description"
-        class="mx-auto grow basis-64"
+        class="mx-auto grow basis-80"
       >
         <template #prepend>
           <FpLink :href="card.url">
