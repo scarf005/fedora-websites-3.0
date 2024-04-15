@@ -4,5 +4,6 @@
   "An atomic desktop operating system featuring the modern and modular Plasma Desktop": "An atomic desktop operating system featuring the modern and modular Plasma Desktop",
   "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.": "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.",
   "Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.": "Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.",
+  "Fedora IoT is a container-based host that runs on your hardware, with a focus on edge device deployment.": "Fedora IoT is a container-based host that runs on your hardware, with a focus on edge device deployment.",
   "Related Projects": "Related Projects"
 }
