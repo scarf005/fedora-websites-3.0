@@ -17,6 +17,7 @@ const verifyModal = useState("verifyModal", () => ({ show: false }));
 // Fetch pre-generated Cloud AMIs list
 const cloud_ami = await getCMS("editions/cloud/ami_list");
 const showAMI = useState("showAMI", () => ({ show: false }));
+const showAzure = useState("showAzure", () => ({ show: false }));
 
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
@@ -24,44 +25,6 @@ const dlpath = {
   s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
 };
-
-// TODO: Define this in a AMI component to be used here and by coreos dl page
-const EC2_regions = {
-  "us-east-2": "US East (Ohio)",
-  "us-east-1": "US East (N. Virginia)",
-  "us-west-1": "US West (N. California)",
-  "us-west-2": "US West (Oregon)",
-  "af-south-1": "Africa (Cape Town)",
-  "ap-east-1": "Asia Pacific (Hong Kong)",
-  "ap-south-2": "Asia Pacific (Hyderabad)",
-  "ap-southeast-3": "Asia Pacific (Jakarta)",
-  "ap-south-1": "Asia Pacific (Mumbai)",
-  "ap-northeast-3": "Asia Pacific (Osaka)",
-  "ap-northeast-2": "Asia Pacific (Seoul)",
-  "ap-southeast-1": "Asia Pacific (Singapore)",
-  "ap-southeast-2": "Asia Pacific (Sydney)",
-  "ap-northeast-1": "Asia Pacific (Tokyo)",
-  "ca-central-1": "Canada (Central)",
-  "eu-central-1": "Europe (Frankfurt)",
-  "eu-west-1": "Europe (Ireland)",
-  "eu-west-2": "Europe (London)",
-  "eu-south-1": "Europe (Milan)",
-  "eu-west-3": "Europe (Paris)",
-  "eu-south-2": "Europe (Spain)",
-  "eu-north-1": "Europe (Stockholm)",
-  "eu-central-2": "Europe (Zurich)",
-  "me-south-1": "Middle East (Bahrain)",
-  "me-central-1": "Middle East (UAE)",
-  "sa-east-1": "South America (São Paulo)",
-};
-
-function updateAMIs(art) {
-  showAMI.value.art = art;
-  if (document) {
-    document.body.classList.add("has-modal");
-  }
-  showAMI.value.show = true;
-}
 
 function updateVerify(art) {
   // console.log(art);
@@ -210,7 +173,7 @@ useContentHead(data);
       </div>
       <div class="container mx-auto my-8 max-w-7xl px-2">
         <div
-          class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
+          class="grid grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <template v-if="betaSwitch == false && ga_data?.payload">
             <DownloadSection
@@ -221,25 +184,6 @@ useContentHead(data);
               :version="release_data.ga.releasever"
               class="cloud-theme"
             >
-              <template #extra>
-                <div class="download-section mb-2">
-                  <FpDownloadItem
-                    :name="`Fedora Cloud ${release_data.ga.releasever}`"
-                    type="aws"
-                    v-if="cloud_ami?.ga?.x86_64"
-                  >
-                    <template #btn>
-                      <a
-                        title="List AWS EC2 region"
-                        class="rounded-xl"
-                        @click="updateAMIs(cloud_ami.ga.x86_64)"
-                      >
-                        <Icon name="fa-solid:th-list" class="!align-baseline" />
-                      </a>
-                    </template>
-                  </FpDownloadItem>
-                </div>
-              </template>
             </DownloadSection>
 
             <DownloadSection
@@ -250,25 +194,6 @@ useContentHead(data);
               :version="release_data.ga.releasever"
               class="cloud-theme"
             >
-              <template #extra>
-                <div class="download-section mb-2">
-                  <FpDownloadItem
-                    :name="`Fedora Cloud ${release_data.ga.releasever}`"
-                    type="aws"
-                    v-if="cloud_ami?.ga?.arm64"
-                  >
-                    <template #btn>
-                      <a
-                        title="List AWS EC2 region"
-                        class="rounded-xl"
-                        @click="updateAMIs(cloud_ami.ga.arm64)"
-                      >
-                        <Icon name="fa-solid:th-list" class="!align-baseline" />
-                      </a>
-                    </template>
-                  </FpDownloadItem>
-                </div>
-              </template>
             </DownloadSection>
             <DownloadSection
               name="For Power ppc64le systems"
@@ -297,26 +222,6 @@ useContentHead(data);
               class="cloud-theme"
               isBeta
             >
-              <template #extra>
-                <div class="download-section mb-2">
-                  <FpDownloadItem
-                    :name="`Fedora Cloud ${release_data.beta.releasever}`"
-                    type="aws"
-                    v-if="cloud_ami?.ga?.x86_64"
-                    :variants="['beta']"
-                  >
-                    <template #btn>
-                      <a
-                        title="List AWS EC2 region"
-                        class="rounded-xl"
-                        @click="updateAMIs(cloud_ami.beta.x86_64)"
-                      >
-                        <Icon name="fa-solid:th-list" class="!align-baseline" />
-                      </a>
-                    </template>
-                  </FpDownloadItem>
-                </div>
-              </template>
             </DownloadSection>
 
             <DownloadSection
@@ -328,26 +233,6 @@ useContentHead(data);
               class="cloud-theme"
               isBeta
             >
-              <template #extra>
-                <div class="download-section mb-2">
-                  <FpDownloadItem
-                    :name="`Fedora Cloud ${release_data.beta.releasever}`"
-                    type="aws"
-                    v-if="cloud_ami?.ga?.arm64"
-                    :variants="['beta']"
-                  >
-                    <template #btn>
-                      <a
-                        title="List AWS EC2 region"
-                        class="rounded-xl"
-                        @click="updateAMIs(cloud_ami.beta.arm64)"
-                      >
-                        <Icon name="fa-solid:th-list" class="!align-baseline" />
-                      </a>
-                    </template>
-                  </FpDownloadItem>
-                </div>
-              </template>
             </DownloadSection>
             <DownloadSection
               name="For Power ppc64le systems"
@@ -375,6 +260,16 @@ useContentHead(data);
           </template>
         </div>
       </div>
+    </section>
+
+    <section
+      class="bg-gradient-to-r from-sky-50 to-blue-50 py-8 px-4 dark:bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-900"
+    >
+      <CloudLaunchSection
+        :showBeta="betaSwitch"
+        :releaver="release_data.ga.releasever"
+        :betaver="release_data.beta.releasever"
+      />
     </section>
 
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
@@ -469,59 +364,6 @@ useContentHead(data);
             )
           }}
         </p>
-      </FpModal>
-    </Transition>
-    <Transition
-      enter-active-class="transform duration-200 ease-out"
-      enter-from-class="opacity-0"
-      enter-to-class="opacity-30"
-      leave-active-class="transform duration-200 ease-out"
-      leave-from-class="opacity-100"
-      leave-to-class="opacity-0"
-    >
-      <FpModal
-        class="pt-12"
-        v-if="showAMI.show"
-        @close-modal="closeModal(showAMI)"
-      >
-        <template #header>
-          <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
-            Select AWS EC2 region
-          </h5>
-        </template>
-        <table class="w-full table-auto ltr:text-left rtl:text-right">
-          <thead>
-            <tr>
-              <th class="">Region</th>
-              <th class="hidden sm:block">AMI ID</th>
-              <th class="text-center">Launch instance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="(ami, region) in showAMI.art"
-              class="hover:bg-gray-200 hover:dark:bg-slate-800"
-            >
-              <td class="ltr:pr-6 rtl:pl-6">
-                {{ EC2_regions[region] || region }}
-              </td>
-              <td class="hidden ltr:pr-6 rtl:pl-6 sm:block">{{ ami }}</td>
-              <td class="text-center">
-                <FpLink
-                  :href="`https://console.aws.amazon.com/ec2/home?region=${region}#LaunchInstances:ami=${ami}`"
-                  target="blank"
-                  :title="`Launch in ${region}`"
-                  class="rounded-xl"
-                >
-                  <Icon
-                    name="material-symbols:rocket-launch"
-                    class="!align-baseline"
-                  />
-                </FpLink>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </FpModal>
     </Transition>
   </main>
