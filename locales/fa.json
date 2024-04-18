@@ -108,7 +108,7 @@
     "download_the_checksum_file": "{checksum_file} را در همان پوشه‌ای که تصویر‌دیسک را دانلود کرده‌اید، دانلود کنید.",
     "signature": "امضا",
     "download_the_checksum_and_signature": "{checksum_file} و {signature} را در همان پوشه‌ای که تصویر‌دیسک را دانلود کرده‌اید، دانلود کنید.",
-    "you_can_verify_the_GPG_details": "{icon}می‌توانید جزئیات کلید(های) GPG را در {اینجا} تأیید کنید.",
+    "you_can_verify_the_GPG_details": "{icon}می‌توانید جزئیات کلید(های) GPG را در {here} تأیید کنید.",
     "logo": "نشان",
     "Fedora Budgie Image": "تصویر‌دیسک فدورا Budgie",
     "Common Issues": "مشکلات رایج",
