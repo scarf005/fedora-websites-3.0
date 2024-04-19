@@ -102,7 +102,7 @@
     "Verify your download": "ダウンロードを検証",
     "Become a Sponsor": "スポンサーになる",
     "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you to do useful stuff with it.": "Fedora Project は自由・オープンソースソフトウェアプラットフォームを造り上げ、そのプラットフォーム内の、ユーザーにフォーカスしたソリューションを共有するため、共に仕事するコミュニティです。一言で言うと、あなたにとって使いやすいオペレーティングシステムを造り上げるということです。",
-    "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.": "自動アップデート機能を備えた、最小限なオペレーティングシステムで、コンテナ化されたワークロードを安全かつ大規模に実行することが可能です。",
+    "An automatically-updating, minimal operating system for running containerized workloads securely and at scale.": "自動アップデート機能を備えたミニマルなオペレーティングシステムで、コンテナ化されたワークロードを安全かつ大規模に実行することを可能にします。",
     "its_your_Operating System.": "オペレーティングシステム。",
     "Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.": "Fedora Workstation は、洗練され、使いやすい、あらゆる開発者やメーカー向けのツール一式を完備する、ラップトップやデスクトップ向けのオペレーティングシステムです。",
     "Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies.": "Fedora Server は、最高で最新のデータセンター技術を備える、強力で柔軟性のあるオペレーティングシステムです。",
@@ -116,7 +116,7 @@
     "Edit fedoraproject.org using the content management system! Tip: Use the GitLab SSO link to open a session first.": "fedoraproject.org をプロジェクトのコンテンツ管理システムを使って編集しましょう！ヒント：GitLab の SSO リンクで最初のセッションを開きましょう。",
     "Easy Fix": "Easy Fix",
     "Downloading Fedora Linux": "Fedora Linux のダウンロード",
-    "Diversity & Inclusion": "ダイバーシティ & インクルージョン",
+    "Diversity & Inclusion": "ダイバーシティとインクルージョン",
     "Did you notice a glaring typo or a broken link in these docs? Click here to find out how you can help make it right!": "サイトのミスやリンク切れを見つけましたか？ここをクリックして、修正する方法を学びましょう！",
     "Design Suite": "デザイン スイート",
     "Connections": "つながる",
@@ -613,7 +613,7 @@
     "You can view, file, and discuss Fedora IoT issues on the [Fedora IoT issue tracker](https://github.com/fedora-iot/iot-distro/issues)": "Fedora IoT で発生した問題について閲覧、記録、議論することができます。[Fedora IoT のバグトラッカー](https://github.com/fedora-iot/iot-distro/issues) をご覧ください",
     "Server Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "Server Working Group ミーティングは、すべての現在および将来的なコントリビューターに対して開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→server](https://calendar.fedoraproject.org/list/server/) をご覧ください）。",
     "You can chat with the Fedora Server Working Group via either Matrix or IRC: #server:fedoraproject.org on Matrix and #fedora-server on irc.libera.chat.": "Fedora Server Working Group と Matrix や IRC を通じてチャットすることができます。#server:fedoraproject.org on Matrix か #fedora-server on irc.libera.chat をご覧ください。",
-    "A built-in remote server administration tool is ready to use on first boot": "備え付けのリモートサーバー管理ツールは初回起動時から使用できます",
+    "A built-in remote server administration tool is ready to use on first boot": "内蔵されているリモートサーバー管理ツールは初回起動時から使用できます",
     " From the Data Center to your Raspberry Pi": " データセンターから Raspberry Pi まで",
     "Built by you": "あなたと造る",
     "Features for everyone": "すべての人のための機能",
@@ -623,7 +623,7 @@
     "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "すべての現在および将来的なコントリビューターに開かれます。{'$'}cadence **{'$'}time** UTC に **{'$'}location** にて実施されます（最新情報は [fedocal→server](https://calendar.fedoraproject.org/list/server/) をご覧ください）。",
     "Visit \\#fedora-server on irc.libera.chat or visit [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org).": "\\#fedora-server on irc.libera.chat または [#server:fedoraproject.org](https://matrix.to/#/#server:fedoraproject.org?web-instance[element.io]=chat.fedoraproject.org) をご覧ください。",
     "Enables a variety of server workloads": "多様なサーバーワークロードに対応しています",
-    "Run virtual machines and containers with [libvirt](https://libvirt.org/) and [podman](https://podman.io/) or build amazing applications on top of the [WildFly](https://www.wildfly.org) application runtime": "[libvirt](https://libvirt.org/) や [podman](https://podman.io/) を使って仮想マシンやコンテナを走らせたり、[WildFly](https://www.wildfly.org) アプリケーションランタイムをベースにした素晴らしいアプリケションを作ったりできます",
+    "Run virtual machines and containers with [libvirt](https://libvirt.org/) and [podman](https://podman.io/) or build amazing applications on top of the [WildFly](https://www.wildfly.org) application runtime": "[libvirt](https://libvirt.org/) や [podman](https://podman.io/) を使って仮想マシンやコンテナを走らせたり、[WildFly](https://www.wildfly.org) アプリケーションランタイムをベースにした、素晴らしいアプリケションを作成したりできます",
     "Sign up at [server@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/server.lists.fedoraproject.org/) to receive meeting agendas and minutes [view archives](https://lists.fedoraproject.org/archives/list/server@lists.fedoraproject.org/)": "[server{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/server.lists.fedoraproject.org/) にサインアップして、会議の議題や議事録を受け取りましょう（[アーカイブを表示](https://lists.fedoraproject.org/archives/list/server{'@'}lists.fedoraproject.org/)）",
     "Stable Ecosystem": "安定したエコシステム",
     "Serving the needs of small to medium businesses, home labs, and enterprise workloads": "小中企業、ホームラボ、エンタープライズワークロードのニーズに対応します",
@@ -678,5 +678,6 @@
     "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Fedora Linux 40 Beta がリリースされました!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)",
     "Help the design and docs teams with workstation": "Workstation でデザインチームとドキュメントチームにご協力ください",
     "Images optimized to run on cloud infrastructures.": "クラウドインフラストラクチャに最適化されたイメージ。",
-    "The flagship Fedora edition featuring the latest GNOME desktop. The Linux desktop you've been waiting for.": "最新の GNOME デスクトップを搭載した Fedora のフラグシップエディション。これがあなたが待ち望んだ Linux デスクトップです。"
+    "The flagship Fedora edition featuring the latest GNOME desktop. The Linux desktop you've been waiting for.": "最新の GNOME デスクトップを搭載した Fedora のフラグシップエディション。これがあなたが待ち望んだ Linux デスクトップです。",
+    "Our main IRC channel for the event is **\\#fedora-flock** on **libera.chat**. Join **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** to chat on Matrix or IRC.": "Flock についての主な IRC チャンネルは **\\#fedora-flock** on **libera.chat** です。**[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** に参加して Matrix または IRC でチャットしましょう。"
 }
