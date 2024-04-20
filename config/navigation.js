@@ -201,13 +201,6 @@ const navigation = {
               "A classroom lab for teaching the Python programming language to students.",
           },
           {
-            label: "Robotics Suite",
-            path: "/labs/robotics",
-            icon: "fa6-solid:desktop",
-            description:
-              "A wide variety of free and open robotics software packages for beginners and experts.",
-          },
-          {
             label: "Scientific",
             path: "/labs/scientific",
             icon: "fa6-solid:desktop",
