@@ -49,10 +49,10 @@ def collect(release):
 
     # 1 - transform release vars into an image name we want to query for
     templates = [
-        (f"Fedora-Cloud-Base-{release['ga']['releasever']}-{release['ga']['rc_version']}.x86_64", {
+        (f"Fedora-Cloud-Base-AmazonEC2.x86_64-{release['ga']['releasever']}-{release['ga']['rc_version']}", {
             'x86_64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
-        (f"Fedora-Cloud-Base-{release['ga']['releasever']}-{release['ga']['rc_version']}.aarch64", {
+        (f"Fedora-Cloud-Base-AmazonEC2.aarch64-{release['ga']['releasever']}-{release['ga']['rc_version']}", {
             'aarch64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
         (f"Fedora-Cloud-Base-AmazonEC2.x86_64-{release['beta']['releasever']}-{release['beta']['rc_version']}", {
