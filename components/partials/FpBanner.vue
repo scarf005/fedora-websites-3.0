@@ -62,8 +62,10 @@ defineProps({
           },
         ]"
       >
+        <Icon v-if="cta.icon" :name="cta.icon" class="mr-1" />
         <Icon
-          v-if="idx === 0 && cta.text.includes('Download')"
+          v-else-if="idx === 0 && cta.text.includes('Download')"
+          class="mr-1"
           name="fa-download"
         />
         {{ $t(cta.text) }}
