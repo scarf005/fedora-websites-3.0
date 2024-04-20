@@ -140,12 +140,6 @@ const navigation = {
             description: "Discover. Reflect. Share. Learn.",
           },
           {
-            label: "Phosh (Phone Shell)",
-            path: "/spins/phosh",
-            icon: "fa6-solid:mobile",
-            description: "Preview of Fedora for mobile devices",
-          },
-          {
             label: "Sway Tiling WM",
             path: "/spins/sway",
             icon: "fa6-solid:desktop",
