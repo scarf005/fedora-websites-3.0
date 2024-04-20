@@ -116,7 +116,9 @@ function checksum_path(dl_prefix, arch, format, beta = false) {
 
     <div v-for="(v, k) in artifacts" key="k" class="download-section mb-2">
       <FpDownloadItem
-        :name="`${art_name} ${version}`"
+        :name="`${
+          art_name || 'Fedora ' + v.subvariant.replaceAll('_', ' ')
+        } ${version}`"
         :type="v.type"
         :format="v.format"
         :downloadLink="`${dlPrefix}/test/${version}_Beta/${v.path}`"
@@ -133,7 +135,9 @@ function checksum_path(dl_prefix, arch, format, beta = false) {
         :variants="[...variants, 'beta']"
       />
       <FpDownloadItem
-        :name="`${art_name} ${version}`"
+        :name="`${
+          art_name || 'Fedora ' + v.subvariant.replaceAll('_', ' ')
+        } ${version}`"
         :type="v.type"
         :format="v.format"
         :downloadLink="

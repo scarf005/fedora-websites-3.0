@@ -215,7 +215,6 @@ useContentHead(data);
           <template v-if="betaSwitch == false && ga_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="ga_data.payload.images.Cloud.x86_64"
               :dlPrefix="dlpath.x86_64"
@@ -245,7 +244,6 @@ useContentHead(data);
 
             <DownloadSection
               name="For ARM® aarch64 systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="ga_data.payload.images.Cloud.aarch64"
               :dlPrefix="dlpath.aarch64"
@@ -274,7 +272,6 @@ useContentHead(data);
             </DownloadSection>
             <DownloadSection
               name="For Power ppc64le systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="ga_data.payload.images.Cloud.ppc64le"
               :dlPrefix="dlpath.ppc64le"
@@ -283,7 +280,6 @@ useContentHead(data);
             />
             <DownloadSection
               name="For IBM s390x zSystems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="ga_data.payload.images.Cloud.s390x"
               :dlPrefix="dlpath.s390x"
@@ -294,7 +290,6 @@ useContentHead(data);
           <template v-else-if="betaSwitch == true && beta_data?.payload">
             <DownloadSection
               name="For Intel and AMD x86_64 systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Cloud.x86_64"
               :dlPrefix="dlpath.x86_64"
@@ -326,7 +321,6 @@ useContentHead(data);
 
             <DownloadSection
               name="For ARM® aarch64 systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Cloud.aarch64"
               :dlPrefix="dlpath.aarch64"
@@ -357,21 +351,19 @@ useContentHead(data);
             </DownloadSection>
             <DownloadSection
               name="For Power ppc64le systems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Cloud.ppc64le"
               :dlPrefix="dlpath.ppc64le"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="cloud-theme"
               isBeta
             />
             <DownloadSection
               name="For IBM s390x zSystems"
-              art_name="Fedora Cloud"
               @verify-click="updateVerify"
               :artifacts="beta_data.payload.images.Cloud.s390x"
               :dlPrefix="dlpath.s390x"
-              :version="release_data.ga.releasever"
+              :version="release_data.beta.releasever"
               class="cloud-theme"
               isBeta
             />
