@@ -1016,5 +1016,6 @@
     "Development environment for the Arduino open source hardware platform.": "아두이노 개방형 원천 하드웨어 기술환경을 위한 개발 환경.",
     "Eclipse": "이클립스",
     "Stage": "단계",
-    "Optionally, bring your online calendar, contacts and data to the desktop with online accounts.": "선택적으로, 온라인 계정과 함께 자신의 온라인 달력, 연락처 및 자료를 데스크탑으로 가져옵니다."
+    "Optionally, bring your online calendar, contacts and data to the desktop with online accounts.": "선택적으로, 온라인 계정과 함께 자신의 온라인 달력, 연락처 및 자료를 데스크탑으로 가져옵니다.",
+    "verify_button_download": "자신의 내려받은 이미지를 위해 처크썸을 내려받으려면 확인 누름단추 {verify_button}를 누르세요."
 }
