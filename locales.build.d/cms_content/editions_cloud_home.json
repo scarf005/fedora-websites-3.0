@@ -17,6 +17,7 @@
   "Fedora Cloud is optimized for container workloads making it a great host for running containerized applications.": "Fedora Cloud is optimized for container workloads making it a great host for running containerized applications.",
   "Fedora Cloud offers the most recent software packages and updates, ensuring that you are constantly up to date.": "Fedora Cloud offers the most recent software packages and updates, ensuring that you are constantly up to date.",
   "Join the mailing list": "Join the mailing list",
+  "Launch in Cloud": "Launch in Cloud",
   "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Open to all current and potential contributors {'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).",
   "Open-source Ecosystem": "Open-source Ecosystem",
   "Report & discuss issues": "Report & discuss issues",
