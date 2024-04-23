@@ -45,7 +45,7 @@ const { data: beta_data } = await useFetch(
 // for checksums
 const dlpath = {
   x86_64: "https://download.fedoraproject.org/pub/alt/releases",
-  aarch64: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
+  aarch64: "https://download.fedoraproject.org/pub/fedora/linux/releases",
   s390x: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
   ppc64le: "https://download.fedoraproject.org/pub/fedora-secondary/releases",
 };

@@ -22,7 +22,7 @@ dlpath = {
 }
 labspath = {
   "x86_64": "https://dl.fedoraproject.org/pub/alt/releases",
-  "aarch64": "https://dl.fedoraproject.org/pub/fedora-secondary/releases",
+  "aarch64": "https://dl.fedoraproject.org/pub/fedora/linux/releases",
 }
 spinpath = {
   "x86_64": "https://dl.fedoraproject.org/pub/fedora/linux/releases",
