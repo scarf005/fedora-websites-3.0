@@ -994,7 +994,6 @@
     "Workstation Working Group meetings are open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→workstation](https://calendar.fedoraproject.org/list/workstation/) for updates).": "Открыто для всех текущих и потенциальных участников {'$'}каденция в **{'$'}время** UTC в **{'$'}локации** (см. [fedocal→server](https://calendar. Fedoraproject.org/list/server/) для получения обновлений).",
     "1702339200000": "1702339200000",
     "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "Открыт для всех текущих и потенциальных участников {'$'}cadence в **{'$'}time** UTC в **{'$'}location** (обновления см. на [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/)).",
-    "🎉 [Fedora Linux 40 Beta released!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)": "🎉 [Выпуск бета-версии Fedora Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40-beta)",
     "Astromatic": "Astromatic",
     "Astropy": "Astropy",
     "Virtualplanet": "Virtualplanet",
