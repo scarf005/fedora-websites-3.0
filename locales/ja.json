@@ -197,7 +197,7 @@
     "Fedora is always free for anyone to **use, modify, and distribute**. It is built and used by people across the globe who work together as a community.": "Fedora は常に、誰でも、自由に**使用、改変、配布**することが可能です。Fedora は、コミュニティとして、一緒に働く世界中の人々によって造られ、使用されています。",
     "Fedora Spins": "Fedora Spins",
     "Fedora Linux": "Fedora Linux",
-    "Fedora Docs": "Fedora ドキュメント",
+    "Fedora Docs": "Fedora Docs",
     "We are Fedora": "わたしたちは Fedora です",
     "A Registered Digital Public Good": "「Digital Public Good」受賞",
     "An innovative platform for hardware, clouds, and containers, built with love by you.": "あなたの愛で造る、革新的なプラットフォームをハードウェアでも、クラウドでも、コンテナーでも。",
@@ -504,7 +504,7 @@
     "Fedora Budgie Atomic is maintained by the [Budgie Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/Budgie) in Fedora and is the result of collaboration between the Fedora and Budgie community. <br /><br /> The Budgie SIG is an open community seeking contributors from everywhere, and of every type. From documentation writing, to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Budgie! <br /><br /> The Buddies of Budgie organization is responsible for the development of Budgie Desktop and have their own [Getting Involved](https://docs.buddiesofbudgie.org/organization/getting-involved) page detailing how you can get help their project!": "Fedora Budgie Atomic は、Fedora の [Budgie Special Interrest Group (SIG)](https://fedoraproject.org/wiki/SIGs/Budgie) によって保持されており、Fedora と Budgie コミュニティとのコラボレーションの成果です。<br /><br />Budgie SIG は、オープンなコミュニティであり、様々な種類のコントリビューターを、世界中から探しています。ドキュメントを書くことから、ベータテスト、質問に回答して他の人を助けることまで、コミュニティに参加し、Budgie の未来を創るのを手助けする方法は、たくさんあります！<br /><br />Buddies of Budgies は、Budgie デスクトップの開発を行っており、[Getting Involved](https://docs.buddiesofbudgie.org/organization/getting-involved) では、あなたがプロジェクトに貢献する方法が説明されています！",
     "Why Fedora CoreOS?": "Fedora CoreOS を使う理由",
     "Atomic Desktops for Fedora.": "Fedora のアトミックデスクトップ。",
-    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "より良い体験を提供する Fedora のアトミックデスクトップを探しましょう！最新バージョン Atomic Desktop をこちらから探してください。",
+    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "より良い体験を提供する Fedora のアトミックデスクトップを見つけましょう！最新版のアトミックデスクトップをこちらから探してください。",
     "Why Fedora Onyx?": "Fedora Onyx を使う理由",
     "source:": "ソース:",
     "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Budgie Atomic users and contributors.": "**Fedora Onyx** のタグの付いた Fedora のディスカッションフォーラム（Discourse ベース）は、他の Fedora Budgie Atomic ユーザーとコントリビューターとつながれる絶好の場所です。",
@@ -675,8 +675,12 @@
     "Optionally, bring your online calendar, contacts and data to the desktop with online accounts.": "お使いのオンラインアカウントを使用して、オンラインカレンダー、連絡先、データなどをデスクトップと同期することができます。",
     "Participate in workstation discussions on [discussion​.fedoraproject​.org​/tag​/workstation-wg](https://discussion.fedoraproject.org/tag/workstation-wg)": "[discussion​.fedoraproject​.org​/tag​/workstation-wg](https://discussion.fedoraproject.org/tag/workstation-wg) で Workstation の議論に参加しましょう",
     "Leading technology": "最先端のテクノロジー",
-    "Help the design and docs teams with workstation": "Workstation でデザインチームとドキュメントチームにご協力ください",
+    "Help the design and docs teams with workstation": "Workstation でデザインチームとドキュメントチームに協力",
     "Images optimized to run on cloud infrastructures.": "クラウドインフラストラクチャに最適化されたイメージ。",
     "The flagship Fedora edition featuring the latest GNOME desktop. The Linux desktop you've been waiting for.": "最新の GNOME デスクトップを搭載した Fedora のフラグシップエディション。これがあなたが待ち望んだ Linux デスクトップです。",
-    "Our main IRC channel for the event is **\\#fedora-flock** on **libera.chat**. Join **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** to chat on Matrix or IRC.": "Flock についての主な IRC チャンネルは **\\#fedora-flock** on **libera.chat** です。**[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** に参加して Matrix または IRC でチャットしましょう。"
+    "Our main IRC channel for the event is **\\#fedora-flock** on **libera.chat**. Join **[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** to chat on Matrix or IRC.": "Flock についての主な IRC チャンネルは **\\#fedora-flock** on **libera.chat** です。**[\\#fedora-flock](https://web.libera.chat/?channels=#fedora-flock)** に参加して Matrix または IRC でチャットしましょう。",
+    "Fedora Chat": "Fedora Chat",
+    "Extensive documentation is available at the Fedora documentation page.": "Fedora ドキュメンテーションのページで幅広い解説文章が利用できます。",
+    "Fedora ALT Downloads": "Fedora ALT Downloads",
+    "Digital Public Good Logo": "Digital Public Good のロゴ"
 }
