@@ -1091,5 +1091,7 @@
     "A versatile and powerful 3D robotics simulator with realistic physics.": "Symulator robotyki 3D ogólnego przeznaczenia, o realistycznej fizyce i dużych możliwościach.",
     "Development environment for the Arduino open source hardware platform.": "Środowisko programistyczne dla platformy sprzętowej open source Arduino.",
     "Eclipse": "Eclipse",
-    "Fawkes": "Fawkes"
+    "Fawkes": "Fawkes",
+    "MRPT": "MRPT",
+    "Modular framework for high performance robotic systems.": "Modularny mechanizm dla wysokowydajnych systemów robotycznych."
 }
