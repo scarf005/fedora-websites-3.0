@@ -1019,5 +1019,9 @@
     "Darktable": "Darktable",
     "Easy file sharing based on git. Share, backup, and collaborate on design assets.": "Łatwe współdzielenie plików oparte na programie git. Można wysyłać pliki, wykonywać ich kopie zapasowe i razem pracować nad materiałami.",
     "Looking for a ready-to-go desktop environment brimming with free and open source multimedia production and publishing tools? Try the Design Suite, a Fedora Spin created by designers, for designers.\n\nThe Design Suite includes the favorite tools of the Fedora Design Team. These are the same programs we use to create all the artwork that you see within the Fedora Project, from desktop backgrounds to CD sleeves, web page designs, application interfaces, flyers, posters and more. From document publication to vector and bitmap editing or 3D modeling to photo management, the Design Suite has an application for you — and you can install thousands more from the Fedora universe of packages.": "Szukasz gotowego do użycia środowiska graficznego, pełnego bezpłatnych narzędzi do produkcji i publikowania multimediów typu open source? Wypróbuj Pakiet projektowy, Fedorę Spin stworzoną przez projektantów dla projektantów.\n\nPakiet projektowy zawiera ulubione narzędzia zespołu projektowego Fedory. Są to te same programy, których używamy do tworzenia całej grafiki, którą widzisz w Projekcie Fedora, od tła pulpitu po okładki płyt CD, projekty stron internetowych, interfejsy aplikacji, ulotki, plakaty i nie tylko. Od publikacji dokumentów po edycję wektorów i bitmap, modelowanie 3D po zarządzanie zdjęciami, pakiet projektowy ma dla Ciebie aplikację — i możesz zainstalować tysiące innych pakietów ze świata Fedory.",
-    "Fedora Design Suite": "Pakiet projektowy Fedory"
+    "Fedora Design Suite": "Pakiet projektowy Fedory",
+    "Manage, install, and generate color profiles for your desktop. Keep your screen calibrated!": "Zarządzanie, instalowanie i tworzenie profilów kolorów. Umożliwia kalibrowanie ekranów.",
+    "GNOME Color Manager": "Menedżer kolorów GNOME",
+    "Inkscape": "Inkscape",
+    "Krita": "Krita"
 }
