@@ -1094,5 +1094,8 @@
     "Fawkes": "Fawkes",
     "MRPT": "MRPT",
     "Modular framework for high performance robotic systems.": "Modularny framework dla wysokowydajnych systemów robotycznych.",
-    "Powerful and extensible multi-language integrated development environment.": "Potężne i rozszerzalne, wielojęzyczne, zintegrowane środowisko programistyczne."
+    "Powerful and extensible multi-language integrated development environment.": "Potężne i rozszerzalne, wielojęzyczne, zintegrowane środowisko programistyczne.",
+    "PCL": "PCL",
+    "Player": "Player",
+    "Robot server and framework for advanced robotic systems.": "Serwer i mechanizm robotów dla zaawansowanych systemów robotycznych."
 }
