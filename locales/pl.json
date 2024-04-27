@@ -1097,7 +1097,7 @@
     "Powerful and extensible multi-language integrated development environment.": "Potężne i rozszerzalne, wielojęzyczne, zintegrowane środowisko programistyczne.",
     "PCL": "PCL",
     "Player": "Player",
-    "Robot server and framework for advanced robotic systems.": "Serwer i mechanizm robotów dla zaawansowanych systemów robotycznych.",
+    "Robot server and framework for advanced robotic systems.": "Serwer i framework dla zaawansowanych systemów robotycznych.",
     "The GNU Scientific Library is a C/C++ library providing a extensive collection of mathematical routines.": "GNU Scientific Library to biblioteka języka C/C++ dostarczająca rozległy zbiór funkcji matematycznych.",
     "Pandas is a Python library mostly useful for data analysis.": "Pandas jest biblioteką języka Python przydatną do analizy danych.",
     "A tool targeted to test SQL Injection vulnerabilities on a web application using Microsoft® SQL Server as its back-end.": "Narzędzie przeznaczone do testowania podatności aplikacji WWW używających Microsoft® SQL Server na atak typu „SQL Injection”.",
@@ -1124,5 +1124,9 @@
     "Etherape": "Etherape",
     "Ettercap": "Ettercap",
     "Ettercap is a comprehensive suite for man in the middle attacks.": "Ettercap to kompleksowy pakiet dla ataków typu „man in the middle”.",
-    "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa to szybki, pracujący równolegle, modularny program do łamania loginów."
+    "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa to szybki, pracujący równolegle, modularny program do łamania loginów.",
+    "Wary of reinstalling all the essential tools for your scientific and numerical work? The answer is here. Fedora Scientific Spin brings together the most useful open source scientific and numerical tools atop the goodness of the KDE desktop environment.\n\nFedora Scientific currently ships with numerous applications and libraries. These range from libraries such as the GNU Scientific library, the SciPy libraries, tools like Octave and xfig to typesetting tools like Kile and graphics programs such as Inkscape. The current set of packages include an IDE, tools and libraries for programming in C, C++, Python, Java and R. Also included along with are libraries for parallel computing such as the OpenMPI and OpenMP. Tools for typesetting, writing and publishing are included.": "Nie chcesz ponownie instalować wszystkich niezbędnych narzędzi do pracy naukowej i numerycznej? Odpowiedź jest tutaj. Fedora Scientific Spin łączy w sobie najbardziej przydatne narzędzia naukowe i numeryczne typu open source oraz dobroć środowiska graficznego KDE.\n\nFedora Scientific jest obecnie dostarczana z wieloma aplikacjami i bibliotekami. Obejmują one biblioteki, takie jak biblioteka GNU Scientific, biblioteki SciPy, narzędzia takie jak Octave i xfig, narzędzia do składu, takie jak Kile, i programy graficzne, takie jak Inkscape. Obecny zestaw pakietów zawiera IDE, narzędzia i biblioteki do programowania w językach C, C++, Python, Java i R. Dołączone są także biblioteki do obliczeń równoległych, takie jak OpenMPI i OpenMP. W zestawie znajdują się narzędzia do składu, pisania i publikowania.",
+    "Fedora Scientific Lab": "Laboratorium naukowe Fedory",
+    "R": "R",
+    "Fedora Security Lab": "Laboratorium bezpieczeństwa Fedory"
 }
