@@ -1003,5 +1003,9 @@
     "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Rozwijaj, symuluj, zrównoleglaj, analizuj i optymalizuj biologiczne sieci neuronowe za pomocą symulatora NEURON.",
     "NetPyNE": "NetPyNE",
     "NeuroML": "NeuroML",
-    "PyNN": "PyNN"
+    "PyNN": "PyNN",
+    "NEST": "NEST",
+    "Neuron": "Neuron",
+    "SciPy": "SciPy",
+    "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "Symulowanie stochastycznych obliczeń chemicznych, wielokomorowych modeli pojedynczych neuronów i modeli pulsujących sieci neuronowych."
 }
