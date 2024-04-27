@@ -993,5 +993,6 @@
     "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift dostosowuje temperaturę kolorów ekranu zgodnie z otoczeniem.",
     "Siril": "Siril",
     "Virtualplanet": "Virtualplanet",
-    "A highly flexible and extensible simulator for modelling spiking neural networks.": "Wysoce konfigurowalny i rozszerzalny symulator do modelowania pulsujących sieci neuronowych."
+    "A highly flexible and extensible simulator for modelling spiking neural networks.": "Wysoce konfigurowalny i rozszerzalny symulator do modelowania pulsujących sieci neuronowych.",
+    "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "Środowisko symulacji do szczegółowego modelowania poszczególnych neuronów i sieci neuronów."
 }
