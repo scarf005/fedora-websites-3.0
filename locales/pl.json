@@ -996,9 +996,12 @@
     "A highly flexible and extensible simulator for modelling spiking neural networks.": "Wysoce konfigurowalny i rozszerzalny symulator do modelowania pulsujących sieci neuronowych.",
     "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "Środowisko symulacji do szczegółowego modelowania poszczególnych neuronów i sieci neuronów.",
     "GENESIS": "GENESIS",
-    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "Modelowanie składowych subkomórkowych, reakcji biochemicznych, złożonych modeli pojedynczych neuronów i sieci.",
+    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "Modelowanie składowych subkomórkowych, reakcji biochemicznych, złożonych modeli pojedynczych neuronów i sieci.",
     "A simulation environment for modelling large scale spiking neural networks.": "Środowisko symulacji do modelowania wielkich pulsujących sieci neuronowych.",
     "Brian": "Brian",
     "MOOSE": "MOOSE",
-    "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Rozwijaj, symuluj, zrównoleglaj, analizuj i optymalizuj biologiczne sieci neuronowe za pomocą symulatora NEURON."
+    "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Rozwijaj, symuluj, zrównoleglaj, analizuj i optymalizuj biologiczne sieci neuronowe za pomocą symulatora NEURON.",
+    "NetPyNE": "NetPyNE",
+    "NeuroML": "NeuroML",
+    "PyNN": "PyNN"
 }
