@@ -1128,5 +1128,10 @@
     "Wary of reinstalling all the essential tools for your scientific and numerical work? The answer is here. Fedora Scientific Spin brings together the most useful open source scientific and numerical tools atop the goodness of the KDE desktop environment.\n\nFedora Scientific currently ships with numerous applications and libraries. These range from libraries such as the GNU Scientific library, the SciPy libraries, tools like Octave and xfig to typesetting tools like Kile and graphics programs such as Inkscape. The current set of packages include an IDE, tools and libraries for programming in C, C++, Python, Java and R. Also included along with are libraries for parallel computing such as the OpenMPI and OpenMP. Tools for typesetting, writing and publishing are included.": "Nie chcesz ponownie instalować wszystkich niezbędnych narzędzi do pracy naukowej i numerycznej? Odpowiedź jest tutaj. Fedora Scientific Spin łączy w sobie najbardziej przydatne narzędzia naukowe i numeryczne typu open source oraz dobroć środowiska graficznego KDE.\n\nFedora Scientific jest obecnie dostarczana z wieloma aplikacjami i bibliotekami. Obejmują one biblioteki, takie jak biblioteka GNU Scientific, biblioteki SciPy, narzędzia takie jak Octave i xfig, narzędzia do składu, takie jak Kile, i programy graficzne, takie jak Inkscape. Obecny zestaw pakietów zawiera IDE, narzędzia i biblioteki do programowania w językach C, C++, Python, Java i R. Dołączone są także biblioteki do obliczeń równoległych, takie jak OpenMPI i OpenMP. W zestawie znajdują się narzędzia do składu, pisania i publikowania.",
     "Fedora Scientific Lab": "Laboratorium naukowe Fedory",
     "R": "R",
-    "Fedora Security Lab": "Laboratorium bezpieczeństwa Fedory"
+    "Fedora Security Lab": "Laboratorium bezpieczeństwa Fedory",
+    "Nmap": "Nmap",
+    "Nmap is a free and open source utility for network discovery and security auditing.": "Nmap to wolne narzędzie do wykrywania sieci i wykonywania audytów bezpieczeństwa.",
+    "Scap-workbench": "Scap-workbench",
+    "Skipfish": "Skipfish",
+    "Skipfish is an active web application security reconnaissance tool.": "Skipfish jest narzędziem do badania zabezpieczeń aktywnych aplikacji WWW."
 }
