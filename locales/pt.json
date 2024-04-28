@@ -992,5 +992,9 @@
     "Fedora Podcast 27: Fedora Cloud Edition": "Podcast Fedora 27: Fedora Edição Cloud",
     "Fedora Testing (7 and up)": "Testando Fedora (7 e superiores)",
     "Fedora Cinnamon Image": "Imagem Fedora Cinnamon",
-    "Fedora Cinnamon Spin": "Spin Fedora Cinnamon"
+    "Fedora Cinnamon Spin": "Spin Fedora Cinnamon",
+    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering users sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "O Fedora Budgie Spin apresenta o ambiente de desktop Budgie, um ambiente moderno e rico em recursos projetado para não atrapalhar o usuário. O Budgie Desktop usa metáforas de design comuns em ambientes de desktop, ao mesmo tempo em que oferece funcionalidades sofisticadas, como o widget Raven e o centro de notificações, e uma abordagem acessível para personalização.\n\nEste Spin é projetado para estar alinhado de perto com o Budgie Desktop original, proporcionando uma experiência quase pura com um conjunto de aplicativos padrão selecionados que se encaixam melhor com o Budgie.",
+    "Fedora Cinnamon ships GNOME Terminal, the gateway to the real power of any UNIX/Linux machine.": "O Fedora Cinnamon envia o 'Gnome Terminal', o acesso para o poder real de qualquer máquina UNIX / Linux.",
+    "Fedora IOT": "Fedora IoT",
+    "Fedora Rawhide": "Fedora Rawhide"
 }
