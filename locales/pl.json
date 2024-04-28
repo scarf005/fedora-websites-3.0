@@ -1141,5 +1141,10 @@
     "Fedora Sericea is an atomic Sway-based desktop.": "Fedora Sericea to atomowy pulpit oparty na aplikacji Sway.",
     "Fedora Silverblue is an atomic desktop operating system aimed at good support for container-focused workflows.": "Fedora Silverblue to atomowy system operacyjny dla komputerów stacjonarnych, którego zadaniem jest dobra obsługa stylu pracy skupionych na kontenerach.",
     "Fedora Sway Atomic": "Fedora Sway Atomic",
-    "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.": "Fedora Budgie Atomic dostarcza popularne środowisko graficzne Budgie w atomowym stylu."
+    "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.": "Fedora Budgie Atomic dostarcza popularne środowisko graficzne Budgie w atomowym stylu.",
+    "Wireshark": "Wireshark",
+    "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark jest analizatorem ruchu sieciowego dla systemów operacyjnych typu UNIX.",
+    "Sqlninja": "Sqlninja",
+    "Yersinia": "Yersinia",
+    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia to narzędzie sieciowe zaprojektowane do wykorzystywania słabych punktów różnych protokołów sieciowych"
 }
