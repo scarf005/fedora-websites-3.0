@@ -1055,5 +1055,13 @@
     "Learn guitar with this guitar tablature editor with ability to display scores and multitrack tabs.": "Naučte se hrát na kytaru s tímto editorem tabulatury, který má schopnost zobrazit partitury a vícestopé tabulatury.",
     "An easy way to write music with an integrated sequencer.": "Jednoduchý způsob psaní hudby s integrovaným sekvencerem.",
     "Ardour": "Ardour",
-    "Calf": "Calf"
+    "Calf": "Calf",
+    "Guitarix": "Guitarix",
+    "Hydrogen": "Hydrogen",
+    "The Fedora Games lab offers a perfect showcase of the best games available in Fedora. The included games span several genres, from first-person shooters to real-time and turn-based strategy games to puzzle games.\n\nNot all the games available in Fedora are included on this lab, but trying out this lab will give you a fair impression of Fedora's ability to run great games.": "Fedora Games lab nabízí dokonalou ukázku nejlepších her, které jsou k dispozici ve Fedoře. Obsažené hry pokrývají několik žánrů, od stříleček v první osobě přes real-time a tahové strategie po hlavolamy.\n\nNe všechny hry k dispozici ve Fedoře jsou obsahem tohoto labu, ale jeho vyzkoušením získáte dobrou představu o schopnostech Fedory provozovat skvělé hry.",
+    "Fedora Jam is for audio enthusiasts and musicians who want to create,  edit and produce audio and music on Linux.  It comes with JACK, ALSA and PulseAudio by default including a suite of programs to tailor your studio.\n\nFedora Jam is a full-featured audio creation spin. It includes all the tools needed to help create the music you want, anything from classical to jazz to heavy metal. Included in Fedora Jam is full support for JACK and JACK to PulseAudio bridging, the newest release of Ardour, and a full set of LV2 plugins.": "Fedora Jam je určena pro audio nadšence a hudebníky, kteří chtějí vytvářet, upravovat a produkovat audio a hudbu na linuxu. Přichází s JACK, ALSA a PulseAudio, včetně balíku programů pro vaše studio.\n\nFedora Jam je plně vybavený spin pro tvorbu audia. Zahrnuje všechny nástroje potřebné pro vytváření hudby, kterou si představujete; cokoliv od hudby klasické přes jazz až po heavy metal. Zahrnuje rovněž plnou podporu pro JACK a přemostění pro JACK do PulseAudia, nejnovější vydání Ardour a plnou sadu zásuvných modulů LV2.",
+    "Freeciv": "Freeciv",
+    "Hedgewars": "Hedgewars",
+    "Warzone 2100": "Warzone 2100",
+    "Fedora Jam Lab": "Fedora Jam Lab"
 }
