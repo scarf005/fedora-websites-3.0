@@ -842,7 +842,7 @@
     "A highly flexible and extensible simulator for modelling spiking neural networks.": "Un simulatore altamente flessibile ed espandibile per modellare reti neurali.",
     "A Python package for simulator-independent specification of neuronal network models.": "Un pacchetto Python per simulare modelli indipendenti di rete neuronali.",
     "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "Un ambiente di simulazione per modelli dettagliati di singoli neuroni e reti neurali.",
-    "A simulation environment for modelling large scale spiking neural networks.": "Una simulazione d'ambiente per modellare reti neurali a larga scala.",
+    "A simulation environment for modelling large scale spiking neural networks.": "Un ambiente di simulazione per il modellamento di reti neurali su larga scala.",
     "Brian": "Brian",
     "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Sviluppa, simula, parallelizza, analizza e ottimizza rete neuronali biologiche utilizzando il simulatore NEURON."
 }
