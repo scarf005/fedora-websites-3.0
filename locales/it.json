@@ -846,5 +846,12 @@
     "Brian": "Brian",
     "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Sviluppa, simula, parallelizza, analizza e ottimizza reti neuronali biologiche utilizzando il simulatore NEURON.",
     "Fedora Comp-Neuro Lab": "Fedora Comp-Neuro Lab",
-    "GENESIS": "GENESI"
+    "GENESIS": "GENESIS",
+    "MOOSE": "MOOSE",
+    "NEST": "NEST",
+    "NetPyNE": "NetPyNE",
+    "Neuron": "Neuron",
+    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "Modella componenti subcellulari, reazioni biochimiche, modelli complessi di singoli neuroni e reti.",
+    "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "Simula calcoli chimici stocastici, modelli multicompartimento a singolo neurone e modelli di rete neuronale di tipo spike.",
+    "PyNN": "PyNN"
 }
