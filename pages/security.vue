@@ -2,12 +2,12 @@
 const data = await getCMS("security");
 if (data._value.packageSection.content) {
   data._value.packageSection.contentMd = await mdparser(
-    data._value.packageSection.content
+    data._value.packageSection.content,
   );
 }
 if (data._value.bugSection.description) {
   data._value.bugSection.descriptionMd = await mdparser(
-    data._value.bugSection.description
+    data._value.bugSection.description,
   );
 }
 const obsolete_keys = useState("obsolete_keys", () => false);
@@ -71,7 +71,7 @@ useContentHead(data);
               <p class="mb-2">{{ $t("Verify the CHECKSUM file is valid") }}</p>
               <pre
                 class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-              ><code>gpgv --keyring ./fedora.gpg *-CHECKSUM</code></pre>
+              ><code>for checksum in *-CHECKSUM; do gpgv --keyring fedora.gpg "$checksum"; done</code></pre>
             </li>
             <li>
               <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
@@ -83,7 +83,7 @@ useContentHead(data);
           <p>
             {{
               $t(
-                "If the output states that the file is valid, then it's ready to use!"
+                "If the output states that the file is valid, then it's ready to use!",
               )
             }}
           </p>
