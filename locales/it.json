@@ -838,5 +838,8 @@
     "Fedora Atomic Image": "Immagine di Fedora Atomic",
     "Screenshot of Fedora Sway Atomic": "Screenshot di Fedora Sway Atomic",
     "The KDE Plasma desktop, in an atomic fashion": "Il desktop KDE Plasma, in modalità atomica",
-    "Digital Public Good Logo": "Digital Public Good Logo"
+    "Digital Public Good Logo": "Digital Public Good Logo",
+    "A highly flexible and extensible simulator for modelling spiking neural networks.": "Un simulatore altamente flessibile ed espandibile per modellare reti neurali.",
+    "A Python package for simulator-independent specification of neuronal network models.": "Un pacchetto Python per simulare modelli indipendenti di rete neuronali.",
+    "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "Una simulazione d'ambiente per dettagliati modelli di singoli neuroni e reti neurali."
 }
