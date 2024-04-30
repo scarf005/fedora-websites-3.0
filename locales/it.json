@@ -870,5 +870,11 @@
     "One of the benefits of Fedora for Python developers is the ease of setting up Python development. The Fedora Python Classroom Lab makes it even easier for teachers and instructors to use Fedora in their classrooms or workshops. Ready to use operating system with important stuff pre-installed - either with GNOME or as a headless environment for Docker or Vagrant. Teach Python on Fedora, with Fedora, using the stuff you love: IPython, Jupyter Notebook, multiple Pythons, virtualenvs, tox, git and more\n\nThe Fedora Python Classroom Lab comes in 3 variants.  Either you can run it in graphical mode with GNOME, or you can virtualize it with Vagrant or run it in a Docker container.  You choose what fits your teaching environment the best.": "Uno dei vantaggi di Fedora per gli sviluppatori Python è la facilità di impostare lo sviluppo in Python. Il Fedora Python Classroom Lab rende ancora più semplice per insegnanti e istruttori l'uso di Fedora nelle loro classi o workshop. Sistema operativo pronto all'uso con elementi importanti preinstallati - sia con GNOME che come ambiente headless per Docker o Vagrant. Insegna Python su Fedora, con Fedora, usando le cose che ami: IPython, Jupyter Notebook, più Python, virtualenvs, tox, git e altro ancora\n\nIl Fedora Python Classroom Lab è disponibile in 3 varianti.  Puoi eseguirlo in modalità grafica con GNOME oppure puoi virtualizzarlo con Vagrant o eseguirlo in un contenitore Docker. Scegli ciò che si adatta meglio al tuo ambiente di insegnamento.",
     "Gazebo": "Gazebo",
     "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "Molteplici implementazioni del linguaggio di programmazione Python, incluse le più recenti versioni di CPython e PyPy",
-    "Fedora Python Classroom Lab": "Fedora Python Classroom Lab"
+    "Fedora Python Classroom Lab": "Fedora Python Classroom Lab",
+    "Create isolated python environments": "Crea ambienti python isolati",
+    "An enhanced interactive Python shell": "Una shell Python interattiva potenziata",
+    "Mu editor": "Mu editor",
+    "Jupyter Notebook": "Notebook Jupyter",
+    "IPython": "IPython",
+    "Multiple Pythons": "Python multipli"
 }
