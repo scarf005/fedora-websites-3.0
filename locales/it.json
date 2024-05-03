@@ -952,5 +952,12 @@
     "MegaGlest is an entertaining free and open source cross-platform 3D real-time strategy (RTS) game.": "MegaGlest è un divertente multi piattaforma 3D di strategia in tempo reale libero e open source (RTS).",
     "The Battle for Wesnoth is a free, turn-based tactical strategy game with a high fantasy theme.": "The Battle for Wesnoth è un gioco di strategia a turni con un tema fantasy.",
     "Hedgewars is a turn based strategy, artillery, action and comedy game.": "Hedgewars è un gioco di strategia a turni, artiglieria, azione e commedia.",
-    "Popular version control system": "Famoso sistema di controllo di versione"
+    "Popular version control system": "Famoso sistema di controllo di versione",
+    "Python 3 IDLE": "Python 3 IDLE",
+    "Scientific Python stack": "Scientific Python stack",
+    "git": "git",
+    "tox": "tox",
+    "virtualenv management and test command line tool": "strumento a linea di comando per la gestione e i test di virtualenv",
+    "virtual environments": "ambienti virtuali",
+    "Python’s Integrated Development and Learning Environment": "Python Integrated Development and Learning Environment"
 }
