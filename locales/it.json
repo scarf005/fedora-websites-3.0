@@ -921,5 +921,9 @@
     "GIMP": "GIMP",
     "INDI": "INDI",
     "Kstars": "Kstars",
-    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars fornisce una simulazione grafica accurata del cielo notturno, da qualsiasi località della Terra e ad ogni data e ora."
+    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars fornisce una simulazione grafica accurata del cielo notturno, da qualsiasi località della Terra e ad ogni data e ora.",
+    "Redshift": "Redshift",
+    "Siril, a free astronomical image processing software.": "Siril, un software libero per processare immagini astronomiche",
+    "Siril": "Siril",
+    "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift regola la temperatura del colore dello schermo in base all'ambiente circostante."
 }
