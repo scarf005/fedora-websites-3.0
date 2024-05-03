@@ -995,5 +995,8 @@
     "Eye of MATE": "Eye of MATE",
     "Legacy": "Legacy",
     "Fedora Podcast 28: Getting Fedora with your Lenovo": "Fedora Podcast 28: Ottieni Fedora con il tuo Lenovo",
-    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "L'aggiornamento è martedì. Hai eseguito \"sudo dnf update\" ultimamente?"
+    "It's update Tuesday. Have you run \"sudo dnf update\" lately?": "L'aggiornamento è martedì. Hai eseguito \"sudo dnf update\" ultimamente?",
+    "Fedora IOT": "Fedora IoT",
+    "Fedora Rawhide": "Fedora Rawhide",
+    "The Fedora Budgie Spin showcases the Budgie Desktop, a feature-rich, modern desktop designed to keep out the way of the user. Budgie Desktop uses common desktop design metaphors while offering users sophisticated functionality such as its Raven widget and notification center, and an approachable method to personalization.\n\nThis Spin is designed to align closely with upstream Budgie Desktop, providing a close to vanilla experience with a curated set of default applications that fit in best with Budgie.": "Fedora Budgie Spin presenta Budgie Desktop, un desktop moderno e ricco di funzionalità progettato per tenere lontano l'utente. Budgie Desktop utilizza metriche comuni di progettazione desktop offrendo al contempo funzionalità sofisticate come il widget Raven e il centro notifiche e un metodo accessibile per la personalizzazione.\n\nQuesta Spin è progettato per allinearsi perfettamente con Budgie Desktop dalla base, fornendo un'esperienza vicina al vanilla con un set curato di applicazioni predefinite che si adattano meglio a Budgie."
 }
