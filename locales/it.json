@@ -960,5 +960,14 @@
     "virtualenv management and test command line tool": "strumento a linea di comando per la gestione e test di virtualenv",
     "virtual environments": "ambienti virtuali",
     "Python’s Integrated Development and Learning Environment": "Python Integrated Development and Learning Environment",
-    "A flexible 2.5D simulator for robotic sensors and movement.": "Un simulatore 2.5D flessibile per sensori robotici e movimento."
+    "A flexible 2.5D simulator for robotic sensors and movement.": "Un simulatore 2.5D flessibile per sensori robotici e movimento.",
+    "Fedora Discord": "Fedora Discord",
+    "A versatile and powerful 3D robotics simulator with realistic physics.": "Un simulatore robotico 3D versatile e potente con fisica realistica.",
+    "Development environment for the Arduino open source hardware platform.": "Ambiente di sviluppo per la piattaforma hardware open source Arduino.",
+    "Arduino": "Arduino",
+    "MRPT": "MRPT",
+    "Modular framework for high performance robotic systems.": "Framework modulare per sistemi robotici ad alte prestazioni.",
+    "Check out the recap from our latest event, the Fedora 38 release party!": "Date un'occhiata al riepilogo del nostro ultimo evento: il release party di Fedora 36!",
+    "Eclipse": "Eclipse",
+    "Fawkes": "Fawkes"
 }
