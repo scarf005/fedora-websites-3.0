@@ -923,7 +923,7 @@
     "Kstars": "Kstars",
     "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars fornisce una simulazione grafica accurata del cielo notturno, da qualsiasi località della Terra, a qualsiasi data e qualsiasi ora.",
     "Redshift": "Redshift",
-    "Siril, a free astronomical image processing software.": "Siril, un software libero per processare immagini astronomiche",
+    "Siril, a free astronomical image processing software.": "Siril, un software libero per l'elaborazione di immagini astronomiche.",
     "Siril": "Siril",
     "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift regola la temperatura del colore dello schermo in base all'ambiente circostante.",
     "The free space simulation that lets you explore our universe in three dimensions.": "La simulazione spaziale libera che ti permette di esplorare l'universo in tre dimensioni.",
@@ -934,5 +934,7 @@
     "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "INDI Library è un software multipiattaforma progettato per l'automazione e il controllo degli strumenti astronomici.",
     "Virtualplanet": "Virtualplanet",
     "Manage, install, and generate color profiles for your desktop. Keep your screen calibrated!": "Gestisci, installa, e genera profili di colore per il tuo desktop. Manteni il tuo schermo calibrato!",
-    "Pitivi": "Pitivi"
+    "Pitivi": "Pitivi",
+    "A Model Description Language for Computational Neuroscience.": "Un linguaggio di descrizione modelli per le neuroscienze computazionali.",
+    "Looking for a ready-to-go desktop environment brimming with free and open source multimedia production and publishing tools? Try the Design Suite, a Fedora Spin created by designers, for designers.\n\nThe Design Suite includes the favorite tools of the Fedora Design Team. These are the same programs we use to create all the artwork that you see within the Fedora Project, from desktop backgrounds to CD sleeves, web page designs, application interfaces, flyers, posters and more. From document publication to vector and bitmap editing or 3D modeling to photo management, the Design Suite has an application for you — and you can install thousands more from the Fedora universe of packages.": "Stai cercando un ambiente desktop pronto all'uso, ricco di strumenti di produzione e pubblicazione multimediale liberi e open source? Prova Design Suite, una spin Fedora creata dai designer, per i designer.\n\nLa Design Suite include gli strumenti preferiti del Fedora Design Team. Gli stessi programmi che usiamo per creare tutta la grafica che vedi all'interno del Progetto Fedora, dagli sfondi del desktop alle custodie dei CD, il design delle pagine web, le interfacce delle applicazioni, i volantini, i poster e tanto altro ancora. Dalla pubblicazione di documenti all'editing vettoriale e bitmap, o dalla modellazione 3D alla gestione delle foto, Design Suite ha un'applicazione per te - e puoi installarne altre migliaia dall'universo di pacchetti Fedora."
 }
