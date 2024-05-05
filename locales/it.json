@@ -1069,6 +1069,8 @@
     "QTerminal": "QTerminal",
     "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one clients can attach to and detach from a central core": "Quassel IRC è un client IRC moderno e multipiattaforma, in cui un client può collegarsi e scollegarsi da un sistema centrale",
     "The goal of NetworkManager is to make networking just work with a minimum of user hassle, but still allow customization.": "L'obiettivo di NetworkManager è di far funzionare la rete con il minimo sforzo possibile per l'utente, ma permette anche la personalizzazione.",
-    "Are you a downloader? Use Transmission to get new versions of Fedora MATE+Compiz Desktop!": "Sei una persona che scarica molto? Usa Transmission per ottenere nuove versioni di Fedora MATE-Compiz Desktop!",
-    "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail è un'applicazione email per MATE-Compiz Desktop facile da configurare e piena di funzioni."
+    "Are you a downloader? Use Transmission to get new versions of Fedora MATE+Compiz Desktop!": "Sei una persona che scarica molto? Usa Transmission per scaricare le nuove versioni di Fedora MATE-Compiz!",
+    "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail è un'applicazione email per MATE-Compiz Desktop facile da configurare e piena di funzioni.",
+    "Blueberry is a gnome-bluetooth based bluetooth configuration tool which integrates very well in almost any desktop environment.": "Blueberry è un sistema di configurazione bluetooth, basato su gnome-bluetooth e che si integra bene in quasi tutti gli ambienti desktop.",
+    "Blueberry": "Blueberry"
 }
