@@ -1099,5 +1099,20 @@
     "Professional state-of-the-art audio plugins for musicians and multitrack software.": "Des modules additionnels audio représentant l’état de l’art pour les musiciens et les logiciels multipistes.",
     "Yoshimi": "Yoshimi",
     "A simple Python editor for beginner programmers": "Un simple éditeur Python pour les programmeurs débutants",
-    "A web-based notebook environment for interactive computing and visualizations": "Une application web d’écriture de notebook pour les calcul interactifs et la visualisation"
+    "A web-based notebook environment for interactive computing and visualizations": "Une application web d’écriture de notebook pour les calcul interactifs et la visualisation",
+    "Multiple implementations of the Python programming language, including the newest CPython and PyPy versions": "Implémentations multiples du langage de programmation Python, incluant CPython et PyPy",
+    "Popular version control system": "Système de gestion de versions populaire",
+    "Python 3 IDLE": "Python 3 IDLE",
+    "Python’s Integrated Development and Learning Environment": "Environnement d’apprentissage et de développement intégré pour Python (Integrated Development and Learning Environment)",
+    "Scientific Python stack": "Scientific Python stack",
+    "git": "git",
+    "tox": "tox",
+    "virtual environments": "environnements virtuels",
+    "virtualenv management and test command line tool": "Outil de gestion de virtualenv et de tests en ligne de commande",
+    "A flexible 2.5D simulator for robotic sensors and movement.": "Un simulateur 2,5D pour les capteurs et les mouvements de robots.",
+    "A versatile and powerful 3D robotics simulator with realistic physics.": "Un simulateur de robotique 3D versatile et puissant avec un comportement physique réaliste.",
+    "Arduino": "Arduino",
+    "Development environment for the Arduino open source hardware platform.": "Un environnement de développement pour la plateforme matérielle open source Arduino.",
+    "Eclipse": "Eclipse",
+    "Fawkes": "Fawkes"
 }
