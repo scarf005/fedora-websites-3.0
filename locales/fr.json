@@ -1016,5 +1016,9 @@
     "Redshift": "Redshift",
     "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift ajuste la température de couleur de votre écran en fonction de votre environnement.",
     "Siril, a free astronomical image processing software.": "Siril, un logiciel libre de traitement d’images astronomiques.",
-    "Siril": "Siril"
+    "Siril": "Siril",
+    "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "La bibliothèque INDI est un logiciel multiplateforme conçu pour l’automatisation et le contrôle d’instruments astronomiques.",
+    "A Model Description Language for Computational Neuroscience.": "Un Langage de Description de Modèle pour la Neuroscience Informatique.",
+    "The free space simulation that lets you explore our universe in three dimensions.": "Le simulateur de l’espace libre qui vous permet d’explorer notre univers en trois dimensions.",
+    "Virtualplanet": "Virtualplanet"
 }
