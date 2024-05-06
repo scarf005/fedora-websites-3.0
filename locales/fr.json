@@ -1018,7 +1018,9 @@
     "Siril, a free astronomical image processing software.": "Siril, un logiciel libre de traitement d’images astronomiques.",
     "Siril": "Siril",
     "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "La bibliothèque INDI est un logiciel multiplateforme conçu pour l’automatisation et le contrôle d’instruments astronomiques.",
-    "A Model Description Language for Computational Neuroscience.": "Un Langage de Description de Modèle pour la Neuroscience Informatique.",
+    "A Model Description Language for Computational Neuroscience.": "Un langage de description de modèle pour la neuroscience informatique.",
     "The free space simulation that lets you explore our universe in three dimensions.": "Le simulateur de l’espace libre qui vous permet d’explorer notre univers en trois dimensions.",
-    "Virtualplanet": "Virtualplanet"
+    "Virtualplanet": "Virtualplanet",
+    "Fedora Comp-Neuro Lab": "labo Fedora Comp-Neuro",
+    "A plethora of Free/Open source computational modelling tools for Neuroscience in one easy to use downloadable image! Download, install (or don't!) and get down to work!\n\nThe NeuroFedora team has developed the Comp-Neuro lab specially to enable computational neuroscience. It includes everything you will need to get your work done—modelling software, analysis tools, general productivity tools—all well integrated with the modern GNOME platform to give you a complete operating system.": "Une pléiade d'outils Libre/Open Source pour la modélisation par ordinateur de neuroscience en une simple image téléchargeable facile à utiliser ! Téléchargez, installez (ou pas !) et mettez vous à l'oeuvre !\n\nL'équipe NeuroFedora a développé le labo Comp-Neuro spécialement pour permettre la neuroscience informatique. Il inclut tout ce dont vous avez besoin pour accomplir vos travaux — logiciels de modélisation, outils d'analyse, programmes de productivité générale — le tout bien intégré avec la nouvelle plateforme GNOME pour vous offrir un système d'exploitation complet."
 }
