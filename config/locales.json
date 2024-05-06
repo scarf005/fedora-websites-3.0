@@ -17,7 +17,7 @@
   { "code": "ja", "iso": "ja", "file": "ja.json", "name": "日本"},
   { "code": "ko", "iso": "ko", "file": "ko.json", "name": "한국어" },
   { "code": "nl", "iso": "nl", "file": "nl.json", "name": "Nederlands" },
-  { "code": "nn", "iso": "nn", "file": "nn.json", "name": "Norsk (Nynorsk)" },
+  { "code": "nn", "iso": "nn", "file": "nn.json", "name": "Norsk nynorsk" },
   { "code": "pl", "iso": "pl", "file": "pl.json", "name": "Polski" },
   {
     "code": "pt-br",
