@@ -1154,6 +1154,8 @@
     "A tool targeted to test SQL Injection vulnerabilities on a web application using Microsoft® SQL Server as its back-end.": "Un outil pour détecter des vulnérabilités d'injection SQL dans les applications Web utilisant Microsoft® SQL Server.",
     "Etherape": "Etherape",
     "Ettercap": "Ettercap",
-    "Ettercap is a comprehensive suite for man in the middle attacks.": "Ethercap est une suite exhaustive pour contrer les attaques de l’homme du milieu.",
-    "EtherApe is a graphical network monitor for UNIX modeled after etherman. It displays network activity graphically.": "EtherApe est un outil de suivi de l'activité réseau pour UNIX, conçu en se basant sur etherman. Il présente l'activité réseau graphiquement."
+    "Ettercap is a comprehensive suite for man in the middle attacks.": "Ettercap est une suite exhaustive pour les attaques de l'homme du milieu.",
+    "EtherApe is a graphical network monitor for UNIX modeled after etherman. It displays network activity graphically.": "EtherApe est un outil de suivi de l'activité réseau pour UNIX, conçu en se basant sur etherman. Il présente l'activité réseau graphiquement.",
+    "Fedora Security Lab": "Lab Fedora Security",
+    "Medusa": "Medusa"
 }
