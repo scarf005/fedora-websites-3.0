@@ -1158,7 +1158,7 @@
     "EtherApe is a graphical network monitor for UNIX modeled after etherman. It displays network activity graphically.": "EtherApe est un outil de suivi de l'activité réseau pour UNIX, conçu en se basant sur etherman. Il présente l'activité réseau graphiquement.",
     "Fedora Security Lab": "Lab Fedora Security",
     "Medusa": "Medusa",
-    "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa est un outil d’audit de mots de passe, massivement parallèle et modulaire,  employant la force brute.",
+    "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa est un outil d'attaque de tentative de connexion par force brute, conçu pour être rapide, modulaire et pouvant être exécuté en parallèle.",
     "Nmap": "Nmap",
     "Nmap is a free and open source utility for network discovery and security auditing.": "Nmap est un utilitaire libre et open source pour la découverte des réseaux et les audits de sécurité."
 }
