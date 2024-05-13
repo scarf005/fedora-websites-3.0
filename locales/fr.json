@@ -1132,5 +1132,11 @@
     "Modular framework for high performance robotic systems.": "Framework modulaire pour les systèmes robotiques de haute performance.",
     "PCL": "PCL",
     "Physical simulator for multi-agent robotics research.": "Simulateur physique pour la recherche en robotique multi-agents.",
-    "GNU Octave is a high level programming language and numerical computing environment, mostly compatible with MATLAB.": "GNU Octave est un langage de programmation haut niveau et un environnement de calcul. Globalement compatible avec MATLAB."
+    "GNU Octave is a high level programming language and numerical computing environment, mostly compatible with MATLAB.": "GNU Octave est un langage de programmation haut niveau et un environnement de calcul. Globalement compatible avec MATLAB.",
+    "Gazebo": "Gazebo",
+    "Gnuplot is a command line driven utility for creating 2D and 3D graphs.": "Gnuplot est un utilitaire en ligne de commande pour la création de graphiques 2D et 3D.",
+    "IPython is an enhanced interactive shell with various features to support rapid interactive computing.": "IPython est interprète de commandes (shell) interactif amélioré, disposant de nombreuses fonctionnalités pour assurer un traitement interactif rapide.",
+    "GNU Octave": "GNU Octave",
+    "GNU Scientific Library": "GNU Scientific Library",
+    "Gnuplot": "Gnuplot"
 }
