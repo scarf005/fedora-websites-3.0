@@ -1157,5 +1157,6 @@
     "Ettercap is a comprehensive suite for man in the middle attacks.": "Ettercap est une suite exhaustive pour les attaques de l'homme du milieu.",
     "EtherApe is a graphical network monitor for UNIX modeled after etherman. It displays network activity graphically.": "EtherApe est un outil de suivi de l'activité réseau pour UNIX, conçu en se basant sur etherman. Il présente l'activité réseau graphiquement.",
     "Fedora Security Lab": "Lab Fedora Security",
-    "Medusa": "Medusa"
+    "Medusa": "Medusa",
+    "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa est un outil d’audit de mots de passe, massivement parallèle et modulaire,  employant la force brute."
 }
