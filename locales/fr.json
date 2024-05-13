@@ -1147,5 +1147,7 @@
     "Pandas": "Pandas",
     "Pandas is a Python library mostly useful for data analysis.": "Pandas est une bibliothèque Python principalement utile à l'analyse de données.",
     "R": "R",
-    "R is a software environment for statistical computing.": "R est un environnement logiciel pour le traitement statistique."
+    "R is a software environment for statistical computing.": "R est un environnement logiciel pour le traitement statistique.",
+    "The GNU Scientific Library is a C/C++ library providing a extensive collection of mathematical routines.": "La GNU Scientific Library est une bibliothèque C/C++ fournissant une collection importante de routines mathématiques.",
+    "A GUI tool that serves as an SCAP scanner and provides tailoring functionality for SCAP content.": "Un outil doté d’une interface graphique qui sert de scanner de vulnérabilités selon le protocole SCAP et fournit des outils pour façonner des contenus SCAP."
 }
