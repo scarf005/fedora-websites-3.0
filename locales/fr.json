@@ -1135,8 +1135,9 @@
     "GNU Octave is a high level programming language and numerical computing environment, mostly compatible with MATLAB.": "GNU Octave est un langage de programmation haut niveau et un environnement de calcul. Globalement compatible avec MATLAB.",
     "Gazebo": "Gazebo",
     "Gnuplot is a command line driven utility for creating 2D and 3D graphs.": "Gnuplot est un utilitaire en ligne de commande pour la création de graphiques 2D et 3D.",
-    "IPython is an enhanced interactive shell with various features to support rapid interactive computing.": "IPython est interprète de commandes (shell) interactif amélioré, disposant de nombreuses fonctionnalités pour assurer un traitement interactif rapide.",
+    "IPython is an enhanced interactive shell with various features to support rapid interactive computing.": "IPython est un interpréteur de commandes avec des fonctionnalités qui améliorent l'efficacité des traitements de données interactifs.",
     "GNU Octave": "GNU Octave",
     "GNU Scientific Library": "GNU Scientific Library",
-    "Gnuplot": "Gnuplot"
+    "Gnuplot": "Gnuplot",
+    "LaTeX": "LaTeX"
 }
