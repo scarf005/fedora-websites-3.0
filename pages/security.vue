@@ -71,7 +71,7 @@ useContentHead(data);
               <p class="mb-2">{{ $t("Verify the CHECKSUM file is valid") }}</p>
               <pre
                 class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-              ><code>for checksum in *-CHECKSUM; do gpgv --keyring fedora.gpg "$checksum"; done</code></pre>
+              ><code>for checksum in *-CHECKSUM; do gpgv --keyring ./fedora.gpg "$checksum"; done</code></pre>
             </li>
             <li>
               <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
