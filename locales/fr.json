@@ -1139,5 +1139,7 @@
     "GNU Octave": "GNU Octave",
     "GNU Scientific Library": "GNU Scientific Library",
     "Gnuplot": "Gnuplot",
-    "LaTeX": "LaTeX"
+    "LaTeX": "LaTeX",
+    "Matplotlib is the most feature-rich Python library for creating publication ready graphs and figures.": "Matplotlib est la bibliothèque la plus riche de fonctionnalités de Python pour la création de graphiques et de figures prêtes à publier.",
+    "Matplotlib": "Matplotlib"
 }
