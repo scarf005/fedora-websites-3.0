@@ -1145,5 +1145,6 @@
     "Maxima": "Maxima",
     "Maxima is a computer algebra system.": "Maxima est un système de calcul formel.",
     "Pandas": "Pandas",
-    "Pandas is a Python library mostly useful for data analysis.": "Pandas est une bibliothèques Python essentiellement utile pour l’analyse des données."
+    "Pandas is a Python library mostly useful for data analysis.": "Pandas est une bibliothèque Python principalement utile à l'analyse de données.",
+    "R": "R"
 }
