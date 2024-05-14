@@ -1161,7 +1161,10 @@
     "Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.": "Medusa est un outil d'attaque de tentative de connexion par force brute, conçu pour être rapide, modulaire et pouvant être exécuté en parallèle.",
     "Nmap": "Nmap",
     "Nmap is a free and open source utility for network discovery and security auditing.": "Nmap est un utilitaire libre et open source pour la découverte de réseaux et pour les audits de sécurité.",
-    "Powerful and extensible multi-language integrated development environment.": "Un environnement de développement multi-langage intégré, puissant et extensible.",
+    "Powerful and extensible multi-language integrated development environment.": "Un environnement de développement intégré multi-langage, puissant et extensible.",
     "Skipfish": "Skipfish",
-    "Scap-workbench": "Scap-workbench"
+    "Scap-workbench": "Scap-workbench",
+    "Yersinia": "Yersinia",
+    "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.": "Fedora Budgie Atomic met à disposition l'environnement de bureau populaire Budgie, de façon atomique.",
+    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia est un outil réseau conçu pour exploiter certaines faiblesses dans divers protocoles réseau."
 }
