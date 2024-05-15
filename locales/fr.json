@@ -1168,5 +1168,8 @@
     "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion.": "Fedora Budgie Atomic met à disposition l'environnement de bureau populaire Budgie, de façon atomique.",
     "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia est un outil réseau conçu pour exploiter certaines faiblesses dans divers protocoles réseau.",
     "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark est un analyseur de trafic pour les systèmes d’exploitation dérivés d’UNIX.",
-    "SimSpark": "SimSpark"
+    "SimSpark": "SimSpark",
+    "Player": "Player",
+    "Wireshark": "Wireshark",
+    "Robot server and framework for advanced robotic systems.": "Serveur et infrastucture Robot pour les systèmes robotiques avancés."
 }
