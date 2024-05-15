@@ -631,5 +631,7 @@
     "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Deneyiminizi geliştirmek için bir Fedora atomik masaüstü bulun! Atomik masaüstlerimizin en son sürümlerini burada bulabilirsiniz.",
     "for Fedora Linux": "Fedora Linux için",
     "source:": "kaynak:",
-    "You can chat with the Fedora Budgie community on Matrix at **#budgie:fedoraproject.org**": "Fedora Budgie topluluğuyla Matrix'te **#budgie:fedoraproject.org** adresinden sohbet edebilirsiniz."
+    "You can chat with the Fedora Budgie community on Matrix at **#budgie:fedoraproject.org**": "Fedora Budgie topluluğuyla Matrix'te **#budgie:fedoraproject.org** adresinden sohbet edebilirsiniz.",
+    "verify_button_download": "{verify_button} butonuna tıklayarak indirdiğiniz imajın dosya doğrulama dosyasını indirin.",
+    "Found something that isn't quite right? Want to propose a change to the way Onyx works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "Tam anlamıyla doğru olmayan bir şey mi buldunuz? Onyx'in çalışma şekline dair bir değişiklik mi sunmak istiyorsunuz? Sizden duymak isteriz! [Budgie SIG Bildiri izcisi](https://pagure.io/fedora-budgie/project/issues) sayfasına giderek bize bildirebilirsiniz."
 }
