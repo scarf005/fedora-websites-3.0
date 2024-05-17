@@ -1007,11 +1007,12 @@
     "PCL": "PCL",
     "MRPT": "MRPT",
     "Modular framework for high performance robotic systems.": "Estrutura modular para sistemas robóticos de alto desempenho.",
-    "Physical simulator for multi-agent robotics research.": "Simulador físico para pesquisa de robótica multi-agente.",
+    "Physical simulator for multi-agent robotics research.": "Simulador físico para pesquisa de robótica multiagente.",
     "Player": "Reprodutor",
     "Robot server and framework for advanced robotic systems.": "Servidor robótico e framework para sistemas robóticos avançados.",
     "The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.": "A Biblioteca Point Cloud (PCL) é um projeto autônomo e de larga escala para processamento de imagem 2D/3D e processamento de nuvem de pontos.",
     "Powerful and extensible multi-language integrated development environment.": "Ambiente de desenvolvimento integrado multi-linguagem poderoso e extensível.",
     "SimSpark": "SimSpark",
-    "Stage": "Stage"
+    "Stage": "Stage",
+    "The Fedora Robotics spin provides a wide variety of free and open robotics software packages. These range from hardware accessory libraries for the Hokuyo laser scanners or Katana robotic arm to software frameworks like Fawkes or Player and simulation environments such as Stage and RoboCup Soccer Simulation Server 2D/3D. It also provides a ready to use development environment for robotics including useful libraries such as OpenCV computer vision library, Festival text to speech system and MRPT.\n\nThe Robotics spin is targeted at people just discovering their interest in robotics as well as experienced roboticists. For the former we provide a readily usable simulation environment with an introductory hands-on demonstration, and for the latter we provide a full development environment, to be used immediately.": "O spin Fedora Robotics oferece uma ampla variedade de pacotes de software de robótica livres e abertos. Eles variam de bibliotecas de acessórios de hardware para os scanners a laser Hokuyo ou braço robótico Katana até estruturas de software como Fawkes ou Player e ambientes de simulação como Stage e RoboCup Soccer Simulation Server 2D/3D. Ele também fornece um ambiente de desenvolvimento pronto para uso para robótica, incluindo bibliotecas úteis, como biblioteca de visão computacional OpenCV, sistema de texto para fala do Festival e MRPT.\n\nO spin Robotics é direcionado a pessoas que estão descobrindo seu interesse em robótica, bem como a roboticistas experientes. Para o primeiro, fornecemos um ambiente de simulação prontamente utilizável com uma demonstração prática introdutória, e para o último, fornecemos um ambiente de desenvolvimento completo, para ser usado imediatamente."
 }
