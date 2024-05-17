@@ -903,5 +903,20 @@
     "A Python package for simulator-independent specification of neuronal network models.": "Um pacote Python para especificação independente de simulador de modelos de rede neuronal.",
     "A highly flexible and extensible simulator for modelling spiking neural networks.": "Um simulador altamente flexível e extensível para modelar redes neurais com spikes.",
     "A simulation environment for detailed modelling of individual neurons and networks of neurons.": "Um ambiente de simulação para modelagem detalhada de neurônios individuais e redes de neurônios.",
-    "A simulation environment for modelling large scale spiking neural networks.": "Um ambiente de simulação para modelar redes neurais com spikes em grande escala."
+    "A simulation environment for modelling large scale spiking neural networks.": "Um ambiente de simulação para modelar redes neurais com spikes em grande escala.",
+    "Simulate stochastic chemical computations, multicompartment single-neuron models, and spiking neuron network models.": "Simule cálculos químicos estocásticos, modelos multicompartimentais de neurônio único e modelos de rede de neurônios de spiking.",
+    "The complete Python Science stack, for teaching, modelling, and analysis.": "A pilha Python Science completa, para ensino, modelagem e análise.",
+    "GENESIS": "GENESIS",
+    "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Desenvolva, simule, paralelize, analise e otimize redes neuronais biológicas usando o simulador NEURON.",
+    "MOOSE": "MOOSE",
+    "Model subcellular components, biochemical reactions, complex models of single neurons, and networks.": "Modele componentes subcelulares, reações bioquímicas, modelos complexos de neurônios individuais e redes.",
+    "PyNN": "PyNN",
+    "SciPy": "SciPy",
+    "A creative sketching and digital painting app, modeled on real-life painting materials and workflows.": "Um aplicativo criativo de esboço e pintura digital, modelado em materiais de pintura e fluxos de trabalhos reais.",
+    "NEST": "NEST",
+    "NetPyNE": "NetPyNE",
+    "NeuroML": "NeuroML",
+    "Neuron": "Neuro",
+    "A desktop publishing and page layout application with professional publishing features.": "Uma aplicação desktop de publicação e layout de páginas com características profissionais de publicação.",
+    "A powerful multi-track non-linear video editor that includes editing, transcoding, effects and transitions.": "Um editor de vídeo multi-track não-linear poderoso que inclui edição, transcodificação, efeitos e transições."
 }
