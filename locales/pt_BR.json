@@ -883,5 +883,15 @@
     "AstrOmatic is a set of astronomical pipeline software.": "AstrOmatic é um conjunto de software de pipeline astronômico.",
     "Astromatic": "Astromatic",
     "Fedora Astronomy Lab": "Fedora Astronomy Lab",
-    "Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.\n\nThe Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.": "O Fedora Astronomy traz um conjunto completo de ferramentas de código aberto para astrônomos amadores e profissionais.\n\nO Spin fornece o desktop Fedora KDE aprimorado com um ambiente Python científico completo e o software AstrOmatic para análise de dados. O KStars foi adicionado para fornecer uma ferramenta de astrofotografia completa. Como o KStars usa a biblioteca INDI para controlar equipamentos, vários telescópios, câmeras, etc. são suportados. Resumidamente, o Fedora Astronomy oferece um conjunto completo de software, desde o planejamento da observação até os resultados finais."
+    "Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.\n\nThe Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.": "O Fedora Astronomy traz um conjunto completo de ferramentas de código aberto para astrônomos amadores e profissionais.\n\nO Spin fornece o desktop Fedora KDE aprimorado com um ambiente Python científico completo e o software AstrOmatic para análise de dados. O KStars foi adicionado para fornecer uma ferramenta de astrofotografia completa. Como o KStars usa a biblioteca INDI para controlar equipamentos, vários telescópios, câmeras, etc. são suportados. Resumidamente, o Fedora Astronomy oferece um conjunto completo de software, desde o planejamento da observação até os resultados finais.",
+    "GIMP": "GIMP",
+    "Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.": "Kstars fornece uma simulação gráfica precisa do céu noturno, a partir de qualquer local da Terra, em qualquer data e hora.",
+    "Redshift": "Redshift",
+    "Celestia": "Celestia",
+    "INDI": "INDI",
+    "Kstars": "Kstars",
+    "Redshift adjusts the color temperature of your screen according to your surroundings.": "Redshift ajusta a temperatura de cores da sua tela de acordo com o ambiente ao redor.",
+    "Siril": "Siril",
+    "Featured Applications": "Aplicativos em destaque",
+    "Siril, a free astronomical image processing software.": "Siril, é um software de processamento de imagens astronômicas livre"
 }
