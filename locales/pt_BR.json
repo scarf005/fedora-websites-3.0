@@ -896,7 +896,7 @@
     "Siril, a free astronomical image processing software.": "Siril, um software de processamento de imagens astronômicas livre.",
     "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "A INDI Library é um software multiplataforma feita para automação e controle de instrumentos astronômicos.",
     "A plethora of Free/Open source computational modelling tools for Neuroscience in one easy to use downloadable image! Download, install (or don't!) and get down to work!\n\nThe NeuroFedora team has developed the Comp-Neuro lab specially to enable computational neuroscience. It includes everything you will need to get your work done—modelling software, analysis tools, general productivity tools—all well integrated with the modern GNOME platform to give you a complete operating system.": "Uma infinidade de ferramentas de modelagem computacional de código aberto/livre para neurociências em uma imagem para download fácil de usar! Baixe, instale (ou não!) e mãos à obra!\n\nA equipe NeuroFedora desenvolveu o laboratório Comp-Neuro especialmente para viabilizar a neurociência computacional. Ele inclui tudo que você precisa para realizar seu trabalho – software de modelagem, ferramentas de análise, ferramentas gerais de produtividade – tudo bem integrado com a moderna plataforma GNOME para fornecer um sistema operacional completo.",
-    "Brian": "Cérebro",
+    "Brian": "Brian",
     "The free space simulation that lets you explore our universe in three dimensions.": "A simulação espacial livre que te permite explorar nosso universo em três dimensões.",
     "Virtualplanet": "Virtualplanet",
     "A Model Description Language for Computational Neuroscience.": "Uma linguagem de descrição de modelo para neurociência computacional.",
@@ -918,5 +918,6 @@
     "NeuroML": "NeuroML",
     "Neuron": "Neuro",
     "A desktop publishing and page layout application with professional publishing features.": "Uma aplicação desktop de publicação e layout de páginas com características profissionais de publicação.",
-    "A powerful multi-track non-linear video editor that includes editing, transcoding, effects and transitions.": "Um editor de vídeo multi-track não-linear poderoso que inclui edição, transcodificação, efeitos e transições."
+    "A powerful multi-track non-linear video editor that includes editing, transcoding, effects and transitions.": "Um editor de vídeo multi-track não-linear poderoso que inclui edição, transcodificação, efeitos e transições.",
+    "Fedora Comp-Neuro Lab": "Fedora Comp-Neuro Lab"
 }
