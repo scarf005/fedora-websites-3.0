@@ -1007,5 +1007,11 @@
     "PCL": "PCL",
     "MRPT": "MRPT",
     "Modular framework for high performance robotic systems.": "Estrutura modular para sistemas robóticos de alto desempenho.",
-    "Physical simulator for multi-agent robotics research.": "Simulador físico para pesquisa de robótica multi-agente."
+    "Physical simulator for multi-agent robotics research.": "Simulador físico para pesquisa de robótica multi-agente.",
+    "Player": "Reprodutor",
+    "Robot server and framework for advanced robotic systems.": "Servidor robótico e framework para sistemas robóticos avançados.",
+    "The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.": "A Biblioteca Point Cloud (PCL) é um projeto autônomo e de larga escala para processamento de imagem 2D/3D e processamento de nuvem de pontos.",
+    "Powerful and extensible multi-language integrated development environment.": "Ambiente de desenvolvimento integrado multi-linguagem poderoso e extensível.",
+    "SimSpark": "SimSpark",
+    "Stage": "Stage"
 }
