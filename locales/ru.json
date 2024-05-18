@@ -1024,5 +1024,9 @@
     "The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.": "Библиотека INDI - это кроссплатформенное программное обеспечение, предназначенное для автоматизации и управления астрономическими приборами.",
     "The free space simulation that lets you explore our universe in three dimensions.": "Свободный космический симулятор, позволяющий исследовать нашу вселенную в трех измерениях.",
     "A Python package for simulator-independent specification of neuronal network models.": "Пакет Python для независимой от симулятора спецификации моделей нейронных сетей.",
-    "🎉 [Fedora Linux 40 released!](https://fedoramagazine.org/announcing-fedora-linux-40)": "🎉 [Выпуск Fedora Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40)"
+    "🎉 [Fedora Linux 40 released!](https://fedoramagazine.org/announcing-fedora-linux-40)": "🎉 [Выпуск Fedora Linux 40!](https://fedoramagazine.org/announcing-fedora-linux-40)",
+    "GENESIS": "GENESIS",
+    "Develop, simulate, parallelize, analyze, and optimize biological neuronal networks using the NEURON simulator.": "Разрабатывать, моделировать, распараллеливать, анализировать и оптимизировать биологические нейронные сети с помощью симулятора NEURON.",
+    "Fedora Comp-Neuro Lab": "Fedora Comp-Neuro Lab",
+    "Launch in Cloud": "Запуск в облаке"
 }
