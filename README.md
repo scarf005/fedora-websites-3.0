@@ -13,6 +13,8 @@
   
 If you need to refresh the contents of the cms content submodule, you'll need to run `git submodule update` (to fetch the updates from the content repo if there are any) in addition to `git pull` (to pull any updates to this repo). `git status` should indicate if the content submodule is out of date.
 
+These instructions are also present in the [repository wiki](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/wikis/Getting-Started)
+
 ## Static site
 
 Templates are written in Vue, but most of the site is compiled down to simple HTML at build time on the CI similar to static sites made with Jekyll or Hugo frameworks (with a few exceptions being rendered on the client using the full Vue client-side feature set listed in `nuxt.config.ts` like the CoreOS downloads page, etc.) with [these lines](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/blob/develop/nuxt.config.ts#L87-92). Read up on experimentalNoScripts and routeRules on Nuxt for more info on this method. Note that currently, only pages one route deep are rendered fully-static like this, in order to avoid pages like /workstation/downloads which still need their JS. There is currently no way to _not_ render certain pages statically - conflicting routeRules seem to be simply ignored.
