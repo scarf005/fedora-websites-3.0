@@ -96,9 +96,10 @@ try {
 // fedora announcements
 const discourse_uri = "https://discussion.fedoraproject.org";
 const discourse_api = "c/news/announce-list/76";
+const _dc_proxy_uri = "https://d36melcmqgchij.cloudfront.net";
 
 const fa_headlines = async () => {
-  let dcdata = await $fetch(`${discourse_uri}/${discourse_api}.json`);
+  let dcdata = await $fetch(`${_dc_proxy_uri}/${discourse_api}.json`);
   let topics = dcdata.topic_list.topics;
 
   let i = 0;
@@ -228,7 +229,7 @@ const got_headlines = headlines.length == count_headlines;
 const common_query = "tags/c/ask/common-issues/82/none/f" + current_release;
 
 const fp_common_issues = async () => {
-  let dcdata = await $fetch(`${discourse_uri}/${common_query}.json`);
+  let dcdata = await $fetch(`${_dc_proxy_uri}/${common_query}.json`);
   let topics = dcdata.topic_list.topics;
 
   let i = 0;
@@ -258,7 +259,7 @@ const solved_query = "q=%23ask%20status%3Asolved%20order%3Alatest_topic";
 const user_avatars = "https://sea1.discourse-cdn.com/fedoraproject";
 
 const fp_solved_issues = async () => {
-  let dcdata = await $fetch(`${discourse_uri}/search.json?${solved_query}`);
+  let dcdata = await $fetch(`${_dc_proxy_uri}/search.json?${solved_query}`);
   let solved = dcdata.posts;
 
   let i = 0;
@@ -276,7 +277,7 @@ const fp_solved_issues = async () => {
 
     let topic;
     if (solved[i].topic_id) {
-      topic = await $fetch(`${discourse_uri}/t/${solved[i].topic_id}.json`);
+      topic = await $fetch(`${_dc_proxy_uri}/t/${solved[i].topic_id}.json`);
     }
 
     if (topic) {
