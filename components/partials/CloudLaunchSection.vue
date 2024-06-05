@@ -1,4 +1,5 @@
 <script setup>
+const { t } = useI18n();
 defineProps({
   showBeta: {
     type: Boolean,
@@ -19,15 +20,20 @@ const showAzure = useState("showAzure", () => ({ show: false }));
 
 const arches = {
   x86_64: {
-    desc: "x86_64-based instances",
+    desc: t("x86_64-based instances"),
     azId: "x64",
     azSecurityType: "TrustedLaunch",
   },
   arm64: {
-    desc: "ARM® aarch64-based instances",
+    desc: t("ARM® aarch64-based instances"),
     azId: "Arm64",
     azSecurityType: "Standard",
   },
+};
+
+const btnTitles = {
+  aws: t("List AWS EC2 region"),
+  az: t("List Azure region"),
 };
 
 // TODO: Find a way to share that with the coreos dl page
@@ -133,10 +139,10 @@ function closeModal(state) {
       class="mb-4 scroll-mt-20 text-fp-blue dark:text-gray-200"
       id="cloud_launch"
     >
-      Launch on public cloud platforms
+      {{ $t("Launch on public cloud platforms") }}
     </h2>
     <p class="mb-5 text-gray-600 dark:text-fp-gray-light">
-      Start Fedora Cloud instances on public cloud platforms.
+      {{ $t("Start Fedora Cloud instances on public cloud platforms.") }}
     </p>
     <div
       class="grid grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
@@ -153,7 +159,7 @@ function closeModal(state) {
               >
                 <template #btn>
                   <a
-                    title="List AWS EC2 region"
+                    :title="btnTitles.aws"
                     class="rounded-xl"
                     @click="updateAMIs(cloud_ami.ga[arch_id])"
                   >
@@ -166,7 +172,7 @@ function closeModal(state) {
               <FpDownloadItem :name="`Fedora Cloud ${releaver}`" type="azure">
                 <template #btn>
                   <a
-                    title="List Azure region"
+                    :title="btnTitles.az"
                     class="rounded-xl"
                     @click="updateAzure(releaver, arch_id)"
                   >
@@ -238,7 +244,7 @@ function closeModal(state) {
     >
       <template #header>
         <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
-          Select AWS EC2 region
+          {{ $t("Select AWS EC2 region") }}
         </h5>
       </template>
       <table class="w-full table-auto ltr:text-left rtl:text-right">
@@ -246,7 +252,7 @@ function closeModal(state) {
           <tr>
             <th class="">Region</th>
             <th class="hidden sm:block">AMI ID</th>
-            <th class="text-center">Launch instance</th>
+            <th class="text-center">{{ $t("Launch instance") }}</th>
           </tr>
         </thead>
         <tbody>
@@ -292,14 +298,14 @@ function closeModal(state) {
     >
       <template #header>
         <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
-          Select the Azure region
+          {{ $t("Select the Azure region") }}
         </h5>
       </template>
       <table class="w-full table-auto ltr:text-left rtl:text-right">
         <thead>
           <tr>
             <th class="">Region</th>
-            <th class="text-center">Launch instance</th>
+            <th class="text-center">{{ $t("Launch instance") }}</th>
           </tr>
         </thead>
         <tbody>
