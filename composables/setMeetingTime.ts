@@ -7,6 +7,8 @@ export const setMeetingTime = (target, data) => {
     return;
   }
 
+  target.description = t(target.description);
+
   let count = data.meetings?.length;
   if (!(count > 0 && count <= 3)) {
     console.log('failed to set meeting time: data missing/invalid');
