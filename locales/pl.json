@@ -1144,5 +1144,6 @@
     "Launch instance": "Uruchom instancję",
     "Select the Azure region": "Wybierz region platformy Azure",
     "Show Beta downloads": "Pokaż pliki do pobrania w wersji beta",
-    "Start Fedora Cloud instances on public cloud platforms.": "Uruchom instancje Fedory Cloud na platformach chmury publicznej."
+    "Start Fedora Cloud instances on public cloud platforms.": "Uruchom instancje Fedory Cloud na platformach chmury publicznej.",
+    "Atomic Desktops for Fedora": "Atomowe pulpity dla Fedory."
 }
