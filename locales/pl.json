@@ -1138,5 +1138,11 @@
     "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark jest analizatorem ruchu sieciowego dla systemów operacyjnych typu UNIX.",
     "Sqlninja": "Sqlninja",
     "Yersinia": "Yersinia",
-    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia to narzędzie sieciowe zaprojektowane do wykorzystywania słabych punktów różnych protokołów sieciowych"
+    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia to narzędzie sieciowe zaprojektowane do wykorzystywania słabych punktów różnych protokołów sieciowych",
+    "Launch on public cloud platforms": "Uruchom na platformach chmury publicznej",
+    "Select AWS EC2 region": "Wybierz region AWS EC2",
+    "Launch instance": "Uruchom instancję",
+    "Select the Azure region": "Wybierz region platformy Azure",
+    "Show Beta downloads": "Pokaż pliki do pobrania w wersji beta",
+    "Start Fedora Cloud instances on public cloud platforms.": "Uruchom instancje Fedory Cloud na platformach chmury publicznej."
 }
