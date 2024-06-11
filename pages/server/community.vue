@@ -33,9 +33,9 @@ useContentHead(data);
         <div class="mx-auto my-8 max-w-7xl text-center lg:text-start">
           <div class="container mx-auto lg:mx-0">
             <h1 class="mb-4 text-fp-orange xl:mb-8">
-              {{ data.title }}
+              {{ $t(data.title) }}
             </h1>
-            <p class="text-fp-gray">{{ data.description }}</p>
+            <p class="text-fp-gray">{{ $t(data.description) }}</p>
           </div>
         </div>
       </div>

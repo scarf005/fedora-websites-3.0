@@ -168,7 +168,7 @@ useContentHead(data);
   >
     <section class="mx-auto w-10/12 pt-12">
       <h3 class="mb-16 text-center font-medium text-fp-blue">
-        {{ data.sections[1].sectionTitle }}
+        {{ $t(data.sections[1].sectionTitle) }}
       </h3>
       <div class="flex flex-wrap items-center justify-center gap-16">
         <FpImage
