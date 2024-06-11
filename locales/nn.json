@@ -1169,5 +1169,17 @@
     "Use this link to focus on questions and answers about the GNOME desktop environment.": "Bruk denne lenkja for å fokusera på spørsmål og svar om GNOME-skrivebordsmiljøet.",
     "Enables a variety of server workloads": "Mogleggjer ei rekkje ulike serverbelastingar",
     "Use this link to focus on questions and answers about Fedora Server.": "Bruk denne lenkja for å fokusera på spørsmål og svar om Fedora Server.",
-    "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme) website.": "Fedora CoreOS er utvikla av eit team i Fedora-prosjektets felleskap som heiter CoreOS Working Group. Den består av offisielle medlemar som har avgjerdsstyresmakt, og dessutan andre bidragsytarar. Finn ut meir om denne gruppa og korleis du kan engasjera deg på [CoreOS Working Groups nettstad](https://github.com/coreos/fedora-coreos-tracker#readme)."
+    "Fedora CoreOS is created by a team in the Fedora Project community called the CoreOS Working Group. It is comprised of official members who have decision-making powers, as well as other contributors. Learn more about this group and how you can get involved on the [CoreOS Working Group](https://github.com/coreos/fedora-coreos-tracker#readme) website.": "Fedora CoreOS er utvikla av eit team i Fedora-prosjektets felleskap som heiter CoreOS Working Group. Den består av offisielle medlemar som har avgjerdsstyresmakt, og dessutan andre bidragsytarar. Finn ut meir om denne gruppa og korleis du kan engasjera deg på [CoreOS Working Groups nettstad](https://github.com/coreos/fedora-coreos-tracker#readme).",
+    "Launch on public cloud platforms": "Lansering på offentlege skyplattformer",
+    "Select AWS EC2 region": "Vel AWS EC2-region",
+    "Launch instance": "Start instans",
+    "Select the Azure region": "Vel Azure-regionen",
+    "Show Beta downloads": "Vis beta-nedlastingar",
+    "Atomic Desktops for Fedora": "Atomiske skrivebord for Fedora",
+    "x86_64-based instances": "x86_64-baserte instansar",
+    "ARM® aarch64-based instances": "ARM® aarch64-baserte instansar",
+    "List AWS EC2 region": "List opp AWS EC2-region",
+    "List Azure region": "List opp Azure-region",
+    "Start Fedora Cloud instances on public cloud platforms.": "Start Fedora Cloud-instansar på offentlege skyplattformer.",
+    "What is Fedora Labs?": "Kva er Fedora-labbar?"
 }
