@@ -6,7 +6,6 @@
   "Learn more about the relationship between Red Hat and Fedora.": "",
   "Try it now.": "",
   "Download": "",
-  "Pick your": "",
   "architecture": "",
   "Bare Metal & Virtualized": "",
   "Cloud Images": "",
@@ -94,5 +93,17 @@
   "ARM® aarch64-based instances": "",
   "List AWS EC2 region": "",
   "List Azure region": "",
-  "Verify": ""
+  "Verify": "",
+  "Show Downloads": "",
+  "start_fcos_instances_cloud": "Start Fedora CoreOS {stream} instances on {arch} architecture on public cloud platforms.",
+  "download_fcos_artifacts_baremetal": "Download Fedora CoreOS {stream} artifacts for {arch}.",
+  "download_fcos_images_cloud": "Download Fedora CoreOS {stream} images for {arch} for cloud operators.",
+  "Details": "",
+  "Launch": "",
+  "Bare Metal": "",
+  "Virtualized": "",
+  "Back to Top": "",
+  "Image family:": "",
+  "Latest image:": "",
+  "pick_your_architecture": "Pick your {architecture}"
 }
