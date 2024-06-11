@@ -1145,6 +1145,10 @@
     "Select the Azure region": "Wybierz region platformy Azure",
     "Show Beta downloads": "Pokaż pliki do pobrania w wersji beta",
     "Start Fedora Cloud instances on public cloud platforms.": "Uruchom instancje Fedory Cloud na platformach chmury publicznej.",
-    "Atomic Desktops for Fedora": "Atomowe pulpity dla Fedory.",
-    "What is Fedora Labs?": "Czym jest Fedora Labs?"
+    "Atomic Desktops for Fedora": "Atomowe pulpity dla Fedory",
+    "What is Fedora Labs?": "Czym jest Fedora Labs?",
+    "x86_64-based instances": "Instancje oparte na architekturze x86_64",
+    "ARM® aarch64-based instances": "Instancje oparte na architekturze ARM® aarch64",
+    "List AWS EC2 region": "Wyświetl region AWS EC2",
+    "List Azure region": "Wyświetl region platformy Azure"
 }
