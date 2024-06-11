@@ -1,4 +1,5 @@
 <script setup>
+const { t } = useI18n();
 const data = await getCMS("editions/coreos/download");
 const route = useRoute();
 const router = useRouter();
@@ -248,6 +249,17 @@ function getMajor(version) {
   return version.split(".")[0];
 }
 
+const btn_titles = {
+  aws: t("List AWS EC2 region"),
+  gcpd: t("Details"),
+  gcpl: t("Launch"),
+};
+
+const dlsect_names = {
+  bm: t("Bare Metal"),
+  virt: t("Virtualized"),
+};
+
 const EC2_regions = {
   "us-east-2": "US East (Ohio)",
   "us-east-1": "US East (N. Virginia)",
@@ -354,7 +366,7 @@ useContentHead(data);
                 @click="switchStream('stable')"
                 href="#arches"
                 class="coreos-stream-sel"
-                >Show Downloads</a
+                >{{ $t("Show Downloads") }}</a
               >
             </template>
             <!-- Testing border-fp-green-700 bg-fp-green-700 -->
@@ -377,7 +389,7 @@ useContentHead(data);
                 @click="switchStream('testing')"
                 href="#arches"
                 class="coreos-stream-sel"
-                >Show Downloads</a
+                >{{ $t("Show Downloads") }}</a
               >
             </template>
           </CoreOsStream>
@@ -400,7 +412,7 @@ useContentHead(data);
                 @click="switchStream('next')"
                 href="#arches"
                 class="coreos-stream-sel"
-                >Show Downloads</a
+                >{{ $t("Show Downloads") }}</a
               >
             </template>
           </CoreOsStream>
@@ -424,10 +436,16 @@ useContentHead(data);
     >
       <div class="container mx-auto max-w-7xl px-2">
         <div class="text-center lg:text-start">
-          <h2 class="mb-4 text-fp-blue dark:text-gray-200">
-            {{ $t("Pick your") }}
-            <span class="text-fp-magenta">{{ $t("architecture") }} </span>
-          </h2>
+          <i18n-t
+            keypath="Pick your {architecture}"
+            scope="global"
+            tag="h2"
+            class="mb-4 text-fp-blue dark:text-gray-200"
+          >
+            <template #architecture>
+              <span class="text-fp-magenta">{{ $t("architecture") }} </span>
+            </template>
+          </i18n-t>
           <p class="text-gray-600 dark:text-fp-gray-light">
             {{ $t(architectures.sectionDescription) }}
           </p>
@@ -513,15 +531,23 @@ useContentHead(data);
             </a>
             {{ $t("Cloud Launchable") }}
           </h2>
-          <p class="text-gray-600 dark:text-fp-gray-light">
-            Start Fedora CoreOS
-            <span class="coreos-theme-text font-bold">{{
-              selectedStream.stream
-            }}</span>
-            instances on
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
-            architecture on public cloud platforms.
-          </p>
+          <i18n-t
+            keypath="start_fcos_instances_cloud"
+            scope="global"
+            tag="p"
+            class="text-gray-600 dark:text-fp-gray-light"
+          >
+            <template #stream>
+              <span class="coreos-theme-text font-bold">{{
+                selectedStream.stream
+              }}</span>
+            </template>
+            <template #arch>
+              <span class="coreos-theme-text font-bold">{{
+                selectedArch
+              }}</span>
+            </template>
+          </i18n-t>
         </div>
         <div class="container mx-auto max-w-7xl">
           <!-- AMIs & GCP -->
@@ -536,7 +562,7 @@ useContentHead(data);
               >
                 <template #btn>
                   <a
-                    title="List AWS EC2 region"
+                    :title="btn_titles.aws"
                     class="rounded-xl"
                     @click="
                       updateAMIs(
@@ -563,7 +589,7 @@ useContentHead(data);
                 >
                   <a
                     @click="showGCP.show = !showGCP.show"
-                    title="Details"
+                    :title="btn_titles.gcpd"
                     class="ltr:rounded-l-xl rtl:rounded-r-xl"
                   >
                     <Icon name="fa-solid:info-circle" class="!align-baseline" />
@@ -571,7 +597,7 @@ useContentHead(data);
                   <FpLink
                     :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
                     target="blank"
-                    title="Launch"
+                    :title="btn_titles.gcpl"
                     class="-ml-px ltr:rounded-r-xl rtl:rounded-l-xl"
                   >
                     <Icon
@@ -594,14 +620,14 @@ useContentHead(data);
                       v-if="showGCP.show"
                     >
                       <p class="text-sm">
-                        Image family:
+                        {{ $t("Image family:") }}
                         <b class="font-semibold">{{
                           selectedStream.architectures[selectedArch].images.gcp
                             .family
                         }}</b>
                       </p>
                       <p class="text-sm">
-                        Latest image:
+                        {{ $t("Latest image:") }}
                         <b class="font-semibold">{{
                           selectedStream.architectures[selectedArch].images.gcp
                             .name
@@ -631,21 +657,29 @@ useContentHead(data);
             </a>
             {{ $t("Bare Metal & Virtualized") }}
           </h2>
-          <p class="text-gray-600 dark:text-fp-gray-light">
-            Download Fedora CoreOS
-            <span class="coreos-theme-text font-bold">{{
-              selectedStream.stream
-            }}</span>
-            artifacts for
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span
-            >.
-          </p>
+          <i18n-t
+            keypath="download_fcos_artifacts_baremetal"
+            scope="global"
+            tag="p"
+            class="text-gray-600 dark:text-fp-gray-light"
+          >
+            <template #stream>
+              <span class="coreos-theme-text font-bold">{{
+                selectedStream.stream
+              }}</span>
+            </template>
+            <template #arch>
+              <span class="coreos-theme-text font-bold">{{
+                selectedArch
+              }}</span>
+            </template>
+          </i18n-t>
         </div>
         <div
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <CoreOsDownloadSection
-            name="Bare Metal"
+            :name="dlsect_names.bm"
             class="coreos-theme row-span-3"
             @verify-click="updateVerify"
             :artifacts="
@@ -655,7 +689,7 @@ useContentHead(data);
             "
           />
           <CoreOsDownloadSection
-            name="Virtualized"
+            :name="dlsect_names.virt"
             class="coreos-theme"
             @verify-click="updateVerify"
             :artifacts="
@@ -680,15 +714,23 @@ useContentHead(data);
             </a>
             {{ $t("Cloud Images") }}
           </h2>
-          <p class="text-gray-600 dark:text-fp-gray-light">
-            Download Fedora CoreOS
-            <span class="coreos-theme-text font-bold">{{
-              selectedStream.stream
-            }}</span>
-            images for
-            <span class="coreos-theme-text font-bold">{{ selectedArch }}</span>
-            for cloud operators.
-          </p>
+          <i18n-t
+            keypath="download_fcos_images_cloud"
+            scope="global"
+            tag="p"
+            class="text-gray-600 dark:text-fp-gray-light"
+          >
+            <template #stream>
+              <span class="coreos-theme-text font-bold">{{
+                selectedStream.stream
+              }}</span>
+            </template>
+            <template #arch>
+              <span class="coreos-theme-text font-bold">{{
+                selectedArch
+              }}</span>
+            </template>
+          </i18n-t>
         </div>
         <div class="container mx-auto max-w-7xl">
           <CoreOsDownloadSection
@@ -702,7 +744,7 @@ useContentHead(data);
       </div>
       <div class="container mx-auto max-w-7xl">
         <p class="text-end ltr:mr-4 rtl:ml-4">
-          <a class="text-xs" href="#">Back to Top</a>
+          <a class="text-xs" href="#">{{ $t("Back to Top") }}</a>
         </p>
       </div>
     </section>
@@ -825,7 +867,7 @@ useContentHead(data);
       >
         <template #header>
           <h5 class="text-xl font-medium ltr:text-left rtl:text-right">
-            Select AWS EC2 region
+            {{ $t("Select AWS EC2 region") }}
           </h5>
         </template>
         <table class="w-full table-auto ltr:text-left rtl:text-right">
@@ -833,7 +875,7 @@ useContentHead(data);
             <tr>
               <th class="">Region</th>
               <th class="hidden sm:block">AMI ID</th>
-              <th class="text-center">Launch instance</th>
+              <th class="text-center">{{ $t("Launch instance") }}</th>
             </tr>
           </thead>
           <tbody>
