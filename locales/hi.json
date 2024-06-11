@@ -1169,5 +1169,17 @@
     "IPython": "IPython",
     "Mu editor": "Mu editor",
     "Multiple Pythons": "Multiple Pythons",
-    "BZFlag": "BZFlag"
+    "BZFlag": "BZFlag",
+    "Launch on public cloud platforms": "सार्वजनिक क्लाउड प्लेटफ़ॉर्म पर लॉन्च करें",
+    "Start Fedora Cloud instances on public cloud platforms.": "सार्वजनिक क्लाउड प्लेटफ़ॉर्म पर Fedora क्लाउड इंस्टेंस प्रारंभ करें।",
+    "Select AWS EC2 region": "AWS EC2 क्षेत्र चुनें",
+    "Launch instance": "इंस्टेंस लॉन्च करें",
+    "Select the Azure region": "Azure क्षेत्र चुनें",
+    "Show Beta downloads": "बीटा डाउनलोड दिखाएं",
+    "x86_64-based instances": "x86_64-आधारित इंस्टेंस",
+    "What is Fedora Labs?": "Fedora Labs क्या है?",
+    "ARM® aarch64-based instances": "ARM® aarch64-आधारित इंस्टेंस",
+    "List AWS EC2 region": "AWS EC2 क्षेत्र की सूची बनाएं",
+    "Atomic Desktops for Fedora": "Fedora के लिए एटॉमिक डेस्कटॉप",
+    "List Azure region": "Azure क्षेत्र की सूची बनाएं"
 }
