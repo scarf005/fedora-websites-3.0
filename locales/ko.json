@@ -1043,5 +1043,8 @@
     "x86_64-based instances": "x86_64-기반의 예시",
     "ARM® aarch64-based instances": "암(ARM®) aarch64-기반의 예시",
     "List AWS EC2 region": "AWS EC2 지역 목록",
-    "List Azure region": "Azure 지역 목록"
+    "List Azure region": "Azure 지역 목록",
+    "Virtualplanet": "Virtualplanet",
+    "A Python package for simulator-independent specification of neuronal network models.": "뉴런 네트워크 모델의 모의-독립적인 설계조건을 위한 파이썬 꾸러미.",
+    "A Model Description Language for Computational Neuroscience.": "계산 신경과학을 위한 모델 설명 언어."
 }
