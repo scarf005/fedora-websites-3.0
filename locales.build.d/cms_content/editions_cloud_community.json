@@ -2,7 +2,7 @@
   "Attend a meeting": "Attend a meeting",
   "Chat": "Chat",
   "Chat Now": "Chat Now",
-  "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Cloud Working Group meetings are open to all current and potential contributors {'{'{'}'}cadence{'}'} at **{'{'{'}'}time{'}'}** UTC in **{'{'{'}'}location{'}'}** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).",
+  "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal\u2192cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).",
   "Communication Channels": "Communication Channels",
   "Community": "Community",
   "Description": "Description",

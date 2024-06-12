@@ -60,7 +60,7 @@ def is_valid(s):
 
 def add_key(k):
   if k not in new_locale:
-    new_locale[k] = k.replace('{', "{'{'}").replace('}', "{'}'}").replace('$', "{'$'}").replace('|', "{'|'}").replace('@', "{'@'}")
+    new_locale[k] = k.replace('$', "{'$'}").replace('|', "{'|'}").replace('@', "{'@'}")
 
 
 def gen_outname(infile):
