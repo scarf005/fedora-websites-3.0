@@ -12,7 +12,7 @@
   "Fedora Server Image": "Fedora Server Image",
   "Join the mailing list": "Join the mailing list",
   "Latest Technologies": "Latest Technologies",
-  "Open to all current and potential contributors $cadence at **$time** UTC in **$location** (see [fedocal\u2192server](https://calendar.fedoraproject.org/list/server/) for updates).": "Open to all current and potential contributors {'$'}cadence at **{'$'}time** UTC in **{'$'}location** (see [fedocal\u2192server](https://calendar.fedoraproject.org/list/server/) for updates).",
+  "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal\u2192server](https://calendar.fedoraproject.org/list/server/) for updates).": "Open to all current and potential contributors {'{'{'}'}cadence{'}'} at **{'{'{'}'}time{'}'}** UTC in **{'{'{'}'}location{'}'}** (see [fedocal\u2192server](https://calendar.fedoraproject.org/list/server/) for updates).",
   "Quickly deploy a server with the tools you need to spin up your workloads": "Quickly deploy a server with the tools you need to spin up your workloads",
   "Report & discuss issues": "Report & discuss issues",
   "Run server workloads on bare metal or virtual machines with the latest open source technologies curated by the Fedora Community": "Run server workloads on bare metal or virtual machines with the latest open source technologies curated by the Fedora Community",
