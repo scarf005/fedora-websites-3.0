@@ -1180,5 +1180,6 @@
     "x86_64-based instances": "x86_64 baserade instanser",
     "ARM® aarch64-based instances": "ARM® aarch64 baserade instanser",
     "List AWS EC2 region": "Lista AWS EC2 regioner",
-    "List Azure region": "Lista Azure regioner"
+    "List Azure region": "Lista Azure regioner",
+    "What is Fedora Labs?": "Vad är Fedora Labs?"
 }
