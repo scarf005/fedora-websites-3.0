@@ -1037,5 +1037,8 @@
     "List Azure region": "Azure 지역 목록",
     "Virtualplanet": "Virtualplanet",
     "A Python package for simulator-independent specification of neuronal network models.": "뉴런 네트워크 모델의 모의-독립적인 설계조건을 위한 파이썬 꾸러미.",
-    "A Model Description Language for Computational Neuroscience.": "계산 신경과학을 위한 모델 설명 언어."
+    "A Model Description Language for Computational Neuroscience.": "계산 신경과학을 위한 모델 설명 언어.",
+    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "클라우드 작업 그룹 회의는 **{location}**의 **{time}** UTC에서 모든 현재 및 잠재적인 공헌자 {cadence}에게 열려있습니다 (최신화를 위해 [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/)를 확인하세요).",
+    "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "**{location}**의 **{time}** UTC에서 모든 현재 및 잠재적인 공헌자 {cadence}에게 열려있습니다 (최신화를 위해 [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/)를 확인하세요).",
+    "CoreOS Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "코어OS 작업 그룹 회의는 **{location}**의 **{time}**에서 모든 현재 및 잠재적인 공헌자 {cadence}에게 열려있습니다(최신화를 위해 [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/)를 확인하세요)."
 }
