@@ -1172,5 +1172,6 @@
     "ARM® aarch64-based instances": "ARM® aarch64 baserade instanser",
     "List AWS EC2 region": "Lista AWS EC2 regioner",
     "List Azure region": "Lista Azure regioner",
-    "What is Fedora Labs?": "Vad är Fedora Labs?"
+    "What is Fedora Labs?": "Vad är Fedora Labs?",
+    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": ""
 }
