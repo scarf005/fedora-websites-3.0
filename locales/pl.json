@@ -1161,6 +1161,19 @@
     "Fedora Python Classroom Lab": "Laboratorium Fedora Python Classroom",
     "A plethora of Free/Open source computational modelling tools for Neuroscience in one easy to use downloadable image! Download, install (or don't!) and get down to work!\n\nThe NeuroFedora team has developed the Comp-Neuro lab specially to enable computational neuroscience. It includes everything you will need to get your work done—modelling software, analysis tools, general productivity tools—all well integrated with the modern GNOME platform to give you a complete operating system.": "Mnóstwo Darmowych/Otwartoźródłowych narzędzi do modelowania obliczeniowego dla Neuronauki w jednym, łatwym do pobrania obrazie! Pobierz, zainstaluj (lub nie!) i zabierz się do pracy!\n\nZespół NeuroFedora opracował laboratorium Comp-Neuro specjalnie w celu wsparcia obliczeniowej neuronauki. Obejmuje ono wszystko, czego potrzebujesz, aby wykonać swoją pracę - oprogramowanie do modelowania, narzędzia do analizy, ogólne narzędzia zwiększające produktywność - wszystko dobrze zintegrowane z nowoczesną platformą GNOME, aby zapewnić Ci kompletny system operacyjny.",
     "Scientific Python stack": "Naukowe oprogramowanie języka Python",
-    "A flexible 2.5D simulator for robotic sensors and movement.": "Elastyczny symulator 2.5D dla czujników i ruchu robotów.",
-    "active": "aktywne"
+    "A flexible 2.5D simulator for robotic sensors and movement.": "Elastyczny symulator 2.5D dla czujników i ruchu robotów.",
+    "active": "aktywne",
+    "1702339200000": "1702339200000",
+    "Browse": "Przeglądaj",
+    "Write": "Zapisz",
+    "Bodhost": "Bodhost",
+    "Fedora Developer": "Deweloper Fedora",
+    "Ibiblio": "Ibiblio",
+    "Internetx": "Internetx",
+    "Powered by AWS Cloud Computing": "Oparte na AWS Cloud Computing",
+    "Proio": "Proio",
+    "Fedora Start": "Strona główna Fedora",
+    "Open Source Lab": "Laboratorium Wolnego Oprogramowania",
+    "The Fedora Robotics spin provides a wide variety of free and open robotics software packages. These range from hardware accessory libraries for the Hokuyo laser scanners or Katana robotic arm to software frameworks like Fawkes or Player and simulation environments such as Stage and RoboCup Soccer Simulation Server 2D/3D. It also provides a ready to use development environment for robotics including useful libraries such as OpenCV computer vision library, Festival text to speech system and MRPT.\n\nThe Robotics spin is targeted at people just discovering their interest in robotics as well as experienced roboticists. For the former we provide a readily usable simulation environment with an introductory hands-on demonstration, and for the latter we provide a full development environment, to be used immediately.": "Fedora Robotics spin zapewnia szeroką gamę darmowych i otwartych pakietów oprogramowania dla robotyki. Obejmują one biblioteki akcesoriów sprzętowych dla skanerów laserowych Hokuyo, lub ramienia robotycznego Katana, a także środowiska programistyczne, takie jak Fawkes lub Player oraz środowiska symulacyjne, takie jak Stage i RoboCup Soccer Simulation Server 2D/3D. Zapewnia również gotowe do użycia środowisko programistyczne dla robotyki, w tym przydatne biblioteki, takie jak biblioteka wizji komputerowej OpenCV, system zamiany tekstu na mowę Festival i MRPT.\n\nRobotics spin jest skierowany zarówno do osób dopiero odkrywających swoje zainteresowanie robotyką, jak i doświadczonych robotyków. Dla tych pierwszych zapewniamy łatwe w użyciu środowisko symulacyjne z wprowadzającą demonstracją praktyczną, a dla tych drugich zapewniamy pełne środowisko programistyczne, które można natychmiast wykorzystać.",
+    "Record is a basic rich-media capture Activity. It lets you capture still images, video, and/or audio.": "Record to podstawowa aktywność do przechwytywania mediów. Umożliwia ona robienie zdjęć, nagrywanie filmów i/lub dźwięku."
 }
