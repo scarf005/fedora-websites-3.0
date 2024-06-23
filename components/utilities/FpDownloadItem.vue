@@ -76,6 +76,11 @@ const prettyType = {
   "vhd-compressed": "Azure",
 };
 
+const btn_titles = {
+  vrf: t("Verify"),
+  dl: t("Download"),
+};
+
 function humanSize(n) {
   var e = (Math.log(n) / Math.log(1024)) | 0;
   return (
@@ -129,7 +134,7 @@ function humanSize(n) {
           <template v-else>
             <a
               @click="$emit('verifyClick')"
-              title="Verify"
+              :title="btn_titles.vrf"
               class="ltr:rounded-l-xl rtl:rounded-r-xl"
             >
               <Icon name="fa-solid:clipboard-check" class="!align-baseline" />
@@ -138,7 +143,7 @@ function humanSize(n) {
           <FpLink
             :href="downloadLink"
             v-if="downloadLink"
-            title="Download"
+            :title="btn_titles.dl"
             class="ltr:-ml-px ltr:rounded-r-xl rtl:-mr-px rtl:rounded-l-xl"
           >
             <Icon name="fa-download" class="!align-baseline" />
