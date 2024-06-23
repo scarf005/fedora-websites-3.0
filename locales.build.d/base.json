@@ -93,5 +93,6 @@
   "x86_64-based instances": "",
   "ARM® aarch64-based instances": "",
   "List AWS EC2 region": "",
-  "List Azure region": ""
+  "List Azure region": "",
+  "Verify": ""
 }
