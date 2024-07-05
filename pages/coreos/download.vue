@@ -249,17 +249,6 @@ function getMajor(version) {
   return version.split(".")[0];
 }
 
-const btn_titles = {
-  aws: t("List AWS EC2 region"),
-  gcpd: t("Details"),
-  gcpl: t("Launch"),
-};
-
-const dlsect_names = {
-  bm: t("Bare Metal"),
-  virt: t("Virtualized"),
-};
-
 const EC2_regions = {
   "us-east-2": "US East (Ohio)",
   "us-east-1": "US East (N. Virginia)",
@@ -437,7 +426,7 @@ useContentHead(data);
       <div class="container mx-auto max-w-7xl px-2">
         <div class="text-center lg:text-start">
           <i18n-t
-            keypath="Pick your {architecture}"
+            keypath="pick_your_architecture"
             scope="global"
             tag="h2"
             class="mb-4 text-fp-blue dark:text-gray-200"
@@ -562,7 +551,7 @@ useContentHead(data);
               >
                 <template #btn>
                   <a
-                    :title="btn_titles.aws"
+                    :title="$t('List AWS EC2 region')"
                     class="rounded-xl"
                     @click="
                       updateAMIs(
@@ -589,7 +578,7 @@ useContentHead(data);
                 >
                   <a
                     @click="showGCP.show = !showGCP.show"
-                    :title="btn_titles.gcpd"
+                    :title="$t('Details')"
                     class="ltr:rounded-l-xl rtl:rounded-r-xl"
                   >
                     <Icon name="fa-solid:info-circle" class="!align-baseline" />
@@ -597,7 +586,7 @@ useContentHead(data);
                   <FpLink
                     :href="`https://console.cloud.google.com/marketplace/details/${art.project}/${art.family}`"
                     target="blank"
-                    :title="btn_titles.gcpl"
+                    :title="$t('Launch')"
                     class="-ml-px ltr:rounded-r-xl rtl:rounded-l-xl"
                   >
                     <Icon
@@ -679,7 +668,7 @@ useContentHead(data);
           class="container mx-auto grid max-w-7xl grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
           <CoreOsDownloadSection
-            :name="dlsect_names.bm"
+            :name="$t('Bare Metal')"
             class="coreos-theme row-span-3"
             @verify-click="updateVerify"
             :artifacts="
@@ -689,7 +678,7 @@ useContentHead(data);
             "
           />
           <CoreOsDownloadSection
-            :name="dlsect_names.virt"
+            :name="$t('Virtualized')"
             class="coreos-theme"
             @verify-click="updateVerify"
             :artifacts="
