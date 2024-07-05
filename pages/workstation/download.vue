@@ -1,5 +1,4 @@
 <script setup>
-const { t } = useI18n();
 const data = await getCMS("editions/workstation/download");
 const release_data = await getCMS("release");
 const route = useRoute();
@@ -115,10 +114,6 @@ if (data._value.sections[1].sectionDescription) {
     data._value.sections[1].sectionDescription,
   );
 }
-
-const btn_titles = {
-  dl: t("Download"),
-};
 
 // desktop images
 if (data._value.sections[2].sectionDescription) {
@@ -259,7 +254,7 @@ betaSwitch.value = typeof route.query.beta != "undefined";
                 <template #btn>
                   <FpLink
                     :href="item.link.url"
-                    :title="btn_titles.dl"
+                    :title="$t('Download')"
                     class="rounded-xl"
                   >
                     <Icon :name="item.link.text" class="!align-baseline" />
