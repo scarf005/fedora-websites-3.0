@@ -1187,5 +1187,11 @@
     "Bare Metal": "Bare Metal",
     "Virtualized": "Virtualisé",
     "Back to Top": "Retour en haut de page",
-    "pick_your_architecture": "Choisissez votre architecture"
+    "pick_your_architecture": "Choisissez votre architecture",
+    "Show Downloads": "Afficher les téléchargements",
+    "start_fcos_instances_cloud": "Démarrer une instance Fedora CoreOS {stream} en architecture {arch} sur une plateforme cloud publique.",
+    "download_fcos_artifacts_baremetal": "Telechargez Fedora CoreOS {stream} pour architecture {arch}.",
+    "download_fcos_images_cloud": "Télécharger Fedora CoreOS {stream} pour architecture {arch} à destination d'opérateur de cloud.",
+    "Image family:": "Famille d'image:",
+    "Latest image:": "Dernière image:"
 }
