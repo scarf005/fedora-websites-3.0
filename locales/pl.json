@@ -1185,5 +1185,7 @@
     "Virtualized": "Zwirtualizowany",
     "Back to Top": "Wróć do początku",
     "Latest image:": "Najnowsze zdjęcia",
-    "pick_your_architecture": "Wybierz swoją"
+    "pick_your_architecture": "Wybierz swoją",
+    "start_fcos_instances_cloud": "Uruchom instancje Fedory CoreOS {stream} na architekturze {arch} na platformach chmury publicznej.",
+    "download_fcos_images_cloud": "Pobierz obrazy Fedory CoreOS {stream} dla {arch} dla operatorów chmury."
 }
