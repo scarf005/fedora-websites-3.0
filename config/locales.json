@@ -11,6 +11,7 @@
   { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
   { "code": "fur", "iso": "fur", "file": "fur.json", "name": "Friulian" },
   { "code": "he", "iso": "he", "file": "he.json", "name": "Hebrew", "dir": "rtl" },
+  { "code": "hi", "iso": "hi", "file": "hi.json", "name": "हिंदी" },
   { "code": "hu", "iso": "hu", "file": "hu.json", "name": "Magyar" },
   { "code": "id", "iso": "id", "file": "id.json", "name": "Indonesian" },
   { "code": "it", "iso": "it", "file": "it.json", "name": "Italiano" },
