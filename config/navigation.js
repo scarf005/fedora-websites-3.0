@@ -714,6 +714,20 @@ const navigation = {
             description:
               "How to upgrade an existing Fedora Linux installation.",
           },
+          {
+            label: "HowTo Guides",
+            path: "https://discussion.fedoraproject.org/tag/howto",
+            icon: "fa6-brands:fedora",
+            description:
+              "These HowTo guides have been created by Fedora's end users.",
+          },
+          {
+            label: "Common Issues",
+            path: "https://discussion.fedoraproject.org/c/ask/common-issues/82",
+            icon: "fa6-brands:fedora",
+            description:
+              "These are not guides. However, if you are having difficulty getting something to work, you should check here to see if it is a known issue. In some cases, workarounds are available.",
+          },
         ],
       },
       {
