@@ -207,5 +207,9 @@
     "Start Fedora Cloud instances on public cloud platforms.": "Invie istancis di Fedora Cloud su plateformis cloud publichis.",
     "Select AWS EC2 region": "Selezione regjion di AWS EC2",
     "Launch instance": "Invie istance",
-    "Select the Azure region": "Selezione la regjon di Azure"
+    "Select the Azure region": "Selezione la regjon di Azure",
+    "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "E ven simpri mantignude une version precedente dal to sisteme, tal câs che e coventi. Se tu âs bisugne di tornâ indaûr tal timp, tu puedis fâlu!",
+    "A feature-rich, modern desktop designed to keep out the way of the user.": "Un scritori moderni e siôr di funzionalitâts, progjetât par no inderedâ l'utent.",
+    "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "Insigurece tal doprâ chescj files? [Scuvierzilu achì](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
+    "We're so glad you've decided to give Fedora Budgie Atomic a try. We know you'll love it.": "O sin contents che tu vedis decidût di provâ Fedora Budgie Atomic. O savìn che ti plasarà."
 }
