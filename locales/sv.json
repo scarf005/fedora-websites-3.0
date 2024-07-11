@@ -1184,5 +1184,14 @@
     "Verify": "Verifiera",
     "Launch": "Starta",
     "Virtualized": "Virtualiserad",
-    "Details": "Detaljer"
+    "Details": "Detaljer",
+    "download_fcos_artifacts_baremetal": "Ladda ner Fedora CoreOS {stream} artefakter för {arch}.",
+    "download_fcos_images_cloud": "Ladda ner Fedora CoreOS {stream} avbilder för {arch} för moln operatörer.",
+    "Back to Top": "Tillbaka till toppen",
+    "Image family:": "Avbildsfamilj:",
+    "Latest image:": "Senaste avbild:",
+    "pick_your_architecture": "Välj din {architecture}",
+    "Bare Metal": "Bare Metal",
+    "Show Downloads": "Visa nedladdningar",
+    "start_fcos_instances_cloud": "Starta Fedora CoreOS {stream} intanser på {arch} arkitektur på publika molnplattformar."
 }
