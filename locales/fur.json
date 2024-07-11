@@ -211,5 +211,17 @@
     "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "E ven simpri mantignude une version precedente dal to sisteme, tal câs che e coventi. Se tu âs bisugne di tornâ indaûr tal timp, tu puedis fâlu!",
     "A feature-rich, modern desktop designed to keep out the way of the user.": "Un scritori moderni e siôr di funzionalitâts, progjetât par no inderedâ l'utent.",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "Insigurece tal doprâ chescj files? [Scuvierzilu achì](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
-    "We're so glad you've decided to give Fedora Budgie Atomic a try. We know you'll love it.": "O sin contents che tu vedis decidût di provâ Fedora Budgie Atomic. O savìn che ti plasarà."
+    "We're so glad you've decided to give Fedora Budgie Atomic a try. We know you'll love it.": "O sin contents che tu vedis decidût di provâ Fedora Budgie Atomic. O savìn che ti plasarà.",
+    "Built On Top of the Best": "Costruît su la fonde di ce che al è miôr",
+    "Atomic": "Atomic",
+    "An atomic desktop operating system featuring the modern and modular Plasma Desktop": "Un sisteme operatîf di scritori atomic cul scritori moderni e modulâr Plasma",
+    "Developer-Friendly": "Facil pai svilupadôrs",
+    "Each version is updated for approximately 13 months, and each update takes effect on your next reboot, keeping your system consistent. You can even keep working while the updates are being applied!": "Ogni version e ven inzornade par cirche 13 mês e ogni inzornament al devente efetîf al gnûf inviament, cussì di tignî coerent il sisteme. Tu puedis ancje continuâ a lavorâ intant che a vegnin aplicâts i inzornaments!",
+    "Budgie Desktop": "Scritori Budgie",
+    "Applications as Flatpaks": "Aplicazions come Flatpaks",
+    "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "Un sisteme operatîf di scritori atomic cul gjestôr di barcons Sway gjestît di tastiere.",
+    "An atomic desktop operating system featuring the modern and elegant GNOME Desktop": "Un sisteme operatîf di scritori atomic cul scritori moderni e elegant GNOME",
+    "Download thousands of open-source and proprietary, containerized applications thanks to Flatpak.": "Discjame miârs di aplicazions a codiç viert e proprietariis, in contignidôrs in graciis di Flatpak.",
+    "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "Cree cun facilitât contignidôrs OCI integrâts dal dut cul to sisteme host, permetint une utilizazion cence interuzions dai struments GUI e CLI.",
+    "Containerized": "In contignidôrs"
 }
