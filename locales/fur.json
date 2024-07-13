@@ -223,5 +223,18 @@
     "An atomic desktop operating system featuring the modern and elegant GNOME Desktop": "Un sisteme operatîf di scritori atomic cul scritori moderni e elegant GNOME",
     "Download thousands of open-source and proprietary, containerized applications thanks to Flatpak.": "Discjame miârs di aplicazions a codiç viert e proprietariis, in contignidôrs in graciis di Flatpak.",
     "Easily create OCI containers which are fully-integrated with your host system, enabling seamless usage of both GUI and CLI tools.": "Cree cun facilitât contignidôrs OCI integrâts dal dut cul to sisteme host, permetint une utilizazion cence interuzions dai struments GUI e CLI.",
-    "Containerized": "In contignidôrs"
+    "Containerized": "In contignidôrs",
+    "Safe": "Sigûr",
+    "Private, Trusted, Open Source": "Privât, Afidabil, Open Source",
+    "Screenshot of Budgie Desktop": "Videade dal scritori Budgie",
+    "Screenshot of blank laptop as background to Budgie desktop": "Videade di un portatil vueit come fonts dal scritori Budgie",
+    "Fedora creates an innovative, free and open source platform for hardware, clouds, and containers that enables software developers and community members to build tailored solutions for their users.": "Fedora al cree une plateforme a codiç viert (open source), libare e inovative par hardware, cloud e contignidôrs, che e permet ai svilupadôrs software e ai membris de comunitât di costruî soluzions su misure pai lôr utents.",
+    "Reliable": "Afidabil",
+    "Related Projects": "Progjets corelâts",
+    "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion. This enables you to surf the web, play games, enjoy music and video, manage files, and be productive without having to worry about breaking your system.": "Fedora Budgie Atomic al da fûr il popolâr ambient di scritori Budgie in maniere atomiche. Chest ti permet di navigâ sul Web, zuiâ, scoltâ musiche e video, gjestî files e jessi produtîf cence che tu vedis di preocupâti di ruvinâ il to sisteme.",
+    "The Budgie desktop experience in an atomic fashion.": "La esperience dal scritori Budgie in maniere atomiche.",
+    "The whole system is updated in one go, and an update will not apply if anything goes wrong, meaning you will <i>always</i> have a working computer.": "Dut il sisteme al ven inzornât intune volte sole e un inzornament nol vignarà aplicât se alc al va strucj. Chest al significhe che tu varâs <i>simpri</i> un computer che al funzione.",
+    "Fedora Community & Support": "Comunitât e supuart di Fedora",
+    "Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it.": "Fedora CoreOS al è un sisteme operatîf che si inzorne in automatic, minimâl, monolitic e incentrât sui contignidôrs, progjetât pai clusters ma che si podedi doprâ ancje in modalitât autonome, otimizât par Kubernetes ma perfet ancje cence di lui.",
+    "Graphical applications are installed via Flatpak, and keep themselves separate from the base system. They also allow for fine-grained control over their permissions.": "Lis aplicazions grafichis a vegnin instaladis midiant Flatpak e si tegnin separadis dal sisteme di base. Sore, ti permetin ancje un control di fin su lis lôr autorizazions."
 }
