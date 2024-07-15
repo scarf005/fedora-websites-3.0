@@ -25,14 +25,6 @@ function formatDate(dateStr) {
       background="text-white bg-fp-purple"
       :ctas="data.links"
     >
-      <template #title>
-        <div
-          class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-16 sm:max-w-lg sm:text-2xl"
-          style="text-shadow: 2px 2px 2px black"
-        >
-          {{ $t(data.location) }}
-        </div>
-      </template>
       <template #subtitle>
         <h2
           class="mt-16 font-semibold text-fp-blue sm:mt-24"
