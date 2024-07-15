@@ -59,7 +59,7 @@ function sponsorClass(sponsor) {
       </template>
     </div>
 
-    <a href="{{ sponsorship.link }}">
+    <a :href="sponsorshiplink">
       <div
         class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs dark:bg-fp-blue"
       >
