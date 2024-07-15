@@ -6,6 +6,8 @@ defineProps({
     level: String,
     description: String,
   },
+  sponsorshiplink: String,
+  sponsorshiplinktitle: String,
 });
 
 function sponsorClass(sponsor) {
@@ -50,17 +52,17 @@ function sponsorClass(sponsor) {
         />
         <p v-else>{{ sponsor.name }}</p>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">
-          {{ sponsor.level }} sponsor
+          {{ $t(sponsor.level + "sponsor") }}
         </p>
       </template>
     </div>
 
-    <a href="#">
+    <a href="{{ sponsorship.link }}">
       <div
         class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs dark:bg-fp-blue"
       >
         <p class="text-3xl text-black dark:text-white">
-          {{ $t("Become a Sponsor") }}
+          {{ $t(sponsorship.linktitle) }}
         </p>
       </div>
     </a>
