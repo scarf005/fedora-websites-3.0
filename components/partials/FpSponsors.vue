@@ -54,7 +54,7 @@ function sponsorClass(sponsor) {
         />
         <p v-else>{{ sponsor.name }}</p>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">
-          {{ $t(sponsor.level + "sponsor") }}
+          {{ sponsor.level }} sponsor
         </p>
       </template>
     </div>
@@ -64,7 +64,7 @@ function sponsorClass(sponsor) {
         class="media grid h-48 content-center bg-violet-300 p-8 text-center align-middle text-xs dark:bg-fp-blue"
       >
         <p class="text-3xl text-black dark:text-white">
-          {{ $t(sponsorship.linktitle) }}
+          {{ $t("Become a Sponsor") }}
         </p>
       </div>
     </a>
