@@ -6,8 +6,6 @@ const explore = data._value.sections[1];
 const watch = data._value.sections[2];
 const hybrid = data._value.sections[3];
 const community = data._value.sections[5];
-const sponsors = data._value.sponsors;
-const sponsorsBenefits = data._value.sections[6];
 
 function formatDate(dateStr) {
   const options = { month: "long", day: "2-digit" };
@@ -369,34 +367,6 @@ function formatDate(dateStr) {
           </FpList>
         </section>
       </FpHero>
-    </section>
-
-    <!-- Our Sponsors -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900">
-      <h2
-        class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
-      >
-        {{ $t(sponsors.title) }}
-      </h2>
-      <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
-        {{ $t(sponsors.description) }}
-      </p>
-
-      <FpSponsors :sponsors="sponsors.content" />
-    </section>
-
-    <!-- Benefits of Sponsoring -->
-    <section class="my-10 w-10/12">
-      <header
-        class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
-      >
-        <h3 class="mb-4 text-center font-medium text-fp-blue">
-          {{ $t(sponsorsBenefits.sectionTitle) }}
-        </h3>
-      </header>
-      <FpList columns="sm:grid-cols-2">
-        <FpListItem v-for="item in sponsorsBenefits.content" v-bind="item" />
-      </FpList>
     </section>
   </main>
 </template>
