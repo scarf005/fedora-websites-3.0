@@ -71,6 +71,89 @@ function formatDate(dateStr) {
   </FpHero>
 
   <main class="flex flex-col items-center dark:bg-black">
+    <!-- TODO: Important Dates -->
+    <section class="mx-auto w-full py-10">
+      <h2
+        class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+      >
+        {{ $t(data.importantDates.title) }}
+      </h2>
+      <h4 class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 sm:mx-20">
+        {{ $t(data.importantDates.description) }}
+      </h4>
+      <div
+        class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
+      >
+        <figure class="mx-auto my-auto hidden lg:block">
+          <img
+            class="z-10 lg:w-60"
+            src="/assets/images/colur-flap.png"
+            :alt="$t('Screenshot')"
+          />
+          <figcaption
+            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+          >
+            Colúr.
+          </figcaption>
+        </figure>
+        <section class="col-span-2">
+          <div
+            v-for="date in data.importantDates.content"
+            class="mx-auto mb-10 flex justify-center gap-5 rounded-xl p-2"
+            :style="{ backgroundColor: date.color }"
+          >
+            <div class="my-auto w-28 text-center">
+              <h3 class="text-4xl font-semibold text-fp-blue">
+                {{ formatDate(date.startDate) }}
+              </h3>
+            </div>
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-fp-blue">
+                {{ $t(date.name) }}
+              </h3>
+              <p v-if="date.endDate" class="mb-2 text-fp-gray-darkest">
+                {{ $t("Deadline:") }} {{ formatDate(date.endDate) }}
+              </p>
+              <p v-if="date.description" class="mb-2 text-fp-gray-darkest">
+                {{ $t(date.description) }}
+              </p>
+              <div class="flex justify-evenly gap-4">
+                <a class="font-bold" v-for="link in date.link" :href="link.url">
+                  {{ $t(link.text) }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-sm text-fp-gray">
+            {{ $t(data.importantDates.footerText) }}
+          </p>
+        </section>
+        <figure class="mx-auto my-auto hidden lg:block">
+          <img
+            class="z-10 lg:w-96"
+            src="/assets/images/panda_beefy_badger.png"
+            :alt="$t('Screenshot')"
+          />
+          <figcaption
+            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+          >
+            {{ $t("Panda, Beefy and Badger.") }}
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TODO: Event Calendar -->
+    <!--
+    <section class="w-10/12 mx-auto my-10">
+      <h2
+        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
+      >
+        Event Calendar
+      </h2>
+    </section>
+    -->
+
     <!-- Explore -->
     <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
@@ -256,89 +339,6 @@ function formatDate(dateStr) {
         >
       </div>
     </section>
-
-    <!-- TODO: Important Dates -->
-    <section class="mx-auto w-full py-10">
-      <h2
-        class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
-      >
-        {{ $t(data.importantDates.title) }}
-      </h2>
-      <h4 class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 sm:mx-20">
-        {{ $t(data.importantDates.description) }}
-      </h4>
-      <div
-        class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
-      >
-        <figure class="mx-auto my-auto hidden lg:block">
-          <img
-            class="z-10 lg:w-60"
-            src="/assets/images/colur-flap.png"
-            :alt="$t('Screenshot')"
-          />
-          <figcaption
-            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
-          >
-            Colúr.
-          </figcaption>
-        </figure>
-        <section class="col-span-2">
-          <div
-            v-for="date in data.importantDates.content"
-            class="mx-auto mb-10 flex justify-center gap-5 rounded-xl p-2"
-            :style="{ backgroundColor: date.color }"
-          >
-            <div class="my-auto w-28 text-center">
-              <h3 class="text-4xl font-semibold text-fp-blue">
-                {{ formatDate(date.startDate) }}
-              </h3>
-            </div>
-            <div class="text-center">
-              <h3 class="text-2xl font-bold text-fp-blue">
-                {{ $t(date.name) }}
-              </h3>
-              <p v-if="date.endDate" class="mb-2 text-fp-gray-darkest">
-                {{ $t("Deadline:") }} {{ formatDate(date.endDate) }}
-              </p>
-              <p v-if="date.description" class="mb-2 text-fp-gray-darkest">
-                {{ $t(date.description) }}
-              </p>
-              <div class="flex justify-evenly gap-4">
-                <a class="font-bold" v-for="link in date.link" :href="link.url">
-                  {{ $t(link.text) }}
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="text-center text-sm text-fp-gray">
-            {{ $t(data.importantDates.footerText) }}
-          </p>
-        </section>
-        <figure class="mx-auto my-auto hidden lg:block">
-          <img
-            class="z-10 lg:w-96"
-            src="/assets/images/panda_beefy_badger.png"
-            :alt="$t('Screenshot')"
-          />
-          <figcaption
-            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
-          >
-            {{ $t("Panda, Beefy and Badger.") }}
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- TODO: Event Calendar -->
-    <!--
-    <section class="w-10/12 mx-auto my-10">
-      <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
-      >
-        Event Calendar
-      </h2>
-    </section>
-    -->
 
     <!-- Community Section -->
     <section class="max-w-full py-10 dark:bg-slate-900">
