@@ -556,7 +556,7 @@
     "Fedora Sponsors": "Sponsor di Fedora",
     "The Fedora Project is also grateful to the following sponsors for providing substantial support.": "Il Fedora Project è grato anche ai seguenti sponsor che forniscono un importante supporto.",
     "A window switcher, application launcher and dmenu replacement.": "Un switcher di finestre, un lanciatore di applicazioni e un sostituto per dmenu.",
-    "File manager for Linux and other Unix-like systems.": "Un gestore dei file per Lnux e altri sistemi Unix-like.",
+    "File manager for Linux and other Unix-like systems.": "Un gestore dei file per Linux e altri sistemi Unix-like.",
     "Just a click and you're connected to your wireless LAN router, or online via many supported 3G mobile broadband cards.": "Con un semplice clic sei connesso al tuo router wireless LAN, oppure online tramite le schede a banda larga mobile 3G supportate.",
     "Podman is a daemonless container engine for developing, managing and running Open Container Initiative (OCI) containers and container images on your Linux system.": "Podman è un motore daemonless per sviluppare, gestire e far girare container e immagini OCI (Open Container Initiative) sul tuo sistema Linux.",
     "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree è un sistema ibrido di immagini/pacchetti. Combina libostree e libdnf per fornire aggiornamenti atomici e sicuri con la stratificazione dei pacchetti RPM locali.",
