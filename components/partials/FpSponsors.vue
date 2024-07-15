@@ -5,6 +5,7 @@ defineProps({
     imageURI: String,
     level: String,
     description: String,
+    alttext: String,
   },
   sponsorshiplink: String,
   sponsorshiplinktitle: String,
@@ -49,6 +50,7 @@ function sponsorClass(sponsor) {
           v-if="sponsor.image"
           class="mx-auto max-h-32 w-full object-contain"
           :src="sponsor.image"
+          :alt="sponsor.alttext"
         />
         <p v-else>{{ sponsor.name }}</p>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">
