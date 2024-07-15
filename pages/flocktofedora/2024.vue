@@ -155,7 +155,7 @@ function formatDate(dateStr) {
     -->
 
     <!-- Explore -->
-    <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
+    <!-- <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
@@ -217,9 +217,9 @@ function formatDate(dateStr) {
           </div>
         </FpCard>
       </div>
-    </section>
+    </section> -->
 
-    <section class="mx-auto w-full py-10 dark:bg-slate-800">
+    <!-- <section class="mx-auto w-full py-10 dark:bg-slate-800">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
@@ -246,9 +246,9 @@ function formatDate(dateStr) {
             />
             <p class="my-2 w-72">
               {{ $t(hybrid.content[0].description) }}
-            </p>
-            <!-- Content will need to be dynamic-->
-            <div class="mt-2 flex gap-4 text-xl">
+            </p> -->
+    <!-- Content will need to be dynamic-->
+    <!-- <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
@@ -289,9 +289,9 @@ function formatDate(dateStr) {
             />
             <p class="my-2 w-72">
               {{ $t(hybrid.content[1].description) }}
-            </p>
-            <!-- Content will need to be dynamic-->
-            <div class="mt-2 flex gap-4 text-xl">
+            </p> -->
+    <!-- Content will need to be dynamic-->
+    <!-- <div class="mt-2 flex gap-4 text-xl">
               <NuxtLink
                 to="#"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
@@ -338,10 +338,10 @@ function formatDate(dateStr) {
           >{{ $t("Registration") }}</NuxtLink
         >
       </div>
-    </section>
+    </section>-->
 
     <!-- Community Section -->
-    <section class="max-w-full py-10 dark:bg-slate-900">
+    <!-- <section class="max-w-full py-10 dark:bg-slate-900">
       <FpHero
         :background="community.image"
         alignment="bg-top"
@@ -369,7 +369,7 @@ function formatDate(dateStr) {
           </FpList>
         </section>
       </FpHero>
-    </section>
+    </section> -->
 
     <!-- Our Sponsors -->
     <section class="mx-auto w-full py-10 dark:bg-slate-900">
