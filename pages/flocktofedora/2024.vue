@@ -2,12 +2,8 @@
 const data = await getCMS("events/flock/2024");
 useContentHead(data);
 
-const explore = data._value.sections[1];
-const watch = data._value.sections[2];
-const hybrid = data._value.sections[3];
-const community = data._value.sections[5];
 const sponsors = data._value.sponsors;
-const sponsorsBenefits = data._value.sections[6];
+const sponsorsBenefits = data._value.sections[3];
 
 function formatDate(dateStr) {
   const options = { month: "long", day: "2-digit" };
