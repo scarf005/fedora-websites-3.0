@@ -1,6 +1,5 @@
 <script setup>
 const data = await getCMS("events/flock/2024");
-const generalEventData = await getCMS("events/flock");
 useContentHead(data);
 
 function formatDate(dateStr) {
@@ -417,40 +416,6 @@ function getImportantDateColor(status) {
       <FpList columns="sm:grid-cols-2">
         <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
-    </section>
-
-    <!-- Community Section -->
-    <section
-      class="max-w-full py-10 dark:bg-slate-900"
-      v-if="generalEventData.community.enabled"
-    >
-      <FpHero
-        :background="generalEventData.community.image"
-        alignment="bg-top"
-        class="dark:!bg-none"
-      >
-        <section class="mx-auto w-10/12 max-w-screen-xl py-24">
-          <h2
-            class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
-          >
-            {{ $t(generalEventData.community.sectionTitle) }}
-          </h2>
-          <h4
-            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 sm:mx-20"
-          >
-            {{ $t(generalEventData.community.sectionDescription) }}
-          </h4>
-
-          <FpList columns="sm:grid-cols-2">
-            <FpListItem
-              v-for="item in generalEventData.community.content"
-              v-bind="item"
-              :iconURI="item.image"
-              :image="null"
-            />
-          </FpList>
-        </section>
-      </FpHero>
     </section>
   </main>
 </template>
