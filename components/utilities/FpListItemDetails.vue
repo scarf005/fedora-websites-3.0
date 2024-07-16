@@ -48,6 +48,9 @@ if (props.description) {
         v-if="descriptionMd"
         class="markdown text-fp-darkblue-500 dark:text-slate-200"
         :value="descriptionMd"
+        :style="{
+          'margin-left': '4em',
+        }"
       />
       <br />
       <div v-if="props.url" class="flex items-center justify-center">
