@@ -350,7 +350,7 @@ function formatDate(dateStr) {
           {{ $t(data.faq.sectionTitle) }}
         </h2>
       </header>
-      <FpList columns="sm:grid-cols-2" :disableDots="true">
+      <FpList columns="sm:grid-cols-1" :disableDots="true">
         <FpListItemDetails v-for="item in data.faq.content" v-bind="item" />
       </FpList>
     </section>
