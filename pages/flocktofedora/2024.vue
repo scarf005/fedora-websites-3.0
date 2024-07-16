@@ -120,9 +120,13 @@ function getImportantDateColor(status) {
                 {{ $t(date.description) }}
               </p>
               <div class="flex justify-evenly gap-4">
-                <a class="font-bold" v-for="link in date.link" :href="link.url">
+                <FpLink
+                  v-for="link in date.link"
+                  :href="link.url"
+                  class="font-bold"
+                >
                   {{ $t(link.text) }}
-                </a>
+                </FpLink>
               </div>
             </div>
           </div>
