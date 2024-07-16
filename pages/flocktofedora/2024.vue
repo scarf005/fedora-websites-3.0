@@ -172,10 +172,10 @@ function formatDate(dateStr) {
               <FpCardImage slot="prepend" :src="card.image" />
             </template>
             <template #footer>
-              <NuxtLink
-                :to="card.link.url"
+              <FpLink
+                :href="card.link.url"
                 class="underline underline-offset-1"
-                >{{ $t(card.link.text) }}</NuxtLink
+                >{{ $t(card.link.text) }}</FpLink
               >
             </template>
           </FpCard>
@@ -204,11 +204,11 @@ function formatDate(dateStr) {
               >
                 {{ $t(watch.content[0].description) }}
               </p>
-              <NuxtLink
-                :to="watch.content[0].image"
+              <FpLink
+                :href="watch.content[0].image"
                 class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
                 >{{ $t("Visit Fedora Youtube") }}&nbsp;
-              </NuxtLink>
+              </FpLink>
             </div>
           </div>
         </FpCard>
@@ -245,15 +245,15 @@ function formatDate(dateStr) {
             </p> -->
     <!-- Content will need to be dynamic-->
     <!-- <div class="mt-2 flex gap-4 text-xl">
-              <NuxtLink
-                to="#"
+              <FpLink
+                href="#"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >{{ $t("Destination") }}</NuxtLink
+                >{{ $t("Destination") }}</FpLink
               >
-              <NuxtLink
-                to="#"
+              <FpLink
+                href="#"
                 class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
-                >{{ $t("Learn More") }}</NuxtLink
+                >{{ $t("Learn More") }}</FpLink
               >
             </div>
           </article>
@@ -288,15 +288,15 @@ function formatDate(dateStr) {
             </p> -->
     <!-- Content will need to be dynamic-->
     <!-- <div class="mt-2 flex gap-4 text-xl">
-              <NuxtLink
-                to="#"
+              <FpLink
+                href="#"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >{{ $t("Destination") }}</NuxtLink
+                >{{ $t("Destination") }}</FpLink
               >
-              <NuxtLink
-                to="#"
+              <FpLink
+                href="#"
                 class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
-                >{{ $t("Learn More") }}</NuxtLink
+                >{{ $t("Learn More") }}</FpLink
               >
             </div>
           </article>
@@ -328,10 +328,10 @@ function formatDate(dateStr) {
         </div>
       </div>
       <div class="my-8">
-        <NuxtLink
-          to="#"
+        <FpLink
+          href="#"
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
-          >{{ $t("Registration") }}</NuxtLink
+          >{{ $t("Registration") }}</FpLink
         >
       </div>
     </section>-->
