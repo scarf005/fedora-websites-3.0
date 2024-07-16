@@ -388,6 +388,20 @@ function formatDate(dateStr) {
         </section>
       </FpHero>
     </section>
+
+    <!-- Our Sponsors -->
+    <section class="mx-auto w-full py-10 dark:bg-slate-900">
+      <h2
+        class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+      >
+        {{ $t(sponsors.title) }}
+      </h2>
+      <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
+        {{ $t(sponsors.description) }}
+      </p>
+
+      <FpSponsors :sponsors="sponsors.content" />
+    </section>
   </main>
 </template>
 
