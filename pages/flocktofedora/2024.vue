@@ -2,9 +2,6 @@
 const data = await getCMS("events/flock/2024");
 useContentHead(data);
 
-const sponsors = data._value.sponsors;
-const sponsorsBenefits = data._value.sections[3];
-
 function formatDate(dateStr) {
   const options = { month: "long", day: "2-digit" };
   return new Date(dateStr).toLocaleDateString("en-US", options);
@@ -48,7 +45,7 @@ function formatDate(dateStr) {
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12">
       <div
-        v-for="card in data.sections[0].content"
+        v-for="card in data.events.content"
         class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
       >
         <div
@@ -372,13 +369,13 @@ function formatDate(dateStr) {
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
-        {{ $t(sponsors.title) }}
+        {{ $t(data.sponsors.title) }}
       </h2>
       <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
-        {{ $t(sponsors.description) }}
+        {{ $t(data.sponsors.description) }}
       </p>
 
-      <FpSponsors :sponsors="sponsors.content" />
+      <FpSponsors :sponsors="data.sponsors.content" />
     </section>
 
     <!-- Benefits of Sponsoring -->
@@ -387,11 +384,11 @@ function formatDate(dateStr) {
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
         <h3 class="mb-4 text-center font-medium text-fp-blue">
-          {{ $t(sponsorsBenefits.sectionTitle) }}
+          {{ $t(data.sponsoring.sectionTitle) }}
         </h3>
       </header>
       <FpList columns="sm:grid-cols-2">
-        <FpListItem v-for="item in sponsorsBenefits.content" v-bind="item" />
+        <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
     </section>
   </main>
