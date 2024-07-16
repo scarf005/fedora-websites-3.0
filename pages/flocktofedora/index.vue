@@ -248,7 +248,7 @@ function formatDate(dateStr) {
     </section>
 
     <!-- TODO: Important Dates -->
-    <section class="mx-auto w-full py-10">
+    <!-- <section class="mx-auto w-full py-10">
       <h2
         class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
@@ -317,7 +317,7 @@ function formatDate(dateStr) {
           </figcaption>
         </figure>
       </div>
-    </section>
+    </section> -->
 
     <!-- TODO: Event Calendar -->
     <!--
