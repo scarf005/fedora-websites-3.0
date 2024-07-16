@@ -43,7 +43,7 @@ function formatDate(dateStr) {
         {{ $t(data.description) }}
       </h2>
     </FpBanner>
-    <div class="mx-auto flex max-w-screen-xl p-12">
+    <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
       <div
         v-for="card in data.events.content"
         class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
@@ -148,7 +148,7 @@ function formatDate(dateStr) {
     -->
 
     <!-- Explore -->
-    <!-- <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
+    <!-- <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900" v-if="data.explore.enabled">
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
@@ -212,7 +212,7 @@ function formatDate(dateStr) {
       </div>
     </section> -->
 
-    <!-- <section class="mx-auto w-full py-10 dark:bg-slate-800">
+    <!-- <section class="mx-auto w-full py-10 dark:bg-slate-800" v-if="data.showcase.enabled">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
@@ -393,7 +393,7 @@ function formatDate(dateStr) {
     </section>
 
     <!-- Benefits of Sponsoring -->
-    <section class="my-10 w-10/12">
+    <section class="my-10 w-10/12" v-if="data.sponsoring.enabled">
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
