@@ -2,11 +2,6 @@
 const data = await getCMS("events/flock");
 useContentHead(data);
 
-const explore = data._value.sections[1];
-const watch = data._value.sections[2];
-const hybrid = data._value.sections[3];
-const community = data._value.sections[5];
-
 function formatDate(dateStr) {
   const options = { month: "long", day: "2-digit" };
   return new Date(dateStr).toLocaleDateString("en-US", options);
@@ -42,7 +37,7 @@ function formatDate(dateStr) {
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12">
       <div
-        v-for="card in data.sections[0].content"
+        v-for="card in data.events.content"
         class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
       >
         <div
@@ -67,13 +62,13 @@ function formatDate(dateStr) {
         <h2
           class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
-          {{ $t(explore.sectionTitle) }}
+          {{ $t(data.explore.sectionTitle) }}
         </h2>
         <div
           class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 xl:gap-20"
         >
           <FpCard
-            v-for="card in explore.content"
+            v-for="card in data.explore.content"
             :title="card.title"
             :description="card.description"
             :variants="['event']"
@@ -95,7 +90,7 @@ function formatDate(dateStr) {
         <h3
           class="mt-20 text-center text-2xl font-semibold text-fp-darkblue-500 dark:text-fp-newblue-500 sm:text-4xl"
         >
-          {{ $t(watch.sectionTitle) }}
+          {{ $t(data.watch.sectionTitle) }}
         </h3>
 
         <FpCard
@@ -109,14 +104,14 @@ function formatDate(dateStr) {
               src="public/assets/images/flock_youtube.png"
             />
             <div class="my-auto">
-              <FpCardTitle :title="watch.content[0].title" />
+              <FpCardTitle :title="data.watch.content[0].title" />
               <p
                 class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
               >
-                {{ $t(watch.content[0].description) }}
+                {{ $t(data.watch.content[0].description) }}
               </p>
               <NuxtLink
-                :to="watch.content[0].image"
+                :to="data.watch.content[0].image"
                 class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
                 >{{ $t("Visit Fedora Youtube") }}&nbsp;
               </NuxtLink>
@@ -131,10 +126,10 @@ function formatDate(dateStr) {
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
-          {{ $t(hybrid.sectionTitle) }}
+          {{ $t(data.hybrid.sectionTitle) }}
         </h2>
         <p class="mx-auto max-w-prose text-center">
-          {{ $t(hybrid.sectionDescription) }}
+          {{ $t(data.hybrid.sectionDescription) }}
         </p>
       </header>
       <div
@@ -145,14 +140,14 @@ function formatDate(dateStr) {
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ $t(hybrid.content[0].title) }}
+              {{ $t(data.hybrid.content[0].title) }}
             </h3>
             <FpImage
-              :src="hybrid.content[0].image"
+              :src="data.hybrid.content[0].image"
               class="order-first w-full"
             />
             <p class="my-2 w-72">
-              {{ $t(hybrid.content[0].description) }}
+              {{ $t(data.hybrid.content[0].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
@@ -188,14 +183,14 @@ function formatDate(dateStr) {
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ $t(hybrid.content[1].title) }}
+              {{ $t(data.hybrid.content[1].title) }}
             </h3>
             <FpImage
-              :src="hybrid.content[1].image"
+              :src="data.hybrid.content[1].image"
               class="order-first -ml-3 w-5/6"
             />
             <p class="my-2 w-72">
-              {{ $t(hybrid.content[1].description) }}
+              {{ $t(data.hybrid.content[1].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
@@ -333,7 +328,7 @@ function formatDate(dateStr) {
     <!-- Community Section -->
     <section class="max-w-full py-10 dark:bg-slate-900">
       <FpHero
-        :background="community.image"
+        :background="data.community.image"
         alignment="bg-top"
         class="dark:!bg-none"
       >
@@ -341,17 +336,17 @@ function formatDate(dateStr) {
           <h2
             class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
           >
-            {{ $t(community.sectionTitle) }}
+            {{ $t(data.community.sectionTitle) }}
           </h2>
           <h4
             class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 sm:mx-20"
           >
-            {{ $t(community.sectionDescription) }}
+            {{ $t(data.community.sectionDescription) }}
           </h4>
 
           <FpList columns="sm:grid-cols-2">
             <FpListItem
-              v-for="item in community.content"
+              v-for="item in data.community.content"
               v-bind="item"
               :iconURI="item.image"
               :image="null"
