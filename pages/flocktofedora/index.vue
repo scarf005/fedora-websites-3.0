@@ -86,12 +86,17 @@ function formatDate(dateStr) {
             </template>
           </FpCard>
         </div>
+      </div>
+    </section>
 
-        <h3
-          class="mt-20 text-center text-2xl font-semibold text-fp-darkblue-500 dark:text-fp-newblue-500 sm:text-4xl"
+    <!-- Watch -->
+    <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900">
+      <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
         >
           {{ $t(data.watch.sectionTitle) }}
-        </h3>
+        </h2>
 
         <FpCard
           class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
