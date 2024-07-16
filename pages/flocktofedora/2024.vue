@@ -6,6 +6,14 @@ function formatDate(dateStr) {
   const options = { month: "long", day: "2-digit" };
   return new Date(dateStr).toLocaleDateString("en-US", options);
 }
+
+function getImportantDateColor(status) {
+  if (status == "pending") return "#b9daf0";
+  if (status == "current") return "#c5eac0";
+  if (status == "elapsed") return "#dedede";
+  // default
+  return "#dedede";
+}
 </script>
 <template>
   <FpHero
@@ -93,7 +101,7 @@ function formatDate(dateStr) {
           <div
             v-for="date in data.importantDates.content"
             class="mx-auto mb-10 flex justify-center gap-5 rounded-xl p-2"
-            :style="{ backgroundColor: date.color }"
+            :style="{ backgroundColor: getImportantDateColor(date.status) }"
           >
             <div class="my-auto w-28 text-center">
               <h3 class="text-4xl font-semibold text-fp-blue">
