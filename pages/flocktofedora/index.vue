@@ -126,10 +126,10 @@ function formatDate(dateStr) {
         <h2
           class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
         >
-          {{ $t(data.hybrid.sectionTitle) }}
+          {{ $t(data.showcase.sectionTitle) }}
         </h2>
         <p class="mx-auto max-w-prose text-center">
-          {{ $t(data.hybrid.sectionDescription) }}
+          {{ $t(data.showcase.sectionDescription) }}
         </p>
       </header>
       <div
@@ -140,14 +140,14 @@ function formatDate(dateStr) {
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ $t(data.hybrid.content[0].title) }}
+              {{ $t(data.showcase.content[0].title) }}
             </h3>
             <FpImage
-              :src="data.hybrid.content[0].image"
+              :src="data.showcase.content[0].image"
               class="order-first w-full"
             />
             <p class="my-2 w-72">
-              {{ $t(data.hybrid.content[0].description) }}
+              {{ $t(data.showcase.content[0].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
@@ -183,14 +183,14 @@ function formatDate(dateStr) {
         >
           <article class="flex max-w-sm flex-col p-6">
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
-              {{ $t(data.hybrid.content[1].title) }}
+              {{ $t(data.showcase.content[1].title) }}
             </h3>
             <FpImage
-              :src="data.hybrid.content[1].image"
+              :src="data.showcase.content[1].image"
               class="order-first -ml-3 w-5/6"
             />
             <p class="my-2 w-72">
-              {{ $t(data.hybrid.content[1].description) }}
+              {{ $t(data.showcase.content[1].description) }}
             </p>
             <!-- Content will need to be dynamic-->
             <div class="mt-2 flex gap-4 text-xl">
