@@ -66,7 +66,7 @@ const sponsorLevels = [
     >
       <template #title>
         <div
-          class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-16 sm:max-w-lg sm:text-2xl"
+          class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-10 sm:max-w-lg sm:text-2xl"
           style="text-shadow: 2px 2px 2px black"
         >
           {{ $t(data.location) }}
