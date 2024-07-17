@@ -3,11 +3,6 @@ import FpListItemDetails from "~/components/utilities/FpListItemDetails.vue";
 
 const data = await getCMS("events/flock");
 useContentHead(data);
-
-function formatDate(dateStr) {
-  const options = { month: "long", day: "2-digit" };
-  return new Date(dateStr).toLocaleDateString("en-US", options);
-}
 </script>
 <template>
   <FpHero
