@@ -24,6 +24,10 @@ const headerAttributions = await Promise.all(
     async (value) => await mdparser(value.attribution),
   ),
 );
+
+const sponsorshipDescriptionMd = await mdparser(
+  data._value.sponsoring.sectionDescription,
+);
 </script>
 <template>
   <FpHero
@@ -424,7 +428,21 @@ const headerAttributions = await Promise.all(
           {{ $t(data.sponsoring.sectionTitle) }}
         </h3>
       </header>
-      <FpList columns="sm:grid-cols-2">
+
+      <div
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      >
+        <div class="p-2">
+          <ContentRenderer
+            class="markdown text-center dark:text-white"
+            tag="div"
+            v-if="sponsorshipDescriptionMd"
+            :value="sponsorshipDescriptionMd"
+          />
+        </div>
+      </div>
+
+      <FpList columns="sm:grid-cols-2 mt-10">
         <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
 
