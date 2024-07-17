@@ -426,6 +426,14 @@ const headerAttributions = await Promise.all(
       <FpList columns="sm:grid-cols-2">
         <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
+
+      <div class="my-8">
+        <FpLink
+          href="#"
+          class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
+          >{{ $t("Become a Sponsor") }}</FpLink
+        >
+      </div>
     </section>
 
     <section class="py-12 px-4 dark:bg-black" v-if="headerAttributions">
