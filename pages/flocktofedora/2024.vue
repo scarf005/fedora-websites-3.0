@@ -14,6 +14,16 @@ function getImportantDateColor(status) {
   // default
   return "#dedede";
 }
+
+function getAttributions(items) {
+  return items.filter((value) => value.attribution);
+}
+
+const headerAttributions = await Promise.all(
+  getAttributions(data._value.header_images).map(
+    async (value) => await mdparser(value.attribution),
+  ),
+);
 </script>
 <template>
   <FpHero
@@ -416,6 +426,14 @@ function getImportantDateColor(status) {
       <FpList columns="sm:grid-cols-2">
         <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
+    </section>
+
+    <section class="py-12 px-4 dark:bg-black" v-if="headerAttributions">
+      <AdditionalLegalInformationSection
+        v-for="attribution in headerAttributions"
+        :description="attribution"
+        :isMarkdown="true"
+      />
     </section>
   </main>
 </template>
