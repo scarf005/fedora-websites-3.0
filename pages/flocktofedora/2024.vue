@@ -67,35 +67,25 @@ const sponsorLevels = [
       <template #title>
         <div
           class="mx-auto -mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white sm:-mt-10 sm:max-w-lg sm:text-2xl"
-          style="text-shadow: 2px 2px 2px black"
         >
           {{ $t(data.location) }}
         </div>
       </template>
       <template #subtitle>
-        <h2
-          class="mt-16 font-semibold text-fp-blue sm:mt-24"
-          style="text-shadow: 4px 4px 4px black"
-        >
+        <h2 class="mt-16 font-semibold text-fp-blue sm:mt-24">
           {{ $t(data.title) }}
         </h2>
       </template>
-      <h2
-        class="my-4 text-center font-semibold text-white"
-        style="text-shadow: 4px 4px 4px black"
-      >
+      <h2 class="my-4 text-center font-semibold text-white">
         {{ $t(data.description) }}
       </h2>
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
       <div
         v-for="card in data.events.content"
-        class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
+        class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
       >
-        <div
-          class="text-lg font-semibold leading-none text-fp-blue"
-          style="text-shadow: 1px 2px 4px black"
-        >
+        <div class="text-lg font-semibold leading-none text-fp-blue">
           <FpImage
             class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
             :src="card.image"
@@ -103,7 +93,9 @@ const sponsorLevels = [
           />
           {{ $t(card.title) }}
         </div>
-        <p class="text-sm text-slate-300">{{ $t(card.description) }}</p>
+        <p class="text-sm dark:text-slate-300 text-slate-800">
+          {{ $t(card.description) }}
+        </p>
       </div>
     </div>
   </FpHero>
@@ -159,7 +151,7 @@ const sponsorLevels = [
                 <FpLink
                   v-for="link in date.link"
                   :href="link.url"
-                  class="font-bold"
+                  class="font-bold underline dark:text-black"
                 >
                   {{ $t(link.text) }}
                 </FpLink>
@@ -434,7 +426,9 @@ const sponsorLevels = [
       >
         {{ $t(data.sponsors.title) }}
       </h2>
-      <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
+      <p
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      >
         {{ $t(data.sponsors.description) }}
       </p>
 
