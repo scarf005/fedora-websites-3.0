@@ -73,6 +73,7 @@ const headerAttributions = await Promise.all(
           <FpImage
             class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
             :src="card.image"
+            v-if="card.image"
           />
           {{ $t(card.title) }}
         </div>
