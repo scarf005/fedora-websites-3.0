@@ -400,10 +400,10 @@ function formatDate(dateStr) {
         {{ $t(data.sponsors.description) }}
       </p>
 
-      <div class="mx-auto flex max-w-screen-xl p-12">
+      <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
         <div
           v-for="card in data.sponsors.content"
-          class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8 bg-gray-100 dark:bg-neutral-300"
+          class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8 mb-4 bg-gray-100 dark:bg-neutral-300"
         >
           <div
             class="text-lg font-semibold leading-none text-fp-blue"
