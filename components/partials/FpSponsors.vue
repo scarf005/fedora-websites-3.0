@@ -46,13 +46,15 @@ function sponsorClass(sponsor) {
       :class="sponsorClass(sponsor)"
     >
       <template v-if="sponsor.level != 'placeholder'">
-        <FpImage
-          v-if="sponsor.image"
-          class="mx-auto max-h-32 w-full object-contain"
-          :src="sponsor.image"
-          :alt="sponsor.alttext"
-        />
-        <p v-else>{{ sponsor.name }}</p>
+        <FpLink :href="sponsor.link ?? '#'">
+          <FpImage
+            v-if="sponsor.image"
+            class="mx-auto max-h-32 w-full object-contain"
+            :src="sponsor.image"
+            :alt="sponsor.alttext"
+          />
+          <p v-else>{{ sponsor.name }}</p>
+        </FpLink>
         <p class="absolute inset-x-0 bottom-2.5 text-xs capitalize">
           {{ sponsor.level }} sponsor
         </p>
