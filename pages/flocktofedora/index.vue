@@ -3,6 +3,16 @@ import FpListItemDetails from "~/components/utilities/FpListItemDetails.vue";
 
 const data = await getCMS("events/flock");
 useContentHead(data);
+
+function getAttributions(items) {
+  return items.filter((value) => value.attribution);
+}
+
+const headerAttributions = await Promise.all(
+  getAttributions(data._value.header_images).map(
+    async (value) => await mdparser(value.attribution),
+  ),
+);
 </script>
 <template>
   <FpHero
@@ -413,6 +423,14 @@ useContentHead(data);
           <!-- <p class="text-sm text-slate-300">{{ $t(card.description) }}</p> -->
         </div>
       </div>
+    </section>
+
+    <section class="py-12 px-4 dark:bg-black" v-if="headerAttributions">
+      <AdditionalLegalInformationSection
+        v-for="attribution in headerAttributions"
+        :description="attribution"
+        :isMarkdown="true"
+      />
     </section>
   </main>
 </template>
