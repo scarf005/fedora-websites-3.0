@@ -28,6 +28,34 @@ const headerAttributions = await Promise.all(
 const sponsorshipDescriptionMd = await mdparser(
   data._value.sponsoring.sectionDescription,
 );
+
+const sponsorLevels = [
+  {
+    id: "platinum",
+    text: "Platinum Sponsors",
+    size: "h-28",
+  },
+  {
+    id: "gold",
+    text: "Gold Sponsors",
+    size: "h-20",
+  },
+  {
+    id: "silver",
+    text: "Silver Sponsors",
+    size: "h-15",
+  },
+  {
+    id: "bronze",
+    text: "Bronze Sponsors",
+    size: "h-10",
+  },
+  {
+    id: "media",
+    text: "Media Sponsors",
+    size: "h-10",
+  },
+];
 </script>
 <template>
   <FpHero
@@ -416,7 +444,41 @@ const sponsorshipDescriptionMd = await mdparser(
         {{ $t(data.sponsors.description) }}
       </p>
 
-      <FpSponsors :sponsors="data.sponsors.content" />
+      <template v-for="sponsorLevel in sponsorLevels">
+        <template
+          v-if="
+            data.sponsors.content.filter((s) => s.level === sponsorLevel.id)
+              .length > 0
+          "
+        >
+          <h3 class="mx-auto mb-12 max-w-max mt-10">
+            {{ $t(sponsorLevel.text) }}
+          </h3>
+
+          <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl">
+            <div
+              v-for="sponsor in data.sponsors.content.filter(
+                (s) => s.level === sponsorLevel.id,
+              )"
+              class="max-w-[17rem] rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300"
+            >
+              <div
+                class="text-lg font-semibold leading-none text-fp-blue"
+                style="text-shadow: 1px 2px 4px black"
+              >
+                <FpLink :href="sponsor.link">
+                  <FpImage
+                    class="inline mx-auto w-full object-contain"
+                    :class="sponsorLevel.size"
+                    :src="sponsor.image"
+                    :alt="'Logo for ' + sponsor.name"
+                  />
+                </FpLink>
+              </div>
+            </div>
+          </div>
+        </template>
+      </template>
     </section>
 
     <!-- Benefits of Sponsoring -->
