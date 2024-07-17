@@ -28,9 +28,6 @@ if (props.description) {
         : 'null'
     "
   >
-    <!-- <div v-if="props.image" class="flex h-64 items-center justify-center">
-      <FpImage :src="props.image" />
-    </div> -->
     <details>
       <summary>
         <h4
@@ -40,10 +37,6 @@ if (props.description) {
           {{ $t(props.title) }}
         </h4>
       </summary>
-      <!-- <details>
-            <summary><h4 style="display: inline;, width: 100%;">{{ item.title }}</h4></summary>
-            <p>{{  item.description }}</p>
-          </details> -->
       <ContentRendererMarkdown
         v-if="descriptionMd"
         class="markdown text-fp-darkblue-500 dark:text-slate-200"
