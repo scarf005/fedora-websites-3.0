@@ -216,10 +216,10 @@ useHead({
           </div>
           <div class="text-center">
             <p class="mb-2">{{ $t(card.description) }}</p>
-            <FpLink
-              :href="card.link.url"
+            <NuxtLink
+              :to="card.link.url"
               class="font-semibold underline-offset-1 transition duration-150 ease-in-out hover:text-fp-darkblue hover:underline hover:dark:text-fp-newblue"
-              >{{ $t(card.link.text) }}</FpLink
+              >{{ $t(card.link.text) }}</NuxtLink
             >
           </div>
         </article>
