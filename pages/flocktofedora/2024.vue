@@ -19,10 +19,6 @@ function getAttributions(items) {
   return items.filter((value) => value.attribution);
 }
 
-const sponsorshipDescriptionMd = await mdparser(
-  data._value.sponsoring.sectionDescription,
-);
-
 const sponsorLevels = [
   {
     id: "platinum",
@@ -585,11 +581,9 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       >
         <div class="p-2">
-          <ContentRenderer
-            class="markdown text-center dark:text-white"
-            tag="div"
-            v-if="sponsorshipDescriptionMd"
-            :value="sponsorshipDescriptionMd"
+          <MarkdownDisplay
+            v-if="data.sponsoring.sectionDescription"
+            :content="data.sponsoring.sectionDescription"
           />
         </div>
       </div>
