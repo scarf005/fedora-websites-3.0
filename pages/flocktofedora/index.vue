@@ -425,10 +425,12 @@ const headerAttributions = await Promise.all(
       </div>
     </section>
 
-    <section class="py-12 px-4 dark:bg-black" v-if="headerAttributions">
+    <section
+      class="py-12 px-4 dark:bg-black"
+      v-if="getAttributions(data.header_images)"
+    >
       <AdditionalLegalInformationSection
-        v-for="attribution in headerAttributions"
-        :description="attribution"
+        :legal-notices="getAttributions(data.header_images)"
         :isMarkdown="true"
       />
     </section>
