@@ -975,5 +975,21 @@
     "Fedora Sway Atomic": "Fedora Sway Atomic",
     "We're so glad you've decided to give Fedora Sway Atomic a try. We know you'll love it.": "Kami sangat senang Anda memutuskan untuk mencoba Fedora Sway Atomic. Kami tahu Anda akan menyukainya.",
     "Fedora Atomic Image": "Fedora Atomic Image",
-    "Screenshot of Fedora Sway Atomic": "Tangkapan layar dari Fedora Sway Atomic"
+    "Screenshot of Fedora Sway Atomic": "Tangkapan layar dari Fedora Sway Atomic",
+    "verify_button_download": "Klik tombol verifikasi {verify_button} untuk mengunduh file checksum untuk gambar yang Anda unduh.",
+    "Verify": "Verifikasi",
+    "Select AWS EC2 region": "Pilih wilayah AWS EC2",
+    "Launch instance": "Peluncuran Instance",
+    "Select the Azure region": "Pilih Wilayah Azure",
+    "List Azure region": "Daftar Wilayah Azure",
+    "Show Downloads": "Tampilkan Unduhan",
+    "start_fcos_instances_cloud": "Mulai instance {stream} Fedora CoreOS pada arsitektur {arch} pada platform cloud publik.",
+    "download_fcos_artifacts_baremetal": "Unduh artefak Fedora CoreOS {stream} untuk {arch}.",
+    "Launch on public cloud platforms": "Peluncuran di platform cloud publik",
+    "Start Fedora Cloud instances on public cloud platforms.": "Mulai instans Fedora Cloud di platform cloud publik.",
+    "Show Beta downloads": "Tampilkan Unduhan Beta",
+    "Atomic Desktops for Fedora": "Desktop Atomic untuk Fedora",
+    "List AWS EC2 region": "Daftar Wilayah AWS EC2",
+    "What is Fedora Labs?": "Apa itu Fedora Labs?",
+    "x86_64-based instances": "instans berbasis x86_64"
 }
