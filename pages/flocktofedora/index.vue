@@ -32,7 +32,10 @@ const headerAttributions = await Promise.all(
           {{ $t(data.title) }}
         </h2>
       </template>
-      <h2 class="my-4 text-center font-semibold text-white">
+      <h2
+        class="my-4 text-center font-semibold text-white"
+        v-if="data.description"
+      >
         {{ $t(data.description) }}
       </h2>
     </FpBanner>
