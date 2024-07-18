@@ -410,7 +410,7 @@ const sponsorLevels = [
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
-        <h2 class="mb-4 text-center font-medium text-fp-blue">
+        <h2 class="mb-4 text-center text-5xl font-bold text-fp-blue">
           {{ $t(data.faq.sectionTitle) }}
         </h2>
       </header>
@@ -474,7 +474,7 @@ const sponsorLevels = [
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
-        <h3 class="mb-4 text-center font-medium text-fp-blue">
+        <h3 class="text-4xl mb-4 text-center font-bold text-fp-blue">
           {{ $t(data.sponsoring.sectionTitle) }}
         </h3>
       </header>

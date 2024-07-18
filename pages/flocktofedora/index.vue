@@ -345,7 +345,7 @@ const headerAttributions = await Promise.all(
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
-        <h2 class="mb-4 text-center font-medium text-fp-blue">
+        <h2 class="mb-4 text-center text-5xl font-bold text-fp-blue">
           {{ $t(data.faq.sectionTitle) }}
         </h2>
       </header>
