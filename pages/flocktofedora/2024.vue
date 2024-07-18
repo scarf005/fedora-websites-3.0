@@ -80,24 +80,6 @@ const sponsorLevels = [
         {{ $t(data.description) }}
       </h2>
     </FpBanner>
-    <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
-      <div
-        v-for="card in data.events.content"
-        class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
-      >
-        <div class="text-lg font-semibold leading-none text-fp-blue">
-          <FpImage
-            class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
-            :src="card.image"
-            v-if="card.image"
-          />
-          {{ $t(card.title) }}
-        </div>
-        <p class="text-sm dark:text-slate-300 text-slate-800">
-          {{ $t(card.description) }}
-        </p>
-      </div>
-    </div>
   </FpHero>
 
   <main class="flex flex-col items-center dark:bg-black">
@@ -404,6 +386,41 @@ const sponsorLevels = [
         </section>
       </FpHero>
     </section> -->
+
+    <!-- Social Activities -->
+    <section
+      class="mx-auto w-full py-10 dark:bg-slate-800"
+      v-if="data.social.enabled"
+    >
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:leading-normal lg:text-7xl"
+        >
+          {{ $t(data.social.sectionTitle) }}
+        </h2>
+        <p class="mx-auto max-w-prose text-center">
+          {{ $t(data.social.sectionDescription) }}
+        </p>
+      </header>
+      <div class="mx-auto flex max-w-screen-xl p-12">
+        <div
+          v-for="card in data.social.content"
+          class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
+        >
+          <div class="text-lg font-semibold leading-none text-fp-blue">
+            <FpImage
+              class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
+              :src="card.image"
+              v-if="card.image"
+            />
+            {{ $t(card.title) }}
+          </div>
+          <p class="text-sm dark:text-slate-300 text-slate-800">
+            {{ $t(card.description) }}
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- FAQ -->
     <section class="my-10 w-10/12" v-if="data.faq.enabled">
