@@ -28,29 +28,20 @@ const headerAttributions = await Promise.all(
       :ctas="data.links"
     >
       <template #subtitle>
-        <h2
-          class="mt-16 font-semibold text-fp-blue sm:mt-24"
-          style="text-shadow: 4px 4px 4px black"
-        >
+        <h2 class="mt-16 font-semibold text-fp-blue sm:mt-24">
           {{ $t(data.title) }}
         </h2>
       </template>
-      <h2
-        class="my-4 text-center font-semibold text-white"
-        style="text-shadow: 4px 4px 4px black"
-      >
+      <h2 class="my-4 text-center font-semibold text-white">
         {{ $t(data.description) }}
       </h2>
     </FpBanner>
     <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
       <div
         v-for="card in data.events.content"
-        class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8"
+        class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
       >
-        <div
-          class="text-lg font-semibold leading-none text-fp-blue"
-          style="text-shadow: 1px 2px 4px black"
-        >
+        <div class="text-lg font-semibold leading-none text-fp-blue">
           <FpImage
             class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
             :src="card.image"
@@ -377,7 +368,7 @@ const headerAttributions = await Promise.all(
             {{ $t(data.community.sectionTitle) }}
           </h2>
           <h4
-            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 sm:mx-20"
+            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
           >
             {{ $t(data.community.sectionDescription) }}
           </h4>
@@ -394,26 +385,25 @@ const headerAttributions = await Promise.all(
       </FpHero>
     </section>
 
-    <!-- Our Sponsors -->
+    <!-- Previous Sponsors -->
     <section class="mx-auto w-full py-10 dark:bg-slate-900">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
         {{ $t(data.sponsors.title) }}
       </h2>
-      <p class="mx-auto max-w-lg text-center font-normal text-gray-600">
+      <p
+        class="mx-auto max-w-lg text-center font-normal dark:text-gray-300 text-gray-600"
+      >
         {{ $t(data.sponsors.description) }}
       </p>
 
       <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
         <div
           v-for="card in data.sponsors.content"
-          class="max-w-[17rem] rounded-lg bg-black/70 p-4 ltr:mr-8 rtl:ml-8 mb-4 bg-gray-100 dark:bg-neutral-300"
+          class="max-w-[17rem] rounded-lg p-4 m-4 bg-gray-100 dark:bg-neutral-300"
         >
-          <div
-            class="text-lg font-semibold leading-none text-fp-blue"
-            style="text-shadow: 1px 2px 4px black"
-          >
+          <div class="text-lg font-semibold leading-none text-fp-blue">
             <FpImage
               class="inline mx-auto h-10 w-full object-contain"
               :src="card.image"
