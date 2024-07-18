@@ -72,7 +72,7 @@ const sponsorLevels = [
         </div>
       </template>
       <template #subtitle>
-        <h2 class="mt-16 font-semibold text-fp-blue sm:mt-24">
+        <h2 class="mt-5 font-semibold text-fp-blue sm:mt-24">
           {{ $t(data.title) }}
         </h2>
       </template>
