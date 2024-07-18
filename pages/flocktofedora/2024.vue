@@ -159,16 +159,101 @@ const sponsorLevels = [
       </div>
     </section>
 
-    <!-- TODO: Event Calendar -->
-    <!--
-    <section class="w-10/12 mx-auto my-10">
-      <h2
-        class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
-      >
-        Event Calendar
-      </h2>
+    <!-- CFP -->
+
+    <section class="w-10/12 mx-auto my-10" v-if="data.cfp.enabled">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
+        >
+          {{ $t(data.cfp.sectionTitle) }}
+        </h2>
+      </header>
+
+      <div class="mx-auto max-w-prose text-center">
+        <!-- <div
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      > -->
+        <div class="p-2">
+          <MarkdownDisplay
+            v-if="data.cfp.sectionDescription"
+            :content="data.cfp.sectionDescription"
+          />
+        </div>
+      </div>
     </section>
-    -->
+
+    <!-- Event Schedule -->
+
+    <section class="w-10/12 mx-auto my-10" v-if="data.schedule.enabled">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
+        >
+          {{ $t(data.schedule.sectionTitle) }}
+        </h2>
+      </header>
+
+      <div class="mx-auto max-w-prose text-center">
+        <!-- <div
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      > -->
+        <div class="p-2">
+          <MarkdownDisplay
+            v-if="data.schedule.sectionDescription"
+            :content="data.schedule.sectionDescription"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue -->
+
+    <section class="w-10/12 mx-auto my-10" v-if="data.venue.enabled">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
+        >
+          {{ $t(data.venue.sectionTitle) }}
+        </h2>
+      </header>
+
+      <div class="mx-auto max-w-prose text-center">
+        <!-- <div
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      > -->
+        <div class="p-2">
+          <MarkdownDisplay
+            v-if="data.venue.sectionDescription"
+            :content="data.venue.sectionDescription"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Logistics -->
+
+    <section class="w-10/12 mx-auto my-10" v-if="data.logistics.enabled">
+      <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
+        >
+          {{ $t(data.logistics.sectionTitle) }}
+        </h2>
+      </header>
+
+      <div class="mx-auto max-w-prose text-center">
+        <!-- <div
+        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
+      > -->
+        <div class="p-2">
+          <MarkdownDisplay
+            v-if="data.logistics.sectionDescription"
+            :content="data.logistics.sectionDescription"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- Explore -->
     <!-- <section class="w-full bg-slate-100 pb-10 dark:bg-slate-900" v-if="data.explore.enabled">
