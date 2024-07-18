@@ -126,13 +126,21 @@ const sponsorLevels = [
                 {{ $t(date.description) }}
               </p>
               <div class="flex justify-evenly gap-4">
-                <FpLink
-                  v-for="link in date.link"
-                  :href="link.url"
-                  class="font-bold underline dark:text-black"
-                >
-                  {{ $t(link.text) }}
-                </FpLink>
+                <template v-for="link in date.link">
+                  <FpLink
+                    v-if="date.status != 'elapsed'"
+                    :href="link.url"
+                    class="font-bold dark:text-black underline"
+                  >
+                    {{ $t(link.text) }}
+                  </FpLink>
+                  <a
+                    v-else="date.status != 'elapsed'"
+                    class="text-gray-600 line-through"
+                  >
+                    {{ $t(link.text) }}
+                  </a>
+                </template>
               </div>
             </div>
           </div>
