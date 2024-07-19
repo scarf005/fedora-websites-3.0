@@ -17,10 +17,12 @@ const props = defineProps({
 <template>
   <address>
     <template v-if="name">
-      <FpLink v-if="url" :href="url">
-        {{ name }}
-      </FpLink>
-      <template v-else="url">{{ name }}</template>
+      <strong>
+        <FpLink v-if="url" :href="url" class="underline">
+          {{ name }}
+        </FpLink>
+        <template v-else="url">{{ name }}</template>
+      </strong>
     </template>
     <br />{{ street1 }}
     <template v-if="street2"> <br />{{ street2 }} </template>
