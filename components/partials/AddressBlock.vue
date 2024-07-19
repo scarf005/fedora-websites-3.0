@@ -27,9 +27,9 @@ const props = defineProps({
     <br />{{ street1 }}
     <template v-if="street2"> <br />{{ street2 }} </template>
     <br />{{ city }}, {{ state }} <br />{{ postcode }} <br />{{ country }}
-    <template v-if="phone && phone_e164">
+    <!-- <template v-if="phone && phone_e164">
       <br />Telephone: <FpLink :href="'tel:' + phone_e164">{{ phone }}</FpLink
       ><br />
-    </template>
+    </template> -->
   </address>
 </template>
