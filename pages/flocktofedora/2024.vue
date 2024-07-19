@@ -126,7 +126,9 @@ const sponsorLevels = [
       >
         {{ $t(data.importantDates.title) }}
       </h2>
-      <h4 class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 sm:mx-20">
+      <h4
+        class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
+      >
         {{ $t(data.importantDates.description) }}
       </h4>
       <div
@@ -341,7 +343,7 @@ const sponsorLevels = [
           {{ $t(explore.sectionTitle) }}
         </h2>
         <div
-          class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 xl:gap-20"
+          class="flex flex-wrap justify-between gap-4 text-center text-fp-darkblue-500 dark:text-gray-300 xl:gap-20"
         >
           <FpCard
             v-for="card in explore.content"
@@ -532,7 +534,7 @@ const sponsorLevels = [
             {{ $t(community.sectionTitle) }}
           </h2>
           <h4
-            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 sm:mx-20"
+            class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
           >
             {{ $t(community.sectionDescription) }}
           </h4>
