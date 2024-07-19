@@ -537,10 +537,10 @@ function dateToParts(iso_datetime_str, locale = "en-us") {
           {{ $t(data.social.sectionDescription) }}
         </p>
       </header>
-      <div class="mx-auto flex max-w-screen-xl p-12">
+      <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
         <div
           v-for="activity in data.social.dates"
-          class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
+          class="max-w-[17rem] rounded-lg flex flex-col dark:bg-black/70 bg-white/70 p-4 m-4"
         >
           <!-- <FpImage 
             class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
@@ -562,11 +562,19 @@ function dateToParts(iso_datetime_str, locale = "en-us") {
             </div>
           </div>
           <p
-            class="text-sm dark:text-slate-300 text-slate-800"
+            class="text-sm dark:text-slate-300 text-slate-800 m-2"
             v-if="activity.description"
           >
             {{ $t(activity.description) }}
           </p>
+          <div class="grow"></div>
+          <FpBtn
+            :href="activity.link.url"
+            v-if="activity.link.text != ''"
+            class="mx-auto"
+          >
+            {{ activity.link.text }}
+          </FpBtn>
         </div>
       </div>
     </section>
