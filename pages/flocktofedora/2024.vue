@@ -531,14 +531,36 @@ const sponsorLevels = [
           v-for="card in data.social.content"
           class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
         >
-          <div class="text-lg font-semibold leading-none text-fp-blue">
-            <FpImage
-              class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
-              :src="card.image"
-              v-if="card.image"
-            />
-            {{ $t(card.title) }}
+          <div class="flex mb-2">
+            <div class="text-2xl leading-none dark:text-white text-center">
+              <span class="text-lg">Sat</span><br />
+              Aug<br />
+              5
+            </div>
+            <div class="mx-4">
+              <span class="text-xl font-bold leading-none text-fp-blue">
+                <!-- <FpImage
+                  class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
+                  :src="card.image"
+                  v-if="card.image"
+                /> -->
+                {{ $t(card.title) }}
+              </span>
+              <div class="text-lg font-italic leading-none text-fp-blue">
+                <!-- <FpImage
+                  class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
+                  :src="card.image"
+                  v-if="card.image"
+                /> -->
+                Subtitle
+                <!-- {{ $t(card.title) }} -->
+              </div>
+            </div>
           </div>
+          <p class="text-sm dark:text-slate-300 text-slate-800">
+            <!-- if description-->
+            {{ $t(card.description) }}
+          </p>
           <p class="text-sm dark:text-slate-300 text-slate-800">
             {{ $t(card.description) }}
           </p>
