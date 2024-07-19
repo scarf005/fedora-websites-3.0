@@ -282,6 +282,13 @@ const sponsorLevels = [
             :phone_e164="data.logistics.hotel.contact.phone_e164"
           />
         </div>
+        <div class="my-8" v-if="data.logistics.hotel.booking_url">
+          <FpLink
+            :href="data.logistics.hotel.booking_url"
+            class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
+            >{{ $t("Book Now") }}</FpLink
+          >
+        </div>
       </div>
     </section>
 
