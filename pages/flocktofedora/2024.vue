@@ -232,6 +232,21 @@ const sponsorLevels = [
             :content="data.venue.sectionDescription"
           />
         </div>
+        <div class="p-2">
+          {{ $t("The Venue is located at:") }}
+          <address>
+            <template v-if="data.venue.name">
+              {{ data.venue.name }}<br />
+            </template>
+            {{ data.venue.address.street1 }}<br />
+            <template v-if="data.venue.address.street2">
+              {{ data.venue.address.street2 }}<br />
+            </template>
+            {{ data.venue.address.city }}, {{ data.venue.address.state }}<br />
+            {{ data.venue.address.postcode }}<br />
+            {{ data.venue.address.country }}
+          </address>
+        </div>
       </div>
     </section>
 
