@@ -222,6 +222,7 @@ function dateToParts(iso_datetime_str, locale = "en-us") {
           />
         </div>
       </div>
+      <FlEventSchedule :activities="data.schedule.dates" />
     </section>
 
     <!-- Venue -->
