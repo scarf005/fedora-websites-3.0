@@ -1,5 +1,6 @@
 <script setup>
 import FlDateBox from "~/components/partials/FlDateBox.vue";
+import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
 
 const data = await getCMS("events/flock/2024");
 useContentHead(data);
@@ -48,15 +49,6 @@ const sponsorLevels = [
     size: "h-10",
   },
 ];
-
-function dateToParts(iso_datetime_str, locale = "en-us") {
-  const date = new Date(iso_datetime_str);
-  return {
-    dayofweek: date.toLocaleString(locale, { weekday: "short" }),
-    day: date.getDay(),
-    month: date.toLocaleString(locale, { month: "short" }),
-  };
-}
 </script>
 <template>
   <FpHero
