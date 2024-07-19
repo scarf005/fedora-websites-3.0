@@ -223,6 +223,11 @@ function dateToParts(iso_datetime_str, locale = "en-us") {
         </div>
       </div>
       <FlEventSchedule :activities="data.schedule.dates" />
+      <div class="flex justify-center">
+        <FpBtn :href="link.link.url" v-for="link in data.schedule.links">
+          {{ link.link.text }}
+        </FpBtn>
+      </div>
     </section>
 
     <!-- Venue -->
