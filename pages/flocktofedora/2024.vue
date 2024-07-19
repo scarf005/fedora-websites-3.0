@@ -268,6 +268,20 @@ const sponsorLevels = [
             :content="data.logistics.sectionDescription"
           />
         </div>
+        <div class="p-2">
+          <AddressBlock
+            :name="data.logistics.hotel.name"
+            :street1="data.logistics.hotel.address.street1"
+            :street2="data.logistics.hotel.address.street2"
+            :city="data.logistics.hotel.address.city"
+            :state="data.logistics.hotel.address.state"
+            :postcode="data.logistics.hotel.address.postcode"
+            :country="data.logistics.hotel.address.country"
+            :url="data.logistics.hotel.contact.url"
+            :phone="data.logistics.hotel.contact.phone"
+            :phone_e164="data.logistics.hotel.contact.phone_e164"
+          />
+        </div>
       </div>
     </section>
 
