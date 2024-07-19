@@ -47,6 +47,46 @@ const sponsorLevels = [
   },
 ];
 </script>
+<style>
+.markdown table {
+  margin: 2em auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.markdown thead {
+  background: gray;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.markdown tr {
+  /* min-height: ; */
+  padding: 2px 12px;
+}
+.markdown tbody td {
+  border: 1px solid black;
+
+  max-width: 60px;
+}
+
+.markdown tbody tr:first-child td {
+  font-size: medium;
+  font-weight: 400;
+}
+
+:not(:empty) .markdown tbody tr:first-child td:not(:empty) {
+  background-color: #3c6eb4;
+}
+
+.markdown tbody tr:last-child td {
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 700;
+  /* display: block; */
+  /* margin-top: -.3em; */
+  max-width: 60px;
+}
+</style>
 <template>
   <FpHero
     :background="data.header_images[1].image"
