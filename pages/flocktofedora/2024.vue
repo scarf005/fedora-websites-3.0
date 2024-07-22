@@ -1,6 +1,7 @@
 <script setup>
 import FlDateBox from "~/components/partials/FlDateBox.vue";
 import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
+import FpImage from "~/components/utilities/FpImage.vue";
 
 const data = await getCMS("events/flock/2024");
 useContentHead(data);
@@ -97,16 +98,20 @@ const sponsorLevels = [
       <div
         class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
       >
-        <figure class="mx-auto my-auto hidden lg:block">
-          <img
+        <figure
+          class="mx-auto my-auto hidden lg:block"
+          v-if="data.importantDates.leftImage.path"
+        >
+          <FpImage
             class="z-10 lg:w-60"
-            src="/assets/images/colur-flap.png"
-            :alt="$t('Screenshot')"
+            :src="data.importantDates.leftImage.path"
+            :alt="$t(data.importantDates.leftImage.alt)"
           />
           <figcaption
             class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+            v-if="data.importantDates.leftImage.caption"
           >
-            Colúr.
+            {{ data.importantDates.leftImage.caption }}
           </figcaption>
         </figure>
         <section class="col-span-2">
@@ -153,16 +158,21 @@ const sponsorLevels = [
             {{ $t(data.importantDates.footerText) }}
           </p>
         </section>
-        <figure class="mx-auto my-auto hidden lg:block">
-          <img
-            class="z-10 lg:w-96"
-            src="/assets/images/panda_beefy_badger.png"
-            :alt="$t('Screenshot')"
+
+        <figure
+          class="mx-auto my-auto hidden lg:block"
+          v-if="data.importantDates.rightImage.path"
+        >
+          <FpImage
+            class="z-10 lg:w-60"
+            :src="data.importantDates.rightImage.path"
+            :alt="$t(data.importantDates.rightImage.alt)"
           />
           <figcaption
             class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+            v-if="data.importantDates.rightImage.caption"
           >
-            {{ $t("Panda, Beefy and Badger.") }}
+            {{ data.importantDates.rightImage.caption }}
           </figcaption>
         </figure>
       </div>
