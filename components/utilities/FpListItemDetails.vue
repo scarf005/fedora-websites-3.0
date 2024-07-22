@@ -29,7 +29,7 @@ if (props.description) {
     "
   >
     <details>
-      <summary>
+      <summary class="cursor-pointer">
         <h4
           v-if="title"
           class="inline font-bold text-fp-darkblue-500 dark:text-slate-100"
