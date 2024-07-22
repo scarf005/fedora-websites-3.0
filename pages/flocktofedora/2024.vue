@@ -199,6 +199,14 @@ const sponsorLevels = [
             :content="data.cfp.sectionDescription"
           />
         </div>
+        <div class="my-8" v-if="data.cfp.link.url">
+          <FpLink
+            :href="data.cfp.link.url"
+            class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
+          >
+            {{ $t(data.cfp.link.text) }}
+          </FpLink>
+        </div>
       </div>
     </section>
 
