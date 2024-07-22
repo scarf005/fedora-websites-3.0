@@ -2,7 +2,7 @@
 const props = defineProps({
   dayofweek: String,
   month: String,
-  day: String,
+  day: String | Number,
 });
 </script>
 <template>
