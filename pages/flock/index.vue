@@ -160,18 +160,16 @@ function getAttributions(items) {
             <p class="my-2 w-72">
               {{ $t(data.showcase.content[0].description) }}
             </p>
-            <!-- Content will need to be dynamic-->
-            <div class="mt-2 flex gap-4 text-xl">
+            <div
+              class="mt-2 flex gap-4 text-xl"
+              v-if="data.showcase.content[1].link.url"
+            >
               <FpLink
-                href="#"
+                :href="data.showcase.content[1].link.url"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >{{ $t("Destination") }}</FpLink
               >
-              <FpLink
-                href="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
-                >{{ $t("Learn More") }}</FpLink
-              >
+                {{ $t(data.showcase.content[1].link.text) }}
+              </FpLink>
             </div>
           </article>
         </div>
@@ -203,18 +201,16 @@ function getAttributions(items) {
             <p class="my-2 w-72">
               {{ $t(data.showcase.content[1].description) }}
             </p>
-            <!-- Content will need to be dynamic-->
-            <div class="mt-2 flex gap-4 text-xl">
+            <div
+              class="mt-2 flex gap-4 text-xl"
+              v-if="data.showcase.content[1].link.url"
+            >
               <FpLink
-                href="#"
+                :href="data.showcase.content[1].link.url"
                 class="rounded-md bg-fp-newblue-500 px-3 py-2 font-medium text-white duration-300 ease-in-out hover:bg-fp-blue"
-                >{{ $t("Destination") }}</FpLink
               >
-              <FpLink
-                href="#"
-                class="px-3 py-2 font-medium text-fp-blue underline underline-offset-1 duration-300 ease-in-out hover:text-fp-darkblue-500"
-                >{{ $t("Learn More") }}</FpLink
-              >
+                {{ $t(data.showcase.content[1].link.text) }}
+              </FpLink>
             </div>
           </article>
         </div>
