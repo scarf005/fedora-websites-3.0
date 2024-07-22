@@ -175,17 +175,23 @@ function getAttributions(items) {
         </div>
         <div class="col-start-2 row-span-2 row-start-2 hidden xl:block">
           <FpImage
-            src="public/assets/images/people-presenting.png"
+            :src="data.showcase.images[0].path"
+            v-if="data.showcase.images[0]"
+            :alt="$t(data.showcase.images[0].alt)"
             class="rounded-md object-cover"
           />
+          <p v-else="data.showcase.images[0]">{{ $t("placeholder") }}</p>
         </div>
         <div
           class="xl:col-span-2 xl:col-start-1 xl:row-start-3 xl:place-self-center"
         >
           <FpImage
-            src="public/assets/images/two-people-at-conf.png"
+            :src="data.showcase.images[1].path"
+            :alt="$t(data.showcase.images[1].alt)"
+            v-if="data.showcase.images[1]"
             class="mx-auto rounded-md object-cover xl:w-48"
           />
+          <p v-else="data.showcase.images[1]">{{ $t("placeholder") }}</p>
         </div>
         <div
           class="place-self-center md:col-start-2 lg:row-start-2 xl:col-start-3 xl:row-span-2 xl:justify-self-start"
@@ -220,7 +226,13 @@ function getAttributions(items) {
           <div
             class="mx-auto grid h-96 w-96 place-items-center rounded-md bg-black text-white xl:h-60 xl:w-80"
           >
-            <p>{{ $t("placeholder") }}</p>
+            <FpImage
+              :src="data.showcase.images[2].path"
+              v-if="data.showcase.images[2]"
+              :alt="$t(data.showcase.images[2].alt)"
+              class="mx-auto rounded-md object-cover xl:w-48"
+            />
+            <p v-else="data.showcase.images[2]">{{ $t("placeholder") }}</p>
           </div>
         </div>
 
@@ -228,14 +240,19 @@ function getAttributions(items) {
           class="col-start-1 row-span-2 row-start-1 hidden place-self-end xl:block"
         >
           <FpImage
-            src="public/assets/images/people-posing-destination-bg.png"
+            :src="data.showcase.images[3].path"
+            v-if="data.showcase.images[3]"
+            :alt="$t(data.showcase.images[3].alt)"
             class="h-1/2 w-fit rounded-md object-cover"
           />
+          <p v-else="data.showcase.images[2]">{{ $t("placeholder") }}</p>
         </div>
 
         <div class="col-span-2 hidden md:block xl:order-first xl:col-start-2">
           <FpImage
-            src="public/assets/images/bridge.png"
+            :src="data.showcase.images[4].path"
+            v-if="data.showcase.images[4]"
+            :alt="$t(data.showcase.images[4].alt)"
             class="w-full rounded-md object-cover xl:w-10/12"
           />
         </div>
