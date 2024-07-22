@@ -149,7 +149,10 @@ function getAttributions(items) {
         <div
           class="col-start-1 place-self-center lg:row-start-2 xl:row-start-3"
         >
-          <article class="flex max-w-sm flex-col p-6">
+          <article
+            class="flex max-w-sm flex-col p-6"
+            v-if="data.showcase.content[0]"
+          >
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
               {{ $t(data.showcase.content[0].title) }}
             </h3>
@@ -196,7 +199,10 @@ function getAttributions(items) {
         <div
           class="place-self-center md:col-start-2 lg:row-start-2 xl:col-start-3 xl:row-span-2 xl:justify-self-start"
         >
-          <article class="flex max-w-sm flex-col p-6">
+          <article
+            class="flex max-w-sm flex-col p-6"
+            v-if="data.showcase.content[1]"
+          >
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
               {{ $t(data.showcase.content[1].title) }}
             </h3>
