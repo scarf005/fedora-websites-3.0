@@ -1,4 +1,7 @@
 <script setup>
+import locales from "../../config/locales.json";
+const { locale } = useI18n();
+
 const props = defineProps({
   activities: Array[Object],
 });
@@ -16,6 +19,7 @@ function dateToParts(iso_datetime_str, locale = "en-US") {
     month: date.toLocaleString(locale, { month: "short" }),
   };
 }
+let code = locales.find((l) => l.code == locale._value).iso;
 </script>
 <template>
   <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
@@ -29,7 +33,7 @@ function dateToParts(iso_datetime_str, locale = "en-US") {
             v-if="activity.image.url"
           /> -->
       <div class="flex mb-2">
-        <FlDateBox v-bind="dateToParts(activity.date)" />
+        <FlDateBox v-bind="dateToParts(activity.date, code)" />
         <div class="mx-4">
           <span class="text-xl font-bold leading-none text-fp-blue">
             {{ $t(activity.title) }}
