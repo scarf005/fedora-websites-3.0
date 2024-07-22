@@ -2,11 +2,17 @@
 const props = defineProps({
   activities: Array[Object],
 });
-function dateToParts(iso_datetime_str, locale = "en-us") {
-  const date = new Date(iso_datetime_str);
+function dateToParts(iso_datetime_str, locale = "en-US") {
+  //strip the time (and thus also the UTC-ness. unsure why its coming through as a UTC time but whatever)
+  let datetime_str = iso_datetime_str.split("T")[0];
+  // We need to convert this into something that doesnt look like ISO
+  // or javascript will use an ISO parser, which will assume UTC, even though we explicitly removed it
+  //per https://stackoverflow.com/a/31732581/
+  datetime_str = datetime_str.replace(/-/g, "\/");
+  const date = new Date(datetime_str);
   return {
     dayofweek: date.toLocaleString(locale, { weekday: "short" }),
-    day: date.getDay(),
+    day: date.getDate(),
     month: date.toLocaleString(locale, { month: "short" }),
   };
 }
