@@ -202,6 +202,7 @@ function getAttributions(items) {
           <article
             class="flex max-w-sm flex-col p-6"
             v-if="data.showcase.content[1]"
+            :alt="$t(data.showcase.content[1].alt)"
           >
             <h3 class="my-2 font-sans text-xl font-bold text-fp-blue">
               {{ $t(data.showcase.content[1].title) }}
