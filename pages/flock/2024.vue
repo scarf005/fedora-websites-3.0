@@ -67,6 +67,13 @@ const sponsorLevels = [
     :description="data.description"
     :cta_links="data.links"
   >
+    <template #location>
+      <div
+        class="mx-auto sm:-mt-10 max-w-xs text-right text-lg font-semibold uppercase text-white -mt-8 sm:max-w-lg sm:text-2xl"
+      >
+        {{ $t(data.location) }}
+      </div>
+    </template>
   </FlHero>
 
   <main class="flex flex-col items-center dark:bg-black">

@@ -20,8 +20,9 @@ const props = defineProps({
       background="text-white bg-fp-purple"
       :ctas="cta_links"
     >
-      <!-- TODO: change me to #location -->
-      <template #title> </template>
+      <template #title>
+        <slot name="location"></slot>
+      </template>
       <template #subtitle>
         <h2
           class="mt-5 font-semibold text-white sm:mt-24 text-2xl sm:text-4xl lg:text-6xl"
