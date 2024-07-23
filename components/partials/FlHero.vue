@@ -34,5 +34,6 @@ const props = defineProps({
         {{ $t(description) }}
       </h2>
     </FpBanner>
+    <slot name="herocontent"></slot>
   </FpHero>
 </template>

@@ -9,46 +9,31 @@ function getAttributions(items) {
 }
 </script>
 <template>
-  <FpHero
-    :background="data.header_images[1].image"
-    alignment="bg-top"
-    class="bg-gray-300 bg-blend-multiply dark:bg-gray-500"
+  <FlHero
+    :background_image="data.header_images[1].image"
+    :logo_image="data.header_images[0].image"
+    :title="data.title"
+    :description="data.description"
+    :cta_links="data.links"
   >
-    <FpBanner
-      :logo="data.header_images[0].image"
-      color="text-fp-purple"
-      border="border border-fp-purple"
-      background="text-white bg-fp-purple"
-      :ctas="data.links"
-    >
-      <template #subtitle>
-        <h2 class="mt-5 font-semibold text-fp-blue sm:mt-24">
-          {{ $t(data.title) }}
-        </h2>
-      </template>
-      <h2
-        class="my-4 text-center font-semibold text-white"
-        v-if="data.description"
-      >
-        {{ $t(data.description) }}
-      </h2>
-    </FpBanner>
-    <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
-      <div
-        v-for="card in data.events.content"
-        class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
-      >
-        <div class="text-lg font-semibold leading-none text-fp-blue">
-          <FpImage
-            class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
-            :src="card.image"
-          />
-          {{ $t(card.title) }}
+    <template #herocontent>
+      <div class="mx-auto flex max-w-screen-xl p-12" v-if="data.events.enabled">
+        <div
+          v-for="card in data.events.content"
+          class="max-w-[17rem] rounded-lg dark:bg-black/70 bg-white/70 p-4 m-4"
+        >
+          <div class="text-lg font-semibold leading-none text-fp-blue">
+            <FpImage
+              class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
+              :src="card.image"
+            />
+            {{ $t(card.title) }}
+          </div>
+          <p class="text-sm text-slate-300">{{ $t(card.description) }}</p>
         </div>
-        <p class="text-sm text-slate-300">{{ $t(card.description) }}</p>
       </div>
-    </div>
-  </FpHero>
+    </template>
+  </FlHero>
 
   <main class="flex flex-col items-center dark:bg-black">
     <!-- Explore -->
@@ -375,4 +360,3 @@ function getAttributions(items) {
     </section>
   </main>
 </template>
-
