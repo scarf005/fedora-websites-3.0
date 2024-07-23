@@ -60,7 +60,14 @@ const sponsorLevels = [
 ];
 </script>
 <template>
-  <FlHero> </FlHero>
+  <FlHero
+    :background_image="data.header_images[1].image"
+    :logo_image="data.header_images[0].image"
+    :title="data.title"
+    :description="data.description"
+    :cta_links="data.links"
+  >
+  </FlHero>
 
   <main class="flex flex-col items-center dark:bg-black">
     <!--Important Dates -->
