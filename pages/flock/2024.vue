@@ -614,7 +614,7 @@ const sponsorLevels = [
                       (sponsor.image.endsWith('.svg') ? 'w-[17rem]' : '')
                     "
                     :src="sponsor.image"
-                    :alt="'Logo for ' + sponsor.name"
+                    :alt="sponsor.alt || 'Logo for ' + sponsor.name"
                   />
                 </FpLink>
               </div>
