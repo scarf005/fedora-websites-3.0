@@ -634,12 +634,15 @@ const sponsorLevels = [
         <FpListItem v-for="item in data.sponsoring.content" v-bind="item" />
       </FpList>
 
-      <div class="my-8">
-        <FpLink
-          href="#"
+      <div class="my-8" v-if="data.sponsoring.prospectus.text">
+        <a
+          :href="
+            '/' + data.sponsoring.prospectus.url.replace('public/', '') || '#'
+          "
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
-          >{{ $t("Become a Sponsor") }}</FpLink
         >
+          {{ $t(data.sponsoring.prospectus.text) }}
+        </a>
       </div>
     </section>
 
