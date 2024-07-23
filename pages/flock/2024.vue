@@ -560,7 +560,9 @@ const sponsorLevels = [
         >
           {{ $t(data.social.sectionTitle) }}
         </h2>
-        <p class="mx-auto max-w-prose text-center">
+        <p
+          class="mx-auto max-w-prose text-center text-gray-600 dark:text-gray-300"
+        >
           {{ $t(data.social.sectionDescription) }}
         </p>
       </header>
