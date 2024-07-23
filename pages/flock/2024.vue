@@ -92,7 +92,7 @@ const sponsorLevels = [
 
   <main class="flex flex-col items-center dark:bg-black">
     <!--Important Dates -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900">
+    <section class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200">
       <h2
         class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
@@ -220,7 +220,7 @@ const sponsorLevels = [
 
     <!-- Event Schedule -->
 
-    <section class="w-10/12 mx-auto my-10" v-if="data.schedule.enabled">
+    <section class="w-10/12 mx-auto my-10 w-full" v-if="data.schedule.enabled">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -250,7 +250,10 @@ const sponsorLevels = [
 
     <!-- Venue -->
 
-    <section class="w-10/12 mx-auto my-10" v-if="data.venue.enabled">
+    <section
+      class="w-10/12 mx-auto my-10 w-full bg-slate-100"
+      v-if="data.venue.enabled"
+    >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -286,7 +289,7 @@ const sponsorLevels = [
 
     <!-- Logistics -->
 
-    <section class="w-10/12 mx-auto my-10" v-if="data.logistics.enabled">
+    <section class="w-10/12 mx-auto my-10 w-full" v-if="data.logistics.enabled">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -548,7 +551,7 @@ const sponsorLevels = [
 
     <!-- Social Activities -->
     <section
-      class="mx-auto w-full py-10 dark:bg-slate-800"
+      class="mx-auto w-full py-10 dark:bg-slate-800 bg-slate-50"
       v-if="data.social.enabled"
     >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
@@ -579,7 +582,7 @@ const sponsorLevels = [
     </section>
 
     <!-- Our Sponsors -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900">
+    <section class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
