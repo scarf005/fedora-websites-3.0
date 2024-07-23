@@ -116,7 +116,7 @@ const sponsorLevels = [
             :alt="$t(data.importantDates.leftImage.alt)"
           />
           <figcaption
-            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+            class="mt-2 text-center text-xs dark:text-fp-gray-dark lg:mt-6 text-gray-600"
             v-if="data.importantDates.leftImage.caption"
           >
             {{ data.importantDates.leftImage.caption }}
@@ -162,7 +162,7 @@ const sponsorLevels = [
               </div>
             </div>
           </div>
-          <p class="text-center text-sm text-fp-gray">
+          <p class="text-center text-sm dark:text-fp-gray text-gray-600">
             {{ $t(data.importantDates.footerText) }}
           </p>
         </section>
@@ -177,7 +177,7 @@ const sponsorLevels = [
             :alt="$t(data.importantDates.rightImage.alt)"
           />
           <figcaption
-            class="mt-2 text-center text-xs text-fp-gray-dark lg:mt-6"
+            class="mt-2 text-center text-xs dark:text-fp-gray-dark lg:mt-6 text-gray-600"
             v-if="data.importantDates.rightImage.caption"
           >
             {{ data.importantDates.rightImage.caption }}
