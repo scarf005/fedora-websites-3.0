@@ -28,26 +28,31 @@ const sponsorLevels = [
     id: "platinum",
     text: "Platinum Sponsors",
     size: "h-28",
+    containerWidth: "17rem",
   },
   {
     id: "gold",
     text: "Gold Sponsors",
     size: "h-20",
+    containerWidth: "17rem",
   },
   {
     id: "silver",
     text: "Silver Sponsors",
     size: "h-15",
+    containerWidth: "17rem",
   },
   {
     id: "bronze",
     text: "Bronze Sponsors",
     size: "h-10",
+    containerWidth: "17rem",
   },
   {
     id: "media",
     text: "Media Sponsors",
     size: "h-10",
+    containerWidth: "17rem",
   },
 ];
 </script>
@@ -599,7 +604,8 @@ const sponsorLevels = [
               v-for="sponsor in data.sponsors.content.filter(
                 (s) => s.level === sponsorLevel.id,
               )"
-              class="max-w-[17rem] rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300"
+              class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300"
+              :class="'max-w-[' + sponsorLevel.containerWidth + ']'"
             >
               <div
                 class="text-lg font-semibold leading-none text-fp-blue"
@@ -611,7 +617,9 @@ const sponsorLevels = [
                     :class="
                       sponsorLevel.size +
                       ' ' +
-                      (sponsor.image.endsWith('.svg') ? 'w-[17rem]' : '')
+                      (sponsor.image.endsWith('.svg')
+                        ? 'w-[' + sponsorLevel.containerWidth + ']'
+                        : '')
                     "
                     :src="sponsor.image"
                     :alt="sponsor.alt || 'Logo for ' + sponsor.name"
