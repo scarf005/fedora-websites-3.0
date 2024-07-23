@@ -81,7 +81,7 @@ const sponsorLevels = [
       </template>
       <template #subtitle>
         <h2
-          class="mt-5 font-semibold text-fp-blue sm:mt-24 text-2xl sm:text-4xl lg:text-6xl"
+          class="mt-5 font-semibold text-white sm:mt-24 text-2xl sm:text-4xl lg:text-6xl"
         >
           {{ $t(data.title) }}
         </h2>
