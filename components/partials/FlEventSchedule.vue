@@ -25,7 +25,7 @@ let code = locales.find((l) => l.code == locale._value).iso;
   <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
     <div
       v-for="activity in activities"
-      class="max-w-[17rem] rounded-lg flex flex-col dark:bg-black/70 bg-white/70 p-4 m-4"
+      class="max-w-[17rem] rounded-lg flex flex-col dark:bg-black/70 bg-slate-200/70 p-4 m-4"
     >
       <!-- <FpImage 
             class="inline h-10 max-w-none align-baseline ltr:mr-1 rtl:ml-1"
