@@ -313,12 +313,7 @@ function getAttributions(items) {
       >
         {{ $t(data.sponsors.title) }}
       </h2>
-      <p
-        class="mx-auto max-w-lg text-center font-normal dark:text-gray-300 text-gray-600"
-      >
-        {{ $t(data.sponsors.description) }}
-      </p>
-
+      <FlSectionDescription :content="data.sponsors.description" />
       <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">
         <div
           v-for="card in data.sponsors.content"
