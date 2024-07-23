@@ -664,7 +664,7 @@ const navigation = {
           },
           {
             label: "Flock To Fedora",
-            path: "https://flocktofedora.org/",
+            path: "/flock",
             icon: "fa6-brands:fedora",
             description:
               "The annual contributor conference for Fedora Linux. Flock takes place at the beginning of August.",
