@@ -1,5 +1,4 @@
 <script setup>
-import FlDateBox from "~/components/partials/FlDateBox.vue";
 import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
 import FpImage from "~/components/utilities/FpImage.vue";
 
