@@ -17,6 +17,6 @@ const contentMd = await mdparser(props.content);
     class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
     v-else="isMarkdown"
   >
-    {{ $t(description) }}
+    {{ $t(content) }}
   </p>
 </template>
