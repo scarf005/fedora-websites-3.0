@@ -253,7 +253,7 @@ const sponsorLevels = [
     <!-- Venue -->
 
     <section
-      class="w-10/12 mx-auto my-10 w-full bg-slate-100"
+      class="w-10/12 mx-auto my-10 w-full bg-slate-100 dark:bg-slate-800"
       v-if="data.venue.enabled"
     >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
