@@ -32,20 +32,16 @@ let code = locales.find((l) => l.code == locale._value).iso;
             :src="activity.image.url"
             v-if="activity.image.url"
           /> -->
-      <div class="flex mb-2">
-        <FlDateBox v-bind="dateToParts(activity.date, code)" />
-        <div class="mx-4">
-          <span class="text-xl font-bold leading-none text-fp-blue">
-            {{ $t(activity.title) }}
-          </span>
-          <div
-            class="text-lg font-italic leading-none text-fp-blue"
-            v-if="activity.subtitle"
-          >
-            {{ $t(activity.subtitle) }}
-          </div>
-        </div>
+      <span class="text-[1.35rem] text-center font-bold text-fp-blue">
+        {{ $t(activity.title) }}
+      </span>
+      <div
+        class="text-lg font-italic text-center leading-none text-fp-blue"
+        v-if="activity.subtitle"
+      >
+        {{ $t(activity.subtitle) }}
       </div>
+      <FlDateBox v-bind="dateToParts(activity.date, code)" />
       <p
         class="text-sm dark:text-slate-300 text-slate-800 m-2"
         v-if="activity.description"

@@ -7,9 +7,8 @@ const props = defineProps({
 </script>
 <template>
   <div class="text-xl leading-tight dark:text-white text-center">
-    <span class="text-base leading-tight">{{ dayofweek }}</span
-    ><br />
-    {{ month }}<br />
+    <span class="text-base leading-tight">{{ dayofweek }}</span>
+    {{ month }}
     {{ day }}
   </div>
 </template>
