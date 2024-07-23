@@ -63,7 +63,7 @@ const sponsorLevels = [
   <FpHero
     :background="data.header_images[1].image"
     alignment="bg-top"
-    class="bg-gray-300 bg-blend-multiply dark:bg-gray-500"
+    class="bg-gray-500 bg-blend-multiply"
   >
     <FpBanner
       :logo="data.header_images[0].image"
