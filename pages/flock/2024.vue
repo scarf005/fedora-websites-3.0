@@ -1,6 +1,7 @@
 <script setup>
 import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
 import FlFigure from "~/components/partials/FlFigure.vue";
+import FlSectionDescription from "~/components/partials/FlSectionDescription.vue";
 import FpImage from "~/components/utilities/FpImage.vue";
 
 const data = await getCMS("events/flock/2024");
@@ -169,7 +170,8 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       > -->
         <div class="p-2">
-          <MarkdownDisplay
+          <FlSectionDescription
+            :isMarkdown="true"
             v-if="data.cfp.sectionDescription"
             :content="data.cfp.sectionDescription"
           />
@@ -201,7 +203,8 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       > -->
         <div class="p-2">
-          <MarkdownDisplay
+          <FlSectionDescription
+            :isMarkdown="true"
             v-if="data.schedule.sectionDescription"
             :content="data.schedule.sectionDescription"
           />
@@ -234,7 +237,8 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       > -->
         <div class="p-2">
-          <MarkdownDisplay
+          <FlSectionDescription
+            :isMarkdown="true"
             v-if="data.venue.sectionDescription"
             :content="data.venue.sectionDescription"
           />
@@ -270,7 +274,8 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       > -->
         <div class="p-2">
-          <MarkdownDisplay
+          <FlSectionDescription
+            :isMarkdown="true"
             v-if="data.logistics.sectionDescription"
             :content="data.logistics.sectionDescription"
           />
@@ -557,12 +562,8 @@ const sponsorLevels = [
       >
         {{ $t(data.sponsors.title) }}
       </h2>
-      <p
-        class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
-      >
-        {{ $t(data.sponsors.description) }}
-      </p>
-
+      <!-- TODO: separate out into a new component -->
+      <FlSectionDescription :content="data.sponsors.description" />
       <template v-for="sponsorLevel in sponsorLevels">
         <template
           v-if="
@@ -621,7 +622,8 @@ const sponsorLevels = [
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
       >
         <div class="p-2">
-          <MarkdownDisplay
+          <FlSectionDescription
+            :isMarkdown="true"
             v-if="data.sponsoring.sectionDescription"
             :content="data.sponsoring.sectionDescription"
           />
