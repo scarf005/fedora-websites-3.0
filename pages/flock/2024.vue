@@ -1,5 +1,6 @@
 <script setup>
 import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
+import FlFigure from "~/components/partials/FlFigure.vue";
 import FpImage from "~/components/utilities/FpImage.vue";
 
 const data = await getCMS("events/flock/2024");
@@ -91,22 +92,13 @@ const sponsorLevels = [
       <div
         class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
       >
-        <figure
-          class="mx-auto my-auto hidden lg:block"
+        <FlFigure
           v-if="data.importantDates.leftImage.path"
-        >
-          <FpImage
-            class="z-10 lg:w-60"
-            :src="data.importantDates.leftImage.path"
-            :alt="$t(data.importantDates.leftImage.alt)"
-          />
-          <figcaption
-            class="mt-2 text-center text-xs dark:text-fp-gray-dark lg:mt-6 text-gray-600"
-            v-if="data.importantDates.leftImage.caption"
-          >
-            {{ data.importantDates.leftImage.caption }}
-          </figcaption>
-        </figure>
+          :path="data.importantDates.leftImage.path"
+          :alt="data.importantDates.leftImage.alt"
+          :caption="data.importantDates.leftImage.caption"
+        />
+
         <section class="col-span-2">
           <div
             v-for="date in data.importantDates.content"
@@ -152,22 +144,12 @@ const sponsorLevels = [
           </p>
         </section>
 
-        <figure
-          class="mx-auto my-auto hidden lg:block"
+        <FlFigure
           v-if="data.importantDates.rightImage.path"
-        >
-          <FpImage
-            class="z-10 lg:w-60"
-            :src="data.importantDates.rightImage.path"
-            :alt="$t(data.importantDates.rightImage.alt)"
-          />
-          <figcaption
-            class="mt-2 text-center text-xs dark:text-fp-gray-dark lg:mt-6 text-gray-600"
-            v-if="data.importantDates.rightImage.caption"
-          >
-            {{ data.importantDates.rightImage.caption }}
-          </figcaption>
-        </figure>
+          :path="data.importantDates.rightImage.path"
+          :alt="data.importantDates.rightImage.alt"
+          :caption="data.importantDates.rightImage.caption"
+        />
       </div>
     </section>
 
