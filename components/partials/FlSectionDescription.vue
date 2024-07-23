@@ -1,7 +1,12 @@
 <script setup>
 const props = defineProps({
-  content: String,
-  isMarkdown: Boolean,
+  content: {
+    type: String,
+  },
+  isMarkdown: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const contentMd = await mdparser(props.content);
