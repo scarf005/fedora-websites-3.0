@@ -72,48 +72,6 @@ function getAttributions(items) {
       </div>
     </section>
 
-    <!-- Watch -->
-    <section
-      class="w-full bg-slate-100 pb-10 dark:bg-slate-900"
-      v-if="data.watch.enabled"
-    >
-      <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
-        <h2
-          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
-        >
-          {{ $t(data.watch.sectionTitle) }}
-        </h2>
-
-        <FpCard
-          class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
-          variant="wide"
-        >
-          <!-- TODO: allow multiple videos/channels/previews/playlists to be here-->
-
-          <div class="flex flex-wrap justify-between gap-8">
-            <FpCardImage
-              slot="prepend"
-              class="flex-grow basis-24 lg:max-w-prose"
-              src="public/assets/images/flock_youtube.png"
-            />
-            <div class="my-auto">
-              <FpCardTitle :title="data.watch.content[0].title" />
-              <p
-                class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
-              >
-                {{ $t(data.watch.content[0].description) }}
-              </p>
-              <FpLink
-                :href="data.watch.content[0].image"
-                class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
-                >{{ $t("Visit Fedora Youtube") }}&nbsp;
-              </FpLink>
-            </div>
-          </div>
-        </FpCard>
-      </div>
-    </section>
-
     <section
       class="mx-auto w-full py-10 dark:bg-slate-800"
       v-if="data.showcase.enabled"
@@ -255,6 +213,48 @@ function getAttributions(items) {
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
           >{{ $t("Registration") }}</FpLink
         >
+      </div>
+    </section>
+
+    <!-- Watch -->
+    <section
+      class="w-full bg-slate-100 pb-10 dark:bg-slate-900"
+      v-if="data.watch.enabled"
+    >
+      <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
+        <h2
+          class="mx-auto mb-4 max-w-screen-md bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl md:mb-12 lg:text-7xl"
+        >
+          {{ $t(data.watch.sectionTitle) }}
+        </h2>
+
+        <FpCard
+          class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
+          variant="wide"
+        >
+          <!-- TODO: allow multiple videos/channels/previews/playlists to be here-->
+
+          <div class="flex flex-wrap justify-between gap-8">
+            <FpCardImage
+              slot="prepend"
+              class="flex-grow basis-24 lg:max-w-prose"
+              src="public/assets/images/flock_youtube.png"
+            />
+            <div class="my-auto">
+              <FpCardTitle :title="data.watch.content[0].title" />
+              <p
+                class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
+              >
+                {{ $t(data.watch.content[0].description) }}
+              </p>
+              <FpLink
+                :href="data.watch.content[0].image"
+                class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
+                >{{ $t("Visit Fedora Youtube") }}&nbsp;
+              </FpLink>
+            </div>
+          </div>
+        </FpCard>
       </div>
     </section>
 
