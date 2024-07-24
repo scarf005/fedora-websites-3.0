@@ -33,7 +33,7 @@ let code = locales.find((l) => l.code == locale._value).iso;
             v-if="activity.image.url"
           /> -->
       <span
-        class="text-[1.35rem] text-center font-bold text-fp-blue dark: text-fp-newblue"
+        class="text-[1.35rem] text-center font-bold text-fp-blue dark:text-fp-newblue"
       >
         {{ $t(activity.title) }}
       </span>
