@@ -228,33 +228,33 @@ function getAttributions(items) {
           {{ $t(data.watch.sectionTitle) }}
         </h2>
 
-        <FpCard
-          class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
-          variant="wide"
-        >
-          <!-- TODO: allow multiple videos/channels/previews/playlists to be here-->
-
-          <div class="flex flex-wrap justify-between gap-8">
-            <FpCardImage
-              slot="prepend"
-              class="flex-grow basis-24 lg:max-w-prose"
-              src="public/assets/images/flock_youtube.png"
-            />
-            <div class="my-auto">
-              <FpCardTitle :title="data.watch.content[0].title" />
-              <p
-                class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
-              >
-                {{ $t(data.watch.content[0].description) }}
-              </p>
-              <FpLink
-                :href="data.watch.content[0].image"
-                class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
-                >{{ $t("Visit Fedora Youtube") }}&nbsp;
-              </FpLink>
+        <template v-for="channel in data.watch.content">
+          <FpCard
+            class="mt-8 rounded-lg bg-white p-8 dark:bg-slate-800"
+            variant="wide"
+          >
+            <div class="flex flex-wrap justify-between gap-4">
+              <FpCardImage
+                slot="prepend"
+                class="flex-grow basis-24 lg:max-w-prose"
+                :src="channel.image.path"
+              />
+              <div class="my-auto">
+                <FpCardTitle :title="channel.title" />
+                <p
+                  class="text-fp-gray-darkest dark:text-slate-200 2xl:max-w-prose"
+                >
+                  {{ $t(channel.description) }}
+                </p>
+                <FpLink
+                  :href="channel.link.url"
+                  class="text-fp-blue ltr:after:content-['→'] rtl:after:content-['←'] dark:text-fp-newblue-500"
+                  >{{ $t(channel.link.text) }}&nbsp;
+                </FpLink>
+              </div>
             </div>
-          </div>
-        </FpCard>
+          </FpCard>
+        </template>
       </div>
     </section>
 
