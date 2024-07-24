@@ -531,7 +531,7 @@ const sponsorLevels = [
         >
           {{ $t(data.social.sectionTitle) }}
         </h2>
-        <FlEventSchedule
+        <FlSectionDescription
           :content="data.social.sectionDescription"
           v-if="data.social.sectionDescription"
         />
