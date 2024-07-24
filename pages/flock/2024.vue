@@ -547,6 +547,10 @@ const sponsorLevels = [
         <h2 class="mb-4 text-center text-5xl font-bold text-fp-blue">
           {{ $t(data.faq.sectionTitle) }}
         </h2>
+        <FlSectionDescription
+          :content="data.faq.sectionDescription"
+          v-if="data.faq.sectionDescription"
+        />
       </header>
       <FpList columns="sm:grid-cols-1" :disableDots="true">
         <FpListItemDetails v-for="item in data.faq.content" v-bind="item" />
