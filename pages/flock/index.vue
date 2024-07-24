@@ -72,6 +72,7 @@ function getAttributions(items) {
       </div>
     </section>
 
+    <!-- Showcase Section -->
     <section
       class="mx-auto w-full py-10 dark:bg-slate-800"
       v-if="data.showcase.enabled"
