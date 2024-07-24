@@ -44,6 +44,7 @@ let code = locales.find((l) => l.code == locale._value).iso;
         {{ $t(activity.subtitle) }}
       </div>
       <FlDateBox v-bind="dateToParts(activity.date, code)" />
+      <!-- class="mx-auto max-w-prose text-center text-gray-600 dark:text-gray-300" -->
       <p
         class="text-sm dark:text-slate-300 text-slate-800 m-2"
         v-if="activity.description"
