@@ -204,7 +204,6 @@ const sponsorLevels = [
       > -->
         <div class="p-2">
           <FlSectionDescription
-            :isMarkdown="true"
             v-if="data.schedule.sectionDescription"
             :content="data.schedule.sectionDescription"
           />
