@@ -15,9 +15,9 @@ const props = defineProps({
   >
     <FpBanner
       :logo="logo_image"
-      color="text-fp-purple"
+      color="text-fp-purple-700"
       border="border border-fp-purple"
-      background="text-white bg-fp-purple"
+      background="text-white bg-fp-purple-700 border border-fp-purple"
       :ctas="cta_links"
     >
       <template #title>
