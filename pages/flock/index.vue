@@ -207,13 +207,13 @@ function getAttributions(items) {
           />
         </div>
       </div>
-      <div class="my-8">
+      <!-- <div class="my-8">
         <FpLink
           href="#"
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
           >{{ $t("Registration") }}</FpLink
         >
-      </div>
+      </div> -->
     </section>
 
     <!-- Watch -->
