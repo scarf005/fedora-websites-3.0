@@ -2,6 +2,7 @@
 const props = defineProps({
   background_image: String,
   logo_image: String,
+  logo_alt: String,
   cta_links: Array,
   title: String,
   description: String,
@@ -19,6 +20,7 @@ const props = defineProps({
       border="border border-fp-purple"
       background="text-white bg-fp-purple-700 border border-fp-purple"
       :ctas="cta_links"
+      :alt="logo_alt"
     >
       <template #title>
         <slot name="location"></slot>
