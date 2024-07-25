@@ -1045,5 +1045,8 @@
     "Details": "상세정보",
     "Back to Top": "맨 위로",
     "Verify": "확인",
-    "pick_your_architecture": "자신의 {architecture}를 선택하세요"
+    "pick_your_architecture": "자신의 {architecture}를 선택하세요",
+    "AlmaLinux": "알마리눅스(AlmaLinux)",
+    "OpenSource.com": "OpenSource.com",
+    "OpenSuse": "오픈수세"
 }
