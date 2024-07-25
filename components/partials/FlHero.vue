@@ -7,6 +7,13 @@ const props = defineProps({
   title: String,
   description: String,
 });
+
+useHead({
+  link: {
+    rel: "preload",
+    src: props.background_image,
+  },
+});
 </script>
 <template>
   <FpHero
