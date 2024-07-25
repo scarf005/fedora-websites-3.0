@@ -639,7 +639,9 @@ const sponsorLevels = [
       <div class="my-8" v-if="data.sponsoring.prospectus.text">
         <a
           :href="
-            '/' + data.sponsoring.prospectus.url.replace('public/', '') || '#'
+            $config.app.baseURL.replace(new RegExp('/$'), '') +
+            '/' +
+            data.sponsoring.prospectus.url.replace('public/', '')
           "
           class="mx-auto block max-w-fit rounded-md bg-fp-purple px-8 py-3 text-2xl font-medium text-white"
         >
