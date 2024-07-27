@@ -259,20 +259,6 @@ function getAttributions(items) {
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="my-10 w-10/12" v-if="data.faq.enabled">
-      <header
-        class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
-      >
-        <h2 class="mb-4 text-center text-5xl font-bold text-fp-blue">
-          {{ $t(data.faq.sectionTitle) }}
-        </h2>
-      </header>
-      <FpList columns="sm:grid-cols-1" :disableDots="true">
-        <FpListItemDetails v-for="item in data.faq.content" v-bind="item" />
-      </FpList>
-    </section>
-
     <!-- Community Section -->
     <section
       class="max-w-full py-10 dark:bg-slate-900"
@@ -305,6 +291,20 @@ function getAttributions(items) {
           </FpList>
         </section>
       </FpHero>
+    </section>
+
+    <!-- FAQ -->
+    <section class="my-10 w-10/12" v-if="data.faq.enabled">
+      <header
+        class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
+      >
+        <h2 class="mb-4 text-center text-5xl font-bold text-fp-blue">
+          {{ $t(data.faq.sectionTitle) }}
+        </h2>
+      </header>
+      <FpList columns="sm:grid-cols-1" :disableDots="true">
+        <FpListItemDetails v-for="item in data.faq.content" v-bind="item" />
+      </FpList>
     </section>
 
     <!-- Previous Sponsors -->
