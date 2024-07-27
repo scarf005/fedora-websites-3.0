@@ -30,12 +30,12 @@ if (props.description) {
   >
     <details>
       <summary class="cursor-pointer">
-        <h4
+        <div
           v-if="title"
-          class="inline font-bold text-fp-darkblue-500 dark:text-slate-100"
+          class="inline font-bold text-fp-darkblue-500 dark:text-slate-100 text-2xl"
         >
           {{ $t(props.title) }}
-        </h4>
+        </div>
       </summary>
       <ContentRendererMarkdown
         v-if="descriptionMd"

@@ -85,11 +85,11 @@ const sponsorLevels = [
       >
         {{ $t(data.importantDates.title) }}
       </h2>
-      <h4
+      <div
         class="mx-0 mb-16 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
       >
         {{ $t(data.importantDates.description) }}
-      </h4>
+      </div>
       <div
         class="container my-12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-4"
       >
@@ -505,11 +505,11 @@ const sponsorLevels = [
           >
             {{ $t(community.sectionTitle) }}
           </h2>
-          <h4
+          <div
             class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
           >
             {{ $t(community.sectionDescription) }}
-          </h4>
+          </div>
 
           <FpList columns="sm:grid-cols-2">
             <FpListItem

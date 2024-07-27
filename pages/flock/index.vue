@@ -275,11 +275,11 @@ function getAttributions(items) {
           >
             {{ $t(data.community.sectionTitle) }}
           </h2>
-          <h4
+          <div
             class="mx-0 mb-20 text-center text-lg text-fp-darkblue-500 dark:text-gray-300 sm:mx-20"
           >
             {{ $t(data.community.sectionDescription) }}
-          </h4>
+          </div>
 
           <FpList columns="sm:grid-cols-2">
             <FpListItem
