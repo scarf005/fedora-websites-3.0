@@ -222,7 +222,7 @@ const sponsorLevels = [
 
     <!-- Venue -->
 
-    <section
+    <!-- <section
       class="w-10/12 mx-auto my-10 w-full bg-slate-100 dark:bg-slate-800"
       v-if="data.venue.enabled"
     >
@@ -237,7 +237,7 @@ const sponsorLevels = [
       <div class="mx-auto max-w-prose text-center">
         <!-- <div
         class="mx-auto max-w-lg text-center font-normal text-gray-600 dark:text-gray-300"
-      > -->
+      > --
         <div class="p-2">
           <FlSectionDescription
             :isMarkdown="true"
@@ -258,7 +258,7 @@ const sponsorLevels = [
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Logistics -->
 
