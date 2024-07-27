@@ -63,6 +63,7 @@ function getAttributions(items) {
             <template #footer>
               <FpLink
                 :href="card.link.url"
+                v-if="card.link.url"
                 class="underline underline-offset-1"
                 >{{ $t(card.link.text) }}</FpLink
               >
