@@ -140,7 +140,10 @@ const sponsorLevels = [
               </div>
             </div>
           </div>
-          <p class="text-center text-sm dark:text-fp-gray text-gray-600">
+          <p
+            class="text-center text-sm dark:text-fp-gray text-gray-600"
+            v-if="data.importantDates.footerText"
+          >
             {{ $t(data.importantDates.footerText) }}
           </p>
         </section>
