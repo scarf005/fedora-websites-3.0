@@ -38,6 +38,7 @@ function getAttributions(items) {
     <section
       class="w-full bg-slate-100 pb-10 dark:bg-slate-900"
       v-if="data.explore.enabled"
+      id="explore"
     >
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
@@ -75,6 +76,7 @@ function getAttributions(items) {
     <section
       class="mx-auto w-full py-10 dark:bg-slate-800"
       v-if="data.showcase.enabled"
+      id="showcase"
     >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
@@ -220,6 +222,7 @@ function getAttributions(items) {
     <section
       class="w-full bg-slate-100 pb-10 dark:bg-slate-900"
       v-if="data.watch.enabled"
+      id="watch"
     >
       <div class="my-20 mx-auto w-10/12 max-w-screen-xl">
         <h2
@@ -262,6 +265,7 @@ function getAttributions(items) {
     <section
       class="max-w-full py-10 dark:bg-slate-900"
       v-if="data.community.enabled"
+      id="community"
     >
       <FpHero
         :background="data.community.image"
@@ -293,7 +297,7 @@ function getAttributions(items) {
     </section>
 
     <!-- FAQ -->
-    <section class="my-10 w-10/12" v-if="data.faq.enabled">
+    <section class="my-10 w-10/12" v-if="data.faq.enabled" id="faq">
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
@@ -307,7 +311,7 @@ function getAttributions(items) {
     </section>
 
     <!-- Previous Sponsors -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900">
+    <section class="mx-auto w-full py-10 dark:bg-slate-900" id="sponsors">
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >

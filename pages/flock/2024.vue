@@ -74,7 +74,10 @@ const sponsorLevels = [
 
   <main class="flex flex-col items-center dark:bg-black">
     <!--Important Dates -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200">
+    <section
+      class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200"
+      id="dates"
+    >
       <h2
         class="mx-auto mb-8 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
@@ -154,7 +157,7 @@ const sponsorLevels = [
 
     <!-- CFP -->
 
-    <section class="w-10/12 mx-auto my-10" v-if="data.cfp.enabled">
+    <section class="w-10/12 mx-auto my-10" v-if="data.cfp.enabled" id="cfp">
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -187,7 +190,11 @@ const sponsorLevels = [
 
     <!-- Event Schedule -->
 
-    <section class="w-10/12 mx-auto my-10 w-full" v-if="data.schedule.enabled">
+    <section
+      class="w-10/12 mx-auto my-10 w-full"
+      v-if="data.schedule.enabled"
+      id="schedule"
+    >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -257,7 +264,11 @@ const sponsorLevels = [
 
     <!-- Logistics -->
 
-    <section class="w-10/12 mx-auto my-10 w-full" v-if="data.logistics.enabled">
+    <section
+      class="w-10/12 mx-auto my-10 w-full"
+      v-if="data.logistics.enabled"
+      id="logistics"
+    >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
           class="text-5xl text-center mb-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fp-green to-fp-newblue-500"
@@ -522,6 +533,7 @@ const sponsorLevels = [
     <section
       class="mx-auto w-full py-10 dark:bg-slate-800 bg-slate-50"
       v-if="data.social.enabled"
+      id="social-activities"
     >
       <header class="my-10 mx-auto w-10/12 max-w-screen-xl">
         <h2
@@ -538,7 +550,7 @@ const sponsorLevels = [
     </section>
 
     <!-- FAQ -->
-    <section class="my-10 w-10/12" v-if="data.faq.enabled">
+    <section class="my-10 w-10/12" v-if="data.faq.enabled" id="faq">
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
@@ -556,7 +568,10 @@ const sponsorLevels = [
     </section>
 
     <!-- Our Sponsors -->
-    <section class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200">
+    <section
+      class="mx-auto w-full py-10 dark:bg-slate-900 bg-slate-200"
+      id="sponsors"
+    >
       <h2
         class="mx-auto mb-12 max-w-max bg-gradient-to-r from-fp-purple via-fp-newblue-500 to-fp-purple bg-clip-text text-center text-3xl font-bold text-transparent sm:text-5xl lg:text-7xl"
       >
@@ -601,7 +616,11 @@ const sponsorLevels = [
     </section>
 
     <!-- Benefits of Sponsoring -->
-    <section class="my-10 w-10/12" v-if="data.sponsoring.enabled">
+    <section
+      class="my-10 w-10/12"
+      v-if="data.sponsoring.enabled"
+      id="sponsoring"
+    >
       <header
         class="mx-auto max-w-screen-xl text-center md:w-11/12 md:text-left"
       >
