@@ -585,7 +585,7 @@ const sponsorLevels = [
               v-for="sponsor in data.sponsors.content.filter(
                 (s) => s.level === sponsorLevel.id,
               )"
-              class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300"
+              class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300 flex flex-col justify-center"
               :class="sponsorLevel.containerStyle"
             >
               <div
