@@ -50,7 +50,6 @@
     "Fedora Discussion": "Fedora 讨论",
     "Fedora Chat": "Fedora Chat",
     "Badges": "徽章",
-    "Accomodations": "住宿安排",
     "Deadline:": "截止日期：",
     "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity": "通过在您自己的计算机上计算镜像的校验和并将其与原始校验和进行比较，您可以验证镜像是否被篡改或损坏。镜像还使用 Fedora 密钥进行 gpg 签名以证明其完整性",
     "verify_button_instruction": "单击验证按钮 {verify_button} 获取为您的下载量身定制的说明。",
