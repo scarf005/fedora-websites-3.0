@@ -43,7 +43,7 @@ const sponsorLevels = [
   {
     id: "silver",
     text: "Silver Sponsors",
-    size: "h-15",
+    size: "h-16",
     containerStyle: "w-[16rem]",
   },
   {
