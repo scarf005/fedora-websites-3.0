@@ -55,7 +55,7 @@ function getAttributions(items) {
             :title="card.title"
             :description="card.description"
             :variants="['event']"
-            class="h-80 grow basis-64"
+            class="grow basis-64"
           >
             <template #prepend>
               <FpCardImage slot="prepend" :src="card.image" />
