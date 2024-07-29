@@ -1,9 +1,4 @@
 <script setup>
-import FlEventSchedule from "~/components/partials/FlEventSchedule.vue";
-import FlFigure from "~/components/partials/FlFigure.vue";
-import FlSectionDescription from "~/components/partials/FlSectionDescription.vue";
-import FpImage from "~/components/utilities/FpImage.vue";
-
 const data = await getCMS("events/flock/2024");
 useContentHead(data);
 

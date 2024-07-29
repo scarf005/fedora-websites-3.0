@@ -1,6 +1,4 @@
 <script setup>
-import FpListItemDetails from "~/components/utilities/FpListItemDetails.vue";
-
 const data = await getCMS("events/flock");
 useContentHead(data);
 
