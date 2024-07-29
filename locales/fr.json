@@ -29,7 +29,6 @@
     "View Projects": "Voir les projets",
     "The location of Flock changes each year between Europe and North America. In 2020 Fedorans went virtual with Nest, now we offer a hybrid version of Flock to make it more accessible to our community.": "Flock a lieu en Europe et en Amérique du Nord, alternant chaque année. En 2020, les Fedorans se sont réunis virtuellement à l'occasion de Nest, et depuis lors, nous proposons une version hybride de Flock pour rendre l'événement plus accessible à notre communauté.",
     "Thank you to our sponsors, supporting this event is one of the ways that they contribute to open source.": "Merci à nos parrains ! En soutenant cet événement, ils contribuent à soutenir le monde de l'open source.",
-    "Spotlight": "Mise en vedette",
     "Sponsors are advertised in several places at Flock. We also post about sponsors on social media. Your brand will be distributed globally in our swag bag.": "Les parrains sont mis en avant à Flock à plusieurs endroits. Nous publions également des informations sur les parrains sur les réseaux sociaux. Votre marque sera distribuée dans le monde entier dans notre sac de goodies.",
     "Sponsors": "Parrains",
     "Social Events": "Événements sociaux",
@@ -48,10 +47,8 @@
     "Code of Conduct": "Code de conduite",
     "Casual, facilitated, and interactive events for meeting and socializing with Fedorans.": "Des événements décontractés, animés et interactifs pour rencontrer et socialiser avec d'autres Fedorans.",
     "Brand Exposure": "Exposition de marque",
-    "Booths": "Stands",
     "Become a Sponsor": "Parrainez le Fedora Project",
     "Benefits of Sponsoring Flock": "Les avantages de parrainer Flock",
-    "All sponsor booths include a video, customizable experience, chat, and social media engagement. Click below to learn more.": "Tous les stands de parrain incluent une vidéo, une expérience personnalisable, un chat et des interactions sur les réseaux sociaux. Cliquez ci-dessous pour en savoir plus.",
     "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "Vos contributions amicales et utiles à ces canaux de communication seraient grandement appréciées",
     "You can chat with the Fedora Cloud Working Group via Matrix: #cloud:fedoraproject.org.": "Vous pouvez discuter avec le Groupe de travail Fedora Cloud via Matrix : #cloud:fedoraproject.org.",
     "Worldwide & Local Fedora Meetups": "Rencontres Fedora mondiales et locales",
@@ -1251,6 +1248,5 @@
     "View the Prospectus": "Voir la brochure",
     "Flock 2023 was held in Cork, Ireland. Check out the recordings from the event in the playlist below!": "Flock 2023 a eu lieu à Cork, en Irlande. Retrouvez les enregistrements de l'événement dans la playlist ci-dessous.",
     "The thumbnail for the Flock 2023 playlist with the Fedora mascot Colur in the corner playing a hockey-like game. The Flock logo is in the center with a cork, ireland banner as well as the logos of the main sponsirs and social media information such as #flocktofedora #flockireland fosstodon.org/fedora #flock:fedoraproject.org flock2023.sched.org and flocktofedora.org": "La miniature de la playlist Flock 2023 avec dans un coin de l'image, Colur, une des mascottes de Fedora, jouant à un jeu ressemblant au hockey. Le logo Flock est au centre de l'image, avec une bannière représentant Cork, en Irlande, ainsi que les logos des sponsors principaux et des informations sur les réseaux sociaux telles que #flocktofedora #flockireland fosstodon.org/fedora #flock:fedoraproject.org flock2023.sched.org et flocktofedora.org",
-    "View the Playlist": "Voir la playlist",
-    "Our tiered sponsorship levels will all give you great visibility at Flock. Your booth will be showcased on the Expo page to maximize engagement.": "Quel que soit le niveau de soutien choisi, vous bénéficierez à Flock d'une excellente visibilité. Votre stand sera mis en avant sur la page de l'exposition pour maximiser l'engagement."
+    "View the Playlist": "Voir la playlist"
 }
