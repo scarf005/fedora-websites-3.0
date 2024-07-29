@@ -470,7 +470,7 @@
     "View Projects": "Zobacz projekty",
     "Register to attend": "Zarejestruj się, aby wziąć udział",
     "Our Sponsors": "Nasi sponsorzy",
-    "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "Nowy użytkownik Fedory? Sprawdź nasze **[forum społeczności](https://discussion.fedoraproject.org/c/ask)**, aby uzyskać wsparcie i pomoc w zakresie często zadawanych pytań.",
+    "New to Fedora? Check our **[community forum](https://discussion.fedoraproject.org/c/ask)** for support and help with frequently asked questions.": "Jesteś nowym użytkownikiem Fedory? Sprawdź nasze **[forum społeczności](https://discussion.fedoraproject.org/c/ask)**, aby uzyskać wsparcie i pomoc w zakresie często zadawanych pytań.",
     "Important Dates": "Ważne daty",
     "Looking for a date that is not listed? Click here for help.": "Szukasz daty, której nie ma na liście? Kliknij tutaj, aby uzyskać pomoc.",
     "Explore the latest in Open Source": "Poznaj najnowsze rozwiązania Open Source",
@@ -1177,5 +1177,14 @@
     "start_fcos_instances_cloud": "Uruchom instancje Fedory CoreOS {stream} na architekturze {arch} na platformach chmury publicznej.",
     "download_fcos_images_cloud": "Pobierz obrazy Fedory CoreOS {stream} dla {arch} dla operatorów chmury.",
     "Image family:": "Rodzina obrazów:",
-    "Read": "Pokaż"
+    "Read": "Pokaż",
+    "FAQs": "FAQs - Często zadawane pytania.",
+    "Fedora Project YouTube Channel": "Oficjalny kanał w Youtubie Fedory",
+    "Lenovo": "Lenovo",
+    "Matrix": "Macierz",
+    "OpenSource.com": "OpenSource.com",
+    "OpenSuse": "OpenSuse",
+    "Previous Sponsors": "Poprzedni Sponsorzy",
+    "Previous Year's Archive": "Archiwa z poprzedniego roku",
+    "Rocky Linux": "Rocky Linux"
 }
