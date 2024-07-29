@@ -32,31 +32,31 @@ const sponsorLevels = [
     id: "platinum",
     text: "Platinum Sponsors",
     imageStyle: "h-28",
-    containerStyle: "w-[18rem]",
+    containerStyle: "w-[18rem] h-36",
   },
   {
     id: "gold",
     text: "Gold Sponsors",
     imageStyle: "h-20",
-    containerStyle: "w-[17rem]",
+    containerStyle: "w-[17rem] h-28",
   },
   {
     id: "silver",
     text: "Silver Sponsors",
     imageStyle: "h-16",
-    containerStyle: "w-[16rem]",
+    containerStyle: "w-[16rem] h-24",
   },
   {
     id: "bronze",
     text: "Bronze Sponsors",
     imageStyle: "h-10",
-    containerStyle: "w-[15rem]",
+    containerStyle: "w-[15rem] h-20",
   },
   {
     id: "media",
     text: "Media Sponsors",
     imageStyle: "h-10",
-    containerStyle: "w-[15rem]",
+    containerStyle: "w-[15rem] h-20",
   },
 ];
 </script>
