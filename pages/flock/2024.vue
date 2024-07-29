@@ -31,31 +31,31 @@ const sponsorLevels = [
   {
     id: "platinum",
     text: "Platinum Sponsors",
-    size: "h-28",
+    imageStyle: "h-28",
     containerStyle: "w-[18rem]",
   },
   {
     id: "gold",
     text: "Gold Sponsors",
-    size: "h-20",
+    imageStyle: "h-20",
     containerStyle: "w-[17rem]",
   },
   {
     id: "silver",
     text: "Silver Sponsors",
-    size: "h-16",
+    imageStyle: "h-16",
     containerStyle: "w-[16rem]",
   },
   {
     id: "bronze",
     text: "Bronze Sponsors",
-    size: "h-10",
+    imageStyle: "h-10",
     containerStyle: "w-[15rem]",
   },
   {
     id: "media",
     text: "Media Sponsors",
-    size: "h-10",
+    imageStyle: "h-10",
     containerStyle: "w-[15rem]",
   },
 ];
@@ -594,7 +594,7 @@ const sponsorLevels = [
               >
                 <FpImage
                   class="inline mx-auto w-full object-contain"
-                  :class="sponsorLevel.size"
+                  :class="sponsorLevel.imageStyle"
                   :src="sponsor.image"
                   :alt="sponsor.alt || 'Logo for ' + sponsor.name"
                 />
