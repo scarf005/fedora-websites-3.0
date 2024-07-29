@@ -588,25 +588,20 @@ const sponsorLevels = [
               class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300 flex flex-col justify-center"
               :class="sponsorLevel.containerStyle"
             >
-              <div
-                class="text-lg font-semibold leading-none text-fp-blue"
-                style="text-shadow: 1px 2px 4px black"
-              >
-                <FpLink :href="sponsor.link">
-                  <FpImage
-                    class="inline mx-auto w-full object-contain"
-                    :class="
-                      sponsorLevel.size +
-                      ' ' +
-                      (sponsor.image.endsWith('.svg')
-                        ? sponsorLevel.containerStyle
-                        : '')
-                    "
-                    :src="sponsor.image"
-                    :alt="sponsor.alt || 'Logo for ' + sponsor.name"
-                  />
-                </FpLink>
-              </div>
+              <FpLink :href="sponsor.link">
+                <FpImage
+                  class="inline mx-auto w-full object-contain"
+                  :class="
+                    sponsorLevel.size +
+                    ' ' +
+                    (sponsor.image.endsWith('.svg')
+                      ? sponsorLevel.containerStyle
+                      : '')
+                  "
+                  :src="sponsor.image"
+                  :alt="sponsor.alt || 'Logo for ' + sponsor.name"
+                />
+              </FpLink>
             </div>
           </div>
         </template>
