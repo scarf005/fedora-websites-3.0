@@ -594,13 +594,7 @@ const sponsorLevels = [
               >
                 <FpImage
                   class="inline mx-auto w-full object-contain"
-                  :class="
-                    sponsorLevel.size +
-                    ' ' +
-                    (sponsor.image.endsWith('.svg')
-                      ? sponsorLevel.containerStyle
-                      : '')
-                  "
+                  :class="sponsorLevel.containerStyle"
                   :src="sponsor.image"
                   :alt="sponsor.alt || 'Logo for ' + sponsor.name"
                 />
