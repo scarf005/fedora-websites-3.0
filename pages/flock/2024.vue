@@ -32,31 +32,31 @@ const sponsorLevels = [
     id: "platinum",
     text: "Platinum Sponsors",
     size: "h-28",
-    containerWidth: "w-[18rem]",
+    containerStyle: "w-[18rem]",
   },
   {
     id: "gold",
     text: "Gold Sponsors",
     size: "h-20",
-    containerWidth: "w-[17rem]",
+    containerStyle: "w-[17rem]",
   },
   {
     id: "silver",
     text: "Silver Sponsors",
     size: "h-15",
-    containerWidth: "w-[16rem]",
+    containerStyle: "w-[16rem]",
   },
   {
     id: "bronze",
     text: "Bronze Sponsors",
     size: "h-10",
-    containerWidth: "w-[15rem]",
+    containerStyle: "w-[15rem]",
   },
   {
     id: "media",
     text: "Media Sponsors",
     size: "h-10",
-    containerWidth: "w-[15rem]",
+    containerStyle: "w-[15rem]",
   },
 ];
 </script>
@@ -586,7 +586,7 @@ const sponsorLevels = [
                 (s) => s.level === sponsorLevel.id,
               )"
               class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300"
-              :class="sponsorLevel.containerWidth"
+              :class="sponsorLevel.containerStyle"
             >
               <div
                 class="text-lg font-semibold leading-none text-fp-blue"
@@ -599,7 +599,7 @@ const sponsorLevels = [
                       sponsorLevel.size +
                       ' ' +
                       (sponsor.image.endsWith('.svg')
-                        ? sponsorLevel.containerWidth
+                        ? sponsorLevel.containerStyle
                         : '')
                     "
                     :src="sponsor.image"
