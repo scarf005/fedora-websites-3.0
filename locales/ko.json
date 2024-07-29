@@ -405,7 +405,6 @@
     "Important Dates": "중요한 날짜들",
     "Flock Registration Open": "Flock 등록이 시작되었습니다",
     "Flock Call for Proposals": "제안을 위한 Flock 호출",
-    "Don't miss these important deadlines": "이 중요한 마감시간을 놓치지 마세요",
     "See the major changes and components version for latest Fedora CoreOS releases.": "최신화 페도라 코어OS 출시를 위해 주요 변경 및 요소 버전을 확인하세요.",
     "The optimal container host will be offered in order to run containerized applications.": "최적화된 컨테이너 호스트는 컨테이너화된 응용프로그램을 동작하기 위해 제공됩니다.",
     "Sign up at [coreos-status@lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/) to receive meeting agendas and minutes.": "회의 의제 및 회의록을 받으려면 [coreos-status{'@'}lists.fedoraproject.org](https://lists.fedoraproject.org/admin/lists/coreos-status.lists.fedoraproject.org/)에 가입하세요.",
