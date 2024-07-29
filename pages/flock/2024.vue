@@ -588,7 +588,10 @@ const sponsorLevels = [
               class="rounded-lg bg-black/70 p-4 m-4 bg-gray-100 dark:bg-neutral-300 flex flex-col justify-center"
               :class="sponsorLevel.containerStyle"
             >
-              <FpLink :href="sponsor.link">
+              <FpLink
+                :href="sponsor.link"
+                :title="'Visit the ' + sponsor.name + ' website'"
+              >
                 <FpImage
                   class="inline mx-auto w-full object-contain"
                   :class="
