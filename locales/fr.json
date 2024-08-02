@@ -209,7 +209,7 @@
     "Labs": "Labs",
     "Fantastic apps": "Applications fantastiques",
     "Fedora Cloud Image": "Image de Fedora Cloud",
-    "Fedora ALT Downloads": "Téléchargements alternatifs de Fedora",
+    "Fedora ALT Downloads": "Téléchargements Fedora alternatifs",
     "Extensive documentation is available at the Fedora documentation page.": "Une documentation complète est disponible sur la page de documentation de Fedora.",
     "Extended Social Channels": "Canaux sociaux étendus",
     "Engineering Teams": "Équipes d'ingénierie",
@@ -419,7 +419,7 @@
     "Open to all current and potential contributors weekly - find more info [here](https://fedoraproject.org/wiki/Design).": "Ouvertes chaque semaine à tous les contributeurs actuels et potentiels, plus d'infos [ici](https://fedoraproject.org/wiki/Design)",
     "Online account integration": "Intégration à vos comptes en ligne",
     "Obsolete GPG keys": "Clés GPG obsolètes",
-    "Next upcoming event": "Prochain événement à venir",
+    "Next upcoming event": "Prochain événement",
     "Next": "Prochain",
     "News & Publications": "Actualités et publications",
     "News & Announcements": "Actualités et annonces",
@@ -1288,5 +1288,8 @@
     "Venue & Hotel": "Lieu et hôtel",
     "first-come, first-served, limited availability": "premier·ère arrivé·e, premier·ère servi·e, disponibilité limitée",
     "Sponsorship opportunities are now closed. For information, see the prospectus below or contact [sponsors@fedoraproject.org](mailto:sponsors@fedoraproject.org).": "Les inscriptions en tant que sponsor sont maintenant fermées. Pour plus d'informations, consultez la brochure ci-dessous ou contactez [sponsors{'@'}fedoraproject.org](mailto:sponsors{'@'}fedoraproject.org).",
-    "Flock to Fedora": "Flock To Fedora"
+    "Flock to Fedora": "Flock To Fedora",
+    "A panel of people sitting in a semicircle at the front of a room taking questions from an audience": "Un groupe de personnes assises en demi-cercle à l'avant d'une salle et répondant aux questions du public",
+    "If you have questions or any other general inquiries about the event, reach out to [flock-staff@fedoraproject.org](mailto:flock-staff@fedoraproject.org)": "Si vous avez des questions ou toute autre demande à propos de l'événement, contactez [flock-staff{'@'}fedoraproject.org](mailto:flock-staff{'@'}fedoraproject.org)",
+    "Go to this year's conference": "Aller à la conférence de cette année"
 }
