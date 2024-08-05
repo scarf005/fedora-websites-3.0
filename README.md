@@ -4,14 +4,20 @@
 - This guide is for making updates to the website code. If you are looking to update the content (text and/or images) of this site, you can use the [Content Management System](https://fedora.gitlab.io/websites-apps/fedora-websites/cms/fedoraproject.org/admin/) or you can submit merge requests to https://gitlab.com/fedora/websites-apps/fedora-websites/cms/fedoraproject.org.
   - To get write access to either repository (code or content), file a ticket [here](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/issues/new?issuable_template=Collaborate&issue[title]=new%20collaborator%20request).
   - This content is pulled in with the [nuxt-content](https://www.npmjs.com/package/@nuxt/content) package.
-- To add a new page or a new component:
-  - clone this repository, using `git clone --recurse-submodules <repo>` to ensure submodules are installed (if you already cloned the repo without doing this, run `git submodule update --init`)
-  - change into the folder you just cloned into (`cd repo` on the command line)
-  - run `npm install` to install the project dependencies
-  - run [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to start a live development server on localhost:3000
-  - [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
-  
-If you need to refresh the contents of the cms content submodule, you'll need to run `git submodule update` (to fetch the updates from the content repo if there are any) in addition to `git pull` (to pull any updates to this repo). `git status` should indicate if the content submodule is out of date.
+
+### Installation
+
+1. clone this repository, using `git clone --recurse-submodules <repo>` to ensure submodules are installed (if you already cloned the repo without doing this, run `git submodule update --init`)
+
+2. change into the folder you just cloned into (`cd fedora-website-3.0` on the command line)
+
+3. run `npm install` to install the project dependencies
+
+4. run [`npm run dev`](https://v3.nuxtjs.org/api/commands/dev): to start a live development server on localhost:3000
+
+5. [`npm run generate`](https://v3.nuxtjs.org/api/commands/generate): creates pre-rendered pages for static hosting in .output/public (this is what the CI does too)
+
+- If you need to refresh the contents of the cms content submodule, you'll need to run `git submodule update` (to fetch the updates from the content repo if there are any) in addition to `git pull` (to pull any updates to this repo). `git status` should indicate if the content submodule is out of date.
 
 These instructions are also present in the [repository wiki](https://gitlab.com/fedora/websites-apps/fedora-websites/fedora-websites-3.0/-/wikis/Getting-Started)
 
