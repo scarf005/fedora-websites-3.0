@@ -1043,5 +1043,6 @@
     "Launch instance": "Iniciar instância",
     "Select the Azure region": "Selecione a região do Azure",
     "x86_64-based instances": "instâncias baseadas em x86_64",
-    "ARM® aarch64-based instances": "Instâncias baseadas em ARM® aarch64"
+    "ARM® aarch64-based instances": "Instâncias baseadas em ARM® aarch64",
+    "What is Fedora Labs?": "O que é o Fedora Labs?"
 }
