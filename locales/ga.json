@@ -1,1 +1,7 @@
-{}
+{
+    "verify_button_instruction": "Cliceáil an cnaipe fíoraithe {verify_button} chun treoracha a fháil atá oiriúnaithe le haghaidh d’íoslódála.",
+    "We take security seriously": "Glacaimid slándáil dáiríre",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "Nuair a bheidh íomhá íoslódála agat, déan cinnte é a fhíorú ar mhaithe le slándáil agus sláine araon",
+    "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity": "Trí sheiceála na híomhá a ríomh ar do ríomhaire féin agus é a chur i gcomparáid leis an tseiceáil bhunaidh, is féidir leat a fhíorú nár cuireadh isteach ar an íomhá nó nár truaillithe. Sínítear íomhánna gpg freisin le heochracha Fedora chun a n-ionracas a léiriú",
+    "For Intel and AMD x86_64 systems": "Le haghaidh córais Intel agus AMD x86_64"
+}
