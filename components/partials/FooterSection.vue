@@ -44,4 +44,10 @@ const props = defineProps({
 .footer-label:focus-within .footer-links {
   @apply h-fit;
 }
+.footer-links li:hover {
+  @apply underline-offset-1 
+  transition duration-150 ease-in-out 
+  hover:text-fp-darkblue hover:underline 
+  hover:dark:text-fp-newblue;
+}
 </style>
