@@ -961,5 +961,6 @@
     "Select AWS EC2 region": "选择 AWS EC2 地区",
     "Launch instance": "启动实例",
     "Select the Azure region": "选择 Azure 地区",
-    "Show Beta downloads": "显示测试版下载"
+    "Show Beta downloads": "显示测试版下载",
+    "Atomic Desktops for Fedora": "Fedora 的原子桌面 。"
 }
