@@ -980,5 +980,6 @@
     "Virtualized": "虚拟化",
     "pick_your_architecture": "选择你的{architecture}",
     "Details": "详情",
-    "Launch": "启动"
+    "Launch": "启动",
+    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "云工作组会议向所有当前和潜在贡献者 {'$'}cadence 开放，时间为 **{'$'}time** UTC，地点为 **{'$'}location**（更新信息请参见 [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/)）。"
 }
