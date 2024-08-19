@@ -962,5 +962,20 @@
     "Launch instance": "启动实例",
     "Select the Azure region": "选择 Azure 地区",
     "Show Beta downloads": "显示测试版下载",
-    "Atomic Desktops for Fedora": "Fedora 的原子桌面 。"
+    "Atomic Desktops for Fedora": "Fedora 的原子桌面",
+    "start_fcos_instances_cloud": "在公共云平台的 {arch} 架构上启动 Fedora CoreOS {stream} 实例。",
+    "Back to Top": "返回页首",
+    "Latest image:": "最新映像：",
+    "Image family:": "映像家族：",
+    "What is Fedora Labs?": "什么是 Fedora Labs？",
+    "x86_64-based instances": "基于 x86_64 的实例",
+    "ARM® aarch64-based instances": "基于 ARM® aarch64 的实例",
+    "List AWS EC2 region": "列出 AWS EC2 地区",
+    "List Azure region": "列出 Azure 地区",
+    "Verify": "验证",
+    "Show Downloads": "显示下载",
+    "download_fcos_artifacts_baremetal": "下载适用于 {arch} 的 Fedora CoreOS {stream} 工件。",
+    "download_fcos_images_cloud": "下载适用于云运营商的 {arch} Fedora CoreOS {stream} 映像。",
+    "Bare Metal": "裸金属",
+    "Virtualized": "虚拟化"
 }
