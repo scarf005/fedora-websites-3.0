@@ -955,5 +955,11 @@
     "for Fedora Linux": "对于 Fedora Linux",
     "source:": "来源：",
     "Launch in Cloud": "在云上启动",
-    "verify_button_download": "点击验证按钮 {verify_button} 来下载已下载镜像文件的校验和文件。"
+    "verify_button_download": "点击验证按钮 {verify_button} 来下载已下载镜像文件的校验和文件。",
+    "Launch on public cloud platforms": "在公共云平台上启动",
+    "Start Fedora Cloud instances on public cloud platforms.": "在公共云平台上启动 Fedora 云实例。",
+    "Select AWS EC2 region": "选择 AWS EC2 地区",
+    "Launch instance": "启动实例",
+    "Select the Azure region": "选择 Azure 地区",
+    "Show Beta downloads": "显示测试版下载"
 }
