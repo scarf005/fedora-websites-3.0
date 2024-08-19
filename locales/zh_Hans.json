@@ -977,5 +977,8 @@
     "download_fcos_artifacts_baremetal": "下载适用于 {arch} 的 Fedora CoreOS {stream} 工件。",
     "download_fcos_images_cloud": "下载适用于云运营商的 {arch} Fedora CoreOS {stream} 映像。",
     "Bare Metal": "裸金属",
-    "Virtualized": "虚拟化"
+    "Virtualized": "虚拟化",
+    "pick_your_architecture": "选择你的架构",
+    "Details": "详情",
+    "Launch": "启动"
 }
