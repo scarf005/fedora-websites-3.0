@@ -549,5 +549,7 @@
     "R": "R",
     "source:": "fuente:",
     "Packaging Guidelines": "Directrices de empaquetamiento",
-    "for Fedora Linux": "para Fedora Linux"
+    "for Fedora Linux": "para Fedora Linux",
+    "verify_button_download": "Haga click en el botón de verificación {verify_button} para descargar el archivo checksum para su imagen descargada.",
+    "Atomic Desktops for Fedora.": "Atomic Desktops para Fedora."
 }
