@@ -552,5 +552,12 @@
     "for Fedora Linux": "para Fedora Linux",
     "verify_button_download": "Haga click en el botón de verificación {verify_button} para descargar el archivo checksum para su imagen descargada.",
     "Atomic Desktops for Fedora.": "Atomic Desktops para Fedora.",
-    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Encuentra un Fedora atomic desktop para mejorar tu experiencia! Puedes encontrar las últimas versionas de nuestros atomic desktops aquí."
+    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "¡Encuentra un atomic desktop de Fedora para mejorar tu experiencia! Puedes encontrar las últimas versionas de nuestros atomic desktops aquí.",
+    "start_fcos_instances_cloud": "Ejecuta instancias tipo {stream} de Fedora CoreOS con arquitectura {arch} en plataformas de nube públicas.",
+    "download_fcos_artifacts_baremetal": "Descargar artefactos de Fedora CoreOS {stream} para {arch}.",
+    "Launch on public cloud platforms": "Lanza en plataformas de nube públicas",
+    "Start Fedora Cloud instances on public cloud platforms.": "Ejecuta instancias de Fedora Cloud en plataformas de nube públicas.",
+    "Select AWS EC2 region": "Seleccionar región AWS EC2",
+    "Atomic Desktops for Fedora": "Atomic Desktops para Fedora",
+    "x86_64-based instances": "instancias basadas en x86_64"
 }
