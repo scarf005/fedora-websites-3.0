@@ -559,5 +559,6 @@
     "Start Fedora Cloud instances on public cloud platforms.": "Ejecuta instancias de Fedora Cloud en plataformas de nube públicas.",
     "Select AWS EC2 region": "Seleccionar región AWS EC2",
     "Atomic Desktops for Fedora": "Atomic Desktops para Fedora",
-    "x86_64-based instances": "instancias basadas en x86_64"
+    "x86_64-based instances": "instancias basadas en x86_64",
+    "What is Fedora Labs?": "¿Qué es Fedora Labs?"
 }
