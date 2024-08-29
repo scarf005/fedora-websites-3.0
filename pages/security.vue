@@ -17,7 +17,7 @@ useContentHead(data);
   <main class="fp-security">
     <!-- TITLE -->
     <section class="py-12 text-center dark:bg-neutral-800 lg:text-start">
-      <div class="container mx-auto max-w-7xl">
+      <div class="container px-2 mx-auto max-w-7xl">
         <h1 class="mb-4 text-4xl text-black dark:text-white">
           {{ $t(data.title) }}
         </h1>
@@ -38,7 +38,7 @@ useContentHead(data);
     </section>
 
     <section class="bg-blue-50 py-6 dark:bg-neutral-900">
-      <div class="container mx-auto mb-8 max-w-7xl">
+      <div class="container px-2 mx-auto mb-8 max-w-7xl">
         <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             {{ $t(data.verifySection.title) }}
@@ -92,7 +92,7 @@ useContentHead(data);
     </section>
 
     <section class="bg-gray-50 py-12 dark:bg-neutral-800">
-      <div class="container mx-auto mb-8 max-w-7xl">
+      <div class="container px-2 mx-auto mb-8 max-w-7xl">
         <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             {{ $t(data.packageSection.title) }}
@@ -110,7 +110,7 @@ useContentHead(data);
     </section>
 
     <section class="bg-white py-8 dark:bg-neutral-900">
-      <div class="container mx-auto max-w-7xl">
+      <div class="container px-2 mx-auto max-w-7xl">
         <div class="text-center lg:text-start">
           <h2 class="text-fp-blue">
             {{ $t("Current GPG keys") }}
@@ -121,7 +121,7 @@ useContentHead(data);
     </section>
 
     <section class="bg-gray-50 py-12 dark:bg-neutral-800">
-      <div class="container mx-auto max-w-7xl">
+      <div class="container px-2 mx-auto max-w-7xl">
         <div
           class="flex cursor-pointer items-center justify-center gap-4 lg:justify-start"
           @click="obsolete_keys = !obsolete_keys"
@@ -137,7 +137,7 @@ useContentHead(data);
     </section>
 
     <section class="py-12 dark:bg-black">
-      <div class="container mx-auto mb-8 max-w-7xl">
+      <div class="container px-2 mx-auto mb-8 max-w-7xl">
         <div class="mb-6 text-center lg:text-start">
           <h2 class="mb-4 text-fp-blue">
             {{ $t(data.bugSection.title) }}
