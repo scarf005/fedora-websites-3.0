@@ -19,7 +19,7 @@ function dateToParts(iso_datetime_str, locale = "en-US") {
     month: date.toLocaleString(locale, { month: "short" }),
   };
 }
-let code = locales.find((l) => l.code == locale._value).iso;
+let code = locales.find((l) => l.code == locale._value).language;
 </script>
 <template>
   <div class="mx-auto flex flex-wrap justify-center max-w-screen-xl p-12">

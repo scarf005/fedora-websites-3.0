@@ -20,7 +20,7 @@ function processLink(href) {
     /^https:\/\/docs.fedoraproject.org\//.test(href) &&
     locale._value != "en"
   ) {
-    let code = locales.find((l) => l.code == locale._value).iso;
+    let code = locales.find((l) => l.code == locale._value).language;
     code = code.replace("-", "_"); // make pt-br (and others?) work
     link = href.replace("en-US", code);
   }

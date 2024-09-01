@@ -1,8 +1,8 @@
 import locales from "./config/locales.json";
 import path from "path";
 const locales_ci = [
-  { "code": "en", "iso": "en", "file": "en.json", "name": "English" },
-  { "code": "fr", "iso": "fr", "file": "fr.json", "name": "Français" },
+  { "code": "en", "language": "en", "file": "en.json", "name": "English" },
+  { "code": "fr", "language": "fr", "file": "fr.json", "name": "Français" },
 ];
 const base = process?.env?.CI_PAGES_URL
   ? new URL(process?.env?.CI_PAGES_URL).pathname
@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "~/components/utilities",
     "~/components/partials",
   ],
+
   modules: [
     "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
@@ -22,12 +23,15 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "nuxt-icon",
   ],
+
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
+
   colorMode: {
     classSuffix: "",
   },
+
   i18n: {
     locales: process?.env?.CI_FAST_BUILD ? locales_ci : locales,
     lazy: {
@@ -41,6 +45,7 @@ export default defineNuxtConfig({
       strictMessage: false,
     },
   },
+
   app: {
     baseURL: base,
     buildAssetsDir: "/_nuxt/",
@@ -62,6 +67,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   hooks: {
     // "pages:extend"(pages) {
     //   if (process?.env?.CI_JOB_NAME == "build_preview") {
@@ -77,14 +83,17 @@ export default defineNuxtConfig({
     //   }
     // },
    },
+
   nitro: {
     prerender: {
-      concurrency: 1
+      concurrency: 4
     }
   },
+
   experimental: {
     inlineSSRStyles: false,
   },
+
   routeRules: {
     "*": { experimentalNoScripts: true }, // one level deep, render all pages statically
     "*/*/": { experimentalNoScripts: true }, // same, but for translated pages
@@ -110,4 +119,6 @@ export default defineNuxtConfig({
     "/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing
     "*/security": { experimentalNoScripts: false }, // except security page, for obsolete keys listing - translated
   },
+
+  compatibilityDate: "2024-10-27",
 });
