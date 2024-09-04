@@ -1056,5 +1056,7 @@
     "Launch instance": "Запустить экземпляр",
     "Select the Azure region": "Выберите регион Azure",
     "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "Открыто для всех текущих и потенциальных участников {cadence} в **{time}** UTC в **{location}** (см. [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) для обновлений).",
-    "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "Открыто для всех текущих и потенциальных участников {cadence} в **{time}** UTC в **{location}** (см. [fedocal→server](https://calendar.fedoraproject.org/list/server/) для обновлений)."
+    "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→server](https://calendar.fedoraproject.org/list/server/) for updates).": "Открыто для всех текущих и потенциальных участников {cadence} в **{time}** UTC в **{location}** (см. [fedocal→server](https://calendar.fedoraproject.org/list/server/) для обновлений).",
+    "Details": "Подробности",
+    "Launch": "Запустить"
 }
