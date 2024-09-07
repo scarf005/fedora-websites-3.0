@@ -561,5 +561,9 @@
     "Atomic Desktops for Fedora": "Atomic Desktops para Fedora",
     "x86_64-based instances": "instancias basadas en x86_64",
     "What is Fedora Labs?": "¿Qué es Fedora Labs?",
-    "Colúr (cuh-loohr) is our Flock mascot.": "Colúr es nuestra mascota de Flock."
+    "Colúr (cuh-loohr) is our Flock mascot.": "Colúr es nuestra mascota de Flock.",
+    "download_fcos_images_cloud": "Descarga imágenes de Fedora CoreOS {stream} para {arch} para operadores de la nube.",
+    "Back to Top": "Volver al comienzo",
+    "Image family:": "Familia de imagen:",
+    "User Documentation": "Documentación de Usuario"
 }
