@@ -1,4 +1,4 @@
-image: registry.fedoraproject.org/fedora:39
+image: registry.fedoraproject.org/fedora:40
 
 before_script:
   - mkdir -p .cache_dnf && mkdir -p /var/cache/dnf && mount --bind .cache_dnf /var/cache/dnf
@@ -46,6 +46,9 @@ gen_locales:
 
 pages:
   stage: build
+  variables:
+    NODE_OPTIONS: "--max_old_space_size=8196" 
+    PAGES_PREFIX: ""
   script:
     - npm install
     - npm run generate
@@ -55,33 +58,22 @@ pages:
     expire_in: 1 day # unless marked as keep from job page
     paths:
       - public
+    expose_as: "build preview"
   needs:
     - job: gen_locales
       optional: true
-  variables:
-    NODE_OPTIONS: --max_old_space_size=8192
-  only:
-    - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
-  interruptible: true
-
-build_preview:
-  stage: build
-  script:
-    - npm install
-    - npm run generate
-    - rm -rf ./public
-    - mv .output/public ./public
-  variables:
-    CI_PAGES_URL: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public
-    CI_FAST_BUILD: "true"
-  artifacts:
-    paths:
-      - public/
-    expire_in: 1 day
-    expose_as: "build preview"
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_PROJECT_ROOT_NAMESPACE == "fedora"
   environment:
-    name: preview MR_${CI_MERGE_REQUEST_IID}
-    url: https://fedora.gitlab.io/-/websites-apps/fedora-websites/fedora-websites-3.0/-/jobs/${CI_JOB_ID}/artifacts/public/index.html
+    name: "Preview ${PAGES_PREFIX}"
+    url: "${CI_PAGES_URL}/${PAGES_PREFIX}"
     auto_stop_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop" # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_PROJECT_ROOT_NAMESPACE == "fedora"
+      variables:
+        PAGES_PREFIX: "mr-$CI_MERGE_REQUEST_IID"
+        CI_FAST_BUILD: "true"
+        PAGES_EXPIRE: 1 week
+  pages:
+    path_prefix: "$PAGES_PREFIX"
+    expire_in: 1 week
+  interruptible: true
