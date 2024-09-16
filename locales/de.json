@@ -343,5 +343,6 @@
     "x86_64-based instances": "x86_64-basierte Instanzen",
     "ARM® aarch64-based instances": "ARM® aarch64-basierte Instanzen",
     "List AWS EC2 region": "Zeige AWS EC2 Region",
-    "List Azure region": "Zeige Azure Region"
+    "List Azure region": "Zeige Azure Region",
+    "Verify": "Verifizieren"
 }
