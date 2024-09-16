@@ -335,5 +335,13 @@
     "Select the Azure region": "Azure Region auswählen",
     "Show Beta downloads": "Zeige Beta Downloads",
     "Atomic Desktops for Fedora": "Atomic Desktops für Fedora.",
-    "What is Fedora Labs?": "Was sind Fedora Labs?"
+    "What is Fedora Labs?": "Was sind Fedora Labs?",
+    "Show Downloads": "Zeige Downloads",
+    "start_fcos_instances_cloud": "Starte Fedora CoreOS {stream} Instanz auf {arch} Architektur in öffentlicher Cloud Plattform.",
+    "download_fcos_artifacts_baremetal": "Lade Fedora CoreOS {stream} Artifakte für {arch} herunter.",
+    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "Fedora Labs ist eine Auswahl an Zusammenstellungen von Programmen und Inhalten, gepflegt und gewartet von Mitgliedern der Fedora-Gemeinschaft. Sie können als unabhängige, vollständige Fedora-Versionen installiert werden oder existierende Fedora-Installationen ergänzen.",
+    "x86_64-based instances": "x86_64-basierte Instanzen",
+    "ARM® aarch64-based instances": "ARM® aarch64-basierte Instanzen",
+    "List AWS EC2 region": "Zeige AWS EC2 Region",
+    "List Azure region": "Zeige Azure Region"
 }
