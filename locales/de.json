@@ -333,5 +333,7 @@
     "Select AWS EC2 region": "AWS EC2 Region auswählen",
     "Launch instance": "Instanz starten",
     "Select the Azure region": "Azure Region auswählen",
-    "Show Beta downloads": "Zeige Beta Downloads"
+    "Show Beta downloads": "Zeige Beta Downloads",
+    "Atomic Desktops for Fedora": "Atomic Desktops für Fedora.",
+    "What is Fedora Labs?": "Was sind Fedora Labs?"
 }
