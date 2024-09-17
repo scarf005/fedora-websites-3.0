@@ -350,5 +350,7 @@
     "Back to Top": "Zurück nach oben",
     "Image family:": "Image Familie:",
     "Latest image:": "Neuestes Image:",
-    "pick_your_architecture": "Wähle deine {architecture}"
+    "pick_your_architecture": "Wähle deine {architecture}",
+    "Launch": "Start",
+    "Bare Metal": "Bare Metal"
 }
