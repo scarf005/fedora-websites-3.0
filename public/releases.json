@@ -1,5 +1,432 @@
 [
   {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-AmazonEC2-41_Beta-1.2.x86_64.raw.xz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-GCE-41_Beta-1.2.x86_64.tar.gz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-41_Beta-1.2.x86_64.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/x86_64/images/Fedora-Cloud-Base-UEFI-UKI-41_Beta-1.2.x86_64.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base_UKI"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-AmazonEC2-41_Beta-1.2.aarch64.raw.xz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-GCE-41_Beta-1.2.aarch64.tar.gz",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-41_Beta-1.2.aarch64.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Cloud/aarch64/images/Fedora-Cloud-Base-UEFI-UKI-41_Beta-1.2.aarch64.qcow2",
+    "variant": "Cloud",
+    "subvariant": "Cloud_Base_UKI"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Container/x86_64/images/Fedora-Container-Base-Generic-41_Beta-1.2.x86_64.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Container/x86_64/images/Fedora-Container-Toolbox-41_Beta-1.2.x86_64.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Toolbox"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Container/aarch64/images/Fedora-Container-Base-Generic-41_Beta-1.2.aarch64.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Container/aarch64/images/Fedora-Container-Base-Generic-Minimal-41_Beta-1.2.aarch64.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Base"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Container/aarch64/images/Fedora-Container-Toolbox-41_Beta-1.2.aarch64.oci.tar.xz",
+    "variant": "Container",
+    "subvariant": "Container_Toolbox"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-41_Beta-1.2.iso",
+    "variant": "Everything",
+    "subvariant": "Everything"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-41_Beta-1.2.iso",
+    "variant": "Everything",
+    "subvariant": "Everything"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Kinoite/x86_64/images/Fedora-Kinoite-41_Beta.1.2.ociarchive",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Kinoite/x86_64/iso/Fedora-Kinoite-ostree-x86_64-41_Beta-1.2.iso",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Kinoite/aarch64/images/Fedora-Kinoite-41_Beta.1.2.ociarchive",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Kinoite/aarch64/iso/Fedora-Kinoite-ostree-aarch64-41_Beta-1.2.iso",
+    "variant": "Kinoite",
+    "subvariant": "Kinoite"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Sericea/x86_64/images/Fedora-Sericea-41_Beta.1.2.ociarchive",
+    "variant": "Sericea",
+    "subvariant": "Sericea"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Sericea/x86_64/iso/Fedora-Sericea-ostree-x86_64-41_Beta-1.2.iso",
+    "variant": "Sericea",
+    "subvariant": "Sericea"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Sericea/aarch64/images/Fedora-Sericea-41_Beta.1.2.ociarchive",
+    "variant": "Sericea",
+    "subvariant": "Sericea"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/x86_64/images/Fedora-Server-KVM-41_Beta-1.2.x86_64.qcow2",
+    "variant": "Server",
+    "subvariant": "Server_KVM"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/x86_64/iso/Fedora-Server-dvd-x86_64-41_Beta-1.2.iso",
+    "variant": "Server",
+    "subvariant": "Server"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/x86_64/iso/Fedora-Server-netinst-x86_64-41_Beta-1.2.iso",
+    "variant": "Server",
+    "subvariant": "Server"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/aarch64/images/Fedora-Server-KVM-41_Beta-1.2.aarch64.qcow2",
+    "variant": "Server",
+    "subvariant": "Server_KVM"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/aarch64/images/Fedora-Server-41_Beta-1.2.aarch64.raw.xz",
+    "variant": "Server",
+    "subvariant": "Server"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/aarch64/iso/Fedora-Server-dvd-aarch64-41_Beta-1.2.iso",
+    "variant": "Server",
+    "subvariant": "Server"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Server/aarch64/iso/Fedora-Server-netinst-aarch64-41_Beta-1.2.iso",
+    "variant": "Server",
+    "subvariant": "Server"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Silverblue/x86_64/images/Fedora-Silverblue-41_Beta.1.2.ociarchive",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-41_Beta-1.2.iso",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Silverblue/aarch64/images/Fedora-Silverblue-41_Beta.1.2.ociarchive",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-41_Beta-1.2.iso",
+    "variant": "Silverblue",
+    "subvariant": "Silverblue"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-Budgie-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "Budgie"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "Cinnamon"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "KDE"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-KDE-Mobile-Live-41_Beta-1.2.x86_64.iso",
+    "variant": "Spins",
+    "subvariant": "KDE"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "LXDE"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "LXQt"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "Mate"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-MiracleWM-Live-41_Beta-1.2.x86_64.iso",
+    "variant": "Spins",
+    "subvariant": ""
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "SoaS"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-Sway-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "Sway"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "Xfce"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Spins/x86_64/iso/Fedora-i3-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Spins",
+    "subvariant": "i3"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Workstation/x86_64/iso/Fedora-Workstation-Live-osb-41_Beta-1.2.x86_64.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Workstation/aarch64/images/Fedora-Workstation-41_Beta-1.2.aarch64.raw.xz",
+    "variant": "Workstation",
+    "subvariant": "Workstation"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "aarch64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Workstation/aarch64/iso/Fedora-Workstation-Live-osb-41_Beta-1.2.aarch64.iso",
+    "variant": "Workstation",
+    "subvariant": "Workstation"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Onyx/x86_64/images/Fedora-Onyx-41_Beta.1.2.ociarchive",
+    "variant": "Onyx",
+    "subvariant": "Onyx"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/test/41_Beta/Onyx/x86_64/iso/Fedora-Onyx-ostree-x86_64-41_Beta-1.2.iso",
+    "variant": "Onyx",
+    "subvariant": "Onyx"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/images/Fedora-Scientific-Vagrant-41_Beta-1.2.x86_64.vagrant-libvirt.box",
+    "variant": "Labs",
+    "subvariant": "Scientific"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-41_Beta-1.2.x86_64.vagrant-virtualbox.box",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-41_Beta-1.2.x86_64.vagrant-libvirt.box",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/images/Fedora-Scientific-Vagrant-41_Beta-1.2.x86_64.vagrant-virtualbox.box",
+    "variant": "Labs",
+    "subvariant": "Scientific"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Astronomy_KDE"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Comp_Neuro-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Comp_Neuro"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Games-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Games"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Python_Classroom"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Scientific_KDE-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Scientific_KDE"
+  },
+  {
+    "version": "41 Beta",
+    "arch": "x86_64",
+    "link": "https://download.fedoraproject.org/pub/alt/releases/test/41_Beta/Labs/x86_64/iso/Fedora-Security-Live-x86_64-41_Beta-1.2.iso",
+    "variant": "Labs",
+    "subvariant": "Security"
+  },
+  {
     "version": "40",
     "arch": "x86_64",
     "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/40/Cloud/x86_64/images/Fedora-Cloud-Base-GCE.x86_64-40-1.14.tar.gz",
