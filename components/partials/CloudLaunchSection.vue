@@ -113,8 +113,8 @@ function updateAzure(version, arch) {
   showAzure.value.show = true;
 }
 
-function AzureLink(regionID) {
-  const ImageName = `Fedora-Cloud-${showAzure.value.version}-${
+function AzureLink(regionID, showBeta) {
+  const ImageName = `Fedora-Cloud-${showAzure.value.version}${(showBeta) ? '-Prerelease' : ''}-${
     arches[showAzure.value.arch].azId
   }`;
   const communityImage = `/CommunityGalleries/Fedora-5e266ba4-2250-406d-adad-5d73860d958f/Images/${ImageName}`;
@@ -330,7 +330,7 @@ function closeModal(state) {
             </td>
             <td class="text-center">
               <a
-                :href="AzureLink(regionID)"
+                :href="AzureLink(regionID, showBeta)"
                 target="blank"
                 :title="`Launch in ${regionName}`"
                 class="rounded-xl"
