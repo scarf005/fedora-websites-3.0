@@ -300,7 +300,7 @@
     "You can chat with the Fedora Server Working Group via either Matrix or IRC: #server:fedoraproject.org on Matrix and #fedora-server on irc.libera.chat.": "Vous pouvez discuter avec le Groupe de travail Fedora Server via Matrix ou IRC : #server:fedoraproject.org sur Matrix, et #fedora-server sur irc.libera.chat.",
     "You can chat with the Fedora IoT Working Group via either Matrix or IRC: #iot:fedoraproject.org on Matrix and #fedora-iot on irc.libera.chat.": "Vous pouvez discuter avec le Groupe de travail Fedora IoT via Matrix ou IRC : #iot:fedoraproject.org sur Matrix, et #fedora-iot sur irc.libera.chat.",
     "You can chat with the Fedora CoreOS Working Group via either Matrix or IRC: #coreos:fedoraproject.org on Matrix and #fedora-coreos on irc.libera.chat.": "Vous pouvez discuter avec le Groupe de travail Fedora CoreOS via Matrix ou IRC : #coreos:fedoraproject.org sur Matrix, et #fedora-coreos sur irc.libera.chat.",
-    "Yes, they still exist.": "Oui, ça existe toujours.",
+    "Yes, they still exist.": "Oui, ça existe encore.",
     "Verify the signature file is valid": "Vérifiez que le fichier contenant la signature est valide",
     "Verify the checksum matches": "Vérifiez que les sommes de contrôle correspondent bien",
     "Verify the CHECKSUM file is valid": "Vérifiez que le fichier CHECKSUM est bien valide",
