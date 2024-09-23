@@ -22,7 +22,7 @@ const switchLocalePath = useSwitchLocalePath();
         <input
           :id="`button-${category}`"
           type="radio"
-          name="lock"
+          name="lock0"
           class="section-button absolute left-0 w-full top-0 h-full rounded-2xl block"
         />
         <label
@@ -50,7 +50,7 @@ const switchLocalePath = useSwitchLocalePath();
               <input
                 :id="`button-${category}-${level1index}`"
                 type="radio"
-                name="lock"
+                name="lock1"
                 class="subsection-button absolute left-0 w-full top-0 h-full z-10 rounded-2xl block hover:bg-gray-200 dark:hover:bg-gray-700 bg-clip-padding border-4 border-transparent duration-150 ease-in-out"
               />
               <label
