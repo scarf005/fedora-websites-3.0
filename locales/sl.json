@@ -22,7 +22,7 @@
     "Code of Conduct": "Kodeks ravnanja",
     "help_improve_this_website": "Pomagajte izboljšati to spletno stran na {cms} ali {gitlab_repo}",
     "Sponsors": "Sponzorji",
-    "Sponsored by Red Hat Logo": "Sponzorirano od Red Hat Logo",
+    "Sponsored by Red Hat Logo": "Logotip Sponzorira Red Hat",
     "Fedora is sponsored by Red Hat": "Fedoro sponzorira Red Hat",
     "Destination": "Cilj",
     "Learn More": "Več o tem",
@@ -75,7 +75,7 @@
     "here": "tukaj",
     "Contributor survey banner": "Pasica ankete sodelavca",
     "Page not found": "Strani ni mogoče najti",
-    "We think Panda lost it.": "Mislimo, da jo je Panda izgubila.",
+    "We think Panda lost it.": "Mislimo, da se je Pandi zmešalo.",
     "Go Home": "Pojdi domov",
     "placeholder": "rezervirano mesto",
     "Podcasts": "Podcasti",
@@ -784,5 +784,10 @@
     "Claws Mail is an easy to configure and full featured email application for the Xfce Desktop.": "Claws Mail je e-poštna aplikacija, ki jo je enostavno konfigurirati in ima vse funkcije za namizje Xfce.",
     "The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and lightweight, while still being visually appealing and user friendly.\nFedora Xfce is a full-fledged desktop using the freedesktop.org standards.": "Predstavitev Fedora Xfce prikazuje namizje Xfce, katerega namen je biti hitro in lahko, hkrati pa še vedno privlačno in uporabniku prijazno.\nFedora Xfce je popolno namizje, ki uporablja standarde freedesktop.org.",
     "The Fedora Workstation Working Group sends meeting agendas and minutes and has discussions on their mailing list at **desktop@lists.fedoraproject.org**.": "Delovna skupina za delovne postaje - Fedora Workstation Working Group pošilja dnevne rede sestankov in zapisnike ter ima razprave na svojem poštnem seznamu na **desktop{'@'}lists.fedoraproject.org**.",
-    "Explore Fedora Laptops": "Raziščite prenosnike Fedora"
+    "Explore Fedora Laptops": "Raziščite prenosnike Fedora",
+    "for Fedora Linux": "za Fedora Linux",
+    "Atomic Desktops for Fedora.": "Namizja Atomic za Fedoro.",
+    "Show Downloads": "Pokaži prenose",
+    "Details": "Podrobnosti",
+    "What is Fedora Labs?": "Kaj je Fedora Labs?"
 }
