@@ -72,5 +72,16 @@
     "For IBM s390x zSystems": "I yinagrawen IBM s390x z",
     "verify_button_instruction": "Sit ɣef tqeffalt n usenqed {verify_button} i wawway n yiwellihen yeddan d usader-ik.",
     "Once you have downloaded an image, be sure to verify it for both security and integrity": "Akken ara d tsadreḍ tugna, ḍmen ad tt-tesneqdeḍ ama ɣef tɣelist ama ɣef timmad",
-    "Help!": "Tallalt!"
+    "Help!": "Tallalt!",
+    "Legal": "Usḍif",
+    "Destination": "Tanila",
+    "logo": "Alugut",
+    "Verify": "Senqed",
+    "Details": "Talqayt",
+    "Launch": "Sekker",
+    "Chat": "Asqerdec",
+    "Secure": "D aɣelsan",
+    "Next": "Uḍfir",
+    "Configuration": "Tawila",
+    "Utilities": "Ifecka"
 }
