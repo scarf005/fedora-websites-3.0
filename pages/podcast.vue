@@ -9,8 +9,12 @@ const links = data._value.links;
 // show the newest podcasts at the top of the page
 let podcasts = [];
 for (let i = links.length - 1; i >= 0; i--) {
+  let date = new Date(
+    // round down to the start of the day (00:00 UTC)
+    Math.floor(parseInt(links[i].publication_date) / 86400000) * 86400000,
+  );
   // filter out podcasts with a future pub. date
-  if (links[i].publication_date <= Date.now()) {
+  if (date.getTime() <= Date.now()) {
     podcasts.push(links[i]);
   }
 }
@@ -45,7 +49,7 @@ const comm_channels = data._value.sections[0];
           >
             {{
               `${p.text} (${new Date(
-                parseInt(p.publication_date)
+                parseInt(p.publication_date),
               ).toLocaleDateString("en-US", date_format)})`
             }}
           </a>

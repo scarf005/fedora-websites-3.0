@@ -187,7 +187,10 @@ const fp_headlines = async () => {
   let last = i - count_headlines;
   let headlines = [];
   while (i >= 0 && i > last) {
-    let date = new Date(parseInt(topics[i].publication_date));
+    let date = new Date(
+      // round down to the start of the day (00:00 UTC)
+      Math.floor(parseInt(topics[i].publication_date) / 86400000) * 86400000,
+    );
 
     // filter out podcasts with a future pub. date
     if (date.getTime() <= Date.now()) {
