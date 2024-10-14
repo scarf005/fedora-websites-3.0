@@ -252,7 +252,7 @@
     "checksum file": "Prüfsummendatei",
     "Verify your download for security and integrity using the proper checksum file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Überprüfen Sie die Sicherheit und Integrität Ihres Downloads anhand der entsprechenden Prüfsummendatei. Wenn eine gültige Signatur von einem der Fedora-Schlüssel vorliegt und die SHA256-Prüfsumme übereinstimmt, dann ist der Download gültig.",
     "help_improve_this_website": "Hilf uns die Website im {cms} oder dem {gitlab_repo} zu verbessern",
-    "you_can_verify_the_GPG_details": "Sie können die Details der GPG-Schlüssel unten überprüfen.",
+    "you_can_verify_the_GPG_details": "{icon}Sie können die Details der GPG-Schlüssel {here} überprüfen.",
     "No files available for this version.": "Keine Dateien für diese Version verfügbar.",
     "LibreOffice is an integrated office suite. It utilizes free and open standards for its document formats and components.": "LibreOffice ist eine integrierte Bürosoftware. Sie verwendet freie und offene Standards für seine Dokumentenformate und Komponenten.",
     "Search with DuckDuckGo": "Mit DuckDuckGo suchen",
