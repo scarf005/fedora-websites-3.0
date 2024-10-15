@@ -134,7 +134,7 @@ useHead({
         <div class="flex justify-end">
           <FpJoinTip
             description="Help us with testing!"
-            inline="true"
+            :inline="true"
             class="origin-right scale-75"
           />
         </div>

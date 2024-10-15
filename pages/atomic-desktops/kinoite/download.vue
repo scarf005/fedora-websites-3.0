@@ -218,7 +218,7 @@ if (data._value.sections[2].sectionDescription) {
         <div class="flex justify-end pb-8">
           <FpJoinTip
             description="Help us with testing!"
-            inline="true"
+            :inline="true"
             class="origin-right scale-75"
           />
         </div>
