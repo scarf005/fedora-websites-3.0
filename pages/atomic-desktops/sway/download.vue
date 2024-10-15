@@ -175,10 +175,18 @@ useContentHead(data);
       >
         <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
-          <FpSwitch
-            @switchToggled="betaSwitch = $event.target.checked"
-            :checked="betaSwitch"
-          />
+          <ClientOnly>
+            <FpSwitch
+              @switchToggled="betaSwitch = $event.target.checked"
+              :checked="betaSwitch"
+            />
+            <template #fallback>
+              <FpSwitch
+                @switchToggled="betaSwitch = $event.target.checked"
+                :checked="false"
+              />
+            </template>
+          </ClientOnly>
         </div>
         <div class="flex justify-end">
           <FpJoinTip
