@@ -1,4 +1,5 @@
 <script setup>
+const route = useRoute();
 const props = defineProps({
   name: {
     type: String,
@@ -71,6 +72,9 @@ function capitalize(string) {
 
 useHead({ htmlAttrs: { class: "scroll-smooth" } });
 useContentHead(data);
+
+const betaSwitch = useState("betaSwitch", () => false);
+betaSwitch.value = typeof route.query.beta != "undefined";
 </script>
 
 <template>
@@ -84,7 +88,9 @@ useContentHead(data);
     >
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-8 text-4xl text-gray-600 dark:text-gray-200">
-          {{ $t(data.title) }}
+          {{
+            $t(data.title) + (betaSwitch ? " " + $t("BETA").toLowerCase() : "")
+          }}
         </h1>
         <ContentRendererMarkdown
           class="space-y-6 text-start text-gray-600 dark:text-fp-gray-light lg:w-4/5"
@@ -267,7 +273,20 @@ useContentHead(data);
           v-if="release_data.beta.enabled && beta_data"
         >
           <p class="text-fp-gray">{{ $t("Show Beta downloads") }}</p>
-          <FpSwitch id="betaswitch" />
+          <ClientOnly>
+            <FpSwitch
+              id="betaswitch"
+              @switchToggled="betaSwitch = $event.target.checked"
+              :checked="betaSwitch"
+            />
+            <template #fallback>
+              <FpSwitch
+                id="betaswitch"
+                @switchToggled="betaSwitch = $event.target.checked"
+                :checked="false"
+              />
+            </template>
+          </ClientOnly>
         </div>
         <div class="flex justify-end">
           <FpJoinTip

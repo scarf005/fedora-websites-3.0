@@ -5,6 +5,10 @@ const props = defineProps({
   name: {
     type: String,
   },
+  beta: {
+    type: Boolean,
+    default: false,
+  },
   slug: {
     type: String,
   },
@@ -22,7 +26,7 @@ const props = defineProps({
       </p>
       <div class="flex gap-4 self-end">
         <FpBtn
-          :href="`/labs/${slug}`"
+          :href="`/labs/${slug}${beta ? '?beta=true' : ''}`"
           class="!rounded-md !px-10 !py-4 font-display text-sm font-bold"
           >{{ $t("Get Started") }}</FpBtn
         >

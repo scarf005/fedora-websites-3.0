@@ -1,4 +1,5 @@
 <script setup>
+const route = useRoute();
 const props = defineProps({
   name: {
     type: String,
@@ -8,6 +9,8 @@ const props = defineProps({
 const data = await getCMS(`spins/${props.name.toLowerCase()}`);
 data._value.descriptionMd = await mdparser(data._value.description);
 useContentHead(data);
+
+const beta = computed(() => typeof route.query.beta != "undefined");
 </script>
 
 <template>
@@ -15,15 +18,33 @@ useContentHead(data);
     class="border-t-8 border-fp-newblue dark:bg-neutral-800"
     :class="`${name.toLowerCase()}`"
   >
-    <TheLocalBar
-      :image="{
-        light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
-        dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
-      }"
-      :home="`/spins/${name.toLowerCase()}`"
-      textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: `/spins/${name}/download` }]"
-    />
+    <ClientOnly>
+      <TheLocalBar
+        :image="{
+          light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
+          dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
+        }"
+        :home="`/spins/${name.toLowerCase()}${beta ? '?beta=true' : ''}`"
+        textColor="text-fp-newblue"
+        :items="[
+          {
+            name: 'Download',
+            link: `/spins/${name}/download${beta ? '?beta=true' : ''}`,
+          },
+        ]"
+      />
+      <template #fallback>
+        <TheLocalBar
+          :image="{
+            light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
+            dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
+          }"
+          :home="`/spins/${name.toLowerCase()}`"
+          textColor="text-fp-newblue"
+          :items="[{ name: 'Download', link: `/spins/${name}/download` }]"
+        />
+      </template>
+    </ClientOnly>
 
     <!-- TITLE -->
     <section
@@ -31,7 +52,7 @@ useContentHead(data);
     >
       <div class="container mx-auto max-w-7xl px-2">
         <h1 class="mb-8 text-4xl text-gray-600 dark:text-gray-200">
-          {{ $t(data.title) }}
+          {{ $t(data.title) + (beta ? " " + $t("BETA").toLowerCase() : "") }}
         </h1>
         <ContentRendererMarkdown
           class="space-y-6 text-start text-gray-600 dark:text-fp-gray-light lg:w-4/5"
@@ -41,7 +62,16 @@ useContentHead(data);
           class="mt-5 flex justify-center ltr:-ml-5 rtl:-mr-5 lg:justify-end"
           id="ctas"
         >
-          <FpBtn :href="data.links[0].url">{{ $t("Download Now") }}</FpBtn>
+          <ClientOnly>
+            <FpBtn :href="`${data.links[0].url}${beta ? '?beta=true' : ''}`">{{
+              $t("Download Now")
+            }}</FpBtn>
+            <template #fallback>
+              <FpBtn :href="`${data.links[0].url}`">{{
+                $t("Download Now")
+              }}</FpBtn>
+            </template>
+          </ClientOnly>
         </div>
       </div>
     </section>
@@ -113,13 +143,26 @@ useContentHead(data);
           </g>
         </g>
       </svg>
-      <FpCallToAction
-        :cta="data.links"
-        :image="{
-          light: `assets/images/spins/spins-${name.toLowerCase()}-light.png`,
-          dark: `assets/images/spins/spins-${name.toLowerCase()}-dark.png`,
-        }"
-      />
+      <ClientOnly>
+        <FpCallToAction
+          :cta="data.links"
+          :image="{
+            light: `assets/images/spins/spins-${name.toLowerCase()}-light.png`,
+            dark: `assets/images/spins/spins-${name.toLowerCase()}-dark.png`,
+          }"
+          :beta="beta"
+        />
+        <template #fallback>
+          <FpCallToAction
+            :cta="data.links"
+            :image="{
+              light: `assets/images/spins/spins-${name.toLowerCase()}-light.png`,
+              dark: `assets/images/spins/spins-${name.toLowerCase()}-dark.png`,
+            }"
+            :beta="false"
+          />
+        </template>
+      </ClientOnly>
     </section>
   </main>
 </template>

@@ -93,10 +93,14 @@ export default defineNuxtConfig({
     "*/atomic-desktops/": { experimentalNoScripts: true }, // no js on atomic-desktops home page - translated
     "atomic-desktops/*/": { experimentalNoScripts: true }, // no js on atomic-desktops pages either
     "*/atomic-desktops/*/": { experimentalNoScripts: true }, // no js on atomic-desktops pages either - translated
-    "spins/": { experimentalNoScripts: true }, // no js on spins home page
-    "*/spins/": { experimentalNoScripts: true }, // no js on spins home page - translated
-    "spins/*/": { experimentalNoScripts: true }, // no js on spins pages either
-    "*/spins/*/": { experimentalNoScripts: true }, // no js on spins pages either - translated
+    "spins/": { experimentalNoScripts: false }, // except the spins home page
+    "*/spins/": { experimentalNoScripts: false }, // except the spins home page - translated
+    "spins/*/": { experimentalNoScripts: false }, // except the spins pages
+    "*/spins/*/": { experimentalNoScripts: false }, // except the spins pages - translated
+    "labs/": { experimentalNoScripts: false }, // except the labs home page
+    "*/labs/": { experimentalNoScripts: false }, // except the labs home page - translated
+    "labs/*/": { experimentalNoScripts: false }, // except the labs pages
+    "*/labs/*/": { experimentalNoScripts: false }, // except the labs pages - translated
     "*/community/" : { experimentalNoScripts: true }, // no js for community pages
     "*/*/community/" : { experimentalNoScripts: true }, // no js for community pages - translated
     "/coreos/download/": { experimentalNoScripts: false }, // except the download pages, where we need JS (coreOS images, or just GPG modal)

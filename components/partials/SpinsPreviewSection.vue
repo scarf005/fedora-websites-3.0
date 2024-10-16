@@ -5,6 +5,10 @@ const props = defineProps({
   name: {
     type: String,
   },
+  beta: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -31,12 +35,12 @@ const props = defineProps({
       </p>
       <div class="flex gap-4">
         <FpBtn
-          :href="`/spins/${name}`"
+          :href="`/spins/${name}${beta ? '?beta=true' : ''}`"
           class="!rounded-md !px-10 !py-4 font-display text-sm font-bold"
           >{{ $t("Get Started") }}</FpBtn
         >
         <FpBtn
-          :href="`/spins/${name}/download`"
+          :href="`/spins/${name}/download${beta ? '?beta=true' : ''}`"
           class="!rounded-md !px-10 !py-4 font-display text-sm font-bold"
           >{{ $t("Download Now") }}</FpBtn
         >

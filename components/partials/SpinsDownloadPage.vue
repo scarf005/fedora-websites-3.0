@@ -109,16 +109,35 @@ useContentHead(data);
 </script>
 <template>
   <main class="border-t-8 border-fp-newblue dark:bg-neutral-800">
-    <TheLocalBar
-      v-if="localnav == true"
-      :image="{
-        light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
-        dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
-      }"
-      :home="`/spins/${name.toLowerCase()}`"
-      textColor="text-fp-newblue"
-      :items="[{ name: 'Download', link: `/spins/${name}/download` }]"
-    />
+    <ClientOnly>
+      <TheLocalBar
+        v-if="localnav == true"
+        :image="{
+          light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
+          dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
+        }"
+        :home="`/spins/${name.toLowerCase()}${betaSwitch ? '?beta=true' : ''}`"
+        textColor="text-fp-newblue"
+        :items="[
+          {
+            name: 'Download',
+            link: `/spins/${name}/download${betaSwitch ? '?beta=true' : ''}`,
+          },
+        ]"
+      />
+      <template #fallback>
+        <TheLocalBar
+          v-if="localnav == true"
+          :image="{
+            light: `assets/images/spins/spins-${name.toLowerCase()}-logo-light.png`,
+            dark: `assets/images/spins/spins-${name.toLowerCase()}-logo-dark.png`,
+          }"
+          :home="`/spins/${name.toLowerCase()}`"
+          textColor="text-fp-newblue"
+          :items="[{ name: 'Download', link: `/spins/${name}/download` }]"
+        />
+      </template>
+    </ClientOnly>
 
     <!-- TITLE -->
     <section class="px-2 pt-24 pb-12 text-center lg:text-start">
@@ -186,10 +205,18 @@ useContentHead(data);
       >
         <div class="flex items-center justify-end gap-4">
           <p class="text-fp-gray">Show Beta downloads</p>
-          <FpSwitch
-            @switchToggled="betaSwitch = $event.target.checked"
-            :checked="betaSwitch"
-          />
+          <ClientOnly>
+            <FpSwitch
+              @switchToggled="betaSwitch = $event.target.checked"
+              :checked="betaSwitch"
+            />
+            <template #fallback>
+              <FpSwitch
+                @switchToggled="betaSwitch = $event.target.checked"
+                :checked="false"
+              />
+            </template>
+          </ClientOnly>
         </div>
         <div class="flex justify-end">
           <FpJoinTip
