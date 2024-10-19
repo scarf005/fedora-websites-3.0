@@ -6,24 +6,32 @@ const switchLocalePath = useSwitchLocalePath();
 <template>
   <!-- DESKTOP NAVBAR -->
   <nav id="desktop" class="hidden md:flex h-[var(--nh)]">
-    <div class="w-full h-[var(--nh)] px-2">
+    <div class="h-[var(--nh)] px-2">
       <FpNavLogo />
     </div>
-    <div
-      class="section-headers h-full px-4 flex flex-none justify-end text-white"
-    >
+    <div class="section-headers w-full h-full pe-4 flex justify-end text-white">
+      <!-- this "phantom" div extends the hover effect of the first menu item to the left -->
+      <div
+        class="section-header-phantom flex w-full h-full pointer-events-none hover:pointer-events-auto ease-out duration-500"
+      ></div>
       <!-- note: 4px border reduces available height by 8px -->
       <div
         v-for="(category, level0index) in Object.keys(navigation)"
         :key="category"
-        class="section-header relative flex items-center h-full rounded-2xl hover:bg-fp-blue-500 bg-clip-padding border-4 border-transparent"
+        class="section-header relative flex items-center h-full rounded-2xl hover:bg-fp-blue-700/50 bg-clip-padding border-4 border-transparent"
       >
         <!-- DESKTOP HEADER -->
         <input
-          :id="`button-${category}`"
+          :id="`button-${category}-a`"
           type="radio"
-          name="lock"
-          class="section-button absolute left-0 w-full top-0 h-full rounded-2xl block"
+          name="lock0"
+          class="section-button-a absolute left-0 w-full top-0 h-full rounded-2xl block"
+        />
+        <input
+          :id="`button-${category}-b`"
+          type="radio"
+          name="lock0"
+          class="section-button-b absolute left-0 w-full top-0 h-full rounded-2xl block bg-fp-darkblue-700 opacity-0"
         />
         <label
           :for="`button-${category}`"
@@ -36,7 +44,7 @@ const switchLocalePath = useSwitchLocalePath();
           class="section-menu fixed top-[var(--nh)] h-[var(--mhmd)] lg:h-[var(--mhlg)] xl:h-[var(--mhxl)] left-0 right-0 lg:px-[10vw] bg-neutral-100 dark:bg-neutral-900 overflow-hidden hidden"
         >
           <!-- DESKTOP SUBSECTIONS (LEFT COLUMN) -->
-          <div class="py-2 w-[20vw]">
+          <div class="subsection py-2 w-[20vw]">
             <div
               class="px-2 text-base font-semibold uppercase text-fp-blue mb-2 select-none"
             >
@@ -45,17 +53,23 @@ const switchLocalePath = useSwitchLocalePath();
             <div
               v-for="(subsection, level1index) in navigation[category].sections"
               :key="`${category}-${level1index}`"
-              :class="`subsection-header subsection-header-${level1index} relative`"
+              :class="`subsection-header subsection-header-${level1index} relative rounded-3xl bg-clip-padding border-4 border-transparent hover:bg-gray-400/20 dark:hover:bg-gray-600/40 duration-150 ease-in-out`"
             >
               <input
-                :id="`button-${category}-${level1index}`"
+                :id="`button-${category}-${level1index}-a`"
                 type="radio"
-                name="lock"
-                class="subsection-button absolute left-0 w-full top-0 h-full z-10 rounded-2xl block hover:bg-gray-200 dark:hover:bg-gray-700 bg-clip-padding border-4 border-transparent duration-150 ease-in-out"
+                name="lock1"
+                class="subsection-button-a absolute left-0 w-full top-0 h-full rounded-3xl"
+              />
+              <input
+                :id="`button-${category}-${level1index}-b`"
+                type="radio"
+                name="lock1"
+                class="subsection-button-b absolute left-0 w-full top-0 h-full rounded-3xl bg-gray-400/50 dark:bg-gray-600 opacity-0"
               />
               <label
                 :for="`button-${category}-${level1index}`"
-                class="relative w-[20vw] z-20 p-2 text-2xl leading-[30px] block text-gray-700 dark:text-gray-200 font-semibold select-none overflow-hidden"
+                class="relative w-[20vw] z-20 p-2 text-2xl leading-[30px] block text-gray-700 dark:text-gray-200 font-semibold select-none overflow-hidden pointer-events-none"
                 >{{ $t(subsection.label) }}</label
               >
               <!-- DESKTOP SUBSECTIONS (RIGHT COLUMN) -->
@@ -107,6 +121,9 @@ const switchLocalePath = useSwitchLocalePath();
             </div>
           </div>
         </div>
+        <div
+          class="section-menu-shadow hidden fixed top-[calc(var(--nh)+var(--mhmd))] lg:top-[calc(var(--nh)+var(--mhlg))] xl:top-[calc(var(--nh)+var(--mhxl))] left-0 w-full h-1 bg-gradient-to-b from-black/10 to-transparent"
+        />
       </div>
       <div class="px-2 inline-block flex items-center">
         <FpThemeSelector />
@@ -235,12 +252,41 @@ input {
 
   /* primary buttons and menus (categories) */
 
-  .section-header:hover .section-menu {
-    @apply block shadow-xl;
+  .section-headers:has(.section-header:hover),
+  .section-headers:has(.section-header-phantom:hover) {
+    & .section-header-phantom {
+      @apply pointer-events-auto;
+    }
+
+    & .section-menu-shadow {
+      @apply block;
+    }
   }
 
-  .section-headers:hover .section-button:checked {
-    @apply bg-fp-darkblue-700;
+  .section-headers:has(.section-button-b:checked) {
+    & .section-header-phantom {
+      @apply pointer-events-none;
+    }
+
+    & .section-menu-shadow {
+      @apply block;
+    }
+  }
+
+  .section-header-phantom:hover + .section-header {
+    @apply bg-fp-blue-700/50;
+
+    & .section-menu {
+      @apply block;
+    }
+  }
+
+  .section-header:hover .section-menu {
+    @apply block;
+  }
+
+  .section-button-b:checked {
+    @apply opacity-100 -z-10;
 
     & ~ .section-menu {
       @apply block z-50;
@@ -257,13 +303,20 @@ input {
     @apply block;
   }
 
+  .subsection:not(:has(.subsection-header:hover)) {
+    &:not(:has(.subsection-header .subsection-button-b:checked))
+      .subsection-header-0 {
+      @apply bg-gray-400/20 dark:bg-gray-600/40;
+    }
+  }
+
   /*
     Safari is excluded because it locks the selection to the first submenu item on iPad.
     (https://twitter.com/simevidas/status/1434843473241329668)
   */
   @supports not (background: -webkit-named-image(i)) {
-    .subsection-button:checked {
-      @apply bg-gray-400 dark:bg-gray-800;
+    .subsection-button-b:checked {
+      @apply opacity-100 -z-10;
 
       & ~ .subsection-menu {
         @apply block z-50;
