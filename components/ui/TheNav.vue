@@ -35,7 +35,7 @@ const switchLocalePath = useSwitchLocalePath();
         />
         <label
           :for="`button-${category}`"
-          class="relative z-10 px-2 text-sm text-white select-none block pointer-events-none"
+          class="relative z-10 px-2 text-sm text-white select-none block pointer-events-none whitespace-nowrap"
           >{{ $t(navigation[category].label) }}</label
         >
         <!-- DESKTOP MENU -->
