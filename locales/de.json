@@ -364,5 +364,6 @@
     "Why Fedora Budgie Atomic?": "Wieso Fedora Budgie Atomic?",
     "Screenshot of KDE Desktop": "Screenshot vom KDE Desktop",
     "KDE Plasma Desktop": "KDE Plasma Desktop",
-    "Fedora Budgie Atomic is powered by some amazing open-source projects, including [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), and [flatpak](https://github.com/flatpak/flatpak). If you are a developer, consider helping out with one of these projects.": "Fedora Budgie Atomic basiert auf großartigen Open Source Projekten, wie [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), sowie [flatpak](https://github.com/flatpak/flatpak). Falls du ein Developer bist, trage doch zu einem dieser Projekte bei."
+    "Fedora Budgie Atomic is powered by some amazing open-source projects, including [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), and [flatpak](https://github.com/flatpak/flatpak). If you are a developer, consider helping out with one of these projects.": "Fedora Budgie Atomic basiert auf großartigen Open Source Projekten, wie [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), sowie [flatpak](https://github.com/flatpak/flatpak). Falls du ein Developer bist, trage doch zu einem dieser Projekte bei.",
+    "Windows and Mac": "Windows und Mac"
 }
