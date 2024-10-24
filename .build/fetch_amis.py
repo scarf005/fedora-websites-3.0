@@ -44,10 +44,11 @@ def collect(release):
         return toreturn
 
     results = {}
-    results['ga'] = {'x86_64': {}, 'arm64': {}}
-    results['beta'] = {'x86_64': {}, 'arm64': {}}
+    results['ga'] = {'x86_64': {}, 'aarch64': {}}
+    results['beta'] = {'x86_64': {}, 'aarch64': {}}
 
     # 1 - transform release vars into an image name we want to query for
+    # "Fedora-Cloud-Base-AmazonEC2.x86_64-41-Prerelease-1.2
     templates = [
         (f"Fedora-Cloud-Base-AmazonEC2.x86_64-{release['ga']['releasever']}-{release['ga']['rc_version']}", {
             'x86_64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
@@ -55,10 +56,10 @@ def collect(release):
         (f"Fedora-Cloud-Base-AmazonEC2.aarch64-{release['ga']['releasever']}-{release['ga']['rc_version']}", {
             'aarch64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
-        (f"Fedora-Cloud-Base-AmazonEC2.x86_64-{release['beta']['releasever']}-{release['beta']['rc_version']}", {
+        (f"Fedora-Cloud-Base-AmazonEC2.x86_64-{release['beta']['releasever']}-Prerelease-{release['beta']['rc_version']}", {
             'pre_X86_64_base_AMI':  lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
-        (f"Fedora-Cloud-Base-AmazonEC2.aarch64-{release['beta']['releasever']}-{release['beta']['rc_version']}", {
+        (f"Fedora-Cloud-Base-AmazonEC2.aarch64-{release['beta']['releasever']}-Prerelease-{release['beta']['rc_version']}", {
             'pre_AARCH64_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') in ('gp2', 'gp3'),
         }),
     ]
@@ -88,11 +89,10 @@ def collect(release):
         # 3- transform intermediary representation into results
         for name, matches in buckets.items():
             for upload in uploads:
-                if matches(upload['extra']):
-                    ami = upload['extra']['id']
-                    region = upload['destination']
-                    arch = upload['architecture']
-                    stage = "beta" if "pre_" in name else "ga"
+                print(upload)
+                arch = upload['architecture']
+                stage = "beta" if "pre_" in name else "ga"
+                for region, ami in upload['regions'].items():
                     results[stage][arch][region] = ami
 
     shelf['timestamp'] = datetime.utcnow()
@@ -124,3 +124,48 @@ if __name__ == "__main__":
   logging.info(yaml.dump(data))
   with open(opts.output, 'w') as f:
     f.write(yaml.dump(data))
+
+
+"""
+{
+  "body": {
+    "architecture": "x86_64",
+    "compose_id": "Fedora-41-20240911.0",
+    "image_name": "Fedora-Cloud-Base-AmazonEC2.x86_64-41-Prerelease-1.2",
+    "regions": {
+      "af-south-1": "ami-0cc8a1f67b7c1c5f1",
+      "ap-east-1": "ami-0035534588bcf26c6",
+      "ap-northeast-1": "ami-0a8f87ddd0dd81b86",
+      "ap-northeast-2": "ami-0271d3396e8fd47b2",
+      "ap-northeast-3": "ami-0ddb62e440d7421c2",
+      "ap-south-1": "ami-014f3a3d500eec583",
+      "ap-southeast-1": "ami-0565ceee1fae87071",
+      "ap-southeast-2": "ami-02a4cef299e6f62e9",
+      "ap-southeast-3": "ami-006cf910b9f0d4f35",
+      "ca-central-1": "ami-03815b87e17c5af65",
+      "eu-central-1": "ami-07f57d366d384c4d8",
+      "eu-north-1": "ami-0cc16a6386a73523a",
+      "eu-south-1": "ami-0d968c2edb1d2d904",
+      "eu-west-1": "ami-096b0e83fe32a74bb",
+      "eu-west-2": "ami-0e8bd6f40f6eaeeaf",
+      "eu-west-3": "ami-02fcced94b7006d03",
+      "me-south-1": "ami-0f1289dd9aa44638a",
+      "sa-east-1": "ami-07a5a678b00ccc48a",
+      "us-east-1": "ami-0a1a3731a749a16db",
+      "us-east-2": "ami-078663b68885f0ae5",
+      "us-west-1": "ami-0ea86d67aba82be5a",
+      "us-west-2": "ami-01ef26235a840d0d6"
+    }
+  },
+  "headers": {
+    "fedora_messaging_schema": "fedora_image_uploader.published.v1.aws",
+    "fedora_messaging_severity": 20,
+    "priority": 0,
+    "sent-at": "2024-09-12T01:55:05+00:00"
+  },
+  "id": "16856f57-56f9-4335-ba34-6c62a3b4f13b",
+  "priority": 0,
+  "queue": null,
+  "topic": "org.fedoraproject.prod.fedora_image_uploader.published.v1.aws.Cloud_Base.41.x86_64"
+}
+"""

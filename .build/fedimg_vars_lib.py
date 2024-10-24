@@ -27,6 +27,7 @@ cache_file = '/tmp/fedora_websites_fedimg.cache'
 dateformat = '%Y-%m-%dT%H:%MZ'
 base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
 topic = "org.fedoraproject.prod.fedimg.image.publish"
+category = "fedora_image_uploader"
 
 session = requests.session()
 
@@ -35,7 +36,7 @@ def get_page(page, pages):
     """ Retrieve the JSON for a particular page of datagrepper results """
     log.debug("Getting page %i of %s", page, pages)
     response = session.get(base_url, params=dict(
-        topic=topic,
+        category=category,
         page=page,
         # Get messages from 28 weeks (7 months)
         delta=16934400,
