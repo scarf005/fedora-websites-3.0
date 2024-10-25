@@ -1247,5 +1247,6 @@
     "The [Fedora Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/#_reporting_and_enforcement) outlines the reporting steps for issues related to the Code of Conduct. In a nutshell, the process is started via either [creating a new, private, pagure ticket](https://pagure.io/CoC/new_issue) or sending an email to [flock-coc@fedoraproject.org](mailto:flock-coc@fedoraproject.org).": "[Kodeks postępowania Fedory](https://docs.fedoraproject.org/en-US/project/code-of-conduct/#_reporting_and_enforcement) określa kroki zgłaszania problemów związanych z Kodeksem postępowania. W skrócie, proces rozpoczyna się albo poprzez [utworzenie nowego, prywatnego zgłoszenia pagure](https://pagure.io/CoC/new_issue), albo wysłanie wiadomości e-mail na adres [flock-coc{'@'}fedoraproject.org](mailto:flock-coc{'@'}fedoraproject.org).",
     "Extra Packages for Enterprise Linux | Fedora Podcast 26": "Dodatkowe pakiety dla Enterprise Linux {'|'} Fedora Podcast 26",
     "O’Reilly": "O’Reilly",
-    "Windows and Mac": "Windows i Mac"
+    "Windows and Mac": "Windows i Mac",
+    "Take Fedora KDE for a Spin | Fedora Podcast 39": "Zabierz Fedorę KDE na przejażdżkę {'|'} Fedora Podcast 39"
 }
