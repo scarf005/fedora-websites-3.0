@@ -58,6 +58,8 @@ pages:
   needs:
     - job: gen_locales
       optional: true
+  variables:
+    NODE_OPTIONS: --max_old_space_size=8192
   only:
     - develop # only build develop branch to test deploy. Feature branches are not built, main is hosted on Fedora CDN.
   interruptible: true
