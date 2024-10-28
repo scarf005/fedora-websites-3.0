@@ -1255,5 +1255,12 @@
     "Built on the foundations of KDE Plasma Desktop, the Fedora KDE Plasma Mobile Spin brings its flexibility to a mobile form factor. Although originally geared towards phones, the touch friendly interface works very well on tablets and 2-in-1 laptops. ": "Zbudowany na fundamentach KDE Plasma Desktop, Fedora KDE Plasma Mobile Spin przenosi swoją elastyczność do mobilnego formatu. Chociaż pierwotnie ukierunkowany na telefony, interfejs przyjazny dla dotyku działa bardzo dobrze na tabletach i laptopach 2 w 1. ",
     "Fedora Miracle Window Manager Image": "Obraz menedżera okien Fedora Miracle",
     "We're so glad you've decided to give Fedora Miracle Window Manager Spin a try. We know you'll love it.": "Cieszymy się, że zdecydowałeś się wypróbować Fedora Miracle Window Manager Spin. Wiemy, że go pokochasz.",
-    "Screenshot of Fedora Miracle Window Manager desktop": "Zrzut ekranu pulpitu Fedora Miracle Window Manager"
+    "Screenshot of Fedora Miracle Window Manager desktop": "Zrzut ekranu pulpitu Fedora Miracle Window Manager",
+    "nwg-drawer": "nwg-drawer",
+    "nwg-panel": "nwg-panel",
+    "nwg-dock": "nwg-dock",
+    "GTK3-based panel for Sway IPC Wayland compositors.": "Panel oparty na GTK3 dla kompozytorów Sway IPC Wayland.",
+    "GTK3-based dock for Sway IPC Wayland compositors.": "Stacja dokująca oparta na GTK3 dla kompozytorów Sway IPC Wayland.",
+    "nwg-bar": "nwg-bar",
+    "The Fedora Miracle Window Manager Spin provides the premiere Miracle window manager. It offers an appealing tiling experience to both novices and advanced users who prefer an easy keyboard-driven interaction model. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Miracle Windows Manager Spin offers a complete experience with a smooth and cozy interface that anyone can use.": "Fedora Miracle Window Manager Spin zapewnia najlepszy menedżer okien Miracle. Oferuje atrakcyjne wrażenia kafelkowe zarówno nowicjuszom, jak i zaawansowanym użytkownikom, którzy preferują łatwy model interakcji sterowany klawiaturą. Oferując lekkie aplikacje do przeglądania stron internetowych, edycji tekstu i odtwarzania multimediów, Fedora Miracle Windows Manager Spin oferuje kompletne wrażenia z płynnym i wygodnym interfejsem, z którego może korzystać każdy."
 }
