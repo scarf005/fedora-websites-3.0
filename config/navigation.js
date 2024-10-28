@@ -151,6 +151,12 @@ const navigation = {
             icon: "fa6-solid:desktop",
             description: "Fedora Linux with the Budgie Desktop",
           },
+          {
+            label: "Miracle Desktop",
+            path: "/spins/miraclewm",
+            icon: "fa6-solid:desktop",
+            description: "Fedora Linux with the Miracle Window Manager",
+          },
         ],
       },
       {
