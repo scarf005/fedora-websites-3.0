@@ -1329,5 +1329,14 @@
     "Fedora Miracle Window Manager Image": "Fedora Miracle fönsterhanterare avbild",
     "Fedora Miracle Window Manager Spin": "Fedora Miracle fönsterhanterare spinn",
     "Screenshot of Fedora Miracle Window Manager desktop": "Skärmdump av Fedora Miracle fönsterhanterare skrivbordet",
-    "We're so glad you've decided to give Fedora Miracle Window Manager Spin a try. We know you'll love it.": "Vi är så glada att du har bestämt dig för att prova Fedora Miracle fönsterhanterare spinn. Vi vet att du kommer att älska det."
+    "We're so glad you've decided to give Fedora Miracle Window Manager Spin a try. We know you'll love it.": "Vi är så glada att du har bestämt dig för att prova Fedora Miracle fönsterhanterare spinn. Vi vet att du kommer att älska det.",
+    "Application drawer for layer shell Wayland compositors.": "Applikationslåda för lagerskal Wayland kompositörer.",
+    "GTK3-based button bar for layer shell compositors.": "GTK3-baserad knapprad för lagerskalkompositörer.",
+    "GTK3-based panel for Sway IPC Wayland compositors.": "GTK3-baserad panel för Sway IPC Wayland-kompositörer.",
+    "nwg-bar": "nwg-bar",
+    "nwg-dock": "nwg-dock",
+    "nwg-drawer": "nwg-drawer",
+    "nwg-panel": "nwg-panel",
+    "GTK3-based dock for Sway IPC Wayland compositors.": "GTK3-baserad docka för Sway IPC Wayland-kompositörer.",
+    "The Fedora Miracle Window Manager Spin provides the premiere Miracle window manager. It offers an appealing tiling experience to both novices and advanced users who prefer an easy keyboard-driven interaction model. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Miracle Windows Manager Spin offers a complete experience with a smooth and cozy interface that anyone can use.": "Fedora Miracle fönsterhanterare spinn tillhandahåller den främsta Miracle fönsterhanteraren. Den erbjuder en tilltalande kakelupplevelse för både nybörjare och avancerade användare som föredrar en enkel tangentbords-driven interaktionsmodell. Med lätta program för webbsurfning, textredigering och mediauppspelning, erbjuder Fedora Miracle fönsterhanterare spinn en komplett upplevelse med ett smidigt och mysigt gränssnitt som alla kan använda."
 }
