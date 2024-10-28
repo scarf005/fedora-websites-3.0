@@ -157,6 +157,13 @@ const navigation = {
             icon: "fa6-solid:desktop",
             description: "Fedora Linux with the Miracle Window Manager",
           },
+          {
+            label: "KDE Mobile Desktop",
+            path: "/spins/kde-mobile",
+            icon: "fa6-solid:desktop",
+            description:
+              "A complete, modern desktop built using the KDE Plasma Desktop Environment.",
+          },
         ],
       },
       {

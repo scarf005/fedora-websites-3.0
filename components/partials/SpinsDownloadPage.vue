@@ -9,6 +9,7 @@ const props = defineProps({
   },
 });
 
+const variant_name = props.name.replace("-", "_");
 const data = await getCMS(`spins/${props.name.toLowerCase()}`);
 const release_data = await getCMS("release");
 const route = useRoute();
@@ -235,14 +236,14 @@ useContentHead(data);
               name="For Intel and AMD x86_64 systems"
               v-if="
                 ga_data.payload.images.Spins.x86_64?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 ga_data.payload.images.Spins.x86_64.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.x86_64"
@@ -253,14 +254,14 @@ useContentHead(data);
               name="For ARM® aarch64 systems"
               v-if="
                 ga_data.payload.images.Spins.aarch64?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 ga_data.payload.images.Spins.aarch64.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.aarch64"
@@ -271,14 +272,14 @@ useContentHead(data);
               name="For Power ppc64le systems"
               v-if="
                 ga_data.payload.images.Spins.ppc64le?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 ga_data.payload.images.Spins.ppc64le.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.ppc64le"
@@ -289,14 +290,14 @@ useContentHead(data);
               name="For IBM s390x zSystems"
               v-if="
                 ga_data.payload.images.Spins.s390x?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 ga_data.payload.images.Spins.s390x.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.s390x"
@@ -309,14 +310,14 @@ useContentHead(data);
               name="For Intel and AMD x86_64 systems"
               v-if="
                 beta_data.payload.images.Spins.x86_64?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 beta_data.payload.images.Spins.x86_64.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.x86_64"
@@ -328,14 +329,14 @@ useContentHead(data);
               name="For ARM® aarch64 systems"
               v-if="
                 beta_data.payload.images.Spins.aarch64?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 beta_data.payload.images.Spins.aarch64.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.aarch64"
@@ -347,14 +348,14 @@ useContentHead(data);
               name="For Power ppc64le systems"
               v-if="
                 beta_data.payload.images.Spins.ppc64le?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 beta_data.payload.images.Spins.ppc64le.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.ppc64le"
@@ -366,14 +367,14 @@ useContentHead(data);
               name="For IBM s390x zSystems"
               v-if="
                 beta_data.payload.images.Spins.s390x?.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 ).length
               "
               :art_name="data.title"
               @verify-click="updateVerify"
               :artifacts="
                 beta_data.payload.images.Spins.s390x.filter(
-                  (a) => a.subvariant == name,
+                  (a) => a.subvariant == variant_name,
                 )
               "
               :dlPrefix="dlpath.s390x"
