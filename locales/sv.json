@@ -1338,5 +1338,12 @@
     "nwg-panel": "nwg-panel",
     "GTK3-based dock for Sway IPC Wayland compositors.": "GTK3-baserad docka för Sway IPC Wayland-kompositörer.",
     "The Fedora Miracle Window Manager Spin provides the premiere Miracle window manager. It offers an appealing tiling experience to both novices and advanced users who prefer an easy keyboard-driven interaction model. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Miracle Windows Manager Spin offers a complete experience with a smooth and cozy interface that anyone can use.": "Fedora Miracle fönsterhanterare spinn tillhandahåller den främsta Miracle fönsterhanteraren. Den erbjuder en tilltalande kakelupplevelse för både nybörjare och avancerade användare som föredrar en enkel tangentbords-driven interaktionsmodell. Med lätta program för webbsurfning, textredigering och mediauppspelning, erbjuder Fedora Miracle fönsterhanterare spinn en komplett upplevelse med ett smidigt och mysigt gränssnitt som alla kan använda.",
-    "Index": "index"
+    "Index": "index",
+    "NeoChat": "NeoChat",
+    "NeoChat is a client for Matrix based on KDE frameworks. NeoChat aims to be a fully featured application for the Matrix specification.": "NeoChat är en klient för Matrix baserad på KDE-ramverk. NeoChat siktar på att vara en fullt utrustad applikation för Matrix-specifikationen.",
+    "Okular Mobile": "Okular Mobile",
+    "🎉 [Fedora Linux 41 released!](https://fedoramagazine.org/announcing-fedora-linux-41)": "🎉 [Fedora Linux 41 har släppts!](https://fedoramagazine.org/announcing-fedora-linux-41)",
+    "Haruna": "Haruna",
+    "Haruna is an open source media player built with Qt/QML and libmpv. It does video preview on seek, play online videos, and more.": "Haruna är en mediaspelare med öppen källkod byggd på Qt/QML och libmpy. den gör förhandsgranskning av video vid spolning, spelar upp onlinevideor och mer.",
+    "Index is a file manager that works on desktops, Android and Plasma Mobile. Index lets you browse your system files and applications and preview your music, text, image and video files and share them with external applications.": "Index är en filhanterare som fungerar på stationära datorer, Android och Plasma Mobil. Index låter dig bläddra bland dina systemfiler och program/applikationer och förhandsgranska dina musik, text, bild och videofiler och dela dem med externa program/applikationer."
 }
