@@ -16,10 +16,11 @@ const props = defineProps({
           src.replace('public/', '')
     }`"
   />
-  <template v-else>
+  <template v-else-if="typeof src === 'object'">
     <FpImage class="dark" :src="src.dark" v-bind="$attrs" />
     <FpImage class="light" :src="src.light" v-bind="$attrs" />
   </template>
+  <template v-else> </template>
 </template>
 
 <style>
