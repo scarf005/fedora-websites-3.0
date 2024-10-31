@@ -87,5 +87,6 @@ if __name__ == '__main__':
   # GA
   fmw_releases.extend(fmw_release(rel["ga"]["releasever"], overrides=rel["ga"]["compose_overrides"]))
   fmw_releases.extend(fmw_release(rel["ga"]["releasever"]-1))
+  fmw_releases.extend(fmw_release(rel["ga"]["releasever"]-2))
 
   print(json.dumps(fmw_releases, indent=2))
