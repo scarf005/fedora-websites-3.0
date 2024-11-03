@@ -1042,5 +1042,6 @@
     "Back to Top": "Voltar para o Topo",
     "List Azure region": "Listar região do Azure",
     "List AWS EC2 region": "Listar região do AWS EC2",
-    "start_fcos_instances_cloud": "Execute instâncias {arch} do Fedora CoreOS {stream} em plataformas de nuvem pública."
+    "start_fcos_instances_cloud": "Execute instâncias {arch} do Fedora CoreOS {stream} em plataformas de nuvem pública.",
+    "Verify": "Verificar"
 }
