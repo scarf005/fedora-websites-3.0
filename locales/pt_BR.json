@@ -1031,5 +1031,16 @@
     "Select the Azure region": "Selecione a região do Azure",
     "x86_64-based instances": "instâncias baseadas em x86_64",
     "ARM® aarch64-based instances": "Instâncias baseadas em ARM® aarch64",
-    "What is Fedora Labs?": "O que é o Fedora Labs?"
+    "What is Fedora Labs?": "O que é o Fedora Labs?",
+    "Windows and Mac": "Windows e Mac",
+    "Show Downloads": "Mostrar Downloads",
+    "download_fcos_artifacts_baremetal": "Baixe artefatos {arch} do Fedora CoreOS {stream}.",
+    "download_fcos_images_cloud": "Baixe imagens {arch} do Fedora CoreOS {stream} para provedores de nuvem.",
+    "Details": "Saber mais",
+    "Launch": "Executar",
+    "Bare Metal": "Bare Metal",
+    "Back to Top": "Voltar para o Topo",
+    "List Azure region": "Listar região do Azure",
+    "List AWS EC2 region": "Listar região do AWS EC2",
+    "start_fcos_instances_cloud": "Execute instâncias {arch} do Fedora CoreOS {stream} em plataformas de nuvem pública."
 }
