@@ -1043,5 +1043,8 @@
     "List Azure region": "Listar região do Azure",
     "List AWS EC2 region": "Listar região do AWS EC2",
     "start_fcos_instances_cloud": "Execute instâncias {arch} do Fedora CoreOS {stream} em plataformas de nuvem pública.",
-    "Verify": "Verificar"
+    "Verify": "Verificar",
+    "MATE Terminal": "MATE Terminal",
+    "Screenshot of Fedora MATE+Compiz desktop": "Captura de tela do Fedora MATE+Compiz",
+    "Simple interface. Powerful music management. Smart Playlists. Advanced track tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts.": "Interface simples. Gerenciamento de música poderoso. Playlists inteligentes. Editor de tags avançado. Capa de álbum automático. Letras. Streaming de rádio. Podcasts."
 }
