@@ -1058,5 +1058,9 @@
     "Will this event be recorded?": "Будет ли это событие записано?",
     "MOOSE": "MOOSE",
     "Wireshark": "Wireshаrk",
-    "Ansible": "Ansible"
+    "Ansible": "Ansible",
+    "Apache Software Foundation": "Apache Software Foundation",
+    "Bluehost": "Bluehost",
+    "CentOS": "CentOS",
+    "Citrix": "Citrix"
 }
