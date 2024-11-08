@@ -1225,5 +1225,9 @@
     "Who is the Fedora Community Architect? | Fedora Podcast 35": "페도라 커뮤니티의 설계자는 누구인가? {'|'} 페도라 팟캐스트 35",
     "Welcome to the Podcast! | Fedora Podcast 23": "팟캐스트에 오신 것을 환영합니다! {'|'} 페도라 팟캐스트 23",
     "Index": "개요",
-    "Windows and Mac": "윈도우 및 맥"
+    "Windows and Mac": "윈도우 및 맥",
+    "Fedora Miracle Window Manager Spin": "페도라 미라클 창 관리자 스핀",
+    "GTK3-based button bar for layer shell compositors.": "레이어 쉘 합성기를 위한 GTK3-기반의 누름단추 막대.",
+    "nwg-panel": "nwg-panel",
+    "Fedora Miracle Window Manager Image": "페도라 미라클 윈도우 창 관리자 이미지"
 }
