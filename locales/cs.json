@@ -1129,5 +1129,13 @@
     "Image family:": "Rodina obrazu:",
     "Latest image:": "Nejnovější obraz:",
     "pick_your_architecture": "Vyberte si {architecture}",
-    "FeatherPad is a desktop independent and lightweight Qt5 plain-text editor for Linux.": "FeatherPad je desktopový nezávislý a odlehčený editor prostého textu pro Linux, naprogramovaný v Qt5."
+    "FeatherPad is a desktop independent and lightweight Qt5 plain-text editor for Linux.": "FeatherPad je desktopový nezávislý a odlehčený editor prostého textu pro Linux, naprogramovaný v Qt5.",
+    "Windows and Mac": "Windows a Mac",
+    "Built on the foundations of KDE Plasma Desktop, the Fedora KDE Plasma Mobile Spin brings its flexibility to a mobile form factor. Although originally geared towards phones, the touch friendly interface works very well on tablets and 2-in-1 laptops. ": "Na základech KDE Plasma Desktopu přináší spin Fedory KDE Plasma Mobile jeho přizpůsobivost pro mobilní tvarové formáty. I když původně zamýšlen pro telefony, přívětivé dotykové rozhraní funguje skvěle i na tabletech a laptopech typu 2v1. ",
+    "Fedora KDE Plasma Mobile Spin": "Spin Fedory KDE Plasma Mobile",
+    "We're so glad you've decided to give Fedora KDE Plasma Mobile Spin a try. We know you'll love it.": "Velmi nás těší, že jste se rozhodli vyzkoušet spin Fedory KDE Plasma Mobile. Víme, že si ho zamilujete.",
+    "Fedora Miracle Window Manager Spin": "Spin Fedora Miracle Window Manager",
+    "We're so glad you've decided to give Fedora Miracle Window Manager Spin a try. We know you'll love it.": "Velmi nás těší, že jste se rozhodli vyzkoušet spin Fedora Miracle Window Manager. Víme, že si ho zamilujete.",
+    "The Fedora Miracle Window Manager Spin provides the premiere Miracle window manager. It offers an appealing tiling experience to both novices and advanced users who prefer an easy keyboard-driven interaction model. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora Miracle Windows Manager Spin offers a complete experience with a smooth and cozy interface that anyone can use.": "Spin Fedora Miracle Window Manager je premiérou okenního správce Miracle. Nabízí atraktivní dlaždicovou zkušenost jak pro nováčky, tak pokročilé uživatele, kteří upřednostňují snadný interaktivní model pomocí klávesnice. Spin Fedora Miracle Window Manager obsahuje odlehčené aplikace pro prohlížení webu, úpravu textu a přehrávání médií a pro každého nabízí neomezený zážitek s uhlazeným a přívětivým rozhraním.",
+    "🎉 [Fedora Linux 41 released!](https://fedoramagazine.org/announcing-fedora-linux-41)": "🎉 [Fedora Linux 41 zveřejněn!](https://fedoramagazine.org/announcing-fedora-linux-41)"
 }
