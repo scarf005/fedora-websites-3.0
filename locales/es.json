@@ -599,10 +599,18 @@
     "The **Fedora Onyx** tag on Fedora's Discourse-based discussion forum is a great place to connect with other Fedora Budgie Atomic users and contributors.": "La etiqueta **Fedora Onyx** en el foro de discusión basado en Discourse de Fedora es un gran lugar para conectarse con otros usuarios y colaboradores de Fedora Budgie Atomic.",
     "Found something that isn't quite right? Want to propose a change to the way Budgie Atomic works? We want to hear from you! Head over to the [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) and let us know.": "¿Ha encontrado algo que no está del todo bien? ¿Quieres proponer un cambio en el funcionamiento de Budgie Atomic? ¡Queremos escucharte! Dirígete al [Budgie SIG issue tracker](https://pagure.io/fedora-budgie/project/issues) y háznoslo saber.",
     "Testers": "Testers",
-    "Containerized": "Contenedor",
+    "Containerized": "Contenerizado",
     "Developer-Friendly": "Desarrollador Amistoso",
     "Not sure how to use these files? [Learn here](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)": "¿No sabes como usar estos archivos? [Mira aqui](https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/)",
     "Celestia": "Celestia",
     "🎉 [Fedora Linux 41 released!](https://fedoramagazine.org/announcing-fedora-linux-41)": "🎉 [¡Lanzamiento de Fedora Linux 41!](https://fedoramagazine.org/announcing-fedora-linux-41)",
-    "Featured Applications": "Aplicaciones Destacadas"
+    "Featured Applications": "Aplicaciones Destacadas",
+    "We're so glad you've decided to give Fedora Budgie Atomic a try. We know you'll love it.": "Estamos encantados de que hayas decidido probar Fedora Budgie Atomic. Sabemos que te encantará.",
+    "A feature-rich, modern desktop designed to keep out the way of the user.": "Un escritorio moderno y lleno de características, diseñado para no interferir con el usuario.",
+    "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "Un sistema operativo de escritorio atómico con el gestor de ventanas Sway, controlado por teclado.",
+    "An atomic desktop operating system featuring the modern and elegant GNOME Desktop": "Un sistema operativo de escritorio atómico con el moderno y elegante escritorio GNOME",
+    "Windows and Mac": "Windows y Mac",
+    "Built On Top of the Best": "Construido sobre lo mejor",
+    "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "Siempre se guarda una versión anterior de tu sistema, por si acaso. ¡Si necesitas retroceder en el tiempo, puedes hacerlo!",
+    "An atomic desktop operating system featuring the modern and modular Plasma Desktop": "Un sistema operativo de escritorio atómico con el moderno y modular Escritorio Plasma"
 }
