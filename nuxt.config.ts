@@ -5,7 +5,7 @@ const locales_ci = [
   { "code": "fr", "language": "fr", "file": "fr.json", "name": "Français" },
 ];
 const base = process?.env?.CI_PAGES_URL
-  ? new URL(process?.env?.CI_PAGES_URL).pathname
+  ? new URL(process?.env?.CI_PAGES_URL +"/"+ process?.env?.PAGES_PREFIX).pathname
   : "/";
 
 export default defineNuxtConfig({
