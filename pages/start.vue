@@ -441,6 +441,7 @@ if (parseInt(sidebars)) {
             action="https://duckduckgo.com/"
           >
             <input
+              autofocus
               class="w-full rounded-2xl bg-white py-2 font-semibold leading-[2em] ltr:pl-6 rtl:pr-6 dark:bg-gray-700 dark:text-gray-100 sm:text-2xl"
               type="text"
               name="q"
