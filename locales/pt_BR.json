@@ -1046,5 +1046,14 @@
     "Verify": "Verificar",
     "MATE Terminal": "MATE Terminal",
     "Screenshot of Fedora MATE+Compiz desktop": "Captura de tela do Fedora MATE+Compiz",
-    "Simple interface. Powerful music management. Smart Playlists. Advanced track tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts.": "Interface simples. Gerenciamento de música poderoso. Playlists inteligentes. Editor de tags avançado. Capa de álbum automático. Letras. Streaming de rádio. Podcasts."
+    "Simple interface. Powerful music management. Smart Playlists. Advanced track tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts.": "Interface simples. Gerenciamento de música poderoso. Playlists inteligentes. Editor de tags avançado. Capa de álbum automático. Letras. Streaming de rádio. Podcasts.",
+    "CoreOS Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "As reuniões do Grupo de Trabalho do CoreOS estão abertas a todos os contribuidores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) para atualizações).",
+    "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Aberto a todos os contribuidores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) para atualizações).",
+    "Open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) for updates).": "Aberto a todos os contribuidores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→coreos](https://calendar.fedoraproject.org/list/CoreOS/) para atualizações).",
+    "Launch on public cloud platforms": "Lançamento em plataformas de nuvem pública",
+    "Image family:": "Família de imagens:",
+    "Latest image:": "Imagem mais recente:",
+    "pick_your_architecture": "Escolha sua {architecture}",
+    "IoT Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "As reuniões do Grupo de Trabalho de IoT estão abertas a todos os colaboradores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) para atualizações).",
+    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "As reuniões do Cloud Working Group estão abertas a todos os colaboradores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) para atualizações)."
 }
