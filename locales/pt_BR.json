@@ -1055,5 +1055,7 @@
     "Latest image:": "Imagem mais recente:",
     "pick_your_architecture": "Escolha sua {architecture}",
     "IoT Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) for updates).": "As reuniões do Grupo de Trabalho de IoT estão abertas a todos os colaboradores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→iot](https://calendar.fedoraproject.org/list/IoT/) para atualizações).",
-    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "As reuniões do Cloud Working Group estão abertas a todos os colaboradores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) para atualizações)."
+    "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "As reuniões do Cloud Working Group estão abertas a todos os colaboradores atuais e potenciais {cadence} em **{time}** UTC em **{location}** (consulte [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) para atualizações).",
+    "Atomic Desktops for Fedora": "Atomic Desktops para o Fedora.",
+    "Virtualized": "Virtualizado"
 }
