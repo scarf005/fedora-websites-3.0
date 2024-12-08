@@ -1248,5 +1248,8 @@
     "nwg-dock": "nwg-dock",
     "nwg-bar": "nwg-bar",
     "NeoChat": "NeoChat",
-    "Okular Mobile": "Okular 모바일"
+    "Okular Mobile": "Okular 모바일",
+    "Fedora KDE Plasma Mobile Spin": "페도라 KDE 플래즈마 모바일 스핀",
+    "Fedora KDE Plasma Mobile Image": "페도라 KDE 플래즈마 모바일 이미지",
+    "Application drawer for layer shell Wayland compositors.": "계층 쉘 웨이랜드 합성자를 위한 응용프로그램 서랍."
 }
