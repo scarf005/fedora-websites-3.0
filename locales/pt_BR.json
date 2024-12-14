@@ -1149,7 +1149,7 @@
     "Register on the Wiki": "Registre-se na Wiki",
     "Board Game Night": "Noite de jogos de tabuleiro",
     "How much does it cost to attend?": "Quanto custa para participar?",
-    "Strong Museum of Play Arcade Night": "Forte Museu do Jogo Arcade Night",
+    "Strong Museum of Play Arcade Night": "Forte Museu do Jogo Noturno de Arcade",
     "While Flock is open to anyone, the majority of talks at Flock are focused on existing contributors and those looking to increase their involvement. There is almost no solely user-focused content. Flock is a space meant for working on and advancing the interests of our global, diverse contributor community.": "Embora o Flock esteja aberto a qualquer pessoa, a maioria das palestras no Flock está focada nos colaboradores existentes e naqueles que procuram aumentar seu envolvimento. Quase não há conteúdo focado apenas no usuário. O Flock é um espaço destinado a trabalhar e promover os interesses de nossa comunidade global e diversificada de colaboradores.",
     " ": " ",
     "125 East Main Street": "Rua East Main, 125",
@@ -1192,5 +1192,10 @@
     "United States": "Estados Unidos",
     "We encourage people to pay as it shows commitment to attending. We make many non-refundable commitments for items such as lunch and coffee breaks that are lost to us if you do not attend. There is a strong correlation between paying anything toward admission and actually showing up. The cost paid does not cover the costs associated with your attendance, even if you pay for your entire costs of travel and lodging.": "Incentivamos as pessoas a pagar, pois isso mostra o compromisso de participar. Assumimos muitos compromissos não reembolsáveis para itens como almoço e coffee breaks que são perdidos para nós se você não comparecer. Há uma forte correlação entre pagar qualquer coisa para a admissão e realmente aparecer. O custo pago não cobre os custos associados à sua participação, mesmo que você pague todos os custos de viagem e hospedagem.",
     "Use the value that feels the closest to right for you. Consider regions with similar economic situations. Also consider your own situation and choose accordingly.": "Use o valor que parece mais próximo do certo para você. Considere regiões com situações econômicas semelhantes. Considere também sua própria situação e escolha de acordo.",
-    "Venue": "Local"
+    "Venue": "Local",
+    "View on Schedule": "Ver no Cronograma",
+    "Venue & Hotel": "Local & Hotel",
+    "We plan to both record and live-stream all presentations on Wednesday, 7 August and Thursday, 8 August. Workshops and hackfests on Friday and Saturday will not be recorded or live-streamed. Live-streaming will happen [on the Fedora YouTube channel](https://www.youtube.com/@fedora). Attendees to the event may be captured on video, audio, or photographic recordings": "Planejamos gravar e transmitir ao vivo todas as apresentações na quarta-feira, 7 de agosto e quinta-feira, 8 de agosto. Workshops e hackfests na sexta e no sábado não serão gravados ou transmitidos ao vivo. A transmissão ao vivo acontecerá [no canal do Fedora no YouTube](https://www.youtube.com/{'@'}fedora). Os participantes do evento podem ser capturados em gravações de vídeo, áudio ou fotografia",
+    "Call for Proposals": "Chamada para Propostas",
+    "View the Prospectus": "Veja o Prospecto"
 }
