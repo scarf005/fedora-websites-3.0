@@ -1093,7 +1093,7 @@
     "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark jest analizatorem ruchu sieciowego dla systemów operacyjnych typu UNIX.",
     "Sqlninja": "Sqlninja",
     "Yersinia": "Yersinia",
-    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia to narzędzie sieciowe zaprojektowane do wykorzystywania słabych punktów różnych protokołów sieciowych",
+    "Yersinia is a network tool designed to take advantage of some weakness in different network protocols.": "Yersinia to narzędzie sieciowe zaprojektowane do wykorzystywania słabych punktów różnych protokołów sieciowych.",
     "Launch on public cloud platforms": "Uruchom na platformach chmury publicznej",
     "Select AWS EC2 region": "Wybierz region AWS EC2",
     "Launch instance": "Uruchom instancję",
@@ -1323,5 +1323,6 @@
     "Gaming with ProtonGE | Fedora Podcast 40": "Granie z ProtonGE {'|'} Fedora Podcast 40",
     "Scavenger Hunt": "Gra w podchody",
     "Register on the Wiki": "Zarejestruj się w Wiki",
-    "Please choose the amount that makes the most sense for you. Flock to Fedora is free to attend, while we encourage you to consider making a voluntary payment.": "Proszę wybrać kwotę odpowiednią dla Ciebie. Flock to Fedora jest wydarzeniem darmowym, jednak zachęcamy do złożenia darowizny."
+    "Please choose the amount that makes the most sense for you. Flock to Fedora is free to attend, while we encourage you to consider making a voluntary payment.": "Proszę wybrać kwotę odpowiednią dla Ciebie. Flock to Fedora jest wydarzeniem darmowym, jednak zachęcamy do złożenia darowizny.",
+    "Gaming on Bazzite | Fedora Podcast 43": "Granie na Bazzite {'|'} Fedora Podcast 43"
 }
