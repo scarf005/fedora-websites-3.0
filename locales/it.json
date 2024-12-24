@@ -1326,5 +1326,7 @@
     "We're so glad you've decided to give Fedora Miracle Window Manager Spin a try. We know you'll love it.": "Siamo così felici che tu abbia deciso di provare Fedora Miracle Window Manager Spin. Sappiamo che lo adorerai.",
     "Cloud Working Group meetings are open to all current and potential contributors {cadence} at **{time}** UTC in **{location}** (see [fedocal→cloud](https://calendar.fedoraproject.org/list/cloud/) for updates).": "Gli incontri del Cloud Working Group sono aperti a tutti i contributori attuali e potenziali {cadence} alle **{time}** UTC in **{location}** (vedi [fedocal→cloud](https://calendar.fedoraproject.org/ list/cloud/) per gli aggiornamenti).",
     "TuxDigital": "TuxDigital",
-    "Launch": "Avvia"
+    "Launch": "Avvia",
+    "Ansible": "Ansible",
+    "Datto": "datto"
 }
