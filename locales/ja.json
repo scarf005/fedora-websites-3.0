@@ -663,5 +663,7 @@
     "Fedora ALT Downloads": "Fedora ALT Downloads",
     "Digital Public Good Logo": "Digital Public Good のロゴ",
     "Atomic Desktops": "Atomic デスクトップ",
-    "Get support from our community on the Fedora Discussion Forum.": "Fedora ディスカッションフォーラムを使用して、私たちのコミュニティからサポートを受けることができます。"
+    "Get support from our community on the Fedora Discussion Forum.": "Fedora ディスカッションフォーラムを使用して、私たちのコミュニティからサポートを受けることができます。",
+    "verify_button_download": "このボタン {verify_button} をクリックして、ダウンロードしたイメージのチェックサムをダウンロードしましょう。",
+    "Destination": "ターゲット"
 }
