@@ -536,5 +536,13 @@
     "Page not found": "لم يُعثر على الصفحة",
     "CMS": "نظام إدارة محتوى",
     "A Dynamic display configuration tool.": "أداة تكوين ذات عَرض ديناميكي.",
-    "you_can_verify_the_GPG_details": "{icon}يمكنك التحقق من تفاصيل مفتاح(مفاتيح) GPG ‫{here}."
+    "you_can_verify_the_GPG_details": "{icon}يمكنك التحقق من تفاصيل مفتاح(مفاتيح) GPG ‫{here}.",
+    "Alternative desktops for Fedora.": "بيئات سطح مكتب بديلة لنظام فيدورا.",
+    "Find a Fedora Spin to enhance your experience! You can find the latest versions of our spins here.": "اختر نسخة مخصصة من فيدورا تناسب احتياجاتك! يمكنك استكشاف أحدث الإصدارات من هذه النسخ هنا.",
+    "verify_button_download": "اضغط على زر التحقق {verify_button} لتنزيل ملف التحقق (checksum) الخاص بالملف الذي قمت بتنزيله",
+    "Contributor survey banner": "لافتة استبيان المساهمين",
+    "Go Home": "عد للصفحة الرئيسية",
+    "Podcasts": "بودكاست",
+    "Search with DuckDuckGo": "ابحث باستخدام DuckDuckGo",
+    "Latest news and publications from the Fedora Project": "آخر الأخبار والمنشورات من مشروع فيدورا"
 }
