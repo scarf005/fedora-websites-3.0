@@ -939,7 +939,7 @@
     "Colúr.": "Colúr.",
     "Sign up here!": "Kaydolmak için buraya tıklayın!",
     "Who do I contact if I have questions not listed here?": "Burada listelenmeyen sorularım olursa kiminle iletişime geçebilirim?",
-    "EPEL, the Ultimate Answer? | Fedora Podcast 42": "EPEL, Nihai Cevap mı? {'|'} Fedora Podcast 42",
+    "EPEL, the Ultimate Answer? | Fedora Podcast 42": "EPEL, nihai yanıt mı? {'|'} Fedora Podcast 42",
     "Fedora Linux 41 | Fedora Podcast 41": "Fedora Linux 41 {'|'} Fedora Podcast 41",
     "The Birthday Episode | Fedora Podcast 33": "Doğum Günü Bölümü {'|'} Fedora Podcast 33",
     "The Next Generation of Linux? | Fedora Podcast 36": "Yeni Nesil Linux? {'|'} Fedora Podcast 36",
@@ -1250,7 +1250,7 @@
     "A plethora of Free/Open source computational modelling tools for Neuroscience.": "Nörobilim için çok sayıda Ücretsiz/Açık kaynaklı hesaplamalı modelleme aracı.",
     "Images optimized to run on cloud infrastructures.": "Bulut altyapılarında çalışmak üzere optimize edilmiş imajlar.",
     "Fedora Linux 38 Released | Fedora Podcast 24": "Fedora Linux 38 Yayımlandı {'|'} Fedora Podcast 24",
-    "Extra Packages for Enterprise Linux | Fedora Podcast 26": "Enterprise Linux için Ek Paketler {'|'} Fedora Podcast 26",
+    "Extra Packages for Enterprise Linux | Fedora Podcast 26": "Enterprise Linux için ek paketler {'|'} Fedora Podcast 26",
     "Fedora Quality Assurance | Fedora Podcast 38": "Fedora Kalite Güvencesi {'|'} Fedora Podcast 38",
     "Fedora Cloud Edition | Fedora Podcast 27": "Fedora Bulut Sürümü {'|'} Fedora Podcast 27",
     "Fedora Docs | Fedora Podcast 34": "Fedora Dokümanları {'|'} Fedora Podcast 34",
@@ -1348,5 +1348,6 @@
     "If you need help installing, using, or customizing Fedora Linux, or have any other questions about the operating system or the Fedora Project, this is the place to ask!": "Fedora Linux'u kurma, kullanma veya özelleştirme konusunda yardıma ihtiyacınız varsa veya işletim sistemi veya Fedora Project hakkında başka sorularınız varsa, sormak istediğiniz yer burası!",
     "The Desktop spins feature specific Linux Desktop Environments. Our official Workstation Edition uses the GNOME Desktop, but you can install Fedora preconfigured with any of the listed Desktop Environments.": "Masaüstü spinleri belirli Linux Masaüstü Ortamlarını içerir. Resmi Workstation Edition'ımız GNOME Masaüstünü kullanır, ancak Fedora'yı listelenen Masaüstü Ortamlarından herhangi biriyle önceden yapılandırılmış olarak yükleyebilirsiniz.",
     "These are some low-priority items that are thought to be good entry-level tasks for a new contributor to start with.": "Bunlar, yeni bir katkıda bulunanın başlayabileceği iyi giriş seviyesi görevler olduğu düşünülen bazı düşük öncelikli öğelerdir.",
-    "System Settings": "System Settings"
+    "System Settings": "System Settings",
+    "Building a Better Fedora Laptop with Framework | Fedora Podcast 44": "Framework ile daha iyi bir Fedora dizüstü bilgisayarı yapmak {'|'} Fedora Podcast 44"
 }
