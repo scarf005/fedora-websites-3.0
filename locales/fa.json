@@ -162,5 +162,8 @@
     "Latest image:": "آخرین تصویر:",
     "pick_your_architecture": "انتخاب {architecture} خودتان",
     "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity.": "با محاسبه چک سام تصویر در کامپیوتر خودتان و مقایسه آن با چک سام اصلی، می توانید تایید کنید که تصویر دستکاری یا خراب نشده است. تصاویر نیز با کلیدهای فدورا امضا می شوند تا یکپارچگی آن ها نشان داده شود.",
-    "Release Notes": "یادداشت‌های انتشار"
+    "Release Notes": "یادداشت‌های انتشار",
+    "Verify": "تایید",
+    "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "دانلود خود را برای امنیت و یکپارچگی با استفاده از فایل checksum مناسب بررسی کنید. اگر امضای خوبی از یکی از کلیدهای فدورا وجود داشته باشد و checksum SHA256 مطابقت داشته باشد، دانلود معتبر است.",
+    "Details": "جزییات"
 }
