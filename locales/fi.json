@@ -1076,5 +1076,8 @@
     "Verify": "Tarkista",
     "Details": "Yksityiskohdat",
     "Bare Metal": "Paljas metalli",
-    "pick_your_architecture": "Valitse {architecture}:si"
+    "pick_your_architecture": "Valitse {architecture}:si",
+    "DasKeyboard": "das-näppäimistö",
+    "Launch": "Käynnistä",
+    "Virtualized": "Virtualisoitu"
 }
