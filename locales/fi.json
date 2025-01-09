@@ -1070,5 +1070,11 @@
     "Skipfish": "Skipfish",
     "Skipfish is an active web application security reconnaissance tool.": "Skipfish on aktiivinen verkkosovellusten tietoturvan testaus työkalu.",
     "Sqlninja": "Sqlninja",
-    "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark on verkkoliikenteen analysaattori UNIX:in kaltaisille käyttöjärjestelmille."
+    "Wireshark is a network traffic analyzer for UNIX-ish operating systems.": "Wireshark on verkkoliikenteen analysaattori UNIX:in kaltaisille käyttöjärjestelmille.",
+    "AlmaLinux": "AlmaLinux",
+    "Ansible": "Ansible",
+    "Verify": "Tarkista",
+    "Details": "Yksityiskohdat",
+    "Bare Metal": "Paljas metalli",
+    "pick_your_architecture": "Valitse {architecture}:si"
 }
