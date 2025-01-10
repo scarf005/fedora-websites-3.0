@@ -1129,5 +1129,6 @@
     "ARM® aarch64-based instances": "ARM® aarch64-pohjaiset ilmentymät",
     "Fedora Atomic Image": "Fedora Atomic Image",
     "Screenshot of Fedora Sway Atomic": "Kuvakaappaus Fedora Sway Atomicista",
-    "Flock": "Flock"
+    "Flock": "Flock",
+    "current": "nykyinen"
 }
