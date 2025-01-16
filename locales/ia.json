@@ -14,5 +14,10 @@
     "Education": "Education",
     "its_your_Operating System.": "Systema operative",
     "Configuration": "Configuration",
-    "GNOME Desktop": "Scriptorio GNOME"
+    "GNOME Desktop": "Scriptorio GNOME",
+    "Installation": "Installation",
+    "LXDE Desktop": "Scriptorio LXDE",
+    "Security Lab": "Laboratorio de securitate",
+    "Cinnamon Desktop": "Scriptorio Cinnamon",
+    "Get Fedora": "Obtener Fedora"
 }
