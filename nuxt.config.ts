@@ -32,6 +32,12 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
 
+  content: {
+    markdown: {
+      anchorLinks: false,
+    },
+  },
+
   i18n: {
     locales: process?.env?.CI_FAST_BUILD ? locales_ci : locales,
     lazy: {

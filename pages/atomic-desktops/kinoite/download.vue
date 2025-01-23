@@ -227,152 +227,90 @@ if (data._value.sections[2].sectionDescription) {
         <div
           class="grid grid-flow-row grid-flow-dense auto-rows-max grid-cols-1 gap-8 lg:grid-cols-2"
         >
-          <!-- FEDORA MEDIA WRITER DOWNLOAD -->
-          <div class="">
-            <div class="flex">
-              <div>
-                <FpImage :src="data.sections[1].images" />
-              </div>
-              <div>
-                <h3 class="text-fp-newblue-500">
-                  {{ $t(data.sections[1].sectionTitle) }}
-                </h3>
-
-                <ContentRenderer
-                  class="markdown mb-10 text-fp-gray"
-                  :value="data.sections[1].sectionDescriptionMd"
-                />
-              </div>
-            </div>
-            <div
-              v-for="item in data.sections[1].content"
-              class="workstation-theme download-section mb-2"
-            >
-              <FpDownloadItem name="Fedora Media Writer" :format="item.title">
-                <template #btn>
-                  <FpLink
-                    :href="item.link.url"
-                    title="Download"
-                    class="rounded-xl"
-                  >
-                    <Icon :name="item.link.text" class="!align-baseline" />
-                  </FpLink>
-                </template>
-              </FpDownloadItem>
-            </div>
-          </div>
-
           <!-- DESKTOP IMAGES -->
-          <div class="">
-            <h3 class="text-fp-newblue-500">
-              {{ $t(data.sections[2].sectionTitle) }}
-            </h3>
-
-            <ContentRenderer
-              class="markdown mb-10 text-fp-gray"
-              :value="data.sections[2].sectionDescriptionMd"
+          <template v-if="betaSwitch == false && ga_data?.payload">
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Kinoite.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.ga.releasever"
+              class="spins-theme"
             />
-            <div v-if="betaSwitch == false && ga_data?.payload">
-              <DownloadSection
-                name="For Intel and AMD x86_64 systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="ga_data.payload.images.Kinoite.x86_64"
-                :dlPrefix="dlpath.x86_64"
-                :version="release_data.ga.releasever"
-                class="spins-theme"
-              />
-              <DownloadSection
-                name="For ARM® aarch64 systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="ga_data.payload.images.Kinoite.aarch64"
-                :dlPrefix="dlpath.aarch64"
-                :version="release_data.ga.releasever"
-                class="spins-theme"
-              />
-              <DownloadSection
-                name="For Power ppc64le systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="ga_data.payload.images.Kinoite.ppc64le"
-                :dlPrefix="dlpath.ppc64le"
-                :version="release_data.ga.releasever"
-                class="spins-theme"
-              />
-            </div>
-            <!-- Beta Releases -->
-            <div v-else-if="betaSwitch == true && beta_data?.payload">
-              <DownloadSection
-                name="For Intel and AMD x86_64 systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="beta_data.payload.images.Kinoite.x86_64"
-                :dlPrefix="dlpath.x86_64"
-                :version="release_data.beta.releasever"
-                isBeta
-                class="spins-theme"
-              />
-              <DownloadSection
-                name="For ARM® aarch64 systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="beta_data.payload.images.Kinoite.aarch64"
-                :dlPrefix="dlpath.x86_64"
-                :version="release_data.beta.releasever"
-                isBeta
-                class="spins-theme"
-              />
-              <DownloadSection
-                name="For Power ppc64le systems"
-                art_name="Fedora Kinoite"
-                @verify-click="updateVerify"
-                :artifacts="ga_data.payload.images.Kinoite.ppc64le"
-                :dlPrefix="dlpath.ppc64le"
-                :version="release_data.beta.releasever"
-                isBeta
-                class="spins-theme"
-              />
-            </div>
-            <div v-else>
-              <p class="text-center font-bold">
-                {{ $t("No files available for this version.") }}
-              </p>
-            </div>
-          </div>
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Kinoite.aarch64"
+              :dlPrefix="dlpath.aarch64"
+              :version="release_data.ga.releasever"
+              class="spins-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Kinoite.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.ga.releasever"
+              class="spins-theme"
+            />
+          </template>
+          <!-- Beta Releases -->
+          <template v-else-if="betaSwitch == true && beta_data?.payload">
+            <DownloadSection
+              name="For Intel and AMD x86_64 systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Kinoite.x86_64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="spins-theme"
+            />
+            <DownloadSection
+              name="For ARM® aarch64 systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="beta_data.payload.images.Kinoite.aarch64"
+              :dlPrefix="dlpath.x86_64"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="spins-theme"
+            />
+            <DownloadSection
+              name="For Power ppc64le systems"
+              art_name="Fedora Kinoite"
+              @verify-click="updateVerify"
+              :artifacts="ga_data.payload.images.Kinoite.ppc64le"
+              :dlPrefix="dlpath.ppc64le"
+              :version="release_data.beta.releasever"
+              isBeta
+              class="spins-theme"
+            />
+          </template>
+          <template v-else>
+            <p class="text-center font-bold">
+              {{ $t("No files available for this version.") }}
+            </p>
+          </template>
         </div>
       </div>
+    </section>
+
+    <!-- Fedora Media Writer -->
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+      <FMWSection />
     </section>
 
     <!-- SECURITY -->
-    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+    <section class="bg-gray-50 py-8 px-4 dark:bg-neutral-800">
       <CoreOsVerifySection />
     </section>
 
-    <!-- LEARN MORE ABOUT FEDORA MEDIA WRITER -->
-    <section class="py-24 px-4 dark:bg-neutral-900">
-      <div class="container mx-auto grid max-w-7xl grid-cols-2">
-        <div class="col-span-2 my-5 p-2 md:col-span-1">
-          <h2 class="mb-5 text-fp-newblue-500">
-            {{ $t(data.sections[3].sectionTitle) }}
-          </h2>
-          <p class="text-base text-fp-gray">
-            {{ $t(data.sections[3].content[0].description) }}
-          </p>
-          <p class="mt-5 text-sm text-gray-400">
-            {{ $t(data.sections[3].content[1].description) }}
-          </p>
-        </div>
-        <div
-          class="col-span-2 my-5 flex items-center justify-center p-2 md:col-span-1"
-        >
-          <FpImage class="max-h-72" :src="data.sections[3].content[1].image" />
-        </div>
-      </div>
-    </section>
-
     <!-- CONTRIBUTE -->
-    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-800">
+    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-900">
       <BecomeContributorSection />
     </section>
 

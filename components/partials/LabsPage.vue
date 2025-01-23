@@ -370,9 +370,14 @@ betaSwitch.value = typeof route.query.beta != "undefined";
       </div>
     </section>
 
+    <!-- Fedora Media Writer -->
+    <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+      <FMWSection />
+    </section>
+
     <!-- Verify section -->
     <section
-      class="group/verify relative z-0 overflow-hidden dark:bg-neutral-900 py-6"
+      class="group/verify relative z-0 overflow-hidden bg-gray-50 dark:bg-neutral-800 py-6"
       id="verify-section"
     >
       <CoreOsVerifySection>

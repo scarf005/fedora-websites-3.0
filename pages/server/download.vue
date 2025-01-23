@@ -262,11 +262,16 @@ useContentHead(data);
       </div>
     </section>
 
+    <!-- Fedora Media Writer -->
     <section class="bg-white py-8 px-4 dark:bg-neutral-900">
+      <FMWSection />
+    </section>
+
+    <section class="bg-gray-50 py-8 px-4 dark:bg-neutral-800">
       <CoreOsVerifySection />
     </section>
 
-    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-800">
+    <section class="bg-blue-50 py-12 px-4 dark:bg-neutral-900">
       <BecomeContributorSection />
     </section>
 
