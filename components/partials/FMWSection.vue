@@ -9,7 +9,7 @@ const descriptionMd = await mdparser(data._value.description);
       <FpImage
         :src="data.logo.image"
         :alt="data.logo.text"
-        class="w-1/4 float-left"
+        class="w-1/4 float-start"
       />
       <ContentRendererMarkdown
         class="markdown font-normal text-fp-gray dark:text-gray-300"
