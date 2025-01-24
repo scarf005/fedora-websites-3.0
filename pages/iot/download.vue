@@ -284,7 +284,7 @@ useContentHead(data);
             <p class="mb-2">{{ $t("Verify the checksum matches") }}</p>
             <pre
               class="mb-4 bg-slate-100 px-4 text-sm text-gray-800 dark:bg-slate-800 dark:text-gray-300"
-            ><code>sha256sum -c {{ verifyModal.chk_name }}</code></pre>
+            ><code>sha256sum --ignore-missing -c {{ verifyModal.chk_name }}</code></pre>
           </li>
         </ul>
         <p class="ltr:text-left rtl:text-right">
