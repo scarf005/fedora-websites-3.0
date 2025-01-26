@@ -204,5 +204,15 @@
     "A feature-rich, modern desktop designed to keep out the way of the user.": "Moderné pracovné prostredie s množstvom funkcií navrhnuté tak, aby používateľom neprekážali.",
     "A previous version of your system is always kept around, just in case. If you need to go back in time, you can!": "Predchádzajúca verzia vášho systému je pre každý prípad vždy k dispozícii. Ak sa potrebujete vrátiť v čase, môžete!",
     "An atomic desktop operating system featuring the keyboard-driven Sway window manager.": "Atomický desktopový operačný systém so správcom okien Sway ovládaný pomocou klávesnice.",
-    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "Fedora Labs (laboratóriá) sú výberom sady softvéru vhodnej k určitému účelu, ktoré spravujú členovia komunity Fedora. Môžete ich nainštalovať ako samostatnú plnú verziu Fedory, alebo ako doplnky do existujúcej inštalácie Fedory."
+    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "Fedora Labs (laboratóriá) sú výberom sady softvéru vhodnej k určitému účelu, ktoré spravujú členovia komunity Fedora. Môžete ich nainštalovať ako samostatnú plnú verziu Fedory, alebo ako doplnky do existujúcej inštalácie Fedory.",
+    "Destination": "Umiestnenie",
+    "Panda, Beefy and Badger.": "Panda, Beefy a Badger.",
+    "placeholder": "zástupný symbol",
+    "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Získajte viac zážitkov s Fedora atomic pracovnou plochou! Najnovšiu verziu atomic pracovnej plochy získate tu.",
+    "Launch on public cloud platforms": "Spustenie na platformách verejného cloudu",
+    "Start Fedora Cloud instances on public cloud platforms.": "Spustite Fedora  Cloud instancie na platformách verejného cloudu.",
+    "Select the Azure region": "Zvoľte región Azure",
+    "Show Beta downloads": "Zobraziť Beta verzie",
+    "Atomic Desktops for Fedora": "Atomic pracovná plocha pre Fedoru",
+    "What is Fedora Labs?": "Čo je Fedora Labs?"
 }
