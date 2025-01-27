@@ -50,7 +50,7 @@ const descriptionMd = await mdparser(data._value.description);
   @apply dark:text-fp-darkblue-500;
 }
 .markdown :deep(ul) li {
-  @apply list-none before:content-['*_'] -indent-[1.5ex] ml-[1.5ex] mb-[1.5em] text-sm;
+  @apply list-none before:content-['*_'] -indent-[1.5ex] ms-[1.5ex] mb-[1.5em] text-sm;
 }
 .download-section .fp-download-item a {
   @apply border-fp-newblue-500 text-fp-newblue-500 hover:bg-fp-newblue-500 hover:text-white;
