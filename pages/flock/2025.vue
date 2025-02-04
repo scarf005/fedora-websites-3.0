@@ -104,7 +104,7 @@ const sponsorLevels = [
             class="mx-auto mb-10 flex justify-center gap-5 rounded-xl p-2"
             :style="{ backgroundColor: getImportantDateColor(date.status) }"
           >
-            <div class="my-auto w-28 text-center">
+            <div class="my-auto w-40 text-center">
               <h3 class="text-4xl font-semibold text-fp-blue">
                 {{ formatDate(date.startDate) }}
               </h3>
