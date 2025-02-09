@@ -1,5 +1,5 @@
 [
-  { "code": "ar", "language": "ar", "file": "ar.json", "name": "عربى", "dir": "rtl" },
+  { "code": "ar", "language": "ar", "file": "ar.json", "name": "العربية", "dir": "rtl" },
   { "code": "be", "language": "be", "file": "be.json", "name": "Беларуская" },
   { "code": "bg", "language": "bg", "file": "bg.json", "name": "Bulgarian" },
   { "code": "ca", "language": "ca", "file": "ca.json", "name": "Català" },
