@@ -16,7 +16,7 @@
   { "code": "hu", "language": "hu", "file": "hu.json", "name": "Magyar" },
   { "code": "id", "language": "id", "file": "id.json", "name": "Indonesian" },
   { "code": "it", "language": "it", "file": "it.json", "name": "Italiano" },
-  { "code": "ja", "language": "ja", "file": "ja.json", "name": "日本"},
+  { "code": "ja", "language": "ja", "file": "ja.json", "name": "日本语"},
   { "code": "kab", "language": "kab", "file": "kab.json", "name": "Taqbaylit" },
   { "code": "ko", "language": "ko", "file": "ko.json", "name": "한국어" },
   { "code": "nl", "language": "nl", "file": "nl.json", "name": "Nederlands" },
@@ -36,5 +36,5 @@
   { "code": "tr", "language": "tr", "file": "tr.json", "name": "Türkçe" },
   { "code": "uk", "language": "uk", "file": "uk.json", "name": "українська"},
   { "code": "zh-Hans", "language": "zh-Hans", "file": "zh_Hans.json", "name": "简体中文" },
-  { "code": "zh-Hant", "language": "zh-Hant", "file": "zh_Hant.json", "name": "繁体中文" }
+  { "code": "zh-Hant", "language": "zh-Hant", "file": "zh_Hant.json", "name": "繁體中文" }
 ]
