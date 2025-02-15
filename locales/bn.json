@@ -20,5 +20,20 @@
     "Other Downloads": "অন্যান্য ডাউনলোডগুলো",
     "Support": "সহায়তা",
     "For Intel and AMD x86_64 systems": "ইন্টেল এবং এ এম ডি x86_64 সিস্টেমের জন্য",
-    "Fedora Logo": "ফেডোরা লোগো"
+    "Fedora Logo": "ফেডোরা লোগো",
+    "Legal": "আইনগত",
+    "Code of Conduct": "আচরণবিধি",
+    "help_improve_this_website": "{cms} অথবা {gitlab_repo} এ এই ওয়েবসাইটটি উন্নত করতে সাহায্য করুন।",
+    "Sponsors": "পৃষ্ঠপোষক",
+    "Sponsored by Red Hat Logo": "রেড হ্যাট লোগো দ্বারা পৃষ্ঠপোষক করা হয়েছে",
+    "Fedora is sponsored by Red Hat": "ফ়েদোরা রেড হ্যাট এর দ্বারা পৃষ্ঠপোষক করা হয়েছে",
+    "Learn more about the relationship between Red Hat and Fedora": "রেড হ্যাট এবং ফেডোরার মধ্যে সম্পর্ক সম্পর্কে আরও জানুন",
+    "Destination": "গন্তব্য",
+    "Learn More": "আরও জানুন",
+    "Registration": "নিবন্ধন",
+    "Fedora is sponsored by Red Hat.": "ফেডোরা রেড হ্যাট দ্বারা পৃষ্ঠপোষক করা হয়।",
+    "Learn more about the relationship between Red Hat and Fedora.": "রেড হ্যাট এবং ফেডোরার মধ্যে সম্পর্ক সম্পর্কে আরও জানুন।",
+    "Try it now.": "এখন চেষ্টা করে দেখুন।",
+    "Download": "ডাউনলোড করুন",
+    "architecture": "স্থাপত্য"
 }
