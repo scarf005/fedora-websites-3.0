@@ -1,1 +1,5 @@
-{}
+{
+    "verify_button_instruction": "Pindutin ang verify button {verify_button} para makakuha ng mga hakbang na ipinasadya para sa iyong download.",
+    "We take security seriously": "Sineseryoso namin ang seguridad",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "Kapag nakapag-download ka na ng image, siguraduhing ive-verify mo ito para sa seguridad at integridad"
+}
