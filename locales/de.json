@@ -230,7 +230,7 @@
     "its_your_Operating System.": "Betriebssystem.",
     "It's your Operating System.": "Es ist dein Betriebssystem.",
     "Visit Fedora Youtube": "Besuchen Sie Fedora auf Youtube",
-    "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Überprüfen Sie die Sicherheit und Integrität Ihres Downloads anhand der entsprechenden Prüfsummendatei. Wenn eine gültige Signatur von einem der Fedora-Schlüssel vorliegt und die SHA256-Prüfsumme übereinstimmt, dann ist der Download gültig",
+    "Verify your download for security and integrity using the proper checksum and signature file. If there is a good signature from one of the Fedora keys, and the SHA256 checksum matches, then the download is valid.": "Überprüfen Sie die Sicherheit und Integrität Ihres Downloads anhand der entsprechenden Prüfsummendatei. Wenn eine gültige Signatur von einem der Fedora-Schlüssel vorliegt und die SHA256-Prüfsumme übereinstimmt, dann ist der Download gültig.",
     "But wait! There's more.": "Moment! Da kommt noch mehr.",
     "Obsolete GPG keys": "Veraltete GPG-Schlüssel",
     "A modern media player, using gtk3 and the gstreamer plugin framework.": "Ein moderner Medienplayer, welcher GTK3 und das Gstreamer-Plugin-Framework verwendet.",
@@ -274,7 +274,7 @@
     "Eye of MATE is meant to be a fast and functional image viewer.": "Eye of MATE wurde als ein schneller und funktionaler Bildbetrachter entwickelt.",
     "Upstream Documentation": "Upstream-Dokumentation",
     "Atril is a simple multi-page document viewer. It can display and print PostScript, DVI, XPS and Portable Document Format files.": "Artil ist ein einfacher Betrachter für mehrseitige Dokumente. Es kann PostScript (ps), DVI, XPS und Portable Document Format (pdf) anzeigen und drucken.",
-    "Explore the World Wide Web with Firefox, the full featured web browser.": "Entdecke das World Wide Web mit Firefox, dem voll ausgestatteten Webbrowser",
+    "Explore the World Wide Web with Firefox, the full featured web browser.": "Entdecke das World Wide Web mit Firefox, dem voll ausgestatteten Webbrowser.",
     "Multimedia": "Multimedia",
     "Office & Productivity": "Büro & Produktivität",
     "Utilities & Configuration": "Dienstprogramme & Konfiguration",
@@ -285,7 +285,7 @@
     "We think Panda lost it.": "Wir denken, dass Panda es verloren hat.",
     "Go Home": "Geh nach Hause",
     "Podcasts": "Podcasts",
-    "Alternative desktops for Fedora.": "Weitere Desktops für Fedora",
+    "Alternative desktops for Fedora.": "Weitere Desktops für Fedora.",
     "Screenshot of Fedora Budgie desktop": "Screenshot des Fedora Budgie-Desktops",
     "Find a Fedora atomic desktop to enhance your experience! You can find the latest versions of our atomic desktops here.": "Finden Sie einen Fedora-Atom-Desktop, um Ihre Erfahrung zu verbessern! Sie können die neuesten Versionen unserer atomaren Desktops hier finden.",
     "for Fedora Linux": "für Fedora Linux",
@@ -371,5 +371,8 @@
     "Fedora Budgie Atomic ships the popular Budgie desktop environment in an atomic fashion. This enables you to surf the web, play games, enjoy music and video, manage files, and be productive without having to worry about breaking your system.": "Fedora Budgie Atomic bietet den bekannten Budgie Desktop und ein atomares Fedora. Es ermöglicht dir im Internet zu surfen, Music und Videos zu genießen, Datein zu verwalten und produktiv zu sein, ohne Sorge zu haben, Probleme mit dem Betriebssystem zu bekommen.",
     "Fedora Kinoite is maintained by the [KDE Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/KDE) in Fedora and is the fruit of collaboration between the Fedora and KDE community. <br /><br /> The KDE SIG is an open community seeking contributors from everywhere, and of every type. From documentation writing, to beta testing, to helping others by answering questions, there are plenty of ways to get involved and help shape the future of Kinoite! <br /><br /> The KDE community creates the software and they also have a [get involved page](https://community.kde.org/Get_Involved) with a lot of helpful information on how to help.": "Fedora Kinoite wird von der [KDE Special Interest Group (SIG)](https://fedoraproject.org/wiki/SIGs/KDE) betreut und ist das Ergebnis der Zusammenarbeit von der Fedora und KDE Community.<br /><br />Die KDE SIG ist eine offene Community auf der Suche nach Helfern aller Art. Vom Schreiben der Dokumentation, über das Testen von Beta-Versionen, bis zum beantworten von Fragen anderer Mitglieder gibt es viele Wege sich zu beteiligen und die Zukunft von Kinoite zu formen.<br /><br />Die KDE Community entwickelt Software und hat auch eine [get involved page](https://community.kde.org/Get_Involved) mit allen Informationen, um ein aktiver Unterstützer zu werden.",
     "Toolbx for Development": "Werkzeugkiste für Entwicklungsumgebungen",
-    "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree ist ein hybridges image/package System. Es kombiniert libostree und libdnf um atomare und sicher Updates mithilfe von lokalem RPM Paket Layering zu ermöglichen."
+    "rpm-ostree is a hybrid image/package system. It combines libostree and libdnf to provide atomic and safe upgrades with local RPM package layering.": "rpm-ostree ist ein hybridges image/package System. Es kombiniert libostree und libdnf um atomare und sicher Updates mithilfe von lokalem RPM Paket Layering zu ermöglichen.",
+    "Fedora Kinoite is powered by some amazing open-source projects, including [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), and [flatpak](https://github.com/flatpak/flatpak). If you are a developer, consider helping out with one of these projects.": "Fedora Kinoite nutzt großartige Open-Source Projekte, wie z.B. [ostree](https://github.com/ostreedev/ostree), [rpm-ostree](https://github.com/coreos/rpm-ostree), und [flatpak](https://github.com/flatpak/flatpak). Wenn du ein Entwickler bist, freuen sich diese Projekte über Unterstützung.",
+    "Join a community of users and contributors focused on Fedora Kinoite.": "Tritt der Community von Nutzern und Unterstützern mit dem Fokus auf Fedora Kinoite bei.",
+    "Toolbx keeps all of your development tools neatly organized per-project. Keep multiple versions of your tools independent from each other and unaffected by changes to the base system.": "Toolbx hält all deine Entwicklungstools pro Projekt ordentlich organisiert. Du kannst mehrere Versionen deiner Tools unabhängig voneinander verwalten, ohne dass sie durch Änderungen am Basissystem beeinflusst werden."
 }
