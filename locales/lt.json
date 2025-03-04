@@ -1,1 +1,20 @@
-{}
+{
+    "We take security seriously": "Į saugumą žiūrime rimtai",
+    "Once you have downloaded an image, be sure to verify it for both security and integrity": "Atsisiuntę atvaizdą būtinai patikrinkite jo saugumą ir vientisumą",
+    "By calculating the image’s checksum on your own computer and comparing it to the original checksum, you can verify the image has not been tampered with or corrupted. Images are also gpg signed with Fedora keys to demonstrate their integrity": "Apskaičiuodami atvaizdo kontrolinę sumą savo kompiuteryje ir palyginę ją su pradine kontroline suma, galite patikrinti, ar atvaizdas nebuvo sugadintas ar pažeistas. Ataizdai taip pat yra gpg pasirašyti su Fedora raktais, kad būtų parodytas jų vientisumas",
+    "For Intel and AMD x86_64 systems": "„Intel“ ir „AMD“ x86_64 sistemoms",
+    "For ARM® aarch64 systems": "„ARM®“ aarch64 sistemoms",
+    "For Power ppc64le systems": "„Power“ ppc64le sistemoms",
+    "For IBM s390x zSystems": "Skirta „IBM“ s390x zSystems",
+    "Your friendly and helpful contributions to these communication channels would be greatly appreciated": "Labai vertiname jūsų draugišką ir naudingą indėlį į šiuos komunikacijos kanalus",
+    "Join Us!": "Prisijunkite prie mūsų!",
+    "Attending a meeting or reporting and discussing issues you've found can be a great first step at contribution": "Dalyvavimas susitikime arba ataskaitų teikimas ir rastų problemų aptarimas gali būti puikus pirmasis žingsnis siekiant prisidėti",
+    "Become a Fedora Contributor": "Tapkite „Fedora“ bendraautoriu",
+    "But wait! There's more.": "Bet palaukite! Yra ir daugiau.",
+    "Need something a bit different? Check out our other downloads below, featuring alternative architectures, torrents and network-based installation images.": "Reikia kažko šiek tiek kitokio? Peržiūrėkite kitus mūsų atsisiuntimus, kuriuose yra alternatyvių architektūrų, torrentų ir tinklo diegimo atvaizdų.",
+    "Other Downloads": "Kiti atsisiuntimai",
+    "Downloads": "Atsisiuntimai",
+    "Community": "Bendruomenė",
+    "Contributors": "Bendraautoriai",
+    "verify_button_instruction": "Spustelėkite patvirtinimo mygtuką {verify_button}, kad gautumėte atsisiuntimui pritaikytas instrukcijas."
+}
