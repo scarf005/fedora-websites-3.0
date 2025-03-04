@@ -106,5 +106,9 @@
     "List AWS EC2 region": "Pateikite „AWS“ EC2 regioną",
     "Atomic Desktops for Fedora": "„Atomic“ darbalaukiai, skirti „Fedora“",
     "Start Fedora Cloud instances on public cloud platforms.": "Paleiskite „Fedora Cloud“ egzempliorius viešose debesų platformose.",
-    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "„Fedora Labs“ yra kuruojamų tikslinės programinės įrangos ir turinio rinkiniai, kuriuos kuruoja ir prižiūri „Fedora“ bendruomenės nariai. Jie gali būti įdiegti kaip atskiros pilnos „Fedora“ versijos arba kaip priedai prie esamų „Fedora“ įrenginių."
+    "Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.": "„Fedora Labs“ yra kuruojamų tikslinės programinės įrangos ir turinio rinkiniai, kuriuos kuruoja ir prižiūri „Fedora“ bendruomenės nariai. Jie gali būti įdiegti kaip atskiros pilnos „Fedora“ versijos arba kaip priedai prie esamų „Fedora“ įrenginių.",
+    "Destination": "Paskirtis",
+    "Download": "Atsisiųsti",
+    "Close": "Užverti",
+    "Verify": "_Tikrinti"
 }
