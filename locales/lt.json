@@ -16,5 +16,7 @@
     "Downloads": "Atsisiuntimai",
     "Community": "Bendruomenė",
     "Contributors": "Bendraautoriai",
-    "verify_button_instruction": "Spustelėkite patvirtinimo mygtuką {verify_button}, kad gautumėte atsisiuntimui pritaikytas instrukcijas."
+    "verify_button_instruction": "Spustelėkite patvirtinimo mygtuką {verify_button}, kad gautumėte atsisiuntimui pritaikytas instrukcijas.",
+    "Languages": "Kalbos",
+    "Support": "Palaikymas:"
 }
