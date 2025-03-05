@@ -197,5 +197,7 @@
     "Description": "Aprašymas",
     "Documentation": "Dokumentacija",
     "Configuration": "Konfigūracija",
-    "Next": "Next"
+    "Next": "Next",
+    "Help": "Pagalba",
+    "Register": "_Registruoti"
 }
