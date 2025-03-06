@@ -1263,5 +1263,7 @@
     "Are you a downloader? Use Transmission to get new versions of Fedora MATE+Compiz Desktop!": "Você é um baixador? Use o Transmission para baixar novas versões do Fedora MATE+Compiz Desktop!",
     "Blueberry": "Blueberry",
     "Blueberry is a gnome-bluetooth based bluetooth configuration tool which integrates very well in almost any desktop environment.": "Blueberry é baseado no gnome-bluetooth, uma ferramenta de configuração do bluetooth que se integra muito bem em quase ambiente desktop.",
-    "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail é uma aplicação de email fácil de configurar e cheia de recursos para o MATE-Compiz Desktop."
+    "Claws Mail is an easy to configure and full featured email application for the MATE+Compiz Desktop.": "Claws Mail é um aplicativo de email fácil de configurar e cheia de recursos para o MATE+Compiz Desktop.",
+    "Exaile": "Exaile",
+    "DConf Editor": "Editor DConf"
 }
