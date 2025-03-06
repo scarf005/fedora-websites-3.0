@@ -1251,5 +1251,6 @@
     "QTerminal is a lightweight Qt terminal emulator based on QTermWidget.": "QTerminal é um emulador de terminal leve em Qt baseado no QTermWidget.",
     "QTerminal": "QTerminal",
     "LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you can also take screenshots with.": "LXImage-Qt é um Qt port do LXImage, um visualizador de imagens simples e rápido, que você também pode tirar capturas de tela.",
-    "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one clients can attach to and detach from a central core": "Quassel IRC é um cliente de IRC moderno, multiplataforma e distribuído, o que significa que um cliente pode se conectar e se desconectar de um núcleo central"
+    "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one clients can attach to and detach from a central core": "Quassel IRC é um cliente de IRC moderno, multiplataforma e distribuído, o que significa que um cliente pode se conectar e se desconectar de um núcleo central",
+    "Screenshot of Fedora LXQt desktop": "Captura de tela da área de trabalho do Fedora Xfce"
 }
