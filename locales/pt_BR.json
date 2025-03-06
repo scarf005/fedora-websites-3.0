@@ -1259,5 +1259,6 @@
     "The goal of NetworkManager is to make networking just work with a minimum of user hassle, but still allow customization.": "O objetivo do NetworkManager é fazer a rede funcionar com um mínimo de aborrecimento ao usuário, mas ainda permitir a personalização.",
     "Yarock": "Yarock",
     "dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 and uses libYui.": "dnfdragora é um frontend para o DNF, baseado no rpmdragora, escrito em Python 3 e usa libYui.",
-    "Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty music collection browser based on cover art.": "Yorck é moderno tocador de música em Qt4/Qt5 projetado para prover um fácil e bonito navegador de coleção musical baseado na arte de capa."
+    "Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty music collection browser based on cover art.": "Yorck é moderno tocador de música em Qt4/Qt5 projetado para prover um fácil e bonito navegador de coleção musical baseado na arte de capa.",
+    "Are you a downloader? Use Transmission to get new versions of Fedora MATE+Compiz Desktop!": "Você é um baixador? Use o Transmission para baixar novas versões do Fedora MATE-Compiz Desktop!"
 }
