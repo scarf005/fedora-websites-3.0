@@ -245,23 +245,29 @@ betaSwitch.value = typeof route.query.beta != "undefined";
             class="text-sm text-gray-600 ltr:mr-5 rtl:ml-5 dark:text-fp-gray-200"
           >
             {{ $t("RELEASE DATE") }}:
-            <span
+            <time
+              :datetime="
+                new Date(Number(release_data.ga.release_date)).toISOString()
+              "
               class="font-semibold group-has-[#betaswitch:checked]/main:hidden"
               >{{
                 $d(Number(release_data.ga.release_date), {
                   dateStyle: "full",
                   timeZone: "UTC",
                 })
-              }}</span
+              }}</time
             >
-            <span
+            <time
+              :datetime="
+                new Date(Number(release_data.beta.release_date)).toISOString()
+              "
               class="font-semibold hidden group-has-[#betaswitch:checked]/main:inline"
               >{{
                 $d(Number(release_data.beta.release_date), {
                   dateStyle: "full",
                   timeZone: "UTC",
                 })
-              }}</span
+              }}</time
             >
           </p>
         </div>

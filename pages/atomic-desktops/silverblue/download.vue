@@ -158,18 +158,32 @@ if (data._value.sections[2].sectionDescription) {
             class="text-sm text-gray-600 ltr:mr-5 rtl:ml-5 dark:text-fp-gray-200"
           >
             {{ $t("RELEASE DATE") }}:
-            <span class="font-semibold" v-if="betaSwitch == false">{{
-              $d(Number(release_data.ga.release_date), {
-                dateStyle: "full",
-                timeZone: "UTC",
-              })
-            }}</span>
-            <span class="font-semibold" v-else>{{
-              $d(Number(release_data.beta.release_date), {
-                dateStyle: "full",
-                timeZone: "UTC",
-              })
-            }}</span>
+            <time
+              :datetime="
+                new Date(Number(release_data.ga.release_date)).toISOString()
+              "
+              class="font-semibold"
+              v-if="betaSwitch == false"
+              >{{
+                $d(Number(release_data.ga.release_date), {
+                  dateStyle: "full",
+                  timeZone: "UTC",
+                })
+              }}</time
+            >
+            <time
+              :datetime="
+                new Date(Number(release_data.beta.release_date)).toISOString()
+              "
+              class="font-semibold"
+              v-else
+              >{{
+                $d(Number(release_data.beta.release_date), {
+                  dateStyle: "full",
+                  timeZone: "UTC",
+                })
+              }}</time
+            >
           </p>
         </div>
         <div class="mt-5 flex ltr:-ml-5 rtl:-mr-5" id="ctas">
